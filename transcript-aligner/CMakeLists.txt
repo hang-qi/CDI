@@ -26,15 +26,23 @@ endif ()
 include_directories(src/utils)
 include_directories(inc)
 
+# utilities
+set (UTILS_SOURCE_DIR src/utils)
+set (UTILS_SOURCES
+    ${UTILS_SOURCE_DIR}/string_utility.cpp
+    ${UTILS_SOURCE_DIR}/datetime_utility.cpp)
+add_library(utility ${UTILS_SOURCES})
+
 # Source Directories.
 set (SOURCE_DIR src)
 
 # Source files.
 set (ALIGNER_SOURCES
-	${SOURCE_DIR}/utils/string_utility.cpp
-	${SOURCE_DIR}/utils/datetime_utility.cpp
-	${SOURCE_DIR}/person_detector.cpp
+    ${SOURCE_DIR}/person_detector.cpp
 	${SOURCE_DIR}/aligner.cpp)
 
+set (TARGET aligner)
+
 # Executables.
-add_executable(aligner ${ALIGNER_SOURCES})
+add_executable(${TARGET} ${ALIGNER_SOURCES})
+target_link_libraries(${TARGET} utility)

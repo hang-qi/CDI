@@ -35,6 +35,7 @@ namespace utility
 			tm t = str2timestruct(orgTimeStr);
 			std::string milliseconds = orgTimeStr.substr(15,3);
 			t.tm_sec += deltaInSeconds;
+			mktime(&t);	// normalize time
 			std::string newTimeString = time2str(t) + "." + milliseconds;
 			return newTimeString;
 		}
