@@ -4,6 +4,8 @@ import datetime
 import subprocess
 import timezone
 
+import config
+
 class MatchingAlert:
     def __init__(self, captionFilename, transcriptFilename):
         self.captionFilename = captionFilename;
@@ -14,7 +16,7 @@ class MatchingAlert:
 # determine the best match by the highest similarity score, given by aligner.
 def rematch(matchingAlert):
     candidateList = generateCandidiates(matchingAlert.captionFilename);
-    parameters = ['bin/aligner', matchingAlert.transcriptFilename];
+    parameters = [config.ROOT_ALIGNER + 'aligner', matchingAlert.transcriptFilename];
     parameters.extend(candidateList);
     r = subprocess.call(parameters);
     return

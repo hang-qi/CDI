@@ -4,6 +4,7 @@ import matchfile
 import datetime
 import subprocess
 
+import config
 # Tranverse all files under given dir, save all filenames in a list.
 def getHTMLFiles(directory):
     files = []
@@ -68,12 +69,12 @@ def matchAll(htmlTranscriptFiles):
             # run html parser to generate rawtxt for renamed html transcript file. 
             if (transcriptExist):
                 #os.system("python3 htmlparser.py {transcript}".format(transcript=targetHTMLFilename))
-                r = subprocess.call(['python3', 'htmlparser.py', targetHTMLFilename]);
+                r = subprocess.call(['python3', config.ROOT_SCRIPT + 'htmlparser.py', targetHTMLFilename]);
 
             # run aligner, given caption file and raw txt file
             if (captionExist and transcriptExist):
                 parsedTranscriptFilename = targetHTMLFilename.replace(".html", ".rawtxt")
-                r = subprocess.call(['bin/aligner', targetCaptionFilename, parsedTranscriptFilename]);
+                r = subprocess.call([config.ROOT_ALIGNER + 'aligner', targetCaptionFilename, parsedTranscriptFilename]);
                 num_integrated += 1;
                 num_dayintegrated += 1;
             pass

@@ -8,6 +8,7 @@ import calendar
 # my script
 import htmlparser
 import timezone
+import config
 
 # This is the program name mapping for matching the target caption file
 #   Key: the program name appears in the head section of CNN transcript
@@ -59,7 +60,7 @@ def convertProgramName(programName):
     newName = newName.rstrip('_');              # strip the last '_' at the end
     return newName;
 
-# Return matched filenames with full path
+# Return matched caption filenames with full path
 # The return is a list with two element (transcript file, caption file)
 def getMatchedFilenames(transcriptFile, charset='ISO-8859-1'):
     # read in transcriptFile
@@ -99,8 +100,8 @@ def roundToHalfHour(dt):
 # Return matched filenames with full path
 # The return is a list with two element (transcript file, caption file)
 def buildFilenames(utcDatetime, program, agent='CNN', locale='US'):
-    transcriptRoot = r"/tvspare/transcripts/CNN-automated/"
-    captionRoot = r"/tv/"
+    transcriptRoot = config.ROOT_TRANSCRIPT
+    captionRoot = config.ROOT_CAPTION
 
     utcRoundedDatetime = roundToHalfHour(utcDatetime)
     dateDirectories = "{:%Y/%Y-%m/%Y-%m-%d/}".format(utcRoundedDatetime)
@@ -137,7 +138,7 @@ def main():
 
     filelist = sys.argv[1:]
     for filename in filelist:
-        print(match(filename))
+        print(getMatchedFilenames(filename))
 
 if __name__ == '__main__':
 	main()
