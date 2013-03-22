@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -std=c++0x    CMakeFiles/aligner.dir/src/person_detector.cpp.o CMakeFiles/aligner.dir/src/aligner.cpp.o  -o aligner -rdynamic libutility.a 

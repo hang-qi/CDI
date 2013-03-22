@@ -1,2 +1,0 @@
-/usr/bin/ar cr libutility.a  CMakeFiles/utility.dir/src/utils/string_utility.cpp.o CMakeFiles/utility.dir/src/utils/datetime_utility.cpp.o
-/usr/bin/ranlib libutility.a
