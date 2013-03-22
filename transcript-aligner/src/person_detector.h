@@ -17,7 +17,7 @@ public:
 	~PersonDetector() {};
 
 	bool GetSpeakerName(string& word, string& name);
-	string GetNERString(const string& longNameStr);
+	string GetSPKString(const string& longNameStr);
 
 private:
 	bool HasParty(const string& str);

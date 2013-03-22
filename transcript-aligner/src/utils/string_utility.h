@@ -9,13 +9,13 @@ namespace utility
 {
     namespace string_utility{
 
-        // Trim all occurance of characters in trimChars from the front of str
+        // Trim all occurrence of characters in trimChars from the front of str
         std::string trim_front(const std::string& str, const std::string& trimChars = " ");
 
-        // Trim all occurance of characters in trimChars from the end of str
+        // Trim all occurrence of characters in trimChars from the end of str
         std::string trim_end(const std::string& str, const std::string& trimChars = " ");
 
-        // Trim all occurance of characters in trimChars from both front and end of str
+        // Trim all occurrence of characters in trimChars from both front and end of str
         std::string trim(const std::string& str, const std::string& trimChars = " ");
 
         std::string replace_and_copy(const std::string& str, const std::string& oldStr, const std::string& newStr);

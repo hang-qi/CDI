@@ -1,0 +1,2 @@
+/home/hangqi/Programming/CDI/transcript-aligner/bin/CMakeFiles/aligner.dir
+/home/hangqi/Programming/CDI/transcript-aligner/bin/CMakeFiles/utility.dir

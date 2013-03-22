@@ -24,9 +24,9 @@ bool PersonDetector::GetSpeakerName(string& word, string& name)
 }
 
 
-// Return a NER string in format of Person=name|Role=role
+// Return a SPK string in format of Person=name|Role=role
 // Given a longNameString in transcript like "name, role:"
-string PersonDetector::GetNERString(const string& longNameStr)
+string PersonDetector::GetSPKString(const string& longNameStr)
 {   
     using namespace utility::string_utility;
 
@@ -52,21 +52,21 @@ string PersonDetector::GetNERString(const string& longNameStr)
     size_t found = longNameString.find(',');
     if (found != string::npos)
     {   // if the person name has a corresponding role, 
-        // we store the NER string in a table with the person's last name as key
-        // so that we can look up the table for the full NER string 
+        // we store the SPK string in a table with the person's last name as key
+        // so that we can look up the table for the full SPK string 
         // when his/her last name appears again.
 
         name = ConvertToCamalStyle(longNameString.substr(0 ,found));
         role = longNameString.substr(found + 1);
         nerString = "Person=" + name + "|Role=" + trim_front(role);
 
-        // extract last name, and save NER String into dictionary
+        // extract last name, and save SPK String into dictionary
         auto nameParts = split(name, ' ');
         string lastPart = nameParts[nameParts.size() - 1];
         string lastName = lastPart;
 
         // The last part of the name may contains party/state information
-        // e.g. MITT ROMNEY (R), JOHN BOEHNER (R-OH)
+        // e.g. MITT ROMNEY (R), JOHN BOEHSPK (R-OH)
         if (HasParty(lastPart))
         {
             name = trim(replace(name, lastPart, ""));
@@ -88,7 +88,7 @@ string PersonDetector::GetNERString(const string& longNameStr)
     {
         // if the name appears alone without a corresponding role, 
         // we look up the last name in table.
-        // If found we use the previously stored NER string.
+        // If found we use the previously stored SPK string.
         // Otherwise, just display the name as it is.
         auto nameParts = split(ConvertToCamalStyle(longNameString), ' ');
         string lastName = nameParts[nameParts.size() - 1];

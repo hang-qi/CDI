@@ -167,9 +167,9 @@ const Caption Aligner::BuildTimeAlignedCaption()
                     currentLineContent.append(">> ");
                 }
 
-                // create a line flaged with "NER" for further processing into NER line.
-                string lineNER = string("(NER)").append(word);
-                sublines.push_back(lineNER);
+                // create a line flaged with "SPK" for further processing into SPK line.
+                string lineSPK = string("(SPK)").append(word);
+                sublines.push_back(lineSPK);
 
                 currentLineContent.append(name + ": ");
             }
@@ -213,7 +213,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
             {
                 continue;
             }
-            else if (sublines[k].substr(0,5) == "(NER)") //CHEVRON
+            else if (sublines[k].substr(0,5) == "(SPK)") //CHEVRON
             {
                 if (pCaption_->isInterpolated && previousSegType == "Commercial")
                 {
@@ -224,9 +224,9 @@ const Caption Aligner::BuildTimeAlignedCaption()
                     previousSegType = "";
                 }
 
-                CaptionLine line("NER",
+                CaptionLine line("SPK",
                                 currentTimestamp,
-                                personDetector_.GetNERString(sublines[k].substr(5)));
+                                personDetector_.GetSPKString(sublines[k].substr(5)));
                 linesBuffer.push_back(line);
                 //tptCaption.captionLines.push_back(line);
             }
