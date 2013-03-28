@@ -3670,10 +3670,9 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 
 	string str, str1, str2 ;
 	size_t found, found1, found3, founf4 ;	
-	ofstream fout_eval, fout_enhance ;
-	fout_eval.open ("SystemEvaluation_OnScreenText.txt");
+	ofstream fout_eval.open ("output/OnScreenText_CrossValidation.txt");
+	ofstream fout_enhance.open ("output/OnScreenText_ConfusionMatrix.txt");
 
-	//vector<FinalTripletElements> StoryWordInfoFinalForTest, StoryWordInfoFinalForTrain , StoryWordInfoFinalOrg;
 	vector<ScreenInfo> Screen_Info_FinalOrg;
 
 	vector<vector <int> > confusion_matrix;
@@ -3708,9 +3707,6 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 		i=i+TestSet-1;
 	}
 	fout_eval << "Number of Stories in All Documents: " << num_stories << endl;
-	fout_enhance.open ("fout_enhance.txt");
-	fout_enhance.clear();
-
 
 	// Cross validation
 	const char* array[] = {"War", "Sports", "Disaster", "Accident",
