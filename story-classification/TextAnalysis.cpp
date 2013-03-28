@@ -4030,51 +4030,39 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 			}
 			
 			// Calculate posterior probability.
-			vector<double> Posteriorprob_catGivenStory;
+			vector<double> prob_catsGivenStory;
 
-			for(int j=0; j < categories.size(); j++)
+			for(int idx_category=0; idx_category < categories.size(); idx_category++)
 			{
-				double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
+				double prob_storyGivenCat=1;
 
-				for( int i=0; i < screenInfo_testing.size(); i++)\
-				{	
-					vector<string> words;
-					istringstream iss(screenInfo_testing[ii].Screen_words);
-					copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
+				//for( int idxStory = 0; idxStory < screenInfo_testing.size(); idxStory++)
+				//{	
+				vector<string> words;
+				istringstream iss(screenInfo_testing[ii].Screen_words);
+				copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
 					
-					if (words.size() != 0)
+				if (words.size() != 0)
+				{
+					for(int idx_word=0; idx_word < words.size(); idx_word++)
 					{
-						for(int kk=0; kk < words.size(); kk++)
-						{
-							auto low = lower_bound (v.begin(), v.end(), words[kk]);
-							string WordName = *low;
-							int wordPlace = int(low- v.begin());
-							double B = prob_wordsGivenCats[wordPlace][j];
+						auto low = lower_bound (v.begin(), v.end(), words[idx_word]);
+						string word = *low;
+						int wordId = int(low- v.begin());
 
-								TotalProbWordsGivenCat = TotalProbWordsGivenCat + B; // * 2000;
-						//if (TotalProbWordsGivenCat > 1000000 ){
-						//	TotalProbWordsGivenCat = TotalProbWordsGivenCat /( B * 2000);
-						//}
-						}
+						// naive Bayes, p(w_i|c) are conditional independent.
+						prob_storyGivenCat = prob_storyGivenCat *
+								prob_wordsGivenCats[wordId][idx_category];
 					}
 				}
-				Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-				Posteriorprob_catGivenStory.push_back(Numerator);
-			}
-
-			double NormFact=0;
-			for (int j=0; j<Posteriorprob_catGivenStory.size(); j++)
-			{
-				double A = Posteriorprob_catGivenStory[j];
-				NormFact = NormFact + A;
-			}
-			for (int i=0; i<Posteriorprob_catGivenStory.size(); i++)
-			{
-				Posteriorprob_catGivenStory[i] = Posteriorprob_catGivenStory[i]/NormFact;
+				//}
+				double numerator = prob_cat[idx_category] * prob_storyGivenCat;
+				prob_catsGivenStory.push_back(numerator);
 			}
 
 			// Predict by the maximum posterior probability (Bayes Decision).
-			int predicted_category_idx = max_element(Posteriorprob_catGivenStory.begin(), Posteriorprob_catGivenStory.end()) - Posteriorprob_catGivenStory.begin();
+			// Normalize is not necessary.
+			int predicted_category_idx = max_element(prob_catsGivenStory.begin(), prob_catsGivenStory.end()) - prob_catsGivenStory.begin();
 			string predicted_category = categories[predicted_category_idx];
 
 			if ( predicted_category == labeled_category )

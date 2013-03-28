@@ -26,20 +26,6 @@ int main(int argc, const char* argv[])
 	vector<int> RemovedStory;
 	vector<string> FullDocument;
 
-	StoryWordInfo.clear();
-	ModelParameter.clear();
-	AllLongStories.clear();
-	StoryWordInfoFinal.clear();
-	StoryTagInfo.clear();
-	StoryTopicInfo.clear();
-	ArticleTopicInfo.clear();
-	Screen_Info_Final.clear();
-	RemovedStory.clear();
-	Story_InfoForTag.clear();
-	Story_Tag_Info.clear();
-	Resource_Goal_Tag.clear();
-
-	//std:string pathRoot = "/home/csa/CAS2/hangqi/StoryTextInfo/";
 	string pathTriplets = "/home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/";
 
 	/*if (argc == 3)
@@ -47,29 +33,6 @@ int main(int argc, const char* argv[])
 		pathRoot = argv[1]; 	//   /home/csa/CAS2/Arash/StoryTextInfo/   
 		pathTriplets = argv[2]; //   /home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/
 	}
-
-	
-	// Russian news articles
-	//string list_file2 = argv[3]; //  /home/csa/CAS2/Arash/StoryTextInfo/WWW_Article/	
-	/*
-	string list_file2 = pathRoot + "WWW_Article/";
-	string list_file4 = pathRoot + "ArticleList.txt";
-	string list_file15 = pathRoot + "WWW_Article/";
-
-	string FILE_NEWSLIST = pathRoot + "NewsList.txt"; //    "Screen_TextList";
-	  
-	string ocrDir = pathRoot + "OCR/";   
-	string annotatedTextDir = pathRoot + "AnnotededText/"; //   /sweep/2008/2008-08/2008-08-08/
-	
-	string list_file5 = pathRoot + "anna.jar";
-	string list_file6 = pathRoot + "inout.txt";
-	string list_file7 = pathRoot + "lemma-eng.model";
-	string list_file8 = pathRoot + "inout1.txt/";
-
-	string list_file9 = pathRoot + "VocabularyOnScreenText.txt";
-	string list_file10 = pathRoot + "VocabularyNon_Ph1.txt";
-	string list_file11 = pathRoot + "VocabularyVerb_Ph.txt";
-	string list_file12 = pathRoot + "VocabularyNon_Ph2.txt";
 	*/
 
 	TextAnalysis cws;
