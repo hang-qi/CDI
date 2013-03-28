@@ -753,11 +753,9 @@ void TextAnalysis::ReadTagFromFile(vector<TopicElements>& Story_InfoForTag )
 	}
 	FullDoc.close();
 			
-string BuildJavaPart = "./annotate FullDocument.txt FullDocument.tagged.txt true Config/allFeaturesBigTrainingSet.config"; 
-////"java -cp "+ list_file5 +" is2.util.Split "+list_file6 +" > inout1.txt";
+	string CMD_annotate = "./annotate FullDocument.txt FullDocument.tagged.txt true Config/allFeaturesBigTrainingSet.config"; 
+	system(CMD_annotate.c_str());
 
-	const char * sysCmdForJava = BuildJavaPart.c_str();
-	system(sysCmdForJava);
 	ifstream ifs;
 	ifs.open("FullDocument.tagged.txt", ios::in);
 
@@ -1198,9 +1196,9 @@ void TextAnalysis::ExtractVocabularyList(vector<FinalTripletElements> & StoryWor
 	int Start = 0;
 	vector<string> Non_Ph1, Verb_Ph, Non_Ph2, words, words1, words2 ;
 	ofstream inout, inout1, inout2 ;
-	inout.open ("VocabularyNon_Ph1.txt");
-	inout1.open ("VocabularyVerb_Ph.txt");
-	inout2.open ("VocabularyNon_Ph2.txt");
+	inout.open (__list_file10);
+	inout1.open (__list_file11);
+	inout2.open (__list_file12);
 
 	for(int i=0; i < StoryWordInfoFinal.size(); i++){ 
 		istringstream iss(StoryWordInfoFinal[i].Non_Ph1);
@@ -1271,8 +1269,14 @@ void TextAnalysis::ExtractVocabularyList(vector<FinalTripletElements> & StoryWor
 
 
 
-void TextAnalysis::ParameterLearning (vector<FinalTripletElements> & StoryWordInfoFinal ,  
-													vector<StorySentInfo> & StoryNameAndSenNum, string list_file5 , string list_file9 ,string list_file10 , string list_file11  , string list_file12){
+void TextAnalysis::ParameterLearning(vector<FinalTripletElements> & StoryWordInfoFinal ,  
+	vector<StorySentInfo> & StoryNameAndSenNum,
+	string list_file5,
+	string list_file9,
+	string list_file10,
+	string list_file11, 
+	string list_file12)
+{
 	
 	
 	
@@ -2480,10 +2484,9 @@ cout<< "SystemPerformance =   "<<SystemPerformance <<endl;
 
 
 void TextAnalysis::RemoveStopWords(vector<TripletElements> & StoryWordInfo,
-												 vector<FinalTripletElements> & StoryWordInfoFinal, vector<StorySentInfo> & StoryNameAndSenNum, 
-string list_file5 , string list_file6 , string list_file7 , string list_file8 ){
-
-	
+vector<FinalTripletElements> & StoryWordInfoFinal, vector<StorySentInfo> & StoryNameAndSenNum, 
+string list_file5 , string list_file6 , string list_file7 , string list_file8 )
+{	
 	ofstream inout ;
 	ofstream inout1 ;
 	size_t foundNP1, foundVP ;
@@ -2492,7 +2495,7 @@ string list_file5 , string list_file6 , string list_file7 , string list_file8 ){
 	FinalTripletElements entry; 
 
 	int Count = 0;
-	inout.open ("inout.txt");
+	inout.open(FILE_ANNA_BEFORE_SPLIT);
 	for(int i=0; i < StoryWordInfo.size(); i++){
 		if (StoryWordInfo[i].StoryTimeEnd == "" && StoryWordInfo[i].StoryTimeStart == ""
 			&& StoryWordInfo[i].StoryTopicName == "" ){
@@ -2505,16 +2508,12 @@ string list_file5 , string list_file6 , string list_file7 , string list_file8 ){
 		}
 	}
 	inout.close();
-//cout<<"list_file5    "<< list_file5 <<endl;
-//cout<<"list_file6    "<< list_file6 <<endl;
-///home/arash/Desktop/ArashTest/C++JAVA/anna.jar    /home/arash/Desktop/ArashTest/C++JAVA/inout.txt
 
-string BuildJavaPart = "java -cp "+ list_file5 +" is2.util.Split "+list_file6 +" > inout1.txt";
-string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatizer -model "+list_file7+" -test "+list_file8+" -out Lemmatizedfile.txt";
-	const char * sysCmdForJava = BuildJavaPart.c_str();
-	const char * sysCmdForJava1 = BuildJavaPart1.c_str();
-	system(sysCmdForJava);
-	system(sysCmdForJava1);
+	string CMD_split = "java -cp " FILE_ANNA_JAR " is2.util.Split " FILE_ANNA_BEFORE_SPLIT " > " FILE_ANNA_AFTER_SPLIT;
+	system(CMD_split.c_str());
+
+	string CMD_lemmatize = "java -Xmx2G -cp " FILE_ANNA_JAR " is2.lemmatizer.Lemmatizer -model " FILE_LEMMA_ENG_MODEL " -test " FILE_ANNA_AFTER_SPLIT " -out Lemmatizedfile.txt";
+	system(CMD_lemmatize.c_str());
 
 	ifstream lemmed ("Lemmatizedfile.txt");
 	char buffer[500];
@@ -2549,7 +2548,10 @@ string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatize
 		lemm_words.close();
 		lemm_words.clear();
 
-	inout.open ("inout.txt");
+
+	/////////////
+
+	inout.open(FILE_ANNA_BEFORE_SPLIT);
 	for(int i=0; i < StoryWordInfo.size(); i++){
 		if (StoryWordInfo[i].StoryTimeEnd == "" && StoryWordInfo[i].StoryTimeStart == ""
 			&& StoryWordInfo[i].StoryTopicName == "" ){
@@ -2561,16 +2563,11 @@ string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatize
 			}
 		}
 	}
-
 	inout.close();
 
-//string BuildJavaPart = "java -cp "+ list_file5 +" is2.util.Split "+list_file6 +" > inout1.txt";
-//string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatizer -model "+list_file7+" -test "+list_file8+" -out Lemmatizedfile.txt";
-//	const char * sysCmdForJava = BuildJavaPart.c_str();
-//	const char * sysCmdForJava1 = BuildJavaPart1.c_str();
 
-	system(sysCmdForJava);
-	system(sysCmdForJava1);
+	system(CMD_split.c_str());
+	system(CMD_lemmatize.c_str());
 
 	lemmed.open ("Lemmatizedfile.txt");
 	lemmatized_words.clear();					
@@ -2602,7 +2599,9 @@ string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatize
 		lemm_words.close();
 		lemm_words.clear();
 
-	inout.open ("inout.txt");
+	////////
+
+	inout.open (FILE_ANNA_BEFORE_SPLIT);
 	for(int i=0; i < StoryWordInfo.size(); i++){
 		if (StoryWordInfo[i].StoryTimeEnd == "" && StoryWordInfo[i].StoryTimeStart == ""
 			&& StoryWordInfo[i].StoryTopicName == "" ){
@@ -2616,13 +2615,8 @@ string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatize
 	}
 	inout.close();
 
-//	sprintf(sysCmdForJave, "java -cp list_file5 is2.util.Split list_file6 > inout1.txt");
-//	system(sysCmdForJave);
-//	sprintf(sysCmdForJave1, "java -Xmx1G -cp /list_file5 is2.lemmatizer.Lemmatizer -model /list_file7 -test list_file8 -out Lemmatizedfile.txt");
-//	system(sysCmdForJave1);
-
-	system(sysCmdForJava);
-	system(sysCmdForJava1);
+	system(CMD_split.c_str());
+	system(CMD_lemmatize.c_str());
 
 	lemmed.open ("Lemmatizedfile.txt");
 	lemmatized_words.clear();					
@@ -2698,26 +2692,7 @@ string BuildJavaPart1 = "java -Xmx1G -cp "+list_file5+" is2.lemmatizer.Lemmatize
 		wholeStringNon_Ph1 = StoryWordInfoFinal[i].Non_Ph1;
 		wholeStringNon_Ph2 = StoryWordInfoFinal[i].Non_Ph2;
 		wholeString = StoryWordInfoFinal[i].Verb_Ph;
-		//found = wholeString.find("'s");
-		//if (found <=50 ){
-		//	wholeString.erase (found,2);}
-		//found = wholeString.find(",");
-		//if (found <=50 ){
-		//	wholeString.erase (found,1);}
-
-		//found = wholeStringNon_Ph1.find("'s");
-		//if (found <=50 ){
-		//	wholeStringNon_Ph1.erase (found,2);}
-		//found = wholeStringNon_Ph1.find(",");
-		//if (found <=50 ){
-		//	wholeStringNon_Ph1.erase (found,1);}
-
-		//found = wholeStringNon_Ph2.find("'s");
-		//if (found <=50 ){
-		//	wholeStringNon_Ph2.erase (found,2);}
-		//found = wholeStringNon_Ph2.find(",");
-		//if (found <=50 ){
-		//	wholeStringNon_Ph2.erase (found,1);}
+		
 		char chars[] = "1234567890,:'";
 
 		   for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
@@ -3352,12 +3327,12 @@ void TextAnalysis::Screen_Text_Info(
 		// reference: https://code.google.com/p/mate-tools/wiki/Preparing_Text_Lemmatizing_Tagging_Morphologic_Tagging
 
 		// Splits a tokenized sentences into one word per line format:
-		string BuildJavaPart = "java -cp " FILE_ANNA_JAR " is2.util.Split " FILE_ANNA_BEFORE_SPLIT " > " FILE_ANNA_AFTER_SPLIT;
-		system(BuildJavaPart.c_str());
+		string CMD_split = "java -cp " FILE_ANNA_JAR " is2.util.Split " FILE_ANNA_BEFORE_SPLIT " > " FILE_ANNA_AFTER_SPLIT;
+		system(CMD_split.c_str());
 		
 		// Lemmatize: combine words with prefix / suffix variations
-		string BuildJavaPart1 = "java -Xmx2G -cp " FILE_ANNA_JAR " is2.lemmatizer.Lemmatizer -model " FILE_LEMMA_ENG_MODEL " -test " FILE_ANNA_AFTER_SPLIT " -out Lemmatizedfile.txt";
-		system(BuildJavaPart1.c_str());
+		string CMD_lemmatize = "java -Xmx2G -cp " FILE_ANNA_JAR " is2.lemmatizer.Lemmatizer -model " FILE_LEMMA_ENG_MODEL " -test " FILE_ANNA_AFTER_SPLIT " -out Lemmatizedfile.txt";
+		system(CMD_lemmatize.c_str());
 
 		ifstream lemmed ("Lemmatizedfile.txt");
 		char buffer[500];
