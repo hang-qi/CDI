@@ -184,7 +184,9 @@ public:
 		string orcDir,
 		string annotatedTextDir, 
 		string newsListFilename);
-	void RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final , vector<int> & RemovedStory);
+	vector<ScreenInfo> RemoveShortStory_ScreenTopic(
+		const vector<ScreenInfo> &Screen_Info_Final,
+		vector<int> & RemovedStory);
 	void SaveVocabulary(set<string> vocabulary, string dest_filename);
 	void ParameterLearning_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final,
 		const set<string>& vocabulary);

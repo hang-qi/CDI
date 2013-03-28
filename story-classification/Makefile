@@ -1,2 +1,2 @@
 all:
-	g++ -std=c++0x main.cpp TextAnalysis.cpp -o TextAnalysis
+	g++ -std=c++11 main.cpp TextAnalysis.cpp -o TextAnalysis
