@@ -3557,34 +3557,30 @@ void TextAnalysis::SaveVocabulary(set<string> vocabulary, string dest_filename)
 	inout.close();
 }
 
-void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final , 
-						vector<int> & RemovedStory)
+vector<ScreenInfo> TextAnalysis::RemoveShortStory_ScreenTopic(
+	const vector<ScreenInfo> &screenInfo_org, 
+	vector<int> & RemovedStory)
 {												
-	size_t found , found1, found2;
 	vector<int> Remove_Commercial_Teaser;
-	vector<ScreenInfo> Screen_Info_Final_Org;
-	for(int i=0; i < Screen_Info_Final.size(); i++)
-	{	
-		Screen_Info_Final_Org.push_back(Screen_Info_Final[i]);
-	}
-
+	vector<ScreenInfo> screenInfo = screenInfo_org;
+	
 	// Remove stories in the given list.
 	int iIndix=0;
 	for (int i=0; i < RemovedStory.size(); i++)
 	{
 		int j = RemovedStory[i] - iIndix ;
-		Screen_Info_Final.erase(Screen_Info_Final.begin() + j);
+		screenInfo.erase(screenInfo.begin() + j);
 		iIndix++ ;
 	}
 
 	// 
 	// remove teasers or commercials
 	// 
-	for (int i=0; i < Screen_Info_Final.size(); i++)
+	for (int i=0; i < screenInfo.size(); i++)
 	{
-		found = Screen_Info_Final[i].StoryTopicName.find("Teaser");
-		found1 = Screen_Info_Final[i].StoryTopicName.find("Commercial");
-		found2 = Screen_Info_Final[i].StoryTopicName.find("NULL");
+		auto found = screenInfo[i].StoryTopicName.find("Teaser");
+		auto found1 = screenInfo[i].StoryTopicName.find("Commercial");
+		auto found2 = screenInfo[i].StoryTopicName.find("NULL");
 		if ( found < 50 || found1 < 50 || found2 < 50 ){
 			Remove_Commercial_Teaser.push_back(i);
 		}
@@ -3594,10 +3590,10 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	for (int i=0; i < Remove_Commercial_Teaser.size(); i++)
 	{
 		int j = Remove_Commercial_Teaser[i] - iIndix ;
-		Screen_Info_Final.erase(Screen_Info_Final.begin() + j);
+		screenInfo.erase(screenInfo.begin() + j);
 		iIndix++ ;}
 
-	for (int i=0; i<Screen_Info_Final.size(); i++){
+	for (int i=0; i<screenInfo.size(); i++){
 
 	}
 
@@ -3605,9 +3601,9 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	// remove introductions
 	//
 	Remove_Commercial_Teaser.clear();
-	for (int i=0; i < Screen_Info_Final.size(); i++)
+	for (int i=0; i < screenInfo.size(); i++)
 	{
-		found = Screen_Info_Final[i].StoryTopicName.find("Network|Intro");
+		auto found = screenInfo[i].StoryTopicName.find("Network|Intro");
 		if ( found < 50 ){
 			Remove_Commercial_Teaser.push_back(i);
 		}
@@ -3617,7 +3613,7 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	for (int i=0; i < Remove_Commercial_Teaser.size(); i++)
 	{
 		int j = Remove_Commercial_Teaser[i] - iIndix ;
-		Screen_Info_Final.erase(Screen_Info_Final.begin() + j);
+		screenInfo.erase(screenInfo.begin() + j);
 		iIndix++ ;
 	}
 
@@ -3625,9 +3621,9 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	// remove stories has no words
 	//
 	Remove_Commercial_Teaser.clear();
-	for (int i=0; i < Screen_Info_Final.size(); i++)
+	for (int i=0; i < screenInfo.size(); i++)
 	{
-		if ( Screen_Info_Final[i].Screen_words == "")
+		if ( screenInfo[i].Screen_words == "")
 		{
 			Remove_Commercial_Teaser.push_back(i);
 		}
@@ -3637,7 +3633,7 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	for (int i=0; i < Remove_Commercial_Teaser.size(); i++)
 	{
 		int j = Remove_Commercial_Teaser[i] - iIndix ;
-		Screen_Info_Final.erase(Screen_Info_Final.begin() + j);
+		screenInfo.erase(screenInfo.begin() + j);
 		iIndix++ ;
 	}
 
@@ -3645,9 +3641,9 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	// Remove stories has less than 200 words.
 	//
 	Remove_Commercial_Teaser.clear();
-	for (int i=0; i<Screen_Info_Final.size(); i++)
+	for (int i=0; i<screenInfo.size(); i++)
 	{
-		int SenSize = Screen_Info_Final[i].Screen_words.size();
+		int SenSize = screenInfo[i].Screen_words.size();
 		if ( SenSize < 200 )
 		{
 			Remove_Commercial_Teaser.push_back(i);
@@ -3658,9 +3654,11 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 	for (int i=0; i<Remove_Commercial_Teaser.size(); i++)
 	{
 		int j = Remove_Commercial_Teaser[i] - iIndix ;
-		Screen_Info_Final.erase(Screen_Info_Final.begin() + j);
+		screenInfo.erase(screenInfo.begin() + j);
 		iIndix++ ;
 	}
+
+	return std::move(screenInfo);
 }
 
 
@@ -3669,9 +3667,10 @@ void TextAnalysis::RemoveShortStory_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 		const set<string> & vocabulary){
 
 	string str, str1, str2 ;
-	size_t found, found1, found3, founf4 ;	
-	ofstream fout_eval.open ("output/OnScreenText_CrossValidation.txt");
-	ofstream fout_enhance.open ("output/OnScreenText_ConfusionMatrix.txt");
+	size_t found, found1, found3, founf4;	
+	ofstream fout_eval, fout_enhance;
+	fout_eval.open ("output/OnScreenText_CrossValidation.txt");
+	fout_enhance.open ("output/OnScreenText_ConfusionMatrix.txt");
 
 	vector<ScreenInfo> Screen_Info_FinalOrg;
 
