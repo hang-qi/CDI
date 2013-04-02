@@ -212,8 +212,8 @@ public:
     vector<Triplet> RemoveShortStory(const vector<Triplet>& StoryWordInfo,
             vector<int> & RemovedStory);    
     vector<StorySentInfo> GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo);
-    vector<FinalTriplet> RemoveStopWords(vector<Triplet> & StoryWordInfo ,
-        vector<StorySentInfo> & StoryNameAndSenNum);
+    vector<FinalTriplet> RemoveStopWords(const vector<Triplet> & StoryWordInfo ,
+        const vector<StorySentInfo> & StoryNameAndSenNum);
     void ExtractVocabularyList(const vector<FinalTriplet> & StoryWordInfoFinal,
         set<string>& vocabularyNP1, 
         set<string>& vocabularyVP, 
@@ -243,6 +243,10 @@ public:
     void Generate_Reference_Vocabulary();
     
 private:
+    // utilities
+    void PrintCrossValidationReport(ostream& os,
+        const vector<double>& crossValidation);
+
     static const char* stopwordsArray[];
 };
 

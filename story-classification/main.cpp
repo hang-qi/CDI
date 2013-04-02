@@ -29,22 +29,23 @@ int main(int argc, const char* argv[])
     // vector<TopicElements> ArticleTopicInfo;
     // cws.TopicOnWebArticle(ArticleTopicInfo , list_file4 , list_file2);
 
+    vector<int> RemovedStory;
+    /*
     //
     // OCR classification
     //
     vector<ScreenInfo> screenInfo;
-    set<string> screen_vocabulary;
-    vector<int> RemovedStory;
-    cws.Screen_Text_Info(
-        screenInfo,
-        screen_vocabulary,
-        DIR_OCR,
-        DIR_ANNOTATEDTEXT,
-        FILE_NEWSLIST);
+    set<string> screen_vocabulary;    
+
+    cout << "OCR loading..." << endl;
+    cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
+        DIR_ANNOTATEDTEXT, FILE_NEWSLIST);
     //cws.Generate_Reference_Vocabulary();
     screenInfo = cws.RemoveShortStory_ScreenTopic(screenInfo, RemovedStory);
+
+    cout << "OCR cross validation..." << endl;
     cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
-    
+    */
 
     //
     // Loading triplets files
@@ -53,10 +54,11 @@ int main(int argc, const char* argv[])
     documentList.open(FILE_NEWSLIST, ios::in);
     if (!documentList.is_open())
     {
-        cout<<"News list file NOT opened"<<endl;
+        cout<<"News list cannot be opened."<<endl;
         return -1;
     }
 
+    cout << "Triplets loading..." << endl;
     vector<Triplet> storyWordInfo;
     while (!documentList.eof() && documentList.good())
     {
@@ -65,8 +67,8 @@ int main(int argc, const char* argv[])
         string base = buffer;
         base = base.substr(0 , 15);
         string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");
-        
-        storyWordInfo = cws.ReadTripletsFile(tripletsFilename);
+        vector<Triplet> temp = cws.ReadTripletsFile(tripletsFilename);
+        storyWordInfo.insert(storyWordInfo.end(), temp.begin(), temp.end());
         // cws.FirstSentAsTopic(tripletsFilename  , StoryTopicInfo);
     }
 
@@ -81,7 +83,7 @@ int main(int argc, const char* argv[])
     cws.StoryTopic(storyInfoTags , StoryTopicInfo, resourceGoalTags);
 
 
-    
+    cout << "Triplets remove short stories..." << endl;
     vector<Triplet> longStories = cws.RemoveShortStory(storyWordInfo, RemovedStory);
     vector<StorySentInfo> storyNameAndSenNum = cws.GetNumberOfStorySentence(longStories);
 
@@ -90,13 +92,13 @@ int main(int argc, const char* argv[])
     vector<FinalTriplet> storyWordInfoFinal = cws.RemoveStopWords(
         longStories, storyNameAndSenNum);
 
-    cout << "Stop words Removed" << endl;
+    cout << "Extract vocabulary..." << endl;
 
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
     cws.ExtractVocabularyList(storyWordInfoFinal,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 
-    cout << "Learning..." << endl;
+    cout << "Triplets validation..." << endl;
     cws.ParameterLearning(storyWordInfoFinal, storyNameAndSenNum,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 

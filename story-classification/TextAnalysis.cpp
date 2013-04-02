@@ -268,8 +268,7 @@ void TextAnalysis::TopicOnWebArticle(
     StoryTopic.close();
 }
 
-vector<Triplet> TextAnalysis::ReadTripletsFile(
-    string tripletsFilename)
+vector<Triplet> TextAnalysis::ReadTripletsFile(string tripletsFilename)
 {
     ifstream ifs;
     ifs.open(tripletsFilename.c_str(), ios::in);
@@ -280,8 +279,8 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(
     if (!ifs.is_open())
     {
         cout << "Cannot open triplets file:";
-        cout << tripletsFilename << endl;
-    //EXCEPTION_TRIPLETS_FILE_CANNOT_OPEN;
+        cout << tripletsFilename << endl;        
+        //EXCEPTION_TRIPLETS_FILE_CANNOT_OPEN;
     }
 
     vector<Triplet> storyWordInfo;
@@ -1248,7 +1247,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     TestPeriod.push_back(0);
     TestSet = AllStory/10 +1;
     TrainSet = AllStory - TestSet;
-    vector<double> CrossValidation;
+    vector<double> crossValidation;
     for( int i=0; i < storyWordInfoFinal.size(); i++)
     {
         storyWordInfoFinalOrg.push_back(storyWordInfoFinal[i]);
@@ -2282,25 +2281,17 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             }
         }
 
-        CrossValidation.push_back(double (double (Pred)/labels_testing.size()));
+        crossValidation.push_back(double (double (Pred)/labels_testing.size()));
     }
 
-    double SystemPerformance=0;
-    for (int i=0; i<CrossValidation.size(); i++)
-    {
-        SystemPerformance = SystemPerformance + CrossValidation[i];
-        fout_eval << "System Accuracy:" << "      "  << CrossValidation[i] << endl; 
-    }
-
-    SystemPerformance = SystemPerformance/CrossValidation.size();
-    fout_eval << "System Performance :" << "      "  << SystemPerformance << endl;  
+    PrintCrossValidationReport(fout_eval, crossValidation);
     fout_eval.close();
 }
 
 
 vector<FinalTriplet> TextAnalysis::RemoveStopWords(
-    vector<Triplet> & storyWordInfo,
-    vector<StorySentInfo> & StoryNameAndSenNum)
+    const vector<Triplet> & storyWordInfo,
+    const vector<StorySentInfo> & StoryNameAndSenNum)
 {   
     vector<FinalTriplet> storyWordInfoFinal;
     ofstream inout ;
@@ -3451,8 +3442,8 @@ vector<ScreenInfo> TextAnalysis::RemoveShortStory_ScreenTopic(
     string str, str1, str2 ;
     size_t found, found1, found3, founf4;   
     ofstream fout_eval, fout_enhance;
-    fout_eval.open ("output/OnScreenText_CrossValidation.txt");
-    fout_enhance.open ("output/OnScreenText_ConfusionMatrix.txt");
+    fout_eval.open("output/OnScreenText_CrossValidation.txt");
+    fout_enhance.open("output/OnScreenText_ConfusionMatrix.txt");
 
     vector<ScreenInfo> Screen_Info_FinalOrg;
 
@@ -3465,7 +3456,7 @@ vector<ScreenInfo> TextAnalysis::RemoveShortStory_ScreenTopic(
     }
 
     // Partition whole datasets into several testing sets for cross validation.
-    int TrainSet = 0 , TestSet = 0, CountForTrainSet = 0 , TotalSt = 0;
+    int TrainSet = 0, TestSet = 0, CountForTrainSet = 0, TotalSt = 0;
     int num_stories = Screen_Info_Final.size();
 
     vector<int> TestPeriod;
@@ -3896,22 +3887,27 @@ vector<ScreenInfo> TextAnalysis::RemoveShortStory_ScreenTopic(
         fout_enhance << "Accuracy: \t" << accuracy << endl;
     }
 
-    // Output cross validation report.
-    double accuracy_sum = 0;
-    fout_eval << "CROSS VALIDATION REPORT" << endl;
-    fout_eval << "--------------------------" << endl;
-    for ( int i=0; i<crossValidation.size(); i++)
-    {
-        accuracy_sum += crossValidation[i];
-        fout_eval << "Accuracy (" << i << "):\t" << crossValidation[i] << endl;
-    }
-
-    fout_eval << "--------------------------" << endl;
-    fout_eval << "AVG.: " << accuracy_sum/(double)crossValidation.size() << endl;
+    PrintCrossValidationReport(fout_eval, crossValidation);
     fout_eval.close();
 }
 
+// Output Cross validation report
+void TextAnalysis::PrintCrossValidationReport(ostream& os, 
+    const vector<double>& crossValidation)
+{
+    double accuracy_sum = 0;
+    os << "--------------------------" << endl;
+    os << "CROSS VALIDATION REPORT" << endl;
+    os << "--------------------------" << endl;
+    for ( int i=0; i < crossValidation.size(); i++)
+    {
+        accuracy_sum += crossValidation[i];
+        os << "Accuracy (" << i << "):\t" << crossValidation[i] << endl;
+    }
 
+    os << "--------------------------" << endl;
+    os << "AVG.: " << accuracy_sum/(double)crossValidation.size() << endl;
+}
 
 void TextAnalysis::TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final){
         
