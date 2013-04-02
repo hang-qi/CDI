@@ -23,11 +23,6 @@
 #define FILE_ANNA_AFTER_SPLIT DIR_ROOT "anna-after-split.txt"
 #define FILE_LEMMA_ENG_MODEL DIR_ROOT "lemma-eng.model"
 
-#define __list_file9 DIR_ROOT "VocabularyOnScreenText.txt"
-#define __list_file10 DIR_ROOT "VocabularyNon_Ph1.txt"
-#define __list_file11 DIR_ROOT "VocabularyVerb_Ph.txt"
-#define __list_file12 DIR_ROOT "VocabularyNon_Ph2.txt"
-
 #define NUM_CATEGORIES  27
 
 #define EXCEPTION_TRIPLETS_FILE_CANNOT_OPEN -1
@@ -69,22 +64,6 @@ struct StorySentInfo
 {
     string NameOFStoryTopic;
     int NumOFSenInOneStory;
-};
-
-
-struct Remaind_Rows
-{
-    string Non_Ph1;
-    string Verb_Ph;
-    string Non_Ph2;
-};
-
-struct ParameterOfModel
-{
-    double prob_cat;
-    double prob_StoryGivenCat;
-    double Mu;
-    double Sigma;
 };
 
 
@@ -249,9 +228,3 @@ private:
 
     static const char* stopwordsArray[];
 };
-
-
-
-
-
-

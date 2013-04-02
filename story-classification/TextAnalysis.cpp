@@ -24,7 +24,7 @@ using namespace std;
 ////////////////////////
 // utilities
 ////////////////////////
-#define Matrix vector< vector<double> >
+typedef vector< vector<double> > Matrix;
 
 Matrix BuildMatrix(int num_rows, int num_columns, double default_value = 0)
 {
@@ -33,7 +33,7 @@ Matrix BuildMatrix(int num_rows, int num_columns, double default_value = 0)
     return std::move(mat);
 }
 
-vector<double> CountToProbability(const vector<double>& countVector)
+vector<double> Normalize(const vector<double>& countVector)
 {
     int num_elements = countVector.size();
     vector<double> prob(num_elements, 0);
@@ -54,7 +54,7 @@ vector<double> CountToProbability(const vector<double>& countVector)
     return std::move(prob);
 }
 
-Matrix CountToProbability2D(const Matrix& countMatrix, bool column_wise = true)
+Matrix Normalize2D(const Matrix& countMatrix, bool column_wise = true)
 {
     int num_rows = countMatrix.size();
     int num_columns = countMatrix[0].size();
@@ -81,8 +81,6 @@ Matrix CountToProbability2D(const Matrix& countMatrix, bool column_wise = true)
         return std::move(prob);
     }
 }
-
-
 
 const char* TextAnalysis::stopwordsArray [] = {"a","b", "c","d","e","f","g","h","j","k","l","m",">>>",">>",">",
     "o","p","q","r","s","t","u","v","w","x","z","y","able","about","across","after","all","almost","also","am",
@@ -1287,17 +1285,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     const set<string>& vocabularyNP2)
 {   
     vector<FinalTriplet> storyWordInfoFinal = storyWordInfo;
-    double B = factorial(100);
-    ParameterOfModel Info;
-    Info.Mu = 0;
-    Info.prob_cat = 0;
-    Info.prob_StoryGivenCat = 0;
-    Info.Sigma = 0;
+    double B = factorial(100);    
 
     string str , str1 , str2 ;
-    size_t found , found1;    
-    ofstream fout_eval;
-    fout_eval.open("output/Triplets_CrossValidation.txt");
+    size_t found , found1;
     
     int TrainSet=0 , TestSet=0, CountForTrainSet=0 , TotalSt=0;
     int AllStory = StoryNameAndSenNum.size();
@@ -1322,8 +1313,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         }
         testPeriod.push_back(TotalSt);
         i=i+TestSet-1;
-    }
-    fout_eval << "Number of stories in documents:\t" << StoryNameAndSenNum.size() << endl;
+    }    
 
     // cross validation
     for (int kk=0; kk<testPeriod.size()-1; kk++)
@@ -1670,9 +1660,9 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         //
         // Calculating P(Wi|Catj)^time (Np1,Vp.Np2) and save it in WordsCatMatrixNP1,WordsCatMatrixVP,WordsCatMatrixNP2 
         //
-        Matrix prob_wordsGivenCatsNP1 = CountToProbability2D(WordsCatMatrixNP1);
-        Matrix prob_wordsGivenCatsVP = CountToProbability2D(WordsCatMatrixVP);
-        Matrix prob_wordsGivenCatsNP2 = CountToProbability2D(WordsCatMatrixNP2);
+        Matrix prob_wordsGivenCatsNP1 = Normalize2D(WordsCatMatrixNP1);
+        Matrix prob_wordsGivenCatsVP = Normalize2D(WordsCatMatrixVP);
+        Matrix prob_wordsGivenCatsNP2 = Normalize2D(WordsCatMatrixNP2);
 
         //Building The Probability of Story Given Category  P(Si|Catj)^time  for NP1,VP,NP2
 
@@ -1681,148 +1671,155 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         vector<int> AllCountedWordsInStories2;
 
 
-            Counter = 0; int Counter1= 0;
-            for(int i=0; i < storyWordInfoFinal.size(); i++){
-                int indicater = storyWordInfoFinal[i].StoryNUmber;
-                if (storyWordInfoFinal[i].StoryTripletsCount <= 0){
-                
-                    string str = storyWordInfoFinal[i].StoryName;
-                    found1 = str.find('|' );
-                    str1 = str.substr ( 0, found1 );
-                    found = str1.find(':' );
-                    if (found < 50 ){
-                    str1 = str1.substr ( 0, found );}
-                    if (Counter1 < ProbStoryGivenCat.size()){
-                    if (str1.compare("NULL") != 0){
+        Counter = 0; int Counter1= 0;
+        for(int i=0; i < storyWordInfoFinal.size(); i++)
+        {
+            int indicater = storyWordInfoFinal[i].StoryNUmber;
+            if (storyWordInfoFinal[i].StoryTripletsCount <= 0)
+            {                
+                string str = storyWordInfoFinal[i].StoryName;
+                found1 = str.find('|' );
+                str1 = str.substr ( 0, found1 );
+                found = str1.find(':' );
+                if (found < 50 )
+                {
+                    str1 = str1.substr ( 0, found );
+                }
+
+                if (Counter1 < ProbStoryGivenCat.size())
+                {
+                    if (str1.compare("NULL") != 0)
+                    {
                         int storyCount = 0; 
                         vector<double> prob_EntitiesinOneStorygivnCat;
                         vector<int> FrequencyOfEachWord;
                         prob_EntitiesinOneStorygivnCat.clear();
                         int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++){
-                            if (str1.compare(categories[jj]) == 0){
-                                jjj = jj;}
+                        for(int jj=0; jj < categories.size(); jj++)
+                        {
+                            if (str1.compare(categories[jj]) == 0)
+                            {
+                                jjj = jj;
+                            }
                         }
                         istringstream iss;
                         int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater ) {
-                    
+                        while ( storyCount < indicater ) 
+                        {                    
                             storyCount++;
                             vector<string> words;   
                             istringstream iss(storyWordInfoFinal[Counter2].Non_Ph1);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++){
-                            auto low = lower_bound (v.begin(), v.end(), words[kk]);
-                            double prob_EntitygivnCat = 0;
+                            for(int kk=0; kk < words.size(); kk++)
+                            {
+                                auto low = lower_bound (v.begin(), v.end(), words[kk]);
+                                double prob_EntitygivnCat = 0;
                                 string WordName = *low;             
-                                    if(WordName.compare(words[kk]) == 0){
-                                        int wordPlace = int(low- v.begin());
-                                        //cout << "My Search   " << wordPlace << " "<<jjj<<"  "<<WordName<<"  "<<Counter++ <<endl;              
-                                        double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                        if (wordPlace < vocabularyNP1.size() ){
-                                            WCInfo.word = WordName;
-                                            WCInfo.Cat = categories[jjj];
-                                            WCInfo.StNumInList = Counter1;
-                                            WCInfo.wordPlaceInDic = wordPlace;
-                                            WordCatInf.push_back(WCInfo);
-                                            //if(Counter == 551){
-                                            //  int test = 0;
-                                            //}
-                                            //  AllcountableWords.push_back(WordName);
-                                            NumOfEntity = WordsCatMatrixNP1[wordPlace][jjj];
-                                            prob_Entity = prob_wordsGivenCatsNP1[wordPlace][jjj];
-                                            NumOfEntities = NumOfEntities + NumOfEntity;
-                                            NumOFWordInOneStory++;
-                                            //prob_EntitygivnCat = NumOfEntity/TotalNumOfWordsInDocs;                       
-                                        }
-                                        FrequencyOfEachWord.push_back(NumOfEntity);
-                                        prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
-                                    }                       
+                                if(WordName.compare(words[kk]) == 0)
+                                {
+                                    int wordPlace = int(low- v.begin());                                    
+                                    double NumOfEntity=0 , fact=0, prob_Entity=0;
+                                    if (wordPlace < vocabularyNP1.size() )
+                                    {
+                                        WCInfo.word = WordName;
+                                        WCInfo.Cat = categories[jjj];
+                                        WCInfo.StNumInList = Counter1;
+                                        WCInfo.wordPlaceInDic = wordPlace;
+                                        WordCatInf.push_back(WCInfo);
+                                        
+                                        NumOfEntity = WordsCatMatrixNP1[wordPlace][jjj];
+                                        prob_Entity = prob_wordsGivenCatsNP1[wordPlace][jjj];
+                                        NumOfEntities = NumOfEntities + NumOfEntity;
+                                        NumOFWordInOneStory++;                                        
+                                    }
+                                    FrequencyOfEachWord.push_back(NumOfEntity);
+                                    prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
+                                }                       
                             }
                             Counter2++;
                         }
-
-                        //unsigned __int64 NumOfWordFactorial = 0; //    // P(Si|Cj) = (n!/(W1!,W2!,...,Wk!)(P^W1*P^W2,....P^Wk)            
                         double prob_OneStorygivnCat = 1;
-                        //double Numerator = 1;
-                        //int DeNumerator = 1; 
-                        //unsigned __int64 fact = 1;
-                        //fact = factorial(NumOfEntities);
-                        //NumOfWordFactorial = fact;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++){
-                        //int Num = FrequencyOfEachWord[kk];
-                        //Numerator = Numerator*pow ( prob_EntitiesinOneStorygivnCat[kk] , FrequencyOfEachWord[kk] );
-                        //fact = factorial(Num);
-                        //DeNumerator = DeNumerator*fact;
-                        prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];}
-                        //prob_OneStorygivnCat = NumOfWordFactorial*Numerator/DeNumerator;
-                        if (prob_OneStorygivnCat < SMALL_NUM){
-                        ProbStoryGivenCat[Counter1][jjj] = SMALL_NUM;}else{
-                            ProbStoryGivenCat[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];}
-                        //  prob_EntitygivnCatFull = prob_EntitygivnCatFull+prob_EntitiesinOneStorygivnCat[kk];
-                        AllCountedWordsInStories.push_back(NumOFWordInOneStory);
-                        //NumberOfAllWordsInDocument = NumberOfAllWordsInDocument+(prob_EntitiesinOneStorygivnCat.size());
-                        //if (prob_EntitygivnCatFull != 0){// && prob_EntitygivnCatFull != 1){
-                        //  ProbStoryGivenCat[Counter1][jjj] = prob_EntitygivnCatFull;///prob_EntitiesinOneStorygivnCat.size();
-                        //}
+                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
+                        {
+                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
+                        }
+                        if (prob_OneStorygivnCat < SMALL_NUM)
+                        {
+                            ProbStoryGivenCat[Counter1][jjj] = SMALL_NUM;
+                        }
+                        else
+                        {
+                            ProbStoryGivenCat[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
+                        }
 
-                        Counter1++;
+                        AllCountedWordsInStories.push_back(NumOFWordInOneStory);
+                    Counter1++;
                     }
                 }
-                }
             }
+        }
 
-            Counter = 0;  Counter1= 0;
-            for(int i=0; i < storyWordInfoFinal.size(); i++){
-                int indicater = storyWordInfoFinal[i].StoryNUmber;
-                if (storyWordInfoFinal[i].StoryTripletsCount == 0){
+        Counter = 0;  Counter1= 0;
+        for(int i=0; i < storyWordInfoFinal.size(); i++)
+        {
+            int indicater = storyWordInfoFinal[i].StoryNUmber;
+            if (storyWordInfoFinal[i].StoryTripletsCount == 0)
+            {
                 
-                    string str = storyWordInfoFinal[i].StoryName;
-                    found1 = str.find('|' );
-                    str1 = str.substr ( 0, found1 );
-                    found = str1.find(':' );
-                    if (found < 50 ){
-                    str1 = str1.substr ( 0, found );}
-                if (Counter1 < ProbStoryGivenCat.size()){
-                    if (str1.compare("NULL") != 0){
+                string str = storyWordInfoFinal[i].StoryName;
+                found1 = str.find('|' );
+                str1 = str.substr ( 0, found1 );
+                found = str1.find(':' );
+                if (found < 50 )
+                {
+                    str1 = str1.substr ( 0, found );
+                }
+                if (Counter1 < ProbStoryGivenCat.size())
+                {
+                    if (str1.compare("NULL") != 0)
+                    {
                         int storyCount = 0; 
                         vector<double> prob_EntitiesinOneStorygivnCat;
                         vector<int> FrequencyOfEachWord;
                         prob_EntitiesinOneStorygivnCat.clear();
                         int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++){
-                            if (str1.compare(categories[jj]) == 0){
-                                jjj = jj;}
+                        for(int jj=0; jj < categories.size(); jj++)
+                        {
+                            if (str1.compare(categories[jj]) == 0)
+                            {
+                                jjj = jj;
+                            }
                         }
                         istringstream iss;
                         int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater ) {
-                    
+                        while ( storyCount < indicater )
+                        {                    
                             storyCount++;
                             vector<string> words;   
                             istringstream iss(storyWordInfoFinal[Counter2].Verb_Ph);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++){
+                            for(int kk=0; kk < words.size(); kk++)
+                            {
                                 auto low = lower_bound (v1.begin(), v1.end(), words[kk]);
                                 double prob_EntitygivnCat = 0;
                                 string WordName = *low;             
-                                if(WordName.compare(words[kk]) == 0){
-                                    int wordPlace = int(low- v1.begin());
-                                    //cout << "My Search   " << wordPlace << " "<<jjj<<"  "<<WordName<<"  "<<Counter++ <<endl;              
+                                if(WordName.compare(words[kk]) == 0)
+                                {
+                                    int wordPlace = int(low- v1.begin());                                    
                                     double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                        if (wordPlace < vocabularyVP.size() ){
-                                            WCInfo.word = WordName;
-                                            WCInfo.Cat = categories[jjj];
-                                            WCInfo.StNumInList = Counter1;
-                                            WCInfo.wordPlaceInDic = wordPlace;
-                                            WordCatInf1.push_back(WCInfo);
+                                    if (wordPlace < vocabularyVP.size() )
+                                    {
+                                        WCInfo.word = WordName;
+                                        WCInfo.Cat = categories[jjj];
+                                        WCInfo.StNumInList = Counter1;
+                                        WCInfo.wordPlaceInDic = wordPlace;
+                                        WordCatInf1.push_back(WCInfo);
 
-                                            NumOfEntity = WordsCatMatrixVP[wordPlace][jjj];
-                                            prob_Entity = prob_wordsGivenCatsVP[wordPlace][jjj];
-                                            NumOfEntities = NumOfEntities + NumOfEntity;
-                                            NumOFWordInOneStory++;
-                                            //prob_EntitygivnCat = NumOfEntity/TotalNumOfWordsInDocs;                       
-                                        }
+                                        NumOfEntity = WordsCatMatrixVP[wordPlace][jjj];
+                                        prob_Entity = prob_wordsGivenCatsVP[wordPlace][jjj];
+                                        NumOfEntities = NumOfEntities + NumOfEntity;
+                                        NumOFWordInOneStory++;
+                                    }
                                     FrequencyOfEachWord.push_back(NumOfEntity);
                                     prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
                                 }                   
@@ -1830,71 +1827,87 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                             Counter2++;
                         }
 
-                        //unsigned __int64 NumOfWordFactorial = 0; //    // P(Si|Cj) = (n!/(W1!,W2!,...,Wk!)(P^W1*P^W2,....P^Wk)            
                         double prob_OneStorygivnCat = 1;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++){
-                        prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];}
-                        if (prob_OneStorygivnCat < SMALL_NUM){
-                        ProbStoryGivenCat1[Counter1][jjj] = SMALL_NUM;}else{
-                            ProbStoryGivenCat1[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];}
+                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
+                        {
+                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
+                        }
+                        if (prob_OneStorygivnCat < SMALL_NUM)
+                        {
+                            ProbStoryGivenCat1[Counter1][jjj] = SMALL_NUM;
+                        }
+                        else
+                        {
+                            ProbStoryGivenCat1[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
+                        }
                         AllCountedWordsInStories1.push_back(NumOFWordInOneStory);
                         Counter1++;
                     }
                 }
-                }
             }
+        }
 
-            Counter = 0; Counter1= 0;
-            for(int i=0; i < storyWordInfoFinal.size(); i++){
-                int indicater = storyWordInfoFinal[i].StoryNUmber;
-                if (storyWordInfoFinal[i].StoryTripletsCount == 0){
-                
-                    string str = storyWordInfoFinal[i].StoryName;
-                    found1 = str.find('|' );
-                    str1 = str.substr ( 0, found1 );
-                    found = str1.find(':' );
-                    if (found < 50 ){
-                    str1 = str1.substr ( 0, found );}
-                if (Counter1 < ProbStoryGivenCat.size()){
-                    if (str1.compare("NULL") != 0){
+        Counter = 0; Counter1= 0;
+        for(int i=0; i < storyWordInfoFinal.size(); i++)
+        {
+            int indicater = storyWordInfoFinal[i].StoryNUmber;
+            if (storyWordInfoFinal[i].StoryTripletsCount == 0)
+            {                
+                string str = storyWordInfoFinal[i].StoryName;
+                found1 = str.find('|' );
+                str1 = str.substr ( 0, found1 );
+                found = str1.find(':' );
+                if (found < 50 )
+                {
+                    str1 = str1.substr ( 0, found );
+                }
+                if (Counter1 < ProbStoryGivenCat.size())
+                {
+                    if (str1.compare("NULL") != 0)
+                    {
                         int storyCount = 0; 
                         vector<double> prob_EntitiesinOneStorygivnCat;
                         vector<int> FrequencyOfEachWord;
                         prob_EntitiesinOneStorygivnCat.clear();
                         int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++){
-                            if (str1.compare(categories[jj]) == 0){
-                                jjj = jj;}
+                        for(int jj=0; jj < categories.size(); jj++)
+                        {
+                            if (str1.compare(categories[jj]) == 0)
+                            {
+                                jjj = jj;
+                            }
                         }
                         istringstream iss;
                         int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater ) {
-                    
+                        while ( storyCount < indicater ) 
+                        {                    
                             storyCount++;
                             vector<string> words;   
                             istringstream iss(storyWordInfoFinal[Counter2].Non_Ph2);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++){
+                            for(int kk=0; kk < words.size(); kk++)
+                            {
                                 auto low = lower_bound (v2.begin(), v2.end(), words[kk]);
                                 double prob_EntitygivnCat = 0;
                                 string WordName = *low;             
-                                if(WordName.compare(words[kk]) == 0){
+                                if(WordName.compare(words[kk]) == 0)
+                                {
                                     int wordPlace = int(low- v2.begin());
-                                    //cout << "My Search   " << wordPlace << " "<<jjj<<"  "<<WordName<<"  "<<Counter++ <<endl;              
+                                    
                                     double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                        if (wordPlace < vocabularyNP2.size() ){
-                                            WCInfo.word = WordName;
-                                            WCInfo.Cat = categories[jjj];
-                                            WCInfo.StNumInList = Counter1;
-                                            WCInfo.wordPlaceInDic = wordPlace;
-                                            WordCatInf2.push_back(WCInfo);
+                                    if (wordPlace < vocabularyNP2.size() )
+                                    {
+                                        WCInfo.word = WordName;
+                                        WCInfo.Cat = categories[jjj];
+                                        WCInfo.StNumInList = Counter1;
+                                        WCInfo.wordPlaceInDic = wordPlace;
+                                        WordCatInf2.push_back(WCInfo);
 
-                                            NumOfEntity = WordsCatMatrixNP2[wordPlace][jjj];
-                                            prob_Entity = prob_wordsGivenCatsNP2[wordPlace][jjj];
-                                            NumOfEntities = NumOfEntities + NumOfEntity;
-                                            NumOFWordInOneStory++;
-                                            //prob_EntitygivnCat = NumOfEntity/TotalNumOfWordsInDocs;                       
-                                        }
+                                        NumOfEntity = WordsCatMatrixNP2[wordPlace][jjj];
+                                        prob_Entity = prob_wordsGivenCatsNP2[wordPlace][jjj];
+                                        NumOfEntities = NumOfEntities + NumOfEntity;
+                                        NumOFWordInOneStory++;
+                                    }
                                     FrequencyOfEachWord.push_back(NumOfEntity);
                                     prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
                                 }                       
@@ -1902,91 +1915,75 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                             Counter2++;
                         }
 
-                        //unsigned __int64 NumOfWordFactorial = 0; //    // P(Si|Cj) = (n!/(W1!,W2!,...,Wk!)(P^W1*P^W2,....P^Wk)            
                         double prob_OneStorygivnCat = 1;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++){
-                        prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
-                        }
-                        //cout<< "prob_OneStorygivnCat" <<"    "<< prob_OneStorygivnCat<<endl;
+                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
+                        {
+                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
+                        }                        
                         
-                        if (prob_OneStorygivnCat < SMALL_NUM ){
-                        ProbStoryGivenCat2[Counter1][jjj] = SMALL_NUM;
-                        }else{
+                        if (prob_OneStorygivnCat < SMALL_NUM )
+                        {
+                            ProbStoryGivenCat2[Counter1][jjj] = SMALL_NUM;
+                        }
+                        else
+                        {
                             ProbStoryGivenCat2[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
                         }
                         AllCountedWordsInStories2.push_back(NumOFWordInOneStory);
-        
 
                         Counter1++;
                     }
                 }
-                }
             }
+        }
 
         //Normolasation of the ProbStoryGivenCat which gives Probability of Story Given Category:P(Si|Catj)^time
+        ProbStoryGivenCat = Normalize2D(ProbStoryGivenCat);
+        ProbStoryGivenCat1 = Normalize2D(ProbStoryGivenCat1);
+        ProbStoryGivenCat2 = Normalize2D(ProbStoryGivenCat2);
 
-        //for (int i=0; i<categories.size(); i++){
-        //  double NormFact=0;
-        //  for (int j=0; j<num_stories; j++){
-        //      NormFact = NormFact+ProbStoryGivenCat[j][i];
-        //  }
-        //  if (NormFact != 0){
-        //  for (int j=0; j<num_stories; j++){
-        //      ProbStoryGivenCat[j][i] = ProbStoryGivenCat[j][i]/NormFact;}
-        //  }
-        //}
+        vector<double> prob_Story(num_stories);
+        vector<double> prob_Story1(num_stories);
+        vector<double> prob_Story2(num_stories);
 
+        for (int i=0; i<num_stories; i++)
+        {
+            // p(story_i) = \sum_{cat_j} p(story_i | category_j) * p(cat_j)
+            double prob = 0;
+            for (int j=0; j<categories.size(); j++)
+            {
 
-        for (int i=0; i<categories.size(); i++){
-            double NormFact=0;
-            for (int j=0; j<num_stories; j++){
-                NormFact = NormFact + ProbStoryGivenCat[j][i];}
-            for (int j=0; j<num_stories; j++){
-                if (NormFact != 0 && ProbStoryGivenCat[j][i] != 0){
-                    ProbStoryGivenCat[j][i] = ProbStoryGivenCat[j][i]/NormFact;}}}
+                prob += prob_cat[j]*ProbStoryGivenCat[i][j];
+            }            
+            prob_Story[i] = prob;
+        }
 
-        for (int i=0; i<categories.size(); i++){
-            double NormFact=0;
-            for (int j=0; j<num_stories; j++){
-                NormFact = NormFact + ProbStoryGivenCat1[j][i];}
-            for (int j=0; j<num_stories; j++){
-                if (NormFact != 0 && ProbStoryGivenCat1[j][i] != 0){
-                    ProbStoryGivenCat1[j][i] = ProbStoryGivenCat1[j][i]/NormFact;}}}
+        for (int i=0; i<num_stories; i++)
+        {
+            double prob = 0;
+            for (int j=0; j<categories.size(); j++)
+            {
+                prob += prob_cat[j]*ProbStoryGivenCat1[i][j];
+            }
+            prob_Story1[i] = prob;
+        }
 
-        for (int i=0; i<categories.size(); i++){
-            double NormFact=0;
-            for (int j=0; j<num_stories; j++){
-                NormFact = NormFact + ProbStoryGivenCat2[j][i];}
-            for (int j=0; j<num_stories; j++){
-                if (NormFact != 0 && ProbStoryGivenCat2[j][i] != 0){
-                    ProbStoryGivenCat2[j][i] = ProbStoryGivenCat2[j][i]/NormFact;}}}
+        for (int i=0; i<num_stories; i++)
+        {
+            double prob = 0;
+            for (int j=0; j<categories.size(); j++)
+            {
+                prob += prob_cat[j]*ProbStoryGivenCat2[i][j];
+            }
+            prob_Story2[i] = prob;
+        }
 
+        //
+        // Starting Iteration for EM - Algorithm
+        //
 
-
-        vector<double> prob_Story;
-        vector<double> prob_Story1;
-        vector<double> prob_Story2;
-
-        for (int i=0; i<num_stories; i++){
-            double NormFact=0;
-            for (int j=0; j<categories.size(); j++){
-                NormFact = NormFact + prob_cat[j]*ProbStoryGivenCat[i][j];}
-                prob_Story.push_back(NormFact);}
-        for (int i=0; i<num_stories; i++){
-            double NormFact=0;
-            for (int j=0; j<categories.size(); j++){
-                NormFact = NormFact + prob_cat[j]*ProbStoryGivenCat1[i][j];}
-                prob_Story1.push_back(NormFact);}
-        for (int i=0; i<num_stories; i++){
-            double NormFact=0;
-            for (int j=0; j<categories.size(); j++){
-                NormFact = NormFact + prob_cat[j]*ProbStoryGivenCat2[i][j];}
-                prob_Story2.push_back(NormFact);}
-    ///       Starting Iteration for EM - Algorithm
-
-
-    // E_Step: 
-    //Building The Probability  of Category Given Story P(Catj|Si)^(t+1)   t=time  FOR NP1,VP,NP2
+        // E_Step: 
+        // Building The Probability of Category Given Story P(Catj|Si)^(t+1)   t=time  FOR NP1,VP,NP2
 
         for (int i=0; i<num_stories; i++){
             for (int j=0; j<categories.size(); j++){
@@ -2004,7 +2001,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             }
         }
 
-    //Normolasation of the ProbCatGivenStory which is Probability of Category Given Story:P(Catj|Si)^time+1
+        // Normalize the ProbCatGivenStory which is Probability of Category Given Story:P(Catj|Si)^time+1
 
         //for (int i=0; i<categories.size(); i++){
         //  double NormFact=0;
@@ -2017,9 +2014,9 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         //  }
         //}
 
-    // M_Step: 
-    // Updating The Probability  of Each Words in vocabulars Given Category    
-    // P(Wn|Catj)^(t+1)   t=time
+        // M_Step: 
+        // Updating The Probability of Each Words in vocabulary Given Category    
+        // P(Wn|Catj)^(t+1)   t=time
 
         for (int i=0; i<vocabularyNP1.size(); i++){
             for (int j=0; j<categories.size(); j++){
@@ -2033,8 +2030,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             }
         }
 
-        for (int i=0; i<vocabularyVP.size(); i++){
-            for (int j=0; j<categories.size(); j++){
+        for (int i=0; i<vocabularyVP.size(); i++)
+        {
+            for (int j=0; j<categories.size(); j++)
+            {
                 double Numeratorwithoutsmooth = 0;
                 double DeNumeratorwithoutsmooth = 0;
                 for (int k=0; k<num_stories; k++){
@@ -2045,8 +2044,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             }
         }
 
-        for (int i=0; i<vocabularyNP2.size(); i++){
-            for (int j=0; j<categories.size(); j++){
+        for (int i=0; i<vocabularyNP2.size(); i++)
+        {
+            for (int j=0; j<categories.size(); j++)
+            {
                 double Numeratorwithoutsmooth = 0;
                 double DeNumeratorwithoutsmooth = 0;
                 for (int k=0; k<num_stories; k++){
@@ -2058,28 +2059,37 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             }
         }
 
+        //
         // Inference : Find the Posterior of new Unknown Story
-        int Pred=0;
-        for ( int ii=0; ii<labels_testing.size(); ii++){
+        //
+        int correct_count = 0;
+        for ( int ii=0; ii<labels_testing.size(); ii++)
+        {
             //int randStory = (rand() % (labels_testing.size())); //labels_training
             string labeled_category = labels_testing[ii];  //labels_training  -  [randStory]
 
             vector<double> Posteriorprob_catGivenStoryNP1;
             vector<double> Posteriorprob_catGivenStoryVP;
             vector<double> Posteriorprob_catGivenStoryNP2;
-
-        //Posteriorprob_catGivenStoryNP1
-            for(int j=0; j < categories.size(); j++){
+        
+            //Posteriorprob_catGivenStoryNP1
+            for(int j=0; j < categories.size(); j++)
+            {
                 double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
                 int CountToFindStory=0;
-                for( int i=0; i < storyWordInfoFinalForTest.size(); i++){   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++){
-                        if( CountToFindStory == ii ){ //randStory
+                for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
+                {   
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    {
+                        if( CountToFindStory == ii )
+                        { //randStory
                             vector<string> words;
                             istringstream iss(storyWordInfoFinalForTest[jj+i].Non_Ph1);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            if (words.size() != 0){
-                                for(int kk=0; kk < words.size(); kk++){
+                            if (words.size() != 0)
+                            {
+                                for(int kk=0; kk < words.size(); kk++)
+                                {
                                     auto low = lower_bound (v.begin(), v.end(), words[kk]);
                                     string WordName = *low;
                                     int wordPlace = int(low- v.begin());
@@ -2089,52 +2099,57 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                             }
                         }
                     }
-
-                CountToFindStory++;
-                i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    CountToFindStory++;
+                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
                 }
-            Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-            Posteriorprob_catGivenStoryNP1.push_back(Numerator);}
+                Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+                Posteriorprob_catGivenStoryNP1.push_back(Numerator);
+            }
+            
             double NormFact=0;
-            for (int j=0; j<Posteriorprob_catGivenStoryNP1.size(); j++){
+            for (int j=0; j<Posteriorprob_catGivenStoryNP1.size(); j++)
+            {
                 double A = Posteriorprob_catGivenStoryNP1[j];
                 NormFact = NormFact + A;
             }
-            for (int i=0; i<Posteriorprob_catGivenStoryNP1.size(); i++){
+            for (int i=0; i<Posteriorprob_catGivenStoryNP1.size(); i++)
+            {
                 Posteriorprob_catGivenStoryNP1[i] = Posteriorprob_catGivenStoryNP1[i]/NormFact;
             }
 
                                                                                             //////for(int j=0; j < categories.size(); j++){
-        //////double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
-        //////  for (int k=0; k<WordCatInf.size(); k++){
-        //////      if (WordCatInf[k].StNumInList == randStory){
-        //////          double A = WordCatInf[k].wordPlaceInDic;//prob_storylen
-        //////          double B = prob_wordsGivenCatsNP1[A][j];
-        //////          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;
-        //////      }
-        //////  }
-        //////  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-        //////  Posteriorprob_catGivenStoryNP1.push_back(Numerator);
-        //////}///DeNumerator);
-        //////double NormFact=0;
-        //////for (int j=0; j<Posteriorprob_catGivenStoryNP1.size(); j++){
-        //////  double A = Posteriorprob_catGivenStoryNP1[j];
-        //////  NormFact = NormFact + A;
-        //////}
-        //////for (int i=0; i<Posteriorprob_catGivenStoryNP1.size(); i++){
-        //////  Posteriorprob_catGivenStoryNP1[i] = Posteriorprob_catGivenStoryNP1[i]/NormFact;
-        //////}
+            //////double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
+            //////  for (int k=0; k<WordCatInf.size(); k++){
+            //////      if (WordCatInf[k].StNumInList == randStory){
+            //////          double A = WordCatInf[k].wordPlaceInDic;//prob_storylen
+            //////          double B = prob_wordsGivenCatsNP1[A][j];
+            //////          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;
+            //////      }
+            //////  }
+            //////  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+            //////  Posteriorprob_catGivenStoryNP1.push_back(Numerator);
+            //////}///DeNumerator);
+            //////double NormFact=0;
+            //////for (int j=0; j<Posteriorprob_catGivenStoryNP1.size(); j++){
+            //////  double A = Posteriorprob_catGivenStoryNP1[j];
+            //////  NormFact = NormFact + A;
+            //////}
+            //////for (int i=0; i<Posteriorprob_catGivenStoryNP1.size(); i++){
+            //////  Posteriorprob_catGivenStoryNP1[i] = Posteriorprob_catGivenStoryNP1[i]/NormFact;
+            //////}
 
+            //Posteriorprob_catGivenStoryVP
 
-
-    //Posteriorprob_catGivenStoryVP
-
-            for(int j=0; j < categories.size(); j++){
+            for(int j=0; j < categories.size(); j++)
+            {
                 double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
                 int CountToFindStory=0;
-                for( int i=0; i < storyWordInfoFinalForTest.size(); i++){   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++){
-                        if( CountToFindStory == ii ){ //randStory
+                for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
+                {   
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    {
+                        if( CountToFindStory == ii )
+                        { //randStory
                             vector<string> words;
                             istringstream iss(storyWordInfoFinalForTest[jj+i].Verb_Ph);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
@@ -2149,47 +2164,57 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                             }
                         }
                     }
-
-                CountToFindStory++;
-                i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    CountToFindStory++;
+                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
                 }
-            Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-            Posteriorprob_catGivenStoryVP.push_back(Numerator);}
+                Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+                Posteriorprob_catGivenStoryVP.push_back(Numerator);
+            }
+            
             NormFact=0;
-            for (int j=0; j<Posteriorprob_catGivenStoryVP.size(); j++){
+            for (int j=0; j<Posteriorprob_catGivenStoryVP.size(); j++)
+            {
                 double A = Posteriorprob_catGivenStoryVP[j];
                 NormFact = NormFact + A;
             }
-            for (int i=0; i<Posteriorprob_catGivenStoryVP.size(); i++){
+            
+            for (int i=0; i<Posteriorprob_catGivenStoryVP.size(); i++)
+            {
                 Posteriorprob_catGivenStoryVP[i] = Posteriorprob_catGivenStoryVP[i]/NormFact;
             }
                                                                     //for(int j=0; j < categories.size(); j++){
-        //double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
-        //  for (int k=0; k<WordCatInf1.size(); k++){
-        //      if (WordCatInf1[k].StNumInList == randStory){
-        //          double A = WordCatInf1[k].wordPlaceInDic;//prob_storylen
-        //          double B = prob_wordsGivenCatsVP[A][j];
-        //          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;}}
-        //  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-        //  Posteriorprob_catGivenStoryVP.push_back(Numerator);}///DeNumerator);
-        //NormFact=0;
-        //for (int j=0; j<Posteriorprob_catGivenStoryVP.size(); j++){
-        //  double A = Posteriorprob_catGivenStoryVP[j];
-        //  NormFact = NormFact + A;}
-        //for (int i=0; i<Posteriorprob_catGivenStoryVP.size(); i++){
-        //  Posteriorprob_catGivenStoryVP[i] = Posteriorprob_catGivenStoryVP[i]/NormFact;}
+            //double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
+            //  for (int k=0; k<WordCatInf1.size(); k++){
+            //      if (WordCatInf1[k].StNumInList == randStory){
+            //          double A = WordCatInf1[k].wordPlaceInDic;//prob_storylen
+            //          double B = prob_wordsGivenCatsVP[A][j];
+            //          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;}}
+            //  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+            //  Posteriorprob_catGivenStoryVP.push_back(Numerator);}///DeNumerator);
+            //NormFact=0;
+            //for (int j=0; j<Posteriorprob_catGivenStoryVP.size(); j++){
+            //  double A = Posteriorprob_catGivenStoryVP[j];
+            //  NormFact = NormFact + A;}
+            //for (int i=0; i<Posteriorprob_catGivenStoryVP.size(); i++){
+            //  Posteriorprob_catGivenStoryVP[i] = Posteriorprob_catGivenStoryVP[i]/NormFact;}
 
-            for(int j=0; j < categories.size(); j++){
+            for(int j=0; j < categories.size(); j++)
+            {
                 double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
                 int CountToFindStory=0;
-                for( int i=0; i < storyWordInfoFinalForTest.size(); i++){   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++){
-                        if( CountToFindStory == ii ){ //randStory
+                for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
+                {   
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    {
+                        if( CountToFindStory == ii )
+                        { //randStory
                             vector<string> words;
                             istringstream iss(storyWordInfoFinalForTest[jj+i].Non_Ph2);
                             copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            if (words.size() != 0){
-                                for(int kk=0; kk < words.size(); kk++){
+                            if (words.size() != 0)
+                            {
+                                for(int kk=0; kk < words.size(); kk++)
+                                {
                                     auto low = lower_bound (v2.begin(), v2.end(), words[kk]);
                                     string WordName = *low;
                                     int wordPlace = int(low- v2.begin());
@@ -2200,83 +2225,95 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                         }
                     }
 
-                CountToFindStory++;
-                i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    CountToFindStory++;
+                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
                 }
-            Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-            Posteriorprob_catGivenStoryNP2.push_back(Numerator);
 
+                Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+                Posteriorprob_catGivenStoryNP2.push_back(Numerator);
             }///DeNumerator);
+
             NormFact=0;
-            for (int j=0; j<Posteriorprob_catGivenStoryNP2.size(); j++){
+            for (int j=0; j<Posteriorprob_catGivenStoryNP2.size(); j++)
+            {
                 double A = Posteriorprob_catGivenStoryNP2[j];
                 NormFact = NormFact + A;
             }
-            for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++){
+            for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++)
+            {
                 Posteriorprob_catGivenStoryNP2[i] = Posteriorprob_catGivenStoryNP2[i]/NormFact;
             }
 
-        //Posteriorprob_catGivenStoryNP2
-        //for(int j=0; j < categories.size(); j++){
-        //double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
-        //  for (int k=0; k<WordCatInf2.size(); k++){
-        //      if (WordCatInf2[k].StNumInList == randStory){
-        //          double A = WordCatInf2[k].wordPlaceInDic;//prob_storylen
-        //          double B = prob_wordsGivenCatsNP2[A][j];
-        //          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;}}
-        //  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
-        //  Posteriorprob_catGivenStoryNP2.push_back(Numerator);}///DeNumerator);
-        //NormFact=0;
-        //for (int j=0; j<Posteriorprob_catGivenStoryNP2.size(); j++){
-        //  double A = Posteriorprob_catGivenStoryNP2[j];
-        //  NormFact = NormFact + A;}
-        //for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++){
-        //  Posteriorprob_catGivenStoryNP2[i] = Posteriorprob_catGivenStoryNP2[i]/NormFact;}
+            //Posteriorprob_catGivenStoryNP2
+            //for(int j=0; j < categories.size(); j++){
+            //double Numerator=0 , DeNumerator=0, TotalProbWordsGivenCat=1;
+            //  for (int k=0; k<WordCatInf2.size(); k++){
+            //      if (WordCatInf2[k].StNumInList == randStory){
+            //          double A = WordCatInf2[k].wordPlaceInDic;//prob_storylen
+            //          double B = prob_wordsGivenCatsNP2[A][j];
+            //          TotalProbWordsGivenCat = TotalProbWordsGivenCat * B;}}
+            //  Numerator = prob_cat[j] * TotalProbWordsGivenCat;
+            //  Posteriorprob_catGivenStoryNP2.push_back(Numerator);}///DeNumerator);
+            //NormFact=0;
+            //for (int j=0; j<Posteriorprob_catGivenStoryNP2.size(); j++){
+            //  double A = Posteriorprob_catGivenStoryNP2[j];
+            //  NormFact = NormFact + A;}
+            //for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++){
+            //  Posteriorprob_catGivenStoryNP2[i] = Posteriorprob_catGivenStoryNP2[i]/NormFact;}
+      
 
-        
-        //Total Posterior Probibility Of Cat Given Story
+            //Total Posterior Probibility Of Cat Given Story
             vector<double> TotalPosteriorprob_catGivenStory;
-            for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++){
+            for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++)
+            {
                 double A =  Posteriorprob_catGivenStoryNP1[i] * Posteriorprob_catGivenStoryVP[i] * Posteriorprob_catGivenStoryNP2[i];
                 TotalPosteriorprob_catGivenStory.push_back(A);
             }
 
-            double elems[NUM_CATEGORIES];
-            copy(TotalPosteriorprob_catGivenStory.begin(), TotalPosteriorprob_catGivenStory.end(), elems);
-            vector<double> myVector(elems, elems + TotalPosteriorprob_catGivenStory.size()); 
-            vector<double>::const_iterator it2;  
-                                    // Find the min and max elements in the vector
-        //it2 = max_element(myVector.begin(), myVector.end());
-        //cout << " the max is " << * (max_element(myVector.begin(), myVector.end()) ) << endl;
-        //cout << "max value location at " << max_element(myVector.begin(), myVector.end()) - myVector.begin();
-            string predicted_category = categories[max_element(myVector.begin(), myVector.end()) - myVector.begin()];
 
-            found = storyWordInfoFinalForTest[ii].StoryName.find("South-Ossetia");
-            found1 = storyWordInfoFinalForTest[ii].StoryName.find("georgia");
 
-            if ( predicted_category == labeled_category ){
-                Pred = Pred +1; 
-            }else{
-                if( (predicted_category=="War" && found < 50) || labeled_category == "Human-interest" || 
-                    predicted_category == "Human-interest" ||
-                    (predicted_category=="Crime" && labeled_category == "Justice") || 
-                    (predicted_category=="Justice" && labeled_category == "Crime") ||
-                    (labeled_category=="International" && found < 50) || 
-                    labeled_category=="Celebrity" || labeled_category=="Entertainment" ||
-                    (predicted_category=="Weather" && labeled_category == "Disaster")|| 
-                    (predicted_category=="Disaster" && labeled_category == "Weather") ||
-                    (predicted_category=="Crime" && labeled_category == "Accident")|| (
-                    predicted_category=="Accident" && labeled_category == "Crime")||
-                    labeled_category=="Entertainment" || predicted_category=="Entertainment"||
-                    (predicted_category=="War" && found1 < 10000) ){
-                    Pred = Pred +1;
-                    }
+            // Predict by the maximum posterior probability (Bayes Decision).
+            // Normalize is not necessary.
+            int predicted_category_idx = max_element(TotalPosteriorprob_catGivenStory.begin(), TotalPosteriorprob_catGivenStory.end()) - TotalPosteriorprob_catGivenStory.begin();
+            string predicted_category = categories[predicted_category_idx];
+
+            if ( predicted_category == labeled_category )
+            {
+                // correct
+                correct_count = correct_count +1;   
+            }
+            else
+            {
+                // Tolerance some situations
+                size_t found = storyWordInfoFinalForTest[ii].StoryName.find("South-Ossetia");
+                size_t found1 = storyWordInfoFinalForTest[ii].StoryName.find("georgia");              
+                if( labeled_category == "Human-interest" || 
+                    labeled_category=="Celebrity" || 
+                    labeled_category=="Entertainment" ||
+                    predicted_category == "Human-interest" ||                   
+                    predicted_category=="Entertainment"||
+                    (predicted_category=="War"  && found < 50) ||       // war = south-Ossetia
+                    (predicted_category == "International" && found < 50) ||    // international = south-Ossetia
+                    (predicted_category=="War"      && found1 < 10000) ||
+                    (labeled_category == "Justice"  && predicted_category == "Crime") || // justice = crime
+                    (labeled_category == "Crime"    && predicted_category == "Justice") ||
+                    (labeled_category == "Disaster"     && predicted_category == "Weather") ||  // disaster = weather
+                    (labeled_category == "Weather"  && predicted_category == "Disaster") ||
+                    (labeled_category == "Accident"     && predicted_category == "Crime") ||    // accident = crime
+                    (labeled_category == "Crime"    && predicted_category == "Accident"))
+                {
+                    correct_count = correct_count +1;
+                }
             }
         }
-
-        crossValidation.push_back(double (double (Pred)/labels_testing.size()));
+        double accuracy = double(correct_count)/(double)labels_testing.size();      
+        crossValidation.push_back(accuracy);
     }
 
+    // Output cross validation report.
+    ofstream fout_eval;
+    fout_eval.open("output/Triplets_CrossValidation.txt");    
+    fout_eval << "Number of stories in documents:\t" << StoryNameAndSenNum.size() << endl;
     PrintCrossValidationReport(fout_eval, crossValidation);
     fout_eval.close();
 }
@@ -3668,7 +3705,7 @@ void TextAnalysis::ParameterLearning_ScreenTopic(
         }
 
         // Calculating P(Wi|Catj)
-        Matrix prob_wordsGivenCats = CountToProbability2D(WordsCatMatrix);
+        Matrix prob_wordsGivenCats = Normalize2D(WordsCatMatrix);
 
         //
         // Inference : Find the posterior probability for testing set.
