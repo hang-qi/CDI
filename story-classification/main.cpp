@@ -84,13 +84,19 @@ int main(int argc, const char* argv[])
     
     vector<Triplet> longStories = cws.RemoveShortStory(storyWordInfo, RemovedStory);
     vector<StorySentInfo> storyNameAndSenNum = cws.GetNumberOfStorySentence(longStories);
+
+    cout << "Remove stop words..." << endl;
     
     vector<FinalTriplet> storyWordInfoFinal = cws.RemoveStopWords(
         longStories, storyNameAndSenNum);
 
+    cout << "Stop words Removed" << endl;
+
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
     cws.ExtractVocabularyList(storyWordInfoFinal,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
+
+    cout << "Learning..." << endl;
     cws.ParameterLearning(storyWordInfoFinal, storyNameAndSenNum,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 

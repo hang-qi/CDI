@@ -187,7 +187,10 @@ public:
     vector<ScreenInfo> RemoveShortStory_ScreenTopic(
         const vector<ScreenInfo> &Screen_Info_Final,
         vector<int> & RemovedStory);
+    
+    /*
     void SaveVocabulary(set<string> vocabulary, string dest_filename);
+    */
     void ParameterLearning_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final,
         const set<string>& vocabulary);
 
@@ -211,16 +214,16 @@ public:
     vector<StorySentInfo> GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo);
     vector<FinalTriplet> RemoveStopWords(vector<Triplet> & StoryWordInfo ,
         vector<StorySentInfo> & StoryNameAndSenNum);
-    void ExtractVocabularyList(vector<FinalTriplet> & StoryWordInfoFinal,
+    void ExtractVocabularyList(const vector<FinalTriplet> & StoryWordInfoFinal,
         set<string>& vocabularyNP1, 
         set<string>& vocabularyVP, 
         set<string>& vocabularyNP2);
     void ParameterLearning(
         const vector<FinalTriplet>& StoryWordInfoFinal,
         const vector<StorySentInfo> & StoryNameAndSenNum,
-        const set<string> vocabularyNP1, 
-        const set<string> vocabularyVP, 
-        const set<string> vocabularyNP2);
+        const set<string>& vocabularyNP1, 
+        const set<string>& vocabularyVP, 
+        const set<string>&vocabularyNP2);
 
     //
     // Similarity

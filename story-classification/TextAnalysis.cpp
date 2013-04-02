@@ -278,7 +278,11 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(
     vector<string> tokens;
 
     if (!ifs.is_open())
-        throw EXCEPTION_TRIPLETS_FILE_CANNOT_OPEN;
+    {
+        cout << "Cannot open triplets file:";
+        cout << tripletsFilename << endl;
+    //EXCEPTION_TRIPLETS_FILE_CANNOT_OPEN;
+    }
 
     vector<Triplet> storyWordInfo;
     while (!ifs.eof()  && ifs.good())
@@ -640,7 +644,11 @@ vector<TopicElements> TextAnalysis::ReadFullDocument(string newsListFilename)
     string str, str1, str2, str3,StartPoint, words;
 
     DocLists.open(newsListFilename.c_str(), ios::in);
-    if (!DocLists.is_open()) cout<<"File NOT opened"<<endl;
+    if (!DocLists.is_open())
+    {
+        cout << "news list NOT opened"<<endl;
+        throw -1;
+    }
     size_t found , found1, found2, found3 ;
     vector<string> Story_Word;
     TopicElements entry;
@@ -659,7 +667,8 @@ vector<TopicElements> TextAnalysis::ReadFullDocument(string newsListFilename)
             Day = str.substr(8 , 2);
         }
 
-        string FileName = ("/sweep/"+Year+"/"+Year+"-"+Month+"/"+Year+"-"+Month+"-"+Day+"/" + str +".txt") ;// /sweep/2008/2008-08/2008-08-08/
+        // /sweep/2008/2008-08/2008-08-08/
+        string FileName = ("/sweep/"+Year+"/"+Year+"-"+Month+"/"+Year+"-"+Month+"-"+Day+"/" + str +".txt");
         ifs.open(FileName.c_str(), ios::in);
         if (!ifs.is_open()) cout<<"FileName File NOT opened"<<endl;
         Iindix2=0;
@@ -1173,12 +1182,13 @@ vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordI
     return longStories;
 }
 
-void TextAnalysis::ExtractVocabularyList(vector<FinalTriplet> & storyWordInfoFinal,
+void TextAnalysis::ExtractVocabularyList(const vector<FinalTriplet>& storyWordInfoFinal,
     set<string>& vocabularyNP1, set<string>& vocabularyVP, set<string>& vocabularyNP2)
 {
+    vector<string> words, words1, words2;
+    cout << storyWordInfoFinal.size() << endl;
     for(int i=0; i < storyWordInfoFinal.size(); i++)
     {
-        vector<string> words, words1, words2;
         istringstream iss(storyWordInfoFinal[i].Non_Ph1);
         copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
 
@@ -1200,14 +1210,18 @@ void TextAnalysis::ExtractVocabularyList(vector<FinalTriplet> & storyWordInfoFin
         {
             vocabularyNP2.insert(words2[j]);
         }
+
+        words.clear();
+        words1.clear();
+        words2.clear();
     }   
 }
 
 void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     const vector<StorySentInfo> & StoryNameAndSenNum,
-    const set<string> vocabularyNP1, 
-    const set<string> vocabularyVP, 
-    const set<string> vocabularyNP2)
+    const set<string>& vocabularyNP1, 
+    const set<string>& vocabularyVP, 
+    const set<string>& vocabularyNP2)
     /*ring list_file10, string list_file11, string list_file12)*/
 {   
     vector<FinalTriplet> storyWordInfoFinal = storyWordInfo;
@@ -1224,8 +1238,8 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     string str , str1 , str2 ;
     size_t found , found1 ;
     vector<string> labels_training , labels_testing;
-    ofstream fout_eval ;
-    fout_eval.open ("SystemEvaluation.txt");
+    ofstream fout_eval;
+    fout_eval.open("output/Triplets_CrossValidation.txt");
 
     vector<FinalTriplet> storyWordInfoFinalForTest, storyWordInfoFinalForTrain , storyWordInfoFinalOrg;
     int TrainSet=0 , TestSet=0, CountForTrainSet=0 , TotalSt=0;
@@ -2284,7 +2298,8 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
 }
 
 
-vector<FinalTriplet> TextAnalysis::RemoveStopWords(vector<Triplet> & storyWordInfo,
+vector<FinalTriplet> TextAnalysis::RemoveStopWords(
+    vector<Triplet> & storyWordInfo,
     vector<StorySentInfo> & StoryNameAndSenNum)
 {   
     vector<FinalTriplet> storyWordInfoFinal;
@@ -2586,6 +2601,7 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(vector<Triplet> & storyWordIn
         }
 
         }
+    return storyWordInfoFinal;
 }
                 
 
@@ -3313,7 +3329,7 @@ void TextAnalysis::Screen_Text_Info(
     }
 }
 
-void TextAnalysis::SaveVocabulary(set<string> vocabulary, string dest_filename)
+/*void TextAnalysis::SaveVocabulary(set<string> vocabulary, string dest_filename)
 {
     ofstream inout;
     inout.open(dest_filename.c_str());
@@ -3321,7 +3337,7 @@ void TextAnalysis::SaveVocabulary(set<string> vocabulary, string dest_filename)
           inout << word << endl;
     });
     inout.close();
-}
+}*/
 
 vector<ScreenInfo> TextAnalysis::RemoveShortStory_ScreenTopic(
     const vector<ScreenInfo> &screenInfo_org, 
