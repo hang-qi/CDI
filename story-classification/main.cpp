@@ -29,13 +29,12 @@ int main(int argc, const char* argv[])
     // vector<TopicElements> ArticleTopicInfo;
     // cws.TopicOnWebArticle(ArticleTopicInfo , list_file4 , list_file2);
 
-    vector<int> RemovedStory;
-    /*
     //
     // OCR classification
     //
     vector<ScreenInfo> screenInfo;
-    set<string> screen_vocabulary;    
+    set<string> screen_vocabulary;
+    vector<int> RemovedStory;
 
     cout << "OCR loading..." << endl;
     cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
@@ -45,7 +44,6 @@ int main(int argc, const char* argv[])
 
     cout << "OCR cross validation..." << endl;
     cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
-    */
 
     //
     // Loading triplets files
