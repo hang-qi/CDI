@@ -45,8 +45,9 @@ int main(int argc, const char* argv[])
     cout << "OCR cross validation..." << endl;
     cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
 
+    
     //
-    // Loading triplets files
+    // Triplets classification
     //
     ifstream documentList;
     documentList.open(FILE_NEWSLIST, ios::in);
@@ -67,18 +68,17 @@ int main(int argc, const char* argv[])
         string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");
         vector<Triplet> temp = cws.ReadTripletsFile(tripletsFilename);
         storyWordInfo.insert(storyWordInfo.end(), temp.begin(), temp.end());
-        // cws.FirstSentAsTopic(tripletsFilename  , StoryTopicInfo);
+        // cws.FirstSentAsTopic(tripletsFilename, StoryTopicInfo);
     }
 
-    //
-    // Triplets classification
-    //
+    /* 
     vector<TopicElements> StoryTopicInfo;
     vector<TopicElements> storyInfoForTag = cws.ReadFullDocument(FILE_NEWSLIST);
     cws.ReadTagFromFile(storyInfoForTag);
     vector<TopicElements> storyInfoTags = cws.ReadTagFromFile1();   
     vector<TopicElements> resourceGoalTags = cws.ReadTag_ResourceGoal(storyInfoForTag);
     cws.StoryTopic(storyInfoTags , StoryTopicInfo, resourceGoalTags);
+    */
 
 
     cout << "Triplets remove short stories..." << endl;
@@ -100,15 +100,13 @@ int main(int argc, const char* argv[])
     cws.ParameterLearning(storyWordInfoFinal, storyNameAndSenNum,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 
-    // This is for similarity clustering :
-    cws.CalculateSimilarity(storyWordInfoFinal);
-    //cws.TransitionMatrix_ScreenTopic(screenInfo);
+    // Clustering based on NP1 similarities.    
+    //cws.CalculateSimilarity(storyWordInfoFinal);
+    ////cws.TransitionMatrix_ScreenTopic(screenInfo);
 
   return 0;
 }
 
-
-//  cd /home/csa/CAS2/Arash/StoryTextInfo/
 //  ./TextAnalysis /home/csa/CAS2/Arash/StoryTextInfo/ /home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/
 
 //  argv[0] = /home/csa/CAS2/Arash/StoryTextInfo

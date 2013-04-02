@@ -160,12 +160,12 @@ public:
     void Screen_Text_Info(
         OUT vector<ScreenInfo>& Screen_Info_Final,
         OUT set<string>& Sceen_Words_Vocab,
-        string orcDir,
-        string annotatedTextDir, 
-        string newsListFilename);
+        const string& orcDir,
+        const string& annotatedTextDir, 
+        const string& newsListFilename);
     vector<ScreenInfo> RemoveShortStory_ScreenTopic(
         const vector<ScreenInfo> &Screen_Info_Final,
-        vector<int> & RemovedStory);
+        OUT vector<int> & RemovedStory);
     
     /*
     void SaveVocabulary(set<string> vocabulary, string dest_filename);
@@ -176,8 +176,8 @@ public:
     //
     // Triplets
     //
-    vector<Triplet> ReadTripletsFile(string tripletsFilename);
-    vector<TopicElements> ReadFullDocument(string newsListFilename);
+    vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
+    vector<TopicElements> ReadFullDocument(const string& newsListFilename);
     void ReadTagFromFile(vector<TopicElements>& Story_InfoForTag);
     vector<TopicElements> ReadTagFromFile1();
     vector<TopicElements> ReadTag_ResourceGoal(const vector<TopicElements>& Story_InfoForTag);
@@ -189,14 +189,14 @@ public:
     //void GetSimilarityScore(string keyword, vector<BoundaryEntry>& output);
     
     vector<Triplet> RemoveShortStory(const vector<Triplet>& StoryWordInfo,
-            vector<int> & RemovedStory);    
+            OUT vector<int> & RemovedStory);    
     vector<StorySentInfo> GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo);
     vector<FinalTriplet> RemoveStopWords(const vector<Triplet> & StoryWordInfo ,
         const vector<StorySentInfo> & StoryNameAndSenNum);
     void ExtractVocabularyList(const vector<FinalTriplet> & StoryWordInfoFinal,
-        set<string>& vocabularyNP1, 
-        set<string>& vocabularyVP, 
-        set<string>& vocabularyNP2);
+        OUT set<string>& vocabularyNP1, 
+        OUT set<string>& vocabularyVP, 
+        OUT set<string>& vocabularyNP2);
     void ParameterLearning(
         const vector<FinalTriplet>& StoryWordInfoFinal,
         const vector<StorySentInfo> & StoryNameAndSenNum,

@@ -330,7 +330,7 @@ void TextAnalysis::TopicOnWebArticle(
     StoryTopic.close();
 }
 
-vector<Triplet> TextAnalysis::ReadTripletsFile(string tripletsFilename)
+vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
 {
     ifstream ifs;
     ifs.open(tripletsFilename.c_str(), ios::in);
@@ -545,7 +545,7 @@ void TextAnalysis::StoryTopic(const vector<TopicElements>& storyInfoTags,
     const vector<TopicElements>& resourceGoalTags)
 {
     ofstream StoryTopic;
-    StoryTopic.open ("StoryTopic.txt");
+    StoryTopic.open ("output/StoryTopic.txt");
     vector<TopicElements> storyInfoFull;
     
 
@@ -697,7 +697,7 @@ void TextAnalysis::StoryTopic(const vector<TopicElements>& storyInfoTags,
     StoryTopic.close();
 }
 
-vector<TopicElements> TextAnalysis::ReadFullDocument(string newsListFilename)
+vector<TopicElements> TextAnalysis::ReadFullDocument(const string& newsListFilename)
 {
     vector<TopicElements> Story_InfoForTag;
 
@@ -2800,7 +2800,7 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
     //
     Count=0;
     char Simi = '"';
-    inout.open ("Sim_Mat");
+    inout.open ("output/similarity_matrix.txt");
     string WholeNumber;
     for(int i=0; i<Sim_Mat.size(); i++)
     {
@@ -2816,8 +2816,8 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
         inout<<'\n';
     }
     inout.close();
-
-    inout.open ("Story_Name");
+    
+    inout.open ("output/story_name.txt");
     for(int i=0; i<StoryInfoForSim.size(); i++){
 
         inout << Simi << StoryInfoForSim[i].StoryTopic << Simi;
@@ -2838,9 +2838,9 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
 void TextAnalysis::Screen_Text_Info(
     OUT vector<ScreenInfo> &Screen_Info_Final, 
     OUT set<string> &screen_vocabulary,
-    string orcDir,  
-    string annotatedTextDir,
-    string newsListFilename)
+    const string&  orcDir,  
+    const string& annotatedTextDir,
+    const string& newsListFilename)
 {
     
     ofstream TestForDebug; 
