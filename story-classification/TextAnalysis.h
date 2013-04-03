@@ -29,7 +29,6 @@
 
 using namespace std;
 
-
 struct Triplet 
 {
     string StoryTimeStart;
@@ -224,7 +223,7 @@ public:
 private:
     // utilities
     void PrintCrossValidationReport(ostream& os,
-        const vector<double>& crossValidation);
+        const vector< pair<double, double> >& crossValidation);
 
     static const char* stopwordsArray[];
 };

@@ -14,7 +14,7 @@
 #include <iomanip>
 #include <string.h>
 #include <math.h>
-#include <unordered_map>
+#include <utility>
 
 #include "TextAnalysis.h"
 
@@ -1298,7 +1298,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     TestSet = AllStory/10 +1;
     TrainSet = AllStory - TestSet;
 
-    vector<double> crossValidation;
+    vector< pair<double, double> > crossValidation;
     vector<FinalTriplet> storyWordInfoFinalOrg = storyWordInfoFinal;
 
     // partition
@@ -2306,8 +2306,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 }
             }
         }
-        double accuracy = double(correct_count)/(double)labels_testing.size();      
-        crossValidation.push_back(accuracy);
+        crossValidation.push_back(make_pair(double(correct_count), double(labels_testing.size())));
     }
 
     // Output cross validation report.
@@ -2315,6 +2314,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     fout_eval.open("output/Triplets_CrossValidation.txt");    
     fout_eval << "Number of stories in documents:\t" << StoryNameAndSenNum.size() << endl;
     PrintCrossValidationReport(fout_eval, crossValidation);
+    PrintCrossValidationReport(cout, crossValidation);
     fout_eval.close();
 }
 
@@ -2816,7 +2816,7 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
         inout<<'\n';
     }
     inout.close();
-    
+
     inout.open ("output/story_name.txt");
     for(int i=0; i<StoryInfoForSim.size(); i++){
 
@@ -3474,7 +3474,7 @@ void TextAnalysis::ParameterLearning_ScreenTopic(
     vector<string> categories(array, array + sizeof array / sizeof array[0]);
 
 
-    vector<double> crossValidation;
+    vector< pair<double, double> > crossValidation;
     for (int kkk=0; kkk<testPeriod.size()-1; kkk++)
     {
         vector<ScreenInfo> screenInfo_testing;
@@ -3796,9 +3796,8 @@ void TextAnalysis::ParameterLearning_ScreenTopic(
             }
             confusion_matrix[org_category_idx][predicted_category_idx] += 1;
         }
-
-        double accuracy = double(correct_count)/(double)labels_testing.size();      
-        crossValidation.push_back(accuracy);
+        double accuracy = double(correct_count) / double(labels_testing.size());
+        crossValidation.push_back(make_pair(double(correct_count), double(labels_testing.size())));
 
         // Output confusion matrix and accuracy.
         fout_enhance << "Confusion Matrix:" << endl;
@@ -3819,16 +3818,27 @@ void TextAnalysis::ParameterLearning_ScreenTopic(
 
 // Output Cross validation report
 void TextAnalysis::PrintCrossValidationReport(ostream& os, 
-    const vector<double>& crossValidation)
+    const vector<pair<double, double> >& crossValidation)
 {
+    if (crossValidation.size() == 0)
+    {
+        os << "No results available.";
+        return;
+    }
+
     double accuracy_sum = 0;
     os << "--------------------------" << endl;
     os << "CROSS VALIDATION REPORT" << endl;
-    os << "--------------------------" << endl;
-    for ( int i=0; i < crossValidation.size(); i++)
+    os << "--------------------------" << endl;    
+    for (int i=0; i < crossValidation.size(); i++)
     {
-        accuracy_sum += crossValidation[i];
-        os << "Accuracy (" << i << "):\t" << crossValidation[i] << endl;
+        pair<double, double> result = crossValidation[i];
+        double correct_count = result.first;
+        double total = result.second;
+        double accuracy = correct_count / total;
+        accuracy_sum += accuracy;
+        os << "Fold " << i << ":\t" << accuracy << "\t ( "
+            << correct_count << " out of " << total << " )" << endl;
     }
 
     os << "--------------------------" << endl;
