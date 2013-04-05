@@ -15,6 +15,7 @@
 #include <string.h>
 #include <math.h>
 #include <utility>
+#include <assert.h>
 
 #include "TextAnalysis.h"
 
@@ -334,7 +335,6 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
 {
     ifstream ifs;
     ifs.open(tripletsFilename.c_str(), ios::in);
-    size_t found , found1 , found2 ;
     string str, str2 ;
     vector<string> tokens;
 
@@ -352,20 +352,20 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
         char buffer[2048];
         ifs.getline(buffer, 2048);
         str = (buffer);
-        found = str.find("<");
-        found1 = str.find("/VP");
-        found2 = str.find("/NP");
+        size_t found = str.find("<");
+        size_t foundVP = str.find("/VP");
+        size_t foundNP = str.find("/NP");
 
         if ( str != "" )
         {
-            if (found < 250 || found1 < 250)
+            if (found < 250 || foundVP < 250)
             {
                 if (found == 0 )
                 {
-
+                    // extract topicName, timeStart, and timeEnd
                     found = str.find('>');
-                    found1 = str.find('/' );
-                    str2 = str.substr ( 0, found1 - 1 );
+                    foundVP = str.find('/' );
+                    str2 = str.substr ( 0, foundVP - 1 );
                     tokens.push_back(str2);
 
                     found = str.find("<story>");
@@ -383,28 +383,30 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
                         entry.StoryTimeEnd = (str2);}
 
                 }
-                else if (found1 < 200  && found2 < 200 )
+                else if (foundVP < 200  && foundNP < 200 )
                 {
-                    str2 = str.substr (found2 + 4, (found1 - found2 )- 4 ); 
+                    // extract NP1, VP, NP2
+                    str2 = str.substr (foundNP + 4, (foundVP - foundNP )- 4 ); 
                     entry.Verb_Ph = (str2);
-                    str2 = str.substr (0 , found2 );
+
+                    str2 = str.substr (0 , foundNP );
                     entry.Non_Ph1 = (str2);
-                    str2 = str.substr (found2+4 , str.size() );
+
+                    str2 = str.substr (foundNP+4 , str.size() );
                     found = str2.find("/NP");
                     str2 = str2.substr (0 , found );
-                    found1 = str2.find("VP");
-                    str2 = str2.substr (found1+3 , str2.size() );
-                    found1 = str2.find("PP;");
-                    
-                    if (found1 <= 50)
+                    foundVP = str2.find("VP");
+                    str2 = str2.substr (foundVP+3 , str2.size() );
+                    foundVP = str2.find("PP;");                    
+                    if (foundVP <= 50)
                     {
-                        str2 = str2.substr (found1 + 3 , str2.size() );
+                        str2 = str2.substr (foundVP + 3 , str2.size() );
                     }
-                    found1 = str2.find("/PRT;");
+                    foundVP = str2.find("/PRT;");
                     
-                    if (found1 <= 50)
+                    if (foundVP <= 50)
                     {
-                        str2 = str2.substr (found1 + 6 , str2.size() );
+                        str2 = str2.substr (foundVP + 6 , str2.size() );
                     }
                     entry.Non_Ph2 = (str2);
                 }
@@ -1167,7 +1169,7 @@ vector<StorySentInfo> TextAnalysis::GetNumberOfStorySentence(const vector<Triple
     inout.open ("StoryAndSenNumber.txt");   
 
     vector<StorySentInfo> storyNameAndSenNum;
-    int Allstory=0;
+    int total_num_sentences =0;
 
     for( int i=0; i < storyWordInfo.size(); i++)
     {
@@ -1176,23 +1178,24 @@ vector<StorySentInfo> TextAnalysis::GetNumberOfStorySentence(const vector<Triple
         if (found == 0)
         {
             int j = i;
-            int NumOFSenInStory = 0;
+            int num_sentences = 0;
             while ( Found6_end != 0 )
             {
                 i++;
-                NumOFSenInStory++;
+                num_sentences++;
                 Found6_end = storyWordInfo[i].StoryTimeEnd.find("<end>");
             }
             string StoryName = storyWordInfo[j].StoryTopicName;
 
-            StorySentInfo Info;
-            Info.NameOFStoryTopic = (StoryName.substr(7, StoryName.size()));
-            Info.NumOFSenInOneStory = (NumOFSenInStory-2);
-            storyNameAndSenNum.push_back(Info);
+            StorySentInfo info;
+            info.storyTopic = (StoryName.substr(7, StoryName.size()));
+            info.num_sentences = (num_sentences-2);
+            storyNameAndSenNum.push_back(info);
+
             string TimeStart = storyWordInfo[j+1].StoryTimeStart;
-            inout << TimeStart << "      " << Info.NameOFStoryTopic << "       " << Info.NumOFSenInOneStory << ","<< endl;
+            inout << TimeStart << " " << info.storyTopic << "\t" << info.num_sentences << endl;
             
-            Allstory = Allstory + NumOFSenInStory - 2;
+            total_num_sentences += (num_sentences - 2);
         }
     }
     inout.close();
@@ -1201,8 +1204,7 @@ vector<StorySentInfo> TextAnalysis::GetNumberOfStorySentence(const vector<Triple
 
 vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordInfo , 
     vector<int> & removedStories)
-{   
-    vector<Triplet> allStories;
+{
     vector<Triplet> longStories;
     int j=0, num_stories = 0;
     for( int i=0; i < storyWordInfo.size(); i++)
@@ -1213,21 +1215,22 @@ vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordI
         if (found == 0)
         {
             num_stories ++;
-            int NumOFSenInStory = 0;
-            while ( found_end != 0 )
+            int num_sentences = 0;
+            while (found_end != 0)
             {
                 j++;
-                NumOFSenInStory++;
+                num_sentences++;
                 found_end = storyWordInfo[j].StoryTimeEnd.find("<end>");
             }
             
-            if ( NumOFSenInStory-2 > 4)
+            // Here -2 because '<story>' '<start>' shall not be counted.
+            if ( num_sentences-2 > 4)
             { // chose stories with more than 4 sentence
                 j = i;
                 found_end = 1;
-                while ( found_end != 0 ) {
+                while ( found_end != 0 )
+                {
                     longStories.push_back( storyWordInfo[j]);
-                    allStories.push_back( storyWordInfo[j]);
                     j++;
                     found_end = storyWordInfo[j].StoryTimeEnd.find("<end>");
                 }
@@ -1236,7 +1239,6 @@ vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordI
             else
             {
                 removedStories.push_back(num_stories - 1);
-                allStories.push_back(storyWordInfo[j]);
             }
         }
     }
@@ -1301,6 +1303,9 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     vector< pair<double, double> > crossValidation;
     vector<FinalTriplet> storyWordInfoFinalOrg = storyWordInfoFinal;
 
+    ofstream fout_eval;
+    fout_eval.open("output/Triplets_CrossValidation.txt"); 
+
     // partition
     for( int i=0; i < StoryNameAndSenNum.size(); i++)
     {
@@ -1308,7 +1313,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         {
             if(Iindex < StoryNameAndSenNum.size())
             {
-                TotalSt = TotalSt + StoryNameAndSenNum[Iindex].NumOFSenInOneStory;      
+                TotalSt = TotalSt + StoryNameAndSenNum[Iindex].num_sentences;      
             }
         }
         testPeriod.push_back(TotalSt);
@@ -1318,6 +1323,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     // cross validation
     for (int kk=0; kk<testPeriod.size()-1; kk++)
     {
+        fout_eval << "---------------------" << endl;
+        fout_eval << "Fold " << kk << endl;
+        fout_eval << "---------------------" << endl;
+
         vector<FinalTriplet> storyWordInfoFinalForTest, storyWordInfoFinalForTrain;
 
         for (int i=0; i<storyWordInfoFinalOrg.size(); i++)
@@ -1335,7 +1344,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         vector<string> labels_training, labels_testing;
         for( int i=0; i < storyWordInfoFinalForTrain.size(); i++)
         {           
-            if (storyWordInfoFinalForTrain[i].StoryTripletsCount == 0)
+            if (storyWordInfoFinalForTrain[i].tripletsIdx == 0)
             {       
                 string str = storyWordInfoFinalForTrain[i].StoryName;
                 found1 = str.find('|' );
@@ -1353,7 +1362,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         }
         for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
         {   
-            if (storyWordInfoFinalForTest[i].StoryTripletsCount == 0)
+            if (storyWordInfoFinalForTest[i].tripletsIdx == 0)
             {
                 string str = storyWordInfoFinalForTest[i].StoryName;
                 found1 = str.find('|' );
@@ -1369,7 +1378,16 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 }
             }
         }
-        storyWordInfoFinal=  storyWordInfoFinalForTrain;
+
+
+        fout_eval << "Training set: " << labels_training.size() << endl;
+        fout_eval << "Testing set:  " << labels_testing.size() << endl;
+        fout_eval << "---------------------" << endl;
+
+        //
+        // Training
+        //
+        storyWordInfoFinal = storyWordInfoFinalForTrain;
 
         //"Weather","Activism",
         const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
@@ -1380,37 +1398,43 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         vector<string> categories(array, array + sizeof array / sizeof array[0]);
         
 
-        vector<int> count_cat;
-        vector<double> prob_cat;
-        int num_stories = 0;
+        double SMALL_NUM = 1.5e-100;
 
+        //
+        // calculate prior probability for each category.
+        // P(cat)
+        //
+        vector<int> count_cat(categories.size());
+        vector<double> prob_cat(categories.size());
+        int num_stories = 0;
         for(int i=0; i < categories.size(); i++)
         {
             int count = 0;
             for (int j=0; j < labels_training.size(); j++)
             {
-                if (categories[i].compare(labels_training[j]) == 0)
+                if (categories[i] == labels_training[j])
                 {
                     count++;
                 }
             }
-            count_cat.push_back(count);
+            count_cat[i] = count;
             num_stories = num_stories + count;
-        }   
-
+        }
+        assert(num_stories == labels_training.size());
         if (num_stories != labels_training.size()){
             cout<< " Error: Additional Category in Story list which NOT in The Main Category List"<< endl;
         }
-
-        double SMALL_NUM = 1.5e-100;
-        // calculate prior probability for each category.
+        
+        fout_eval << "Priors of category: " << endl;        
+        fout_eval << "---------------------" << endl;
         for(int i = 0; i < count_cat.size(); i++)
         {
             double prob = double(count_cat[i]) / double(num_stories);
-            prob_cat.push_back(prob);
+            prob_cat[i] = prob;
+            fout_eval << categories[i] << "\t" << prob << endl;
         }
         
-        // Building co occurrence of (words given cat) AND P(Wi | Catj)
+        // Building co-occurrence of (words given cat) AND P(Wi | Catj)
         Matrix WordsCatMatrixNP1 = BuildMatrix(vocabularyNP1.size(), categories.size());        
         Matrix WordsCatMatrixVP = BuildMatrix(vocabularyVP.size(), categories.size());        
         Matrix WordsCatMatrixNP2 = BuildMatrix(vocabularyNP2.size(), categories.size());
@@ -1435,8 +1459,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
 
         Matrix ProbCatGivenStory = BuildMatrix(num_stories, categories.size());
         Matrix ProbCatGivenStory1 = BuildMatrix(num_stories, categories.size());
-        Matrix ProbCatGivenStory2 = BuildMatrix(num_stories, categories.size());
-        
+        Matrix ProbCatGivenStory2 = BuildMatrix(num_stories, categories.size());        
 
         //
         // Vocabularies
@@ -1467,10 +1490,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         int Counter = 0 , CountOFStories = 0;
         for(int i=0; i < storyWordInfoFinal.size(); i++)
         {
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount == 0)
+            int num_sentences = storyWordInfoFinal[i].num_sentences;
+            if (storyWordInfoFinal[i].tripletsIdx == 0)
             {
-                StoriesTime.push_back(indicater);
+                StoriesTime.push_back(num_sentences);
                 string str = storyWordInfoFinal[i].StoryName;
                 found1 = str.find('|' );
                 str1 = str.substr ( 0, found1 );
@@ -1479,38 +1502,43 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 {
                     str1 = str1.substr ( 0, found );
                 }
-                if (str1.compare("NULL") != 0)
+                if (str1 != "NULL")
                 {
                     int storyCount = 0, num_words_in_story = 0;
-                    int Counter3 = i;
-                    istringstream iss;
-                    while ( storyCount < indicater ) 
+                    int idx_story = i;
+                    while ( storyCount < num_sentences ) 
                     {
-                        storyCount++;
                         vector<string> words;
-                        istringstream iss(storyWordInfoFinal[Counter3].Non_Ph1);
+                        istringstream iss(storyWordInfoFinal[idx_story].Non_Ph1);
                         copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                 
+                        // find category
+                        int category_id = 0;
                         for(int idx_category=0; idx_category < categories.size(); idx_category++)
                         {
-                            if (str1.compare(categories[idx_category]) == 0)
+                            if (str1 == categories[idx_category])
                             {
-                                for(int kk=0; kk < words.size(); kk++)
-                                {
-                                    auto low = lower_bound(v.begin(), v.end(), words[kk]);                                    
-                                    int wordId = int(low- v.begin());
-                                    
-                                    if (wordId < vocabularyNP1.size() )
-                                    {
-                                        WordsCatMatrixNP1[wordId][idx_category] += 1;
-                                        WordsStoriesMatrixNP1[wordId][CountOFStories] += 1;
-                                        TotalNumOfWordsInDocs++;
-                                        num_words_in_story++;
-                                    }
-                                }
+                                category_id = idx_category;
+                                break;
                             }
                         }
-                        Counter3++;
+
+                        // fill in WordCatMatrix and WordsStoryMatrix
+                        for(int kk=0; kk < words.size(); kk++)
+                        {
+                            auto low = lower_bound(v.begin(), v.end(), words[kk]);                                    
+                            int wordId = int(low- v.begin());
+                                 
+                            if (wordId < vocabularyNP1.size() )
+                            {
+                                WordsCatMatrixNP1[wordId][category_id] += 1;
+                                WordsStoriesMatrixNP1[wordId][CountOFStories] += 1;
+                                TotalNumOfWordsInDocs++;
+                                num_words_in_story++;
+                            }
+                        }
+                        idx_story++;
+                        storyCount++;
                     }
                     CountOFStories++;
                     counts_np1.push_back(num_words_in_story);
@@ -1523,9 +1551,9 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         //
         Counter = 0 ; CountOFStories = 0;
         for(int i=0; i < storyWordInfoFinal.size(); i++){
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount == 0){
-                StoriesTime1.push_back(indicater);
+            int num_sentences = storyWordInfoFinal[i].num_sentences;
+            if (storyWordInfoFinal[i].tripletsIdx == 0){
+                StoriesTime1.push_back(num_sentences);
                 string str = storyWordInfoFinal[i].StoryName;
                 found1 = str.find('|' );
                 str1 = str.substr ( 0, found1 );
@@ -1534,14 +1562,14 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 str1 = str1.substr ( 0, found );}
                 if (str1.compare("NULL") != 0){
                     int storyCount = 0, num_vp_in_story = 0;
-                    int Counter3 = i;
+                    int idx_story = i;
                     istringstream iss;
-                    while ( storyCount < indicater ) {
+                    while ( storyCount < num_sentences ) {
 
                     storyCount++;
                     vector<string> words;
 
-                    istringstream iss(storyWordInfoFinal[Counter3].Verb_Ph);
+                    istringstream iss(storyWordInfoFinal[idx_story].Verb_Ph);
                     copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                             
                         for(int jj=0; jj < categories.size(); jj++){
@@ -1559,7 +1587,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                                 }
                             }
                         }
-                        Counter3++;
+                        idx_story++;
                     }
                     CountOFStories++;
                         counts_vp.push_back(num_vp_in_story);
@@ -1572,9 +1600,9 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         //
         Counter = 0 ; CountOFStories = 0;
         for(int i=0; i < storyWordInfoFinal.size(); i++){
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount == 0){
-                StoriesTime2.push_back(indicater);
+            int num_sentences = storyWordInfoFinal[i].num_sentences;
+            if (storyWordInfoFinal[i].tripletsIdx == 0){
+                StoriesTime2.push_back(num_sentences);
                 string str = storyWordInfoFinal[i].StoryName;
                 found1 = str.find('|' );
                 str1 = str.substr ( 0, found1 );
@@ -1583,14 +1611,14 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 str1 = str1.substr ( 0, found );}
                 if (str1.compare("NULL") != 0){
                     int storyCount = 0, num_np2_in_story = 0;
-                    int Counter3 = i;
+                    int idx_story = i;
                     istringstream iss;
-                    while ( storyCount < indicater ) {
+                    while ( storyCount < num_sentences ) {
 
                     storyCount++;
                     vector<string> words;
 
-                    istringstream iss(storyWordInfoFinal[Counter3].Non_Ph2);
+                    istringstream iss(storyWordInfoFinal[idx_story].Non_Ph2);
                     copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                             
                         for (int jj=0; jj < categories.size(); jj++){
@@ -1608,7 +1636,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                                 }
                             }  
                         }
-                        Counter3++;
+                        idx_story++;
                     }
                     CountOFStories++;
                     counts_np2.push_back(num_np2_in_story);
@@ -1624,10 +1652,13 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         vector<double> prob_storylen1;
         vector<double> prob_storylen2;
 
-        for (int i=0; i< counts_np1.size(); i++ ){
+        for (int i=0; i< counts_np1.size(); i++ )
+        {
             double NumOfEqualStory=0;
-            for (int j=0; j< counts_np1.size(); j++ ){
-                if (counts_np1[i] == counts_np1[j]){
+            for (int j=0; j< counts_np1.size(); j++ )
+            {
+                if (counts_np1[i] == counts_np1[j])
+                {
                     NumOfEqualStory = NumOfEqualStory+1;
                 }
             }
@@ -1671,273 +1702,192 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         vector<int> AllCountedWordsInStories2;
 
 
-        Counter = 0; int Counter1= 0;
+        int story_idx= 0;
         for(int i=0; i < storyWordInfoFinal.size(); i++)
         {
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount <= 0)
-            {                
-                string str = storyWordInfoFinal[i].StoryName;
-                found1 = str.find('|' );
-                str1 = str.substr ( 0, found1 );
-                found = str1.find(':' );
-                if (found < 50 )
-                {
-                    str1 = str1.substr ( 0, found );
-                }
-
-                if (Counter1 < ProbStoryGivenCat.size())
-                {
-                    if (str1.compare("NULL") != 0)
-                    {
-                        int storyCount = 0; 
-                        vector<double> prob_EntitiesinOneStorygivnCat;
-                        vector<int> FrequencyOfEachWord;
-                        prob_EntitiesinOneStorygivnCat.clear();
-                        int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++)
-                        {
-                            if (str1.compare(categories[jj]) == 0)
-                            {
-                                jjj = jj;
-                            }
-                        }
-                        istringstream iss;
-                        int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater ) 
-                        {                    
-                            storyCount++;
-                            vector<string> words;   
-                            istringstream iss(storyWordInfoFinal[Counter2].Non_Ph1);
-                            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++)
-                            {
-                                auto low = lower_bound (v.begin(), v.end(), words[kk]);
-                                double prob_EntitygivnCat = 0;
-                                string WordName = *low;             
-                                if(WordName.compare(words[kk]) == 0)
-                                {
-                                    int wordPlace = int(low- v.begin());                                    
-                                    double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                    if (wordPlace < vocabularyNP1.size() )
-                                    {
-                                        WCInfo.word = WordName;
-                                        WCInfo.Cat = categories[jjj];
-                                        WCInfo.StNumInList = Counter1;
-                                        WCInfo.wordPlaceInDic = wordPlace;
-                                        WordCatInf.push_back(WCInfo);
-                                        
-                                        NumOfEntity = WordsCatMatrixNP1[wordPlace][jjj];
-                                        prob_Entity = prob_wordsGivenCatsNP1[wordPlace][jjj];
-                                        NumOfEntities = NumOfEntities + NumOfEntity;
-                                        NumOFWordInOneStory++;                                        
-                                    }
-                                    FrequencyOfEachWord.push_back(NumOfEntity);
-                                    prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
-                                }                       
-                            }
-                            Counter2++;
-                        }
-                        double prob_OneStorygivnCat = 1;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
-                        {
-                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
-                        }
-                        if (prob_OneStorygivnCat < SMALL_NUM)
-                        {
-                            ProbStoryGivenCat[Counter1][jjj] = SMALL_NUM;
-                        }
-                        else
-                        {
-                            ProbStoryGivenCat[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
-                        }
-
-                        AllCountedWordsInStories.push_back(NumOFWordInOneStory);
-                    Counter1++;
-                    }
-                }
-            }
-        }
-
-        Counter = 0;  Counter1= 0;
-        for(int i=0; i < storyWordInfoFinal.size(); i++)
-        {
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount == 0)
+            // only process the first sentence of each story
+            if (storyWordInfoFinal[i].tripletsIdx != 0)
             {
-                
-                string str = storyWordInfoFinal[i].StoryName;
-                found1 = str.find('|' );
-                str1 = str.substr ( 0, found1 );
-                found = str1.find(':' );
-                if (found < 50 )
-                {
-                    str1 = str1.substr ( 0, found );
-                }
-                if (Counter1 < ProbStoryGivenCat.size())
-                {
-                    if (str1.compare("NULL") != 0)
-                    {
-                        int storyCount = 0; 
-                        vector<double> prob_EntitiesinOneStorygivnCat;
-                        vector<int> FrequencyOfEachWord;
-                        prob_EntitiesinOneStorygivnCat.clear();
-                        int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++)
-                        {
-                            if (str1.compare(categories[jj]) == 0)
-                            {
-                                jjj = jj;
-                            }
-                        }
-                        istringstream iss;
-                        int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater )
-                        {                    
-                            storyCount++;
-                            vector<string> words;   
-                            istringstream iss(storyWordInfoFinal[Counter2].Verb_Ph);
-                            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++)
-                            {
-                                auto low = lower_bound (v1.begin(), v1.end(), words[kk]);
-                                double prob_EntitygivnCat = 0;
-                                string WordName = *low;             
-                                if(WordName.compare(words[kk]) == 0)
-                                {
-                                    int wordPlace = int(low- v1.begin());                                    
-                                    double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                    if (wordPlace < vocabularyVP.size() )
-                                    {
-                                        WCInfo.word = WordName;
-                                        WCInfo.Cat = categories[jjj];
-                                        WCInfo.StNumInList = Counter1;
-                                        WCInfo.wordPlaceInDic = wordPlace;
-                                        WordCatInf1.push_back(WCInfo);
-
-                                        NumOfEntity = WordsCatMatrixVP[wordPlace][jjj];
-                                        prob_Entity = prob_wordsGivenCatsVP[wordPlace][jjj];
-                                        NumOfEntities = NumOfEntities + NumOfEntity;
-                                        NumOFWordInOneStory++;
-                                    }
-                                    FrequencyOfEachWord.push_back(NumOfEntity);
-                                    prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
-                                }                   
-                            }
-                            Counter2++;
-                        }
-
-                        double prob_OneStorygivnCat = 1;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
-                        {
-                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
-                        }
-                        if (prob_OneStorygivnCat < SMALL_NUM)
-                        {
-                            ProbStoryGivenCat1[Counter1][jjj] = SMALL_NUM;
-                        }
-                        else
-                        {
-                            ProbStoryGivenCat1[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
-                        }
-                        AllCountedWordsInStories1.push_back(NumOFWordInOneStory);
-                        Counter1++;
-                    }
-                }
+                continue;
             }
-        }
+            int num_sentences = storyWordInfoFinal[i].num_sentences;
 
-        Counter = 0; Counter1= 0;
-        for(int i=0; i < storyWordInfoFinal.size(); i++)
-        {
-            int indicater = storyWordInfoFinal[i].StoryNUmber;
-            if (storyWordInfoFinal[i].StoryTripletsCount == 0)
-            {                
-                string str = storyWordInfoFinal[i].StoryName;
-                found1 = str.find('|' );
-                str1 = str.substr ( 0, found1 );
-                found = str1.find(':' );
-                if (found < 50 )
-                {
-                    str1 = str1.substr ( 0, found );
-                }
-                if (Counter1 < ProbStoryGivenCat.size())
-                {
-                    if (str1.compare("NULL") != 0)
+            string storyLabel = storyWordInfoFinal[i].StoryName;
+            size_t found1 = storyLabel.find('|' );
+            string category = storyLabel.substr ( 0, found1);
+            size_t found = category.find(':');
+            if (found < 50 )
+            {
+                category = category.substr ( 0, found );
+            }
+
+            if (story_idx < ProbStoryGivenCat.size())
+            {
+                if (category != "NULL")
+                {   
+                    int category_id = 0;    
+                    for(int j=0; j < categories.size(); j++)
                     {
-                        int storyCount = 0; 
-                        vector<double> prob_EntitiesinOneStorygivnCat;
-                        vector<int> FrequencyOfEachWord;
-                        prob_EntitiesinOneStorygivnCat.clear();
-                        int jjj = 0;    
-                        for(int jj=0; jj < categories.size(); jj++)
+                        if (category == categories[j])
                         {
-                            if (str1.compare(categories[jj]) == 0)
-                            {
-                                jjj = jj;
-                            }
+                            category_id = j;
+                            break;
                         }
-                        istringstream iss;
-                        int Counter2 = i, NumOFWordInOneStory=0, NumOfEntities=0;
-                        while ( storyCount < indicater ) 
-                        {                    
-                            storyCount++;
-                            vector<string> words;   
-                            istringstream iss(storyWordInfoFinal[Counter2].Non_Ph2);
-                            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                            for(int kk=0; kk < words.size(); kk++)
+                    }
+
+                    vector<double> prob_wordsNP1InStoryGivenCat;
+                    vector<double> prob_wordsVPInStoryGivenCat;
+                    vector<double> prob_wordsNP2InStoryGivenCat;
+                    int Counter2 = i;
+                    int num_wordsNP1 = 0, num_wordsVP = 0, num_wordsNP2 = 0;
+                    int sentence_counter = 0; 
+                    while (sentence_counter < num_sentences) 
+                    {                    
+                        sentence_counter++;
+
+                        // NP1
+                        vector<string> wordsNP1;
+                        istringstream iss(storyWordInfoFinal[Counter2].Non_Ph1);
+                        copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(wordsNP1));
+
+                        for(int k=0; k < wordsNP1.size(); k++)
+                        {
+                            auto low = lower_bound (v.begin(), v.end(), wordsNP1[k]);
+                            string WordName = *low;             
+                            if(WordName == wordsNP1[k])
                             {
-                                auto low = lower_bound (v2.begin(), v2.end(), words[kk]);
-                                double prob_EntitygivnCat = 0;
-                                string WordName = *low;             
-                                if(WordName.compare(words[kk]) == 0)
+                                int word_id = int(low- v.begin());                                    
+                                double prob_word = 0;
+                                if (word_id < vocabularyNP1.size() )
                                 {
-                                    int wordPlace = int(low- v2.begin());
+                                    WCInfo.word = WordName;
+                                    WCInfo.Cat = categories[category_id];
+                                    WCInfo.StNumInList = story_idx;
+                                    WCInfo.wordPlaceInDic = word_id;
+                                    WordCatInf.push_back(WCInfo);
                                     
-                                    double NumOfEntity=0 , fact=0, prob_Entity=0;
-                                    if (wordPlace < vocabularyNP2.size() )
-                                    {
-                                        WCInfo.word = WordName;
-                                        WCInfo.Cat = categories[jjj];
-                                        WCInfo.StNumInList = Counter1;
-                                        WCInfo.wordPlaceInDic = wordPlace;
-                                        WordCatInf2.push_back(WCInfo);
-
-                                        NumOfEntity = WordsCatMatrixNP2[wordPlace][jjj];
-                                        prob_Entity = prob_wordsGivenCatsNP2[wordPlace][jjj];
-                                        NumOfEntities = NumOfEntities + NumOfEntity;
-                                        NumOFWordInOneStory++;
-                                    }
-                                    FrequencyOfEachWord.push_back(NumOfEntity);
-                                    prob_EntitiesinOneStorygivnCat.push_back(prob_Entity);
-                                }                       
+                                    prob_word = prob_wordsGivenCatsNP1[word_id][category_id];
+                                    num_wordsNP1++;
+                                }
+                                prob_wordsNP1InStoryGivenCat.push_back(prob_word);
                             }
-                            Counter2++;
                         }
 
-                        double prob_OneStorygivnCat = 1;
-                        for (int kk = 0; kk < prob_EntitiesinOneStorygivnCat.size(); kk++)
-                        {
-                            prob_OneStorygivnCat = prob_OneStorygivnCat * prob_EntitiesinOneStorygivnCat[kk];
-                        }                        
-                        
-                        if (prob_OneStorygivnCat < SMALL_NUM )
-                        {
-                            ProbStoryGivenCat2[Counter1][jjj] = SMALL_NUM;
-                        }
-                        else
-                        {
-                            ProbStoryGivenCat2[Counter1][jjj] = prob_OneStorygivnCat * prob_storylen[Counter1];
-                        }
-                        AllCountedWordsInStories2.push_back(NumOFWordInOneStory);
+                        // VP
+                        vector<string> wordsVP;
+                        istringstream iss1(storyWordInfoFinal[Counter2].Verb_Ph);
+                        copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(wordsVP));
 
-                        Counter1++;
+                        for(int k=0; k < wordsVP.size(); k++)
+                        {
+                            auto low = lower_bound (v.begin(), v.end(), wordsVP[k]);
+                            string WordName = *low;             
+                            if(WordName == wordsVP[k])
+                            {
+                                int word_id = int(low- v.begin());                                    
+                                double prob_word = 0;
+                                if (word_id < vocabularyVP.size() )
+                                {
+                                    WCInfo.word = WordName;
+                                    WCInfo.Cat = categories[category_id];
+                                    WCInfo.StNumInList = story_idx;
+                                    WCInfo.wordPlaceInDic = word_id;
+                                    WordCatInf.push_back(WCInfo);
+                                    
+                                    prob_word = prob_wordsGivenCatsVP[word_id][category_id];
+                                    num_wordsVP++;
+                                }
+                                prob_wordsVPInStoryGivenCat.push_back(prob_word);
+                            }
+                        }
+
+                        // NP2
+                        vector<string> wordsNP2;
+                        istringstream iss2(storyWordInfoFinal[Counter2].Non_Ph2);
+                        copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(wordsNP2));
+
+                        for(int k=0; k < wordsNP2.size(); k++)
+                        {
+                            auto low = lower_bound (v.begin(), v.end(), wordsNP2[k]);
+                            string WordName = *low;             
+                            if(WordName == wordsNP2[k])
+                            {
+                                int word_id = int(low- v.begin());                                    
+                                double prob_word = 0;
+                                if (word_id < vocabularyNP2.size() )
+                                {
+                                    WCInfo.word = WordName;
+                                    WCInfo.Cat = categories[category_id];
+                                    WCInfo.StNumInList = story_idx;
+                                    WCInfo.wordPlaceInDic = word_id;
+                                    WordCatInf.push_back(WCInfo);
+                                    
+                                    prob_word = prob_wordsGivenCatsNP2[word_id][category_id];
+                                    num_wordsNP2++;
+                                }
+                                prob_wordsNP2InStoryGivenCat.push_back(prob_word);
+                            }
+                        }
+                        Counter2++;
                     }
+                    
+                    AllCountedWordsInStories.push_back(num_wordsNP1);
+                    AllCountedWordsInStories1.push_back(num_wordsVP);
+                    AllCountedWordsInStories2.push_back(num_wordsNP2);
+
+                    // Calculate probability of story
+                    double prob_OneStorygivnCat = 1;
+                    for (int k = 0; k < prob_wordsNP1InStoryGivenCat.size(); k++)
+                    {
+                        prob_OneStorygivnCat *= prob_wordsNP1InStoryGivenCat[k];
+                    }
+
+                    if (prob_OneStorygivnCat < SMALL_NUM)
+                    {
+                        ProbStoryGivenCat[story_idx][category_id] = SMALL_NUM;
+                    }
+                    else
+                    {
+                        ProbStoryGivenCat[story_idx][category_id] = prob_OneStorygivnCat * prob_storylen[story_idx];
+                    }
+                    /////
+
+                    prob_OneStorygivnCat = 1;
+                    for (int kk = 0; kk < prob_wordsVPInStoryGivenCat.size(); kk++)
+                    {
+                        prob_OneStorygivnCat *= prob_wordsVPInStoryGivenCat[kk];
+                    }
+                    if (prob_OneStorygivnCat < SMALL_NUM)
+                    {
+                        ProbStoryGivenCat1[story_idx][category_id] = SMALL_NUM;
+                    }
+                    else
+                    {
+                        ProbStoryGivenCat1[story_idx][category_id] = prob_OneStorygivnCat * prob_storylen1[story_idx];
+                    }
+                    //////
+                          
+                    prob_OneStorygivnCat = 1;
+                    for (int kk = 0; kk < prob_wordsNP2InStoryGivenCat.size(); kk++)
+                    {
+                        prob_OneStorygivnCat *= prob_wordsNP2InStoryGivenCat[kk];
+                    }                        
+                    
+                    if (prob_OneStorygivnCat < SMALL_NUM )
+                    {
+                        ProbStoryGivenCat2[story_idx][category_id] = SMALL_NUM;
+                    }
+                    else
+                    {
+                        ProbStoryGivenCat2[story_idx][category_id] = prob_OneStorygivnCat * prob_storylen2[story_idx];
+                    }
+
+                    story_idx++;
                 }
             }
-        }
+        } 
 
-        //Normolasation of the ProbStoryGivenCat which gives Probability of Story Given Category:P(Si|Catj)^time
+        // Normalizing of the ProbStoryGivenCat which gives Probability of Story Given Category:P(Si|Catj)^time
         ProbStoryGivenCat = Normalize2D(ProbStoryGivenCat);
         ProbStoryGivenCat1 = Normalize2D(ProbStoryGivenCat1);
         ProbStoryGivenCat2 = Normalize2D(ProbStoryGivenCat2);
@@ -1949,33 +1899,16 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         for (int i=0; i<num_stories; i++)
         {
             // p(story_i) = \sum_{cat_j} p(story_i | category_j) * p(cat_j)
-            double prob = 0;
-            for (int j=0; j<categories.size(); j++)
+            double prob = 0, prob1 = 0, prob2 = 0;
+            for(int j=0; j<categories.size(); j++)
             {
-
                 prob += prob_cat[j]*ProbStoryGivenCat[i][j];
-            }            
+                prob1 += prob_cat[j]*ProbStoryGivenCat1[i][j];
+                prob2 += prob_cat[j]*ProbStoryGivenCat2[i][j];
+            }
             prob_Story[i] = prob;
-        }
-
-        for (int i=0; i<num_stories; i++)
-        {
-            double prob = 0;
-            for (int j=0; j<categories.size(); j++)
-            {
-                prob += prob_cat[j]*ProbStoryGivenCat1[i][j];
-            }
-            prob_Story1[i] = prob;
-        }
-
-        for (int i=0; i<num_stories; i++)
-        {
-            double prob = 0;
-            for (int j=0; j<categories.size(); j++)
-            {
-                prob += prob_cat[j]*ProbStoryGivenCat2[i][j];
-            }
-            prob_Story2[i] = prob;
+            prob_Story1[i] = prob1;
+            prob_Story2[i] = prob2;
         }
 
         //
@@ -1984,19 +1917,12 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
 
         // E_Step: 
         // Building The Probability of Category Given Story P(Catj|Si)^(t+1)   t=time  FOR NP1,VP,NP2
-
-        for (int i=0; i<num_stories; i++){
-            for (int j=0; j<categories.size(); j++){
+        for (int i=0; i<num_stories; i++)
+        {
+            for (int j=0; j<categories.size(); j++)
+            {
                 ProbCatGivenStory[i][j] = prob_cat[j]*ProbStoryGivenCat[i][j]/prob_Story[i];
-            }
-        }
-        for (int i=0; i<num_stories; i++){
-            for (int j=0; j<categories.size(); j++){
                 ProbCatGivenStory1[i][j] = prob_cat[j]*ProbStoryGivenCat1[i][j]/prob_Story1[i];
-            }
-        }
-        for (int i=0; i<num_stories; i++){
-            for (int j=0; j<categories.size(); j++){
                 ProbCatGivenStory2[i][j] = prob_cat[j]*ProbStoryGivenCat2[i][j]/prob_Story2[i];
             }
         }
@@ -2018,13 +1944,16 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
         // Updating The Probability of Each Words in vocabulary Given Category    
         // P(Wn|Catj)^(t+1)   t=time
 
-        for (int i=0; i<vocabularyNP1.size(); i++){
-            for (int j=0; j<categories.size(); j++){
+        for (int i=0; i<vocabularyNP1.size(); i++)
+        {
+            for (int j=0; j<categories.size(); j++)
+            {
                 double Numeratorwithoutsmooth = 0;
                 double DeNumeratorwithoutsmooth = 0;
-                for (int k=0; k<num_stories; k++){
-                Numeratorwithoutsmooth = Numeratorwithoutsmooth + ProbCatGivenStory[k][j]*WordsStoriesMatrixNP1[i][k];
-                DeNumeratorwithoutsmooth  = DeNumeratorwithoutsmooth + ProbCatGivenStory[k][j]*AllCountedWordsInStories[k]; 
+                for (int k=0; k<num_stories; k++)
+                {
+                    Numeratorwithoutsmooth += ProbCatGivenStory[k][j]*WordsStoriesMatrixNP1[i][k];
+                    DeNumeratorwithoutsmooth += ProbCatGivenStory[k][j]*AllCountedWordsInStories[k]; 
                 }
                 prob_wordsGivenCatsNP1[i][j] = (1 + Numeratorwithoutsmooth) / (vocabularyNP1.size() + DeNumeratorwithoutsmooth);
             }
@@ -2037,8 +1966,8 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 double Numeratorwithoutsmooth = 0;
                 double DeNumeratorwithoutsmooth = 0;
                 for (int k=0; k<num_stories; k++){
-                Numeratorwithoutsmooth = Numeratorwithoutsmooth + ProbCatGivenStory1[k][j]*WordsStoriesMatrixVP[i][k];
-                DeNumeratorwithoutsmooth  = DeNumeratorwithoutsmooth + ProbCatGivenStory1[k][j]*AllCountedWordsInStories[k];    
+                Numeratorwithoutsmooth += ProbCatGivenStory1[k][j]*WordsStoriesMatrixVP[i][k];
+                DeNumeratorwithoutsmooth += ProbCatGivenStory1[k][j]*AllCountedWordsInStories[k];    
                 }
                 prob_wordsGivenCatsVP[i][j] = (1 + Numeratorwithoutsmooth) / (vocabularyVP.size() + DeNumeratorwithoutsmooth);
             }
@@ -2051,8 +1980,8 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 double Numeratorwithoutsmooth = 0;
                 double DeNumeratorwithoutsmooth = 0;
                 for (int k=0; k<num_stories; k++){
-                Numeratorwithoutsmooth = Numeratorwithoutsmooth + ProbCatGivenStory2[k][j]*WordsStoriesMatrixNP2[i][k];
-                DeNumeratorwithoutsmooth  = DeNumeratorwithoutsmooth + ProbCatGivenStory2[k][j]*AllCountedWordsInStories[k];
+                Numeratorwithoutsmooth += ProbCatGivenStory2[k][j]*WordsStoriesMatrixNP2[i][k];
+                DeNumeratorwithoutsmooth  += ProbCatGivenStory2[k][j]*AllCountedWordsInStories[k];
                 //cout<< "[k][j]" <<k<< "    "<<j<<   "      "<<DeNumeratorwithoutsmooth<<endl;
                 }
                 prob_wordsGivenCatsNP2[i][j] = (1 + Numeratorwithoutsmooth) / (vocabularyNP2.size() + DeNumeratorwithoutsmooth);
@@ -2079,7 +2008,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 int CountToFindStory=0;
                 for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
                 {   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].num_sentences; jj++)
                     {
                         if( CountToFindStory == ii )
                         { //randStory
@@ -2100,7 +2029,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                         }
                     }
                     CountToFindStory++;
-                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    i= i+storyWordInfoFinalForTest[i].num_sentences-1;
                 }
                 Numerator = prob_cat[j] * TotalProbWordsGivenCat;
                 Posteriorprob_catGivenStoryNP1.push_back(Numerator);
@@ -2146,7 +2075,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 int CountToFindStory=0;
                 for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
                 {   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].num_sentences; jj++)
                     {
                         if( CountToFindStory == ii )
                         { //randStory
@@ -2165,7 +2094,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                         }
                     }
                     CountToFindStory++;
-                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    i= i+storyWordInfoFinalForTest[i].num_sentences-1;
                 }
                 Numerator = prob_cat[j] * TotalProbWordsGivenCat;
                 Posteriorprob_catGivenStoryVP.push_back(Numerator);
@@ -2204,7 +2133,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 int CountToFindStory=0;
                 for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
                 {   
-                    for (int jj=0; jj<storyWordInfoFinalForTest[i].StoryNUmber; jj++)
+                    for (int jj=0; jj<storyWordInfoFinalForTest[i].num_sentences; jj++)
                     {
                         if( CountToFindStory == ii )
                         { //randStory
@@ -2226,7 +2155,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                     }
 
                     CountToFindStory++;
-                    i= i+storyWordInfoFinalForTest[i].StoryNUmber-1;
+                    i= i+storyWordInfoFinalForTest[i].num_sentences-1;
                 }
 
                 Numerator = prob_cat[j] * TotalProbWordsGivenCat;
@@ -2264,9 +2193,10 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
 
             //Total Posterior Probibility Of Cat Given Story
             vector<double> TotalPosteriorprob_catGivenStory;
-            for (int i=0; i<Posteriorprob_catGivenStoryNP2.size(); i++)
+            for (int i=0; i < categories.size(); i++)
             {
                 double A =  Posteriorprob_catGivenStoryNP1[i] * Posteriorprob_catGivenStoryVP[i] * Posteriorprob_catGivenStoryNP2[i];
+                A = A / (prob_cat[i] * prob_cat[i]);
                 TotalPosteriorprob_catGivenStory.push_back(A);
             }
 
@@ -2277,10 +2207,13 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
             int predicted_category_idx = max_element(TotalPosteriorprob_catGivenStory.begin(), TotalPosteriorprob_catGivenStory.end()) - TotalPosteriorprob_catGivenStory.begin();
             string predicted_category = categories[predicted_category_idx];
 
+            fout_eval << "Label: " << labeled_category << "\t ... \t" << predicted_category;
+
             if ( predicted_category == labeled_category )
             {
                 // correct
-                correct_count = correct_count +1;   
+                correct_count = correct_count +1;
+                fout_eval << endl;
             }
             else
             {
@@ -2290,7 +2223,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                 if( labeled_category == "Human-interest" || 
                     labeled_category=="Celebrity" || 
                     labeled_category=="Entertainment" ||
-                    predicted_category == "Human-interest" ||                   
+                    predicted_category == "Human-interest" ||
                     predicted_category=="Entertainment"||
                     (predicted_category=="War"  && found < 50) ||       // war = south-Ossetia
                     (predicted_category == "International" && found < 50) ||    // international = south-Ossetia
@@ -2303,6 +2236,11 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
                     (labeled_category == "Crime"    && predicted_category == "Accident"))
                 {
                     correct_count = correct_count +1;
+                    fout_eval << "\t tolerance" << endl;
+                }
+                else
+                {
+                    fout_eval << "\t WRONG" << endl;
                 }
             }
         }
@@ -2310,9 +2248,7 @@ void TextAnalysis::ParameterLearning(const vector<FinalTriplet> & storyWordInfo,
     }
 
     // Output cross validation report.
-    ofstream fout_eval;
-    fout_eval.open("output/Triplets_CrossValidation.txt");    
-    fout_eval << "Number of stories in documents:\t" << StoryNameAndSenNum.size() << endl;
+    fout_eval << "# of stories:\t" << StoryNameAndSenNum.size() << endl;
     PrintCrossValidationReport(fout_eval, crossValidation);
     PrintCrossValidationReport(cout, crossValidation);
     fout_eval.close();
@@ -2323,23 +2259,26 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     const vector<Triplet> & storyWordInfo,
     const vector<StorySentInfo> & StoryNameAndSenNum)
 {   
-    vector<FinalTriplet> storyWordInfoFinal;
-    ofstream inout ;
-    ofstream inout1 ;
-    size_t foundNP1, foundVP ;
+    vector<FinalTriplet> storyWordInfoFinal;    
+    size_t foundNP1, foundVP;
     vector<string> Non_Ph1 , Verb_Ph , Non_Ph2 ;
+    
+    ///
 
-    FinalTriplet entry; 
-
-    int Count = 0;
+    ofstream inout;
     inout.open(FILE_ANNA_BEFORE_SPLIT);
-    for(int i=0; i < storyWordInfo.size(); i++){
-        if (storyWordInfo[i].StoryTimeEnd == "" && storyWordInfo[i].StoryTimeStart == ""
-            && storyWordInfo[i].StoryTopicName == "" ){
-            Count++;
-            if (storyWordInfo[i].Non_Ph1 == ""){ 
+    for(int i=0; i < storyWordInfo.size(); i++)
+    {
+        if (storyWordInfo[i].StoryTimeEnd == "" 
+            && storyWordInfo[i].StoryTimeStart == ""
+            && storyWordInfo[i].StoryTopicName == "" )
+        {
+            if (storyWordInfo[i].Non_Ph1 == "")
+            { 
                 inout << "this" << endl; // add stop word to empty line
-            }else{
+            }
+            else
+            {
                 inout << storyWordInfo[i].Non_Ph1 << endl;
             }
         }
@@ -2360,11 +2299,13 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     ofstream lemm_words ;
     lemm_words.open ("lemmatized_words.txt");
 
-    while (!lemmed.eof() && lemmed.good() ) {
+    while (!lemmed.eof() && lemmed.good() ) 
+    {
         lemmed.getline(buffer, 500, '\n');
         str_buf = (buffer);
 
-        if (str_buf == "") {
+        if (str_buf == "") 
+        {
             lemmatized_words.push_back(wholeString);
             lemm_words << wholeString << '\n';
             Non_Ph1.push_back(wholeString);
@@ -2372,18 +2313,20 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
             //FinalTriplet.push_back(entry);
             wholeString = "";
         }
-        if (str_buf != "" ){
+        if (str_buf != "" )
+        {
             pch=strchr(buffer,'_');
             foundNP1 = pch-buffer+1 ;
             pch=strchr(pch+1,'_');
             foundVP = pch-buffer+1 ;
             str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
-            wholeString = wholeString + " " + str ;}
+            wholeString = wholeString + " " + str ;
+        }
     }
-        lemmed.close();
-        lemmed.clear();
-        lemm_words.close();
-        lemm_words.clear();
+    lemmed.close();
+    lemmed.clear();
+    lemm_words.close();
+    lemm_words.clear();
 
 
     /////////////
@@ -2392,7 +2335,6 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     for(int i=0; i < storyWordInfo.size(); i++){
         if (storyWordInfo[i].StoryTimeEnd == "" && storyWordInfo[i].StoryTimeStart == ""
             && storyWordInfo[i].StoryTopicName == "" ){
-            Count++;
             if (storyWordInfo[i].Verb_Ph == ""){ 
                 inout << "this" << endl; // add stop word to empty line
             }else{
@@ -2431,10 +2373,10 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
         str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
         wholeString = wholeString + " " + str ;}
     }
-        lemmed.close();
-        lemmed.clear();
-        lemm_words.close();
-        lemm_words.clear();
+    lemmed.close();
+    lemmed.clear();
+    lemm_words.close();
+    lemm_words.clear();
 
     ////////
 
@@ -2442,7 +2384,6 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     for(int i=0; i < storyWordInfo.size(); i++){
         if (storyWordInfo[i].StoryTimeEnd == "" && storyWordInfo[i].StoryTimeStart == ""
             && storyWordInfo[i].StoryTopicName == "" ){
-            Count++;
             if (storyWordInfo[i].Non_Ph2 == ""){ 
                 inout << "this" << endl; // add stop word to empty line
             }else{
@@ -2487,57 +2428,52 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     lemm_words.close();
     lemm_words.clear();
 
+    //
+    // Create FinalTriplets
+    //
+    FinalTriplet entry; 
     int Counter;
-    int StoryIndex = 0, StoryCount = 0;
+    int StoryIndex = 0;
     for(int i=0; i < Non_Ph1.size()-1; i++)
     {
-        for (Counter = 0; Counter < StoryNameAndSenNum[StoryIndex].NumOFSenInOneStory; Counter++)
+        for (Counter = 0; Counter < StoryNameAndSenNum[StoryIndex].num_sentences; Counter++)
         {
             if (i+Counter < Non_Ph1.size())
             {
                 entry.Non_Ph1 = Non_Ph1[i+Counter];
                 entry.Verb_Ph = Verb_Ph[i+Counter];
                 entry.Non_Ph2 = Non_Ph2[i+Counter];
-                entry.StoryName = StoryNameAndSenNum[StoryIndex].NameOFStoryTopic;
-                entry.StoryTripletsCount = Counter;
-                entry.StoryNUmber = StoryNameAndSenNum[StoryIndex].NumOFSenInOneStory;
+                entry.StoryName = StoryNameAndSenNum[StoryIndex].storyTopic;
+                entry.tripletsIdx = Counter;
+                entry.num_sentences = StoryNameAndSenNum[StoryIndex].num_sentences;
                 storyWordInfoFinal.push_back(entry);
-                StoryCount++;
             }
         }
-        StoryCount = 0;
         i = i+Counter - 1;
         StoryIndex++;
     }
     
-    vector<string> removeList(stopwordsArray,
+    // stop words
+    set<string> stopwords(stopwordsArray,
                         stopwordsArray + sizeof(stopwordsArray)/ sizeof(stopwordsArray[0]));
-    //cout <<"removeList.size   "<<removeList.size()<<endl;
-
-            for(int i=0; i < removeList.size(); i++){
-                for (int j=i+1; j < removeList.size(); j++){
-                    if (removeList[i].compare(removeList[j]) == 0){
-                        removeList.erase (removeList.begin()+j);
-                        j--;}}}
-
-
-        string wholeStringNon_Ph1 , wholeStringNon_Ph2 ;
-        size_t found;
-        for(int i=0; i < storyWordInfoFinal.size(); i++){ 
-        
+  
+    string wholeStringNon_Ph1 , wholeStringNon_Ph2 ;
+    size_t found;
+    for(int i=0; i < storyWordInfoFinal.size(); i++)
+    {         
         wholeStringNon_Ph1 = storyWordInfoFinal[i].Non_Ph1;
         wholeStringNon_Ph2 = storyWordInfoFinal[i].Non_Ph2;
         wholeString = storyWordInfoFinal[i].Verb_Ph;
-        
+            
         char chars[] = "1234567890,:'";
 
-           for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
-           {
-              // you need include <algorithm> to use general algorithms like remove()
-              wholeString.erase (remove(wholeString.begin(), wholeString.end(), chars[ii]), wholeString.end());
-              wholeStringNon_Ph1.erase (remove(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), chars[ii]), wholeStringNon_Ph1.end());
-              wholeStringNon_Ph2.erase (remove(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), chars[ii]), wholeStringNon_Ph2.end());
-           }
+        for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
+        {
+            // you need include <algorithm> to use general algorithms like remove()
+            wholeString.erase (remove(wholeString.begin(), wholeString.end(), chars[ii]), wholeString.end());
+            wholeStringNon_Ph1.erase (remove(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), chars[ii]), wholeStringNon_Ph1.end());
+            wholeStringNon_Ph2.erase (remove(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), chars[ii]), wholeStringNon_Ph2.end());
+        }
 
         replace( wholeString.begin(), wholeString.end(), '-', ' ' );
         replace( wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), '-', ' ' );
@@ -2547,50 +2483,52 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
         storyWordInfoFinal[i].Non_Ph2 = wholeStringNon_Ph2;
         storyWordInfoFinal[i].Verb_Ph = wholeString;
 
-        }
+    }
 
 
         for (int k = 0; k < 3; k++){
 
-            for(int i=0; i < storyWordInfoFinal.size(); i++){
+            for(int i=0; i < storyWordInfoFinal.size(); i++)
+            {
                 vector<string> words;
 
                 istringstream iss;
                 if ( k == 0 ){
-                istringstream iss(storyWordInfoFinal[i].Non_Ph1);
-                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
+                    istringstream iss(storyWordInfoFinal[i].Non_Ph1);
+                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                 }else if ( k == 1 ){
-                istringstream iss(storyWordInfoFinal[i].Non_Ph2);
-                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
+                    istringstream iss(storyWordInfoFinal[i].Non_Ph2);
+                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                 }else if ( k == 2 ){
-                istringstream iss(storyWordInfoFinal[i].Verb_Ph);
-                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
+                    istringstream iss(storyWordInfoFinal[i].Verb_Ph);
+                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
                 }
 
-            for(int kk=0; kk < words.size(); kk++){
-                for (int jj=0; jj < removeList.size(); jj++){
-
-                    if (words[kk].compare(removeList[jj]) == 0){
-                        words[kk] = "" ;}
+                for(int kk=0; kk < words.size(); kk++)
+                {
+                    if (stopwords.find(words[kk]) != stopwords.end())
+                    {
+                        words[kk] = "";
+                    }
                 }
-            }
 
-            wholeString.clear();
-            for(int kk=0; kk < words.size(); kk++){
-                if ( words[kk] != "" ){
-                        wholeString = wholeString + " " + words[kk] ;
+                wholeString.clear();
+                for(int kk=0; kk < words.size(); kk++)
+                {
+                    if ( words[kk] != "" ){
+                            wholeString = wholeString + " " + words[kk] ;
+                    }
                 }
-            }
 
             if ( k == 0 ){
                 found = wholeString.find("'s");
                 if (found <= 50){
-                    wholeString.erase (found,2);}
-            found = wholeString.find("$");
-            if (found <= 50){
-                wholeString = "dollar";}        
+                    wholeString.erase (found,2);
+                }
+                found = wholeString.find("$");
+                if (found <= 50){
+                    wholeString = "dollar";}        
                 storyWordInfoFinal[i].Non_Ph1 = wholeString;
-
             }else if ( k == 1 ){
             found = wholeString.find("'s");
             if (found <= 50){
@@ -2617,10 +2555,8 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
                 wholeString = "dollar";}
                 storyWordInfoFinal[i].Verb_Ph = wholeString;
             }
-
         }
-
-        }
+    }
     return storyWordInfoFinal;
 }
                 
@@ -2638,12 +2574,12 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
     StoryInfo entry;
     for(int i=0; i < storyWordInfoFinal.size(); i++)
     {
-        if (storyWordInfoFinal[i].StoryTripletsCount  == 0)
+        if (storyWordInfoFinal[i].tripletsIdx  == 0)
         {
             entry.StoryTopic = storyWordInfoFinal[i].StoryName;
         }
 
-        if ( storyWordInfoFinal[i].StoryTripletsCount != storyWordInfoFinal[i].StoryNUmber-1)
+        if ( storyWordInfoFinal[i].tripletsIdx != storyWordInfoFinal[i].num_sentences-1)
         {
             if ( storyWordInfoFinal[i].Non_Ph1 != "")
             {
@@ -2659,7 +2595,7 @@ void TextAnalysis::CalculateSimilarity(vector<FinalTriplet> & storyWordInfoFinal
             }  
         }
         
-        if ( storyWordInfoFinal[i].StoryTripletsCount == storyWordInfoFinal[i].StoryNUmber-1)
+        if ( storyWordInfoFinal[i].tripletsIdx == storyWordInfoFinal[i].num_sentences-1)
         {
             entry.NP1 = Np1;
             entry.VP = Vp;
@@ -3103,7 +3039,8 @@ void TextAnalysis::Screen_Text_Info(
     vector<string> Screen_Words ;
     for (int ii = 0; ii < 2; ii++)
     {
-        ofstream inout ;ofstream inout1 ;
+        ofstream inout;
+        ofstream inout1;
         inout.clear() , inout1.clear();
 
         // First iteration: output all on screen words (from ocr files)

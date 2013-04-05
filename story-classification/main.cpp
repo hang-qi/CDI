@@ -23,7 +23,8 @@ int main(int argc, const char* argv[])
     }
     */
 
-    TextAnalysis cws;
+    TextAnalysis cws;    
+    vector<int> RemovedStory;
 
     //// This part for Russian news article :
     // vector<TopicElements> ArticleTopicInfo;
@@ -32,9 +33,9 @@ int main(int argc, const char* argv[])
     //
     // OCR classification
     //
+    /*
     vector<ScreenInfo> screenInfo;
     set<string> screen_vocabulary;
-    vector<int> RemovedStory;
 
     cout << "OCR loading..." << endl;
     cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
@@ -44,7 +45,7 @@ int main(int argc, const char* argv[])
 
     cout << "OCR cross validation..." << endl;
     cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
-
+    */
     
     //
     // Triplets classification

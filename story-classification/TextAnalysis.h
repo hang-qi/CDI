@@ -44,8 +44,8 @@ struct Triplet
 struct FinalTriplet 
 {
     string StoryName;
-    int StoryNUmber;
-    int StoryTripletsCount;
+    int num_sentences;
+    int tripletsIdx;
     string Non_Ph1;
     string Verb_Ph;
     string Non_Ph2;
@@ -61,8 +61,8 @@ struct TaggedElements
 
 struct StorySentInfo
 {
-    string NameOFStoryTopic;
-    int NumOFSenInOneStory;
+    string storyTopic;
+    int num_sentences;
 };
 
 
