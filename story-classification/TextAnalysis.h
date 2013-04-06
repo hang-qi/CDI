@@ -3,6 +3,9 @@
 #include <vector>
 #include <set>
 
+#include "definitions.h"
+#include "classifier.h"
+
 #define OUT
 
 // some path
@@ -136,17 +139,6 @@ struct WordCount
 };
 
 
-struct StoryInfo 
-{
-
-    string StoryTopic;
-    vector<string> NP1;
-    vector<string> VP;
-    vector<string> NP2;
-
-};
-
-
 class TextAnalysis
 {
 public:
@@ -196,7 +188,11 @@ public:
         OUT set<string>& vocabularyNP1, 
         OUT set<string>& vocabularyVP, 
         OUT set<string>& vocabularyNP2);
+
+    vector<StoryInfo> GetStories(const vector<FinalTriplet>& storyWordInfoFinal);
+
     void ParameterLearning(
+        const vector<StoryInfo>& stories,
         const vector<FinalTriplet>& StoryWordInfoFinal,
         const vector<StorySentInfo> & StoryNameAndSenNum,
         const set<string>& vocabularyNP1, 
@@ -206,7 +202,7 @@ public:
     //
     // Similarity
     //
-    void CalculateSimilarity(vector<FinalTriplet> & StoryWordInfoFinal);
+    void CalculateSimilarity(const vector<StoryInfo>& StoryWordInfoFinal);
 
     
     //-----------------------------------

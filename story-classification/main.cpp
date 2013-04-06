@@ -98,11 +98,15 @@ int main(int argc, const char* argv[])
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 
     cout << "Triplets validation..." << endl;
-    cws.ParameterLearning(storyWordInfoFinal, storyNameAndSenNum,
+    vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
+
+    cws.ParameterLearning(
+        stories, storyWordInfoFinal, storyNameAndSenNum,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
 
     // Clustering based on NP1 similarities.    
-    //cws.CalculateSimilarity(storyWordInfoFinal);
+    //cws.CalculateSimilarity(stories);
+
     ////cws.TransitionMatrix_ScreenTopic(screenInfo);
 
   return 0;
