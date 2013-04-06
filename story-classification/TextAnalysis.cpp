@@ -1358,7 +1358,6 @@ void TextAnalysis::ParameterLearning(
             }
         }
 
-        cout << "Creating training set..." << endl;
         vector<string> labels_training, labels_testing;
         for( int i=0; i < storyWordInfoFinalForTrain.size(); i++)
         {           
@@ -1378,9 +1377,7 @@ void TextAnalysis::ParameterLearning(
                 }
             }
         }
-
-        cout << "Creating testing set..." << endl;
-
+        
         for( int i=0; i < storyWordInfoFinalForTest.size(); i++)
         {   
             if (storyWordInfoFinalForTest[i].tripletsIdx == 0)
