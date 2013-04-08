@@ -12,15 +12,15 @@
 ## Configurations
 ## ---------------------------------
 # Root directory for transcripts and captions
-root_transcript='/tvspare/transcripts/CNN-automated/'
-root_captions='/tv/'
+root_transcript='/tvspare/transcripts/CNN-automated'
+root_captions='/tv'
 
 # Output log directory
 root_log=$root_transcript/log
 if [ ! -d $root_log ] ; then mkdir -p $root_log ; fi
 
 # root of aligner program
-root_transcript_aligner='/usr/local/bin/transcript_aligner/'
+root_transcript_aligner='/usr/local/bin/transcript_aligner'
 
 # location of binary and scripts to the program root
 the_matchall_py=${root_transcript_aligner}/matchall.py
@@ -42,7 +42,7 @@ fi
 
 # Identify the target day we want to run on.
 start_time=$(date +%Y%m%d%H%M%S)
-target_date=$(date -u -v-${days_ago}d +%Y%m%d)
+target_date=$(date -u -d "-${days_ago} day" +%Y%m%d)
 echo "Running transcript aigner for archives on ${days_ago} days ago."
 echo "Date to generate (UTC): ${target_date}"
 echo
@@ -52,7 +52,7 @@ target_month=${target_date:4:2}
 target_day=${target_date:6:2}
 
 # Transcript folders.
-dir_transcripts=${root_transcript}/${target_year}/${target_year}${target_month}/${target_year}${target_month}${target_day}/
+dir_transcripts=${root_transcript}/${target_year}/${target_year}-${target_month}/${target_year}-${target_month}-${target_day}/
 
 # logfiles
 matchlogfile=${root_log}/transcript-aligner_${start_time}_match.log
