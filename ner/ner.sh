@@ -16,10 +16,12 @@ root_tpt='/tvspare/transcripts/CNN-automated/'
 root_ner=root_tpt
 
 # Output log directory
-root_log='/home/csa/CAS2/log/'
+root_log=$root_transcript/log
+if [ ! -d $root_log ] ; then mkdir -p $root_log ; fi
+
 
 # root of ner program (jar)
-root_ner_jar='/usr/local/bin/ner/tSegment.jar'
+root_ner_jar='/usr/local/bin/tSegment/tSegment.jar'
 
 ## ---------------------------------
 
@@ -46,7 +48,7 @@ target_day=${target_date:6:2}
 
 # Transcript folders.
 dir_tpt=${root_tpt}/${target_year}/${target_year}${target_month}/${target_year}${target_month}${target_day}/
-dir_output_ner=${root_ner_jar}/${target_year}/${target_year}${target_month}/${target_year}${target_month}${target_day}/
+dir_output_ner=${root_ner}/${target_year}/${target_year}${target_month}/${target_year}${target_month}${target_day}/
 
 # log files
 nerlogfile=${root_log}/ner_${start_time}.log
