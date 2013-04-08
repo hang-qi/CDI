@@ -16,7 +16,8 @@ root_transcript='/tvspare/transcripts/CNN-automated/'
 root_captions='/tv/'
 
 # Output log directory
-root_log='/home/csa/CAS2/log/'
+root_log=$root_transcript/log
+if [ ! -d $root_log ] ; then mkdir -p $root_log ; fi
 
 # root of aligner program
 root_transcript_aligner='/usr/local/bin/transcript_aligner/'

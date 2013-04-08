@@ -10,9 +10,14 @@
 # Author: Hang Qi - qih@qihang.im
 # Date: 3/22/2013
 
+days_ago=3
+if [ -n "$1" ]
+then
+    days_ago=$1
+fi
 
 # align captions and transcripts to generate tpt files.
-bash align-transcripts.sh 3
+bash align-transcripts.sh ${days_ago}
 
 # run NER module for tpt files
-bash ner.sh 3
+bash ner.sh ${days_ago}
