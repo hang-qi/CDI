@@ -1361,6 +1361,8 @@ void TextAnalysis::CrossValidation(
         classifier.SetVocabularyVP(vocabularyVP);
         classifier.SetVocabularyNP2(vocabularyNP2);
         classifier.Train(stories_training);
+        //classifier.SaveParametersToFile("output/model.txt");
+        //classifier.LoadParametersFromFile("output/model.txt");
 
         //
         // Testing
@@ -3173,14 +3175,7 @@ vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWord
             {
                 str1 = str1.substr ( 0, found );
             }
-            if (str1 != "NULL" )
-            {
-                current_story.category = str1;
-            }
-            else
-            {
-                current_story.category = "NULL";   
-            }
+            current_story.category = str1;
             current_story.name = name;
             current_story.num_sentences = storyWordInfoFinal[i].num_sentences;
         }
@@ -3197,8 +3192,11 @@ vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWord
             copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
         }
         else if ( storyWordInfoFinal[i].tripletsIdx == storyWordInfoFinal[i].num_sentences-1)
-        {            
-            stories.push_back(current_story);
+        {
+            if (current_story.category != "NULL")
+            {
+                stories.push_back(current_story);
+            }
             current_story.name = "";
             current_story.category = "";
             current_story.words_np1.clear();

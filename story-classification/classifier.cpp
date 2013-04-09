@@ -63,6 +63,66 @@ namespace stat_utility
     }
 }
 
+/*
+int num_categories;
+vector<string> vocabulary_np1;
+vector<string> vocabulary_vp;
+vector<string> vocabulary_np2;
+vector<double> priors_cat;
+Matrix prob_wordsGivenCatsNP1;
+Matrix prob_wordsGivenCatsVP;
+Matrix prob_wordsGivenCatsNP2;*/
+
+template <class T>
+ostream& operator << (ostream& os, const vector<T>& v)
+{
+    os << v.size() << endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+        os << v[i] << endl;
+    }
+    return os;
+}
+
+template <class T>
+istream& operator >> (istream& is, vector<T>& v)
+{
+    int size = 0;
+    is >> size;
+    v.resize(size);
+
+    for (int i = 0; i < v.size(); i++)
+    {
+        is >> v[i];
+    }
+    return is;
+}
+
+
+void NBClassifierParameter::Serialize(ostream& os)
+{
+    os << num_categories << endl;
+    os << vocabulary_np1 << endl;
+    os << vocabulary_vp << endl;
+    os << vocabulary_np2 << endl;
+    os << priors_cat << endl;
+    os << prob_wordsGivenCatsNP1 << endl;
+    os << prob_wordsGivenCatsVP << endl;
+    os << prob_wordsGivenCatsNP2 << endl;
+}
+
+void NBClassifierParameter::Unserialize(istream& is)
+{
+    is >> num_categories;
+    is >> vocabulary_np1;
+    is >> vocabulary_vp;
+    is >> vocabulary_np2;
+    is >> priors_cat;
+    is >> prob_wordsGivenCatsNP1;
+    is >> prob_wordsGivenCatsVP;
+    is >> prob_wordsGivenCatsNP2;
+}
+
 int NaiveBayesClassifier::Predict(const StoryInfo& story)
 {
     StoryFeature storyfeature = ConvertStoryToFeature(story);
@@ -116,7 +176,6 @@ vector<double> NaiveBayesClassifier::CalculatePriors(
         prob_cat[i] = count;
         num_stories += count;
     }
-
     assert(num_stories == labeled_stories.size());
     //if (num_stories != labeled_stories.size())
     //{
@@ -511,6 +570,22 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
 
     param_ = param;
     return param;
+}
+
+void NaiveBayesClassifier::LoadParametersFromFile(const string& filename)
+{
+    ifstream in;
+    in.open(filename);
+    param_.Unserialize(in);
+    in.close();
+}
+
+void NaiveBayesClassifier::SaveParametersToFile(const string& filename)
+{
+    ofstream out;
+    out.open(filename);
+    param_.Serialize(out);
+    out.close();
 }
 
 // Convert the story to feature by converting word vectors into wordId vectors.

@@ -6,13 +6,15 @@
 #include <iterator>
 #include <algorithm>
 #include <set>
+#include <fstream>
 
 #include "definitions.h"
 
 using namespace std;
 
-struct NBClassifierParameter
+class NBClassifierParameter
 {
+public:
     int num_categories;
     vector<string> vocabulary_np1;
     vector<string> vocabulary_vp;
@@ -21,6 +23,10 @@ struct NBClassifierParameter
     Matrix prob_wordsGivenCatsNP1;
     Matrix prob_wordsGivenCatsVP;
     Matrix prob_wordsGivenCatsNP2;
+
+public:
+    void Serialize(ostream& os);
+    void Unserialize(istream& is);
 };
 
 class NaiveBayesClassifier
@@ -28,6 +34,11 @@ class NaiveBayesClassifier
 public:
     NaiveBayesClassifier()
     {}
+
+    NaiveBayesClassifier(const string& filename)
+    {
+        LoadParametersFromFile(filename);
+    }
 
     NaiveBayesClassifier(const NBClassifierParameter& param)
         : param_(param)

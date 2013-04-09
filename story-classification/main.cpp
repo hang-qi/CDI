@@ -96,12 +96,20 @@ int main(int argc, const char* argv[])
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
     cws.ExtractVocabularyList(storyWordInfoFinal,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
+    
+    vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
+    // Train model
+    cout << "Training Model..." << endl;
+    NaiveBayesClassifier classifier;
+    classifier.SetVocabularyNP1(vocabularyNP1);
+    classifier.SetVocabularyVP(vocabularyVP);
+    classifier.SetVocabularyNP2(vocabularyNP2);
+    classifier.Train(stories);
+    classifier.SaveParametersToFile("output/model.txt");
 
     cout << "Triplets validation..." << endl;
-    vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
-
-    cws.CrossValidation(
-        stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
+    //cws.CrossValidation(
+    //    stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
 
     // Clustering based on NP1 similarities.    
     //cws.CalculateSimilarity(stories);
