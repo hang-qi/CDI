@@ -26,6 +26,9 @@ struct NBClassifierParameter
 class NaiveBayesClassifier
 {
 public:
+    NaiveBayesClassifier()
+    {}
+
     NaiveBayesClassifier(const NBClassifierParameter& param)
         : param_(param)
     {
@@ -34,10 +37,39 @@ public:
         sort(param_.vocabulary_np2.begin(), param_.vocabulary_np2.end());
     }
 
-    void Train();
+    NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories);
     int Predict(const StoryInfo& story);
+    void SaveParametersToFile(const string& filename);
+    void LoadParametersFromFile(const string& filename);
+
+    void SetVocabularyNP1(const set<string>& vocabulary)
+    {
+        param_.vocabulary_np1 = vector<string>(vocabulary.begin(), vocabulary.end());
+        sort(param_.vocabulary_np1.begin(), param_.vocabulary_np1.end());
+    }
+
+    void SetVocabularyVP(const set<string>& vocabulary)
+    {
+        param_.vocabulary_vp = vector<string>(vocabulary.begin(), vocabulary.end());
+        sort(param_.vocabulary_vp.begin(), param_.vocabulary_vp.end());
+    }
+
+    void SetVocabularyNP2(const set<string>& vocabulary)
+    {
+        param_.vocabulary_np2 = vector<string>(vocabulary.begin(), vocabulary.end());
+        sort(param_.vocabulary_np2.begin(), param_.vocabulary_np2.end());
+    }
 
 protected:
+
+    // Helper functions for training
+    vector<double> CalculatePriors(
+        const vector<string>& categories,
+        const vector<StoryInfo>& labeled_stories);
+
+    set<string> BuildVocabulary();
+
+    // Helper functions for testing
     StoryFeature ConvertStoryToFeature(const StoryInfo& story);
     vector<int> ConvertWordsToIds(
         const vector<string>& words,

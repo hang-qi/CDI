@@ -69,14 +69,6 @@ struct StorySentInfo
 };
 
 
-struct WordCatInfo
-{
-    string word;
-    string Cat;
-    int StNumInList;
-    int wordPlaceInDic;
-};
-
 struct TopicElements 
 {
     string StoryTimeStart;
@@ -191,13 +183,12 @@ public:
 
     vector<StoryInfo> GetStories(const vector<FinalTriplet>& storyWordInfoFinal);
 
-    void ParameterLearning(
+    void CrossValidation(
         const vector<StoryInfo>& stories,
-        const vector<FinalTriplet>& StoryWordInfoFinal,
-        const vector<StorySentInfo> & StoryNameAndSenNum,
         const set<string>& vocabularyNP1, 
         const set<string>& vocabularyVP, 
-        const set<string>&vocabularyNP2);
+        const set<string>&vocabularyNP2,
+        const int nfold = 10);
 
     //
     // Similarity

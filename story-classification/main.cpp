@@ -100,9 +100,8 @@ int main(int argc, const char* argv[])
     cout << "Triplets validation..." << endl;
     vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
 
-    cws.ParameterLearning(
-        stories, storyWordInfoFinal, storyNameAndSenNum,
-        vocabularyNP1, vocabularyVP, vocabularyNP2);
+    cws.CrossValidation(
+        stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
 
     // Clustering based on NP1 similarities.    
     //cws.CalculateSimilarity(stories);
