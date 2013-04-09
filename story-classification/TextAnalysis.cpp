@@ -1311,6 +1311,7 @@ void TextAnalysis::CrossValidation(
         assert(range_end <= stories.size());
 
         testingRanges.push_back(pair<int, int>(range_begin, range_end));
+        cout << "Fold " << i << ": " << range_begin << " - " << range_end << endl;
         range_begin = range_end;
     }
     
@@ -1319,7 +1320,7 @@ void TextAnalysis::CrossValidation(
     fout_eval.open("output/Triplets_CrossValidation.txt");
 
     // cross validation
-    for (int kk = 0; kk < testingRanges.size() - 1; kk++)
+    for (int kk = 0; kk < testingRanges.size(); kk++)
     {
         fout_eval << "---------------------" << endl;
         fout_eval << "Fold " << kk << endl;
