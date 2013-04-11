@@ -15,6 +15,41 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
+    bool isTraining = false;
+    bool isValidation = false;
+    string targetfiles;
+    
+    // .TextAnalysis [--train|--validation|--predict] file
+    vector<string> args;
+    for (int i =0; i < argc; i++)
+    {
+        args.push_back(argv[i]);
+    }
+    
+    if (args.size() == 3)
+    {
+        if (args[1] == "--train")
+        {
+            isTraining = true;
+        }
+        else if(args[1] == "--predict")
+        {
+            isTraining = false;
+            isValidation = false;
+        }        
+        else if(args[1] == "--validation")
+        {
+            isValidation = true;
+        }
+        else
+        {
+            cout << "Unknown command." << endl;
+            return -1;
+        }
+        targetfiles = argv[2];
+        cout << targetfiles << endl;
+    }
+
     string pathTriplets = "/home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/";
     /*if (argc == 3)
     {
@@ -98,18 +133,30 @@ int main(int argc, const char* argv[])
         vocabularyNP1, vocabularyVP, vocabularyNP2);
     
     vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
-    // Train model
-    cout << "Training Model..." << endl;
-    NaiveBayesClassifier classifier;
-    classifier.SetVocabularyNP1(vocabularyNP1);
-    classifier.SetVocabularyVP(vocabularyVP);
-    classifier.SetVocabularyNP2(vocabularyNP2);
-    classifier.Train(stories);
-    classifier.SaveParametersToFile("output/model.txt");
 
-    cout << "Triplets validation..." << endl;
-    //cws.CrossValidation(
-    //    stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
+    if (isTraining)
+    {
+        // Train model
+        cout << "Training Model..." << endl;
+        NaiveBayesClassifier classifier;
+        classifier.SetVocabularyNP1(vocabularyNP1);
+        classifier.SetVocabularyVP(vocabularyVP);
+        classifier.SetVocabularyNP2(vocabularyNP2);
+        classifier.Train(stories);
+        classifier.SaveParametersToFile("output/model.txt");
+    }
+    else if(isValidation)
+    {
+        cout << "Triplets validation..." << endl;
+        cws.CrossValidation(
+            stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
+    }
+    else
+    {
+        // Predict by default
+        NaiveBayesClassifier classifier;
+        classifier.LoadParametersFromFile("output/model.txt");
+    }
 
     // Clustering based on NP1 similarities.    
     //cws.CalculateSimilarity(stories);
