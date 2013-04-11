@@ -1381,7 +1381,8 @@ void TextAnalysis::CrossValidation(
         {            
             string labeled_category = stories_testing[i].category;         
 
-            int predicted_category_idx = classifier.Predict(stories_testing[i]);
+            PredictResult predict = classifier.Predict(stories_testing[i]);
+            int predicted_category_idx = predict.label_id;
             string predicted_category = categories[predicted_category_idx];
 
             fout_eval << "Label: " << labeled_category << "\t ... \t" << predicted_category;
