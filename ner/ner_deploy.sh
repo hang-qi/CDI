@@ -11,5 +11,4 @@ cp generate-ner.sh /usr/local/bin
 cd ${src_dir}
 cp tSegment.jar ${target_dir}
 cp -r lib ${target_dir}
-cp -r Data ${target_dir}
 echo Done.
