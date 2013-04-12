@@ -59,28 +59,7 @@ int main(int argc, const char* argv[])
     */
 
     TextAnalysis cws;    
-    vector<int> RemovedStory;
-
-    //// This part for Russian news article :
-    // vector<TopicElements> ArticleTopicInfo;
-    // cws.TopicOnWebArticle(ArticleTopicInfo , list_file4 , list_file2);
-
-    //
-    // OCR classification
-    //
-    /*
-    vector<ScreenInfo> screenInfo;
-    set<string> screen_vocabulary;
-
-    cout << "OCR loading..." << endl;
-    cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
-        DIR_ANNOTATEDTEXT, FILE_NEWSLIST);
-    //cws.Generate_Reference_Vocabulary();
-    screenInfo = cws.RemoveShortStory_ScreenTopic(screenInfo, RemovedStory);
-
-    cout << "OCR cross validation..." << endl;
-    cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
-    */
+    vector<int> RemovedStory;   
     
     //
     // Triplets classification
@@ -95,15 +74,24 @@ int main(int argc, const char* argv[])
 
     cout << "Triplets loading..." << endl;
     vector<Triplet> storyWordInfo;
+    vector<StoryInfo> stories;
+    int document_id = 0;
     while (!documentList.eof() && documentList.good())
     {
         char buffer[512];
         documentList.getline(buffer, 512);
         string base = buffer;
         base = base.substr(0 , 15);
-        string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");
-        vector<Triplet> temp = cws.ReadTripletsFile(tripletsFilename);
-        storyWordInfo.insert(storyWordInfo.end(), temp.begin(), temp.end());
+        string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");        
+        vector<Triplet> triplets = cws.ReadTripletsFile(tripletsFilename);        
+        vector<StoryInfo> tmp_stories = cws.TripletsToStories(triplets);
+        for (int i = 0; i < tmp_stories.size(); i++)
+        {
+            tmp_stories[i].document_id = document_id;
+        }
+        stories.insert(stories.end(), tmp_stories.begin(), tmp_stories.end());        
+        document_id++;
+
         // cws.FirstSentAsTopic(tripletsFilename, StoryTopicInfo);
     }
 
@@ -116,23 +104,24 @@ int main(int argc, const char* argv[])
     cws.StoryTopic(storyInfoTags , StoryTopicInfo, resourceGoalTags);
     */
 
+    stories = cws.Lemmatize(stories);
+    stories = cws.Cleasing(stories);
+    // remove short stories
+    // remove stop words
 
-    cout << "Triplets remove short stories..." << endl;
-    vector<Triplet> longStories = cws.RemoveShortStory(storyWordInfo, RemovedStory);
-    vector<StorySentInfo> storyNameAndSenNum = cws.GetNumberOfStorySentence(longStories);
-
-    cout << "Remove stop words..." << endl;
+    //vector<Triplet> longStories = cws.RemoveShortStory(storyWordInfo, RemovedStory);
+    //vector<StorySentInfo> storyNameAndSenNum = cws.GetNumberOfStorySentence(longStories);
     
-    vector<FinalTriplet> storyWordInfoFinal = cws.RemoveStopWords(
-        longStories, storyNameAndSenNum);
+    //vector<FinalTriplet> storyWordInfoFinal = cws.RemoveStopWords(
+    //    longStories, storyNameAndSenNum);
 
-    cout << "Extract vocabulary..." << endl;
+    //vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
 
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
-    cws.ExtractVocabularyList(storyWordInfoFinal,
+    cws.ExtractVocabularyList(stories,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
-    
-    vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
+
+    exit(0);
 
     if (isTraining)
     {
@@ -170,3 +159,19 @@ int main(int argc, const char* argv[])
 
 //  argv[0] = /home/csa/CAS2/Arash/StoryTextInfo
 //  java -Xmx1g -jar WNsim.jar n /home/csa/CAS2/Arash/StoryTextInfo/lemmatized_words.txt
+
+
+    // OCR classification
+    //
+    /*
+    vector<ScreenInfo> screenInfo;
+    set<string> screen_vocabulary;
+
+    cout << "OCR loading..." << endl;
+    cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
+        DIR_ANNOTATEDTEXT, FILE_NEWSLIST);
+    screenInfo = cws.RemoveShortStory_ScreenTopic(screenInfo, RemovedStory);
+
+    cout << "OCR cross validation..." << endl;
+    cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
+    */

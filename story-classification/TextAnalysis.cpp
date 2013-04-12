@@ -18,6 +18,7 @@
 #include <assert.h>
 
 #include "TextAnalysis.h"
+#include "stopwords.h"
 
 using namespace std; 
 
@@ -25,8 +26,6 @@ using namespace std;
 ////////////////////////
 // utilities
 ////////////////////////
-
-
 typedef vector< vector<double> > Matrix;
 
 Matrix BuildMatrix(int num_rows, int num_columns, double default_value = 0)
@@ -85,122 +84,8 @@ Matrix Normalize2D(const Matrix& countMatrix, bool column_wise = true)
     }
 }
 
-const char* TextAnalysis::stopwordsArray [] = {"a","b", "c","d","e","f","g","h","j","k","l","m",">>>",">>",">",
-    "o","p","q","r","s","t","u","v","w","x","z","y","able","about","across","after","all","almost","also","am",
-    "among","an","and","any","are2706","as","at","be","because","been","but","by","can","cannot","could","dear",
-    "did","do","does","either","else","ever","every","for","from","get","got","had","he","her",
-    "hers","him","his","how","however","i","if","in","into","is","its","just","let","like",
-    "likely","may","me","might","most","must","my","neither","no","nor","not","of","off","often","on","only",
-    "or","other","our","own","rather","said","say","says","she","should","since","so","some","than","that",
-    "the","their","them","then","there","these","they","tis","to","too","twas","us","wants","was","we",
-    "were","what","when","where","which","while","who","whom","why","will","with","would","yet","you","your",
-    "a","able","about","across","after","aint","all","almost","also","am","among","an","and",
-    "any","are","arent","as","at","be","because","been","but","by","can","cant","cannot","could","couldve",
-    "couldnt","dear","did","didnt","do","does","doesnt","dont","either","else","ever","every","for",
-    "from","get","got","hasnt","have","he","hed","hell","hes","her","hers","him","his","how",
-    "howd","howll","hows","however","i","id","ill","im","ive","if","in","into","is","isnt",
-    "just","least","let","like","likely","may","me","might","mightve","mightnt","most","mustve",
-    "mustnt","my","neither","no","nor","not","of","off","often","on","only","or","other","our","own",
-    "rather","said","say","says","shant","she","shed","shell","shes","should","shouldve","shouldnt",
-    "since","so","some","than","that","thatll","thats","the","their","them","then","there","theres"
-    ,"they","theyd","theyre","this","tis","to","too","twas","us","wants","was",
-    "wasnt","we","wed","well","were","were","werent","what","whatd","whats","whend","whenll",
-    "whens","where","whered","wherell","wheres","which","who","whod","wholl","whos","whom",
-    "whyd","whyll","whys","with","wont","would","wouldve","wouldnt","yet","you","youd",
-    "youll","youre","youve","aint","arent","cant","couldve","couldnt","didnt",
-    "doesnt","dot","hes","howd","howll","hows","id","ill","im","ive","isnt","its","mightve",
-    "mightnt","shant","shed","shell","shes","shouldve","shouldnt","thatll","thats","theres",
-    "theyd","wasnt","wed","well","were","werent","whatd","whats",
-    "whered","wherell","wheres","whod","wholl","whos","wont","wouldve",
-    "wouldnt","youd","youll","youre","youve","I","com","de","en","la","und","www", "inhibit","limits" ,
-    "throttling","set", "review", "cause", "old","able","about","above","abroad","according","accordingly",
-    "against","abroad","ahead","aint","all","allow","allows","almost","alone","along","alongside","already",
-    "also","although","always","am","amid","amidst","among","amongst","alongside","and","another","any",
-    "anybody","anyhow","anyone","anything","anyway","anyways","anywhere","apart","appear","appreciate",
-    "appropriate","are","arent","around","as","anyways","aside","ask","asking","associated","at","available",
-    "away","awfully","back","backward","backwards","be","became","because","become","becomes","becoming",
-    "been","back","beforehand","begin","behind","being","believe","below","beside","besides","best","better",
-    "between","beyond","both","brief","but","by","came","can","best","cant","cant","caption","cause",
-    "causes","certain","certainly","changes","clearly","co","co.","com","come","comes","concerning",
-    "consequently","consider","clearly","contain","containing","contains","corresponding","could","couldnt",
-    "course","cs","currently","dare","darent","definitely","described","despite","did","didnt","different",
-    "directly","currently","does","doesnt","doing","done","dont","down","downwards","during","each","edu",
-    "eg","eight","eighty","either","else","elsewhere","end","ending","each","entirely","especially","et",
-    "etc","even","ever","evermore","every","everybody","everyone","everything","everywhere","ex","exactly",
-    "example","except","fairly","far","everybody","few","fewer","fifth","first","five","followed","following",
-    "follows","for","forever","former","formerly","forth","forward","found","four","from","further","for",
-    "get","gets","getting","given","gives","go","goes","going","gone","got","gotten","greetings","hase",
-    "hadnt","half","happens","hardly","has","gone","havent","having","he","hed","hell","hello",
-    "help","hence","her","here","hereafter","hereby","herein","heres","hereupon","hers","herself","hence",
-    "hi","him","himself","his","hither","hopefully","how","howbeit","however","hundred","ie","if",
-    "ignored","im","immediate","in","however","inc","inc.","indeed","indicate","indicated","it"
-    "indicates","inner","inside","insofar","instead","into","inward","is","isnt","it","itd","itll",
-    "insofar","itself","ive","just","k","keep","keep","keeps","kept","know","known","knows","last",
-    "lately","later","latter","latterly","less","know","let","lets","like","liked","likely",
-    "likewise","little","look","looking","looks","low","lower","ltd","made","mainly","make","makes","many",
-    "looking","maybe","maynt","me","mean","meantime","meanwhile","merely","might","mightnt","mine","minus",
-    "miss","more","moreover","most","mostly","mr","mrs","mightnt","must","mustnt","my","myself","name",
-    "namely","nd","near","nearly","necessary","need","neednt","needs","neither","never","neverf","neverless",
-    "nevertheless","nearly","next","nine","ninety","no","nobody","non","none","nonetheless","noone",
-    "no-one","nor","normally","not","nothing","notwithstanding","novel","now","nowhere","noone","of","off",
-    "often","oh","ok","okay","old","on","once","one","ones","ones","only","onto","opposite","or","other",
-    "others","once","ought","oughtnt","our","ours","ourselves","out","outside","over","overall","own",
-    "particular","particularly","past","per","perhaps","placed","please","plus","overall","presumably",
-    "probably","provided","provides","que","quite","qv","rather","rd","re","really","reasonably","recent",
-    "recently","regarding","regardless","regards","relatively","rd","right","round","said","same","saw",
-    "say","saying","says","second","secondly","see","seeing","seem","seemed","seeming","seems","seen","self",
-    "second","sensible","sent","serious","seriously","seven","several","shall","shant","she","shed",
-    "shell","shes","should","shouldnt","since","six","so","some","she","someday","somehow","someone",
-    "something","sometime","sometimes","somewhat","somewhere","soon","sorry","specified","specify",
-    "specifying","still","sub","such","sup","sure","soon","taken","taking","tell","tends","th","than","thank",
-    "thanks","thanx","that","thatll","thats","thats","thatve","the","their","theirs","them","thanx","then",
-    "thence","there","thereafter","thereby","thered","therefore","therein","therere","theres",
-    "theres","thereupon","thereve","they","theyd","theyll","therell","theyve","thing","things",
-    "think","third","thirty","thorough","thoroughly","those","though","three","through","throughout",
-    "thru","thus","till","to","thoroughly","too","took","toward","towards","tried","tries","truly","try",
-    "trying","twice","two","un","under","underneath","undoing","unfortunately","unless","trying",
-    "unlikely","until","unto","up","upon","upwards","us","use","used","useful","uses","using","usually",
-    "v","value","various","versus","very","used","viz","vs","want","wants","was","wasnt","way","we","wed",
-    "welcome","well","well","went","were","were","werent","weve","what","wed","whatll","whats",
-    "whatve","when","whence","whenever","where","whereafter","whereas","whereby","wherein","wheres",
-    "whereupon","wherever","whether","which","whichever","whereas","whither","who","whod",
-    "whoever","whole","wholl","whom","whomever","whos","whose","why","willing","wish","with",
-    "within","without","wonder","whos","would","wouldnt","yes","yet","you","youd","youll","your",
-    "youre","yours","yourself","yourselves","youve", "across","actually","adj","after","afterwards",
-    "re", "-lrb-", "``" , "`", "-rrb-", "mccain", "thi" , "sai","starr",
-     "%" , "cnn" , "wa", "-LRB-", "-RRB-", "rrb", "lrb" , "governments","again", 
-    "moldova", "committee", "tension", "applause", "yesterdays", "yesterday", "issue", "oil",
-    "cnn.com", "council", "wave","escalation","hail", "newsroom","milton","happen" ,//cnn.com\/fan", 
-    "nightfall","effort", "thousand","ambassador","greater","sort ", "day", //"\/", 
-    "days","large","michael", "phelps" ,"reporter","akaiwa","hayes","dr.", "john", "curran","jatropha", "san", 
-    "mr.", "ms.","gori", "south","north","west","east", "correspondent", "matthew", "chance","iphone","diego",
-    "elbow", "grease","ad", "ph","...", "harri", "southern" , "isaac", "hayes" , "bachmans",
-    "barbara", "sovereignty", "f.", "whitfield" , "large", "scale" , "williams", "condoleezza", "rice" ,"barack" ,
-    "obama", "xxix", "caylee" , "casey" ,"surprise" , "new" ,"nan" , "sunday", "ura", "saturday","viewers"
-    "dr" , "iii" , "dan" , "subnav" , "mutant" , "live" , "det" , "onus" , "rfi" , "heidi", "collin" , "harris"
-    "tony" , "cam" , "gonna","sanjay","gupta","mmviii","wow","breaking","news","cbw","inn","exclusive","pixies"
-    "aussie","amass","elise","call","free","coverage","developing","story", "before","kabc","wanna"
-    "smm","hour","vause", "ae"};
-
 TextAnalysis::TextAnalysis(){}
 TextAnalysis::~TextAnalysis(){}
-
-double factorial(int n)
-{
-    if(n <= 1)
-    {
-        return 1;
-    }
-    else
-    {
-        double fact = 1;
-        for(int i = 1; i <= n; i++)
-        {
-            fact = fact * i;
-        }
-        return fact;
-    }
-}
 
 // getline just doesn't work..............
 
@@ -239,99 +124,6 @@ int getLineNew(istream &stream, string& result)
     return result.length();
 }
 
-int getLine(istream &stream, string& result)
-{
-    result.clear();
-
-    do {
-        char cc[10];
-        // char c = 0;
-
-        cc[0] = 0;
-        cc[1] = 0;
-
-        stream.get(cc[0]);
-        char c = cc[0];
-
-        //printf("%d\n", c);
-
-        if (c == ' ' && result.length() == 0)
-            continue;
-
-        if (c == '\n') 
-        { //|| c == 13 || c == 10
-            if (result.length() == 0)
-                continue;
-
-            break;
-        }
-
-        if (c == 0)
-            break;
-
-        result += string(cc);
-
-    } while(true);
-
-    return result.length();
-}
-
-void TextAnalysis::TopicOnWebArticle(
-        vector<TopicElements>& ArticleTopicInfo,
-        string list_file4,
-        string list_file2)
-{
-
-    ifstream DocLists; 
-    ifstream ifs;
-    string str , DocumentFileName;  
-    DocLists.open(list_file4.c_str(), ios::in);
-    if (!DocLists.is_open())
-    {
-        cout<<"File in DocLists NOT opened"<<endl;
-    }
-
-    ofstream StoryTopic;
-    StoryTopic.open ("StoryTopicForRussia.txt");
-    size_t found;
-
-    while (!DocLists.eof() && DocLists.good())
-    {
-
-        string bufferstr = "";
-        getLineNew(DocLists, bufferstr);
-        DocumentFileName = (list_file2 + bufferstr);
-        ifs.open(DocumentFileName.c_str() , ios::in);
-        if (!ifs.is_open())
-        {
-            cout<<"File in DocumentFileName NOT opened"<<endl;
-        }
-
-        int k=0;
-        while (!ifs.eof() && ifs.good() )
-        {
-            string bufferstr = "";
-            getLineNew(ifs, bufferstr);
-            str = (bufferstr);
-            if (k < 3)
-            {
-                found = str.find('.');
-                if (found < 500 && k > 0)
-                {
-                    str = str.substr ( 0, found + 1 );
-                }
-                if (k == 0)
-                {
-                    str = "<" + str + ">" + "<www.kommersant.com>";
-                }
-                StoryTopic << str << endl;
-                k++;
-            }
-        }       
-        ifs.close();
-    }
-    StoryTopic.close();
-}
 
 vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
 {
@@ -1247,38 +1039,23 @@ vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordI
     return longStories;
 }
 
-void TextAnalysis::ExtractVocabularyList(const vector<FinalTriplet>& storyWordInfoFinal,
+void TextAnalysis::ExtractVocabularyList(const vector<StoryInfo>& stories,
     set<string>& vocabularyNP1, set<string>& vocabularyVP, set<string>& vocabularyNP2)
 {
-    vector<string> words, words1, words2;
-    cout << storyWordInfoFinal.size() << endl;
-    for(int i=0; i < storyWordInfoFinal.size(); i++)
+    for(int i=0; i < stories.size(); i++)
     {
-        istringstream iss(storyWordInfoFinal[i].Non_Ph1);
-        copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-
-        istringstream iss1(storyWordInfoFinal[i].Verb_Ph);
-        copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(words1));
-
-        istringstream iss2(storyWordInfoFinal[i].Non_Ph2);
-        copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(words2));
-
-        for (int j=0; j < words.size(); j++)
+        for (int j=0; j < stories[i].words_np1.size(); j++)
         {
-            vocabularyNP1.insert(words[j]);
+            vocabularyNP1.insert(stories[i].words_np1[j]);
         }
-        for (int j=0; j < words1.size(); j++)
+        for (int j=0; j < stories[i].words_vp.size(); j++)
         {
-            vocabularyVP.insert(words1[j]);
+            vocabularyVP.insert(stories[i].words_vp[j]);
         }
-        for (int j=0; j < words2.size(); j++)
+        for (int j=0; j < stories[i].words_np2.size(); j++)
         {
-            vocabularyNP2.insert(words2[j]);
+            vocabularyNP2.insert(stories[i].words_np2[j]);
         }
-
-        words.clear();
-        words1.clear();
-        words2.clear();
     }   
 }
 
@@ -1433,32 +1210,125 @@ void TextAnalysis::CrossValidation(
 }
 
 
-vector<FinalTriplet> TextAnalysis::RemoveStopWords(
-    const vector<Triplet> & storyWordInfo,
-    const vector<StorySentInfo> & StoryNameAndSenNum)
-{   
-    vector<FinalTriplet> storyWordInfoFinal;    
-    size_t foundNP1, foundVP;
-    vector<string> Non_Ph1 , Verb_Ph , Non_Ph2 ;
-    
-    ///
+vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWordInfoFinal)
+{
+    vector<StoryInfo> stories;
+    StoryInfo current_story;
+    for(int i=0; i < storyWordInfoFinal.size(); i++)
+    {
+        if (storyWordInfoFinal[i].tripletsIdx == 0)
+        {
+            string name = storyWordInfoFinal[i].StoryName;
+            size_t found1 = name.find('|' );
+            string str1 = name.substr ( 0, found1 );
+            size_t found = str1.find(':' );
+            if (found < 50 )
+            {
+                str1 = str1.substr ( 0, found );
+            }
+            current_story.category = str1;
+            current_story.name = name;
+            current_story.num_sentences = storyWordInfoFinal[i].num_sentences;
+        }
 
+        if ( storyWordInfoFinal[i].tripletsIdx != storyWordInfoFinal[i].num_sentences-1)
+        {
+            istringstream iss(storyWordInfoFinal[i].Non_Ph1);
+            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
+
+            istringstream iss1(storyWordInfoFinal[i].Verb_Ph);
+            copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
+
+            istringstream iss2(storyWordInfoFinal[i].Non_Ph2);
+            copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
+        }
+        else if ( storyWordInfoFinal[i].tripletsIdx == storyWordInfoFinal[i].num_sentences-1)
+        {
+            if (current_story.category != "NULL")
+            {
+                stories.push_back(current_story);
+            }
+            current_story.name = "";
+            current_story.category = "";
+            current_story.words_np1.clear();
+            current_story.words_vp.clear();
+            current_story.words_np2.clear();
+        }
+    }    
+    return stories;
+}
+
+vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & triplets)
+{
+    vector <StoryInfo> stories;
+
+    for( int i=0; i < triplets.size(); i++)
+    {        
+        size_t found_start = triplets[i].StoryTopicName.find("<story>");
+        if (found_start == 0)
+        {
+            string storyName = triplets[i].StoryTopicName;
+            size_t found1 = storyName.find('|' );
+            string category = storyName.substr ( 0, found1 );
+            size_t found = category.find(':');
+            if (found < 50 )
+            {
+                category = category.substr ( 0, found );
+            }
+
+            StoryInfo current_story;
+            current_story.name = storyName.substr(7, storyName.size());            
+            current_story.category = category;            
+            current_story.num_sentences = 0;
+            current_story.timeStart = triplets[i+1].StoryTimeStart;
+            cout << current_story.timeStart << endl;
+            
+            int num_sentences = 0;
+            size_t found_end = 1;
+            while ( found_end != 0 )
+            {
+                i++;
+                num_sentences++;
+
+                istringstream iss(triplets[i].Non_Ph1);
+                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
+
+                istringstream iss1(triplets[i].Verb_Ph);
+                copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
+
+                istringstream iss2(triplets[i].Non_Ph2);
+                copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
+
+                found_end = triplets[i].StoryTimeEnd.find("<end>");
+            }
+            current_story.num_sentences = num_sentences-2;
+            current_story.timeEnd = triplets[i].StoryTimeEnd;
+            cout << current_story.timeEnd << endl;
+            stories.push_back(current_story);
+        }
+    }
+    return stories;
+}
+
+vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
+{
     ofstream inout;
     inout.open(FILE_ANNA_BEFORE_SPLIT);
-    for(int i=0; i < storyWordInfo.size(); i++)
+    for(int i=0; i < stories.size(); i++)
     {
-        if (storyWordInfo[i].StoryTimeEnd == "" 
-            && storyWordInfo[i].StoryTimeStart == ""
-            && storyWordInfo[i].StoryTopicName == "" )
+        for (int j=0; j < stories[i].words_np1.size(); j++)
         {
-            if (storyWordInfo[i].Non_Ph1 == "")
-            { 
-                inout << "this" << endl; // add stop word to empty line
-            }
-            else
-            {
-                inout << storyWordInfo[i].Non_Ph1 << endl;
-            }
+            inout << stories[i].words_np1[j] << endl;
+        }
+
+        for (int j=0; j < stories[i].words_vp.size(); j++)
+        {
+            inout << stories[i].words_vp[j] << endl;
+        }
+
+        for (int j=0; j < stories[i].words_np2.size(); j++)
+        {
+            inout << stories[i].words_np2[j] << endl;
         }
     }
     inout.close();
@@ -1472,10 +1342,10 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     ifstream lemmed ("Lemmatizedfile.txt");
     char buffer[500];
     char * pch;
-    vector<string> lemmatized_words;
     string wholeString , str_buf , str12 , str ;                        
     ofstream lemm_words ;
     lemm_words.open ("lemmatized_words.txt");
+    vector<string> words;
 
     while (!lemmed.eof() && lemmed.good() ) 
     {
@@ -1484,19 +1354,16 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
 
         if (str_buf == "") 
         {
-            lemmatized_words.push_back(wholeString);
             lemm_words << wholeString << '\n';
-            Non_Ph1.push_back(wholeString);
-            //entry.Non_Ph1 = wholeString;
-            //FinalTriplet.push_back(entry);
+            words.push_back(wholeString);
             wholeString = "";
         }
         if (str_buf != "" )
         {
             pch=strchr(buffer,'_');
-            foundNP1 = pch-buffer+1 ;
+            size_t foundNP1 = pch-buffer+1 ;
             pch=strchr(pch+1,'_');
-            foundVP = pch-buffer+1 ;
+            size_t foundVP = pch-buffer+1 ;
             str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
             wholeString = wholeString + " " + str ;
         }
@@ -1506,236 +1373,122 @@ vector<FinalTriplet> TextAnalysis::RemoveStopWords(
     lemm_words.close();
     lemm_words.clear();
 
-
-    /////////////
-
-    inout.open(FILE_ANNA_BEFORE_SPLIT);
-    for(int i=0; i < storyWordInfo.size(); i++){
-        if (storyWordInfo[i].StoryTimeEnd == "" && storyWordInfo[i].StoryTimeStart == ""
-            && storyWordInfo[i].StoryTopicName == "" ){
-            if (storyWordInfo[i].Verb_Ph == ""){ 
-                inout << "this" << endl; // add stop word to empty line
-            }else{
-                inout << storyWordInfo[i].Verb_Ph << endl;
-            }
-        }
-    }
-    inout.close();
-
-
-    system(CMD_split.c_str());
-    system(CMD_lemmatize.c_str());
-
-    lemmed.open ("Lemmatizedfile.txt");
-    lemmatized_words.clear();                   
-    lemm_words.clear() ;
-    lemm_words.open ("lemmatized_words.txt");
-
-    while (!lemmed.eof() && lemmed.good() ) {
-        lemmed.getline(buffer, 500, '\n');
-        str_buf = (buffer);
-
-        if (str_buf == "") {
-        lemmatized_words.push_back(wholeString);
-        lemm_words << wholeString << '\n';
-        Verb_Ph.push_back(wholeString);
-        //entry.Verb_Ph = wholeString;
-        //FinalTriplet.push_back(entry);
-        wholeString = "";
-        }
-        if (str_buf != "" ){
-        pch=strchr(buffer,'_');
-        foundNP1 = pch-buffer+1 ;
-        pch=strchr(pch+1,'_');
-        foundVP = pch-buffer+1 ;
-        str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
-        wholeString = wholeString + " " + str ;}
-    }
-    lemmed.close();
-    lemmed.clear();
-    lemm_words.close();
-    lemm_words.clear();
-
-    ////////
-
-    inout.open (FILE_ANNA_BEFORE_SPLIT);
-    for(int i=0; i < storyWordInfo.size(); i++){
-        if (storyWordInfo[i].StoryTimeEnd == "" && storyWordInfo[i].StoryTimeStart == ""
-            && storyWordInfo[i].StoryTopicName == "" ){
-            if (storyWordInfo[i].Non_Ph2 == ""){ 
-                inout << "this" << endl; // add stop word to empty line
-            }else{
-                inout << storyWordInfo[i].Non_Ph2 << endl;
-            }
-        }
-    }
-    inout.close();
-
-    system(CMD_split.c_str());
-    system(CMD_lemmatize.c_str());
-
-    lemmed.open ("Lemmatizedfile.txt");
-    lemmatized_words.clear();                   
-    lemm_words.clear() ;
-    lemm_words.open ("lemmatized_words.txt");
-
-    while (!lemmed.eof() && lemmed.good()) {
-        lemmed.getline(buffer, 500, '\n');
-        str_buf = (buffer);
-
-        if (str_buf == "") {
-            lemmatized_words.push_back(wholeString);
-            lemm_words << wholeString << '\n';
-            Non_Ph2.push_back(wholeString);
-            //entry.Verb_Ph = wholeString;
-            //FinalTriplet.push_back(entry);
-            wholeString = "";
-        }
-        if (str_buf != "" ){
-            pch=strchr(buffer,'_');
-            foundNP1 = pch-buffer+1 ;
-            pch=strchr(pch+1,'_');
-            foundVP = pch-buffer+1 ;
-            str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
-            wholeString = wholeString + " " + str ;
-        }
-
-    }
-    lemmed.close();
-    lemmed.clear();
-    lemm_words.close();
-    lemm_words.clear();
-
-    //
-    // Create FinalTriplets
-    //
-    FinalTriplet entry; 
-    int Counter;
-    int StoryIndex = 0;
-    for(int i=0; i < Non_Ph1.size()-1; i++)
+    int k = 0;
+    vector<StoryInfo> stories_lemmed;
+    for(int i=0; i < stories.size(); i++)
     {
-        for (Counter = 0; Counter < StoryNameAndSenNum[StoryIndex].num_sentences; Counter++)
+        StoryInfo story_lemmed = stories[i];
+        story_lemmed.words_np1.clear();
+        story_lemmed.words_vp.clear();
+        story_lemmed.words_np2.clear();
+
+        for (int j=0; j < stories[i].words_np1.size(); j++)
         {
-            if (i+Counter < Non_Ph1.size())
-            {
-                entry.Non_Ph1 = Non_Ph1[i+Counter];
-                entry.Verb_Ph = Verb_Ph[i+Counter];
-                entry.Non_Ph2 = Non_Ph2[i+Counter];
-                entry.StoryName = StoryNameAndSenNum[StoryIndex].storyTopic;
-                entry.tripletsIdx = Counter;
-                entry.num_sentences = StoryNameAndSenNum[StoryIndex].num_sentences;
-                storyWordInfoFinal.push_back(entry);
-            }
+            assert(k < words.size());
+            story_lemmed.words_np1.push_back(words[k]);
+            k++;
         }
-        i = i+Counter - 1;
-        StoryIndex++;
+
+        for (int j=0; j < stories[i].words_vp.size(); j++)
+        {
+            assert(k < words.size());
+            story_lemmed.words_vp.push_back(words[k]);
+            k++;            
+        }
+
+        for (int j=0; j < stories[i].words_np2.size(); j++)
+        {
+            assert(k < words.size());
+            story_lemmed.words_np2.push_back(words[k]);
+            k++;
+        }
+
+        stories_lemmed.push_back(story_lemmed);
     }
-    
+
+    return stories_lemmed;
+}
+
+vector<string>& TextAnalysis::RemoveStopWords(vector<string>& words)
+{
     // stop words
-    set<string> stopwords(stopwordsArray,
+    static set<string> stopwords(stopwordsArray,
                         stopwordsArray + sizeof(stopwordsArray)/ sizeof(stopwordsArray[0]));
-  
-    string wholeStringNon_Ph1 , wholeStringNon_Ph2 ;
-    size_t found;
-    for(int i=0; i < storyWordInfoFinal.size(); i++)
-    {         
-        wholeStringNon_Ph1 = storyWordInfoFinal[i].Non_Ph1;
-        wholeStringNon_Ph2 = storyWordInfoFinal[i].Non_Ph2;
-        wholeString = storyWordInfoFinal[i].Verb_Ph;
-            
-        char chars[] = "1234567890,:'";
 
-        for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
+    // remove stop words
+    for(auto it = words.begin(); it < words.end(); it++)
+    {
+        if (stopwords.find(*it) != stopwords.end())
         {
-            // you need include <algorithm> to use general algorithms like remove()
-            wholeString.erase (remove(wholeString.begin(), wholeString.end(), chars[ii]), wholeString.end());
-            wholeStringNon_Ph1.erase (remove(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), chars[ii]), wholeStringNon_Ph1.end());
-            wholeStringNon_Ph2.erase (remove(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), chars[ii]), wholeStringNon_Ph2.end());
+            words.erase(it);
         }
 
-        replace( wholeString.begin(), wholeString.end(), '-', ' ' );
-        replace( wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), '-', ' ' );
-        replace( wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), '-', ' ' );
-
-        storyWordInfoFinal[i].Non_Ph1 = wholeStringNon_Ph1;
-        storyWordInfoFinal[i].Non_Ph2 = wholeStringNon_Ph2;
-        storyWordInfoFinal[i].Verb_Ph = wholeString;
-
+        // found = wholeString.find("'s");
+        // if (found <= 50){
+        //     wholeString.erase (found,2);
+        // }
+        // found = wholeString.find("$");
+        // if (found <= 50)
+        // {
+        //     wholeString = "dollar";
+        // }
+        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
+        // found = wholeString.find("united state");
+        // if (found <= 50)
+        // {
+        //     wholeString = "u.s.";
+        // }
+        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
+        // found = wholeString.find("'");
+        // if (found <= 50)
+        // {
+        //     wholeString.erase (found,1);
+        // }
+        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
     }
+    return words;
+}
 
+vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
+{   
+    vector<StoryInfo> stories_new = stories;
 
-        for (int k = 0; k < 3; k++){
+    // for(int i=0; i < stories_new.size(); i++)
+    // {         
+    //     string wholeStringNon_Ph1, wholeStringNon_Ph2;
+    //     size_t found;
+    //     wholeStringNon_Ph1 = storyWordInfoFinal[i].Non_Ph1;
+    //     wholeStringNon_Ph2 = storyWordInfoFinal[i].Non_Ph2;
+    //     wholeString = storyWordInfoFinal[i].Verb_Ph;
+            
+    //     char chars[] = "1234567890,:'";
 
-            for(int i=0; i < storyWordInfoFinal.size(); i++)
-            {
-                vector<string> words;
+    //     for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
+    //     {
+    //         // you need include <algorithm> to use general algorithms like remove()
+    //         wholeString.erase(remove(wholeString.begin(), wholeString.end(), chars[ii]), wholeString.end());
+    //         wholeStringNon_Ph1.erase(remove(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), chars[ii]), wholeStringNon_Ph1.end());
+    //         wholeStringNon_Ph2.erase(remove(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), chars[ii]), wholeStringNon_Ph2.end());
+    //     }
 
-                istringstream iss;
-                if ( k == 0 ){
-                    istringstream iss(storyWordInfoFinal[i].Non_Ph1);
-                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                }else if ( k == 1 ){
-                    istringstream iss(storyWordInfoFinal[i].Non_Ph2);
-                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                }else if ( k == 2 ){
-                    istringstream iss(storyWordInfoFinal[i].Verb_Ph);
-                    copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-                }
+    //     replace(wholeString.begin(), wholeString.end(), '-', ' ');
+    //     replace(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), '-', ' ');
+    //     replace(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), '-', ' ');
 
-                for(int kk=0; kk < words.size(); kk++)
-                {
-                    if (stopwords.find(words[kk]) != stopwords.end())
-                    {
-                        words[kk] = "";
-                    }
-                }
+    //     storyWordInfoFinal[i].Non_Ph1 = wholeStringNon_Ph1;
+    //     storyWordInfoFinal[i].Non_Ph2 = wholeStringNon_Ph2;
+    //     storyWordInfoFinal[i].Verb_Ph = wholeString;
 
-                wholeString.clear();
-                for(int kk=0; kk < words.size(); kk++)
-                {
-                    if ( words[kk] != "" ){
-                            wholeString = wholeString + " " + words[kk] ;
-                    }
-                }
+    // }
 
-            if ( k == 0 ){
-                found = wholeString.find("'s");
-                if (found <= 50){
-                    wholeString.erase (found,2);
-                }
-                found = wholeString.find("$");
-                if (found <= 50){
-                    wholeString = "dollar";}        
-                storyWordInfoFinal[i].Non_Ph1 = wholeString;
-            }else if ( k == 1 ){
-            found = wholeString.find("'s");
-            if (found <= 50){
-                wholeString.erase (found,2);}
-                found = wholeString.find("$");
-            if (found <= 50){
-                wholeString = "dollar";}
-                storyWordInfoFinal[i].Non_Ph2 = wholeString;
-                found = wholeString.find("united state");
-            if (found <= 50){
-                wholeString = "u.s.";}
-                storyWordInfoFinal[i].Non_Ph2 = wholeString;
-                found = wholeString.find("'");
-            if (found <= 50){
-                wholeString.erase (found,1);}
-                storyWordInfoFinal[i].Non_Ph2 = wholeString;
-
-            }else if ( k == 2 ){
-            found = wholeString.find("'s");
-            if (found <= 50){
-                wholeString.erase (found,2);}
-            found = wholeString.find("$");
-                if (found <= 50){
-                wholeString = "dollar";}
-                storyWordInfoFinal[i].Verb_Ph = wholeString;
-            }
-        }
+    // remove stop words.
+    for(int i=0; i < stories_new.size(); i++)
+    {
+        RemoveStopWords(stories_new[i].words_np1);
+        RemoveStopWords(stories_new[i].words_vp);
+        RemoveStopWords(stories_new[i].words_np2);
     }
-    return storyWordInfoFinal;
+    return stories_new;
 }
                 
 
@@ -2949,261 +2702,3 @@ void TextAnalysis::TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_
 
     }
 
-
-bool my_cmp(const WordCount& a, const WordCount& b)
-{
-    return a.Occurance > b.Occurance; // biggest comes first
-}
-
-
-// Input: FullDocs_in_NewFormat1.txt
-// Output: Reference_Vocabulary1.txt
-void TextAnalysis::Generate_Reference_Vocabulary()
-{
-//  ofstream FullDoc;
-//  FullDoc.open ("FullDocs_in_NewFormat.txt");
-//  for (int i=0; i<Story_InfoForTag.size(); i++){
-//      FullDoc << "<story>" <<Story_InfoForTag[i].StoryTopicName << endl;
-//      FullDoc << "<start>" <<Story_InfoForTag[i].StoryTimeStart << endl;
-//      FullDoc << Story_InfoForTag[i].FullTopicName << endl;
-//      FullDoc << "<end>" <<Story_InfoForTag[i].StoryTimeEnd << endl;}
-//  FullDoc.close();
-    ifstream ifs;
-    ifs.open("FullDocs_in_NewFormat1.txt", ios::in);
-    if (!ifs.is_open()) cout<<"File in FullDocs_in_NewFormat.txt NOT opened"<<endl;
-    size_t found , found1 ;
-    string str, str2;
-    vector<StoryElements1> StoriesInfo;
-    StoryElements1 entry;
-
-    while (!ifs.eof() && ifs.good() )
-    {
-
-        char buffer[65536];
-        ifs.getline(buffer, 65536);
-        str = (buffer);
-        found = str.find("|");
-        if ( found == 18 ){
-            str2 = str.substr (0  , found);
-            entry.StoryTimeStart = str2;}
-        if ( found == 14 ){
-            str2 = str.substr (0  , found);
-            entry.StoryTimeEnd = str2+".000";}
-
-
-        str = str.substr (found+1  , str.size() );
-        found = str.find("|");
-        if ( found == 18 ){
-            str2 = str.substr (0  , found);
-            entry.StoryTimeEnd = str2;}
-
-
-        str = str.substr (found+1  , str.size() );
-        found = str.find("|");
-        if ( found < 22 ){
-            str2 = str.substr (0  , found);
-            entry.StoryCat = str2;}
-
-        str = str.substr (found+1  , str.size() );
-        found = str.find("|");
-        if ( found < 50 ){
-            str2 = str.substr (0  , found);
-            entry.StoryTopic = str2;}
-
-        str = str.substr (found+1  , str.size() );
-        entry.Words = str;
-        StoriesInfo.push_back(entry);
-
-    }
-
-    cout<<"StoriesInfo.size    "<<StoriesInfo.size()<<endl;
-
-    for ( int i =0; i<StoriesInfo.size(); i++)
-    {
-        found =  StoriesInfo[i].StoryTopic.find("South-Ossetia");
-        found1 = StoriesInfo[i].Words.find("georgia");
-////        if ( StoriesInfo[i].StoryCat != "Human-interest"|| StoriesInfo[i].StoryCat != "Entertainment"||
-////            StoriesInfo[i].StoryCat != "Celebrity"){
-
-        if ( StoriesInfo[i].StoryCat =="Crime")
-        {  
-            StoriesInfo[i].StoryCat = "Justice";
-        }   
-        if ( StoriesInfo[i].StoryCat =="Disaster")
-        {  
-            StoriesInfo[i].StoryCat = "Weather";
-        }
-
-    //      (predicted_category=="Crime" && labeled_category == "Accident")|| (
-    //      predicted_category=="Accident" && labeled_category == "Crime")||
-        if (found < 50 || found1 < 10000){
-            StoriesInfo[i].StoryCat = "War";
-        }
-    }
-
-    vector<string> labels_training;
-    labels_training.clear();
-    for( int i=0; i < StoriesInfo.size()-1; i++)
-    {   
-        labels_training.push_back(StoriesInfo[i].StoryCat);
-    }
-
-    const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
-        "Social","Government","Science-technology","Religion","Politics", "International" ,
-        "Lifestyle-leisure" , "Labor" , "Human-interest" , "Health" , "Environment" , 
-        "Education" , "Business" ,  "Money" , "Crime", "Justice", "Art-culture", "Celebrity",
-        "Entertainment", "Network" , "Commercial"};
-    vector<string> categories(array, array + sizeof array / sizeof array[0]);
-        vector<int> ProbCat;
-        ProbCat.clear();
-
-    for(int i=0; i < categories.size(); i++)
-    {
-        int Count = 0;
-        for (int j=0; j < labels_training.size(); j++)
-        {
-            if (categories[i].compare(labels_training[j]) == 0)
-            {
-                Count++;
-            }
-        }
-        ProbCat.push_back(Count);
-        //cout<<categories[i]<<"      "<<Count<<endl;
-    }
-
-    //for (int j=0; j < labels_training.size(); j++){
-    //cout<<"labels_training    "<<labels_training[j]<<""<<   <<endl;}
-    //  if (num_stories != labels_training.size()){
-    //      cout<< " Error: Additional Category in Story list which NOT in The Main Category List"<< endl;
-    //  }
-
-    string AllWords_InEachCat;
-    vector<string> AllWords_InAllCats;
-    AllWords_InAllCats.clear();
-    for(int i=0; i < categories.size(); i++)
-    {
-        AllWords_InEachCat.clear();
-        for (int j=0; j < StoriesInfo.size()-1; j++)
-        {
-            if (categories[i].compare(StoriesInfo[j].StoryCat) == 0)
-            {
-                AllWords_InEachCat= StoriesInfo[j].Words +" "+  AllWords_InEachCat;
-            }
-        }
-        AllWords_InAllCats.push_back(AllWords_InEachCat);
-    }
-
-
-    vector<string> VocabInEachCat, AllWords;
-    ofstream inout;
-    inout.open ("Reference_Vocabulary1.txt");
-
-    for(int i=0; i < AllWords_InAllCats.size(); i++)
-    { 
-        VocabInEachCat.clear();
-        AllWords.clear();
-        istringstream iss(AllWords_InAllCats[i]);
-        istringstream iss1(AllWords_InAllCats[i]);
-        copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(VocabInEachCat));
-        copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(AllWords));
-
-        for(int k=0; k < VocabInEachCat.size(); k++)
-        {
-            for (int j=k+1; j < VocabInEachCat.size(); j++)
-            {
-                if (VocabInEachCat[k] != "" )
-                {
-                    if (VocabInEachCat[k].compare(VocabInEachCat[j]) == 0)
-                    {
-                        VocabInEachCat.erase (VocabInEachCat.begin()+j);
-                        j--;
-                    }
-                }
-            }
-        }
-
-        //cout<<"VocabInEachCat.size   "<<VocabInEachCat.size()<<"   AllWords.size   "<<AllWords.size()<<endl;
-        inout<<"Category Name  ="<<categories[i]<<endl;
-        inout<<"Vocabulary Size  ="<<VocabInEachCat.size()<<"     "<<"All Words in "<<categories[i]<<" Category = "<<AllWords.size()<<endl;
-
-        WordCount entry;        
-        vector<WordCount> Co_Occurance;
-        for(int k=0; k < VocabInEachCat.size(); k++)
-        {
-            int Count = 0;
-            for(int j=0; j < AllWords.size(); j++)
-            {
-                if (VocabInEachCat[k].compare(AllWords[j]) == 0)
-                {
-                    Count++;
-                }
-            }
-            entry.Word = VocabInEachCat[k];
-            entry.Occurance = Count;
-            Co_Occurance.push_back(entry);          
-        }
-
-        sort(Co_Occurance.begin(), Co_Occurance.end(), my_cmp);
-        //cout<<"Co_Occurance.size()     "<<Co_Occurance.size()<<endl;
-        int Count = 0;
-        for(int k=0; k < Co_Occurance.size(); k++)
-        {
-            inout<<Co_Occurance[k].Word<<" ("<<Co_Occurance[k].Occurance<<")"<<endl;
-            Count = Count+Co_Occurance[k].Occurance;
-        }
-
-        inout<<endl<<endl;
-    }
-
-    inout.close();
-
-}
-
-vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWordInfoFinal)
-{
-    vector<StoryInfo> stories;
-
-    StoryInfo current_story;
-    for(int i=0; i < storyWordInfoFinal.size(); i++)
-    {
-        if (storyWordInfoFinal[i].tripletsIdx == 0)
-        {
-            string name = storyWordInfoFinal[i].StoryName;
-            size_t found1 = name.find('|' );
-            string str1 = name.substr ( 0, found1 );
-            size_t found = str1.find(':' );
-            if (found < 50 )
-            {
-                str1 = str1.substr ( 0, found );
-            }
-            current_story.category = str1;
-            current_story.name = name;
-            current_story.num_sentences = storyWordInfoFinal[i].num_sentences;
-        }
-
-        if ( storyWordInfoFinal[i].tripletsIdx != storyWordInfoFinal[i].num_sentences-1)
-        {
-            istringstream iss(storyWordInfoFinal[i].Non_Ph1);
-            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
-
-            istringstream iss1(storyWordInfoFinal[i].Verb_Ph);
-            copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
-
-            istringstream iss2(storyWordInfoFinal[i].Non_Ph2);
-            copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
-        }
-        else if ( storyWordInfoFinal[i].tripletsIdx == storyWordInfoFinal[i].num_sentences-1)
-        {
-            if (current_story.category != "NULL")
-            {
-                stories.push_back(current_story);
-            }
-            current_story.name = "";
-            current_story.category = "";
-            current_story.words_np1.clear();
-            current_story.words_vp.clear();
-            current_story.words_np2.clear();
-        }
-    }    
-    return stories;
-}
