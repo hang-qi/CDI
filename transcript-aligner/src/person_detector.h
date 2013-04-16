@@ -3,6 +3,8 @@
 
 #include <string>
 #include <unordered_map>
+#include <vector>
+#include <set>
 #include "string_utility.h"
 
 using namespace std;
@@ -23,6 +25,7 @@ private:
 	bool HasParty(const string& str);
 	void GetPartyAndState(const string& str, string& party, string& state);
 	string ConvertToCamalStyle(const string& str);
+    bool isState(const string& str);
 
 private:
 	/* Data members*/

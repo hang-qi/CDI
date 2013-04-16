@@ -31,7 +31,7 @@ string PersonDetector::GetSPKString(const string& longNameStr)
     using namespace utility::string_utility;
 
     string name;
-    string role;
+    vector<string> roles;
  
     // erase the ending ':'
     string longNameString = trim_end(longNameStr, ":");
@@ -57,8 +57,21 @@ string PersonDetector::GetSPKString(const string& longNameStr)
         // when his/her last name appears again.
 
         name = ConvertToCamalStyle(longNameString.substr(0 ,found));
-        role = longNameString.substr(found + 1);
-        nerString = "Person=" + name + "|Role=" + trim_front(role);
+        roles.push_back(trim_front(longNameString.substr(found + 1)));
+
+        // SEN.
+        if (name.substr(0, 5) == "SEN. ")
+        {
+            name = name.substr(5, name.size());
+            if (isState(roles[0]))
+            {
+                roles[0] = roles[0] + " Senator";
+            }
+            else
+            {
+                roles.push_back("Senator");
+            }
+        }
 
         // extract last name, and save SPK String into dictionary
         auto nameParts = split(name, ' ');
@@ -67,6 +80,7 @@ string PersonDetector::GetSPKString(const string& longNameStr)
 
         // The last part of the name may contains party/state information
         // e.g. MITT ROMNEY (R), JOHN BOEHSPK (R-OH)
+        string additionalInfo;
         if (HasParty(lastPart))
         {
             name = trim(replace(name, lastPart, ""));
@@ -75,12 +89,24 @@ string PersonDetector::GetSPKString(const string& longNameStr)
             string party, state;
             GetPartyAndState(lastPart, party, state);           
             
-            nerString = "Person=" + name + "|Role=" + trim_front(role) + "|Party=" + party;
+            additionalInfo = "|Party=" + party;
+            //nerString = "Person=" + name + "|Role=" + trim_front(role) + "|Party=" + party;
             if (!state.empty())
             {
-                nerString.append(string("|State=") + state);
+                additionalInfo.append(string("|State=") + state);
             }
         }
+
+        // name, role, additional info
+        nerString = "Person=" + name;
+        for (int i = 0; i < roles.size(); i++)
+        {
+            if (roles[i] != "")
+            {
+                nerString.append(string("|Role=") + roles[i]);
+            }
+        }
+        nerString.append(additionalInfo);
 
         personDictionary_[lastName] = nerString;
     }
@@ -112,6 +138,28 @@ string PersonDetector::GetSPKString(const string& longNameStr)
     }
 
     return nerString;
+}
+
+bool PersonDetector::isState(const string& str)
+{
+    using namespace utility::string_utility;
+
+    static const char* states_array[] = {
+        "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+        "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+        "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana",
+        "maine", "maryland", "massachusetts", "michigan", "minnesota",
+        "mississippi", "missouri", "montana", "nebraska", "nevada",
+        "new hampshire", "new jersey", "new mexico", "new york",
+        "north carolina", "north dakota", "ohio", "oklahoma", "oregon",
+        "pennsylvania", "rhode island", "south carolina", "south dakota", 
+        "tennessee", "texas", "utah", "vermont", "virginia", "washington", 
+        "west virginia", "wisconsin", "wyoming"
+    };
+    static set<string> states(states_array,
+        states_array + sizeof(states_array)/sizeof(states_array[0]));
+
+    return (states.find(to_lower(str)) != states.end());
 }
 
 // Input str may be like (R), (D), (D-CA), (R-OH)
