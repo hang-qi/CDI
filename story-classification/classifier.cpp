@@ -146,7 +146,8 @@ PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story)
         dist_catGivenStory.push_back(A);
     }
 
-    dist_catGivenStory = stat_utility::Normalize(dist_catGivenStory);
+    //dist_catGivenStory = stat_utility::Normalize(dist_catGivenStory);
+    
     // Predict by the maximum posterior probability (Bayes Decision).
     // Normalize is not necessary.
     int predicted_category_idx = max_element(dist_catGivenStory.begin(), dist_catGivenStory.end()) - dist_catGivenStory.begin();
@@ -181,11 +182,7 @@ vector<double> NaiveBayesClassifier::CalculatePriors(
         prob_cat[i] = count;
         num_stories += count;
     }
-    assert(num_stories == labeled_stories.size());
-    //if (num_stories != labeled_stories.size())
-    //{
-    //    cout << " Error: Additional Category in Story list which NOT in The Main Category List"<< endl;
-    //}
+    assert(num_stories == labeled_stories.size());    
     
     // normalize    
     for(int i = 0; i < prob_cat.size(); i++)

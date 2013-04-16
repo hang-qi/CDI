@@ -17,27 +17,21 @@ int main(int argc, const char* argv[])
 {
     bool isTraining = false;
     bool isValidation = false;
-    string targetfiles;
+    //string targetfiles;
     
-    // .TextAnalysis [--train|--validation|--predict] file
-    vector<string> args;
-    for (int i =0; i < argc; i++)
+    // .TextAnalysis [--train|--validation|--predict] file      
+    if (argc == 2)
     {
-        args.push_back(argv[i]);
-    }
-    
-    if (args.size() == 3)
-    {
-        if (args[1] == "--train")
+        if (string(argv[1]) == "--train")
         {
             isTraining = true;
         }
-        else if(args[1] == "--predict")
+        else if(string(argv[1]) == "--predict")
         {
             isTraining = false;
             isValidation = false;
         }        
-        else if(args[1] == "--validation")
+        else if(string(argv[1]) == "--validation")
         {
             isValidation = true;
         }
@@ -46,8 +40,8 @@ int main(int argc, const char* argv[])
             cout << "Unknown command." << endl;
             return -1;
         }
-        targetfiles = argv[2];
-        cout << targetfiles << endl;
+        //targetfiles = argv[2];
+        //cout << targetfiles << endl;
     }
 
     string pathTriplets = "/home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/";
@@ -103,25 +97,14 @@ int main(int argc, const char* argv[])
     vector<TopicElements> resourceGoalTags = cws.ReadTag_ResourceGoal(storyInfoForTag);
     cws.StoryTopic(storyInfoTags , StoryTopicInfo, resourceGoalTags);
     */
-
-    stories = cws.Lemmatize(stories);
-    stories = cws.Cleasing(stories);
-    // remove short stories
-    // remove stop words
-
-    //vector<Triplet> longStories = cws.RemoveShortStory(storyWordInfo, RemovedStory);
-    //vector<StorySentInfo> storyNameAndSenNum = cws.GetNumberOfStorySentence(longStories);
     
-    //vector<FinalTriplet> storyWordInfoFinal = cws.RemoveStopWords(
-    //    longStories, storyNameAndSenNum);
-
-    //vector<StoryInfo> stories = cws.GetStories(storyWordInfoFinal);
+    // remove stop words
+    stories = cws.Lemmatize(stories);
+    stories = cws.Cleasing(stories);    
 
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
     cws.ExtractVocabularyList(stories,
         vocabularyNP1, vocabularyVP, vocabularyNP2);
-
-    exit(0);
 
     if (isTraining)
     {

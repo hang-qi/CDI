@@ -160,24 +160,19 @@ public:
     // Triplets
     //
     vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
-    vector<TopicElements> ReadFullDocument(const string& newsListFilename);
-    void ReadTagFromFile(vector<TopicElements>& Story_InfoForTag);
-    vector<TopicElements> ReadTagFromFile1();
-    vector<TopicElements> ReadTag_ResourceGoal(const vector<TopicElements>& Story_InfoForTag);
-    void StoryTopic(const vector<TopicElements>& storyInfoTags,
-            const vector<TopicElements>& StoryTopicInfo,
-            const vector<TopicElements>& resourceGoalTags);
-
-
-    //void GetSimilarityScore(string keyword, vector<BoundaryEntry>& output);
-    
     vector<Triplet> RemoveShortStory(const vector<Triplet>& StoryWordInfo,
             OUT vector<int> & RemovedStory);    
     vector<StorySentInfo> GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo);
+
+    vector <StoryInfo> TripletsToStories(const vector<Triplet> & triplets);
+    vector<StoryInfo> Lemmatize(const vector<StoryInfo>& stories);
+
+    vector<string>& RemoveStopWords(vector<string>& words);
+    vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);
     vector<FinalTriplet> RemoveStopWords(const vector<Triplet> & StoryWordInfo ,
         const vector<StorySentInfo> & StoryNameAndSenNum);
-    void ExtractVocabularyList(const vector<FinalTriplet> & StoryWordInfoFinal,
-        OUT set<string>& vocabularyNP1, 
+    void ExtractVocabularyList(const vector<StoryInfo> & stories,
+        OUT set<string>& vocabularyNP1,
         OUT set<string>& vocabularyVP, 
         OUT set<string>& vocabularyNP2);
 
@@ -201,16 +196,17 @@ public:
     void FirstSentAsTopic(string fileName , vector<TopicElements>& StoryTopicInfo);
     void TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final);
 
-    // For Russian Articles
-    void TopicOnWebArticle(vector<TopicElements>& ArticleTopicInfo , string list_file4 , string list_file2);
-    
-    // Reference Vocabulary
-    void Generate_Reference_Vocabulary();
+
+    vector<TopicElements> ReadFullDocument(const string& newsListFilename);
+    void ReadTagFromFile(vector<TopicElements>& Story_InfoForTag);
+    vector<TopicElements> ReadTagFromFile1();
+    vector<TopicElements> ReadTag_ResourceGoal(const vector<TopicElements>& Story_InfoForTag);
+    void StoryTopic(const vector<TopicElements>& storyInfoTags,
+            const vector<TopicElements>& StoryTopicInfo,
+            const vector<TopicElements>& resourceGoalTags);
     
 private:
     // utilities
     void PrintCrossValidationReport(ostream& os,
         const vector< pair<double, double> >& crossValidation);
-
-    static const char* stopwordsArray[];
 };

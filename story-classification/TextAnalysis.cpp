@@ -204,11 +204,245 @@ vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
                     }
                     entry.Non_Ph2 = (str2);
                 }
+
+                char chars[] = "1234567890,:'?`";
+                for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
+                {            
+                    entry.Non_Ph1.erase(remove(entry.Non_Ph1.begin(), entry.Non_Ph1.end(), chars[ii]), entry.Non_Ph1.end());
+                    entry.Verb_Ph.erase(remove(entry.Verb_Ph.begin(), entry.Verb_Ph.end(), chars[ii]), entry.Verb_Ph.end());
+                    entry.Non_Ph2.erase(remove(entry.Non_Ph2.begin(), entry.Non_Ph2.end(), chars[ii]), entry.Non_Ph2.end());
+                }
+                replace(entry.Non_Ph1.begin(), entry.Non_Ph1.end(), '-', ' ');
+                replace(entry.Verb_Ph.begin(), entry.Verb_Ph.end(), '-', ' ');
+                replace(entry.Non_Ph2.begin(), entry.Non_Ph2.end(), '-', ' ');
+
+                replace(entry.Non_Ph1.begin(), entry.Non_Ph1.end(), '\\', ' ');
+                replace(entry.Verb_Ph.begin(), entry.Verb_Ph.end(), '\\', ' ');
+                replace(entry.Non_Ph2.begin(), entry.Non_Ph2.end(), '\\', ' ');
+
+                replace(entry.Non_Ph1.begin(), entry.Non_Ph1.end(), '/', ' ');
+                replace(entry.Verb_Ph.begin(), entry.Verb_Ph.end(), '/', ' ');
+                replace(entry.Non_Ph2.begin(), entry.Non_Ph2.end(), '/', ' ');
+
                 storyWordInfo.push_back(entry);
             }
         }
     }
     return storyWordInfo;
+}
+
+
+vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & triplets)
+{
+    vector <StoryInfo> stories;
+
+    for( int i=0; i < triplets.size(); i++)
+    {        
+        size_t found_start = triplets[i].StoryTopicName.find("<story>");
+        if (found_start == 0)
+        {
+            string storyName = triplets[i].StoryTopicName;
+            storyName = storyName.substr(7, storyName.size());
+            size_t found1 = storyName.find('|' );
+            string category = storyName.substr(0, found1 );
+            size_t found = category.find(':');
+            if (found < 50)
+            {
+                category = category.substr ( 0, found );
+            }
+
+            StoryInfo current_story;
+            current_story.name = storyName;
+            current_story.category = category;
+            current_story.num_sentences = 0;
+            current_story.timeStart = triplets[i+1].StoryTimeStart;
+
+            int num_sentences = 0;
+            size_t found_end = 1;
+            while ( found_end != 0 )
+            {
+                i++;
+                num_sentences++;
+
+                istringstream iss(triplets[i].Non_Ph1);
+                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
+
+                istringstream iss1(triplets[i].Verb_Ph);
+                copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
+
+                istringstream iss2(triplets[i].Non_Ph2);
+                copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
+
+                found_end = triplets[i].StoryTimeEnd.find("<end>");
+            }
+            current_story.num_sentences = num_sentences-2;
+            current_story.timeEnd = triplets[i].StoryTimeEnd;
+            stories.push_back(current_story);
+        }
+    }
+    return stories;
+}
+
+vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
+{
+    ofstream inout;
+    inout.open(FILE_ANNA_BEFORE_SPLIT);
+    for(int i=0; i < stories.size(); i++)
+    {
+        for (int j=0; j < stories[i].words_np1.size(); j++)
+        {
+            inout << stories[i].words_np1[j] << endl;
+        }
+
+        for (int j=0; j < stories[i].words_vp.size(); j++)
+        {
+            inout << stories[i].words_vp[j] << endl;
+        }
+
+        for (int j=0; j < stories[i].words_np2.size(); j++)
+        {
+            inout << stories[i].words_np2[j] << endl;
+        }
+    }
+    inout.close();
+
+    string CMD_split = "java -cp " FILE_ANNA_JAR " is2.util.Split " FILE_ANNA_BEFORE_SPLIT " > " FILE_ANNA_AFTER_SPLIT;
+    system(CMD_split.c_str());
+
+    string CMD_lemmatize = "java -Xmx2G -cp " FILE_ANNA_JAR " is2.lemmatizer.Lemmatizer -model " FILE_LEMMA_ENG_MODEL " -test " FILE_ANNA_AFTER_SPLIT " -out Lemmatizedfile.txt";
+    system(CMD_lemmatize.c_str());
+
+    ifstream lemmed ("Lemmatizedfile.txt");
+    char buffer[500];
+    char * pch;
+    string wholeString , str_buf , str12 , str ;                        
+    ofstream lemm_words ;
+    lemm_words.open ("lemmatized_words.txt");
+    vector<string> words;
+
+    while (!lemmed.eof() && lemmed.good() ) 
+    {
+        lemmed.getline(buffer, 500, '\n');
+        str_buf = (buffer);
+
+        if (str_buf == "") 
+        {
+            lemm_words << wholeString << '\n';
+            words.push_back(wholeString);
+            wholeString = "";
+        }
+        if (str_buf != "" )
+        {
+            pch=strchr(buffer,'_');
+            size_t foundNP1 = pch-buffer+1 ;
+            pch=strchr(pch+1,'_');
+            size_t foundVP = pch-buffer+1 ;
+            str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
+            wholeString = wholeString + " " + str ;
+        }
+    }
+    lemmed.close();
+    lemmed.clear();
+    lemm_words.close();
+    lemm_words.clear();
+
+    int k = 0;
+    vector<StoryInfo> stories_lemmed;
+    for(int i=0; i < stories.size(); i++)
+    {
+        StoryInfo story_lemmed = stories[i];
+        story_lemmed.words_np1.clear();
+        story_lemmed.words_vp.clear();
+        story_lemmed.words_np2.clear();
+
+        for (int j=0; j < stories[i].words_np1.size(); j++)
+        {
+            assert(k < words.size());
+            story_lemmed.words_np1.push_back(words[k]);
+            k++;
+        }
+
+        for (int j=0; j < stories[i].words_vp.size(); j++)
+        {
+            assert(k < words.size());
+            story_lemmed.words_vp.push_back(words[k]);
+            k++;            
+        }
+
+        for (int j=0; j < stories[i].words_np2.size(); j++)
+        {
+            assert(k < words.size());
+            story_lemmed.words_np2.push_back(words[k]);
+            k++;
+        }
+
+        stories_lemmed.push_back(story_lemmed);
+    }
+
+    return stories_lemmed;
+}
+
+vector<string>& TextAnalysis::RemoveStopWords(vector<string>& words)
+{
+    // stop words
+    static set<string> stopwords(stopwordsArray,
+                        stopwordsArray + sizeof(stopwordsArray)/ sizeof(stopwordsArray[0]));
+
+    // remove stop words
+    for(auto it = words.begin(); it < words.end(); it++)
+    {
+        string word = *it;
+        size_t found = word.find("'s");
+        if (found <= 50)
+        {
+            word.erase (found,2);
+        }
+        found = word.find("$");
+        if (found <= 50)
+        {
+            word = "dollar";
+        }
+        found = word.find("'");
+        if (found <= 50)
+        {
+            word.erase(found,1);
+        }
+        if (*it == "united" && *(it+1)== "state")
+        {
+            word = "u.s.";
+            words.erase(it+1);
+        }
+
+        *it = word;
+        if (*it == "" || stopwords.find(*it) != stopwords.end())
+        {
+            words.erase(it);
+        }
+    }
+    return words;
+}
+
+vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
+{   
+    vector<StoryInfo> stories_new;
+
+    for (int i = 0; i < stories.size(); i++)
+    {
+        // Skip NULL category stories and short stories.
+        if (stories[i].category != "NULL" && stories[i].num_sentences > 4)
+        {
+            stories_new.push_back(stories[i]);
+        }
+    }
+
+    // remove stop words.
+    for(int i=0; i < stories_new.size(); i++)
+    {
+        RemoveStopWords(stories_new[i].words_np1);
+        RemoveStopWords(stories_new[i].words_vp);
+        RemoveStopWords(stories_new[i].words_np2);
+    }
+    return stories_new;
 }
 
 void TextAnalysis::FirstSentAsTopic(string fileName,
@@ -959,7 +1193,7 @@ vector<TopicElements> TextAnalysis::ReadTagFromFile1()
 
 vector<StorySentInfo> TextAnalysis::GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo)
 {
-    ofstream inout ;
+    ofstream inout;
     inout.open ("StoryAndSenNumber.txt");   
 
     vector<StorySentInfo> storyNameAndSenNum;
@@ -1224,7 +1458,7 @@ vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWord
             size_t found = str1.find(':' );
             if (found < 50 )
             {
-                str1 = str1.substr ( 0, found );
+                str1 = str1.substr ( 0, found );                
             }
             current_story.category = str1;
             current_story.name = name;
@@ -1256,239 +1490,6 @@ vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWord
         }
     }    
     return stories;
-}
-
-vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & triplets)
-{
-    vector <StoryInfo> stories;
-
-    for( int i=0; i < triplets.size(); i++)
-    {        
-        size_t found_start = triplets[i].StoryTopicName.find("<story>");
-        if (found_start == 0)
-        {
-            string storyName = triplets[i].StoryTopicName;
-            size_t found1 = storyName.find('|' );
-            string category = storyName.substr ( 0, found1 );
-            size_t found = category.find(':');
-            if (found < 50 )
-            {
-                category = category.substr ( 0, found );
-            }
-
-            StoryInfo current_story;
-            current_story.name = storyName.substr(7, storyName.size());            
-            current_story.category = category;            
-            current_story.num_sentences = 0;
-            current_story.timeStart = triplets[i+1].StoryTimeStart;
-            cout << current_story.timeStart << endl;
-            
-            int num_sentences = 0;
-            size_t found_end = 1;
-            while ( found_end != 0 )
-            {
-                i++;
-                num_sentences++;
-
-                istringstream iss(triplets[i].Non_Ph1);
-                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
-
-                istringstream iss1(triplets[i].Verb_Ph);
-                copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
-
-                istringstream iss2(triplets[i].Non_Ph2);
-                copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
-
-                found_end = triplets[i].StoryTimeEnd.find("<end>");
-            }
-            current_story.num_sentences = num_sentences-2;
-            current_story.timeEnd = triplets[i].StoryTimeEnd;
-            cout << current_story.timeEnd << endl;
-            stories.push_back(current_story);
-        }
-    }
-    return stories;
-}
-
-vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
-{
-    ofstream inout;
-    inout.open(FILE_ANNA_BEFORE_SPLIT);
-    for(int i=0; i < stories.size(); i++)
-    {
-        for (int j=0; j < stories[i].words_np1.size(); j++)
-        {
-            inout << stories[i].words_np1[j] << endl;
-        }
-
-        for (int j=0; j < stories[i].words_vp.size(); j++)
-        {
-            inout << stories[i].words_vp[j] << endl;
-        }
-
-        for (int j=0; j < stories[i].words_np2.size(); j++)
-        {
-            inout << stories[i].words_np2[j] << endl;
-        }
-    }
-    inout.close();
-
-    string CMD_split = "java -cp " FILE_ANNA_JAR " is2.util.Split " FILE_ANNA_BEFORE_SPLIT " > " FILE_ANNA_AFTER_SPLIT;
-    system(CMD_split.c_str());
-
-    string CMD_lemmatize = "java -Xmx2G -cp " FILE_ANNA_JAR " is2.lemmatizer.Lemmatizer -model " FILE_LEMMA_ENG_MODEL " -test " FILE_ANNA_AFTER_SPLIT " -out Lemmatizedfile.txt";
-    system(CMD_lemmatize.c_str());
-
-    ifstream lemmed ("Lemmatizedfile.txt");
-    char buffer[500];
-    char * pch;
-    string wholeString , str_buf , str12 , str ;                        
-    ofstream lemm_words ;
-    lemm_words.open ("lemmatized_words.txt");
-    vector<string> words;
-
-    while (!lemmed.eof() && lemmed.good() ) 
-    {
-        lemmed.getline(buffer, 500, '\n');
-        str_buf = (buffer);
-
-        if (str_buf == "") 
-        {
-            lemm_words << wholeString << '\n';
-            words.push_back(wholeString);
-            wholeString = "";
-        }
-        if (str_buf != "" )
-        {
-            pch=strchr(buffer,'_');
-            size_t foundNP1 = pch-buffer+1 ;
-            pch=strchr(pch+1,'_');
-            size_t foundVP = pch-buffer+1 ;
-            str = str_buf.substr (foundNP1, (foundVP - foundNP1)-2 ); 
-            wholeString = wholeString + " " + str ;
-        }
-    }
-    lemmed.close();
-    lemmed.clear();
-    lemm_words.close();
-    lemm_words.clear();
-
-    int k = 0;
-    vector<StoryInfo> stories_lemmed;
-    for(int i=0; i < stories.size(); i++)
-    {
-        StoryInfo story_lemmed = stories[i];
-        story_lemmed.words_np1.clear();
-        story_lemmed.words_vp.clear();
-        story_lemmed.words_np2.clear();
-
-        for (int j=0; j < stories[i].words_np1.size(); j++)
-        {
-            assert(k < words.size());
-            story_lemmed.words_np1.push_back(words[k]);
-            k++;
-        }
-
-        for (int j=0; j < stories[i].words_vp.size(); j++)
-        {
-            assert(k < words.size());
-            story_lemmed.words_vp.push_back(words[k]);
-            k++;            
-        }
-
-        for (int j=0; j < stories[i].words_np2.size(); j++)
-        {
-            assert(k < words.size());
-            story_lemmed.words_np2.push_back(words[k]);
-            k++;
-        }
-
-        stories_lemmed.push_back(story_lemmed);
-    }
-
-    return stories_lemmed;
-}
-
-vector<string>& TextAnalysis::RemoveStopWords(vector<string>& words)
-{
-    // stop words
-    static set<string> stopwords(stopwordsArray,
-                        stopwordsArray + sizeof(stopwordsArray)/ sizeof(stopwordsArray[0]));
-
-    // remove stop words
-    for(auto it = words.begin(); it < words.end(); it++)
-    {
-        if (stopwords.find(*it) != stopwords.end())
-        {
-            words.erase(it);
-        }
-
-        // found = wholeString.find("'s");
-        // if (found <= 50){
-        //     wholeString.erase (found,2);
-        // }
-        // found = wholeString.find("$");
-        // if (found <= 50)
-        // {
-        //     wholeString = "dollar";
-        // }
-        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
-        // found = wholeString.find("united state");
-        // if (found <= 50)
-        // {
-        //     wholeString = "u.s.";
-        // }
-        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
-        // found = wholeString.find("'");
-        // if (found <= 50)
-        // {
-        //     wholeString.erase (found,1);
-        // }
-        // storyWordInfoFinal[i].Non_Ph2 = wholeString;
-    }
-    return words;
-}
-
-vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
-{   
-    vector<StoryInfo> stories_new = stories;
-
-    // for(int i=0; i < stories_new.size(); i++)
-    // {         
-    //     string wholeStringNon_Ph1, wholeStringNon_Ph2;
-    //     size_t found;
-    //     wholeStringNon_Ph1 = storyWordInfoFinal[i].Non_Ph1;
-    //     wholeStringNon_Ph2 = storyWordInfoFinal[i].Non_Ph2;
-    //     wholeString = storyWordInfoFinal[i].Verb_Ph;
-            
-    //     char chars[] = "1234567890,:'";
-
-    //     for (unsigned int ii = 0; ii < sizeof(chars); ++ii)
-    //     {
-    //         // you need include <algorithm> to use general algorithms like remove()
-    //         wholeString.erase(remove(wholeString.begin(), wholeString.end(), chars[ii]), wholeString.end());
-    //         wholeStringNon_Ph1.erase(remove(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), chars[ii]), wholeStringNon_Ph1.end());
-    //         wholeStringNon_Ph2.erase(remove(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), chars[ii]), wholeStringNon_Ph2.end());
-    //     }
-
-    //     replace(wholeString.begin(), wholeString.end(), '-', ' ');
-    //     replace(wholeStringNon_Ph1.begin(), wholeStringNon_Ph1.end(), '-', ' ');
-    //     replace(wholeStringNon_Ph2.begin(), wholeStringNon_Ph2.end(), '-', ' ');
-
-    //     storyWordInfoFinal[i].Non_Ph1 = wholeStringNon_Ph1;
-    //     storyWordInfoFinal[i].Non_Ph2 = wholeStringNon_Ph2;
-    //     storyWordInfoFinal[i].Verb_Ph = wholeString;
-
-    // }
-
-    // remove stop words.
-    for(int i=0; i < stories_new.size(); i++)
-    {
-        RemoveStopWords(stories_new[i].words_np1);
-        RemoveStopWords(stories_new[i].words_vp);
-        RemoveStopWords(stories_new[i].words_np2);
-    }
-    return stories_new;
 }
                 
 
