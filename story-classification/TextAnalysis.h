@@ -138,25 +138,6 @@ public:
     ~TextAnalysis();
 
     //
-    // On Screen Text
-    //
-    void Screen_Text_Info(
-        OUT vector<ScreenInfo>& Screen_Info_Final,
-        OUT set<string>& Sceen_Words_Vocab,
-        const string& orcDir,
-        const string& annotatedTextDir, 
-        const string& newsListFilename);
-    vector<ScreenInfo> RemoveShortStory_ScreenTopic(
-        const vector<ScreenInfo> &Screen_Info_Final,
-        OUT vector<int> & RemovedStory);
-    
-    /*
-    void SaveVocabulary(set<string> vocabulary, string dest_filename);
-    */
-    void ParameterLearning_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final,
-        const set<string>& vocabulary);
-
-    //
     // Triplets
     //
     vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
@@ -182,19 +163,7 @@ public:
     //
     void CalculateSimilarity(const vector<StoryInfo>& StoryWordInfoFinal);
 
-    
-    //-----------------------------------
-    // Out of date    
     void TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final);
-
-
-    vector<TopicElements> ReadFullDocument(const string& newsListFilename);
-    void ReadTagFromFile(vector<TopicElements>& Story_InfoForTag);
-    vector<TopicElements> ReadTagFromFile1();
-    vector<TopicElements> ReadTag_ResourceGoal(const vector<TopicElements>& Story_InfoForTag);
-    void StoryTopic(const vector<TopicElements>& storyInfoTags,
-            const vector<TopicElements>& StoryTopicInfo,
-            const vector<TopicElements>& resourceGoalTags);
     
 private:
     // utilities
