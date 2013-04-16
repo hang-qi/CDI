@@ -59,18 +59,10 @@ public:
     vector<StoryInfo> Lemmatize(const vector<StoryInfo>& stories);
 
     vector<string> RemoveStopWords(const vector<string>& words);
-    vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);    
-    void ExtractVocabularyList(const vector<StoryInfo> & stories,
-        OUT set<string>& vocabularyNP1,
-        OUT set<string>& vocabularyVP, 
-        OUT set<string>& vocabularyNP2);
+    vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);        
     
     void CrossValidation(
-        const vector<StoryInfo>& stories,
-        const set<string>& vocabularyNP1, 
-        const set<string>& vocabularyVP, 
-        const set<string>&vocabularyNP2,
-        const int nfold = 10);
+        const vector<StoryInfo>& stories, const int nfold = 10);
 
     //
     // Similarity
@@ -83,4 +75,42 @@ private:
     // utilities
     void PrintCrossValidationReport(ostream& os,
         const vector< pair<double, double> >& crossValidation);
+
+    int GetCategoryId(string category)
+    {
+        const static char* arr[] = {"War", "Sports", "Disaster",
+        "Accident", "Activism", "Weather", "Social", "Government", 
+        "Science-technology", "Religion", "Politics", "International",
+        "Lifestyle-leisure", "Labor", "Human-interest", "Health",
+        "Environment", "Education", "Business", "Money", "Crime", "Justice",
+        "Art-culture", "Celebrity", "Entertainment", "Network", "Commercial"};
+        const static vector<string> categories(arr, arr + sizeof arr / sizeof arr[0]);
+
+        int category_id = -1;
+        for(int i = 0; i < categories.size(); i++)
+        {
+            if (category == categories[i])
+            {
+                category_id = i;
+                break;
+            }
+        }
+        return category_id;
+    }
+
+    string GetCategoryById(int category_id)
+    {
+        const static char* arr[] = {"War", "Sports", "Disaster",
+        "Accident", "Activism", "Weather", "Social", "Government", 
+        "Science-technology", "Religion", "Politics", "International",
+        "Lifestyle-leisure", "Labor", "Human-interest", "Health",
+        "Environment", "Education", "Business", "Money", "Crime", "Justice",
+        "Art-culture", "Celebrity", "Entertainment", "Network", "Commercial"};
+
+        if (category_id < 0 || category_id >= sizeof arr / sizeof arr[0])
+        {
+            return "NULL";
+        }
+        return arr[category_id];        
+    }
 };

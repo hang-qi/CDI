@@ -10,8 +10,8 @@ typedef vector< vector<double> > Matrix;
 
 struct StoryInfo 
 {
-    string name;            // labeled name
-    string category;        // category
+    string name;            // labeled name    
+    int category_id;
     int document_id;
     int num_sentences;      // number of sentences
     vector<string> words_np1;     // NP1 list
@@ -20,14 +20,6 @@ struct StoryInfo
     string timeStart;
     string timeEnd;
 };
-
-struct StoryFeature
-{
-    vector<int> wordIds_np1;   // NP1 list
-    vector<int> wordIds_vp;    // VP list
-    vector<int> wordIds_np2;   // NP2 list
-};
-
 
 struct WordCatInfo
 {

@@ -91,32 +91,28 @@ int main(int argc, const char* argv[])
     stories = cws.Lemmatize(stories);
     stories = cws.Cleasing(stories);
 
-    set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
-    cws.ExtractVocabularyList(stories,
-        vocabularyNP1, vocabularyVP, vocabularyNP2);
-
     if (isTraining)
     {
         // Train model
         cout << "Training Model..." << endl;
         NaiveBayesClassifier classifier;
-        classifier.SetVocabularyNP1(vocabularyNP1);
-        classifier.SetVocabularyVP(vocabularyVP);
-        classifier.SetVocabularyNP2(vocabularyNP2);
-        classifier.Train(stories);
+        classifier.Train(stories, 27);
         classifier.SaveParametersToFile("output/model.txt");
     }
     else if(isValidation)
     {
         cout << "Triplets validation..." << endl;
-        cws.CrossValidation(
-            stories, vocabularyNP1, vocabularyVP, vocabularyNP2);
+        cws.CrossValidation(stories);
     }
     else
     {
         // Predict by default
         NaiveBayesClassifier classifier;
         classifier.LoadParametersFromFile("output/model.txt");
+        for (int i = 0; i < stories.size(); i++)
+        {
+            PredictResult result = classifier.Predict(stories[i]);            
+        }
     }
 
     // Clustering based on NP1 similarities.    
@@ -126,24 +122,3 @@ int main(int argc, const char* argv[])
 
   return 0;
 }
-
-//  ./TextAnalysis /home/csa/CAS2/Arash/StoryTextInfo/ /home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/
-
-//  argv[0] = /home/csa/CAS2/Arash/StoryTextInfo
-//  java -Xmx1g -jar WNsim.jar n /home/csa/CAS2/Arash/StoryTextInfo/lemmatized_words.txt
-
-
-    // OCR classification
-    //
-    /*
-    vector<ScreenInfo> screenInfo;
-    set<string> screen_vocabulary;
-
-    cout << "OCR loading..." << endl;
-    cws.Screen_Text_Info(screenInfo, screen_vocabulary, DIR_OCR,
-        DIR_ANNOTATEDTEXT, FILE_NEWSLIST);
-    screenInfo = cws.RemoveShortStory_ScreenTopic(screenInfo, RemovedStory);
-
-    cout << "OCR cross validation..." << endl;
-    cws.ParameterLearning_ScreenTopic(screenInfo, screen_vocabulary);
-    */

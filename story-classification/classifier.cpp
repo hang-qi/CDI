@@ -3,16 +3,7 @@
 #include "classifier.h"
 #include "utility.h"
 
-/*
-int num_categories;
-vector<string> vocabulary_np1;
-vector<string> vocabulary_vp;
-vector<string> vocabulary_np2;
-vector<double> priors_cat;
-Matrix prob_wordsGivenCatsNP1;
-Matrix prob_wordsGivenCatsVP;
-Matrix prob_wordsGivenCatsNP2;*/
-
+#define SMALL_NUM 1.5e-100
 
 void NBClassifierParameter::Serialize(ostream& os)
 {
@@ -77,27 +68,17 @@ PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story)
 // P(cat)
 //
 vector<double> NaiveBayesClassifier::CalculatePriors(
-    const vector<string>& categories,
     const vector<StoryInfo>& labeled_stories)
 {    
-    vector<double> prob_cat(categories.size());
+    vector<double> prob_cat(param_.num_categories);
 
     // count
-    int num_stories = 0;
-    for(int i=0; i < categories.size(); i++)
+    for (int i =0; i < labeled_stories.size(); i++)
     {
-        int count = 0;
-        for (int j=0; j < labeled_stories.size(); j++)
-        {
-            if (categories[i] == labeled_stories[j].category)
-            {
-                count++;
-            }
-        }
-        prob_cat[i] = count;
-        num_stories += count;
-    }
-    assert(num_stories == labeled_stories.size());    
+        assert(labeled_stories[i].category_id >=0 
+            && labeled_stories[i].category_id < param_.num_categories);
+        prob_cat[labeled_stories[i].category_id]++;
+    }    
     
     // normalize    
     for(int i = 0; i < prob_cat.size(); i++)
@@ -107,24 +88,18 @@ vector<double> NaiveBayesClassifier::CalculatePriors(
     return prob_cat;
 }
 
-NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& labeled_stories)
+NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& labeled_stories, int num_categories)
 {
-    double SMALL_NUM = 1.5e-100;
+    
+    ExtractVocabulary(labeled_stories);
 
-    const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
-        "Social","Government","Science-technology","Religion","Politics", "International" ,
-        "Lifestyle-leisure" , "Labor" , "Human-interest" , "Health" , "Environment" , 
-        "Education" , "Business" ,  "Money" , "Crime", "Justice", "Art-culture", "Celebrity",
-        "Entertainment", "Network" , "Commercial"};
-    vector<string> categories(array, array + sizeof array / sizeof array[0]);
-        
-    vector<double> prob_cat = CalculatePriors(categories, labeled_stories);
+    vector<double> prob_cat = CalculatePriors(labeled_stories);
     int num_stories = labeled_stories.size();
 
     // Building co-occurrence of (words given cat) AND P(Wi | Catj)
-    Matrix WordsCatMatrixNP1 = utility::BuildMatrix(param_.vocabulary_np1.size(), categories.size());        
-    Matrix WordsCatMatrixVP = utility::BuildMatrix(param_.vocabulary_vp.size(), categories.size());        
-    Matrix WordsCatMatrixNP2 = utility::BuildMatrix(param_.vocabulary_np2.size(), categories.size());
+    Matrix WordsCatMatrixNP1 = utility::BuildMatrix(param_.vocabulary_np1.size(), num_categories);
+    Matrix WordsCatMatrixVP = utility::BuildMatrix(param_.vocabulary_vp.size(), num_categories);        
+    Matrix WordsCatMatrixNP2 = utility::BuildMatrix(param_.vocabulary_np2.size(), num_categories);
         
     // (words Given Stories)
     Matrix WordsStoriesMatrixNP1 = utility::BuildMatrix(param_.vocabulary_np1.size(), num_stories);
@@ -144,25 +119,16 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     // fill in WordCatMatrix and WordsStoryMatrix     
     for (int story_id = 0; story_id < labeled_stories.size(); story_id++)
     {
-        const StoryInfo& current_story = labeled_stories[story_id];
-        assert(current_story.category != "NULL");
+        const StoryInfo& current_story = labeled_stories[story_id];        
 
-        // find category
-        int category_id = -1;
-        for(int i = 0; i < categories.size(); i++)
-        {
-            if (current_story.category == categories[i])
-            {
-                category_id = i ;
-                break;
-            }
-        }
+        int category_id = current_story.category_id;
         assert(category_id != -1);
-        
+
         // Non_Ph1
         for(int i=0; i < current_story.words_np1.size(); i++)
         {                           
-            int word_id = FindWordId(v, current_story.words_np1[i]);                 
+            int word_id = FindWordId(v, current_story.words_np1[i]);
+            assert(word_id >= 0);                
             if (word_id < v.size() )
             {
                 WordsCatMatrixNP1[word_id][category_id] += 1;
@@ -175,6 +141,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
         for(int i=0; i < current_story.words_vp.size(); i++)
         {
             int word_id = FindWordId(v1, current_story.words_vp[i]);
+            assert(word_id >= 0);
             if (word_id < v1.size() )
             {
                 WordsCatMatrixVP[word_id][category_id] += 1;
@@ -187,6 +154,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
         for(int i=0; i < current_story.words_np2.size(); i++)
         {                           
             int word_id = FindWordId(v2, current_story.words_np2[i]);
+            assert(word_id >= 0);
             if (word_id < v2.size() )
             {
                 WordsCatMatrixNP2[word_id][category_id] += 1;
@@ -249,13 +217,13 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
 
     //Building The Probability of Story Given Category  P(Si|Catj)^time  for NP1,VP,NP2
     // Building P(Si | Catj) AND P(Catj | Si)        
-    Matrix ProbStoryGivenCat = utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbStoryGivenCat1 = utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbStoryGivenCat2 = utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbStoryGivenCat = utility::BuildMatrix(num_stories, num_categories);
+    Matrix ProbStoryGivenCat1 = utility::BuildMatrix(num_stories, num_categories);
+    Matrix ProbStoryGivenCat2 = utility::BuildMatrix(num_stories, num_categories);
 
-    Matrix ProbCatGivenStory = utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbCatGivenStory1 = utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbCatGivenStory2 = utility::BuildMatrix(num_stories, categories.size());   
+    Matrix ProbCatGivenStory = utility::BuildMatrix(num_stories, num_categories);
+    Matrix ProbCatGivenStory1 = utility::BuildMatrix(num_stories, num_categories);
+    Matrix ProbCatGivenStory2 = utility::BuildMatrix(num_stories, num_categories);   
 
     vector<int> AllCountedWordsInStories;
     vector<int> AllCountedWordsInStories1;
@@ -265,17 +233,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     {
         const StoryInfo& current_story = labeled_stories[story_id];
 
-        // find category
-        int category_id = -1;
-        for(int i = 0; i < categories.size(); i++)
-        {
-            if (current_story.category == categories[i])
-            {
-                category_id = i ;
-                break;
-            }
-        }
-        assert(category_id != -1);
+        int category_id = current_story.category_id;
 
         vector<double> prob_wordsNP1InStoryGivenCat;
         vector<double> prob_wordsVPInStoryGivenCat;
@@ -287,7 +245,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
         for(int k=0; k < current_story.words_np1.size(); k++)
         {
             auto low = lower_bound (v.begin(), v.end(), current_story.words_np1[k]);
-            string WordName = *low;             
+            string WordName = *low;
             if(WordName == current_story.words_np1[k])
             {
                 int word_id = int(low- v.begin());
@@ -400,7 +358,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     {
         // p(story_i) = \sum_{cat_j} p(story_i | category_j) * p(cat_j)
         double prob = 0, prob1 = 0, prob2 = 0;
-        for(int j=0; j<categories.size(); j++)
+        for(int j=0; j< num_categories; j++)
         {
             prob += prob_cat[j]*ProbStoryGivenCat[i][j];
             prob1 += prob_cat[j]*ProbStoryGivenCat1[i][j];
@@ -419,7 +377,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
        // Building The Probability of Category Given Story P(Catj|Si)^(t+1)   t=time  FOR NP1,VP,NP2
     for (int i=0; i<num_stories; i++)
     {
-        for (int j=0; j<categories.size(); j++)
+        for (int j=0; j< num_categories; j++)
         {
             ProbCatGivenStory[i][j] = prob_cat[j]*ProbStoryGivenCat[i][j]/prob_Story[i];
             ProbCatGivenStory1[i][j] = prob_cat[j]*ProbStoryGivenCat1[i][j]/prob_Story1[i];
@@ -433,7 +391,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
 
     for (int i=0; i<v.size(); i++)
     {
-        for (int j=0; j<categories.size(); j++)
+        for (int j=0; j< num_categories; j++)
         {
             double Numeratorwithoutsmooth = 0;
             double DeNumeratorwithoutsmooth = 0;
@@ -448,7 +406,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
 
     for (int i=0; i<v1.size(); i++)
     {
-        for (int j=0; j<categories.size(); j++)
+        for (int j=0; j< num_categories; j++)
         {
             double Numeratorwithoutsmooth = 0;
             double DeNumeratorwithoutsmooth = 0;
@@ -462,7 +420,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
 
     for (int i=0; i<v2.size(); i++)
     {
-        for (int j=0; j<categories.size(); j++)
+        for (int j=0; j< num_categories; j++)
         {
             double Numeratorwithoutsmooth = 0;
             double DeNumeratorwithoutsmooth = 0;
@@ -475,18 +433,12 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
         }
     }
 
-    NBClassifierParameter param;
-    param.num_categories = categories.size();
-    param.vocabulary_np1 = v;
-    param.vocabulary_vp = v1;
-    param.vocabulary_np2 = v2;
-    param.priors_cat = prob_cat;
-    param.prob_wordsGivenCatsNP1 = prob_wordsGivenCatsNP1;
-    param.prob_wordsGivenCatsVP = prob_wordsGivenCatsVP;
-    param.prob_wordsGivenCatsNP2 = prob_wordsGivenCatsNP2;
-
-    param_ = param;
-    return param;
+    param_.num_categories = num_categories;
+    param_.priors_cat = prob_cat;
+    param_.prob_wordsGivenCatsNP1 = prob_wordsGivenCatsNP1;
+    param_.prob_wordsGivenCatsVP = prob_wordsGivenCatsVP;
+    param_.prob_wordsGivenCatsNP2 = prob_wordsGivenCatsNP2;
+    return param_;
 }
 
 void NaiveBayesClassifier::LoadParametersFromFile(const string& filename)
@@ -524,9 +476,23 @@ vector<int> NaiveBayesClassifier::ConvertWordsToIds(
     vector<int> wordIds(words.size());
     for (int i = 0; i < words.size(); i++)
     {
-        wordIds[i] = FindWordId(vocabulary, words[i]);
+        string word = words[i];        
+        wordIds[i] = FindWordId(vocabulary, word);
     }
     return wordIds;
+}
+
+int NaiveBayesClassifier::FindWordId(const vector<string>& vocabulary, const string& word)
+{
+    auto found = find(vocabulary.begin(), vocabulary.end(), word);        
+    if (found == vocabulary.end())
+    {
+        return -1;
+    }
+    else
+    {
+        return int(found - vocabulary.begin());
+    }
 }
 
 vector<double> NaiveBayesClassifier::CalcualtePostProbCats(

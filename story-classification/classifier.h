@@ -19,6 +19,13 @@ struct PredictResult
     double confidence;
 };
 
+struct StoryFeature
+{
+    vector<int> wordIds_np1;   // NP1 list
+    vector<int> wordIds_vp;    // VP list
+    vector<int> wordIds_np2;   // NP2 list
+};
+
 class NBClassifierParameter
 {
 public:
@@ -55,34 +62,42 @@ public:
         sort(param_.vocabulary_np2.begin(), param_.vocabulary_np2.end());
     }
 
-    NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories);
+    NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories, int num_categories);
     PredictResult Predict(const StoryInfo& story);
     void SaveParametersToFile(const string& filename);
     void LoadParametersFromFile(const string& filename);
-
-    void SetVocabularyNP1(const set<string>& vocabulary)
+protected:
+    void ExtractVocabulary(const vector<StoryInfo> & stories)
     {
-        param_.vocabulary_np1 = vector<string>(vocabulary.begin(), vocabulary.end());
+        set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
+        for(int i=0; i < stories.size(); i++)
+        {
+            for (int j=0; j < stories[i].words_np1.size(); j++)
+            {
+                vocabularyNP1.insert(stories[i].words_np1[j]);
+            }
+            for (int j=0; j < stories[i].words_vp.size(); j++)
+            {
+                vocabularyVP.insert(stories[i].words_vp[j]);
+            }
+            for (int j=0; j < stories[i].words_np2.size(); j++)
+            {
+                vocabularyNP2.insert(stories[i].words_np2[j]);
+            }
+        }
+
+        param_.vocabulary_np1 = vector<string>(vocabularyNP1.begin(), vocabularyNP1.end());
         sort(param_.vocabulary_np1.begin(), param_.vocabulary_np1.end());
-    }
 
-    void SetVocabularyVP(const set<string>& vocabulary)
-    {
-        param_.vocabulary_vp = vector<string>(vocabulary.begin(), vocabulary.end());
+        param_.vocabulary_vp = vector<string>(vocabularyVP.begin(), vocabularyVP.end());
         sort(param_.vocabulary_vp.begin(), param_.vocabulary_vp.end());
-    }
 
-    void SetVocabularyNP2(const set<string>& vocabulary)
-    {
-        param_.vocabulary_np2 = vector<string>(vocabulary.begin(), vocabulary.end());
+        param_.vocabulary_np2 = vector<string>(vocabularyNP2.begin(), vocabularyNP2.end());
         sort(param_.vocabulary_np2.begin(), param_.vocabulary_np2.end());
     }
 
-protected:
-
     // Helper functions for training
     vector<double> CalculatePriors(
-        const vector<string>& categories,
         const vector<StoryInfo>& labeled_stories);
 
     set<string> BuildVocabulary();
@@ -97,21 +112,7 @@ protected:
         const vector<int>& wordIds,
         const Matrix& prob_wordsGivenCats);
 
-    int FindWordId(const vector<string>& vocabulary, const string& word)
-    {        
-        auto low = lower_bound(vocabulary.begin(), vocabulary.end(), word);        
-        string wordFound = *low;
-        return int(low - vocabulary.begin());
-        /*
-        if (wordFound == word)
-        {
-            return int(low - vocabulary.begin());
-        }
-        else
-        {
-            return -1;
-        }*/
-    }
+    int FindWordId(const vector<string>& vocabulary, const string& word);
 
 protected:
     NBClassifierParameter param_;

@@ -23,10 +23,6 @@
 
 using namespace std; 
 
-////////////////////////
-// utilities
-////////////////////////
-
 TextAnalysis::TextAnalysis(){}
 TextAnalysis::~TextAnalysis(){}
 
@@ -158,7 +154,7 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
 
             StoryInfo current_story;
             current_story.name = storyName;
-            current_story.category = category;
+            current_story.category_id = GetCategoryId(category);
             current_story.num_sentences = 0;
             current_story.timeStart = triplets[i+1].StoryTimeStart;
 
@@ -299,7 +295,7 @@ vector<string> TextAnalysis::RemoveStopWords(const vector<string>& words)
     {
         string word = words[i];
 
-        if (word == "united" && words[i+1] == "state")
+        if (word == "united" && i+1 < words.size() && words[i+1] == "state")
         {
             word = "u.s.";
             i++;
@@ -340,7 +336,7 @@ vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
     for (int i = 0; i < stories.size(); i++)
     {
         // Skip NULL category stories and short stories.
-        if (stories[i].category != "NULL" && stories[i].num_sentences > 4)
+        if (stories[i].category_id != -1 && stories[i].num_sentences > 4)
         {
             stories_new.push_back(stories[i]);
         }
@@ -357,32 +353,8 @@ vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
 }
 
 
-void TextAnalysis::ExtractVocabularyList(const vector<StoryInfo>& stories,
-    set<string>& vocabularyNP1, set<string>& vocabularyVP, set<string>& vocabularyNP2)
-{
-    for(int i=0; i < stories.size(); i++)
-    {
-        for (int j=0; j < stories[i].words_np1.size(); j++)
-        {
-            vocabularyNP1.insert(stories[i].words_np1[j]);
-        }
-        for (int j=0; j < stories[i].words_vp.size(); j++)
-        {
-            vocabularyVP.insert(stories[i].words_vp[j]);
-        }
-        for (int j=0; j < stories[i].words_np2.size(); j++)
-        {
-            vocabularyNP2.insert(stories[i].words_np2[j]);
-        }
-    }   
-}
-
 void TextAnalysis::CrossValidation(
-    const vector<StoryInfo>& stories,
-    const set<string>& vocabularyNP1, 
-    const set<string>& vocabularyVP, 
-    const set<string>& vocabularyNP2,
-    const int nfold)
+    const vector<StoryInfo>& stories, const int nfold)
 {
     cout << "Preparing a " << nfold << " folds cross validation on " 
         << stories.size() << " stories..." << endl;
@@ -417,8 +389,9 @@ void TextAnalysis::CrossValidation(
     // cross validation
     for (int kk = 0; kk < testingRanges.size(); kk++)
     {
+        cout << "Fold " << kk << endl;
         fout_eval << "---------------------" << endl;
-        fout_eval << "Fold " << kk << endl;
+        fout_eval << "Fold " << kk << endl;        
         fout_eval << "---------------------" << endl;
 
         vector<StoryInfo> stories_testing;
@@ -429,14 +402,14 @@ void TextAnalysis::CrossValidation(
         {
             if(currentRange.first <= i &&  i < currentRange.second)
             {
-                if (stories[i].category != "NULL")
+                if (stories[i].category_id != -1)
                 {
                     stories_testing.push_back(stories[i]);
                 }
             }
             else
             {
-                if (stories[i].category != "NULL")
+                if (stories[i].category_id != -1)
                 {
                     stories_training.push_back(stories[i]);
                 }
@@ -449,36 +422,26 @@ void TextAnalysis::CrossValidation(
 
         //
         // Training
-        //     
-
+        //
+        cout << "Training..." << endl;
         NaiveBayesClassifier classifier;
-        classifier.SetVocabularyNP1(vocabularyNP1);
-        classifier.SetVocabularyVP(vocabularyVP);
-        classifier.SetVocabularyNP2(vocabularyNP2);
-        classifier.Train(stories_training);
+        classifier.Train(stories_training, 27);
         //classifier.SaveParametersToFile("output/model.txt");
         //classifier.LoadParametersFromFile("output/model.txt");
 
         //
         // Testing
         // Inference : Find the Posterior of new Unknown Story        
-        //      
-
-        const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
-        "Social","Government","Science-technology","Religion","Politics", "International" ,
-        "Lifestyle-leisure" , "Labor" , "Human-interest" , "Health" , "Environment" , 
-        "Education" , "Business" ,  "Money" , "Crime", "Justice", "Art-culture", "Celebrity",
-        "Entertainment", "Network" , "Commercial"};
-        vector<string> categories(array, array + sizeof array / sizeof array[0]);
-
+        //
         int correct_count = 0;        
         for (int i = 0; i < stories_testing.size(); i++)
-        {            
-            string labeled_category = stories_testing[i].category;         
+        {
+            cout << "Predict... " << i << " out of " << stories_testing.size() << endl;
+            PredictResult predict = classifier.Predict(stories_testing[i]);           
+            cout << "Predict done." << endl;
 
-            PredictResult predict = classifier.Predict(stories_testing[i]);
-            int predicted_category_idx = predict.label_id;
-            string predicted_category = categories[predicted_category_idx];
+            string labeled_category = GetCategoryById(stories_testing[i].category_id);            
+            string predicted_category = GetCategoryById(predict.label_id);
 
             fout_eval << "Label: " << labeled_category << "\t ... \t" << predicted_category;
 
