@@ -85,22 +85,11 @@ int main(int argc, const char* argv[])
         }
         stories.insert(stories.end(), tmp_stories.begin(), tmp_stories.end());        
         document_id++;
-
-        // cws.FirstSentAsTopic(tripletsFilename, StoryTopicInfo);
     }
-
-    /* 
-    vector<TopicElements> StoryTopicInfo;
-    vector<TopicElements> storyInfoForTag = cws.ReadFullDocument(FILE_NEWSLIST);
-    cws.ReadTagFromFile(storyInfoForTag);
-    vector<TopicElements> storyInfoTags = cws.ReadTagFromFile1();   
-    vector<TopicElements> resourceGoalTags = cws.ReadTag_ResourceGoal(storyInfoForTag);
-    cws.StoryTopic(storyInfoTags , StoryTopicInfo, resourceGoalTags);
-    */
     
     // remove stop words
     stories = cws.Lemmatize(stories);
-    stories = cws.Cleasing(stories);    
+    stories = cws.Cleasing(stories);
 
     set<string> vocabularyNP1, vocabularyVP, vocabularyNP2;
     cws.ExtractVocabularyList(stories,

@@ -73,30 +73,6 @@ Matrix prob_wordsGivenCatsNP1;
 Matrix prob_wordsGivenCatsVP;
 Matrix prob_wordsGivenCatsNP2;*/
 
-template <class T>
-ostream& operator << (ostream& os, const vector<T>& v)
-{
-    os << v.size() << endl;
-    for (int i = 0; i < v.size(); i++)
-    {
-        os << v[i] << endl;
-    }
-    return os;
-}
-
-template <class T>
-istream& operator >> (istream& is, vector<T>& v)
-{
-    int size = 0;
-    is >> size;
-    v.resize(size);
-
-    for (int i = 0; i < v.size(); i++)
-    {
-        is >> v[i];
-    }
-    return is;
-}
 
 
 void NBClassifierParameter::Serialize(ostream& os)

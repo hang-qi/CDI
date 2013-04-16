@@ -160,24 +160,16 @@ public:
     // Triplets
     //
     vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
-    vector<Triplet> RemoveShortStory(const vector<Triplet>& StoryWordInfo,
-            OUT vector<int> & RemovedStory);    
-    vector<StorySentInfo> GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo);
-
     vector <StoryInfo> TripletsToStories(const vector<Triplet> & triplets);
     vector<StoryInfo> Lemmatize(const vector<StoryInfo>& stories);
 
-    vector<string>& RemoveStopWords(vector<string>& words);
-    vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);
-    vector<FinalTriplet> RemoveStopWords(const vector<Triplet> & StoryWordInfo ,
-        const vector<StorySentInfo> & StoryNameAndSenNum);
+    vector<string> RemoveStopWords(const vector<string>& words);
+    vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);    
     void ExtractVocabularyList(const vector<StoryInfo> & stories,
         OUT set<string>& vocabularyNP1,
         OUT set<string>& vocabularyVP, 
         OUT set<string>& vocabularyNP2);
-
-    vector<StoryInfo> GetStories(const vector<FinalTriplet>& storyWordInfoFinal);
-
+    
     void CrossValidation(
         const vector<StoryInfo>& stories,
         const set<string>& vocabularyNP1, 
@@ -192,8 +184,7 @@ public:
 
     
     //-----------------------------------
-    // Out of date
-    void FirstSentAsTopic(string fileName , vector<TopicElements>& StoryTopicInfo);
+    // Out of date    
     void TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final);
 
 

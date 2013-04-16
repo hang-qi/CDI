@@ -26,6 +26,24 @@ using namespace std;
 ////////////////////////
 // utilities
 ////////////////////////
+std::string trim_front(const std::string& str, const std::string& trimChars)
+{
+    int i = 0;
+    for (i = 0; i < str.size(); i++)
+    {
+        bool found = false;
+        for (int j = 0; j < trimChars.size(); j++)
+        {
+            if (str[i] == trimChars[j])
+                found = true;
+        }
+        if (found == false)
+            break;
+    }
+    return str.substr(i);
+}
+
+
 typedef vector< vector<double> > Matrix;
 
 Matrix BuildMatrix(int num_rows, int num_columns, double default_value = 0)
@@ -358,21 +376,21 @@ vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
         for (int j=0; j < stories[i].words_np1.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_np1.push_back(words[k]);
+            story_lemmed.words_np1.push_back(trim_front(words[k]," \t"));
             k++;
         }
 
         for (int j=0; j < stories[i].words_vp.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_vp.push_back(words[k]);
+            story_lemmed.words_vp.push_back(trim_front(words[k]," \t"));
             k++;            
         }
 
         for (int j=0; j < stories[i].words_np2.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_np2.push_back(words[k]);
+            story_lemmed.words_np2.push_back(trim_front(words[k]," \t"));
             k++;
         }
 
@@ -382,44 +400,50 @@ vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
     return stories_lemmed;
 }
 
-vector<string>& TextAnalysis::RemoveStopWords(vector<string>& words)
+vector<string> TextAnalysis::RemoveStopWords(const vector<string>& words)
 {
     // stop words
-    static set<string> stopwords(stopwordsArray,
+    const static set<string> stopwords(stopwordsArray,
                         stopwordsArray + sizeof(stopwordsArray)/ sizeof(stopwordsArray[0]));
 
+    vector<string> keep;
     // remove stop words
-    for(auto it = words.begin(); it < words.end(); it++)
+    for(int i = 0; i < words.size(); i++)
     {
-        string word = *it;
+        string word = words[i];
+
+        if (word == "united" && words[i+1] == "state")
+        {
+            word = "u.s.";
+            i++;
+            keep.push_back(word);
+            continue;
+        }
+
         size_t found = word.find("'s");
         if (found <= 50)
         {
-            word.erase (found,2);
+            word.erase(found,2);
         }
+
         found = word.find("$");
         if (found <= 50)
         {
             word = "dollar";
         }
+
         found = word.find("'");
         if (found <= 50)
         {
             word.erase(found,1);
         }
-        if (*it == "united" && *(it+1)== "state")
-        {
-            word = "u.s.";
-            words.erase(it+1);
-        }
 
-        *it = word;
-        if (*it == "" || stopwords.find(*it) != stopwords.end())
+        if (word != "" && stopwords.find(word) == stopwords.end())
         {
-            words.erase(it);
+            keep.push_back(word);
         }
     }
-    return words;
+    return std::move(keep);
 }
 
 vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
@@ -438,840 +462,13 @@ vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
     // remove stop words.
     for(int i=0; i < stories_new.size(); i++)
     {
-        RemoveStopWords(stories_new[i].words_np1);
-        RemoveStopWords(stories_new[i].words_vp);
-        RemoveStopWords(stories_new[i].words_np2);
+        stories_new[i].words_np1 = RemoveStopWords(stories_new[i].words_np1);
+        stories_new[i].words_vp = RemoveStopWords(stories_new[i].words_vp);
+        stories_new[i].words_np2 = RemoveStopWords(stories_new[i].words_np2);
     }
     return stories_new;
 }
 
-void TextAnalysis::FirstSentAsTopic(string fileName,
-    vector<TopicElements>& StoryTopicInfo)
-{
-
-    ifstream ifs;
-    ifs.open(fileName.c_str(), ios::in);
-    size_t found0, found , found1 , found2, found3 ,found4 , found5, found6 , found7, foundEnd ;
-    string str, str2 ;
-    int ind = 0 , ind1 = 0;
-    TopicElements entry;
-    
-    while (!ifs.eof() && ifs.good())
-    {
-
-        char buffer[2048];
-        ifs.getline(buffer, 2048);
-        str = (buffer);
-
-        found0 = str.find("<");  //str != "" && 
-        found1 = str.find("/NP");
-
-        if (found0 != 0 && str != "" && found1 > 500 && ind == 0 )
-        {
-            found = str.find("following");
-            found1 = str.find("we've");
-            found2 = str.find("follow");
-            found3 = str.find("breaking");
-            found4 = str.find("Thanks");
-            found5 = str.find("NEWSROOM");
-            found6 = str.find("live");
-            found7 = str.find("developing");
-            if ( found > 500 && found1 > 500 && found2 > 500 && found3 > 500 &&
-                 found4 > 500 && found5 > 500 && found6 > 500 && found7 > 500 )
-            {
-
-                const char* array[] = {"MARCIANO:","Well,", "your","Then,","(APPLAUSE)","CHETRY:", 
-                "(END", "VIDEO" , "CLIP)" , "MARCIANO:" , "MD:" , "He" , "(COMMERCIAL","BREAK)",
-                "CHETRY", ":" ,"they're" , ",", "Yes" , "COLLINS:" , "HARRIS:" };
-                vector<string> removeList(array, array + sizeof array / sizeof array[0]);
-            
-                vector<string> words;
-                istringstream iss(str);
-                string wholeString;
-                copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(words));
-
-                for(int kk=0; kk < words.size(); kk++)
-                {
-                    for (int jj=0; jj < removeList.size(); jj++)
-                    {
-                        if (words[kk].compare(removeList[jj]) == 0)
-                        {
-                            words[kk] = "" ;
-                        }
-                    }
-                }
-                
-                wholeString.clear();
-                for(int kk=0; kk < words.size(); kk++)
-                {
-                    if (words[kk] != "")
-                    {
-                            wholeString = wholeString + " " + words[kk] ;
-                    }
-                }
-
-                entry.FullTopicName = wholeString;  
-                ind = 1;
-                //StoryTopic << wholeString << endl;
-
-            }
-        }   
-
-        found1 = str.find("/NP");
-        if (ind ==1 && ind1 == 0 && found1< 500)
-        {
-            found2 = str.find("/VP");
-            str2 = str.substr( 0 , found1 );
-            entry.Non_Ph1 = str2;
-            str2 = str.substr(found1+4 , str.size() );
-            found2 = str2.find("/VP");
-            str2 = str2.substr(0,found2);
-            entry.Verb_Ph = str2;
-            ind1=1;
-        }
-        
-        if (found0 == 0 )
-        {
-            found = str.find("<story>");
-            if (found == 0)
-            {
-                str2 = str.substr(7 , str.size() );
-                found1 = str2.find("<");
-                str2 = str2.substr(0 , found1) ;
-                entry.StoryTopicName = str2;
-                //StoryTopic << str << endl;
-            }
-            found = str.find("<start>");
-            if (found == 0)
-            {
-                str2 = str.substr(7 , str.size() );
-                found1 = str2.find("<");
-                str2 = str2.substr(0 , found1) ;
-                entry.StoryTimeStart = str2;
-                //StoryTopic << str << endl;
-            }
-            foundEnd = str.find("<end>");
-            if (foundEnd == 0)
-            {
-                str2 = str.substr(5 , str.size());
-                found1 = str2.find("<");
-                str2 = str2.substr(0 , found1);
-
-                entry.StoryTimeEnd = str2;
-                ind = 0;
-                ind1 =0;    
-                if ( entry.FullTopicName != "" && entry.StoryTimeEnd != "" && entry.StoryTimeStart != "" && entry.StoryTopicName != "")
-                {
-                    StoryTopicInfo.push_back(entry);
-                }
-            }
-        }
-    }
-}
-
-//output: StoryTopic.txt
-void TextAnalysis::StoryTopic(const vector<TopicElements>& storyInfoTags,
-    const vector<TopicElements>& StoryTopicInfo,
-    const vector<TopicElements>& resourceGoalTags)
-{
-    ofstream StoryTopic;
-    StoryTopic.open ("output/StoryTopic.txt");
-    vector<TopicElements> storyInfoFull;
-    
-
-    string StoryTimeStart;
-    string StoryTimeEnd;
-    string StoryTopicName;
-    string FullTopicName;
-    string Non_Ph1;
-    string Verb_Ph;
-    vector<string> Person;
-    vector<string> Location;
-
-    // combine person and location tags
-    for (int i=0; i < storyInfoTags.size(); i++)
-    {
-        for ( int j=0; j < StoryTopicInfo.size(); j++)
-        {
-            if (storyInfoTags[i].StoryTimeStart == StoryTopicInfo[j].StoryTimeStart)
-            {
-                TopicElements entry;
-                entry.StoryTimeStart = storyInfoTags[i].StoryTimeStart;
-                entry.StoryTimeEnd = storyInfoTags[i].StoryTimeEnd;
-                entry.StoryTopicName = storyInfoTags[i].StoryTopicName;
-                entry.FullTopicName = StoryTopicInfo[j].FullTopicName;
-                entry.Non_Ph1 = StoryTopicInfo[j].Non_Ph1;
-                entry.Verb_Ph = StoryTopicInfo[j].Verb_Ph;
-                entry.Person = storyInfoTags[i].Person;
-                entry.Location = storyInfoTags[i].Location;
-                storyInfoFull.push_back(entry);
-            }   
-        }
-    }
-
-    // combine resources and goal tags
-    for (int i=0; i < storyInfoFull.size(); i++)
-    {
-        for (int j=0; j < resourceGoalTags.size(); j++)
-        {
-            if (storyInfoFull[i].StoryTimeStart == resourceGoalTags[j].StoryTimeStart)
-            {
-                storyInfoFull[i].Resources = resourceGoalTags[j].Resources;
-                storyInfoFull[i].Goal = resourceGoalTags[j].Goal;
-            }   
-        }
-    }
-
-    // output
-    for (int i=0; i < storyInfoFull.size(); i++)
-    {
-        vector<string> Per = storyInfoFull[i].Person;
-        vector<string> Loc = storyInfoFull[i].Location;
-        vector<string> resources = storyInfoFull[i].Resources;
-        vector<string> goal = storyInfoFull[i].Goal;
-        string Person ="";
-        string Location="";
-        string resource ="";
-        string goals ="";
-
-        if (Per.size() != 0){
-            for (int j=0; j<Per.size(); j++){
-                if (Per[j] !="HEIDI COLLINS" || Per[j] !="LARRY"){
-                Person = Per[j]+","+Person;}
-            }
-        }
-
-        if (Loc.size() != 0){
-            for (int j=0; j<Loc.size(); j++){
-                Location = Loc[j]+","+Location;
-            }
-        }
-        if (resources.size() != 0){
-            for (int j=0; j<resources.size(); j++){
-                resource = resources[j]+","+resource;
-            }
-        }
-        if (Loc.size() != 0){
-            for (int j=0; j<goal.size(); j++){
-                goals = goal[j]+","+goals;
-            }
-        }
-
-        // cout <<"goals   " << goals <<" resource   "<< resource<< endl; 
-    }
-
-
-
-    for ( int i=0; i < storyInfoFull.size(); i++)
-    {
-        vector<string> Per = storyInfoFull[i].Person;
-        vector<string> Loc = storyInfoFull[i].Location;
-        vector<string> resources = storyInfoFull[i].Resources;
-        vector<string> goal = storyInfoFull[i].Goal;
-        string Person ="";
-        string Location="";
-        string resource ="";
-        string goals ="";
-        if (Per.size() != 0){
-            for (int j=0; j<Per.size(); j++){
-                if (Per[j] !="HEIDI COLLINS" || Per[j] !="LARRY"){
-                Person = Per[j]+","+Person;}
-            }
-        }
-
-        if (Loc.size() != 0){
-            for (int j=0; j<Loc.size(); j++){
-                Location = Loc[j]+","+Location;
-            }
-        }
-        if (resources.size() != 0){
-            for (int j=0; j<resources.size(); j++){
-                resource = resources[j]+","+resource;
-            }
-        }
-        if (Loc.size() != 0){
-            for (int j=0; j<goal.size(); j++){
-                goals = goal[j]+","+goals;
-            }
-        }
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd << 
-            "|Topic|Text="<< storyInfoFull[i].FullTopicName<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Agent= "<<storyInfoFull[i].Non_Ph1<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Action= "<<storyInfoFull[i].Verb_Ph<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Location= "<<Location<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Person= "<<Person<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Resources= "<<resource<< endl; 
-
-        StoryTopic << storyInfoFull[i].StoryTimeStart <<"|"<< 
-            storyInfoFull[i].StoryTimeEnd <<
-            "|Topic|Goal= "<<goals<< endl; 
-    }
-
-    StoryTopic.close();
-}
-
-vector<TopicElements> TextAnalysis::ReadFullDocument(const string& newsListFilename)
-{
-    vector<TopicElements> Story_InfoForTag;
-
-    ifstream DocLists,ifs;
-    string str, str1, str2, str3,StartPoint, words;
-
-    DocLists.open(newsListFilename.c_str(), ios::in);
-    if (!DocLists.is_open())
-    {
-        cout << "news list NOT opened"<<endl;
-        throw -1;
-    }
-    size_t found , found1, found2, found3 ;
-    vector<string> Story_Word;
-    TopicElements entry;
-    int Iindix=0 , Iindix1=0, Iindix2=0;
-    while (!DocLists.eof() && DocLists.good())
-    {
-        string bufferstr = "";
-        getLineNew(DocLists, bufferstr);
-        str = (bufferstr);
-
-        string Year,Month,Day;
-        if(str != "")
-        {
-            Year = str.substr(0 , 4);
-            Month = str.substr(5 , 2);
-            Day = str.substr(8 , 2);
-        }
-
-        // /sweep/2008/2008-08/2008-08-08/
-        string FileName = ("/sweep/"+Year+"/"+Year+"-"+Month+"/"+Year+"-"+Month+"-"+Day+"/" + str +".txt");
-        ifs.open(FileName.c_str(), ios::in);
-        if (!ifs.is_open()) cout<<"FileName File NOT opened"<<endl;
-        Iindix2=0;
-
-        while (!ifs.eof() && ifs.good() )
-        {
-            string bufferstr = "";
-            getLineNew(ifs, bufferstr);
-            str = (bufferstr);
-
-            found = str.find("SegStart");
-            found1 = str.find("SegStart-NEW");
-
-            if ( found==0 && Iindix2==0)
-            {
-                StartPoint = str.substr(9 , 18);
-                Iindix2=1;
-            }
-            if ( found == 0 && Iindix ==0 && found1 != 0)
-            {
-                string Cat_Topic = str.substr(28 , str.size());
-                found1 = Cat_Topic.find("|");
-                string Cat = Cat_Topic.substr(0 , found1);
-                string Top = Cat_Topic.substr(found1+1 , Cat_Topic.size() );
-                string Start = str.substr(9 , 18);
-                entry.StoryTimeStart = StartPoint;
-
-                entry.StoryTopicName = Cat +"|"+Top;
-                Iindix = 1;
-            }
-
-            found1 = str.find("SegEnd");
-            found = str.find("SegEnd-NEW");
-            if ( found1 == 0 && Iindix1 ==0 && found != 0 )
-            {
-                string EndPoint = str.substr(7 , 18);
-                entry.StoryTimeEnd = EndPoint;
-                Iindix1 = 1;
-            }
-            found2 = str.find("CCO");
-            if ( found2 == 0)
-            {
-                string Word_inEachline= str.substr( 23 , str.size() );
-                words = words + Word_inEachline + " ";
-            }
-            if (found1 == 0 && found != 0 ) {   
-                entry.FullTopicName = words;
-                Story_InfoForTag.push_back(entry);
-                Iindix = 0;
-                Iindix1 = 0;
-                Iindix2 = 0;
-                words.clear();
-            }
-        }
-        ifs.close();
-    }
-    return Story_InfoForTag;
-}
-
-//output: storyTagInfo.txt
-//output FullDocument.txt
-void TextAnalysis::ReadTagFromFile(vector<TopicElements>& Story_InfoForTag)
-{
-
-    ofstream fout_fulldoc;
-    fout_fulldoc.open ("output/FullDocument.txt");
-    for (int i=0; i < Story_InfoForTag.size(); i++)
-    {
-        fout_fulldoc << "<story>" << Story_InfoForTag[i].StoryTopicName << endl;
-        fout_fulldoc << "<start>" << Story_InfoForTag[i].StoryTimeStart << endl;
-        fout_fulldoc << Story_InfoForTag[i].FullTopicName << endl;
-        fout_fulldoc << "<end>" <<Story_InfoForTag[i].StoryTimeEnd << endl;
-    }
-    fout_fulldoc.close();
-            
-    string CMD_annotate = "./annotate output/FullDocument.txt output/FullDocument_tagged.txt true Config/allFeaturesBigTrainingSet.config"; 
-    system(CMD_annotate.c_str());
-
-    
-    ofstream StoryTag;
-    StoryTag.open("StoryTagInfo.txt");      
-
-    
-    vector<string> Person;
-    vector<string> Miscellaneous ;
-    vector<string> Organization;
-    vector<string> Location;
-    vector<string> Resources;
-    vector<string> Goal;
-
-    vector<int> StoryInDocument;
-    int count = 0 , total_count = 0 , Indix = 0 , Indix1 = 0;
-
-    ifstream ifs;
-    ifs.open("output/FullDocument_tagged.txt", ios::in);
-    while (!ifs.eof() && ifs.good())
-    {
-        string str2, str_compare = "";
-
-        TaggedElements Tagged;
-        char buffer[2048];
-        ifs.getline(buffer, 2048);
-        string str = (buffer);
-        string StrRefrence = str;
-        size_t found1;
-        size_t found = str.find("<");
-        size_t found_per = str.find("[PER");
-        size_t found_organization = str.find("[ORG");
-        size_t found_misc = str.find("[MISC");
-        size_t found5 = 0 ;
-        size_t found_end = str.find( "<end>");
-        size_t found_loc = str.find("[LOC"); 
-        size_t found_story = str.find("<story>");
-        size_t found_start = str.find("<start>");
-
-        if ( found_end == 0 )
-        {
-            StoryInDocument.push_back(count);
-            total_count = total_count + count;
-            count = 0;
-        }
-
-        if ( str != "" ||  found_story < 250 || found_start < 250 || found_end <250 )
-        { // found1 > 250 &&
-            count++;
-
-            if (found_story < 250 || found_start < 250 || found_end <250)
-            {
-                StoryTag << str << endl;
-            }
-            if (str_compare != str)   /*(str_compare.compare(str) != 0)*/
-            {
-                if (found > 500 && Indix == 0 && str != ""  )
-                {
-                    str_compare = str;
-                }
-
-                if (found_per < 500 )
-                { 
-                    found = str.find(']');
-                    while (found5 < 1000 )
-                    {
-                        if (found < found_per)
-                        {           
-                            while(found < found_per )
-                            {
-                                str2 = str.substr(found+1,str.size());
-                                str = str2;
-                                found = str.find(']');
-                                found_per = str.find("[PER");
-                            }
-                            found1 = found - found_per;
-                            str2 = str2.substr ( found_per  , found1 +1);
-
-                            found1 = str2.find(":");
-                            if (found1 < 50 )
-                            {
-                                str2 = str2.substr ( found1  , str2.size() -1);
-                            }
-                            Person.push_back(str2);
-
-                            StoryTag << str2 << endl;//Tagged.Per = str2;
-                            str = str.substr ( found + 1  , str.size() );
-                            found5 = str.find("[PER");
-                            found_per = found5;
-                            found = str.find(']');
-                        }
-                        else
-                        {
-                            found1 = found - found_per;
-                            str2 = str.substr ( found_per  , found1 +1);
-                            found1 = str2.find(":");
-                            if (found1 < 50 )
-                            {
-                                str2 = str2.substr ( 0 , found1 );
-                                str2 = str2 + "]";
-                            }
-                        
-                            Person.push_back(str2);
-                            StoryTag << str2 << endl;
-                            str2 = str.substr ( found + 1  , str.size());
-                            str = str2;
-                            found5 = str.find("[PER");
-                            found_per = found5;
-                            found = str.find(']');
-                        }
-                    }
-                }
-                if ( found_organization < 500 )
-                {
-                    str = StrRefrence;
-                    found5 = 0;
-                    found = str.find(']');
-                    while (found5 < 1000 )
-                    {
-                        if ( found < found_organization )
-                        {
-                            while ( found < found_organization )
-                            {
-                                str2 = str.substr ( found+1  , str.size());
-                                str = str2;
-                                found = str.find(']');
-                                found_organization = str.find("[ORG");
-                            }
-                            found1 = found - found_organization;
-                            str2 = str2.substr ( found_organization  , found1 +1);
-                            Organization.push_back(str2);
-                            StoryTag << str2 << endl;//Tagged.Per = str2;
-                            str = str.substr ( found + 1  , str.size() );
-                            found5 = str.find("[ORG");
-                            found_organization = found5;
-                            found = str.find(']');
-                        }
-                        else
-                        {
-                            found1 = found - found_organization;
-                            str2 = str.substr ( found_organization  , found1 +1);
-                            Organization.push_back(str2);
-                            StoryTag << str2 << endl;
-                            str2 = str.substr ( found + 1  , str.size());
-                            str = str2;
-                            found5 = str.find("[ORG");
-                            found_organization = found5;
-                            found = str.find(']');
-                        }
-                    }
-                }
-                if ( found_misc < 500 )
-                {
-                    found5 = 0;
-                    str = StrRefrence;
-                    found = str.find(']');
-                    while (found5 < 1000 )
-                    {
-                        if ( found < found_misc )
-                        {                       
-                            while ( found < found_misc )
-                            {
-                                str2 = str.substr ( found+1  , str.size());
-                                str = str2;
-                                found = str.find(']');
-                                found_misc = str.find("[MISC");
-                            }
-                            found1 = found - found_misc;
-                            str2 = str2.substr ( found_misc  , found1 +1);
-                            Miscellaneous.push_back(str2);
-                            StoryTag << str2 << endl;//Tagged.Per = str2;
-                            str = str.substr ( found + 1  , str.size() );
-                            found5 = str.find("[MISC");
-                            found_misc = found5;
-                            found = str.find(']');
-                        }
-                        else
-                        {
-                            found1 = found - found_misc;
-                            str2 = str.substr ( found_misc  , found1 +1);
-                            Miscellaneous.push_back(str2);
-                            StoryTag << str2 << endl;
-                            str2 = str.substr ( found + 1  , str.size());
-                            str = str2;
-                            found5 = str.find("[MISC");
-                            found_misc = found5;
-                            found = str.find(']');
-                        }
-                    }
-                }
-                if (found_loc < 500)
-                {
-                    found5 = 0;
-                    str = StrRefrence;
-                    found = str.find(']');
-                    while (found5 < 1000 )
-                    {
-                        if ( found < found_loc )
-                        {                       
-                            while ( found < found_loc )
-                            {
-                                str2 = str.substr ( found+1  , str.size());
-                                str = str2;
-                                found = str.find(']');
-                                found_loc = str.find("[LOC");
-                            }
-                            found1 = found - found_loc;
-                            str2 = str2.substr ( found_loc  , found1 +1);
-                            Location.push_back(str2);
-                            StoryTag << str2 << endl;//Tagged.Per = str2;
-                            str = str.substr ( found + 1  , str.size() );
-                            found5 = str.find("[LOC");
-                            found_loc = found5;
-                            found = str.find(']');
-                        }
-                        else
-                        {
-                            found1 = found - found_loc;
-                            str2 = str.substr ( found_loc  , found1 +1);
-                            Location.push_back(str2);
-                            StoryTag << str2 << endl;
-                            str2 = str.substr ( found + 1  , str.size());
-                            str = str2;
-                            found5 = str.find("[LOC");
-                            found_loc = found5;
-                            found = str.find(']');
-                        }
-                    }
-                }
-            }
-        }
-    }
-    StoryTag.close();
-}
-
-vector<TopicElements> TextAnalysis::ReadTag_ResourceGoal(const vector<TopicElements>& storyInfoForTag)
-{   
-    vector<TopicElements> resourceGoalTag;
-
-    const char* resource_array[] = {"TROOPS:","AIRCRAFTS", "TANKS","MILITARY,","ARMS","REARMING", 
-    "PEACE KEEPERS", "SOLDIERS" , "SOLDIER" , "TROOP", "BOMBS", "SEPARATISTS FORCES", "ARMORED  VEHICLES",
-    "MILITARY AIRCRAFT", "REINFORCEMENTS","WARPLANES"  };
-    set<string> resourceList(resource_array, resource_array + sizeof resource_array / sizeof resource_array[0]);
-
-    const char* goal_array[] = {"SELF-DEFENSE","ETHNIC CLEANSING,","CRUSHING DEMOCRACY","ETHNIC  CLEANSING", 
-    "OIL", "ENERGY" , "Occupy" , "control" , "CRUSHING DEMOCRACY" , "NATO MEMBERSHIP", "HUMANITARIAN SUPPORT"};
-    set<string> goalList(goal_array, goal_array + sizeof goal_array / sizeof goal_array[0]);
-
-    for (int i=0; i < storyInfoForTag.size(); i++)
-    {
-        vector<string> topicWords;
-        istringstream iss(storyInfoForTag[i].FullTopicName);
-        copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(topicWords));
-
-        vector<string> resources;
-        vector<string> goals;
-
-        for(int k=0; k < topicWords.size(); k++)
-        {
-            if (resourceList.find(topicWords[k]) != resourceList.end())
-            {
-                resources.push_back(topicWords[k]);
-            }
-        }       
-        
-        for(int k=0; k < topicWords.size(); k++)
-        {
-            if (goalList.find(topicWords[k]) != goalList.end())
-            {
-                goals.push_back(topicWords[k]);
-            }
-        }       
-
-        if (resources.size() != 0 || goals.size() != 0 )
-        {
-            TopicElements entry;
-            entry.StoryTimeStart = storyInfoForTag[i].StoryTimeStart;
-            entry.StoryTimeEnd = storyInfoForTag[i].StoryTimeEnd;
-            entry.Resources = resources;
-            entry.Goal = goals;
-            resourceGoalTag.push_back(entry);
-        }
-    }
-    return resourceGoalTag;
-}
-
-// input: StoryTagInfo.txt
-vector<TopicElements> TextAnalysis::ReadTagFromFile1()
-{
-    string str, str2 ;
-    vector<string> Person;
-    vector<string> Location;
-    
-    vector<TopicElements> storyTagInfo;
-    TopicElements entry;
-    ifstream ifs;
-    ifs.open("StoryTagInfo.txt", ios::in);
-    if (!ifs.is_open()) cout<<"FileName File NOT opened"<<endl;
-    while (!ifs.eof() && ifs.good() )
-    {
-        char buffer[2048];
-        ifs.getline(buffer, 2048);
-        str = (buffer);
-
-        auto found_story = str.find("<story>");
-        auto found_start = str.find("<start>");
-        auto found_end = str.find( "<end>");
-        auto found_person = str.find("[PER");
-        auto found_location = str.find("[LOC"); 
-        //auto found6 = str.find("[ORG");
-        //auto found7 = str.find("[MISC");
-
-        if (found_story == 0)
-        {
-            str2= str.substr(7,str.size());
-            entry.StoryTopicName = str2;
-        }
-
-        if (found_start == 0)
-        {
-            str2= str.substr(7,str.size()-8);
-            entry.StoryTimeStart = str2;
-        }
-
-        if (found_person == 0)
-        {
-            str2= str.substr(5,(str.size()-8));
-            Person.push_back(str2);
-        }
-        if (found_location == 0)
-        {
-            str2= str.substr(5,(str.size()-8));
-            Location.push_back(str2);
-        }
-
-        if (found_end == 0)
-        {
-            str2= str.substr(5,str.size());
-            entry.StoryTimeEnd = str2;
-        
-            if  (Person.size() != 0 || Location.size() != 0)
-            { 
-                entry.Person = Person;
-                entry.Location = Location;
-                storyTagInfo.push_back(entry);
-                Person.clear();
-                Location.clear();
-            }
-        }
-    }
-    ifs.close();
-    return storyTagInfo;
-}
-
-
-vector<StorySentInfo> TextAnalysis::GetNumberOfStorySentence(const vector<Triplet>& storyWordInfo)
-{
-    ofstream inout;
-    inout.open ("StoryAndSenNumber.txt");   
-
-    vector<StorySentInfo> storyNameAndSenNum;
-    int total_num_sentences =0;
-
-    for( int i=0; i < storyWordInfo.size(); i++)
-    {
-        size_t found , Found6_end = 1;
-        found = storyWordInfo[i].StoryTopicName.find("<story>");
-        if (found == 0)
-        {
-            int j = i;
-            int num_sentences = 0;
-            while ( Found6_end != 0 )
-            {
-                i++;
-                num_sentences++;
-                Found6_end = storyWordInfo[i].StoryTimeEnd.find("<end>");
-            }
-            string StoryName = storyWordInfo[j].StoryTopicName;
-
-            StorySentInfo info;
-            info.storyTopic = (StoryName.substr(7, StoryName.size()));
-            info.num_sentences = (num_sentences-2);
-            storyNameAndSenNum.push_back(info);
-
-            string TimeStart = storyWordInfo[j+1].StoryTimeStart;
-            inout << TimeStart << " " << info.storyTopic << "\t" << info.num_sentences << endl;
-            
-            total_num_sentences += (num_sentences - 2);
-        }
-    }
-    inout.close();
-    return storyNameAndSenNum;
-}
-
-vector<Triplet> TextAnalysis::RemoveShortStory(const vector<Triplet>& storyWordInfo , 
-    vector<int> & removedStories)
-{
-    vector<Triplet> longStories;
-    int j=0, num_stories = 0;
-    for( int i=0; i < storyWordInfo.size(); i++)
-    {
-        size_t found, found_end = 1;
-        found = storyWordInfo[i].StoryTopicName.find("<story>");
-        j = i;
-        if (found == 0)
-        {
-            num_stories ++;
-            int num_sentences = 0;
-            while (found_end != 0)
-            {
-                j++;
-                num_sentences++;
-                found_end = storyWordInfo[j].StoryTimeEnd.find("<end>");
-            }
-            
-            // Here -2 because '<story>' '<start>' shall not be counted.
-            if ( num_sentences-2 > 4)
-            { // chose stories with more than 4 sentence
-                j = i;
-                found_end = 1;
-                while ( found_end != 0 )
-                {
-                    longStories.push_back( storyWordInfo[j]);
-                    j++;
-                    found_end = storyWordInfo[j].StoryTimeEnd.find("<end>");
-                }
-                longStories.push_back( storyWordInfo[j]);
-            }
-            else
-            {
-                removedStories.push_back(num_stories - 1);
-            }
-        }
-    }
-    return longStories;
-}
 
 void TextAnalysis::ExtractVocabularyList(const vector<StoryInfo>& stories,
     set<string>& vocabularyNP1, set<string>& vocabularyVP, set<string>& vocabularyNP2)
@@ -1444,54 +641,6 @@ void TextAnalysis::CrossValidation(
 }
 
 
-vector<StoryInfo> TextAnalysis::GetStories(const vector<FinalTriplet>& storyWordInfoFinal)
-{
-    vector<StoryInfo> stories;
-    StoryInfo current_story;
-    for(int i=0; i < storyWordInfoFinal.size(); i++)
-    {
-        if (storyWordInfoFinal[i].tripletsIdx == 0)
-        {
-            string name = storyWordInfoFinal[i].StoryName;
-            size_t found1 = name.find('|' );
-            string str1 = name.substr ( 0, found1 );
-            size_t found = str1.find(':' );
-            if (found < 50 )
-            {
-                str1 = str1.substr ( 0, found );                
-            }
-            current_story.category = str1;
-            current_story.name = name;
-            current_story.num_sentences = storyWordInfoFinal[i].num_sentences;
-        }
-
-        if ( storyWordInfoFinal[i].tripletsIdx != storyWordInfoFinal[i].num_sentences-1)
-        {
-            istringstream iss(storyWordInfoFinal[i].Non_Ph1);
-            copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
-
-            istringstream iss1(storyWordInfoFinal[i].Verb_Ph);
-            copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
-
-            istringstream iss2(storyWordInfoFinal[i].Non_Ph2);
-            copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
-        }
-        else if ( storyWordInfoFinal[i].tripletsIdx == storyWordInfoFinal[i].num_sentences-1)
-        {
-            if (current_story.category != "NULL")
-            {
-                stories.push_back(current_story);
-            }
-            current_story.name = "";
-            current_story.category = "";
-            current_story.words_np1.clear();
-            current_story.words_vp.clear();
-            current_story.words_np2.clear();
-        }
-    }    
-    return stories;
-}
-                
 
 // Using WordNet to calculate the similarity
 // Using R to do the Hierarchical cluster
