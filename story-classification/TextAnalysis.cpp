@@ -19,71 +19,16 @@
 
 #include "TextAnalysis.h"
 #include "stopwords.h"
+#include "utility.h"
 
 using namespace std; 
-
 
 ////////////////////////
 // utilities
 ////////////////////////
-std::string trim_front(const std::string& str, const std::string& trimChars)
-{
-    int i = 0;
-    for (i = 0; i < str.size(); i++)
-    {
-        bool found = false;
-        for (int j = 0; j < trimChars.size(); j++)
-        {
-            if (str[i] == trimChars[j])
-                found = true;
-        }
-        if (found == false)
-            break;
-    }
-    return str.substr(i);
-}
-
 
 TextAnalysis::TextAnalysis(){}
 TextAnalysis::~TextAnalysis(){}
-
-// getline just doesn't work..............
-
-int getLineNew(istream &stream, string& result)
-{
-    result.clear();
-
-    do 
-    {
-        char cc[10];
-        //char c = 0;
-
-        cc[0] = 0;
-        cc[1] = 0;
-
-        stream.get(cc[0]);
-        char c = cc[0];
-
-        if (c == ' ' && result.length() == 0)
-            continue;
-
-        if (c == '\n'|| c == 13 || c == 10 )
-        { //|| c == 13 || c == 10 || c=='DA'
-            if (result.length() == 0)
-                continue;
-            break;
-        }
-
-        if (c == 0)
-            break;
-
-        result += string(cc);
-
-    } while(true);
-
-    return result.length();
-}
-
 
 vector<Triplet> TextAnalysis::ReadTripletsFile(const string& tripletsFilename)
 {
@@ -318,21 +263,21 @@ vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
         for (int j=0; j < stories[i].words_np1.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_np1.push_back(trim_front(words[k]," \t"));
+            story_lemmed.words_np1.push_back(utility::trim_front(words[k]," \t"));
             k++;
         }
 
         for (int j=0; j < stories[i].words_vp.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_vp.push_back(trim_front(words[k]," \t"));
+            story_lemmed.words_vp.push_back(utility::trim_front(words[k]," \t"));
             k++;            
         }
 
         for (int j=0; j < stories[i].words_np2.size(); j++)
         {
             assert(k < words.size());
-            story_lemmed.words_np2.push_back(trim_front(words[k]," \t"));
+            story_lemmed.words_np2.push_back(utility::trim_front(words[k]," \t"));
             k++;
         }
 
@@ -781,34 +726,39 @@ void TextAnalysis::PrintCrossValidationReport(ostream& os,
     os << "AVG.: " << accuracy_sum/(double)crossValidation.size() << endl;
 }
 
-void TextAnalysis::TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final){
-        
-    size_t found;
-    int Category_Number=  27;
+void TextAnalysis::GetTransitionMatrix(const vector<StoryInfo>& stories)
+{      
+    /*int Category_Number=  27;
     vector<vector <int> > TranMat_ScTopic;
     vector<int> Building_Mat;
-    for(int i=0; i < Category_Number; i++){ 
-        Building_Mat.push_back(0);}
-    for(int i=0; i < Category_Number; i++){     
-        TranMat_ScTopic.push_back(Building_Mat);}
+    for(int i=0; i < Category_Number; i++)
+    {
+        Building_Mat.push_back(0);
+    }
+    for(int i=0; i < Category_Number; i++)
+    {
+        TranMat_ScTopic.push_back(Building_Mat);
+    }
 
-        const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
-            "Social","Government","Science-technology","Religion","Politics", "International" ,
-            "Lifestyle-leisure" , "Labor" , "Human-interest" , "Health" , "Environment" , 
-            "Education" , "Business" ,  "Money" , "Crime", "Justice", "Art-culture", "Celebrity",
-            "Entertainment", "Network" , "Commercial"};
-        vector<string> categories(array, array + sizeof array / sizeof array[0]);
-        int iIndix=0;
-        for (int i=0; i<Screen_Info_Final.size(); i++){
-            found = Screen_Info_Final[i].StoryTopicName.find("|");
-            string Cat = Screen_Info_Final[i].StoryTopicName.substr( 0, found);
-            for (int j=0; j<categories.size(); j++){
-                if ( Cat.compare(categories[j]) == 0 ){
-                    TranMat_ScTopic[iIndix][j] = TranMat_ScTopic[iIndix][j] + 1;
-                    iIndix=j;
-                }
+    const char* array[] = {"War","Sports", "Disaster" , "Accident","Activism", "Weather",
+        "Social","Government","Science-technology","Religion","Politics", "International" ,
+        "Lifestyle-leisure" , "Labor" , "Human-interest" , "Health" , "Environment" , 
+        "Education" , "Business" ,  "Money" , "Crime", "Justice", "Art-culture", "Celebrity",
+        "Entertainment", "Network" , "Commercial"};
+    vector<string> categories(array, array + sizeof array / sizeof array[0]);
+    int iIndix=0;
+    for (int i=0; i<Screen_Info_Final.size(); i++)
+    {
+        found = Screen_Info_Final[i].StoryTopicName.find("|");
+        string Cat = Screen_Info_Final[i].StoryTopicName.substr( 0, found);
+        for (int j=0; j<categories.size(); j++)
+        {
+            if ( Cat.compare(categories[j]) == 0 )
+            {
+                TranMat_ScTopic[iIndix][j] = TranMat_ScTopic[iIndix][j] + 1;
+                iIndix=j;
             }
         }
-
-    }
+    }*/
+}
 

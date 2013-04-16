@@ -1,4 +1,5 @@
 #pragma once
+
 #include <string> 
 #include <vector>
 #include <set>
@@ -44,93 +45,6 @@ struct Triplet
     //int nTimeInSecond;
 };
 
-struct FinalTriplet 
-{
-    string StoryName;
-    int num_sentences;
-    int tripletsIdx;
-    string Non_Ph1;
-    string Verb_Ph;
-    string Non_Ph2;
-
-};
-
-struct TaggedElements 
-{
-    string Org;     // organization
-    string Per;     // person
-    string Misc;
-};
-
-struct StorySentInfo
-{
-    string storyTopic;
-    int num_sentences;
-};
-
-
-struct TopicElements 
-{
-    string StoryTimeStart;
-    string StoryTimeEnd;
-    string StoryTopicName;
-    string FullTopicName;
-    string Non_Ph1;
-    string Verb_Ph;
-    vector<string> Person;
-    vector<string> Location;
-    vector<string> Resources;
-    vector<string> Goal;
-};
-
-
-struct StoryElements 
-{
-    double StoryTimeStart;
-    double StoryTimeEnd;
-    string StoryCat;
-    string StoryTopic;
-    string Words;
-
-};
-
-struct StoryElements1 
-{
-    string StoryTimeStart;
-    string StoryTimeEnd;
-    string StoryCat;
-    string StoryTopic;
-    string Words;
-};
-
-
-struct ScreenText 
-{
-    double Screen_Frame1;   // Time stamp
-    double Screen_line1;    // 
-    double Base;
-    string Screen_Topic;    // On-screen text
-
-};
-
-// combined ScreenText and StoryElements
-struct ScreenInfo 
-{
-    double StoryTimeStart;  // annotated story SegStart
-    double StoryTimeEnd;    // annotated story SegEnd
-    string StoryTopicName;  // annotated topic
-    string CatName;         // annotated category name
-    string Screen_words;    // On-screen text
-
-};
-
-struct WordCount 
-{
-    string Word;
-    int Occurance;
-};
-
-
 class TextAnalysis
 {
 public:
@@ -161,9 +75,9 @@ public:
     //
     // Similarity
     //
-    void CalculateSimilarity(const vector<StoryInfo>& StoryWordInfoFinal);
+    void CalculateSimilarity(const vector<StoryInfo>& stories);
 
-    void TransitionMatrix_ScreenTopic(vector<ScreenInfo> &Screen_Info_Final);
+    void GetTransitionMatrix(const vector<StoryInfo>& stories);
     
 private:
     // utilities

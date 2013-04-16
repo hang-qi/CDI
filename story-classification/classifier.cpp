@@ -1,67 +1,7 @@
 #include <assert.h>
 
 #include "classifier.h"
-
-namespace stat_utility
-{
-    typedef vector< vector<double> > Matrix;
-
-    Matrix BuildMatrix(int num_rows, int num_columns, double default_value = 0)
-    {
-        vector<double> vec(num_columns, default_value);
-        Matrix mat(num_rows, vec);
-        return std::move(mat);
-    }
-
-    vector<double> Normalize(const vector<double>& countVector)
-    {
-        int num_elements = countVector.size();
-        vector<double> prob(num_elements, 0);
-        
-        double sum = 0;
-        for (int i=0; i< num_elements; i++)
-        {
-            sum += countVector[i];
-        }
-
-        if (sum != 0)
-        {
-            for (int i=0; i < num_elements; i++)
-            {        
-                prob[i] = countVector[i]/sum;
-            }
-        }
-        return std::move(prob);
-    }
-
-    Matrix Normalize2D(const Matrix& countMatrix, bool column_wise = true)
-    {
-        int num_rows = countMatrix.size();
-        int num_columns = countMatrix[0].size();
-        Matrix prob = BuildMatrix(num_rows, num_columns);
-
-        if (column_wise)
-        {
-            for (int i=0; i< num_columns; i++ )
-            {
-                double sum_column = 0;
-                for (int j=0; j< num_rows; j++)
-                {
-                    sum_column += countMatrix[j][i];
-                }
-
-                for (int j=0; j< num_rows; j++)
-                {
-                    if (countMatrix[j][i] != 0 && sum_column != 0 )
-                    {
-                          prob[j][i] = countMatrix[j][i]/sum_column;
-                    }
-                }
-            }
-            return std::move(prob);
-        }
-    }
-}
+#include "utility.h"
 
 /*
 int num_categories;
@@ -72,7 +12,6 @@ vector<double> priors_cat;
 Matrix prob_wordsGivenCatsNP1;
 Matrix prob_wordsGivenCatsVP;
 Matrix prob_wordsGivenCatsNP2;*/
-
 
 
 void NBClassifierParameter::Serialize(ostream& os)
@@ -122,7 +61,7 @@ PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story)
         dist_catGivenStory.push_back(A);
     }
 
-    //dist_catGivenStory = stat_utility::Normalize(dist_catGivenStory);
+    //dist_catGivenStory = utility::Normalize(dist_catGivenStory);
     
     // Predict by the maximum posterior probability (Bayes Decision).
     // Normalize is not necessary.
@@ -183,14 +122,14 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     int num_stories = labeled_stories.size();
 
     // Building co-occurrence of (words given cat) AND P(Wi | Catj)
-    Matrix WordsCatMatrixNP1 = stat_utility::BuildMatrix(param_.vocabulary_np1.size(), categories.size());        
-    Matrix WordsCatMatrixVP = stat_utility::BuildMatrix(param_.vocabulary_vp.size(), categories.size());        
-    Matrix WordsCatMatrixNP2 = stat_utility::BuildMatrix(param_.vocabulary_np2.size(), categories.size());
+    Matrix WordsCatMatrixNP1 = utility::BuildMatrix(param_.vocabulary_np1.size(), categories.size());        
+    Matrix WordsCatMatrixVP = utility::BuildMatrix(param_.vocabulary_vp.size(), categories.size());        
+    Matrix WordsCatMatrixNP2 = utility::BuildMatrix(param_.vocabulary_np2.size(), categories.size());
         
     // (words Given Stories)
-    Matrix WordsStoriesMatrixNP1 = stat_utility::BuildMatrix(param_.vocabulary_np1.size(), num_stories);
-    Matrix WordsStoriesMatrixVP = stat_utility::BuildMatrix(param_.vocabulary_vp.size(), num_stories);
-    Matrix WordsStoriesMatrixNP2 = stat_utility::BuildMatrix(param_.vocabulary_np2.size(), num_stories);
+    Matrix WordsStoriesMatrixNP1 = utility::BuildMatrix(param_.vocabulary_np1.size(), num_stories);
+    Matrix WordsStoriesMatrixVP = utility::BuildMatrix(param_.vocabulary_vp.size(), num_stories);
+    Matrix WordsStoriesMatrixNP2 = utility::BuildMatrix(param_.vocabulary_np2.size(), num_stories);
 
     int NumberOfAllWordsInDocument=0;     
     
@@ -304,19 +243,19 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     //
     // Calculating P(Wi|Catj)^time (Np1,Vp.Np2) and save it in WordsCatMatrixNP1,WordsCatMatrixVP,WordsCatMatrixNP2 
     //
-    Matrix prob_wordsGivenCatsNP1 = stat_utility::Normalize2D(WordsCatMatrixNP1);
-    Matrix prob_wordsGivenCatsVP = stat_utility::Normalize2D(WordsCatMatrixVP);
-    Matrix prob_wordsGivenCatsNP2 = stat_utility::Normalize2D(WordsCatMatrixNP2);
+    Matrix prob_wordsGivenCatsNP1 = utility::Normalize2D(WordsCatMatrixNP1);
+    Matrix prob_wordsGivenCatsVP = utility::Normalize2D(WordsCatMatrixVP);
+    Matrix prob_wordsGivenCatsNP2 = utility::Normalize2D(WordsCatMatrixNP2);
 
     //Building The Probability of Story Given Category  P(Si|Catj)^time  for NP1,VP,NP2
     // Building P(Si | Catj) AND P(Catj | Si)        
-    Matrix ProbStoryGivenCat = stat_utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbStoryGivenCat1 = stat_utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbStoryGivenCat2 = stat_utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbStoryGivenCat = utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbStoryGivenCat1 = utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbStoryGivenCat2 = utility::BuildMatrix(num_stories, categories.size());
 
-    Matrix ProbCatGivenStory = stat_utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbCatGivenStory1 = stat_utility::BuildMatrix(num_stories, categories.size());
-    Matrix ProbCatGivenStory2 = stat_utility::BuildMatrix(num_stories, categories.size());   
+    Matrix ProbCatGivenStory = utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbCatGivenStory1 = utility::BuildMatrix(num_stories, categories.size());
+    Matrix ProbCatGivenStory2 = utility::BuildMatrix(num_stories, categories.size());   
 
     vector<int> AllCountedWordsInStories;
     vector<int> AllCountedWordsInStories1;
@@ -449,9 +388,9 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     } 
 
         // Normalizing of the ProbStoryGivenCat which gives Probability of Story Given Category:P(Si|Catj)^time
-    ProbStoryGivenCat = stat_utility::Normalize2D(ProbStoryGivenCat);
-    ProbStoryGivenCat1 = stat_utility::Normalize2D(ProbStoryGivenCat1);
-    ProbStoryGivenCat2 = stat_utility::Normalize2D(ProbStoryGivenCat2);
+    ProbStoryGivenCat = utility::Normalize2D(ProbStoryGivenCat);
+    ProbStoryGivenCat1 = utility::Normalize2D(ProbStoryGivenCat1);
+    ProbStoryGivenCat2 = utility::Normalize2D(ProbStoryGivenCat2);
 
     vector<double> prob_Story(num_stories);
     vector<double> prob_Story1(num_stories);
@@ -609,6 +548,6 @@ vector<double> NaiveBayesClassifier::CalcualtePostProbCats(
         }
         distributionCatGivenWords[i] = prob_wordGivenCat * param_.priors_cat[i];
     }
-    distributionCatGivenWords = stat_utility::Normalize(distributionCatGivenWords);
+    distributionCatGivenWords = utility::Normalize(distributionCatGivenWords);
     return distributionCatGivenWords;
 }

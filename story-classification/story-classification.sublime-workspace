@@ -1,0 +1,1050 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stor",
+				"stories"
+			],
+			[
+				"storie",
+				"stories_new"
+			],
+			[
+				"num",
+				"num_sentences"
+			],
+			[
+				"words",
+				"words_np1"
+			],
+			[
+				"trip",
+				"triplets"
+			],
+			[
+				"stories",
+				"stories_lemmed"
+			],
+			[
+				"categ",
+				"categories"
+			],
+			[
+				"testing",
+				"testingRanges"
+			],
+			[
+				"range",
+				"range_begin"
+			],
+			[
+				"story_id",
+				"story_idx"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"vocar",
+				"vocabulary_np1"
+			],
+			[
+				"param",
+				"param_"
+			],
+			[
+				"vocabu",
+				"vocabularyNP1"
+			],
+			[
+				"vo",
+				"vocabulary_np2"
+			],
+			[
+				"labl",
+				"labeled_stories"
+			],
+			[
+				"Calcu",
+				"CalculatePriors"
+			],
+			[
+				"curre",
+				"current_story"
+			],
+			[
+				"labels",
+				"labels_testing"
+			],
+			[
+				"stori",
+				"stories_testing"
+			],
+			[
+				"classi",
+				"classifier"
+			],
+			[
+				"d",
+				"def	#ifndef … #define … #endif"
+			],
+			[
+				"Conver",
+				"ConvertStoryToFeature"
+			],
+			[
+				"story",
+				"StoryFeature"
+			],
+			[
+				"Final",
+				"FinalTriplets"
+			],
+			[
+				"Text",
+				"TextAnalysis"
+			],
+			[
+				"num_wor",
+				"num_wordsNP2"
+			],
+			[
+				"num_words",
+				"num_wordsVP"
+			],
+			[
+				"CountTo",
+				"CountToProbability2D"
+			],
+			[
+				"Build",
+				"BuildMatrix"
+			],
+			[
+				"WordsCatm",
+				"WordsCatMatrixNP1"
+			],
+			[
+				"category",
+				"idx_category"
+			],
+			[
+				"voca",
+				"vocabularyVP"
+			],
+			[
+				"bui",
+				"BuildMatrix"
+			],
+			[
+				"remain",
+				"Remain_ScWords1"
+			],
+			[
+				"cross",
+				"crossValidation"
+			],
+			[
+				"Triplet",
+				"Triplets"
+			],
+			[
+				"Trip",
+				"Triplets"
+			],
+			[
+				"storywor",
+				"storyWordInfoFinal"
+			],
+			[
+				"resource",
+				"resourceList"
+			],
+			[
+				"catinfo",
+				"CatInform"
+			],
+			[
+				"stop",
+				"stopwords"
+			],
+			[
+				"onsc",
+				"onScreenTextTemp"
+			],
+			[
+				"Screen",
+				"Screen_Info"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 4362,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TextAnalysis.h",
+			"settings":
+			{
+				"buffer_size": 4931,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TextAnalysis.cpp",
+			"settings":
+			{
+				"buffer_size": 61287,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 96.0,
+		"selected_items":
+		[
+			[
+				"gist:in",
+				"Gist: Insert Gist"
+			],
+			[
+				"gist:",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"pc:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/hangqi/Programming/CDI/story-classification/definitions.h",
+		"/home/hangqi/Programming/CDI/story-classification/classifier.h",
+		"/home/hangqi/Programming/CDI/story-classification/classifier.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/Triplets_CrossValidation.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/lemmatized_words.txt",
+		"/home/hangqi/Programming/data/2008-08-08_1500_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat",
+		"/home/hangqi/Programming/CDI/story-classification/Makefile",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/Lemmatizedfile.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/Triplets_CrossValidation_storyinfo.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/Triplets_CrossValidation_old.txt",
+		"/home/hangqi/Programming/CDI/story-classification/stopwords.h",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/anna-after-split.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/anna-before-split.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/model.txt",
+		"/home/hangqi/Programming/data/2008-08-08_1300_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat",
+		"/home/hangqi/Desktop/NewsList.txt",
+		"/home/hangqi/Desktop/NewsList_full.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/StoryAndSenNumber.txt",
+		"/home/hangqi/Programming/data/2008-08-08_0000_US_CNN_CNN_Election_Center.html.align.chunk_coref_triplets.dat",
+		"/home/hangqi/Programming/data/2008-08-08_0000_US_CNN-Headline_Nancy_Grace.html.align.chunk_coref_triplets.dat",
+		"/home/hangqi/Programming/data/2008-08-08_0100_US_CNN_Larry_King_Live.html.align.chunk_coref_triplets.dat",
+		"/home/hangqi/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/StoryTopic.txt",
+		"/home/hangqi/Desktop/TextAnalysis.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/OnScreenText_CrossValidation.txt",
+		"/home/hangqi/Desktop/main.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/FullDocument.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/NewsList.txt",
+		"/home/hangqi/Desktop/NewsList",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/output/ForSim.txt",
+		"/home/hangqi/Programming/CDI/story-classification/TextAnalysis.h",
+		"/home/hangqi/Programming/StoryTextInfo/ForSim",
+		"/home/hangqi/Programming/StoryTextInfo/StoryAndSenNumber.txt",
+		"/home/hangqi/Programming/CDI/story-classification/main.cpp",
+		"/home/hangqi/Programming/StoryTextInfo/VocabularyNon_Ph1.txt",
+		"/home/hangqi/Programming/StoryTextInfo/StoryTopic.txt",
+		"/home/hangqi/Programming/CDI/story-classification/TextAnalysis.cpp",
+		"/usr/include/c++/4.7/ostream",
+		"/home/hangqi/Programming/StoryTextInfo/VocabularyOnScreenText.txt",
+		"/home/hangqi/Programming/StoryTextInfo/SystemEvaluation_OnScreenText.txt",
+		"/home/hangqi/Programming/StoryTextInfo/SystemEvaluation.txt",
+		"/home/hangqi/Programming/StoryTextInfo/StoryTextInfo.sublime-project",
+		"/home/hangqi/Programming/StoryTextInfo.sublime-project",
+		"/home/hangqi/Programming/StoryTextInfo/OCR/2008-08-08_1400_US_CNN_Newsroom.ocr.jpg.ocr",
+		"/home/hangqi/Programming/StoryTextInfo/inout1.txt",
+		"/home/hangqi/Programming/StoryTextInfo/inout.txt",
+		"/home/hangqi/Programming/StoryTextInfo/main.cpp",
+		"/home/hangqi/Programming/StoryTextInfo/hcscript.r",
+		"/home/hangqi/Programming/rsscrawler/yahoo/us/7-marines-killed-chopper-collision-arizona-144140193.html.rawtxt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Jungseock/PorterStemmer.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Jungseock/FaceDet.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Jungseock/CaptionModel.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/temp/StorySeg/lsd/lsd.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/temp/StorySeg/utils.cpp",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/temp/StorySeg/StorySeg.cpp",
+		"/home/hangqi/Downloads/seg/2012-12-26_0000_US_Current_Young_Turks_With_Cenk_Uygur_with_Seg.txt",
+		"/home/hangqi/Downloads/seg/2012-12-26_0000_US_CNN_Erin_Burnett_Out_Front_with_Seg.txt",
+		"/home/hangqi/Downloads/seg/2012-12-26_0000_QA_KCET_Al_Jazeera_English_News_with_Seg.txt",
+		"/home/hangqi/Downloads/seg/2012-12-26_0000_DK_CNN-International_World_Report_with_Seg.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/StoryTextInfo/VocabularyOnScreenText.txt",
+		"/home/hangqi/Programming/StoryTextInfo/NewsList",
+		"/home/hangqi/Programming/StoryTextInfo/Makefile",
+		"/home/hangqi/.config/sublime-text-2/Packages/User/Gist.sublime-settings",
+		"/home/hangqi/Programming/StoryTextInfo/out.txt",
+		"/home/hangqi/Programming/StoryTextInfo/TextAnalysis.cpp",
+		"/home/hangqi/Dropbox/AppConfigs/Sublime Text 2/Packages/Default/Ignored Packages.cache",
+		"/home/hangqi/.config/sublime-text-2/Packages/iTodo/Default (Linux).sublime-keymap",
+		"/home/hangqi/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/User/C++/for_each.sublime-snippet",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/C++/Enumeration.sublime-snippet",
+		"/home/hangqi/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/User/Plaintext.sublime-settings",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/User/Matlab.sublime-settings",
+		"/home/hangqi/Dropbox/AppConfigs/sublime-text-2/Packages/Gist/Gist.sublime-settings",
+		"/home/hangqi/Programming/StoryTextInfo/TextAnalysis",
+		"/tmp/dropbox.py",
+		"/home/hangqi/.config/sublime-text-2/Packages/C++/C++.tmLanguage",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Arash/StoryTextInfo/Makefile",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Arash/StoryTextInfo/VocabularyVerb_Ph.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/Arash/StoryTextInfo/VocabularyOnScreenText.txt",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/usr/local/bin/transcript_aligner/timezone.py",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/usr/local/bin/transcript_aligner/rematch.py",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/usr/local/bin/transcript_aligner/matchfile.py",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/usr/local/bin/transcript_aligner/matchall.py",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/usr/local/bin/transcript_aligner/config.py",
+		"/run/user/hangqi/gvfs/sftp:host=ca,user=csa/home/csa/CAS2/hangqi/ner_test/2012-03-01_0100_US_CNN_Anderson_Cooper_360.tpt.ner",
+		"/home/hangqi/Programming/cs249/segment/segment.sh",
+		"/dataset/segmented/2012/2012-09/2012-09-03/2012-09-03_1300_US_CNN_Newsroom.tpt.33.seg",
+		"/dataset/segmented/2012/2012-09/2012-09-03/2012-09-03_1300_US_CNN_Newsroom.tpt.00.seg",
+		"/home/hangqi/Programming/cs249/segment/segment.py",
+		"/dataset/segmented/2012/2012-09/2012-09-03/2012-09-03_1300_US_CNN_Newsroom.tpt.15.seg",
+		"/dataset/segmented/2012/2012-09/2012-09-03/2012-09-03_1300_US_CNN_Newsroom.tpt.08.seg",
+		"/dataset/segmented/2012/2012-09/2012-09-03/2012-09-03_1300_US_CNN_Newsroom.tpt.07.seg",
+		"/dataset/segmented/2012/2012-01/2012-01-21/2012-01-21_0100_US_CNN_Anderson_Cooper_360.tpt.02.seg",
+		"/dataset/segmented/2012/2012-01/2012-01-21/2012-01-21_0100_US_CNN_Anderson_Cooper_360.tpt.03.seg",
+		"/dataset/segmented/2012/2012-01/2012-01-21/2012-01-21_0100_US_CNN_Anderson_Cooper_360.tpt.01.seg",
+		"/dataset/segmented/2012/2012-01/2012-01-21/2012-01-21_0100_US_CNN_Anderson_Cooper_360.tpt.00.seg",
+		"/dataset/segmented/2012/2012-01/2012-01-21/2012-01-21_0100_US_CNN_Anderson_Cooper_360.tpt.04.seg",
+		"/dataset/segmented/2012/2012-10/2012-10-08/2012-10-08_1300_US_CNN_Newsroom.tpt.seg38",
+		"/dataset/segmented/2012/2012-10/2012-10-08/2012-10-08_1300_US_CNN_Newsroom.tpt.seg37",
+		"/dataset/segmented/2012/2012-10/2012-10-08/2012-10-08_1300_US_CNN_Newsroom.tpt.seg00",
+		"/dataset/copyfile.sh",
+		"/usr/share/applications/defaults.list",
+		"/usr/share/applications/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"RemoveStopWords",
+			"?",
+			"/",
+			"category",
+			"War",
+			"united",
+			"u.s.",
+			"United",
+			"United_States",
+			"united",
+			"removeshort",
+			"removestop",
+			"States",
+			"united",
+			"assert",
+			"CrossValidation",
+			"                            Person.push_back(str2);\nhis",
+			"RemoveShort",
+			"ReadTripletsFile",
+			"TripletsToStories",
+			"Cleasing",
+			"ReadTriplets",
+			"assert",
+			"}\n",
+			"my_cmp",
+			"getLineNew",
+			"factorial",
+			"getlineNew",
+			"getLine",
+			"GetStoryInfo",
+			"StoryInfo",
+			"categoryId",
+			"GetStories",
+			"FirstSentAsTopic",
+			"kk",
+			"Learning",
+			"story_idx",
+			"TotalNumOfWordsInDocs",
+			"    \n",
+			";\n",
+			"TotalNumOfWordsInDocs",
+			"counts_np1",
+			"idx_category",
+			"kk",
+			"WCInfo",
+			"WordCatInf",
+			"StoriesTime",
+			"Matrix",
+			"BuildMatrix",
+			"ii",
+			"test",
+			"assert",
+			"LABELS",
+			"ASSERT",
+			"i",
+			"ParameterLearning",
+			"storyWordInfoFinal[i].Non_Ph1",
+			"num_categories_",
+			"idx_word",
+			"CalculateSimilarity",
+			"StoryInfo",
+			"j",
+			"wordPlace",
+			"kk",
+			"ParameterLearning",
+			" ==",
+			"StoryInfo",
+			"ParameterLearning",
+			"tolerance",
+			"prob_storylen2",
+			"prob_storylen1",
+			"TotalNumOfWordsInDocs",
+			"NumberOfAllWordsInDocument",
+			"ParameterLearning",
+			"assert",
+			"prob_storylen1",
+			"prob_storylen",
+			"words",
+			"prob_Entity",
+			"prob_EntitiesinOneStorygivnCat",
+			"FrequencyOfEachWord",
+			"kk",
+			"wordPlace",
+			"Counter1",
+			"NumOFWordInOneStory",
+			"StoryTripletsCount",
+			"indicater",
+			"StoryNUmber",
+			"Info",
+			"NameOFStoryTopic",
+			"NumOFSenInOneStory",
+			"NumOFSenInStory",
+			"found1",
+			"found2",
+			"found1",
+			"found",
+			"Stock-market",
+			"<end>",
+			"<end",
+			",end",
+			"end",
+			"story",
+			"<story>",
+			"<story",
+			"end",
+			"StoryAndSenNumber.txt",
+			"StoryAndSenNumber",
+			"RemoveStopWords",
+			"inout1",
+			"Count",
+			"Counter3",
+			"B",
+			"Learning",
+			"PrintCrossValidationReport",
+			"crossValidation",
+			"ReadTagFromFile1",
+			"Screen_Text_Info",
+			"my_cmp",
+			"WordCount",
+			"Remaind_Rows",
+			" Inference",
+			"found",
+			"fout_eval",
+			"Pred",
+			"crossValidation",
+			"Pred",
+			"pred",
+			"Pred"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"param_.num_categories",
+			"prob_word",
+			"prob_wordsInStoryGivenCat",
+			"num_words",
+			"tripletsIdx",
+			"num_sentences",
+			"storyTopic",
+			"num_sentences",
+			"Normalize",
+			"prob_catGivenStory",
+			"prob_storyGivenCat",
+			"counts_np1",
+			"counts_np",
+			"counts_np2",
+			"counts_vp",
+			"num_np2_in_story",
+			"num_vp_in_story",
+			"num_words_in_story",
+			"SMALL_NUM",
+			"num_stories",
+			"testPeriod",
+			"storyWordInfo",
+			"Triplet",
+			"labeled_category",
+			"predicted_category",
+			"fout_enhance",
+			"predicted_category_idx",
+			"org_category_idx",
+			"prob_wordsGivenCats",
+			"WordsCatMatrix",
+			"idx_story",
+			"prob_storylen",
+			"ProbStoryLength",
+			"",
+			"count_cat",
+			"prob_cat",
+			"prob_",
+			"labels_training",
+			"labels_testing",
+			"screenInfo_training",
+			"screenInfo_testing",
+			"labels_train",
+			"lables_test",
+			"fout_enhence",
+			"fout_eval",
+			"NUM_CATEGORIES",
+			"",
+			"FILE_NEWSLIST",
+			"DIR_ROOT",
+			"pathRoot ",
+			"#define ",
+			"orcDir",
+			"",
+			"SPK|",
+			"sublime.desktop"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"settings":
+					{
+						"buffer_size": 4362,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3403,
+								3403
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1350.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TextAnalysis.h",
+					"settings":
+					{
+						"buffer_size": 4931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1256,
+								1256
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "TextAnalysis.cpp",
+					"settings":
+					{
+						"buffer_size": 61287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2615,
+								2615
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2160.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.411266286518,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 152.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"stop",
+				"stopwords.h"
+			],
+			[
+				"make",
+				"Makefile"
+			],
+			[
+				"text",
+				"TextAnalysis.cpp"
+			],
+			[
+				"main",
+				"main.cpp"
+			],
+			[
+				"hsc",
+				"hcscript.r"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true
+}

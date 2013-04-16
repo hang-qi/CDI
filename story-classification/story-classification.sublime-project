@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"path": "~/Programming/CDI/story-classification"
+		}
+	],
+
+    "build_systems":
+    [
+        {
+            "name": "Make and Update",
+            "cmd": ["make", "update"]
+        }
+    ]
+}
