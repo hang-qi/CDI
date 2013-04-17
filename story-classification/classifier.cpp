@@ -5,7 +5,7 @@
 
 #define SMALL_NUM 1.5e-100
 
-void NBClassifierParameter::Serialize(ostream& os)
+void NBClassifierParameter::Serialize(ostream& os) const
 {
     os << num_categories << endl;
     os << vocabulary_np1 << endl;
@@ -29,7 +29,7 @@ void NBClassifierParameter::Unserialize(istream& is)
     is >> prob_wordsGivenCatsNP2;
 }
 
-PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story)
+PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story) const
 {
     StoryFeature storyfeature = ConvertStoryToFeature(story);
 
@@ -449,7 +449,7 @@ void NaiveBayesClassifier::LoadParametersFromFile(const string& filename)
     in.close();
 }
 
-void NaiveBayesClassifier::SaveParametersToFile(const string& filename)
+void NaiveBayesClassifier::SaveParametersToFile(const string& filename) const
 {
     ofstream out;
     out.open(filename);
@@ -458,7 +458,7 @@ void NaiveBayesClassifier::SaveParametersToFile(const string& filename)
 }
 
 // Convert the story to feature by converting word vectors into wordId vectors.
-StoryFeature NaiveBayesClassifier::ConvertStoryToFeature(const StoryInfo& story)
+StoryFeature NaiveBayesClassifier::ConvertStoryToFeature(const StoryInfo& story) const
 {    
     StoryFeature feature;
     feature.wordIds_np1 = ConvertWordsToIds(story.words_np1, param_.vocabulary_np1);
@@ -471,7 +471,7 @@ StoryFeature NaiveBayesClassifier::ConvertStoryToFeature(const StoryInfo& story)
 // Convert the word vector to wordId vector by looking up vocabulary.
 vector<int> NaiveBayesClassifier::ConvertWordsToIds(
     const vector<string>& words,
-    const vector<string>& vocabulary)
+    const vector<string>& vocabulary) const
 {
     vector<int> wordIds(words.size());
     for (int i = 0; i < words.size(); i++)
@@ -482,7 +482,7 @@ vector<int> NaiveBayesClassifier::ConvertWordsToIds(
     return wordIds;
 }
 
-int NaiveBayesClassifier::FindWordId(const vector<string>& vocabulary, const string& word)
+int NaiveBayesClassifier::FindWordId(const vector<string>& vocabulary, const string& word) const
 {
     auto found = find(vocabulary.begin(), vocabulary.end(), word);        
     if (found == vocabulary.end())
@@ -497,7 +497,7 @@ int NaiveBayesClassifier::FindWordId(const vector<string>& vocabulary, const str
 
 vector<double> NaiveBayesClassifier::CalcualtePostProbCats(
     const vector<int>& wordIds,
-    const Matrix& prob_wordsGivenCats)
+    const Matrix& prob_wordsGivenCats) const
 {
     vector<double> distributionCatGivenWords(param_.num_categories);
     for(int i=0; i < param_.num_categories; i++)

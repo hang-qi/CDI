@@ -74,6 +74,4 @@ namespace utility
         }
         return str.substr(i);
     }
-
 }
-

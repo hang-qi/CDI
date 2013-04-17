@@ -39,7 +39,7 @@ public:
     Matrix prob_wordsGivenCatsNP2;
 
 public:
-    void Serialize(ostream& os);
+    void Serialize(ostream& os) const;
     void Unserialize(istream& is);
 };
 
@@ -63,9 +63,15 @@ public:
     }
 
     NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories, int num_categories);
-    PredictResult Predict(const StoryInfo& story);
-    void SaveParametersToFile(const string& filename);
+    PredictResult Predict(const StoryInfo& story) const;
+
+    void SaveParametersToFile(const string& filename) const;
     void LoadParametersFromFile(const string& filename);
+
+    const NBClassifierParameter* GetParameters() const
+    {
+        return &param_;
+    }
 protected:
     void ExtractVocabulary(const vector<StoryInfo> & stories)
     {
@@ -103,44 +109,20 @@ protected:
     set<string> BuildVocabulary();
 
     // Helper functions for testing
-    StoryFeature ConvertStoryToFeature(const StoryInfo& story);
+    StoryFeature ConvertStoryToFeature(const StoryInfo& story) const;
     vector<int> ConvertWordsToIds(
         const vector<string>& words,
-        const vector<string>& vocabulary);
+        const vector<string>& vocabulary) const;
 
     vector<double> CalcualtePostProbCats(
         const vector<int>& wordIds,
-        const Matrix& prob_wordsGivenCats);
+        const Matrix& prob_wordsGivenCats) const;
 
-    int FindWordId(const vector<string>& vocabulary, const string& word);
+    int FindWordId(const vector<string>& vocabulary, const string& word) const;
 
 protected:
     NBClassifierParameter param_;
 };
 
-template <class T>
-ostream& operator << (ostream& os, const vector<T>& v)
-{
-    os << v.size() << endl;
-    for (int i = 0; i < v.size(); i++)
-    {
-        os << v[i] << endl;
-    }
-    return os;
-}
-
-template <class T>
-istream& operator >> (istream& is, vector<T>& v)
-{
-    int size = 0;
-    is >> size;
-    v.resize(size);
-
-    for (int i = 0; i < v.size(); i++)
-    {
-        is >> v[i];
-    }
-    return is;
-}
 
 #endif

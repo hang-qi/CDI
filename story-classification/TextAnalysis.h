@@ -69,8 +69,6 @@ public:
     //
     void CalculateSimilarity(const vector<StoryInfo>& stories);
 
-    void GetTransitionMatrix(const vector<StoryInfo>& stories);
-    
 private:
     // utilities
     void PrintCrossValidationReport(ostream& os,
