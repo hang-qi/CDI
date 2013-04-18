@@ -15,8 +15,7 @@ using namespace std;
 struct PredictResult
 {
     int label_id;
-    string lable;
-    double confidence;
+    double joint_prob;
 };
 
 struct StoryFeature
@@ -64,7 +63,7 @@ public:
 
     NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories, int num_categories);
     PredictResult Predict(const StoryInfo& story) const;
-
+    PredictResult Predict(const StoryFeature& storyfeature) const;
     void SaveParametersToFile(const string& filename) const;
     void LoadParametersFromFile(const string& filename);
 

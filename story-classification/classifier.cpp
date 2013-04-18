@@ -29,10 +29,8 @@ void NBClassifierParameter::Unserialize(istream& is)
     is >> prob_wordsGivenCatsNP2;
 }
 
-PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story) const
+PredictResult NaiveBayesClassifier::Predict(const StoryFeature& storyfeature) const
 {
-    StoryFeature storyfeature = ConvertStoryToFeature(story);
-
     // Calculate P(Cat|NP1)  P(Cat|VP)  P(Cat|NP2)
     vector<double> dist_catGivenNP1 = CalcualtePostProbCats(
        storyfeature.wordIds_np1, param_.prob_wordsGivenCatsNP1);
@@ -52,16 +50,21 @@ PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story) const
         dist_catGivenStory.push_back(A);
     }
 
-    //dist_catGivenStory = utility::Normalize(dist_catGivenStory);
+    // dist_catGivenStory = utility::Normalize(dist_catGivenStory);
     
     // Predict by the maximum posterior probability (Bayes Decision).
-    // Normalize is not necessary.
     int predicted_category_idx = max_element(dist_catGivenStory.begin(), dist_catGivenStory.end()) - dist_catGivenStory.begin();
     
     PredictResult result;
     result.label_id = predicted_category_idx;
-    result.confidence = dist_catGivenStory[predicted_category_idx];
+    result.joint_prob = dist_catGivenStory[predicted_category_idx];
     return result;
+}
+
+PredictResult NaiveBayesClassifier::Predict(const StoryInfo& story) const
+{
+    StoryFeature storyfeature = ConvertStoryToFeature(story);
+    return Predict(storyfeature);
 }
 
 // calculate prior probability for each category.
