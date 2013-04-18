@@ -92,11 +92,13 @@ vector<double> NaiveBayesClassifier::CalculatePriors(
 }
 
 NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& labeled_stories, int num_categories)
-{
-    
+{    
+    param_.num_categories = num_categories;
     ExtractVocabulary(labeled_stories);
 
-    vector<double> prob_cat = CalculatePriors(labeled_stories);
+    vector<double> prob_cat = CalculatePriors(labeled_stories);        
+    param_.priors_cat = prob_cat;
+    
     int num_stories = labeled_stories.size();
 
     // Building co-occurrence of (words given cat) AND P(Wi | Catj)
@@ -436,8 +438,6 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
         }
     }
 
-    param_.num_categories = num_categories;
-    param_.priors_cat = prob_cat;
     param_.prob_wordsGivenCatsNP1 = prob_wordsGivenCatsNP1;
     param_.prob_wordsGivenCatsVP = prob_wordsGivenCatsVP;
     param_.prob_wordsGivenCatsNP2 = prob_wordsGivenCatsNP2;
