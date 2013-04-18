@@ -2,6 +2,7 @@
 #define _SEGMENTER_H_ value
 
 #include <vector>
+#include <string>
 
 #include "classifier.h"
 #include "definitions.h"
@@ -56,13 +57,23 @@ private:
 
 class Segmenter
 {
-public:
+public:   
+    Segmenter()
+    {}
+     
+    Segmenter(const string& filename)
+    {
+        Load(filename);
+    }
+
     // Train
     void Train(const vector<StoryInfo>& labeled_stories, int num_categories);
 
     // Deploy    
     Segmentation FindSegmentation(const Segmentation& initial_segmentation);
 
+    void Save(const string& filename) const;
+    void Load(const string& filename);
 private:
     // Train
     Matrix TrainTransitionMatrix(const vector<StoryInfo>& stories);

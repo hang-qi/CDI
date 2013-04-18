@@ -50,7 +50,7 @@ public:
 
     NaiveBayesClassifier(const string& filename)
     {
-        LoadParametersFromFile(filename);
+        Load(filename);
     }
 
     NaiveBayesClassifier(const NBClassifierParameter& param)
@@ -64,8 +64,8 @@ public:
     NBClassifierParameter Train(const vector<StoryInfo>& labeled_stories, int num_categories);
     PredictResult Predict(const StoryInfo& story) const;
     PredictResult Predict(const StoryFeature& storyfeature) const;
-    void SaveParametersToFile(const string& filename) const;
-    void LoadParametersFromFile(const string& filename);
+    void Save(const string& filename) const;
+    void Load(const string& filename);
 
     const NBClassifierParameter* GetParameters() const
     {

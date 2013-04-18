@@ -444,7 +444,7 @@ NBClassifierParameter NaiveBayesClassifier::Train(const vector<StoryInfo>& label
     return param_;
 }
 
-void NaiveBayesClassifier::LoadParametersFromFile(const string& filename)
+void NaiveBayesClassifier::Load(const string& filename)
 {
     ifstream in;
     in.open(filename);
@@ -452,7 +452,7 @@ void NaiveBayesClassifier::LoadParametersFromFile(const string& filename)
     in.close();
 }
 
-void NaiveBayesClassifier::SaveParametersToFile(const string& filename) const
+void NaiveBayesClassifier::Save(const string& filename) const
 {
     ofstream out;
     out.open(filename);

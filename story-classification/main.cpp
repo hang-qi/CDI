@@ -9,14 +9,25 @@
 #include <time.h>
 #include <stdio.h>
 #include <math.h>
+
 #include "TextAnalysis.h"
+#include "segmenter.h"
 #pragma comment(lib, "User32.lib")
 using namespace std; 
 
 int main(int argc, const char* argv[])
 {
-    bool isTraining = false;
-    bool isValidation = false;
+    enum Option
+    {
+        NONE,
+        CLASSIFIER_TRAIN,
+        CLASSIFIER_PREDICT,
+        CLASSIFIER_VALIDATE,
+        SEGMENTATION_TRAIN,
+        SEGMENTATION_PREDICT
+    };
+
+    Option opt = NONE;
     //string targetfiles;
     
     // .TextAnalysis [--train|--validation|--predict] file      
@@ -24,16 +35,23 @@ int main(int argc, const char* argv[])
     {
         if (string(argv[1]) == "--train")
         {
-            isTraining = true;
+            opt = CLASSIFIER_TRAIN;
         }
         else if(string(argv[1]) == "--predict")
         {
-            isTraining = false;
-            isValidation = false;
+            opt = CLASSIFIER_PREDICT;
         }        
-        else if(string(argv[1]) == "--validation")
+        else if(string(argv[1]) == "--validate")
         {
-            isValidation = true;
+            opt = CLASSIFIER_VALIDATE;
+        }
+        else if(string(argv[1]) == "--seg-train")
+        {
+            opt = SEGMENTATION_TRAIN;
+        }
+        else if(string(argv[1]) == "--seg-predict")
+        {
+            opt = SEGMENTATION_PREDICT;
         }
         else
         {
@@ -42,6 +60,11 @@ int main(int argc, const char* argv[])
         }
         //targetfiles = argv[2];
         //cout << targetfiles << endl;
+    }
+    else
+    {
+        cout << "Unknown command." << endl;
+        return -1;
     }
 
     string pathTriplets = "/home/csa/CAS2/wang296/Projects/tSegment/Data/Triplets/coreNLP/";
@@ -52,8 +75,7 @@ int main(int argc, const char* argv[])
     }
     */
 
-    TextAnalysis cws;    
-    vector<int> RemovedStory;   
+    TextAnalysis cws;
     
     //
     // Triplets classification
@@ -91,34 +113,42 @@ int main(int argc, const char* argv[])
     stories = cws.Lemmatize(stories);
     stories = cws.Cleasing(stories);
 
-    if (isTraining)
+    if (opt == CLASSIFIER_TRAIN)
     {
         // Train model
         cout << "Training Model..." << endl;
         NaiveBayesClassifier classifier;
         classifier.Train(stories, 27);
-        classifier.SaveParametersToFile("output/model.txt");
+        classifier.Save("output/model.txt");
     }
-    else if(isValidation)
+    else if (opt == CLASSIFIER_VALIDATE)
     {
         cout << "Triplets validation..." << endl;
         cws.CrossValidation(stories);
     }
-    else
+    else if (opt == CLASSIFIER_PREDICT)
     {
         // Predict by default
-        NaiveBayesClassifier classifier;
-        classifier.LoadParametersFromFile("output/model.txt");
+        NaiveBayesClassifier classifier("output/model.txt");
         for (int i = 0; i < stories.size(); i++)
         {
             PredictResult result = classifier.Predict(stories[i]);            
         }
     }
+    else if (opt == SEGMENTATION_TRAIN)
+    {
+        Segmenter segmenter;
+        segmenter.Train(stories, 27);
+        segmenter.Save("output/model_segmenter.txt");
+    }
+    else if (opt == SEGMENTATION_PREDICT)
+    {
+        Segmenter segmenter("output/model_segmenter.txt");
+        //segmenter.FindSegmentation();
+    }
 
     // Clustering based on NP1 similarities.    
     //cws.CalculateSimilarity(stories);
-
-    ////cws.TransitionMatrix_ScreenTopic(screenInfo);
 
   return 0;
 }

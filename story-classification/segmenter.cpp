@@ -1,5 +1,30 @@
 #include "segmenter.h"
+
 #include <math.h>
+#include <iostream>
+
+void Segmenter::Load(const string& filename)
+{
+    ifstream in;
+    in.open(filename);
+    NBClassifierParameter param;
+    param.Unserialize(in);
+    classifier_ = NaiveBayesClassifier(param);    
+    in >> transitionMatrix_;
+    in >> length_distrib_;
+    in.close();
+}
+
+void Segmenter::Save(const string& filename) const
+{
+    ofstream out;
+    out.open(filename);
+    classifier_.GetParameters()->Serialize(out);
+    out << transitionMatrix_;
+    out << length_distrib_;
+    out.close();
+}
+
 
 void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categories)
 {
