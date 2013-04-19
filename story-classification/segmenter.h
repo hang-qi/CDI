@@ -54,7 +54,7 @@ private:
     double score_;
 };
 
-
+// Segmenter class.
 class Segmenter
 {
 public:   
