@@ -66,11 +66,11 @@ public:
         Load(filename);
     }
 
-    // Train
+    // Train / Learn
     void Train(const vector<StoryInfo>& labeled_stories, int num_categories);
 
-    // Deploy    
-    Segmentation FindSegmentation(const Segmentation& initial_segmentation);
+    // Inference
+    Segmentation SegmentStories(const vector<StoryInfo>& stories);
 
     void Save(const string& filename) const;
     void Load(const string& filename);
@@ -79,10 +79,14 @@ private:
     Matrix TrainTransitionMatrix(const vector<StoryInfo>& stories);
     vector<double> TrainLengthDistribution(const vector<StoryInfo>& stories);
 
+    // Inference
+    Segmentation CreateInitialSegmentation(const vector<StoryInfo>& stories);
+    Segmentation FindSegmentation(const Segmentation& initial_segmentation);
+
     // Greedy strategy
     vector<Segmentation> ProposeCandidates(const Segmentation& segmentations);
     Segmentation PickCandidate(const vector<Segmentation>& candidates);
-    bool isCurrentOptimal(const Segmentation& current, const Segmentation& candidate);
+    bool IsCurrentOptimal(const Segmentation& current, const Segmentation& candidate);
     double CalculateScore(Segmentation& segmentation);
 
 private:

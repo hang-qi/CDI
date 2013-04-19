@@ -34,6 +34,19 @@ void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categori
     //length_distrib_ = TrainLengthDistribution(labeled_stories);
 }
 
+Segmentation Segmenter::SegmentStories(const vector<StoryInfo>& stories)
+{
+    Segmentation optimal = FindSegmentation(CreateInitialSegmentation(stories));
+    return optimal;
+}
+
+Segmentation Segmenter::CreateInitialSegmentation(const vector<StoryInfo>& stories)
+{
+    // TODO: give implementation.
+    Segmentation initial;
+    return initial;
+}
+
 Segmentation Segmenter::FindSegmentation(const Segmentation& initial_segmentation)
 {
     Segmentation cur_segmentation = initial_segmentation;
@@ -42,7 +55,7 @@ Segmentation Segmenter::FindSegmentation(const Segmentation& initial_segmentatio
     Segmentation next_segmentation = PickCandidate(ProposeCandidates(cur_segmentation));
     
     // Iterative until reach optimum. (local) 
-    while (!isCurrentOptimal(cur_segmentation, next_segmentation))
+    while (!IsCurrentOptimal(cur_segmentation, next_segmentation))
     {
         cur_segmentation = next_segmentation;
         next_segmentation = PickCandidate(ProposeCandidates(cur_segmentation));
@@ -116,8 +129,8 @@ double Segmenter::CalculateScore(Segmentation& segmentation)
     return score;
 }
 
-// Greedy: 
-bool Segmenter::isCurrentOptimal(const Segmentation& current, const Segmentation& candidate)
+// Greedy.
+bool Segmenter::IsCurrentOptimal(const Segmentation& current, const Segmentation& candidate)
 {
     return current.GetScore() > candidate.GetScore();
 }
