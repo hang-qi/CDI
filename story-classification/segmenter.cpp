@@ -34,13 +34,13 @@ void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categori
     //length_distrib_ = TrainLengthDistribution(labeled_stories);
 }
 
-Segmentation Segmenter::SegmentStories(const vector<StoryInfo>& stories)
+Segmentation Segmenter::SegmentStories(const vector<Triplet>& triplets)
 {
-    Segmentation optimal = FindSegmentation(CreateInitialSegmentation(stories));
+    Segmentation optimal = FindSegmentation(CreateInitialSegmentation(triplets));
     return optimal;
 }
 
-Segmentation Segmenter::CreateInitialSegmentation(const vector<StoryInfo>& stories)
+Segmentation Segmenter::CreateInitialSegmentation(const vector<Triplet>& triplets)
 {
     // TODO: give implementation.
     Segmentation initial;

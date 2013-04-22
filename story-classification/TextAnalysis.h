@@ -33,18 +33,6 @@
 
 using namespace std;
 
-struct Triplet 
-{
-    string StoryTimeStart;
-    string StoryTimeEnd;
-    string StoryTopicName;
-    //int NumOfSentenceInStory;
-    string Non_Ph1;
-    string Verb_Ph;
-    string Non_Ph2;
-    //int nTimeInSecond;
-};
-
 class TextAnalysis
 {
 public:

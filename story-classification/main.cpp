@@ -144,7 +144,7 @@ int main(int argc, const char* argv[])
     else if (opt == SEGMENTATION_PREDICT)
     {
         Segmenter segmenter("output/model_segmenter.txt");
-        segmenter.SegmentStories(stories);
+        //segmenter.SegmentStories(stories);
     }
 
     // Clustering based on NP1 similarities.    

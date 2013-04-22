@@ -70,7 +70,7 @@ public:
     void Train(const vector<StoryInfo>& labeled_stories, int num_categories);
 
     // Inference
-    Segmentation SegmentStories(const vector<StoryInfo>& stories);
+    Segmentation SegmentStories(const vector<Triplet>& triplets);
 
     void Save(const string& filename) const;
     void Load(const string& filename);
@@ -80,7 +80,7 @@ private:
     vector<double> TrainLengthDistribution(const vector<StoryInfo>& stories);
 
     // Inference
-    Segmentation CreateInitialSegmentation(const vector<StoryInfo>& stories);
+    Segmentation CreateInitialSegmentation(const vector<Triplet>& triplets);
     Segmentation FindSegmentation(const Segmentation& initial_segmentation);
 
     // Greedy strategy
