@@ -156,7 +156,8 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
             current_story.name = storyName;
             current_story.category_id = GetCategoryId(category);
             current_story.num_sentences = 0;
-            current_story.timeStart = triplets[i+1].StoryTimeStart;
+            string timeStart = triplets[i+1].StoryTimeStart;
+            current_story.timeStart = timeStart.substr(7, timeStart.size());
 
             int num_sentences = 0;
             size_t found_end = 1;
@@ -177,7 +178,8 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
                 found_end = triplets[i].StoryTimeEnd.find("<end>");
             }
             current_story.num_sentences = num_sentences-2;
-            current_story.timeEnd = triplets[i].StoryTimeEnd;
+            string timeEnd = triplets[i].StoryTimeEnd;
+            current_story.timeEnd = timeEnd.substr(5, timeEnd.size());;
             stories.push_back(current_story);
         }
     }
