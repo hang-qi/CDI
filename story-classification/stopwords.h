@@ -3,7 +3,7 @@ const char* stopwordsArray [] = {"a","b", "c","d","e","f","g","h","j","k","l","m
     "among","an","and","any","are2706","as","at","be","because","been","but","by","can","cannot","could","dear",
     "did","do","does","either","else","ever","every","for","from","get","got","had","he","her",
     "hers","him","his","how","however","i","if","in","into","is","its","just","let","like",
-    "likely","may","me","might","most","must","my","neither","no","nor","not","of","off","often","on","only",
+    "likely","may","me","might","most","must","my","neither","no","nor","not","of","off","often","only",
     "or","other","our","own","rather","said","say","says","she","should","since","so","some","than","that",
     "the","their","them","then","there","these","they","tis","to","too","twas","us","wants","was","we",
     "were","what","when","where","which","while","who","whom","why","will","with","would","yet","you","your",
