@@ -61,6 +61,7 @@ public:
         }
         else
         {
+            cout << "Cannot open file: " << filename << endl;
             throw EXCEPTION_NO_FILE;
         }
     }
@@ -198,11 +199,8 @@ private:
                 if (isInterpolated && content == "(COMMERCIAL BREAK)")
                 {
                     content.clear();
-                }
-                
+                }                
                 captionLines.push_back(CaptionLine(tag, timestamp, content));
-
-                
             }
             else if (tag == "END")
             {
@@ -216,6 +214,11 @@ private:
             {
                 headerLines.push_back(line);
             }
+        }
+
+        if (captionLines.size() == 0)
+        {
+            cout << "WARINING: No CC tags found." << endl;
         }
     }
 
