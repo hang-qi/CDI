@@ -12,19 +12,6 @@
 
 using namespace std;
 
-struct PredictResult
-{
-    int label_id;
-    double joint_prob;
-};
-
-struct StoryFeature
-{
-    vector<int> wordIds_np1;   // NP1 list
-    vector<int> wordIds_vp;    // VP list
-    vector<int> wordIds_np2;   // NP2 list
-};
-
 class NBClassifierParameter
 {
 public:
@@ -71,6 +58,8 @@ public:
     {
         return &param_;
     }
+
+    StoryFeature ConvertStoryToFeature(const StoryInfo& story) const;
 protected:
     void ExtractVocabulary(const vector<StoryInfo> & stories)
     {
@@ -107,8 +96,7 @@ protected:
 
     set<string> BuildVocabulary();
 
-    // Helper functions for testing
-    StoryFeature ConvertStoryToFeature(const StoryInfo& story) const;
+    // Helper functions for testing    
     vector<int> ConvertWordsToIds(
         const vector<string>& words,
         const vector<string>& vocabulary) const;

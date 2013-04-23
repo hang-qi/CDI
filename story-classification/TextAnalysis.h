@@ -45,8 +45,10 @@ public:
     vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
     vector <StoryInfo> TripletsToStories(const vector<Triplet> & triplets);
     vector<StoryInfo> Lemmatize(const vector<StoryInfo>& stories);
+    vector<Sentence> StoryToSentences(const StoryInfo& story);
 
     vector<string> RemoveStopWords(const vector<string>& words);
+    vector<StoryInfo> RemoveStopWords(const vector<StoryInfo> & stories);
     vector<StoryInfo> Cleasing(const vector<StoryInfo> & stories);        
     
     void CrossValidation(

@@ -111,11 +111,12 @@ int main(int argc, const char* argv[])
     
     // remove stop words
     stories = cws.Lemmatize(stories);
-    stories = cws.Cleasing(stories);
 
     if (opt == CLASSIFIER_TRAIN)
-    {
+    {        
         // Train model
+        stories = cws.Cleasing(stories);
+        stories = cws.RemoveStopWords(stories);        
         cout << "Training Model..." << endl;
         NaiveBayesClassifier classifier;
         classifier.Train(stories, 27);
@@ -123,11 +124,14 @@ int main(int argc, const char* argv[])
     }
     else if (opt == CLASSIFIER_VALIDATE)
     {
+        stories = cws.Cleasing(stories);
+        stories = cws.RemoveStopWords(stories);
         cout << "Triplets validation..." << endl;
         cws.CrossValidation(stories);
     }
     else if (opt == CLASSIFIER_PREDICT)
     {
+        stories = cws.RemoveStopWords(stories);
         // Predict by default
         NaiveBayesClassifier classifier("output/model.txt");
         for (int i = 0; i < stories.size(); i++)
@@ -137,6 +141,8 @@ int main(int argc, const char* argv[])
     }
     else if (opt == SEGMENTATION_TRAIN)
     {
+        stories = cws.Cleasing(stories);
+        stories = cws.RemoveStopWords(stories);         
         Segmenter segmenter;
         segmenter.Train(stories, 27);
         segmenter.Save("output/model_segmenter.txt");
@@ -144,7 +150,11 @@ int main(int argc, const char* argv[])
     else if (opt == SEGMENTATION_PREDICT)
     {
         Segmenter segmenter("output/model_segmenter.txt");
-        //segmenter.SegmentStories(stories);
+        for (int i = 0; i < stories.size(); i++)
+        {
+            vector<Sentence> sentences = cws.StoryToSentences(stories[0]);
+            segmenter.DoSegment(sentences);
+        }
     }
 
     // Clustering based on NP1 similarities.    

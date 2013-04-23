@@ -4,15 +4,24 @@
 #include <vector>
 #include <string>
 
-#include "classifier.h"
 #include "definitions.h"
+#include "classifier.h"
 #include "utility.h"
 
 using namespace utility;
 
+//
+// A segment is potentially a story.
+//
 class Segment
 {
 public:
+    Segment(int num_sentences, const StoryFeature& word_bags)
+    {
+        num_sentences_ = num_sentences;
+        word_bags_ = word_bags;
+    }
+
     void Merge(const Segment& other)
     {
         num_sentences_ += other.GetNumSentences();
@@ -30,6 +39,7 @@ public:
     PredictResult GetPrediction() const {return prediction_;}
     void SetPrediction(PredictResult pred) {prediction_ = pred;}
 
+    void SetStoryFeature(const StoryFeature& word_bags) {word_bags_ = word_bags;}
     StoryFeature GetStoryFeature() const {return word_bags_;}
     vector<int> GetNP1() const {return word_bags_.wordIds_np1;}
     vector<int> GetVP() const {return word_bags_.wordIds_vp;}
@@ -40,6 +50,9 @@ private:
     StoryFeature word_bags_;
 };
 
+//
+// A segmentation is a set of segments.
+//
 class Segmentation
 {
 public:
@@ -54,7 +67,9 @@ private:
     double score_;
 };
 
+//
 // Segmenter class.
+//
 class Segmenter
 {
 public:   
@@ -70,7 +85,7 @@ public:
     void Train(const vector<StoryInfo>& labeled_stories, int num_categories);
 
     // Inference
-    Segmentation SegmentStories(const vector<Triplet>& triplets);
+    Segmentation DoSegment(const vector<Sentence>& sentences);
 
     void Save(const string& filename) const;
     void Load(const string& filename);
@@ -80,7 +95,7 @@ private:
     vector<double> TrainLengthDistribution(const vector<StoryInfo>& stories);
 
     // Inference
-    Segmentation CreateInitialSegmentation(const vector<Triplet>& triplets);
+    Segmentation CreateInitialSegmentation(const vector<Sentence>& sentences);
     Segmentation FindSegmentation(const Segmentation& initial_segmentation);
 
     // Greedy strategy

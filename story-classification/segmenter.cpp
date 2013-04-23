@@ -3,6 +3,8 @@
 #include <math.h>
 #include <iostream>
 
+#define LEN_INIT_SEGMENT 3
+
 void Segmenter::Load(const string& filename)
 {
     ifstream in;
@@ -34,16 +36,40 @@ void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categori
     //length_distrib_ = TrainLengthDistribution(labeled_stories);
 }
 
-Segmentation Segmenter::SegmentStories(const vector<Triplet>& triplets)
+Segmentation Segmenter::DoSegment(const vector<Sentence>& sentences)
 {
-    Segmentation optimal = FindSegmentation(CreateInitialSegmentation(triplets));
+    Segmentation optimal = FindSegmentation(CreateInitialSegmentation(sentences));
     return optimal;
 }
 
-Segmentation Segmenter::CreateInitialSegmentation(const vector<Triplet>& triplets)
+Segmentation Segmenter::CreateInitialSegmentation(const vector<Sentence>& sentences)
 {
-    // TODO: give implementation.
+    // TODO: give implementation.    
     Segmentation initial;
+
+    for (int i = 0; i < sentences.size() / LEN_INIT_SEGMENT; i++)
+    {
+        vector<string> words_np1;
+        vector<string> words_vp;
+        vector<string> words_np2;
+        for (int j = 0; j < LEN_INIT_SEGMENT; j++)
+        {
+            words_np1.insert(words_np1.end(),
+                sentences[i+j].words_np1.begin(), sentences[i+j].words_np1.end());
+            words_vp.insert(words_vp.end(),
+                sentences[i+j].words_vp.begin(), sentences[i+j].words_vp.end());
+            words_np2.insert(words_np2.end(), 
+                sentences[i+j].words_np2.begin(), sentences[i+j].words_np2.end());
+        }
+
+        StoryInfo story;
+        story.words_np1 = words_np1;
+        story.words_vp = words_vp;
+        story.words_np2 = words_np2;
+
+        Segment segment(LEN_INIT_SEGMENT, classifier_.ConvertStoryToFeature(story));
+        initial.segs.push_back(segment);
+    }
     return initial;
 }
 

@@ -166,14 +166,20 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
                 i++;
                 num_sentences++;
 
+                current_story.len_np1.push_back(current_story.words_np1.size());
                 istringstream iss(triplets[i].Non_Ph1);
                 copy (istream_iterator<string>(iss), istream_iterator<string>(), back_inserter(current_story.words_np1));
+                current_story.len_np1.back() = current_story.words_np1.size() - current_story.len_np1.back();
 
+                current_story.len_vp.push_back(current_story.words_vp.size());
                 istringstream iss1(triplets[i].Verb_Ph);
                 copy (istream_iterator<string>(iss1), istream_iterator<string>(), back_inserter(current_story.words_vp));
+                current_story.len_vp.back() = current_story.words_vp.size() - current_story.len_vp.back();
 
+                current_story.len_np2.push_back(current_story.words_np2.size());
                 istringstream iss2(triplets[i].Non_Ph2);
                 copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
+                current_story.len_np2.back() = current_story.words_np2.size() - current_story.len_np2.back();
 
                 found_end = triplets[i].StoryTimeEnd.find("<end>");
             }
@@ -285,6 +291,41 @@ vector<StoryInfo> TextAnalysis::Lemmatize(const vector<StoryInfo>& stories)
     return stories_lemmed;
 }
 
+vector<Sentence> TextAnalysis::StoryToSentences(const StoryInfo& story)
+{
+    vector<Sentence> sentences;
+    sentences.reserve(story.num_sentences);
+    int np1_start = 0;
+    int vp_start = 0;
+    int np2_start = 0;
+    for (int i = 0; i < story.num_sentences; i++)
+    {
+        Sentence sentence;
+        sentence.words_np1.insert(sentence.words_np1.end(), 
+                story.words_np1.begin() + np1_start,
+                story.words_np1.begin() + np1_start + story.len_np1[i]);
+
+        sentence.words_vp.insert(sentence.words_vp.end(), 
+                story.words_vp.begin() + vp_start,
+                story.words_vp.begin() + vp_start + story.len_vp[i]);
+
+        sentence.words_np2.insert(sentence.words_np2.end(), 
+                story.words_np2.begin() + np2_start,
+                story.words_np2.begin() + np2_start + story.len_np2[i]);
+
+        np1_start += story.len_np1[i];
+        vp_start += story.len_vp[i];
+        np2_start += story.len_np2[i];
+
+        RemoveStopWords(sentence.words_np1);
+        RemoveStopWords(sentence.words_vp);
+        RemoveStopWords(sentence.words_np2);
+
+        sentences.push_back(sentence);
+    }
+    return sentences;
+}
+
 vector<string> TextAnalysis::RemoveStopWords(const vector<string>& words)
 {
     // stop words
@@ -343,13 +384,18 @@ vector<StoryInfo> TextAnalysis::Cleasing(const vector<StoryInfo> & stories)
             stories_new.push_back(stories[i]);
         }
     }
+    return stories_new;
+}
 
+vector<StoryInfo> TextAnalysis::RemoveStopWords(const vector<StoryInfo> & stories)
+{
+    vector<StoryInfo> stories_new = stories;
     // remove stop words.
-    for(int i=0; i < stories_new.size(); i++)
+    for(int i=0; i < stories.size(); i++)
     {
-        stories_new[i].words_np1 = RemoveStopWords(stories_new[i].words_np1);
-        stories_new[i].words_vp = RemoveStopWords(stories_new[i].words_vp);
-        stories_new[i].words_np2 = RemoveStopWords(stories_new[i].words_np2);
+        stories_new[i].words_np1 = RemoveStopWords(stories[i].words_np1);
+        stories_new[i].words_vp = RemoveStopWords(stories[i].words_vp);
+        stories_new[i].words_np2 = RemoveStopWords(stories[i].words_np2);
     }
     return stories_new;
 }
