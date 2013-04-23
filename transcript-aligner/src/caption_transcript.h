@@ -6,6 +6,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <locale>
 
 #include "string_utility.h"
 
@@ -13,6 +14,7 @@ using namespace std;
 
 #define TIMESTAMP           "20121009130004.003"
 #define TIMESTAMP_TR        "20120105210015"
+#define LEN_TIMESTAMP       18
 
 
 #define EXCEPTION_NO_FILE    -10
@@ -77,18 +79,55 @@ protected:
 // Caption
 //
 // A single content line in caption
-struct CaptionLine
+class CaptionLine
 {
+public:
     CaptionLine(string tag, string timestamp, string content)
     {
         this->tag = tag;
         this->timestamp = timestamp;
         this->content = content;
+        isNewFormat_ = false;
+    }
+
+    CaptionLine(string tag, string timestamp, string timestamp_end, string content)
+    {
+        this->tag = tag;
+        this->timestamp = timestamp;
+        this->timestamp_end = timestamp_end;
+        this->content = content;
+        isNewFormat_ = true;
+    }
+
+    void Print(ostream& os) const
+    {
+        if (isNewFormat_)
+        {
+            PrintNewFormat(os);
+            return;
+        }
+
+        os << tag << "|";
+        if (timestamp != "")
+        {
+            os << timestamp << "|";
+        }
+        os << content << endl;
+    }
+
+    void PrintNewFormat(ostream& os) const
+    {
+        os << timestamp << "|";
+        os << timestamp_end << "|";
+        os << tag << "|";
+        os << content << endl;
     }
 
     string tag;
     string timestamp;
+    string timestamp_end;
     string content;
+    bool isNewFormat_;
 };
 
 // A representation of the whole caption file
@@ -127,12 +166,7 @@ public:
 
         for(int i = 0; i < captionLines.size(); i++)
         {
-            fout << captionLines[i].tag << "|";
-            if (captionLines[i].timestamp != "")
-            {
-                fout << captionLines[i].timestamp << "|";
-            }
-            fout << captionLines[i].content << endl;
+            captionLines[i].Print(fout);
         }
 
         for(int i = 0; i < endLines.size(); i++)
@@ -176,43 +210,71 @@ private:
             if (line == "")
                 continue;
 
-            string tag = line.substr(0, 3);
-            if (tag == "CC1" || tag == "CC0" || tag == "CCO" || tag == "TR0" || tag == "TR1")
-            {
-                // whole line after CC1/CC0
-                string content = line.substr(4);
-                
-                // UTC format timestamp
-                string timestamp;
-                if (tag == "TR0" || tag == "TR1")
-                {
-                    isInterpolated = true;
-                    timestamp = content.substr(0, string(TIMESTAMP_TR).size());
-                }
-                else
-                {
-                    timestamp = content.substr(0, string(TIMESTAMP).size());
-                }
+            if (line[0] >= '0' && line[0] <= '9')
+            {                
+                string startTime = line.substr(0, LEN_TIMESTAMP);
+                string endTime = line.substr(LEN_TIMESTAMP + 1, LEN_TIMESTAMP);
 
-                // actual caption content
-                content = content.substr(timestamp.size() + 1);
-                if (isInterpolated && content == "(COMMERCIAL BREAK)")
+                int tagStart = 2* (LEN_TIMESTAMP + 1);
+                string tag_content = line.substr(tagStart);
+                size_t tagEnd = tag_content.find('|');
+                int contentStart = tagEnd + 1;
+
+                string tag = tag_content.substr(0, tagEnd);
+
+                if (tag == "CC1" || tag == "CC0" || tag == "CCO" || tag == "TR0" || tag == "TR1")
                 {
-                    content.clear();
-                }                
-                captionLines.push_back(CaptionLine(tag, timestamp, content));
-            }
-            else if (tag == "END")
-            {
-                endLines.push_back(line);
-            }
-            else if (tag == "OTS")
-            {
-                continue;   // skip OTS
+                    // whole line after CC1/CC0
+                    string content = tag_content.substr(contentStart);
+                    CaptionLine capline(tag, startTime, endTime, content);
+                    captionLines.push_back(capline);
+                }
             }
             else
             {
-                headerLines.push_back(line);
+                string tag = line.substr(0, 3);
+                if (tag == "CC1" || tag == "CC0" || tag == "CCO" || tag == "TR0" || tag == "TR1")
+                {
+                    // whole line after CC1/CC0
+                    string content = line.substr(4);
+                    
+                    // UTC format timestamp
+                    string timestamp;
+                    if (tag == "TR0" || tag == "TR1")
+                    {
+                        isInterpolated = true;
+                        timestamp = content.substr(0, string(TIMESTAMP_TR).size());
+                    }
+                    else
+                    {
+                        timestamp = content.substr(0, string(TIMESTAMP).size());
+                    }
+
+                    // actual caption content
+                    content = content.substr(timestamp.size() + 1);
+                    if (isInterpolated && content == "(COMMERCIAL BREAK)")
+                    {
+                        content.clear();
+                    }
+
+                    if (captionLines.size() > 0)
+                    {
+                        (captionLines.end()-1)-> timestamp_end = timestamp;
+                    }
+                    captionLines.push_back(CaptionLine(tag, timestamp, utility::datetime_utility::timestampAdd(timestamp, 2), content));
+                }
+                else if (tag == "END")
+                {
+                    endLines.push_back(line);
+                }
+                else if (tag == "OTS")
+                {
+                    continue;   // skip OTS
+                }
+                else
+                {
+                    headerLines.push_back(line);
+                }
             }
         }
 

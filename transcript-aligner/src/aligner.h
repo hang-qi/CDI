@@ -115,6 +115,7 @@ private:
     void Reconstruct(int i, int j);
     const Caption BuildTimeAlignedCaption();
     bool isSegmentMark(const string& word);
+    void AddEndTimeToTag(vector<CaptionLine>& lines, int index, string timestamp_end);
 
     void DeleteTable()
     {

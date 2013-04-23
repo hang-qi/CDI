@@ -1,5 +1,6 @@
 // Implementation of Aligner
 #include "aligner.h"
+#include <assert.h>
 
 // Returns the new caption object after alignment
 const AlignmentResult Aligner::DoAlign()
@@ -124,14 +125,20 @@ const Caption Aligner::BuildTimeAlignedCaption()
     auto itWord = resultWords_.begin();
 
     string previousSegType = "";
+    int prev_seg_idx = -1;
+    int prev_ner_idx = -1;
+    int prev_clip_idx = -1;
+
     if (!pCaption_->isInterpolated)
     {
         // First Segmentation
-        CaptionLine introSeg("SegStart",
+        CaptionLine introSeg("SEG",
                           pCaption_->captionLines[0].timestamp,
+                          "TO_BE_FILLED",
                          "Type=Intro");
-        tptCaption.captionLines.push_back(introSeg);
-        string previousSegType = "Intro";
+        tptCaption.captionLines.push_back(introSeg);        
+        prev_seg_idx = tptCaption.captionLines.size() - 1;
+        // string previousSegType = "Intro";
     }
 
     for (int i = 0; i < resultLineLengths_.size(); i++)
@@ -204,8 +211,10 @@ const Caption Aligner::BuildTimeAlignedCaption()
         }
         currentLineContent = "";
 
+        // Create caption lines
         vector<CaptionLine> linesBuffer;
         string currentTimestamp = pCaption_->captionLines[i].timestamp;
+        string currentTimestamp_end = pCaption_->captionLines[i].timestamp_end;
         string previousTimestamp = i > 0 ? pCaption_->captionLines[i-1].timestamp : "";
         for (int k = 0; k < sublines.size(); k++)
         {
@@ -217,32 +226,36 @@ const Caption Aligner::BuildTimeAlignedCaption()
             {
                 if (pCaption_->isInterpolated && previousSegType == "Commercial")
                 {
+                    /*
                     CaptionLine line("SegEnd",
                         currentTimestamp,
                         "Type=Commercial");
                     linesBuffer.push_back(line);
                     previousSegType = "";
+                    */
                 }
 
                 CaptionLine line("NER_01",
                                 currentTimestamp,
+                                "TO_BE_FILLED",
                                 personDetector_.GetSPKString(sublines[k].substr(5)));
                 linesBuffer.push_back(line);
                 //tptCaption.captionLines.push_back(line);
             }
             else if (sublines[k] == CHEVRON_STORY)
             {
-                if(previousSegType != "")
+                /*if(previousSegType != "")
                 {
                     CaptionLine segEnd("SegEnd",
                                 currentTimestamp,
                                 "Type=" + previousSegType);
                     linesBuffer.push_back(segEnd);
                     //tptCaption.captionLines.push_back(segEnd);
-                }
+                }*/
 
-                CaptionLine segStart("SegStart",
+                CaptionLine segStart("SEG",
                                 currentTimestamp,
+                                "TO_BE_FILLED",
                                 "Type=Story");
                 linesBuffer.push_back(segStart);
                 //tptCaption.captionLines.push_back(segStart);
@@ -252,8 +265,9 @@ const Caption Aligner::BuildTimeAlignedCaption()
                          || sublines[k] == BEGIN_VIDEOTAPE
                          || sublines[k] == END_VIDEO_TAPE)
             {
-                CaptionLine line("StartClip",
+                CaptionLine line("CLIP",
                         currentTimestamp,
+                        "TO_BE_FILLED",
                         "Type=Video");
                 linesBuffer.push_back(line);
                 //tptCaption.captionLines.push_back(line);
@@ -262,41 +276,42 @@ const Caption Aligner::BuildTimeAlignedCaption()
                          || sublines[k] == END_VIDEOTAPE
                          || sublines[k] == END_VIDEO_TAPE)
             {
-                CaptionLine line("EndClip",
+                /*CaptionLine line("EndClip",
                         currentTimestamp,
                         "Type=Video");
-                linesBuffer.push_back(line);
+                linesBuffer.push_back(line);*/
                 //tptCaption.captionLines.push_back(line);
             }
             else if (sublines[k] == BEGIN_AUDIO_CLIP)
             {
-                CaptionLine line("StartClip",
+                /*CaptionLine line("StartClip",
                         currentTimestamp,
                         "Type=Audio");
-                linesBuffer.push_back(line);
+                linesBuffer.push_back(line);*/
                 //tptCaption.captionLines.push_back(line);
             }
             else if (sublines[k] == END_AUDIO_CLIP)
             {
-                CaptionLine line("EndClip",
+                /*CaptionLine line("EndClip",
                         currentTimestamp,
                         "Type=Audio");
-                linesBuffer.push_back(line);
+                linesBuffer.push_back(line);*/
                 //tptCaption.captionLines.push_back(line);
             }
             else if (sublines[k] == COMMERCIAL_BREAK)
             {
-                if(previousSegType != "")
+                /*if(previousSegType != "")
                 {
                     CaptionLine segEnd("SegEnd",
                                 currentTimestamp,
                                 "Type=" + previousSegType);
                     linesBuffer.push_back(segEnd);
                     //tptCaption.captionLines.push_back(segEnd);
-                }
+                }*/
 
-                CaptionLine line("SegStart",
+                CaptionLine line("SEG",
                         currentTimestamp,
+                        "TO_BE_FILLED",
                         "Type=Commercial");
                 linesBuffer.push_back(line);    
 
@@ -320,13 +335,55 @@ const Caption Aligner::BuildTimeAlignedCaption()
                 // Create separate lines for flags      
                 CaptionLine line(pCaption_->captionLines[i].tag,
                             currentTimestamp,
+                            currentTimestamp_end,
                             sublines[k]);
                 linesBuffer.push_back(line);
                 //tptCaption.captionLines.push_back(line);
             }
         }
-        tptCaption.captionLines.insert(tptCaption.captionLines.end(),linesBuffer.begin(),linesBuffer.end());
+        for (int k = 0; k < linesBuffer.size(); k++)
+        {
+            tptCaption.captionLines.push_back(linesBuffer[k]);
+            if (linesBuffer[k].tag == "SEG")
+            {
+                // Terminate previous SEG, NER, CLIP
+                AddEndTimeToTag(tptCaption.captionLines, prev_seg_idx, linesBuffer[k].timestamp);
+                prev_seg_idx = tptCaption.captionLines.size() -1;
+
+                AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, linesBuffer[k].timestamp);
+                prev_ner_idx = -1;
+
+                AddEndTimeToTag(tptCaption.captionLines, prev_clip_idx, linesBuffer[k].timestamp);
+                prev_clip_idx = -1;
+            }
+            else if (linesBuffer[k].tag == "CLIP")
+            {
+                // terminate previous CLIP, NER
+                AddEndTimeToTag(tptCaption.captionLines, prev_clip_idx, linesBuffer[k].timestamp);
+                prev_clip_idx = tptCaption.captionLines.size() -1;
+
+                AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, linesBuffer[k].timestamp);
+                prev_ner_idx = -1;
+            }
+            else if (linesBuffer[k].tag == "NER_01")
+            {
+                AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, linesBuffer[k].timestamp);
+                prev_ner_idx = tptCaption.captionLines.size() -1;
+
+                if (pCaption_->isInterpolated 
+                    && prev_seg_idx != -1 
+                    && tptCaption.captionLines[prev_seg_idx].content == "Type=Commercial")
+                {
+                    AddEndTimeToTag(tptCaption.captionLines, prev_seg_idx, linesBuffer[k].timestamp);
+                    prev_seg_idx = -1;
+                }
+            }            
+        }
     }
+
+    AddEndTimeToTag(tptCaption.captionLines, prev_seg_idx, tptCaption.captionLines.back().timestamp_end);
+    AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, tptCaption.captionLines.back().timestamp_end);
+    AddEndTimeToTag(tptCaption.captionLines, prev_clip_idx, tptCaption.captionLines.back().timestamp_end);
 
     tptCaption.headerLines = pCaption_->headerLines;
     tptCaption.endLines = pCaption_->endLines;
@@ -340,6 +397,15 @@ const Caption Aligner::BuildTimeAlignedCaption()
                                     + "|Source_Program=transcript-aligner|Source_Person=Hang Qi");
     
     return tptCaption;
+}
+
+void Aligner::AddEndTimeToTag(vector<CaptionLine>& lines, int index, string timestamp_end)
+{
+    if (index != -1)
+    {
+        assert(lines[index].timestamp_end == "TO_BE_FILLED");
+        lines[index].timestamp_end = timestamp_end;
+    }
 }
 
 int Aligner::Compare()
@@ -620,6 +686,13 @@ int AlignBestOne(const string& transcriptFilename, const vector<string>& caption
 
 int main(int argc, char* argv[])
 {
+    if (argc == 2 && string(argv[1]) == "debug")
+    {
+        string captionFilename = "../../../data/2013-04-15_1500_US_CNN_Newsroom.txt";
+        string transcriptFilename = "../../../data/2013-04-15_1500_US_CNN_Newsroom.rawtxt";
+        return Align(captionFilename, transcriptFilename);
+    }
+
     if (argc < 3)
     {
         cout << "Usage 1: > ./aligner captionFilename.txt transcriptFilename.rawtxt" << endl;
@@ -630,7 +703,7 @@ int main(int argc, char* argv[])
     {
         string captionFilename = argv[1];
         string transcriptFilename = argv[2];
-        return Align(argv[1], argv[2]);
+        return Align(captionFilename, transcriptFilename);
     }
     else
     {
