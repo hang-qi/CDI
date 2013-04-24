@@ -43,7 +43,7 @@ public:
     // Triplets
     //
     vector<Triplet> ReadTripletsFile(const string& tripletsFilename);
-    vector <StoryInfo> TripletsToStories(const vector<Triplet> & triplets);
+    vector <StoryInfo> TripletsToStories(const vector<Triplet> & triplets, bool ignoreSeg = false);
     vector<StoryInfo> Lemmatize(const vector<StoryInfo>& stories);
     vector<Sentence> StoryToSentences(const StoryInfo& story);
 

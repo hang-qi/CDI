@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <algorithm>
 
 #include "definitions.h"
 #include "classifier.h"

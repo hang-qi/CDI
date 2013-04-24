@@ -34,11 +34,25 @@ void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categori
     transitionMatrix_ = TrainTransitionMatrix(labeled_stories);
     // FIXME: add length priors
     //length_distrib_ = TrainLengthDistribution(labeled_stories);
+    TrainLengthDistribution(labeled_stories);
 }
 
 Segmentation Segmenter::DoSegment(const vector<Sentence>& sentences)
 {
     Segmentation optimal = FindSegmentation(CreateInitialSegmentation(sentences));
+    cout << "OPTIMAL" << endl;
+    for (int i = 0; i < optimal.segs.size(); i++)
+    {
+        cout << " " << optimal.segs[i].GetNumSentences();
+    }
+    cout << endl;   
+    
+    cout << "CATEGORY:" << endl;
+    for (int i = 0; i < optimal.segs.size(); i++)
+    {
+        cout << " " << optimal.segs[i].GetPrediction().label_id;
+    }
+    cout << endl;        
     return optimal;
 }
 
@@ -68,6 +82,8 @@ Segmentation Segmenter::CreateInitialSegmentation(const vector<Sentence>& senten
         story.words_np2 = words_np2;
 
         Segment segment(LEN_INIT_SEGMENT, classifier_.ConvertStoryToFeature(story));
+        segment.SetPrediction(
+            classifier_.Predict(segment.GetStoryFeature()));
         initial.segs.push_back(segment);
     }
     return initial;
@@ -76,15 +92,23 @@ Segmentation Segmenter::CreateInitialSegmentation(const vector<Sentence>& senten
 Segmentation Segmenter::FindSegmentation(const Segmentation& initial_segmentation)
 {
     Segmentation cur_segmentation = initial_segmentation;
-    CalculateScore(cur_segmentation);
+    cur_segmentation.SetScore(CalculateScore(cur_segmentation));
 
     Segmentation next_segmentation = PickCandidate(ProposeCandidates(cur_segmentation));
     
     // Iterative until reach optimum. (local) 
-    while (!IsCurrentOptimal(cur_segmentation, next_segmentation))
+    while (!IsCurrentOptimal(cur_segmentation, next_segmentation)
+        && cur_segmentation.size() > 2)
     {
         cur_segmentation = next_segmentation;
         next_segmentation = PickCandidate(ProposeCandidates(cur_segmentation));
+
+        cout << "CURRENT" << endl;
+        for (int i = 0; i < cur_segmentation.segs.size(); i++)
+        {
+            cout << " " << cur_segmentation.segs[i].GetNumSentences();
+        }
+        cout << endl;
     }
     return cur_segmentation;
 }
@@ -100,7 +124,7 @@ vector<Segmentation> Segmenter::ProposeCandidates(const Segmentation& segmentati
         // copy previous.
         for (int j = 0; j < i; j++)
         {
-            candidates[j].segs.push_back(segmentations[j]);
+            candidates[i].segs.push_back(segmentations[j]);
         }
 
         // merge the i-th element.
@@ -113,20 +137,20 @@ vector<Segmentation> Segmenter::ProposeCandidates(const Segmentation& segmentati
         // copy others.
         for (int j = i+1; j < segmentations.size() -1; j++)
         {
-            candidates[j].segs.push_back(segmentations[j+1]);
+            candidates[i].segs.push_back(segmentations[j+1]);
         }
-        CalculateScore(candidates[i]);
+        candidates[i].SetScore(CalculateScore(candidates[i]));
     }
     return candidates;
 }
 
 // Pick the candidate with the highest score.
 Segmentation Segmenter::PickCandidate(const vector<Segmentation>& candidates)
-{    
-    double max_score = -100000;
+{
+    double max_score = candidates[0].GetScore();
     int candidate_index = 0;
     for (int i = 0; i < candidates.size(); i++)
-    {
+    {        
         if (candidates[i].GetScore() > max_score)
         {
             max_score = candidates[i].GetScore();
@@ -145,12 +169,13 @@ double Segmenter::CalculateScore(Segmentation& segmentation)
         score += log(segmentation[i].GetPrediction().joint_prob);
         // FIXME: add length priors
         // score += log(length_distrib_[segmentation[i].GetNumSentences()]);
-        if (i >= 1)
+        
+        /*if (i >= 1)
         {
             int prev_category_id = segmentation[i-1].GetPrediction().label_id;
             int cur_category_id = segmentation[i].GetPrediction().label_id;
             score += log(transitionMatrix_[cur_category_id][prev_category_id]);
-        }
+        }*/
     }
     return score;
 }
@@ -164,6 +189,13 @@ bool Segmenter::IsCurrentOptimal(const Segmentation& current, const Segmentation
 vector<double> Segmenter::TrainLengthDistribution(const vector<StoryInfo>& stories)
 {
     // TODO
+    /*
+    ofstream out;
+    out.open("output/length.txt");
+    std::for_each(stories.begin(), stories.end(), [&] (StoryInfo story) {
+        out << story.num_sentences << endl;
+    });
+    out.close();*/
     return vector<double>();
 }
 

@@ -76,10 +76,8 @@ int main(int argc, const char* argv[])
     */
 
     TextAnalysis cws;
+    vector<StoryInfo> stories;
     
-    //
-    // Triplets classification
-    //
     ifstream documentList;
     documentList.open(FILE_NEWSLIST, ios::in);
     if (!documentList.is_open())
@@ -89,25 +87,38 @@ int main(int argc, const char* argv[])
     }
 
     cout << "Triplets loading..." << endl;
-    vector<Triplet> storyWordInfo;
-    vector<StoryInfo> stories;
     int document_id = 0;
     while (!documentList.eof() && documentList.good())
     {
         char buffer[512];
         documentList.getline(buffer, 512);
         string base = buffer;
-        base = base.substr(0 , 15);
-        string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");        
-        vector<Triplet> triplets = cws.ReadTripletsFile(tripletsFilename);        
-        vector<StoryInfo> tmp_stories = cws.TripletsToStories(triplets);
+        base = base.substr(0 , 15);        
+        cout << "Reading " << base << endl;
+        string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");
+        vector<Triplet> triplets = cws.ReadTripletsFile(tripletsFilename);
+        vector<StoryInfo> tstories = cws.TripletsToStories(triplets);
+
+        cout << "TRUE" << endl;
+        for (int i = 0; i < tstories.size(); i++)
+        {
+            cout << tstories[i].num_sentences ;
+        }
+        cout << endl;
+
+        vector<StoryInfo> tmp_stories = cws.TripletsToStories(triplets, (opt==SEGMENTATION_PREDICT));
         for (int i = 0; i < tmp_stories.size(); i++)
         {
             tmp_stories[i].document_id = document_id;
         }
         stories.insert(stories.end(), tmp_stories.begin(), tmp_stories.end());        
         document_id++;
-    }
+        if (opt == SEGMENTATION_PREDICT)
+        {
+            cout << "To predict:" << stories[0].num_sentences << endl;
+            break;
+        }
+    }    
     
     // remove stop words
     stories = cws.Lemmatize(stories);
@@ -116,8 +127,9 @@ int main(int argc, const char* argv[])
     {        
         // Train model
         stories = cws.Cleasing(stories);
-        stories = cws.RemoveStopWords(stories);        
-        cout << "Training Model..." << endl;
+        stories = cws.RemoveStopWords(stories);
+
+        cout << "Training Classifier..." << endl;
         NaiveBayesClassifier classifier;
         classifier.Train(stories, 27);
         classifier.Save("output/model.txt");
@@ -126,7 +138,8 @@ int main(int argc, const char* argv[])
     {
         stories = cws.Cleasing(stories);
         stories = cws.RemoveStopWords(stories);
-        cout << "Triplets validation..." << endl;
+
+        cout << "Classifier cross validation..." << endl;
         cws.CrossValidation(stories);
     }
     else if (opt == CLASSIFIER_PREDICT)
@@ -142,7 +155,9 @@ int main(int argc, const char* argv[])
     else if (opt == SEGMENTATION_TRAIN)
     {
         stories = cws.Cleasing(stories);
-        stories = cws.RemoveStopWords(stories);         
+        stories = cws.RemoveStopWords(stories);
+
+        cout << "Training Segmenter..." << endl;
         Segmenter segmenter;
         segmenter.Train(stories, 27);
         segmenter.Save("output/model_segmenter.txt");
@@ -150,11 +165,11 @@ int main(int argc, const char* argv[])
     else if (opt == SEGMENTATION_PREDICT)
     {
         Segmenter segmenter("output/model_segmenter.txt");
-        for (int i = 0; i < stories.size(); i++)
-        {
+        //for (int i = 0; i < stories.size(); i++)
+        //{
             vector<Sentence> sentences = cws.StoryToSentences(stories[0]);
             segmenter.DoSegment(sentences);
-        }
+        //}
     }
 
     // Clustering based on NP1 similarities.    

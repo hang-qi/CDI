@@ -50,7 +50,7 @@ PredictResult NaiveBayesClassifier::Predict(const StoryFeature& storyfeature) co
         dist_catGivenStory.push_back(A);
     }
 
-    // dist_catGivenStory = utility::Normalize(dist_catGivenStory);
+    //dist_catGivenStory = utility::Normalize(dist_catGivenStory);
     
     // Predict by the maximum posterior probability (Bayes Decision).
     int predicted_category_idx = max_element(dist_catGivenStory.begin(), dist_catGivenStory.end()) - dist_catGivenStory.begin();
