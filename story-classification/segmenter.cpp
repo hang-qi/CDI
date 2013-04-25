@@ -81,7 +81,7 @@ Segmentation Segmenter::DoSegment(const vector<Sentence>& sentences)
     cout << "OPTIMAL SEGMENTATION" << endl;
     for (int i = 0; i < optimal.segs.size(); i++)
     {
-        cout << " " << optimal.segs[i].GetNumSentences();    
+        cout << " " << optimal.segs[i].GetNumSentences();
     }
     cout << endl;
 
@@ -156,7 +156,7 @@ Segmentation Segmenter::FindSegmentation(const Segmentation& initial_segmentatio
             cout << " " << cur_segmentation.segs[i].GetNumSentences();
         }
         cout << endl;*/
-        cout << "CURRENT SCORE: " << cur_segmentation.GetScore() << endl;
+        //cout << "CURRENT SCORE: " << cur_segmentation.GetScore() << endl;
     }
     return cur_segmentation;
 }
@@ -215,7 +215,7 @@ double Segmenter::CalculateScore(Segmentation& segmentation)
     for (int i = 0; i < segmentation.size(); i++)
     {
         score += log(segmentation[i].GetPrediction().joint_prob);
-                
+
         /*if (segmentation[i].GetNumSentences() == LEN_INIT_SEGMENT)
         {
             score += log(0.1);

@@ -116,8 +116,7 @@ int main(int argc, const char* argv[])
         stories.insert(stories.end(), tmp_stories.begin(), tmp_stories.end());        
         document_id++;
         if (opt == SEGMENTATION_PREDICT)
-        {
-            cout << "To predict:" << stories[0].num_sentences << endl;
+        {            
             break;
         }
     }    
@@ -166,6 +165,7 @@ int main(int argc, const char* argv[])
     }
     else if (opt == SEGMENTATION_PREDICT)
     {
+        cout << "Predicting segmentation..." << endl;
         Segmenter segmenter("output/model_segmenter.txt");
         //for (int i = 0; i < stories.size(); i++)
         //{
