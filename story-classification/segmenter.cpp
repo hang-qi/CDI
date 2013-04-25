@@ -90,7 +90,7 @@ Segmentation Segmenter::DoSegment(const vector<Sentence>& sentences)
     {
         cout << " " << optimal.segs[i].GetPrediction().label_id;
     }
-    cout << endl;        
+    cout << endl;
     return optimal;
 }
 

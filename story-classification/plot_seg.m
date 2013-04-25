@@ -1,10 +1,13 @@
-v = load('seg.txt');
-vt = load('seg_t.txt');
+v = load('output/seg.txt');
+vt = load('output/seg_t.txt');
 
 num_sent = sum(v);
 
 seg = cumsum(v);
 seg_t = cumsum(vt);
+
+seg = [0 seg];
+seg_t = [0 seg_t];
 
 figure;
 plot(seg, 0.2*ones(1,size(seg,2)), '+-', 'DisplayName', 'Segment Result', ...
@@ -17,5 +20,5 @@ legend('Segmentation Result','Ground Truth');
 %legend('show');
 axis([-10 num_sent+10 -0.2 0.6]);
 
-print('-depsc', 'test.eps');
-print('-dpng', 'test.png');
+print('-depsc', 'output/test.eps');
+print('-dpng', 'output/test.png');
