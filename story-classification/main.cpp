@@ -88,6 +88,8 @@ int main(int argc, const char* argv[])
 
     cout << "Triplets loading..." << endl;
     int document_id = 0;
+    vector<int> trueSegments;
+    vector<StoryInfo> tstories;
     while (!documentList.eof() && documentList.good())
     {
         char buffer[512];
@@ -97,15 +99,15 @@ int main(int argc, const char* argv[])
         cout << "Reading " << base << endl;
         string tripletsFilename = (pathTriplets + base +"_US_CNN_Newsroom.html.align.chunk_coref_triplets.dat");
         vector<Triplet> triplets = cws.ReadTripletsFile(tripletsFilename);
-        vector<StoryInfo> tstories = cws.TripletsToStories(triplets);
-
-        cout << "TRUE" << endl;
+        
+        // Ground truth
+        tstories = cws.TripletsToStories(triplets);
         for (int i = 0; i < tstories.size(); i++)
         {
-            cout << tstories[i].num_sentences ;
+            trueSegments.push_back(tstories[i].num_sentences);
         }
-        cout << endl;
 
+        // To test
         vector<StoryInfo> tmp_stories = cws.TripletsToStories(triplets, (opt==SEGMENTATION_PREDICT));
         for (int i = 0; i < tmp_stories.size(); i++)
         {
@@ -169,7 +171,22 @@ int main(int argc, const char* argv[])
         //{
             vector<Sentence> sentences = cws.StoryToSentences(stories[0]);
             segmenter.DoSegment(sentences);
+            segmenter.CalculateTrueScore(sentences, trueSegments);
         //}
+
+        cout << "------------" << endl;
+        cout << "TRUE SEGMENTATION:" << endl;
+        for (int i = 0; i < tstories.size(); i++)
+        {
+            cout << " " << tstories[i].num_sentences;
+        }
+        cout << endl;
+        cout << "TRUE CATEGORY:" << endl;
+        for (int i = 0; i < tstories.size(); i++)
+        {
+            cout << " " << tstories[i].category_id;
+        }
+        cout << endl;
     }
 
     // Clustering based on NP1 similarities.    

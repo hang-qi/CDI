@@ -169,7 +169,7 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
                 {
                     continue;
                 }
-                
+
                 found_end = triplets[i].StoryTimeEnd.find("<end>");
                 if (found_end == 0 && ignoreSeg && i != triplets.size()-1)
                 {
@@ -197,7 +197,7 @@ vector <StoryInfo> TextAnalysis::TripletsToStories(const vector<Triplet> & tripl
                 copy (istream_iterator<string>(iss2), istream_iterator<string>(), back_inserter(current_story.words_np2));
                 current_story.len_np2.back() = current_story.words_np2.size() - current_story.len_np2.back();                
             }
-            cout << "NUM_SENTENCES: " << num_sentences;
+            //cout << "NUM_SENTENCES: " << num_sentences;
             current_story.num_sentences = num_sentences;  // end
             string timeEnd = triplets[i].StoryTimeEnd;
             current_story.timeEnd = timeEnd.substr(5, timeEnd.size());;

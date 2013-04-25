@@ -1,5 +1,4 @@
 #include "utility.h"
-
 namespace utility
 {
     Matrix BuildMatrix(int num_rows, int num_columns, double default_value)
@@ -21,7 +20,7 @@ namespace utility
         }
 
         if (sum != 0)
-        {
+        {            
             for (int i=0; i < num_elements; i++)
             {        
                 prob[i] = countVector[i]/sum;

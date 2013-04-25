@@ -58,6 +58,7 @@ PredictResult NaiveBayesClassifier::Predict(const StoryFeature& storyfeature) co
     PredictResult result;
     result.label_id = predicted_category_idx;
     result.joint_prob = dist_catGivenStory[predicted_category_idx];
+    //cout << "joint_prob " << result.joint_prob << endl;
     return result;
 }
 
@@ -517,6 +518,6 @@ vector<double> NaiveBayesClassifier::CalcualtePostProbCats(
         }
         distributionCatGivenWords[i] = prob_wordGivenCat * param_.priors_cat[i];
     }
-    distributionCatGivenWords = utility::Normalize(distributionCatGivenWords);
+    //distributionCatGivenWords = utility::Normalize(distributionCatGivenWords);
     return distributionCatGivenWords;
 }

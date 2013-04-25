@@ -87,6 +87,8 @@ public:
 
     // Inference
     Segmentation DoSegment(const vector<Sentence>& sentences);
+    void CalculateTrueScore(const vector<Sentence>& sentences,
+        const vector<int>& true_segmentation);
 
     void Save(const string& filename) const;
     void Load(const string& filename);
