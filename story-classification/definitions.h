@@ -20,8 +20,8 @@ struct StoryInfo
     vector<int> len_np1;
     vector<int> len_vp;
     vector<int> len_np2;
-    string timeStart;
-    string timeEnd;
+    string time_start;
+    string time_end;
 };
 
 struct Sentence
@@ -41,14 +41,6 @@ struct Triplet
     string Verb_Ph;
     string Non_Ph2;
     //int nTimeInSecond;
-};
-
-struct WordCatInfo
-{
-    string word;
-    string Cat;
-    int StNumInList;
-    int wordPlaceInDic;
 };
 
 struct PredictResult
