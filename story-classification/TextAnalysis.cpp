@@ -332,9 +332,9 @@ vector<Sentence> TextAnalysis::StoryToSentences(const StoryInfo& story)
         vp_start += story.len_vp[i];
         np2_start += story.len_np2[i];
 
-        RemoveStopWords(sentence.words_np1);
-        RemoveStopWords(sentence.words_vp);
-        RemoveStopWords(sentence.words_np2);
+        sentence.words_np1 = RemoveStopWords(sentence.words_np1);
+        sentence.words_vp = RemoveStopWords(sentence.words_vp);
+        sentence.words_np2 = RemoveStopWords(sentence.words_np2);
 
         sentences.push_back(sentence);
     }
