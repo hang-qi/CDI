@@ -18,6 +18,10 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
+    CooccurrenceMatrix comatrix;
+    comatrix.WordNetTest();
+    return 0;
+
     enum Option
     {
         NONE,

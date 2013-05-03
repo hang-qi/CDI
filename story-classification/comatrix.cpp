@@ -3,12 +3,34 @@
 #include <iostream>
 #include <unordered_map>
 #include <string>
-#include "utility.h"
 #include <fstream>
 #include <algorithm>
 #include <stdio.h>
 
+#include "utility.h"
+#include "wnb/wordnet.hh"
+#include "wnb/load_wordnet.hh"
+#include "wnb/info_helper.hh"
+#include "wnb/nltk_similarity.hh"
+#include "wnb/std_ext.hh"
+
 using namespace std;
+
+#define PATH_TO_WORDNET "wn-dict/"
+
+void CooccurrenceMatrix::WordNetTest()
+{
+    using namespace wnb;
+
+    wordnet wn(PATH_TO_WORDNET);
+
+    vector<synset> synsets1 = wn.get_synsets("war");
+    vector<synset> synsets2 = wn.get_synsets("warfare");
+
+    nltk_similarity similarity(wn);
+    float d = similarity(synsets1[0], synsets2[0], 6);
+    cout << d << endl;
+}
 
 void CooccurrenceMatrix::BuildMatrix(const vector<Sentence>& sentences)
 {
@@ -52,6 +74,7 @@ void CooccurrenceMatrix::BuildMatrix(const vector<Sentence>& sentences)
             }
         });
     });
+
 
     printf("# of NP1:\t%d\n", np1_count);
     printf("# of VP:\t%d\n", vp_count);
