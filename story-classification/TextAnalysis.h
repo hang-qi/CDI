@@ -10,7 +10,7 @@
 #define OUT
 
 // some path
-#define DIR_ROOT "/home/csa/CAS2/hangqi/StoryTextInfo/"
+#define DIR_ROOT ""
 
 // For Russian Articles
 //#define list_file2 DIR_ROOT "WWW_Article/";

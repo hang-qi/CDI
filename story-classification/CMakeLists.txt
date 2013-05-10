@@ -19,11 +19,11 @@ set(PROJECT_VERSION "0.1")
 #        | bzip2 > ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.bz2
 #    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-## Compiler flags
-IF (CMAKE_COMPILER_IS_GNUCXX)
-  list(APPEND CMAKE_CXX_FLAGS " -O3 -std=c++0x")
-ENDIF()
 
+set(CMAKE_CXX_FLAGS                "-O3 -DNDEBUG")
+set(CMAKE_CXX_FLAGS_DEBUG          "-O0 -g")
+
+add_definitions("-std=c++11 -Wall -Wextra")
 
 set(SEG_SCR TextAnalysis.cpp classifier.cpp utility.cpp segmenter.cpp topic_model.h comatrix.cpp)
 

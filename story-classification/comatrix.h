@@ -8,7 +8,7 @@ class CooccurrenceMatrix
 {
 public:
     void BuildMatrix(const std::vector<Sentence>& sentences);
-    void WordNetTest();
+    void WordNetTest(const vector<Sentence>& sentences);
 };
 
 #endif
