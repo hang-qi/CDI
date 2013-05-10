@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -21,6 +22,8 @@ namespace utility
     Matrix Normalize2D(const Matrix& countMatrix, bool column_wise = true);
 
     std::string trim_front(const std::string& str, const std::string& trimChars);
+
+    double GaussianFunc(const double x, const double u, const double sigma);
 }
 
 

@@ -46,7 +46,10 @@ PredictResult NaiveBayesClassifier::Predict(const StoryFeature& storyfeature) co
     for (int i=0; i < param_.num_categories; i++)
     {
         double A = dist_catGivenNP1[i] * dist_catGivenVP[i] * dist_catGivenNP2[i];
-        A = A / (param_.priors_cat[i] * param_.priors_cat[i]);
+        if(param_.priors_cat[i] == 0)
+            A = 0;
+        else
+            A = A / (param_.priors_cat[i] * param_.priors_cat[i]);
         dist_catGivenStory.push_back(A);
     }
 
@@ -514,7 +517,7 @@ vector<double> NaiveBayesClassifier::CalcualtePostProbCats(
             {
                 continue;   // skip the word if not in the vocabulary
             }
-            prob_wordGivenCat *= prob_wordsGivenCats[word_id][i];
+            prob_wordGivenCat *= prob_wordsGivenCats[word_id][i] + 1e-100;
         }
         distributionCatGivenWords[i] = prob_wordGivenCat * param_.priors_cat[i];
     }

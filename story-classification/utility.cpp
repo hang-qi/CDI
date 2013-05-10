@@ -1,4 +1,5 @@
 #include "utility.h"
+
 namespace utility
 {
     Matrix BuildMatrix(int num_rows, int num_columns, double default_value)
@@ -73,4 +74,12 @@ namespace utility
         }
         return str.substr(i);
     }
+
+    double GaussianFunc(const double x, const double u, const double sigma)
+    {
+        double inv_sqrt_2pi =  0.3989422804014327;
+        double x_u_square = (x - u) * (x - u);
+        return (1.0/((double(sigma))*inv_sqrt_2pi))*exp(-x_u_square/(2.0*sigma*sigma));
+    }
+
 }
