@@ -1,18 +1,20 @@
 # Learn co-occurrence matrix from data
 
-from numpy.matlib import zeros
 import logging
+from numpy.matlib import zeros
 
-from ..vocabulary import Vocabulary
+from ..vocabulary import vocabulary
+from ..preprocessing import word_morphy
 
 
-def read_tpt(file):
-    words = []
-    # TODO: read tpt files into words
+def learn_matrix(tptFiles):
+    """Learn a word co-occurrence matrix from corpus."""
+    # build vocabulary
+    vocab = build_vocabulary(tptFiles)
 
-    # remove stop words
-
-    return words
+    # build matrix and fill in
+    matrix = build_cooccur_matrix(vocab, tptFiles)
+    return matrix
 
 
 def build_vocabulary(tptFiles):
@@ -20,29 +22,33 @@ def build_vocabulary(tptFiles):
     for f in tptFiles:
         words = read_tpt(f)
 
-    voc = Vocabulary()
+    voc = vocabulary.Vocabulary()
     for w in words:
         voc.insert(w)
     logging.debug("Vocabulary obtained: {0} words.".format(voc.size()))
     return voc
 
 
-def fill_cooccurrence_matrix(matrix, vocabulary, tptFiles):
-    for f in tptFiles:
-        words = read_tpt(f)
-    return
-
-
-def learn_matrix(tptFiles):
-    """Learn a word co-occurrence matrix from corpus."""
-
-    # build vocabulary
-    vocabulary = build_vocabulary(tptFiles)
-
-    # build matrix
-    num_words = vocabulary.size()
+def build_cooccur_matrix(vocab, tptFiles):
+    """Build co-occurrence matrix."""
+    # TODO: fill co-occurrence matrix
+    num_words = vocab.size()
     matrix = zeros(num_words, num_words)
 
-    # fill in matrix
-    fill_cooccurrence_matrix(matrix, vocabulary, tptFiles)
     return matrix
+
+
+def read_tpt(file):
+    words = []
+    # TODO: read tpt files into words
+
+    for line in file:
+        ws = line.split()
+
+        # remove stop words
+
+        # morph word to simple form
+        ws = [word_morphy(w) for w in ws]
+        words.extend(ws)
+
+    return words
