@@ -19,12 +19,15 @@ class Vocabulary(object):
         """Return True is word is in the vocabulary."""
         return word in self.dict
 
-    def get_word_id(self, word):
-        """Return the word id in the vocabulary. Return -1 if no found."""
+    def get_word_index(self, word):
+        """Return the word index in the vocabulary. Return -1 if no found."""
         if self.contain(word):
             return self.dict[word]
         else:
             return -1
+
+    def get_word(self, index):
+        return self.word_list[index]
 
     def size(self):
         return len(self.word_list)
