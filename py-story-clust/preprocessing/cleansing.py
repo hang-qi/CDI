@@ -6,10 +6,7 @@ def remove_stopwords(words):
     stopwords_file = open('stopwords.txt', 'r')
     data = stopwords_file.read()
     stopwords = data.split(', ')
-    new_words = []
-    for w in words:
-        if w not in stopwords:
-            new_words.append(w)
+    new_words = [w for w in words if not w in stopwords]
     return new_words
 
 

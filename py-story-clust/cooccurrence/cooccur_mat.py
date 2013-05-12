@@ -1,5 +1,8 @@
 # Learn co-occurrence matrix from data
 
+import sys
+import glob
+import codecs
 import logging
 from numpy.matlib import zeros
 
@@ -50,8 +53,9 @@ def save_matrix(matrix):
 def read_tpt(filename):
     words = []
     # TODO: read tpt files into words
-    f = open(filename)
+    f = codecs.open(filename, 'r', encoding='ISO-8859-1')
     for line in f:
+        line = line.lower()
         # TODO: parse tag
 
         word_list = line.split()
@@ -63,3 +67,12 @@ def read_tpt(filename):
         words.extend(word_list)
 
     return words
+
+
+def main():
+    tptfiles = glob.glob(sys.argv[1])  # Interprete the wildcards.
+    learn_matrix(tptfiles)
+
+
+if __name__ == '__main__':
+    main()
