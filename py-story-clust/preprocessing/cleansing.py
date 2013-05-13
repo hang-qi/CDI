@@ -5,10 +5,12 @@ from nltk.corpus import wordnet as wn
 
 def filter(word):
     """Filter punctuations out of word."""
-    chars = [',', '!', '.', ';', '?', ':', '\'s', '/', '\\', ' ',
-            '--', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    chars = [',', '!', '.', ';', '?', ':', '/', '\\', ' ',
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
-    return re.sub('[%s]' % ''.join(chars), '', word)
+    filtered_word = re.sub('[%s]' % ''.join(chars), '', word)
+    filtered_word = filtered_word.replace('--', '').replace('\'s', '')
+    return filtered_word
 
 
 def clean(words):
