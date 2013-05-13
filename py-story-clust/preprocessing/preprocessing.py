@@ -14,28 +14,28 @@ def filter_story(filename):
     filtered_words = []
 
     # read in story
-    f = codecs.open(filename, 'r', encoding='ISO-8859-1')
-    for line in f:
-        line = line.lower()
+    with codecs.open(filename, 'r', encoding='ISO-8859-1') as f:
+        for line in f:
+            line = line.lower()
 
-        # only split and filter content lines
-        # TAG|timestamp|conent
-        parts = line.split('|')
-        if (parts[0] in CONTENT_LINE_TAG):
-            word_list = parts[-1].split(' ')
-            filtered_words.extend(cleansing.remove_stopwords(word_list))
-    f.close()
+            # only split and filter content lines
+            # TAG|timestamp|conent
+            parts = line.split('|')
+            if (parts[0] in CONTENT_LINE_TAG):
+                word_list = parts[-1].split(' ')
+                word_list = cleansing.remove_stopwords(word_list)
+                word_list = [cleansing.morphy(w) for w in word_list]
+                filtered_words.extend(word_list)
 
     # write the cleaned story to disk
     filterd_story = ' '.join(filtered_words)
-    f = open(filename + '.txt', 'w')
-    f.write(filterd_story)
-    f.close()
+    with open(filename + '.txt', 'w') as f:
+        f.write(filterd_story)
 
 
 def main():
     # read in stopwords
-    segmented_files = glob.glob(sys.argv[1])  # Interprete the wildcards.
+    segmented_files = glob.glob(sys.argv[1])
     for storyfile in segmented_files:
         filter_story(storyfile)
     return 0

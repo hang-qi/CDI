@@ -4,74 +4,79 @@ import sys
 import glob
 import codecs
 import logging
+import numpy as np
 from numpy.matlib import zeros
 
 from ..vocabulary import vocabulary
-from ..preprocessing import cleansing
 
 
-def learn_matrix(tpt_filenames):
+def learn_matrix(story_files):
     """Learn a word co-occurrence matrix from corpus."""
     # build vocabulary
-    vocab = build_vocabulary(tpt_filenames)
+    vocab = build_vocabulary(story_files)
+
     # build matrix and fill in
-    matrix = build_cooccur_matrix(vocab, tpt_filenames)
+    matrix = build_cooccur_matrix(vocab, story_files)
 
     save_matrix(matrix)
     return matrix
 
 
-def build_vocabulary(tpt_filenames):
+def build_vocabulary(story_files):
     """Build a vocabulary from a set of given tpt files."""
     voc = vocabulary.Vocabulary()
 
-    for f in tpt_filenames:
-        words = []
-        words = read_tpt(f)
-
+    for story_file in story_files:
+        words = read_story(story_file)
         for w in words:
-            voc.insert(w)
+            voc.add(w)
 
     logging.debug('Vocabulary obtained: {0} words.'.format(voc.size()))
     return voc
 
 
-def build_cooccur_matrix(vocab, tpt_filenames):
+def build_cooccur_matrix(vocab, story_files):
     """Build co-occurrence matrix."""
     # TODO: fill in co-occurrence matrix
     num_words = vocab.size()
-    matrix = zeros(num_words, num_words)
+    co_matrix = zeros([num_words, num_words])
 
-    return matrix
+    for story_file in story_files:
+        words = read_story(story_file)
+        wordset = set(words)
 
+        # frequencies = [ (u_id, v_id, p_u(v))]
+        frequencies = [(vocab.get_word_index(u), vocab.get_word_index(v),
+            words.count(u)*words.count(v)) for u in wordset for v in wordset]
+
+        for element in frequencies:
+            co_matrix[element[0], element[1]] += element[2]
+
+    # normalize so that each row will sum to one.
+    row_sums = co_matrix.sum(axis=1)
+    co_matrix = co_matrix / row_sums[:]
+
+    logging.debug('Print 15*15 sub matrix:')
+    logging.debug(co_matrix[0:15, 0:15])
+    logging.debug(co_matrix[np.ix_([1, 3, 5], [1, 3, 5])])
+    return co_matrix
 
 def save_matrix(matrix):
     # TODO: to be implemented.
     return
 
 
-def read_tpt(filename):
-    words = []
+def read_story(filename):
     # TODO: read tpt files into words
-    f = codecs.open(filename, 'r', encoding='ISO-8859-1')
-    for line in f:
-        line = line.lower()
-        # TODO: parse tag
-
-        word_list = line.split()
-
-        # remove stop words and morph word to its simplest form
-        word_list = cleansing.remove_stopwords(word_list)
-        word_list = [cleansing.morphy(w) for w in word_list]
-
-        words.extend(word_list)
-
+    with codecs.open(filename, 'r', encoding='ISO-8859-1') as f:
+        content = f.read()
+    words = content.split()
     return words
 
 
 def main():
-    tptfiles = glob.glob(sys.argv[1])  # Interprete the wildcards.
-    learn_matrix(tptfiles)
+    story_files = glob.glob(sys.argv[1])  # Interpret the wild-cards.
+    learn_matrix(story_files)
 
 
 if __name__ == '__main__':

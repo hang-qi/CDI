@@ -18,20 +18,19 @@ def segment_transcript(filename):
     # list of segments
     segments = []
     currentSegment = Segment()
-    f = codecs.open(filename, mode='r', encoding='ISO-8859-1')
-    for line in f:
-        #print(line[0:len('SegEnd')])
-        if (line[0:len('SegEnd')] == 'SegEnd'):
-            currentSegment.addLine(line)
-            # SegEnd|20120903135615.550|Type=Commercial
-            parts = line.split('|')
-            if (parts[-1] != 'Type=Commercial'):
-                # Commercial segments shall be dropped.
-                segments.append(currentSegment)
-            currentSegment = Segment()
-        else:
-            currentSegment.addLine(line)
-    f.close()
+    with codecs.open(filename, mode='r', encoding='ISO-8859-1') as f:
+        for line in f:
+            #print(line[0:len('SegEnd')])
+            if (line[0:len('SegEnd')] == 'SegEnd'):
+                currentSegment.addLine(line)
+                # SegEnd|20120903135615.550|Type=Commercial
+                parts = line.split('|')
+                if (parts[-1] != 'Type=Commercial'):
+                    # Commercial segments shall be dropped.
+                    segments.append(currentSegment)
+                currentSegment = Segment()
+            else:
+                currentSegment.addLine(line)
     return segments
 
 
@@ -47,14 +46,13 @@ def save_segments(filename, segments):
             filename.replace('full', 'segmented'), index)
         print('Write segments {0} to file {1}'.format(index, segfilename))
 
-        f = open(segfilename, 'w')
-        for line in segment.lines:
-            f.write(line)
-        f.close()
+        with open(segfilename, 'w') as f:
+            for line in segment.lines:
+                f.write(line)
 
 
 def main():
-    transcriptfiles = glob.glob(sys.argv[1])  # Interprete the wildcards.
+    transcriptfiles = glob.glob(sys.argv[1])
     num_segments = 0
     num_files = 0
 
