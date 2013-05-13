@@ -1,7 +1,7 @@
 #! /bin/bash
 
 startdate=20080101
-enddata=20090101
+enddata=20080801
 
 curdate=$startdate
 until [ $curdate == $enddata ]

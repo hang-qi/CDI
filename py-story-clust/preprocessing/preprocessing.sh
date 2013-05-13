@@ -1,7 +1,7 @@
 #! /bin/bash
 
 startdate=20080101
-enddata=20090101
+enddata=20080801
 
 curdate=$startdate
 until [ $curdate == $enddata ]
@@ -15,5 +15,5 @@ do
     storydir=/dataset/segmented/$Y/$Y-$m/$Y-$m-$d
 
     curdate=$(date --date="$curdate 1 day" +%Y%m%d)
-    python3 preprocessing.py $storydir/\*.seg
+    python preprocessing.py $storydir/\*.seg
 done
