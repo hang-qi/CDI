@@ -1,0 +1,6 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080813173100.7571634890814
+<end>20080813173113.8371701733438
+The presidential hopefuls | are taking | time 
+Republican John McCain | has | three fundraisers today 
+Democrat Barack Obama | held | a fundraiser 

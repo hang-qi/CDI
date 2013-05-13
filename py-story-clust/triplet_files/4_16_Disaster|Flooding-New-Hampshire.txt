@@ -1,0 +1,6 @@
+<story>Disaster|Flooding-New-Hampshire</story>
+<start>20080808171700.8521634890814
+<end>20080808171714.3321701733438
+Heavy rains | spell | tragedy 
+her familys car | was swept | a campground 
+The flash floods | washed | away roads and damaged homes and businesses 

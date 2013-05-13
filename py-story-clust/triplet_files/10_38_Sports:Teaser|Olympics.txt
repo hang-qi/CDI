@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080811185629.6501634890814
+<end>20080811185805.0461701733438
+Four American swimmers | pull | Four American swimmers talents 

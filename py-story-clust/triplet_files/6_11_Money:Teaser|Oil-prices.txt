@@ -1,0 +1,5 @@
+<story>Money:Teaser|Oil-prices</story>
+<start>20080811131914.7851634890814
+<end>20080811132218.1021701733438
+Oil | climbing | record highs 
+Georgia push | prices | up 

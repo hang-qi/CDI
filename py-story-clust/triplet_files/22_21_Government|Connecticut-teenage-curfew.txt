@@ -1,0 +1,6 @@
+<story>Government|Connecticut-teenage-curfew</story>
+<start>20080814183031.5941634890814
+<end>20080814183052.0141701733438
+A special day curfew | goes | effect 
+| is out and about | a parent 
+This plan | came about | response 

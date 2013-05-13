@@ -1,0 +1,6 @@
+<story>Money|Dollar-strength</story>
+<start>20080808170920.0581634890814
+<end>20080808170933.9051701733438
+the CNN NEWSROOM | comes | the dollar 
+the CNN NEWSROOM | is | the rebound 
+Analysts | attribute declining | oil prices 

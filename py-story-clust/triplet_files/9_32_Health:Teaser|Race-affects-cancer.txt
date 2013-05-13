@@ -1,0 +1,4 @@
+<story>Health:Teaser|Race-affects-cancer</story>
+<start>20080811174220.5031634890814
+<end>20080811174228.2781701733438
+A racial gap | screening | prostate cancer 

@@ -1,0 +1,7 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080814182626.6161634890814
+<end>20080814182650.8401701733438
+we | re not seeing | losses 
+we | re seeing | gains 
+The NASDAQ | is up | percent 
+oil prices | are | a buck 

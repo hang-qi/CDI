@@ -1,0 +1,8 @@
+<story>Justice|Mayor-jail-time</story>
+<start>20080808143154.9771634890814
+<end>20080808143223.1721701733438
+now | spending | the night 
+Mayor Kwame Kilpatrick | is appealing | a court order 
+he | took | a business trip 
+Kilpatrick | was | bond 
+The charges | stem | romantic text messages 

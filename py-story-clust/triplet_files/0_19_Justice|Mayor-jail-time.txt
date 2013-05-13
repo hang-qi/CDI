@@ -1,0 +1,7 @@
+<story>Justice|Mayor-jail-time</story>
+<start>20080808143859.6011634890814
+<end>20080808143939.5411701733438
+he | has been released | jail 
+He | has to wear | a tether 
+he | has to wear | this electronic tether 
+he | s set to stand | trial 

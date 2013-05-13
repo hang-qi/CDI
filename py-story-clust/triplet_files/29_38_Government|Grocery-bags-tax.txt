@@ -1,0 +1,7 @@
+<story>Government|Grocery-bags-tax</story>
+<start>20080815194349.9591634890814
+<end>20080815194423.6931701733438
+grocery shoppers | try to get | leaders 
+petition organizers | are predicting | success 
+they | try gathering | some plus signatures 
+the state legislature | to have | the fee 

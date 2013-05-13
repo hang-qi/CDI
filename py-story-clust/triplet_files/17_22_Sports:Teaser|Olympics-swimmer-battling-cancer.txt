@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-swimmer-battling-cancer</story>
+<start>20080813195207.6891634890814
+<end>20080813195521.4161701733438
+he | s defeated | a lot of tough opponents 
+he | s facing | cancer 

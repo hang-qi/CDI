@@ -1,0 +1,8 @@
+<story>Disaster|Flooding-Vegas</story>
+<start>20080808143720.0691634890814
+<end>20080808143859.6011701733438
+home | was | a real gamble 
+Heavy rain | stirs | a flash flood 
+Streets | turned | rivers 
+this all | happening just | rush hour 
+the intense storms | led to | at least hour long delays 

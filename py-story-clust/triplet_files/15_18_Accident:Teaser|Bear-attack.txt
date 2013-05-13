@@ -1,0 +1,4 @@
+<story>Accident:Teaser|Bear-attack</story>
+<start>20080813171923.8611634890814
+<end>20080813172236.5541701733438
+year old boy | survives | a terrible bear attack 

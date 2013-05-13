@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Mayor-jail-time</story>
+<start>20080808170036.6021634890814
+<end>20080808170046.4781701733438
+Detroits mayor | faces | new legal charges 
+he | is facing | arraignment minutes 

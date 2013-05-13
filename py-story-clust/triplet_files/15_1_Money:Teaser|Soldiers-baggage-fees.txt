@@ -1,0 +1,4 @@
+<story>Money:Teaser|Soldiers-baggage-fees</story>
+<start>20080813170014.0791634890814
+<end>20080813170021.9201701733438
+U.S. forces | fly | commercial 

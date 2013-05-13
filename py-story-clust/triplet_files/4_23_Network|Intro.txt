@@ -1,0 +1,5 @@
+<story>Network|Intro</story>
+<start>20080808173038.4681634890814
+<end>20080808173101.3581701733438
+Don Lemon | live here | the CNN World Headquarters 
+we | re working | the CNN NEWSROOM 

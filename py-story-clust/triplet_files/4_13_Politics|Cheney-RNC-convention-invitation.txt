@@ -1,0 +1,5 @@
+<story>Politics|Cheney-RNC-convention-invitation</story>
+<start>20080808171535.6001634890814
+<end>20080808171557.4221701733438
+The senator s campaign | has invited | Vice President Dick Cheney 
+he | ll speak | the conventions first night 

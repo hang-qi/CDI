@@ -1,0 +1,5 @@
+<story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
+<start>20080815135946.1141634890814
+<end>20080815135952.5201701733438
+A crowd | lifts | bus 
+a traffic officer | hoping to save | the pregnant woman 

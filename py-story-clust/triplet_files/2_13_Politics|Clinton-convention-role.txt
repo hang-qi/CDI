@@ -1,0 +1,5 @@
+<story>Politics|Clinton-convention-role</story>
+<start>20080808151511.0411634890814
+<end>20080808151520.5501701733438
+Former President Bill Clinton | will speak | the convention 
+the gathering | had been | the subject of some speculation 

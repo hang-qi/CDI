@@ -1,0 +1,9 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080811170730.0151634890814
+<end>20080811170803.6151701733438
+John McCain | has | the campaign trail 
+he | toured | a General Electric plant 
+he | is also holding | a town hall meeting 
+his family | are vacationing | Hawaii 
+the candidate | played | a little golf 
+Obama | spent | most of his childhood 

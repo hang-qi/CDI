@@ -1,0 +1,5 @@
+<story>Art-culture:Teaser|Unseen-Beijing</story>
+<start>20080814183935.4711634890814
+<end>20080814184240.5891701733438
+they | are hiding | Olympic 
+China | re not seeing | Olympic coverage 

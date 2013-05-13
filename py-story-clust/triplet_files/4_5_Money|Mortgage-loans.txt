@@ -1,0 +1,9 @@
+<story>Money|Mortgage-loans</story>
+<start>20080808170845.5901634890814
+<end>20080808170920.0581701733438
+Market giant Fannie Mae | released | second quarter financial reports 
+we | knew | Market giant Fannie Mae 
+Fannie Mae | posting | a $ . million loss 
+Fannie | is raising | fees 
+which | will be passed | borrowers 
+Fannie Mae posting a $ . million loss | ll stop buying | alt A loans 

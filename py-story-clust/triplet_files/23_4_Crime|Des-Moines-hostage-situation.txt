@@ -1,0 +1,6 @@
+<story>Crime|Des-Moines-hostage-situation</story>
+<start>20080814190824.9701634890814
+<end>20080814190848.8601701733438
+a man | believed to be | the kids 
+officers | stormed | the house 
+This drama | started | the bodies of two women 

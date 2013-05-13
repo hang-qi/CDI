@@ -1,0 +1,10 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080815190636.3611634890814
+<end>20080815190705.7241701733438
+Barack Obama | has | any public rallies or speeches 
+McCain | is | Aspen 
+he | had | breakfast 
+Obama | is wrapping | his vacation 
+Hawaii | heading | home 
+The Democratic candidate | soaked up | the sun 
+a few waves | saw | a few sights 

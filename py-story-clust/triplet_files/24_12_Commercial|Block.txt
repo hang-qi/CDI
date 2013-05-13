@@ -1,0 +1,4 @@
+<story>Commercial|Block</story>
+<start>20080815131348.0921634890814
+<end>20080815131645.4031701733438
+The campaign | downplayed | The campaign 

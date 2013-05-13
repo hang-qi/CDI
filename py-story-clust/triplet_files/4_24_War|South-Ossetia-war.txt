@@ -1,0 +1,4 @@
+<story>War|South-Ossetia-war</story>
+<start>20080808173101.3581634890814
+<end>20080808173112.5021701733438
+his country | is | attack 

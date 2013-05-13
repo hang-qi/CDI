@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Louisiana-officer-tasers-man-death</story>
+<start>20080814191228.3131634890814
+<end>20080814191606.4311701733438
+a Louisiana officer | is indicted | a racially charged Taser death 

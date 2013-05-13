@@ -1,0 +1,4 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080814140031.6291634890814
+<end>20080814140037.6351701733438
+Russians troops | making | moves 

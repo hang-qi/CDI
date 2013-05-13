@@ -1,0 +1,7 @@
+<story>Justice:Teaser|Illegal-immigrants-arrested-Dulles-airport</story>
+<start>20080814143533.0621634890814
+<end>20080814143821.1961701733438
+suspected illegal immigrants | rounded | the Dulles Airport 
+Federal agents | settle | check points 
+Airports | considered | a priority 
+None of those arrested | had | access 

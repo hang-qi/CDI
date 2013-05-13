@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813144839.0151634890814
+<end>20080813144846.0881701733438
+We | ll catch | the CNN Election Express 

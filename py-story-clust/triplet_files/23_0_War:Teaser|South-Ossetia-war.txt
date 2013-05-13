@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814190031.7301634890814
+<end>20080814190048.6801701733438
+a Georgian city | occupied | Russian troops 
+we | have got | the latest 

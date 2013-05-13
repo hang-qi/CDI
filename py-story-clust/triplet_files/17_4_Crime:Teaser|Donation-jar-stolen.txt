@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Donation-jar-stolen</story>
+<start>20080813192911.4471634890814
+<end>20080813192922.9921701733438
+a Kentucky community | opens | its heart 
+thieves | have snatched | a donation jar 

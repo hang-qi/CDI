@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Presidential-race-excessive-media-coverage</story>
+<start>20080808185935.8361634890814
+<end>20080808185941.5421701733438
+The pentagon | plans | a possible evacuation of Americans 
+the Pentagon | comes | the White House race 
+a candidate | to get | too much media coverage 

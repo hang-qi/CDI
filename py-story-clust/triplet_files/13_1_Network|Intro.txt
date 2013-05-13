@@ -1,0 +1,4 @@
+<story>Network|Intro</story>
+<start>20080813140018.7841634890814
+<end>20080813140030.3961701733438
+Michael Phelps | has | more gold medals 

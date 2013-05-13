@@ -1,0 +1,8 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080813171139.2971634890814
+<end>20080813171216.2011701733438
+John McCain | has taken | his message 
+Republican presidential candidate | will tour | an aerospace and defense company 
+Obama | spent much | his childhood 
+a live forum | moderated | Pastor Rick Warren 
+CNN | live | CNN 

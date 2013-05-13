@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Dog-eats-fork</story>
+<start>20080815145601.7571634890814
+<end>20080815145843.3181701733438
+this fork | was causing | the problem 

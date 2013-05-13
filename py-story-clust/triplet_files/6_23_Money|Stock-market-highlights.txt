@@ -1,0 +1,6 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080811133914.2171634890814
+<end>20080811133941.8111701733438
+we | get | the business day 
+a great Friday | running | the bulls 
+We | re going to follow | the markets 

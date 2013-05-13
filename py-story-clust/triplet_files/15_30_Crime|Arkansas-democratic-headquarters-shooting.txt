@@ -1,0 +1,7 @@
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080813173733.3161634890814
+<end>20080813173818.9951701733438
+CNN | has confirmed | three shots 
+those shots | were fired | the office 
+CNN | has confirmed | three shots 
+they | come | the CNN NEWSROOM 

@@ -1,0 +1,7 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080814154440.0431634890814
+<end>20080814154502.2651701733438
+the Democrats | head | Colorado 
+Republican John McCain | swinging | the state today 
+He | s got | several stops 
+Democratic rival Barack Obama | is continuing | his vacation 

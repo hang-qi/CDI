@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Michael-Phelps</story>
+<start>20080813152730.0461634890814
+<end>20080813152741.9581701733438
+Golden boy Michael Phelps | adding | more gold 

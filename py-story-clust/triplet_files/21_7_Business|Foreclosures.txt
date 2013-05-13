@@ -1,0 +1,7 @@
+<story>Business|Foreclosures</story>
+<start>20080814170642.5341634890814
+<end>20080814170719.6711701733438
+foreclosure filings | grew | percent 
+every American homes | is | some stage of mortgage distress 
+almost percent of households | have received | a foreclosure notice 
+Ohio | completing | the top five 

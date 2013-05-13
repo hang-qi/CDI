@@ -1,0 +1,4 @@
+<story>Network|Intro</story>
+<start>20080811130001.2731634890814
+<end>20080811130001.2731701733438
+Olympic swimmer Michael Phelps | trying to trump | Mark Spitz 

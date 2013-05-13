@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Woman-walks-across-country-thanks-servicemen</story>
+<start>20080808174653.3761634890814
+<end>20080808174703.8861701733438
+she | walked | the country 

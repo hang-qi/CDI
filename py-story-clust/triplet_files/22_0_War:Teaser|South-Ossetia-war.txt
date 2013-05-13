@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814180016.9481634890814
+<end>20080814180026.1241701733438
+the comings and goings of Russian troops | are | interpretation 

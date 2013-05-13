@@ -1,0 +1,9 @@
+<story>Business|American-airlines-safety-violations</story>
+<start>20080815172447.7851634890814
+<end>20080815172515.8461701733438
+the company | signaling | today between American Airlines and the Federal Aviation Administration 
+a $ plus million fine | proposed | the FAA yesterday 
+The FAA | calls | the fine appropriate 
+American | flew | planes 
+FAA | knew needed | maintenance 
+FAA | wants to meet | the FAA 

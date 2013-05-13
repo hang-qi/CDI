@@ -1,0 +1,7 @@
+<story>Celebrity:Teaser|Michael-Phelps</story>
+<start>20080815195016.0451634890814
+<end>20080815195042.7381701733438
+anyones | talking about | Beijing 
+CNN.com | will be talking | s 
+Multiple Gold Medal winner Michael Phelps | joining | CNN.com 
+Michael Phelps | live | Tuesday morning 

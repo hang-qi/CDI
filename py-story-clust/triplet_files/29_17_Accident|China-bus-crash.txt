@@ -1,0 +1,5 @@
+<story>Accident|China-bus-crash</story>
+<start>20080815191528.1921634890814
+<end>20080815191538.8701701733438
+the official news agency | reports | dead 
+a bus | veered | a mountain road 

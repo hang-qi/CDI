@@ -1,0 +1,6 @@
+<story>Sports|Olympets</story>
+<start>20080811145920.8221634890814
+<end>20080811145952.9701701733438
+the city | organized | these games 
+Dogs | compete | track and field events 
+they | have to climb | a string 

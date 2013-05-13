@@ -1,0 +1,5 @@
+<story>Health:Teaser|Iraqi-child-tumor</story>
+<start>20080814171022.1201634890814
+<end>20080814171033.8321701733438
+doctors | had never seen | anything 
+an Iraqi child | was | the boy 

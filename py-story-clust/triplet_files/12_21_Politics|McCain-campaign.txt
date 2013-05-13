@@ -1,0 +1,5 @@
+<story>Politics|McCain-campaign</story>
+<start>20080813134849.7921634890814
+<end>20080813134901.4371701733438
+McCain | holds | a new fund raiser 
+He | has | two more fund raisers 

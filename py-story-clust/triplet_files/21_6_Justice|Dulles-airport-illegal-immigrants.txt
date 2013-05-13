@@ -1,0 +1,7 @@
+<story>Justice|Dulles-airport-illegal-immigrants</story>
+<start>20080814170620.6791634890814
+<end>20080814170642.5341701733438
+workers | are raising | concerns 
+Immigration and customs enforcement | apprehended | the workers 
+The suspected illegal immigrants | were | a construction detail 
+they | did not have | access 

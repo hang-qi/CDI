@@ -1,0 +1,12 @@
+<story>Sports|Olympics</story>
+<start>20080814183612.1011634890814
+<end>20080814183647.1361701733438
+we | check | the days Olympic action 
+things | stand | the medal count 
+Team USA and China | still trading | turns 
+China | has | total medals 
+the host team | is widening | its edge 
+South Korea | remains | third place 
+South Korea | has been | days 
+now | s got | some company 
+Australia | moving up | a tie 

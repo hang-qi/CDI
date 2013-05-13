@@ -1,0 +1,5 @@
+<story>Business:Teaser|Funeral-live-streaming-services</story>
+<start>20080815135500.3621634890814
+<end>20080815135806.3481701733438
+FUNERAL | is | the golf course 
+FUNERAL | is | a church 

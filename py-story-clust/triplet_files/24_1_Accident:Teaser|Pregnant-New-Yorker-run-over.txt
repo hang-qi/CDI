@@ -1,0 +1,5 @@
+<story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
+<start>20080815130014.2461634890814
+<end>20080815130022.2541701733438
+A pregnant New York traffic officer | run | over 
+a crowd | lifted | the vehicle 

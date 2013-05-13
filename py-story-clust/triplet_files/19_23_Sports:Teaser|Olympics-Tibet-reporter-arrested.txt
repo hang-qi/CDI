@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-Tibet-reporter-arrested</story>
+<start>20080814144613.5351634890814
+<end>20080814144858.0991701733438
+He | went to cover | a story 
+police | made | LRB END VIDEOTAPE RRB COLLINS He went to cover a story . 

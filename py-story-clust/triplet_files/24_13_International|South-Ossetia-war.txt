@@ -1,0 +1,5 @@
+<story>International|South-Ossetia-war</story>
+<start>20080815131645.4031634890814
+<end>20080815131703.1541701733438
+time | to recognize | the newsmakers 
+the Russian forces | rolled | the former Soviet Republic of Georgia 

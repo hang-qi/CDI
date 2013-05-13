@@ -1,0 +1,10 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080815133838.6821634890814
+<end>20080815133916.3531701733438
+He | flies | Chicago 
+today | getting back | the game 
+democrats | gear | the democrats convention 
+Republican John McCain | spending | the day 
+Both candidates | will likely put | some time 
+They | ll be | together tomorrow night 
+CNN | coming | your way 

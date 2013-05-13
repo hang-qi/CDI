@@ -1,0 +1,4 @@
+<story>Government:Teaser|Grocery-bags-tax</story>
+<start>20080815191952.7231634890814
+<end>20080815192002.3661701733438
+grocery bags | has | citizens 

@@ -1,0 +1,5 @@
+<story>Weather|US</story>
+<start>20080815132904.8081634890814
+<end>20080815133058.5891701733438
+A big tropical disturbance | is brewing | A big tropical disturbance 
+Reynolds Wolf | has | his eye 

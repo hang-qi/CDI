@@ -1,0 +1,6 @@
+<story>International|Bush-South-Ossetia-statement</story>
+<start>20080811195929.1961634890814
+<end>20080811195952.7691701733438
+He | is back | Beijing 
+the president | will make | a statement 
+the conflict | happening | Georgia 

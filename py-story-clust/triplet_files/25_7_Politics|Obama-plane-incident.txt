@@ -1,0 +1,5 @@
+<story>Politics|Obama-plane-incident</story>
+<start>20080815141328.5061634890814
+<end>20080815141609.0331701733438
+Barack Obama | called | the CNN NEWSROOM 
+the pilots | called | that incident 

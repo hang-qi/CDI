@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808170019.1511634890814
+<end>20080808170028.3941701733438
+territory | claimed | a U.S. ally 

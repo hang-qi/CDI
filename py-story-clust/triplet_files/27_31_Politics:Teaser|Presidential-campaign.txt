@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815174131.1541634890814
+<end>20080815174140.4971701733438
+We | ve got | a special report 

@@ -1,0 +1,6 @@
+<story>Weather|US</story>
+<start>20080811133646.9031634890814
+<end>20080811133914.2171701733438
+we | re going to check | Rob Marciano 
+the politicians | are | Washington 
+something | to do | hot air leaving 

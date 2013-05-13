@@ -1,0 +1,6 @@
+<story>Money|Gas-prices</story>
+<start>20080811143415.5191634890814
+<end>20080811143432.4691701733438
+They | re | issue number 
+Gas prices | have dropped | the th straight day 
+AAA | reports | the national average 

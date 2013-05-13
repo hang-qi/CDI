@@ -1,0 +1,4 @@
+<story>Weather:Teaser|Northeast-storms</story>
+<start>20080811190050.6481634890814
+<end>20080811190105.2961701733438
+She | is watching | Northern Plains 
