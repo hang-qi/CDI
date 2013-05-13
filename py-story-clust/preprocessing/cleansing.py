@@ -6,7 +6,7 @@ from nltk.corpus import wordnet as wn
 def filter(word):
     """Filter punctuations out of word."""
     chars = [',', '!', '.', ';', '?', ':', '/', '\\', ' ',
-            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '\n', '\r']
 
     filtered_word = re.sub('[%s]' % ''.join(chars), '', word)
     filtered_word = filtered_word.replace('--', '').replace('\'s', '')
@@ -25,7 +25,7 @@ def remove_stopwords(words):
     stopwords_file = open('stopwords.txt', 'r')
     data = stopwords_file.read()
     stopwords = data.split(', ')
-    stopwords.extend(['\n', ''])
+    stopwords.extend([''])
     new_words = [filter(w) for w in words]
     new_words = [w for w in new_words if not w in stopwords]
     return new_words
