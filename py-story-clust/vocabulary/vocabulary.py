@@ -3,7 +3,7 @@
 
 class Vocabulary(object):
     """A Vocabulary contains a word list and a dictionary."""
-    def __init__(self, arg):
+    def __init__(self):
         super(Vocabulary, self).__init__()
         self.word_list = []     # maps id -> word
         self.dict = dict()      # maps word -> id
@@ -12,7 +12,7 @@ class Vocabulary(object):
         """Add a word to vocabulary.
         Word contained in the vocabulary will not be inserted again."""
         if not self.contain(word):
-            self.word_list.insert(word)
+            self.word_list.append(word)
             self.dict[word] = len(self.word_list) - 1
 
     def contain(self, word):
