@@ -1,7 +1,8 @@
 import sys
-import glob
+#import glob
 import logging
 
+sys.path.append('..')
 from cooccurrence import cooccur_mat
 
 
@@ -13,7 +14,7 @@ def main():
 
     logging.basicConfig(level=logging.DEBUG)
 
-    #story_files = glob.glob(sys.argv[1])
+    #story_files = glob.glob(sys.argv[1:5])
     story_files = sys.argv[1:]
     cooccur_mat.learn_matrix(story_files)
 

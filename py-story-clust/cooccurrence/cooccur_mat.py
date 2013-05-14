@@ -1,10 +1,8 @@
 # Learn co-occurrence matrix from data
-
 import codecs
 import logging
 import math
 import numpy as np
-from numpy.matlib import zeros
 
 from vocabulary import vocabulary
 
@@ -15,11 +13,11 @@ def learn_matrix(story_files):
     logging.debug("Calculating matrix from {0} files".format(len(story_files)))
     # build vocabulary
     vocab = build_vocabulary(story_files)
+    vocab.save('vocabulary.voc')
 
     # build matrix and fill in
     matrix = build_cooccur_matrix(vocab, story_files)
-
-    save_matrix(matrix)
+    save_matrix('co_mat.npy', matrix)
     return matrix
 
 
@@ -43,7 +41,7 @@ def build_cooccur_matrix(vocab, story_files):
     """Build co-occurrence matrix."""
     # TODO: fill in co-occurrence matrix
     num_words = vocab.size()
-    contextual_dist = zeros([num_words, num_words])
+    contextual_dist = np.zeros((num_words, num_words))
 
     for story_file in story_files:
         words = read_story(story_file)
@@ -63,25 +61,29 @@ def build_cooccur_matrix(vocab, story_files):
 
     # normalize so that each row will sum to one.
     row_sums = contextual_dist.sum(axis=1)
-    contextual_dist = contextual_dist / row_sums[:]
+    contextual_dist = contextual_dist / row_sums.reshape(-1, 1)
 
     logging.debug('Print 15*15 contextual distribution:')
     logging.debug(contextual_dist[0:15, 0:15])
     logging.debug(contextual_dist[np.ix_([1, 3, 5], [1, 3, 5])])
 
-    co_matrix = zeros([num_words, num_words])
-    dim = range(0, num_words)
-    for u in dim:
-        for v in dim:
-            sqrt_sum = np.power(
-                np.multiply(contextual_dist[u], contextual_dist[v]), 0.5).sum()
+    co_matrix = np.zeros((num_words, num_words))
+
+    # only calculate the upper triangle matrix
+    for u in range(0, num_words):
+        for v in range(u, num_words):
+            sqrt_sum = ((contextual_dist[u] * contextual_dist[v])**0.5).sum()
             #logging.debug('sqrt = {0}'.format(sqrt_sum))
             power = 0
             if sqrt_sum >= 1:
+                if math.fabs(sqrt_sum - 1.0) > 0.00001:
+                    logging.warning('sqrt_sum >= 1 is {0}'.format(sqrt_sum))
                 power = 0
             else:
-                power = math.pow(math.acos(sqrt_sum), 2)
+                power = math.acos(sqrt_sum) ** 2
             co_matrix[u, v] = math.exp(-1 * power)
+    # recover the whole matrix
+    co_matrix = co_matrix + np.tril(co_matrix.T, -1)
 
     logging.debug('Print 15*15 similarity matrix:')
     logging.debug(co_matrix[0:15, 0:15])
@@ -89,8 +91,8 @@ def build_cooccur_matrix(vocab, story_files):
     return co_matrix
 
 
-def save_matrix(matrix):
-    # TODO: to be implemented.
+def save_matrix(filename, matrix):
+    np.save(filename, matrix)
     return
 
 

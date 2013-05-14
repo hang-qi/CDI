@@ -1,5 +1,7 @@
 # Vocabulary
 
+import codecs
+
 
 class Vocabulary(object):
     """A Vocabulary contains a word list and a dictionary."""
@@ -31,3 +33,29 @@ class Vocabulary(object):
 
     def size(self):
         return len(self.word_list)
+
+    def save(self, filename):
+        with codecs.open('{0}.dict'.format(filename), "w", encoding='ISO-8859-1') as f:
+            for key, val in self.dict.items():
+                try:
+                    f.writelines('{0},{1}\n'.format(key, val))
+                except Exception, e:
+                    continue
+
+        with codecs.open('{0}.list'.format(filename), "w", encoding='ISO-8859-1') as f:
+            for val in self.word_list:
+                f.writelines(val + '\n')
+        return
+
+    def load(self, filename):
+        self.dict = {}
+        with codecs.open('{0}.dict'.format(filename), encoding='ISO-8859-1') as f:
+            for line in f:
+                item = line.split(',')
+                self.dict[item[0].strip('\n')] = item[1].strip('\n')
+
+        self.word_list = []
+        with codecs.open('{0}.list'.format(filename), "r", encoding='ISO-8859-1') as f:
+            for line in f:
+                self.word_list.append(line.strip('\n'))
+        return
