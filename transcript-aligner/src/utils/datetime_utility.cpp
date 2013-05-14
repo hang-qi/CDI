@@ -33,10 +33,14 @@ namespace utility
 		const std::string timestampAdd(const std::string& orgTimeStr, int deltaInSeconds)
 		{
 			tm t = str2timestruct(orgTimeStr);
-			std::string milliseconds = orgTimeStr.substr(15,3);
 			t.tm_sec += deltaInSeconds;
-			mktime(&t);	// normalize time
-			std::string newTimeString = time2str(t) + "." + milliseconds;
+			mktime(&t);	// normalize time			
+			std::string newTimeString = time2str(t);
+			if (orgTimeStr.size() > 14)
+			{
+				std::string milliseconds = orgTimeStr.substr(15,3);				
+			 	newTimeString = newTimeString + "." + milliseconds;
+			}
 			return newTimeString;
 		}
 

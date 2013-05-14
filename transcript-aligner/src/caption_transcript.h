@@ -248,6 +248,11 @@ private:
                     else
                     {
                         timestamp = content.substr(0, string(TIMESTAMP).size());
+                        if (timestamp.find('|') != string::npos)
+                        {
+                            isInterpolated = true;
+                            timestamp = content.substr(0, string(TIMESTAMP_TR).size());
+                        }
                     }
 
                     // actual caption content

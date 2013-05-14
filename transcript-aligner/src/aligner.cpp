@@ -392,7 +392,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
     tptCaption.headerLines.push_back("TTL|" + utility::string_utility::trim(pTranscript_->programTitle));
     tptCaption.headerLines.push_back("OBT|" + utility::string_utility::trim(pTranscript_->obtline));
     tptCaption.headerLines.push_back("RUN|" + utility::datetime_utility::currentUTCDateTime("%Y%m%d%H%M")
-                                    + "|Source_Program=transcript-aligner|Source_Person=Hang Qi");
+                                    + "|PTAG=NER_01|Source_Program=transcript-aligner|Source_Person=Hang Qi");
     tptCaption.headerLines.push_back("NER_01|" + utility::datetime_utility::currentUTCDateTime("%Y%m%d%H%M")
                                     + "|Source_Program=transcript-aligner|Source_Person=Hang Qi");
     
