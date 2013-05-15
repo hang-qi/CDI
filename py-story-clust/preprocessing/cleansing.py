@@ -5,12 +5,13 @@ from nltk.corpus import wordnet as wn
 
 def filter(word):
     """Filter punctuations out of word."""
-    filtered_word = word.replace('--', '').replace('\'s', '').strip('-')
+    filtered_word = word.replace('--', '').replace('\'s', '')
 
-    chars = [',', '!', '.', ';', '?', ':', '/', '\\', ' ', '\"', '#', '$', '%',
+    chars = [',', '.', '!', ';', '?', ':', '/', '\\', ' ', '\"', '#', '$', '%',
              '&', '\'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
              '\n', '\r']
     filtered_word = re.sub('[%s]' % ''.join(chars), '', filtered_word)
+    filtered_word = filtered_word.strip('-')
     return filtered_word
 
 
@@ -18,10 +19,10 @@ def clean(words):
     if words is None:
         return None
     words = [w.lower() for w in words]
-    cleand_words = remove_stopwords(words)
-    if len(cleand_words) > 0:
-        cleand_words = [morphy(w) for w in cleand_words]
-    return cleand_words
+    cleaned_words = remove_stopwords(words)
+    if len(cleaned_words) > 0:
+        cleaned_words = [morphy(w) for w in cleaned_words]
+    return cleaned_words
 
 
 def remove_stopwords(words):
@@ -30,9 +31,21 @@ def remove_stopwords(words):
     data = stopwords_file.read()
     stopwords = data.split(', ')
     stopwords.extend([''])
-    new_words = [filter(w) for w in words]
-    new_words = [w for w in new_words if not w in stopwords]
-    return new_words
+
+    filtered_words = []
+    for i in range(0, len(words)):
+        if (i-1) >= 0 and words[i-1] == 'united' and words[i] == 'states':
+            filtered_words.pop(-1)
+            filtered_words.append('u.s.')
+            continue
+        elif words[i] == 'u.s.':
+            filtered_words.append(words[i])
+            continue
+        else:
+            filtered_words.append(filter(words[i]))
+
+    filtered_words = [w for w in filtered_words if not w in stopwords]
+    return filtered_words
 
 
 def morphy(word):
