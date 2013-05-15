@@ -1,8 +1,8 @@
 Transcript-aligner
 ===
 
-Transcript-aligner aligns recorded close caption files of TV news with transcript
-webpages to obtain good-quality transcripts. 
+Transcript-aligner generates good-quality transcripts (`tpt` files) by aligning recorded close caption files of TV news with transcript
+webpages. 
 
 Compile
 ---
