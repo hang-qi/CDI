@@ -1,4 +1,5 @@
 # Triplet Vocabulary including NP and VP
+import codecs
 
 
 class TripletVocabulary(object):
@@ -39,3 +40,23 @@ class TripletVocabulary(object):
 
     def vp_index(self, word):
         return self.vp_list.index(word)
+
+    def save(self, filename):
+        with codecs.open('{0}.np_list'.format(filename), "w", encoding='ISO-8859-1') as f:
+            for val in self.np_list:
+                f.writelines(val + '\n')
+        with codecs.open('{0}.vp_list'.format(filename), "w", encoding='ISO-8859-1') as f:
+            for val in self.vp_list:
+                f.writelines(val + '\n')
+        return
+
+    def load(self, filename):
+        self.np_list = []
+        self.vp_list = []
+        with codecs.open('{0}.np_list'.format(filename), "r", encoding='ISO-8859-1') as f:
+            for line in f:
+                self.np_list.append(line.strip('\n'))
+        with codecs.open('{0}.vp_list'.format(filename), "r", encoding='ISO-8859-1') as f:
+            for line in f:
+                self.vp_list.append(line.strip('\n'))
+        return

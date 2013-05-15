@@ -8,6 +8,7 @@ import numpy as np
 def learn_triplets_cooccur_mat(triplets_file_path):
     files = glob.glob(triplets_file_path)
     triplet_voc = generate_triplets_matrix(files)
+    triplet_voc.save('Triplet')
     print len(triplet_voc.np_list)
     print len(triplet_voc.vp_list)
     triplet_initial_matrix = build_initial_triplets_cooccur_mat(triplet_voc, files)
