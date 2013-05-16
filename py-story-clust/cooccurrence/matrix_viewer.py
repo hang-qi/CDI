@@ -23,8 +23,8 @@ def show_top_words(wid, matrix, voc):
 
 def main():
     voc = vocabulary.Vocabulary()
-    matrix = np.load('co_mat.npy')
-    voc.load('vocabulary.voc')
+    matrix = np.load('co_mat_20080801.npy')
+    voc.load('vocabulary_20080801.voc')
 
     while True:
         print('Please choose what to do:')

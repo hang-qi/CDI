@@ -28,7 +28,9 @@ def filter_story(filename):
 
     # write the cleaned story to disk
     filterd_story = ' '.join(filtered_words)
-    with codecs.open(filename + '.txt', 'w', encoding='ISO-8859-1') as f:
+    parts = filename.split('/')
+    newfilename = '/dataset/08cleaned/' + parts[-1]
+    with codecs.open(newfilename + '.txt', 'w', encoding='ISO-8859-1') as f:
         f.write(filterd_story)
 
 
