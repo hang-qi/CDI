@@ -22,11 +22,17 @@ def main():
 
     # For large dataset, we calculate sub distribution matrices separately,
     # and then generate co-occurrence matrix for subset of vocabulary.
-    story_files = glob.glob('/dataset/08cleaned/*.txt')
+    story_files = glob.glob('/dataset/08cleaned/2008-0[567]*.txt')
+    story_files.sort()
+    logging.debug('Totol # of files: {0}'.format(len(story_files)))
+
+    # Build whole vocab
+    whole_vocab = cooccur_mat.build_vocabulary(story_files)
+    whole_vocab.save('vocabulary.voc')
 
     # load the full vocabulary
-    whole_vocab = vocabulary.Vocabulary()
-    whole_vocab.load('vocabulary.voc')
+    #whole_vocab = vocabulary.Vocabulary()
+    #whole_vocab.load('vocabulary.voc')
     logging.debug('Size of whole vocabulary: {0}.'.format(whole_vocab.size()))
 
     num_files = len(story_files)
@@ -39,7 +45,7 @@ def main():
         logging.debug(
             'Batch {0} / {1} : [{2} : {3}]...'.format(b, num_batches, start, stop))
         cooccur_mat.build_sub_contextual_matrix_and_save(
-            whole_vocab, story_files[start:stop])
+            whole_vocab, story_files[start:stop], b)
 
 if __name__ == '__main__':
     main()

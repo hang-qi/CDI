@@ -2,6 +2,7 @@
 import codecs
 import logging
 import math
+import time
 import numpy as np
 
 from vocabulary import vocabulary
@@ -75,42 +76,60 @@ def calcuate_contextual_mat(vocab, story_files):
     return contextual_mat
 
 
-def build_sub_contextual_matrix_and_save(whole_vocab, story_files):
+def build_sub_contextual_matrix_and_save(whole_vocab, story_files, batch_id):
+    start_time = time.time()
+
+    stories = []
     words = []
     for story_file in story_files:
-        words.extend(read_story(story_file))
+        story_words = read_story(story_file)
+        words.extend(story_words)
+        stories.append(story_words)
 
     unique_words = list(set(words))
     word_dict = {}      # maps: word -> idx
     for i in range(0, len(unique_words)):
         word_dict[unique_words[i]] = i
 
-    logging.debug('{0} unique words extracted.'.format(len(unique_words)))
-
+    logging.debug('Unique words in this batch: {0}.'.format(len(unique_words)))
     logging.debug('Calculating frequencies...')
+
     sub_contextual_mat = np.zeros((len(unique_words), whole_vocab.size()))
 
-    # frequencies = [ (u, v, p_u(v))]
-    frequencies = [(u, v, words.count(u)*words.count(v))
-        for u in unique_words for v in unique_words]
+    for i in range(0, len(stories)):
+        #logging.debug('File {0} : {1}.'.format(i, story_files[i]))
+        story_words = stories[i]
 
-    logging.debug('Calculating contextual matrix...')
-    for (u, v, time_frequency) in frequencies:
-        u_id = word_dict[u]
-        v_id = whole_vocab.get_word_index(v)
-        if v_id == -1:
-            continue
-        if u == v:
-            sub_contextual_mat[u_id, v_id] += math.sqrt(time_frequency)
-        else:
-            sub_contextual_mat[u_id, v_id] += time_frequency
+        # count word frequencies in the story
+        story_dict = {}
+        for w in story_words:
+            if w in story_dict:
+                story_dict[w] = story_dict[w] + 1
+            else:
+                story_dict[w] = 1
+
+        frequencies = [(u, v, story_dict[u]*story_dict[v])
+            for u in story_dict.keys() for v in story_dict.keys()]
+
+        for (u, v, time_frequency) in frequencies:
+            u_id = word_dict[u]
+            v_id = whole_vocab.get_word_index(v)
+            if v_id == -1:
+                continue
+            if u == v:
+                sub_contextual_mat[u_id, v_id] += math.sqrt(time_frequency)
+            else:
+                sub_contextual_mat[u_id, v_id] += time_frequency
 
     # do not normalize sub contextual matrix.
 
     # save sub matrices and vocabularies.
-    filenamebase = story_files[0].split('/')[-1]
-    save_word_list('../data/' + filenamebase + '_sub_matrix.voc', unique_words)
-    save_matrix('../data/' + filenamebase + '_sub_matrix.npy', sub_contextual_mat)
+    save_word_list('../data/sub_matrix_{0}.voc'.format(batch_id), unique_words)
+    save_matrix('../data/sub_matrix_{0}.npy'.format(batch_id), sub_contextual_mat)
+
+    end_time = time.time()
+    logging.debug("Time: %g seconds" % (end_time - start_time))
+
     return sub_contextual_mat
 
 
