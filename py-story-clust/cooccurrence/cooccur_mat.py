@@ -166,6 +166,7 @@ def save_word_list(filename, words):
             f.writelines(w + '\n')
     return
 
+
 def save_matrix(filename, matrix):
     np.save(filename, matrix)
     return

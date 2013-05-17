@@ -27,7 +27,7 @@ def main():
 
     # Build whole vocab
     whole_vocab = cooccur_mat.build_vocabulary(story_files)
-    whole_vocab.save('vocabulary.voc')
+    whole_vocab.save('../mat/vocabulary.voc')
 
     # load the full vocabulary
     #whole_vocab = vocabulary.Vocabulary()

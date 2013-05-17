@@ -6,6 +6,10 @@ from vocabulary import vocabulary
 
 
 def show_top_words(wid, matrix, voc):
+    if wid < 0:
+        print('Word not found.')
+        return
+
     try:
         word = voc.get_word(wid)
         pass
@@ -22,9 +26,18 @@ def show_top_words(wid, matrix, voc):
 
 
 def main():
+    if (len(sys.argv) != 3):
+        print('Please give matrix file and vocabulary file.')
+        print('Usage: python matrix_viewer.py matrix_file vocabulary_file')
+
     voc = vocabulary.Vocabulary()
-    matrix = np.load('co_mat_20080801.npy')
-    voc.load('vocabulary_20080801.voc')
+    try:
+        matrix = np.load(sys.argv[1])
+        voc.load(sys.argv[2])
+    except Exception, e:
+        print('Failed to load matrix or vocabulary')
+        print('Exception: {0}'.format(e))
+        return
 
     while True:
         print('Please choose what to do:')
