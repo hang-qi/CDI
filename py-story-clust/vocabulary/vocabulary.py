@@ -10,6 +10,13 @@ class Vocabulary(object):
         self.word_list = []     # maps id -> word
         self.dict = dict()      # maps word -> id
 
+    def build_by_list(self, word_list):
+        super(Vocabulary, self).__init__()
+        self.word_list = []     # maps id -> word
+        self.dict = dict()      # maps word -> id
+        for w in word_list:
+            self.add(w)
+
     def add(self, word):
         """Add a word to vocabulary.
         Word contained in the vocabulary will not be inserted again."""
