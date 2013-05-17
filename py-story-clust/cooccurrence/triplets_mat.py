@@ -13,7 +13,7 @@ def learn_triplets_cooccur_mat(triplets_file_path):
     print len(triplet_voc.vp_list)
     triplet_initial_matrix = build_initial_triplets_cooccur_mat(triplet_voc, files)
     np.savetxt('triplet_initial_matrix.txt', triplet_initial_matrix, fmt='%-7.2f')
-    #triplet_matrix = morph_triplets_cooccur_mat(triplet_initial_matrix)
+    #triplet_matrix = morph_triplets_cooccur_mat(triplet_initial_matrix, np_matrix, vp_matrix)
     return
 
 
@@ -59,10 +59,9 @@ def build_initial_triplets_cooccur_mat(triplet_voc, files):
     return cooccur_mat
 
 
-def morph_triplets_cooccur_mat(matrix):
+def morph_triplets_cooccur_mat(matrix, np_matrix, vp_matrix):
     # Multiply the learned coefficient matrix
-    # To be implemented
-    return
+    return np_matrix*matrix*vp_matrix
 
 
 def main():
