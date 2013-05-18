@@ -49,14 +49,3 @@ class TripletVocabulary(object):
             for val in self.vp_list:
                 f.writelines(val + '\n')
         return
-
-    def load(self, filename):
-        self.np_list = []
-        self.vp_list = []
-        with codecs.open('{0}.np_list'.format(filename), "r", encoding='ISO-8859-1') as f:
-            for line in f:
-                self.np_list.append(line.strip('\n'))
-        with codecs.open('{0}.vp_list'.format(filename), "r", encoding='ISO-8859-1') as f:
-            for line in f:
-                self.vp_list.append(line.strip('\n'))
-        return
