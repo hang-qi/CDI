@@ -109,6 +109,7 @@ def morph_triplets_cooccur_mat(matrix):
 
 def main():
     cooccur_mat = learn_triplets_cooccur_mat('../triplet_files/*.txt')
+    np.savetxt('cooccur_mat.txt', cooccur_mat)
     morphed_cooccur_mat = morph_triplets_cooccur_mat(cooccur_mat)
     np.savetxt('cooccur_mat_final.txt', morphed_cooccur_mat)
     return
