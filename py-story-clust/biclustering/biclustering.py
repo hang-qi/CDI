@@ -26,6 +26,27 @@ def main():
     vp_voc.load('../mat/vp.voc')
     with open("biclust_result_word.txt", 'w') as outfile:
         for bicluster in biclust_result:
+            sub_matrix = matrix[np.ix_(bicluster.rows, bicluster.cols)]
+            sum_np = sub_matrix.sum(axis=1)
+            sum_vp = sub_matrix.sum(axis=2)
+            dist_np = sum_np / (sum_np.sum())
+            dist_vp = sum_vp / (sum_vp.sum())
+            top_nps = argsort(dist_np)
+            top_vps = argsort(dist_vp)
+
+            print('\n---BICLUSTER---')
+            print('Top 10 NPs:')
+            for i in range(1, 10):
+                r_idx = top_nps[i]
+                wid = bicluster.rows[r_idx]
+                print('{0} \t {1}'.format(np_voc.get_word(wid), dist_np[r_idx]))
+
+            print('Top 10 VPs:')
+            for i in range(1, 10):
+                c_idx = top_vps[i]
+                wid = bicluster.cols[c_idx]
+                print('{0} \t {1}'.format(vp_voc.get_word(wid), dist_vp[c_idx]))
+
             nps = [np_voc.get_word(r) for r in bicluster.rows]
             outfile.write(" ".join(nps))
             outfile.write('\n')
