@@ -26,6 +26,7 @@ programDict = {
     "ERIN BURNETT OUT FRONT"        : "Erin_Burnett_Out_Front",
     "PAULA ZAHN NOW"                : "Paula_Zahn_Now",
     "LOU DOBBS TONIGHT"             : "Lou_Dobbs_Tonight"
+    "IN THE ARENA"                  : "In_The_Arena"
 }
 
 # Words will keep capitalized in file name, usually a acronym.
