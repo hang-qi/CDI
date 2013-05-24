@@ -9,7 +9,6 @@ def show_top_words(wid, matrix, voc):
     if wid < 0:
         print('Word not found.')
         return
-
     try:
         word = voc.get_word(wid)
         pass
@@ -73,7 +72,11 @@ def main():
                 word_to_find = raw_input("Please input a word: ")
             except Exception:
                 continue
-            show_top_words(int(voc.get_word_index(word_to_find)), matrix, voc)
+            try:
+                show_top_words(int(voc.get_word_index(word_to_find)), matrix, voc)
+            except ValueError:
+                print('Word not found.')
+                continue
 
         print("")
     return

@@ -76,7 +76,10 @@ def calcuate_contextual_mat(vocab, story_files):
     return contextual_mat
 
 
-def build_sub_contextual_matrix_and_save(whole_vocab, story_files, batch_id):
+def build_sub_contextual_matrix_and_save(
+        whole_vocab, story_files, vocab_filename, matrix_filename):
+    """Build a contextual distribution matrix on a subset of corpus."""
+
     start_time = time.time()
 
     stories = []
@@ -86,51 +89,126 @@ def build_sub_contextual_matrix_and_save(whole_vocab, story_files, batch_id):
         words.extend(story_words)
         stories.append(story_words)
 
-    unique_words = list(set(words))
-    word_dict = {}      # maps: word -> idx
-    for i in range(0, len(unique_words)):
-        word_dict[unique_words[i]] = i
+    sub_matrix_vocab = vocabulary.Vocabulary()
+    sub_matrix_vocab.build_by_list(list(set(words)))
 
-    logging.debug('Unique words in this batch: {0}.'.format(len(unique_words)))
+    logging.debug('Unique words in this batch: {0}.'.format(sub_matrix_vocab.size()))
     logging.debug('Calculating frequencies...')
 
-    sub_contextual_mat = np.zeros((len(unique_words), whole_vocab.size()))
+    sub_contextual_mat = np.zeros((sub_matrix_vocab.size(), whole_vocab.size()))
 
     for i in range(0, len(stories)):
-        #logging.debug('File {0} : {1}.'.format(i, story_files[i]))
         story_words = stories[i]
 
         # count word frequencies in the story
-        story_dict = {}
+        story_word_freq = {}
         for w in story_words:
-            if w in story_dict:
-                story_dict[w] = story_dict[w] + 1
+            if w in story_word_freq:
+                story_word_freq[w] = story_word_freq[w] + 1
             else:
-                story_dict[w] = 1
+                story_word_freq[w] = 1
 
-        frequencies = [(u, v, story_dict[u]*story_dict[v])
-            for u in story_dict.keys() for v in story_dict.keys()]
+        frequencies = [(u, v, story_word_freq[u]*story_word_freq[v])
+            for u in story_word_freq.keys() for v in story_word_freq.keys()]
 
-        for (u, v, time_frequency) in frequencies:
-            u_id = word_dict[u]
-            v_id = whole_vocab.get_word_index(v)
-            if v_id == -1:
+        # fill in the contextual distribution matrix
+        for (u, v, frequency) in frequencies:
+            try:
+                u_id = sub_matrix_vocab.get_word_index(u)
+                v_id = whole_vocab.get_word_index(v)
+                if u == v:
+                    sub_contextual_mat[u_id, v_id] += math.sqrt(frequency)
+                else:
+                    sub_contextual_mat[u_id, v_id] += frequency
+            except ValueError:
                 continue
-            if u == v:
-                sub_contextual_mat[u_id, v_id] += math.sqrt(time_frequency)
-            else:
-                sub_contextual_mat[u_id, v_id] += time_frequency
 
-    # do not normalize sub contextual matrix.
+    # Here we do not normalize the sub contextual matrix.
+    # This will be normalized when build the co-occurrence matrix of interest.
+    # See: calculate_cooccur_matrix_by_submatrices().
 
     # save sub matrices and vocabularies.
-    save_word_list('../data/sub_matrix_{0}.voc'.format(batch_id), unique_words)
-    save_matrix('../data/sub_matrix_{0}.npy'.format(batch_id), sub_contextual_mat)
+    sub_matrix_vocab.save(vocab_filename)
+    save_matrix(matrix_filename, sub_contextual_mat)
 
     end_time = time.time()
     logging.debug("Time: %g seconds" % (end_time - start_time))
 
     return sub_contextual_mat
+
+
+def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_vocab_size, files):
+    # Load Vocabulary of interest
+    vocab_of_interest = vocabulary.Vocabulary()
+    vocab_of_interest.load(vocab_file_of_interest)
+
+    logging.debug('Total # of words: {0}.'.format(vocab_of_interest.size()))
+
+    # Build contextual distribution matrix for NP.
+    contextual_mat = np.zeros((vocab_of_interest.size(), full_vocab_size))
+
+    num_it = 0
+    for (voc_filename, mat_filename) in files:
+        num_it += 1
+
+        # First read the sub vocabulary.
+        sub_matrix_vocab = Vocabulary()
+        sub_matrix_vocab.load(voc_filename)
+
+        # Only load sub matrix if the matrix has the distribution we want.
+        has_target_word = False
+        target_words_rows = []
+        for i in range(0, vocab_of_interest.size()):
+            if sub_matrix_vocab.contain(words[i]):
+                # get the row id of the interested word in sub matrix.
+                row_id = sub_matrix_vocab.get_word_index(words[i])
+                target_words_rows.append(row_id)
+                has_target_word = True
+            else:
+                # if cannot find the word of interest in the vocabulary,
+                # mark as -1.
+                target_words_rows.append(-1)
+
+        if has_target_word:
+            sub_matrix = np.load(mat_filename)
+            for i in range(0, vocab_of_interest.size()):
+                row_id = target_words_rows[i]
+                if row_id != -1:
+                    contextual_mat[i] += sub_matrix[row_id]
+
+    # remove the words with no distribution information.
+    row_sums = contextual_mat.sum(axis=1)
+    rows_to_delete = []
+    for i in range(0, vocab_of_interest.size()):
+        if row_sums[i] == 0:
+            rows_to_delete.append(i)
+            logging.warning('No contextual information for: {0}'.format(words[i]))
+    logging.warning('# of words deleted: {0}'.format(len(rows_to_delete)))
+
+    # delete corresponding rows from matrix.
+    contextual_mat = np.delete(contextual_mat, rows_to_delete, 0)
+    row_sums = np.delete(row_sums, rows_to_delete, 0)
+
+    # build new vocabulary after deletion.
+    vocab_after_delete = vocabulary.Vocabulary()
+    for w in vocab_of_interest.word_list:
+        if vocab_of_interest.get_word_index(w) not in rows_to_delete:
+            vocab_after_delete.add(w)
+
+    # normalize.
+    contextual_mat = contextual_mat / row_sums.reshape(-1, 1)
+
+    # Build the co-occurrence matrix by contextual matrix.
+    co_mat = calculate_cooccur_matrix(contextual_mat)
+    logging.debug(co_mat)
+
+    # Save matrix, vocabulary, and deleted vocabulary.
+    co_mat_filename = vocab_file_of_interest.replace('.voc', '_co_mat.npy')
+    vocab_filename = vocab_file_of_interest.replace('.voc', '_co_mat.voc')
+    save_matrix(co_mat_filename, co_mat)
+    vocab_after_delete.save(vocab_filename)
+
+    return co_mat
 
 
 def calculate_cooccur_matrix(contextual_mat):
@@ -158,13 +236,6 @@ def calculate_cooccur_matrix(contextual_mat):
     logging.debug('Print 15*15 similarity matrix:')
     logging.debug(cooccur_mat[0:15, 0:15])
     return cooccur_mat
-
-
-def save_word_list(filename, words):
-    with codecs.open(filename, 'w', encoding='ISO-8859-1') as f:
-        for w in words:
-            f.writelines(w + '\n')
-    return
 
 
 def save_matrix(filename, matrix):

@@ -33,7 +33,7 @@ class Vocabulary(object):
         if self.contain(word):
             return self.dict[word]
         else:
-            return -1
+            raise ValueError('Cannot find the word: {0}'.format(word))
 
     def get_word(self, index):
         return self.word_list[index]
