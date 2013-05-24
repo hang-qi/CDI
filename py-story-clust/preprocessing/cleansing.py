@@ -19,9 +19,10 @@ def clean(words):
     if words is None:
         return None
     words = [w.lower() for w in words]
+    words = [morphy(w) for w in words]
     cleaned_words = remove_stopwords(words)
-    if len(cleaned_words) > 0:
-        cleaned_words = [morphy(w) for w in cleaned_words]
+    #if len(cleaned_words) > 0:
+    #    cleaned_words = [morphy(w) for w in cleaned_words]
     return cleaned_words
 
 
