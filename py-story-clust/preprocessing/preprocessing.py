@@ -6,7 +6,6 @@ import glob
 
 import cleansing
 
-
 CONTENT_LINE_TAG = ['cc0', 'cco', 'cc1', 'tr0', 'tr1']
 
 

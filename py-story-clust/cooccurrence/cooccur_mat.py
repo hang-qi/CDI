@@ -152,16 +152,16 @@ def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_v
         num_it += 1
 
         # First read the sub vocabulary.
-        sub_matrix_vocab = Vocabulary()
+        sub_matrix_vocab = vocabulary.Vocabulary()
         sub_matrix_vocab.load(voc_filename)
 
         # Only load sub matrix if the matrix has the distribution we want.
         has_target_word = False
         target_words_rows = []
         for i in range(0, vocab_of_interest.size()):
-            if sub_matrix_vocab.contain(words[i]):
+            if sub_matrix_vocab.contain(vocab_of_interest.get_word(i)):
                 # get the row id of the interested word in sub matrix.
-                row_id = sub_matrix_vocab.get_word_index(words[i])
+                row_id = sub_matrix_vocab.get_word_index(vocab_of_interest.get_word(i))
                 target_words_rows.append(row_id)
                 has_target_word = True
             else:
@@ -182,7 +182,7 @@ def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_v
     for i in range(0, vocab_of_interest.size()):
         if row_sums[i] == 0:
             rows_to_delete.append(i)
-            logging.warning('No contextual information for: {0}'.format(words[i]))
+            logging.warning('No contextual information for: {0}'.format(vocab_of_interest.get_word(i)))
     logging.warning('# of words deleted: {0}'.format(len(rows_to_delete)))
 
     # delete corresponding rows from matrix.

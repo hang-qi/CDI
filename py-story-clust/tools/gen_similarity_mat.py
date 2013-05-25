@@ -15,7 +15,7 @@ from vocabulary import vocabulary
 
 def main():
     distribution_matrix_dir = '../data/'    # the directory contain distribution matrices
-    vocabularies_of_interest = ['../mat/np.voc', '../mat/vp.voc']
+    vocabularies_of_interest = ['../mat/np1.voc', '../mat/np2.voc']
     generate_similarity_matrix(distribution_matrix_dir, vocabularies_of_interest)
     return
 
