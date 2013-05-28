@@ -42,10 +42,10 @@ class TripletVocabulary(object):
         return self.vp_list.index(word)
 
     def save(self, filename):
-        with codecs.open('{0}.np_list'.format(filename), "w", encoding='ISO-8859-1') as f:
+        with codecs.open('{0}np1.voc'.format(filename), "w", encoding='ISO-8859-1') as f:
             for val in self.np_list:
                 f.writelines(val + '\n')
-        with codecs.open('{0}.vp_list'.format(filename), "w", encoding='ISO-8859-1') as f:
+        with codecs.open('{0}np2.voc'.format(filename), "w", encoding='ISO-8859-1') as f:
             for val in self.vp_list:
                 f.writelines(val + '\n')
         return

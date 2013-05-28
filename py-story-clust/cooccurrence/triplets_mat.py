@@ -11,63 +11,10 @@ from vocabulary import vocabulary
 def generate_initial_npvp_voc(triplets_file_path):
     files = glob.glob(triplets_file_path)
     triplet_voc = generate_triplets_voc(files)
-    triplet_voc.save('Triplet')
+    triplet_voc.save('../mat/')
     print len(triplet_voc.np_list)
     print len(triplet_voc.vp_list)
-    #triplet_initial_matrix = build_initial_triplets_cooccur_mat(triplet_voc, files)
-    #np.savetxt('triplet_initial_matrix.txt', triplet_initial_matrix, fmt='%-7.2f')
-    #triplet_matrix = morph_triplets_cooccur_mat(triplet_initial_matrix, np_matrix, vp_matrix)
     return
-
-
-def learn_triplets_cooccur_mat(triplets_file_path):
-    files = glob.glob(triplets_file_path)
-    rm_np_voc = vocabulary.Vocabulary()
-    rm_np_voc.load('../mat/np_to_delete.voc')
-    rm_vp_voc = vocabulary.Vocabulary()
-    rm_vp_voc.load('../mat/vp_to_delete.voc')
-    np_voc = vocabulary.Vocabulary()
-    vp_voc = vocabulary.Vocabulary()
-    np_voc.load('../mat/np.voc')
-    vp_voc.load('../mat/vp.voc')
-    num_np = np_voc.size()
-    num_vp = vp_voc.size()
-    cooccur_mat = zeros([num_np, num_vp])
-    for file_in in files:
-        with open(file_in, 'r') as f:
-            for line in f:
-                if(line[0] != '<'):
-                    line = (line[:-2]).lower()
-                    triplets = line.split('|')
-                    np1 = cleansing.clean(triplets[0].split())
-                    vp = cleansing.clean(triplets[1].split())
-                    np2 = cleansing.clean(triplets[2].split())
-                    for w in np2:
-                        np1.append(w)
-                    #for w in np1:
-                    #    if rm_np_voc.contain(w):
-                    np1_new = []
-                    vp_new = []
-                    for w in np1:
-                        if not rm_np_voc.contain(w):
-                            if (np_voc.get_word_index(w)) != -1:
-                                np1_new.append(w)
-                    for w in vp:
-                        if not rm_vp_voc.contain(w):
-                            if (vp_voc.get_word_index(w)) != -1:
-                                vp_new.append(w)
-                    #np1 = [w for w in np1 if not rm_np_voc.contain(w)]
-                    #vp = [w for w in vp if not rm_vp_voc.contain(w)]
-
-                    pairs = [(np_voc.get_word_index(u), vp_voc.get_word_index(v)) for u in np1_new for v in vp_new]
-                    for pair in pairs:
-                        if pair[1] == -1:
-                            print(pair[1])
-                        if pair[0] == -1:
-                            print(pair[1])
-                        cooccur_mat[pair[0], pair[1]] += 1
-    #np.save('cooccur_mat.npy', cooccur_mat)
-    return cooccur_mat
 
 
 def generate_triplets_voc(files):
@@ -91,22 +38,30 @@ def generate_triplets_voc(files):
     return triplet_voc
 
 
-def build_initial_triplets_cooccur_mat(triplet_voc, files):
-    num_np = triplet_voc.np_size()
-    num_vp = triplet_voc.vp_size()
+def learn_triplets_cooccur_mat(triplets_file_path):
+    files = glob.glob(triplets_file_path)
+    np_voc = vocabulary.Vocabulary()
+    vp_voc = vocabulary.Vocabulary()
+    np_voc.load('../mat/np1.voc')
+    vp_voc.load('../mat/np2.voc')
+    num_np = np_voc.size()
+    num_vp = vp_voc.size()
     cooccur_mat = zeros([num_np, num_vp])
     for file_in in files:
         with open(file_in, 'r') as f:
             for line in f:
                 if(line[0] != '<'):
-                    line = line[:-2].lower()
+                    line = (line[:-2]).lower()
                     triplets = line.split('|')
                     np1 = cleansing.clean(triplets[0].split())
                     vp = cleansing.clean(triplets[1].split())
                     np2 = cleansing.clean(triplets[2].split())
                     for w in np2:
-                        np1.append(w)
-                    pairs = [(triplet_voc.np_index(u), triplet_voc.vp_index(v)) for u in np1 for v in vp]
+                        vp.append(w)
+                    np1_new = [w for w in np1 if np_voc.contain(w)]
+                    vp_new = [w for w in vp if vp_voc.contain(w)]
+
+                    pairs = [(np_voc.get_word_index(u), vp_voc.get_word_index(v)) for u in np1_new for v in vp_new]
                     for pair in pairs:
                         cooccur_mat[pair[0], pair[1]] += 1
     return cooccur_mat
@@ -123,11 +78,12 @@ def morph_triplets_cooccur_mat(matrix):
 
 
 def main():
-    generate_initial_npvp_voc('../triplet_files/*.txt')
-    #cooccur_mat = learn_triplets_cooccur_mat('../triplet_files/*.txt')
-    #np.savetxt('cooccur_mat.txt', cooccur_mat)
+    #generate_initial_npvp_voc('../triplet_files/*.txt')
+
+    cooccur_mat = learn_triplets_cooccur_mat('../triplet_files/*.txt')
+    np.savetxt('../mat/cooccur_mat.txt', cooccur_mat)
     #morphed_cooccur_mat = morph_triplets_cooccur_mat(cooccur_mat)
-    #np.savetxt('cooccur_mat_final.txt', morphed_cooccur_mat)
+    #np.savetxt('../mat/cooccur_mat_final.txt', morphed_cooccur_mat)
     return
 
 
