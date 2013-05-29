@@ -3,6 +3,7 @@ import re
 import datetime
 import subprocess
 import timezone
+import glob
 
 import config
 
@@ -53,9 +54,16 @@ def generateCandidiates(captionFilename):
 
     for deltaHour in range(-1, 5):
         newUtcTime = utcTime + datetime.timedelta(hours=deltaHour)
-        newFilename = "/tv/{0:%Y/%Y-%m/%Y-%m-%d/%Y-%m-%d_%H%M}_{1}".format(
-            newUtcTime, name)
-        candidateList.append(newFilename)
+        #newFilename = "/tv/{0:%Y/%Y-%m/%Y-%m-%d/%Y-%m-%d_%H%M}_{1}".format(
+        #    newUtcTime, name)
+        #candidateList.append(newFilename)
+
+        # match all CNN file within the time range.
+        candidate_pattern = "/tv/{0:%Y/%Y-%m/%Y-%m-%d/%Y-%m-%d_%H%M}_US_CNN_*.txt".format(
+            newUtcTime)
+        candidateList.extend(glob.glob(candidate_pattern))
+
+        
     return candidateList
 
     #/tv/2012/2012-01/2012-01-05/2012-01-05_2100_US_CNN_Situation_Room.txt
