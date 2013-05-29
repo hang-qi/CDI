@@ -25,7 +25,7 @@ programDict = {
     "PIERS MORGAN TONIGHT"          : "Piers_Morgan_Tonight",
     "ERIN BURNETT OUT FRONT"        : "Erin_Burnett_Out_Front",
     "PAULA ZAHN NOW"                : "Paula_Zahn_Now",
-    "LOU DOBBS TONIGHT"             : "Lou_Dobbs_Tonight"
+    "LOU DOBBS TONIGHT"             : "Lou_Dobbs_Tonight",
     "IN THE ARENA"                  : "In_The_Arena"
 }
 
