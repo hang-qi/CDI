@@ -7,8 +7,8 @@ import subprocess
 import config
 
 
-# Tranverse all files under given dir, save all filenames in a list.
 def getHTMLFiles(directory):
+    """Traverse all files under given dir, save all filenames in a list."""
     files = []
     for dirpath, dirnames, filenames in os.walk(directory):  # Walk directory tree
         for filename in filenames:
@@ -18,7 +18,7 @@ def getHTMLFiles(directory):
 
 
 def renameHTMLTranscript(oldFilename, newFilename):
-    """rename the html transcript by cp."""
+    """Rename the HTML transcript by cp."""
     if not os.path.exists(newFilename):
         # os.system("cp -p {src} {tgt}".format(src=oldFilename,
         # tgt=newFilename))
@@ -29,7 +29,7 @@ def renameHTMLTranscript(oldFilename, newFilename):
     return True
 
 
-def matchAll(htmlTranscriptFiles):
+def matchAll(htmlTranscriptFiles, skipExistingTpt=False):
     dt_dayStart = datetime.datetime.now()
     num_integrated = 0
     num_dayintegrated = 0
@@ -86,11 +86,17 @@ def matchAll(htmlTranscriptFiles):
             # run aligner, given caption file and raw txt file
             if (captionExist and transcriptExist):
                 parsedTranscriptFilename = targetHTMLFilename.replace(
-                    ".html", ".rawtxt")
-                r = subprocess.call(
-                    [config.ROOT_ALIGNER + 'aligner', targetCaptionFilename, parsedTranscriptFilename])
-                num_integrated += 1
-                num_dayintegrated += 1
+                    '.html', '.rawtxt')
+                tptFilename = targetHTMLFilename.replace('.html', '.tpt')
+
+                # Skip existing tpt files if this option is activated.
+                if os.path.exists(tptFilename) and skipExistingTpt:
+                    print('[SKIPPED] TPT file exists.')
+                else:
+                    r = subprocess.call(
+                        [config.ROOT_ALIGNER + 'aligner', targetCaptionFilename, parsedTranscriptFilename])
+                    num_integrated += 1
+                    num_dayintegrated += 1
             pass
         except:
             print("[ERROR] ", sys.exc_info()[0])
@@ -101,17 +107,28 @@ def matchAll(htmlTranscriptFiles):
 
 def main():
     if (len(sys.argv) < 2):
-        print("Please give a folder of transcripts.")
-        print("  e.g. > Python3 matchfile.py data/")
+        print('Usage:  Python3 matchall.py [-s] <transcript_folder>')
+        print('Option: -s     skip matching if tpt file exists.')
+        print('')
+        print('e.g. > Python3 matchall.py data/')
+        print('e.g. > Python3 matchall.py -s data/')
         return
 
+    transcriptFolder = ''
+    skipExistingTpt = False
+    if len(sys.argv) == 2:
+        transcriptFolder = sys.argv[1]
+    elif len(sys.argv) == 3:
+        assert(sys.argv[1] == '-s')
+        skipExistingTpt = True
+        transcriptFolder = sys.argv[2]
+
     dt_start = datetime.datetime.now()
-    transcriptFolder = sys.argv[1]
     print("Processing Transcript directory:" + transcriptFolder)
     print("Traversing...")
     htmlTranscriptFiles = getHTMLFiles(transcriptFolder)
     print("Making copies...")
-    num_integrated = matchAll(htmlTranscriptFiles)
+    num_integrated = matchAll(htmlTranscriptFiles, skipExistingTpt)
     dt_end = datetime.datetime.now()
     print("Done.")
 
