@@ -1,6 +1,7 @@
 import datetime
 import math
 import logging
+import glob
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,9 +13,12 @@ from sklearn.cluster import KMeans, mean_shift
 
 from vocabulary import vocabulary
 from cooccurrence.cooccur_mat import CooccurMatrix
+from cooccurrence import cluster_triplets
+
 # Conversion between similarity matrix and distance matrix
 # similarity_matrix = np.exp(-distance_matrix / distance_matrix.std())
 # distance_matrix = np.log(similarity_matrix)
+
 
 def plot_cities():
     #distance_matrix = get_distances()
@@ -48,6 +52,7 @@ def plot_cities():
     plt.show()
     return
 
+
 def md_scaling(cooccur_matrix):
     distance_matrix = -np.log(cooccur_matrix.matrix)
 
@@ -74,19 +79,47 @@ def plot_points(points, labels=None, cluster_labels=None):
             plt.text(points[0], points[1], labels[idx], fontsize=10)
 
 
+def batch_cluster_and_plot(sim_mat_files):
+    # Perform a similarity file for every matrix.
+    for mat_filename in sim_mat_files:
+        fig_filename = 'fig/{0}.png'.format(mat_filename.split('/')[-1])
+
+        # Load similarity matrix.
+        mat = CooccurMatrix()
+        mat.load(mat_filename)
+
+        # Perform multidimensional scaling to map to 2D space.
+        points = md_scaling(mat)
+
+        # Clustering.
+        (center, labels) = cluster(points)
+
+        # Plot the points with label and save.
+        plt.title(mat_filename)
+        plot_points(points, labels=mat.vocabulary.word_list, cluster_labels=labels)
+        plt.savefig(fig_filename, bbox_inches=0)
+
+
+def generate_similarity_matrices(triplets_files):
+    similarity_files = []
+    for triplet_file in triplets_files:
+        # generate similarity matrix for each of the story.
+        co_mat = cluster_triplets.learn_triplets_cooccur_mat(triplet_file)
+
+        # save the similarity matrix in individual files.
+        similarity_matrix_filename = 'mat/sim_mat/' + triplet_files.split('/')[-1] + '_np1'
+        similarity_files.append(similarity_matrix_filename)
+        co_mat.save(similarity_matrix_filename)
+    return similarity_files
+
+
 def main():
-    logging.basicConfig(level=logging.INFO)
+    triplets_files = glob.glob('triplets_files/*.txt')
+    sim_mat_files = generate_similarity_matrices(triplets_files)
 
-    # load similarity matrix
-    mat = CooccurMatrix()
-    mat.load('mat/similarity_np2')
-    points = md_scaling(mat)
-    (center, labels) = cluster(points)
-
-    # plot the points with label
-    plot_points(points, labels=mat.vocabulary.word_list, cluster_labels=labels)
-    plt.show()
-
+    #sim_mat_files = ['mat/similarity_np2']
+    batch_cluster_and_plot(sim_mat_files)
+    return
 
 if __name__ == '__main__':
     main()
