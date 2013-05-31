@@ -8,6 +8,24 @@ import numpy as np
 from vocabulary import vocabulary
 
 
+class CooccurMatrix(object):
+    """docstring for CooccurMatrix"""
+    def __init__(self, matrix, vocabulary):
+        super(CooccurMatrix, self).__init__()
+        self.matrix = matrix
+        self.vocabulary = vocabulary
+
+    def load(self, filename):
+        self.matrix = np.load(filename + ".npy")
+        self.vocabulary = vocabulary.Vocabulary()
+        self.vocabulary.load(filename + ".voc")
+
+    def save(self, filename):
+        np.save(filename + ".npy")
+        self.vocabulary.save(filename + ".voc")
+
+
+
 def learn_matrix(story_files):
     """Learn a word co-occurrence matrix from corpus."""
 
@@ -137,11 +155,7 @@ def build_sub_contextual_matrix_and_save(
     return sub_contextual_mat
 
 
-def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_vocab_size, files):
-    # Load Vocabulary of interest
-    vocab_of_interest = vocabulary.Vocabulary()
-    vocab_of_interest.load(vocab_file_of_interest)
-
+def calculate_ooccur_mat_by_submatrices(vocab_of_interest, full_vocab_size, files):
     logging.debug('Total # of words: {0}.'.format(vocab_of_interest.size()))
 
     # Build contextual distribution matrix for NP.
@@ -202,13 +216,19 @@ def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_v
     co_mat = calculate_cooccur_matrix(contextual_mat)
     logging.debug(co_mat)
 
-    # Save matrix, vocabulary, and deleted vocabulary.
-    co_mat_filename = vocab_file_of_interest.replace('.voc', '_co_mat.npy')
-    vocab_filename = vocab_file_of_interest.replace('.voc', '_co_mat.voc')
-    save_matrix(co_mat_filename, co_mat)
-    vocab_after_delete.save(vocab_filename)
+    return CooccurMatrix(co_mat, vocab_after_delete)
 
-    return co_mat
+
+def calculate_cooccur_mat_by_submatrices_and_save(vocab_file_of_interest, full_vocab_size, files):
+    # Load Vocabulary of interest
+    vocab_of_interest = vocabulary.Vocabulary()
+    vocab_of_interest.load(vocab_file_of_interest)
+
+    mat = calculate_ooccur_mat_by_submatrices(vocab_of_interest, full_vocab_size, files)
+
+    # Save matrix, vocabulary, and deleted vocabulary.
+    mat.save(vocab_file_of_interest.replace('.voc', '_co_mat'))
+    return
 
 
 def calculate_cooccur_matrix(contextual_mat):
