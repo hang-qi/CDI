@@ -10,10 +10,11 @@ from vocabulary import vocabulary
 
 class CooccurMatrix(object):
     """docstring for CooccurMatrix"""
-    def __init__(self, matrix, vocabulary):
+    def __init__(self, matrix=None, vocabulary=None):
         super(CooccurMatrix, self).__init__()
-        self.matrix = matrix
-        self.vocabulary = vocabulary
+        if matrix is not None and vocabulary is not None:
+            self.matrix = matrix
+            self.vocabulary = vocabulary
 
     def load(self, filename):
         self.matrix = np.load(filename + ".npy")
@@ -21,7 +22,7 @@ class CooccurMatrix(object):
         self.vocabulary.load(filename + ".voc")
 
     def save(self, filename):
-        np.save(filename + ".npy")
+        np.save(filename + ".npy", self.matrix)
         self.vocabulary.save(filename + ".voc")
 
 
