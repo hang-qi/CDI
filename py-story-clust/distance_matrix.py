@@ -2,15 +2,13 @@ import datetime
 import math
 import logging
 
+import matplotlib.pyplot as plt
 import numpy as np
 from numpy.matlib import zeros
-from scipy.cluster.hierarchy import linkage, dendrogram
-from scipy.cluster import hierarchy as hier
-import matplotlib.pyplot as plt
+import scipy.cluster.vq as clust
 
-from sklearn.cluster import DBSCAN
-from sklearn import metrics
 from sklearn.manifold import MDS
+from sklearn.cluster import KMeans, mean_shift
 
 from vocabulary import vocabulary
 from cooccurrence.cooccur_mat import CooccurMatrix
@@ -50,27 +48,44 @@ def plot_cities():
     plt.show()
     return
 
-def plot_vocabulary(similarity_matrix, vocab):
-    distance_matrix = -np.log(similarity_matrix)
+def md_scaling(cooccur_matrix):
+    distance_matrix = -np.log(cooccur_matrix.matrix)
 
     mds = MDS(dissimilarity='precomputed')
     mds.fit(distance_matrix)
-
-    # plot the points with label
-    for idx, points in enumerate(mds.embedding_):
-        plt.plot(points[0], points[1], 'r.')
-        plt.text(points[0], points[1], vocab.get_word(idx), fontsize=10)
-    plt.show()
     return mds.embedding_
+
+
+def cluster(points, labels=None):
+    #km = KMeans(n_clusters=3, init='k-means++', max_iter=100, n_init=1,
+    #            verbose=1)
+    #km.fit(points)
+    return mean_shift(points)
+
+
+def plot_points(points, labels=None, cluster_labels=None):
+    cluster_style = ['or', 'ob', 'og', 'oc', 'om', 'oy', 'ok']
+    style = '.r'
+    for idx, points in enumerate(points):
+        if cluster_labels is not None:
+            style = cluster_style[cluster_labels[idx] % 7]
+        plt.plot(points[0], points[1], style)
+        if not labels is None:
+            plt.text(points[0], points[1], labels[idx], fontsize=10)
 
 
 def main():
     logging.basicConfig(level=logging.INFO)
 
     # load similarity matrix
-    np1_mat = CooccurMatrix()
-    np1_mat.load('mat/similarity_np1')
-    plot_vocabulary(np1_mat.matrix, np1_mat.vocabulary)
+    mat = CooccurMatrix()
+    mat.load('mat/similarity_np2')
+    points = md_scaling(mat)
+    (center, labels) = cluster(points)
+
+    # plot the points with label
+    plot_points(points, labels=mat.vocabulary.word_list, cluster_labels=labels)
+    plt.show()
 
 
 if __name__ == '__main__':
