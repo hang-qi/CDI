@@ -41,7 +41,7 @@ def generate_similarity_matrix(distribution_matrix_dir, vocabularies_of_interest
     for vocab_file in vocabularies_of_interest:
         logging.debug('Calculating similarity matrix for \'{0}\'...'.format(
             vocab_file))
-        similarity_matrix = cooccur_mat.calculate_cooccur_mat_by_submatrices_and_save(
+        cooccur_mat.calculate_cooccur_mat_by_submatrices_and_save(
             vocab_file, full_vocab.size(), files)
     return
 
