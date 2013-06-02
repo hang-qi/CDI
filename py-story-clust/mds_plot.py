@@ -1,3 +1,5 @@
+# Generate MDS plot for story or corpus.
+
 import datetime
 import math
 import logging
