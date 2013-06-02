@@ -10,10 +10,11 @@ from cooccurrence.cooccur_mat import CooccurMatrix
 from vocabulary import triplet_vocabulary
 
 
-def learn_triplets_cooccur_mat(file_in, voc, mat):
-    np_voc = vocabulary.Vocabulary()
-    np_voc.load(voc)
-    np1_matrix = np.load(mat)
+def learn_triplets_cooccur_mat(file_in, co_mat_file):
+    learned_co_mat = CooccurMatrix()
+    learned_co_mat.load(co_mat_file)
+    np_voc = learned_co_mat.vocabulary
+    np1_matrix = learned_co_mat.matrix
 
     np1_all = vocabulary.Vocabulary()
     with open(file_in, 'r') as f:

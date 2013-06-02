@@ -14,6 +14,7 @@ from sklearn.cluster import KMeans, mean_shift
 from vocabulary import vocabulary
 from cooccurrence.cooccur_mat import CooccurMatrix
 from cooccurrence import cluster_triplets
+from storyclustering import storyclustering
 
 # Conversion between similarity matrix and distance matrix
 # similarity_matrix = np.exp(-distance_matrix / distance_matrix.std())
@@ -53,8 +54,11 @@ def plot_cities():
     return
 
 
-def md_scaling(cooccur_matrix):
-    distance_matrix = -np.log(cooccur_matrix.matrix)
+def md_scaling(co_matrix, is_distance_matrix=False):
+    if not is_distance_matrix:
+        distance_matrix = -np.log(co_matrix.matrix)
+    else:
+        distance_matrix = co_matrix
 
     mds = MDS(dissimilarity='precomputed')
     mds.fit(distance_matrix)
@@ -68,66 +72,72 @@ def cluster(points, labels=None):
     return mean_shift(points)
 
 
-def plot_points(points, labels=None, cluster_labels=None):
+def plot_points(points, ground_truth_labels=None, cluster_labels=None):
     cluster_style = ['or', 'ob', 'og', 'oc', 'om', 'oy', 'ok']
     style = '.r'
     for idx, points in enumerate(points):
         if cluster_labels is not None:
             style = cluster_style[cluster_labels[idx] % 7]
         plt.plot(points[0], points[1], style)
-        if not labels is None:
-            plt.text(points[0], points[1], labels[idx], fontsize=10)
+        if not ground_truth_labels is None:
+            plt.text(points[0], points[1], ground_truth_labels[idx], fontsize=10)
 
 
-def batch_cluster_and_plot(sim_mat_files):
-    # Perform a similarity file for every matrix.
-    for mat_filename in sim_mat_files:
-        fig_filename = 'fig/{0}.png'.format(mat_filename.split('/')[-1])
+def cluster_and_plot(co_mat, is_distance_matrix=False, ground_truth_labels=None, figure_title=None, save_figure_filename=None, show_figure=True):
+    # Perform multidimensional scaling to map to 2D space.
+    points = md_scaling(co_mat, is_distance_matrix)
 
-        # Load similarity matrix.
-        mat = CooccurMatrix()
-        mat.load(mat_filename)
+    # Clustering.
+    (center, cluster_labels) = cluster(points)
 
-        # Perform multidimensional scaling to map to 2D space.
-        points = md_scaling(mat)
+    # Plot the points with label and save.
+    plt.figure()
+    plot_points(points, ground_truth_labels=ground_truth_labels, cluster_labels=cluster_labels)
 
-        # Clustering.
-        (center, labels) = cluster(points)
-
-        # Plot the points with label and save.
-        plt.figure()
-        plt.title(mat_filename)
-        plot_points(points, labels=mat.vocabulary.word_list, cluster_labels=labels)
-        plt.savefig(fig_filename, bbox_inches=0)
+    if figure_title is not None:
+        plt.title(figure_title)
+    if save_figure_filename is not None:
+        plt.savefig(save_figure_filename, bbox_inches=0)
+    if show_figure:
+        plt.show()
 
 
-def generate_similarity_matrices(triplets_files):
-    similarity_files = []
+def create_words_map_for_stories(triplets_files):
     for triplet_file in triplets_files:
         logging.debug('Generating similarity for {0}'.format(triplet_file))
+
         # generate similarity matrix for each of the story.
-        co_mat = cluster_triplets.learn_triplets_cooccur_mat(triplet_file, 'mat/np1_co_mat.voc', 'mat/np1_co_mat.npy')
+        co_mat = cluster_triplets.learn_triplets_cooccur_mat(triplet_file, 'mat/np1_co_mat')
 
         # save the similarity matrix in individual files.
-        similarity_matrix_filename = 'mat/sim_mat/' + triplet_file.split('/')[-1] + '_np1'
-        similarity_files.append(similarity_matrix_filename)
-        co_mat.save(similarity_matrix_filename)
         try:
-            batch_cluster_and_plot([similarity_matrix_filename])
+            fig_filename = 'fig/{0}.png'.format(triplet_file.split('/')[-1] + '_np1')
+            cluster_and_plot(
+                co_mat.matrix,
+                ground_truth_labels=co_mat.vocabulary.word_list,
+                save_figure_filename=fig_filename,
+                show_figure=False)
         except Exception:
             logging.warning('Cluster cannot be found.')
             pass
-    return similarity_files
+    return
 
 
 def main():
     logging.basicConfig(level=logging.DEBUG)
-    triplets_files = glob.glob('triplet_files/*.txt')
-    triplets_files.sort()
-    sim_mat_files = generate_similarity_matrices(triplets_files)
+    #
+    # Plot a word map for each story.
+    #
+    #triplets_files = glob.glob('triplet_files/*.txt')
+    #triplets_files.sort()
+    #create_words_map_for_stories(triplets_files)
 
-    #sim_mat_files = ['mat/similarity_np2']
-    #batch_cluster_and_plot(sim_mat_files)
+    #
+    # Plot a story map for the corpus.
+    #
+    (dist, ground_truth) = storyclustering.learn_story_distances('triplet_files/[124]_*.txt', 'mat/np1_co_mat', min_similarity=0.8)
+    cluster_and_plot(dist, is_distance_matrix=True, ground_truth_labels=ground_truth)
+
     return
 
 if __name__ == '__main__':

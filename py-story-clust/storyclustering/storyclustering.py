@@ -2,47 +2,63 @@ import sys
 sys.path.append('..')
 import glob
 import numpy as np
-from numpy.matlib import zeros
 from math import sqrt
 from preprocessing import cleansing
-from vocabulary import vocabulary
 from cooccurrence.cooccur_mat import CooccurMatrix
-from vocabulary import triplet_vocabulary
 import codecs
 
 
-def learn_story_distances(triplets_file_path):
+def learn_story_distances(triplets_file_path, co_mat_file, use_similarity=True, min_similarity=None, output_file=False):
+    # Load learned similarity matrix.
+    learned_co_mat = CooccurMatrix()
+    learned_co_mat.load(co_mat_file)
+    np_voc = learned_co_mat.vocabulary
+    np1_matrix = learned_co_mat.matrix
+    if min_similarity is not None:
+        np1_matrix = (np1_matrix >= 0.8) * np1_matrix
+
     files = glob.glob(triplets_file_path)
+    files.sort()
     print len(files)
     file_num = len(files)
-    np_voc = vocabulary.Vocabulary()
-    np_voc.load('../mat/np1_co_mat.voc')
+
+    # Calculate word histogram for each story.
     np_num = np_voc.size()
-    hist = zeros([file_num, np_num])
+    hist = np.zeros([file_num, np_num])
     count = 0
     for file_in in files:
-        hist[count,:] = learn_story_histogram(file_in, np_voc)
+        hist[count, :] = learn_story_histogram(file_in, np_voc)
         count += 1
-    np.savetxt('../mat/histogram.txt', hist)
-    np1_matrix = np.load('../mat/np1_co_mat.npy')
-    dist = zeros([file_num, file_num])
+
+    # Calculate pair-wise distance between stories.
+    dist = np.zeros([file_num, file_num])
     for i in range(file_num):
         for j in range(file_num):
-            dif = hist[i,:] - hist[j,:]
-            #dist[i,j] = sqrt(np.dot(np.dot(dif, np1_matrix), dif.T))
-            dist[i,j] = sqrt(np.dot(dif, dif.T))
-    np.savetxt('../mat/distance.txt', dist)
-    with codecs.open('../mat/filename.txt', "w", encoding='ISO-8859-1') as f:
-        for w in files:
-            f.writelines(w[+17:-4] + '\n')
-    return 
- 
+            dif = hist[i, :] - hist[j, :]
+            if use_similarity:
+                sq = np.dot(np.dot(dif, np1_matrix), dif.T)
+                if (sq < 0):
+                    sq = 0
+                dist[i, j] = sqrt(sq)
+            else:
+                dist[i, j] = sqrt(np.dot(dif, dif.T))
+
+    labels = []
+    for filename in files:
+        labels.append(filename.split('/')[-1][:-4])
+
+    if output_file:
+        np.savetxt('../mat/histogram.txt', hist)
+        np.savetxt('../mat/distance.txt', dist)
+        with codecs.open('../mat/filename.txt', "w", encoding='ISO-8859-1') as f:
+            for l in labels:
+                f.writelines(l + '\n')
+    return (dist, labels)
+
 
 def learn_story_histogram(file_in, np_voc):
-    np1_all = vocabulary.Vocabulary()
     np_num = np_voc.size()
-    hist = zeros([1, np_num])
-    total = 0;
+    hist = np.zeros([1, np_num])
     with open(file_in, 'r') as f:
         for line in f:
             if(line[0] != '<'):
@@ -52,14 +68,22 @@ def learn_story_histogram(file_in, np_voc):
                 np1_new = [w for w in np1 if np_voc.contain(w)]
                 for w in np1_new:
                     hist[0, np_voc.get_word_index(w)] += 1
-                    total += 1
-    if total != 0:
-        hist /= total
+
+    # normalize
+    sum_hist = hist.sum()
+    if sum_hist != 0:
+        hist = hist / sum_hist
+        try:
+            assert(hist.sum() > 0.9 and hist.sum() < 1.1)
+        except AssertionError:
+            print(hist)
+            print(hist.sum())
+            raise
     return hist
 
 
 def main():
-    learn_story_distances('../triplet_files/*.txt')
+    learn_story_distances('../triplet_files/*.txt', '../mat/np1_co_mat', output_file=True)
     return
 
 if __name__ == '__main__':
