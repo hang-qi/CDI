@@ -8,6 +8,7 @@ from preprocessing import cleansing
 from vocabulary import vocabulary
 from cooccurrence.cooccur_mat import CooccurMatrix
 from vocabulary import triplet_vocabulary
+import codecs
 
 
 def learn_story_distances(triplets_file_path):
@@ -28,15 +29,20 @@ def learn_story_distances(triplets_file_path):
     for i in range(file_num):
         for j in range(file_num):
             dif = hist[i,:] - hist[j,:]
-            dist[i,j] = sqrt(np.dot(np.dot(dif, np1_matrix), dif.T))
+            #dist[i,j] = sqrt(np.dot(np.dot(dif, np1_matrix), dif.T))
+            dist[i,j] = sqrt(np.dot(dif, dif.T))
     np.savetxt('../mat/distance.txt', dist)
-    return
-
+    with codecs.open('../mat/filename.txt', "w", encoding='ISO-8859-1') as f:
+        for w in files:
+            f.writelines(w[+17:-4] + '\n')
+    return 
+ 
 
 def learn_story_histogram(file_in, np_voc):
     np1_all = vocabulary.Vocabulary()
     np_num = np_voc.size()
     hist = zeros([1, np_num])
+    total = 0;
     with open(file_in, 'r') as f:
         for line in f:
             if(line[0] != '<'):
@@ -46,6 +52,9 @@ def learn_story_histogram(file_in, np_voc):
                 np1_new = [w for w in np1 if np_voc.contain(w)]
                 for w in np1_new:
                     hist[0, np_voc.get_word_index(w)] += 1
+                    total += 1
+    if total != 0:
+        hist /= total
     return hist
 
 
