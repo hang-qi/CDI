@@ -95,6 +95,7 @@ def batch_cluster_and_plot(sim_mat_files):
         (center, labels) = cluster(points)
 
         # Plot the points with label and save.
+        plt.figure()
         plt.title(mat_filename)
         plot_points(points, labels=mat.vocabulary.word_list, cluster_labels=labels)
         plt.savefig(fig_filename, bbox_inches=0)
@@ -103,22 +104,30 @@ def batch_cluster_and_plot(sim_mat_files):
 def generate_similarity_matrices(triplets_files):
     similarity_files = []
     for triplet_file in triplets_files:
+        logging.debug('Generating similarity for {0}'.format(triplet_file))
         # generate similarity matrix for each of the story.
-        co_mat = cluster_triplets.learn_triplets_cooccur_mat(triplet_file)
+        co_mat = cluster_triplets.learn_triplets_cooccur_mat(triplet_file, 'mat/np1_co_mat.voc', 'mat/np1_co_mat.npy')
 
         # save the similarity matrix in individual files.
-        similarity_matrix_filename = 'mat/sim_mat/' + triplet_files.split('/')[-1] + '_np1'
+        similarity_matrix_filename = 'mat/sim_mat/' + triplet_file.split('/')[-1] + '_np1'
         similarity_files.append(similarity_matrix_filename)
         co_mat.save(similarity_matrix_filename)
+        try:
+            batch_cluster_and_plot([similarity_matrix_filename])
+        except Exception:
+            logging.warning('Cluster cannot be found.')
+            pass
     return similarity_files
 
 
 def main():
-    triplets_files = glob.glob('triplets_files/*.txt')
+    logging.basicConfig(level=logging.DEBUG)
+    triplets_files = glob.glob('triplet_files/*.txt')
+    triplets_files.sort()
     sim_mat_files = generate_similarity_matrices(triplets_files)
 
     #sim_mat_files = ['mat/similarity_np2']
-    batch_cluster_and_plot(sim_mat_files)
+    #batch_cluster_and_plot(sim_mat_files)
     return
 
 if __name__ == '__main__':
