@@ -2,6 +2,7 @@
 import logging
 import glob
 import math
+import copy
 
 import numpy as np
 
@@ -23,7 +24,6 @@ class TopicTree(object):
         self.nodes[i] = [self.nodes[i]]
         self.nodes[i].append(self.nodes[j])
         self.nodes.pop(j)
-        logging.debug(self.nodes)
 
         # transfer the terminals' ownership
         self.branch_terminals[i].extend(self.branch_terminals[j])
@@ -31,7 +31,8 @@ class TopicTree(object):
 
         # combine branch distribution
         self.branch_distributions[i] = self.branch_distributions[i] + self.branch_distributions[j]
-        self.branch_distributions[i] /= self.branch_distributions[i].sum()
+        if self.branch_distributions[i].sum() != 0:
+            self.branch_distributions[i] /= self.branch_distributions[i].sum()
         self.branch_distributions.pop(j)
 
     def find_branch_id(self, target):
@@ -58,7 +59,8 @@ class TopicTree(object):
     def get_probability(self, branch_id, word):
         try:
             word_id = self.vocabulary.get_word_index(word)
-            return self.branch_distributions[branch_id][word_id]
+            distribution = self.branch_distributions[branch_id]
+            return distribution[0, word_id]
         except ValueError:
             logging.warning('Cannot find word: {0}'.format(word))
             return 1
@@ -90,23 +92,20 @@ def calculate_likelihood(tree, corpus, subset=None):
 def propose_next(current_tree):
     """Purpose new trees by pairwise combination."""
     num_main_branches = len(current_tree.nodes)
-    proposals = []
-    affected_terminals = []
-
+    canididates = []
     # Here we perform a exhaust search to propose all possible combinations.
     # Heuristics can be added to skip certain candidates.
     for x in range(0, num_main_branches):
         for y in range(0, num_main_branches):
             if (x < y):
                 # Combine node x and y
-                new_tree = current_tree
+                new_tree = copy.deepcopy(current_tree)
                 new_tree.combine_branch(x, y)
-                proposals.append(new_tree)
 
-                affected = current_tree.branch_terminals[x]
+                affected = copy.deepcopy(current_tree.branch_terminals[x])
                 affected.extend(current_tree.branch_terminals[y])
-                affected_terminals.append(affected)
-    return (proposals, affected_terminals)
+                canididates.append((new_tree, affected))
+    return canididates
 
 
 def greedy_pursuit(initial_tree, corpus):
@@ -120,12 +119,18 @@ def greedy_pursuit(initial_tree, corpus):
         logging.debug('Tree: {0}'.format(current_tree.nodes))
 
         # Generate candidates
+        logging.info('Generating candidates...')
         new_candidates = propose_next(current_tree)
+        logging.debug('# of candidates: {0}'.format(len(new_candidates)))
+
         # Prior for all candidates are same, since
         candidate_prior = calculate_prior(len(initial_tree.nodes)-1)
 
+        logging.info('Evaluating candidates...')
         max_posterior_gain = -1
         for (candidate_tree, affected_terminals) in new_candidates:
+            #logging.debug('Evaluating tree {0} for affected stories {1}'.format(
+            #    candidate_tree.nodes, affected_terminals))
             # Posterior for candidate: P(T2|D) = P(D|T2)P(T2)
             candidate_lh_affected = calculate_likelihood(candidate_tree, corpus, subset=affected_terminals)
             candidate_posterior = candidate_lh_affected * candidate_prior
@@ -144,29 +149,29 @@ def greedy_pursuit(initial_tree, corpus):
 
 def pursuit_tree(input_triplet_files, co_mat_file):
     np_cooccur = CooccurMatrix()
-    #np_cooccur.load(co_mat_file)
+    np_cooccur.load(co_mat_file)
 
     # calculate histogram
-    logging.debug('Calculating histograms of each story...')
+    logging.info('Calculating histograms of each story...')
     corpus = []
     distributions = []
     for triplet_file in input_triplet_files:
-        #(hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, np_cooccur.vocabulary)
-        hist = np.array([0.2, 0.6, 0.2])
-        wordlist = ['a', 'b', 'c']
+        (hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, np_cooccur.vocabulary)
+        #hist = np.array([0.2, 0.6, 0.2])
+        #wordlist = ['a', 'b', 'c']
         corpus.append(wordlist)
         distributions.append(hist)
 
     # initial tree
-    logging.debug('Calculating Initial Tree...')
-    #initial_tree = TopicTree(len(triplet_file), distributions, np_cooccur.vocabulary)
-    initial_tree = TopicTree(len(input_triplet_files), distributions, ['a', 'b', 'c'])
-    return initial_tree
+    logging.info('Calculating Initial Tree...')
+    initial_tree = TopicTree(len(input_triplet_files), distributions, np_cooccur.vocabulary)
+    #initial_tree = TopicTree(len(input_triplet_files), distributions, ['a', 'b', 'c'])
+    #return initial_tree
 
     # start pursuit
+    logging.info('Pursuing a optimum tree...')
     optimum_tree = greedy_pursuit(initial_tree, corpus)
     return optimum_tree
-
 
 
 def main():
@@ -181,8 +186,8 @@ def main():
     optimum_tree = pursuit_tree(input_triplet_files, 'mat/np1_co_mat')
 
     # ---For test---
-    optimum_tree.combine_branch(1, 10)
-    optimum_tree.combine_branch(1, 5)
+    #optimum_tree.combine_branch(1, 10)
+    #optimum_tree.combine_branch(1, 5)
     # ---End---
 
     labels = [filename.split('/')[-1][:-4] for filename in input_triplet_files]
