@@ -61,6 +61,7 @@ class TopicTree(object):
         try:
             word_id = self.vocabulary.get_word_index(word)
             distribution = self.branch_distributions[branch_id]
+            assert(distribution[0, word_id] != 0)
             return distribution[0, word_id]
         except ValueError:
             logging.warning('Cannot find word: {0}'.format(word))
@@ -157,7 +158,7 @@ def greedy_pursuit(initial_tree, corpus):
     return current_tree
 
 
-def pursuit_tree(input_triplet_files, co_mat_file=None):
+def pursuit_tree(input_triplet_files, co_mat_file=None, diffuse=False):
     if co_mat_file is not None:
         np_cooccur = CooccurMatrix()
         np_cooccur.load(co_mat_file)
@@ -173,6 +174,8 @@ def pursuit_tree(input_triplet_files, co_mat_file=None):
     distributions = []
     for triplet_file in input_triplet_files:
         (hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, vocab)
+        if co_mat_file is not None and diffuse is True:
+            hist = np.dot(hist, np_cooccur.matrix)
         #hist = np.array([0.2, 0.6, 0.2])
         #wordlist = ['a', 'b', 'c']
         corpus.append(wordlist)
@@ -204,8 +207,6 @@ def build_vocabulary(input_triplet_files, word_type='NP1'):
                         words = cleansing.clean(triplets[1].split())
                     elif (word_type == 'NP2'):
                         words = cleansing.clean(triplets[2].split())
-                    logging.debug('Words: {0}'.format(words))
-
                     for w in words:
                         vocab.add(w)
     logging.info('Vocabulary built. # of words: {0}'.format(vocab.size()))
@@ -221,7 +222,7 @@ def main():
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
     # pursuit tree on NP1
-    optimum_tree = pursuit_tree(input_triplet_files, 'mat/np1_co_mat')
+    optimum_tree = pursuit_tree(input_triplet_files)  # 'mat/np1_co_mat')
 
     # ---For test---
     #optimum_tree.combine_branch(1, 10)
