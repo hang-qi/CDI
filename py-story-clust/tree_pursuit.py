@@ -11,6 +11,7 @@ from storyclustering import storyclustering
 from preprocessing import cleansing
 from vocabulary import vocabulary
 
+
 class TopicTree(object):
     def __init__(self, num_topics, distributions, vocabulary):
         super(TopicTree, self).__init__()
@@ -46,7 +47,7 @@ class TopicTree(object):
     def print_hiearchy(self, root=None, labels=None, level_indents=0):
         if root is None:
             root = self.nodes
-        print('{0}+'.format(level_indents*'    '))
+        print('{0}+'.format(level_indents*'|  '))
         for node in root:
             if isinstance(node, type([])):
                 # Have next level
@@ -56,7 +57,7 @@ class TopicTree(object):
                     label_to_print = labels[node]
                 else:
                     label_to_print = node
-                print('{0}{1}'.format((level_indents+1)*'    ', label_to_print))
+                print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
 
     def get_probability(self, branch_id, word):
         try:
@@ -72,24 +73,25 @@ class TopicTree(object):
 def calculate_prior(n):
     """Returns the prior of the tree based on complexity.
     Simple trees are favored."""
-    return math.exp(-n) * 1e20
+    return math.exp(-n*10)  # * 1e30
 
 
 def calculate_likelihood(tree, corpus, subset=None):
     """Calculate the likelihood of the corpus given a topic tree."""
-    likelihood = 1
+    likelihood = 0
     for (idx, wordlist) in enumerate(corpus):
         # Only computer the likelihood of affected portion of data
         if subset is None or idx in subset:
             # The likelihood is calculated on the main branch.
             target_branch_id = tree.find_branch_id(idx)
 
-            prob_doc = 1
+            prob_doc = 0
             for word in wordlist:
-                prob_doc *= tree.get_probability(target_branch_id, word)
+                prob_doc += math.log(tree.get_probability(target_branch_id, word))
+            prob_doc = prob_doc / len(wordlist)
 
-            likelihood *= prob_doc
-    assert(likelihood != 1)
+            likelihood += prob_doc
+    assert(likelihood != 0)
     #if (likelihood == 1 or likelihood == 0):
     #    logging.warning('Subset to compute {0}'.format(subset))
     #    logging.warning('Words in subset:')
@@ -121,8 +123,10 @@ def propose_next(current_tree):
 def greedy_pursuit(initial_tree, corpus):
     best_candidate = initial_tree
     max_posterior_gain = 1
+    min_likelihood_change = 0
 
-    while (max_posterior_gain > -1e-100):
+    #while (max_posterior_gain > 0):
+    while(abs(min_likelihood_change) < 3):
         current_tree = best_candidate
         current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
@@ -137,6 +141,7 @@ def greedy_pursuit(initial_tree, corpus):
 
         logging.info('Evaluating candidates...')
         max_posterior_gain = -1
+        min_likelihood_change = 100
         for (candidate_tree, affected_terminals) in new_candidates:
             # Posterior for candidate: P(T2|D) = P(D|T2)P(T2)
             candidate_lh_affected = calculate_likelihood(candidate_tree, corpus, subset=affected_terminals)
@@ -147,14 +152,18 @@ def greedy_pursuit(initial_tree, corpus):
             current_posterior = current_lh_affected * current_prior
 
             posterior_gain = candidate_posterior - current_posterior
-            if (posterior_gain > max_posterior_gain and posterior_gain != 0):
+            likelihood_change = abs(candidate_lh_affected - current_lh_affected)
+            #if posterior_gain > max_posterior_gain and posterior_gain != 0:
+            if likelihood_change < min_likelihood_change:
                 logging.debug('Likelihood Candidate v. Current: {0} vs. {1}'.format(
                     candidate_lh_affected, current_lh_affected))
-                logging.debug('Gain: {0}'.format(posterior_gain))
+                #logging.debug('Gain: {0}'.format(posterior_gain))
+                logging.debug('Likelihood Change: {0}'.format(likelihood_change))
 
                 best_candidate = candidate_tree
-                max_posterior_gain = posterior_gain
-        logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
+                #max_posterior_gain = posterior_gain
+                min_likelihood_change = likelihood_change
+        #logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
 
     return current_tree
 
