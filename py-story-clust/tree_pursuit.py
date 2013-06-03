@@ -70,7 +70,7 @@ class TopicTree(object):
 def calculate_prior(n):
     """Returns the prior of the tree based on complexity.
     Simple trees are favored."""
-    return math.exp(-0.5*n)
+    return math.exp(-n) * 1e20
 
 
 def calculate_likelihood(tree, corpus, subset=None):
@@ -87,12 +87,13 @@ def calculate_likelihood(tree, corpus, subset=None):
                 prob_doc *= tree.get_probability(target_branch_id, word)
 
             likelihood *= prob_doc
-    if (likelihood == 1):
-        logging.warning('Subset to compute {0}'.format(subset))
-        logging.warning('Words in subset:')
-        for s in subset:
-            logging.warning('{0}'.format(corpus[s]))
-        raise ValueError('Likelihood is 1.')
+    assert(likelihood != 1)
+    #if (likelihood == 1 or likelihood == 0):
+    #    logging.warning('Subset to compute {0}'.format(subset))
+    #    logging.warning('Words in subset:')
+    #    for s in subset:
+    #        logging.warning('{0}'.format(corpus[s]))
+    #    raise ValueError('Likelihood is 1 or 0.')
     return likelihood
 
 
@@ -117,12 +118,11 @@ def propose_next(current_tree):
 
 def greedy_pursuit(initial_tree, corpus):
     best_candidate = initial_tree
-    candidate_prior = calculate_prior(len(initial_tree.nodes))
     max_posterior_gain = 1
 
     while (max_posterior_gain > 0):
         current_tree = best_candidate
-        current_prior = candidate_prior
+        current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
 
         # Generate candidates
