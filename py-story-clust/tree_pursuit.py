@@ -13,11 +13,12 @@ from vocabulary import vocabulary
 
 
 class TopicTree(object):
-    def __init__(self, num_topics, distributions, vocabulary):
+    def __init__(self, num_topics, distributions, denominators, vocabulary):
         super(TopicTree, self).__init__()
         self.nodes = range(0, num_topics)
         self.termial_distributions = distributions
         self.branch_distributions = distributions
+        self.branch_denominators = [math.log(d) for d in denominators]
         self.branch_terminals = [[x] for x in self.nodes]
         self.vocabulary = vocabulary
 
@@ -32,11 +33,15 @@ class TopicTree(object):
         self.branch_terminals.pop(j)
 
         # combine branch distribution
-        self.branch_distributions[i] = self.branch_distributions[i] + self.branch_distributions[j]
+        self.branch_distributions[i] = (self.branch_distributions[i] * self.branch_denominators[i]
+            + self.branch_distributions[j] * self.branch_denominators[j])
         # normalize
         if self.branch_distributions[i].sum() != 0:
             self.branch_distributions[i] /= self.branch_distributions[i].sum()
         self.branch_distributions.pop(j)
+
+        self.branch_denominators[i] += self.branch_denominators[j]
+        self.branch_denominators.pop(j)
 
     def find_branch_id(self, target):
         for (branch_id, terminals) in enumerate(self.branch_terminals):
@@ -126,7 +131,7 @@ def greedy_pursuit(initial_tree, corpus):
     min_likelihood_change = 0
 
     #while (max_posterior_gain > 0):
-    while(abs(min_likelihood_change) < 3):
+    while(abs(min_likelihood_change) < 3.5):
         current_tree = best_candidate
         current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
@@ -182,18 +187,20 @@ def pursuit_tree(input_triplet_files, co_mat_file=None, diffuse=False):
     logging.info('Calculating histograms of each story...')
     corpus = []
     distributions = []
+    denominators = []
     for triplet_file in input_triplet_files:
-        (hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, vocab)
+        (hist, document) = storyclustering.learn_story_histogram(triplet_file, vocab)
         if co_mat_file is not None and diffuse is True:
             hist = np.dot(hist, np_cooccur.matrix)
         #hist = np.array([0.2, 0.6, 0.2])
-        #wordlist = ['a', 'b', 'c']
-        corpus.append(wordlist)
+        #document = ['a', 'b', 'c']
+        corpus.append(document)
         distributions.append(hist)
+        denominators.append(len(document))
 
     # initial tree
     logging.info('Calculating Initial Tree...')
-    initial_tree = TopicTree(len(input_triplet_files), distributions, vocab)
+    initial_tree = TopicTree(len(input_triplet_files), distributions, denominators, vocab)
     #initial_tree = TopicTree(len(input_triplet_files), distributions, ['a', 'b', 'c'])
     #return initial_tree
 
