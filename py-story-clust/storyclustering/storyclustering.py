@@ -27,7 +27,8 @@ def learn_story_distances(triplets_file_path, co_mat_file, use_similarity=True, 
     hist = np.zeros([file_num, np_num])
     count = 0
     for file_in in files:
-        hist[count, :] = learn_story_histogram(file_in, np_voc)
+        (h, wordlist) = learn_story_histogram(file_in, np_voc)
+        hist[count, :] = h
         count += 1
 
     # Calculate pair-wise distance between stories.
@@ -79,7 +80,7 @@ def learn_story_histogram(file_in, np_voc):
             print(hist)
             print(hist.sum())
             raise
-    return hist
+    return (hist, np1_new)
 
 
 def main():
