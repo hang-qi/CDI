@@ -32,6 +32,7 @@ class TopicTree(object):
 
         # combine branch distribution
         self.branch_distributions[i] = self.branch_distributions[i] + self.branch_distributions[j]
+        # normalize
         if self.branch_distributions[i].sum() != 0:
             self.branch_distributions[i] /= self.branch_distributions[i].sum()
         self.branch_distributions.pop(j)
@@ -121,7 +122,7 @@ def greedy_pursuit(initial_tree, corpus):
     best_candidate = initial_tree
     max_posterior_gain = 1
 
-    while (max_posterior_gain > 0):
+    while (max_posterior_gain > -1e-100):
         current_tree = best_candidate
         current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
@@ -146,7 +147,7 @@ def greedy_pursuit(initial_tree, corpus):
             current_posterior = current_lh_affected * current_prior
 
             posterior_gain = candidate_posterior - current_posterior
-            if (posterior_gain > max_posterior_gain):
+            if (posterior_gain > max_posterior_gain and posterior_gain != 0):
                 logging.debug('Likelihood Candidate v. Current: {0} vs. {1}'.format(
                     candidate_lh_affected, current_lh_affected))
                 logging.debug('Gain: {0}'.format(posterior_gain))
@@ -166,7 +167,7 @@ def pursuit_tree(input_triplet_files, co_mat_file=None, diffuse=False):
     else:
         # Build vocabulary
         logging.info('Building vocabulary...')
-        vocab = build_vocabulary(input_triplet_files)
+        vocab = build_vocabulary(input_triplet_files, word_type='ALL')
 
     # calculate histogram
     logging.info('Calculating histograms of each story...')
@@ -201,12 +202,14 @@ def build_vocabulary(input_triplet_files, word_type='NP1'):
                 if(line[0] != '<'):
                     line = (line[:-2]).lower()
                     triplets = line.split('|')
-                    if (word_type == 'NP1'):
-                        words = cleansing.clean(triplets[0].split())
-                    elif (word_type == 'VP'):
-                        words = cleansing.clean(triplets[1].split())
-                    elif (word_type == 'NP2'):
-                        words = cleansing.clean(triplets[2].split())
+                    words = []
+                    if (word_type == 'NP1' or word_type == 'ALL'):
+                        words.extend(cleansing.clean(triplets[0].split()))
+                    if (word_type == 'VP' or word_type == 'ALL'):
+                        words.extend(cleansing.clean(triplets[1].split()))
+                    if (word_type == 'NP2' or word_type == 'ALL'):
+                        words.extend(cleansing.clean(triplets[2].split()))
+
                     for w in words:
                         vocab.add(w)
     logging.info('Vocabulary built. # of words: {0}'.format(vocab.size()))
