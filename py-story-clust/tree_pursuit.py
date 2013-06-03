@@ -8,7 +8,8 @@ import numpy as np
 
 from cooccurrence.cooccur_mat import CooccurMatrix
 from storyclustering import storyclustering
-
+from preprocessing import cleansing
+from vocabulary import vocabulary
 
 class TopicTree(object):
     def __init__(self, num_topics, distributions, vocabulary):
@@ -69,7 +70,7 @@ class TopicTree(object):
 def calculate_prior(n):
     """Returns the prior of the tree based on complexity.
     Simple trees are favored."""
-    return math.exp(-n)
+    return math.exp(-0.5*n)
 
 
 def calculate_likelihood(tree, corpus, subset=None):
@@ -86,6 +87,12 @@ def calculate_likelihood(tree, corpus, subset=None):
                 prob_doc *= tree.get_probability(target_branch_id, word)
 
             likelihood *= prob_doc
+    if (likelihood == 1):
+        logging.warning('Subset to compute {0}'.format(subset))
+        logging.warning('Words in subset:')
+        for s in subset:
+            logging.warning('{0}'.format(corpus[s]))
+        raise ValueError('Likelihood is 1.')
     return likelihood
 
 
@@ -124,13 +131,11 @@ def greedy_pursuit(initial_tree, corpus):
         logging.debug('# of candidates: {0}'.format(len(new_candidates)))
 
         # Prior for all candidates are same, since
-        candidate_prior = calculate_prior(len(initial_tree.nodes)-1)
+        candidate_prior = calculate_prior(len(current_tree.nodes)-1)
 
         logging.info('Evaluating candidates...')
         max_posterior_gain = -1
         for (candidate_tree, affected_terminals) in new_candidates:
-            #logging.debug('Evaluating tree {0} for affected stories {1}'.format(
-            #    candidate_tree.nodes, affected_terminals))
             # Posterior for candidate: P(T2|D) = P(D|T2)P(T2)
             candidate_lh_affected = calculate_likelihood(candidate_tree, corpus, subset=affected_terminals)
             candidate_posterior = candidate_lh_affected * candidate_prior
@@ -141,22 +146,33 @@ def greedy_pursuit(initial_tree, corpus):
 
             posterior_gain = candidate_posterior - current_posterior
             if (posterior_gain > max_posterior_gain):
+                logging.debug('Likelihood Candidate v. Current: {0} vs. {1}'.format(
+                    candidate_lh_affected, current_lh_affected))
+                logging.debug('Gain: {0}'.format(posterior_gain))
+
                 best_candidate = candidate_tree
                 max_posterior_gain = posterior_gain
+        logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
 
     return current_tree
 
 
-def pursuit_tree(input_triplet_files, co_mat_file):
-    np_cooccur = CooccurMatrix()
-    np_cooccur.load(co_mat_file)
+def pursuit_tree(input_triplet_files, co_mat_file=None):
+    if co_mat_file is not None:
+        np_cooccur = CooccurMatrix()
+        np_cooccur.load(co_mat_file)
+        vocab = np_cooccur.vocabulary
+    else:
+        # Build vocabulary
+        logging.info('Building vocabulary...')
+        vocab = build_vocabulary(input_triplet_files)
 
     # calculate histogram
     logging.info('Calculating histograms of each story...')
     corpus = []
     distributions = []
     for triplet_file in input_triplet_files:
-        (hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, np_cooccur.vocabulary)
+        (hist, wordlist) = storyclustering.learn_story_histogram(triplet_file, vocab)
         #hist = np.array([0.2, 0.6, 0.2])
         #wordlist = ['a', 'b', 'c']
         corpus.append(wordlist)
@@ -164,7 +180,7 @@ def pursuit_tree(input_triplet_files, co_mat_file):
 
     # initial tree
     logging.info('Calculating Initial Tree...')
-    initial_tree = TopicTree(len(input_triplet_files), distributions, np_cooccur.vocabulary)
+    initial_tree = TopicTree(len(input_triplet_files), distributions, vocab)
     #initial_tree = TopicTree(len(input_triplet_files), distributions, ['a', 'b', 'c'])
     #return initial_tree
 
@@ -172,6 +188,28 @@ def pursuit_tree(input_triplet_files, co_mat_file):
     logging.info('Pursuing a optimum tree...')
     optimum_tree = greedy_pursuit(initial_tree, corpus)
     return optimum_tree
+
+
+def build_vocabulary(input_triplet_files, word_type='NP1'):
+    vocab = vocabulary.Vocabulary()
+    for triplet_file in input_triplet_files:
+        with open(triplet_file, 'r') as f:
+            for line in f:
+                if(line[0] != '<'):
+                    line = (line[:-2]).lower()
+                    triplets = line.split('|')
+                    if (word_type == 'NP1'):
+                        words = cleansing.clean(triplets[0].split())
+                    elif (word_type == 'VP'):
+                        words = cleansing.clean(triplets[1].split())
+                    elif (word_type == 'NP2'):
+                        words = cleansing.clean(triplets[2].split())
+                    logging.debug('Words: {0}'.format(words))
+
+                    for w in words:
+                        vocab.add(w)
+    logging.info('Vocabulary built. # of words: {0}'.format(vocab.size()))
+    return vocab
 
 
 def main():

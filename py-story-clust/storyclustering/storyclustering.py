@@ -60,6 +60,7 @@ def learn_story_distances(triplets_file_path, co_mat_file, use_similarity=True, 
 def learn_story_histogram(file_in, np_voc):
     np_num = np_voc.size()
     hist = np.zeros([1, np_num])
+    document = []
     with open(file_in, 'r') as f:
         for line in f:
             if(line[0] != '<'):
@@ -67,6 +68,7 @@ def learn_story_histogram(file_in, np_voc):
                 triplets = line.split('|')
                 np1 = cleansing.clean(triplets[0].split())
                 np1_new = [w for w in np1 if np_voc.contain(w)]
+                document.extend(np1_new)
                 for w in np1_new:
                     hist[0, np_voc.get_word_index(w)] += 1
 
@@ -80,7 +82,7 @@ def learn_story_histogram(file_in, np_voc):
             print(hist)
             print(hist.sum())
             raise
-    return (hist, np1_new)
+    return (hist, document)
 
 
 def main():
