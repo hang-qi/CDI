@@ -57,10 +57,12 @@ def learn_story_distances(triplets_file_path, co_mat_file, use_similarity=True, 
     return (dist, labels)
 
 
-def learn_story_histogram(file_in, np_voc):
+def learn_story_histogram(file_in, np_voc, word_type='ALL', ocr_file=None):
+    """word_type = 'NP1', 'NP2', 'NP', 'ALL'"""
     np_num = np_voc.size()
     hist = np.zeros([1, np_num])
     document = []
+
     with open(file_in, 'r') as f:
         for line in f:
             if(line[0] != '<'):
@@ -72,7 +74,17 @@ def learn_story_histogram(file_in, np_voc):
                 for w in np1_new:
                     hist[0, np_voc.get_word_index(w)] += 1
 
-    # normalize
+    # Read OCR file and combine into histogram if provided.
+    orc_words = []
+    if ocr_file is not None:
+        # TODO:
+        # read ocr file
+        # combine OCR into histogram
+        # each word count 2
+        # fill ocr_words
+        pass
+
+    # Normalize.
     sum_hist = hist.sum()
     if sum_hist != 0:
         hist = hist / sum_hist
@@ -82,7 +94,7 @@ def learn_story_histogram(file_in, np_voc):
             print(hist)
             print(hist.sum())
             raise
-    return (hist, document)
+    return (hist, document, orc_words)
 
 
 def main():
