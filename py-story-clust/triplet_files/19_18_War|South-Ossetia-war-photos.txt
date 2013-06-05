@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war-photos</story>
-<start>20080814143233.6831634890814
-<end>20080814143533.0621701733438
+<start>20080814143233.683</start>
+<end>20080814143533.062</end>
 the Republic of Georgia | show how | the fighting caught civilians 
 Josh Levs | has been looking | this images 
 CNN | obtained | Georgias Ministry of Defense 

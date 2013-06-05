@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-humanitarian-aid</story>
-<start>20080814151751.5691634890814
-<end>20080814152112.3361701733438
+<start>20080814151751.569</start>
+<end>20080814152112.336</end>
 The defense secretary | has said | a lot 
 the humanitarian mission | is | way 
 two C s | are | the ground 

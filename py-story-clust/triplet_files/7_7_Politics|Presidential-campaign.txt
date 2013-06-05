@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080811141453.3241634890814
-<end>20080811141721.5391701733438
+<start>20080811141453.324</start>
+<end>20080811141721.539</end>
 Let s | talk | presidential politics 
 John McCain | is touring | a G.E. plant 
 They | have spent | the last two days 

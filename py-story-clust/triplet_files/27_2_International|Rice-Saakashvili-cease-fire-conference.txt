@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815170055.8211634890814
-<end>20080815170455.1601701733438
+<start>20080815170055.821</start>
+<end>20080815170455.160</end>
 Secretary of State Condoleezza Rice | arrived | today 
 Georgias president | lashed | the west 
 President Bush | is accusing | Moscow of bullying 

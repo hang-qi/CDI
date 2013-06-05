@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080813154021.3831634890814
-<end>20080813154330.6721701733438
+<start>20080813154021.383</start>
+<end>20080813154330.672</end>
 The CNN Election Express | headed | D.C. 
 earlier this morning | is | Michigan 
 Let | s find | Tom Foreman 

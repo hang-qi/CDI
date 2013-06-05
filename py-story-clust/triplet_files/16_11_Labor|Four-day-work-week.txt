@@ -1,6 +1,6 @@
 <story>Labor|Four-day-work-week</story>
-<start>20080813182817.4601634890814
-<end>20080813183046.1421701733438
+<start>20080813182817.460</start>
+<end>20080813183046.142</end>
 CNNs John Zarrella | has been looking | the pluses 
 more places | are trying | CNN s John Zarrella 
 They | re trying | CNN s John Zarrella 

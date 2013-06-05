@@ -1,6 +1,6 @@
 <story>Activism|Montreal-riot</story>
-<start>20080811170513.3121634890814
-<end>20080811170625.4171701733438
+<start>20080811170513.312</start>
+<end>20080811170625.417</end>
 Cars | were set | fire 
 police | were pelted | beer bottles 
 a paramedic | were | hut 

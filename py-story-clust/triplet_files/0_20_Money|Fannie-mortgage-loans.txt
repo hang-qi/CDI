@@ -1,6 +1,6 @@
 <story>Money|Fannie-mortgage-loans</story>
-<start>20080808144313.8891634890814
-<end>20080808144602.2901701733438
+<start>20080808144313.889</start>
+<end>20080808144602.290</end>
 John McCain | speaking | live next hour 
 Let s | get | more 
 We | must be talking | Fannie Mae 

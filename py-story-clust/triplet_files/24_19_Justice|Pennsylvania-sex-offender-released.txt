@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815133058.5891634890814
-<end>20080815133436.9731701733438
+<start>20080815133058.589</start>
+<end>20080815133436.973</end>
 A man | convicted | sex crimes 
 children | walks | prison today 
 George Feigley | will not be | parole 

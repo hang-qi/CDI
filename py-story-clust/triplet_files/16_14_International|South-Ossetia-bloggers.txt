@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-bloggers</story>
-<start>20080813183521.2831634890814
-<end>20080813183715.9651701733438
+<start>20080813183521.283</start>
+<end>20080813183715.965</end>
 the people | are actually living | this nightmare 
 Our Josh Levs | has been sorting | the online blogs 
 some of them | are coming | blogs 

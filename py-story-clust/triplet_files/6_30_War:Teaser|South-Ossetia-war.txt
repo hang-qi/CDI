@@ -1,4 +1,4 @@
 <story>War:Teaser|South-Ossetia-war</story>
-<start>20080811135606.7951634890814
-<end>20080811135903.7051701733438
+<start>20080811135606.795</start>
+<end>20080811135903.705</end>
 Moscow | trying to re assert | its super power status 

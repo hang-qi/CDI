@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080808132325.7361634890814
-<end>20080808132631.1211701733438
+<start>20080808132325.736</start>
+<end>20080808132631.121</end>
 The Summer Olympics | s just | the athletes 
 Protesters | are targeting | Chinas human rights record 
 Some | are demanding | China 

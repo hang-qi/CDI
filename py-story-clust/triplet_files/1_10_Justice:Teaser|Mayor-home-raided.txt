@@ -1,4 +1,4 @@
 <story>Justice:Teaser|Mayor-home-raided</story>
-<start>20080808133910.5801634890814
-<end>20080808134159.2821701733438
+<start>20080808133910.580</start>
+<end>20080808134159.282</end>
 Mayor | is | a muddle 

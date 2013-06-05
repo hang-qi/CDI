@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811195033.1611634890814
-<end>20080811195140.1611701733438
+<start>20080811195033.161</start>
+<end>20080811195140.161</end>
 We | want to talk | some Olympics 
 Team USA | is holding | the number two spot 
 Let | s take | a look 

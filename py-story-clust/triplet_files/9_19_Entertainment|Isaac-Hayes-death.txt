@@ -1,6 +1,6 @@
 <story>Entertainment|Isaac-Hayes-death</story>
-<start>20080811171833.6781634890814
-<end>20080811171906.9111701733438
+<start>20080811171833.678</start>
+<end>20080811171906.911</end>
 He | laid | the groundwork 
 Isaac Hayes | is being remembered | a music pioneer 
 wife and son | found | Isaac Hayes 

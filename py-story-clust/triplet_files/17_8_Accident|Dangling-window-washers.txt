@@ -1,6 +1,6 @@
 <story>Accident|Dangling-window-washers</story>
-<start>20080813193248.1301634890814
-<end>20080813193340.1491701733438
+<start>20080813193248.130</start>
+<end>20080813193340.149</end>
 one of these window washers | being rescued | Fort Lauderdale 
 problems | getting | his harness off 
 we | are hearing | our affiliates 

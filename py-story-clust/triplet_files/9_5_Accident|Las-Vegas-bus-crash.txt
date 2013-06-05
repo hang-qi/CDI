@@ -1,6 +1,6 @@
 <story>Accident|Las-Vegas-bus-crash</story>
-<start>20080811170625.4171634890814
-<end>20080811170649.0401701733438
+<start>20080811170625.417</start>
+<end>20080811170649.040</end>
 tire failure | may be to blame | yet another bus accident 
 This one | happened | last night 
 almost casino employees shuttle bus | crashed | Las Vegas 

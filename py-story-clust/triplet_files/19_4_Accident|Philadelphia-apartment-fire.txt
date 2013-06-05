@@ -1,6 +1,6 @@
 <story>Accident|Philadelphia-apartment-fire</story>
-<start>20080814140103.9951634890814
-<end>20080814140144.8691701733438
+<start>20080814140103.995</start>
+<end>20080814140144.869</end>
 we | are following | breaking developments 
 A massive inferno | has destroyed much | an upscale apartment complex 
 several firefighters | were overcome | heat 

@@ -1,5 +1,5 @@
 <story>NULL</story>
-<start>20080814140012.0001634890814
-<end>20080814140024.0551701733438
+<start>20080814140012.000</start>
+<end>20080814140024.055</end>
 Police | believe | Montgomery 
 They | are looking | two other suspects 

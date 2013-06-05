@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814173420.9571634890814
-<end>20080814173842.5851701733438
+<start>20080814173420.957</start>
+<end>20080814173842.585</end>
 Russian tanks | barrelling | a non Russian city 
 Goergias invasion crisis | has | the United Nations leadership quote 
 This U.S. Air Force cargo plane | landed | relief supplies 

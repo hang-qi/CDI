@@ -1,6 +1,6 @@
 <story>Politics:Teaser|McCain-speech-economy</story>
-<start>20080808155131.1191634890814
-<end>20080808155438.4061701733438
+<start>20080808155131.119</start>
+<end>20080808155438.406</end>
 We | are expecting to hear | LRB END VIDEOTAPE RRB HARRIS John McCain on the trail in Iowa . 
 He | is | the Iowa State Fair 
 we | will bring | those comments 

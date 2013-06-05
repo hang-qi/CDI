@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-Condoleeza-Rise</story>
-<start>20080813190640.2311634890814
-<end>20080813192539.5021701733438
+<start>20080813190640.231</start>
+<end>20080813192539.502</end>
 Let | s get now | State Condoleezza Rice 
 LRB | JOINED | PROGRESS 
 Russia | must now end | its military operations 

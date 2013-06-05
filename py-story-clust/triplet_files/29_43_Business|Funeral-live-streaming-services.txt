@@ -1,6 +1,6 @@
 <story>Business|Funeral-live-streaming-services</story>
-<start>20080815195042.7381634890814
-<end>20080815195212.3281701733438
+<start>20080815195042.738</start>
+<end>20080815195212.328</end>
 One funeral home | wants to bring | the service 
 The Downard Funeral Home | started looking | Web casting 
 owner Lance Peck | missed | his daughters play 

@@ -1,6 +1,6 @@
 <story>Politics|Obama-campaign</story>
-<start>20080811191644.1671634890814
-<end>20080811191923.9271701733438
+<start>20080811191644.167</start>
+<end>20080811191923.927</end>
 his family | are vacationing | Hawaii 
 the candidate | played | a little golf 
 He | did | the weekend 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811180002.8671634890814
-<end>20080811180259.0431701733438
+<start>20080811180002.867</start>
+<end>20080811180259.043</end>
 the Russian army | is advancing | multiple fronts 
 Russian tanks | rumbled | two disputed provinces 
 they | have taken | control of several Georgian cities 

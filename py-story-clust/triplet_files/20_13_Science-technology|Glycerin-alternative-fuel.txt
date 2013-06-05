@@ -1,6 +1,6 @@
 <story>Science-technology|Glycerin-alternative-fuel</story>
-<start>20080814155348.5571634890814
-<end>20080814155541.2701701733438
+<start>20080814155348.557</start>
+<end>20080814155541.270</end>
 The researchers | think | they 
 High gas prices | have sent | production of alternative fuels 
 the waste | left | over 

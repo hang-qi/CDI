@@ -1,6 +1,6 @@
 <story>Justice|Arkansas-curfew</story>
-<start>20080813141119.1101634890814
-<end>20080813141557.4551701733438
+<start>20080813141119.110</start>
+<end>20080813141557.455</end>
 an Arkansas city | fighting | crime 
 they | are trampling | residents 
 Reporter Cecillea Pond Mayo of our affiliate KARK | has | the story 

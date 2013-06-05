@@ -1,6 +1,6 @@
 <story>Justice|Detroit-mayor-assault-case</story>
-<start>20080815193008.5391634890814
-<end>20080815193044.1071701733438
+<start>20080815193008.539</start>
+<end>20080815193044.107</end>
 we | have | some new information 
 The mayor of Detroit | is going | trial 
 the mayor of Detroit | is going | trial 

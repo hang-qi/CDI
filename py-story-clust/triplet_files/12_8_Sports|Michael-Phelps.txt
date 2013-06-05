@@ -1,6 +1,6 @@
 <story>Sports|Michael-Phelps</story>
-<start>20080813131609.5001634890814
-<end>20080813131753.8381701733438
+<start>20080813131609.500</start>
+<end>20080813131753.838</end>
 The haul | gives | Michael Phelps 
 CNNs Larry Smith | is there | CNN s Larry Smith 
 he | gets | a bit of a reprieve 

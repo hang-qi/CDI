@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811180925.9961634890814
-<end>20080811181146.2031701733438
+<start>20080811180925.996</start>
+<end>20080811181146.203</end>
 we | have breaking | news 
 Americans | stuck | the middle of all 
 They | re going | Tbilisi 

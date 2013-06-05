@@ -1,6 +1,6 @@
 <story>Health|Gardasil</story>
-<start>20080811134344.0201634890814
-<end>20080811134813.6231701733438
+<start>20080811134344.020</start>
+<end>20080811134813.623</end>
 a vaccine | given | teen girls 
 parents | are saying | the side effects 
 our Special Investigations Unit | is here | more 

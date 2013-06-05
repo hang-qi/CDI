@@ -1,6 +1,6 @@
 <story>Politics|Obama-Mccain-Warren-debate</story>
-<start>20080815134515.3441634890814
-<end>20080815134641.6971701733438
+<start>20080815134515.344</start>
+<end>20080815134641.697</end>
 Barack Obama | hoping to make | roads 
 evangelical voters | favor | republicans 
 evangelical voters | favor | John McCain 

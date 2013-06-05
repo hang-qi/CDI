@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811140022.3211634890814
-<end>20080811140621.3461701733438
+<start>20080811140022.321</start>
+<end>20080811140621.346</end>
 Russian troops | marching | neighboring territory 
 Russia | has launched | a massive military offensive 
 Georgias president | has signed | a cease fire agreement 

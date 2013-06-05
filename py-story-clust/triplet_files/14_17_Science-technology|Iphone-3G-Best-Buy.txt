@@ -1,6 +1,6 @@
 <story>Science-technology|Iphone-3G-Best-Buy</story>
-<start>20080813155302.7101634890814
-<end>20080813155415.1161701733438
+<start>20080813155302.710</start>
+<end>20080813155415.116</end>
 A big | win | the nations biggest electronic store 
 Best | s got | a hot buy 
 Best Buy | will start selling | the newest G model 

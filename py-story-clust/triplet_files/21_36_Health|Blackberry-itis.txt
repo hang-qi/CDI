@@ -1,5 +1,5 @@
 <story>Health|Blackberry-itis</story>
-<start>20080814174839.3821634890814
-<end>20080814174858.4341701733438
+<start>20080814174839.382</start>
+<end>20080814174858.434</end>
 Those people | can not put | their Blackberrys 
 they | re | vacation 

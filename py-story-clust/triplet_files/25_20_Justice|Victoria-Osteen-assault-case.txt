@@ -1,6 +1,6 @@
 <story>Justice|Victoria-Osteen-assault-case</story>
-<start>20080815144110.6671634890814
-<end>20080815144145.1681701733438
+<start>20080815144110.667</start>
+<end>20080815144145.168</end>
 Victoria Osteen | was sued | a Continental Airlines flight attendant 
 Sharon Brown | claimed | Osteen 
 she | threw | Brown 

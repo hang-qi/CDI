@@ -1,6 +1,6 @@
 <story>Justice|Pakistani-president-impeached</story>
-<start>20080811173610.0661634890814
-<end>20080811173802.6791701733438
+<start>20080811173610.066</start>
+<end>20080811173802.679</end>
 parliament | convened | today 
 Our Zain Verjee | is | Washington 
 a vote | to impeach | Musharraf 

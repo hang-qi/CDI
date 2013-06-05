@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080815170822.5341634890814
-<end>20080815170855.3671701733438
+<start>20080815170822.534</start>
+<end>20080815170855.367</end>
 Barack Obama | has | any public rallies or speeches 
 McCain | is | Aspen 
 he | had | breakfast 

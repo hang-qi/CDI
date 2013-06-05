@@ -1,6 +1,6 @@
 <story>Human-interest|Teaching-english-abroad</story>
-<start>20080808152115.3381634890814
-<end>20080808152312.2551701733438
+<start>20080808152115.338</start>
+<end>20080808152312.255</end>
 the kind of retirement | has given | todays CNNs Hero 
 a girl | reaches | the age 
 she | can help | the house 

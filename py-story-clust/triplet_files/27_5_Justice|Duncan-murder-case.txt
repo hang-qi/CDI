@@ -1,6 +1,6 @@
 <story>Justice|Duncan-murder-case</story>
-<start>20080815170646.2041634890814
-<end>20080815170722.6071701733438
+<start>20080815170646.204</start>
+<end>20080815170722.607</end>
 Idaho | is hearing | heartbreaking testimony 
 a young brother and sister | killed | the boy 
 Shasta Groenes tape recorded account of Shasta Groene s brothers killing | was played | the courtroom 

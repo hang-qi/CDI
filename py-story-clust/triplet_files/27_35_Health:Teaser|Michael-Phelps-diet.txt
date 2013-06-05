@@ -1,6 +1,6 @@
 <story>Health:Teaser|Michael-Phelps-diet</story>
-<start>20080815174535.7651634890814
-<end>20080815175228.5441701733438
+<start>20080815174535.765</start>
+<end>20080815175228.544</end>
 Michael Phelps | has carved | a place 
 KEILAR After delaying the start of his Texas vacation President Bush today used his strongest language yet and condemned Russia s behavior toward its Black Sea neighbor . | comes | eating 
 KEILAR After delaying the start of his Texas vacation President Bush today used his strongest language yet and condemned Russia s behavior toward its Black Sea neighbor . | takes to fuel | a champion 

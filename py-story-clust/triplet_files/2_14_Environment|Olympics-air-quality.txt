@@ -1,6 +1,6 @@
 <story>Environment|Olympics-air-quality</story>
-<start>20080808151839.5831634890814
-<end>20080808152115.3381701733438
+<start>20080808151839.583</start>
+<end>20080808152115.338</end>
 the summer games | are | way 
 COMMERCIAL BREAK | s just | Olympic excitement 
 China | has | some of the worst air pollution 

@@ -1,6 +1,6 @@
 <story>Art-culture|Chinese-cooking</story>
-<start>20080811145717.5661634890814
-<end>20080811145920.8221701733438
+<start>20080811145717.566</start>
+<end>20080811145920.822</end>
 LRB COMMERCIAL BREAK RRB | could be | an Olympic feat 
 Americans | to swallow | some of the different food 
 CNNs Larry Smith | samples | the menu 

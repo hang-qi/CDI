@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815154139.5281634890814
-<end>20080815154653.9421701733438
+<start>20080815154139.528</start>
+<end>20080815154653.942</end>
 We | have been watching | this press conference 
 a moment | get | Zain Verjee 
 a little bit | was | quite a bit of work 

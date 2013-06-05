@@ -1,6 +1,6 @@
 <story>Weather|Atlantic-developing-hurricane</story>
-<start>20080815173202.1521634890814
-<end>20080815173211.6951701733438
+<start>20080815173202.152</start>
+<end>20080815173211.695</end>
 Puerto Rico | is getting drenched | heavy rains 
 The storm | is moving slowly | the west 
 the storm up from the Puerto Rico radar | could become | a tropical depression 

@@ -1,5 +1,5 @@
 <story>Accident:Teaser|Texas-bus-crash</story>
-<start>20080808185918.7531634890814
-<end>20080808185928.6291701733438
+<start>20080808185918.753</start>
+<end>20080808185928.629</end>
 a Catholic festival | ends | sorrow 
 A bus accident | claims | more 

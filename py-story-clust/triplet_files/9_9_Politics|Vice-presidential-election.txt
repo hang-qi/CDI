@@ -1,6 +1,6 @@
 <story>Politics|Vice-presidential-election</story>
-<start>20080811170803.6151634890814
-<end>20080811171113.4381701733438
+<start>20080811170803.615</start>
+<end>20080811171113.438</end>
 all | is campaigning | McCain 
 A lot people | wondering | Tom Ridge 
 He | hails | Pennsylvania 

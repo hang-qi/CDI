@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815133505.9021634890814
-<end>20080815133539.1361701733438
+<start>20080815133505.902</start>
+<end>20080815133539.136</end>
 Russian forces | rolled | the former Soviet Union Republic of Georgia 
 we | know | this morning 
 Secretary of State Condoleezza Rice | is | the Georgian capital of Tbilisi 

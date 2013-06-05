@@ -1,6 +1,6 @@
 <story>International|Russia-Georgia-Olympics-camaraderie</story>
-<start>20080811190003.4011634890814
-<end>20080811190027.3921701733438
+<start>20080811190003.401</start>
+<end>20080811190027.392</end>
 she | put | her arm 
 the rivals | kissed | each other 
 They | call | each other friends 

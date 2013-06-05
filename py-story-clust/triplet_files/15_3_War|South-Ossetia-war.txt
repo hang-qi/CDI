@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813170053.7861634890814
-<end>20080813170424.7961701733438
+<start>20080813170053.786</start>
+<end>20080813170424.796</end>
 we | start | this cease fire 
 the top | does nt look | a cease fire 
 we | have nt heard | any of the shots 

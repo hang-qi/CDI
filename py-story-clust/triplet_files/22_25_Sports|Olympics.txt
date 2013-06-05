@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080814183612.1011634890814
-<end>20080814183647.1361701733438
+<start>20080814183612.101</start>
+<end>20080814183647.136</end>
 we | check | the days Olympic action 
 things | stand | the medal count 
 Team USA and China | still trading | turns 

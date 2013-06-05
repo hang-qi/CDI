@@ -1,5 +1,5 @@
 <story>International:Teaser|World-war-2-spies</story>
-<start>20080814193349.6261634890814
-<end>20080814193640.4971701733438
+<start>20080814193349.626</start>
+<end>20080814193640.497</end>
 she | whipped up | her first souffle 
 television chef Julia Child | was apparently cooking | some international intrigue 

@@ -1,5 +1,5 @@
 <story>War:Teaser|South-Ossetia-war</story>
-<start>20080811135944.7131634890814
-<end>20080811135953.0551701733438
+<start>20080811135944.713</start>
+<end>20080811135953.055</end>
 basically Russia | has achieved | its military goals 
 Georgia | claims | Russian troops 

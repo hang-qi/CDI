@@ -1,6 +1,6 @@
 <story>International|UN-consultation-South-Ossetia</story>
-<start>20080811181459.6631634890814
-<end>20080811181646.6361701733438
+<start>20080811181459.663</start>
+<end>20080811181646.636</end>
 our breaking news | coming | Georgia 
 the U.N. Security Council | calling | another emergency session 
 someone | to be | a mediator 

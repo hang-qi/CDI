@@ -1,6 +1,6 @@
 <story>Human-interest:Teaser|South-Ossetia-war-blogers</story>
-<start>20080813131310.2881634890814
-<end>20080813131609.5001701733438
+<start>20080813131310.288</start>
+<end>20080813131609.500</end>
 bloggers | share | bloggers view 
 We | re checking back | Josh Levs 
 He | s surfing | the net 

@@ -1,6 +1,6 @@
 <story>Labor|Four-day-work-week</story>
-<start>20080813194917.0181634890814
-<end>20080813195207.6891701733438
+<start>20080813194917.018</start>
+<end>20080813195207.689</end>
 CNNs John Zarrella | has been taking | a look 
 we | heard | some Utah State employees 
 Everybody | liked | Last hour 

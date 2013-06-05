@@ -1,6 +1,6 @@
 <story>Government|Manhattan-security</story>
-<start>20080813170831.8431634890814
-<end>20080813171018.0491701733438
+<start>20080813170831.843</start>
+<end>20080813171018.049</end>
 KEILAR | would nt be | a fortress 
 New York | are proposing | a special security zone 
 checkpoints | heightened | screening 

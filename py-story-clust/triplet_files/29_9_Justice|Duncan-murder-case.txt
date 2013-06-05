@@ -1,6 +1,6 @@
 <story>Justice|Duncan-murder-case</story>
-<start>20080815190922.9281634890814
-<end>20080815190958.0961701733438
+<start>20080815190922.928</start>
+<end>20080815190958.096</end>
 Idaho | is hearing | some really heartbreaking testimony 
 a young brother and sister | killed | the boy 
 Duncan | shot | year old Dylan Groene 

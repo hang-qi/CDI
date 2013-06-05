@@ -1,5 +1,5 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080811193104.7601634890814
-<end>20080811193122.0111701733438
+<start>20080811193104.760</start>
+<end>20080811193122.011</end>
 Detroit Mayor Kwame Kilpatrick | may have waded | more legal trouble 
 A judge | is set to decide | Kilpatrick 

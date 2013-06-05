@@ -1,6 +1,6 @@
 <story>Business|Funeral-live-streaming-services</story>
-<start>20080815135806.3481634890814
-<end>20080815135937.6391701733438
+<start>20080815135806.348</start>
+<end>20080815135937.639</end>
 One funeral home | wants to bring | the service 
 own Lance Peck | missed | his daughters play 
 a parent or grandparent | could go | the school 

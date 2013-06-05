@@ -1,6 +1,6 @@
 <story>Politics|Obama-Mccain-Warren-debate</story>
-<start>20080815155530.9921634890814
-<end>20080815155932.9341701733438
+<start>20080815155530.992</start>
+<end>20080815155932.934</end>
 They | ll also be mixing | politics 
 Barack Obama | hoping to make | inroads 
 evangelical voters | favor | John McCain 

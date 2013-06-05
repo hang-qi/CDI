@@ -1,6 +1,6 @@
 <story>Crime|Stolen-bear</story>
-<start>20080814135809.7511634890814
-<end>20080814135953.8321701733438
+<start>20080814135809.751</start>
+<end>20080814135953.832</end>
 Man | swipes | a cup 
 His cousin | steals | a cup 
 Chris Cato of CNN affiliate WSPA | has | the story 

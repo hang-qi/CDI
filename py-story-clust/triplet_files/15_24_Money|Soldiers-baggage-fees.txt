@@ -1,6 +1,6 @@
 <story>Money|Soldiers-baggage-fees</story>
-<start>20080813172556.5871634890814
-<end>20080813172803.6811701733438
+<start>20080813172556.587</start>
+<end>20080813172803.681</end>
 Some people | finding | this kind of outrageous 
 war | pay | the freight 
 CNNs Deborah Feyerick | has | the story 

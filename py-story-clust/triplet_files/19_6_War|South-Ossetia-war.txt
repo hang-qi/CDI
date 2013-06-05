@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814140315.1931634890814
-<end>20080814140621.2121701733438
+<start>20080814140315.193</start>
+<end>20080814140621.212</end>
 Let | s get | the latest 
 they | are now | the move 
 Abkhazia and South Ossetia | wanted to split | Georgia 

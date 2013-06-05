@@ -1,6 +1,6 @@
 <story>Money|Inflation</story>
-<start>20080814172442.7461634890814
-<end>20080814172640.6641701733438
+<start>20080814172442.746</start>
+<end>20080814172640.664</end>
 we | know | every time 
 we | pump | gas 
 the annual rate of inflation | stands | a year 

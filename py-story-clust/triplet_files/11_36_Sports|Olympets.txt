@@ -1,6 +1,6 @@
 <story>Sports|Olympets</story>
-<start>20080811195609.4301634890814
-<end>20080811195633.6511701733438
+<start>20080811195609.430</start>
+<end>20080811195633.651</end>
 they | ve got | nothing 
 the Olympics | have gone | the dogs 
 The competition | was organized | a pet store company 

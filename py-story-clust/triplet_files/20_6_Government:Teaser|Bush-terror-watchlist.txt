@@ -1,4 +1,4 @@
 <story>Government:Teaser|Bush-terror-watchlist</story>
-<start>20080814153344.6541634890814
-<end>20080814153639.5961701733438
+<start>20080814153344.654</start>
+<end>20080814153639.596</end>
 they | got | The terror watch list 

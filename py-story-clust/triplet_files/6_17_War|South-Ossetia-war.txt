@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811132852.0621634890814
-<end>20080811133304.8481701733438
+<start>20080811132852.062</start>
+<end>20080811133304.848</end>
 a military crisis | unfolds | the former Soviet Republic of Georgia 
 Russia | has launched | an offensive there 
 President Bush | is blasting | Moscows military action 

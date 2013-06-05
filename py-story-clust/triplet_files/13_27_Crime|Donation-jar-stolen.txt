@@ -1,5 +1,5 @@
 <story>Crime|Donation-jar-stolen</story>
-<start>20080813145802.5781634890814
-<end>20080813145822.3971701733438
+<start>20080813145802.578</start>
+<end>20080813145822.397</end>
 thieves | steal | boxes and boxes of cigarettes 
 Police | are still searching | suspects 

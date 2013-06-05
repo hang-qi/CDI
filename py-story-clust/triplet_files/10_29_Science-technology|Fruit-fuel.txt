@@ -1,6 +1,6 @@
 <story>Science-technology|Fruit-fuel</story>
-<start>20080811183901.8701634890814
-<end>20080811184429.3641701733438
+<start>20080811183901.870</start>
+<end>20080811184429.364</end>
 the size of garlic cloves | contain | oil 
 Jatropha | can | power diesel cars and trucks and tractors 
 University of Florida researcher Roy Bedford | is looking | the best strain of Jatropha 

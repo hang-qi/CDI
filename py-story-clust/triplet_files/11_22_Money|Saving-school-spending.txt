@@ -1,6 +1,6 @@
 <story>Money|Saving-school-spending</story>
-<start>20080811192513.2431634890814
-<end>20080811192634.7911701733438
+<start>20080811192513.243</start>
+<end>20080811192634.791</end>
 kids | begin to head back | the classroom 
 some parents | might want to keep | kids 
 Author Troy Dunn | says step | one 

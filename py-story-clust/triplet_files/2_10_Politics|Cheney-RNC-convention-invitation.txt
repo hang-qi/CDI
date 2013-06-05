@@ -1,6 +1,6 @@
 <story>Politics|Cheney-RNC-convention-invitation</story>
-<start>20080808151433.5371634890814
-<end>20080808151502.0991701733438
+<start>20080808151433.537</start>
+<end>20080808151502.099</end>
 the Republican convention | tops | our political roundup 
 The McCain campaign | has invited | Vice President Dick Cheney 
 the vice president | will likely address | delegates 

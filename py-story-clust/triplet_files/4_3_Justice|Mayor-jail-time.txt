@@ -1,6 +1,6 @@
 <story>Justice|Mayor-jail-time</story>
-<start>20080808170555.7871634890814
-<end>20080808170706.9581701733438
+<start>20080808170555.787</start>
+<end>20080808170706.958</end>
 one | involves | federal charges 
 a state charge | violating | his bond 
 A circuit judge | ruled | that case 

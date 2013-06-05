@@ -1,6 +1,6 @@
 <story>Accident|Philadelphia-apartment-fire</story>
-<start>20080814130016.9821634890814
-<end>20080814130449.0541701733438
+<start>20080814130016.982</start>
+<end>20080814130449.054</end>
 We | are following breaking | news 
 firefighters | are reported hurt | a multi alarm fire 
 The fire | broke | yesterday afternoon 

@@ -1,6 +1,6 @@
 <story>Entertainment|8-8-8-wedding</story>
-<start>20080808185656.1771634890814
-<end>20080808185848.3561701733438
+<start>20080808185656.177</start>
+<end>20080808185848.356</end>
 some couples | are taking | the eight obsession 
 guys | were supposed to try | your dress yesterday 
 Tina Xu | is leaving | nothing 

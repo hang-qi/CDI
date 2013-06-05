@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814192258.9091634890814
-<end>20080814192610.1341701733438
+<start>20080814192258.909</start>
+<end>20080814192610.134</end>
 the conflict | is happening | Russia 
 the president | apparently called | the territorial integrity of Georgia 
 He | was meeting | the CIA today 

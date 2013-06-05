@@ -1,6 +1,6 @@
 <story>Politics|Obama-Mccain-Warren-debate</story>
-<start>20080815141739.4241634890814
-<end>20080815141907.0781701733438
+<start>20080815141739.424</start>
+<end>20080815141907.078</end>
 Barack Obama | hoping to make | inroads 
 evangelical voters | favor | Republicans 
 CNN Opinion Research Corporation poll | shows | whites 

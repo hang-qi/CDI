@@ -1,6 +1,6 @@
 <story>Social:Teaser|Olympics-racism</story>
-<start>20080814182650.8401634890814
-<end>20080814182705.1211701733438
+<start>20080814182650.840</start>
+<end>20080814182705.121</end>
 A photo of the Spanish national basketball team | is causing | quite a furor 
 the picture | was meant | a friendly gesture 
 some people | are taking | the picture 

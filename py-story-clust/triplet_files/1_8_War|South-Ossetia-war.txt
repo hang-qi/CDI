@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808133030.0601634890814
-<end>20080808133144.1341701733438
+<start>20080808133030.060</start>
+<end>20080808133144.134</end>
 A former Soviet Republic | declares | itself 
 the U.S. | to come | its aid 
 Russian tanks | rolling | the break away Georgian province of South Ossetia 

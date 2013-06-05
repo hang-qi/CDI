@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814130835.8141634890814
-<end>20080814131201.2861701733438
+<start>20080814130835.814</start>
+<end>20080814131201.286</end>
 Let | go | Georgia 
 some degree | remains | limbo even 
 this moment | is virtually | the city limits of that flash point city 

@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080813171139.2971634890814
-<end>20080813171216.2011701733438
+<start>20080813171139.297</start>
+<end>20080813171216.201</end>
 John McCain | has taken | his message 
 Republican presidential candidate | will tour | an aerospace and defense company 
 Obama | spent much | his childhood 

@@ -1,6 +1,6 @@
 <story>Politics|McCain-campaign</story>
-<start>20080811131537.1351634890814
-<end>20080811131914.7851701733438
+<start>20080811131537.135</start>
+<end>20080811131914.785</end>
 we | hear | this relationship 
 Tom Ridge | is going to be | that short list 
 someone | has supported | abortion rights 

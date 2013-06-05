@@ -1,4 +1,4 @@
 <story>International:Teaser|South-Ossetia-war-humanitarian-aid</story>
-<start>20080814142636.0591634890814
-<end>20080814142643.6331701733438
+<start>20080814142636.059</start>
+<end>20080814142643.633</end>
 Defense Secretary Robert Gates | discussing | humanitarian aid 

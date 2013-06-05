@@ -1,6 +1,6 @@
 <story>Money|Oil-prices</story>
-<start>20080813183046.1421634890814
-<end>20080813183239.8551701733438
+<start>20080813183046.142</start>
+<end>20080813183239.855</end>
 Susan Lisovicz | is | the New York Stock Exchange 
 this morning | showing | crude and gasoline supplies 
 some refineries | shut | ahead of Tropical Storm Edouard 

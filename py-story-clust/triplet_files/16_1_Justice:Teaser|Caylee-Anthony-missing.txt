@@ -1,6 +1,6 @@
 <story>Justice:Teaser|Caylee-Anthony-missing</story>
-<start>20080813180042.7071634890814
-<end>20080813180055.2531701733438
+<start>20080813180042.707</start>
+<end>20080813180055.253</end>
 this story | has captivated | the nation 
 this woman | know | more 
 she | s telling | this woman missing year old daughter 

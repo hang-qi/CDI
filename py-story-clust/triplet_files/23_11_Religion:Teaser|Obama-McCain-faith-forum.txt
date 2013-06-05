@@ -1,6 +1,6 @@
 <story>Religion:Teaser|Obama-McCain-faith-forum</story>
-<start>20080814191212.4301634890814
-<end>20080814191228.3131701733438
+<start>20080814191212.430</start>
+<end>20080814191228.313</end>
 We | have | a quick reminder 
 a live forum | moderated | Pastor Rick Warren 
 night | live | CNN Saturday night 

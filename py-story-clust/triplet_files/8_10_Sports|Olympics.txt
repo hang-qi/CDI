@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811152623.6471634890814
-<end>20080811152807.0841701733438
+<start>20080811152623.647</start>
+<end>20080811152807.084</end>
 relay team | helping him keep | his dream alive of eight gold medals 
 our Larry Smith | is | Beijing 
 Super Bowl | win | the Patriots 

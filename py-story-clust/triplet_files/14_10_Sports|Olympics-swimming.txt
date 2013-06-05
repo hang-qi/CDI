@@ -1,6 +1,6 @@
 <story>Sports|Olympics-swimming</story>
-<start>20080813153112.4351634890814
-<end>20080813153220.0021701733438
+<start>20080813153112.435</start>
+<end>20080813153220.002</end>
 Americas golden boy | is | America s 
 Michael Phelps | swam | with two more gold medals 
 one | win | an individual event 

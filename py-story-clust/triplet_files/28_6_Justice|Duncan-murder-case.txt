@@ -1,6 +1,6 @@
 <story>Justice|Duncan-murder-case</story>
-<start>20080815180824.9341634890814
-<end>20080815181029.7921701733438
+<start>20080815180824.934</start>
+<end>20080815181029.792</end>
 Idaho | will determine | life 
 a young brother and sister | killing | the boy 
 this report | contains | some very graphic and violent language 

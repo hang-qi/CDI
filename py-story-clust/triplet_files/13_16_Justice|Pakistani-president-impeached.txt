@@ -1,6 +1,6 @@
 <story>Justice|Pakistani-president-impeached</story>
-<start>20080813143140.8311634890814
-<end>20080813143417.1201701733438
+<start>20080813143140.831</start>
+<end>20080813143417.120</end>
 the third of Pakistans four provincial assemblies today | passing | a resolution 
 President Pervez Musharraf | to step | or face impeachment 
 A final group of lawmakers | has indicated | A final group of lawmakers 

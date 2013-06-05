@@ -1,6 +1,6 @@
 <story>Money|Dollar-strength</story>
-<start>20080815195606.6621634890814
-<end>20080815195819.2941701733438
+<start>20080815195606.662</start>
+<end>20080815195819.294</end>
 we | ll take | a look 
 the greenback | is bucking | the trend of the worlds major currencies 
 a month | has made | the sickly U.S. dollar 

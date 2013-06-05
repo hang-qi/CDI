@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080814190944.0151634890814
-<end>20080814191050.0481701733438
+<start>20080814190944.015</start>
+<end>20080814191050.048</end>
 The accused | could face | possible court martialing and proceedings 
 Kwame Kilpatrick | won | the right today 
 This all | happened | his arraignment 

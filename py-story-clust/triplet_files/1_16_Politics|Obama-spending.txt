@@ -1,6 +1,6 @@
 <story>Politics|Obama-spending</story>
-<start>20080808135753.6351634890814
-<end>20080808135951.9801701733438
+<start>20080808135753.635</start>
+<end>20080808135951.980</end>
 Barack Obama | talking | the economy 
 he | said | reporters 
 we | ve been talking | the economy 

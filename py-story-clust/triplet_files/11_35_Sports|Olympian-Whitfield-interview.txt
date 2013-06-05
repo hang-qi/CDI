@@ -1,6 +1,6 @@
 <story>Sports|Olympian-Whitfield-interview</story>
-<start>20080811195140.1611634890814
-<end>20080811195609.4301701733438
+<start>20080811195140.161</start>
+<end>20080811195609.430</end>
 we | re expecting | a couple of phone calls 
 she | s going to be | her very famous 
 CNN CORRESPONDENT | LRB | camera RRB 

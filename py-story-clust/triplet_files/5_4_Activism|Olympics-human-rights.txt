@@ -1,6 +1,6 @@
 <story>Activism|Olympics-human-rights</story>
-<start>20080808180135.6261634890814
-<end>20080808180205.4901701733438
+<start>20080808180135.626</start>
+<end>20080808180205.490</end>
 Mr. Bush | criticized | Chinas human rights policies 
 policies | have drawn | fire 
 Police | there arrested | more than people 

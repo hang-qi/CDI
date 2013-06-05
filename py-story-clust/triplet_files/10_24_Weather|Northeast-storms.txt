@@ -1,6 +1,6 @@
 <story>Weather|Northeast-storms</story>
-<start>20080811183129.4521634890814
-<end>20080811183253.1351701733438
+<start>20080811183129.452</start>
+<end>20080811183253.135</end>
 Something | is brewing | the Atlantic 
 Our Bonnie Schneider | is keeping | an eye 
 we | re watching | a broad area of low pressure 

@@ -1,6 +1,6 @@
 <story>Entertainment|Bernie-Mac-death</story>
-<start>20080811193935.7711634890814
-<end>20080811194028.3571701733438
+<start>20080811193935.771</start>
+<end>20080811194028.357</end>
 The award | winning | actor and comedian 
 He | d been | the hospital 
 three weeks | battling | pneumonia 

@@ -1,4 +1,4 @@
 <story>Network|Intro</story>
-<start>20080814183017.0131634890814
-<end>20080814183031.5941701733438
+<start>20080814183017.013</start>
+<end>20080814183031.594</end>
 Don Lemon | live here | the CNN World Headquarters 

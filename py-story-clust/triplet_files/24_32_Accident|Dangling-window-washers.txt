@@ -1,6 +1,6 @@
 <story>Accident|Dangling-window-washers</story>
-<start>20080815135331.8401634890814
-<end>20080815135401.2701701733438
+<start>20080815135331.840</start>
+<end>20080815135401.270</end>
 Three roofing employees | found | themselves 
 safety | harnesses | the only thing 
 Firefighters | repelled | the building 

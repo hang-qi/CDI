@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811140943.6151634890814
-<end>20080811141156.3811701733438
+<start>20080811140943.615</start>
+<end>20080811141156.381</end>
 Host country | leading | the gold rush 
 China | topping | the latest medal count 
 The Chinese | have won | nine gold 

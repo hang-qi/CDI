@@ -1,6 +1,6 @@
 <story>Justice|Pakistan-president-impeached</story>
-<start>20080811133304.8481634890814
-<end>20080811133334.0111701733438
+<start>20080811133304.848</start>
+<end>20080811133334.011</end>
 A move | to impeach | Pakistani President Pervez Musharraf 
 Pakistans Lower House of Parliament | introducing | a resolution today 
 Mr. Musharraf | seized | power 

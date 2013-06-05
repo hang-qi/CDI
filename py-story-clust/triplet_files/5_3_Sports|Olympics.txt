@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080808180102.6271634890814
-<end>20080808180135.6261701733438
+<start>20080808180102.627</start>
+<end>20080808180135.626</end>
 We | re looking | live pictures 
 They | re | hours 
 We | want to talk | the games 

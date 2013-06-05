@@ -1,4 +1,4 @@
 <story>International:Teaser|South-Ossetia-reporters-attacked</story>
-<start>20080815131049.3471634890814
-<end>20080815131102.3601701733438
+<start>20080815131049.347</start>
+<end>20080815131102.360</end>
 a little bit later | coming up right here | the NEWSROOM 

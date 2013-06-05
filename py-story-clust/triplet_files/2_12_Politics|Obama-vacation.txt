@@ -1,6 +1,6 @@
 <story>Politics|Obama-vacation</story>
-<start>20080808151502.9001634890814
-<end>20080808151511.0411701733438
+<start>20080808151502.900</start>
+<end>20080808151511.041</end>
 McCain | spent | the past few days 
 Ohio | talking | jobs 
 Barack Obama | heads | Hawaii 

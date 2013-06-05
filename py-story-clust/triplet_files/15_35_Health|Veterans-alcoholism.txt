@@ -1,6 +1,6 @@
 <story>Health|Veterans-alcoholism</story>
-<start>20080813174528.2911634890814
-<end>20080813174717.4001701733438
+<start>20080813174528.291</start>
+<end>20080813174717.400</end>
 the Associated Press | shows | U.S. troops 
 a big problem | according | this study 
 Let | s take | a look 

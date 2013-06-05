@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811193027.6231634890814
-<end>20080811193049.9121701733438
+<start>20080811193027.623</start>
+<end>20080811193049.912</end>
 we | re working | for 
 Russian tanks | are rumbling further | Georgia 
 Georgias president today | accused | Moscow 

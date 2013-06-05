@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080811144122.9461634890814
-<end>20080811144450.2191701733438
+<start>20080811144122.946</start>
+<end>20080811144450.219</end>
 we | are watching | some wicked weather 
 the hail | did knock down | some tree limbs and branches 
 a storm | tore | Philadelphia 

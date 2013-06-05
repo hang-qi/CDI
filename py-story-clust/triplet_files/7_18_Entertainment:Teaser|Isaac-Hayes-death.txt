@@ -1,4 +1,4 @@
 <story>Entertainment:Teaser|Isaac-Hayes-death</story>
-<start>20080811145035.1641634890814
-<end>20080811145315.0901701733438
+<start>20080811145035.164</start>
+<end>20080811145315.090</end>
 Reports | filled | love 

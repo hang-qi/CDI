@@ -1,6 +1,6 @@
 <story>Government|Manhattan-security</story>
-<start>20080813144157.6141634890814
-<end>20080813144306.0151701733438
+<start>20080813144157.614</start>
+<end>20080813144306.015</end>
 New plan | to protect | New Yorks financial district 
 New York | working | a multi faceted plan 
 Operation Sentinel | would track | every vehicle 

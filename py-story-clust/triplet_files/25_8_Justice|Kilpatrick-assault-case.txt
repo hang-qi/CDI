@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080815141609.0331634890814
-<end>20080815141640.3981701733438
+<start>20080815141609.033</start>
+<end>20080815141640.398</end>
 probable cause | to try | Kwame Kilpatrick 
 Some | live | pictures 
 The case | stems | a confrontation 

@@ -1,6 +1,6 @@
 <story>Sports|Olympics-racism</story>
-<start>20080814175637.3261634890814
-<end>20080814175713.5951701733438
+<start>20080814175637.326</start>
+<end>20080814175713.595</end>
 the Spanish Olmypic basketball team | is facing | some heavy pressure 
 Asian rights groups | are blasting | the athletes 
 commercial sponsors | asked | they 

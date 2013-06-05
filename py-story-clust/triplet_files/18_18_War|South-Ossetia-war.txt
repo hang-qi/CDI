@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814133121.2111634890814
-<end>20080814134038.0341701733438
+<start>20080814133121.211</start>
+<end>20080814134038.034</end>
 Russian troops | remain | the Georgian City of Gori 
 Georgia | align | Russia today 
 Russia | will defy | Georgia and support 

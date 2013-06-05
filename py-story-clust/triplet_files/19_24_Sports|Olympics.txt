@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080814144858.0991634890814
-<end>20080814145116.1711701733438
+<start>20080814144858.099</start>
+<end>20080814145116.171</end>
 The U.S. mens basketball team | getting | Greece 
 this Greece team | beat | the U.S. national team 
 Greece | has not been | kind 

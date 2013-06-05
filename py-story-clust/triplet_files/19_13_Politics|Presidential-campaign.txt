@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080814141631.0211634890814
-<end>20080814141825.6351701733438
+<start>20080814141631.021</start>
+<end>20080814141825.635</end>
 The CNN Election Express | is rolling | Illinois 
 Senior political analyst Bill Schneider | live | the election 
 We | re now crossing | the state of Illinois 

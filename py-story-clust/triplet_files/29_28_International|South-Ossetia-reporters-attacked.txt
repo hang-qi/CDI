@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-reporters-attacked</story>
-<start>20080815193114.5381634890814
-<end>20080815193152.6431701733438
+<start>20080815193114.538</start>
+<end>20080815193152.643</end>
 A Turkish broadcast crew | got | this story 
 The camera | was rolling | their vehicle 
 Let | s take | a listen 

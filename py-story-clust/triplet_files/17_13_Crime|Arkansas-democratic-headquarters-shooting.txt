@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080813193835.1771634890814
-<end>20080813193910.4121701733438
+<start>20080813193835.177</start>
+<end>20080813193910.412</end>
 we | re working | for 
 We | ve got | new information 
 DNC chairman Howard Dean | has issued | a statement 

@@ -1,6 +1,6 @@
 <story>Activism|Montreal-riot</story>
-<start>20080811180413.0841634890814
-<end>20080811180440.3441701733438
+<start>20080811180413.084</start>
+<end>20080811180440.344</end>
 Montreal | are rounding | suspects 
 police | were pelted | beer bottles 
 Police | believe | the shooting death of a teen 

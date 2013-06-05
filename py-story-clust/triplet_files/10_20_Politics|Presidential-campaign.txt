@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080811182850.8271634890814
-<end>20080811183007.9371701733438
+<start>20080811182850.827</start>
+<end>20080811183007.937</end>
 the curtain | goes | the Democratic convention 
 the CNN Election Express | is | the road 
 We | re | our way 

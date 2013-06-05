@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080814171412.7841634890814
-<end>20080814171747.7991701733438
+<start>20080814171412.784</start>
+<end>20080814171747.799</end>
 we | have learned | Hillary Clinton 
 Hillary Rodham Clintons name | will be placed | nomination 
 A party source | tells | CNN 

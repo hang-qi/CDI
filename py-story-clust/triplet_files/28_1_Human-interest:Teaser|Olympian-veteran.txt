@@ -1,5 +1,5 @@
 <story>Human-interest:Teaser|Olympian-veteran</story>
-<start>20080815180035.9661634890814
-<end>20080815180050.7471701733438
+<start>20080815180035.966</start>
+<end>20080815180050.747</end>
 Marvelous Mal Whitfield | struck | gold 
 the NEWSROOM | to talk | old times 

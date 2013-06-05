@@ -1,6 +1,6 @@
 <story>Politics|McCain-campaign</story>
-<start>20080811181646.6361634890814
-<end>20080811181741.4581701733438
+<start>20080811181646.636</start>
+<end>20080811181741.458</end>
 John McCain | has | the spotlight 
 McCain | is stumping | the battleground state of Pennsylvania 
 his visit | is creating | more buzz 

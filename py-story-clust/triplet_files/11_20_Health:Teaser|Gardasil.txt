@@ -1,4 +1,4 @@
 <story>Health:Teaser|Gardasil</story>
-<start>20080811191943.2461634890814
-<end>20080811191952.2221701733438
+<start>20080811191943.246</start>
+<end>20080811191952.222</end>
 young women | has created | a lot of confusion 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808173137.1601634890814
-<end>20080808173557.6211701733438
+<start>20080808173137.160</start>
+<end>20080808173557.621</end>
 violence | could erupt | Georgias break away region of South Ossetia 
 Those | were realized | today 
 a convoy of Russian forces | rolled | the region 

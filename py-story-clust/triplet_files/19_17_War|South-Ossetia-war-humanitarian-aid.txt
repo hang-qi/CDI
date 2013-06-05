@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war-humanitarian-aid</story>
-<start>20080814142938.5081634890814
-<end>20080814143233.6831701733438
+<start>20080814142938.508</start>
+<end>20080814143233.683</end>
 A cease fire | holds | Russian troops 
 they | ll return | control 
 Abkhazia and South Ossetia | want to split | Georgia 

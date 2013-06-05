@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813135256.2051634890814
-<end>20080813135614.4031701733438
+<start>20080813135256.205</start>
+<end>20080813135614.403</end>
 we | continue to follow | the breaking news 
 this morning | regarding | the situation of Russia and Georgia 
 sort of | discuss | a little bit 

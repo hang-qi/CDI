@@ -1,6 +1,6 @@
 <story>International|US-Poland-missile-deal</story>
-<start>20080815190125.7511634890814
-<end>20080815190348.9941701733438
+<start>20080815190125.751</start>
+<end>20080815190348.994</end>
 a deal | to place | a U.S. defense missile battery 
 We | will go | a moment 
 the Georgian capital | see | Frederik Pleitgen 

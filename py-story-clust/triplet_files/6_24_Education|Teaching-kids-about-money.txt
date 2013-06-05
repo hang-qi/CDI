@@ -1,6 +1,6 @@
 <story>Education|Teaching-kids-about-money</story>
-<start>20080811133941.8111634890814
-<end>20080811134054.3841701733438
+<start>20080811133941.811</start>
+<end>20080811134054.384</end>
 they | head back | school 
 Ali Velshi | has | lessons 
 Author Troy Dunn | says step | one 

@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080814131201.2861634890814
-<end>20080814131316.9611701733438
+<start>20080814131201.286</start>
+<end>20080814131316.961</end>
 Rob Marciano | is standing | the CNN Severe Weather Center 
 kind | kicking | a little bit 
 We | re looking | this thing 

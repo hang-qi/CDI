@@ -1,6 +1,6 @@
 <story>Weather|Puerto-rico</story>
-<start>20080815130136.2611634890814
-<end>20080815130349.9951701733438
+<start>20080815130136.261</start>
+<end>20080815130349.995</end>
 Several big stories | developing | this hour 
 We | want to begin | the tropics 
 the U.S. Reynolds Wolf | is watching | all of it 

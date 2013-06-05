@@ -1,4 +1,4 @@
 <story>Network|Anchor-chat</story>
-<start>20080815184630.5511634890814
-<end>20080815184648.2691701733438
+<start>20080815184630.551</start>
+<end>20080815184648.269</end>
 whoever | want to say | hell 

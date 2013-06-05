@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808180449.9201634890814
-<end>20080808180750.5011701733438
+<start>20080808180449.920</start>
+<end>20080808180750.501</end>
 the worlds attention | focused | Beijing 
 fighting | has erupted | the South Ossetia region of the Republic 
 The area | has been | dispute 

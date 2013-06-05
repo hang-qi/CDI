@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080814193802.9121634890814
-<end>20080814194128.5851701733438
+<start>20080814193802.912</start>
+<end>20080814194128.585</end>
 no doubt | celebrating | KEILAR second place finish 
 Clintons name | will be placed | nomination 
 We | are | Iowa 

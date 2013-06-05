@@ -1,6 +1,6 @@
 <story>Accident:Teaser|Bear-attack</story>
-<start>20080813145448.4841634890814
-<end>20080813145802.5781701733438
+<start>20080813145448.484</start>
+<end>20080813145802.578</end>
 an year old injured but able | to joke | his encounter 
 he | kept | his wife 
 Raymond Daniel Thurman | is charged | rape 

@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-reporters-attacked</story>
-<start>20080815133539.1361634890814
-<end>20080815133624.1811701733438
+<start>20080815133539.136</start>
+<end>20080815133624.181</end>
 the danger | facing | journalists 
 those | were | gun shots 
 They | were | Georgia 

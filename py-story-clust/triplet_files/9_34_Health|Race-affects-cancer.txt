@@ -1,6 +1,6 @@
 <story>Health|Race-affects-cancer</story>
-<start>20080811174602.3911634890814
-<end>20080811174736.9861701733438
+<start>20080811174602.391</start>
+<end>20080811174736.986</end>
 the rate | screening | prostate cancer 
 race | matters when | CNN NEWSROOM 
 only one in three African American men | is getting screened | three African American men s 

@@ -1,6 +1,6 @@
 <story>Politics|McCain-speech-economy</story>
-<start>20080808155616.2371634890814
-<end>20080808155953.4781701733438
+<start>20080808155616.237</start>
+<end>20080808155953.478</end>
 We | want to make | we 
 Senator John McCain standing | talking | energy 
 LRB | JOINED | PROGRESS 

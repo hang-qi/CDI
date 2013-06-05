@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-humanitarian-aid</story>
-<start>20080813150424.9621634890814
-<end>20080813150610.1671701733438
+<start>20080813150424.962</start>
+<end>20080813150610.167</end>
 more than civilians | are left | the fighting 
 U.S. military planes | are | the way 
 CNN Pentagon Correspondent Barbara Starr | has | the latest now 

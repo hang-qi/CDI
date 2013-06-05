@@ -1,6 +1,6 @@
 <story>Justice|Chicago-clergy-abuse-case</story>
-<start>20080813171630.0211634890814
-<end>20080813171716.4011701733438
+<start>20080813171630.021</start>
+<end>20080813171716.401</end>
 The Catholic archdiocese of Chicago | is paying | more than $ million 
 Cardinal Francis George | is apologizing | each victim 
 the public admission | means | more 

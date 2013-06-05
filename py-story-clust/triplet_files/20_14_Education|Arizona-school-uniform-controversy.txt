@@ -1,6 +1,6 @@
 <story>Education|Arizona-school-uniform-controversy</story>
-<start>20080814155856.0641634890814
-<end>20080814155953.5411701733438
+<start>20080814155856.064</start>
+<end>20080814155953.541</end>
 A schoolgirl | gets | a 
 A schoolgirl shirt | has | too many buttons 
 A school dress code | turns | a hot button issue 

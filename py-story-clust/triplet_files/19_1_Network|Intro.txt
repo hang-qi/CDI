@@ -1,4 +1,4 @@
 <story>Network|Intro</story>
-<start>20080814140024.0551634890814
-<end>20080814140031.6291701733438
+<start>20080814140024.055</start>
+<end>20080814140031.629</end>
 Stay | informed | all day 

@@ -1,6 +1,6 @@
 <story>Science-technology|Hydrogen-cars</story>
-<start>20080814185117.5721634890814
-<end>20080814185352.8941701733438
+<start>20080814185117.572</start>
+<end>20080814185352.894</end>
 the latest energy fix | even drinking | water 
 Everyone | asked | me 
 today | got | the office 

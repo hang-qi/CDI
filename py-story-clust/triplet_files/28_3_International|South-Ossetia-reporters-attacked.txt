@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-reporters-attacked</story>
-<start>20080815180619.6421634890814
-<end>20080815180659.6161701733438
+<start>20080815180619.642</start>
+<end>20080815180659.616</end>
 we | have | another story 
 the incident | happened | last Sunday 
 a crew | entered | South Ossetia 

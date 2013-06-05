@@ -1,6 +1,6 @@
 <story>Disaster|Flooding-New-Hampshire</story>
-<start>20080808180853.8641634890814
-<end>20080808181033.6641701733438
+<start>20080808180853.864</start>
+<end>20080808181033.664</end>
 Heavy rains | spell | tragedy 
 year old girl | is | her familys car 
 The flash floods overnight | washed | away roads and damaged homes and businesses 

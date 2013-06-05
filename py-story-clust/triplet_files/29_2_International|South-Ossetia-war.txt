@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815190048.8141634890814
-<end>20080815190125.7511701733438
+<start>20080815190048.814</start>
+<end>20080815190125.751</end>
 Secretary of State Condoleezza Rice | arrived | today 
 The deal | includes | concessions 
 Georgias president | lashed | the West 

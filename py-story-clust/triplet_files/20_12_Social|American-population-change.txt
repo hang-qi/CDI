@@ -1,6 +1,6 @@
 <story>Social|American-population-change</story>
-<start>20080814154840.1491634890814
-<end>20080814155105.6281701733438
+<start>20080814154840.149</start>
+<end>20080814155105.628</end>
 whites | will no longer be | a majority 
 Hispanics | will make | percent of the population 
 blacks | will account | percent 

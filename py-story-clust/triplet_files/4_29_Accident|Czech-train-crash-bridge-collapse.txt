@@ -1,6 +1,6 @@
 <story>Accident|Czech-train-crash-bridge-collapse</story>
-<start>20080808173620.8441634890814
-<end>20080808173640.6641701733438
+<start>20080808173620.844</start>
+<end>20080808173640.664</end>
 We | re talking | a double disaster 
 construction | collapses | the path of a passenger train 
 at least six people | were killed | 

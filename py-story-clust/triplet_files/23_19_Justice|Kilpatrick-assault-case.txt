@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080814193238.4881634890814
-<end>20080814193338.6151701733438
+<start>20080814193238.488</start>
+<end>20080814193338.615</end>
 a second judge | has decided | Detroit Mayor Kwame Kilpatrick 
 his electronic tracking device | can not travel here | the coming days 
 who of course | is facing | charges of perjury misconduct obstruction and conspiracy 

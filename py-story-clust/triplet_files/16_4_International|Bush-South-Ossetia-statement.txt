@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813180942.4461634890814
-<end>20080813181110.2001701733438
+<start>20080813180942.446</start>
+<end>20080813181110.200</end>
 He | s sending | Secretary of State Condoleezza Rice 
 She | leaves | Washington 
 The president | saying | today 

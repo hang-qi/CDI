@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080813175319.9951634890814
-<end>20080813175623.3451701733438
+<start>20080813175319.995</start>
+<end>20080813175623.345</end>
 Let | s bring | some live pictures 
 we | have | our affiliate 
 Some | live | pictures of the crime scene 

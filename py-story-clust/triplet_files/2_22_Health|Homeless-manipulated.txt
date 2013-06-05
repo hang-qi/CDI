@@ -1,6 +1,6 @@
 <story>Health|Homeless-manipulated</story>
-<start>20080808154322.4311634890814
-<end>20080808154536.3641701733438
+<start>20080808154322.431</start>
+<end>20080808154536.364</end>
 criminals | are preying | the homeless 
 Reporter Kara Finnstrom | has | the details 
 Reporter Kara Finnstrom | is just | the beginning 

@@ -1,6 +1,6 @@
 <story>Human-interest|Dog-eats-fork</story>
-<start>20080815145843.3181634890814
-<end>20080815145949.7511701733438
+<start>20080815145843.318</start>
+<end>20080815145949.751</end>
 This beautiful Husky | has | an odd appetite 
 Talk | biting | more 
 Apache | ate | a fork 

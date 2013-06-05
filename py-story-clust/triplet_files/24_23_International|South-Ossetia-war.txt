@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815133624.1811634890814
-<end>20080815133838.6821701733438
+<start>20080815133624.181</start>
+<end>20080815133838.682</end>
 More humanitarian aid | is | the way 
 We | have | a better idea of the vast needs 
 we | have | a new official number 

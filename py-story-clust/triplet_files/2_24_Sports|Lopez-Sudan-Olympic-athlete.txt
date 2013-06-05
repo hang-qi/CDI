@@ -1,6 +1,6 @@
 <story>Sports|Lopez-Sudan-Olympic-athlete</story>
-<start>20080808154915.0831634890814
-<end>20080808155131.1191701733438
+<start>20080808154915.083</start>
+<end>20080808155131.119</end>
 He | was | one of the Lost Boys 
 he | lives south | Syracuse 
 a church | surrounded | a cornfield 

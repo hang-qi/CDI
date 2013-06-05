@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808150108.9001634890814
-<end>20080808150453.6241701733438
+<start>20080808150108.900</start>
+<end>20080808150453.624</end>
 we | ve been following | this morning 
 Russia | is attacking | his country 
 bombs | move | tanks 

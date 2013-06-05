@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080813182443.5131634890814
-<end>20080813182817.4601701733438
+<start>20080813182443.513</start>
+<end>20080813182817.460</end>
 the honor | goes | former Virginia governor and current U.S. Senate candidate Mark Warner 
 He | ll speak | the conventions second night 
 Hillary Clinton | gives | her speech 

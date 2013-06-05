@@ -1,6 +1,6 @@
 <story>Human-interest|Reese-Hoffa-olympian-orphan</story>
-<start>20080815142312.5561634890814
-<end>20080815142532.9631701733438
+<start>20080815142312.556</start>
+<end>20080815142532.963</end>
 today | was | the fist day 
 some of the attention | was | Reese Hoffa 
 a shot putter | called | himself 

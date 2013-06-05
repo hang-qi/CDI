@@ -1,6 +1,6 @@
 <story>Labor|Disneyland-labor-protest</story>
-<start>20080815172740.2901634890814
-<end>20080815172806.2161701733438
+<start>20080815172740.290</start>
+<end>20080815172806.216</end>
 earth | did nt look | too happy 
 A cast of characters | was arrested | Disneyland 
 some | dressed | Disney favorites 

@@ -1,6 +1,6 @@
 <story>Money|China-economy</story>
-<start>20080811132409.8471634890814
-<end>20080811132522.8871701733438
+<start>20080811132409.847</start>
+<end>20080811132522.887</end>
 this new analysis | predicting | China 
 the way things | were growing | next year 
 we | ve seen | a reduction 

@@ -1,6 +1,6 @@
 <story>International|Presidential-campaign-South-Ossetia</story>
-<start>20080811190630.6211634890814
-<end>20080811190733.9181701733438
+<start>20080811190630.621</start>
+<end>20080811190733.918</end>
 the two main presidential candidates | are condemning | Russias invasion 
 Our united purpose | should be to persuade | the Russian government 
 We | must remind | Russias leaders 

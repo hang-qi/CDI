@@ -1,6 +1,6 @@
 <story>Money|Home-heating-costs</story>
-<start>20080815185101.1551634890814
-<end>20080815185346.3201701733438
+<start>20080815185101.155</start>
+<end>20080815185346.320</end>
 those bills | are set to jump | this year 
 CNNMoney.coms Poppy Harlow | has | our Energy Fix 
 even a few months | comes | energy 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814152112.3361634890814
-<end>20080814152830.7411701733438
+<start>20080814152112.336</start>
+<end>20080814152830.741</end>
 Secretary Gates | saying | he 
 Russian troops | to withdraw | Georgia 
 the secretary | saying | this action 

@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080808150453.6241634890814
-<end>20080808150528.3261701733438
+<start>20080808150453.624</start>
+<end>20080808150528.326</end>
 A bus | loaded | church members 
 They | think | a flat tire 
 a blown tire | might have set | a flat tire 

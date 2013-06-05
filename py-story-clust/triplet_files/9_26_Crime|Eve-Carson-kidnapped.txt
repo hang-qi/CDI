@@ -1,4 +1,4 @@
 <story>Crime|Eve-Carson-kidnapped</story>
-<start>20080811173158.6151634890814
-<end>20080811173216.6001701733438
+<start>20080811173158.615</start>
+<end>20080811173216.600</end>
 prosecutors | will seek | the death penalty 

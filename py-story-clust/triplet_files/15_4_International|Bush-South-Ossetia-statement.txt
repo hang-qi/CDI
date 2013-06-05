@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813170424.7961634890814
-<end>20080813170617.4091701733438
+<start>20080813170424.796</start>
+<end>20080813170617.409</end>
 She | is | the White House 
 ago | addressed | the situation 
 a lot | came | his statement 

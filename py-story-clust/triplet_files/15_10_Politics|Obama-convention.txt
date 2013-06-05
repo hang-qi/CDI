@@ -1,6 +1,6 @@
 <story>Politics|Obama-convention</story>
-<start>20080813171216.2011634890814
-<end>20080813171241.7601701733438
+<start>20080813171216.201</start>
+<end>20080813171241.760</end>
 the Obama campaign | has named | the keynote speaker 
 Warner | will speak | the conventions second night 
 Hillary Clinton | gives | her same prime time speech 

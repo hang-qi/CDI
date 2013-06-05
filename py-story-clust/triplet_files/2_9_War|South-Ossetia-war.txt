@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808151205.3551634890814
-<end>20080808151433.5371701733438
+<start>20080808151205.355</start>
+<end>20080808151433.537</end>
 we | ve been following | all morning 
 We | want to get | our State Department correspondent 
 Spokesman Gonzo Gallegos | issued | this statement 

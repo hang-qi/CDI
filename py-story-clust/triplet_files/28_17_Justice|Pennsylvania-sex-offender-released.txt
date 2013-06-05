@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815183333.0081634890814
-<end>20080815183350.2251701733438
+<start>20080815183333.008</start>
+<end>20080815183350.225</end>
 A convicted Pennsylvania sex offender | has been released | prison 
 his potential neighbors | are up | arms 
 George Feigley | served | more than years 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811190121.9131634890814
-<end>20080811190630.6211701733438
+<start>20080811190121.913</start>
+<end>20080811190630.621</end>
 we | start | the latest information 
 The United States | has started bringing | out U.S. citizens 
 about Americans | left | today 

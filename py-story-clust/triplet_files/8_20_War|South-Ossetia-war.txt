@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811155233.1151634890814
-<end>20080811155656.5121701733438
+<start>20080811155233.115</start>
+<end>20080811155656.512</end>
 We | ve got | some breaking news 
 Some new developments | coming | Georgia 
 Let s | go straight now | CNNs senior international correspondent Matthew Chance 

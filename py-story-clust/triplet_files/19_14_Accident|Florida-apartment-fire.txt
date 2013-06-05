@@ -1,6 +1,6 @@
 <story>Accident|Florida-apartment-fire</story>
-<start>20080814142133.0561634890814
-<end>20080814142309.7531701733438
+<start>20080814142133.056</start>
+<end>20080814142309.753</end>
 we | get | LRB COMMERCIAL BREAK RRB COLLINS Want to get some information out to you . 
 we | have | our affiliate 
 Miami Dade fire and rescue | are actually | the scene of this fire 

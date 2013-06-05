@@ -1,6 +1,6 @@
 <story>Sports|Olympics-future-skateboarding</story>
-<start>20080814184452.9881634890814
-<end>20080814184655.4771701733438
+<start>20080814184452.988</start>
+<end>20080814184655.477</end>
 some surfers | decided to try surfing | the streets 
 Skateboardings popularity | was initially was confined | the punk scene 
 some | are even hoping | the sport 

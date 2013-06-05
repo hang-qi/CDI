@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080811182836.1791634890814
-<end>20080811182850.8271701733438
+<start>20080811182836.179</start>
+<end>20080811182850.827</end>
 Tensions | are running high | a multiethnic neighborhood 
 A prosecutor | alleges | Detroit Mayor Kwame Kilpatrick 
 He | says | the weekend 

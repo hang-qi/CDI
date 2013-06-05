@@ -1,5 +1,5 @@
 <story>Justice:Teaser|Beltless-bandit</story>
-<start>20080814195624.7131634890814
-<end>20080814195923.8921701733438
+<start>20080814195624.713</start>
+<end>20080814195923.892</end>
 An R rated crime | caught | tape 
 Police | want to see | this guy 

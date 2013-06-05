@@ -1,6 +1,6 @@
 <story>Government|Walmart-election-law-violation</story>
-<start>20080814171812.6571634890814
-<end>20080814171837.9821701733438
+<start>20080814171812.657</start>
+<end>20080814171837.982</end>
 The AFL CIO and other labor groups | are filing | a complaint 
 They | accuse | the company 
 Democratic victories | would hurt | the company 

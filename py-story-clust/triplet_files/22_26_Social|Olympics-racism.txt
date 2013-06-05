@@ -1,6 +1,6 @@
 <story>Social|Olympics-racism</story>
-<start>20080814183647.1361634890814
-<end>20080814183935.4711701733438
+<start>20080814183647.136</start>
+<end>20080814183935.471</end>
 Spains Olympic basketball team | has been accused | a foul shot 
 this picture | here taken | the men 
 Beijing | shows | white men 

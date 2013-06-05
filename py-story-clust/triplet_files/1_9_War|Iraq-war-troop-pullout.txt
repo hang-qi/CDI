@@ -1,6 +1,6 @@
 <story>War|Iraq-war-troop-pullout</story>
-<start>20080808133144.1341634890814
-<end>20080808133910.5801701733438
+<start>20080808133144.134</start>
+<end>20080808133910.580</end>
 A troop withdrawal deal | is close | hand 
 U.S. combat forces | leaving | Iraq 
 We | are covering | this developing story 

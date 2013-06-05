@@ -1,5 +1,5 @@
 <story>Politics|Obama-assassination-threat</story>
-<start>20080808183048.4111634890814
-<end>20080808183100.1891701733438
+<start>20080808183048.411</start>
+<end>20080808183100.189</end>
 A Florida man | is still being held | charges 
 he | threatened to assassinate | Democratic presidential candidate Barack Obama 

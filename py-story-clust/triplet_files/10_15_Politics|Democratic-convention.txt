@@ -1,6 +1,6 @@
 <story>Politics|Democratic-convention</story>
-<start>20080811181802.9131634890814
-<end>20080811181827.0031701733438
+<start>20080811181802.913</start>
+<end>20080811181827.003</end>
 The wife of the partys presumptive nominee | speaks | primetime 
 New York | will address | the party faithful 
 Obama | accepts | the partys nomination 

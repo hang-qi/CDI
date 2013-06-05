@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080808171557.4221634890814
-<end>20080808171622.9471701733438
+<start>20080808171557.422</start>
+<end>20080808171622.947</end>
 Bill Clinton | will speak | the third night of the partys convention 
 which | gets | way August th 
 The former presidents appearance | will come | one day 

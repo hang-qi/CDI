@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080814140921.5921634890814
-<end>20080814141126.5831701733438
+<start>20080814140921.592</start>
+<end>20080814141126.583</end>
 we | spend | some time 
 this point | is developing | the Atlantic 
 We | ve got | this thing 

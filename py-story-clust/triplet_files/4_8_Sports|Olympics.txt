@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080808170948.9201634890814
-<end>20080808171040.0051701733438
+<start>20080808170948.920</start>
+<end>20080808171040.005</end>
 The Summer Olympics | began | today 
 Beijings National Stadium | dubbed | the Birds Nest 
 Some spectators | cheered | the Olympic torch 

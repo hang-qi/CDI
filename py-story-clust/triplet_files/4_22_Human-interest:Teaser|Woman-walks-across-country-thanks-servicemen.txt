@@ -1,5 +1,5 @@
 <story>Human-interest:Teaser|Woman-walks-across-country-thanks-servicemen</story>
-<start>20080808172728.3121634890814
-<end>20080808173038.4681701733438
+<start>20080808172728.312</start>
+<end>20080808173038.468</end>
 We | ll meet | a woman 
 feet | do | the talking 

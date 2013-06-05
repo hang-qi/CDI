@@ -1,6 +1,6 @@
 <story>Money|Commodity-prices</story>
-<start>20080808154058.5541634890814
-<end>20080808154322.4311701733438
+<start>20080808154058.554</start>
+<end>20080808154322.431</end>
 we | are probably going to have to get used | the pollution problem 
 a trend | s | a very fun one 
 Susan Lisovicz | is | the New York Stock Exchange 

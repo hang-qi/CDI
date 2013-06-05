@@ -1,6 +1,6 @@
 <story>Entertainment|Mcconaughey-baby</story>
-<start>20080808134530.1591634890814
-<end>20080808135232.1141701733438
+<start>20080808134530.159</start>
+<end>20080808135232.114</end>
 Dr. Gupta | goes | Hollywood 
 A movie star | gushes | his new son 
 Hollywood star Matthew McConaughey | embracing | a new role 

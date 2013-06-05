@@ -1,6 +1,6 @@
 <story>Politics|Negative-presidential-campaigning</story>
-<start>20080808175352.9951634890814
-<end>20080808175803.5121701733438
+<start>20080808175352.995</start>
+<end>20080808175803.512</end>
 the candidates | said | first 
 recent negative ads | may tell | a different story 
 CNNs Richard Lui | asked | voters 

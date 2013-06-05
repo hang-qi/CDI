@@ -1,6 +1,6 @@
 <story>Entertainment|Isaac-Hayes-death</story>
-<start>20080811145315.0901634890814
-<end>20080811145429.7651701733438
+<start>20080811145315.090</start>
+<end>20080811145429.765</end>
 The entertainment world | is mourning | the loss of two greats 
 They | ve been sending | Our i Reporters memories 
 We | want to start | this first picture 

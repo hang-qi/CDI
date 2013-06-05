@@ -1,6 +1,6 @@
 <story>Politics|Obama-campaign</story>
-<start>20080811181741.4581634890814
-<end>20080811181802.9131701733438
+<start>20080811181741.458</start>
+<end>20080811181802.913</end>
 he | s mulling | his choice 
 his supporters | will decide | e mail and text messages 
 the first | to know | his choice 

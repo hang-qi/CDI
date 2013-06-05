@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war-humanitarian-aid</story>
-<start>20080814140621.2121634890814
-<end>20080814140855.6661701733438
+<start>20080814140621.212</start>
+<end>20080814140855.666</end>
 about people | have been left | the fighting 
 The U.S. | is helping | spearhead 
 CNNs Frederik Pleitgen | is | the Georgian capital of Tbilisi 

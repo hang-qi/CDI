@@ -1,6 +1,6 @@
 <story>Health|Foreign-illness</story>
-<start>20080814174455.6921634890814
-<end>20080814174839.3821701733438
+<start>20080814174455.692</start>
+<end>20080814174839.382</end>
 another country | s happened | the best of us 
 few things | getting | vacation 
 our medical correspondent Elizabeth Cohen | is here | tips 

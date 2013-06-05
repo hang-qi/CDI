@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814190256.6421634890814
-<end>20080814190806.0171701733438
+<start>20080814190256.642</start>
+<end>20080814190806.017</end>
 news | regarding | the situation 
 reports | coming | the Georgian Embassy 
 the United States | saying | they 

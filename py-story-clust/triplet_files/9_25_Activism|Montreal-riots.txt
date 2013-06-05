@@ -1,6 +1,6 @@
 <story>Activism|Montreal-riots</story>
-<start>20080811173142.4991634890814
-<end>20080811173158.6151701733438
+<start>20080811173142.499</start>
+<end>20080811173158.615</end>
 Riots and looting | making | a rough night 
 The violence | flaring | a day 
 a police shooting | killed | an year old man 

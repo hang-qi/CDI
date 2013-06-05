@@ -1,6 +1,6 @@
 <story>Entertainment|Young-tattoo-artist</story>
-<start>20080808145907.4751634890814
-<end>20080808145950.8701701733438
+<start>20080808145907.475</start>
+<end>20080808145950.870</end>
 She | s been | body 
 Mom | does | piercings 
 dad | does | ink 

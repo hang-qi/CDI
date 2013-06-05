@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080815144726.5761634890814
-<end>20080815145126.4151701733438
+<start>20080815144726.576</start>
+<end>20080815145126.415</end>
 Hillary Clinton | having put | her name 
 the convention | could be headed | a big showdown 
 her supporters | are looking | catharsis 

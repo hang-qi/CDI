@@ -1,6 +1,6 @@
 <story>International|Georgia-conflict-Pachulia-interview</story>
-<start>20080813193928.1971634890814
-<end>20080813194319.1941701733438
+<start>20080813193928.197</start>
+<end>20080813194319.194</end>
 State Condoleezza Rice talking about the Georgia Russia conflict | s | a declared war 
 the Georgia Russia conflict | unfold | a distance 
 the Atlanta Hawks | born | years 

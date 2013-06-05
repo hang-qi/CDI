@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign-foreign-policy</story>
-<start>20080811142105.3961634890814
-<end>20080811143415.5191701733438
+<start>20080811142105.396</start>
+<end>20080811143415.519</end>
 We | are awaiting right now | John McCain 
 He | s going to be making | some remarks 
 his foreign policy credentials | considered | his campaign 

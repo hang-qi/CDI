@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080814134339.1821634890814
-<end>20080814134646.9361701733438
+<start>20080814134339.182</start>
+<end>20080814134646.936</end>
 China | won | the womens team gymnastics competition 
 the Chinese | are taking | a big lead 
 a pretty big upset | to share | everyone 

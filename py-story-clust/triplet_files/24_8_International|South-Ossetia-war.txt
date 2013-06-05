@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815130753.0041634890814
-<end>20080815131049.3471701733438
+<start>20080815130753.004</start>
+<end>20080815131049.347</end>
 The guns | are mostly silent | this morning 
 President Bush | re affirmed | U.S. support of the Georgian people 
 He | warned | Russia 

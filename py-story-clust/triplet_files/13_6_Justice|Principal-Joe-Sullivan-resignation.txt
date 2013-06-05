@@ -1,6 +1,6 @@
 <story>Justice|Principal-Joe-Sullivan-resignation</story>
-<start>20080813141557.4551634890814
-<end>20080813141628.0861701733438
+<start>20080813141557.455</start>
+<end>20080813141628.086</end>
 Sullivan | blames | a spike 
 he | does think | some teens 
 he | s steeping | his supervisors 

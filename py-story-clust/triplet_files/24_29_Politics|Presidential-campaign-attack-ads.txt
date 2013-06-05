@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign-attack-ads</story>
-<start>20080815134641.6971634890814
-<end>20080815135006.7691701733438
+<start>20080815134641.697</start>
+<end>20080815135006.769</end>
 Just a joke | playing | fears 
 A campaign ad | is causing | a buzz 
 Barack Obama | has | a messiah complex 

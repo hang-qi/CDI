@@ -1,6 +1,6 @@
 <story>Environment|Home-heating-costs</story>
-<start>20080815143459.0621634890814
-<end>20080815143723.3401701733438
+<start>20080815143459.062</start>
+<end>20080815143723.340</end>
 the situation | may be | the dog days of summer 
 those bills | are set to jump | this year 
 coms Poppy Harlow | has | our Enery Fix 

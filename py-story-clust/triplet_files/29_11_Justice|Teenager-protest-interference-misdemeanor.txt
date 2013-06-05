@@ -1,6 +1,6 @@
 <story>Justice|Teenager-protest-interference-misdemeanor</story>
-<start>20080815191020.4181634890814
-<end>20080815191054.5861701733438
+<start>20080815191020.418</start>
+<end>20080815191054.586</end>
 We | have | developments 
 an incident | dating back | last September 
 A federal judge | has sentenced | a Louisiana teenager 

@@ -1,6 +1,6 @@
 <story>Human-interest:Teaser|Whitfield-olympics-veteran</story>
-<start>20080815181029.7921634890814
-<end>20080815181049.3451701733438
+<start>20080815181029.792</start>
+<end>20080815181049.345</end>
 Olympic | is always | a family affair 
 she | makes | Olympic 
 Father and daughter | headed | Beijing 

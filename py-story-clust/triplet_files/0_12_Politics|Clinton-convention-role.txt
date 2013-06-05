@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080808142456.9931634890814
-<end>20080808142715.8321701733438
+<start>20080808142456.993</start>
+<end>20080808142715.832</end>
 He | will give | a speech 
 the Democrats | meet | Denver later 
 Senior political analyst Bill Schneider | live now | Washington 

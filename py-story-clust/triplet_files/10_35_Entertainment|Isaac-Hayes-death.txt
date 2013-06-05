@@ -1,6 +1,6 @@
 <story>Entertainment|Isaac-Hayes-death</story>
-<start>20080811185213.2941634890814
-<end>20080811185421.4891701733438
+<start>20080811185213.294</start>
+<end>20080811185421.489</end>
 Singer Isaac Hayes | died | his home 
 He | was found | unconscious Sunday 
 CNNs Rick Sanchez | has more | Hayes 

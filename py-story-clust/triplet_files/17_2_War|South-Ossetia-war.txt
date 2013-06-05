@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813192539.5021634890814
-<end>20080813192744.2601701733438
+<start>20080813192539.502</start>
+<end>20080813192744.260</end>
 a look | has happened just | the past several hours 
 Right now | does nt look | a cease fire 
 we | have nt heard | any shots 

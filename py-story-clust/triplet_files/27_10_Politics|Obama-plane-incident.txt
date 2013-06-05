@@ -1,6 +1,6 @@
 <story>Politics|Obama-plane-incident</story>
-<start>20080815170927.8991634890814
-<end>20080815171028.9941701733438
+<start>20080815170927.899</start>
+<end>20080815171028.994</end>
 we | hear | the pilot 
 FAA tapes | released | ABC News 
 we | d like to declare | this an emergency 

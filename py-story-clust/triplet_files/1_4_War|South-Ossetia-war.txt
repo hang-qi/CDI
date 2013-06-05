@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808130102.0941634890814
-<end>20080808131354.1321701733438
+<start>20080808130102.094</start>
+<end>20080808131354.132</end>
 we | ve been following | last hour 
 Russia | bombed | one of its provinces 
 Georgian troops | shot down | two Russian aircrafts 

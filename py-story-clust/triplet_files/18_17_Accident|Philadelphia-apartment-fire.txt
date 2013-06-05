@@ -1,6 +1,6 @@
 <story>Accident|Philadelphia-apartment-fire</story>
-<start>20080814133042.8401634890814
-<end>20080814133121.2111701733438
+<start>20080814133042.840</start>
+<end>20080814133121.211</end>
 An | update now | a breaking story 
 we | re following | Philadelphia 
 Pennsylvania | is now | control 

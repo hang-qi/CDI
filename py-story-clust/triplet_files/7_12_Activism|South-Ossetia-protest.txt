@@ -1,5 +1,5 @@
 <story>Activism|South-Ossetia-protest</story>
-<start>20080811143545.7091634890814
-<end>20080811143604.3271701733438
+<start>20080811143545.709</start>
+<end>20080811143604.327</end>
 they | call | Russian aggression 
 They | carried | American flags 

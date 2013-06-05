@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813170617.4091634890814
-<end>20080813170831.8431701733438
+<start>20080813170617.409</start>
+<end>20080813170831.843</end>
 they | lie | the map 
 they | relate | each other 
 we | have up | CNN.com 

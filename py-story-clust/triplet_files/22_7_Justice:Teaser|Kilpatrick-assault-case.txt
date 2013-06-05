@@ -1,5 +1,5 @@
 <story>Justice:Teaser|Kilpatrick-assault-case</story>
-<start>20080814180824.0011634890814
-<end>20080814180939.1761701733438
+<start>20080814180824.001</start>
+<end>20080814180939.176</end>
 constituents | have stood | Detroit mayor Kwame Kilpatrick 
 He | went | court today 

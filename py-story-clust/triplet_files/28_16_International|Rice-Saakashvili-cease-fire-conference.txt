@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815183311.7861634890814
-<end>20080815183333.0081701733438
+<start>20080815183311.786</start>
+<end>20080815183333.008</end>
 we | re working | the CNN NEWSROOM 
 Russian forces | remain | control of several key cities 
 Georgias president | met | State Condoleezza Rice 

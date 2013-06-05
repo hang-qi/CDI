@@ -1,6 +1,6 @@
 <story>Disaster|Atlantic-developing-hurricane</story>
-<start>20080815140021.4871634890814
-<end>20080815140301.1131701733438
+<start>20080815140021.487</start>
+<end>20080815140301.113</end>
 the CNN NEWSROOM | is always | this time of year 
 we | have to keep | a sharp eye 
 we | re watching | this area 

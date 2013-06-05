@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080808152509.1381634890814
-<end>20080808152531.1271701733438
+<start>20080808152509.138</start>
+<end>20080808152531.127</end>
 Olympic gold medalist Joey Cheek | joins | T.J. Holmes 
 Cheek | was supposed to be | Beijing 
 China | pulled | his visa 

@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080808141746.5961634890814
-<end>20080808142125.2821701733438
+<start>20080808141746.596</start>
+<end>20080808142125.282</end>
 South Ossetia | declared | South Ossetia 
 the mystery and magic of what | had once been known | the forbidden city 
 the opening ceremony | continues | the Birds 

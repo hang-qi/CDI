@@ -1,4 +1,4 @@
 <story>Commercial|Block</story>
-<start>20080813192949.0181634890814
-<end>20080813193248.1301701733438
+<start>20080813192949.018</start>
+<end>20080813193248.130</end>
 we | see | this before 

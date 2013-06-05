@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080813192744.2601634890814
-<end>20080813192911.4471701733438
+<start>20080813192744.260</start>
+<end>20080813192911.447</end>
 The chairman of the Arkansas Democratic Party | is said to be | critical condition 
 he | was shot | the partys headquarters 
 a man | walked | the building 

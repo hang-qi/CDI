@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813140318.1971634890814
-<end>20080813140511.4431701733438
+<start>20080813140318.197</start>
+<end>20080813140511.443</end>
 we | re going to keep | our eye 
 We | have just now learned | he 
 this morning | regarding | some of these developments 

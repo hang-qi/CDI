@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813140511.4431634890814
-<end>20080813141119.1101701733438
+<start>20080813140511.443</start>
+<end>20080813141119.110</end>
 Moscow | wants to topple | his government 
 He | spoke | CNNs AMERICAN MORNING 
 We | will protect | our capital 

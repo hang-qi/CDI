@@ -1,6 +1,6 @@
 <story>Human-interest|Neighbor-fights-fire</story>
-<start>20080808175254.7701634890814
-<end>20080808175347.3231701733438
+<start>20080808175254.770</start>
+<end>20080808175347.323</end>
 A Missouri man | did | just that 
 years | knew how | deadly smoke 
 he | saw | his neighbors house 

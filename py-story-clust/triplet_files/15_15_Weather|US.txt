@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080813171716.4011634890814
-<end>20080813171844.8221701733438
+<start>20080813171716.401</start>
+<end>20080813171844.822</end>
 we | re seeing | storms 
 showers | are popping up | the airports 
 those delays | are going to be | the southeast 

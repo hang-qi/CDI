@@ -1,6 +1,6 @@
 <story>Money|Inflation</story>
-<start>20080814132325.8361634890814
-<end>20080814132543.8411701733438
+<start>20080814132325.836</start>
+<end>20080814132543.841</end>
 inflation | is running | . percent 
 Now | is why | the Fed 
 right now | tends to increase | demand 

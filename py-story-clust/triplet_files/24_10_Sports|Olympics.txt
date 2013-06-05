@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080815131102.3601634890814
-<end>20080815131339.1501701733438
+<start>20080815131102.360</start>
+<end>20080815131339.150</end>
 Our Larry Smith | covering | the Beijing games 
 we | re | today 
 China | leading | the gold 

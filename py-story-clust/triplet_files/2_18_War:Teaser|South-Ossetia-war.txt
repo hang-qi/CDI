@@ -1,4 +1,4 @@
 <story>War:Teaser|South-Ossetia-war</story>
-<start>20080808152531.1271634890814
-<end>20080808152909.5121701733438
+<start>20080808152531.127</start>
+<end>20080808152909.512</end>
 A former Soviet republic | is | attack 

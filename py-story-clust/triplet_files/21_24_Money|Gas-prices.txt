@@ -1,6 +1,6 @@
 <story>Money|Gas-prices</story>
-<start>20080814172640.6641634890814
-<end>20080814172851.6951701733438
+<start>20080814172640.664</start>
+<end>20080814172851.695</end>
 They | have shot up | gas prices 
 the complaints | keep coming even | prices 
 Inspector Bill Bell | is checking | tampering 

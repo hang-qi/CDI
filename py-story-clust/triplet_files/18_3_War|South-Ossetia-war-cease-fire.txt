@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war-cease-fire</story>
-<start>20080814130449.0541634890814
-<end>20080814130545.0101701733438
+<start>20080814130449.054</start>
+<end>20080814130545.010</end>
 Let | s get | the latest 
 they | are now | the move 
 One of two | split | One of two 

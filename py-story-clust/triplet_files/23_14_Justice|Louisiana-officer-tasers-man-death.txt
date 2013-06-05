@@ -1,6 +1,6 @@
 <story>Justice|Louisiana-officer-tasers-man-death</story>
-<start>20080814191630.4211634890814
-<end>20080814192056.2541701733438
+<start>20080814191630.421</start>
+<end>20080814192056.254</end>
 a black suspect | died | last winter 
 last winter | s now been ruled | a homicide 
 Our Special Investigations Unit | is looking | the case 

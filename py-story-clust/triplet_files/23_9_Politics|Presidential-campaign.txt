@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080814191050.0481634890814
-<end>20080814191140.1651701733438
+<start>20080814191050.048</start>
+<end>20080814191140.165</end>
 the White House | takes | John McCain 
 The Republican candidate | was | the town of Edwards earlier today 
 He | s headed now | Aspen 

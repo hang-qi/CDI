@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-Russian-representative-interview</story>
-<start>20080813133241.3911634890814
-<end>20080813133755.0381701733438
+<start>20080813133241.391</start>
+<end>20080813133755.038</end>
 Russian troops | were | the move 
 all accounts | heading | the direction of Tbilisi 
 Russian troops | are not heading | Tbilisi 

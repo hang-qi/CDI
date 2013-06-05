@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080813180113.4711634890814
-<end>20080813180735.1191701733438
+<start>20080813180113.471</start>
+<end>20080813180735.119</end>
 we | completed | the debriefing 
 Capitol and | opened | fire 
 The Associated Press | is reporting | his victims target 

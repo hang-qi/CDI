@@ -1,6 +1,6 @@
 <story>Sports|Olympics-swimmer-battling-cancer</story>
-<start>20080813195616.5041634890814
-<end>20080813195908.7431701733438
+<start>20080813195616.504</start>
+<end>20080813195908.743</end>
 He | set | a personal best 
 he | prepares to take | his toughest opponent 
 Our Dr. Sanjay Gupta | has | the story 

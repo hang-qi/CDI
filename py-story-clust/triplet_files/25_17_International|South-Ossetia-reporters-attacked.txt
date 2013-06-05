@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-reporters-attacked</story>
-<start>20080815143142.0321634890814
-<end>20080815143459.0621701733438
+<start>20080815143142.032</start>
+<end>20080815143459.062</end>
 Their harrowing encounters | caught | tape 
 frightening | seems | such an understatement 
 Bullets | fly | news crews car 

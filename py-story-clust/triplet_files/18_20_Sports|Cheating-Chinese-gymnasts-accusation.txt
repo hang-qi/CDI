@@ -1,6 +1,6 @@
 <story>Sports|Cheating-Chinese-gymnasts-accusation</story>
-<start>20080814134646.9361634890814
-<end>20080814135020.1161701733438
+<start>20080814134646.936</start>
+<end>20080814135020.116</end>
 the womens team gymnastics | tarnished | the eyes of some critics 
 They | re questioning | the age of three team members 
 old | does | this girl look 

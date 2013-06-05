@@ -1,6 +1,6 @@
 <story>Politics|Obama-assassination-threat</story>
-<start>20080808171630.4881634890814
-<end>20080808171700.8521701733438
+<start>20080808171630.488</start>
+<end>20080808171700.852</end>
 A Florida man | is being held | bail 
 Raymond Geisel | was charged | he 
 a bail bondsmen | training | seminar 

@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815193044.1071634890814
-<end>20080815193114.5381701733438
+<start>20080815193044.107</start>
+<end>20080815193114.538</end>
 Secretary of State Condoleezza Rice | arrived | today 
 Tbilisi | won | agreement 
 The deal | calls | an immediate withdrawal of Russian troops 

@@ -1,6 +1,6 @@
 <story>Business|Small-cars-comeback</story>
-<start>20080813172305.8161634890814
-<end>20080813172336.8141701733438
+<start>20080813172305.816</start>
+<end>20080813172336.814</end>
 the national average | is down | $ . 
 American car buyers | have certainly taken | notice of American car buyers 
 Edmonds.com | has been | a recent bump 

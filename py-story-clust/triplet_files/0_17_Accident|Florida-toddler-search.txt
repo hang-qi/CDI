@@ -1,6 +1,6 @@
 <story>Accident|Florida-toddler-search</story>
-<start>20080808143443.5121634890814
-<end>20080808143720.0691701733438
+<start>20080808143443.512</start>
+<end>20080808143720.069</end>
 Family members | hope | she 
 She | s been missing | more 
 Investigators | ca nt seem to get | a straight story 

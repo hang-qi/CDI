@@ -1,6 +1,6 @@
 <story>Health|Mcconaughey-baby</story>
-<start>20080808175803.5121634890814
-<end>20080808175943.0111701733438
+<start>20080808175803.512</start>
+<end>20080808175943.011</end>
 actor Matthew McConaughey | has been | a dad 
 He | talked | our Sanjay Gupta 
 guys | have | a plan 

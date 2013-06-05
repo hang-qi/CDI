@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080814181217.8681634890814
-<end>20080814181748.1651701733438
+<start>20080814181217.868</start>
+<end>20080814181748.165</end>
 Years of scandal | are finally catching | Detroit mayor Kwame Kilpatrick 
 Some of the mayors staunchest defenders | are losing | faith 
 The Michigan Chronicle | calls | Kilpatricks resignation 

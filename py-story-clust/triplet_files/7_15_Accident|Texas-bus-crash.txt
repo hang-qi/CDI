@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080811144039.6021634890814
-<end>20080811144122.9461701733438
+<start>20080811144039.602</start>
+<end>20080811144122.946</end>
 In Texas federal officials | have shut | a bus company 
 that rollover crash | killed | people 
 the same man | ordered to shut | another fleet 

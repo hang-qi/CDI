@@ -1,6 +1,6 @@
 <story>Health|Hispanics-health-care</story>
-<start>20080813184611.7671634890814
-<end>20080813184755.5031701733438
+<start>20080813184611.767</start>
+<end>20080813184755.503</end>
 LRB END VIDEOTAPE RRB LEMON | includes | one 
 an interesting study | was done | the Pew Foundation 
 they | would find | was 

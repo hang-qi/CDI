@@ -1,6 +1,6 @@
 <story>Health|Olympics-swimmer-battling-cancer</story>
-<start>20080813153220.0021634890814
-<end>20080813153504.5331701733438
+<start>20080813153220.002</start>
+<end>20080813153504.533</end>
 an inspiring Olympic story | comes | an end 
 Swimmer Eric Shanteau | has failed to advance | the finals 
 He | faces | a more important challenge 

@@ -1,6 +1,6 @@
 <story>NULL</story>
-<start>20080813190012.0001634890814
-<end>20080813190640.2311701733438
+<start>20080813190012.000</start>
+<end>20080813190640.231</end>
 two workers | reported hanging | a scaffolding 
 The highest floor believed | was | the th floor 
 they | were trapped when | this window washing platform 

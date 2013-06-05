@@ -1,6 +1,6 @@
 <story>Politics|Obama-Mccain-faith-forum</story>
-<start>20080815173625.9161634890814
-<end>20080815174131.1541701733438
+<start>20080815173625.916</start>
+<end>20080815174131.154</end>
 The two | appearing together | tomorrow night 
 an event | can see | live right 
 They | ll be answering | questions 

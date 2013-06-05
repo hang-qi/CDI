@@ -1,6 +1,6 @@
 <story>Justice|Atlanta-courthouse-shooter-trial</story>
-<start>20080808173125.1151634890814
-<end>20080808173137.1601701733438
+<start>20080808173125.115</start>
+<end>20080808173137.160</end>
 Kilpatrick | spent | last night 
 jail | violating | the terms of his bond 
 Opening statements | set | September nd 

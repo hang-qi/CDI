@@ -1,5 +1,5 @@
 <story>Politics|McCain-campaign</story>
-<start>20080811154446.4821634890814
-<end>20080811154500.1631701733438
+<start>20080811154446.482</start>
+<end>20080811154500.163</end>
 John McCain | touring | a GE plant 
 They | ve spent | the last two days 

@@ -1,6 +1,6 @@
 <story>Politics|Obama-convention</story>
-<start>20080813134819.8961634890814
-<end>20080813134849.7921701733438
+<start>20080813134819.896</start>
+<end>20080813134849.792</end>
 Former Virginia governor and Senate candidate | gets | a plumb position 
 Mark Warner | will deliver | the keynote address 
 a role | leads | national prominence 

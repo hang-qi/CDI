@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815150305.2161634890814
-<end>20080815150540.7711701733438
+<start>20080815150305.216</start>
+<end>20080815150540.771</end>
 a van | run | over 
 everyday heroes | took | action 
 we | care | a lot 

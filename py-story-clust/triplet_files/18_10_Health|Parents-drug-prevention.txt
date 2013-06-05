@@ -1,6 +1,6 @@
 <story>Health|Parents-drug-prevention</story>
-<start>20080814131742.9601634890814
-<end>20080814132015.6801701733438
+<start>20080814131742.960</start>
+<end>20080814132015.680</end>
 They | re called | passive pushers 
 a disturbing new study | saying | some parents 
 teens | to abuse | alcohol and drugs 

@@ -1,6 +1,6 @@
 <story>Disaster|Flooding-New-Hampshire</story>
-<start>20080808141000.8641634890814
-<end>20080808141213.4641701733438
+<start>20080808141000.864</start>
+<end>20080808141213.464</end>
 A seven year old girl | died | A seven year old girl familys car 
 rescuers | saved | the mother 
 The car | is | water 

@@ -1,6 +1,6 @@
 <story>Activism|Olympics-Tibet-protests</story>
-<start>20080813194319.1941634890814
-<end>20080813194431.0991701733438
+<start>20080813194319.194</start>
+<end>20080813194431.099</end>
 This scene | played | out 
 one Japanese protester | trying to stage | a free Tibet protest 
 the man | shot | this video 

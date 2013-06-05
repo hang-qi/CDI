@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080814171351.2961634890814
-<end>20080814171412.7841701733438
+<start>20080814171351.296</start>
+<end>20080814171412.784</end>
 We | re following | inspectors 
 they | put | gas pumps 
 the White House today | brings | John McCain 

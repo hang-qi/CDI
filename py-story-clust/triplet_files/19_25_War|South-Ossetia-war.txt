@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814145116.1711634890814
-<end>20080814145744.1251701733438
+<start>20080814145116.171</start>
+<end>20080814145744.125</end>
 some breaking news | to get | the situation 
 we | want to know right | the bat 
 we | ve managed to gain | access 

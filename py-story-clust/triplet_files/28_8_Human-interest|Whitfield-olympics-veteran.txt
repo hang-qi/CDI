@@ -1,6 +1,6 @@
 <story>Human-interest|Whitfield-olympics-veteran</story>
-<start>20080815181329.8061634890814
-<end>20080815181735.6181701733438
+<start>20080815181329.806</start>
+<end>20080815181735.618</end>
 the millions | descending | the Chinese capital 
 London | became | the host of the games 
 the committee | chose | London 

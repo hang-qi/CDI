@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080814141507.0371634890814
-<end>20080814141601.6921701733438
+<start>20080814141507.037</start>
+<end>20080814141601.692</end>
 Arkansas police | are trying to figure | a man shot 
 the man | walked | the party headquarters 
 The gunman | identified | police 

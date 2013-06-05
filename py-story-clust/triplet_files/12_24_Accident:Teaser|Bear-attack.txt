@@ -1,6 +1,6 @@
 <story>Accident:Teaser|Bear-attack</story>
-<start>20080813134937.4731634890814
-<end>20080813135256.2051701733438
+<start>20080813134937.473</start>
+<end>20080813135256.205</end>
 He | warned | his dad 
 he | was laughing | a bear 
 we | re not going to get hurt | a bear 

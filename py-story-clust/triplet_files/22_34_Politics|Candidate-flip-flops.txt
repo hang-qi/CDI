@@ -1,6 +1,6 @@
 <story>Politics|Candidate-flip-flops</story>
-<start>20080814185352.8941634890814
-<end>20080814185635.3231701733438
+<start>20080814185352.894</start>
+<end>20080814185635.323</end>
 CNN | does nt have to be | a candidates Achilles 
 Flip floppers | are | the world 
 The only person | has flip flopped | this issue 

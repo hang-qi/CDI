@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war-Mikheil-Saakashvili-interview</story>
-<start>20080813130441.8471634890814
-<end>20080813130607.1991701733438
+<start>20080813130441.847</start>
+<end>20080813130607.199</end>
 We | will protect | our capital 
 We | will never surrender | the Russians 
 the Georgian democracy | was | the past 

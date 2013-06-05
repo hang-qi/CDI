@@ -1,6 +1,6 @@
 <story>Human-interest|Purple-heart-battle</story>
-<start>20080815194221.2371634890814
-<end>20080815194349.9591701733438
+<start>20080815194221.237</start>
+<end>20080815194349.959</end>
 a soldiers cause of death | creating | more heartache 
 the U.S. military | to grant | SOLDIER S 
 Shelby Messer | were planning to put | their sons Purple Heart 

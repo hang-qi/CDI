@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808181855.7991634890814
-<end>20080808182049.2121701733438
+<start>20080808181855.799</start>
+<end>20080808182049.212</end>
 The situation | is continuing to unfold | the breakaway region of Ossetia 
 We | ve been watching | this all day 
 We | have | some breaking news 

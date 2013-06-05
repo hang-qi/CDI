@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813152404.9081634890814
-<end>20080813152730.0461701733438
+<start>20080813152404.908</start>
+<end>20080813152730.046</end>
 He | is | our international desk 
 let | s do | a couple of things 
 Lets sort of catch folks | up | the military moves 

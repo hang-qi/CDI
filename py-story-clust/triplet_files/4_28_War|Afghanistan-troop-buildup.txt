@@ -1,6 +1,6 @@
 <story>War|Afghanistan-troop-buildup</story>
-<start>20080808173557.6211634890814
-<end>20080808173620.8441701733438
+<start>20080808173557.621</start>
+<end>20080808173620.844</end>
 CNN | has learned | the army 
 combat units | to help fill | a need 
 an Afghan proposal | to nearly double | the size of the Afghan army 

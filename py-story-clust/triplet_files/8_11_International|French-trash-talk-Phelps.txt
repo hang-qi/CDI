@@ -1,6 +1,6 @@
 <story>International|French-trash-talk-Phelps</story>
-<start>20080811152807.0841634890814
-<end>20080811152915.8191701733438
+<start>20080811152807.084</start>
+<end>20080811152915.819</end>
 they | were favored to win | that relay 
 they | were | trash talking 
 the Aussies | found | four years 

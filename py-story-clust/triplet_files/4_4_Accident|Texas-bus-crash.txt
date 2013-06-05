@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080808170706.9581634890814
-<end>20080808170845.5901701733438
+<start>20080808170706.958</start>
+<end>20080808170845.590</end>
 A blown tire | may have led | this deadly scene 
 a bus | carrying | members of a Vietnamese church group 
 the death toll | is up | 

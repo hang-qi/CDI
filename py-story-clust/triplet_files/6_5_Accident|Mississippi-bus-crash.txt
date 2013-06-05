@@ -1,6 +1,6 @@
 <story>Accident|Mississippi-bus-crash</story>
-<start>20080811131008.1731634890814
-<end>20080811131043.5081701733438
+<start>20080811131008.173</start>
+<end>20080811131043.508</end>
 at least people | were hurt | this accident 
 an employee | shuttled | a Nevada sort 
 the bus | swerved | its lane 

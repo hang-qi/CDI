@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811185805.0461634890814
-<end>20080811185925.1261701733438
+<start>20080811185805.046</start>
+<end>20080811185925.126</end>
 Brianna | has | Olympic fever 
 me | out | some of this 
 Let | s take | a look 

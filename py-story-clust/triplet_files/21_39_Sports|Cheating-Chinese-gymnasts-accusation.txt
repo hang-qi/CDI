@@ -1,6 +1,6 @@
 <story>Sports|Cheating-Chinese-gymnasts-accusation</story>
-<start>20080814175243.4921634890814
-<end>20080814175637.3261701733438
+<start>20080814175243.492</start>
+<end>20080814175637.326</end>
 China | has been vaulted | a big controversy 
 They | won | the team gold 
 an Associated Press report | adding | fuel 

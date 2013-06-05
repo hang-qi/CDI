@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815150540.7711634890814
-<end>20080815150643.5671701733438
+<start>20080815150540.771</start>
+<end>20080815150643.567</end>
 A man | convicted | sex crimes 
 children | walks | prison today 
 ph | wo nt have to check | police 

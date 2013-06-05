@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080811171113.4381634890814
-<end>20080811171142.7341701733438
+<start>20080811171113.438</start>
+<end>20080811171142.734</end>
 the CNN Election Express | is rolling | Pennsylvania 
 the CNN Election Express | heads | Denver 
 we | ll be checking in | Tom Foreman 

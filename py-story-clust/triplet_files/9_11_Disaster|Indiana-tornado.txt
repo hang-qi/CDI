@@ -1,6 +1,6 @@
 <story>Disaster|Indiana-tornado</story>
-<start>20080811171142.7341634890814
-<end>20080811171248.7331701733438
+<start>20080811171142.734</start>
+<end>20080811171248.733</end>
 We | want to get | some developing news 
 about minutes | was | a tornado warning 
 Doppler radar | is indicating | some rotation 

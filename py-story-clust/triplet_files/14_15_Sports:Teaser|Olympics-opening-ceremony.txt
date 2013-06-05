@@ -1,4 +1,4 @@
 <story>Sports:Teaser|Olympics-opening-ceremony</story>
-<start>20080813154330.6721634890814
-<end>20080813154608.3301701733438
+<start>20080813154330.672</start>
+<end>20080813154608.330</end>
 A little girl | kicked off | the Olympic stage 

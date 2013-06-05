@@ -1,6 +1,6 @@
 <story>Health|Veterans-alcoholism</story>
-<start>20080813132337.3481634890814
-<end>20080813132627.2511701733438
+<start>20080813132337.348</start>
+<end>20080813132627.251</end>
 Afghanistan and Iraq | are trudging | home 
 Researchers | found | members of the National Guard 
 percent | to start | heavy weekly drinking 

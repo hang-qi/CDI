@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813153041.0701634890814
-<end>20080813153112.4351701733438
+<start>20080813153041.070</start>
+<end>20080813153112.435</end>
 President Bush | is taking | action 
 signs Moscow | is | the agreement 
 the president | announced | he 

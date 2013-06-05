@@ -1,6 +1,6 @@
 <story>Justice|Illegal-immigrants</story>
-<start>20080811183346.4221634890814
-<end>20080811183550.7461701733438
+<start>20080811183346.422</start>
+<end>20080811183550.746</end>
 The Hartmans | are assessing | the damage 
 a day | to leave | the U.S. 
 CNNs Chris Lawrence | has | the story 

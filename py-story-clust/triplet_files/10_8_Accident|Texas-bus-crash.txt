@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080811180543.4411634890814
-<end>20080811180925.9961701733438
+<start>20080811180543.441</start>
+<end>20080811180925.996</end>
 Something similar | may have happened | Sherman 
 Something similar | appears | a recapped tire 
 the crash | killed | passengers 

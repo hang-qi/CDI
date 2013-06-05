@@ -1,6 +1,6 @@
 <story>Celebrity|Trump-purchases-McMahon-home</story>
-<start>20080815182701.0161634890814
-<end>20080815182726.6081701733438
+<start>20080815182701.016</start>
+<end>20080815182726.608</end>
 The Donald | comes | the rescue of Johnny Carsons former sidekick 
 he | s buying | Ed McMahons Beverly Hills mansion 
 McMahon | can lease | Ed McMahon s Beverly Hills mansion 

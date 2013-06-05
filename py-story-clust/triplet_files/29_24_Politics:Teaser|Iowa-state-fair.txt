@@ -1,5 +1,5 @@
 <story>Politics:Teaser|Iowa-state-fair</story>
-<start>20080815192633.2231634890814
-<end>20080815192645.1691701733438
+<start>20080815192633.223</start>
+<end>20080815192645.169</end>
 The CNN Election Express there it is | rolls right | Iowa 
 The CNN Election Express there it is | heads | the Democratic National Convention 

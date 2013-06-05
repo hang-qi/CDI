@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813133755.0381634890814
-<end>20080813134517.6131701733438
+<start>20080813133755.038</start>
+<end>20080813134517.613</end>
 more than civilians | are left | the fighting 
 Let | s get | the very latest 
 Barbara Starr | has | the very latest 

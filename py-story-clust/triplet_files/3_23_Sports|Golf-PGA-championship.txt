@@ -1,6 +1,6 @@
 <story>Sports|Golf-PGA-championship</story>
-<start>20080808154833.9091634890814
-<end>20080808154915.0831701733438
+<start>20080808154833.909</start>
+<end>20080808154915.083</end>
 Oakland Hills | took | the first round of the PGA Championship 
 rain delay | nightfall | over 
 yesterdays play | leaving | some players 

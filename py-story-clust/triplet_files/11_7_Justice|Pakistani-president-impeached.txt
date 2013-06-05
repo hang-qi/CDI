@@ -1,6 +1,6 @@
 <story>Justice|Pakistani-president-impeached</story>
-<start>20080811190838.6161634890814
-<end>20080811190904.1411701733438
+<start>20080811190838.616</start>
+<end>20080811190904.141</end>
 A Pakistani provincial assembly | is calling | embattled Pakistan president Pervez Musharraf 
 Pakistans three other assemblies | are expected to vote | similar resolutions 
 Pakistan s three other assemblies | could lead | impeachment proceedings 

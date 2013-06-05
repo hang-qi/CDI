@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080813145156.1781634890814
-<end>20080813145427.3631701733438
+<start>20080813145156.178</start>
+<end>20080813145427.363</end>
 McCain | holds | a noon fundraiser 
 He | has | two more fundraisers 
 Democrat Barack Obama | manages to squeeze | a fundraiser 

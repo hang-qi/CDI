@@ -1,6 +1,6 @@
 <story>Entertainment|Isaac-Hayes-death</story>
-<start>20080811141721.5391634890814
-<end>20080811142105.3961701733438
+<start>20080811141721.539</start>
+<end>20080811142105.396</end>
 Singer Isaac Hayes | died | his home 
 He | was found | a running treadmill 
 CNNs Rick Sanchez | has | Hayes 

@@ -1,6 +1,6 @@
 <story>Sports|Olympics-opening-ceremony</story>
-<start>20080813154608.3301634890814
-<end>20080813155037.5321701733438
+<start>20080813154608.330</start>
+<end>20080813155037.532</end>
 The Olympic | opening | ceremonies 
 Now some of the facts | coming | about that party 
 China | look | a little silly 

@@ -1,6 +1,6 @@
 <story>Labor|Four-day-work-week</story>
-<start>20080814182249.5661634890814
-<end>20080814182511.9081701733438
+<start>20080814182249.566</start>
+<end>20080814182511.908</end>
 CNNs John Zarrella | is examining | the pros and cons of a four day work week 
 the commute | saves | more 
 The four day work week | has reduced | four day 

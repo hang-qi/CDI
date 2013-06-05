@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813131018.3161634890814
-<end>20080813131310.2881701733438
+<start>20080813131018.316</start>
+<end>20080813131310.288</end>
 CNNs Jill Dougherty | is | Moscow 
 the cease fire | calls | troops 
 both sides | to withdraw | positions 

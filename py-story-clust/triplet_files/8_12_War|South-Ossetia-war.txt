@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811152915.8191634890814
-<end>20080811153525.5221701733438
+<start>20080811152915.819</start>
+<end>20080811153525.522</end>
 Georgia | has signed | a cease fire agreement 
 he | s asking | Moscow 
 CNNs Frederik Pleitgen | is | the capital of Georgia 

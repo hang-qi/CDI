@@ -1,6 +1,6 @@
 <story>Labor|Four-day-work-week</story>
-<start>20080813175042.1381634890814
-<end>20080813175319.9951701733438
+<start>20080813175042.138</start>
+<end>20080813175319.995</end>
 we | re seeing more and more | energy costs 
 some governments | are giving | LRB COMMERCIAL BREAK RRB LEMON The four day workweek it is a phenomenon we re seeing more and more with energy costs high and the economy slow . 
 a try | hoping to save | some money 

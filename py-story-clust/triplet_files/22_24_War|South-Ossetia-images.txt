@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-images</story>
-<start>20080814183123.3121634890814
-<end>20080814183612.1011701733438
+<start>20080814183123.312</start>
+<end>20080814183612.101</end>
 U.S. officials | believe | as many as Russian troops 
 we | ve seen | the worst of all the fighting 
 No other way | to put | the worst of all 

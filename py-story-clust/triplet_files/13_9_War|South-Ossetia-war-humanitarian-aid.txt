@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war-humanitarian-aid</story>
-<start>20080813142058.1551634890814
-<end>20080813142438.6421701733438
+<start>20080813142058.155</start>
+<end>20080813142438.642</end>
 more than civilians | were left | the fighting 
 Pentagon correspondent Barbara Starr | is | its way 
 our next guest | will actually help distribute | some of those supplies 

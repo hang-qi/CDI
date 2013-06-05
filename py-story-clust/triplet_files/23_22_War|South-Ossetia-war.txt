@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814193640.4971634890814
-<end>20080814193747.4641701733438
+<start>20080814193640.497</start>
+<end>20080814193747.464</end>
 Secret spy files | revealed ahead | the CNN NEWSROOM 
 Russian forces | were going to leave | some Georgian cities 
 Being | told | more than Russian tanks 

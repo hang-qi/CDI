@@ -1,6 +1,6 @@
 <story>Health|Nicotine-urge-genetic</story>
-<start>20080808181359.8031634890814
-<end>20080808181550.6141701733438
+<start>20080808181359.803</start>
+<end>20080808181550.614</end>
 Pressure | is rising | local police 
 A study | released | this afternoon 
 the Pentagon | could be | the genes 

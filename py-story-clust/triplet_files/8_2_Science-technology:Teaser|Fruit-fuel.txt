@@ -1,4 +1,4 @@
 <story>Science-technology:Teaser|Fruit-fuel</story>
-<start>20080811150030.1621634890814
-<end>20080811150049.3481701733438
+<start>20080811150030.162</start>
+<end>20080811150049.348</end>
 Money | may not grow | trees 

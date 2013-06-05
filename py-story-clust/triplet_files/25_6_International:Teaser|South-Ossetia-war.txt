@@ -1,6 +1,6 @@
 <story>International:Teaser|South-Ossetia-war</story>
-<start>20080815140736.5881634890814
-<end>20080815141328.5061701733438
+<start>20080815140736.588</start>
+<end>20080815141328.506</end>
 The guns | are mostly silent | this morning 
 Russian troops | are still blocking | entry 
 Secretary of State Condoleezza Rice | is | Georgia 

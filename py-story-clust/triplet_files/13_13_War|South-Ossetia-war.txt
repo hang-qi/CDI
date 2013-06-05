@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813142813.2901634890814
-<end>20080813143054.2841701733438
+<start>20080813142813.290</start>
+<end>20080813143054.284</end>
 they | traded | gun fire 
 they | re trading | accusations 
 Russia | is ignoring | the new cease fire agreement 

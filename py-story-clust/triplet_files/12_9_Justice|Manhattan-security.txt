@@ -1,6 +1,6 @@
 <story>Justice|Manhattan-security</story>
-<start>20080813131753.8381634890814
-<end>20080813132021.4191701733438
+<start>20080813131753.838</start>
+<end>20080813132021.419</end>
 track of every single car and truck | coming | Manhattan 
 a high tech plan | to guard | the new terror attacks 
 CNN s Mary Snow joining us now from New York with details . | sounds | impractical 

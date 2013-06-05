@@ -1,6 +1,6 @@
 <story>Celebrity|Trump-puchases-McMahon-home</story>
-<start>20080815135433.4021634890814
-<end>20080815135500.3621701733438
+<start>20080815135433.402</start>
+<end>20080815135500.362</end>
 Ed McMahon | wo nt lose | his home 
 Donald Trump | is saving | the Beverly Hills mansion 
 he | ll buy | McMahons house 

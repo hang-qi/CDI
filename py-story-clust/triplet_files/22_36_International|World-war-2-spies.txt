@@ -1,6 +1,6 @@
 <story>International|World-war-2-spies</story>
-<start>20080814185923.6581634890814
-<end>20080814185953.1021701733438
+<start>20080814185923.658</start>
+<end>20080814185953.102</end>
 a Chicago White Sox catcher | have | common 
 All of them | were | spies 
 Julia Child | was | thousands 

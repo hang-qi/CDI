@@ -1,6 +1,6 @@
 <story>International|Palestinian-militants-training</story>
-<start>20080814192610.1341634890814
-<end>20080814193118.4751701733438
+<start>20080814192610.134</start>
+<end>20080814193118.475</end>
 Hamas | took | control of Gaza 
 Palestinian fighters | have fired | more than rockets 
 Israel | entered | a truce 

@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080808143410.3121634890814
-<end>20080808143443.5121701733438
+<start>20080808143410.312</start>
+<end>20080808143443.512</end>
 we | are following | today 
 we | mentioned | just a moment 
 the bus crash | happened | Texas 

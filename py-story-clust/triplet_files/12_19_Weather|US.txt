@@ -1,5 +1,5 @@
 <story>Weather|US</story>
-<start>20080813134622.6451634890814
-<end>20080813134819.8961701733438
+<start>20080813134622.645</start>
+<end>20080813134819.896</end>
 Let | get | out first check of weather 
 the severe weather center | watching | the tropics and heavy rain 

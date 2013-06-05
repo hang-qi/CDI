@@ -1,6 +1,6 @@
 <story>Accident:Teaser|Texas-bus-crash</story>
-<start>20080808150008.6731634890814
-<end>20080808150014.8791701733438
+<start>20080808150008.673</start>
+<end>20080808150014.879</end>
 Georgia s | is | attack 
 A charter bus | tumbles | a Texas overpass 
 others | fighting | others lives 

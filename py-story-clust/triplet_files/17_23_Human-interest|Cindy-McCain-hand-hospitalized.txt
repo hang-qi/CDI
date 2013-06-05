@@ -1,6 +1,6 @@
 <story>Human-interest|Cindy-McCain-hand-hospitalized</story>
-<start>20080813195521.4161634890814
-<end>20080813195616.5041701733438
+<start>20080813195521.416</start>
+<end>20080813195616.504</end>
 she | was accompanying | her husband 
 we | got | this in 
 She | says | some time 

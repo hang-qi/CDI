@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815150717.1341634890814
-<end>20080815153710.9601701733438
+<start>20080815150717.134</start>
+<end>20080815153710.960</end>
 we | ve been waiting to hear | State Condoleezza Rice 
 they | are now | the microphones 
 LRB | JOINED | PROGRESS 

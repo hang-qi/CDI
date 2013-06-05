@@ -1,6 +1,6 @@
 <story>Accident|Memphis-bus-crash</story>
-<start>20080811191118.4421634890814
-<end>20080811191135.6591701733438
+<start>20080811191118.442</start>
+<end>20080811191135.659</end>
 We | appreciate | More than two dozen 
 Three people | were killed early | yesterday 
 Three people casino bus | turned | over 

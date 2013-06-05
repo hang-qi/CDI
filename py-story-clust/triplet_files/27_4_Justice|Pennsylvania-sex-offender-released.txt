@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815170543.3081634890814
-<end>20080815170646.2041701733438
+<start>20080815170543.308</start>
+<end>20080815170646.204</end>
 George Feigley | walks | a Pennsylvania prison today 
 a loophole | means | he 
 ph RRB statute | said | they 

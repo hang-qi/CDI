@@ -1,6 +1,6 @@
 <story>Activism|Montreal-riot</story>
-<start>20080811190733.9181634890814
-<end>20080811190838.6161701733438
+<start>20080811190733.918</start>
+<end>20080811190838.616</end>
 Montreal | are investigating | last nights rioting 
 Rioters | torched | cars 
 The violence | broke | a day 

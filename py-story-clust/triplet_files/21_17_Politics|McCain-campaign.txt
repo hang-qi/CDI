@@ -1,6 +1,6 @@
 <story>Politics|McCain-campaign</story>
-<start>20080814171747.7991634890814
-<end>20080814171812.6571701733438
+<start>20080814171747.799</start>
+<end>20080814171812.657</end>
 a move | could anger | conservative Republicans 
 John McCain | floating | the idea 
 a running mate | supports | abortion rights 

@@ -1,6 +1,6 @@
 <story>Politics|Obama-speech-economy</story>
-<start>20080808155438.4061634890814
-<end>20080808155616.2371701733438
+<start>20080808155438.406</start>
+<end>20080808155616.237</end>
 the presidential candidates | are saying | part of our effort 
 an informed decision | come | Election Day 
 what Barack Obama | said | reporters 

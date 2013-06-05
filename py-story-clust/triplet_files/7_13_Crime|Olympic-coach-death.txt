@@ -1,6 +1,6 @@
 <story>Crime|Olympic-coach-death</story>
-<start>20080811143918.7881634890814
-<end>20080811144019.7161701733438
+<start>20080811143918.788</start>
+<end>20080811144019.716</end>
 her husband | were attacked | a Chinese man 
 Barbara Bachman | was heard trying to save | her husband 
 Todd | was | a few steps 

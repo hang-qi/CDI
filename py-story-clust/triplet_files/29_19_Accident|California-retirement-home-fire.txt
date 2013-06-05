@@ -1,6 +1,6 @@
 <story>Accident|California-retirement-home-fire</story>
-<start>20080815191814.9591634890814
-<end>20080815191952.7231701733438
+<start>20080815191814.959</start>
+<end>20080815191952.723</end>
 the flames | could be seen | miles 
 More than residents | got | out safely 
 three | were hurt | we 

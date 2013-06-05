@@ -1,6 +1,6 @@
 <story>International|Sergei-Ivanov-interview</story>
-<start>20080811151149.0741634890814
-<end>20080811152106.4641701733438
+<start>20080811151149.074</start>
+<end>20080811152106.464</end>
 we | thought | we 
 an opportunity | to talk | Russias deputy prime minister 
 the United States | is watching | this story 

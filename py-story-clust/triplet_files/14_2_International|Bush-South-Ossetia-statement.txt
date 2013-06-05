@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813150321.2991634890814
-<end>20080813150424.9621701733438
+<start>20080813150321.299</start>
+<end>20080813150424.962</end>
 Kate | has more | the presidents statement 
 he | ll be accompanied | Defense Secretary Gates 
 We | are expecting | just a statement 

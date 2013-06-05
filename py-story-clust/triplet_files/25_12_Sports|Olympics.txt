@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080815142209.6601634890814
-<end>20080815142312.5561701733438
+<start>20080815142209.660</start>
+<end>20080815142312.556</end>
 The U.S. | racking | medals 
 Our Larry Smith | covering | the Beijing games 
 the U.S. | goes | gold and silver 

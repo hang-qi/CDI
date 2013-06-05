@@ -1,6 +1,6 @@
 <story>Sports:Teaser|Olympian-Whitfield-interview</story>
-<start>20080811191230.4141634890814
-<end>20080811191556.9201701733438
+<start>20080811191230.414</start>
+<end>20080811191556.920</end>
 a former American Olympic star | heads | Beijing 
 we | have got | the unbelievable incredible heart wrenching story 
 the sun | hitting | the links 

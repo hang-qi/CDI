@@ -1,6 +1,6 @@
 <story>International|World-war-2-spies</story>
-<start>20080814194440.9431634890814
-<end>20080814194957.7271701733438
+<start>20080814194440.943</start>
+<end>20080814194957.727</end>
 we | re talking | here 
 Chicago White Sox catcher | have | common 
 All of them | were | spies 

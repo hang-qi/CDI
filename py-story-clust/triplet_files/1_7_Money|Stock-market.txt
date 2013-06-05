@@ -1,6 +1,6 @@
 <story>Money|Stock-market</story>
-<start>20080808132944.4811634890814
-<end>20080808133030.0601701733438
+<start>20080808132944.481</start>
+<end>20080808133030.060</end>
 his country | is | attack 
 the opening bell | to happen | any minute 
 LRB COMMERCIAL BREAK RRB COLLINS Want to go ahead and take a look at the opening bell about to happen any minute now on this Friday . | s been all | the map 

@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815130349.9951634890814
-<end>20080815130640.1981701733438
+<start>20080815130349.995</start>
+<end>20080815130640.198</end>
 The woman | was | a New York City police or 
 some everyday heroes | took | action 
 we | re focusing | this today 

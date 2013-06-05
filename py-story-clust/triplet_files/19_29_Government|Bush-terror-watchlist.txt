@@ -1,4 +1,4 @@
 <story>Government|Bush-terror-watchlist</story>
-<start>20080814145807.8821634890814
-<end>20080814145824.1651701733438
+<start>20080814145807.882</start>
+<end>20080814145824.165</end>
 A critic of President Bush | finds | himself 

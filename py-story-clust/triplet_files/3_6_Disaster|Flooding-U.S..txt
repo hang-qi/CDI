@@ -1,4 +1,4 @@
 <story>Disaster|Flooding-U.S.</story>
-<start>20080808150528.3261634890814
-<end>20080808150754.0041701733438
+<start>20080808150528.326</start>
+<end>20080808150754.004</end>
 Reynolds Wolf | is tracking | all of it 

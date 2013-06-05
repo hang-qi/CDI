@@ -1,4 +1,4 @@
 <story>Sports:Teaser|Olympics-womens-gymnastics</story>
-<start>20080813135614.4031634890814
-<end>20080813135911.5131701733438
+<start>20080813135614.403</start>
+<end>20080813135911.513</end>
 Michael Phelps | wins | another gold 

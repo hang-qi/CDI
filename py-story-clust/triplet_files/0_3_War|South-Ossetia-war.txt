@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808140104.4621634890814
-<end>20080808140421.1921701733438
+<start>20080808140104.462</start>
+<end>20080808140421.192</end>
 we | are following breaking | news 
 his country | is | attack 
 Russian aircraft | are dropping | bombs 

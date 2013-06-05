@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813140030.3961634890814
-<end>20080813140318.1971701733438
+<start>20080813140030.396</start>
+<end>20080813140318.197</end>
 Russia and Georgia | may be | ever 
 Russian troops | have ignored | the truce 
 They | wanted to split | Georgia 

@@ -1,4 +1,4 @@
 <story>Activism:Teaser|Mexico-anti-violence</story>
-<start>20080815192645.1691634890814
-<end>20080815193008.5391701733438
+<start>20080815192645.169</start>
+<end>20080815193008.539</end>
 his fight | to end | the violence 

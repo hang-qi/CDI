@@ -1,6 +1,6 @@
 <story>Justice|Mayor-jail-time</story>
-<start>20080808143154.9771634890814
-<end>20080808143223.1721701733438
+<start>20080808143154.977</start>
+<end>20080808143223.172</end>
 now | spending | the night 
 Mayor Kwame Kilpatrick | is appealing | a court order 
 he | took | a business trip 

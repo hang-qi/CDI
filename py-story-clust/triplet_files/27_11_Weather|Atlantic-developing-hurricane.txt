@@ -1,6 +1,6 @@
 <story>Weather|Atlantic-developing-hurricane</story>
-<start>20080815171028.9941634890814
-<end>20080815171158.8171701733438
+<start>20080815171028.994</start>
+<end>20080815171158.817</end>
 Let | s talk | some weather 
 Our Chad Myers | is tracking | a big rain maker 
 The question | develop | something 

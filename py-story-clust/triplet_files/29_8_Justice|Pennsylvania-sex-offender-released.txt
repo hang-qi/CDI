@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815190823.0681634890814
-<end>20080815190922.9281701733438
+<start>20080815190823.068</start>
+<end>20080815190922.928</end>
 George Feigley | walked | a Pennsylvania prison today 
 a loophole | means | he 
 KEILAR | s sealed | stone 

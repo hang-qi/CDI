@@ -1,6 +1,6 @@
 <story>Human-interest|Cindy-McCain-hand-hospitalized</story>
-<start>20080813194752.5001634890814
-<end>20080813194854.8631701733438
+<start>20080813194752.500</start>
+<end>20080813194854.863</end>
 We | have breaking | news 
 Don Lemon | involves | the wife of presidential hopeful John McCain 
 Cindy McCain | has been taken | the hospital 

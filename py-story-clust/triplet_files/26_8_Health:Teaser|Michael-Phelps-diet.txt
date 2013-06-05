@@ -1,6 +1,6 @@
 <story>Health:Teaser|Michael-Phelps-diet</story>
-<start>20080815154653.9421634890814
-<end>20080815155242.5571701733438
+<start>20080815154653.942</start>
+<end>20080815155242.557</end>
 He | is sweeping | his swimming events 
 Our Elizabeth Cohen | is here | a look 
 NBCs Bob Costa | said | he 

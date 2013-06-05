@@ -1,4 +1,4 @@
 <story>Network|Preview</story>
-<start>20080815193423.7271634890814
-<end>20080815193447.9841701733438
+<start>20080815193423.727</start>
+<end>20080815193447.984</end>
 Our live coverage | begins | p.m. Eastern 

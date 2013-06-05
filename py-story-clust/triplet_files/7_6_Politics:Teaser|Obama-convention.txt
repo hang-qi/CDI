@@ -1,5 +1,5 @@
 <story>Politics:Teaser|Obama-convention</story>
-<start>20080811141156.3811634890814
-<end>20080811141453.3241701733438
+<start>20080811141156.381</start>
+<end>20080811141453.324</end>
 Democrats | put | the finishing touches 
 They | announced | a prime time schedule 

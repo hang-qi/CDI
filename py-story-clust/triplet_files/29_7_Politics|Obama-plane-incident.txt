@@ -1,6 +1,6 @@
 <story>Politics|Obama-plane-incident</story>
-<start>20080815190722.9741634890814
-<end>20080815190823.0681701733438
+<start>20080815190722.974</start>
+<end>20080815190823.068</end>
 we | hear | the pilot 
 FAA tapes | released | ABC News 
 an emergency | have | CFR standing 

@@ -1,6 +1,6 @@
 <story>Disaster|Flooding-Vegas</story>
-<start>20080808171714.3321634890814
-<end>20080808171833.1771701733438
+<start>20080808171714.332</start>
+<end>20080808171833.177</end>
 home | was | a gamble 
 heavy rain | turned | roads 
 The rush hour downpour | led | hour long delays 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811170100.9931634890814
-<end>20080811170437.9091701733438
+<start>20080811170100.993</start>
+<end>20080811170437.909</end>
 we | start | some developing news 
 the Russian invasion of the Black Sea region | is assuming | some new dimensions 
 Russian tanks | are rumbling | two breakaway regions of Georgia 

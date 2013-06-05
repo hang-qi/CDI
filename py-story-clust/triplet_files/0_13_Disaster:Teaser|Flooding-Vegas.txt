@@ -1,6 +1,6 @@
 <story>Disaster:Teaser|Flooding-Vegas</story>
-<start>20080808142715.8321634890814
-<end>20080808143154.9771701733438
+<start>20080808142715.832</start>
+<end>20080808143154.977</end>
 Roads | turn to | rivers 
 we | ve been following | all day 
 we | re talking | we 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813150002.3331634890814
-<end>20080813150321.2991701733438
+<start>20080813150002.333</start>
+<end>20080813150321.299</end>
 Russian troops | have ignored | the truce 
 They | wanted to split | Georgia 
 the European Union | can send | peacekeepers 

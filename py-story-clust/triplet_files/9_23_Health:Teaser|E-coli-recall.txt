@@ -1,4 +1,4 @@
 <story>Health:Teaser|E-coli-recall</story>
-<start>20080811172837.4811634890814
-<end>20080811172844.1881701733438
+<start>20080811172837.481</start>
+<end>20080811172844.188</end>
 This one | involving | a meat plant 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813150610.1671634890814
-<end>20080813151001.4981701733438
+<start>20080813150610.167</start>
+<end>20080813151001.498</end>
 we | find | CNNs Frederik Pleitgen 
 things | stand right now | the government 
 we | were hearing | those reports 

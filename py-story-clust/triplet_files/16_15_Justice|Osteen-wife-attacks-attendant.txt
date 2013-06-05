@@ -1,6 +1,6 @@
 <story>Justice|Osteen-wife-attacks-attendant</story>
-<start>20080813183715.9651634890814
-<end>20080813184045.6741701733438
+<start>20080813183715.965</start>
+<end>20080813184045.674</end>
 We | re talking now | Victoria Osteeen 
 She | is suing | percent of Victoria Osteens net worth 
 Osteen | denies hitting | Brown 

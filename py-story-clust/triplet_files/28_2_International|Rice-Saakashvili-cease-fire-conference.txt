@@ -1,6 +1,6 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815180109.9661634890814
-<end>20080815180619.6421701733438
+<start>20080815180109.966</start>
+<end>20080815180619.642</end>
 President Bush | accuses | Russia 
 He | spoke | today 
 Russia | invaded | Georgia 

@@ -1,6 +1,6 @@
 <story>Politics|Obama-plane-incident</story>
-<start>20080815131703.1541634890814
-<end>20080815131843.6541701733438
+<start>20080815131703.154</start>
+<end>20080815131843.654</end>
 Barack Obamas plane | made | an unscheduled stop 
 he | called | Barack Obama s plane 
 FAA tapes | show | Barack Obama s plane 

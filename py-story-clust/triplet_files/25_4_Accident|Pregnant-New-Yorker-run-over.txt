@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815140301.1131634890814
-<end>20080815140632.5571701733438
+<start>20080815140301.113</start>
+<end>20080815140632.557</end>
 Ordinary citizens | undertake | an extraordinary rescue effort 
 A pregnant traffic officer | is hit | a van 
 The woman | dies | the pregnant woman baby 

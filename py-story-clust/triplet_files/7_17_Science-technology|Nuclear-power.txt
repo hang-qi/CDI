@@ -1,6 +1,6 @@
 <story>Science-technology|Nuclear-power</story>
-<start>20080811144814.2901634890814
-<end>20080811145035.1641701733438
+<start>20080811144814.290</start>
+<end>20080811145035.164</end>
 nuclear power | re bound to get | a response 
 others | are really concerned | the risks 
 a lot of people | count | wind 

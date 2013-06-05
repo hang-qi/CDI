@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815140632.5571634890814
-<end>20080815140736.5881701733438
+<start>20080815140632.557</start>
+<end>20080815140736.588</end>
 George Fagely | served | more than years 
 He | wo nt have to check | police 
 He | wo nt be | parole 

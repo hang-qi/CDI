@@ -1,6 +1,6 @@
 <story>Health|Fresh-fit-food</story>
-<start>20080815194423.6931634890814
-<end>20080815194613.6361701733438
+<start>20080815194423.693</start>
+<end>20080815194613.636</end>
 Dr. Sanjay Gupta | looks | one food service 
 a diet | can fight | the battle of the bulge 
 Drive thrus | take | out 

@@ -1,6 +1,6 @@
 <story>Accident|Boston-crane-collapse</story>
-<start>20080814173249.9331634890814
-<end>20080814173335.6121701733438
+<start>20080814173249.933</start>
+<end>20080814173335.612</end>
 A crane | s according | the fire department 
 One person | was transported | the Quincy hospital 
 the victims health condition | is | this point 

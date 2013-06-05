@@ -1,4 +1,4 @@
 <story>Labor:Teaser|Disneyland-labor-protest</story>
-<start>20080815135020.8501634890814
-<end>20080815135020.8501701733438
+<start>20080815135020.850</start>
+<end>20080815135020.850</end>
 END VIDEOTAPE | s supposed to be | the happiest place 

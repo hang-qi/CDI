@@ -1,6 +1,6 @@
 <story>Sports|Olympics-Phelps</story>
-<start>20080811133407.7111634890814
-<end>20080811133543.4061701733438
+<start>20080811133407.711</start>
+<end>20080811133543.406</end>
 His relay team | setting | a record 
 a stirring | come | behind 
 Our Larry Smith | is | Beijing 

@@ -1,6 +1,6 @@
 <story>Accident|San-Francisco-fire</story>
-<start>20080815130047.3121634890814
-<end>20080815130136.2611701733438
+<start>20080815130047.312</start>
+<end>20080815130136.261</end>
 this information | comes | the CNN NEWSROOM 
 We | re talking | a fire 
 a very difficult procedure | given | the age of the residents 

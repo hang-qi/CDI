@@ -1,6 +1,6 @@
 <story>Politics|Clinton-convention-role</story>
-<start>20080815133916.3531634890814
-<end>20080815134209.7921701733438
+<start>20080815133916.353</start>
+<end>20080815134209.792</end>
 Barack Obama | will likely have accepted | his nomination 
 Two weeks from now Hillary Clinton | will have | a starring role 
 her million supporters | has been | a burning question 

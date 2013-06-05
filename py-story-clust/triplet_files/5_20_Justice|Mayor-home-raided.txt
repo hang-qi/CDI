@@ -1,6 +1,6 @@
 <story>Justice|Mayor-home-raided</story>
-<start>20080808183110.4331634890814
-<end>20080808183321.5971701733438
+<start>20080808183110.433</start>
+<end>20080808183321.597</end>
 Federal agents | have launched | an investigation 
 Maryland | tells | CNN 
 the damage | done | his family 

@@ -1,6 +1,6 @@
 <story>Science-technology|Van-detects-potholes</story>
-<start>20080814194957.7271634890814
-<end>20080814195424.5601701733438
+<start>20080814194957.727</start>
+<end>20080814195424.560</end>
 A high tech solution | finding | the smallest cracks and potholes 
 CNNs Rob Marciano | takes | a look 
 a tricked out van | may just be | the next big thing 

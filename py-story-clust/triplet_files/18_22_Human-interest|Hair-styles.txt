@@ -1,6 +1,6 @@
 <story>Human-interest|Hair-styles</story>
-<start>20080814135319.2611634890814
-<end>20080814135532.7951701733438
+<start>20080814135319.261</start>
+<end>20080814135532.795</end>
 a reporter | arrested covering | a protest 
 Medical correspondent Judy Fortin | looks | silky locks 
 We | can spend | a lot of time and money 

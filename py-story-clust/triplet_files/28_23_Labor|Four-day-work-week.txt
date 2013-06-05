@@ -1,6 +1,6 @@
 <story>Labor|Four-day-work-week</story>
-<start>20080815184303.8781634890814
-<end>20080815184630.5511701733438
+<start>20080815184303.878</start>
+<end>20080815184630.551</end>
 we | wrap up | our five day look 
 a four day workweek | putting | our five day look at a four day workweek 
 tabs | s going | the Western United States 

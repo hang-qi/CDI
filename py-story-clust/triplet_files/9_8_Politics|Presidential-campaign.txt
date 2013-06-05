@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080811170730.0151634890814
-<end>20080811170803.6151701733438
+<start>20080811170730.015</start>
+<end>20080811170803.615</end>
 John McCain | has | the campaign trail 
 he | toured | a General Electric plant 
 he | is also holding | a town hall meeting 

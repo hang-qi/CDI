@@ -1,6 +1,6 @@
 <story>Social|American-population-change</story>
-<start>20080814171853.9981634890814
-<end>20080814172028.9601701733438
+<start>20080814171853.998</start>
+<end>20080814172028.960</end>
 New census figures | show | a big shift 
 CNNs Alina Cho | looks | the numbers 
 This census report | came | at midnight 

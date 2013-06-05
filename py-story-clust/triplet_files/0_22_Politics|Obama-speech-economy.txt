@@ -1,6 +1,6 @@
 <story>Politics|Obama-speech-economy</story>
-<start>20080808144917.9531634890814
-<end>20080808145213.1281701733438
+<start>20080808144917.953</start>
+<end>20080808145213.128</end>
 we | will hear | Barack Obama 
 Senator McCain | live | next hour 
 we | hear | Senator Barack Obama 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811150049.3481634890814
-<end>20080811150849.1941701733438
+<start>20080811150049.348</start>
+<end>20080811150849.194</end>
 we | re talking | here 
 Russian troops | marching | neighboring territory 
 Russia | has launched | a massive military offense 

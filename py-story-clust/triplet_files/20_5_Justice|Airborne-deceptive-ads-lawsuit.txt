@@ -1,6 +1,6 @@
 <story>Justice|Airborne-deceptive-ads-lawsuit</story>
-<start>20080814153120.5101634890814
-<end>20080814153344.6541701733438
+<start>20080814153120.510</start>
+<end>20080814153344.654</end>
 The U.S. population | is going to change | the face of America 
 The FTC | takes | on Airborne 
 The company | is accused | deceptive advertising 

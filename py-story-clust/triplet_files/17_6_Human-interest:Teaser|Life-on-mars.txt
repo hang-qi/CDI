@@ -1,4 +1,4 @@
 <story>Human-interest:Teaser|Life-on-mars</story>
-<start>20080813192932.4681634890814
-<end>20080813192949.0181701733438
+<start>20080813192932.468</start>
+<end>20080813192949.018</end>
 some | are saying | shadow 

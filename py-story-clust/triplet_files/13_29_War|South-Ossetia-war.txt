@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813145910.7791634890814
-<end>20080813145952.2181701733438
+<start>20080813145910.779</start>
+<end>20080813145952.218</end>
 Developments | keep coming | the CNN NEWSROOM 
 Russian troops | making | surprise military moves 
 Russia and Georgia | may be | ever 

@@ -1,6 +1,6 @@
 <story>Money|Olympics-cost</story>
-<start>20080808180205.4901634890814
-<end>20080808180348.7931701733438
+<start>20080808180205.490</start>
+<end>20080808180348.793</end>
 China | has ever hosted | the Olympics 
 we | want to find | for sure 
 Larry Smith | has | the Birds Nest 

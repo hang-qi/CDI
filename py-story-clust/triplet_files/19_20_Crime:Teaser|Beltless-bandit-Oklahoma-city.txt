@@ -1,6 +1,6 @@
 <story>Crime:Teaser|Beltless-bandit-Oklahoma-city</story>
-<start>20080814143821.1961634890814
-<end>20080814143900.2691701733438
+<start>20080814143821.196</start>
+<end>20080814143900.269</end>
 Oklahoma City | trying to crack | the case of the beltless bandit 
 A convenience store robber | was caught | tape 
 the man | walked | the store 

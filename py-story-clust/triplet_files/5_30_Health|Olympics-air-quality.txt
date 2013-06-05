@@ -1,6 +1,6 @@
 <story>Health|Olympics-air-quality</story>
-<start>20080808184910.5451634890814
-<end>20080808185333.8751701733438
+<start>20080808184910.545</start>
+<end>20080808185333.875</end>
 The summer games | are | way 
 LRB COMMERCIAL BREAK RRB LEMON The summer games are under way in Beijing . | s just | excitement 
 China | has | some of the worst air pollution 

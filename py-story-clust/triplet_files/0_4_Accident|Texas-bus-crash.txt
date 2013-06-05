@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080808140421.1921634890814
-<end>20080808140721.6721701733438
+<start>20080808140421.192</start>
+<end>20080808140721.672</end>
 A bus | loaded | church members 
 a flat tire | might have set | a flat tire 
 SHERMAN | did not roll | SHERMAN 

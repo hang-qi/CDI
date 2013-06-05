@@ -1,6 +1,6 @@
 <story>Activism|Mexico-anti-violence</story>
-<start>20080815193534.5641634890814
-<end>20080815193759.0091701733438
+<start>20080815193534.564</start>
+<end>20080815193759.009</end>
 people | killed | hours 
 Alejandro Marti | went | the offensive 
 a news conference | demanding | a stop 

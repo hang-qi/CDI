@@ -1,6 +1,6 @@
 <story>Money|Gas-prices</story>
-<start>20080811132218.1021634890814
-<end>20080811132340.8851701733438
+<start>20080811132218.102</start>
+<end>20080811132340.885</end>
 Gas prices | have dropped | the th 
 AAA | reports | the national average 
 Stocks | got | a boost 

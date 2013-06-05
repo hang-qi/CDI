@@ -1,6 +1,6 @@
 <story>Human-interest|Burger-King-worker-bath</story>
-<start>20080813171844.8221634890814
-<end>20080813171915.9871701733438
+<start>20080813171844.822</start>
+<end>20080813171915.987</end>
 a better way | to celebrate | your birthday 
 their unappetizing video | hit | the Web 
 he | s taking | a bath 

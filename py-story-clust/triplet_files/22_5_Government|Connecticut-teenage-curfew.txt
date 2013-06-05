@@ -1,6 +1,6 @@
 <story>Government|Connecticut-teenage-curfew</story>
-<start>20080814180537.7681634890814
-<end>20080814180718.2351701733438
+<start>20080814180537.768</start>
+<end>20080814180718.235</end>
 kids | to keep | the kids 
 the aim of a curfew | starts | about seven hours 
 WTNH reporter Bob Wilson | has | reaction 

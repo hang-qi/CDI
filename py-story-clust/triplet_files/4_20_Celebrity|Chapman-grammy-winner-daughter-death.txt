@@ -1,6 +1,6 @@
 <story>Celebrity|Chapman-grammy-winner-daughter-death</story>
-<start>20080808172144.2351634890814
-<end>20080808172649.0391701733438
+<start>20080808172144.235</start>
+<end>20080808172649.039</end>
 the family | cope | one of his older sons 
 The family of Grammy award winning singer and songwriter Steven Curtis Chapman | has gone | agony 
 the Chapmans year old daughter Maria Sue | was killed | a horrible car accident 

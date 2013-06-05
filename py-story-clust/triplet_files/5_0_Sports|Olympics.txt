@@ -1,5 +1,5 @@
 <story>Sports|Olympics</story>
-<start>20080808180016.8141634890814
-<end>20080808180026.2241701733438
+<start>20080808180016.814</start>
+<end>20080808180026.224</end>
 The world spotlight | shines | China 
 the world and thousands of fans | kick | the summer games 

@@ -1,6 +1,6 @@
 <story>Accident|Dangling-window-washers</story>
-<start>20080814173152.0091634890814
-<end>20080814173249.9331701733438
+<start>20080814173152.009</start>
+<end>20080814173249.933</end>
 We | re following | a couple 
 This one | is | Indianapolis 
 we | were looking | the scaffolding 

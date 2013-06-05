@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815143033.1301634890814
-<end>20080815143142.0321701733438
+<start>20080815143033.130</start>
+<end>20080815143142.032</end>
 Russian forces | rolled | the former Soviet Republic of Georgia 
 Secretary of State Condoleezza Rice | is | the Georgian capital Tbilisi 
 She | s delivering | a new cease fire proposal 

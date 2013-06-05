@@ -1,6 +1,6 @@
 <story>Justice|Mayor-jail-time</story>
-<start>20080808180815.0921634890814
-<end>20080808180853.8641701733438
+<start>20080808180815.092</start>
+<end>20080808180853.864</end>
 Detroits mayor | has spent much | this day answering 
 Mayor Kwame Kilpatrick | was arraigned | federal counts 
 He | appeared | video screen 

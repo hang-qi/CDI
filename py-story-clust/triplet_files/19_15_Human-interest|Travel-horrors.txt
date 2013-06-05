@@ -1,6 +1,6 @@
 <story>Human-interest|Travel-horrors</story>
-<start>20080814142309.7531634890814
-<end>20080814142636.0591701733438
+<start>20080814142309.753</start>
+<end>20080814142636.059</end>
 out many | spent | your summer vacation 
 we | heard | about 
 me | look | my list 

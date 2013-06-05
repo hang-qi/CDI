@@ -1,6 +1,6 @@
 <story>Accident|Bear-attack</story>
-<start>20080813174037.1331634890814
-<end>20080813174136.0921701733438
+<start>20080813174037.133</start>
+<end>20080813174136.092</end>
 their tale | surviving | a bear attack 
 his brother and father | were hiking | Tennessees Great Smoky Mountains 
 the bear | attacked | year old Evan Pala 

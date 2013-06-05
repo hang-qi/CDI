@@ -1,6 +1,6 @@
 <story>Justice|Mayor-jail-time</story>
-<start>20080808134159.2821634890814
-<end>20080808134446.0821701733438
+<start>20080808134159.282</start>
+<end>20080808134446.082</end>
 the FBI | investigates | a raid 
 a suburban Maryland mayor | troubled | the actions of law enforcement 
 We | are following | both stories 

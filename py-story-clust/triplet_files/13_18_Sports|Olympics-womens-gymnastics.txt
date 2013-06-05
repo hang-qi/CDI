@@ -1,6 +1,6 @@
 <story>Sports|Olympics-womens-gymnastics</story>
-<start>20080813143435.4721634890814
-<end>20080813143747.8311701733438
+<start>20080813143435.472</start>
+<end>20080813143747.831</end>
 first let s | talk | the U.S. womens gymnastics team 
 CNNs Larry Smith | live | Beijing 
 they | were expected to contend | the gold 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814170046.2111634890814
-<end>20080814170418.8241701733438
+<start>20080814170046.211</start>
+<end>20080814170418.824</end>
 the U.S. defense secretary | has | two words 
 Robert Gates | called | Russias presence 
 one | will hurt | relations 

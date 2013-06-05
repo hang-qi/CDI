@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813180735.1191634890814
-<end>20080813180942.4461701733438
+<start>20080813180735.119</start>
+<end>20080813180942.446</end>
 we | have | other developing news 
 Our eyes and ears | are | Georgia 
 Russian troops | agreed | cease firing 

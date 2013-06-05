@@ -1,6 +1,6 @@
 <story>Government|Arkansas-curfew</story>
-<start>20080813193340.1491634890814
-<end>20080813193441.7441701733438
+<start>20080813193340.149</start>
+<end>20080813193441.744</end>
 Arkansas | is expanding | its controversial fight 
 The no go zone | is expanding | the current blocks 
 drastic measures | are needed | drug related shootings 

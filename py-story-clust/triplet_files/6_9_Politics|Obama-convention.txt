@@ -1,6 +1,6 @@
 <story>Politics|Obama-convention</story>
-<start>20080811131440.9451634890814
-<end>20080811131537.1351701733438
+<start>20080811131440.945</start>
+<end>20080811131537.135</end>
 He | is hitting | the lanes 
 jogging | visiting | old stomping grounds 
 he | does nt plan to do | much work 

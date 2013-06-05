@@ -1,6 +1,6 @@
 <story>War|Americans-evacuate-Georgia</story>
-<start>20080811175845.4871634890814
-<end>20080811175953.8701701733438
+<start>20080811175845.487</start>
+<end>20080811175953.870</end>
 We | have | some breaking news 
 Russia and Georgia | going back and forth | one person 
 the U.S. | evacuating | some of the citizens 

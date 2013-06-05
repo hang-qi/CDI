@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813130607.1991634890814
-<end>20080813130912.5171701733438
+<start>20080813130607.199</start>
+<end>20080813130912.517</end>
 Josh Levs | has pulled | a map of Georgia 
 Russian army | might be headed | Tbilisi 
 the Russian troops | even being | this road 

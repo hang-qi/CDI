@@ -1,6 +1,6 @@
 <story>Human-interest:Teaser|Stolen-bear</story>
-<start>20080814132015.6801634890814
-<end>20080814132031.5961701733438
+<start>20080814132015.680</start>
+<end>20080814132031.596</end>
 anyone | kidnap | a bear 
 He | wanted | a bear 
 He | got | the car 

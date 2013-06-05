@@ -1,6 +1,6 @@
 <story>Entertainment|Bernie-Mac-death</story>
-<start>20080811171906.9111634890814
-<end>20080811172222.4401701733438
+<start>20080811171906.911</start>
+<end>20080811172222.440</end>
 another unique voice | died | the weekend 
 He | was | years 
 Fellow comedian Chris Rock | says losing | Fellow comedian Chris Rock 

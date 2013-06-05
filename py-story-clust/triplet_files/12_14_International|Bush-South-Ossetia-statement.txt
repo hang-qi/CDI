@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813132627.2511634890814
-<end>20080813132820.1641701733438
+<start>20080813132627.251</start>
+<end>20080813132820.164</end>
 We | continue to follow | the breaking developments 
 Our Matthew Chance | is | that convoy 
 Our Frederik Pleitgen | is | the Georgian capital of Tbilisi 

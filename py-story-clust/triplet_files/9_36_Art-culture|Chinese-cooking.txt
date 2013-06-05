@@ -1,4 +1,4 @@
 <story>Art-culture|Chinese-cooking</story>
-<start>20080811174805.5141634890814
-<end>20080811174805.5141701733438
+<start>20080811174805.514</start>
+<end>20080811174805.514</end>
 the plant | was | earlier linked 

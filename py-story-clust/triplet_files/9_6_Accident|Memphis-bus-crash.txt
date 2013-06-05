@@ -1,6 +1,6 @@
 <story>Accident|Memphis-bus-crash</story>
-<start>20080811170649.0401634890814
-<end>20080811170707.8261701733438
+<start>20080811170649.040</start>
+<end>20080811170707.826</end>
 more than vacationers | are making | plans 
 they | were | overturned 
 Three people | were killed | this crash 

@@ -1,6 +1,6 @@
 <story>Science-technology|Nuclear-power</story>
-<start>20080811184637.5261634890814
-<end>20080811184912.4801701733438
+<start>20080811184637.526</start>
+<end>20080811184912.480</end>
 nuclear power | re bound to get | a response 
 Others | are concerned | the risks 
 coms Poppy Harlow | has | our Energy Fix 

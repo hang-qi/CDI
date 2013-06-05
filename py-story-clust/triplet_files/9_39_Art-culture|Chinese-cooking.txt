@@ -1,6 +1,6 @@
 <story>Art-culture|Chinese-cooking</story>
-<start>20080811175650.5061634890814
-<end>20080811175845.4871701733438
+<start>20080811175650.506</start>
+<end>20080811175845.487</end>
 an Olympic feat | to swallow | some of the strange food 
 we | ve got | some weird food 
 we | have come | the area 

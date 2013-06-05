@@ -1,6 +1,6 @@
 <story>Money|Foreclosures-increase</story>
-<start>20080813172236.5541634890814
-<end>20080813172305.8161701733438
+<start>20080813172236.554</start>
+<end>20080813172305.816</end>
 a decent chance | re now | your mortgage 
 which | tracks | home sales 
 nearly a third of newer owners | owe | more 

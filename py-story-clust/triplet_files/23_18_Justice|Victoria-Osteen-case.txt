@@ -1,6 +1,6 @@
 <story>Justice|Victoria-Osteen-case</story>
-<start>20080814193118.4751634890814
-<end>20080814193238.4881701733438
+<start>20080814193118.475</start>
+<end>20080814193238.488</end>
 We | have | this just 
 the wife of the renowned pastor | did not assault | the flight attendant 
 she | was abused | an angry tirade 

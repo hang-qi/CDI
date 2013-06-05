@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811135146.2021634890814
-<end>20080811135538.8671701733438
+<start>20080811135146.202</start>
+<end>20080811135538.867</end>
 Our Fredricka Whitfield | headed | the Olympic Games 
 the Olympic Games | gave | her my number 
 she | is | her father 

@@ -1,6 +1,6 @@
 <story>Accident|Texas-bus-crash</story>
-<start>20080808131713.6981634890814
-<end>20080808131849.5941701733438
+<start>20080808131713.698</start>
+<end>20080808131849.594</end>
 an | update | that story 
 A bus | loaded | church members 
 a highway overpass | rolled | an embankment 

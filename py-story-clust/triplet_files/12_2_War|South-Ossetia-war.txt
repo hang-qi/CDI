@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813130118.4771634890814
-<end>20080813130441.8471701733438
+<start>20080813130118.477</start>
+<end>20080813130441.847</end>
 outside Gori | witnessing | a column of Russian forces 
 We | are deploying | CNNs vast international resources 
 Jill Dougherty | is | Moscow 

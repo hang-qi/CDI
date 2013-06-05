@@ -1,6 +1,6 @@
 <story>Human-interest|Woman-walks-across-country-thanks-servicemen</story>
-<start>20080808175046.0421634890814
-<end>20080808175254.7701701733438
+<start>20080808175046.042</start>
+<end>20080808175254.770</end>
 A journey | began | two and a half months 
 miles | ended | today 
 CNNs Brianna Keilar | has | the story of a 

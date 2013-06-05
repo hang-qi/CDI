@@ -1,6 +1,6 @@
 <story>Health|Gardasil</story>
-<start>20080811193603.5261634890814
-<end>20080811193900.0351701733438
+<start>20080811193603.526</start>
+<end>20080811193900.035</end>
 A shot | is supposed to help prevent | certain types of cervical cancer 
 we | reported | last month 
 first | raised | a few red flags 

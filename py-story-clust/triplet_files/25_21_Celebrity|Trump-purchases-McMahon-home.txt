@@ -1,6 +1,6 @@
 <story>Celebrity|Trump-purchases-McMahon-home</story>
-<start>20080815144145.1681634890814
-<end>20080815144430.3661701733438
+<start>20080815144145.168</start>
+<end>20080815144430.366</end>
 Brown | had been seeking | more than $ 
 Donald Trump | coming | the rescue of Ed McMahon 
 he | ll buy | McMahon mansion 

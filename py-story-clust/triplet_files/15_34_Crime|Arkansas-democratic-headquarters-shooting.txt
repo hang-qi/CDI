@@ -1,6 +1,6 @@
 <story>Crime|Arkansas-democratic-headquarters-shooting</story>
-<start>20080813174428.6981634890814
-<end>20080813174528.2911701733438
+<start>20080813174428.698</start>
+<end>20080813174528.291</end>
 The Associated Press | is reporting | the chairman of the Arkansas Democratic Party 
 critical condition | following | shooting 
 he | has been taken | the hospital 

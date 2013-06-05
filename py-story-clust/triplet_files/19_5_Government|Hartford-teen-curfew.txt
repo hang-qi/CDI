@@ -1,6 +1,6 @@
 <story>Government|Hartford-teen-curfew</story>
-<start>20080814140144.8691634890814
-<end>20080814140315.1931701733438
+<start>20080814140144.869</start>
+<end>20080814140315.193</end>
 Enforcement of a strict teen curfew | begins tonight | Hartford 
 Reporter Bob Wilson of affiliate WTNH | gets | reaction 
 They | re | the young faces of Hartford 

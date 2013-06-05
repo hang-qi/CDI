@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811173231.9821634890814
-<end>20080811173610.0661701733438
+<start>20080811173231.982</start>
+<end>20080811173610.066</end>
 We | have been following | developing news 
 Russian tanks | are rumbling | two breakaway regions of Georgia 
 we | re | the only U.S. network 

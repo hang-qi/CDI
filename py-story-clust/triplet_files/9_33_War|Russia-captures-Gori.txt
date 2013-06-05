@@ -1,6 +1,6 @@
 <story>War|Russia-captures-Gori</story>
-<start>20080811174511.6411634890814
-<end>20080811174602.3911701733438
+<start>20080811174511.641</start>
+<end>20080811174602.391</end>
 the Associated Press | reporting | the State Department 
 the State Department | has evacuated | more than Americans 
 some of those Americans | there to train | Georgians 

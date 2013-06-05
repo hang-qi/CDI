@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815183403.4711634890814
-<end>20080815183702.3501701733438
+<start>20080815183403.471</start>
+<end>20080815183702.350</end>
 the life of a pregnant woman | did save | a pregnant woman baby 
 Her baby | survived | all of this 
 The woman | was | a New York City traffic officer 

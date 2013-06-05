@@ -1,6 +1,6 @@
 <story>Politics|Edwards-affair</story>
-<start>20080811194409.6781634890814
-<end>20080811194654.2091701733438
+<start>20080811194409.678</start>
+<end>20080811194654.209</end>
 he | admitted | he 
 he | had | an affair 
 We | re going to try to get | a clarification of that 

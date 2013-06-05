@@ -1,6 +1,6 @@
 <story>Money|Foreclosures</story>
-<start>20080814182511.9081634890814
-<end>20080814182626.6161701733438
+<start>20080814182511.908</start>
+<end>20080814182626.616</end>
 Home owners | ca nt catch | a break 
 Home prices | are falling | more people 
 Susan Lisovicz | is | the New York Stock Exchange 

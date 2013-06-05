@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080815130717.9031634890814
-<end>20080815130753.0041701733438
+<start>20080815130717.903</start>
+<end>20080815130753.004</end>
 Live pictures | see there | a day of legal ping pong 
 probable cause | to try | Kwame Kilpatrick 
 That case | stems | a confrontation 

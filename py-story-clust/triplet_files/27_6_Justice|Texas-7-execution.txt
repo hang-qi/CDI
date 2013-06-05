@@ -1,6 +1,6 @@
 <story>Justice|Texas-7-execution</story>
-<start>20080815170722.6071634890814
-<end>20080815170758.0761701733438
+<start>20080815170722.607</start>
+<end>20080815170758.076</end>
 He | was | a member of the notorious Texas Seven fugitives 
 Rodriguez | had dropped | his appeals 
 he | requested | lethal injection 

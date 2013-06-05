@@ -1,6 +1,6 @@
 <story>Health:Teaser|Veterans-alcoholism</story>
-<start>20080813170021.9201634890814
-<end>20080813170031.5631701733438
+<start>20080813170021.920</start>
+<end>20080813170031.563</end>
 new data | confirm | what many troops 
 War | can drive | warriors 
 CNNs medical unit | has | the facts 

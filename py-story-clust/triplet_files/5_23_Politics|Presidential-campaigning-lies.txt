@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaigning-lies</story>
-<start>20080808183407.1091634890814
-<end>20080808183908.3101701733438
+<start>20080808183407.109</start>
+<end>20080808183908.310</end>
 they | re | part of every presidential race 
 John McCain | stack | this time 
 Great | to be | you Randi 

@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814145824.1651634890814
-<end>20080814145954.0611701733438
+<start>20080814145824.165</start>
+<end>20080814145954.061</end>
 Let | s get | the very latest 
 Russian troops | remain | the Georgian city of Gori 
 they | will return | control 

@@ -1,6 +1,6 @@
 <story>Accident|Dangling-window-washers</story>
-<start>20080813185319.1271634890814
-<end>20080813185954.0001701733438
+<start>20080813185319.127</start>
+<end>20080813185954.000</end>
 Our own Jeanne Moos | will take | a look 
 Brianna | have been following | these pictures 
 they | were doing | some work 

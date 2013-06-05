@@ -1,6 +1,6 @@
 <story>War|Terrorist-attacks-Afghanistan</story>
-<start>20080813132316.4601634890814
-<end>20080813132337.3481701733438
+<start>20080813132316.460</start>
+<end>20080813132337.348</end>
 one woman | was | an American 
 They | worked | a New York based aid organization 
 The women | were | a convoy 

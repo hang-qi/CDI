@@ -1,6 +1,6 @@
 <story>Business|Decline-retail-sales</story>
-<start>20080813172336.8141634890814
-<end>20080813172529.5931701733438
+<start>20080813172336.814</start>
+<end>20080813172529.593</end>
 one company | is betting | the shift 
 consumer spending | accounts | about of economic activity 
 July | dropped | . percent 

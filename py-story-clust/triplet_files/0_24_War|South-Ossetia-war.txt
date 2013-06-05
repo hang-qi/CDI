@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808145453.8211634890814
-<end>20080808145600.7221701733438
+<start>20080808145453.821</start>
+<end>20080808145600.722</end>
 CNN.com | has | an excellent explainer 
 the Republic of Georgia | called | South Ossetia 
 years | s been trying to insert | its independence 

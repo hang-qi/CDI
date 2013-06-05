@@ -1,6 +1,6 @@
 <story>Social:Teaser|Olympics-racism</story>
-<start>20080814180040.3041634890814
-<end>20080814180052.8501701733438
+<start>20080814180040.304</start>
+<end>20080814180052.850</end>
 they | meant | no offense 
 some | consider | racist 
 We | ll be focusing | this controversy 

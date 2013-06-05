@@ -1,6 +1,6 @@
 <story>Health|Rising-medicine-prices</story>
-<start>20080811153849.0921634890814
-<end>20080811154135.3251701733438
+<start>20080811153849.092</start>
+<end>20080811154135.325</end>
 Some prescription drug prices | hitting | the stratosphere 
 we | re hearing | cases 
 the cost of some drugs | can actually double | overnight and Medical Correspondent 

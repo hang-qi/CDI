@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080811140714.3661634890814
-<end>20080811140943.6151701733438
+<start>20080811140714.366</start>
+<end>20080811140943.615</end>
 heavy rain | caused | dangerous flooding 
 pickup driver | stuck there | the water 
 They | re getting | Rob Marciano 

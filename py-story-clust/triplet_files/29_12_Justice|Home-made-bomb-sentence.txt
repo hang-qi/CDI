@@ -1,6 +1,6 @@
 <story>Justice|Home-made-bomb-sentence</story>
-<start>20080815191054.5861634890814
-<end>20080815191125.1831701733438
+<start>20080815191054.586</start>
+<end>20080815191125.183</end>
 the man | arrested | the U.S. Capitol 
 January | carrying | a loaded gun 
 this video | was shot | several weeks 

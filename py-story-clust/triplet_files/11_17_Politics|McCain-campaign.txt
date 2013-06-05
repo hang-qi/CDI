@@ -1,6 +1,6 @@
 <story>Politics|McCain-campaign</story>
-<start>20080811191624.6811634890814
-<end>20080811191644.1671701733438
+<start>20080811191624.681</start>
+<end>20080811191644.167</end>
 let s | talk | politics 
 John McCain | has | the campaign 
 The Republican | is stumping | today 

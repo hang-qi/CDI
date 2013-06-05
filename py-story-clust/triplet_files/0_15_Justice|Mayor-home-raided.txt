@@ -1,6 +1,6 @@
 <story>Justice|Mayor-home-raided</story>
-<start>20080808143223.1721634890814
-<end>20080808143410.3121701733438
+<start>20080808143223.172</start>
+<end>20080808143410.312</end>
 Two dogs | shot | death 
 the FBI | is opening | a civil rights investigation 
 the raid | open | the home of Berwyn Heights 

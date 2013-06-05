@@ -1,6 +1,6 @@
 <story>Justice|Car-accident-rates-down</story>
-<start>20080814191606.4311634890814
-<end>20080814191630.4211701733438
+<start>20080814191606.431</start>
+<end>20080814191630.421</end>
 cops | do have | this video of the robber 
 | were | the lowest 
 more than percent | now account | almost percent of all highway fatalities 

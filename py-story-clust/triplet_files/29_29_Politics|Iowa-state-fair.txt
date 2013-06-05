@@ -1,6 +1,6 @@
 <story>Politics|Iowa-state-fair</story>
-<start>20080815193152.6431634890814
-<end>20080815193309.1861701733438
+<start>20080815193152.643</start>
+<end>20080815193309.186</end>
 the CNN Election Express | rolls | Iowa 
 The CNN Election Express there it is | heads | the Democratic National Convention 
 we | spoke | a number of voters 

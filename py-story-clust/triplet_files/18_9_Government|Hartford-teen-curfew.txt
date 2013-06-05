@@ -1,6 +1,6 @@
 <story>Government|Hartford-teen-curfew</story>
-<start>20080814131704.5551634890814
-<end>20080814131742.9601701733438
+<start>20080814131704.555</start>
+<end>20080814131742.960</end>
 A strict teen curfew | starts tonight | Hartford 
 One man | was killed | six young people 
 the month long curfew | means | no one 

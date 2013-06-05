@@ -1,6 +1,6 @@
 <story>Justice|Kilpatrick-assault-case</story>
-<start>20080814170421.8271634890814
-<end>20080814170547.2451701733438
+<start>20080814170421.827</start>
+<end>20080814170547.245</end>
 Kwame Kilpatrick | won | the right today 
 not guilty pleas | were entered | his behalf 
 the judge | agreed to let | Kilpatrick travel 

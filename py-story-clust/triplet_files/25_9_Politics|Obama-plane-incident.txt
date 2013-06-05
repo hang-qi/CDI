@@ -1,6 +1,6 @@
 <story>Politics|Obama-plane-incident</story>
-<start>20080815141640.3981634890814
-<end>20080815141739.4241701733438
+<start>20080815141640.398</start>
+<end>20080815141739.424</end>
 New details | coming | about 
 Obamas plane | had | mechanical problems 
 FAA tapes | show | the pilot 

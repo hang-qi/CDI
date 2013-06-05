@@ -1,6 +1,6 @@
 <story>Politics|South-Ossetia-presidential-campaign</story>
-<start>20080815145126.4151634890814
-<end>20080815145422.0241701733438
+<start>20080815145126.415</start>
+<end>20080815145422.024</end>
 guys | have never met | a rule 
 the candidates | to react | this very hot foreign policy situation 
 clear violation of international law | have | no place 

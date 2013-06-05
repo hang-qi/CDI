@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815173238.9891634890814
-<end>20080815173625.9161701733438
+<start>20080815173238.989</start>
+<end>20080815173625.916</end>
 a top Russian general threatened Poland | agreeing to place | a U.S. missile defense battery 
 Russias neighbors | are taking | notice of events 
 his nation | reeling | a military incursion NY Russian troops 

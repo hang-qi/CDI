@@ -1,6 +1,6 @@
 <story>Activism|Kashmir-protests</story>
-<start>20080811193049.9121634890814
-<end>20080811193104.7601701733438
+<start>20080811193049.912</start>
+<end>20080811193104.760</end>
 A.P. | is reporting | security forces 
 a Kashmir political leader | taking | part 
 Thousands of protesters | have taken | the streets 

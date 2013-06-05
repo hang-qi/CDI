@@ -1,4 +1,4 @@
 <story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
-<start>20080815170011.7771634890814
-<end>20080815170026.9591701733438
+<start>20080815170011.777</start>
+<end>20080815170026.959</end>
 a terrible accident band | to lift | a school bus 

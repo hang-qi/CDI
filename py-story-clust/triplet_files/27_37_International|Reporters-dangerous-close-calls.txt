@@ -1,6 +1,6 @@
 <story>International|Reporters-dangerous-close-calls</story>
-<start>20080815175643.4991634890814
-<end>20080815175940.7421701733438
+<start>20080815175643.499</start>
+<end>20080815175940.742</end>
 chaos | be | McCain 
 LRB END VIDEOTAPE RRB LRB COMMERCIAL BREAK RRB LEMON Reporting from a war zone | s | just bullets 
 reporters | are also having to dodge | hippo jaws 

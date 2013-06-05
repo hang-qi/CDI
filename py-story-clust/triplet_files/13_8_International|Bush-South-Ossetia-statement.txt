@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813141926.9981634890814
-<end>20080813142058.1551701733438
+<start>20080813141926.998</start>
+<end>20080813142058.155</end>
 we | re getting | a bit more guidance 
 Administration officials | now saying | the president 
 Administration officials now saying that the president will offer a so called comprehensive approach of the U.S. response to the situation in Georgia . | to mean | diplomatic and military 

@@ -1,6 +1,6 @@
 <story>International|Bush-South-Ossetia-statement</story>
-<start>20080813151001.4981634890814
-<end>20080813152145.9691701733438
+<start>20080813151001.498</start>
+<end>20080813152145.969</end>
 my national security team | to discuss | the crisis 
 The United States | supports | Frances efforts 
 an agreement | will end | this conflict 

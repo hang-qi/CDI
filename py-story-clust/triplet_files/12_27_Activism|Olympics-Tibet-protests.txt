@@ -1,6 +1,6 @@
 <story>Activism|Olympics-Tibet-protests</story>
-<start>20080813135911.5131634890814
-<end>20080813135927.1951701733438
+<start>20080813135911.513</start>
+<end>20080813135927.195</end>
 Pro Tibet protesters | arrested | Beijing 
 Nine people | were taken | custody 
 only eight of them | were actually | protesters 

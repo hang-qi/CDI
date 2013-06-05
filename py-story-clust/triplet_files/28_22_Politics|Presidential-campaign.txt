@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080815184026.1871634890814
-<end>20080815184128.8831701733438
+<start>20080815184026.187</start>
+<end>20080815184128.883</end>
 We | decided to let | some of our staff experience 
 Barack Obama | has | any public rallies or speeches 
 McCain | is | Aspen 

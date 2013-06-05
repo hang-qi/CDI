@@ -1,6 +1,6 @@
 <story>Accident|Czech-train-crash-bridge-collapse</story>
-<start>20080808183346.9561634890814
-<end>20080808183407.1091701733438
+<start>20080808183346.956</start>
+<end>20080808183407.109</end>
 construction | collapses | the path of a passenger train 
 at least six people | were killed | 
 The train | was traveling | Prague 

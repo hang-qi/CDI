@@ -1,6 +1,6 @@
 <story>Celebrity|Madonna-turns-50</story>
-<start>20080815185645.8661634890814
-<end>20080815185954.4041701733438
+<start>20080815185645.866</start>
+<end>20080815185954.404</end>
 she | is still | vogue today 
 we | re talking | Madonna 
 She | turns | 

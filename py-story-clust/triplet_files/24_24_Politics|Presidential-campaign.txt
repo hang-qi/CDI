@@ -1,6 +1,6 @@
 <story>Politics|Presidential-campaign</story>
-<start>20080815133838.6821634890814
-<end>20080815133916.3531701733438
+<start>20080815133838.682</start>
+<end>20080815133916.353</end>
 He | flies | Chicago 
 today | getting back | the game 
 democrats | gear | the democrats convention 

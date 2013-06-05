@@ -1,6 +1,6 @@
 <story>Health|Venemous-brown-recluse-spider</story>
-<start>20080815132201.5521634890814
-<end>20080815132544.6081701733438
+<start>20080815132201.552</start>
+<end>20080815132544.608</end>
 An attack | can go | An attack 
 the story of the Bowling family | live | Kansas 
 they | were living | potential real danger 

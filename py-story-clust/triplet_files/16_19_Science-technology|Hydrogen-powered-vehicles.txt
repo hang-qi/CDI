@@ -1,6 +1,6 @@
 <story>Science-technology|Hydrogen-powered-vehicles</story>
-<start>20080813184755.5031634890814
-<end>20080813185004.3991701733438
+<start>20080813184755.503</start>
+<end>20080813185004.399</end>
 Hydrogen | may be | the first element 
 Cars | powered | hydrogen release clean emissions 
 they | have | their critics 

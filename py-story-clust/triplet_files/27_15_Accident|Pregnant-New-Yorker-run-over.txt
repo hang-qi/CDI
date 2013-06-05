@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815171559.7911634890814
-<end>20080815171937.3081701733438
+<start>20080815171559.791</start>
+<end>20080815171937.308</end>
 We | have | a heroic rescue 
 LRB COMMERCIAL BREAK RRB LEMON We have a heroic rescue in New York to tell you about . | to save | the life of a pregnant woman 
 a van | run | over 

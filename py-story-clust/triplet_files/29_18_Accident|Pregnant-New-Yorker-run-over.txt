@@ -1,6 +1,6 @@
 <story>Accident|Pregnant-New-Yorker-run-over</story>
-<start>20080815191538.8701634890814
-<end>20080815191814.9591701733438
+<start>20080815191538.870</start>
+<end>20080815191814.959</end>
 The woman | was | a New York City traffic officer 
 A van | hit | a pregnant woman 
 a van | is when | some everyday heroes 

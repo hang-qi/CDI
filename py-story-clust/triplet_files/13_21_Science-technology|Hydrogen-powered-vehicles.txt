@@ -1,6 +1,6 @@
 <story>Science-technology|Hydrogen-powered-vehicles</story>
-<start>20080813144306.0151634890814
-<end>20080813144839.0151701733438
+<start>20080813144306.015</start>
+<end>20080813144839.015</end>
 a car | puts | water 
 CNNMoney.coms Poppy Harlow | is | New Jersey 
 we | ve heard | hydrogen powered vehicles 

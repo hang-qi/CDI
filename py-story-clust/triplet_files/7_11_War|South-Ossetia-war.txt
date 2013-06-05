@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811143432.4691634890814
-<end>20080811143545.7091701733438
+<start>20080811143432.469</start>
+<end>20080811143545.709</end>
 a cease fire proposal | already signed | the president of Georgia 
 President Bush | blasting | Moscows military action 
 He | criticized | the U.S. 

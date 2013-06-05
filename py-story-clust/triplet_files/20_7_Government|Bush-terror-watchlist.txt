@@ -1,6 +1,6 @@
 <story>Government|Bush-terror-watchlist</story>
-<start>20080814153639.5961634890814
-<end>20080814154140.2631701733438
+<start>20080814153639.596</start>
+<end>20080814154140.263</end>
 CNNs special investigations unit | will look | CNN 
 he | was put | CNN s special investigations unit 
 He | found | himself 

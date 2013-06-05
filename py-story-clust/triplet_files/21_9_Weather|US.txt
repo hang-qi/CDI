@@ -1,6 +1,6 @@
 <story>Weather|US</story>
-<start>20080814170757.7421634890814
-<end>20080814170944.8831701733438
+<start>20080814170757.742</start>
+<end>20080814170944.883</end>
 Time | to talk | some weather 
 which | will be | a storm 
 this storm | is estimated | miles 

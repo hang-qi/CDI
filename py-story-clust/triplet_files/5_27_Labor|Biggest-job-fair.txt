@@ -1,6 +1,6 @@
 <story>Labor|Biggest-job-fair</story>
-<start>20080808184250.7661634890814
-<end>20080808184511.6401701733438
+<start>20080808184250.766</start>
+<end>20080808184511.640</end>
 Chris Lawrence | is | Arizona 
 they | rush | the job fair 
 people | looking | work 

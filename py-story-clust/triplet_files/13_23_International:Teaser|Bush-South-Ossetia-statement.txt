@@ -1,6 +1,6 @@
 <story>International:Teaser|Bush-South-Ossetia-statement</story>
-<start>20080813144846.0881634890814
-<end>20080813145156.1781701733438
+<start>20080813144846.088</start>
+<end>20080813145156.178</end>
 the president | will be making | the Rose Garden 
 those statements | regarding | the situation 
 We | will bring | the press conference excuse 

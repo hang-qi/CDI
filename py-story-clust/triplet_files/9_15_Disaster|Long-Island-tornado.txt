@@ -1,6 +1,6 @@
 <story>Disaster|Long-Island-tornado</story>
-<start>20080811171613.9721634890814
-<end>20080811171724.2751701733438
+<start>20080811171613.972</start>
+<end>20080811171724.275</end>
 Bonnie Schneider | keeping | an eye 
 we | have | a tornado warning 
 Doppler radar | indicated | rotation 

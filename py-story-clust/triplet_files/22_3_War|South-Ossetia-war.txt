@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080814180111.1691634890814
-<end>20080814180512.3431701733438
+<start>20080814180111.169</start>
+<end>20080814180512.343</end>
 the border | barely separating | Russia 
 We | get | reports of Russias military pullback 
 they | ve taken | another city 

@@ -1,4 +1,4 @@
 <story>Justice:Teaser|Mayor-home-raided</story>
-<start>20080808130031.0301634890814
-<end>20080808130040.9391701733438
+<start>20080808130031.030</start>
+<end>20080808130040.939</end>
 the FBI | investigates | a raid 

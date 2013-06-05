@@ -1,6 +1,6 @@
 <story>Health|Austin-Texas-most-alcohol-consumption</story>
-<start>20080808172649.0391634890814
-<end>20080808172728.3121701733438
+<start>20080808172649.039</start>
+<end>20080808172728.312</end>
 Forbes magazine | crunched | statistics 
 Disease Control | has | Austin 
 One reason | given | Austins top shelf rating 

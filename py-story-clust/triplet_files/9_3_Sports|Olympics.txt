@@ -1,6 +1,6 @@
 <story>Sports|Olympics</story>
-<start>20080811170437.9091634890814
-<end>20080811170513.3121701733438
+<start>20080811170437.909</start>
+<end>20080811170513.312</end>
 we | ve been talking | the ground 
 Now | prevailed | the Olympics 
 Russias silver medalist | put | her arm 

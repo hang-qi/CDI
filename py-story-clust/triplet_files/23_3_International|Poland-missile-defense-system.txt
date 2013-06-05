@@ -1,6 +1,6 @@
 <story>International|Poland-missile-defense-system</story>
-<start>20080814190806.0171634890814
-<end>20080814190824.9701701733438
+<start>20080814190806.017</start>
+<end>20080814190824.970</end>
 sure | to further complicate | U.S. Russian relations 
 Poland | will sign | a preliminary deal 
 the Bush administration | to host | part of a missile defense system 

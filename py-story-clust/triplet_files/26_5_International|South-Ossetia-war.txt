@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war</story>
-<start>20080815153710.9601634890814
-<end>20080815153928.0631701733438
+<start>20080815153710.960</start>
+<end>20080815153928.063</end>
 the Georgian president | has now signed | this six point agreement 
 now | required | clarification 
 this loophole | existed | the original agreement 

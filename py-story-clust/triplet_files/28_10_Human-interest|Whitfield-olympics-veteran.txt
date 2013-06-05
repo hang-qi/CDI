@@ -1,6 +1,6 @@
 <story>Human-interest|Whitfield-olympics-veteran</story>
-<start>20080815181942.9121634890814
-<end>20080815182515.0771701733438
+<start>20080815181942.912</start>
+<end>20080815182515.077</end>
 we | have | a very special guest 
 all of these medals | were | the military 
 the military . | was | a childhood dream 

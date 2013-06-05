@@ -1,6 +1,6 @@
 <story>Justice|Thai-prime-minister-arrest</story>
-<start>20080811183059.0211634890814
-<end>20080811183129.4521701733438
+<start>20080811183059.021</start>
+<end>20080811183129.452</end>
 The Supreme Court of Thailand | has issued | arrest warrants 
 They | have been allowed to travel | Beijing 
 they | return | a hearing today 

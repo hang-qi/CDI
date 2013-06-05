@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808141517.1471634890814
-<end>20080808141746.5961701733438
+<start>20080808141517.147</start>
+<end>20080808141746.596</end>
 we | ve been covering | all morning 
 a Russian military aircraft | dropped | two bombs 
 Matthew Chance | to learn | a little bit 

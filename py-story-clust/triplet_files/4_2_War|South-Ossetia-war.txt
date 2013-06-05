@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080808170105.0641634890814
-<end>20080808170555.7871701733438
+<start>20080808170105.064</start>
+<end>20080808170555.787</end>
 we | start | the developing news 
 troops | are | the move 
 a border region | has erupted | open conflict 

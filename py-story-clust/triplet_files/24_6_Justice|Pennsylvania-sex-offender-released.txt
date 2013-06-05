@@ -1,6 +1,6 @@
 <story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815130640.1981634890814
-<end>20080815130717.9031701733438
+<start>20080815130640.198</start>
+<end>20080815130717.903</end>
 a convicted sex offenders | released | prison today 
 George Feigley | served | more than years 
 He | wo nt have to check | police 

@@ -1,5 +1,5 @@
 <story>Network|Anchor-chat</story>
-<start>20080808183908.3101634890814
-<end>20080808183919.8551701733438
+<start>20080808183908.310</start>
+<end>20080808183919.855</end>
 we | could use | every day 
 we | might have to add | another hour 

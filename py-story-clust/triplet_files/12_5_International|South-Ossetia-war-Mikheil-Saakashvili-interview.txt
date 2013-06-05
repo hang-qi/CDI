@@ -1,6 +1,6 @@
 <story>International|South-Ossetia-war-Mikheil-Saakashvili-interview</story>
-<start>20080813130912.5171634890814
-<end>20080813131018.3161701733438
+<start>20080813130912.517</start>
+<end>20080813131018.316</end>
 he | had to say | the situation 
 the Russians | are encroaching | the capital 
 They | are making | a circle 

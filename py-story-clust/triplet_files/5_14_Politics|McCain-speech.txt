@@ -1,6 +1,6 @@
 <story>Politics|McCain-speech</story>
-<start>20080808181550.6141634890814
-<end>20080808181832.2091701733438
+<start>20080808181550.614</start>
+<end>20080808181832.209</end>
 the heart of the Midwest | tops | our Political Ticker 
 the Republican candidate | stopped off | the Iowa State Fair 
 he | talked | voters 

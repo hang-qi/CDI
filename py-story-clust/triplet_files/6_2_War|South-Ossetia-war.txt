@@ -1,6 +1,6 @@
 <story>War|South-Ossetia-war</story>
-<start>20080811130008.2731634890814
-<end>20080811130645.6041701733438
+<start>20080811130008.273</start>
+<end>20080811130645.604</end>
 Russian troops | march | neighboring territory 
 Let | s set | the stage 
 cease fire proposal | signed | the president of Georgia 

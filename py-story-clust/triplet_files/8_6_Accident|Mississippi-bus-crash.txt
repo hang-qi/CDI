@@ -1,6 +1,6 @@
 <story>Accident|Mississippi-bus-crash</story>
-<start>20080811150932.6711634890814
-<end>20080811151149.0741701733438
+<start>20080811150932.671</start>
+<end>20080811151149.074</end>
 three people | were killed | another bus crash 
 The passengers | were headed | the airport 
 This bus | owned | Harrahs Casino 

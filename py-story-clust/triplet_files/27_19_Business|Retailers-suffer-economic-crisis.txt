@@ -1,6 +1,6 @@
 <story>Business|Retailers-suffer-economic-crisis</story>
-<start>20080815172515.8461634890814
-<end>20080815172652.7761701733438
+<start>20080815172515.846</start>
+<end>20080815172652.776</end>
 one of the largest department stores | joins | the list of companies 
 they | dropped | percent 
 They | re saying | their margins 

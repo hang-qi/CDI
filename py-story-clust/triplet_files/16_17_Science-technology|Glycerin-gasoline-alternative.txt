@@ -1,6 +1,6 @@
 <story>Science-technology|Glycerin-gasoline-alternative</story>
-<start>20080813184245.0271634890814
-<end>20080813184611.7671701733438
+<start>20080813184245.027</start>
+<end>20080813184611.767</end>
 We | look | health care 
 farmers | are looking | alternatives 
 alternatives to gasoline | can create still | another problem 

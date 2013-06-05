@@ -1,6 +1,6 @@
 <story>Health|Veterinarian-shortage</story>
-<start>20080811184429.3641634890814
-<end>20080811184637.5261701733438
+<start>20080811184429.364</start>
+<end>20080811184637.526</end>
 U.S. farmers | are facing | a dangerous shortage 
 We | re talking | a lack of qualified veterinarians 
 She | s helping | Dr. John Curran 
