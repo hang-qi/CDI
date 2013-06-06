@@ -1,0 +1,8 @@
+<story>International|South-Ossetia-reporters-attacked</story>
+<start>20080815180619.642</start>
+<end>20080815180659.616</end>
+we | have | another story 
+the incident | happened | last Sunday 
+a crew | entered | South Ossetia 
+the crew | was apprehended | Russians 
+None of the crew | was seriously wounded | a crew 

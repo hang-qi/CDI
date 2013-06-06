@@ -1,0 +1,6 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808135232.114</start>
+<end>20080808135515.244</end>
+Russian tanks | are | the move 
+Fighting | erupts | the former Soviet Republic of Georgia 
+his country | is | attack 
