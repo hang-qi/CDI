@@ -1,5 +1,0 @@
-<story>Justice|Pennsylvania-sex-offender-released</story>
-<start>20080815180758.608</start>
-<end>20080815180824.934</end>
-Feigley | is not required to register | a sex offender 
-People | live | his old neighborhood 

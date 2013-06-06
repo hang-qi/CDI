@@ -1,4 +1,0 @@
-<story>Commercial|Break</story>
-<start>20080813194450.919</start>
-<end>20080813194752.500</end>
-a couple of thieves | caught | camera 

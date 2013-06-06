@@ -1,8 +1,0 @@
-<story>Accident|Tractor-plunges-into-Chesapeake</story>
-<start>20080811131413.151</start>
-<end>20080811131440.945</end>
-Traffic | is still | this morning 
-The driver | was killed | the three vehicle accident 
-Both | released | the hospital 
-The truck | filled | frozen chicken 
-The other | expected to open | this afternoon 

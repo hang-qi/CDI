@@ -1,6 +1,0 @@
-<story>Money|Gas-prices</story>
-<start>20080814170719.671</start>
-<end>20080814170744.763</end>
-California Florida Arizona and Ohio completing the top five . | s | a fluke 
-Americans | drove less | June 
-which | have fallen | days 

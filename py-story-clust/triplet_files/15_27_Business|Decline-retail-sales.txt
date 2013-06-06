@@ -1,5 +1,0 @@
-<story>Business|Decline-retail-sales</story>
-<start>20080813173048.946</start>
-<end>20080813173100.757</end>
-retail sales | showed | their weakest performance 
-Sales | dropped | a tenth of a percent 

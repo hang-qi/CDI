@@ -1,4 +1,0 @@
-<story>Network|Outro</story>
-<start>20080808185941.542</start>
-<end>20080808185952.078</end>
-Randi Kaye | live | the CNN world headquarters 

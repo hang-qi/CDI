@@ -1,4 +1,0 @@
-<story>Celebrity:Teaser|Madonna-turns-50</story>
-<start>20080815185346.320</start>
-<end>20080815185358.765</end>
-Madonna | turns | 

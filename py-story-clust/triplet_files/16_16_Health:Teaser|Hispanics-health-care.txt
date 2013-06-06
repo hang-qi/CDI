@@ -1,4 +1,0 @@
-<story>Health:Teaser|Hispanics-health-care</story>
-<start>20080813184045.674</start>
-<end>20080813184245.027</end>
-we | re going to examine | an aspect of that issue 

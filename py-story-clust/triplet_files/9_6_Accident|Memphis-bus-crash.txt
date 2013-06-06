@@ -1,7 +1,6 @@
 <story>Accident|Memphis-bus-crash</story>
-<start>20080811170649.040</start>
-<end>20080811170707.826</end>
-more than vacationers | are making | plans 
-they | were | overturned 
-Three people | were killed | this crash 
-The bus | belongs | Harrahs Tunica Casino 
+<start>20080811180509.473</start>
+<end>20080811180526.991</end>
+Three people | were killed early | yesterday 
+only three people casino bus | overturned south | Memphis 
+More than survivors | are planning to fly | home 

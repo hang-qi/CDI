@@ -1,4 +1,0 @@
-<story>Commercial|Block</story>
-<start>20080815172843.020</start>
-<end>20080815172843.020</end>
-They | ll answer | questions 

@@ -1,7 +1,0 @@
-<story>Accident|Girl-lost-Niagara-Falls</story>
-<start>20080814170944.883</start>
-<end>20080814171002.934</end>
-a New York City girl | lost | a New York City girl footing 
-State | parks | police 
-the year old | slipped off | a rock 
-Searchers | are using | boats and helicopters 

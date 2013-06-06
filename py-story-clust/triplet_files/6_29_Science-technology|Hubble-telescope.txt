@@ -1,8 +1,0 @@
-<story>Science-technology|Hubble-telescope</story>
-<start>20080811135538.867</start>
-<end>20080811135606.795</end>
-the Hubble Telescope | making | its th orbit 
-the earth | still taking | pictures 
-The Hubble | has been taking | snapshots of outer space 
-The Space Shuttle Atlantis | is scheduled to launch | early October 
-the last planned shuttle mission | servicing | the telescope 

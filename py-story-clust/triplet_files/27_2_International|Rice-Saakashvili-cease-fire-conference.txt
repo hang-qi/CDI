@@ -1,37 +1,46 @@
 <story>International|Rice-Saakashvili-cease-fire-conference</story>
-<start>20080815170055.821</start>
-<end>20080815170455.160</end>
-Secretary of State Condoleezza Rice | arrived | today 
-Georgias president | lashed | the west 
-President Bush | is accusing | Moscow of bullying 
-he | said | Russia 
-Georgia | has displaced | almost civilians 
-Food | is reported to be | the Georgian city of Gori 
-a deal | to place | a missile defense battery 
-President Bush today | used | his strongest language 
-Russia | has damaged | its credibility 
-acceptable ways | to conduct | foreign policy 
-Russias aggression | having | broader implications 
-Secretary of State Condoleezza Rice | got | the Georgian president 
-he | signed | the dotted line 
-he | s just doing | the dotted line 
-Secretary Rice | making | CNN s Zain Verjee 
-she | expects | the Russians 
-any irregular and paramilitary forces | entered | Russian troops 
-just | to break | VERJEE Now the cease fire 
-military hardware | was deployed | the sixth of August 
-Georgia proper need | to get out | the country 
-Russian peacekeepers | were already there | August 
-they | will be allowed | patrol 
-Secretary Rice | is only | international monitors and peacekeepers 
-We | do nt have | more specifics 
-the Russians | are expected to sign | this deal 
-we | re hearing | one U.S. official 
-President Medvedev | gets back | Russia 
-that deal | brokered | France 
-We | understand | people 
-President Saakashvili | wanted to nail | the language 
-multiple calls | made | the French and 
-We | understand | the meeting 
-practical | making | decisions 
-the west | ignoring | his warnings 
+<start>20080815180109.966</start>
+<end>20080815180619.642</end>
+President Bush | accuses | Russia 
+He | spoke | today 
+Russia | invaded | Georgia 
+Russia | has tended to view | the expansion of freedom and democracy 
+Russias borders | will advance | Russias interests 
+the president | spoke | he 
+He | delayed | the start of his vacation 
+State Condoleezza Rice | is | Georgia 
+she | s won | agreement 
+This deal | includes | concessions 
+Georgias president | lashed | the West 
+He | said | the West 
+ways | invited | Russias aggression 
+we | ll go | Moscow 
+Russias president | is also expected to sign | the cease fire 
+he | s going to sign | the cease fire agreement 
+he | is | One thing he said 
+Georgian President Mikheil Saakashvili | was | that press conference 
+He | blamed | European nations 
+He | said | he 
+he | said | the West 
+no European country | said | anything 
+those people | perpetrate | this arrogance 
+the Russian forces | pull | Georgia 
+that Russian forces | are still | control of that town 
+They | re | the city center 
+they | are | the outskirts of town 
+They | control | all of the roads 
+they | start | incursions 
+we | ve heard | Condoleezza Rice 
+She | was saying | Russians 
+We | ll wait to see | the next couple of days 
+Secretary Rice | to influence | Russia one way 
+We | re having | some interference 
+she | believes | the Russians 
+the plan | was worked | out 
+right now | was signed already | the leaders of those two breakaway regions 
+right now | went | the president of Georgia 
+right now | s coming back | Moscow 
+very hot rhetoric today | coming | many of the 
+we | re having | some technical difficulty 
+we | re going to continue to cover | the conflict 
+we | ll try to see | we 

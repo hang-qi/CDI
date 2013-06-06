@@ -1,5 +1,0 @@
-<story>Commercial|Block</story>
-<start>20080813152741.958</start>
-<end>20080813153041.070</end>
-he | getting | help 
-We | re | Beijing 

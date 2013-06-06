@@ -1,4 +1,4 @@
 <story>NULL</story>
-<start>20080811140003.552</start>
-<end>20080811140022.321</end>
-We | are ordering | the Olympic menu today 
+<start>20080811150011.000</start>
+<end>20080811150017.349</end>
+Developments | keep coming | the CNN NEWSROOM 

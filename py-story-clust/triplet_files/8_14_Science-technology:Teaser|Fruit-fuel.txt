@@ -1,4 +1,0 @@
-<story>Science-technology:Teaser|Fruit-fuel</story>
-<start>20080811154135.325</start>
-<end>20080811154446.482</end>
-An energy alternative | growing | Florida 

@@ -1,8 +1,28 @@
 <story>Government|Connecticut-teenage-curfew</story>
-<start>20080814170547.245</start>
-<end>20080814170620.679</end>
-the next month | re | 
-after p.m. City leaders | have imposed | an emergency curfew 
+<start>20080814180537.768</start>
+<end>20080814180718.235</end>
+kids | to keep | the kids 
+the aim of a curfew | starts | about seven hours 
+WTNH reporter Bob Wilson | has | reaction 
+They | re | the young faces of Hartford 
+shootings | shooting | a basketball 
+young kids | should be | the house 
+we | talked to liked | the idea of a curfew 
+people | were shot | the weekend 
+The mayor | announcing | starting Thursday night 
+officers | will be looking | teens loitering 
+they | ll be given | a written warning 
+they | ll be charged | a misdemeanor 
 Anything | can stop | kids 
 Washington | ll stop | anything 
+WILSON | LRB | camera RRB 
+the mayor | came | a press conference 
+all the kids | are rounded | up 
+the kids parents | will have to pick | their parents 
+he | s saying | they 
+They | want to see | the parents 
 the streets | getting | the parents 
+Reporter Bob Wilson | mentioned | a shooting 
+which | sparked | this curfew 
+A reported gang member | was killed | six young people 
+No ones been | arrested | A reported gang member yet 

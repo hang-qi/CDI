@@ -1,7 +1,8 @@
 <story>NULL</story>
-<start>20080815135951.000</start>
-<end>20080815140001.467</end>
-Tony Harris | is | today 
-Stay | informed | all day 
-A crowd | lifts | bus 
-a traffic officer | hoping to save | the pregnant woman 
+<start>20080815150012.000</start>
+<end>20080815150305.216</end>
+Developments | keep coming | this th day of August 
+Onlookers | lift | bus 
+Russian troops | make | sure Georgias navy 
+he | s got | six Olympic gold medals 
+the potential | to get | a lot 

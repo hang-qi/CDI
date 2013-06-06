@@ -1,4 +1,0 @@
-<story>Health|Gardasil</story>
-<start>20080811192634.791</start>
-<end>20080811193009.972</end>
-the vaccine | helps prevent | certain types of cervical cancer making teenagers 

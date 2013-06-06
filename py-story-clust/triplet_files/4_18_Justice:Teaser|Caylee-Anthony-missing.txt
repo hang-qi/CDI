@@ -1,4 +1,0 @@
-<story>Justice:Teaser|Caylee-Anthony-missing</story>
-<start>20080808171833.177</start>
-<end>20080808171839.851</end>
-police | show | an interest 

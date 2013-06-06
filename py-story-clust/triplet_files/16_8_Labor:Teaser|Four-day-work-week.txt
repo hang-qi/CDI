@@ -1,4 +1,0 @@
-<story>Labor:Teaser|Four-day-work-week</story>
-<start>20080813182258.908</start>
-<end>20080813182307.984</end>
-We | re going to take | a look 

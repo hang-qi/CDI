@@ -1,5 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080811150017.349</start>
-<end>20080811150024.723</end>
-Russian troops | have seized | a military base 
-Europe | are demanding | Russia 

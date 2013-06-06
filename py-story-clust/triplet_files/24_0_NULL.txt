@@ -1,5 +1,7 @@
 <story>NULL</story>
-<start>20080815130005.170</start>
-<end>20080815130014.246</end>
+<start>20080815135951.000</start>
+<end>20080815140001.467</end>
 Tony Harris | is | today 
-See events | come | the NEWSROOM 
+Stay | informed | all day 
+A crowd | lifts | bus 
+a traffic officer | hoping to save | the pregnant woman 

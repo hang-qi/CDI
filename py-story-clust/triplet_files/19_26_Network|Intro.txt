@@ -1,4 +1,0 @@
-<story>Network|Intro</story>
-<start>20080814145744.125</start>
-<end>20080814145752.567</end>
-Developments | keep coming | the CNN NEWSROOM 

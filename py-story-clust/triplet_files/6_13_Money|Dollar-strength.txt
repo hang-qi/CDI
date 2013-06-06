@@ -1,5 +1,0 @@
-<story>Money|Dollar-strength</story>
-<start>20080811132340.885</start>
-<end>20080811132409.847</end>
-We | need | Now 
-We | need | Now 

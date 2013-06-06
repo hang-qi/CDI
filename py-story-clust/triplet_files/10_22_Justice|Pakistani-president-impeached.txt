@@ -1,7 +1,0 @@
-<story>Justice|Pakistani-president-impeached</story>
-<start>20080811183032.428</start>
-<end>20080811183059.021</end>
-A provincial assembly | passed | a resolution today 
-three other assemblies | are expected to vote | similar measures 
-the next step | could be | impeachment 
-Pakistans ruling coalition | accuses | the president of corruption 

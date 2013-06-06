@@ -1,4 +1,0 @@
-<story>Art-culture|Chinese-cooking</story>
-<start>20080811174805.514</start>
-<end>20080811174805.514</end>
-the plant | was | earlier linked 

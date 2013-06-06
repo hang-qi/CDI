@@ -1,4 +1,5 @@
 <story>War:Teaser|South-Ossetia-war</story>
-<start>20080814180016.948</start>
-<end>20080814180026.124</end>
-the comings and goings of Russian troops | are | interpretation 
+<start>20080814190031.730</start>
+<end>20080814190048.680</end>
+a Georgian city | occupied | Russian troops 
+we | have got | the latest 

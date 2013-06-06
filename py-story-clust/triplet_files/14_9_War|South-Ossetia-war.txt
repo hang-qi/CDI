@@ -1,9 +1,0 @@
-<story>War|South-Ossetia-war</story>
-<start>20080813153041.070</start>
-<end>20080813153112.435</end>
-President Bush | is taking | action 
-signs Moscow | is | the agreement 
-the president | announced | he 
-secretary of state Condoleezza Rice | to meet | Frances leader 
-She | will sit down | President Nicolas Sarkozy 
-Rice | will continue | Georgias capital of Tbilisi 

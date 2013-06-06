@@ -1,30 +1,34 @@
 <story>War|South-Ossetia-war</story>
-<start>20080813130607.199</start>
-<end>20080813130912.517</end>
-Josh Levs | has pulled | a map of Georgia 
-Russian army | might be headed | Tbilisi 
-the Russian troops | even being | this road 
-troops | were heading | Gori 
-they | head | the capital 
-just | follow | me 
-the A.P. | calls | the only significant east 
-ability | to travel | Georgia 
-west ability | is | train 
-this area | has | a lot 
-people | need to travel | the port 
-they | have to go | this road 
-Russia | manages to control | part of that road 
-we | ve heard | Georgia 
-Russia | is allegedly trying to cut | the country 
-half | taking | control of that road 
-Lets | just go | this photo 
-we | have up | CNN.com 
-Gori | witnessing | the bombing of her apartment building 
-we | will keep | the human toll of what we re seeing 
-sure | do appreciate | Josh Levs 
-people | talk | government officials 
-he | was saying | he 
-they | had cordoned | that city 
-indeed looting | going | that city 
-He | said | he 
-people | coming in | Southern Ossetia 
+<start>20080813140511.443</start>
+<end>20080813141119.110</end>
+Moscow | wants to topple | his government 
+He | spoke | CNNs AMERICAN MORNING 
+We | will protect | our capital 
+We | will never surrender | the Russians 
+a dictatorial Russian regime | was | the past 
+We | do nt have | even a small percentage of the tanks and weapons Russia 
+we | had here | yesterday 
+people | rallying | the downtown capital 
+Those people | rallied | yesterday 
+we | re going to talk | our Matthew Chance 
+the morning | appeared to be heading | Tbilisi 
+They | seemed to be | a holding pattern 
+We | will get | the latest 
+We | ll take | a break 
+Let | go back | Georgia 
+the Russian troop movement | stirred | so much international concern 
+we | had | an opportunity 
+We | had | an opportunity 
+last hour | said | Russia 
+the intention | was to clean | Georgian military positions 
+comport | have | witness 
+We | re actually | the last bit of the military column 
+the Russian military column | s made | its way 
+as | did | South Ossetia combat zone 
+INAUDIBLE | came | LRB INAUDIBLE RRB 
+armored personnel carrier | providing | some light 
+the hundreds of troops | have moved down | this dusty lane 
+they | are trying to establish | some kind of demilitarized zone 
+we | were hearing | last hour 
+we | are going to get | the latest 
+we | will stay | top of that situation 

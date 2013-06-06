@@ -1,5 +1,4 @@
 <story>War:Teaser|South-Ossetia-war</story>
-<start>20080808150002.600</start>
-<end>20080808150008.673</end>
-Developments | keep coming | the CNN NEWSROOM 
-Russian tanks | move | a neighboring country 
+<start>20080808170019.151</start>
+<end>20080808170028.394</end>
+territory | claimed | a U.S. ally 

@@ -1,6 +1,0 @@
-<story>Accident|Memphis-bus-crash</story>
-<start>20080811180509.473</start>
-<end>20080811180526.991</end>
-Three people | were killed early | yesterday 
-only three people casino bus | overturned south | Memphis 
-More than survivors | are planning to fly | home 

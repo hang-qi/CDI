@@ -1,4 +1,0 @@
-<story>Celebrity:Teaser|Trump-purchases-McMahon-home</story>
-<start>20080815192002.366</start>
-<end>20080815192334.545</end>
-We | will explain why | Donald Trump 

@@ -1,7 +1,0 @@
-<story>Accident|Texas-bus-crash</story>
-<start>20080811131043.508</start>
-<end>20080811131110.602</end>
-Texas federal officials | have shut | a bus company 
-a rollover crash | killed | people 
-the same person | ordered | shutdown 
-they | believe | he 

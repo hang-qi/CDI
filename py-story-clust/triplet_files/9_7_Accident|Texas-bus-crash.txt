@@ -1,8 +1,0 @@
-<story>Accident|Texas-bus-crash</story>
-<start>20080811170707.826</start>
-<end>20080811170730.015</end>
-federal authorities | moved to shut | two companies 
-the charter bus | crashed | Texas 
-The driver | is | those 
-he | has been cited | drunken driving 
-two | appears | a recapped tire 

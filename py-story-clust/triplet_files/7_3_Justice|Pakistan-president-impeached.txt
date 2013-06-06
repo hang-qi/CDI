@@ -1,9 +1,0 @@
-<story>Justice|Pakistan-president-impeached</story>
-<start>20080811140648.907</start>
-<end>20080811140714.366</end>
-a move | to impeach | Pakistani President Pervez Musharraf 
-Parliament | introducing | a resolution today 
-Mr. Musharraf | seized | power 
-his adversaries | won | elections 
-February | set | a new government 
-the ruling coalition | is coming | a list of charges 

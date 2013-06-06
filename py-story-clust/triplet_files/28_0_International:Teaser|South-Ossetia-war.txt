@@ -1,4 +1,5 @@
 <story>International:Teaser|South-Ossetia-war</story>
-<start>20080815180027.557</start>
-<end>20080815180035.966</end>
-Russia | went | war 
+<start>20080815190012.444</start>
+<end>20080815190023.288</end>
+that Russian troops | invaded | the first place 
+We | are | Tbilisi 

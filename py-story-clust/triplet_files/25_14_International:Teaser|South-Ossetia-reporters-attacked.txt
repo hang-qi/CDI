@@ -1,4 +1,0 @@
-<story>International:Teaser|South-Ossetia-reporters-attacked</story>
-<start>20080815142532.963</start>
-<end>20080815142853.130</end>
-Bullets | peppered | the windshield 
