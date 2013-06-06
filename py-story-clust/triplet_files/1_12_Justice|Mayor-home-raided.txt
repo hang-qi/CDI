@@ -1,8 +1,0 @@
-<story>Justice|Mayor-home-raided</story>
-<start>20080808134446.082</start>
-<end>20080808134530.159</end>
-Two dogs | shot | death 
-the FBI | is opening | the civil rights investigation 
-the mayor | told | CNNs AMERICAN MORNING 
-he | is | all the attention 
-those people | may not have | the same platform and voice 

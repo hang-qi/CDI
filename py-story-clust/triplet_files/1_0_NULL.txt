@@ -1,4 +1,0 @@
-<story>NULL</story>
-<start>20080808130011.000</start>
-<end>20080808130031.030</end>
-See events | come | the NEWSROOM 
