@@ -1,0 +1,5 @@
+<story>Politics|Obama-campaign</story>
+<start>20080813134901.437</start>
+<end>20080813134912.748</end>
+Democrat Barack Obama | manages to squeeze | a fund raiser 
+Obama | took | $ . million 

@@ -1,0 +1,11 @@
+<story>Accident|Philadelphia-apartment-fire</story>
+<start>20080814140103.995</start>
+<end>20080814140144.869</end>
+we | are following | breaking developments 
+A massive inferno | has destroyed much | an upscale apartment complex 
+several firefighters | were overcome | heat 
+the hospital | started | late yesterday 
+none of the injuries | were | life 
+The fast moving blaze | broke | a building 
+different companies | battled | the flames 
+The fire | destroyed | the centerpiece of a multi million dollar revitalization project 

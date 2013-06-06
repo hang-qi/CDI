@@ -1,0 +1,6 @@
+<story>Disaster|Vietnam-tropical-storm</story>
+<start>20080811190930.668</start>
+<end>20080811191118.442</end>
+the hundreds | are racing | Vietnams northern mountains 
+tropical storm | triggered | deadly flash floods and landslides 
+Thousands of cattle | swept away | acres of crops 

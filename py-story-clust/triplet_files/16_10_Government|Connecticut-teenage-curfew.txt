@@ -1,0 +1,8 @@
+<story>Government|Connecticut-teenage-curfew</story>
+<start>20080813193441.744</start>
+<end>20080813193501.864</end>
+minors | starts | tomorrow 
+a shooting | left | one person dead 
+six children | hurt | the weekend 
+the ACLU | calling | the curfew illegal 
+he | s only trying to protect | children 

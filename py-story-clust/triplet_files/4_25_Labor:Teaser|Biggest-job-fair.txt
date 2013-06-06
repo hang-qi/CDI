@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Biggest-job-fair</story>
+<start>20080808183919.855</start>
+<end>20080808184223.305</end>
+people | looking | work 

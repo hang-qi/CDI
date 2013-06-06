@@ -1,0 +1,4 @@
+<story>Commercial|Block</story>
+<start>20080814182119.943</start>
+<end>20080814182249.566</end>
+KEILAR And of course | live | CNN Saturday night 

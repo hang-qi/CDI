@@ -1,0 +1,13 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080815170822.534</start>
+<end>20080815170855.367</end>
+Barack Obama | has | any public rallies or speeches 
+McCain | is | Aspen 
+he | had | breakfast 
+Obama | is wrapping | his vacation 
+Hawaii | heading | home 
+The Democratic candidate | soaked up | the sun 
+a few waves | saw | a few sights 
+evangelical Christian voters | are overwhelmingly supporting | McCain 
+they | ll vote | McCain 
+that group | voted | President Bush 

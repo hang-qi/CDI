@@ -1,0 +1,7 @@
+<story>Health|Hispanics-health-care</story>
+<start>20080813194854.863</start>
+<end>20080813194917.018</end>
+a quarter of Hispanics | do nt see | a doctor 
+the Pew Hispanic Center | finds | A new study from the Pew Hispanic Center 
+they | do nt have | insurance 
+others | choose to go | a spiritual healer 

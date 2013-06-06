@@ -1,0 +1,6 @@
+<story>Crime|Donation-jar-stolen</story>
+<start>20080813195908.743</start>
+<end>20080813195931.632</end>
+A local convenience store | began taking | donations 
+two crooks | broke | the store 
+they | re | the lookout 

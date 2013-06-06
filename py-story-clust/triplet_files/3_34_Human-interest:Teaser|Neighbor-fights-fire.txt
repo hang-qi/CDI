@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Neighbor-fights-fire</story>
+<start>20080808174703.886</start>
+<end>20080808175046.042</end>
+fear | to save | a life 

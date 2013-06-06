@@ -1,0 +1,5 @@
+<story>Celebrity:Teaser|Trump-purchases-McMahon-home</story>
+<start>20080815182515.077</start>
+<end>20080815182701.016</end>
+the tough housing market | hit | Ed McMahon 
+someone | came | his rescue 

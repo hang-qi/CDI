@@ -1,0 +1,17 @@
+<story>Weather|Northeast-storms</story>
+<start>20080811183129.452</start>
+<end>20080811183253.135</end>
+Something | is brewing | the Atlantic 
+Our Bonnie Schneider | is keeping | an eye 
+we | re watching | a broad area of low pressure 
+a second one | has been | tropical cyclone formation 
+we | re getting | a lot of that haran dust 
+the storm | works | its way west 
+the storm | will actually encounter | even more warm water 
+the storm | come | an area of more relaxed wind shear 
+this region | could see | tropical development 
+terms | getting upgraded | a depression 
+we | tend to see | a lot of activity 
+We | re still not yet | the peak of tropical season 
+we | get | the beginning of September 
+we | are keeping | a very close watch 
