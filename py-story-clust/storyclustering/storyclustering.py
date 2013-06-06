@@ -57,22 +57,29 @@ def learn_story_distances(triplets_file_path, co_mat_file, use_similarity=True, 
     return (dist, labels)
 
 
-def learn_story_histogram(file_in, np_voc, word_type='ALL', ocr_file=None):
-    """word_type = 'NP1', 'NP2', 'NP', 'ALL'"""
-    np_num = np_voc.size()
-    hist = np.zeros([1, np_num])
+def learn_story_histogram(file_in, words_voc, word_type='ALL', ocr_file=None):
+    """word_type = 'NP1', 'VP', 'NP2', 'ALL'"""
+    words_voc_num = words_voc.size()
+    hist = np.zeros([1, words_voc_num])
     document = []
 
     with open(file_in, 'r') as f:
         for line in f:
             if(line[0] != '<'):
                 line = (line[:-2]).lower()
+                words = []
                 triplets = line.split('|')
-                np1 = cleansing.clean(triplets[0].split())
-                np1_new = [w for w in np1 if np_voc.contain(w)]
-                document.extend(np1_new)
-                for w in np1_new:
-                    hist[0, np_voc.get_word_index(w)] += 1
+                if (word_type == 'NP1' or word_type == 'ALL'):
+                    words.extend(cleansing.clean(triplets[0].split()))
+                if (word_type == 'VP' or word_type == 'ALL'):
+                    words.extend(cleansing.clean(triplets[1].split()))
+                if (word_type == 'NP2' or word_type == 'ALL'):
+                    words.extend(cleansing.clean(triplets[2].split()))
+
+                words_new = [w for w in words if words_voc.contain(w)]
+                document.extend(words_new)
+                for w in words_new:
+                    hist[0, words_voc.get_word_index(w)] += 1
 
     # Read OCR file and combine into histogram if provided.
     orc_words = []
@@ -82,7 +89,16 @@ def learn_story_histogram(file_in, np_voc, word_type='ALL', ocr_file=None):
         # combine OCR into histogram
         # each word count 2
         # fill ocr_words
-        pass
+        with open(ocr_file, 'r') as f:
+            for line in f:
+                if(line[0] != '<'):
+                    line = (line[:-2]).lower()
+                    ocr_words.extend(cleansing.clean(line.split()))
+                    ocr_words_new = [w for w in ocr_words if words_voc.contain(w)]
+                    document.extend(ocr_words_new)
+                    for w in ocr_words_new:
+                        hist[0, words_voc.get_word_index(w)] += 1
+
 
     # Normalize.
     sum_hist = hist.sum()
