@@ -1,9 +1,7 @@
 import sys
 sys.path.append('..')
 import re
-import datetime
 import story
-import numpy as np
 from preprocessing import cleansing
 import codecs
 
@@ -28,9 +26,9 @@ def read_in_story(file_name):
                     stories[story_num].set_end_time(parts[1])
                     story_num += 1
                     insert = False
-            elif parts[0] == 'cco' and insert == True:
+            elif parts[0] == 'cco' and insert is True:
                 stories[story_num].add_line(parts[2])
-        print story_num
+        #print story_num
     return stories
 
 
@@ -40,15 +38,18 @@ def add_ocr(stories, ocr_file_name):
             if line[0] == '2':
                 line = line[:-1]
                 parts = line.split('|')
-                print parts[5]
                 ocr_results = parts[5].split()
                 ocr_time = parts[0]
                 if ocr_check(ocr_results):
-                    ocr_results = (parts[5].lower()).split()
+                    #print parts[5] + '------check ok'
+                    tmp = parts[5].lower()
+                    ocr_results = tmp.split()
                     story_id = ocr_find_story(ocr_results, ocr_time, stories)
                     if story_id >= 0:
-                        stories[story_id].add_ocr_line(ocr_results)
-    return stories			
+                        stories[story_id].add_ocr_line(parts[5])
+                        #print parts[5]
+                        #print story_id
+    return stories
 
 
 def ocr_check(ocr_results):
@@ -72,12 +73,17 @@ def ocr_find_story(ocr_results, ocr_time, stories):
     time_range_right_min = min([start_time_minute + 3, 59])
     ocr_words = cleansing.clean(ocr_results)
     ocr_words = [w for w in ocr_words if len(w) > 2]
+    if len(ocr_words) < 1:
+        return -1
     overlap = 0
     count = 0
     for story in stories:
         if time_overlap(time_range_left_min, time_range_right_min, start_time_second, story):
+            #print count
             p = words_overlap_percentage(ocr_words, story)
-            if p >= overlap:
+            #print ocr_words[0]
+            #print p
+            if p > overlap:
                 overlap = p
                 story_id = count
                 break
@@ -91,11 +97,11 @@ def ocr_find_story(ocr_results, ocr_time, stories):
 def time_overlap(time_range_left_min, time_range_right_min, start_time_second, story):
     left = max([time_range_left_min, story.start_time_minute])
     right = min([time_range_right_min, story.end_time_minute])
-    if left < right:
+    if left <= right:
         return True
     else:
         return False
-    
+
 
 def words_overlap_percentage(ocr_words, story):
     count = 0
@@ -119,11 +125,14 @@ def save_ocr(stories, story_id):
 
 
 def main():
-    file_name = '2008-08-08_1400_US_CNN_Newsroom'
-    story_id = 0
-    stories = read_in_story('txt/' + file_name + '.txt')
-    stories = add_ocr(stories, 'ocr/' + file_name + '.ocr.jpg.ocr')
-    save_ocr(stories, story_id)
+    with open('NewsList.txt', 'r') as f:
+        for line in f:
+            file_name = line[:-1]
+            story_id = 0
+            stories = read_in_story('txt/' + file_name + '.txt')
+            stories = add_ocr(stories, 'ocr/' + file_name + '.ocr.jpg.ocr')
+            save_ocr(stories, story_id)
+            print 'Finish ' + file_name
     return
 
 if __name__ == '__main__':

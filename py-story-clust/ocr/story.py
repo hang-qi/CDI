@@ -39,7 +39,9 @@ class Story(object):
         self.end_time_second = int(g[1])
 
     def add_line(self, line):
-        self.line_list.extend(cleansing.clean(line.split()))
+        words = cleansing.clean(line.split())
+        for w in words:
+            self.line_list.append(w)
 
     def add_ocr_line(self, line):
-        self.ocr.extend(line)
+        self.ocr.append(line)

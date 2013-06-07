@@ -99,7 +99,6 @@ def learn_story_histogram(file_in, words_voc, word_type='ALL', ocr_file=None):
                     for w in ocr_words_new:
                         hist[0, words_voc.get_word_index(w)] += 1
 
-
     # Normalize.
     sum_hist = hist.sum()
     if sum_hist != 0:
