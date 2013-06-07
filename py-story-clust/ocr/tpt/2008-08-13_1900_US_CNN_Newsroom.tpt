@@ -1,0 +1,1655 @@
+TOP|20080813190002|2008-08-13_1900_US_CNN_Newsroom
+COL|Communication Studies Archive, UCLA
+UID|08928d8e-696a-11dd-8bca-73b539780e11
+DUR|0:59:55.00
+CMT|
+LBT|2008-08-13 12:00 America/Los_Angeles
+TPF|transcripts.cnn.com|cnr.06.html
+HED|Condoleezza Rice Addresses Russia-Georgia Conflict; Arkansas Democratic Party Chair Shot
+SegStart|20080813190002.367|Accident|Dangling-window-washers
+SegEnd|20080813190639.697|Accident|Dangling-window-washers
+SegStart|20080813190640.231|International|South-Ossetia-Condoleeza-Rise
+SegEnd|20080813192539.502|International|South-Ossetia-Condoleeza-Rise
+SegStart|20080813192539.502|War|South-Ossetia-war
+SegEnd|20080813192743.926|War|South-Ossetia-war
+SegStart|20080813192744.260|Crime|Arkansas-democratic-headquarters-shooting
+SegEnd|20080813192909.779|Crime|Arkansas-democratic-headquarters-shooting
+SegStart|20080813192911.447|Crime:Teaser|Donation-jar-stolen
+SegEnd|20080813192922.692|Crime:Teaser|Donation-jar-stolen
+SegStart|20080813192922.992|Sports:Teaser|Olympic-swimmer-battling-cancer
+SegEnd|20080813192932.034|Sports:Teaser|Olympic-swimmer-battling-cancer
+SegStart|20080813192932.468|Human-interest:Teaser|Life-on-mars
+SegEnd|20080813192948.818|Human-interest:Teaser|Life-on-mars
+SegStart|20080813192949.018|Commercial|Block
+SegEnd|20080813193247.830|Commercial|Block
+SegStart|20080813193248.130|Accident|Dangling-window-washers
+SegEnd|20080813193339.215|Accident|Dangling-window-washers
+SegStart|20080813193340.149|Government|Arkansas-curfew
+SegEnd|20080813193441.744|Government|Arkansas-curfew
+SegStart|20080813193441.744|Government|Connecticut-teenage-curfew
+SegEnd|20080813193501.864|Government|Connecticut-teenage-curfew
+SegStart|20080813193501.864|International:Teaser|Georgia-conflict-Pachulia-interview
+SegEnd|20080813193522.184|International:Teaser|Georgia-conflict-Pachulia-interview
+SegStart|20080813193522.518|Activism:Teaser|Olympics-Tibet-protests
+SegEnd|20080813193533.629|Activism:Teaser|Olympics-Tibet-protests
+SegStart|20080813193533.629|Commercial|Block
+SegEnd|20080813193833.776|Commercial|Block
+SegStart|20080813193835.177|Crime|Arkansas-democratic-headquarters-shooting
+SegEnd|20080813193910.112|Crime|Arkansas-democratic-headquarters-shooting
+SegStart|20080813193910.412|War|South-Ossetia-war
+SegEnd|20080813193927.896|War|South-Ossetia-war
+SegStart|20080813193928.197|International|Georgia-conflict-Pachulia-interview
+SegEnd|20080813194318.927|International|Georgia-conflict-Pachulia-interview
+SegStart|20080813194319.194|Activism|Olympics-Tibet-protests
+SegEnd|20080813194430.799|Activism|Olympics-Tibet-protests
+SegStart|20080813194431.099|Labor:Teaser|Four-day-work-week
+SegEnd|20080813194439.808|Labor:Teaser|Four-day-work-week
+SegStart|20080813194440.108|Crime:Teaser|Donation-jar-stolen
+SegEnd|20080813194450.519|Crime:Teaser|Donation-jar-stolen
+SegStart|20080813194450.919|Commercial|Break
+SegEnd|20080813194752.500|Commercial|Break
+SegStart|20080813194752.500|Human-interest|Cindy-McCain-hand-hospitalized
+SegEnd|20080813194854.596|Human-interest|Cindy-McCain-hand-hospitalized
+SegStart|20080813194854.863|Health|Hispanics-health-care
+SegEnd|20080813194916.518|Health|Hispanics-health-care
+SegStart|20080813194917.018|Labor|Four-day-work-week
+SegEnd|20080813195207.555|Labor|Four-day-work-week
+SegStart|20080813195207.689|Sports:Teaser|Olympics-swimmer-battling-cancer
+SegEnd|20080813195218.600|Sports:Teaser|Olympics-swimmer-battling-cancer
+SegStart|20080813195219.033|Commercial|Block
+SegEnd|20080813195520.415|Commercial|Block
+SegStart|20080813195521.416|Human-interest|Cindy-McCain-hand-hospitalized
+SegEnd|20080813195615.770|Human-interest|Cindy-McCain-hand-hospitalized
+SegStart|20080813195616.504|Sports|Olympics-swimmer-battling-cancer
+SegEnd|20080813195908.743|Sports|Olympics-swimmer-battling-cancer
+SegStart|20080813195908.743|Crime|Donation-jar-stolen
+SegEnd|20080813195931.365|Crime|Donation-jar-stolen
+SegStart|20080813195931.632|Network|Anchor-chat
+SegEnd|20080813195956.657|Network|Anchor-chat
+TTL|CNN NEWSROOM
+OBT|2008-08-13 15:00 America/New_York
+NER_01|201305160613|Source_Program=transcript-aligner|Source_Person=Hang Qi
+20080813190002.367|20080813190002.367|SEG|Type=Intro
+20080813190002.367|20080813190232.953|SEG|Type=Story
+20080813190002.367|20080813190232.953|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190002.367|20080813190004.181|CCO|>>> DON LEMON, CNN ANCHOR: 
+20080813190223.881|20080813190225.696|CCO|In case you're just joining us, 
+20080813190225.696|20080813190227.510|CCO|it is the top of the hour. 
+20080813190227.510|20080813190229.324|CCO|You're watching the CNN NEWSROOM  
+20080813190229.324|20080813190231.138|CCO|with Don Lemon and Brianna 
+20080813190231.138|20080813190232.953|CCO|Keilar. 
+20080813190232.953|20080813190628.811|SEG|Type=Story
+20080813190232.953|20080813190234.767|CCO|This is all coming to us from Fort Lauderdale, Florida, >>> two workers reported hanging from 
+20080813190234.767|20080813190236.581|CCO|a scaffolding at 2201  North Ocean 
+20080813190236.581|20080813190238.396|CCO|Boulevard. 
+20080813190238.396|20080813190240.210|CCO|It is a hotel, the Ocean Mist Hotel, in 
+20080813190240.210|20080813190242.024|CCO|Fort Lauderdale, Florida. 
+20080813190243.838|20080813190245.653|CCO|One man -- of the window-washers, has already been 
+20080813190245.653|20080813190247.467|CCO|rescued from about five floors higher 
+20080813190247.467|20080813190249.281|CCO|than this person. 
+20080813190249.281|20080813190251.096|CCO|The highest floor believed here was the 
+20080813190251.096|20080813190252.910|CCO|14th floor where they were 
+20080813190252.910|20080813190254.724|CCO|trapped when this window-washing platform gave 
+20080813190254.724|20080813190256.539|CCO|way. 
+20080813190256.539|20080813190258.353|CCO|The second person you're watching being rescued by the fire department there, about 
+20080813190258.353|20080813190300.167|CCO|four or five floors below the 
+20080813190300.167|20080813190301.981|CCO|other person, 
+20080813190301.981|20080813190303.796|CCO|appears to be somewhat tangled in 
+20080813190303.796|20080813190305.610|CCO|his harness. 
+20080813190305.610|20080813190307.424|CCO|And firefighters are working feverishly 
+20080813190307.424|20080813190309.239|CCO|there to try to get him inside of that 
+20080813190309.239|20080813190311.053|CCO|window. 
+20080813190311.053|20080813190312.867|CCO|Also up on the roof, you see rescuers 
+20080813190312.867|20080813190314.681|CCO|trying to help out as well. 
+20080813190316.496|20080813190318.310|CCO|Not exactly sure what's going on, if they're 
+20080813190320.124|20080813190321.939|CCO|trying to loosen that rope 
+20080813190321.939|20080813190323.753|CCO|a little bit, so that they can get him inside of that window 
+20080813190323.753|20080813190325.567|CCO|without actually releasing the 
+20080813190325.567|20080813190327.381|CCO|entire harness there, safety harness. But that's 
+20080813190327.381|20080813190329.196|CCO|what's going on in Fort Lauderdale, 
+20080813190329.196|20080813190331.010|CCO|Florida. 
+20080813190331.010|20080813190332.824|CCO|We're following this developing story. Of course, we want to make sure, Brianna, that this person 
+20080813190332.824|20080813190334.639|CCO|is rescued safely before we 
+20080813190334.639|20080813190336.453|CCO|move away from the story. 
+20080813190336.453|20080813190347.339|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813190336.453|20080813190338.267|CCO|>> BRIANNA KEILAR, CNN ANCHOR: Yes, and it appears -- and it's really difficult 
+20080813190338.267|20080813190340.082|CCO|to see exactly what the crew is 
+20080813190340.082|20080813190341.896|CCO|trying to accomplish here, but it 
+20080813190341.896|20080813190343.710|CCO|looks as if they have -- they're actually attaching 
+20080813190343.710|20080813190345.524|CCO|one of these rescue members to some 
+20080813190345.524|20080813190347.339|CCO|sort of rope line. 
+20080813190347.339|20080813190349.153|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190347.339|20080813190349.153|CCO|>> LEMON: And they may be lowering him down. 
+20080813190349.153|20080813190358.224|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813190349.153|20080813190350.967|CCO|>> KEILAR: And you can see this top rope line 
+20080813190350.967|20080813190352.782|CCO|to the right side of those two men on the right side of the screen. 
+20080813190354.596|20080813190356.410|CCO|That, I  believe, is the rope to that leads 
+20080813190356.410|20080813190358.224|CCO|to the harness of this second 
+20080813190358.224|20080813190400.039|CCO|window-washer. 
+20080813190358.224|20080813190425.439|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190358.224|20080813190400.039|CCO|>> LEMON: Which 
+20080813190400.039|20080813190401.853|CCO|is very interesting, because he 
+20080813190401.853|20080813190403.667|CCO|is so close to that window. 
+20080813190403.667|20080813190405.482|CCO|It's so close to what looks like a rescue 
+20080813190405.482|20080813190407.296|CCO|and then the ladder as well, and just 
+20080813190407.296|20080813190409.110|CCO|shy of standing on top of that 
+20080813190409.110|20080813190410.925|CCO|ladder and just 
+20080813190410.925|20080813190412.739|CCO|shy of really being inside of 
+20080813190412.739|20080813190414.553|CCO|the window. 
+20080813190414.553|20080813190416.367|CCO|So, this is the situation that's playing 
+20080813190416.367|20080813190418.182|CCO|out live for us today here 
+20080813190418.182|20080813190419.996|CCO|in the NEWSROOM  in Fort Lauderdale. 
+20080813190421.810|20080813190423.625|CCO|And, as we said, you can only imagine 
+20080813190423.625|20080813190425.439|CCO|what this guy and what the other 
+20080813190425.439|20080813190427.253|CCO|person has gone through with this. 
+20080813190425.439|20080813190432.696|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813190425.439|20080813190427.253|CCO|>> KEILAR: I 
+20080813190427.253|20080813190429.067|CCO| bet he's feeling a whole lot 
+20080813190429.067|20080813190430.882|CCO|better because the fire and rescue 
+20080813190430.882|20080813190432.696|CCO|team is there. 
+20080813190432.696|20080813190432.696|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190432.696|20080813190434.510|CCO|>> LEMON: So, someone now descending from the side of this building, Brianna, as you so rightly indicated. 
+20080813190432.696|20080813190434.510|CCO|(CROSSTALK)
+20080813190432.696|20080813190556.153|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813190432.696|20080813190434.510|CCO|>> KEILAR: It looks like a 
+20080813190436.325|20080813190438.139|CCO|member of the fire rescue team there 
+20080813190439.953|20080813190441.767|CCO|about to rappel down the side of 
+20080813190441.767|20080813190443.582|CCO|this building. 
+20080813190443.582|20080813190445.396|CCO|Obviously, even though this man is 
+20080813190445.396|20080813190447.210|CCO|near the window, obviously, they 
+20080813190447.210|20080813190449.025|CCO|have decided it's a safety risk 
+20080813190449.025|20080813190450.839|CCO|to try to get him down that far. 
+20080813190450.839|20080813190452.653|CCO|This harness that he's attached to goes over his upper 
+20080813190452.653|20080813190454.468|CCO|legs. It's 
+20080813190454.468|20080813190456.282|CCO|going over his shoulders. So, he's 
+20080813190456.282|20080813190458.096|CCO|very much in that harness. 
+20080813190458.096|20080813190459.910|CCO|And obviously the clip or whatever to 
+20080813190459.910|20080813190501.725|CCO|get him out of it, they don't 
+20080813190501.725|20080813190503.539|CCO|feel as if they can either, one, access, or 
+20080813190503.539|20080813190505.353|CCO|that they can access it and keep him 
+20080813190505.353|20080813190507.168|CCO|safely. So, this 
+20080813190507.168|20080813190508.982|CCO|member of the Fort Lauderdale 
+20080813190508.982|20080813190510.796|CCO|Fire Department rappelling down 
+20080813190510.796|20080813190512.610|CCO|the side of this hotel, the Ocean Mist Hotel just on North 
+20080813190514.425|20080813190516.239|CCO|Ocean Boulevard. This is opposite -- if you were to turn the cameras around, you would see the beach. 
+20080813190518.053|20080813190519.868|CCO|This is a hotel right there on the beach in Fort Lauderdale. 
+20080813190521.682|20080813190523.496|CCO|And so, a number of units responding to 
+20080813190523.496|20080813190525.310|CCO|this. 
+20080813190525.310|20080813190527.125|CCO|They have, again, rescued already 
+20080813190527.125|20080813190528.939|CCO|one window-washer there in Fort Lauderdale. 
+20080813190530.753|20080813190532.568|CCO|It appears this man, who is dangling 
+20080813190532.568|20080813190534.382|CCO|about at the -- well, this is the rescuer. 
+20080813190536.196|20080813190538.011|CCO|But he is going down to the window-washer, who 
+20080813190538.011|20080813190539.825|CCO|is dangling around the 
+20080813190539.825|20080813190541.639|CCO|14th floor, 
+20080813190541.639|20080813190543.453|CCO|a window-washing platform. 
+20080813190543.453|20080813190545.268|CCO|Maybe a handful of floors above that 
+20080813190545.268|20080813190547.082|CCO|is where he and another window-washer were 
+20080813190547.082|20080813190548.896|CCO|when obviously it collapsed 
+20080813190548.896|20080813190550.711|CCO|maybe on one side, because we have seen 
+20080813190550.711|20080813190552.525|CCO|it dangling vertically, instead 
+20080813190552.525|20080813190554.339|CCO|of horizontally. 
+20080813190556.153|20080813190626.996|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190556.153|20080813190557.968|CCO|>> LEMON: We are watching this from several 
+20080813190557.968|20080813190559.782|CCO|vantage points here, different routers in the CNN NEWSROOM.  And, of 
+20080813190559.782|20080813190601.596|CCO|course, we want to thank our affiliates in Fort Lauderdale, Florida, WPLG  and WSVN,  
+20080813190601.596|20080813190603.411|CCO|for 
+20080813190603.411|20080813190605.225|CCO|bringing us these 
+20080813190605.225|20080813190607.039|CCO|live pictures. 
+20080813190607.039|20080813190608.853|CCO|And you're watching a rescue person descend 
+20080813190608.853|20080813190610.668|CCO|down the side of a building. How often do you see that on television? In 
+20080813190610.668|20080813190612.482|CCO|order to rescue a window-washer whose 
+20080813190612.482|20080813190614.296|CCO|platform somehow gave 
+20080813190614.296|20080813190616.111|CCO|way. 
+20080813190616.111|20080813190617.925|CCO|But the safety harness worked and 
+20080813190617.925|20080813190619.739|CCO|kept him attached. 
+20080813190619.739|20080813190621.554|CCO|And now they're trying to get him out of 
+20080813190621.554|20080813190623.368|CCO|that safety harness and back to safety 
+20080813190623.368|20080813190625.182|CCO|either on that ladder that 
+20080813190625.182|20080813190626.996|CCO|firefighters have raised to get to 
+20080813190626.996|20080813190628.811|CCO|the window or inside of the window. 
+20080813190626.996|20080813190628.811|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813190626.996|20080813190628.811|CCO|>> LEMON: OK.  
+20080813190628.811|20080813191436.155|SEG|Type=Story
+20080813190628.811|20080813190630.625|CCO|>>> 
+20080813190630.625|20080813190632.439|CCO|If you want to follow this, go 
+20080813190632.439|20080813190634.254|CCO|to CNN.com/live and we will have 
+20080813190634.254|20080813190636.068|CCO|the very latest for you in a just little 
+20080813190636.068|20080813190637.882|CCO|bit in the CNN NEWSROOM.  
+20080813190637.882|20080813190648.654|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813190637.882|20080813190640.231|CCO|>> KEILAR: Let's 
+20080813190640.231|20080813190642.336|CCO|get now to Secretary of State 
+20080813190642.336|20080813190644.442|CCO|Condoleezza Rice talking about 
+20080813190644.442|20080813190646.548|CCO|the Georgia/Russia conflict. 
+20080813190648.654|20080813190650.760|CCO|(JOINED IN PROGRESS)
+20080813190648.654|20080813190810.783|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813190648.654|20080813190650.760|CCO|>> CONDOLEEZZA RICE, U.S. SECRETARY OF STATE: Russia must now end its military operations. 
+20080813190652.866|20080813190654.972|CCO|There are concerning reports from 
+20080813190654.972|20080813190657.077|CCO|around Georgia that Russia has 
+20080813190657.077|20080813190659.183|CCO|not, in fact, in accordance with 
+20080813190659.183|20080813190701.289|CCO|the pledge that it took to the 
+20080813190701.289|20080813190703.395|CCO|French presidency, to President 
+20080813190703.395|20080813190705.501|CCO|Sarkozy, that Russia has 
+20080813190705.501|20080813190707.607|CCO|not ended its military operations. 
+20080813190709.713|20080813190711.818|CCO|Those operations must stop and must 
+20080813190711.818|20080813190713.924|CCO|stop now. 
+20080813190713.924|20080813190716.030|CCO|You also know that the president 
+20080813190716.030|20080813190718.136|CCO|has asked Secretary Gates to oversee 
+20080813190718.136|20080813190720.242|CCO|a humanitarian mission that 
+20080813190720.242|20080813190722.348|CCO|will be continuous and robust, 
+20080813190724.454|20080813190726.559|CCO|led by the American military. 
+20080813190726.559|20080813190728.665|CCO|We expect that Russia will respect 
+20080813190728.665|20080813190730.771|CCO|the humanitarian nature of 
+20080813190730.771|20080813190732.877|CCO|that mission and that ports, sea 
+20080813190732.877|20080813190734.983|CCO|lanes, air routes will all be 
+20080813190734.983|20080813190737.089|CCO|open for humanitarian purposes, 
+20080813190739.195|20080813190741.300|CCO|another pledge that Russia has undertaken 
+20080813190741.300|20080813190743.406|CCO|to the French. 
+20080813190743.406|20080813190745.512|CCO|And you know as well that I  am going 
+20080813190745.512|20080813190747.618|CCO|to leave this evening, first 
+20080813190747.618|20080813190749.724|CCO|to meet with the French president 
+20080813190749.724|20080813190751.830|CCO|and other members of the 
+20080813190751.830|20080813190753.936|CCO|French government in France, and then 
+20080813190753.936|20080813190756.041|CCO|I  will fly on to Tbilisi to underscore 
+20080813190756.041|20080813190758.147|CCO|the strong support of 
+20080813190758.147|20080813190800.253|CCO|the United States for the Georgian 
+20080813190800.253|20080813190802.359|CCO|people and for their democratically 
+20080813190802.359|20080813190804.465|CCO|elected government. 
+20080813190806.571|20080813190808.677|CCO|And with that, I  will take your questions. 
+20080813190810.783|20080813190848.688|NER_01|Person=QUESTION
+20080813190810.783|20080813190812.888|CCO|>> QUESTION: So 
+20080813190812.888|20080813190814.994|CCO|far, the Russians have 
+20080813190814.994|20080813190817.100|CCO|either already violated a cease-fire or 
+20080813190817.100|20080813190819.206|CCO|appear to, as both 
+20080813190819.206|20080813190821.312|CCO|you and the president have said today. 
+20080813190823.418|20080813190825.524|CCO|If that's the case, why is today's 
+20080813190825.524|20080813190827.629|CCO|response humanitarian aid 
+20080813190827.629|20080813190829.735|CCO|and further diplomatic outreach? 
+20080813190831.841|20080813190833.947|CCO|Isn't the time -- hasn't the time 
+20080813190833.947|20080813190836.053|CCO|come for you to say or do something 
+20080813190836.053|20080813190838.159|CCO|that carries a larger threat? 
+20080813190840.265|20080813190842.370|CCO|And, secondly, on behalf of the State 
+20080813190842.370|20080813190844.476|CCO|Department Correspondents Association, 
+20080813190844.476|20080813190846.582|CCO|we strongly urge you 
+20080813190846.582|20080813190848.688|CCO|to take a full complement of 
+20080813190848.688|20080813190850.794|CCO|reporters with you on a very important trip. Thank you. 
+20080813190848.688|20080813191055.040|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813190848.688|20080813190850.794|CCO|>> RICE: Thank you. And I 
+20080813190850.794|20080813190852.900|CCO| will leave the matter of travel arrangements 
+20080813190852.900|20080813190855.006|CCO|to my chief of staff, who's sitting right there. 
+20080813190857.111|20080813190859.217|CCO|You can assault him after this briefing. We're 
+20080813190901.323|20080813190903.429|CCO|doing our best. 
+20080813190903.429|20080813190905.535|CCO|There are logistical difficulties 
+20080813190905.535|20080813190907.641|CCO|because of the rapidity 
+20080813190907.641|20080813190909.747|CCO|with which we've decided 
+20080813190909.747|20080813190911.852|CCO|to do this, and so we'll 
+20080813190911.852|20080813190913.958|CCO|do our very best. 
+20080813190913.958|20080813190916.064|CCO|As to the first question, if, indeed, Russia 
+20080813190916.064|20080813190918.170|CCO|is violating a cease-fire -- 
+20080813190918.170|20080813190920.276|CCO|and I  have to say that 
+20080813190920.276|20080813190922.382|CCO|the reports are not encouraging 
+20080813190922.382|20080813190924.488|CCO|about Russia's respect 
+20080813190924.488|20080813190926.594|CCO|for this cease-fire, for 
+20080813190926.594|20080813190928.699|CCO|the pledge that it undertook -- that 
+20080813190930.805|20080813190932.911|CCO|will only serve to deepen the 
+20080813190932.911|20080813190935.017|CCO|isolation into which Russia is 
+20080813190935.017|20080813190937.123|CCO|moving. 
+20080813190937.123|20080813190939.229|CCO|It will only serve to deepen the 
+20080813190939.229|20080813190941.335|CCO|very strong, growing sense that Russia 
+20080813190941.335|20080813190943.440|CCO|is not behaving like the kind 
+20080813190943.440|20080813190945.546|CCO|of international partner that 
+20080813190945.546|20080813190947.652|CCO|it has said that it wants to 
+20080813190947.652|20080813190949.758|CCO|be. 
+20080813190949.758|20080813190951.864|CCO|And it's very clear to me that the 
+20080813190951.864|20080813190953.970|CCO|consequences of that, which are 
+20080813190953.970|20080813190956.076|CCO|already quite significant, because 
+20080813190956.076|20080813190958.181|CCO|the way that Russia has brutally 
+20080813190958.181|20080813191000.287|CCO|pushed this military operation 
+20080813191000.287|20080813191002.393|CCO|well beyond the bounds 
+20080813191002.393|20080813191004.499|CCO|of anything that might have related to South 
+20080813191004.499|20080813191006.605|CCO|Ossetia, calls into question 
+20080813191006.605|20080813191008.711|CCO|Russia's suitability for 
+20080813191008.711|20080813191010.817|CCO|all kinds of activities that 
+20080813191010.817|20080813191012.922|CCO|it has said that it wants to be a 
+20080813191012.922|20080813191015.028|CCO|part of. 
+20080813191015.028|20080813191017.134|CCO|And so we'll get to that matter in due 
+20080813191017.134|20080813191019.240|CCO|course. 
+20080813191019.240|20080813191021.346|CCO|Right now, the key is to remind Russia 
+20080813191021.346|20080813191023.452|CCO|that it has an obligation 
+20080813191023.452|20080813191025.558|CCO|to stop its military activities, 
+20080813191025.558|20080813191027.663|CCO|remind Russia that it is not to further 
+20080813191027.663|20080813191029.769|CCO|engage in activities that 
+20080813191029.769|20080813191031.875|CCO|threaten the territorial integrity 
+20080813191031.875|20080813191033.981|CCO|and sovereignty of Georgia, 
+20080813191036.087|20080813191038.193|CCO|that it should drop the language 
+20080813191038.193|20080813191040.299|CCO|concerning the democratically elected 
+20080813191040.299|20080813191042.405|CCO|government of Georgia that 
+20080813191042.405|20080813191044.510|CCO|has been thrown -- thrown around by some 
+20080813191044.510|20080813191046.616|CCO|Russian officials, 
+20080813191046.616|20080813191048.722|CCO|and that it's time to -- to stop this so 
+20080813191048.722|20080813191050.828|CCO|that Russia can begin to dig out 
+20080813191050.828|20080813191052.934|CCO|of the hole that it's gotten itself 
+20080813191052.934|20080813191055.040|CCO|into. 
+20080813191055.040|20080813191105.569|NER_01|Person=QUESTION
+20080813191055.040|20080813191057.146|CCO|>> QUESTION: Madam Secretary, why aren't you going to Moscow? 
+20080813191059.251|20080813191101.357|CCO|What does it serve -- if you're in the region, why wouldn't 
+20080813191101.357|20080813191103.463|CCO|you go and try to pass the U.S.  
+20080813191103.463|20080813191105.569|CCO|message along to the Russian leaders? 
+20080813191105.569|20080813191149.792|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191105.569|20080813191107.675|CCO|>> RICE: Well, I'm going to France, because 
+20080813191107.675|20080813191109.781|CCO|we support very strongly the 
+20080813191109.781|20080813191111.887|CCO|European presidency, 
+20080813191111.887|20080813191113.992|CCO|which is France, in its 
+20080813191113.992|20080813191116.098|CCO|mediation efforts. 
+20080813191116.098|20080813191118.204|CCO|I  think it's best that those mediation 
+20080813191118.204|20080813191120.310|CCO|efforts now be in the hands 
+20080813191120.310|20080813191122.416|CCO|of the French. 
+20080813191122.416|20080813191124.522|CCO|We'll continue to support those. 
+20080813191124.522|20080813191126.628|CCO|I  was this morning on the telephone 
+20080813191126.628|20080813191128.733|CCO|with Sergey Lavrov, my counterpart from 
+20080813191128.733|20080813191130.839|CCO|Russia. 
+20080813191130.839|20080813191132.945|CCO|And we have open communication to 
+20080813191132.945|20080813191135.051|CCO|the Russian government, and we're 
+20080813191135.051|20080813191137.157|CCO|communicating at very many 
+20080813191137.157|20080813191139.263|CCO|different levels and through very 
+20080813191139.263|20080813191141.369|CCO|many different channels our 
+20080813191141.369|20080813191143.474|CCO|concerns and our insistence that 
+20080813191143.474|20080813191145.580|CCO|Russia live up to the obligations 
+20080813191145.580|20080813191147.686|CCO|that it undertook just 
+20080813191147.686|20080813191149.792|CCO|24  hours ago. 
+20080813191149.792|20080813191200.321|NER_01|Person=QUESTION
+20080813191149.792|20080813191151.898|CCO|>> QUESTION: But 
+20080813191151.898|20080813191154.004|CCO|how can you be an honest broker 
+20080813191154.004|20080813191156.110|CCO|in the conflict when the Russians see you as too close to the Georgians? I  
+20080813191156.110|20080813191158.216|CCO|think 
+20080813191158.216|20080813191200.321|CCO|Lavrov said today that, you know, for the United States, Georgia 
+20080813191200.321|20080813191202.427|CCO|is their special project. 
+20080813191200.321|20080813191219.274|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191200.321|20080813191202.427|CCO|>> RICE: Georgia 
+20080813191202.427|20080813191204.533|CCO|is a democratic government 
+20080813191204.533|20080813191206.639|CCO|in the Caucasus that has 
+20080813191206.639|20080813191208.745|CCO|elected its leaders. To call it 
+20080813191208.745|20080813191210.851|CCO|a project of any place, of anybody perhaps 
+20080813191210.851|20080813191212.957|CCO|belies more about 
+20080813191212.957|20080813191215.062|CCO|the way Russia thinks about 
+20080813191215.062|20080813191217.168|CCO|its neighbors than the way it thinks 
+20080813191217.168|20080813191219.274|CCO|about U.S.  policy. 
+20080813191219.274|20080813191244.544|NER_01|Person=QUESTION
+20080813191219.274|20080813191221.380|CCO|>> QUESTION: President Saakashvili said 
+20080813191221.380|20080813191223.486|CCO|today that America is 
+20080813191223.486|20080813191225.592|CCO|losing the entire region. 
+20080813191225.592|20080813191227.698|CCO|He went on to say that the U.S.  
+20080813191227.698|20080813191229.803|CCO|made a major mistake by issuing too 
+20080813191229.803|20080813191231.909|CCO|soft a statement from Washington early on that 
+20080813191231.909|20080813191234.015|CCO|really gave Russia the green light to go ahead. And just secondly, if I  
+20080813191234.015|20080813191236.121|CCO|may, Senators Obama 
+20080813191236.121|20080813191238.227|CCO|and McCain have been having conversations 
+20080813191238.227|20080813191240.333|CCO|with leaders in Georgia and 
+20080813191240.333|20080813191242.439|CCO|Russia, as well. 
+20080813191242.439|20080813191244.544|CCO|Does that help or hurt? 
+20080813191244.544|20080813191436.155|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191244.544|20080813191246.650|CCO|>> RICE: I  have also been having conversations 
+20080813191246.650|20080813191248.756|CCO|with Senators Obama 
+20080813191248.756|20080813191250.862|CCO|and McCain. 
+20080813191250.862|20080813191252.968|CCO|And I  know that they are, at this 
+20080813191252.968|20080813191255.074|CCO|moment of difficult diplomacy, that 
+20080813191255.074|20080813191257.180|CCO|they are doing what they can 
+20080813191257.180|20080813191259.285|CCO|to support the efforts of the 
+20080813191259.285|20080813191301.391|CCO|administration. 
+20080813191301.391|20080813191303.497|CCO|Secondly, as to President Saakashvili, 
+20080813191303.497|20080813191305.603|CCO|I  was just on the phone 
+20080813191305.603|20080813191307.709|CCO|with him. 
+20080813191307.709|20080813191309.815|CCO|He welcomed the president's statement. I  think, if you look back a couple of days, you'll note that the United States was calling very 
+20080813191309.815|20080813191311.921|CCO|early for a cease-fire, calling 
+20080813191311.921|20080813191314.027|CCO|for forces to withdraw to 
+20080813191314.027|20080813191316.132|CCO|the August 6th lines. We 
+20080813191316.132|20080813191318.238|CCO|were at the Security Council already 
+20080813191318.238|20080813191320.344|CCO|at the end of last week, just 24 
+20080813191320.344|20080813191322.450|CCO| hours or so after the major military 
+20080813191322.450|20080813191324.556|CCO|operations began, 
+20080813191324.556|20080813191326.662|CCO|and making a very strong statement, 
+20080813191328.768|20080813191330.873|CCO|if you will look at what Zal Khalilzad said. 
+20080813191332.979|20080813191335.085|CCO|And even the statements that were made before 
+20080813191335.085|20080813191337.191|CCO|that, I  don't think you can 
+20080813191337.191|20080813191339.297|CCO|have any doubt but that the United 
+20080813191339.297|20080813191341.403|CCO|States has, from the very beginning, believed 
+20080813191341.403|20080813191343.509|CCO|that the South 
+20080813191343.509|20080813191345.614|CCO|Ossetian situation needed to 
+20080813191345.614|20080813191347.720|CCO|be resolved and resolved peacefully, 
+20080813191347.720|20080813191349.826|CCO|as we've been working 
+20080813191349.826|20080813191351.932|CCO|for months and months and months to 
+20080813191351.932|20080813191354.038|CCO|do, 
+20080813191354.038|20080813191356.144|CCO|but that Russia seriously overreached, 
+20080813191358.250|20080813191400.355|CCO|that Russia engaged in activities 
+20080813191400.355|20080813191402.461|CCO|that could not possibly 
+20080813191402.461|20080813191404.567|CCO|be associated simply with 
+20080813191404.567|20080813191406.673|CCO|the crisis in South Ossetia. 
+20080813191408.779|20080813191410.885|CCO|Bombing civilian targets -- or bombing 
+20080813191410.885|20080813191412.991|CCO|targets outside the zone 
+20080813191412.991|20080813191415.096|CCO|of conflict, some of which have 
+20080813191415.096|20080813191417.202|CCO|civilian uses, the activities 
+20080813191417.202|20080813191419.308|CCO|in Gori, the activities 
+20080813191419.308|20080813191421.414|CCO|at Poti, destruction 
+20080813191421.414|20080813191423.520|CCO|of Georgian infrastructure, 
+20080813191423.520|20080813191425.626|CCO|these are hardly moves that are related to South Ossetia. So I  think you will see 
+20080813191425.626|20080813191427.732|CCO|that the United States has been 
+20080813191427.732|20080813191429.838|CCO|saying that. We were also in very, very close contact 
+20080813191429.838|20080813191431.943|CCO|with our European allies to try to get 
+20080813191431.943|20080813191434.049|CCO|this mediation arranged last 
+20080813191434.049|20080813191436.155|CCO|week. 
+20080813191436.155|20080813192539.502|SEG|Type=Story
+20080813191436.155|20080813191438.261|CCO|>>> Let me just, on the question of 
+20080813191438.261|20080813191440.367|CCO|honest broker that you asked -- I'm 
+20080813191440.367|20080813191442.473|CCO|sorry I  didn't answer that question -- look, the 
+20080813191444.579|20080813191446.684|CCO|honest thing to do here is to call 
+20080813191446.684|20080813191448.790|CCO|it as you see it. 
+20080813191448.790|20080813191450.896|CCO|And what we see is that what has been 
+20080813191450.896|20080813191453.002|CCO|a longstanding and somewhat 
+20080813191453.002|20080813191455.108|CCO|volatile conflict did, in 
+20080813191455.108|20080813191457.214|CCO|fact, boil over. 
+20080813191457.214|20080813191459.320|CCO|That could have been handled, 
+20080813191459.320|20080813191501.425|CCO|but now Russia has pushed this well 
+20080813191501.425|20080813191503.531|CCO|beyond the bounds of the conflict 
+20080813191503.531|20080813191505.637|CCO|in South Ossetia. 
+20080813191505.637|20080813191507.743|CCO|That's what the president was reacting 
+20080813191507.743|20080813191509.849|CCO|to today. 
+20080813191509.849|20080813191511.955|CCO|That is why people are questioning 
+20080813191511.955|20080813191514.061|CCO|the nature of the ongoing 
+20080813191514.061|20080813191516.166|CCO|relationship with Russia. 
+20080813191518.272|20080813191520.378|CCO|That's why people are talking about 
+20080813191520.378|20080813191522.484|CCO|consequences for the kind of 
+20080813191522.484|20080813191524.590|CCO|relationship that Russia has wished 
+20080813191524.590|20080813191526.696|CCO|to build with the international 
+20080813191526.696|20080813191528.802|CCO|community. 
+20080813191528.802|20080813191547.754|NER_01|Person=QUESTION
+20080813191528.802|20080813191530.907|CCO|>> QUESTION: Sergey Lavrov also said that 
+20080813191530.907|20080813191533.013|CCO|the U.S.  must choose between supporting the 
+20080813191533.013|20080813191535.119|CCO|Georgian government 
+20080813191535.119|20080813191537.225|CCO|and a partnership with 
+20080813191537.225|20080813191539.331|CCO|Russia on international issues, meaning that -- meaning 
+20080813191541.437|20080813191543.543|CCO|that you shouldn't count anymore on 
+20080813191543.543|20080813191545.648|CCO|Russia's support on Iran, for 
+20080813191545.648|20080813191547.754|CCO|an example. 
+20080813191547.754|20080813191549.860|CCO|(CROSSTALK)
+20080813191547.754|20080813191745.683|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191547.754|20080813191549.860|CCO|>> RICE: Well, I'm not going to put words in 
+20080813191549.860|20080813191551.966|CCO|Sergey Lavrov's mouth, 
+20080813191551.966|20080813191554.072|CCO|but let me say this. 
+20080813191554.072|20080813191556.178|CCO|It's striking to me that anyone would 
+20080813191556.178|20080813191558.284|CCO|believe that Russia is involved 
+20080813191558.284|20080813191600.390|CCO|in trying to keep Iran from 
+20080813191600.390|20080813191602.495|CCO|getting the nuclear technologies that 
+20080813191602.495|20080813191604.601|CCO|could lead to a nuclear 
+20080813191604.601|20080813191606.707|CCO|weapon as a favor to the 
+20080813191606.707|20080813191608.813|CCO|United States. 
+20080813191608.813|20080813191610.919|CCO|If, indeed, Russia is interested in 
+20080813191610.919|20080813191613.025|CCO|a Middle East that is stable, 
+20080813191613.025|20080813191615.131|CCO|if, indeed, Russia is interested in 
+20080813191615.131|20080813191617.236|CCO|a Middle East in which the kinds 
+20080813191617.236|20080813191619.342|CCO|of activities that we have 
+20080813191619.342|20080813191621.448|CCO|promoted together in the quartet are 
+20080813191621.448|20080813191623.554|CCO|going to have any chance, 
+20080813191623.554|20080813191625.660|CCO|then clearly it's not going to be a Middle 
+20080813191625.660|20080813191627.766|CCO|East in which there's an Iran with a nuclear 
+20080813191627.766|20080813191629.872|CCO|weapon. 
+20080813191629.872|20080813191631.977|CCO|And I  think that's why Russia is involved 
+20080813191631.977|20080813191634.083|CCO|in efforts to stop Iran from violating the Security Council resolutions that have been passed. Similarly on North Korea, I  
+20080813191634.083|20080813191636.189|CCO|don't think Iran -- I 
+20080813191638.295|20080813191640.401|CCO| don't think the Russians 
+20080813191640.401|20080813191642.507|CCO|want an unstable Korean 
+20080813191642.507|20080813191644.613|CCO|peninsula. 
+20080813191644.613|20080813191646.718|CCO|So let's be very clear whose interests 
+20080813191646.718|20080813191648.824|CCO|are being served by the 
+20080813191648.824|20080813191650.930|CCO|partnership that Russia and the 
+20080813191650.930|20080813191653.036|CCO|United States have engaged in 
+20080813191653.036|20080813191655.142|CCO|on Iran or North Korea. 
+20080813191655.142|20080813191657.248|CCO|Again, it's not a favor to the United 
+20080813191657.248|20080813191659.354|CCO|States. 
+20080813191659.354|20080813191701.459|CCO|And as to choosing, the United States 
+20080813191701.459|20080813191703.565|CCO|has made very clear that it 
+20080813191703.565|20080813191705.671|CCO|is standing by the democratically 
+20080813191705.671|20080813191707.777|CCO|elected government 
+20080813191707.777|20080813191709.883|CCO|of Georgia. 
+20080813191709.883|20080813191711.989|CCO|This is a small neighbor of Russia. 
+20080813191714.095|20080813191716.201|CCO|It is a country that has made considerable 
+20080813191716.201|20080813191718.306|CCO|progress, in terms of 
+20080813191718.306|20080813191720.412|CCO|its economy. 
+20080813191720.412|20080813191722.518|CCO|It is still trying to secure its 
+20080813191722.518|20080813191724.624|CCO|democratic institutions. 
+20080813191724.624|20080813191726.730|CCO|And we've worked with Georgia on that. 
+20080813191726.730|20080813191728.836|CCO|But if anyone had any doubts about our 
+20080813191728.836|20080813191730.942|CCO|support for Georgia, you only 
+20080813191730.942|20080813191733.047|CCO|have to look at the fact that 
+20080813191733.047|20080813191735.153|CCO|it's a Millennium Challenge country, which 
+20080813191735.153|20080813191737.259|CCO|is one of the most important designations that the 
+20080813191737.259|20080813191739.365|CCO|United States 
+20080813191739.365|20080813191741.471|CCO|can make, 
+20080813191741.471|20080813191743.577|CCO|that we believe in the future of that 
+20080813191743.577|20080813191745.683|CCO|country. 
+20080813191745.683|20080813191806.741|NER_01|Person=QUESTION
+20080813191745.683|20080813191747.788|CCO|>> QUESTION: Yes, Madam Secretary, I  have two questions. 
+20080813191747.788|20080813191749.894|CCO|First, the Georgian president has 
+20080813191749.894|20080813191752.000|CCO|said in the afternoon that the U.S.  
+20080813191752.000|20080813191754.106|CCO|forces will control the airports 
+20080813191754.106|20080813191756.212|CCO|and the ports in Georgia. 
+20080813191758.318|20080813191800.424|CCO|Second, do you have any reaction 
+20080813191800.424|20080813191802.529|CCO|on the establishing diplomatic relations 
+20080813191802.529|20080813191804.635|CCO|between Syria and Lebanon? 
+20080813191806.741|20080813191914.129|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191806.741|20080813191808.847|CCO|>> RICE: Well, on the latter, we have long 
+20080813191808.847|20080813191810.953|CCO|stood for the normalization 
+20080813191810.953|20080813191813.059|CCO|of relations between Syria and Lebanon 
+20080813191813.059|20080813191815.165|CCO|on the basis of equality 
+20080813191815.165|20080813191817.270|CCO|and respect for Lebanese sovereignty. 
+20080813191819.376|20080813191821.482|CCO|One of the steps that has long been 
+20080813191821.482|20080813191823.588|CCO|required is the establishment 
+20080813191823.588|20080813191825.694|CCO|of a proper embassy 
+20080813191825.694|20080813191827.800|CCO|for Syria in Lebanon and 
+20080813191827.800|20080813191829.906|CCO|vice versa. 
+20080813191829.906|20080813191832.012|CCO|Now, if the Syrians will go ahead and demarcate the 
+20080813191832.012|20080813191834.117|CCO|border between Lebanon and Syria, and 
+20080813191834.117|20080813191836.223|CCO|respect Syria's sovereignty 
+20080813191836.223|20080813191838.329|CCO|in other ways, then this 
+20080813191838.329|20080813191840.435|CCO|will have proved to be a very good step. 
+20080813191842.541|20080813191844.647|CCO|As to the first question, the -- I 
+20080813191844.647|20080813191846.753|CCO| think that the president was very 
+20080813191846.753|20080813191848.858|CCO|clear about the nature of this 
+20080813191848.858|20080813191850.964|CCO|mission. 
+20080813191850.964|20080813191853.070|CCO|It is a humanitarian mission. 
+20080813191853.070|20080813191855.176|CCO|We expect the air routes, the land 
+20080813191855.176|20080813191857.282|CCO|routes, the sea routes to be 
+20080813191857.282|20080813191859.388|CCO|open for humanitarian activities. But 
+20080813191901.494|20080813191903.599|CCO|I  think the Pentagon has already 
+20080813191903.599|20080813191905.705|CCO|responded, noting that it 
+20080813191905.705|20080813191907.811|CCO|is not the intention of the United 
+20080813191907.811|20080813191909.917|CCO|States in some way to take 
+20080813191909.917|20080813191912.023|CCO|control of facilities, port 
+20080813191912.023|20080813191914.129|CCO|facilities or the like. 
+20080813191914.129|20080813191922.552|NER_01|Person=QUESTION
+20080813191914.129|20080813191916.235|CCO|>> QUESTION: Ms. Rice, the Russians are saying that, by facilitating 
+20080813191918.340|20080813191920.446|CCO|the return 
+20080813191920.446|20080813191922.552|CCO|of Georgian troops from Iraq, you're really involved in the 
+20080813191922.552|20080813191924.658|CCO|conflict. How do you respond to that? 
+20080813191922.552|20080813192000.458|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813191922.552|20080813191924.658|CCO|>> RICE: We 
+20080813191926.764|20080813191928.870|CCO|had an agreement with Georgia at the time of the Georgian deployment of its forces to Iraq that, if the Georgian government requested their return for purposes that Georgia 
+20080813191928.870|20080813191930.976|CCO|deemed a priority, that we would do so, we 
+20080813191930.976|20080813191933.081|CCO|would facilitate that. 
+20080813191933.081|20080813191935.187|CCO|And so we carried through on our agreement. 
+20080813191937.293|20080813191939.399|CCO|The point that I  made to my Russian 
+20080813191939.399|20080813191941.505|CCO|counterpart and that others made is 
+20080813191943.611|20080813191945.717|CCO|that, if there's a cease-fire, as 
+20080813191945.717|20080813191947.823|CCO|there should be and as Russia 
+20080813191947.823|20080813191949.928|CCO|has said it has stopped its military 
+20080813191949.928|20080813191952.034|CCO|operations, then the return 
+20080813191952.034|20080813191954.140|CCO|of those forces should be no 
+20080813191954.140|20080813191956.246|CCO|concern to anyone. 
+20080813191956.246|20080813191958.352|CCO|So we were simply living up to an 
+20080813191958.352|20080813192000.458|CCO|agreement. 
+20080813192000.458|20080813192042.575|NER_01|Person=QUESTION
+20080813192000.458|20080813192002.564|CCO|>> QUESTION: Madam Secretary, thank 
+20080813192002.564|20080813192004.669|CCO|you. 
+20080813192004.669|20080813192006.775|CCO|Today is a day of national mourning in Russia for the losses incurred in the regional aggression in South Ossetia by the Georgians. You well know that. Can you acknowledge the losses? And, also, 
+20080813192008.881|20080813192010.987|CCO|it has been reported that, before 
+20080813192010.987|20080813192013.093|CCO|the war, the U.S.  was urging 
+20080813192013.093|20080813192015.199|CCO|the Georgians not to -- not to respond 
+20080813192015.199|20080813192017.305|CCO|to provocations, not to do 
+20080813192017.305|20080813192019.410|CCO|anything rash, 
+20080813192019.410|20080813192021.516|CCO|so we all know what the Georgians 
+20080813192021.516|20080813192023.622|CCO|did ultimately. So 
+20080813192023.622|20080813192025.728|CCO|how did it happen? 
+20080813192025.728|20080813192027.834|CCO|Did you -- by the way, did you delegate responsibility, as has been reported, to 
+20080813192027.834|20080813192029.940|CCO|junior staffers? 
+20080813192032.046|20080813192034.151|CCO|Or, before the war, did the Georgians 
+20080813192034.151|20080813192036.257|CCO|listen to you and did 
+20080813192036.257|20080813192038.363|CCO|their own thing, 
+20080813192038.363|20080813192040.469|CCO|did not follow your suggestions? 
+20080813192040.469|20080813192042.575|CCO|Or were the real suggestions different 
+20080813192042.575|20080813192044.681|CCO|from what you said publicly? 
+20080813192042.575|20080813192301.562|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813192042.575|20080813192044.681|CCO|>> RICE: First 
+20080813192044.681|20080813192046.787|CCO|of all, I  am very sorry 
+20080813192046.787|20080813192048.892|CCO|for any loss of innocent life in 
+20080813192048.892|20080813192050.998|CCO|any part of the zone of conflict in 
+20080813192050.998|20080813192053.104|CCO|Georgia or in any other area surrounding 
+20080813192053.104|20080813192055.210|CCO|this conflict. 
+20080813192055.210|20080813192057.316|CCO|That is one reason that it is so important 
+20080813192057.316|20080813192059.422|CCO|to end the fighting. 
+20080813192059.422|20080813192101.528|CCO|The Georgians some time ago agreed 
+20080813192101.528|20080813192103.634|CCO|to a cease-fire and to the 
+20080813192103.634|20080813192105.739|CCO|withdrawal of their troops back 
+20080813192105.739|20080813192107.845|CCO|to the August 6th lines. Russia 
+20080813192107.845|20080813192109.951|CCO|needs to do the same, 
+20080813192109.951|20080813192112.057|CCO|and it needs to honor the agreement 
+20080813192112.057|20080813192114.163|CCO|that it made with the French 
+20080813192114.163|20080813192116.269|CCO|president. 
+20080813192116.269|20080813192118.375|CCO|As to the U.S.  diplomacy concerning 
+20080813192118.375|20080813192120.480|CCO|this conflict, you must 
+20080813192120.480|20080813192122.586|CCO|understand that this has been 
+20080813192122.586|20080813192124.692|CCO|a volatile area for some time. It 
+20080813192126.798|20080813192128.904|CCO|has been volatile now for more 
+20080813192128.904|20080813192131.010|CCO|than a decade. 
+20080813192131.010|20080813192133.116|CCO|And what we have tried to do is to 
+20080813192133.116|20080813192135.221|CCO|propose and to push any number 
+20080813192135.221|20080813192137.327|CCO|of peace plans -- there 
+20080813192137.327|20080813192139.433|CCO|was a Georgian peace plan for South Ossetia that 
+20080813192139.433|20080813192141.539|CCO|the United States tried to press. 
+20080813192143.645|20080813192145.751|CCO|I  myself was there in Georgia to 
+20080813192145.751|20080813192147.857|CCO|try to put together elements of a 
+20080813192147.857|20080813192149.962|CCO|peace plan with Frank-Walter Steinmeier, the German foreign 
+20080813192149.962|20080813192152.068|CCO|minister, to try to solve that conflict, 
+20080813192154.174|20080813192156.280|CCO|because I  think we all recognize 
+20080813192156.280|20080813192158.386|CCO|that there was volatility in this 
+20080813192158.386|20080813192200.492|CCO|region, 
+20080813192200.492|20080813192202.598|CCO|there was a lot of back-and-forth in 
+20080813192202.598|20080813192204.703|CCO|this region, 
+20080813192204.703|20080813192206.809|CCO|and that it was a dangerous situation. 
+20080813192208.915|20080813192211.021|CCO|Now, as I  said, this is something 
+20080813192211.021|20080813192213.127|CCO|that, had it been about 
+20080813192213.127|20080813192215.233|CCO|South Ossetia, could have been resolved 
+20080813192215.233|20080813192217.339|CCO|within certain limits. 
+20080813192217.339|20080813192219.445|CCO|Russian peacekeepers were in the 
+20080813192219.445|20080813192221.550|CCO|area. 
+20080813192221.550|20080813192223.656|CCO|That is true. 
+20080813192223.656|20080813192225.762|CCO|And Russia initially said it needed 
+20080813192225.762|20080813192227.868|CCO|to act to protect its peacekeepers 
+20080813192227.868|20080813192229.974|CCO|and its people. 
+20080813192229.974|20080813192232.080|CCO|But what Russia has done is well 
+20080813192232.080|20080813192234.186|CCO|beyond anything that anyone could 
+20080813192234.186|20080813192236.291|CCO|say is for the protection of 
+20080813192236.291|20080813192238.397|CCO|those people and for those peacekeepers. 
+20080813192240.503|20080813192242.609|CCO|Indeed, by prolonging the conflict, 
+20080813192242.609|20080813192244.715|CCO|the innocents in the 
+20080813192244.715|20080813192246.821|CCO|area are in greater danger. 
+20080813192246.821|20080813192248.927|CCO|And so, again, what would be very useful 
+20080813192248.927|20080813192251.032|CCO|and is absolutely necessary at this 
+20080813192251.032|20080813192253.138|CCO|point -- and, indeed, the United 
+20080813192253.138|20080813192255.244|CCO|States insists that Russia live up 
+20080813192255.244|20080813192257.350|CCO|to the obligations that it took 
+20080813192257.350|20080813192259.456|CCO|just 24  hours ago to end its 
+20080813192259.456|20080813192301.562|CCO|military operations. 
+20080813192301.562|20080813192326.832|NER_01|Person=QUESTION
+20080813192301.562|20080813192303.668|CCO|>> QUESTION: But, Madam Secretary, many people in Russia would say 
+20080813192303.668|20080813192305.773|CCO|what you did after 9/11  was really disproportionate 
+20080813192305.773|20080813192307.879|CCO|to the threat 
+20080813192307.879|20080813192309.985|CCO|and to the actual loss that 
+20080813192309.985|20080813192312.091|CCO|you incurred. 
+20080813192312.091|20080813192314.197|CCO|So the Russians are trying to ensure 
+20080813192314.197|20080813192316.303|CCO|the security of their forces, and 
+20080813192316.303|20080813192318.409|CCO|their citizens, and their 
+20080813192318.409|20080813192320.514|CCO|peacekeepers. 
+20080813192320.514|20080813192322.620|CCO|And they are moving, they are creating 
+20080813192322.620|20080813192324.726|CCO|a buffer zone. 
+20080813192324.726|20080813192326.832|CCO|What's wrong with that? 
+20080813192326.832|20080813192328.938|CCO|Why can you do this in Iraq? 
+20080813192326.832|20080813192503.702|NER_01|Person=Condoleezza Rice|Role=U.S. SECRETARY OF STATE
+20080813192326.832|20080813192328.938|CCO|>> RICE: I  am not going to sit here and 
+20080813192328.938|20080813192331.044|CCO|judge each Russian military operation. 
+20080813192333.150|20080813192335.256|CCO|I  am going to say that, when you start 
+20080813192335.256|20080813192337.361|CCO|bombing ports, and threatening to 
+20080813192337.361|20080813192339.467|CCO|bomb airfields, and bombing a city 
+20080813192339.467|20080813192341.573|CCO|like Gori, and bringing troops 
+20080813192341.573|20080813192343.679|CCO|in a flanking maneuver on 
+20080813192343.679|20080813192345.785|CCO|the western flank of Georgia, and 
+20080813192345.785|20080813192347.891|CCO|tying up the main roads between Georgia 
+20080813192347.891|20080813192349.997|CCO|-- between Tbilisi and Gori, 
+20080813192349.997|20080813192352.102|CCO|that's well beyond anything 
+20080813192352.102|20080813192354.208|CCO|that is needed to protect Russian 
+20080813192354.208|20080813192356.314|CCO|peacekeepers. And that 
+20080813192356.314|20080813192358.420|CCO|is why Russia is starting to 
+20080813192358.420|20080813192400.526|CCO|face international condemnation 
+20080813192400.526|20080813192402.632|CCO|for what it is doing. 
+20080813192404.738|20080813192406.843|CCO|This is not 1968  and 
+20080813192406.843|20080813192408.949|CCO|the invasion of Czechoslovakia, 
+20080813192408.949|20080813192411.055|CCO|where Russia can 
+20080813192411.055|20080813192413.161|CCO|threaten its neighbors, occupy a 
+20080813192413.161|20080813192415.267|CCO|capital, overthrow a government, and 
+20080813192415.267|20080813192417.373|CCO|get away with it. 
+20080813192417.373|20080813192419.479|CCO|Things have changed. 
+20080813192419.479|20080813192421.584|CCO|And so what Russia, I  think, is seeing 
+20080813192421.584|20080813192423.690|CCO|is that, to the degree that 
+20080813192423.690|20080813192425.796|CCO|this is about South Ossetia, 
+20080813192425.796|20080813192427.902|CCO|about even Abkhazia, let's accept that it is 
+20080813192427.902|20080813192430.008|CCO|time to move the forces back. 
+20080813192430.008|20080813192432.114|CCO|Let's accept that it is time, first, to 
+20080813192432.114|20080813192434.220|CCO|end the fighting, 
+20080813192434.220|20080813192436.325|CCO|move the forces back to August 6th, and 
+20080813192436.325|20080813192438.431|CCO|then have an international mediation 
+20080813192438.431|20080813192440.537|CCO|to try to resolve these conflicts within 
+20080813192440.537|20080813192442.643|CCO|the context of the 
+20080813192442.643|20080813192444.749|CCO|territorial integrity and sovereignty 
+20080813192444.749|20080813192446.855|CCO|of Georgia. 
+20080813192446.855|20080813192448.961|CCO|I  fully recognize that the people 
+20080813192448.961|20080813192451.066|CCO|of South Ossetia and the people of Abkhazia have concerns, 
+20080813192451.066|20080813192453.172|CCO|even grievances, and they 
+20080813192453.172|20080813192455.278|CCO|can be addressed within international 
+20080813192455.278|20080813192457.384|CCO|mediation. 
+20080813192457.384|20080813192459.490|CCO|And the United States has stood very 
+20080813192459.490|20080813192501.596|CCO|strongly for the proper treatment 
+20080813192501.596|20080813192503.702|CCO|of minorities. 
+20080813192503.702|20080813192539.502|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813192503.702|20080813192505.808|CCO|>> LEMON: OK.  Secretary of State Condoleezza 
+20080813192505.808|20080813192507.913|CCO|Rice, of course, speaking now, 
+20080813192507.913|20080813192510.019|CCO|talking about the conflict in -- going 
+20080813192510.019|20080813192512.125|CCO|on in Georgia. 
+20080813192512.125|20080813192514.231|CCO|And what she said, that Russia is facing 
+20080813192514.231|20080813192516.337|CCO|international condemnation 
+20080813192516.337|20080813192518.443|CCO|now, 
+20080813192518.443|20080813192520.549|CCO|and that they have gone well beyond 
+20080813192520.549|20080813192522.654|CCO|what is considered protection 
+20080813192522.654|20080813192524.760|CCO|for peacekeepers. 
+20080813192524.760|20080813192526.866|CCO|So, the secretary of state speaking 
+20080813192526.866|20080813192528.972|CCO|at the State Department 
+20080813192528.972|20080813192531.078|CCO|just moments ago. 
+20080813192531.078|20080813192533.184|CCO|You're watching that. 
+20080813192533.184|20080813192535.290|CCO|If you want to go and continue to 
+20080813192535.290|20080813192537.395|CCO|watch that press conference, you can go to CNN.com/live. 
+20080813192539.502|20080813192545.334|SEG|Type=Story
+20080813192539.502|20080813192541.446|CCO|There you see it right there next to me. Now >>> let's take a step back and give 
+20080813192541.446|20080813192543.390|CCO|you a look at what has happened 
+20080813192543.390|20080813192545.334|CCO|just in the past several hours. 
+20080813192545.334|20080813192555.055|SEG|Type=Story
+20080813192545.334|20080813192547.278|CCO|Cease-fire? >>> Well, 
+20080813192547.278|20080813192549.222|CCO|it doesn't look like a cease-fire, though 
+20080813192551.166|20080813192553.110|CCO|we haven't heard of any shots 
+20080813192553.110|20080813192555.055|CCO|fired today in the Black Sea nation of Georgia. 
+20080813192555.055|20080813192604.775|SEG|Type=Story
+20080813192555.055|20080813192556.999|CCO|>>> President Bush speaking today 
+20080813192556.999|20080813192558.943|CCO|at the White House says he 
+20080813192558.943|20080813192600.887|CCO|is skeptical about Russia's claim 
+20080813192600.887|20080813192602.831|CCO|that yesterday's cease-fire agreement 
+20080813192602.831|20080813192604.775|CCO|is being honored. 
+20080813192604.775|20080813192836.242|SEG|Type=Story
+20080813192604.775|20080813192606.719|CCO|Also, the >>> president announced 
+20080813192606.719|20080813192608.663|CCO|a humanitarian aid mission is already up 
+20080813192608.663|20080813192610.608|CCO|and running to help the Georgian people. At 
+20080813192610.608|20080813192612.552|CCO|least one military cargo plane 
+20080813192612.552|20080813192614.496|CCO|loaded with supplies has landed 
+20080813192614.496|20080813192616.440|CCO|in the capital city of Tbilisi. Earlier 
+20080813192618.384|20080813192620.328|CCO|today, Russian tanks moved 
+20080813192620.328|20080813192622.272|CCO|out of the Georgian city of Gori, towards Tbilisi, the capital, but then turned away. 
+20080813192622.272|20080813192624.216|CCO|CNN  senior international correspondent Matthew Chance rode with that convoy. 
+20080813192626.161|20080813192836.242|CLIP|Type=Video
+20080813192626.161|20080813192741.981|NER_01|Person=Matthew Chance|Role=CNN SENIOR INTERNATIONAL CORRESPONDENT
+20080813192626.161|20080813192628.105|CCO|>> MATTHEW CHANCE, CNN SENIOR INTERNATIONAL CORRESPONDENT: Well, these are dramatic developments 
+20080813192628.105|20080813192630.049|CCO|here in Georgia, where 
+20080813192630.049|20080813192631.993|CCO|the column of Russian military 
+20080813192631.993|20080813192633.937|CCO|vehicles advancing towards the 
+20080813192633.937|20080813192635.881|CCO|Georgian capital, Tbilisi, before 
+20080813192635.881|20080813192637.825|CCO|veering off to the north and settling in a location about 50  kilometers, 30 
+20080813192637.825|20080813192639.769|CCO| miles or so, from the Georgian capital. 
+20080813192641.714|20080813192643.658|CCO|There's a great deal of concern about what 
+20080813192643.658|20080813192645.602|CCO|was intended by the Russians by this. 
+20080813192645.602|20080813192647.546|CCO|It's the first time in this conflict 
+20080813192647.546|20080813192649.490|CCO|they have really broken out this 
+20080813192649.490|20080813192651.434|CCO|far from the conflict zone of South Ossetia and pushed deep into Georgian 
+20080813192651.434|20080813192653.378|CCO|territory. 
+20080813192653.378|20080813192655.322|CCO|It shows just how freely the Russians 
+20080813192655.322|20080813192657.267|CCO|are able to move now about 
+20080813192657.267|20080813192659.211|CCO|this country. 
+20080813192659.211|20080813192701.155|CCO|There was absolutely no resistance from 
+20080813192701.155|20080813192703.099|CCO|the Georgian forces, 
+20080813192703.099|20080813192705.043|CCO|not a shot fired, as Russian forces 
+20080813192705.043|20080813192706.987|CCO|pushed into Georgian territory. 
+20080813192708.931|20080813192710.875|CCO|One of the situations that this could 
+20080813192710.875|20080813192712.820|CCO|be a part of is Russia 
+20080813192712.820|20080813192714.764|CCO|forming some kind of buffer 
+20080813192714.764|20080813192716.708|CCO|zone, some kind of military exclusion 
+20080813192716.708|20080813192718.652|CCO|zone around 
+20080813192718.652|20080813192720.596|CCO|the territory of South Ossetia. 
+20080813192720.596|20080813192722.540|CCO|The Kremlin says that's important to establish -- to prevent 
+20080813192722.540|20080813192724.484|CCO|Georgian forces from carrying 
+20080813192724.484|20080813192726.428|CCO|out any attacks on South Ossetia in the future. 
+20080813192728.373|20080813192730.317|CCO|But the big concern here in Tbilisi tonight is that 
+20080813192730.317|20080813192732.261|CCO|this could be a first step in a Russian 
+20080813192732.261|20080813192734.205|CCO|advance on the Georgian capital. 
+20080813192736.149|20080813192738.093|CCO|That hasn't happened, but it's certainly 
+20080813192738.093|20080813192740.037|CCO|something that's worrying a lot of people 
+20080813192740.037|20080813192741.981|CCO|in Georgia's capital. Matthew Chance, CNN,  
+20080813192741.981|20080813192744.260|CCO|Tbilisi, Georgia. 
+20080813192741.981|20080813192836.242|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813192741.981|20080813192744.260|CCO|>> KEILAR: The 
+20080813192744.260|20080813192745.936|CCO|chairman of the Arkansas Democratic 
+20080813192745.936|20080813192747.613|CCO|Party is said to be in 
+20080813192747.613|20080813192749.290|CCO|critical condition after he was 
+20080813192749.290|20080813192750.967|CCO|shot at the party's headquarters 
+20080813192750.967|20080813192752.644|CCO|in Little Rock. 
+20080813192752.644|20080813192754.321|CCO|Authorities say that a man walked into 
+20080813192754.321|20080813192755.997|CCO|the building, started firing. 
+20080813192757.674|20080813192759.351|CCO|Party chairman Bill Gwatney was shot 
+20080813192759.351|20080813192801.028|CCO|and then rushed to a Little Rock 
+20080813192801.028|20080813192802.705|CCO|hospital. 
+20080813192802.705|20080813192804.382|CCO|Police say that the suspect fled 
+20080813192804.382|20080813192806.058|CCO|the scene and was shot while being 
+20080813192806.058|20080813192807.735|CCO|apprehended. 
+20080813192807.735|20080813192809.412|CCO|No word on the suspect's condition. 
+20080813192811.089|20080813192812.766|CCO|But we're getting reaction from people 
+20080813192812.766|20080813192814.443|CCO|in the Democratic Party. 
+20080813192814.443|20080813192816.120|CCO|IN  a statement, Democratic National Committee chairman Howard Dean saying -- quote -- "This senseless 
+20080813192816.120|20080813192817.796|CCO|tragedy comes as a shock 
+20080813192817.796|20080813192819.473|CCO|to all of us. 
+20080813192819.473|20080813192821.150|CCO|Our thoughts and prayers go out to 
+20080813192821.150|20080813192822.827|CCO|chairman Gwatney and his family. 
+20080813192824.504|20080813192826.181|CCO|And we pray for his full and speedy recovery. 
+20080813192827.857|20080813192829.534|CCO|While the investigation of the shooting continues, and our primary concern remains with 
+20080813192829.534|20080813192831.211|CCO|Bill and his family, 
+20080813192831.211|20080813192832.888|CCO|we commend the courageous and speedy action of law 
+20080813192832.888|20080813192834.565|CCO|enforcement officials in apprehending 
+20080813192834.565|20080813192836.242|CCO|the suspect." 
+20080813192836.242|20080813192908.102|SEG|Type=Story
+20080813192836.242|20080813192837.918|CCO|And >>> a statement just in from Hillary Clinton 
+20080813192837.918|20080813192839.595|CCO|and former President Bill Clinton Bill Clinton that says: "We 
+20080813192839.595|20080813192841.272|CCO|are stunned and shaken by today's shooting 
+20080813192841.272|20080813192842.949|CCO|at the Arkansas Democratic Party, where our good friend and 
+20080813192842.949|20080813192844.626|CCO|fellow Democrat, Bill Gwatney, was critically wounded." 
+20080813192844.626|20080813192846.303|CCO|It goes on to say, "Bill is not only a strong American 
+20080813192846.303|20080813192847.980|CCO|of Arkansas' Democratic Party, but he is also a cherished friend and confidant. Our 
+20080813192849.656|20080813192851.333|CCO|thoughts and prayers are with 
+20080813192851.333|20080813192853.010|CCO|Bill and his family today. 
+20080813192853.010|20080813192854.687|CCO|And we wish him a quick recovery." We will continue to follow this story, bring 
+20080813192854.687|20080813192856.364|CCO|you any updates that we have on the condition 
+20080813192856.364|20080813192858.041|CCO|of Bill Gwatney, chairman 
+20080813192858.041|20080813192859.717|CCO|of Arkansas' Democratic 
+20080813192859.717|20080813192901.394|CCO|Party, 
+20080813192901.394|20080813192903.071|CCO|or on the suspect in the shooting. 
+20080813192904.748|20080813192908.102|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813192904.748|20080813192906.425|CCO|>> LEMON: Absolutely. 
+20080813192906.425|20080813192908.102|CCO|This story still is unfolding today in the CNN NEWSROOM.  
+20080813192908.102|20080813192949.018|SEG|Type=Story
+20080813192908.102|20080813192911.447|CCO|Also this, >>> 
+20080813192911.447|20080813192913.321|CCO|a Kentucky community 
+20080813192913.321|20080813192915.195|CCO|opens its heart to help a teenage girl who is girl 
+20080813192915.195|20080813192917.069|CCO|battling cancer. 
+20080813192917.069|20080813192918.943|CCO|Now thieves have snatched a donation jar filled with money for 
+20080813192918.943|20080813192920.817|CCO|the girl and her family. 
+20080813192920.817|20080813192922.992|CCO|We will tell you how it happened. 
+20080813192922.992|20080813192949.018|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813192922.992|20080813192925.252|CCO|>> KEILAR: Eric Shanteau, despite incredible odds, he battled 
+20080813192925.252|20080813192927.513|CCO|his way to Beijing, and he got 
+20080813192927.513|20080813192929.773|CCO|his moment in the Olympic spotlight. And is 
+20080813192932.468|20080813192935.738|CCO|it a trick of the light on the 
+20080813192935.738|20080813192939.008|CCO|red planet? 
+20080813192939.008|20080813192942.278|CCO|Why some are saying that shadow 
+20080813192942.278|20080813192945.548|CCO|is there. 
+20080813192945.548|20080813192949.018|CCO|It could be evidence of life on Mars. Didn't we see this before?   
+20080813192949.018|20080813193248.130|SEG|Type=Commercial
+20080813192949.018|20080813192952.155|CCO|MARS. 
+20080813192955.292|20080813192958.429|CCO|SURE A LOT'S CHANGED 
+20080813192958.429|20080813193001.566|CCO|OVER THE YEARS... 
+20080813193001.566|20080813193004.703|CCO|BUT YOU TWO DO HAVE 
+20080813193004.703|20080813193007.840|CCO|A GROOVY THING GOING ON. 
+20080813193007.840|20080813193010.977|CCO|VIVA  
+20080813193010.977|20080813193014.114|CCO|VIAGRA!  
+20080813193014.114|20080813193017.251|CCO|DON'T LET 
+20080813193017.251|20080813193020.388|CCO|ERECTILE DYSFUNCTION... 
+20080813193020.388|20080813193023.525|CCO|GET IN THE WAY. 
+20080813193023.525|20080813193026.662|CCO|VIAGRA CAN HELP YOU ENJOY... 
+20080813193026.662|20080813193029.799|CCO|A MORE SATISFYING 
+20080813193029.799|20080813193032.936|CCO|SEXUAL EXPERIENCE. 
+20080813193032.936|20080813193036.073|CCO|AMERICA'S MOST PRESCRIBED 
+20080813193036.073|20080813193039.210|CCO|ED TREATMENT... 
+20080813193039.210|20080813193042.347|CCO|IS MARKING 
+20080813193042.347|20080813193045.484|CCO|ITS 10th ANNIVERSARY. 
+20080813193045.484|20080813193048.621|CCO|WANT TO LEARN MORE? 
+20080813193048.621|20080813193051.759|CCO|THE FACTS ARE THERE 
+20080813193051.759|20080813193054.896|CCO|TO GREET YOU AT Viagra.com 
+20080813193054.896|20080813193058.033|CCO|ASK YOUR DOCTOR IF YOUR HEART 
+20080813193058.033|20080813193101.170|CCO|IS HEALTHY ENOUGH FOR SEX. 
+20080813193101.170|20080813193104.307|CCO|DON'T TAKE VIAGRA IF YOU TAKE 
+20080813193104.307|20080813193107.444|CCO|NITRATES FOR CHEST PAIN... 
+20080813193107.444|20080813193110.581|CCO|AS IT MAY CAUSE AN UNSAFE DROP 
+20080813193110.581|20080813193113.718|CCO|IN BLOOD PRESSURE. 
+20080813193113.718|20080813193116.855|CCO|SIDE EFFECTS MAY INCLUDE 
+20080813193116.855|20080813193119.992|CCO|HEADACHE, FLUSHING, 
+20080813193119.992|20080813193123.129|CCO|UPSET STOMACH, 
+20080813193123.129|20080813193126.266|CCO|AND ABNORMAL VISION. 
+20080813193129.403|20080813193132.540|CCO|TO AVOID 
+20080813193135.677|20080813193138.814|CCO|LONG-TERM INJURY, 
+20080813193138.814|20080813193141.951|CCO|SEEK IMMEDIATE MEDICAL HELP 
+20080813193141.951|20080813193145.088|CCO|FOR AN ERECTION LASTING... 
+20080813193145.088|20080813193148.225|CCO|MORE THAN FOUR HOURS. 
+20080813193148.225|20080813193151.363|CCO|STOP TAKING VIAGRA AND CALL 
+20080813193151.363|20080813193154.500|CCO|YOUR DOCTOR RIGHT AWAY... 
+20080813193154.500|20080813193157.637|CCO|IF YOU EXPERIENCE A SUDDEN 
+20080813193157.637|20080813193200.774|CCO|DECREASE IN VISION OR HEARING. 
+20080813193200.774|20080813193203.911|CCO|ASK YOUR DOCTOR 
+20080813193203.911|20080813193207.048|CCO|IF VIAGRA IS RIGHT FOR YOU. 
+20080813193207.048|20080813193210.185|CCO|VIVA VIAGRA!  
+20080813193210.185|20080813193213.322|CCO|[ Female Announcer ] 
+20080813193213.322|20080813193216.459|CCO|NO ONE LIKES A BATH TISSUE 
+20080813193216.459|20080813193219.596|CCO|THAT LEAVES PIECES BEHIND. 
+20080813193219.596|20080813193222.733|CCO|THAT'S WHY THERE'S 
+20080813193222.733|20080813193225.870|CCO|CHARMIN ULTRA STRONG. 
+20080813193225.870|20080813193229.007|CCO|WITH ITS DIAMONDWEAVE TEXTURE, 
+20080813193229.007|20080813193232.144|CCO|IT LEAVES FEWER PIECES BEHIND. 
+20080813193232.144|20080813193235.281|CCO|BECAUSE IT'S SOFT AND MORE 
+20080813193235.281|20080813193238.418|CCO|DURABLE SO IT HOLDS UP BETTER 
+20080813193238.418|20080813193241.555|CCO|THAN THE ULTRA RIPPLED BRAND. 
+20080813193241.555|20080813193244.692|CCO|CHARMIN ULTRA STRONG. 
+20080813193248.130|20080813193439.877|SEG|Type=Story
+20080813193248.130|20080813193340.149|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813193248.130|20080813193249.891|CCO|>>> LEMON: All right. Developing news into the CNN 
+20080813193249.891|20080813193251.653|CCO|NEWSROOM. 
+20080813193251.653|20080813193253.414|CCO| You watched it. 
+20080813193253.414|20080813193255.176|CCO|If you were watching us you saw it all unfold live. 
+20080813193255.176|20080813193256.937|CCO|You saw one of these window washers 
+20080813193256.937|20080813193258.699|CCO|being rescued in Fort Lauderdale, 
+20080813193258.699|20080813193300.460|CCO|Florida. 
+20080813193300.460|20080813193302.222|CCO|Just dangling there from a platform. 
+20080813193302.222|20080813193303.983|CCO|That's the first person to be rescued. A  
+20080813193303.983|20080813193305.745|CCO|second man about five floors. That was the fourteenth floor, by the way. A 
+20080813193305.745|20080813193307.507|CCO| second man about five floors lower 
+20080813193307.507|20080813193309.268|CCO|than that had to be rescued 
+20080813193309.268|20080813193311.030|CCO|as well. 
+20080813193311.030|20080813193312.791|CCO|Had problems getting his harness 
+20080813193312.791|20080813193314.553|CCO|off. 
+20080813193314.553|20080813193316.314|CCO|But we are hearing from our affiliates 
+20080813193316.314|20080813193318.076|CCO|that everything is OK.  
+20080813193318.076|20080813193319.837|CCO|Except 
+20080813193319.837|20080813193321.599|CCO|we are not sure -- there's 
+20080813193321.599|20080813193323.361|CCO|the guy at the bottom. 
+20080813193323.361|20080813193325.122|CCO|He's just next to the "just in" on our screen. There's the guy at the bottom of that 
+20080813193325.122|20080813193326.884|CCO|scaffolding or platform. 
+20080813193326.884|20080813193328.645|CCO|And he was hanging there and had 
+20080813193328.645|20080813193330.407|CCO|his safety harness. 
+20080813193330.407|20080813193332.168|CCO|They had some trouble getting it off. 
+20080813193332.168|20080813193333.930|CCO|Had to put another one on him and cut this one off. We're checking on the injuries. If we get that 
+20080813193333.930|20080813193335.691|CCO|within the next couple of minutes, 
+20080813193335.691|20080813193337.453|CCO|we'll bring it to you right here in the CNN NEWSROOM.  But all 
+20080813193337.453|20080813193340.149|CCO|appears to be well. 
+20080813193340.149|20080813193410.013|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813193340.149|20080813193342.015|CCO|>> KEILAR: A  small town in Arkansas is expanding 
+20080813193342.015|20080813193343.882|CCO|its controversial fight 
+20080813193343.882|20080813193345.748|CCO|against violent crime. 
+20080813193345.748|20080813193347.615|CCO|Last night, the Helena-West Helena City Council 
+20080813193347.615|20080813193349.481|CCO|voted unanimously to broaden a 24-hour curfew 
+20080813193349.481|20080813193351.348|CCO|for minors. 
+20080813193351.348|20080813193353.214|CCO|The no go zone is expanding from the current 10  
+20080813193353.214|20080813193355.081|CCO|blocks to other parts of the city. 
+20080813193356.947|20080813193358.814|CCO|The mayor says drastic measures are 
+20080813193358.814|20080813193400.680|CCO|needed because of drug related shootings and other crime. 
+20080813193400.680|20080813193402.547|CCO|But the American Civil Liberties Union 
+20080813193402.547|20080813193404.413|CCO|says the curfew tramples citizen' 
+20080813193404.413|20080813193406.280|CCO|rights. 
+20080813193406.280|20080813193408.146|CCO|Officials, though, undeterred by that. 
+20080813193410.013|20080813193439.877|CLIP|Type=Video
+20080813193410.013|20080813193421.212|NER_01|Person=Holly Dickson|Role=ARKANSAS ACLU
+20080813193410.013|20080813193411.879|CCO|>> HOLLY DICKSON, ARKANSAS ACLU: They feel they have a right. 
+20080813193411.879|20080813193413.746|CCO|They do intend to continue to saturate 
+20080813193413.746|20080813193415.612|CCO|and question everyone who 
+20080813193415.612|20080813193417.479|CCO|happens to be in an area. 
+20080813193417.479|20080813193419.345|CCO|But that is the unconstitutional 
+20080813193419.345|20080813193421.212|CCO|nature of it. 
+20080813193421.212|20080813193432.411|NER_01|Person=Mayor James Valley|Role=HELENA-WEST HELENA, ARKANSAS
+20080813193421.212|20080813193423.078|CCO|>> MAYOR JAMES VALLEY, HELENA-WEST HELENA, ARKANSAS: We are not particularly concerned 
+20080813193423.078|20080813193424.945|CCO|about the ACLU's approach. 
+20080813193426.811|20080813193428.678|CCO|Because we're trying to do a lawful job of making people safe. 
+20080813193430.544|20080813193432.411|CCO|It's a difficult job to do. 
+20080813193432.411|20080813193439.877|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813193432.411|20080813193434.277|CCO|>> KEILAR: The mayor says the issue will 
+20080813193434.277|20080813193436.144|CCO|be taken up again next month. 
+20080813193436.144|20080813193438.010|CCO|The first three days netted more than 
+20080813193438.010|20080813193439.877|CCO|30  arrests in the town of just 15,000.  
+20080813193439.877|20080813193538.776|SEG|Type=Story
+20080813193439.877|20080813193441.744|CCO|And >>> 
+20080813193441.744|20080813193443.979|CCO|a similar story in Hartford, 
+20080813193443.979|20080813193446.215|CCO|Connecticut where an emergency curfew for 
+20080813193446.215|20080813193448.450|CCO|minors starts tomorrow. 
+20080813193448.450|20080813193450.686|CCO|This prompted in part by a shooting that left one person dead 
+20080813193450.686|20080813193452.921|CCO|and six children hurt over the weekend. 
+20080813193452.921|20080813193455.157|CCO|One of those victims a seven-year-old shot in 
+20080813193455.157|20080813193457.392|CCO|the head. 
+20080813193457.392|20080813193459.628|CCO|Here to the ACLU  calling the curfew illegal but Hartford's mayor says he's only trying to protect children. 
+20080813193457.392|20080813193522.518|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813193457.392|20080813193459.628|CCO|>> LEMON: The 
+20080813193501.864|20080813193504.404|CCO|conflict in Georgia, bombs and bullets and also deaths, sadly, is half 
+20080813193504.404|20080813193506.944|CCO|a world away. 
+20080813193506.944|20080813193509.484|CCO|But the link is heartbreakingly strong 
+20080813193509.484|20080813193512.024|CCO|for Georgian-born people living here 
+20080813193512.024|20080813193514.564|CCO|in the U.S. 
+20080813193514.564|20080813193517.104|CCO| One of them is the starting center 
+20080813193517.104|20080813193519.644|CCO|for the NBA's Atlanta Hawks. Zaza Pachulia on watching his homeland struggle. That's 
+20080813193519.644|20080813193522.518|CCO|coming up. 
+20080813193522.518|20080813193538.776|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813193522.518|20080813193525.295|CCO|>> KEILAR: And in China, a peaceful protest turns 
+20080813193525.295|20080813193528.073|CCO|not so much when the police 
+20080813193528.073|20080813193530.851|CCO|show up. 
+20080813193530.851|20080813193533.629|CCO|We'll have the story without the 
+20080813193533.629|20080813193538.776|CCO|hand in your face.   
+20080813193538.776|20080813193835.177|SEG|Type=Commercial
+20080813193538.776|20080813193543.923|CCO|IS TRYING TO FIND 
+20080813193549.070|20080813193554.217|CCO|THE OIL AND GAS 
+20080813193559.364|20080813193604.511|CCO|THAT'S HIDDEN BELOW THE 
+20080813193609.658|20080813193614.805|CCO|SURFACE OF THE EARTH. 
+20080813193619.952|20080813193625.099|CCO|LATELY, OUR RESEARCHERS 
+20080813193630.246|20080813193635.393|CCO|HAVE DEVELOPED 
+20080813193640.540|20080813193645.687|CCO|A NEW TECHNOLOGY 
+20080813193650.834|20080813193655.981|CCO|CALLED R3M. 
+20080813193701.128|20080813193706.276|CCO|YOU CAN'T SEE IT AND 
+20080813193711.423|20080813193716.570|CCO|YOU CAN'T FEEL IT 
+20080813193721.717|20080813193726.864|CCO|BUT THE EARTH HAS 
+20080813193732.011|20080813193737.158|CCO|ELECTROMAGNETIC WAVES 
+20080813193737.158|20080813193742.305|CCO|AND IF YOU BUILD THE RIGHT 
+20080813193742.305|20080813193747.452|CCO|KINDS OF LISTENING DEVICES 
+20080813193752.599|20080813193757.746|CCO|YOU CAN MAKE SENSE 
+20080813193802.893|20080813193808.040|CCO|OF THOSE WAVES. 
+20080813193808.040|20080813193813.187|CCO|SO USING THOSE TOOLS, WE CAN 
+20080813193813.187|20080813193818.334|CCO|SUPPLY MORE OF THE ENERGY 
+20080813193818.334|20080813193823.481|CCO|THAT WE NEED WITH LESS OF AN 
+20080813193823.481|20080813193828.628|CCO|IMPACT ON THE ENVIRONMENT. 
+20080813193828.628|20080813193835.177|CCO|@?@?@?@?@ 
+20080813193835.177|20080813193910.412|SEG|Type=Story
+20080813193835.177|20080813193910.412|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813193835.177|20080813193836.840|CCO|>>> LEMON: All right. Time to tell you some of the 
+20080813193836.840|20080813193838.504|CCO|stories we're working on for you today in the CNN NEWSROOM.  
+20080813193838.504|20080813193840.167|CCO|One 
+20080813193840.167|20080813193841.831|CCO|is a developing story unfolding 
+20080813193841.831|20080813193843.494|CCO|right now. 
+20080813193843.494|20080813193845.158|CCO|We've got new information from the 
+20080813193845.158|20080813193846.821|CCO|Associated Press. 
+20080813193846.821|20080813193848.485|CCO|The chairman of the Arkansas Democratic 
+20080813193848.485|20080813193850.149|CCO|Party has been shot and critically injured at the party headquarters in Little Rock. DNC  
+20080813193850.149|20080813193851.812|CCO|chairman Howard Dean has issued a statement that confirms that Bill 
+20080813193851.812|20080813193853.476|CCO|Gwatney was injured in the incident. 
+20080813193855.139|20080813193856.803|CCO|Also a suspect was shot and taken into 
+20080813193856.803|20080813193858.466|CCO|custody. 
+20080813193858.466|20080813193900.130|CCO|And we are learning from the Associated 
+20080813193900.130|20080813193901.794|CCO|Press, this is what they are reporting, that the suspect 
+20080813193901.794|20080813193903.457|CCO|has died. 
+20080813193903.457|20080813193905.121|CCO|CNN  is working to confirm this latest 
+20080813193905.121|20080813193906.784|CCO|information. 
+20080813193906.784|20080813193908.448|CCO|We'll bring that to you as we get 
+20080813193908.448|20080813193910.412|CCO|it in the CNN NEWSROOM. 
+20080813193910.412|20080813194501.295|SEG|Type=Story
+20080813193910.412|20080813193912.001|CCO| >>> President Bush says he expects 
+20080813193912.001|20080813193913.590|CCO|Russia to withdraw its forces 
+20080813193913.590|20080813193915.180|CCO|from the Republic of Georgia. 
+20080813193916.769|20080813193918.359|CCO|But he says he is concerned that 
+20080813193918.359|20080813193919.948|CCO|Russia may be violating a cease fire. 
+20080813193921.538|20080813193923.127|CCO|He's sending secretary of state Condoleezza 
+20080813193923.127|20080813193924.717|CCO|Rice to the region to express U.S. 
+20080813193924.717|20080813193926.306|CCO| support for the Georgian government. 
+20080813193928.197|20080813193956.164|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813193928.197|20080813193929.944|CCO|>> KEILAR: Well, it's not a declared war but really 
+20080813193929.944|20080813193931.692|CCO|looks like one. 
+20080813193931.692|20080813193933.440|CCO|Rolling tanks, dropping bombs and 
+20080813193933.440|20080813193935.188|CCO|thousands reported dead. 
+20080813193935.188|20080813193936.936|CCO|It's distressing enough to watch the Georgia-Russia conflict unfold from 
+20080813193936.936|20080813193938.684|CCO|a distance. 
+20080813193938.684|20080813193940.432|CCO|But for Georgian expatriates around the world, this 
+20080813193940.432|20080813193942.180|CCO|is their homeland turned tragically upside 
+20080813193942.180|20080813193943.928|CCO|down. 
+20080813193943.928|20080813193945.676|CCO|And joining me right now Zaza Pachulia, a 
+20080813193945.676|20080813193947.424|CCO|center for the Atlanta Hawks born 24  
+20080813193947.424|20080813193949.172|CCO|years ago in Tbilisi, Georgia. You 
+20080813193949.172|20080813193950.920|CCO|were supposed to go back to Georgia 
+20080813193950.920|20080813193952.668|CCO|for the Georgian National Games next week. 
+20080813193952.668|20080813193954.416|CCO|You're not going to be able to go. 
+20080813193956.164|20080813194017.139|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813193956.164|20080813193957.912|CCO|>> ZAZA PACHULIA, GEORGIAN-BORN NBA PLAYER: No, not right now because of the situation. 
+20080813193959.660|20080813194001.408|CCO|Everyone knows what's going on in 
+20080813194001.408|20080813194003.156|CCO|Georgia. 
+20080813194003.156|20080813194004.904|CCO|We still have to play in the European qualification, European 
+20080813194004.904|20080813194006.651|CCO|championship. 
+20080813194006.651|20080813194008.399|CCO|But I  talked to some guys that were over 
+20080813194008.399|20080813194010.147|CCO|there working out early and the tournament starts. Nobody 
+20080813194010.147|20080813194011.895|CCO|knows what's going on. 
+20080813194011.895|20080813194013.643|CCO|Everyone is kind of focused on the 
+20080813194013.643|20080813194015.391|CCO|political situation in Georgia. 
+20080813194017.139|20080813194024.131|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194017.139|20080813194018.887|CCO|>> KEILAR: Your family is there. 
+20080813194018.887|20080813194020.635|CCO|When was the last time you were able 
+20080813194020.635|20080813194022.383|CCO|to speak to them? 
+20080813194022.383|20080813194024.131|CCO|What have they been telling you? 
+20080813194024.131|20080813194043.359|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194024.131|20080813194025.879|CCO|>> PACHULIA: Of course, I  spoke to them several 
+20080813194025.879|20080813194027.627|CCO|times a day. Of 
+20080813194027.627|20080813194029.375|CCO|course, I'm very nervous. 
+20080813194029.375|20080813194031.123|CCO|This is the most stressful days I've 
+20080813194031.123|20080813194032.871|CCO|ever had in my life. 
+20080813194032.871|20080813194034.619|CCO|Especially I'm so far from my country, 
+20080813194034.619|20080813194036.367|CCO|from my family, from my 
+20080813194036.367|20080813194038.115|CCO|friends. 
+20080813194038.115|20080813194039.863|CCO|It's very sad. 
+20080813194039.863|20080813194041.611|CCO|And I'm trying to do my best to help them 
+20080813194041.611|20080813194043.359|CCO|and motivate them. 
+20080813194043.359|20080813194104.334|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194043.359|20080813194045.106|CCO|>> KEILAR: So at this point, Russian troops 
+20080813194045.106|20080813194046.854|CCO|do not appear to be heading towards 
+20080813194046.854|20080813194048.602|CCO|Tbilisi. They 
+20080813194048.602|20080813194050.350|CCO|haven't gone to Tbilisi. It 
+20080813194050.350|20080813194052.098|CCO|hasn't suffered the military operations 
+20080813194052.098|20080813194053.846|CCO|that the city of Gori 
+20080813194053.846|20080813194055.594|CCO|has suffered. 
+20080813194055.594|20080813194057.342|CCO|But is that your fear? 
+20080813194057.342|20080813194059.090|CCO|And is that the fear of your family, 
+20080813194059.090|20080813194100.838|CCO|that the Russian military 
+20080813194100.838|20080813194102.586|CCO|will head for Tbilisi, the 
+20080813194102.586|20080813194104.334|CCO|capital? 
+20080813194104.334|20080813194128.805|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194104.334|20080813194106.082|CCO|>> PACHULIA: Gori is half an hour from 
+20080813194106.082|20080813194107.830|CCO|Tbilsi, it's very close. 
+20080813194107.830|20080813194109.578|CCO|When I  talked to my friends, they 
+20080813194109.578|20080813194111.326|CCO|sleep with their clothes on. 
+20080813194113.074|20080813194114.822|CCO|They never know what's going to happen. 
+20080813194116.570|20080813194118.318|CCO|You know, so Gori is so close to 
+20080813194118.318|20080813194120.066|CCO|Tbilsi. 
+20080813194120.066|20080813194121.814|CCO|They end up being ready for anything, 
+20080813194121.814|20080813194123.561|CCO|you know. 
+20080813194123.561|20080813194125.309|CCO|I  can't imagine how stressful and 
+20080813194125.309|20080813194127.057|CCO|how big a pressure it is on them. 
+20080813194128.805|20080813194134.049|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194128.805|20080813194130.553|CCO|>> KEILAR: Zaza, did you or did any of your friends 
+20080813194130.553|20080813194132.301|CCO|anticipate that someone like 
+20080813194132.301|20080813194134.049|CCO|this could happen? 
+20080813194134.049|20080813194142.789|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194134.049|20080813194135.797|CCO|>> PACHULIA: Well, I  hoped not. 
+20080813194135.797|20080813194137.545|CCO|You know, honestly, I  want that to mention 
+20080813194137.545|20080813194139.293|CCO|because of my age, a lot 
+20080813194139.293|20080813194141.041|CCO|of my friends were on the front line. 
+20080813194142.789|20080813194144.537|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194142.789|20080813194144.537|CCO|>> KEILAR: In the Georgian military? 
+20080813194144.537|20080813194156.773|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194144.537|20080813194146.285|CCO|>> PACHULIA: In Georgia. Yes. 
+20080813194146.285|20080813194148.033|CCO|With some of them, I  found some of 
+20080813194148.033|20080813194149.781|CCO|them, I  contacted some of them 
+20080813194149.781|20080813194151.529|CCO|over the phone. 
+20080813194151.529|20080813194153.277|CCO|Some of them, I  don't know what's 
+20080813194153.277|20080813194155.025|CCO|going on with them. 
+20080813194155.025|20080813194156.773|CCO|So it's a really crazy situation. 
+20080813194156.773|20080813194212.504|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194156.773|20080813194158.521|CCO|>> KEILAR: For a lot of people, Georgia seems 
+20080813194158.521|20080813194200.268|CCO|so far away. 
+20080813194200.268|20080813194202.016|CCO|Obviously not the case for you. 
+20080813194202.016|20080813194203.764|CCO|But if you were to communicate it 
+20080813194203.764|20080813194205.512|CCO|to our viewers or even to your 
+20080813194205.512|20080813194207.260|CCO|teammates, would you explain 
+20080813194207.260|20080813194209.008|CCO|to them why it's important 
+20080813194209.008|20080813194210.756|CCO|for the U.S.  to pay attention 
+20080813194210.756|20080813194212.504|CCO|to what's going on? 
+20080813194212.504|20080813194243.967|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194212.504|20080813194214.252|CCO|>> PACHULIA: It's very important. 
+20080813194214.252|20080813194216.000|CCO|First of all, with the U.S.  
+20080813194216.000|20080813194217.748|CCO|being involved, like they are involved 
+20080813194217.748|20080813194219.496|CCO|today, 
+20080813194219.496|20080813194221.244|CCO|there will be no war and there will 
+20080813194221.244|20080813194222.992|CCO|be peace in the country. 
+20080813194222.992|20080813194224.740|CCO|That's a very important thing, I 
+20080813194224.740|20080813194226.488|CCO| think, you know. 
+20080813194226.488|20080813194228.236|CCO|It's not only about Georgia. 
+20080813194228.236|20080813194229.984|CCO|The whole world don't want to see 
+20080813194229.984|20080813194231.732|CCO|war. So 
+20080813194231.732|20080813194233.480|CCO|obviously the U.S.  is a huge country. 
+20080813194235.228|20080813194236.976|CCO|They have a huge impact in the world. 
+20080813194238.723|20080813194240.471|CCO|So it's very important for them to 
+20080813194240.471|20080813194242.219|CCO|be aggressive and stop the war 
+20080813194242.219|20080813194243.967|CCO|and stop Russian aggression. 
+20080813194243.967|20080813194249.211|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194243.967|20080813194245.715|CCO|>> KEILAR: And how are you doing? 
+20080813194245.715|20080813194247.463|CCO|I  know your team's being very supportive. 
+20080813194249.211|20080813194308.439|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194249.211|20080813194250.959|CCO|>> PACHULIA: Definitely. 
+20080813194250.959|20080813194252.707|CCO|I've been in the Atlanta Hawks for four years. 
+20080813194254.455|20080813194256.203|CCO|I  have a very good relationship with 
+20080813194256.203|20080813194257.951|CCO|the owners and my teammates and the coaching 
+20080813194257.951|20080813194259.699|CCO|staff and teammates. 
+20080813194259.699|20080813194301.447|CCO|Everybody is supporting me and trying 
+20080813194301.447|20080813194303.195|CCO|to motivate me, you know. 
+20080813194303.195|20080813194304.943|CCO|Everybody is asking me if I  need 
+20080813194304.943|20080813194306.691|CCO|any help, they would do it. 
+20080813194306.691|20080813194308.439|CCO|That means a lot to me. 
+20080813194308.439|20080813194311.935|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194308.439|20080813194310.187|CCO|>> KEILAR: Zaza, thanks so much for joining 
+20080813194310.187|20080813194311.935|CCO|us today. 
+20080813194311.935|20080813194311.935|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194311.935|20080813194313.683|CCO|>> PACHULIA: Thank you. 
+20080813194311.935|20080813194315.431|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194311.935|20080813194313.683|CCO|>> KEILAR: Zaza Pachulia, center for the Hawks from Tblisi, Georgia. 
+20080813194315.431|20080813194317.178|CCO|Thanks for sharing. 
+20080813194315.431|20080813194315.431|NER_01|Person=Zaza Pachulia|Role=GEORGIAN-BORN NBA PLAYER
+20080813194315.431|20080813194317.178|CCO|>> PACHULIA: Thanks for having me. 
+20080813194315.431|20080813194340.675|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813194315.431|20080813194317.178|CCO|>> LEMON: Freedom 
+20080813194319.194|20080813194320.984|CCO|of speech, freedom of 
+20080813194320.984|20080813194322.774|CCO|protest in China. 
+20080813194322.774|20080813194324.564|CCO|Afraid not. 
+20080813194324.564|20080813194326.354|CCO|Especially not when the world is 
+20080813194326.354|20080813194328.144|CCO|watching. 
+20080813194328.144|20080813194329.934|CCO|This scene played out in Beijing this morning. 
+20080813194331.724|20080813194333.515|CCO|Seven Americans and one Japanese protester trying to stage a 
+20080813194333.515|20080813194335.305|CCO|free Tibet protest. 
+20080813194335.305|20080813194337.095|CCO|They didn't get very far. Chinese police shut them down and 
+20080813194337.095|20080813194338.885|CCO|arrested them, as well as the 
+20080813194338.885|20080813194340.675|CCO|man who shot this video. 
+20080813194340.675|20080813194501.295|CLIP|Type=Video
+20080813194340.675|20080813194416.478|NER_01|Person=John Ray|Role=ITN REPORTER
+20080813194340.675|20080813194342.465|CCO|>> JOHN RAY, ITN REPORTER: These people are arresting me. 
+20080813194344.255|20080813194346.045|CCO|I've been arrested by the Chinese 
+20080813194346.045|20080813194347.836|CCO|police for trying to cover 
+20080813194347.836|20080813194349.626|CCO|the protest here. 
+20080813194349.626|20080813194351.416|CCO|I  was inside the park. 
+20080813194351.416|20080813194353.206|CCO|I  was physically manhandled to the 
+20080813194353.206|20080813194354.996|CCO|ground and dragged out. 
+20080813194354.996|20080813194356.786|CCO|And then three or four more police 
+20080813194356.786|20080813194358.576|CCO|came, wrestled me into the 
+20080813194358.576|20080813194400.366|CCO|restaurant here and have taken 
+20080813194400.366|20080813194402.157|CCO|my shoes off me and taken my equipment 
+20080813194402.157|20080813194403.947|CCO|bag. 
+20080813194403.947|20080813194405.737|CCO|They've taken all the equipment I've 
+20080813194405.737|20080813194407.527|CCO|got. 
+20080813194407.527|20080813194409.317|CCO|They have wouldn't tell me why I've 
+20080813194409.317|20080813194411.107|CCO|been arrested. 
+20080813194411.107|20080813194412.897|CCO|Are you arresting me? 
+20080813194412.897|20080813194414.687|CCO|I  want to talk. 
+20080813194414.687|20080813194416.478|CCO|I  want to talk. 
+20080813194416.478|20080813194416.478|NER_01|Person=UNIDENTIFIED MALE
+20080813194416.478|20080813194418.268|CCO|>> UNIDENTIFIED MALE: 
+20080813194416.478|20080813194418.268|CCO|(SPEAKING FOREIGN LANGUAGE)
+20080813194416.478|20080813194416.478|NER_01|Person=John Ray|Role=ITN REPORTER
+20080813194416.478|20080813194418.268|CCO|>> RAY: 
+20080813194416.478|20080813194418.268|CCO|(SPEAKING FOREIGN LANGUAGE)
+20080813194416.478|20080813194416.478|NER_01|Person=UNIDENTIFIED FEMALE
+20080813194416.478|20080813194418.268|CCO|>> UNIDENTIFIED FEMALE: 
+20080813194416.478|20080813194418.268|CCO|(SPEAKING FOREIGN LANGUAGE)
+20080813194416.478|20080813194420.058|NER_01|Person=John Ray|Role=ITN REPORTER
+20080813194416.478|20080813194418.268|CCO|>> RAY: I'm 
+20080813194418.268|20080813194420.058|CCO|a journalist. 
+20080813194420.058|20080813194429.008|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813194420.058|20080813194421.848|CCO|>> LEMON: John Ray was later released. 
+20080813194421.848|20080813194423.638|CCO|He said police let him go after asking 
+20080813194423.638|20080813194425.428|CCO|him about his views on Tibet. A  
+20080813194425.428|20080813194427.218|CCO|police 
+20080813194427.218|20080813194429.008|CCO|spokesman says he was mistaken as an 
+20080813194429.008|20080813194431.099|CCO|activist. 
+20080813194429.008|20080813194440.108|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813194429.008|20080813194431.099|CCO|>> KEILAR: Utah's government 
+20080813194431.099|20080813194432.840|CCO|has shifted 
+20080813194432.840|20080813194434.582|CCO|to a four-day week. 
+20080813194434.582|20080813194436.324|CCO|But does it work for the employees? Two 
+20080813194436.324|20080813194438.066|CCO|working moms with two really 
+20080813194438.066|20080813194440.108|CCO|different takes. 
+20080813194440.108|20080813194501.295|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813194440.108|20080813194443.578|CCO|>> LEMON: No small change for a couple of 
+20080813194443.578|20080813194447.048|CCO|thieves caught on camera stealing 
+20080813194447.048|20080813194450.919|CCO|a donation jar from a sick 
+20080813194450.919|20080813194456.107|CCO|child. 
+20080813194501.295|20080813194752.500|SEG|Type=Commercial
+20080813194501.295|20080813194506.483|CCO|I'D LIKE A PLACE WHERE I CAN... 
+20080813194506.483|20080813194511.671|CCO|ENTERTAIN THE LADIES. 
+20080813194511.671|20080813194516.859|CCO|(purring)
+20080813194516.859|20080813194522.047|CCO|THIS IS SO 
+20080813194522.047|20080813194527.235|CCO|NOT RIGHT. 
+20080813194527.235|20080813194532.423|CCO|(woman)
+20080813194527.235|20080813194532.423|CCO|NOW'S A GREAT TIME 
+20080813194532.423|20080813194537.611|CCO|TO BUY A HOME. 
+20080813194537.611|20080813194542.799|CCO|FIND YOUR PERFECT PLACE 
+20080813194542.799|20080813194547.987|CCO|AT remax.com. 
+20080813194547.987|20080813194553.175|CCO|VISIT remax.com TODAY. 
+20080813194553.175|20080813194558.363|CCO|THERE'S NO WAY TO HIDE IT. 
+20080813194558.363|20080813194603.551|CCO|SIR, HAVE YOU BEEN 
+20080813194603.551|20080813194608.739|CCO|DRINKING TONIGHT? 
+20080813194608.739|20080813194613.927|CCO|IF YOU RIDE DRUNK, 
+20080813194613.927|20080813194619.115|CCO|YOU WILL GET CAUGHT... 
+20080813194619.115|20080813194624.303|CCO|AND YOU WILL GET ARRESTED. 
+20080813194624.303|20080813194629.491|CCO|with one of the best wind 
+20080813194629.491|20080813194634.679|CCO|corridors in the world. 
+20080813194634.679|20080813194639.867|CCO|Using private investment and 
+20080813194639.867|20080813194645.055|CCO|technology that already exists, 
+20080813194645.055|20080813194650.243|CCO|we can supply 20 percent 
+20080813194650.243|20080813194655.431|CCO|of our electricity needs. 
+20080813194655.431|20080813194700.619|CCO|Freeing us to build a bridge 
+20080813194700.619|20080813194705.807|CCO|to domestic alternative 
+20080813194705.807|20080813194710.995|CCO|fuels for transportation... 
+20080813194710.995|20080813194716.183|CCO|and break the stranglehold 
+20080813194716.183|20080813194721.371|CCO|of foreign oil. 
+20080813194721.371|20080813194726.559|CCO|I'm T. Boone Pickens. 
+20080813194726.559|20080813194731.747|CCO|This plan will work. 
+20080813194731.747|20080813194736.935|CCO|But it needs your help. 
+20080813194736.935|20080813194742.123|CCO|Join me. 
+20080813194742.123|20080813194747.311|CCO|We can take back 
+20080813194747.311|20080813194752.500|CCO|our energy future. 
+20080813194752.500|20080813195200.058|SEG|Type=Story
+20080813194752.500|20080813194917.018|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813194752.500|20080813194754.224|CCO|>>> LEMON: We have breaking news into the 
+20080813194754.224|20080813194755.949|CCO|CNN NEWSROOM  and it 
+20080813194755.949|20080813194757.674|CCO|involves the wife of presidential 
+20080813194757.674|20080813194759.399|CCO|hopeful John McCain. 
+20080813194801.124|20080813194802.849|CCO|Cindy McCain has been taken to the 
+20080813194802.849|20080813194804.574|CCO|hospital in suburban Michigan, suburban Detroit complaining 
+20080813194804.574|20080813194806.299|CCO|of pain in her 
+20080813194806.299|20080813194808.023|CCO|hand. 
+20080813194808.023|20080813194809.748|CCO|This is just coming in. 
+20080813194809.748|20080813194811.473|CCO|The CNN  political bureau confirming 
+20080813194811.473|20080813194813.198|CCO|this. 
+20080813194813.198|20080813194814.923|CCO|The wife of Republican presidential nominee 
+20080813194814.923|20080813194816.648|CCO|John McCain taken to Beaumont Hospital in 
+20080813194816.648|20080813194818.373|CCO|Royal Oak, Michigan after complaining 
+20080813194818.373|20080813194820.098|CCO|of pain in one of her 
+20080813194820.098|20080813194821.823|CCO|hands at a fundraising event in West Bloomfield. 
+20080813194821.823|20080813194823.547|CCO|John McCain, of course, will hold 
+20080813194823.547|20080813194825.272|CCO|a press conference shortly, 
+20080813194825.272|20080813194826.997|CCO|but not exactly related to this. 
+20080813194826.997|20080813194828.722|CCO|He may comment on that. We're not exactly sure how serious this is. All 
+20080813194828.722|20080813194830.447|CCO|our political team is hearing, 
+20080813194830.447|20080813194832.172|CCO|this involves pain in her 
+20080813194832.172|20080813194833.897|CCO|hand. 
+20080813194833.897|20080813194835.622|CCO|She had to go to the hospital. 
+20080813194835.622|20080813194837.347|CCO|"THE SITUATION ROOM"  starts in about 12 
+20080813194837.347|20080813194839.071|CCO| minutes. 
+20080813194839.071|20080813194840.796|CCO|They will follow all the breaking 
+20080813194840.796|20080813194842.521|CCO|developments when it comes 
+20080813194842.521|20080813194844.246|CCO|to this. 
+20080813194844.246|20080813194845.971|CCO|When we get new information while we're 
+20080813194845.971|20080813194847.696|CCO|on the air, we'll bring that 
+20080813194847.696|20080813194849.421|CCO|to you. 
+20080813194849.421|20080813194851.146|CCO|Cindy McCain taken to the hospital, 
+20080813194851.146|20080813194852.871|CCO|complaining of pain in 
+20080813194852.871|20080813194854.863|CCO|one of her hands. 
+20080813194854.863|20080813194856.409|CCO|Hispanics are the fastest-growing 
+20080813194856.409|20080813194857.956|CCO|segment of U.S.  
+20080813194857.956|20080813194859.503|CCO|population. 
+20080813194859.503|20080813194901.050|CCO|Yet a quarter of them don't see a doctor 
+20080813194901.050|20080813194902.596|CCO|regularly. 
+20080813194902.596|20080813194904.143|CCO|A  new study from the Pew Hispanic Center finds it's not because 
+20080813194904.143|20080813194905.690|CCO|they don't have insurance. 
+20080813194907.237|20080813194908.784|CCO|A  lot of them actually do. 
+20080813194908.784|20080813194910.330|CCO|It's largely because many are young 
+20080813194910.330|20080813194911.877|CCO|and healthy. 
+20080813194911.877|20080813194913.424|CCO|Now, others choose to go to a spiritual 
+20080813194913.424|20080813194914.971|CCO|healer instead according 
+20080813194914.971|20080813194917.018|CCO|to the study. 
+20080813194917.018|20080813194939.506|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813194917.018|20080813194918.892|CCO|>> LEMON: Well, CNN's John Zarrella has been taking 
+20080813194918.892|20080813194920.766|CCO|a look at the pluses and minuses 
+20080813194920.766|20080813194922.640|CCO|of a four-day workweek. 
+20080813194922.640|20080813194924.514|CCO|It's being implemented more and more 
+20080813194924.514|20080813194926.388|CCO|places. 
+20080813194926.388|20080813194928.262|CCO|Last hour, we heard from some Utah State 
+20080813194928.262|20080813194930.136|CCO|employees who were unanimously thrilled 
+20080813194930.136|20080813194932.010|CCO|with their new schedules. 
+20080813194933.884|20080813194935.758|CCO|Everybody liked it. 
+20080813194935.758|20080813194937.632|CCO|For two working moms though, it's 
+20080813194937.632|20080813194939.506|CCO|more of a split decision. 
+20080813194939.506|20080813195200.058|CLIP|Type=Video
+20080813194939.506|20080813194956.372|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813194939.506|20080813194941.380|CCO|>> JOHN ZARRELLA, CNN CORRESPONDENT: Utah's state government 
+20080813194941.380|20080813194943.254|CCO|believes it can save $3  
+20080813194943.254|20080813194945.128|CCO|million a year by going to a four-day 
+20080813194945.128|20080813194947.002|CCO|workweek. 
+20080813194947.002|20080813194948.876|CCO|But just as important as the savings 
+20080813194948.876|20080813194950.750|CCO|it how it affects employees. 
+20080813194950.750|20080813194952.624|CCO|We spent some time with two who have 
+20080813194952.624|20080813194954.498|CCO|similar issues but very different 
+20080813194954.498|20080813194956.372|CCO|views. 
+20080813194956.372|20080813194956.372|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813194956.372|20080813194958.246|CCO|>> JOHN ZARRELLA, CNN CORRESPONDENT: Carolyn Dennis and Mylitta Barrett ...  
+20080813194956.372|20080813194958.246|NER_01|Person=Mylitta Barrett|Role=WORKING MOTHER
+20080813194956.372|20080813194958.246|CCO|>> MYLITTA BARRETT, WORKING MOTHER: And I  leave and get to work by 7:00.  
+20080813194958.246|20080813195009.490|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813194958.246|20080813195000.120|CCO|>> ZARRELLA: Both women work for the State of 
+20080813195000.120|20080813195001.994|CCO|Utah. 
+20080813195001.994|20080813195003.868|CCO|Both have children. 
+20080813195003.868|20080813195005.742|CCO|But the state's new four-day workweek has 
+20080813195005.742|20080813195007.616|CCO|impacted their lives 
+20080813195007.616|20080813195009.490|CCO|very differently. 
+20080813195009.490|20080813195013.238|NER_01|Person=Carolyn Dennis|Role=WORKING MOTHER
+20080813195009.490|20080813195011.364|CCO|>> CAROLYN DENNIS, WORKING MOTHER: My first instinct was, day care 
+20080813195011.364|20080813195013.238|CCO|closes at 6:00. 
+20080813195013.238|20080813195015.112|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813195013.238|20080813195015.112|CCO|>> ZARRELLA: Next reaction? 
+20080813195015.112|20080813195018.861|NER_01|Person=Carolyn Dennis|Role=WORKING MOTHER
+20080813195015.112|20080813195016.987|CCO|>> DENNIS: I'm going to have every Friday 
+20080813195016.987|20080813195018.861|CCO|to spend with my son. 
+20080813195018.861|20080813195035.727|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813195018.861|20080813195020.735|CCO|>> ZARRELLA: Carolyn's work day is 
+20080813195020.735|20080813195022.609|CCO|longer now. 
+20080813195022.609|20080813195024.483|CCO|In before 7:00,  out about 6:00,  
+20080813195024.483|20080813195026.357|CCO|with a half hour lunch. 
+20080813195026.357|20080813195028.231|CCO|Her son's hours in day care are longer, 
+20080813195028.231|20080813195030.105|CCO|too, but now just four days 
+20080813195030.105|20080813195031.979|CCO|a week. 
+20080813195031.979|20080813195033.853|CCO|Carolyn says their quality of life 
+20080813195033.853|20080813195035.727|CCO|just got better. 
+20080813195035.727|20080813195039.475|NER_01|Person=Carolyn Dennis|Role=WORKING MOTHER
+20080813195035.727|20080813195037.601|CCO|>> DENNIS: We're going to the planetarium. 
+20080813195039.475|20080813195041.349|CCO|Next Friday is the zoo. 
+20080813195039.475|20080813195054.467|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813195039.475|20080813195041.349|CCO|>> ZARRELLA: It's not working out 
+20080813195041.349|20080813195043.223|CCO|that way for single mom Mylitta Barrett. 
+20080813195045.097|20080813195046.971|CCO|She has three sons. 
+20080813195046.971|20080813195048.845|CCO|Joseph is severely disabled. 
+20080813195048.845|20080813195050.719|CCO|Today she used vacation time to leave 
+20080813195050.719|20080813195052.593|CCO|week early to pick him up at 
+20080813195052.593|20080813195054.467|CCO|day care. 
+20080813195054.467|20080813195103.837|NER_01|Person=Mylitta Barrett|Role=WORKING MOTHER
+20080813195054.467|20080813195056.341|CCO|>> BARRETT: Long-term care givers, we have 
+20080813195056.341|20080813195058.215|CCO|a balance that we have to maintain. 
+20080813195100.089|20080813195101.963|CCO|If you change that balance, my reserves 
+20080813195101.963|20080813195103.837|CCO|are really low already. 
+20080813195103.837|20080813195115.082|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813195103.837|20080813195105.711|CCO|>> ZARRELLA: Mylitta now needs a sitter 
+20080813195105.711|20080813195107.585|CCO|in the mornings to care for 
+20080813195107.585|20080813195109.459|CCO|Joseph until his bus comes to 
+20080813195109.459|20080813195111.333|CCO|pick him up. 
+20080813195111.333|20080813195113.207|CCO|There's less time for her other boys 
+20080813195113.207|20080813195115.082|CCO|as well. 
+20080813195115.082|20080813195124.452|NER_01|Person=Mylitta Barrett|Role=WORKING MOTHER
+20080813195115.082|20080813195116.956|CCO|>> BARRETT: I  mean, I  can't make up the soccer 
+20080813195116.956|20080813195118.830|CCO|game that I  missed on Monday 
+20080813195118.830|20080813195120.704|CCO|night because I'm having to 
+20080813195120.704|20080813195122.578|CCO|work and not get home until 7:00  
+20080813195122.578|20080813195124.452|CCO|at night. 
+20080813195124.452|20080813195141.318|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813195124.452|20080813195126.326|CCO|>> ZARRELLA: Mylitta knows hers is an extreme situation. 
+20080813195128.200|20080813195130.074|CCO|Her supervisors are being as flexible 
+20080813195130.074|20080813195131.948|CCO|as they can. 
+20080813195131.948|20080813195133.822|CCO|She says after 15  years with the state she can't quit and depends on the medical coverage. 
+20080813195133.822|20080813195135.696|CCO|Two 
+20080813195135.696|20080813195137.570|CCO|women, Mylitta Barrett, Carolyn 
+20080813195137.570|20080813195139.444|CCO|Dennis, one life harder, 
+20080813195139.444|20080813195141.318|CCO|one life better. 
+20080813195141.318|20080813195200.058|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT|Type=On-Camera
+20080813195141.318|20080813195143.192|CCO|>> ZARRELLA: State officials say that at first 
+20080813195143.192|20080813195145.066|CCO|blush, employees seem for the 
+20080813195145.066|20080813195146.940|CCO|most part absolutely giddy over 
+20080813195146.940|20080813195148.814|CCO|the four-day work week. 
+20080813195148.814|20080813195150.688|CCO|But they also understand that as much as they 
+20080813195150.688|20080813195152.562|CCO|want it to work for everyone, 
+20080813195152.562|20080813195154.436|CCO|that's simply not realistic. 
+20080813195156.310|20080813195158.184|CCO|John Zarrella, CNN,  Salt Lake City. 
+20080813195200.058|20080813195207.689|SEG|Type=Story
+20080813195200.058|20080813195207.689|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195200.058|20080813195201.932|CCO|>>> LEMON: Tomorrow we'll get yet another 
+20080813195201.932|20080813195203.806|CCO|angle in the next installment 
+20080813195203.806|20080813195205.680|CCO|of John Zarrella's look at the 
+20080813195205.680|20080813195207.689|CCO|four-day work week. 
+20080813195207.689|20080813195219.033|SEG|Type=Story
+20080813195207.689|20080813195210.416|CCO|As an Olympic swimmer, >>> he's defeated a lot of tough 
+20080813195210.416|20080813195213.144|CCO|opponents. 
+20080813195213.144|20080813195215.872|CCO|Now he's facing cancer. 
+20080813195215.872|20080813195219.033|CCO|A  world-class athlete talks about his longest 
+20080813195215.872|20080813195219.033|CCO|(ph)
+20080813195215.872|20080813195219.033|CCO|challenge yet.   
+20080813195219.033|20080813195521.416|SEG|Type=Commercial
+20080813195219.033|20080813195239.186|CCO|ONLY ALEVE IS SO STRONG... 
+20080813195239.186|20080813195259.340|CCO|IT CAN STOP PAIN ALL DAY 
+20080813195259.340|20080813195319.493|CCO|WITH TWO PILLS. 
+20080813195319.493|20080813195339.647|CCO|THAT WOULD TAKE EIGHT TYLENOL. 
+20080813195339.647|20080813195359.800|CCO|MOVE PAIN-FREE! 
+20080813195359.800|20080813195419.954|CCO|JUST MOVE ON UP  
+20080813195419.954|20080813195440.107|CCO|MOVE ON UP 
+20080813195440.107|20080813195500.261|CCO|TO ALEVE LIQUID GELS. 
+20080813195521.416|20080813195616.504|SEG|Type=Story
+20080813195521.416|20080813195557.651|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813195521.416|20080813195523.063|CCO|>>> KEILAR: A  developing story here in the 
+20080813195523.063|20080813195524.710|CCO|CNN NEWSROOM. 
+20080813195524.710|20080813195526.357|CCO| We told you a short time ago that 
+20080813195526.357|20080813195528.004|CCO|Senator John McCain's wife, 
+20080813195528.004|20080813195529.651|CCO|Cindy McCain, had been hospitalized 
+20080813195529.651|20080813195531.298|CCO|in Michigan while she 
+20080813195531.298|20080813195532.945|CCO|was accompanying her husband 
+20080813195532.945|20080813195534.592|CCO|on a campaign stop. 
+20080813195534.592|20080813195536.239|CCO|Well, we just got this in from the 
+20080813195536.239|20080813195537.886|CCO|McCain campaign from spokesman Jill Hazelbaker. She says at 
+20080813195539.533|20080813195541.181|CCO|some time during the rope line 
+20080813195541.181|20080813195542.828|CCO|an enthusiastic supporter shook 
+20080813195542.828|20080813195544.475|CCO|Mrs. McCain's hand and exacerbated an existing carpal 
+20080813195544.475|20080813195546.122|CCO|tunnel condition. 
+20080813195546.122|20080813195547.769|CCO|Out of an abundance of caution, she decided to leave the event and 
+20080813195547.769|20080813195549.416|CCO|go to the local hospital for 
+20080813195549.416|20080813195551.063|CCO|x-rays where she was treated for 
+20080813195551.063|20080813195552.710|CCO|a minor sprain. 
+20080813195552.710|20080813195554.357|CCO|So a minor sprain Cindy McCain suffering 
+20080813195554.357|20080813195556.004|CCO|from hand shakes on the 
+20080813195556.004|20080813195557.651|CCO|campaign trail. 
+20080813195557.651|20080813195559.299|CCO|Poor thing. 
+20080813195557.651|20080813195559.299|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195557.651|20080813195559.299|CCO|>> LEMON: Wasn't your first thought -- They shake a lot of hands. 
+20080813195559.299|20080813195600.946|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813195559.299|20080813195600.946|CCO|>> KEILAR: They sure do. 
+20080813195600.946|20080813195607.534|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195600.946|20080813195602.593|CCO|>> LEMON: The guys, do, kiss a lot of babies. 
+20080813195604.240|20080813195605.887|CCO|But they do shake a lot of hands. 
+20080813195607.534|20080813195609.181|CCO|We're glad it's nothing major in all of this. 
+20080813195607.534|20080813195614.122|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813195607.534|20080813195609.181|CCO|>> KEILAR: Speedy 
+20080813195609.181|20080813195610.828|CCO|recovery, though. 
+20080813195610.828|20080813195612.475|CCO|She's got a lot more hands to shake. 
+20080813195614.122|20080813195616.504|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195614.122|20080813195616.504|CCO|>> LEMON: Absolutely. 
+20080813195616.504|20080813195908.743|SEG|Type=Story
+20080813195616.504|20080813195618.336|CCO|>>> Time now for the Beijing report. 
+20080813195618.336|20080813195620.168|CCO|American swimmer Eric Shanteau's Olympic dream 
+20080813195620.168|20080813195622.000|CCO|has ended. 
+20080813195622.000|20080813195623.833|CCO|He set a personal best in today's semifinal of the 200  
+20080813195623.833|20080813195625.665|CCO|meter breast stroke but wasn't enough to 
+20080813195625.665|20080813195627.497|CCO|get him into the finals sadly. So now 
+20080813195627.497|20080813195629.330|CCO|he prepares to take on his toughest 
+20080813195629.330|20080813195631.162|CCO|opponent yet, cancer. 
+20080813195631.162|20080813195632.994|CCO|Our Dr. Sanjay Gupta has the story. 
+20080813195632.994|20080813195908.743|CLIP|Type=Video
+20080813195632.994|20080813195636.659|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT|Type=Voice-Over
+20080813195632.994|20080813195634.827|CCO|>> DR. SANJAY GUPTA, CNN CHIEF MEDICAL CORRESPONDENT: He's been preparing 
+20080813195634.827|20080813195636.659|CCO|for Beijing his entire life. 
+20080813195636.659|20080813195642.156|NER_01|Person=Eric Shanteau|Role=OLYMPIC SWIMMER HAS CANCER
+20080813195636.659|20080813195638.491|CCO|>> ERIC SHANTEAU, OLYMPIC SWIMMER HAS CANCER: Dreaming about the Olympics, it's -- that's for 
+20080813195638.491|20080813195640.324|CCO|as long as i 
+20080813195640.324|20080813195642.156|CCO|can remember. 
+20080813195642.156|20080813195651.318|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195642.156|20080813195643.988|CCO|>> GUPTA: But just two months 
+20080813195643.988|20080813195645.821|CCO|away from realizing his dream, doctors 
+20080813195645.821|20080813195647.653|CCO|gave U.S.  swimmer Eric Shanteau devastating news. 
+20080813195649.485|20080813195651.318|CCO|Testicular cancer. 
+20080813195651.318|20080813195656.815|NER_01|Person=Eric Shanteau|Role=OLYMPIC SWIMMER HAS CANCER
+20080813195651.318|20080813195653.150|CCO|>> SHANTEAU: You get hit with basically 
+20080813195653.150|20080813195654.982|CCO|the biggest low you can 
+20080813195654.982|20080813195656.815|CCO|ever have in your life. 
+20080813195656.815|20080813195704.144|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195656.815|20080813195658.647|CCO|>> GUPTA: Then two weeks later, 
+20080813195658.647|20080813195700.479|CCO|the biggest high. 
+20080813195700.479|20080813195702.312|CCO|Twenty four- year-old Eric Shanteau won a spot on 
+20080813195702.312|20080813195704.144|CCO|the U.S.  Olympic swim team. 
+20080813195704.144|20080813195707.809|NER_01|Person=Eric Shanteau|Role=OLYMPIC SWIMMER HAS CANCER
+20080813195704.144|20080813195705.976|CCO|>> SHANTEAU: As far as my swimming career is concerned, that's obviously the biggest high. 
+20080813195707.809|20080813195731.629|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195707.809|20080813195709.641|CCO|>> GUPTA: Testicular cancer is 
+20080813195709.641|20080813195711.473|CCO|an extremely treatable disease. More than 95  
+20080813195711.473|20080813195713.306|CCO|percent of 
+20080813195713.306|20080813195715.138|CCO|cases are cured, 
+20080813195715.138|20080813195716.970|CCO|especially when they're caught 
+20080813195716.970|20080813195718.803|CCO|early. 
+20080813195718.803|20080813195720.635|CCO|Luckily, Shanteau's was. 
+20080813195720.635|20080813195722.467|CCO|He made the extremely difficult decision 
+20080813195722.467|20080813195724.300|CCO|to wait until after Beijing 
+20080813195724.300|20080813195726.132|CCO|to have his operation, 
+20080813195726.132|20080813195727.964|CCO|placing trust in his doctors who 
+20080813195727.964|20080813195729.797|CCO|are closely monitoring his condition. 
+20080813195731.629|20080813195744.455|NER_01|Person=Eric Shanteau|Role=OLYMPIC SWIMMER HAS CANCER
+20080813195731.629|20080813195733.461|CCO|>> SHANTEAU: I'm probably not going to be swimming 
+20080813195733.461|20080813195735.294|CCO|in four years regardless. 
+20080813195735.294|20080813195737.126|CCO|I'm looking at the end of my career 
+20080813195737.126|20080813195738.958|CCO|here, 
+20080813195738.958|20080813195740.791|CCO|whether I'm having treatment done 
+20080813195740.791|20080813195742.623|CCO|today or in another month. 
+20080813195742.623|20080813195744.455|CCO|It would make no difference. 
+20080813195744.455|20080813195802.779|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195744.455|20080813195746.288|CCO|>> GUPTA: Lance Armstrong, the 
+20080813195746.288|20080813195748.120|CCO|world's best-known testicular 
+20080813195748.120|20080813195749.952|CCO|cancer survivor is applauding 
+20080813195749.952|20080813195751.785|CCO|Shanteau's fight. 
+20080813195751.785|20080813195753.617|CCO|After Armstrong was diagnosed with a more advanced 
+20080813195753.617|20080813195755.449|CCO|form of the disease in 1996,  
+20080813195755.449|20080813195757.282|CCO|he went on to win seven Tours de 
+20080813195757.282|20080813195759.114|CCO|France. 
+20080813195759.114|20080813195800.946|CCO|Did you think you were going to 
+20080813195800.946|20080813195802.779|CCO|die? 
+20080813195802.779|20080813195819.270|NER_01|Person=Lance Armstrong|Role=TESTICULAR CANCER SURVIVOR
+20080813195802.779|20080813195804.611|CCO|>> LANCE ARMSTRONG, TESTICULAR CANCER SURVIVOR: You have moments for sure. 
+20080813195804.611|20080813195806.443|CCO|Moments of weakness where you think, 
+20080813195806.443|20080813195808.276|CCO|I'm going to die or perhaps 
+20080813195808.276|20080813195810.108|CCO|I'm going to die. 
+20080813195810.108|20080813195811.940|CCO|I  was totally committed, totally 
+20080813195811.940|20080813195813.773|CCO|focused, 
+20080813195813.773|20080813195815.605|CCO|and I  had complete faith in my doctors 
+20080813195815.605|20080813195817.437|CCO|and the medicine and the 
+20080813195817.437|20080813195819.270|CCO|procedures. 
+20080813195819.270|20080813195824.767|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195819.270|20080813195821.102|CCO|>> GUPTA: But here's the question -- in 
+20080813195822.934|20080813195824.767|CCO|Eric Shanteau's case, is holding off on 
+20080813195824.767|20080813195826.599|CCO|his treatment smart? 
+20080813195824.767|20080813195844.922|NER_01|Person=Dr. Otis Brawley|Role=AMERICAN CANCER SOCIETY
+20080813195824.767|20080813195826.599|CCO|>> DR. OTIS BRAWLEY, AMERICAN CANCER SOCIETY: It 
+20080813195826.599|20080813195828.431|CCO|is not unusual for someone 
+20080813195828.431|20080813195830.264|CCO|to delay getting treatment for several 
+20080813195830.264|20080813195832.096|CCO|weeks or several months. 
+20080813195833.928|20080813195835.761|CCO|I'm not advocating that everybody 
+20080813195835.761|20080813195837.593|CCO|wait a period of three 
+20080813195837.593|20080813195839.425|CCO|or four weeks. 
+20080813195839.425|20080813195841.257|CCO|If they do it under medical supervision, 
+20080813195841.257|20080813195843.090|CCO|it can be very safe. 
+20080813195844.922|20080813195850.419|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080813195844.922|20080813195846.754|CCO|>> GUPTA: With the odds in his 
+20080813195846.754|20080813195848.587|CCO|favor, it's a small risk Shanteau 
+20080813195848.587|20080813195850.419|CCO|eager to take. 
+20080813195850.419|20080813195859.581|NER_01|Person=Eric Shanteau|Role=OLYMPIC SWIMMER HAS CANCER
+20080813195850.419|20080813195852.251|CCO|>> SHANTEAU: I'm not going to let it beat me. 
+20080813195854.084|20080813195855.916|CCO|I'm not going to let it affect what 
+20080813195855.916|20080813195857.748|CCO|I've been working for so long. 
+20080813195859.581|20080813195908.743|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195859.581|20080813195901.413|CCO|>> LEMON: Of course we wish him the very best. 
+20080813195901.413|20080813195903.245|CCO|Shanteau says he's going to spend a few 
+20080813195903.245|20080813195905.078|CCO|more days in Beijing then he's 
+20080813195905.078|20080813195906.910|CCO|heading home for his cancer 
+20080813195906.910|20080813195908.743|CCO|surgery right here in Atlanta. 
+20080813195908.743|20080813195931.632|SEG|Type=Story
+20080813195908.743|20080813195931.632|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813195908.743|20080813195910.483|CCO|>>> KEILAR: Caught on camera. 
+20080813195910.483|20080813195912.223|CCO|Smalltime thieves stooping, oh, so 
+20080813195912.223|20080813195913.963|CCO|low to steal from a cancer-stricken 
+20080813195913.963|20080813195915.703|CCO|teenager. 
+20080813195915.703|20080813195917.443|CCO|A  local convenience store began taking donations to 
+20080813195917.443|20080813195919.183|CCO|offset Tori Oakley's 
+20080813195917.443|20080813195919.183|CCO|(ph)
+20080813195917.443|20080813195919.183|CCO|medical costs until two 
+20080813195919.183|20080813195920.924|CCO|crooks broke into the store and 
+20080813195920.924|20080813195922.664|CCO|stole the change jar. 
+20080813195922.664|20080813195924.404|CCO|You can imagine the community so 
+20080813195924.404|20080813195926.144|CCO|outraged they're on the lookout for 
+20080813195926.144|20080813195927.884|CCO|the two suspects. 
+20080813195927.884|20080813195929.624|CCO|But good news, though. The town banded together to restore 
+20080813195929.624|20080813195931.632|CCO|the stolen cash. 
+20080813195931.632|20080813195936.637|SEG|Type=Story
+20080813195931.632|20080813195936.637|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813195931.632|20080813195934.134|CCO|>>> LEMON: Can't say what I'd like to call them. You can't say those words on 
+20080813195934.134|20080813195936.637|CCO|television. 
+20080813195936.637|20080813205956.154|SEG|Type=Story
+20080813195936.637|20080813195939.139|CCO|The closing bell is about to ring on Wall Street. >>> Susan Lisovicz standing by with 
+20080813195939.139|20080813195941.642|CCO|a final look at the trading 
+20080813195941.642|20080813195944.144|CCO|day. 
+20080813195944.144|20080813195946.647|CCO|Susan from Jersey, I'm sure you can come up with a couple 
+20080813195946.647|20080813195949.149|CCO|words, right? 
+20080813195949.149|20080813205956.154|NER_01|Person=Susan Lisovicz|Role=CNN CORRESPONDENT
+20080813195949.149|20080813195951.652|CCO|>> SUSAN LISOVICZ, CNN CORRESPONDENT: Yes. Here's 
+20080813195951.652|20080813195954.154|CCO|the words I  have, because 
+20080813195954.154|20080813205956.154|CCO|the bell's going to ring. Three dollar rise in oil prices, stocks declining, lousy retail sales for July. Consumer sentiment tomorrow. Bye-bye. Thank you, Susan. See you tomorrow. Let's head down to THE SITUATION ROOM  and Suzanne Malveaux.   
+END|20080813195957|2008-08-13_1900_US_CNN_Newsroom
