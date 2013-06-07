@@ -70,6 +70,42 @@ class TopicTree(object):
                     label_to_print = node
                 print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
 
+    def print_hiearchy_json(self, fw, labels=None, synthesize_title=False):
+        self.__print_hiearchy_recursive_json(fw, root=self.nodes, labels=labels, synthesize_title=synthesize_title)
+
+    def __print_hiearchy_recursive_json(self, fw, root=None, labels=None, level_indents=0, synthesize_title=False, branch_id=0):
+        if root is None:
+            root = self.nodes
+
+        fw.write(level_indents*'  '+'{')
+        if synthesize_title and level_indents == 1:
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(self.synthesize_title(branch_id)))
+            #print('{0}+ {1}'.format('|  ', self.synthesize_title(branch_id)))
+        else:
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(branch_id))
+            #print('{0}+'.format(level_indents*'|  '))
+        if len(root) > 0:
+            fw.write((level_indents+1)*'  ' + '"children": [')
+            for (bid, node) in enumerate(root):
+                if isinstance(node, type([])):
+                    # Have next level
+                    self.__print_hiearchy_recursive_json(
+                        fw, node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, branch_id=bid)
+                    if node != root[-1]:
+                        fw.write((level_indents+1)*'  ' + ',')
+                else:
+                    if labels is not None:
+                        label_to_print = labels[node]
+                    else:
+                        label_to_print = node
+
+                    append = ''
+                    if node != root[-1]:
+                        append = ','
+                    fw.write((level_indents+1)*'  ' + '{' + '"name": "{0}"'.format((label_to_print)) + '}' + append)
+            fw.write((level_indents+1)*'  ' + ']')
+        fw.write(level_indents*'  '+'}')
+
     def prior(self):
         """Returns the prior of the tree based on complexity.
         Simple trees are favored."""

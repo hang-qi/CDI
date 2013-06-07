@@ -3,7 +3,7 @@
 #include <math.h>
 #include <iostream>
 
-#define LEN_INIT_SEGMENT 2
+#define LEN_INIT_SEGMENT 1
 
 void Segmenter::Load(const string& filename)
 {
@@ -33,8 +33,8 @@ void Segmenter::Train(const vector<StoryInfo>& labeled_stories, int num_categori
     classifier_.Train(labeled_stories, num_categories);
     transitionMatrix_ = TrainTransitionMatrix(labeled_stories);
     // FIXME: add length priors
-    //length_distrib_ = TrainLengthDistribution(labeled_stories);
-    TrainLengthDistribution(labeled_stories);
+    length_distrib_ = TrainLengthDistribution(labeled_stories);
+    //TrainLengthDistribution(labeled_stories);
 }
 
 void Segmenter::CalculateTrueScore(const vector<Sentence>& sentences,
@@ -156,7 +156,7 @@ Segmentation Segmenter::FindSegmentation(const Segmentation& initial_segmentatio
             cout << " " << cur_segmentation.segs[i].GetNumSentences();
         }
         cout << endl;*/
-        //cout << "CURRENT SCORE: " << cur_segmentation.GetScore() << endl;
+        cout << "CURRENT SCORE: " << cur_segmentation.GetScore() << endl;
     }
     return cur_segmentation;
 }
@@ -222,7 +222,7 @@ double Segmenter::CalculateScore(Segmentation& segmentation)
         }*/
 
         // FIXME: add length priors
-        // score += log(length_distrib_[segmentation[i].GetNumSentences()]);
+        //score += log(length_distrib_[segmentation[i].GetNumSentences()]);
         
         if (i >= 1)
         {
@@ -250,7 +250,13 @@ vector<double> Segmenter::TrainLengthDistribution(const vector<StoryInfo>& stori
         out << story.num_sentences << endl;
     });
     out.close();*/
-    return vector<double>();
+    vector<double> length_dist;
+    int dist_range = 220;
+    length_dist.push_back(0);
+    for (int i = 1; i < dist_range; i++)
+        length_dist.push_back(100.0/double(i) + 10.0*GaussianFunc(double(i), 25.0, 15.0) + 10*GaussianFunc(double(i), 1.0, 8.0));    
+    length_dist = Normalize(length_dist);
+    return length_dist;
 }
 
 Matrix Segmenter::TrainTransitionMatrix(const vector<StoryInfo>& stories)
