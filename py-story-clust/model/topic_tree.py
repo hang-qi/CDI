@@ -1,5 +1,6 @@
 import logging
 import math
+import copy
 
 # constants
 NUM_WODE_TYPE = 3
@@ -13,7 +14,7 @@ class TopicTree(object):
         super(TopicTree, self).__init__()
         self.nodes = range(0, corpus_stat.size())
         self.corpus_stat = corpus_stat
-        self.branch_stats = corpus_stat.documents_stats
+        self.branch_stats = copy.deepcopy(corpus_stat.documents_stats)
         self.branch_terminals = [[x] for x in self.nodes]
 
     def combine_branch(self, i, j):
@@ -36,17 +37,32 @@ class TopicTree(object):
                 return branch_id
         raise ValueError('Cannot find target terminal node: {0}'.format(target_terminal))
 
-    def synthesis_title(self, branch_id):
-        """Synthesis ID"""
+    def synthesize_title(self, branch_id):
+        all_word_ids = self.branch_stats[branch_id].synthesize_title()
+        #return '{0}'.format(all_word_ids)
 
-    def print_hiearchy(self, root=None, labels=None, level_indents=0):
+        sub_titles = []
+        for (type_id, word_ids) in enumerate(all_word_ids):
+            words = [self.corpus_stat.vocabularies[type_id].get_word(wid) for wid in word_ids]
+            sub_titles.append(' '.join(words))
+        return 'Tag: ' + ' | '.join(sub_titles)
+
+    def print_hiearchy(self, labels=None, synthesize_title=False):
+        self.__print_hiearchy_recursive(root=self.nodes, labels=labels, synthesize_title=synthesize_title)
+
+    def __print_hiearchy_recursive(self, root=None, labels=None, level_indents=0, synthesize_title=False, branch_id=0):
         if root is None:
             root = self.nodes
-        print('{0}+'.format(level_indents*'|  '))
-        for node in root:
+
+        if synthesize_title and level_indents == 1:
+            print('{0}+ {1}'.format('|  ', self.synthesize_title(branch_id)))
+        else:
+            print('{0}+'.format(level_indents*'|  '))
+        for (bid, node) in enumerate(root):
             if isinstance(node, type([])):
                 # Have next level
-                self.print_hiearchy(node, labels=labels, level_indents=level_indents+1)
+                self.__print_hiearchy_recursive(
+                    node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, branch_id=bid)
             else:
                 if labels is not None:
                     label_to_print = labels[node]
@@ -59,7 +75,7 @@ class TopicTree(object):
         Simple trees are favored."""
         return math.exp(-len(self.branch_stats) * 10)  # * 1e30
 
-    def likelihood(self, corpus, subset=None):
+    def likelihood(self, corpus, subset=None, weights=[1, 1, 1]):
         """Calculate the likelihood of the corpus of current topic tree."""
         likelihood = 0
         for (doc_id, document) in enumerate(corpus.documents):
@@ -79,7 +95,7 @@ class TopicTree(object):
                         # calculate log likelihood
                         prob_doc += math.log(self.get_probability(target_branch_id, word, type_id))
                     prob_type /= len(document.word_lists[type_id])
-                    prob_doc += prob_type
+                    prob_doc += prob_type * weights[type_id] / sum(weights)
 
                 likelihood += prob_doc
         #assert(likelihood != 0)

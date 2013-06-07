@@ -1,4 +1,6 @@
-# This file defines classes to model corpus:
+# This file defines classes to model corpus.
+
+import numpy as np
 
 
 class Corpus(object):
@@ -53,6 +55,12 @@ class DocumentStatistics(object):
             self.distributions[i].combine(other_document.distributions[i])
         self.ocr_words.extend(other_document.ocr_words)
 
+    def synthesize_title(self, num_words=5):
+        word_ids = []
+        for dist in self.distributions:
+            word_ids.append(dist.synthesize(num_words))
+        return word_ids
+
 
 class Distribution(object):
     """Histogram (normalized to 1)."""
@@ -69,6 +77,12 @@ class Distribution(object):
         if denominator != 0:
             self.hist /= denominator
         self.denominator = denominator
+
+    def synthesize(self, num_words):
+        """Synthesize a set of words from the distribution."""
+        indexes = np.argsort(self.hist)
+        top_words_id = indexes[0][::-1][0:min(num_words, np.shape(self.hist)[1])]
+        return top_words_id.tolist()
 
     def __getitem__(self, word_id):
         return self.hist[0, word_id]

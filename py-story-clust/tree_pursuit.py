@@ -23,6 +23,7 @@ def propose_next(current_tree, corpus):
                 # Combine node x and y
                 new_tree = copy.deepcopy(current_tree)
                 new_tree.combine_branch(i, j)
+                assert(new_tree is not current_tree)
 
                 affected = copy.deepcopy(current_tree.branch_terminals[i])
                 affected.extend(current_tree.branch_terminals[j])
@@ -40,15 +41,15 @@ def greedy_pursuit(initial_tree, corpus):
     min_likelihood_change = 0
 
     #while (max_posterior_gain > 0):
-    while(abs(min_likelihood_change) < 70):
+    while(abs(min_likelihood_change) < 80):
         current_tree = best_candidate
         #current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
 
         # Generate candidates
-        logging.info('Generating candidatse...')
+        logging.info('Generating candidates...')
         new_candidates = propose_next(current_tree, corpus)
-        logging.debug('# of candidates: {0}'.format(len(new_candidates)))
+        logging.info('# of candidates: {0}'.format(len(new_candidates)))
 
         # Prior for all candidates are same, since
         #candidate_prior = calculate_prior(len(current_tree.nodes)-1)
@@ -111,7 +112,7 @@ def read_triplet_document(triplet_file, vocabularies):
     (hist_np1, np1_words, ocr_words) = storyclustering.learn_story_histogram(
         triplet_file, vocabularies[0], word_type='NP1', ocr_file=None)
     (hist_vp, vp_words, ocr_words) = storyclustering.learn_story_histogram(
-        triplet_file, vocabularies[1], word_type='VP1', ocr_file=None)
+        triplet_file, vocabularies[1], word_type='VP', ocr_file=None)
     (hist_np2, np2_words, ocr_words) = storyclustering.learn_story_histogram(
         triplet_file, vocabularies[2], word_type='NP2', ocr_file=None)
 
@@ -161,7 +162,7 @@ def main():
     optimum_tree = pursuit_tree(input_triplet_files)  # 'mat/np1_co_mat')
 
     labels = [filename.split('/')[-1][:-4] for filename in input_triplet_files]
-    optimum_tree.print_hiearchy(labels=labels)
+    optimum_tree.print_hiearchy(labels=labels, synthesize_title=True)
     return
 
 
