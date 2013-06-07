@@ -122,7 +122,7 @@ def read_triplet_document(triplet_file, vocabularies):
     distributions = (distribution_np1, distribution_vp, distribution_np2)
     document_stat = DocumentStatistics(distributions, ocr_words)
 
-    doc_name = triplet_file.split('/')[-1]
+    doc_name = triplet_file.split('_')[-1]
     document = Document(doc_name, np1_words, vp_words, np2_words, ocr_words)
     return (document, document_stat)
 

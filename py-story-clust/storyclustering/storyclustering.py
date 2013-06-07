@@ -82,7 +82,7 @@ def learn_story_histogram(file_in, words_voc, word_type='ALL', ocr_file=None):
                     hist[0, words_voc.get_word_index(w)] += 1
 
     # Read OCR file and combine into histogram if provided.
-    orc_words = []
+    ocr_words = []
     if ocr_file is not None:
         # TODO:
         # read ocr file
@@ -109,7 +109,7 @@ def learn_story_histogram(file_in, words_voc, word_type='ALL', ocr_file=None):
             print(hist)
             print(hist.sum())
             raise
-    return (hist, document, orc_words)
+    return (hist, document, ocr_words)
 
 
 def main():
