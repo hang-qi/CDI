@@ -41,7 +41,7 @@ def greedy_pursuit(initial_tree, corpus):
     min_likelihood_change = 0
 
     #while (max_posterior_gain > 0):
-    while(abs(min_likelihood_change) < 100):
+    while(abs(min_likelihood_change) < 200):
         current_tree = best_candidate
         #current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
@@ -55,7 +55,7 @@ def greedy_pursuit(initial_tree, corpus):
         #candidate_prior = calculate_prior(len(current_tree.nodes)-1)
 
         logging.info('Evaluating candidates...')
-        min_likelihood_change = 100
+        min_likelihood_change = 220
         for (combined_branches, candidate_lh_affected, affected_terminals) in new_candidates:
             # Calculate likelihood reduction.
             current_lh_affected = current_tree.likelihood(corpus, subset=affected_terminals)
@@ -81,14 +81,14 @@ def greedy_pursuit(initial_tree, corpus):
     return current_tree
 
 
-def pursuit_tree(input_triplet_files, co_mat_file=None, diffuse=False):
+def pursuit_tree(input_triplet_files, co_mat_file=None, diffuse=False, use_ocr=False):
     logging.info('Building vocabulary...')
     corpus = Corpus(initialize_corpus_statistics(input_triplet_files))
 
     # calculate histogram
     logging.info('Calculating histograms of each story...')
     for triplet_file in input_triplet_files:
-        (doc, doc_stat) = read_triplet_document(triplet_file, corpus.statistics.vocabularies)
+        (doc, doc_stat) = read_triplet_document(triplet_file, corpus.statistics.vocabularies, use_ocr=use_ocr)
         corpus.add_document(doc, doc_stat)
 
     # initial tree
@@ -108,13 +108,17 @@ def initialize_corpus_statistics(triplets_files):
     return CorpusStatistics(np1_vocab, vp_vocab, np2_vocab)
 
 
-def read_triplet_document(triplet_file, vocabularies):
+def read_triplet_document(triplet_file, vocabularies, use_ocr=False):
+    ocr_file = None
+    if use_ocr:
+        ocr_file = triplet_file.replace('triplet_files_small/', 'ocr/ocr_result/').replace('.txt', '.ocr').lower()
+
     (hist_np1, np1_words, ocr_words) = storyclustering.learn_story_histogram(
-        triplet_file, vocabularies[0], word_type='NP1', ocr_file=None)
+        triplet_file, vocabularies[0], word_type='NP1', ocr_file=ocr_file)
     (hist_vp, vp_words, ocr_words) = storyclustering.learn_story_histogram(
-        triplet_file, vocabularies[1], word_type='VP', ocr_file=None)
+        triplet_file, vocabularies[1], word_type='VP', ocr_file=ocr_file)
     (hist_np2, np2_words, ocr_words) = storyclustering.learn_story_histogram(
-        triplet_file, vocabularies[2], word_type='NP2', ocr_file=None)
+        triplet_file, vocabularies[2], word_type='NP2', ocr_file=ocr_file)
 
     distribution_np1 = Distribution(hist_np1, len(np1_words))
     distribution_vp = Distribution(hist_vp, len(vp_words))
@@ -153,19 +157,21 @@ def main():
     logging.basicConfig(level=logging.DEBUG)
 
     # input data
-    input_triplet_files = glob.glob('triplet_files_small/*.txt')
+    input_triplet_files = glob.glob('triplet_files_small/2008*.txt')
     #input_triplet_files = glob.glob('triplet_files/[13]*.txt')
     input_triplet_files.sort()
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
     # pursuit tree
-    optimum_tree = pursuit_tree(input_triplet_files)  # 'mat/np1_co_mat')
+    optimum_tree = pursuit_tree(input_triplet_files, use_ocr=True)  # 'mat/np1_co_mat')
 
-    labels = [filename.split('/')[-1][:-4] for filename in input_triplet_files]
-    optimum_tree.print_hiearchy(labels=labels, synthesize_title=True)
+    labels_long = [filename.split('/')[-1][:-4] for filename in input_triplet_files]
+    labels_short = [filename.split('_')[-1][:-4] for filename in input_triplet_files]
+
+    optimum_tree.print_hiearchy(labels=labels_long, synthesize_title=True)
 
     with open('visualize/data.json', 'w') as fw:
-        optimum_tree.print_hiearchy_json(fw, labels=labels, synthesize_title=False)
+        optimum_tree.print_hiearchy_json(fw, labels=labels_short, synthesize_title=False)
     return
 
 
