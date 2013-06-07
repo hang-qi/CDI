@@ -41,7 +41,7 @@ def greedy_pursuit(initial_tree, corpus):
     min_likelihood_change = 0
 
     #while (max_posterior_gain > 0):
-    while(abs(min_likelihood_change) < 80):
+    while(abs(min_likelihood_change) < 100):
         current_tree = best_candidate
         #current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
@@ -163,6 +163,9 @@ def main():
 
     labels = [filename.split('/')[-1][:-4] for filename in input_triplet_files]
     optimum_tree.print_hiearchy(labels=labels, synthesize_title=True)
+
+    with open('visualize/data.json', 'w') as fw:
+        optimum_tree.print_hiearchy_json(fw, labels=labels, synthesize_title=False)
     return
 
 
