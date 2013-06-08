@@ -88,7 +88,7 @@ def ocr_find_story(ocr_results, ocr_time, stories):
                 story_id = count
                 break
         count += 1
-    if overlap >= 1:
+    if overlap >= 0.5:
         return story_id
     else:
         return -1
@@ -108,8 +108,8 @@ def words_overlap_percentage(ocr_words, story):
     for w in ocr_words:
         if w in story.line_list:
             count += 1
-    #return count/len(ocr_words)
-    return count
+    return count/len(ocr_words)
+    #return count
 
 
 def save_ocr(stories, story_id):
