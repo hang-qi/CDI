@@ -1,6 +1,7 @@
 import logging
 import math
 import copy
+import numpy as np
 
 # constants
 NUM_WODE_TYPE = 3
@@ -146,3 +147,24 @@ class TopicTree(object):
         except ValueError:
             logging.warning('Cannot find word: {0}   (type {1})'.format(word, type_id))
             return 1
+
+    def calculate_distribution_distance(self):
+        dif_min = 10
+        for (stats_id1, stats1) in enumerate(self.branch_stats):
+            for (stats_id2, stats2) in enumerate(self.branch_stats):
+                if stats_id1 >= stats_id2:
+                    continue
+                dif = 0
+                for type_id in [0, 2]:
+                    distribution1 = self.branch_stats[stats_id1].distributions[type_id].hist
+                    distribution2 = self.branch_stats[stats_id2].distributions[type_id].hist
+                    tmp = distribution1 - distribution2
+                    tmp = np.asarray(tmp, dtype=np.float)
+                    tmp = np.absolute(tmp)
+                    dif += (np.sum(tmp)/2)
+                dif /= 2
+                if dif_min > dif:
+                    dif_min = dif
+                    id1 = stats_id1
+                    id2 = stats_id2
+        return [dif_min, id1, id2]

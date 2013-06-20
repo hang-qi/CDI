@@ -77,6 +77,9 @@ def greedy_pursuit(initial_tree, corpus):
                     combined_branches[0], combined_branches[1])
                 min_likelihood_change = likelihood_change
         #logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
+        # Calculate the minimum distance between the distributions of any two branches in the current tree
+        [dis, id1, id2] = current_tree.calculate_distribution_distance()
+        logging.debug('Branch Distribution Difference Min: {0} (index {1}, {2})'.format(dis, id1, id2))
 
     return current_tree
 
