@@ -31,7 +31,9 @@ def propose_next(current_tree, corpus):
                 candidate_lh_affected = new_tree.likelihood(
                     corpus, subset=affected)
 
-                canididates.append(((i, j), candidate_lh_affected, affected))
+                dunn_index = new_tree.dunn_index()
+
+                canididates.append(((i, j), candidate_lh_affected, affected, dunn_index))
     return canididates
 
 
@@ -46,6 +48,10 @@ def greedy_pursuit(initial_tree, corpus):
         #current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
 
+        # Calculate Dunn Index of current tree
+        dunn_index = current_tree.dunn_index()
+        logging.debug('Dunn Index: {0}'.format(dunn_index))
+
         # Generate candidates
         logging.info('Generating candidates...')
         new_candidates = propose_next(current_tree, corpus)
@@ -56,7 +62,7 @@ def greedy_pursuit(initial_tree, corpus):
 
         logging.info('Evaluating candidates...')
         min_likelihood_change = 220
-        for (combined_branches, candidate_lh_affected, affected_terminals) in new_candidates:
+        for (combined_branches, candidate_lh_affected, affected_terminals, dunn_index) in new_candidates:
             # Calculate likelihood reduction.
             current_lh_affected = current_tree.likelihood(corpus, subset=affected_terminals)
             likelihood_change = abs(candidate_lh_affected - current_lh_affected)
@@ -71,6 +77,8 @@ def greedy_pursuit(initial_tree, corpus):
                 for terminal_id in affected_terminals:
                     logging.debug('\t{0} : {1}'.format(
                         terminal_id, corpus.get_document_name(terminal_id)))
+                logging.debug('Dunn Index: {0}'.format(dunn_index))
+
 
                 best_candidate = copy.deepcopy(current_tree)
                 best_candidate.combine_branch(
@@ -78,8 +86,9 @@ def greedy_pursuit(initial_tree, corpus):
                 min_likelihood_change = likelihood_change
         #logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
         # Calculate the minimum distance between the distributions of any two branches in the current tree
-        [dis, id1, id2] = current_tree.calculate_distribution_distance()
-        logging.debug('Branch Distribution Difference Min: {0} (index {1}, {2})'.format(dis, id1, id2))
+
+        #[dis, id1, id2] = current_tree.calculate_distribution_distance()
+        #logging.debug('Branch Distribution Difference Min: {0} (index {1}, {2})'.format(dis, id1, id2))
 
     return current_tree
 

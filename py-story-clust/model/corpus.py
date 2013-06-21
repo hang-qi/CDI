@@ -2,12 +2,14 @@
 
 import numpy as np
 
+from model import *
+
 
 class Corpus(object):
     """A Corpus object includes all documents' content and corpus statistics."""
     def __init__(self, corpus_stat):
-        self.statistics = corpus_stat
         self.documents = []
+        self.statistics = corpus_stat
 
     def add_document(self, doc, doc_stat):
         self.documents.append(doc)
@@ -50,6 +52,12 @@ class DocumentStatistics(object):
         else:
             self.ocr_words = ocr_words
 
+
+class BranchStatistics(DocumentStatistics):
+    def __init__(self, document_stat):
+        super(BranchStatistics, self).__init__(document_stat.distributions, document_stat.ocr_words)
+        self.intra_distance = 0
+
     def combine(self, other_document):
         for (i, dist) in enumerate(self.distributions):
             self.distributions[i].combine(other_document.distributions[i])
@@ -60,6 +68,31 @@ class DocumentStatistics(object):
         for dist in self.distributions:
             word_ids.append(dist.synthesize(num_words))
         return word_ids
+
+    def calcualte_intra_distance(self, corpus_stat, terminals):
+        """Intra branch distance is the pair of terminal nodes with maximum
+        distance (measured by TV norm)."""
+        d_max = 0
+        for doc_i in terminals:
+            for doc_j in terminals:
+                if doc_i >= doc_j:
+                    # Only compute half since the distance is symmetric.
+                    continue
+
+                # Calculate distance between doc_i and doc_j.
+                d = 0
+                word_types_to_use = [WORD_TYPE_NP1, WORD_TYPE_VP, WORD_TYPE_NP2]
+                for type_id in word_types_to_use:
+                    distr_i = corpus_stat.documents_stats[doc_i].distributions[type_id].hist
+                    distr_j = corpus_stat.documents_stats[doc_j].distributions[type_id].hist
+                    tv_norm = calculate_tv_norm(distr_i, distr_j)
+                    d += tv_norm
+                d /= len(word_types_to_use)
+
+                # Update the maximum distance.
+                if d > d_max:
+                    d_max = d
+        self.intra_distance = d_max
 
 
 class Distribution(object):
