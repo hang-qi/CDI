@@ -90,8 +90,8 @@ class TopicTree(object):
                     prob_type = 0
                     for word in document.word_lists[type_id]:
                         # calculate log likelihood
-                        prob_doc += math.log(self.__get_probability(target_branch_id, word, type_id))
-                    prob_type /= len(document.word_lists[type_id])
+                        prob_type += math.log(self.__get_probability(target_branch_id, word, type_id))
+                    #prob_type /= len(document.word_lists[type_id])
                     prob_doc += prob_type * weights[type_id] / sum(weights)
 
                 likelihood += prob_doc
