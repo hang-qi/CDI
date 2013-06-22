@@ -234,7 +234,7 @@ private:
                 // Caption style
                 int captionStyleStart = tagEnd + 1;
                 string style_to_end = tag_to_end.substr(captionStyleStart);
-                size_t captionStyleEnd = tag_to_end.find('|');
+                size_t captionStyleEnd = style_to_end.find('|');
 
                 string captionStyle = "";
                 int contentStart = 0;

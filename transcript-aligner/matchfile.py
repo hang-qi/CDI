@@ -14,23 +14,22 @@ import config
 #   Key: the program name appears in the head section of CNN transcript
 #   Value: the program name appears in caption filename, eg. .._US_CNN_Program_Name.txt
 # For program names that are not in this Dict, they will be converted by
-# convertProgramName().
+# convert_program_name().
 programDict = {
-    "ANDERSON COOPER 360 DEGREES": "Anderson_Cooper_360",
-    "CNN NEWSROOM": "Newsroom",
-    "THE SITUATION ROOM": "Situation_Room",
-    "CNN LARRY KING LIVE": "Larry_King_Live",
-    "JOHN KING USA": "John_King_USA",
-    "YOUR WORLD TODAY": "Your_World_Today",
-    "AMERICAN MORNING": "American_Morning",
-    "PIERS MORGAN TONIGHT": "Piers_Morgan_Tonight",
-    "ERIN BURNETT OUT FRONT": "Erin_Burnett_Out_Front",
-    "PAULA ZAHN NOW": "Paula_Zahn_Now",
-    "LOU DOBBS TONIGHT": "Lou_Dobbs_Tonight",
-    "IN THE ARENA": "In_The_Arena",
-    "CNN LARRY KING LIVE": "Larry_King_Live",
+    "AMERICAN MORNING":             "American_Morning",
+    "ANDERSON COOPER 360 DEGREES":  "Anderson_Cooper_360",
+    "CNN LARRY KING LIVE":          "Larry_King_Live",
     "CNN LATE EDITION WITH WOLF BLITZER": "Late_Edition_With_Wolf_Blitzer",
-    "DL HUGHLEY BREAKS NEWS": "DL_Hughley_Breaks_The_News"
+    "CNN NEWSROOM":                 "Newsroom",
+    "DL HUGHLEY BREAKS NEWS":       "DL_Hughley_Breaks_The_News",
+    "ERIN BURNETT OUT FRONT":       "Erin_Burnett_Out_Front",
+    "IN THE ARENA":                 "In_The_Arena",
+    "JOHN KING USA":                "John_King_USA",
+    "LOU DOBBS TONIGHT":            "Lou_Dobbs_Tonight",
+    "PAULA ZAHN NOW":               "Paula_Zahn_Now",
+    "PIERS MORGAN TONIGHT":         "Piers_Morgan_Tonight",
+    "THE SITUATION ROOM":           "Situation_Room",
+    "YOUR WORLD TODAY":             "Your_World_Today"
 }
 
 # Words will keep capitalized in file name, usually a acronym.
@@ -38,7 +37,10 @@ programDict = {
 acronymList = ['CNN', 'USA']
 
 
-def convertProgramName(programName):
+def convert_program_name(programName):
+    if programName in programDict:
+        return programDict[programName]
+
     words = programName.replace('/', ' ').split(' ')
     newName = ''
     for w in words:
@@ -68,33 +70,48 @@ def convertProgramName(programName):
     # strip the last '_' at the end
     return newName
 
-def getMatchedFilenames(transcriptFile, charset='ISO-8859-1'):
-    """Return matched caption filenames with full path
-    The return is a list with two element (transcript file, caption file)"""
-    # read in transcriptFile
+
+def extract_program_info(html_transcript):
+    # read in html_transcript
     str_list = []
-    f = codecs.open(transcriptFile, encoding=charset)
+    f = codecs.open(html_transcript, encoding='ISO-8859-1')
     for line in f:
         str_list.append(line)
     f.close()
     transcriptPage = ''.join(str_list)
 
-    # feed transcriptFile into the html parser
+    # feed html_transcript into the html parser
     parser = htmlparser.TranscriptHTMLParser()
     parser.feed(transcriptPage)
 
     # extract program name from head section
     head = parser.get_head()
-    programName = head.replace("(HEAD) ", "").replace('\n', '')
-
-    utc = timezone.UTC()
     et_dt = parser.get_time()
-    utc_dt = et_dt.astimezone(utc)
 
-    return buildFilenames(utc_dt, programName)
+    program_name = head.replace("(HEAD) ", "").replace('\n', '')
+    utc_datetime = et_dt.astimezone(timezone.UTC())
+
+    return (program_name, utc_datetime)
 
 
-def roundToHalfHour(dt):
+def get_transcript_caption_pair(html_transcript):
+    """Return matched caption filenames with full path
+    The return is a list with two element (transcript file, caption file)"""
+
+    (program, utc_dt) = extract_program_info(html_transcript)
+    network = 'CNN'
+
+    # Several special cases using 'HLN' as network flag.
+    if program.upper() in ['CNN IN SESSION', 'DR CONRAD MURRAY SENTENCING', 'GEORGE ZIMMERMAN TRIAL LIVE', 'HEADLINE NEWS', 'NANCY GRACE']:
+        network = 'HLN'
+    if program.upper() == 'NANCY GRACE' and utc_dt < datetime.datetime(2010, 12, 19, tzinfo=timezone.UTC()):
+        network = 'CNN-Headline'
+
+    transcript_caption_pair = buildFilenames(utc_dt, program, network)
+    return transcript_caption_pair
+
+
+def round_to_half_hour(dt):
     """Round to the nearest hour or half hour."""
     margin = 5
     if (dt.minute in range(0, margin)):
@@ -107,38 +124,34 @@ def roundToHalfHour(dt):
     return dt
 
 
-def buildFilenames(utcDatetime, program, agent='CNN', locale='US'):
+def buildFilenames(utcDatetime, program, network='CNN', locale='US'):
     """Return matched filenames with full path.
-    The return is a list with two element (transcript file, caption file)."""
+    The return si a list with two element (transcript file, caption file)."""
     transcriptRoot = config.ROOT_TRANSCRIPT
     captionRoot = config.ROOT_CAPTION
 
-    utcRoundedDatetime = roundToHalfHour(utcDatetime)
-    dateDirectories = "{:%Y/%Y-%m/%Y-%m-%d/}".format(utcRoundedDatetime)
+    # Round utc time to hour or half hour.
+    utcRoundedDatetime = round_to_half_hour(utcDatetime)
+    date_path = "{:%Y/%Y-%m/%Y-%m-%d/}".format(utcRoundedDatetime)
 
     if not utcRoundedDatetime == utcDatetime:
         print("[TIME ALERT] Time in transcript rounded for {0} on {1:%Y-%m-%d} from {2:%H:%M} to {3:%H:%M}".format(
               program, utcDatetime, utcDatetime, utcRoundedDatetime))
 
-    programName = ''
-    try:
-        programName = programDict[program]
-        pass
-    except:
-        programName = convertProgramName(program)
-        print('[RENAME] Program {0} renamed as {1}.'.format(
-            program, programName))
-        # return ('','')
+    # Convert program name to the format of file name.
+    programName = convert_program_name(program)
+    print('[RENAME] Program {0} renamed as {1}.'.format(
+        program, programName))
 
-    airedDateTime = "{:%Y-%m-%d_%H%M}".format(utcRoundedDatetime)
-    filename = "{0}_{1}_{2}_{3}".format(
-        airedDateTime, locale, agent, programName)
+    aired_datetime = "{:%Y-%m-%d_%H%M}".format(utcRoundedDatetime)
+    filename = "{aired_datetime}_{locale}_{network}_{program}".format(
+        aired_datetime=aired_datetime, locale=locale, network=network, program=programName)
 
-    fullPathFormat = "{root}{dateDir}{file}{ext}"
-    transcriptFullPath = fullPathFormat.format(root=transcriptRoot,
-                                               dateDir=dateDirectories, file=filename, ext=".html")
-    captionFullPath = fullPathFormat.format(root=captionRoot,
-                                            dateDir=dateDirectories, file=filename, ext=".txt")
+    fullPathFormat = "{root}{date_path}{filename}.{ext}"
+    transcriptFullPath = fullPathFormat.format(
+        root=transcriptRoot, date_path=date_path, filename=filename, ext="html")
+    captionFullPath = fullPathFormat.format(
+        root=captionRoot, date_path=date_path, filename=filename, ext="txt")
     return (transcriptFullPath, captionFullPath)
 
 
@@ -146,11 +159,11 @@ def main():
     if (len(sys.argv) < 2):
         print("Please give a html transcript filename.")
         print("  e.g. > Python3 matchfile.py data/transcript.html")
-        return
+        filelist
 
-    filelist = sys.argv[1:]
+    return sys.argv[1:]
     for filename in filelist:
-        print(getMatchedFilenames(filename))
+        print(get_transcript_caption_pair(filename))
 
 if __name__ == '__main__':
     main()
