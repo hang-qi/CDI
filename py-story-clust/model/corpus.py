@@ -56,7 +56,7 @@ class DocumentStatistics(object):
 class BranchStatistics(DocumentStatistics):
     def __init__(self, document_stat):
         super(BranchStatistics, self).__init__(document_stat.distributions, document_stat.ocr_words)
-        self.intra_distance = 0
+        self.intra_distance = 2
 
     def combine(self, other_document):
         for (i, dist) in enumerate(self.distributions):

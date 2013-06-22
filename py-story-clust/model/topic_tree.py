@@ -198,6 +198,7 @@ class TopicTree(object):
         return distances_mat
 
     def calculate_distribution_distance(self):
+        """Calculate the distance between distributions, using TV-norm."""
         dif_min = 10
         for (stats_id1, stats1) in enumerate(self.branch_stats):
             for (stats_id2, stats2) in enumerate(self.branch_stats):
@@ -214,3 +215,23 @@ class TopicTree(object):
                     id1 = stats_id1
                     id2 = stats_id2
         return [dif_min, id1, id2]
+
+    def davies_bouldin_index(self):
+        """Calculate the Davies-Bouldin index.
+           Smaller Davies-Couldin index corresponds to better clustering results."""
+        DB = 0
+        for (i, branch1) in enumerate(self.branch_stats):
+            max_db = 0
+            for (j, branch2) in enumerate(self.branch_stats):
+                if i == j:
+                    continue
+                if i < j:
+                    inter_dis = self.inter_distance[i, j]
+                elif i > j:
+                    inter_dis = self.inter_distance[j, i]
+                tmp_db = (branch1.intra_distance + branch2.intra_distance)/inter_dis
+                if tmp_db > max_db:
+                    max_db = tmp_db
+            DB += max_db
+        DB /= len(self.branch_stats)
+        return DB

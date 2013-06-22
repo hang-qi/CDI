@@ -2,6 +2,7 @@
 import logging
 import glob
 import copy
+import math
 
 from storyclustering import storyclustering
 from preprocessing import cleansing
@@ -32,8 +33,9 @@ def propose_next(current_tree, corpus):
                     corpus, subset=affected)
 
                 dunn_index = new_tree.dunn_index()
+                db_index = new_tree.davies_bouldin_index()
 
-                canididates.append(((i, j), candidate_lh_affected, affected, dunn_index))
+                canididates.append(((i, j), candidate_lh_affected, affected, dunn_index, db_index))
     return canididates
 
 
@@ -42,15 +44,22 @@ def greedy_pursuit(initial_tree, corpus):
     #max_posterior_gain = 1
     min_likelihood_change = 0
 
+    min_posterior_change = 100
+
     #while (max_posterior_gain > 0):
-    while(abs(min_likelihood_change) < 200):
+    #while(abs(min_likelihood_change) < 200):
+    while(min_posterior_change > 1):
         current_tree = best_candidate
         #current_prior = calculate_prior(len(current_tree.nodes))
         logging.debug('Tree: {0}'.format(current_tree.nodes))
 
         # Calculate Dunn Index of current tree
-        dunn_index = current_tree.dunn_index()
-        logging.debug('Dunn Index: {0}'.format(dunn_index))
+        current_dunn_index = current_tree.dunn_index()
+        logging.debug('Dunn Index: {0}'.format(current_dunn_index))
+
+        # Calculate Davies Bouldin Index of the current tree
+        current_db_index = current_tree.davies_bouldin_index()
+        logging.debug('Davies Bouldin Index: {0}'.format(current_db_index))
 
         # Generate candidates
         logging.info('Generating candidates...')
@@ -62,28 +71,38 @@ def greedy_pursuit(initial_tree, corpus):
 
         logging.info('Evaluating candidates...')
         min_likelihood_change = 220
-        for (combined_branches, candidate_lh_affected, affected_terminals, dunn_index) in new_candidates:
+        min_posterior_change = 100000
+        for (combined_branches, candidate_lh_affected, affected_terminals, dunn_index, db_index) in new_candidates:
             # Calculate likelihood reduction.
             current_lh_affected = current_tree.likelihood(corpus, subset=affected_terminals)
             likelihood_change = abs(candidate_lh_affected - current_lh_affected)
 
+            # Calculate prior, i.e Davies Bouldin Index reduction.
+            log_prior_change = math.log(db_index) - math.log(current_db_index)
+
+            posterior_change = abs(likelihood_change + log_prior_change)
+
             #if posterior_gain > max_posterior_gain and posterior_gain != 0:
-            if likelihood_change < min_likelihood_change:
+            #if likelihood_change < min_likelihood_change:
+            if posterior_change < min_posterior_change:
                 logging.debug(10*'-')
                 logging.debug('Likelihood Values: {0} vs. {1}'.format(
                     candidate_lh_affected, current_lh_affected))
                 logging.debug('Likelihood Change: {0}'.format(likelihood_change))
+                logging.debug('Log Prior Change: {0}'.format(log_prior_change))
+                logging.debug('Posterior Change: {0}'.format(posterior_change))
                 logging.debug('Affected files:')
                 for terminal_id in affected_terminals:
                     logging.debug('\t{0} : {1}'.format(
                         terminal_id, corpus.get_document_name(terminal_id)))
                 logging.debug('Dunn Index: {0}'.format(dunn_index))
-
+                logging.debug('Davies Bouldin Index: {0}'.format(db_index))
 
                 best_candidate = copy.deepcopy(current_tree)
                 best_candidate.combine_branch(
                     combined_branches[0], combined_branches[1])
-                min_likelihood_change = likelihood_change
+                #min_likelihood_change = likelihood_change
+                min_posterior_change = posterior_change
         #logging.debug('Posterior Gain: {0}'.format(max_posterior_gain))
         # Calculate the minimum distance between the distributions of any two branches in the current tree
 
