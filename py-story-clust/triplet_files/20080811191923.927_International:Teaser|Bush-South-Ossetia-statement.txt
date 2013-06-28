@@ -1,0 +1,7 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080811191923.927</start>
+<end>20080811191943.246</end>
+President Bush | will speak | the Rose Garden 
+a statement | s happening | this conflict 
+Georgia | involving | Russia 
+THE SITUATION ROOM | will have | CNN s SITUATION ROOM 

@@ -1,0 +1,4 @@
+<story>Activism:Teaser|Mexico-anti-violence</story>
+<start>20080815191135.560</start>
+<end>20080815191135.560</end>
+they | have had | they 

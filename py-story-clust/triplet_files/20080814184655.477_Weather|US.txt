@@ -1,0 +1,7 @@
+<story>Weather|US</story>
+<start>20080814184655.477</start>
+<end>20080814184750.732</end>
+Chad Myers | tracking | a 
+a | funnel | cloud 
+Chad Myers tracking a some sort of a what is it | would take | Chad Myers tracking a some sort of a what is it 
+a cell | spins | Florida 

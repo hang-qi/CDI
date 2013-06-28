@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Candidate-flip-flops</story>
+<start>20080814184800.508</start>
+<end>20080814185117.572</end>
+a flip flop | can be referred | something 
+A look | can have | your candidates head 

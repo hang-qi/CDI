@@ -1,0 +1,5 @@
+<story>Health:Teaser|Nicotine-urge-genetic</story>
+<start>20080808181033.664</start>
+<end>20080808181039.436</end>
+they | were hooked | Some smokers first puff 
+A new study | gives | credence 

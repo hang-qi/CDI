@@ -1,0 +1,5 @@
+<story>Money:Teaser|Home-heating-costs</story>
+<start>20080815184648.269</start>
+<end>20080815185101.155</end>
+gas prices | are | control 
+We | ll take | a look 

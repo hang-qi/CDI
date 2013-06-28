@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <math.h>
 
+#include "comatrix.h"
 #include "TextAnalysis.h"
 #include "segmenter.h"
 #pragma comment(lib, "User32.lib")
@@ -17,6 +18,10 @@ using namespace std;
 
 int main(int argc, const char* argv[])
 {
+    CooccurrenceMatrix comatrix;
+    comatrix.WordNetTest();
+    return 0;
+
     enum Option
     {
         NONE,
@@ -24,7 +29,8 @@ int main(int argc, const char* argv[])
         CLASSIFIER_PREDICT,
         CLASSIFIER_VALIDATE,
         SEGMENTATION_TRAIN,
-        SEGMENTATION_PREDICT
+        SEGMENTATION_PREDICT,
+        TOPIC_MODEL
     };
 
     Option opt = NONE;
@@ -52,6 +58,10 @@ int main(int argc, const char* argv[])
         else if(string(argv[1]) == "--seg-predict")
         {
             opt = SEGMENTATION_PREDICT;
+        }
+        else if(string(argv[1]) == "--topic")
+        {
+            opt = TOPIC_MODEL;
         }
         else
         {
@@ -187,6 +197,23 @@ int main(int argc, const char* argv[])
             cout << " " << tstories[i].category_id;
         }
         cout << endl;
+    }
+    else if (opt == TOPIC_MODEL)
+    {
+        // Build a Co-occurrence Matrix and see what it like.
+        vector<Sentence> allSentences;
+        for (int i = 0; i < 300; i++)
+        {
+            if (i >= stories.size())
+            {
+                break;
+            }
+            vector<Sentence> sentences = cws.StoryToSentences(stories[i]);
+            allSentences.insert(allSentences.end(),
+                    sentences.begin(), sentences.end());        
+        }
+        CooccurrenceMatrix comatrix;
+        comatrix.BuildMatrix(allSentences);
     }
 
     // Clustering based on NP1 similarities.    

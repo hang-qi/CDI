@@ -1,0 +1,4 @@
+<story>Network:Teaser|Preview</story>
+<start>20080815190705.724</start>
+<end>20080815190722.974</end>
+Our live coverage | begins | p.m. Eastern 

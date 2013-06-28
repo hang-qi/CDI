@@ -1,0 +1,7 @@
+<story>Accident|Czech-train-crash-bridge-collapse</story>
+<start>20080808183346.956</start>
+<end>20080808183407.109</end>
+construction | collapses | the path of a passenger train 
+at least six people | were killed | 
+The train | was traveling | Prague 
+Many of the passengers | were headed | an Aaron Maiden concert 

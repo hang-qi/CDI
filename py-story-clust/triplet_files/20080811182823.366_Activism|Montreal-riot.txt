@@ -1,0 +1,6 @@
+<story>Activism|Montreal-riot</story>
+<start>20080811182823.366</start>
+<end>20080811182836.179</end>
+A nervous night | looming | the streets of Montreal 
+The city | hopes to avert | a repeat 
+the riot | occurred | last night 

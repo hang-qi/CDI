@@ -1,0 +1,7 @@
+<story>Money|Stock-market</story>
+<start>20080808170933.905</start>
+<end>20080808170948.920</end>
+falling oil prices | are boosting | stocks 
+the Big Board | shows | the Dow 
+Our Susan Lisovicz | has | the latest 
+the floor | live in | about minutes 

@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Future-American-population</story>
+<start>20080814154140.263</start>
+<end>20080814154440.043</end>
+The U.S. population | is going to change | the face of America 

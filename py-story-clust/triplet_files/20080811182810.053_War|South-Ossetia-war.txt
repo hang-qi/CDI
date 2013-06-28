@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war</story>
+<start>20080811182810.053</start>
+<end>20080811182823.366</end>
+We | are following developing | stories 
+Russian tanks | rumble | Georgia 

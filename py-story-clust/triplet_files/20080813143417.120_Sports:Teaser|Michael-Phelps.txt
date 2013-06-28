@@ -1,0 +1,6 @@
+<story>Sports:Teaser|Michael-Phelps</story>
+<start>20080813143417.120</start>
+<end>20080813143435.472</end>
+He | is | the future 
+one competitor | describes | American swimmer Michael Phelps 
+Phelps | adding | two more golds 

@@ -1,0 +1,5 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080815183835.877</start>
+<end>20080815184026.187</end>
+Some | love | a four day workweek sound 
+some | hate | a four day workweek sound 
