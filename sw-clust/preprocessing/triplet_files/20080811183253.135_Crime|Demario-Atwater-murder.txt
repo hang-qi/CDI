@@ -1,0 +1,5 @@
+<story>Crime|Demario-Atwater-murder</story>
+<start>20080811183253.135</start>
+<end>20080811183319.228</end>
+Prosecutors | have put | the ultimate penalty 
+Demario Atwater | learned | he 

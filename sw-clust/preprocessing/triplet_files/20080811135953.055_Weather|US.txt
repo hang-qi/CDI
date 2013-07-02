@@ -1,0 +1,4 @@
+<story>Weather|US</story>
+<start>20080811135953.055</start>
+<end>20080811135954.089</end>
+Mother Nature | know | KEILAR And ice on the ground . 

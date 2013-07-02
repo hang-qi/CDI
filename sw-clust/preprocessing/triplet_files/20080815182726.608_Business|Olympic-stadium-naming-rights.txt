@@ -1,0 +1,4 @@
+<story>Business|Olympic-stadium-naming-rights</story>
+<start>20080815182726.608</start>
+<end>20080815182943.545</end>
+the centerpiece of the Beijing Olympics | can be | yours 

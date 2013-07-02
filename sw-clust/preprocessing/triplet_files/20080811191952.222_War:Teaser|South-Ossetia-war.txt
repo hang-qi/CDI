@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811191952.222</start>
+<end>20080811192513.243</end>
+A group of Americans | caught | a war zone 
+they | were doing | Georgia 

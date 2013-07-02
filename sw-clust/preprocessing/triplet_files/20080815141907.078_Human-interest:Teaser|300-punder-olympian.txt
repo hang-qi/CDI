@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|300-punder-olympian</story>
+<start>20080815141907.078</start>
+<end>20080815142209.660</end>
+A pounder | doing | a victory lap 

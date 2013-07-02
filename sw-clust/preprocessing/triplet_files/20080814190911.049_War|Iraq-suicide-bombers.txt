@@ -1,0 +1,6 @@
+<story>War|Iraq-suicide-bombers</story>
+<start>20080814190911.049</start>
+<end>20080814190928.300</end>
+simultaneous suicide bombings | have killed | at least people 
+the attackers | were | a man and woman 
+Several dozen people | are wounded | Several dozen people 

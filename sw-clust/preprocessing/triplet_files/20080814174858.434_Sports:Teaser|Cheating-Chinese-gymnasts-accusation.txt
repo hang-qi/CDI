@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Cheating-Chinese-gymnasts-accusation</story>
+<start>20080814174858.434</start>
+<end>20080814175214.263</end>
+They | took | the team competition 
+all of them | to be | that team 

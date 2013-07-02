@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815134209.792</start>
+<end>20080815134441.911</end>
+the ad | is | good fun 
+The McCain campaign | s sending | a dangerous message 

@@ -1,0 +1,5 @@
+<story>Environment:Teaser|Olympics-air-quality</story>
+<start>20080808150014.879</start>
+<end>20080808150031.763</end>
+Beijing | gets | its day 
+anybody | can find | COLLINS 

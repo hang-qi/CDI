@@ -1,0 +1,6 @@
+<story>Justice|Kilpatrick-assault-case</story>
+<start>20080815170758.076</start>
+<end>20080815170822.534</end>
+a hearing | to determine | Kilpatrick 
+the mayor | shoved | the mayor 
+another person | made | profane and racial comments 

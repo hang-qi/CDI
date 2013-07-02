@@ -1,0 +1,5 @@
+<story>Business:Teaser|Funeral-live-streaming-services</story>
+<start>20080815194613.636</start>
+<end>20080815194951.053</end>
+owner Lance Peck | is | a golf course 
+owner Lance Peck | is | a church 

@@ -1,0 +1,5 @@
+<story>Justice|Afghani-arrested</story>
+<start>20080811183007.937</start>
+<end>20080811183032.428</end>
+the U.S. educated scientist | was arrested | documents 
+bombs and chemical weapons | describing | various U.S. landmarks 

@@ -1,0 +1,5 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080813194431.099</start>
+<end>20080813194440.108</end>
+Utahs government | has shifted | a four day week 
+Utah s government | work | the employees 

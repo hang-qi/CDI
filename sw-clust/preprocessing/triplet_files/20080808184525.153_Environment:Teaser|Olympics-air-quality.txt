@@ -1,0 +1,5 @@
+<story>Environment:Teaser|Olympics-air-quality</story>
+<start>20080808184525.153</start>
+<end>20080808184910.545</end>
+the world | calls | the rest of the world 
+the rest of the world | affect | the Olympic athletes 

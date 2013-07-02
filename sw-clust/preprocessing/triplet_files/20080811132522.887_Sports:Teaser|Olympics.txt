@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080811132522.887</start>
+<end>20080811132536.300</end>
+we | re talking | Americans 
