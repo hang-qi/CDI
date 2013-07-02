@@ -1,21 +1,30 @@
 from collections import defaultdict
+from collectios import deque
+import copy
+import random
 
 
 class AdjacencyGraph(object):
     """Adjacency Graph on which to perform Swendsen-Wang Cuts."""
     def __init__(self, size, edges):
+        """size is a integer.
+        Edges is a list of edge tuples. i.e. [ (s, t) ]. """
         super(AdjacencyGraph, self).__init__()
 
         self.size = size
-        self.edges = edges
+        self.edges = set()
+        self.adj_list = defaultdict(list)
 
-        #self.adj_list = defaultdict(list)
-        #for (start, end) in edges:
-        #    try:
-        #        assert(start in range(0, size) and end in range(0, size))
-        #    except AssertionError:
-        #        raise ValueError('More vertex given than the size of the graph.')
-        #    self.adj_list[start].append(end)
+        for (start, end) in edges:
+            if start > end:
+                start, end = end, start
+            self.edges.add((start, end))
+            try:
+                assert(start in range(0, size) and end in range(0, size))
+            except AssertionError:
+                raise ValueError('More vertex given than the size of the graph.')
+            self.adj_list[start].append(end)
+            self.adj_list[end].append(start)
         return
 
 
@@ -24,48 +33,148 @@ class SWCuts(object):
     def __init__(self):
         super(SWCuts, self).__init__()
 
-    def sample(self, adjacency_graph, edge_prob_func, target_evaluation_func):
-        self.current_state = adjacency_graph
+    def sample(self, adjacency_graph, edge_prob_func, target_evaluation_func, intermediate_callback=None):
+        current_labeling = [0 for v in range(0, adjacency_graph.size())]
 
         self.adjacency_graph = adjacency_graph
+        self.max_labels = adjacency_graph.size()
+
         # Cache turn-on probability of each edge and stored in a adjacent list.
-        self.edge_on_prob = __cache_turn_on_probabilities(
-            adjacency_graph, edge_prob_func)
+        # Since the edge probability only concern the two end point of the edge,
+        # this probability will remain the same during the run.
+        self.__cache_turn_on_probability_func(edge_prob_func)
 
         while not self.__has_converged():
+            # Determine edge status (on or off) probabilistically.
+            edge_status = self.__determine_edge_status()
+
             # Form connected components over the whole space.
-            connected_components = self.__form_connected_components(entire_space=True)
+            connected_component = self.__form_connected_component(
+                current_labeling, edge_status)
 
             # Flip the connect components probabilistically.
-            self.current_state = self.__flip_connected_components(
-                connected_components, target_evaluation_func)
-        return
+            current_labeling = self.__flip_connected_component(
+                current_labeling, connected_component, target_evaluation_func)
 
-    def __cache_turn_on_probabilities(self, adjacency_graph, edge_prob_func):
-        """Store turn-on probability of each edge in a adjacent list."""
-        edges_on_prob = defaultdict(dict)
-        for (s, t) in adjacency_graph.edges:
-            edges_on_prob[s][t] = edge_prob_func(s, t)
-        return edges_on_prob
+            # Propagate intermediate result if has callback function.
+            if intermediate_callback is not None:
+                intermediate_callback(copy.copy(current_labeling))
+
+        return current_labeling
 
     def __has_converged(self):
         """Convergence Test."""
-        return
+        return False
 
-    def __form_connected_components(self, entire_space=True):
-        """Form connected components (CPs) probabilistically.
-        All CPs are formed on the entire space if entire_space=True,
-        Otherwise only one CP will be formed from a random vertex.
+    def __cache_turn_on_probability_func(self, edge_prob_func):
+        """Store turn-on probability of each edge in a adjacent list."""
+        self.__edge_on_prob_cache = defaultdict(dict)
+        for (s, t) in self.adjacency_graph.edges:
+                self.__edge_on_prob_cache[s][t] = edge_prob_func(s, t)
 
-        This function return a list of CP. Each CP is a list of vertexes."""
+    def __edge_on_probability(self, s, t):
+        # Ensure s < t
+        if s > t:
+            s, t = t, s
+        return self.__edge_on_prob_cache[s][t]
+
+    def __determine_edge_status(self):
+        edge_status = defaultdict(dict)
+        for (s, t) in self.adjacency_graph.edges:
+            # Determine the status of each edge probabilistically.
+            # Turn edge 'on' if r < prob(on), 'off' otherwise.
+            r = random.random()
+            if (r < self.__edge_on_probability(s, t)):
+                edge_status[s][t] = True
+                edge_status[t][s] = True
+            else:
+                edge_status[s][t] = False
+                edge_status[t][s] = False
+        return edge_status
+
+    def __form_connected_component(self, current_labeling, edge_status):
+        """Form a connected component (CP) probabilistically from a random vertex.
+        This function returns a tuple (CP, cut_edges).
+        CP is a list of vertexes. And cut_edges is a list of edges, i.e. [(s, t)]."""
         size = self.adjacency_graph.size
+        visited = [False for v in range(0, size)]
 
-        if entire_space:
-            # Form CPs by DFS.
-            pass
-        else:
-            pass
+        # From one CP from a random vertex
+        random_vertex = random.randint(0, size-1)
+        (component, cut_edges) = self.__grow_component_by_bfs(
+            random_vertex, current_labeling, edge_status, visited)
+        return (component, cut_edges)
 
-    def __flip_connected_components(self, target_evaluation_func):
-        newstate = self.current_state
-        return newstate
+    def __grow_component_by_bfs(self, start_vertex, current_labeling, edge_status, visited):
+        component = []
+        cut_edges = []
+        original_label = current_labeling[start_vertex]
+        d = deque(start_vertex)
+        while(len(d) != 0):
+            v = d.popleft()
+            if visited[v]:
+                continue
+
+            visited[v] = True
+            component.append(v)
+
+            # Add all connected vertex into the queue.
+            for u in self.adjacency_graph.adj_list[v]:
+                if current_labeling[u] == original_label:
+                    if self.edge_status[v][u]:
+                        d.append(u)
+                    else:
+                        cut_edges.append((v, u))
+        cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
+        return (component, cut_edges)
+
+    def __flip_connected_components(self, current_labeling, connected_component, target_evaluation_func):
+        (component, cut_edges) = connected_component
+
+        # Possible labels for for connected component:
+        #   - Label of any neighbors, so that the CP will be merged into a neighbor.
+        #   - New label, so that the CP will be a new cluster.
+
+        # Find candidate labels from neighbors
+        candidate_labels = set()
+        cut_edges_dict = defaultdict(set)
+        for v in component:
+            for u in self.adjacency_graph.adj_list[v]:
+                if u not in component:
+                    candidate_label = current_labeling[u]
+                    candidate_labels.add(candidate_label)
+                    cut_edges_dict[candidate_label].add((v, u))
+        # New label
+        for label in range(0, self.max_labels):
+            if label not in candidate_label:
+                candidate_label.add(label)
+                cut_edges_dict[label] = set()
+                break
+
+        # Compute posterior probability of each candidate.
+        labeling_candidates = []
+        posteriors = []
+        denominator = 0.0
+        for label in candidate_labels:
+            labeling = copy.copy(current_labeling)
+            for v in component:
+                labeling[v] = label
+
+            # This weighted posterior guarantees the detailed balance.
+            weight = 1.0
+            for (s, t) in cut_edges_dict[label]:
+                weight *= (1 - self.__edge_on_probability(s, t))
+            posterior = weight * target_evaluation_func(labeling)
+
+            labeling_candidates.append(labeling)
+            posteriors.append(posterior)
+            denominator += posterior
+        # Normalize the posterior probability.
+        posteriors = [p/denominator for p in posteriors]
+
+        # Sample from the posterior probability.
+        cdf = [sum(posteriors[0:x]) for x in range(1, len(posteriors)+1)]
+        r = random.random()
+        for i in range(0, len(cdf)):
+            if cdf[i] > r:
+                return labeling_candidates[i]
