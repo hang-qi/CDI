@@ -1,5 +1,5 @@
 from collections import defaultdict
-from collectios import deque
+from collections import deque
 import copy
 import random
 
@@ -34,10 +34,11 @@ class SWCuts(object):
         super(SWCuts, self).__init__()
 
     def sample(self, adjacency_graph, edge_prob_func, target_evaluation_func, intermediate_callback=None):
-        current_labeling = [0 for v in range(0, adjacency_graph.size())]
+        # Initial labeling.
+        current_labeling = [0] * adjacency_graph.size
 
         self.adjacency_graph = adjacency_graph
-        self.max_labels = adjacency_graph.size()
+        self.max_labels = adjacency_graph.size
 
         # Cache turn-on probability of each edge and stored in a adjacent list.
         # Since the edge probability only concern the two end point of the edge,
@@ -109,7 +110,7 @@ class SWCuts(object):
         component = []
         cut_edges = []
         original_label = current_labeling[start_vertex]
-        d = deque(start_vertex)
+        d = deque([start_vertex])
         while(len(d) != 0):
             v = d.popleft()
             if visited[v]:
@@ -121,14 +122,14 @@ class SWCuts(object):
             # Add all connected vertex into the queue.
             for u in self.adjacency_graph.adj_list[v]:
                 if current_labeling[u] == original_label:
-                    if self.edge_status[v][u]:
+                    if edge_status[v][u]:
                         d.append(u)
                     else:
                         cut_edges.append((v, u))
         cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
         return (component, cut_edges)
 
-    def __flip_connected_components(self, current_labeling, connected_component, target_evaluation_func):
+    def __flip_connected_component(self, current_labeling, connected_component, target_evaluation_func):
         (component, cut_edges) = connected_component
 
         # Possible labels for for connected component:
@@ -146,8 +147,8 @@ class SWCuts(object):
                     cut_edges_dict[candidate_label].add((v, u))
         # New label
         for label in range(0, self.max_labels):
-            if label not in candidate_label:
-                candidate_label.add(label)
+            if label not in candidate_labels:
+                candidate_labels.add(label)
                 cut_edges_dict[label] = set()
                 break
 
