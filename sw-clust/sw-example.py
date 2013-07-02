@@ -2,15 +2,18 @@
 from algorithm.sw import AdjacencyGraph, SWCuts
 
 
-def edge_func(s, t):
-    return 0.5
+class Model:
+    def __init__(self):
+        self.edge = 0.5
 
+    def edge_func(self, s, t):
+        return self.edge
 
-def target_func(labeling):
-    if labeling[0] == labeling[1] == labeling[2]:
-        return 1
-    else:
-        return 0.1
+    def target_func(self, labeling):
+        if labeling[0] == labeling[1] == labeling[2]:
+            return 1
+        else:
+            return 0.1
 
 
 def intermediate_callback(labeling):
@@ -20,9 +23,10 @@ intermediate_callback.iteration = 0
 
 
 def main():
+    m = Model()
     graph = AdjacencyGraph(3, [(0, 1), (1, 2)])
     swcut = SWCuts()
-    swcut.sample(graph, edge_func, target_func, intermediate_callback)
+    swcut.sample(graph, m.edge_func, m.target_func, intermediate_callback)
     return
 
 
