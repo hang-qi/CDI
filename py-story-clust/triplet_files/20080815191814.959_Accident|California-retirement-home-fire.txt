@@ -1,0 +1,7 @@
+<story>Accident|California-retirement-home-fire</story>
+<start>20080815191814.959</start>
+<end>20080815191952.723</end>
+the flames | could be seen | miles 
+More than residents | got | out safely 
+three | were hurt | we 
+Several police officers | suffered | smoke inhalation 

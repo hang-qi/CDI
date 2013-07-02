@@ -1,0 +1,4 @@
+<story>Network:Teaser|Preview</story>
+<start>20080814193747.464</start>
+<end>20080814193802.912</end>
+The man | helped end | the cold war 

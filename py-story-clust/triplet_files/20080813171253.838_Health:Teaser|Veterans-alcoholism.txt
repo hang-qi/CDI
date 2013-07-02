@@ -1,0 +1,4 @@
+<story>Health:Teaser|Veterans-alcoholism</story>
+<start>20080813171253.838</start>
+<end>20080813171300.845</end>
+American troops | coming | home 

@@ -1,0 +1,5 @@
+<story>Health|Nicotine-urge-genetic</story>
+<start>20080808180026.224</start>
+<end>20080808180033.731</end>
+A new study | finds | the urge 
+nicotine | could be | the genes 

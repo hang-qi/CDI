@@ -1,0 +1,4 @@
+<story>Politics|McCain-speech</story>
+<start>20080808151502.099</start>
+<end>20080808151502.900</end>
+We | do expect to hear | live 

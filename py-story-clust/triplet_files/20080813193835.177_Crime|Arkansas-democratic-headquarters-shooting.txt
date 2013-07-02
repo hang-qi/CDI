@@ -1,0 +1,10 @@
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080813193835.177</start>
+<end>20080813193910.412</end>
+we | re working | for 
+We | ve got | new information 
+DNC chairman Howard Dean | has issued | a statement 
+Bill Gwatney | was injured | the incident 
+we | are learning | the Associated Press 
+CNN | is working to confirm | this latest information 
+we | get | the CNN NEWSROOM 

@@ -1,0 +1,5 @@
+<story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
+<start>20080815191125.183</start>
+<end>20080815191135.560</end>
+a pregnant traffic officer | struck | a van 
+a superhuman effort | to save | her unborn babys life 

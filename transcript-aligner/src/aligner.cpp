@@ -26,19 +26,19 @@ const AlignmentResult Aligner::DoAlign()
     cout << "    # of words in transcript: " << (transcriptWords_.size() - 1) << endl;
     cout << "    Compare score: " << Compare() << endl;
 
-    cout << "Start reconstructing and restoring timestamps..." << endl; 
+    cout << "Start reconstructing and restoring timestamps..." << endl;
     Caption caption = ReconstructAndAlign();
     DeleteTable();
     cout << "  " << endl;
-    
+
     cout << "Reconstruction done." << endl;
     // Print Summaries
     counter_.PrintSummary(cout);
 
     // Percentage of same
     double percentageOfSame = (double) counter_.num_same / (transcriptWords_.size() - 1);
-    cout.precision(4);    
-    cout << "    Percentage of same:  " << percentageOfSame << " (# same / # in transcript)" << endl;    
+    cout.precision(4);
+    cout << "    Percentage of same:  " << percentageOfSame << " (# same / # in transcript)" << endl;
     if (percentageOfSame < 0.4)
     {
         cout << "[MATCHING ALERT] Same percentage drops off 0.4.  Caption: "
@@ -69,7 +69,7 @@ const Caption Aligner::ReconstructAndAlign()
 
 // Reconstruct the aligned text by recursively tracking back the table
 void Aligner::Reconstruct(int i, int j)
-{    
+{
     if (table_[i][j].parent == -1){
         return;
     }
@@ -79,7 +79,7 @@ void Aligner::Reconstruct(int i, int j)
         Reconstruct(i-1, j-1);
         PerformMatch(i, j);
         return;
-    }   
+    }
     if (table_[i][j].parent == INSERT)
     {
         Reconstruct(i, j-1);
@@ -96,7 +96,7 @@ void Aligner::Reconstruct(int i, int j)
 
 bool Aligner::isSegmentMark(const string& word)
 {
-    if (word == BEGIN_VIDEO_CLIP || word == END_VIDEO_CLIP 
+    if (word == BEGIN_VIDEO_CLIP || word == END_VIDEO_CLIP
          || word == BEGIN_VIDEOTAPE || word == END_VIDEOTAPE
          || word == BEGIN_VIDEO_TAPE || word == END_VIDEO_TAPE
          || word == BEGIN_AUDIO_CLIP || word == END_AUDIO_CLIP
@@ -136,7 +136,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                           pCaption_->captionLines[0].timestamp,
                           "TO_BE_FILLED",
                          "Type=Intro");
-        tptCaption.captionLines.push_back(introSeg);        
+        tptCaption.captionLines.push_back(introSeg);
         prev_seg_idx = tptCaption.captionLines.size() - 1;
         // string previousSegType = "Intro";
     }
@@ -148,7 +148,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
         // deliminators, such as BEGIN VEDIO CLIP, END VEDIO CLIP, COMMERCIAL BREAK.
         vector<string> sublines;
         currentLineContent = "";
-        int numWordsInLine = 0;        
+        int numWordsInLine = 0;
         while (numWordsInLine < resultLineLengths_[i])
         {
             word = *itWord;
@@ -313,7 +313,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                         currentTimestamp,
                         "TO_BE_FILLED",
                         "Type=Commercial");
-                linesBuffer.push_back(line);    
+                linesBuffer.push_back(line);
 
                 if (k+1 < sublines.size() && sublines[k+1] == COMMERCIAL_END
                     && !pCaption_->isInterpolated)
@@ -322,7 +322,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                     {
                         linesBuffer[k].timestamp = utility::datetime_utility::timestampAdd(previousTimestamp, 1);
                     }
-                }               
+                }
 
                 previousSegType = "Commercial";
             }
@@ -332,11 +332,12 @@ const Caption Aligner::BuildTimeAlignedCaption()
             }
             else
             {
-                // Create separate lines for flags      
+                // Create separate lines for flags
                 CaptionLine line(pCaption_->captionLines[i].tag,
                             currentTimestamp,
                             currentTimestamp_end,
                             sublines[k]);
+                line.SetCaptionStyle(pCaption_->captionLines[i].caption_style);
                 linesBuffer.push_back(line);
                 //tptCaption.captionLines.push_back(line);
             }
@@ -370,14 +371,14 @@ const Caption Aligner::BuildTimeAlignedCaption()
                 AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, linesBuffer[k].timestamp);
                 prev_ner_idx = tptCaption.captionLines.size() -1;
 
-                if (pCaption_->isInterpolated 
-                    && prev_seg_idx != -1 
+                if (pCaption_->isInterpolated
+                    && prev_seg_idx != -1
                     && tptCaption.captionLines[prev_seg_idx].content == "Type=Commercial")
                 {
                     AddEndTimeToTag(tptCaption.captionLines, prev_seg_idx, linesBuffer[k].timestamp);
                     prev_seg_idx = -1;
                 }
-            }            
+            }
         }
     }
 
@@ -395,7 +396,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                                     + "|PTAG=NER_01|Source_Program=transcript-aligner|Source_Person=Hang Qi");
     tptCaption.headerLines.push_back("NER_01|" + utility::datetime_utility::currentUTCDateTime("%Y%m%d%H%M")
                                     + "|Source_Program=transcript-aligner|Source_Person=Hang Qi");
-    
+
     return tptCaption;
 }
 
@@ -505,11 +506,11 @@ void Aligner::PerformMatch(int i, int j)
     assert(captionWords_[i] != CHEVRON);
     assert(captionWords_[i] != CHEVRON_STORY);
 
-    // always use words from transcript    
+    // always use words from transcript
     resultWords_.push_back(transcriptWords_[j]);
     counter_.num_match++;
 
-    if (utility::string_utility::to_lower(captionWords_[i]) == 
+    if (utility::string_utility::to_lower(captionWords_[i]) ==
             utility::string_utility::to_lower(transcriptWords_[j]))
     {
         counter_.num_same++;
@@ -585,7 +586,7 @@ int Align(const string& captionFilename, const string& transcriptFilename)
     cout << "Aligner started." << endl;
     cout << ">    Caption file: " << captionFilename << endl;
     cout << "> Transcript file: " << transcriptFilename << endl;
-    
+
     try
     {
         // Read caption file and transcript file (raw text with HTML tags eliminated)
@@ -595,7 +596,7 @@ int Align(const string& captionFilename, const string& transcriptFilename)
         // Begin align
         Aligner aligner(&caption, &transcript);
         AlignmentResult alignmentResult = aligner.DoAlign();
-        
+
         // Output TPT file
         string outputFilename = utility::string_utility::replace_and_copy(transcriptFilename,".rawtxt", ".tpt");
         cout << "> Output TPT file: " << outputFilename << endl;
@@ -626,7 +627,7 @@ int AlignBestOne(const string& transcriptFilename, const vector<string>& caption
         {
             const Caption caption = Caption(captionCandidates[i]);
             const Transcript transcript = Transcript(transcriptFilename);
-        
+
             // Begin align
             Aligner aligner(&caption, &transcript);
             alignmentResults.push_back(aligner.DoAlign());
@@ -654,7 +655,7 @@ int AlignBestOne(const string& transcriptFilename, const vector<string>& caption
         }
         else if (alignmentResults[i].percentageOfSame == bestPercentage && bestPercentage != 0)
         {
-            cout << "  [MATCHING DUPLICATE] Candidate " << captionCandidates[i] 
+            cout << "  [MATCHING DUPLICATE] Candidate " << captionCandidates[i]
                 << " and " << captionCandidates[bestIndex] << endl;
         }
     }

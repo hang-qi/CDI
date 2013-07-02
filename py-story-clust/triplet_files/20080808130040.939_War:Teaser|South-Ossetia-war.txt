@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808130040.939</start>
+<end>20080808130045.310</end>
+Fighting | erupts | the former Soviet Republic of Georgia 

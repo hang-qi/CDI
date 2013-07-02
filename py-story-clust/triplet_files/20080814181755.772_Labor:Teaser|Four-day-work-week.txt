@@ -1,0 +1,6 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080814181755.772</start>
+<end>20080814181954.224</end>
+some | love | a four day work week sound to you 
+some | hate | a four day work week sound to you 
+We | decided to let | some of our staff experience 

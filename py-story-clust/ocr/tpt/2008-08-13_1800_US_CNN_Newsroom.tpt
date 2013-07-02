@@ -1,0 +1,1935 @@
+TOP|20080813180002|2008-08-13_1800_US_CNN_Newsroom
+COL|Communication Studies Archive, UCLA
+UID|a71116dc-6961-11dd-bf20-00e0815fe86c
+DUR|0:59:54.03
+CMT|
+LBT|2008-08-13 11:00 America/Los_Angeles
+TPF|transcripts.cnn.com|cnr.05.html
+HED|Arkansas Democratic Party Chairman Wounded in Attack; Shaky Cease-Fire Between Russia and Georgia; Web of Deception: Where's Caylee Anthony?; Window Washers Need Rescuing After Platform Collapses in Ft. Lauderdale
+SegStart|20080813180002.633|Science-technology|Robert-Smith-odorless-toilet
+SegEnd|20080813180011.809|Science-technology|Robert-Smith-odorless-toilet
+SegStart|20080813180017.915|War:Teaser|South-Ossetia-war
+SegEnd|20080813180028.393|War:Teaser|South-Ossetia-war
+SegStart|20080813180028.393|Justice:Teaser|Osteen-wife-attacks-attendant
+SegEnd|20080813180042.473|Justice:Teaser|Osteen-wife-attacks-attendant
+SegStart|20080813180042.707|Justice:Teaser|Caylee-Anthony-missing
+SegEnd|20080813180055.053|Justice:Teaser|Caylee-Anthony-missing
+SegStart|20080813180055.253|Network|Intro
+SegEnd|20080813180113.037|Network|Intro
+SegStart|20080813180113.471|Crime|Arkansas-democratic-headquarters-shooting
+SegEnd|20080813180735.119|Crime|Arkansas-democratic-headquarters-shooting
+SegStart|20080813180735.119|War|South-Ossetia-war
+SegEnd|20080813180942.212|War|South-Ossetia-war
+SegStart|20080813180942.446|International|Bush-South-Ossetia-statement
+SegEnd|20080813181110.200|International|Bush-South-Ossetia-statement
+SegStart|20080813181110.200|Crime|Arkansas-democratic-headquarters-shooting
+SegEnd|20080813181316.527|Crime|Arkansas-democratic-headquarters-shooting
+SegStart|20080813181316.894|Justice:Teaser|Caylee-Anthony-missing
+SegEnd|20080813181327.871|Justice:Teaser|Caylee-Anthony-missing
+SegStart|20080813181328.172|Commercial|Block
+SegEnd|20080813181438.242|Commercial|Block
+SegStart|20080813181438.675|Weather|US
+SegEnd|20080813181525.188|Weather|US
+SegStart|20080813181525.555|Commercial|Block
+SegEnd|20080813181708.725|Commercial|Block
+SegStart|20080813181709.026|Crime|Caylee-Anthony-missing
+SegEnd|20080813182258.541|Crime|Caylee-Anthony-missing
+SegStart|20080813182258.908|Labor:Teaser|Four-day-work-week
+SegEnd|20080813182307.751|Labor:Teaser|Four-day-work-week
+SegStart|20080813182307.984|Justice:Teaser|Osteen-wife-attacks-attendant
+SegEnd|20080813182319.662|Justice:Teaser|Osteen-wife-attacks-attendant
+SegStart|20080813182319.662|Commercial|Block
+SegEnd|20080813182439.809|Commercial|Block
+SegStart|20080813182443.513|Politics|Presidential-campaign
+SegEnd|20080813182620.209|Politics|Presidential-campaign
+SegStart|20080813182620.209|Commercial|Block
+SegEnd|20080813182817.226|Commercial|Block
+SegStart|20080813182817.460|Labor|Four-day-work-week
+SegEnd|20080813183045.875|Labor|Four-day-work-week
+SegStart|20080813183046.142|Money|Oil-prices
+SegEnd|20080813183239.522|Money|Oil-prices
+SegStart|20080813183239.855|Justice:Teaser|Osteen-wife-attacks-attendant
+SegEnd|20080813183251.901|Justice:Teaser|Osteen-wife-attacks-attendant
+SegStart|20080813183252.268|Commercial|Block
+SegEnd|20080813183521.283|Commercial|Block
+SegStart|20080813183521.283|International|South-Ossetia-bloggers
+SegEnd|20080813183715.965|International|South-Ossetia-bloggers
+SegStart|20080813183715.965|Justice|Osteen-wife-attacks-attendant
+SegEnd|20080813184044.173|Justice|Osteen-wife-attacks-attendant
+SegStart|20080813184045.674|Health:Teaser|Hispanics-health-care
+SegEnd|20080813184057.386|Health:Teaser|Hispanics-health-care
+SegStart|20080813184057.986|Commercial|Block
+SegEnd|20080813184244.426|Commercial|Block
+SegStart|20080813184245.027|Science-technology|Glycerin-gasoline-alternative
+SegEnd|20080813184438.974|Science-technology|Glycerin-gasoline-alternative
+SegStart|20080813184439.608|Commercial|Break
+SegEnd|20080813184611.500|Commercial|Break
+SegStart|20080813184611.767|Health|Hispanics-health-care
+SegEnd|20080813184755.503|Health|Hispanics-health-care
+SegStart|20080813184755.503|Science-technology|Hydrogen-powered-vehicles
+SegEnd|20080813185002.897|Science-technology|Hydrogen-powered-vehicles
+SegStart|20080813185004.399|Politics:Teaser|Presidential-campaign
+SegEnd|20080813185016.945|Politics:Teaser|Presidential-campaign
+SegStart|20080813185017.112|Commercial|Block
+SegEnd|20080813185318.760|Commercial|Block
+SegStart|20080813185319.127|Accident|Dangling-window-washers
+SegEnd|20080813185955.890|Accident|Dangling-window-washers
+TTL|CNN NEWSROOM
+OBT|2008-08-13 14:00 America/New_York
+NER_01|201305160613|Source_Program=transcript-aligner|Source_Person=Hang Qi
+20080813180002.633|20080813180739.218|SEG|Type=Intro
+20080813180002.633|20080813180028.393|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813180002.633|20080813180003.943|CCO|>> DON LEMON, CNN ANCHOR: OK. 
+20080813180014.862|20080813180017.915|CCO|What 
+20080813180017.915|20080813180019.224|CCO|is wrong with this picture? 
+20080813180020.534|20080813180021.844|CCO|Everything, say government leaders 
+20080813180021.844|20080813180023.154|CCO|in Georgia. 
+20080813180023.154|20080813180024.463|CCO|These are Russian forces in a Georgian 
+20080813180024.463|20080813180025.773|CCO|court on the Black Sea. 
+20080813180025.773|20080813180027.083|CCO|Not exactly fighting, but not exactly 
+20080813180027.083|20080813180028.393|CCO|leaving either. 
+20080813180028.393|20080813180039.657|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813180028.393|20080813180031.209|CCO|>> BRIANNA KEILAR, CNN ANCHOR: The flight attendant versus the 
+20080813180031.209|20080813180034.025|CCO|minister's wife. 
+20080813180034.025|20080813180036.841|CCO|And not just any minister's wife. 
+20080813180036.841|20080813180039.657|CCO|Victoria Osteen accused of an unholy tirade in 2005.  
+20080813180039.657|20080813180042.707|CCO|We'll get a chapter and verse on a big-ticket lawsuit. 
+20080813180039.657|20080813180102.366|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813180039.657|20080813180042.707|CCO|>> LEMON: And this 
+20080813180042.707|20080813180044.078|CCO|story has captivated the nation. 
+20080813180045.450|20080813180046.822|CCO|Does this woman know more than she's 
+20080813180046.822|20080813180048.194|CCO|telling about her missing 3-year-old 
+20080813180048.194|20080813180049.565|CCO|daughter? 
+20080813180049.565|20080813180050.937|CCO|The child could be anywhere. 
+20080813180050.937|20080813180052.309|CCO|The mom is going nowhere, at least for now. 
+20080813180053.681|20080813180055.253|CCO|Our Randi Kaye updates us on heart-wrenching story. Hello, everyone. I'm 
+20080813180055.253|20080813180058.809|CCO|Don Lemon, live here at the CNN  
+20080813180058.809|20080813180102.366|CCO|world headquarters in Atlanta. 
+20080813180102.366|20080813180132.381|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813180102.366|20080813180105.923|CCO|>> KEILAR: And I'm Brianna Keilar, in for Kyra 
+20080813180105.923|20080813180109.480|CCO|Phillips. 
+20080813180109.480|20080813180113.471|CCO|You're in the CNN NEWSROOM. 
+20080813180113.471|20080813180115.190|CCO| Breaking news into the CNN NEWSROOM  
+20080813180115.190|20080813180116.909|CCO|out of Little Rock. 
+20080813180116.909|20080813180118.628|CCO|According to The Associated Press, 
+20080813180118.628|20080813180120.347|CCO|the chairman of the Arkansas 
+20080813180120.347|20080813180122.066|CCO|Democratic Party, Bill Gwatney, 
+20080813180122.066|20080813180123.785|CCO|has been hospitalized after 
+20080813180123.785|20080813180125.504|CCO|a shooting at the headquarters there. 
+20080813180125.504|20080813180127.224|CCO|This is a report from reporter Charlie Crowson of our affiliate KTHV.  
+20080813180127.224|20080813180128.943|CCO|This was filed 
+20080813180128.943|20080813180130.662|CCO|just moments ago from downtown 
+20080813180130.662|20080813180132.381|CCO|Little Rock. 
+20080813180132.381|20080813180355.069|CLIP|Type=Video
+20080813180132.381|20080813180320.686|NER_01|Person=Charlie Crowson|Role=KTHV REPORTER
+20080813180132.381|20080813180134.100|CCO|>> CHARLIE CROWSON, KTHV REPORTER: Stephanie (ph), we just completed the debriefing 
+20080813180134.100|20080813180135.819|CCO|with Little Rock Police Lieutenant Terry Hastings about 
+20080813180135.819|20080813180137.538|CCO|what happened. 
+20080813180137.538|20080813180139.258|CCO|At approximately 10  minutes until 
+20080813180139.258|20080813180140.977|CCO|noon, just more than an hour ago, 
+20080813180140.977|20080813180142.696|CCO|a gentleman, a white gentleman, 
+20080813180142.696|20080813180144.415|CCO|walked into the Democratic 
+20080813180144.415|20080813180146.134|CCO|headquarters here at the 
+20080813180146.134|20080813180147.853|CCO|corner of Pulaski 
+20080813180146.134|20080813180147.853|CCO|(ph)
+20080813180146.134|20080813180147.853|CCO|and 1300  
+20080813180147.853|20080813180149.572|CCO|Capitol and opened fire. Now, The Associated Press is reporting his victim's 
+20080813180149.572|20080813180151.291|CCO|target was chairman Bill 
+20080813180151.291|20080813180153.011|CCO|Gwatney. 
+20080813180153.011|20080813180154.730|CCO|Little Rock Police have not confirmed 
+20080813180154.730|20080813180156.449|CCO|that name, but we 
+20080813180156.449|20080813180158.168|CCO|are learning from The Associated 
+20080813180158.168|20080813180159.887|CCO|Press that it was, in 
+20080813180159.887|20080813180201.606|CCO|fact, Chairman Gwatney. 
+20080813180201.606|20080813180203.325|CCO|We can tell you that the suspect fled in a pickup truck. 
+20080813180203.325|20080813180205.045|CCO|And then after a lengthy chase into Grant 
+20080813180205.045|20080813180206.764|CCO|County, into the town of Sheridan, police, 
+20080813180206.764|20080813180208.483|CCO|along with the Arkansas State Police, 
+20080813180208.483|20080813180210.202|CCO|did shoot the suspect. 
+20080813180210.202|20080813180211.921|CCO|They're not releasing the condition of 
+20080813180211.921|20080813180213.640|CCO|the suspect nor are they releasing his name right 
+20080813180213.640|20080813180215.359|CCO|now. 
+20080813180215.359|20080813180217.078|CCO|They are saying they're still waiting to get all of their facts straight and everything lined 
+20080813180217.078|20080813180218.798|CCO|out before any name is released regarding the suspect. But 
+20080813180220.517|20080813180222.236|CCO|we can tell you, according to the Little Rock Police, the suspect 
+20080813180222.236|20080813180223.955|CCO|was chased into Sheridan after a 
+20080813180223.955|20080813180225.674|CCO|lengthy car chase. 
+20080813180225.674|20080813180227.393|CCO|And he was in a pickup truck. 
+20080813180227.393|20080813180229.112|CCO|He was shot by authorities there in Sheridan. 
+20080813180230.832|20080813180232.551|CCO|His condition is not known at this 
+20080813180232.551|20080813180234.270|CCO|time. 
+20080813180234.270|20080813180235.989|CCO|No indication of any motive right now. 
+20080813180235.989|20080813180237.708|CCO|All 
+20080813180237.708|20080813180239.427|CCO|witnesses involved with this case, they are at the Little Rock 
+20080813180239.427|20080813180241.146|CCO|Police Department being interviewed right now by investigators. Don't know a number -- we 
+20080813180242.866|20080813180244.585|CCO|don't know how many people were 
+20080813180244.585|20080813180246.304|CCO|in the State Democratic Party. 
+20080813180248.023|20080813180249.742|CCO|Don't know how many people were there, 
+20080813180251.461|20080813180253.180|CCO|but we are told they are all now 
+20080813180253.180|20080813180254.899|CCO|at Little Rock P.D.  under investigation. 
+20080813180256.619|20080813180258.338|CCO|We did speak to Sara Lee (ph). She works 
+20080813180258.338|20080813180300.057|CCO|at Frances 
+20080813180258.338|20080813180300.057|CCO|(ph)
+20080813180258.338|20080813180300.057|CCO|Flowers, which is just next door to the Democratic 
+20080813180300.057|20080813180301.776|CCO|Party headquarters. 
+20080813180301.776|20080813180303.495|CCO|She says that Mr. Gwatney's assistant -- she did not give her name, but her assistant -- or excuse me, Mr. Gwatney's assistant 
+20080813180303.495|20080813180305.214|CCO|ran into her shop shortly after the 
+20080813180305.214|20080813180306.933|CCO|shots were fired, frantic, asking 
+20080813180306.933|20080813180308.653|CCO|to please call 911  because 
+20080813180308.653|20080813180310.372|CCO|the chairman had -- "he had been 
+20080813180310.372|20080813180312.091|CCO|shot." 
+20080813180312.091|20080813180313.810|CCO|Now, that is one account of what happened 
+20080813180313.810|20080813180315.529|CCO|in there. 
+20080813180315.529|20080813180317.248|CCO|But once again, no idea of any motive. 
+20080813180318.967|20080813180320.686|CCO|No idea of anything. 
+20080813180320.686|20080813180322.406|CCO|Police are still investigating -- Stephanie (ph). 
+20080813180320.686|20080813180341.316|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813180320.686|20080813180322.406|CCO|>> KEILAR: And again, 
+20080813180322.406|20080813180324.125|CCO|that is Charlie Crowson 
+20080813180324.125|20080813180325.844|CCO|from our affiliate KTHV  in Little 
+20080813180325.844|20080813180327.563|CCO|Rock. 
+20080813180327.563|20080813180329.282|CCO|Again, Little Rock Police are not confirming 
+20080813180329.282|20080813180331.001|CCO|that the victim of the 
+20080813180331.001|20080813180332.720|CCO|shooting is indeed Bill Gwatney, chairman 
+20080813180332.720|20080813180334.440|CCO|of the Arkansas Democratic Party, but that's what The Associated Press is reporting. Little 
+20080813180336.159|20080813180337.878|CCO|Rock Police are telling us 
+20080813180337.878|20080813180339.597|CCO|the victim is in critical condition. 
+20080813180341.316|20080813180355.069|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813180341.316|20080813180343.035|CCO|>> LEMON: Actually, that's just one of our affiliates in 
+20080813180343.035|20080813180344.754|CCO|the area. 
+20080813180344.754|20080813180346.474|CCO|We also have another affiliate there, KATV.  Just 
+20080813180346.474|20080813180348.193|CCO|moments ago, their anchor, who is Anne Pressley, did 
+20080813180348.193|20080813180349.912|CCO|an interview with 
+20080813180349.912|20080813180351.631|CCO|a woman who was on the scene, and we're 
+20080813180351.631|20080813180353.350|CCO|going to listen into that. 
+20080813180355.069|20080813180739.218|CLIP|Type=Video
+20080813180355.069|20080813180458.677|NER_01|Person=Anne Pressley|Role=KATV ANCHOR
+20080813180355.069|20080813180356.788|CCO|>> ANNE PRESSLEY, KATV ANCHOR: And we interrupt programming 
+20080813180356.788|20080813180358.507|CCO|once again to bring you an update 
+20080813180358.507|20080813180400.227|CCO|on a developing story we brought 
+20080813180400.227|20080813180401.946|CCO|you over the last hour or 
+20080813180401.946|20080813180403.665|CCO|so, 
+20080813180403.665|20080813180405.384|CCO|a shooting inside the Democratic 
+20080813180405.384|20080813180407.103|CCO|Party headquarters in downtown Little 
+20080813180407.103|20080813180408.822|CCO|Rock. 
+20080813180408.822|20080813180410.541|CCO|We have confirmed at this hour that it 
+20080813180410.541|20080813180412.261|CCO|was Democratic Party Chairman 
+20080813180412.261|20080813180413.980|CCO|Bill Gwatney who was shot. 
+20080813180413.980|20080813180415.699|CCO|He's said to have been shot three 
+20080813180415.699|20080813180417.418|CCO|times. 
+20080813180417.418|20080813180419.137|CCO|Authorities say a gunman entered 
+20080813180419.137|20080813180420.856|CCO|the Arkansas Democratic Party headquarters 
+20080813180420.856|20080813180422.575|CCO|around noon. 
+20080813180422.575|20080813180424.294|CCO|They asked for the chairman. 
+20080813180424.294|20080813180426.014|CCO|The next thing they know, three shots 
+20080813180426.014|20080813180427.733|CCO|were heard fired. 
+20080813180427.733|20080813180429.452|CCO|Gwatney is said to be hospitalized and in critical 
+20080813180429.452|20080813180431.171|CCO|condition at this hour. 
+20080813180431.171|20080813180432.890|CCO|No word on the identity of the suspect. The suspect led authorities on a 
+20080813180432.890|20080813180434.609|CCO|high-speed chase through South Little Rock, all the way into 
+20080813180434.609|20080813180436.328|CCO|Grant County. 
+20080813180436.328|20080813180438.048|CCO|There were initially some reports that the 
+20080813180438.048|20080813180439.767|CCO|suspect had been shot and was dead. 
+20080813180441.486|20080813180443.205|CCO|But now we are told that the suspect 
+20080813180443.205|20080813180444.924|CCO|is being revived by medical 
+20080813180444.924|20080813180446.643|CCO|technicians on the scene. 
+20080813180448.362|20080813180450.082|CCO|Our Pamela Smith is live in Sheridan, where 
+20080813180450.082|20080813180451.801|CCO|the suspect was apprehended. 
+20080813180453.520|20080813180455.239|CCO|Pam, can you tell us anything about 
+20080813180455.239|20080813180456.958|CCO|the status of the suspect at 
+20080813180456.958|20080813180458.677|CCO|this hour? 
+20080813180458.677|20080813180643.544|NER_01|Person=Pamela Smith|Role=KATV REPORTER
+20080813180458.677|20080813180500.396|CCO|>> PAMELA SMITH, KATV REPORTER: Well, Anne, what we know from our vantage point, which 
+20080813180500.396|20080813180502.115|CCO|we are being kept 
+20080813180502.115|20080813180503.835|CCO|at quite a distance by police, obviously, because 
+20080813180503.835|20080813180505.554|CCO|the investigation is ongoing, 
+20080813180505.554|20080813180507.273|CCO|but the suspect, as you mentioned 
+20080813180507.273|20080813180508.992|CCO|already, was loaded into 
+20080813180508.992|20080813180510.711|CCO|an ambulance. 
+20080813180510.711|20080813180512.430|CCO|And there were several attempts to resuscitate him. 
+20080813180514.149|20080813180515.869|CCO|We don't know his exact status, 
+20080813180515.869|20080813180517.588|CCO|but I  did overhear police commenting 
+20080813180517.588|20080813180519.307|CCO|that they were going to 
+20080813180519.307|20080813180521.026|CCO|attempt to med-flight him. 
+20080813180521.026|20080813180522.745|CCO|But this is a very woody area, so they're 
+20080813180522.745|20080813180524.464|CCO|trying to get some things 
+20080813180524.464|20080813180526.183|CCO|worked out logistically to 
+20080813180526.183|20080813180527.902|CCO|be able to accomplish that, 
+20080813180527.902|20080813180529.622|CCO|to get the suspect airlifted to 
+20080813180529.622|20080813180531.341|CCO|one of the local hospitals. 
+20080813180531.341|20080813180533.060|CCO|But there is quite a seen here, as you 
+20080813180533.060|20080813180534.779|CCO|imagine, down Little Creek cutoff, 
+20080813180534.779|20080813180536.498|CCO|where the high-speed chase came to 
+20080813180536.498|20080813180538.217|CCO|an end. 
+20080813180538.217|20080813180539.936|CCO|Authorities from multiple law enforcement agencies are still on the scene 
+20080813180539.936|20080813180541.656|CCO|as we speak. 
+20080813180541.656|20080813180543.375|CCO|In fact, many of these law enforcement officials 
+20080813180543.375|20080813180545.094|CCO|followed the suspect out 
+20080813180545.094|20080813180546.813|CCO|of Little Rock, as we've already 
+20080813180546.813|20080813180548.532|CCO|mentioned, into Grant County, 
+20080813180548.532|20080813180550.251|CCO|going through several counties, 
+20080813180550.251|20080813180551.970|CCO|at speeds that often reached 
+20080813180551.970|20080813180553.690|CCO|100  miles per hour. 
+20080813180553.690|20080813180555.409|CCO|Quite a few neighbors here in the 
+20080813180555.409|20080813180557.128|CCO|area were shocked and surprised, 
+20080813180557.128|20080813180558.847|CCO|as you might imagine. 
+20080813180558.847|20080813180600.566|CCO|One gentleman told me he was asleep 
+20080813180600.566|20080813180602.285|CCO|inside his home when he heard 
+20080813180602.285|20080813180604.004|CCO|all of the commotion outside. 
+20080813180605.723|20080813180607.443|CCO|But again, don't know much about 
+20080813180607.443|20080813180609.162|CCO|the suspect. 
+20080813180609.162|20080813180610.881|CCO|All we know is that he is a white 
+20080813180610.881|20080813180612.600|CCO|male. 
+20080813180612.600|20080813180614.319|CCO|He was shot during some sort of exchange. 
+20080813180616.038|20080813180617.757|CCO|We have not been able to confirm 
+20080813180617.757|20080813180619.477|CCO|whether or not police and the suspect 
+20080813180619.477|20080813180621.196|CCO|actually exchanged gunfire, 
+20080813180622.915|20080813180624.634|CCO|but we do know the suspect was wounded. 
+20080813180626.353|20080813180628.072|CCO|He was driving a blue Dodge, which 
+20080813180628.072|20080813180629.791|CCO|pealed out just off Little Creek Road 
+20080813180629.791|20080813180631.510|CCO|and is wrecked against a tree. 
+20080813180633.230|20080813180634.949|CCO|Authorities are still there combing the area, searching for any evidence that might help them try to figure out exactly what 
+20080813180634.949|20080813180636.668|CCO|led to this very bizarre set of circumstances 
+20080813180636.668|20080813180638.387|CCO|here today. 
+20080813180638.387|20080813180640.106|CCO|I'm Pamela Smith, reporting live from 
+20080813180640.106|20080813180641.825|CCO|Sheridan. 
+20080813180641.825|20080813180643.544|CCO|We of course will have the latest for you as 
+20080813180643.544|20080813180645.264|CCO|it becomes available to us. 
+20080813180643.544|20080813180739.218|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813180643.544|20080813180645.264|CCO|>> LEMON: And that 
+20080813180645.264|20080813180646.983|CCO|was our local coverage. Our local affiliate KATV  
+20080813180646.983|20080813180648.702|CCO|covering that story that happened just a short time ago. And just 
+20080813180648.702|20080813180650.421|CCO|to sum up, everything that you've heard 
+20080813180650.421|20080813180652.140|CCO|there, of course the station might 
+20080813180652.140|20080813180653.859|CCO|be confirming some of the information, but 
+20080813180653.859|20080813180655.578|CCO|CNN  has only confirmed 
+20080813180655.578|20080813180657.298|CCO|that one person has been 
+20080813180657.298|20080813180659.017|CCO|taken into custody, and then one 
+20080813180659.017|20080813180700.736|CCO|person also was shot in all of 
+20080813180700.736|20080813180702.455|CCO|this. 
+20080813180702.455|20080813180704.174|CCO|Not naming that person. 
+20080813180704.174|20080813180705.893|CCO|The Associated Press is reporting, 
+20080813180705.893|20080813180707.612|CCO|Brianna, that it is the 
+20080813180707.612|20080813180709.331|CCO|Party chair there, Bill Gwatney, 
+20080813180709.331|20080813180711.051|CCO|who has been shot and who has been taken 
+20080813180711.051|20080813180712.770|CCO|to the hospital. 
+20080813180712.770|20080813180714.489|CCO|They're also reporting that he is in critical 
+20080813180714.489|20080813180716.208|CCO|condition. 
+20080813180716.208|20080813180717.927|CCO|So CNN  is following that. 
+20080813180717.927|20080813180719.646|CCO|You're looking at now the Web site for 
+20080813180719.646|20080813180721.365|CCO|the Democratic Party 
+20080813180721.365|20080813180723.085|CCO|there in Little Rock, Arkansas. 
+20080813180723.085|20080813180724.804|CCO|We're working with our national desk 
+20080813180724.804|20080813180726.523|CCO|here to try to get as much information 
+20080813180726.523|20080813180728.242|CCO|as possible. 
+20080813180728.242|20080813180729.961|CCO|But you've been listening to local coverage, and we're going to continue to follow 
+20080813180731.680|20080813180733.399|CCO|this developing story 
+20080813180733.399|20080813180735.119|CCO|throughout the afternoon, as it develops here in the CNN NEWSROOM.  Meantime, 
+20080813180735.119|20080813180737.168|CCO|we have other developing 
+20080813180737.168|20080813180739.218|CCO|news. 
+20080813180739.218|20080813181438.675|SEG|Type=Story
+20080813180739.218|20080813180741.268|CCO|>>> This time it is overseas. 
+20080813180741.268|20080813180743.318|CCO|Our eyes and ears are on Georgia right now, the former Soviet republic where the 
+20080813180745.368|20080813180747.418|CCO|shooting and bombing and rocket fire have 
+20080813180747.418|20080813180749.468|CCO|stopped, but all is not well. 
+20080813180749.468|20080813180751.518|CCO|Russian troops who agreed to cease-firing did, 
+20080813180753.567|20080813180755.617|CCO|but they're still deep inside Georgia 
+20080813180755.617|20080813180757.667|CCO|and far from the mandated 
+20080813180757.667|20080813180759.717|CCO|peacekeeping zone they 
+20080813180759.717|20080813180801.767|CCO|breached last week. 
+20080813180801.767|20080813180803.817|CCO|Some images here of Georgians living in the 
+20080813180803.817|20080813180805.867|CCO|aftermath of Russian attacks. The 
+20080813180805.867|20080813180807.917|CCO|president of Georgia accuses Russia 
+20080813180807.917|20080813180809.967|CCO|of "carpet bombing" the capital of South Ossetia and setting 
+20080813180809.967|20080813180812.016|CCO|up internment camps for people 
+20080813180812.016|20080813180814.066|CCO|who live there. 
+20080813180814.066|20080813180816.116|CCO|So, what about that cease-fire? Is 
+20080813180816.116|20080813180818.166|CCO|it holding? 
+20080813180818.166|20080813180820.216|CCO|Straight to Tbilisi now, the Georgian capital, and CNN's Frederik Pleitgen. Is 
+20080813180820.216|20080813180822.266|CCO|it holding, Frederik? 
+20080813180820.216|20080813180940.162|NER_01|Person=Frederik Pleitgen|Role=CNN INTERNATIONAL CORRESPONDENT
+20080813180820.216|20080813180822.266|CCO|>> FREDERIK PLEITGEN, CNN INTERNATIONAL CORRESPONDENT: Well, right 
+20080813180822.266|20080813180824.316|CCO|now, Don, the cease-fire appears 
+20080813180824.316|20080813180826.366|CCO|to be holding. 
+20080813180826.366|20080813180828.416|CCO|Certainly the two sides, at least, aren't shooting at 
+20080813180828.416|20080813180830.465|CCO|each other at this point. 
+20080813180830.465|20080813180832.515|CCO|Nevertheless, the Georgian government 
+20080813180832.515|20080813180834.565|CCO|is accusing the Russians 
+20080813180834.565|20080813180836.615|CCO|of breaching that cease-fire agreement 
+20080813180836.615|20080813180838.665|CCO|that has been in effect 
+20080813180838.665|20080813180840.715|CCO|between these two sides since 
+20080813180840.715|20080813180842.765|CCO|the late evening hours of yesterday 
+20080813180842.765|20080813180844.815|CCO|evening. 
+20080813180844.815|20080813180846.865|CCO|And the reason they say that is because 
+20080813180846.865|20080813180848.914|CCO|earlier today, a column of 
+20080813180848.914|20080813180850.964|CCO|Russian armored vehicles and armored personnel carriers made 
+20080813180850.964|20080813180853.014|CCO|its way across, towards the Georgian 
+20080813180853.014|20080813180855.064|CCO|capital of Tbilisi from a position it had further back towards that breakaway republic of Southern Ossetia. It 
+20080813180855.064|20080813180857.114|CCO|was making its way here towards the capital. Then 
+20080813180857.114|20080813180859.164|CCO|that convoy stopped, veered off in a different location, and took 
+20080813180859.164|20080813180901.214|CCO|up a location somewhere else. 
+20080813180901.214|20080813180903.264|CCO|Now, the Georgian government says those 
+20080813180903.264|20080813180905.314|CCO|tanks moving in the direction 
+20080813180905.314|20080813180907.363|CCO|of the capital is a direct 
+20080813180907.363|20080813180909.413|CCO|breach of that cease-fire agreement because that 
+20080813180911.463|20080813180913.513|CCO|cease-fire agreement calls for both sides 
+20080813180913.513|20080813180915.563|CCO|to remain in their position at 
+20080813180915.563|20080813180917.613|CCO|this point in time. And you were saying exactly right, 
+20080813180917.613|20080813180919.663|CCO|the rhetoric between these two nations 
+20080813180919.663|20080813180921.713|CCO|still very much ramped up. 
+20080813180923.763|20080813180925.812|CCO|Both sides accusing each other of 
+20080813180925.812|20080813180927.862|CCO|propagating campaigns of ethnic 
+20080813180927.862|20080813180929.912|CCO|cleansing. 
+20080813180929.912|20080813180931.962|CCO|The Georgians slinging that at the Russians. The 
+20080813180931.962|20080813180934.012|CCO|Russian government saying the same thing 
+20080813180934.012|20080813180936.062|CCO|about Georgian President 
+20080813180936.062|20080813180938.112|CCO|Mikheil Saakashvili, saying that he is the one who started this 
+20080813180938.112|20080813180940.162|CCO|conflict by sending his troops into southern 
+20080813180940.162|20080813180942.446|CCO|Ossetia almost a week ago -- Don. 
+20080813180940.162|20080813180940.162|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813180940.162|20080813180942.446|CCO|>> LEMON: All right. Frederik Pleitgen, we appreciate your reporting. Thank you. 
+20080813180940.162|20080813180957.382|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813180940.162|20080813180942.446|CCO|>> KEILAR: And President 
+20080813180942.446|20080813180944.313|CCO|Bush is eager to see 
+20080813180944.313|20080813180946.180|CCO|an end to the conflict. 
+20080813180946.180|20080813180948.047|CCO|He's sending Secretary of State Condoleezza Rice first 
+20080813180948.047|20080813180949.914|CCO|to France, then to Tbilisi. She actually leaves Washington here in just a few hours. The 
+20080813180951.781|20080813180953.648|CCO|president saying today that Russia 
+20080813180953.648|20080813180955.515|CCO|is gambling with its post- Soviet progress. 
+20080813180957.382|20080813181438.675|CLIP|Type=Video
+20080813180957.382|20080813181029.123|NER_01|Person=George W. Bush|Role=PRESIDENT OF THE UNITED STATES
+20080813180957.382|20080813180959.249|CCO|>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: Russia has sought to integrate into 
+20080813180959.249|20080813181001.117|CCO|the diplomatic, political, economic and security structures of the 
+20080813181001.117|20080813181002.984|CCO|21st century. 
+20080813181002.984|20080813181004.851|CCO|The United States has supported those 
+20080813181004.851|20080813181006.718|CCO|efforts. 
+20080813181006.718|20080813181008.585|CCO|Now Russia is putting its aspirations 
+20080813181008.585|20080813181010.452|CCO|at risk by taking actions in 
+20080813181010.452|20080813181012.319|CCO|Georgia that are inconsistent 
+20080813181012.319|20080813181014.186|CCO|with the principles 
+20080813181014.186|20080813181016.053|CCO|of those institutions. 
+20080813181016.053|20080813181017.921|CCO|To begin to repair the damage to its relations with 
+20080813181017.921|20080813181019.788|CCO|the United States, Europe 
+20080813181019.788|20080813181021.655|CCO|and other nations, and to begin 
+20080813181021.655|20080813181023.522|CCO|restoring its place in the 
+20080813181023.522|20080813181025.389|CCO|world, 
+20080813181025.389|20080813181027.256|CCO|Russia must keep its word and act 
+20080813181027.256|20080813181029.123|CCO|to end this crisis. 
+20080813181029.123|20080813181045.927|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813181029.123|20080813181030.990|CCO|>> KEILAR: So what will Condoleezza Rice bring 
+20080813181030.990|20080813181032.857|CCO|to her diplomatic mission? 
+20080813181032.857|20080813181034.724|CCO|Well, you'll be finding out when we do. 
+20080813181034.724|20080813181036.592|CCO|She's actually scheduled to speak to reporters 
+20080813181036.592|20080813181038.459|CCO|at 3:00  p.m. Eastern Time from the State Department, so here in 
+20080813181040.326|20080813181042.193|CCO|under an hour. 
+20080813181042.193|20080813181044.060|CCO|And we are going to be bringing her news conference 
+20080813181044.060|20080813181045.927|CCO|to you live. 
+20080813181045.927|20080813181110.200|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813181045.927|20080813181047.794|CCO|>> LEMON: Absolutely, Brianna. And not 
+20080813181047.794|20080813181049.661|CCO|even an hour after President 
+20080813181049.661|20080813181051.528|CCO|Bush announced the U.S.  relief mission 
+20080813181051.528|20080813181053.396|CCO|to the Georgian people, an 
+20080813181053.396|20080813181055.263|CCO|Air Force cargo plane arrived 
+20080813181055.263|20080813181057.130|CCO|there. 
+20080813181057.130|20080813181058.997|CCO|Food, medicine for the estimated 
+20080813181058.997|20080813181100.864|CCO|100,000  Georgians displaced 
+20080813181100.864|20080813181102.731|CCO|by days of fighting. 
+20080813181102.731|20080813181104.598|CCO|The International Red Cross and World 
+20080813181104.598|20080813181106.465|CCO|Food Program are on the ground 
+20080813181106.465|20080813181108.332|CCO|in Georgia distributing food and also supplies. 
+20080813181110.200|20080813181123.204|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813181110.200|20080813181112.057|CCO|>> KEILAR: And let's follow up again on that 
+20080813181112.057|20080813181113.915|CCO|breaking news story we have coming 
+20080813181113.915|20080813181115.773|CCO|into the CNN NEWSROOM. 
+20080813181115.773|20080813181117.631|CCO| The Associated Press reporting that 
+20080813181117.631|20080813181119.488|CCO|the chairman of the Arkansas 
+20080813181119.488|20080813181121.346|CCO|Democratic Party has been 
+20080813181121.346|20080813181123.204|CCO|shot. 
+20080813181123.204|20080813181125.062|CCO|Let's bring in Cecillea Pond-Mayo. I  hope I'm pronouncing your name correctly. 
+20080813181123.204|20080813181123.204|NER_01|Person=Cecillea Pond-mayo|Role=KARK REPORTER
+20080813181123.204|20080813181125.062|CCO|>> CECILLEA POND-MAYO, KARK REPORTER: You are. 
+20080813181123.204|20080813181126.919|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813181123.204|20080813181125.062|CCO|>> KEILAR: You're a reporter with our 
+20080813181125.062|20080813181126.919|CCO|affiliate KARK. 
+20080813181126.919|20080813181128.777|CCO| What do you know so far, Cecillea? 
+20080813181126.919|20080813181310.953|NER_01|Person=Cecillea Pond-mayo|Role=KARK REPORTER
+20080813181126.919|20080813181128.777|CCO|>> POND-MAYO: Well, what 
+20080813181128.777|20080813181130.635|CCO|we know is, around noon, that a man entered 
+20080813181130.635|20080813181132.493|CCO|the party headquarters. 
+20080813181132.493|20080813181134.350|CCO|This is here on West Capitol. It's just a short 
+20080813181134.350|20080813181136.208|CCO|distance from our state capitol. 
+20080813181136.208|20080813181138.066|CCO|This man apparently talked to the 
+20080813181138.066|20080813181139.924|CCO|receptionist and said he wanted 
+20080813181139.924|20080813181141.781|CCO|to see the chairman. 
+20080813181141.781|20080813181143.639|CCO|This is the reports that we're getting from witnesses. Some kind of conversation took place, but we do 
+20080813181143.639|20080813181145.497|CCO|know that ultimately, the 
+20080813181145.497|20080813181147.355|CCO|man made it into the chairman's office 
+20080813181147.355|20080813181149.212|CCO|and that three shots were 
+20080813181149.212|20080813181151.070|CCO|fired. 
+20080813181151.070|20080813181152.928|CCO|And as you reported, we are hearing, 
+20080813181152.928|20080813181154.786|CCO|witnesses are telling us, that that 
+20080813181154.786|20080813181156.643|CCO|man was in fact the chairman 
+20080813181156.643|20080813181158.501|CCO|of the Democratic Party 
+20080813181158.501|20080813181200.359|CCO|here in Arkansas, Bill Gwatney. 
+20080813181200.359|20080813181202.217|CCO|He was the only person who was shot. 
+20080813181204.074|20080813181205.932|CCO|We are hearing that he is in very serious 
+20080813181205.932|20080813181207.790|CCO|condition, 
+20080813181207.790|20080813181209.648|CCO|taken to a local hospital. 
+20080813181209.648|20080813181211.505|CCO|Witnesses are also telling us just about five 
+20080813181211.505|20080813181213.363|CCO|minutes after this occurred, 
+20080813181213.363|20080813181215.221|CCO|there was another incident 
+20080813181215.221|20080813181217.079|CCO|at our state Baptist headquarters, 
+20080813181218.936|20080813181220.794|CCO|our Baptist Church headquarters here 
+20080813181220.794|20080813181222.652|CCO|in Little Rock -- that 
+20080813181222.652|20080813181224.510|CCO|is about four or five blocks 
+20080813181224.510|20080813181226.367|CCO|from where I'm standing on 
+20080813181226.367|20080813181228.225|CCO|West Capitol -- and that 
+20080813181228.225|20080813181230.083|CCO|a person very -- matching this description 
+20080813181230.083|20080813181231.941|CCO|came in with a gun, said 
+20080813181231.941|20080813181233.798|CCO|that he had lost his job. 
+20080813181233.798|20080813181235.656|CCO|He had a conversation with a few 
+20080813181235.656|20080813181237.514|CCO|of the employees there. 
+20080813181237.514|20080813181239.372|CCO|That man ultimately ran out of the 
+20080813181239.372|20080813181241.229|CCO|back door in a blue pickup truck. 
+20080813181243.087|20080813181244.945|CCO|Police got there within seconds, and 
+20080813181244.945|20080813181246.803|CCO|a chase ensued. 
+20080813181246.803|20080813181248.660|CCO|And I  think as you reported earlier, that chase did 
+20080813181248.660|20080813181250.518|CCO|ultimately end in Grant County, with 
+20080813181250.518|20080813181252.376|CCO|the suspect being shot. 
+20080813181254.234|20080813181256.091|CCO|We're not certain on his condition 
+20080813181256.091|20080813181257.949|CCO|right now. 
+20080813181257.949|20080813181259.807|CCO|Police are not saying for sure if 
+20080813181259.807|20080813181301.665|CCO|the Baptist incident is connected 
+20080813181301.665|20080813181303.522|CCO|to the Democratic Party 
+20080813181303.522|20080813181305.380|CCO|headquarters, but it was within 
+20080813181305.380|20080813181307.238|CCO|minutes of each other. 
+20080813181307.238|20080813181309.096|CCO|And the descriptions, from what we're 
+20080813181309.096|20080813181310.953|CCO|hearing, are very similar. 
+20080813181310.953|20080813181314.669|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813181310.953|20080813181312.811|CCO|>> KEILAR: Yes, Cecillea. No doubt they're checking to see if there is that 
+20080813181312.811|20080813181314.669|CCO|out. 
+20080813181314.669|20080813181316.894|CCO|Cecillea Pond-Mayo with CNN  affiliate KARK.  Thanks. 
+20080813181314.669|20080813181438.675|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813181314.669|20080813181316.894|CCO|>> LEMON: Her 
+20080813181316.894|20080813181319.089|CCO|daughter is missing, and she's 
+20080813181319.089|20080813181321.284|CCO|spun a web of lies. 
+20080813181321.284|20080813181323.480|CCO|The mother of Caylee Anthony says 
+20080813181323.480|20080813181325.675|CCO|she knows who has her daughter. 
+20080813181328.172|20080813181438.675|CCO|So why isn't she saying? 
+20080813181438.675|20080813181438.675|SEG|Type=Commercial
+20080813181438.675|20080813181709.026|SEG|Type=Story
+20080813181438.675|20080813181440.463|CCO|>>> I'M METEOROLOGIST CHAD  
+20080813181440.463|20080813181442.252|CCO|MYERS. 
+20080813181442.252|20080813181444.041|CCO|SEVERE WEATHER EXPECTED IN THE  
+20080813181444.041|20080813181445.830|CCO|DEEP SOUTH. 
+20080813181445.830|20080813181447.619|CCO|IF YOU'RE ON THE BEACHES, THE  
+20080813181447.619|20080813181449.408|CCO|PROBLEM, LIGHTNING. 
+20080813181449.408|20080813181451.197|CCO|1,500 LIGHTNING STRIKES FROM  
+20080813181451.197|20080813181452.986|CCO|SOUTHERN GEORGIA AND NORTHERN  
+20080813181452.986|20080813181454.775|CCO|FLORIDA. 
+20080813181454.775|20080813181456.564|CCO|IF YOU'RE OUT THERE, GET INSIDE  
+20080813181456.564|20080813181458.353|CCO|WHEN THE LIGHTNING APPROACHES. 
+20080813181458.353|20080813181500.142|CCO|RIGHT NOW, NO TORNADO WARNINGS. 
+20080813181500.142|20080813181501.931|CCO|WE HAVE THAT WATCH UP THERE. 
+20080813181501.931|20080813181503.720|CCO|TORNADO WATCH MEANS THAT THINGS  
+20080813181503.720|20080813181505.509|CCO|COULD GO WRONG WITH SOME OF THE  
+20080813181505.509|20080813181507.298|CCO|STORMS THAT MAY GET TO SPIN. 
+20080813181507.298|20080813181509.087|CCO|THIS IS THE BOX WE'RE TALKING  
+20080813181509.087|20080813181510.876|CCO|ABOUT HERE. 
+20080813181510.876|20080813181512.665|CCO|ALMOST FROM THE LOW COUNTRY OF  
+20080813181512.665|20080813181514.454|CCO|SOUTH CAROLINA TO PANAMA CITY  
+20080813181514.454|20080813181516.243|CCO|BEACH. 
+20080813181516.243|20080813181518.032|CCO|THAT'S THE AREA THAT THE STORMS  
+20080813181518.032|20080813181519.821|CCO|HAVE ENOUGH ENERGY TO SPIN. 
+20080813181519.821|20080813181521.610|CCO|A SPINNING STORM COULD PUT DOWN  
+20080813181521.610|20080813181523.399|CCO|A TORNADO. 
+20080813181523.399|20080813181525.555|CCO|WE EXPECT THIS LINE TO MARCH  
+20080813181525.555|20080813181709.026|CCO|TOWARD ORLANDO IN THE EVENING.Ñ? 
+20080813181709.026|20080813182317.715|SEG|Type=Story
+20080813181709.026|20080813181730.870|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813181709.026|20080813181710.706|CCO|>>> LEMON: Digging for answers in the search 
+20080813181710.706|20080813181712.386|CCO|for a 3-year-old little girl. 
+20080813181714.067|20080813181715.747|CCO|Police in Florida say their hunt 
+20080813181715.747|20080813181717.427|CCO|for Caylee Anthony has been hampered 
+20080813181717.427|20080813181719.108|CCO|by the child's own mother. 
+20080813181720.788|20080813181722.468|CCO|Casey Anthony continues to sit in 
+20080813181722.468|20080813181724.149|CCO|jail after an appeals court refused 
+20080813181724.149|20080813181725.829|CCO|to lower her $500,000  
+20080813181725.829|20080813181727.509|CCO|bail. 
+20080813181727.509|20080813181729.190|CCO|She's charged with child neglect 
+20080813181729.190|20080813181730.870|CCO|and lying to police. 
+20080813181730.870|20080813181732.551|CCO|Here's our Randi Kaye's report. 
+20080813181730.870|20080813182317.715|CLIP|Type=Video
+20080813181730.870|20080813181744.313|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813181730.870|20080813181732.551|CCO|>> RANDI KAYE, CNN CORRESPONDENT: Why did Caylee Anthony's disappearance ignite 
+20080813181732.551|20080813181734.231|CCO|a web of lies 
+20080813181734.231|20080813181735.911|CCO|from her mother? 
+20080813181735.911|20080813181737.592|CCO|Police say not only did Casey Anthony 
+20080813181737.592|20080813181739.272|CCO|wait a month to report her 
+20080813181739.272|20080813181740.952|CCO|daughter missing, but 
+20080813181740.952|20080813181742.633|CCO|she sent investigators on a wild goose 
+20080813181742.633|20080813181744.313|CCO|chase. 
+20080813181744.313|20080813181744.313|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=On-Camera
+20080813181744.313|20080813181745.993|CCO|>> RANDI KAYE, CNN CORRESPONDENT: Do you think you would be farther along today in the investigation if Casey had been truthful from day one? 
+20080813181744.313|20080813181759.436|NER_01|Person=Captain Angelo Nieves|Role=ORANGE COUNTY SHERIFF'S DEPARTMENT
+20080813181744.313|20080813181745.993|CCO|>> CAPTAIN ANGELO NIEVES, ORANGE COUNTY SHERIFF'S DEPARTMENT: Definitely. And when you have accurate, valid information 
+20080813181745.993|20080813181747.674|CCO|at the beginning of any 
+20080813181747.674|20080813181749.354|CCO|case, especially one with a missing person, you have a child, the 
+20080813181749.354|20080813181751.035|CCO|importance of immediately deploying 
+20080813181751.035|20080813181752.715|CCO|resources to the right 
+20080813181752.715|20080813181754.395|CCO|areas, the right locations, when 
+20080813181754.395|20080813181756.076|CCO|you have a missing child within 
+20080813181756.076|20080813181757.756|CCO|the first 24  hours, the first 48 
+20080813181757.756|20080813181759.436|CCO| hours is crucial. 
+20080813181759.436|20080813181807.838|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813181759.436|20080813181801.117|CCO|>> KAYE: Captain Angelo Nieves says Casey 
+20080813181801.117|20080813181802.797|CCO|showed intent to deceive, which immediately sent up red flags. She's 
+20080813181802.797|20080813181804.477|CCO|in jail, charged with child 
+20080813181804.477|20080813181806.158|CCO|neglect, making false statements, and obstructing a criminal 
+20080813181806.158|20080813181807.838|CCO|investigation. 
+20080813181807.838|20080813181826.322|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=On-Camera
+20080813181807.838|20080813181809.518|CCO|>> KAYE: According to police, Casey Anthony 
+20080813181809.518|20080813181811.199|CCO|told them she had dropped her 
+20080813181811.199|20080813181812.879|CCO|daughter off here at this apartment 
+20080813181812.879|20080813181814.560|CCO|building with a woman named Zenaida Gonzalez, whom she had 
+20080813181814.560|20080813181816.240|CCO|used as a babysitter for more 
+20080813181816.240|20080813181817.920|CCO|than a year. 
+20080813181817.920|20080813181819.601|CCO|But when police checked with the office here, they were told 
+20080813181819.601|20080813181821.281|CCO|nobody by that name lived here. 
+20080813181822.961|20080813181824.642|CCO|In fact, the apartment Casey had said Zenaida lived in had been vacant 
+20080813181824.642|20080813181826.322|CCO|for more than a year. 
+20080813181826.322|20080813181831.363|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813181826.322|20080813181828.002|CCO|>> KAYE: In an interview with an Orlando TV  station, a woman with the 
+20080813181828.002|20080813181829.683|CCO|name Zenaida Gonzalez denied ever meeting 
+20080813181829.683|20080813181831.363|CCO|Caylee or Casey. 
+20080813181831.363|20080813181838.085|NER_01|Person=Zenaida Gonzalez (Ph)|Role=DENIES MEETING CASEY ANTHONY
+20080813181831.363|20080813181833.044|CCO|>> ZENAIDA GONZALEZ (PH), DENIES MEETING CASEY ANTHONY: Why me? Why would you choose my name? Of all of the people in Florida, 
+20080813181833.044|20080813181834.724|CCO|why my name? 
+20080813181834.724|20080813181836.404|CCO|I  don't know you, never met you. Why would you choose my 
+20080813181836.404|20080813181838.085|CCO|name? 
+20080813181838.085|20080813181848.167|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813181838.085|20080813181839.765|CCO|>> KAYE: Investigators say Casey 
+20080813181839.765|20080813181841.445|CCO|attempted to show them the last 
+20080813181841.445|20080813181843.126|CCO|few locations she says Zenaida lived. 
+20080813181844.806|20080813181846.486|CCO|One, they say, was a facility for senior citizens. Casey's attorney says he's seen no 
+20080813181846.486|20080813181848.167|CCO|proof Casey made any of these 
+20080813181848.167|20080813181849.847|CCO|statements to police. 
+20080813181848.167|20080813181859.929|NER_01|Person=Jose Baez|Role=CASEY ANTHONY'S ATTORNEY
+20080813181848.167|20080813181849.847|CCO|>> JOSE BAEZ, CASEY ANTHONY'S ATTORNEY: I  
+20080813181849.847|20080813181851.527|CCO|think when all the facts 
+20080813181851.527|20080813181853.208|CCO|are revealed and everything comes 
+20080813181853.208|20080813181854.888|CCO|out, that people will have a clear understanding 
+20080813181854.888|20080813181856.569|CCO|of the compelling 
+20080813181856.569|20080813181858.249|CCO|reasons behind Casey's 
+20080813181858.249|20080813181859.929|CCO|actions. 
+20080813181859.929|20080813181930.176|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=On-Camera
+20080813181859.929|20080813181901.610|CCO|>> KAYE: Casey also took investigators 
+20080813181901.610|20080813181903.290|CCO|here to Universal Studios. 
+20080813181904.970|20080813181906.651|CCO|According to the affidavit, she told them she worked here as 
+20080813181906.651|20080813181908.331|CCO|an event coordinator and had told two 
+20080813181908.331|20080813181910.011|CCO|co-workers that her daughter 
+20080813181910.011|20080813181911.692|CCO|had gone missing. 
+20080813181911.692|20080813181913.372|CCO|Police say one of those co-workers 
+20080813181913.372|20080813181915.053|CCO|had been fired before Caylee disappeared. The 
+20080813181915.053|20080813181916.733|CCO|other there was 
+20080813181916.733|20080813181918.413|CCO|no record of. 
+20080813181918.413|20080813181920.094|CCO|Casey even began to lead investigators 
+20080813181920.094|20080813181921.774|CCO|to her office when 
+20080813181921.774|20080813181923.454|CCO|they say she abruptly turned around 
+20080813181923.454|20080813181925.135|CCO|and told them she hadn't been telling 
+20080813181925.135|20080813181926.815|CCO|the truth, that she wasn't currently 
+20080813181926.815|20080813181928.495|CCO|employed here. Police 
+20080813181928.495|20080813181930.176|CCO|say she had been fired from Universal April 24.  
+20080813181930.176|20080813181950.340|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813181930.176|20080813181931.856|CCO|>> KAYE: And there's more. 
+20080813181933.536|20080813181935.217|CCO|The affidavit shows Casey told police 
+20080813181935.217|20080813181936.897|CCO|she received a phone call 
+20080813181936.897|20080813181938.578|CCO|July 15  around noon during 
+20080813181938.578|20080813181940.258|CCO|which she spoke to her daughter, 
+20080813181941.938|20080813181943.619|CCO|a month after Caylee had disappeared. 
+20080813181945.299|20080813181946.979|CCO|Investigators say there's no such 
+20080813181946.979|20080813181948.660|CCO|call on her cell phone records. 
+20080813181950.340|20080813181958.742|NER_01|Person=Captain Angelo Nieves|Role=ORANGE COUNTY SHERIFF'S DEPARTMENT
+20080813181950.340|20080813181952.020|CCO|>> NIEVES: She is the last person to have 
+20080813181952.020|20080813181953.701|CCO|seen Caylee that we can rely on 
+20080813181953.701|20080813181955.381|CCO|to give us valid information. 
+20080813181955.381|20080813181957.062|CCO|She hasn't done that to this point. 
+20080813181958.742|20080813182005.463|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813181958.742|20080813182000.422|CCO|>> KAYE: Is Casey Anthony lying 
+20080813182000.422|20080813182002.103|CCO|to protect herself? Or her daughter? 
+20080813182003.783|20080813182005.463|CCO|Investigators wish they knew. 
+20080813182005.463|20080813182027.308|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182005.463|20080813182007.144|CCO|>> LEMON: Our Randi Kaye joining us now live. 
+20080813182008.824|20080813182010.504|CCO|Randi, thanks for joining us. 
+20080813182010.504|20080813182012.185|CCO|Excellent piece of reporting. 
+20080813182012.185|20080813182013.865|CCO|I  was watching it all last night 
+20080813182013.865|20080813182015.545|CCO|on "360." 
+20080813182015.545|20080813182017.226|CCO| OK.  So, if she apparently knows where her 
+20080813182017.226|20080813182018.906|CCO|daughter is but she's afraid to 
+20080813182018.906|20080813182020.587|CCO|discuss the information in these 
+20080813182020.587|20080813182022.267|CCO|recorded jailhouse visits with family, 
+20080813182022.267|20080813182023.947|CCO|then why not a private meeting 
+20080813182023.947|20080813182025.628|CCO|with police or something 
+20080813182025.628|20080813182027.308|CCO|that is unrecorded? 
+20080813182027.308|20080813182104.276|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182027.308|20080813182028.988|CCO|>> KAYE: Well, that's what police, Don, say 
+20080813182028.988|20080813182030.669|CCO|that they're trying to do. 
+20080813182030.669|20080813182032.349|CCO|They say that they have actually reached 
+20080813182032.349|20080813182034.029|CCO|out to Casey's attorney, Jose Baez, and 
+20080813182034.029|20080813182035.710|CCO|that they're not getting any response 
+20080813182035.710|20080813182037.390|CCO|back. 
+20080813182037.390|20080813182039.071|CCO|They want a meeting between the police, 
+20080813182039.071|20080813182040.751|CCO|Casey and her attorney in 
+20080813182040.751|20080813182042.431|CCO|private. 
+20080813182042.431|20080813182044.112|CCO|No recordings whatsoever. 
+20080813182044.112|20080813182045.792|CCO|So they say that hasn't happened. 
+20080813182047.472|20080813182049.153|CCO|We asked Jose Baez about that. 
+20080813182050.833|20080813182052.513|CCO|He said that he has been working with 
+20080813182052.513|20080813182054.194|CCO|the police on this, but 
+20080813182054.194|20080813182055.874|CCO|they just can't seem to get it together. 
+20080813182057.554|20080813182059.235|CCO|And you would think that would be top priority, of course, because you 
+20080813182100.915|20080813182102.596|CCO|have a little girl who has now been missing 
+20080813182102.596|20080813182104.276|CCO|almost two months. 
+20080813182104.276|20080813182104.276|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182104.276|20080813182105.956|CCO|>> LEMON: Right. 
+20080813182104.276|20080813182110.997|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182104.276|20080813182105.956|CCO|>> KAYE: And you would think that this would be a top 
+20080813182105.956|20080813182107.637|CCO|priority, to try and get this meeting, get 
+20080813182107.637|20080813182109.317|CCO|these facts that supposedly 
+20080813182109.317|20080813182110.997|CCO|Casey has. 
+20080813182110.997|20080813182119.399|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182110.997|20080813182112.678|CCO|>> LEMON: All right. So she's in jail. 
+20080813182112.678|20080813182114.358|CCO|They lowered her -- I  think -- bail -- they refused 
+20080813182114.358|20080813182116.038|CCO|to lower her bail, $500,000  bail. 
+20080813182116.038|20080813182117.719|CCO|How is she doing in jail? 
+20080813182117.719|20080813182119.399|CCO|Have you heard that? 
+20080813182119.399|20080813182139.563|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182119.399|20080813182121.080|CCO|>> KAYE: Yes. We 
+20080813182121.080|20080813182122.760|CCO|talked to her attorney about that. 
+20080813182124.440|20080813182126.121|CCO|She's doing OK.  She 
+20080813182126.121|20080813182127.801|CCO|is with the other inmates. 
+20080813182127.801|20080813182129.481|CCO|She gets about an hour of recreation 
+20080813182129.481|20080813182131.162|CCO|a day, 
+20080813182131.162|20080813182132.842|CCO|although it's so hot down here in Florida, 
+20080813182132.842|20080813182134.522|CCO|that she hasn't really been using that time. 
+20080813182136.203|20080813182137.883|CCO|She watches a little bit of television, and he 
+20080813182139.563|20080813182141.244|CCO|told us that he gave her some law books to read so she can see how this process works. 
+20080813182139.563|20080813182158.047|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182139.563|20080813182141.244|CCO|>> LEMON: OK.  All right. And I  
+20080813182141.244|20080813182142.924|CCO|want to get to this, because just again, 
+20080813182142.924|20080813182144.605|CCO|this is just what's happening 
+20080813182144.605|20080813182146.285|CCO|in the community. 
+20080813182146.285|20080813182147.965|CCO|And I  know that you've heard about that. 
+20080813182147.965|20080813182149.646|CCO|There was some question about a swimming 
+20080813182149.646|20080813182151.326|CCO|pool and about a ladder on that 
+20080813182151.326|20080813182153.006|CCO|pool, 
+20080813182153.006|20080813182154.687|CCO|and whether or not little Caylee 
+20080813182154.687|20080813182156.367|CCO|may have drowned and someone tried 
+20080813182156.367|20080813182158.047|CCO|to cover it up or something 
+20080813182158.047|20080813182159.728|CCO|like that? 
+20080813182158.047|20080813182240.056|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182158.047|20080813182159.728|CCO|>> KAYE: 
+20080813182159.728|20080813182201.408|CCO|Right. 
+20080813182201.408|20080813182203.089|CCO|I  mean, let me just say first off, there 
+20080813182203.089|20080813182204.769|CCO|is no evidence that that has happened. 
+20080813182206.449|20080813182208.130|CCO|But there are a lot of theories floating 
+20080813182208.130|20080813182209.810|CCO|around here. 
+20080813182209.810|20080813182211.490|CCO|And one of them is that the Anthonys have 
+20080813182211.490|20080813182213.171|CCO|this above-ground 
+20080813182213.171|20080813182214.851|CCO|pool in the back yard, and they 
+20080813182214.851|20080813182216.531|CCO|remove this ladder when the 
+20080813182216.531|20080813182218.212|CCO|pool isn't in use to make sure that Caylee 
+20080813182218.212|20080813182219.892|CCO|can't get into the pool. 
+20080813182219.892|20080813182221.572|CCO|And in the days after her disappearance, 
+20080813182221.572|20080813182223.253|CCO|apparently that ladder 
+20080813182223.253|20080813182224.933|CCO|was back at the pool. 
+20080813182224.933|20080813182226.614|CCO|So there was some question and some concern that maybe Caylee put 
+20080813182226.614|20080813182228.294|CCO|the ladder up, or maybe she got into the 
+20080813182228.294|20080813182229.974|CCO|pool somehow, 
+20080813182229.974|20080813182231.655|CCO|and maybe Casey was asleep in the house and she panicked. And 
+20080813182231.655|20080813182233.335|CCO|there was this flurry of phone calls 
+20080813182233.335|20080813182235.015|CCO|that day to her parents, the grandparents of Caylee. And maybe that is what happened. But again, 
+20080813182235.015|20080813182236.696|CCO|no evidence. 
+20080813182236.696|20080813182238.376|CCO|But it is something police are looking 
+20080813182238.376|20080813182240.056|CCO|at. 
+20080813182240.056|20080813182245.098|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182240.056|20080813182241.737|CCO|>> LEMON: It certainly is bizarre. 
+20080813182241.737|20080813182243.417|CCO|OK.  Randi Kaye. Randi, you're reporting on this 
+20080813182243.417|20080813182245.098|CCO|again tonight? 
+20080813182245.098|20080813182246.778|CCO|Do you know yet? 
+20080813182245.098|20080813182250.139|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182245.098|20080813182246.778|CCO|>> KAYE: Yes. 
+20080813182246.778|20080813182248.458|CCO|I  will be. We'll be taking a look at the evident 
+20080813182248.458|20080813182250.139|CCO|right now in the case and also some unanswered 
+20080813182250.139|20080813182251.819|CCO|questions for tonight on "360."  
+20080813182250.139|20080813182258.908|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182250.139|20080813182251.819|CCO|>> LEMON: "360," 10:00  
+20080813182251.819|20080813182253.499|CCO|p.m. Eastern. That's 
+20080813182253.499|20080813182255.180|CCO|our Randi Kaye, live for us in 
+20080813182255.180|20080813182256.860|CCO|Orlando, doing an outstanding piece 
+20080813182256.860|20080813182258.908|CCO|of reporting. 
+20080813182258.908|20080813182301.118|CCO|Thank you, Randi. 
+20080813182258.908|20080813182258.908|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080813182258.908|20080813182301.118|CCO|>> KAYE: Thanks. 
+20080813182258.908|20080813182317.715|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813182258.908|20080813182301.118|CCO|>> KEILAR: How would you feel about going 
+20080813182301.118|20080813182303.329|CCO|to a four-day workweek? 
+20080813182303.329|20080813182305.540|CCO|Sound good? I  think it does. But you know, not everyone agrees. 
+20080813182305.540|20080813182307.984|CCO|We're going to take a look at that. 
+20080813182307.984|20080813182309.930|CCO|And the case involving hemorrhoids, 
+20080813182309.930|20080813182311.876|CCO|airline attendants and 
+20080813182311.876|20080813182313.822|CCO|one of America's favorite preachers. 
+20080813182315.769|20080813182317.715|CCO|The accusations being leveled at the wife 
+20080813182317.715|20080813182319.662|CCO|of Joel Osteen.   
+20080813182317.715|20080813182443.513|SEG|Type=Commercial
+20080813182317.715|20080813182319.662|CCO|OSTEIN. 
+20080813182319.662|20080813182321.093|CCO|HI, NIGEL. U.K. HERE. 
+20080813182321.093|20080813182322.524|CCO|BONJOUR, THIS IS EMMA. 
+20080813182323.955|20080813182325.386|CCO|HOLA. 
+20080813182325.386|20080813182326.817|CCO|GOOD DAY, SYDNEY HERE. 
+20080813182326.817|20080813182328.249|CCO|HOW'S IT GOING, 
+20080813182328.249|20080813182329.680|CCO|EVERYONE? 
+20080813182329.680|20080813182331.111|CCO|I WAS THINKING ABOUT 
+20080813182331.111|20080813182332.542|CCO|HAVING AN ONLINE COMPETITION. 
+20080813182332.542|20080813182333.973|CCO|I THINK THAT'S A GOOD IDEA. 
+20080813182333.973|20080813182335.405|CCO|HERE, LET ME SHARE IT 
+20080813182335.405|20080813182336.836|CCO|WITH YOU. 
+20080813182336.836|20080813182338.267|CCO|IS KELSEY READY? 
+20080813182338.267|20080813182339.698|CCO|ARE YOU READY, KELSEY? 
+20080813182339.698|20080813182341.129|CCO|YA, I'M HERE. 
+20080813182341.129|20080813182342.561|CCO|WELCOME TO A NETWORK... 
+20080813182342.561|20080813182343.992|CCO|THANKS, MOM. 
+20080813182343.992|20080813182345.423|CCO|WHERE YOUR SALES TERRITORY... 
+20080813182345.423|20080813182346.854|CCO|FIRST OF ALL, 
+20080813182346.854|20080813182348.285|CCO|IS BIGGER 
+20080813182348.285|20080813182349.717|CCO|THAN YOUR NEIGHBORHOOD. 
+20080813182349.717|20080813182351.148|CCO|I LOVE WHAT YOU'RE DOING 
+20080813182351.148|20080813182352.579|CCO|WITH MY COOKIES. 
+20080813182352.579|20080813182354.010|CCO|I'D LIKE TO DISCUSS SOME 
+20080813182354.010|20080813182355.441|CCO|OF MY NEW IDEAS WITH YOU. 
+20080813182355.441|20080813182356.873|CCO|WHAT ABOUT JELLY BEAN COOKIES? 
+20080813182356.873|20080813182358.304|CCO|GENIUS! 
+20080813182358.304|20080813182359.735|CCO|CISCO, 
+20080813182359.735|20080813182401.166|CCO|WELCOME 
+20080813182401.166|20080813182402.597|CCO|TO THE HUMAN NETWORK. 
+20080813182402.597|20080813182404.029|CCO|IN WHICH EVERYONE 
+20080813182404.029|20080813182405.460|CCO|CAN AFFORD AND ACQUIRE. 
+20080813182405.460|20080813182416.909|NER_01|Person=OBAMA
+20080813182405.460|20080813182406.891|CCO|>> OBAMA: 
+20080813182406.891|20080813182408.322|CCO|I PUT FORWARD A SERIES 
+20080813182408.322|20080813182409.753|CCO|OF PROPOSALS... 
+20080813182409.753|20080813182411.185|CCO|THAT WILL FOSTER 
+20080813182411.185|20080813182412.616|CCO|ECONOMIC GROWTH. 
+20080813182412.616|20080813182414.047|CCO|McCAIN: TO KEEP FAMILIES 
+20080813182414.047|20080813182415.478|CCO|IN THEIR HOMES... 
+20080813182415.478|20080813182416.909|CCO|AND BUSINESSES GROWING. 
+20080813182416.909|20080813182443.513|NER_01|Person=OBAMA
+20080813182416.909|20080813182418.341|CCO|>> OBAMA: 
+20080813182418.341|20080813182419.772|CCO|WE CAN'T WAIT TO FIX 
+20080813182419.772|20080813182421.203|CCO|OUR HEALTH CARE SYSTEM. 
+20080813182421.203|20080813182422.634|CCO|- WE WILL REPLACE... 
+20080813182422.634|20080813182424.065|CCO|- WE ARE GOING TO INVEST... 
+20080813182424.065|20080813182425.497|CCO|- WE ARE APPROACHING... 
+20080813182425.497|20080813182426.928|CCO|- WE HAVE THE CHANCE TO... 
+20080813182426.928|20080813182428.359|CCO|SOLVE PROBLEMS THAT 
+20080813182428.359|20080813182429.790|CCO|WE'VE BEEN TALKING ABOUT... 
+20080813182429.790|20080813182431.221|CCO|YEAR AFTER YEAR AFTER YEAR 
+20080813182431.221|20080813182432.652|CCO|AFTER YEAR. 
+20080813182432.652|20080813182434.084|CCO|CALL AND MAKE SURE THEIR TALK 
+20080813182434.084|20080813182435.515|CCO|TURNS INTO REAL SOLUTIONS. 
+20080813182435.515|20080813182436.946|CCO|AARP IS 
+20080813182436.946|20080813182438.377|CCO|RESPONSIBLE FOR THE CONTENT 
+20080813182438.377|20080813182443.513|CCO|OF THIS ADVERTISING. 
+20080813182443.513|20080813182619.418|SEG|Type=Story
+20080813182443.513|20080813182513.954|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182443.513|20080813182445.303|CCO|>>> LEMON: All right. Let's talk the "Political Ticker" 
+20080813182445.303|20080813182447.094|CCO|today, 
+20080813182447.094|20080813182448.884|CCO|the coveted role of keynote speaker 
+20080813182448.884|20080813182450.675|CCO|at the Democratic National 
+20080813182450.675|20080813182452.466|CCO|Convention. 
+20080813182452.466|20080813182454.256|CCO|This year, the honor goes to former 
+20080813182454.256|20080813182456.047|CCO|Virginia governor and current U.S.  Senate candidate Mark Warner. 
+20080813182457.838|20080813182459.628|CCO|He'll speak on the convention's second 
+20080813182459.628|20080813182501.419|CCO|night. That's Tuesday, August 26th. 
+20080813182503.210|20080813182505.000|CCO|That is the same night Hillary Clinton gives 
+20080813182505.000|20080813182506.791|CCO|her speech. 
+20080813182506.791|20080813182508.582|CCO|Four years ago, the Dems' keynote speaker 
+20080813182508.582|20080813182510.372|CCO|was a rising star from Illinois, 
+20080813182510.372|20080813182512.163|CCO|none other than Barack 
+20080813182512.163|20080813182513.954|CCO|Obama. 
+20080813182513.954|20080813182537.232|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813182513.954|20080813182515.744|CCO|>> KEILAR: Former Republican congressman 
+20080813182515.744|20080813182517.535|CCO|Jim Leach is backing Obama and weighing 
+20080813182517.535|20080813182519.326|CCO|in on the search for a running 
+20080813182519.326|20080813182521.116|CCO|mate. 
+20080813182521.116|20080813182522.907|CCO|Leach says Senator Chuck Hagel from Nebraska, 
+20080813182522.907|20080813182524.698|CCO|also a Republican, should be on the Democratic 
+20080813182524.698|20080813182526.488|CCO|ticket. 
+20080813182526.488|20080813182528.279|CCO|Hagel has been a strong critic of 
+20080813182528.279|20080813182530.070|CCO|the Bush administration's handling 
+20080813182530.070|20080813182531.860|CCO|of the Iraq war, 
+20080813182531.860|20080813182533.651|CCO|but a spokesman for Hagel, a longtime friend of John McCain, says he 
+20080813182533.651|20080813182535.442|CCO|doesn't even plan to endorse Obama, or 
+20080813182535.442|20080813182537.232|CCO|McCain, for that matter. 
+20080813182537.232|20080813182556.930|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182537.232|20080813182539.023|CCO|>> LEMON: The McCain campaign is using Russia's 
+20080813182539.023|20080813182540.814|CCO|invasion of Georgia to raise 
+20080813182540.814|20080813182542.604|CCO|questions about Obama's 
+20080813182542.604|20080813182544.395|CCO|experience. The Arizona senator's foreign policy adviser says 
+20080813182546.186|20080813182547.976|CCO|there is no comparison 
+20080813182547.976|20080813182549.767|CCO|between the two candidates. He says McCain has a depth of 
+20080813182549.767|20080813182551.558|CCO|knowledge about the two countries and has spoken daily with Georgia's president. McCain 
+20080813182553.348|20080813182555.139|CCO|and Obama both have condemned 
+20080813182555.139|20080813182556.930|CCO|the Russian invasion. 
+20080813182556.930|20080813182605.883|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813182556.930|20080813182558.720|CCO|>> KEILAR: And you can check all of this out on our 
+20080813182558.720|20080813182600.511|CCO|Political Ticker. 
+20080813182600.511|20080813182602.302|CCO|For all of the latest campaign news and more, just log on to CNNPolitics.com, 
+20080813182602.302|20080813182604.092|CCO|your source for all things political. 
+20080813182605.883|20080813182619.418|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182605.883|20080813182607.674|CCO|>> LEMON: And then this as well, Brianna. Don't forget on CNN,  Saturday night, 
+20080813182607.674|20080813182609.464|CCO|John McCain and Barack Obama 
+20080813182609.464|20080813182611.255|CCO|on the same stage for the first 
+20080813182611.255|20080813182613.046|CCO|time, back-to-back in 
+20080813182613.046|20080813182614.836|CCO|a live forum moderated 
+20080813182614.836|20080813182616.627|CCO|by Pastor Rick Warren. 
+20080813182616.627|20080813182618.418|CCO|Be sure to catch it live on CNN,  Saturday night, 
+20080813182618.418|20080813182817.460|CCO|8:00  p.m. Eastern. 
+20080813182619.418|20080813182817.460|SEG|Type=Commercial
+20080813182817.460|20080813183032.555|SEG|Type=Story
+20080813182817.460|20080813182838.390|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813182817.460|20080813182819.362|CCO|>>> LEMON: All right. Well, CNN's John Zarrella has been 
+20080813182819.362|20080813182821.265|CCO|looking at the pluses and the minuses of a 
+20080813182821.265|20080813182823.168|CCO|four-day workweek. 
+20080813182823.168|20080813182825.071|CCO|More and more places are trying it. They're trying it 
+20080813182825.071|20080813182826.973|CCO|to save money. 
+20080813182826.973|20080813182828.876|CCO|Last hour, we learned about a school 
+20080813182828.876|20080813182830.779|CCO|in Florida that gives it an 
+20080813182830.779|20080813182832.682|CCO|A  plus, now that Utah, 
+20080813182832.682|20080813182834.584|CCO|where the state government is 
+20080813182834.584|20080813182836.487|CCO|experimenting with a four-day workweek. 
+20080813182838.390|20080813183032.555|CLIP|Type=Video
+20080813182838.390|20080813182851.709|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813182838.390|20080813182840.293|CCO|>> JOHN ZARRELLA, CNN CORRESPONDENT: Phalaropes. At least 100,000  of 
+20080813182840.293|20080813182842.195|CCO|them have gathered here, their 
+20080813182842.195|20080813182844.098|CCO|stopping off point on their 
+20080813182844.098|20080813182846.001|CCO|migration from Canada to Argentina. This 
+20080813182847.904|20080813182849.806|CCO|is the Farmington Bay waterfowl area of Utah's 
+20080813182849.806|20080813182851.709|CCO|Salt Lake. 
+20080813182851.709|20080813182859.320|NER_01|Person=Rich Hansen|Role=STATE WILDLIFE EMPLOYEE
+20080813182851.709|20080813182853.612|CCO|>> RICH HANSEN, STATE WILDLIFE EMPLOYEE: Here they come. 
+20080813182853.612|20080813182855.515|CCO|Look. 
+20080813182855.515|20080813182857.417|CCO|Look at that. 
+20080813182857.417|20080813182859.320|CCO|It's right on cue. 
+20080813182859.320|20080813182908.834|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813182859.320|20080813182901.223|CCO|>> ZARRELLA: State wildlife employee Rich Hansen 
+20080813182901.223|20080813182903.126|CCO|manages this vast migratory bird habitat. 
+20080813182905.028|20080813182906.931|CCO|Already on a four-day workweek, he 
+20080813182906.931|20080813182908.834|CCO|swears by it. 
+20080813182908.834|20080813182910.737|CCO|More efficient, cuts fuel cost. 
+20080813182908.834|20080813182916.445|NER_01|Person=Rich Hansen|Role=STATE WILDLIFE EMPLOYEE
+20080813182908.834|20080813182910.737|CCO|>> HANSEN: And if we got a longer workday, we can accomplish what we need 
+20080813182910.737|20080813182912.639|CCO|to do in that one day and not have to 
+20080813182912.639|20080813182914.542|CCO|worry about going back the next day. 
+20080813182916.445|20080813182935.472|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813182916.445|20080813182918.348|CCO|>> ZARRELLA: Hansen predicts other state 
+20080813182918.348|20080813182920.250|CCO|employees will love it, too. 
+20080813182922.153|20080813182924.056|CCO|We'll see. 
+20080813182924.056|20080813182925.959|CCO|Last week, most state government offices began closing on Fridays. Shutting 1,000  state buildings 
+20080813182925.959|20080813182927.861|CCO|is expected 
+20080813182927.861|20080813182929.764|CCO|to save Utah $3  
+20080813182929.764|20080813182931.667|CCO|million a year in energy costs. 
+20080813182931.667|20080813182933.570|CCO|Seventeen thousand employees are now on a four-day 
+20080813182933.570|20080813182935.472|CCO|workweek. 
+20080813182935.472|20080813182939.278|NER_01|Person=Francine Giani|Role=UTAH DEPARTMENT OF COMMERCE
+20080813182935.472|20080813182937.375|CCO|>> FRANCINE GIANI, UTAH DEPARTMENT OF COMMERCE: What do you want? A  rock star? All right. 
+20080813182937.375|20080813182939.278|CCO|Awesome. 
+20080813182939.278|20080813182950.695|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813182939.278|20080813182941.181|CCO|>> ZARRELLA: Francine Giani runs the Department 
+20080813182941.181|20080813182943.084|CCO|of Commerce. 
+20080813182943.084|20080813182944.986|CCO|Today she's serving cold drinks to 
+20080813182944.986|20080813182946.889|CCO|employees, 
+20080813182946.889|20080813182948.792|CCO|a pick-me-up to get them through 
+20080813182948.792|20080813182950.695|CCO|the 10-hour day. 
+20080813182950.695|20080813182952.597|NER_01|Person=Francine Giani|Role=UTAH DEPARTMENT OF COMMERCE
+20080813182950.695|20080813182952.597|CCO|>> GIANI: I  didn't bring the mini bar. 
+20080813182952.597|20080813182954.500|CCO|Someone asked for that several times on my trip yesterday. 
+20080813182952.597|20080813183004.014|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813182952.597|20080813182954.500|CCO|>> ZARRELLA: Giani and other department 
+20080813182954.500|20080813182956.403|CCO|heads have been instructed 
+20080813182956.403|20080813182958.306|CCO|to help workers through 
+20080813182958.306|20080813183000.208|CCO|the most difficult issues -- child 
+20080813183000.208|20080813183002.111|CCO|care and transportation. 
+20080813183004.014|20080813183005.917|CCO|Be flexible with schedules. 
+20080813183004.014|20080813183011.625|NER_01|Person=Francine Giani|Role=UTAH DEPARTMENT OF COMMERCE
+20080813183004.014|20080813183005.917|CCO|>> GIANI: If I've got an employee that wants 
+20080813183005.917|20080813183007.819|CCO|to work and do their best, and that's what their 
+20080813183007.819|20080813183009.722|CCO|past performance has been, 
+20080813183009.722|20080813183011.625|CCO|I'm going to work with them. 
+20080813183011.625|20080813183019.236|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813183011.625|20080813183013.528|CCO|>> ZARRELLA: Officials believe the extended 
+20080813183013.528|20080813183015.430|CCO|office hours will give people with state business more 
+20080813183015.430|20080813183017.333|CCO|options. 
+20080813183017.333|20080813183019.236|CCO|No more 9:00  to 5:00. 
+20080813183019.236|20080813183021.139|CCO| For employees, fuel savings and more time with family. 
+20080813183019.236|20080813183024.944|NER_01|Person=UNIDENTIFIED MALE
+20080813183019.236|20080813183021.139|CCO|>> UNIDENTIFIED MALE: It provides us a three-day weekend 
+20080813183021.139|20080813183023.041|CCO|to go camping or fishing. 
+20080813183024.944|20080813183028.750|NER_01|Person=John Zarrella|Role=CNN CORRESPONDENT
+20080813183024.944|20080813183026.847|CCO|>> ZARRELLA: For now, the traditional work-week here in Utah is 
+20080813183026.847|20080813183028.750|CCO|-- well -- for the birds. 
+20080813183028.750|20080813183032.555|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183028.750|20080813183030.652|CCO|>> LEMON: That was CNN's John Zarrella. Did you see all those energy drinks in there? No 
+20080813183032.555|20080813183034.458|CCO|wonder they're working so hard, they are filled with energy drinks. 
+20080813183032.555|20080813183032.555|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183032.555|20080813183034.458|CCO|>> KEILAR: Seriously. 
+20080813183032.555|20080813183252.268|SEG|Type=Story
+20080813183032.555|20080813183043.972|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183032.555|20080813183034.458|CCO|>>> LEMON: Caffeine. All right, we want to tell you -- 
+20080813183036.361|20080813183038.263|CCO|coming up next hour, John Zarrella 
+20080813183038.263|20080813183040.166|CCO|will look at how a four-day 
+20080813183040.166|20080813183042.069|CCO|workweek impacts working 
+20080813183042.069|20080813183043.972|CCO|mothers. 
+20080813183043.972|20080813183046.142|CCO|That's coming up in the 3:00  p.m. Eastern hour of the CNN NEWSROOM.  
+20080813183043.972|20080813183101.515|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183043.972|20080813183046.142|CCO|>> KEILAR: So 
+20080813183046.142|20080813183048.063|CCO|much for relief. 
+20080813183048.063|20080813183049.985|CCO|After falling $35  in the last month, 
+20080813183049.985|20080813183051.907|CCO|oil prices climbing again. 
+20080813183053.828|20080813183055.750|CCO|Susan Lisovicz is at the New York 
+20080813183055.750|20080813183057.672|CCO|Stock Exchange with the reason 
+20080813183057.672|20080813183059.593|CCO|for the reversal of fortune. 
+20080813183101.515|20080813183103.437|CCO|What's going on here, Susan? 
+20080813183101.515|20080813183134.184|NER_01|Person=Susan Lisovicz|Role=CNN CORRESPONDENT
+20080813183101.515|20080813183103.437|CCO|>> SUSAN LISOVICZ, CNN CORRESPONDENT: Well it's the 
+20080813183103.437|20080813183105.358|CCO|basic supply and demand, Brianna. Declining 
+20080813183107.280|20080813183109.202|CCO|demand is a big reason 
+20080813183109.202|20080813183111.124|CCO|why oil prices have retreated and 
+20080813183111.124|20080813183113.045|CCO|remain in a bear market. 
+20080813183113.045|20080813183114.967|CCO|But today, oil is up nearly three bucks. 
+20080813183114.967|20080813183116.889|CCO|This in response to a government 
+20080813183116.889|20080813183118.810|CCO|report this morning showing crude and gasoline 
+20080813183118.810|20080813183120.732|CCO|supplies fell much more 
+20080813183120.732|20080813183122.654|CCO|than expected last week. 
+20080813183122.654|20080813183124.575|CCO|Some analysts say gas stock piles 
+20080813183124.575|20080813183126.497|CCO|declined, not because of rising demand, but because some refineries 
+20080813183126.497|20080813183128.419|CCO|temporarily shut down 
+20080813183128.419|20080813183130.340|CCO|ahead of Tropical Storm Edouard. 
+20080813183130.340|20080813183132.262|CCO|Oil surge and economic concerns are hitting stocks. 
+20080813183134.184|20080813183136.106|CCO|(STOCK MARKET REPORT)
+20080813183134.184|20080813183145.714|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183134.184|20080813183136.106|CCO|>> KEILAR: So Susan, 
+20080813183136.106|20080813183138.027|CCO|this 
+20080813183138.027|20080813183139.949|CCO|drop in gas demand proves 
+20080813183139.949|20080813183141.871|CCO|that we're changing our lifestyle 
+20080813183141.871|20080813183143.792|CCO|even during in the peak driving 
+20080813183143.792|20080813183145.714|CCO|season? 
+20080813183145.714|20080813183210.696|NER_01|Person=Susan Lisovicz|Role=CNN CORRESPONDENT
+20080813183145.714|20080813183147.636|CCO|>> LISOVICZ: No question about it, Brianna. The 
+20080813183149.557|20080813183151.479|CCO|government says Americans drove 
+20080813183151.479|20080813183153.401|CCO|fewer miles in June. 
+20080813183153.401|20080813183155.322|CCO|That is the eighth consecutive months. 
+20080813183155.322|20080813183157.244|CCO|Over that eight month period, Americans drove 53  billion fewer miles than the 
+20080813183157.244|20080813183159.166|CCO|year before. That's 
+20080813183159.166|20080813183201.088|CCO|a bigger cutback than what we saw from 1971  
+20080813183201.088|20080813183203.009|CCO|to 1980,  a 
+20080813183203.009|20080813183204.931|CCO|time marked by oil embargoes and gas lines. Recent pull back has helped to drive gas 
+20080813183204.931|20080813183206.853|CCO|prices down 
+20080813183206.853|20080813183208.774|CCO|for 27  straight days. 
+20080813183208.774|20080813183210.696|CCO|AAA  says the national average is down just below $3.80  a gallon. It's a sign of the times that this is 
+20080813183210.696|20080813183212.618|CCO|considered cheap -- Brianna. 
+20080813183210.696|20080813183231.835|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183210.696|20080813183212.618|CCO|>> KEILAR: It is cheap. 
+20080813183212.618|20080813183214.539|CCO|I  was just watching that video 
+20080813183214.539|20080813183216.461|CCO|that we had up. 
+20080813183216.461|20080813183218.383|CCO|I  thought, that looks mighty familiar. 
+20080813183220.305|20080813183222.226|CCO|And then I  realized it was maybe part of 
+20080813183222.226|20080813183224.148|CCO|the commute in Washington. 
+20080813183224.148|20080813183226.070|CCO|I  think that's the 395  right there. 
+20080813183227.991|20080813183229.913|CCO|All right, Susan, a lot of the cars 
+20080813183229.913|20080813183231.835|CCO|on the 395  for sure. Thanks for that. We'll 
+20080813183231.835|20080813183233.756|CCO|check back with you soon. 
+20080813183231.835|20080813183231.835|NER_01|Person=Susan Lisovicz|Role=CNN CORRESPONDENT
+20080813183231.835|20080813183233.756|CCO|>> LISOVICZ: You're welcome. 
+20080813183231.835|20080813183235.678|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183231.835|20080813183233.756|CCO|>> LEMON: We 
+20080813183233.756|20080813183235.678|CCO|didn't see you in there, right? 
+20080813183235.678|20080813183235.678|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183235.678|20080813183237.600|CCO|>> KEILAR: No, no. 
+20080813183235.678|20080813183235.678|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183235.678|20080813183237.600|CCO|>> LEMON: You take the train anyway. 
+20080813183235.678|20080813183237.600|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183235.678|20080813183237.600|CCO|>> KEILAR: I 
+20080813183237.600|20080813183239.855|CCO| do a lot. 
+20080813183237.600|20080813183239.855|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183237.600|20080813183239.855|CCO|>> LEMON: A  lot. 
+20080813183239.855|20080813183239.855|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183239.855|20080813183241.862|CCO|>> KEILAR: Some. 
+20080813183239.855|20080813183252.268|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183239.855|20080813183241.862|CCO|>> LEMON: OK.  Here's a question: 
+20080813183241.862|20080813183243.870|CCO|did she or didn't she? 
+20080813183243.870|20080813183245.877|CCO|Was it an elbow? 
+20080813183245.877|20080813183247.885|CCO|Was it all made up? 
+20080813183247.885|20080813183249.893|CCO|Accusation and denial in the case 
+20080813183249.893|20080813183252.268|CCO|against the wife of Pastor Joel Osteen.   
+20080813183252.268|20080813183521.283|SEG|Type=Commercial
+20080813183252.268|20080813183253.743|CCO|JOEL OSTEEN.USE 
+20080813183255.218|20080813183256.694|CCO|OF WHERE YOU LIVE? 
+20080813183258.169|20080813183259.644|CCO|DON'T BELIEVE IT! 
+20080813183259.644|20080813183301.120|CCO|SAY HELLO TO HIGH-SPEED INTERNET 
+20080813183301.120|20080813183302.595|CCO|BY SATELLITE-HUGHESNET. 
+20080813183302.595|20080813183304.071|CCO|THE NUMBER ONE CHOICE FOR 
+20080813183304.071|20080813183305.546|CCO|SATELLITE INTERNET SERVICE IN 
+20080813183307.021|20080813183308.497|CCO|THE COUNTRY- 
+20080813183308.497|20080813183309.972|CCO|AND YOU CAN GET IT RIGHT NOW! 
+20080813183309.972|20080813183311.448|CCO|SO DUMP YOUR SLOW DIAL-UP 
+20080813183311.448|20080813183312.923|CCO|AND JUMP INTO THE HIGH-SPEED 
+20080813183312.923|20080813183314.398|CCO|ACTION YOU'VE BEEN CRAVING. 
+20080813183314.398|20080813183315.874|CCO|HUGHESNET DELIVERS! AND IT 
+20080813183315.874|20080813183317.349|CCO|DOESN'T USE A PHONE LINE, 
+20080813183318.825|20080813183320.300|CCO|SO MISSED CALLS AND 
+20080813183321.775|20080813183323.251|CCO|DIALING-IN ARE A 
+20080813183324.726|20080813183326.202|CCO|THING OF THE PAST! 
+20080813183326.202|20080813183327.677|CCO|ALL YOU NEED IS A CLEAR VIEW 
+20080813183329.152|20080813183330.628|CCO|OF THE SOUTHERN SKY. 
+20080813183330.628|20080813183332.103|CCO|HUGHESNET IS 
+20080813183332.103|20080813183333.579|CCO|BROUGHT TO YOU 
+20080813183333.579|20080813183335.054|CCO|BY HUGHES, 
+20080813183335.054|20080813183336.529|CCO|THE LEADING PROVIDER OF 
+20080813183336.529|20080813183338.005|CCO|SATELLITE COMMUNICATIONS 
+20080813183338.005|20080813183339.480|CCO|WORLDWIDE. 
+20080813183339.480|20080813183340.956|CCO|HOW COOL IS THAT? 
+20080813183340.956|20080813183342.431|CCO|SO WHAT ARE YOU WAITING FOR? 
+20080813183342.431|20080813183343.906|CCO|YOU'RE DONE WITH WAITING! 
+20080813183345.382|20080813183346.857|CCO|CALL 
+20080813183348.333|20080813183349.808|CCO|OR VISIT 
+20080813183349.808|20080813183351.283|CCO|AND LIVE THE HIGH-SPEEED LIFE 
+20080813183352.759|20080813183354.234|CCO|IN NO TIME. 
+20080813183354.234|20080813183355.710|CCO|HUGHESNET-BRINGING BROADBAND 
+20080813183355.710|20080813183357.185|CCO|TO EVERYONE. CALL NOW! 
+20080813183357.185|20080813183358.660|CCO|YOU'RE WELCOME. 
+20080813183400.136|20080813183401.611|CCO|Imagine... 
+20080813183401.611|20080813183403.087|CCO|one scooter or power chair 
+20080813183404.562|20080813183406.037|CCO|that could improve your 
+20080813183407.513|20080813183408.988|CCO|mobility and your life. 
+20080813183408.988|20080813183410.463|CCO|One Medicare benefit that, 
+20080813183411.939|20080813183413.414|CCO|with private insurance, 
+20080813183414.890|20080813183416.365|CCO|may entitle you to pay 
+20080813183416.365|20080813183417.840|CCO|little to nothing to own it. 
+20080813183419.316|20080813183420.791|CCO|One company that can make 
+20080813183422.267|20080813183423.742|CCO|it all happen... 
+20080813183425.217|20080813183426.693|CCO|Your power chair will 
+20080813183428.168|20080813183429.644|CCO|be paid in full. 
+20080813183431.119|20080813183432.594|CCO|The SCOOTER Store. 
+20080813183434.070|20080813183435.545|CCO|Hi I'm Dan Weston. 
+20080813183437.021|20080813183438.496|CCO|We're experts at getting 
+20080813183439.971|20080813183441.447|CCO|you the scooter or power 
+20080813183442.922|20080813183444.398|CCO|chair you need. 
+20080813183444.398|20080813183445.873|CCO|In fact, if we pre-qualify 
+20080813183447.348|20080813183448.824|CCO|you for Medicare 
+20080813183448.824|20080813183450.299|CCO|reimbursement and Medicare 
+20080813183451.775|20080813183453.250|CCO|denies your claim, 
+20080813183454.725|20080813183456.201|CCO|we'll give you your new 
+20080813183456.201|20080813183457.676|CCO|power chair or scooter free. 
+20080813183459.152|20080813183500.627|CCO|I didn't pay a penny out 
+20080813183500.627|20080813183502.102|CCO|of pocket for my power chair. 
+20080813183503.578|20080813183505.053|CCO|With help from 
+20080813183506.529|20080813183508.004|CCO|The SCOOTER Store, 
+20080813183509.479|20080813183510.955|CCO|Medicare and my insurance 
+20080813183512.430|20080813183513.906|CCO|covered it all. 
+20080813183513.906|20080813183515.381|CCO|Call The SCOOTER Store for 
+20080813183516.856|20080813183518.332|CCO|free information today. 
+20080813183518.332|20080813183519.807|CCO|Call the number on your screen 
+20080813183519.807|20080813183521.283|CCO|for free information. 
+20080813183521.283|20080813183632.464|SEG|Type=Story
+20080813183521.283|20080813183539.078|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183521.283|20080813183523.260|CCO|>>> KEILAR: You've seen and heard CNN  
+20080813183523.260|20080813183525.237|CCO|correspondents describe what is going 
+20080813183525.237|20080813183527.214|CCO|on in the Republic of Georgia. 
+20080813183529.192|20080813183531.169|CCO|Well now hear from the people who are 
+20080813183531.169|20080813183533.146|CCO|actually living through this nightmare. 
+20080813183535.123|20080813183537.101|CCO|Our Josh Levs has been sorting through 
+20080813183537.101|20080813183539.078|CCO|the online blogs. 
+20080813183539.078|20080813183541.055|CCO|What are you seeing there, Josh? 
+20080813183539.078|20080813183632.464|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080813183539.078|20080813183541.055|CCO|>> JOSH LEVS, CNN CORRESPONDENT: Yes, it's 
+20080813183541.055|20080813183543.033|CCO|powerful stuff. 
+20080813183543.033|20080813183545.010|CCO|And amid all the focus on the big picture, it is good to 
+20080813183545.010|20080813183546.987|CCO|stop and take a look at the individual stories 
+20080813183546.987|20080813183548.964|CCO|that we are getting. 
+20080813183548.964|20080813183550.942|CCO|And some of them are coming from blogs. 
+20080813183550.942|20080813183552.919|CCO|Let's close in on this screen for a moment. Obviously we 
+20080813183552.919|20080813183554.896|CCO|got a lot of photos up CNN.com that remind you of the power of these stories. I  
+20080813183554.896|20080813183556.873|CCO|want 
+20080813183556.873|20080813183558.851|CCO|to bring you to this globalvoicesonline.org -- there you go -- which 
+20080813183558.851|20080813183600.828|CCO|is translating blogs from all sorts of different languages, lots of 
+20080813183602.805|20080813183604.783|CCO|people inside Georgia, who speak different languages. 
+20080813183606.760|20080813183608.737|CCO|And we're going to bring you some quotes from them right now. In fact I  have one over my shoulder. 
+20080813183608.737|20080813183610.714|CCO|We're going to start right here with this one quote. This comes from 
+20080813183610.714|20080813183612.692|CCO|Sunday and this 
+20080813183612.692|20080813183614.669|CCO|is a blogger, Aster Btas (ph): "At 
+20080813183614.669|20080813183616.646|CCO|4:30  a.m., we were woken up by 
+20080813183616.646|20080813183618.623|CCO|the bombs falling on Tbilisi. The 
+20080813183618.623|20080813183620.601|CCO|three of us ran to the terrace and into the 
+20080813183620.601|20080813183622.578|CCO|night. 
+20080813183622.578|20080813183624.555|CCO|Nadine told us not to worry, 'it's not in 
+20080813183624.555|20080813183626.533|CCO|the in the city center, they're only trying to create fear.'" "But with 
+20080813183626.533|20080813183628.510|CCO|wars," he goes on to say, "you know how they start 
+20080813183628.510|20080813183630.487|CCO|but not how they end. 
+20080813183630.487|20080813183632.464|CCO|A  definite cease-fire is urgent." 
+20080813183632.464|20080813184055.922|SEG|Type=Story
+20080813183632.464|20080813183634.442|CCO|I  only >>> have one more from Olik Pantiloff (ph): "Today was the day of emotions. First, 
+20080813183634.442|20080813183636.419|CCO|an incredibly huge rally in 
+20080813183636.419|20080813183638.396|CCO|the center of Tbilsi and people crying during Saakashvili's address. Second, 
+20080813183638.396|20080813183640.374|CCO|a day of waiting, while the 
+20080813183640.374|20080813183642.351|CCO|politicians were talking. Yet 
+20080813183642.351|20080813183644.328|CCO|another military adventure has 
+20080813183644.328|20080813183646.305|CCO|turned into nothing." 
+20080813183646.305|20080813183648.283|CCO|And Brianna, as we start to take a look at these, there aren't that many -- and there aren't that many that have 
+20080813183648.283|20080813183650.260|CCO|been translated into English. 
+20080813183652.237|20080813183654.214|CCO|But we're looking at them more and more, and we're finding that we usually get them one or two days after 
+20080813183654.214|20080813183656.192|CCO|they were originally posted somewhere. A  
+20080813183656.192|20080813183658.169|CCO|lot 
+20080813183658.169|20080813183700.146|CCO|of people in the region didn't have immediate access 
+20080813183700.146|20080813183702.124|CCO|to the Internet, but wrote them 
+20080813183702.124|20080813183704.101|CCO|and when they get out or get them to a friend who then gets it out, they start to show up. We're going to bring 
+20080813183706.078|20080813183708.055|CCO|you more and we're going to encourage 
+20080813183708.055|20080813183710.033|CCO|you to go to globalvoicesonline.org, see those inside stories and 
+20080813183710.033|20080813183712.010|CCO|feel the 
+20080813183712.010|20080813183713.987|CCO|emotions that they are feeling as they go through this nightmare -- Brianna. 
+20080813183712.010|20080813183715.965|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813183712.010|20080813183713.987|CCO|>> KEILAR: Josh Levs at CNN's international desk. Great 
+20080813183713.987|20080813183715.965|CCO|reports today, Josh, thanks. 
+20080813183715.965|20080813183715.965|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080813183715.965|20080813183717.947|CCO|>> LEVS: Thanks 
+20080813183715.965|20080813183755.623|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183715.965|20080813183717.947|CCO|>> LEMON: OK.  This is a very interesting, interesting case -- now for the 
+20080813183719.930|20080813183721.913|CCO|case of the preacher's wife and 
+20080813183721.913|20080813183723.896|CCO|the flight attendant. 
+20080813183723.896|20080813183725.879|CCO|We're talking now about Victoria Osteeen, wife of megachurch evangelical superstar 
+20080813183725.879|20080813183727.862|CCO|Joel Osteen. 
+20080813183727.862|20080813183729.845|CCO|You've seen him, 
+20080813183729.845|20080813183731.828|CCO|very popular TV  show Saturdays and best-selling 
+20080813183731.828|20080813183733.811|CCO|books, at least two of them. She's 
+20080813183733.811|20080813183735.794|CCO|accused of assaulting a flight 
+20080813183735.794|20080813183737.777|CCO|attendant on a Continental Airlines flight from Houston to 
+20080813183737.777|20080813183739.760|CCO|Vail, Colorado. 
+20080813183739.760|20080813183741.743|CCO|That happened three years ago. Sharon Brown is a flight attendant. She is suing for 10  percent of 
+20080813183741.743|20080813183743.726|CCO|Victoria Osteen's net worth. 
+20080813183743.726|20080813183745.708|CCO|Osteen denies hitting Brown. 
+20080813183745.708|20080813183747.691|CCO|And John Kelly knows a lot about high profile cases. He is a former prosecutor 
+20080813183747.691|20080813183749.674|CCO|himself and he represented Nicole 
+20080813183749.674|20080813183751.657|CCO|Brown Simpson's family in 
+20080813183751.657|20080813183753.640|CCO|that civil suit against O.J.  Simpson. 
+20080813183753.640|20080813183755.623|CCO|Thank you, sir. 
+20080813183755.623|20080813183757.606|CCO|Does Ms. Brown stand a chance? 
+20080813183755.623|20080813183813.470|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813183755.623|20080813183757.606|CCO|>> JOHN KELLY, FORMER PROSECUTOR: She could very well be proving 
+20080813183757.606|20080813183759.589|CCO|that Ms. Osteen had assaulted 
+20080813183759.589|20080813183801.572|CCO|her in some way but not 
+20080813183801.572|20080813183803.555|CCO|come up with a penny. 
+20080813183803.555|20080813183805.538|CCO|Damages is a far cry from liability. 
+20080813183807.521|20080813183809.504|CCO|She may show that some sort of interference occurred 
+20080813183809.504|20080813183811.487|CCO|on the plane or that she was touched in some way, but 
+20080813183811.487|20080813183813.470|CCO|whether she deserves 10  percent of Ms. 
+20080813183813.470|20080813183815.452|CCO|Osteen's worth is something else to see. 
+20080813183813.470|20080813183845.196|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183813.470|20080813183815.452|CCO|>> LEMON: And it's a very interesting and a strange case. Victoria 
+20080813183817.435|20080813183819.418|CCO|Osteen and her husband 
+20080813183819.418|20080813183821.401|CCO|agreed to pay an FAA  
+20080813183821.401|20080813183823.384|CCO|fine of $3,000. 
+20080813183823.384|20080813183825.367|CCO| But -- and I  remember this case, I  was actually flying the same day it happened, and it was spreading throughout the airport, hey -- this 
+20080813183825.367|20080813183827.350|CCO|happened. 
+20080813183827.350|20080813183829.333|CCO|Word travels fast. 
+20080813183829.333|20080813183831.316|CCO|OK.  So 
+20080813183831.316|20080813183833.299|CCO|apparently she paid the $3,000  
+20080813183833.299|20080813183835.282|CCO|fine and said they just wanted 
+20080813183835.282|20080813183837.265|CCO|it to go away. 
+20080813183837.265|20080813183839.248|CCO|They paid that to the FAA. 
+20080813183839.248|20080813183841.231|CCO| But does that necessarily mean that Victoria 
+20080813183841.231|20080813183843.214|CCO|Osteen is guilty just because 
+20080813183843.214|20080813183845.196|CCO|she paid the fine? 
+20080813183845.196|20080813183905.026|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813183845.196|20080813183847.179|CCO|>> KELLY: Well, no. 
+20080813183847.179|20080813183849.162|CCO|She paid a fine -- an administrative fine for 
+20080813183849.162|20080813183851.145|CCO|interfering with a crew member, 
+20080813183853.128|20080813183855.111|CCO|which you can do by not putting 
+20080813183855.111|20080813183857.094|CCO|your safety belt on, by yelling, by standing in the aisle. It doesn't necessarily 
+20080813183857.094|20080813183859.077|CCO|mean that you assaulted someone. 
+20080813183901.060|20080813183903.043|CCO|That's what has to be proven here. So by paying the fine and hoping it 
+20080813183903.043|20080813183905.026|CCO|goes away is not an administration 
+20080813183905.026|20080813183907.009|CCO|of guilt in terms of the specific charges here. 
+20080813183905.026|20080813183928.821|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183905.026|20080813183907.009|CCO|>> LEMON: OK.  So 
+20080813183907.009|20080813183908.992|CCO|we're hearing, and this is 
+20080813183908.992|20080813183910.975|CCO|all according to the lawsuit, that 
+20080813183910.975|20080813183912.958|CCO|Mrs. Brown has anxiety now, that -- we 
+20080813183912.958|20080813183914.940|CCO|mention hemorrhoids in a certain 
+20080813183914.940|20080813183916.923|CCO|part of our tease, and that she 
+20080813183916.923|20080813183918.906|CCO|had a crisis of faith after that. 
+20080813183920.889|20080813183922.872|CCO|So now she thinks she deserves 10  
+20080813183922.872|20080813183924.855|CCO|percent of the net worth of the Osteens. 
+20080813183924.855|20080813183926.838|CCO|Again, have you heard anything like 
+20080813183926.838|20080813183928.821|CCO|this ever before? 
+20080813183928.821|20080813183956.582|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813183928.821|20080813183930.804|CCO|>> KELLY: Well -- plaintiffs, when they're seeking 
+20080813183930.804|20080813183932.787|CCO|damages, they'll raise everything 
+20080813183932.787|20080813183934.770|CCO|with the hopes that they 
+20080813183934.770|20080813183936.753|CCO|hook onto something and get 
+20080813183936.753|20080813183938.736|CCO|some sort of award. 
+20080813183938.736|20080813183940.719|CCO|In this particular case, Ms. Brown first has to show 
+20080813183940.719|20080813183942.702|CCO|that she was assaulted or unlawfully 
+20080813183942.702|20080813183944.684|CCO|touched in some way by Ms. Osteen. And then even 
+20080813183944.684|20080813183946.667|CCO|if she does demonstrate that, she has to 
+20080813183946.667|20080813183948.650|CCO|show that that assault was the 
+20080813183948.650|20080813183950.633|CCO|proximate cause of her hemorrhoids or her depression or 
+20080813183950.633|20080813183952.616|CCO|her loss of faith. 
+20080813183952.616|20080813183954.599|CCO|And that would require expert testimony 
+20080813183954.599|20080813183956.582|CCO|and a real leap of faith 
+20080813183956.582|20080813183958.565|CCO|by the jury. 
+20080813183956.582|20080813184002.531|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813183956.582|20080813183958.565|CCO|>> LEMON: John, how 
+20080813183958.565|20080813184000.548|CCO|do you come up with that number though? 
+20080813184002.531|20080813184004.514|CCO|These are very wealthy people we're talking about. 
+20080813184002.531|20080813184002.531|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813184002.531|20080813184004.514|CCO|>> KELLY: Sure. 
+20080813184002.531|20080813184004.514|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184002.531|20080813184004.514|CCO|>> LEMON: How 
+20080813184004.514|20080813184006.497|CCO|do you come up with 10  percent? 
+20080813184004.514|20080813184028.309|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813184004.514|20080813184006.497|CCO|>> KELLY: Well because she's looking 
+20080813184006.497|20080813184008.480|CCO|for punitive damage, meaning that it was an intentional tort. And when 
+20080813184010.463|20080813184012.446|CCO|you intentionally assault someone, you're 
+20080813184012.446|20080813184014.428|CCO|liable for punitive damages and the 
+20080813184014.428|20080813184016.411|CCO|courts have upheld that a percentage 
+20080813184016.411|20080813184018.394|CCO|of your net worth is the 
+20080813184018.394|20080813184020.377|CCO|measuring yard. 
+20080813184020.377|20080813184022.360|CCO|So if you're worth $100  million, $10  million might be the appropriate punitive damages. If you're worth $100,  then $10  might be 
+20080813184022.360|20080813184024.343|CCO|the appropriate punitive damages. 
+20080813184026.326|20080813184028.309|CCO|It's all relative to ultimate worth 
+20080813184028.309|20080813184030.292|CCO|of the defendant that has been hit with the judgment. 
+20080813184028.309|20080813184038.224|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184028.309|20080813184030.292|CCO|>> LEMON: And so if 
+20080813184032.275|20080813184034.258|CCO|she does win, she stands to 
+20080813184034.258|20080813184036.241|CCO|win a whole lot of money, right? 
+20080813184038.224|20080813184038.224|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813184038.224|20080813184040.207|CCO|>> KELLY: Big if, Don. 
+20080813184038.224|20080813184040.207|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184038.224|20080813184040.207|CCO|>> LEMON: All right. John Kelly, we appreciate it. Thank you. 
+20080813184040.207|20080813184042.190|NER_01|Person=John Kelly|Role=FORMER PROSECUTOR
+20080813184040.207|20080813184042.190|CCO|>> KELLY: Sure, thanks. 
+20080813184042.190|20080813184042.190|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184042.190|20080813184045.674|CCO|>> KEILAR: Big if. 
+20080813184042.190|20080813184045.674|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184042.190|20080813184045.674|CCO|>> LEMON: Yes, big if. 
+20080813184045.674|20080813184055.922|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184045.674|20080813184047.138|CCO|>> KEILAR: Well put. 
+20080813184047.138|20080813184048.602|CCO|Health care is a big deal on the 
+20080813184048.602|20080813184050.066|CCO|campaign trail, but we're going to examine 
+20080813184050.066|20080813184051.530|CCO|an aspect of that issue 
+20080813184051.530|20080813184052.994|CCO|that you may not have thought 
+20080813184052.994|20080813184054.458|CCO|about. 
+20080813184054.458|20080813184055.922|CCO|We look at health care and the Hispanic community.   
+20080813184055.922|20080813184245.027|SEG|Type=Commercial
+20080813184055.922|20080813184057.986|CCO|HISPANIC COMMUNITY. 
+20080813184057.986|20080813184126.642|NER_01|Person=VO
+20080813184057.986|20080813184102.079|CCO|>> VO: ANDREA BARROW IS A  
+20080813184102.079|20080813184106.173|CCO|REAL GEICO CUSTOMER, 
+20080813184106.173|20080813184110.267|CCO|NOT AN ADVERTISING SPOKESPERSON. 
+20080813184110.267|20080813184114.361|CCO|SO TO HELP TELL HER STORY,  
+20080813184114.361|20080813184118.455|CCO|WE HIRED ONE. 
+20080813184118.455|20080813184122.549|CCO|ONE DAY, A ROCK CHIPPED 
+20080813184122.549|20080813184126.642|CCO|THE WINDSHIELD ON MY CAR. 
+20080813184126.642|20080813184130.736|CCO|MRS. 
+20080813184126.642|20080813184147.112|NER_01|Person=BUTTERWORTH
+20080813184126.642|20080813184130.736|CCO|>> BUTTERWORTH: OH DEAR. 
+20080813184130.736|20080813184134.830|CCO|BROKEN GLASS SENDS SHIVERS 
+20080813184134.830|20080813184138.924|CCO|DOWN MY BOTTLE. 
+20080813184138.924|20080813184143.018|CCO|I FILED MY CLAIM ON GEICO.COM 
+20080813184143.018|20080813184147.112|CCO|AND SCHEDULED AN APPOINTMENT.  
+20080813184147.112|20080813184151.205|CCO|MRS. 
+20080813184147.112|20080813184215.769|NER_01|Person=BUTTERWORTH
+20080813184147.112|20080813184151.205|CCO|>> BUTTERWORTH: IT WAS A PIECE 
+20080813184151.205|20080813184155.299|CCO|OF CAKE. 
+20080813184155.299|20080813184159.393|CCO|OR MAYBE MORE LIKE HOT 
+20080813184159.393|20080813184203.487|CCO|PANCAKES.  
+20080813184203.487|20080813184207.581|CCO|THE REPAIRMAN CAME RIGHT TO 
+20080813184207.581|20080813184211.675|CCO|MY HOUSE & FIXED MY BABY LIKE 
+20080813184211.675|20080813184215.769|CCO|NEW. 
+20080813184215.769|20080813184219.862|CCO|MRS. 
+20080813184215.769|20080813184223.956|NER_01|Person=BUTTERWORTH
+20080813184215.769|20080813184219.862|CCO|>> BUTTERWORTH: NOW I FEEL 
+20080813184219.862|20080813184223.956|CCO|RICH. THICK AND BUTTERY TOO!  
+20080813184223.956|20080813184232.144|NER_01|Person=VO
+20080813184223.956|20080813184228.050|CCO|>> VO: GEICO. REAL SERVICE. 
+20080813184228.050|20080813184232.144|CCO|REAL SAVINGS. 
+20080813184232.144|20080813184236.238|CCO|MRS. 
+20080813184232.144|20080813184245.027|NER_01|Person=BUTTERWORTH
+20080813184232.144|20080813184236.238|CCO|>> BUTTERWORTH: OH MY, 
+20080813184236.238|20080813184240.332|CCO|SOMEONE HAS PUT A LOGO RIGHT 
+20080813184240.332|20080813184245.027|CCO|OVER MY FACE.  
+20080813184245.027|20080813184436.824|SEG|Type=Story
+20080813184245.027|20080813184300.076|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184245.027|20080813184247.176|CCO|>>> LEMON: A  lot of people from politicians 
+20080813184247.176|20080813184249.326|CCO|to farmers are looking 
+20080813184249.326|20080813184251.476|CCO|at alternatives to gasoline, 
+20080813184251.476|20080813184253.626|CCO|but that can create still another problem. 
+20080813184255.776|20080813184257.926|CCO|CNN's Reynolds Wolf looks into the glut 
+20080813184257.926|20080813184300.076|CCO|of glycerin. 
+20080813184300.076|20080813184436.824|CLIP|Type=Video
+20080813184300.076|20080813184345.225|NER_01|Person=Reynolds Wolf|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080813184300.076|20080813184302.226|CCO|>> REYNOLDS WOLF, CNN CORRESPONDENT: High gas prices have 
+20080813184302.226|20080813184304.376|CCO|sent production of alternative 
+20080813184304.376|20080813184306.526|CCO|fuels, like biodiesel, soaring. 
+20080813184308.676|20080813184310.826|CCO|Also soaring is the waste left over 
+20080813184310.826|20080813184312.976|CCO|from the biodiesel production. 
+20080813184312.976|20080813184315.126|CCO|For every 10  pounds of biodiesel 
+20080813184315.126|20080813184317.276|CCO|produced, so is a pound 
+20080813184317.276|20080813184319.426|CCO|of glycerin. 
+20080813184319.426|20080813184321.576|CCO|Yes, the same stuff found in cosmetics and 
+20080813184321.576|20080813184323.725|CCO|pharmaceuticals. 
+20080813184323.725|20080813184325.875|CCO|And now there is a glut of the stuff. 
+20080813184328.025|20080813184330.175|CCO|But researchers at Rice University 
+20080813184330.175|20080813184332.325|CCO|in Houston have found 
+20080813184332.325|20080813184334.475|CCO|a way to turn glycerin into another 
+20080813184334.475|20080813184336.625|CCO|biofuel, ethanol. 
+20080813184336.625|20080813184338.775|CCO|They can also turn it into an even more 
+20080813184338.775|20080813184340.925|CCO|valuable chemical like succinate, used 
+20080813184340.925|20080813184343.075|CCO|in everything from road de-icers to dietary 
+20080813184343.075|20080813184345.225|CCO|supplements. 
+20080813184345.225|20080813184345.225|NER_01|Person=UNIDENTIFIED FEMALE
+20080813184345.225|20080813184347.375|CCO|>> UNIDENTIFIED FEMALE: This is basically the first part of the process. 
+20080813184345.225|20080813184353.825|NER_01|Person=Reynolds Wolf|Role=CNN CORRESPONDENT
+20080813184345.225|20080813184347.375|CCO|>> WOLF: The process ferments the glycerin using a strain of E.  
+20080813184347.375|20080813184349.525|CCO|coli that doesn't cause disease. 
+20080813184349.525|20080813184351.675|CCO|And as a side benefit, the process also helps trap the greenhouse 
+20080813184351.675|20080813184353.825|CCO|gas carbon dioxide. 
+20080813184353.825|20080813184400.275|NER_01|Person=Ramon Gonzalez|Role=RICE UNIVERSITY
+20080813184353.825|20080813184355.975|CCO|>> RAMON GONZALEZ, RICE UNIVERSITY: It actually grabs CO2  from the atmosphere in the process of converting the glycerin into the chemical product. 
+20080813184358.125|20080813184400.275|CCO|And definitely that way, we are actually 
+20080813184400.275|20080813184402.424|CCO|decreasing pollution. 
+20080813184400.275|20080813184419.624|NER_01|Person=Reynolds Wolf|Role=CNN CORRESPONDENT
+20080813184400.275|20080813184402.424|CCO|>> WOLF: The 
+20080813184404.574|20080813184406.724|CCO|researchers also 
+20080813184406.724|20080813184408.874|CCO|say this is a more ecofriendly 
+20080813184408.874|20080813184411.024|CCO|way to make succinate, which 
+20080813184411.024|20080813184413.174|CCO|is traditionally produced using, you guessed 
+20080813184413.174|20080813184415.324|CCO|it, oil. 
+20080813184415.324|20080813184417.474|CCO|Plus, succinate is a multi-billion 
+20080813184417.474|20080813184419.624|CCO|dollar market. 
+20080813184419.624|20080813184426.074|NER_01|Person=Ramon Gonzalez|Role=RICE UNIVERSITY
+20080813184419.624|20080813184421.774|CCO|>> GONZALEZ: If the biodiesel industry were 
+20080813184419.624|20080813184421.774|CCO|(INAUDIBLE)
+20080813184419.624|20080813184421.774|CCO|the technology that we have developed, it will completely change the economics of biodiesel production 
+20080813184423.924|20080813184426.074|CCO|making them economically viable. 
+20080813184426.074|20080813184436.824|NER_01|Person=Reynolds Wolf|Role=CNN CORRESPONDENT
+20080813184426.074|20080813184428.224|CCO|>> WOLF: Mass production could 
+20080813184428.224|20080813184430.374|CCO|take a while yet, 
+20080813184430.374|20080813184432.524|CCO|but the process has been licensed to a start-up 
+20080813184432.524|20080813184434.674|CCO|company, which could have 
+20080813184434.674|20080813184436.824|CCO|a demonstration plant running within a year. Reynolds Wolf, CNN.  
+20080813184436.824|20080813184611.767|SEG|Type=Commercial
+20080813184436.824|20080813184439.608|CCO|YEAR. 
+20080813184439.608|20080813184441.745|CCO|WE HAVE RECYCLING PLANS... 
+20080813184443.882|20080813184446.019|CCO|THAT FIT 
+20080813184448.156|20080813184450.293|CCO|THE BIGGEST COMPANIES, 
+20080813184452.430|20080813184454.567|CCO|AND PROGRAMS THAT 
+20080813184456.704|20080813184458.841|CCO|HELP OTHERS GET STARTED. 
+20080813184500.978|20080813184503.115|CCO|WE'RE THERE FOR YOU 
+20080813184505.252|20080813184507.389|CCO|EVERY NIGHT, 
+20080813184509.526|20080813184511.663|CCO|AND ON THE JOB WITH YOU 
+20080813184513.800|20080813184515.937|CCO|EVERY DAY. 
+20080813184518.074|20080813184520.211|CCO|WHEN YOU PUT 
+20080813184520.211|20080813184522.348|CCO|WASTE MANAGEMENT TO WORK, 
+20080813184524.485|20080813184526.622|CCO|YOU GET 
+20080813184526.622|20080813184528.759|CCO|AN ENVIRONMENTAL PARTNER. 
+20080813184530.896|20080813184533.033|CCO|AND BIG IDEAS 
+20080813184535.170|20080813184537.307|CCO|FOR EVERY SIZE BUSINESS. 
+20080813184539.444|20080813184541.581|CCO|FROM EVERYDAY COLLECTION 
+20080813184541.581|20080813184543.718|CCO|TO ENVIRONMENTAL PROTECTION, 
+20080813184545.855|20080813184547.992|CCO|THINK GREEN. 
+20080813184550.129|20080813184552.266|CCO|THINK WASTE MANAGEMENT. 
+20080813184552.266|20080813184554.403|CCO|WHAT CAN A CAR THAT GETS 50 MPG 
+20080813184554.403|20080813184556.540|CCO|DO FOR THE ENVIRONMENT? 
+20080813184556.540|20080813184558.677|CCO|NOT NEARLY AS MUCH AS THE CAR 
+20080813184558.677|20080813184600.814|CCO|THAT'S CARRYING IT. 
+20080813184600.814|20080813184602.951|CCO|OUR TRAINS CAN MOVE A TON OF 
+20080813184602.951|20080813184605.088|CCO|FREIGHT 423 MILES 
+20080813184605.088|20080813184607.225|CCO|ON ONE GALLON OF FUEL. 
+20080813184607.225|20080813184609.362|CCO|CSX 
+20080813184609.362|20080813184611.767|CCO|HOW TOMORROW MOVES 
+20080813184611.767|20080813185013.808|SEG|Type=Story
+20080813184611.767|20080813184627.975|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184611.767|20080813184613.387|CCO|>>> KEILAR: Hispanics are the fastest-growing 
+20080813184613.387|20080813184615.008|CCO|segment of the U.S.  
+20080813184615.008|20080813184616.629|CCO|population so naturally 
+20080813184616.629|20080813184618.250|CCO|they are the focus of a 
+20080813184618.250|20080813184619.871|CCO|number of studies. 
+20080813184619.871|20080813184621.492|CCO|And that includes one on health care. 
+20080813184623.113|20080813184624.734|CCO|Our medical correspondent, Elizabeth 
+20080813184624.734|20080813184626.354|CCO|Cohen, here with some really surprising 
+20080813184626.354|20080813184627.975|CCO|results. 
+20080813184627.975|20080813184653.909|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184627.975|20080813184629.596|CCO|>> ELIZABETH COHEN, CNN MEDICAL CORRESPONDENT: Yes, this was an interesting study 
+20080813184629.596|20080813184631.217|CCO|that was done by the Pew Foundation 
+20080813184631.217|20080813184632.838|CCO|on Hispanics and health 
+20080813184632.838|20080813184634.459|CCO|care. 
+20080813184634.459|20080813184636.080|CCO|Some people thought that what they would find was that 
+20080813184636.080|20080813184637.701|CCO|many Hispanics do not have a 
+20080813184637.701|20080813184639.321|CCO|regular doctor because of language 
+20080813184639.321|20080813184640.942|CCO|barriers, because of a lack of insurance. But 
+20080813184640.942|20080813184642.563|CCO|what they found is that three out of four 
+20080813184642.563|20080813184644.184|CCO|did indeed have a regular health care provider. 
+20080813184645.805|20080813184647.426|CCO|Some people were surprised by that. 
+20080813184649.047|20080813184650.668|CCO|That of course also means that one out of four didn't, so that's 
+20080813184652.288|20080813184653.909|CCO|not a good thing. 
+20080813184653.909|20080813184657.151|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184653.909|20080813184655.530|CCO|>> KEILAR: Why not have a regular 
+20080813184655.530|20080813184657.151|CCO|doctor? 
+20080813184657.151|20080813184658.772|CCO|Why didn't they? 
+20080813184657.151|20080813184714.981|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184657.151|20080813184658.772|CCO|>> COHEN: It was very interesting. 
+20080813184658.772|20080813184700.393|CCO|Again, a surprise. 
+20080813184700.393|20080813184702.014|CCO|Some experts thought, well, if they don't 
+20080813184702.014|20080813184703.635|CCO|have a regular health care 
+20080813184703.635|20080813184705.255|CCO|provider, maybe it's because they 
+20080813184705.255|20080813184706.876|CCO|don't have insurance. 
+20080813184706.876|20080813184708.497|CCO|And sure that was an issue, but for as many people the issue was that 
+20080813184708.497|20080813184710.118|CCO|they took care of themselves at home 
+20080813184710.118|20080813184711.739|CCO|or they sought out folk medicine or spiritual healers, 
+20080813184711.739|20080813184713.360|CCO|choosing them over a regular 
+20080813184713.360|20080813184714.981|CCO|medical doctor. 
+20080813184714.981|20080813184716.602|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184714.981|20080813184716.602|CCO|>> KEILAR: Well how old were the people who were not 
+20080813184716.602|20080813184718.222|CCO|seeing a doctor regularly? 
+20080813184716.602|20080813184736.052|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184716.602|20080813184718.222|CCO|>> COHEN: This actually gets us to another reason why they weren't seeing a doctor regularly. Hispanics, in 
+20080813184718.222|20080813184719.843|CCO|general, on average 
+20080813184719.843|20080813184721.464|CCO|tend to be younger than other 
+20080813184721.464|20080813184723.085|CCO|Americans on the whole. 
+20080813184723.085|20080813184724.706|CCO|The median age of Hispanics in the United States is age 
+20080813184724.706|20080813184726.327|CCO|28-years-old. The 
+20080813184726.327|20080813184727.948|CCO|rest of the population, the median 
+20080813184727.948|20080813184729.569|CCO|age is 37. 
+20080813184729.569|20080813184731.189|CCO| So that probably is another reason -- when 
+20080813184731.189|20080813184732.810|CCO|you're young, you're healthy, you 
+20080813184732.810|20080813184734.431|CCO|think you don't really need a doctor. 
+20080813184736.052|20080813184736.052|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184736.052|20080813184737.673|CCO|>> KEILAR: Any concerns in this report? 
+20080813184736.052|20080813184750.640|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184736.052|20080813184737.673|CCO|>> COHEN: Yes, the 
+20080813184737.673|20080813184739.294|CCO|concern is that that one out of 
+20080813184739.294|20080813184740.915|CCO|four who don't have a regular doctor, 
+20080813184740.915|20080813184742.536|CCO|maybe they are young and healthy now, but they're 
+20080813184742.536|20080813184744.156|CCO|also not getting the preventative care 
+20080813184744.156|20080813184745.777|CCO|they need. 
+20080813184745.777|20080813184747.398|CCO|And so the concern is that maybe now this 
+20080813184747.398|20080813184749.019|CCO|isn't such a huge problem, but that in 
+20080813184749.019|20080813184750.640|CCO|the years to come it could be. 
+20080813184750.640|20080813184752.261|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184750.640|20080813184752.261|CCO|>> KEILAR: Yes, but they're not stopping problems 
+20080813184752.261|20080813184753.882|CCO|before they start I  guess is the point? 
+20080813184752.261|20080813184755.503|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184752.261|20080813184753.882|CCO|>> COHEN: Right, 
+20080813184753.882|20080813184755.503|CCO|exactly. 
+20080813184755.503|20080813184755.503|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813184755.503|20080813184757.349|CCO|>> KEILAR: All right. Elizabeth Cohen, thank you so much. 
+20080813184755.503|20080813184755.503|NER_01|Person=Elizabeth Cohen|Role=CNN MEDICAL CORRESPONDENT
+20080813184755.503|20080813184757.349|CCO|>> COHEN: Thanks. 
+20080813184755.503|20080813184813.965|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813184755.503|20080813184757.349|CCO|>> LEMON: Hydrogen may be the first element but 
+20080813184759.195|20080813184801.041|CCO|it is the first and best solution 
+20080813184801.041|20080813184802.888|CCO|in our Energy Fix. 
+20080813184802.888|20080813184804.734|CCO|OK.  Cars powered by hydrogen release 
+20080813184804.734|20080813184806.580|CCO|clean emissions and need no fossil 
+20080813184806.580|20080813184808.427|CCO|fuels. 
+20080813184808.427|20080813184810.273|CCO|Still -- they still have their critics. 
+20080813184810.273|20080813184812.119|CCO|CNNMoney.com's Poppy Harlow takes one for a spin, and she does it in 
+20080813184812.119|20080813184813.965|CCO|Jersey. 
+20080813184813.965|20080813185013.808|CLIP|Type=Video
+20080813184813.965|20080813185004.399|NER_01|Person=Poppy Harlow|Role=CNNMONEY.COM
+20080813184813.965|20080813184815.812|CCO|>> POPPY HARLOW, CNNMONEY.COM: Hey, there Brianna and Don. The 
+20080813184815.812|20080813184817.658|CCO|question on a lot of people's 
+20080813184817.658|20080813184819.504|CCO|minds: 
+20080813184819.504|20080813184821.351|CCO|is hydrogen the fuel of the future 
+20080813184821.351|20080813184823.197|CCO|for America? 
+20080813184823.197|20080813184825.043|CCO|Is it our energy fix? 
+20080813184825.043|20080813184826.889|CCO|It's the most abundant element in our 
+20080813184826.889|20080813184828.736|CCO|universe. 
+20080813184828.736|20080813184830.582|CCO|You get it from coal, from natural gas, 
+20080813184830.582|20080813184832.428|CCO|from algae, from water. 
+20080813184832.428|20080813184834.275|CCO|This is a hydrogen- fueled cell hybrid Mercedes. 
+20080813184836.121|20080813184837.967|CCO|It looks just like a typical Mercedes 
+20080813184837.967|20080813184839.813|CCO|engine for an A-Class like this. But when 
+20080813184839.813|20080813184841.660|CCO|you close the hood and take it for a drive, it's a little bit different. 
+20080813184843.506|20080813184845.352|CCO|Underneath this car we have a hydrogen fuel 
+20080813184845.352|20080813184847.199|CCO|cell battery and a hydrogen tank 
+20080813184847.199|20080813184849.045|CCO|that combines the gas hydrogen that you put in this vehicle with 
+20080813184849.045|20080813184850.891|CCO|the oxygen from the air outside 
+20080813184850.891|20080813184852.737|CCO|to create electricity to 
+20080813184852.737|20080813184854.584|CCO|run this car. 
+20080813184854.584|20080813184856.430|CCO|You start it up here. 
+20080813184856.430|20080813184858.276|CCO|You take one turn to start it up, then 
+20080813184858.276|20080813184900.123|CCO|a second one and it goes through 
+20080813184900.123|20080813184901.969|CCO|a number of safety checks. 
+20080813184903.815|20080813184905.661|CCO|So right now we're at 30  percent power, soon 
+20080813184905.661|20080813184907.508|CCO|we'll be at 60  and then 100  percent power. 
+20080813184907.508|20080813184909.354|CCO|These are prototypes. 
+20080813184909.354|20080813184911.200|CCO|They are only being leased by Honda, Mercedes, GM  
+20080813184911.200|20080813184913.047|CCO|-- just a 
+20080813184913.047|20080813184914.893|CCO|few companies in California right now. 
+20080813184914.893|20080813184916.739|CCO|They are not expected to be on the market 
+20080813184916.739|20080813184918.586|CCO|for the next four to 10  years. 
+20080813184918.586|20080813184920.432|CCO|In terms of the cost right now -- it costs about two times more to make this 
+20080813184920.432|20080813184922.278|CCO|engine than a typical engine. 
+20080813184924.124|20080813184925.971|CCO|But when you drive it, it's silent. 
+20080813184927.817|20080813184929.663|CCO|You really don't heard the start up like you do in a typical gas powered car. But when you drive it, it feels just 
+20080813184929.663|20080813184931.510|CCO|like you're driving a typical car 
+20080813184931.510|20080813184933.356|CCO|right now. 
+20080813184933.356|20080813184935.202|CCO|The question is -- is it safe? 
+20080813184935.202|20080813184937.048|CCO|Is the cost going to be competitive 
+20080813184937.048|20080813184938.895|CCO|for the hydrogen to fill 
+20080813184938.895|20080813184940.741|CCO|it up with gasoline once these 
+20080813184940.741|20080813184942.587|CCO|hit the market? 
+20080813184942.587|20080813184944.434|CCO|So not everyone is a fan of this hydrogen 
+20080813184944.434|20080813184946.280|CCO|technology. 
+20080813184946.280|20080813184948.126|CCO|But it is definitely an option. 
+20080813184948.126|20080813184949.972|CCO|It's being backed in part by the 
+20080813184949.972|20080813184951.819|CCO|government, right now funding part of this. Tomorrow in our Energy Fix, we're going to get 
+20080813184951.819|20080813184953.665|CCO|into the different 
+20080813184953.665|20080813184955.511|CCO|issues, the pros and cons, of 
+20080813184955.511|20080813184957.358|CCO|all this. 
+20080813184957.358|20080813184959.204|CCO|But it's important to note that there are 
+20080813184959.204|20080813185001.050|CCO|no C02  emissions coming out of these cars. It's 
+20080813185001.050|20080813185004.399|CCO|really just water vapor. 
+20080813185004.399|20080813185007.535|CCO|Don, Brianna back to you.. 
+20080813185004.399|20080813185013.808|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185004.399|20080813185007.535|CCO|>> KEILAR: Poppy Harlow for us there in New Jersey. And you know politics -- it is a dirty business. 
+20080813185007.535|20080813185010.672|CCO|But, are you taking things too far when 
+20080813185010.672|20080813185013.808|CCO|you start praying for it to 
+20080813185013.808|20080813185017.112|CCO|rain on your opponent? Our own Jeanne Moos will take a look.   
+20080813185013.808|20080813185319.127|SEG|Type=Commercial
+20080813185013.808|20080813185017.112|CCO|OPPONENTS? 
+20080813185017.112|20080813185018.778|CCO|ONLY ALEVE IS SO STRONG... 
+20080813185018.778|20080813185020.444|CCO|IT CAN STOP PAIN ALL DAY 
+20080813185020.444|20080813185022.111|CCO|WITH TWO PILLS. 
+20080813185022.111|20080813185023.777|CCO|THAT WOULD TAKE EIGHT TYLENOL. 
+20080813185023.777|20080813185025.444|CCO|MOVE PAIN-FREE! 
+20080813185025.444|20080813185027.110|CCO|JUST MOVE ON UP  
+20080813185027.110|20080813185028.777|CCO|MOVE ON UP 
+20080813185028.777|20080813185030.443|CCO|TO ALEVE LIQUID GELS. 
+20080813185032.110|20080813185033.776|CCO|A VERY IMPORTANT 
+20080813185033.776|20080813185035.443|CCO|PHONE CALL I MADE. 
+20080813185035.443|20080813185037.109|CCO|WHEN I GOT MY 
+20080813185037.109|20080813185038.776|CCO|MEDICARE CARD... 
+20080813185038.776|20080813185040.442|CCO|I REALIZED 
+20080813185040.442|20080813185042.109|CCO|I NEEDED... 
+20080813185042.109|20080813185043.775|CCO|AN AARP MEDICARE SUPPLEMENT 
+20080813185043.775|20080813185045.442|CCO|INSURANCE CARD TOO. 
+20080813185045.442|20080813185047.108|CCO|ONE SIMPLE 
+20080813185047.108|20080813185048.775|CCO|CALL... 
+20080813185048.775|20080813185050.441|CCO|GAVE ME THE 
+20080813185050.441|20080813185052.108|CCO|CHANCE TO TALK... 
+20080813185052.108|20080813185053.774|CCO|WITH A PERSONAL 
+20080813185053.774|20080813185055.441|CCO|HEALTH INSURANCE ADVISOR... 
+20080813185055.441|20080813185057.107|CCO|WHO ANSWERED 
+20080813185057.107|20080813185058.774|CCO|ALL MY QUESTIONS... 
+20080813185058.774|20080813185100.440|CCO|ABOUT MEDICARE 
+20080813185100.440|20080813185102.107|CCO|SUPPLEMENT PLANS. 
+20080813185102.107|20080813185103.773|CCO|SO I COULD 
+20080813185103.773|20080813185105.440|CCO|UNDERSTAND IT ALL... 
+20080813185105.440|20080813185107.106|CCO|AFTER I CALLED... 
+20080813185107.106|20080813185108.773|CCO|I WAS ABLE TO CHOOSE THE 
+20080813185108.773|20080813185110.439|CCO|PLAN THAT WAS RIGHT FOR ME. 
+20080813185110.439|20080813185112.106|CCO|IF YOU'RE ALREADY ON 
+20080813185112.106|20080813185113.772|CCO|OR ELIGIBLE FOR MEDICARE... 
+20080813185113.772|20080813185115.439|CCO|CALL NOW TO 
+20080813185115.439|20080813185117.105|CCO|FIND OUT HOW... 
+20080813185117.105|20080813185118.772|CCO|AN AARP MEDICARE 
+20080813185118.772|20080813185120.438|CCO|SUPPLEMENT INSURANCE PLAN... 
+20080813185120.438|20080813185122.105|CCO|INSURED BY UNITED HEALTHCARE 
+20080813185122.105|20080813185123.771|CCO|INSURANCE COMPANY... 
+20080813185123.771|20080813185125.438|CCO|HELPS YOU PAY SOME OF THE 
+20080813185125.438|20080813185127.104|CCO|20% OF YOUR MEDICAL EXPENSES... 
+20080813185127.104|20080813185128.771|CCO|NOT COVERED BY 
+20080813185128.771|20080813185130.437|CCO|MEDICARE PART B. 
+20080813185130.437|20080813185132.104|CCO|THAT CAN SAVE 
+20080813185132.104|20080813185133.770|CCO|YOU FROM PAYING... 
+20080813185133.770|20080813185135.437|CCO|THOUSANDS OF DOLLARS 
+20080813185135.437|20080813185137.103|CCO|OUT OF YOUR OWN POCKET. 
+20080813185137.103|20080813185138.770|CCO|THESE ARE THE ONLY MEDICARE 
+20080813185138.770|20080813185140.436|CCO|SUPPLEMENT INSURANCE PLANS... 
+20080813185140.436|20080813185142.103|CCO|EXCLUSIVELY 
+20080813185142.103|20080813185143.769|CCO|ENDORSED BY AARP... 
+20080813185143.769|20080813185145.436|CCO|A NAME YOU TRUST. 
+20080813185145.436|20080813185147.102|CCO|WHEN YOU CALL NOW... 
+20080813185147.102|20080813185148.769|CCO|WE'LL SEND YOU THIS 
+20080813185148.769|20080813185150.435|CCO|FREE INFORMATION KIT... 
+20080813185150.435|20080813185152.102|CCO|WITH ALL YOU 
+20080813185152.102|20080813185153.768|CCO|NEED TO ENROLL. 
+20080813185153.768|20080813185155.435|CCO|SO YOU CAN JOIN THE 
+20080813185155.435|20080813185157.101|CCO|MILLIONS OF PEOPLE... 
+20080813185157.101|20080813185158.768|CCO|WHO'VE ALREADY 
+20080813185158.768|20080813185200.434|CCO|TRUSTED US... 
+20080813185200.434|20080813185202.101|CCO|FOR THEIR MEDICARE 
+20080813185202.101|20080813185203.767|CCO|SUPPLEMENT INSURANCE. 
+20080813185203.767|20080813185205.434|CCO|PLUS WE'LL SEND YOU THIS FREE 
+20080813185205.434|20080813185207.100|CCO|GUIDE TO UNDERSTANDING MEDICARE. 
+20080813185207.100|20080813185208.767|CCO|THE PRICES 
+20080813185208.767|20080813185210.433|CCO|ARE COMPETITIVE. 
+20080813185210.433|20080813185212.100|CCO|I CAN KEEP MY OWN DOCTOR 
+20080813185212.100|20080813185213.766|CCO|AND CHOOSE MY OWN HOSPITAL. 
+20080813185213.766|20080813185215.433|CCO|AND I DON'T NEED A 
+20080813185215.433|20080813185217.099|CCO|REFERRAL TO SEE A SPECIALIST. 
+20080813185217.099|20080813185218.766|CCO|CALL NOW TO GET THE 
+20080813185218.766|20080813185220.432|CCO|FREE INFORMATION KIT. 
+20080813185220.432|20080813185222.099|CCO|PLUS WE'LL INCLUDE THIS 
+20080813185222.099|20080813185223.765|CCO|FREE MEDICARE GUIDE. 
+20080813185223.765|20080813185225.432|CCO|AND THE ADVANTAGES 
+20080813185225.432|20080813185227.098|CCO|DON'T END THERE. 
+20080813185227.098|20080813185228.765|CCO|YOU CAN CHOOSE FROM 
+20080813185228.765|20080813185230.431|CCO|A WIDE RANGE OF PLANS... 
+20080813185230.431|20080813185232.098|CCO|THAT ARE ALL 
+20080813185232.098|20080813185233.764|CCO|COMPETITIVELY PRICED... 
+20080813185233.764|20080813185235.431|CCO|SO YOU CAN FIND A PLAN THAT 
+20080813185235.431|20080813185237.097|CCO|BEST FITS YOUR NEEDS AND BUDGET. 
+20080813185237.097|20080813185238.764|CCO|THERE ARE VIRTUALLY NO 
+20080813185238.764|20080813185240.430|CCO|CLAIM FORMS TO FILL OUT. 
+20080813185240.430|20080813185242.097|CCO|AND BEST 
+20080813185242.097|20080813185243.763|CCO|OF ALL... 
+20080813185243.763|20080813185245.430|CCO|THEY'RE THE ONLY MEDICARE 
+20080813185245.430|20080813185247.096|CCO|SUPPLEMENT PLANS... 
+20080813185247.096|20080813185248.763|CCO|ENDORSED 
+20080813185248.763|20080813185250.429|CCO|BY AARP. 
+20080813185250.429|20080813185252.096|CCO|WHEN THEY TOLD ME THESE PLANS 
+20080813185252.096|20080813185253.762|CCO|WERE ENDORSED BY AARP... 
+20080813185253.762|20080813185255.429|CCO|I HAD ONLY ONE 
+20080813185255.429|20080813185257.095|CCO|THING TO SAY... 
+20080813185257.095|20080813185258.762|CCO|SIGN ME UP. 
+20080813185258.762|20080813185300.428|CCO|CALL NOW -- 
+20080813185300.428|20080813185302.095|CCO|1-800-232-7773/TTY 
+20080813185302.095|20080813185303.761|CCO|AND LET US HELP YOU 
+20080813185303.761|20080813185305.427|CCO|CHOOSE THE RIGHT PLAN. 
+20080813185305.427|20080813185307.094|CCO|SO CALL NOW, 
+20080813185307.094|20080813185308.760|CCO|1-800-232-7773/TTY 
+20080813185308.760|20080813185310.427|CCO|AND FIND 
+20080813185310.427|20080813185312.093|CCO|OUT ABOUT... 
+20080813185312.093|20080813185313.760|CCO|AN AARP MEDICARE SUPPLEMENT 
+20080813185313.760|20080813185315.426|CCO|INSURANCE PLAN. 
+20080813185315.426|20080813185317.093|CCO|A PERSONAL HEALTH INSURANCE 
+20080813185317.093|20080813185319.127|CCO|ADVISOR IS WAITING FOR YOUR CALL 
+20080813185319.127|20080813195956.000|SEG|Type=Story
+20080813185319.127|20080813185339.909|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185319.127|20080813185321.016|CCO|>>> LEMON: Just look at this. 
+20080813185321.016|20080813185322.905|CCO|We want to bring this to you. 
+20080813185322.905|20080813185324.795|CCO|This is live from Fort Lauderdale. 
+20080813185326.684|20080813185328.573|CCO|Brianna and I  have been following 
+20080813185328.573|20080813185330.463|CCO|these pictures in the break. 
+20080813185330.463|20080813185332.352|CCO|Two window washers here, hanging. 
+20080813185332.352|20080813185334.241|CCO|I  guess they were doing some work there 
+20080813185334.241|20080813185336.131|CCO|and had some trouble. 
+20080813185336.131|20080813185338.020|CCO|This guy is at the bottom, Brianna, but we 
+20080813185338.020|20080813185339.909|CCO|saw another guy at the top. 
+20080813185339.909|20080813185413.918|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185339.909|20080813185341.799|CCO|>> KEILAR: Yes. The first picture that we got to see, which hopefully -- OK,  you see 
+20080813185341.799|20080813185343.688|CCO|here up top. You can see what appears to be -- we 
+20080813185343.688|20080813185345.577|CCO|thought it was sideways -- scaffolding, then 
+20080813185345.577|20080813185347.467|CCO|we realized it was 
+20080813185347.467|20080813185349.356|CCO|the window washing platform that appears to have -- I 
+20080813185349.356|20080813185351.245|CCO| don't know what happened here. If 
+20080813185351.245|20080813185353.135|CCO|one of the cords that was keeping it suspended it in the air broke or whatnot. 
+20080813185355.024|20080813185356.913|CCO|But, it obviously broke on one side, swung 
+20080813185356.913|20080813185358.803|CCO|down against these balconies. 
+20080813185400.692|20080813185402.581|CCO|One of the window washers up here where that scaffolding is. The 
+20080813185404.471|20080813185406.360|CCO|other one down here that you're seeing now, hanging 
+20080813185406.360|20080813185408.250|CCO|from what appears to be those restraints 
+20080813185408.250|20080813185410.139|CCO|that window washers do 
+20080813185410.139|20080813185412.028|CCO|wear -- safety 
+20080813185412.028|20080813185413.918|CCO|restraints. 
+20080813185413.918|20080813185451.705|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185413.918|20080813185415.807|CCO|>> LEMON: Yes. And I  would imagine that has to do with 
+20080813185415.807|20080813185417.696|CCO|some weights and balances here 
+20080813185417.696|20080813185419.586|CCO|and trying to get this equipment 
+20080813185419.586|20080813185421.475|CCO|as they unstrap the safety 
+20080813185421.475|20080813185423.364|CCO|harness off of this, the 
+20080813185423.364|20080813185425.254|CCO|one who is on the bottom here, of this 
+20080813185425.254|20080813185427.143|CCO|harness.. And the 
+20080813185427.143|20080813185429.032|CCO|person at the top had a rescuer 
+20080813185429.032|20080813185430.922|CCO|with him as well. 
+20080813185430.922|20080813185432.811|CCO|And these are a courtesy of our affiliates WPLG  and also WSVN.  
+20080813185432.811|20080813185434.700|CCO|And of course, we 
+20080813185434.700|20080813185436.590|CCO|do not have control of these shots because they're 
+20080813185438.479|20080813185440.368|CCO|coming in our affiliates. 
+20080813185442.258|20080813185444.147|CCO|But we want to watch this because both of these men -- and we can see they're 
+20080813185444.147|20080813185446.036|CCO|both men -- hanging in precarious 
+20080813185446.036|20080813185447.926|CCO|conditions from what appears 
+20080813185447.926|20080813185449.815|CCO|to be the window washing 
+20080813185449.815|20080813185451.705|CCO|-- what do you call it, ledge or 
+20080813185451.705|20080813185453.594|CCO|platform? 
+20080813185451.705|20080813185451.705|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185451.705|20080813185453.594|CCO|>> KEILAR: Platform. 
+20080813185451.705|20080813185521.934|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185451.705|20080813185453.594|CCO|>> LEMON: Probably a better word. 
+20080813185455.483|20080813185457.373|CCO|As folks watch on this balcony to the left of 
+20080813185457.373|20080813185459.262|CCO|your screen. 
+20080813185459.262|20080813185501.151|CCO|Can we take to the other shot, Scotty? You see the guy who is -- there we go -- the guy who's much higher, 
+20080813185501.151|20080813185503.041|CCO|the guy on the left. 
+20080813185503.041|20080813185504.930|CCO|And there below him under -- there 
+20080813185504.930|20080813185506.819|CCO|we go -- that's the 
+20080813185506.819|20080813185508.709|CCO|guy who is much higher, they're trying 
+20080813185508.709|20080813185510.598|CCO|to bring him down. 
+20080813185510.598|20080813185512.487|CCO|I  guess I  would imagine they're going to bring him 
+20080813185512.487|20080813185514.377|CCO|either around to this balcony or down to where they have brought the other guy. Around to the balcony it looks like is where they're going. And 
+20080813185514.377|20080813185516.266|CCO|luckily he is wearing a harness 
+20080813185516.266|20080813185518.155|CCO|as they are doing this, 
+20080813185518.155|20080813185520.045|CCO|reaching for the hand of that firefighter. 
+20080813185521.934|20080813185546.496|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185521.934|20080813185523.823|CCO|>> KEILAR: This is on Ocean Boulevard there 
+20080813185523.823|20080813185525.713|CCO|in Fort Lauderdale. 
+20080813185525.713|20080813185527.602|CCO|this is the Ocean Mist Hotel. 
+20080813185527.602|20080813185529.491|CCO|So I  mean, you can just imagine, this is a window 
+20080813185529.491|20080813185531.381|CCO|washer's worst nightmare. 
+20080813185531.381|20080813185533.270|CCO|Probably something that doesn't happen 
+20080813185533.270|20080813185535.159|CCO|in your career as a window washer. 
+20080813185535.159|20080813185537.049|CCO|But this platform appearing to have 
+20080813185537.049|20080813185538.938|CCO|collapsed on one side. 
+20080813185538.938|20080813185540.828|CCO|So presumably, you know, it's a pretty nice day 
+20080813185540.828|20080813185542.717|CCO|there and they're 
+20080813185542.717|20080813185544.606|CCO|just washing the windows, 
+20080813185544.606|20080813185546.496|CCO|going about their jobs when 
+20080813185546.496|20080813185548.385|CCO|all of a sudden -- 
+20080813185546.496|20080813185643.176|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185546.496|20080813185548.385|CCO|>> LEMON: That 
+20080813185548.385|20080813185550.274|CCO|happens. 
+20080813185550.274|20080813185552.164|CCO|One rescued so far. 
+20080813185552.164|20080813185554.053|CCO|The guy at the top. 
+20080813185554.053|20080813185555.942|CCO|The second guy still hanging there. 
+20080813185557.832|20080813185559.721|CCO|And most -- probably, they're trying to 
+20080813185559.721|20080813185601.610|CCO|get this harness off of him, Brianna, and make 
+20080813185601.610|20080813185603.500|CCO|sure all of this equipment, 
+20080813185603.500|20080813185605.389|CCO|this platform doesn't fall on top 
+20080813185605.389|20080813185607.278|CCO|of him. 
+20080813185607.278|20080813185609.168|CCO|So, great. We've got both shots now. 
+20080813185609.168|20080813185611.057|CCO|So the screen left was the guy on the top, 
+20080813185612.946|20080813185614.836|CCO|now it's gone to the guy at the bottom. 
+20080813185616.725|20080813185618.614|CCO|But he has been rescued. 
+20080813185618.614|20080813185620.504|CCO|He was hanging and they rescued him by pulling 
+20080813185620.504|20080813185622.393|CCO|him over to the balcony. 
+20080813185622.393|20080813185624.283|CCO|And then the other guy who is below 
+20080813185624.283|20080813185626.172|CCO|him, they're trying to pull him into 
+20080813185626.172|20080813185628.061|CCO|a window of this building. 
+20080813185628.061|20080813185629.951|CCO|And as Brianna said, this is happening 
+20080813185629.951|20080813185631.840|CCO|on North Ocean Boulevard 
+20080813185631.840|20080813185633.729|CCO|at the Ocean Mist Hotel. 
+20080813185635.619|20080813185637.508|CCO|And the only thing we have here from 
+20080813185637.508|20080813185639.397|CCO|our affiliate, WSVN,  is that 
+20080813185639.397|20080813185641.287|CCO|it is a rescue in progress. 
+20080813185641.287|20080813185643.176|CCO|And we can certainly see that. 
+20080813185643.176|20080813185739.856|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185643.176|20080813185645.065|CCO|>> KEILAR: So obviously, this started just two guys 
+20080813185645.065|20080813185646.955|CCO|out for their day doing their 
+20080813185646.955|20080813185648.844|CCO|normal job as window washers. 
+20080813185650.733|20080813185652.623|CCO|And you can see up -- if we can see, actually we're focused 
+20080813185652.623|20080813185654.512|CCO|on the second rescue here, 
+20080813185654.512|20080813185656.401|CCO|the man suspended by a safety 
+20080813185656.401|20080813185658.291|CCO|restraint. 
+20080813185658.291|20080813185700.180|CCO|But, above him was the window washing 
+20080813185700.180|20080813185702.069|CCO|platform where presumably both of 
+20080813185702.069|20080813185703.959|CCO|these guys were just going about 
+20080813185703.959|20080813185705.848|CCO|you know, their daily job when 
+20080813185705.848|20080813185707.737|CCO|this happened. You can see now that window 
+20080813185707.737|20080813185709.627|CCO|washing platform that 
+20080813185709.627|20080813185711.516|CCO|is supposed to be horizontal, hanging 
+20080813185711.516|20080813185713.406|CCO|there vertically, floors above 
+20080813185713.406|20080813185715.295|CCO|where this guy here is now 
+20080813185715.295|20080813185717.184|CCO|suspended. 
+20080813185717.184|20080813185719.074|CCO|It appears he is standing on something. 
+20080813185720.963|20080813185722.852|CCO|Maybe it is this fire department 
+20080813185722.852|20080813185724.742|CCO|ladder. Is that what it looks like, Don? Fort Lauderdale Fire Department making 
+20080813185726.631|20080813185728.520|CCO|sure of course, that he is in a stable condition 
+20080813185728.520|20080813185730.410|CCO|before they try to bring him inside. 
+20080813185732.299|20080813185734.188|CCO|But he certainly does look a little more stable, even then he was, if you can imagine, just a 
+20080813185734.188|20080813185736.078|CCO|few minutes ago when he was pretty 
+20080813185736.078|20080813185737.967|CCO|much suspended just by safety 
+20080813185737.967|20080813185739.856|CCO|restraint. 
+20080813185739.856|20080813185815.754|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185739.856|20080813185741.746|CCO|>> LEMON: Well, he looks to be OK,  though. 
+20080813185741.746|20080813185743.635|CCO|Because you can see him in these pictures. He is talking to rescuers. 
+20080813185743.635|20080813185745.524|CCO|And can you imagine, a very scary situation 
+20080813185745.524|20080813185747.414|CCO|in all of this. 
+20080813185747.414|20080813185749.303|CCO|And as I  watch these pictures, I'm watching them, as well on other 
+20080813185749.303|20080813185751.192|CCO|routers that we have here in 
+20080813185751.192|20080813185753.082|CCO|the CNN NEWSROOM. 
+20080813185753.082|20080813185754.971|CCO| But, as you watch them and you see just 
+20080813185754.971|20080813185756.861|CCO|how high this building is, right, 
+20080813185756.861|20080813185758.750|CCO|Brianna, and how far they were from 
+20080813185758.750|20080813185800.639|CCO|the ground -- the 14th floor, 
+20080813185800.639|20080813185802.529|CCO|you can imagine just how frightening 
+20080813185802.529|20080813185804.418|CCO|it was for both of them. 
+20080813185806.307|20080813185808.197|CCO|And the guy at the top -- there's back up on the 
+20080813185808.197|20080813185810.086|CCO|roof there. 
+20080813185810.086|20080813185811.975|CCO|How they are lowering these people from 
+20080813185811.975|20080813185813.865|CCO|the roof to get down. 
+20080813185813.865|20080813185815.754|CCO|You can imagine sort of the sigh of relief 
+20080813185815.754|20080813185817.643|CCO|obviously, from the guy at the top who has already been rescued. 
+20080813185815.754|20080813185904.877|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185815.754|20080813185817.643|CCO|>> KEILAR: But apparently, this 
+20080813185817.643|20080813185819.533|CCO|gentleman at the 
+20080813185819.533|20080813185821.422|CCO|bottom here is stuck in the safety 
+20080813185821.422|20080813185823.311|CCO|restraint. 
+20080813185823.311|20080813185825.201|CCO|Obviously it did its job. 
+20080813185825.201|20080813185827.090|CCO|It caught him when I  
+20080813185827.090|20080813185828.979|CCO|imagine, this window washing platform collapsed. 
+20080813185830.869|20080813185832.758|CCO|But now he is stuck in that restraint. 
+20080813185832.758|20080813185834.647|CCO|And they're trying to figure out a way 
+20080813185834.647|20080813185836.537|CCO|to get him out of it. 
+20080813185836.537|20080813185838.426|CCO|So, they've stabilized him at this point on top of a ladder. But then we can 
+20080813185838.426|20080813185840.315|CCO|see other members of presumably 
+20080813185840.315|20080813185842.205|CCO|the fire department, fire 
+20080813185842.205|20080813185844.094|CCO|rescue on top of the roof. 
+20080813185845.984|20080813185847.873|CCO|They seem to be working with some 
+20080813185847.873|20080813185849.762|CCO|of the cords up there, perhaps 
+20080813185849.762|20080813185851.652|CCO|that are suspending either 
+20080813185851.652|20080813185853.541|CCO|the safety restraint or the 
+20080813185853.541|20080813185855.430|CCO|window washing platform. But 
+20080813185855.430|20080813185857.320|CCO|at this point, they appear to be in 
+20080813185857.320|20080813185859.209|CCO|a holding pattern until they can 
+20080813185859.209|20080813185901.098|CCO|figure out maybe how to loosen this 
+20080813185901.098|20080813185902.988|CCO|restraint on this guy here on the 
+20080813185902.988|20080813185904.877|CCO|14th floor. 
+20080813185904.877|20080813185954.000|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185904.877|20080813185906.766|CCO|>> LEMON: You can imagine they've been there 
+20080813185906.766|20080813185908.656|CCO|for a while. 
+20080813185908.656|20080813185910.545|CCO|Because it takes a while to get a fire truck there and to get these teams there to lower the stuff 
+20080813185910.545|20080813185912.434|CCO|from the roof and also, to get a ladder 
+20080813185912.434|20080813185914.324|CCO|up this high, up to the 12th, 
+20080813185914.324|20080813185916.213|CCO|13th, 14th floor. 
+20080813185916.213|20080813185918.102|CCO|It takes a while to do that. 
+20080813185918.102|20080813185919.992|CCO|So these guys were just sort of suspended there for a while, waiting for the fire department and waiting 
+20080813185919.992|20080813185921.881|CCO|for someone to come 
+20080813185921.881|20080813185923.770|CCO|and rescue them. 
+20080813185923.770|20080813185925.660|CCO|The gentleman up at the top as we have been telling you, has been 
+20080813185925.660|20080813185927.549|CCO|rescued. 
+20080813185927.549|20080813185929.439|CCO|But he was dangling there on what thought in the beginning when we were looking at these pictures, was scaffolding. 
+20080813185931.328|20080813185933.217|CCO|But as it turns out, it was the window 
+20080813185933.217|20080813185935.107|CCO|washing platform. 
+20080813185935.107|20080813185936.996|CCO|And then this was where they had strapped 
+20080813185936.996|20080813185938.885|CCO|that platform to the roof, as is 
+20080813185938.885|20080813185940.775|CCO|done daily all over the world. 
+20080813185940.775|20080813185942.664|CCO|But something obviously went wrong here. 
+20080813185944.553|20080813185946.443|CCO|But again, as Brianna said, the safety harness, everything 
+20080813185946.443|20080813185948.332|CCO|appeared to work in this 
+20080813185948.332|20080813185950.221|CCO|case because 
+20080813185950.221|20080813185952.111|CCO|we don't have any reports 
+20080813185952.111|20080813185954.000|CCO|of any other people on that 
+20080813185954.000|20080813195956.000|CCO|platform being injured except for these two men that we see now. And we don't know if they've been injured or the extent of anything, if there are any injuries at all. 
+20080813185954.000|20080813185954.000|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185954.000|20080813195956.000|CCO|>> KEILAR: You can see the other line that's being brought down here to the right of this man. The blue line obviously, his safety harness. The right line, I  don't know if that is some sort of rope that has been tossed down by the crews that we see working on top of this hotel. But, they've stabilized him on top of this fire department ladder. But obviously, he's still in a very precarious position. So, they're trying to obviously get him freed from his harness. But again, this is happening on North Ocean Boulevard in Fort Lauderdale. Fort Lauderdale fire and rescue trying to rescue -- they rescued one window washer, they're trying to rescue another after this window washing platform collapsed. And this is at a hotel. So these two men just there, doing their job on a day in Fort Lauderdale, when really, a situation that's not supposed to happen, happen. This window washing platform collapses. 
+20080813185954.000|20080813185954.000|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185954.000|20080813195956.000|CCO|>> LEMON: And you can imagine, this guy is probably saying, you know what? I'm happy that they're here rescuing me, but, boy, I  wish this harness would just somehow be off of me now, so that I  can get inside of that window and get back to life as normal. And anyone who has been in any sort of situation where you have been in an accident, you know the adrenaline is pumping and flowing. And you don't know how you feel really until you're out of that situation. And they're going to check both of these guys out and see exactly what injuries they might have sustained after this, because the scaffolding was up a couple of floors. What do you say, Brianna, four or five floors above where this guy is? The scaffolding was pretty high. So, he had quite a drop there when he fell from that scaffolding which gave way. 
+20080813185954.000|20080813185954.000|NER_01|Person=Brianna Keilar|Role=CNN ANCHOR
+20080813185954.000|20080813195956.000|CCO|>> KEILAR: It looks like it was maybe up five or six floors. Then when the scaffolding fell from horizontal to vertical, one of the -- the second window-washer caught actually on the scaffolding or on the platform. He was able to hold on to that. So he probably fell maybe a floor or two. But, yes, this, the gentleman there on the bottom, this is the crew working on the roof. And actually it kind of looks like they're getting -- what are they doing here? 
+20080813185954.000|20080813195956.000|CCO|(CROSSTALK)
+20080813185954.000|20080813195956.000|NER_01|Person=Don Lemon|Role=CNN ANCHOR
+20080813185954.000|20080813195956.000|CCO|>> LEMON: I  don't know if they're going to cut. He's stuck up here. And they may be trying to get some slack to that so they can actually get him down on that ladder, because it appears to be that he's stuck in that position.   
+END|20080813185956|2008-08-13_1800_US_CNN_Newsroom

@@ -16,7 +16,7 @@ class TranscriptHTMLParser(HTMLParser):
     bodyAttr = ('class', 'cnnBodyText')
     HeadAttr = ('class', 'cnnTransStoryHead')  # Program title, like CNN NEWSROOM
     TopicAttr = ('class', 'cnnTransSubHead')   # Topics
-    
+
     # enum values indicates the type of paragraph we are parsing
     PARAGRAPH_NORMAL = 0
     PARAGRAPH_BODY = 1
@@ -118,15 +118,16 @@ class TranscriptHTMLParser(HTMLParser):
     def get_main_data(self):
         time = "(OBT) " + "{:%Y-%m-%d %H:%M America/New_York}".format(self.get_time());
         content = ''.join(self.paragraphs)
-        content = content.replace('(COMMERCIAL BREAK)', '\n(COMMERCIAL BREAK)');        
+        content = content.replace('(COMMERCIAL BREAK)', '\n(COMMERCIAL BREAK)');
         content = content.replace('\n\n', '\n');
         return self.get_head() + self.get_subhead() + time + content;
 
+
 # In CNN transcripts are encoded as latin-1 (ISO-8859-1).
-def convert(htmlFilename, charset='ISO-8859-1'):
+def convert_to_rawtxt(htmlFilename, charset='ISO-8859-1'):
     str_list = [];
     f = codecs.open(htmlFilename, encoding=charset)
-    for line in f:    
+    for line in f:
         str_list.append(line)
     f.close()
 
@@ -135,14 +136,46 @@ def convert(htmlFilename, charset='ISO-8859-1'):
     parser = TranscriptHTMLParser()
     parser.feed(transcriptPage)
 
-    fo = open(htmlFilename.replace('.html','.rawtxt'), "w", encoding=charset)  # keep the same charset
+    rawtxt_filename = htmlFilename.replace('.html', '.rawtxt')
+    fo = open(rawtxt_filename, "w", encoding=charset)  # keep the same charset
     fo.write(parser.get_main_data())
     fo.close()
+
+    return rawtxt_filename
+
+
+def combine_rawtxt(first_half, second_half, charset='ISO-8859-1'):
+    first_half_ended_with_commercial = False
+    with codecs.open(first_half, encoding=charset) as f_first:
+        lines = []
+        for line in f_first:
+            l = line.strip()
+            if len(l) > 0:
+                lines.append(l)
+        if lines[-1] == "(COMMERCIAL BREAK)":
+            first_half_ended_with_commercial = True
+
+    with codecs.open(first_half, mode='a', encoding=charset) as fa_first:
+        with codecs.open(second_half, encoding=charset) as f_second:
+            line_counter = 0
+            content_counter = 0
+            for line in f_second:
+                line_counter += 1
+                if (line_counter in [1, 2, 3]):
+                    continue
+
+                l = line.lstrip()
+                if len(l) > 0:
+                    content_counter += 1
+                    if (content_counter > 1 or l != "(COMMERCIAL BREAK)" or not first_half_ended_with_commercial):
+                        fa_first.write(l)
+    return first_half
+
 
 def main():
     filelist = sys.argv[1:]
     for filename in filelist:
-        convert(filename)
+        convert_to_rawtxt(filename)
         #convert('cnr.01.html')
     return
 

@@ -1,0 +1,4 @@
+<story>Health:Teaser|Gardasil</story>
+<start>20080811134054.384</start>
+<end>20080811134102.125</end>
+A cancer vaccine | making | some girls 

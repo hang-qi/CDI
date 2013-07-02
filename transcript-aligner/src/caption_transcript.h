@@ -40,24 +40,24 @@ public:
     FileBasedText(const string& filename)
     {
         this->filename_ = filename;
-        
+
         //Read in files
         ifstream is;
         is.open(filename.c_str());
-            
+
         if (is.good())
         {
             // get length of file:
             is.seekg (0, ios::end);
             int length = is.tellg();
             is.seekg (0, ios::beg);
-            
-            
+
+
             // allocate memory:
             char* buffer = new char[length];
             // read data as a block:
             is.read (buffer,length);
-            is.close();   
+            is.close();
             text_ = string(buffer);
             delete [] buffer;
         }
@@ -82,7 +82,7 @@ protected:
 class CaptionLine
 {
 public:
-    CaptionLine(string tag, string timestamp, string content)
+    CaptionLine(const string& tag, const string& timestamp, const string& content)
     {
         this->tag = tag;
         this->timestamp = timestamp;
@@ -90,13 +90,18 @@ public:
         isNewFormat_ = false;
     }
 
-    CaptionLine(string tag, string timestamp, string timestamp_end, string content)
+    CaptionLine(const string& tag, const string& timestamp, const string& timestamp_end, const string& content)
     {
         this->tag = tag;
         this->timestamp = timestamp;
         this->timestamp_end = timestamp_end;
         this->content = content;
         isNewFormat_ = true;
+    }
+
+    void SetCaptionStyle(const string& caption_style)
+    {
+        this->caption_style = caption_style;
     }
 
     void Print(ostream& os) const
@@ -117,20 +122,24 @@ public:
 
     void PrintNewFormat(ostream& os) const
     {
+        // New format:  starttime | endtime | primary tag | caption style | text
         os << timestamp << "|";
         os << timestamp_end << "|";
         os << tag << "|";
+        if (caption_style != "")
+            os << caption_style << "|";
         os << content << endl;
     }
 
     string tag;
     string timestamp;
     string timestamp_end;
+    string caption_style;
     string content;
     bool isNewFormat_;
 };
 
-// A representation of the whole caption file
+// Representation of a close caption file.
 class Caption : public FileBasedText
 {
 public:
@@ -143,7 +152,7 @@ public:
         isInterpolated = false;
         ConvertToWords();
     }
-    
+
     const vector<string>& GetWords() const
     {
         return words_;
@@ -158,7 +167,7 @@ public:
     {
         if (fout.bad())
             return;
-        
+
         for(int i = 0; i < headerLines.size(); i++)
         {
             fout << headerLines[i] << endl;
@@ -180,7 +189,7 @@ private:
     {
         BuildLines();
         for(int i = 0; i < captionLines.size(); i++)
-        {           
+        {
             stringstream ss(captionLines[i].content);
             int numWords = 0;
             while (!ss.eof())
@@ -211,33 +220,48 @@ private:
                 continue;
 
             if (line[0] >= '0' && line[0] <= '9')
-            {                
+            {
+                // New format:  starttime | endtime | primary tag | caption style | text
                 string startTime = line.substr(0, LEN_TIMESTAMP);
                 string endTime = line.substr(LEN_TIMESTAMP + 1, LEN_TIMESTAMP);
 
-                int tagStart = 2* (LEN_TIMESTAMP + 1);
-                string tag_content = line.substr(tagStart);
-                size_t tagEnd = tag_content.find('|');
-                int contentStart = tagEnd + 1;
+                // Tag
+                int tagStart = 2 * (LEN_TIMESTAMP + 1);
+                string tag_to_end = line.substr(tagStart);
+                size_t tagEnd = tag_to_end.find('|');
+                string tag = tag_to_end.substr(0, tagEnd);
 
-                string tag = tag_content.substr(0, tagEnd);
+                // Caption style
+                int captionStyleStart = tagEnd + 1;
+                string style_to_end = tag_to_end.substr(captionStyleStart);
+                size_t captionStyleEnd = style_to_end.find('|');
+
+                string captionStyle = "";
+                int contentStart = 0;
+                if (captionStyleEnd != string::npos)
+                {
+                    // Has caption style field.
+                    captionStyle = style_to_end.substr(0, captionStyleEnd);
+                    contentStart = captionStyleEnd + 1;
+                }
 
                 if (tag == "CC1" || tag == "CC0" || tag == "CCO" || tag == "TR0" || tag == "TR1")
                 {
-                    // whole line after CC1/CC0
-                    string content = tag_content.substr(contentStart);
+                    string content = style_to_end.substr(contentStart);
                     CaptionLine capline(tag, startTime, endTime, content);
+                    capline.SetCaptionStyle(captionStyle);
                     captionLines.push_back(capline);
                 }
             }
             else
             {
+                // Old format: primary tag | starttime | text
                 string tag = line.substr(0, 3);
                 if (tag == "CC1" || tag == "CC0" || tag == "CCO" || tag == "TR0" || tag == "TR1")
                 {
                     // whole line after CC1/CC0
                     string content = line.substr(4);
-                    
+
                     // UTC format timestamp
                     string timestamp;
                     if (tag == "TR0" || tag == "TR1")
@@ -323,7 +347,7 @@ private:
     {
         stringstream ss(text_);
         bool videoClip = false;
-        string line; 
+        string line;
         while (!ss.eof())
         {
             getline (ss, line);
@@ -411,13 +435,13 @@ private:
                 }
                 else
                 {
-                    break;   
+                    break;
                 }
             }
 
             // For words do not contain lower case letters,
             // it shall be buffered
-            // And we treat these punctuations as termination of a long word: 
+            // And we treat these punctuations as termination of a long word:
             //    :  )  .  ?  !
             longWordBuffer.append(word + " ");
             char lastChar = word[word.size() -1];
@@ -431,8 +455,8 @@ private:
                     words.insert(words.end(), parts.begin(), parts.end());
                 }
                 else
-                {                    
-                    words.push_back(utility::string_utility::trim_end(longWordBuffer));                    
+                {
+                    words.push_back(utility::string_utility::trim_end(longWordBuffer));
                 }
                 longWordBuffer.clear();
             }
@@ -442,7 +466,7 @@ private:
         if (!longWordBuffer.empty())
         {
             vector<string> parts = utility::string_utility::split(longWordBuffer, ' ');
-            words.insert(words.end(), parts.begin(), parts.end());            
+            words.insert(words.end(), parts.begin(), parts.end());
         }
 
         if (!word.empty())

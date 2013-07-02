@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080815174140.497</start>
+<end>20080815174150.139</end>
+we | put | the schedule 

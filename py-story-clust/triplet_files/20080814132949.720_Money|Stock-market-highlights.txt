@@ -1,0 +1,10 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080814132949.720</start>
+<end>20080814133042.840</end>
+a movie | did | OK 
+Let s | hope | the folks 
+Rent | can help | the markets 
+we | get | the business day 
+The Dow | dropping | points 
+Ali | mentioned | just moments 
+We | re going to follow | the markets 

@@ -1,0 +1,4 @@
+<story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
+<start>20080815182943.545</start>
+<end>20080815182958.560</end>
+A van | hits | a pregnant traffic officer 

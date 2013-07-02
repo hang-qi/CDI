@@ -1,0 +1,5 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080815172652.776</start>
+<end>20080815172712.863</end>
+they | re actually higher | average 
+the Dow | is up | points 

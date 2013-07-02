@@ -1,0 +1,6 @@
+<story>Commercial|Block</story>
+<start>20080811132536.300</start>
+<end>20080811132852.062</end>
+he | goes | two 
+Heidi Collins | has | the day 
+Brianna Keilar | joins | me 

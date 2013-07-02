@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813153715.531</start>
+<end>20080813154021.383</end>
+We | are covering | all angles 

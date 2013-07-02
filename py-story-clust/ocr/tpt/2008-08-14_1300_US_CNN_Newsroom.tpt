@@ -1,0 +1,2014 @@
+TOP|20080814130001|2008-08-14_1300_US_CNN_Newsroom
+COL|Communication Studies Archive, UCLA
+UID|e8237c4c-6a00-11dd-a900-00e0815ffae2
+DUR|0:59:55.00
+CMT|
+LBT|2008-08-14 06:00 America/Los_Angeles
+TPF|transcripts.cnn.com|cnr.01.html
+HED|Fire at Apartment Complex in Pennsylvania Now Under Control; Secretary of State Condoleezza Rice on Diplomatic Mission; Critics Question Ages of Members in China's Gymnastics Team
+SegStart|20080814130001.600|Network|Intro
+SegEnd|20080814130016.982|Network|Intro
+SegStart|20080814130016.982|Accident|Philadelphia-apartment-fire
+SegEnd|20080814130448.820|Accident|Philadelphia-apartment-fire
+SegStart|20080814130449.054|War|South-Ossetia-war-cease-fire
+SegEnd|20080814130544.743|War|South-Ossetia-war-cease-fire
+SegStart|20080814130545.010|War|South-Ossetia-war-humanitarian-aid
+SegEnd|20080814130835.814|War|South-Ossetia-war-humanitarian-aid
+SegStart|20080814130835.814|War|South-Ossetia-war
+SegEnd|20080814131200.785|War|South-Ossetia-war
+SegStart|20080814131201.286|Weather|US
+SegEnd|20080814131316.961|Weather|US
+SegStart|20080814131316.961|Social|American-population-change
+SegEnd|20080814131352.664|Social|American-population-change
+SegStart|20080814131352.997|Government:Teaser|Hartford-teen-curfew
+SegEnd|20080814131410.748|Government:Teaser|Hartford-teen-curfew
+SegStart|20080814131410.949|Commercial|Block
+SegEnd|20080814131657.048|Commercial|Block
+SegStart|20080814131704.555|Government|Hartford-teen-curfew
+SegEnd|20080814131742.960|Government|Hartford-teen-curfew
+SegStart|20080814131742.960|Health|Parents-drug-prevention
+SegEnd|20080814132015.479|Health|Parents-drug-prevention
+SegStart|20080814132015.680|Human-interest:Teaser|Stolen-bear
+SegEnd|20080814132031.295|Human-interest:Teaser|Stolen-bear
+SegStart|20080814132031.596|Commercial|Block
+SegEnd|20080814132317.995|Commercial|Block
+SegStart|20080814132325.836|Money|Inflation
+SegEnd|20080814132543.574|Money|Inflation
+SegStart|20080814132543.841|Justice|Kilpatrick-assault-case
+SegEnd|20080814132639.063|Justice|Kilpatrick-assault-case
+SegStart|20080814132639.063|War:Teaser|War-zone
+SegEnd|20080814132647.338|War:Teaser|War-zone
+SegStart|20080814132647.504|Commercial|Block
+SegEnd|20080814132948.685|Commercial|Block
+SegStart|20080814132949.720|Money|Stock-market-highlights
+SegEnd|20080814133037.267|Money|Stock-market-highlights
+SegStart|20080814133042.840|Accident|Philadelphia-apartment-fire
+SegEnd|20080814133120.911|Accident|Philadelphia-apartment-fire
+SegStart|20080814133121.211|War|South-Ossetia-war
+SegEnd|20080814134037.767|War|South-Ossetia-war
+SegStart|20080814134038.034|Sports:Teaser|Cheating-Chinese-gymnasts-accusation
+SegEnd|20080814134051.815|Sports:Teaser|Cheating-Chinese-gymnasts-accusation
+SegStart|20080814134051.815|Commercial|Block
+SegEnd|20080814134338.514|Commercial|Block
+SegStart|20080814134339.182|Sports|Olympics
+SegEnd|20080814134646.736|Sports|Olympics
+SegStart|20080814134646.936|Sports|Cheating-Chinese-gymnasts-accusation
+SegEnd|20080814135019.749|Sports|Cheating-Chinese-gymnasts-accusation
+SegStart|20080814135020.116|Justice:Teaser|Olympics-Tibet-reporter-arrested
+SegEnd|20080814135033.262|Justice:Teaser|Olympics-Tibet-reporter-arrested
+SegStart|20080814135033.262|Commercial|Block
+SegEnd|20080814135319.261|Commercial|Block
+SegStart|20080814135319.261|Human-interest|Hair-styles
+SegEnd|20080814135532.494|Human-interest|Hair-styles
+SegStart|20080814135532.795|Human-interest:Teaser|Stolen-bear
+SegEnd|20080814135542.071|Human-interest:Teaser|Stolen-bear
+SegStart|20080814135542.604|Commercial|Block
+SegEnd|20080814135809.485|Commercial|Block
+SegStart|20080814135809.751|Crime|Stolen-bear
+SegEnd|20080814135955.691|Crime|Stolen-bear
+TTL|CNN NEWSROOM
+OBT|2008-08-14 09:00 America/New_York
+NER_01|201305160628|Source_Program=transcript-aligner|Source_Person=Hang Qi
+20080814130001.600|20080814130005.018|SEG|Type=Intro
+20080814130001.600|20080814130001.600|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130001.600|20080814130003.309|CCO|>> TONY HARRIS, CNN ANCHOR: And good morning, everyone. You are in the CNN NEWSROOM.  I'm Tony Harris. 
+20080814130001.600|20080814130001.600|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130001.600|20080814130003.309|CCO|>> HEIDI COLLINS, CNN ANCHOR: Hi, everybody. I'm Heidi Collins. See events come into the NEWSROOM  live on Thursday, August 14th. Here is what's on the rundown. Conflicting signals out of Georgia. Russian troops on the move in a strategic city. Are they withdrawing? We have the coverage. 
+20080814130001.600|20080814130005.018|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130001.600|20080814130003.309|CCO|>> HARRIS: A  fire raging through upscale apartment homes near Philadelphia. 
+20080814130005.018|20080814130006.727|CCO|Firefighters hurt, fire engines damaged. 
+20080814130005.018|20080814130015.272|SEG|Type=Story
+20080814130005.018|20080814130015.272|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130005.018|20080814130006.727|CCO|>>> COLLINS: 
+20080814130006.727|20080814130008.436|CCO|Gold for Chinese women gymnasts. 
+20080814130010.145|20080814130011.854|CCO|But were some of the girls too young 
+20080814130011.854|20080814130013.563|CCO|to compete? 
+20080814130013.563|20080814130015.272|CCO|Age of uncertainty in the NEWSROOM,  
+20080814130015.272|20080814130203.703|SEG|Type=Story
+20080814130015.272|20080814130016.982|CCO|>>> 
+20080814130016.982|20080814130018.995|CCO|We are following breaking 
+20080814130018.995|20080814130021.009|CCO|news this morning outside of Philadelphia. 
+20080814130023.022|20080814130025.036|CCO|11  firefighters are reported hurt 
+20080814130025.036|20080814130027.050|CCO|in a multi-alarm fire at a high-rise apartment 
+20080814130027.050|20080814130029.063|CCO|complex in Conshohocken, Pennsylvania. Local station WPVI 
+20080814130029.063|20080814130031.077|CCO| says as many as three fire trucks 
+20080814130031.077|20080814130033.090|CCO|were damaged. 
+20080814130033.090|20080814130035.104|CCO|The fire broke out yesterday afternoon 
+20080814130035.104|20080814130037.118|CCO|in an unoccupied building of 
+20080814130037.118|20080814130039.131|CCO|the upscale riverfront complex. It 
+20080814130039.131|20080814130041.145|CCO|took six hours for firefighters from at least 
+20080814130041.145|20080814130043.158|CCO|20  different companies to get it under control. Now 
+20080814130043.158|20080814130045.172|CCO|joining you us on phone is Tom Sullivan, the public safety director for Montgomery County, Pennsylvania. And, Mr. Sullivan, 
+20080814130045.172|20080814130047.186|CCO|if you can hear me OK,  
+20080814130047.186|20080814130049.199|CCO|tell us what you know at this 
+20080814130049.199|20080814130051.213|CCO|point. 
+20080814130051.213|20080814130113.363|NER_01|Person=Tom Sullivan|Role=MONTGOMERY CO., PA. PUBLIC SAFETY DIR.
+20080814130051.213|20080814130053.227|CCO|>> TOM SULLIVAN, MONTGOMERY CO., PA. PUBLIC SAFETY DIR.: The fire has been under control 
+20080814130053.227|20080814130055.240|CCO|about 3:00  this morning. 
+20080814130057.254|20080814130059.267|CCO|An investigation is under way. 
+20080814130059.267|20080814130101.281|CCO|We have probably about 100  
+20080814130101.281|20080814130103.295|CCO|firefighters still hoping to extinguish 
+20080814130103.295|20080814130105.308|CCO|hot spots. 
+20080814130105.308|20080814130107.322|CCO|We have four buildings that received 
+20080814130107.322|20080814130109.335|CCO|a various degree of damage, 
+20080814130109.335|20080814130111.349|CCO|some have collapsed and are uninhabitable at 
+20080814130111.349|20080814130113.363|CCO|the time. 
+20080814130113.363|20080814130117.390|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130113.363|20080814130115.376|CCO|>> COLLINS: What happened? I  mean do you have any 
+20080814130115.376|20080814130117.390|CCO|idea at this point? 
+20080814130117.390|20080814130133.499|NER_01|Person=Tom Sullivan|Role=MONTGOMERY CO., PA. PUBLIC SAFETY DIR.
+20080814130117.390|20080814130119.404|CCO|>> SULLIVAN: Well, there's a -- fire investigators from 
+20080814130119.404|20080814130121.417|CCO|the state police and the local fire marshal's office 
+20080814130121.417|20080814130123.431|CCO|working today to 
+20080814130123.431|20080814130125.444|CCO|determine exactly what happened. 
+20080814130125.444|20080814130127.458|CCO|It's a large building, wood framed, under construction, essentially was a -- like a lumberyard. 
+20080814130129.472|20080814130131.485|CCO|It was not enclosed yet. That fire became fully involved very 
+20080814130131.485|20080814130133.499|CCO|quickly and collapsed -- it 
+20080814130133.499|20080814130135.512|CCO|collapsed. A  lot of fire spread the building from either side... 
+20080814130133.499|20080814130133.499|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130133.499|20080814130135.512|CCO|>> COLLINS: Wow. 
+20080814130133.499|20080814130137.526|NER_01|Person=Tom Sullivan|Role=MONTGOMERY CO., PA. PUBLIC SAFETY DIR.
+20080814130133.499|20080814130135.512|CCO|>> SULLIVAN: ...  
+20080814130135.512|20080814130137.526|CCO|on to the attic area. 
+20080814130137.526|20080814130151.621|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130137.526|20080814130139.540|CCO|>> COLLINS: Boy, and we're looking at pictures of the flames and 
+20080814130139.540|20080814130141.553|CCO|it's just unbelievable. 
+20080814130143.567|20080814130145.581|CCO|Really, really engulfed. Obviously looks like it happened all really quickly, too. Quickly before we let you go, the 
+20080814130145.581|20080814130147.594|CCO|condition of the firefighters, 
+20080814130147.594|20080814130149.608|CCO|what do you know about 
+20080814130149.608|20080814130151.621|CCO|that? 
+20080814130151.621|20080814130201.689|NER_01|Person=Tom Sullivan|Role=MONTGOMERY CO., PA. PUBLIC SAFETY DIR.
+20080814130151.621|20080814130153.635|CCO|>> SULLIVAN: We're not aware of any late bringing 
+20080814130153.635|20080814130155.649|CCO|conditions. 
+20080814130155.649|20080814130157.662|CCO|It was very warm here last night 
+20080814130157.662|20080814130159.676|CCO|and a lot of firefighters were overcome by 
+20080814130159.676|20080814130201.689|CCO|the heat and transported to 
+20080814130201.689|20080814130203.703|CCO|the hospital for evaluation. And we're not aware of any real serious injuries at this point. 
+20080814130201.689|20080814130203.703|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130201.689|20080814130203.703|CCO|>> COLLINS: Well, that's terrific news. All right. We certainly do appreciate your time and we 
+20080814130203.703|20080814130205.717|CCO|will continue to follow this story throughout the morning. Thanks so much. 
+20080814130203.703|20080814130422.642|SEG|Type=Story
+20080814130203.703|20080814130215.785|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130203.703|20080814130205.717|CCO|>>> HARRIS: 
+20080814130205.717|20080814130207.730|CCO|The Red Cross reports nearly 400  residents are displaced. Joining us from the phone now from the Red Cross, Tom Foley, CEO  
+20080814130207.730|20080814130209.744|CCO|of the southeastern Pennsylvania division. Tom, 
+20080814130209.744|20080814130211.757|CCO|if you would, is that number, about right? About 400  
+20080814130211.757|20080814130213.771|CCO|people displaced? 
+20080814130213.771|20080814130215.785|CCO|Tom Foley. Tom, are you there is. 
+20080814130215.785|20080814130229.880|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130215.785|20080814130217.798|CCO|>> TOM FOLEY, CEO, S.E. PA. DIVISION, RED CROSS: Yes. 
+20080814130219.812|20080814130221.826|CCO|Can you hear me? 
+20080814130221.826|20080814130223.839|CCO|All right, Tom, thank you. 
+20080814130223.839|20080814130225.853|CCO|Is that about right, about 400  
+20080814130225.853|20080814130227.866|CCO|people displaced because of this 
+20080814130227.866|20080814130229.880|CCO|fire? 
+20080814130229.880|20080814130233.907|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130229.880|20080814130231.894|CCO|>> FOLEY: Yes, that is correct. 
+20080814130231.894|20080814130233.907|CCO|It's about 375  folks. 
+20080814130233.907|20080814130239.948|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130233.907|20080814130235.921|CCO|>> HARRIS: OK.  And if you would, tell me about 
+20080814130235.921|20080814130237.934|CCO|the effort of the Red Cross 
+20080814130237.934|20080814130239.948|CCO|to help as many of those people 
+20080814130239.948|20080814130241.962|CCO|as you can and how many are you helping so far. 
+20080814130239.948|20080814130300.084|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130239.948|20080814130241.962|CCO|>> FOLEY: We 
+20080814130241.962|20080814130243.975|CCO|had about 200  people with us 
+20080814130243.975|20080814130245.989|CCO|last night. 
+20080814130245.989|20080814130248.003|CCO|Food and shelter, a lot of folks, 
+20080814130248.003|20080814130250.016|CCO|of course, didn't have their 
+20080814130250.016|20080814130252.030|CCO|medical prescription so we 
+20080814130252.030|20080814130254.043|CCO|helped them with that as well. 
+20080814130254.043|20080814130256.057|CCO|The developer was terrific, actually, 
+20080814130256.057|20080814130258.071|CCO|helping us get everybody 
+20080814130258.071|20080814130300.084|CCO|housed last night. 
+20080814130300.084|20080814130300.084|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130300.084|20080814130302.098|CCO|>> HARRIS: Mr. O'Neal, is that his name? 
+20080814130300.084|20080814130304.111|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130300.084|20080814130302.098|CCO|>> FOLEY: 
+20080814130302.098|20080814130304.111|CCO|Yes. 
+20080814130304.111|20080814130316.193|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130304.111|20080814130306.125|CCO|>> HARRIS: Yes, I'm hearing a lot about him. 
+20080814130306.125|20080814130308.139|CCO|If you would, describe his efforts and beyond 
+20080814130308.139|20080814130310.152|CCO|that, there are reports of 
+20080814130310.152|20080814130312.166|CCO|just a tremendous effort by folks 
+20080814130312.166|20080814130314.180|CCO|in that immediate community 
+20080814130314.180|20080814130316.193|CCO|to help one another. 
+20080814130316.193|20080814130338.343|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130316.193|20080814130318.207|CCO|>> FOLEY: Absolutely. 
+20080814130318.207|20080814130320.220|CCO|It was really terrific that so many partners 
+20080814130320.220|20080814130322.234|CCO|for the Red Cross. 
+20080814130322.234|20080814130324.248|CCO|Mr. O'Neal himself was out there 
+20080814130324.248|20080814130326.261|CCO|helping us deliver water, Gatorade, food to the firefighters. He 
+20080814130328.275|20080814130330.288|CCO|had his people working with us to 
+20080814130330.288|20080814130332.302|CCO|make sure we were getting everybody housed last night. We're 
+20080814130334.316|20080814130336.329|CCO|just not used to that kind of good citizenship and 
+20080814130336.329|20080814130338.343|CCO|it was just terrific to 
+20080814130338.343|20080814130340.357|CCO|see it on display in this relatively small community outside of Philadelphia. 
+20080814130338.343|20080814130348.411|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130338.343|20080814130340.357|CCO|>> HARRIS: What was -- describe the scene. Describe that 
+20080814130340.357|20080814130342.370|CCO|fire. 
+20080814130342.370|20080814130344.384|CCO|I  image you probably saw some of 
+20080814130344.384|20080814130346.397|CCO|it on television at first and then 
+20080814130346.397|20080814130348.411|CCO|saw the results of it. 
+20080814130348.411|20080814130350.425|CCO|Boy, this did burn for six hours. Describe it, if you would. 
+20080814130348.411|20080814130356.465|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130348.411|20080814130350.425|CCO|>> FOLEY: Yes, it's hard to believe that flames would 
+20080814130350.425|20080814130352.438|CCO|be that high. 
+20080814130352.438|20080814130354.452|CCO|I  mean these are basically four-story or more structures and the flames were bottom to top coming 
+20080814130354.452|20080814130356.465|CCO|out of those. 
+20080814130356.465|20080814130356.465|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130356.465|20080814130358.479|CCO|>> HARRIS: Wow. 
+20080814130356.465|20080814130400.493|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130356.465|20080814130358.479|CCO|>> FOLEY: Because it's right on the river, you know, people 
+20080814130358.479|20080814130400.493|CCO|were able to watch this happen 
+20080814130400.493|20080814130402.506|CCO|and see how quickly it really engulfed... 
+20080814130400.493|20080814130400.493|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130400.493|20080814130402.506|CCO|>> HARRIS: Yes. 
+20080814130400.493|20080814130402.506|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130400.493|20080814130402.506|CCO|>> FOLEY: ...  
+20080814130402.506|20080814130404.520|CCO|those buildings. It put the firefighters in a very difficult position. 
+20080814130402.506|20080814130408.547|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130402.506|20080814130404.520|CCO|>> HARRIS: And Tom, do 
+20080814130404.520|20080814130406.533|CCO|you have everything that you need? 
+20080814130408.547|20080814130408.547|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130408.547|20080814130410.561|CCO|>> FOLEY: We do so far, because we've got such a great community there... 
+20080814130408.547|20080814130408.547|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130408.547|20080814130410.561|CCO|>> HARRIS: Terrific. 
+20080814130408.547|20080814130416.602|NER_01|Person=Tom Foley|Role=CEO, S.E. PA. DIVISION, RED CROSS
+20080814130408.547|20080814130410.561|CCO|>> FOLEY: ...  working with us and we 
+20080814130410.561|20080814130412.574|CCO|had 24  of our volunteers there 
+20080814130412.574|20080814130414.588|CCO|within about an hour, which 
+20080814130414.588|20080814130416.602|CCO|is just terrific. 
+20080814130416.602|20080814130422.642|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130416.602|20080814130418.615|CCO|>> HARRIS: Tom Foley is with the Red 
+20080814130418.615|20080814130420.629|CCO|Cross. 
+20080814130420.629|20080814130422.642|CCO|He is the CEO  of the southeastern Pennsylvania division. Tom, thanks for your time. 
+20080814130422.642|20080814130442.779|SEG|Type=Story
+20080814130422.642|20080814130442.779|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130422.642|20080814130424.656|CCO|>>> COLLINS: Officials say the fire destroyed 
+20080814130424.656|20080814130426.670|CCO|the centerpiece of a multi-million dollar 
+20080814130426.670|20080814130428.683|CCO|revitalization 
+20080814130428.683|20080814130430.697|CCO|effort in Conshohocken. The 
+20080814130430.697|20080814130432.710|CCO|building was under construction. 
+20080814130434.724|20080814130436.738|CCO|The blaze started in an area where 
+20080814130436.738|20080814130438.751|CCO|fire protection features had 
+20080814130438.751|20080814130440.765|CCO|not yet been completed. 
+20080814130440.765|20080814130442.779|CCO|One county official says the building went up like a lumberyard. And you saw it for yourself. 
+20080814130442.779|20080814130444.792|SEG|Type=Story
+20080814130442.779|20080814130444.792|CCO|It still are with those pictures there on the right of the screen. >>> The intense heat radiated to the 
+20080814130444.792|20080814130446.806|CCO|attics of neighboring buildings. 
+20080814130444.792|20080814130537.317|SEG|Type=Story
+20080814130444.792|20080814130537.317|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130444.792|20080814130446.806|CCO|>>> HARRIS: 
+20080814130449.054|20080814130450.910|CCO|Russian forces on the move, a 
+20080814130450.910|20080814130452.766|CCO|cease-fire seemingly still in place. 
+20080814130454.622|20080814130456.479|CCO|Let's get the latest from the former 
+20080814130456.479|20080814130458.335|CCO|Soviet Republic of Georgia. 
+20080814130500.191|20080814130502.048|CCO|One week after Russian troops first 
+20080814130502.048|20080814130503.904|CCO|swept in, they are now on the 
+20080814130503.904|20080814130505.760|CCO|move around Gori and firmly in place in the 
+20080814130505.760|20080814130507.617|CCO|two territories at the center 
+20080814130507.617|20080814130509.473|CCO|of this conflict, Abkhazia 
+20080814130509.473|20080814130511.329|CCO|and South Ossetia. 
+20080814130511.329|20080814130513.185|CCO|One of two split it from Georgia and move closely, more closely to Russia. One ominous question today -- will 
+20080814130513.185|20080814130515.042|CCO|Russia seize the two breakaway territories? 
+20080814130516.898|20080814130518.754|CCO|Georgia has said it will not surrender 
+20080814130518.754|20080814130520.611|CCO|any of its territory. 
+20080814130520.611|20080814130522.467|CCO|Secretary of State Condoleezza Rice in France today to meet 
+20080814130522.467|20080814130524.323|CCO|with President Sarkozy. He helped 
+20080814130524.323|20080814130526.180|CCO|broker the cease-fire. 
+20080814130528.036|20080814130529.892|CCO|And tomorrow Rice heads to Georgia's capital of Tbilisi. And the first planes have delivered 
+20080814130529.892|20080814130531.748|CCO|humanitarian aid to Tbilisi. 
+20080814130533.605|20080814130535.461|CCO|The U.S.  military is spearheading 
+20080814130535.461|20080814130537.317|CCO|relief efforts. 
+20080814130537.317|20080814130707.657|SEG|Type=Story
+20080814130537.317|20080814130539.174|CCO|>>> CNN  has deployed its vast international resources 
+20080814130539.174|20080814130541.030|CCO|to bring you all 
+20080814130541.030|20080814130542.886|CCO|of the angles on this developing 
+20080814130542.886|20080814130545.010|CCO|story. 
+20080814130545.010|20080814130547.764|CCO|CNN's Barbara Starr is covering the 
+20080814130547.764|20080814130550.519|CCO|humanitarian effort. 
+20080814130550.519|20080814130553.274|CCO|Michael Ware is outside the Georgian city of Gori, and 
+20080814130553.274|20080814130556.029|CCO|Jim Bittermann is following diplomatic 
+20080814130556.029|20080814130558.784|CCO|efforts. 
+20080814130558.784|20080814130601.539|CCO|Let's begin with Jim in Paris. And Jim, Secretary of State Condoleezza 
+20080814130601.539|20080814130604.294|CCO|Rice is in the south 
+20080814130604.294|20080814130607.049|CCO|of France. 
+20080814130607.049|20080814130609.804|CCO|What is her agenda there? 
+20080814130607.049|20080814130704.902|NER_01|Person=Jim Bittermann|Role=CNN SENIOR INTERNATIONAL CORRESPONDENT
+20080814130607.049|20080814130609.804|CCO|>> JIM BITTERMANN, CNN SENIOR INTERNATIONAL CORRESPONDENT: Basically, 
+20080814130609.804|20080814130612.559|CCO|she arrived a little 
+20080814130612.559|20080814130615.313|CCO|bit ago, Tony, and she's meeting 
+20080814130615.313|20080814130618.068|CCO|with President Sarkozy and Foreign Minister Bernard Kouchner, as well as Sarkozy's 
+20080814130618.068|20080814130620.823|CCO|top diplomatic adviser at one of Sarkozy's residence on the French Riviera. 
+20080814130620.823|20080814130623.578|CCO|They'll spend a couple of hours in 
+20080814130623.578|20080814130626.333|CCO|meeting there and then she's going 
+20080814130626.333|20080814130629.088|CCO|to fly up in Paris -- overnight here in 
+20080814130629.088|20080814130631.843|CCO|Paris and then on to Tbilisi. I 
+20080814130631.843|20080814130634.598|CCO| think what she's doing down there with Sarkozy right now 
+20080814130634.598|20080814130637.353|CCO|is try to get a brief on what 
+20080814130637.353|20080814130640.108|CCO|exactly he found out when he talked to Russian president Dmitry Medvedev earlier and negotiated the six-point cease- fire. That was on Tuesday. The unfortunate part about the six-point was that 
+20080814130640.108|20080814130642.862|CCO|one 
+20080814130642.862|20080814130645.617|CCO|of them is -- it leaves quite a large loophole 
+20080814130645.617|20080814130648.372|CCO|for the Russians, in that 
+20080814130648.372|20080814130651.127|CCO|they are allowed to -- pending 
+20080814130651.127|20080814130653.882|CCO|an international peace agreement, 
+20080814130653.882|20080814130656.637|CCO|they're allowed peacekeepers to take on additional 
+20080814130656.637|20080814130659.392|CCO|security measures. 
+20080814130659.392|20080814130702.147|CCO|Now those peacekeepers may be exactly the troops that we're 
+20080814130702.147|20080814130704.902|CCO|hearing about that are causing 
+20080814130704.902|20080814130707.657|CCO|the ambiguity about whether or not there is any cease-fire in place at this hour -- Tony? 
+20080814130704.902|20080814130704.902|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130704.902|20080814130707.657|CCO|>> HARRIS: OK.  We will continue to follow the diplomatic efforts. Jim Bittermann in Paris for us -- Jim, thank you. 
+20080814130704.902|20080814130707.657|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130704.902|20080814130707.657|CCO|>> COLLINS: Now the race to get emergency supplies to 
+20080814130707.657|20080814130835.814|SEG|Type=Story
+20080814130707.657|20080814130710.411|CCO|thousands of Georgians left homeless by >>> 
+20080814130710.411|20080814130713.166|CCO|the fighting. The U.S.  
+20080814130713.166|20080814130715.921|CCO|military playing a key role. CNN's Barbara Starr at the Pentagon for us this 
+20080814130715.921|20080814130718.676|CCO|morning. 
+20080814130718.676|20080814130721.431|CCO|So Barbara, what's the latest? How 
+20080814130721.431|20080814130724.186|CCO|are these efforts going? 
+20080814130724.186|20080814130819.284|NER_01|Person=Barbara Starr|Role=CNN PENTAGON CORRESPONDENT
+20080814130724.186|20080814130726.941|CCO|>> BARBARA STARR, CNN PENTAGON CORRESPONDENT: Well, Heidi, all of this is really still unfolding. 
+20080814130729.696|20080814130732.451|CCO|Pentagon officials confirming a 
+20080814130732.451|20080814130735.206|CCO|second military aid flight did 
+20080814130735.206|20080814130737.961|CCO|land in Tbilisi earlier today. 
+20080814130737.961|20080814130740.715|CCO|But at the moment, they are waiting for 
+20080814130740.715|20080814130743.470|CCO|a military assessment team to 
+20080814130743.470|20080814130746.225|CCO|report back on what exactly is needed. So the full flow of humanitarian relief, perhaps, is still to come. 
+20080814130746.225|20080814130748.980|CCO|A  lot of this -- the fighting, the 
+20080814130748.980|20080814130751.735|CCO|humanitarian relief -- all really is dependent on what 
+20080814130751.735|20080814130754.490|CCO|U.S.  intelligence can really gather about the situation on the ground. In fact, U.S.  officials confirmed to CNN  
+20080814130754.490|20080814130757.245|CCO|that over 
+20080814130757.245|20080814130800.000|CCO|the weekend they redeployed, redirected and sent some 
+20080814130800.000|20080814130802.755|CCO|intelligence assets 
+20080814130802.755|20080814130805.510|CCO|over Georgia. We believe they are satellites to have a 
+20080814130805.510|20080814130808.264|CCO|look at the situation on the ground 
+20080814130808.264|20080814130811.019|CCO|and try and develop some independent U.S.  
+20080814130811.019|20080814130813.774|CCO|intelligence about Russian military moves and what the situation really is. 
+20080814130816.529|20080814130819.284|CCO|Defense Secretary Robert Gates will be in the briefing room about an hour and a half from now to speak with reporters. It will be the first U.S.  
+20080814130819.284|20080814130822.039|CCO|military statement on the record, on camera about this unfolding situation -- Heidi. 
+20080814130819.284|20080814130835.814|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814130819.284|20080814130822.039|CCO|>> COLLINS: All right. We 
+20080814130824.794|20080814130827.549|CCO|all look forward to hearing 
+20080814130827.549|20080814130830.304|CCO|some of that. Thanks so 
+20080814130830.304|20080814130833.059|CCO|much, CNN's Barbara Starr from the Pentagon 
+20080814130833.059|20080814130835.814|CCO|this morning. 
+20080814130835.814|20080814131201.286|SEG|Type=Story
+20080814130835.814|20080814130848.312|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814130835.814|20080814130838.313|CCO|>>> HARRIS: Let's go inside Georgia now and 
+20080814130838.313|20080814130840.813|CCO|the city of Gori. 
+20080814130840.813|20080814130843.312|CCO|It has been a nerve center of rising tensions, and to some degree remains in limbo even today. CNN's Michael Ware is there and spoke 
+20080814130843.312|20080814130845.812|CCO|to our colleagues at CNN  
+20080814130845.812|20080814130848.312|CCO|international just a short time ago. 
+20080814130848.312|20080814131201.286|CLIP|Type=Video
+20080814130848.312|20080814131033.297|NER_01|Person=Michael Ware|Role=CNN CORRESPONDENT
+20080814130848.312|20080814130850.811|CCO|>> MICHAEL WARE, CNN CORRESPONDENT: I'm literally standing on, for 
+20080814130850.811|20080814130853.311|CCO|what it's worth, the front line 
+20080814130853.311|20080814130855.811|CCO|in this conflict. 
+20080814130855.811|20080814130858.310|CCO|Where I  am at this moment is virtually 
+20080814130858.310|20080814130900.810|CCO|on the city limits of 
+20080814130900.810|20080814130903.310|CCO|that flash point city that you 
+20080814130903.310|20080814130905.809|CCO|referred to -- Gori. Now 
+20080814130905.809|20080814130908.309|CCO|just moments ago Russian special forces 
+20080814130908.309|20080814130910.809|CCO|troops were right here and they've only just moved back into the city. So 
+20080814130910.809|20080814130913.308|CCO|we can confirm that despite confusing and contradictory reports 
+20080814130913.308|20080814130915.808|CCO|coming from all sides, that Russian forces, as of this 
+20080814130915.808|20080814130918.307|CCO|moment, remain in control of the city of Gori. Now this untold number 
+20080814130920.807|20080814130923.307|CCO|of 
+20080814130923.307|20080814130925.806|CCO|reports of what's going on in 
+20080814130925.806|20080814130928.306|CCO|the city and within its outskirts, 
+20080814130928.306|20080814130930.806|CCO|none of which are able 
+20080814130930.806|20080814130933.305|CCO|to be confirmed. 
+20080814130933.305|20080814130935.805|CCO|However, there had been a number 
+20080814130935.805|20080814130938.305|CCO|of car jackings of journalists and others 
+20080814130938.305|20080814130940.804|CCO|who have attempted to enter 
+20080814130940.804|20080814130943.304|CCO|the city. 
+20080814130943.304|20080814130945.804|CCO|And for now, the Russians have put a firm roadblock and it's preventing any entry into the city of Gori. Now this 
+20080814130950.803|20080814130953.303|CCO|by and large cut Georgia's 
+20080814130953.303|20080814130955.802|CCO|main artery from its capital Tbilisi to its port town. Now 
+20080814130955.802|20080814130958.302|CCO|if you recall President Bush has stated categorically that 
+20080814130958.302|20080814131000.801|CCO|the U.S.  expects Russia to maintain 
+20080814131000.801|20080814131003.301|CCO|the lines of communication 
+20080814131003.301|20080814131005.801|CCO|for humanitarian assistance, including the 
+20080814131005.801|20080814131008.300|CCO|seaport. 
+20080814131008.300|20080814131010.800|CCO|Now cutting this major artery certainly 
+20080814131010.800|20080814131013.300|CCO|inhibits that access. 
+20080814131013.300|20080814131015.799|CCO|While there are several other routes, this 
+20080814131015.799|20080814131018.299|CCO|very much is the main artery that humanitarian 
+20080814131018.299|20080814131020.799|CCO|aid would most likely use running in to the capital Tbilisi. But what 
+20080814131020.799|20080814131023.298|CCO|we can tell you, as I  repeat, is that the 
+20080814131023.298|20080814131025.798|CCO|Russian forces are firmly in 
+20080814131025.798|20080814131028.298|CCO|control of the Georgian 
+20080814131028.298|20080814131030.797|CCO|city of Gori, which is just 
+20080814131030.797|20080814131033.297|CCO|outside one of the two disputed 
+20080814131033.297|20080814131035.797|CCO|enclaves, this one being South Ossetia -- Andrew? 
+20080814131033.297|20080814131053.294|NER_01|Person=Andrew Stevens|Role=CNN INTERNATIONAL ANCHOR
+20080814131033.297|20080814131035.797|CCO|>> ANDREW STEVENS, CNN INTERNATIONAL ANCHOR: Well, 
+20080814131035.797|20080814131038.296|CCO|that's right. 
+20080814131038.296|20080814131040.796|CCO|But just to clarify you, Michael, 
+20080814131040.796|20080814131043.295|CCO|Gori is actually in Georgian country proper, if you like. It's not in that 
+20080814131043.295|20080814131045.795|CCO|break away province of South Ossetia. 
+20080814131048.295|20080814131050.794|CCO|Now we've been hearing reports over the last two or three hours of explosions rocking the 
+20080814131050.794|20080814131053.294|CCO|city of Gori. I  
+20080814131053.294|20080814131055.794|CCO|don't know whether you are in an area where you could hear or whether you've been able to confirm anything that's been happening as far as those explosions are concerned. 
+20080814131053.294|20080814131150.786|NER_01|Person=Michael Ware|Role=CNN CORRESPONDENT
+20080814131053.294|20080814131055.794|CCO|>> WARE: 
+20080814131055.794|20080814131058.293|CCO|Well, I  can't tell you that there's 
+20080814131058.293|20080814131100.793|CCO|a number of dark smoke flames 
+20080814131100.793|20080814131103.293|CCO|that are arriving in and around 
+20080814131103.293|20080814131105.792|CCO|the area of the city. 
+20080814131105.792|20080814131108.292|CCO|I  cannot account for what they are. 
+20080814131110.792|20080814131113.291|CCO|But what we're hearing from both 
+20080814131113.291|20080814131115.791|CCO|sides most recently is that those explosions 
+20080814131115.791|20080814131118.290|CCO|are controlled detonations of 
+20080814131118.290|20080814131120.790|CCO|munitions. It's impossible to confirm that. However, on 
+20080814131120.790|20080814131123.290|CCO|the approach leading to this 
+20080814131123.290|20080814131125.789|CCO|city, you can see, for what it's 
+20080814131125.789|20080814131128.289|CCO|worth, a rag tag series of columns 
+20080814131128.289|20080814131130.789|CCO|of Georgian military. 
+20080814131130.789|20080814131133.288|CCO|Now it's a mix of infantry, some very light armor, some artillery patients, and 
+20080814131133.288|20080814131135.788|CCO|amounts to more than perhaps a 
+20080814131135.788|20080814131138.288|CCO|brigade against what's amassed from the Russian army which is far superior. So by 
+20080814131138.288|20080814131140.787|CCO|and large, the route to the capital 
+20080814131140.787|20080814131143.287|CCO|Tbilisi is well and truly 
+20080814131143.287|20080814131145.787|CCO|open to the Russians. 
+20080814131145.787|20080814131148.286|CCO|And the forces that we've seen are in 
+20080814131148.286|20080814131150.786|CCO|no position to defend either this 
+20080814131150.786|20080814131153.286|CCO|road nor the capital itself. 
+20080814131150.786|20080814131201.286|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131150.786|20080814131153.286|CCO|>> HARRIS: OK.  
+20080814131153.286|20080814131155.785|CCO|That 
+20080814131158.285|20080814131201.286|CCO|was CNN's Michael Ware. 
+20080814131201.286|20080814131316.961|SEG|Type=Story
+20080814131201.286|20080814131214.258|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131201.286|20080814131203.448|CCO|>>> COLLINS: Rob Marciano is standing by now 
+20080814131203.448|20080814131205.610|CCO|in the CNN  Severe Weather Center 
+20080814131205.610|20080814131207.772|CCO|talking about all kinds of things but specifically, 
+20080814131207.772|20080814131209.934|CCO|there is this tropical 
+20080814131209.934|20080814131212.096|CCO|storm that's kind of kicking up a little bit in 
+20080814131212.096|20080814131214.258|CCO|the Atlanta. 
+20080814131214.258|20080814131253.177|NER_01|Person=Rob Marciano|Role=CNN METEOROLOGIST
+20080814131214.258|20080814131216.420|CCO|>> ROB MARCIANO, CNN METEOROLOGIST: Yes. It's 
+20080814131216.420|20080814131218.583|CCO|start to fire up. 
+20080814131218.583|20080814131220.745|CCO|Good morning, Tony. Hi, Heidi. We're looking at this thing -- for the last couple of days we're looking at it and today, it looks a little bit more 
+20080814131220.745|20080814131222.907|CCO|organized. 
+20080814131222.907|20080814131225.069|CCO|Yesterday they were going to send 
+20080814131225.069|20080814131227.231|CCO|out planes out there to check it out. They canceled them. 
+20080814131229.393|20080814131231.555|CCO|Now because of flare-up again, they'll probably going to send them out here in the next couple of hours and criss-crosses thing and take some numbers. Still, our computer model want to 
+20080814131231.555|20080814131233.718|CCO|take it towards the Bahamas. What it does after that past the weekend is still yet to be seen. Really 
+20080814131235.880|20080814131238.042|CCO|have to wait until this 
+20080814131238.042|20080814131240.204|CCO|thing is established as a tropical 
+20080814131240.204|20080814131242.366|CCO|depression and then the 
+20080814131242.366|20080814131244.528|CCO|computers will digest those numbers 
+20080814131244.528|20080814131246.690|CCO|and spit out a more accurate forecast. 
+20080814131246.690|20080814131248.853|CCO|Nonetheless, folks could travel to Puerto 
+20080814131248.853|20080814131251.015|CCO|Rico or even Florida or live 
+20080814131251.015|20080814131253.177|CCO|in Florida or the southeast coast. You certainly want to keep up abreast of the situation 
+20080814131253.177|20080814131255.339|CCO|as it continues to develop. 
+20080814131253.177|20080814131255.339|CCO|(WEATHER REPORT)
+20080814131253.177|20080814131301.825|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131253.177|20080814131255.339|CCO|>> HARRIS: 
+20080814131257.501|20080814131259.663|CCO|Yes, 
+20080814131301.825|20080814131303.988|CCO|it sounds like. 
+20080814131301.825|20080814131310.474|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131301.825|20080814131303.988|CCO|>> COLLINS: 
+20080814131306.150|20080814131308.312|CCO|Ooh, now, that is my kind of weather. 
+20080814131310.474|20080814131310.474|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131310.474|20080814131312.636|CCO|>> HARRIS: Oh boy, oh boy. 
+20080814131310.474|20080814131310.474|NER_01|Person=Rob Marciano|Role=CNN METEOROLOGIST
+20080814131310.474|20080814131312.636|CCO|>> MARCIANO: As you please. 
+20080814131310.474|20080814131312.636|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131310.474|20080814131312.636|CCO|>> COLLINS: I  smell football coming, too. 
+20080814131312.636|20080814131312.636|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131312.636|20080814131314.798|CCO|>> HARRIS: That's right. That's right. 
+20080814131312.636|20080814131314.798|NER_01|Person=Rob Marciano|Role=CNN METEOROLOGIST
+20080814131312.636|20080814131314.798|CCO|>> MARCIANO: I  kind of smell it, too. 
+20080814131314.798|20080814131316.961|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131314.798|20080814131316.961|CCO|>> COLLINS: Yes. Thank you, Rob. 
+20080814131316.961|20080814131316.961|NER_01|Person=Rob Marciano|Role=CNN METEOROLOGIST
+20080814131316.961|20080814131320.206|CCO|>> MARCIANO: All right. See you guys. 
+20080814131316.961|20080814131349.418|SEG|Type=Story
+20080814131316.961|20080814131349.418|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131316.961|20080814131320.206|CCO|>>> HARRIS: The complexion of America is 
+20080814131320.206|20080814131323.452|CCO|changing and a lot faster than you 
+20080814131323.452|20080814131326.698|CCO|think. 
+20080814131326.698|20080814131329.943|CCO|In just 34  years, the Census Bureau says 
+20080814131329.943|20080814131333.189|CCO|whites will no longer be a majority in this country. Immigration and higher birth rate, especially among Hispanics, causing a rapid shift in demographics. Here's the 
+20080814131333.189|20080814131336.435|CCO|breakdown, projecting now 
+20080814131339.681|20080814131342.926|CCO|to 2050,  Hispanics will make 
+20080814131342.926|20080814131346.172|CCO|up 30  percent of the population. 
+20080814131346.172|20080814131349.418|CCO|Blacks will account for 15  
+20080814131349.418|20080814131352.997|CCO|percent, whites 46  percent, and Asians, 9  percent. And more of us will be living longer. The Census Bureau estimates the number of people older than 85  will triple to 19  million. 
+20080814131349.418|20080814131408.775|SEG|Type=Story
+20080814131349.418|20080814131358.913|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131349.418|20080814131352.997|CCO|>>> COLLINS: 
+20080814131352.997|20080814131354.969|CCO|A  violent weekend and tonight 
+20080814131354.969|20080814131356.941|CCO|a major city slaps a curfew 
+20080814131356.941|20080814131358.913|CCO|on kids. 
+20080814131358.913|20080814131408.775|CLIP|Type=Video
+20080814131358.913|20080814131406.803|NER_01|Person=UNIDENTIFIED MALE
+20080814131358.913|20080814131400.886|CCO|>> UNIDENTIFIED MALE: I've seen outside on my porch. I'm 
+20080814131400.886|20080814131402.858|CCO|walking to the store, I'll 
+20080814131402.858|20080814131404.830|CCO|get shot. 
+20080814131404.830|20080814131406.803|CCO|That's what I  think. 
+20080814131406.803|20080814131406.803|NER_01|Person=UNIDENTIFIED FEMALE
+20080814131406.803|20080814131408.775|CCO|>> UNIDENTIFIED FEMALE: Anything that you can stop kids from killing kids, it's a good thing. 
+20080814131406.803|20080814131408.775|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131406.803|20080814131408.775|CCO|>> COLLINS: Street cleaning in Hartford. 
+20080814131408.775|20080814131704.555|SEG|Type=Commercial
+20080814131408.775|20080814131410.949|CCO|S NO WAY TO HIDE IT. 
+20080814131410.949|20080814131412.530|CCO|SIR, HAVE YOU BEEN 
+20080814131412.530|20080814131414.112|CCO|DRINKING TONIGHT? 
+20080814131414.112|20080814131415.694|CCO|IF YOU RIDE DRUNK, 
+20080814131415.694|20080814131417.276|CCO|YOU WILL GET CAUGHT... 
+20080814131417.276|20080814131418.858|CCO|AND YOU WILL GET ARRESTED. 
+20080814131418.858|20080814131420.440|CCO|A VERY IMPORTANT 
+20080814131420.440|20080814131422.022|CCO|PHONE CALL I MADE. 
+20080814131422.022|20080814131423.604|CCO|WHEN I GOT MY 
+20080814131423.604|20080814131425.186|CCO|MEDICARE CARD... 
+20080814131425.186|20080814131426.767|CCO|I REALIZED 
+20080814131426.767|20080814131428.349|CCO|I NEED... 
+20080814131428.349|20080814131429.931|CCO|AN AARP MEDICARE SUPPLEMENT 
+20080814131429.931|20080814131431.513|CCO|INSURANCE CARD TOO. 
+20080814131431.513|20080814131433.095|CCO|ONE SIMPLE 
+20080814131433.095|20080814131434.677|CCO|CALL... 
+20080814131434.677|20080814131436.259|CCO|GAVE ME THE 
+20080814131436.259|20080814131437.841|CCO|CHANCE TO TALK... 
+20080814131437.841|20080814131439.423|CCO|WITH A PERSONAL 
+20080814131439.423|20080814131441.005|CCO|HEALTH INSURANCE ADVISOR... 
+20080814131441.005|20080814131442.586|CCO|WHO ANSWERED 
+20080814131442.586|20080814131444.168|CCO|ALL MY QUESTIONS... 
+20080814131444.168|20080814131445.750|CCO|ABOUT MEDICARE 
+20080814131445.750|20080814131447.332|CCO|SUPPLEMENT PLANS. 
+20080814131447.332|20080814131448.914|CCO|SO I COULD 
+20080814131448.914|20080814131450.496|CCO|UNDERSTAND IT ALL... 
+20080814131450.496|20080814131452.078|CCO|AFTER I CALLED... 
+20080814131452.078|20080814131453.660|CCO|I WAS ABLE TO CHOOSE THE 
+20080814131453.660|20080814131455.242|CCO|PLAN THAT WAS RIGHT FOR ME. 
+20080814131455.242|20080814131456.823|CCO|IF YOU'RE ALREADY ON 
+20080814131456.823|20080814131458.405|CCO|OR ELIGIBLE FOR MEDICARE... 
+20080814131458.405|20080814131459.987|CCO|CALL NOW TO 
+20080814131459.987|20080814131501.569|CCO|FIND OUT HOW... 
+20080814131501.569|20080814131503.151|CCO|AN AARP MEDICARE 
+20080814131503.151|20080814131504.733|CCO|SUPPLEMENT INSURANCE PLAN... 
+20080814131504.733|20080814131506.315|CCO|INSURED BY UNITED HEALTHCARE 
+20080814131506.315|20080814131507.897|CCO|INSURANCE COMPANY... 
+20080814131507.897|20080814131509.479|CCO|HELPS YOU PAY SOME OF THE 
+20080814131509.479|20080814131511.061|CCO|20% OF YOUR MEDICAL EXPENSES... 
+20080814131511.061|20080814131512.642|CCO|NOT COVERED BY 
+20080814131512.642|20080814131514.224|CCO|MEDICARE PART B. 
+20080814131514.224|20080814131515.806|CCO|THAT CAN SAVE 
+20080814131515.806|20080814131517.388|CCO|YOU FROM PAYING... 
+20080814131517.388|20080814131518.970|CCO|THOUSANDS OF DOLLARS 
+20080814131518.970|20080814131520.552|CCO|OUT OF YOUR OWN POCKET. 
+20080814131520.552|20080814131522.134|CCO|THESE ARE THE ONLY MEDICARE 
+20080814131522.134|20080814131523.716|CCO|SUPPLEMENT INSURANCE PLANS... 
+20080814131523.716|20080814131525.298|CCO|EXCLUSIVELY 
+20080814131525.298|20080814131526.879|CCO|ENDORSED BY AARP... 
+20080814131526.879|20080814131528.461|CCO|A NAME YOU TRUST. 
+20080814131528.461|20080814131530.043|CCO|WHEN YOU CALL NOW... 
+20080814131530.043|20080814131531.625|CCO|WE'LL SEND YOU THIS 
+20080814131531.625|20080814131533.207|CCO|FREE INFORMATION KIT... 
+20080814131533.207|20080814131534.789|CCO|WITH ALL YOU 
+20080814131534.789|20080814131536.371|CCO|NEED TO ENROLL. 
+20080814131536.371|20080814131537.953|CCO|SO YOU CAN JOIN THE 
+20080814131537.953|20080814131539.535|CCO|MILLIONS OF PEOPLE... 
+20080814131539.535|20080814131541.117|CCO|WHO'VE ALREADY 
+20080814131541.117|20080814131542.698|CCO|TRUSTED US... 
+20080814131542.698|20080814131544.280|CCO|FOR THEIR MEDICARE 
+20080814131544.280|20080814131545.862|CCO|SUPPLEMENT INSURANCE. 
+20080814131545.862|20080814131547.444|CCO|PLUS WE'LL SEND YOU THIS FREE 
+20080814131547.444|20080814131549.026|CCO|GUIDE TO UNDERSTANDING MEDICARE. 
+20080814131549.026|20080814131550.608|CCO|THE PRICES 
+20080814131550.608|20080814131552.190|CCO|ARE COMPETITIVE. 
+20080814131552.190|20080814131553.772|CCO|I CAN KEEP MY OWN DOCTOR 
+20080814131553.772|20080814131555.354|CCO|AND CHOOSE MY OWN HOSPITAL. 
+20080814131555.354|20080814131556.935|CCO|AND I DON'T NEED A 
+20080814131556.935|20080814131558.517|CCO|REFERRAL TO SEE A SPECIALIST. 
+20080814131558.517|20080814131600.099|CCO|CALL NOW TO GET THE 
+20080814131600.099|20080814131601.681|CCO|FREE INFORMATION KIT. 
+20080814131601.681|20080814131603.263|CCO|PLUS WE'LL INCLUDE THIS 
+20080814131603.263|20080814131604.845|CCO|FREE MEDICARE GUIDE. 
+20080814131604.845|20080814131606.427|CCO|AND THE ADVANTAGES 
+20080814131606.427|20080814131608.009|CCO|DON'T END THERE. 
+20080814131608.009|20080814131609.591|CCO|YOU CAN CHOOSE FROM 
+20080814131609.591|20080814131611.173|CCO|A WIDE RANGE OF PLANS... 
+20080814131611.173|20080814131612.754|CCO|THAT ARE ALL 
+20080814131612.754|20080814131614.336|CCO|COMPETITIVELY PRICED... 
+20080814131614.336|20080814131615.918|CCO|SO YOU CAN FIND A PLAN THAT 
+20080814131615.918|20080814131617.500|CCO|BEST FITS YOUR NEEDS AND BUDGET. 
+20080814131617.500|20080814131619.082|CCO|THERE ARE VIRTUALLY NO 
+20080814131619.082|20080814131620.664|CCO|CLAIM FORMS TO FILL OUT. 
+20080814131620.664|20080814131622.246|CCO|AND BEST 
+20080814131622.246|20080814131623.828|CCO|OF ALL... 
+20080814131623.828|20080814131625.410|CCO|THEY'RE THE ONLY MEDICARE 
+20080814131625.410|20080814131626.991|CCO|SUPPLEMENT PLANS... 
+20080814131626.991|20080814131628.573|CCO|ENDORSED 
+20080814131628.573|20080814131630.155|CCO|BY AARP. 
+20080814131630.155|20080814131631.737|CCO|WHEN THEY TOLD ME THESE PLANS 
+20080814131631.737|20080814131633.319|CCO|WERE ENDORSED BY AARP... 
+20080814131633.319|20080814131634.901|CCO|I HAD ONLY ONE 
+20080814131634.901|20080814131636.483|CCO|THING TO SAY... 
+20080814131636.483|20080814131638.065|CCO|SIGN ME UP. 
+20080814131638.065|20080814131639.647|CCO|CALL NOW -- 
+20080814131639.647|20080814131641.229|CCO|1-800-232-7773/TTY 
+20080814131641.229|20080814131642.810|CCO|AND LET US HELP YOU 
+20080814131642.810|20080814131644.392|CCO|CHOOSE THE RIGHT PLAN. 
+20080814131644.392|20080814131645.974|CCO|SO CALL NOW, 
+20080814131645.974|20080814131647.556|CCO|1-800-232-7773/TTY 
+20080814131647.556|20080814131649.138|CCO|AND FIND 
+20080814131649.138|20080814131650.720|CCO|OUT ABOUT... 
+20080814131650.720|20080814131652.302|CCO|AN AARP MEDICARE SUPPLEMENT 
+20080814131652.302|20080814131653.884|CCO|INSURANCE PLAN. 
+20080814131653.884|20080814131655.466|CCO|A PERSONAL HEALTH INSURANCE 
+20080814131655.466|20080814131704.555|CCO|ADVISOR IS WAITING FOR YOUR CALL 
+20080814131704.555|20080814131739.302|SEG|Type=Story
+20080814131704.555|20080814131721.014|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131704.555|20080814131706.383|CCO|>>> HARRIS: A  strict teen curfew starts tonight 
+20080814131706.383|20080814131708.212|CCO|in Hartford, Connecticut. 
+20080814131710.041|20080814131711.870|CCO|It is a response to last weekend's violence. 
+20080814131713.699|20080814131715.527|CCO|One man was killed and six young people wounded in a shooting. Now the month-long curfew means no 
+20080814131715.527|20080814131717.356|CCO|one under 18  is allowed on the 
+20080814131717.356|20080814131719.185|CCO|streets after 9:00  at night without 
+20080814131719.185|20080814131721.014|CCO|a parent or guardian. 
+20080814131721.014|20080814131739.302|CLIP|Type=Video
+20080814131721.014|20080814131726.500|NER_01|Person=UNIDENTIFIED FEMALE
+20080814131721.014|20080814131722.843|CCO|>> UNIDENTIFIED FEMALE: Anything that you can stop kids 
+20080814131722.843|20080814131724.671|CCO|from killing kids, it's a good 
+20080814131724.671|20080814131726.500|CCO|thing. 
+20080814131726.500|20080814131731.987|NER_01|Person=UNIDENTIFIED MALE
+20080814131726.500|20080814131728.329|CCO|>> UNIDENTIFIED MALE: It will slow things down, but 
+20080814131728.329|20080814131730.158|CCO|I  don't think it will stop anything. 
+20080814131731.987|20080814131735.644|NER_01|Person=UNIDENTIFIED MALE
+20080814131731.987|20080814131733.815|CCO|>> UNIDENTIFIED MALE: That's where the strength of the 
+20080814131733.815|20080814131735.644|CCO|curfew is going to come in. Not as much as getting them off the streets as getting the parents back involved, forcing 
+20080814131735.644|20080814131737.473|CCO|the parents... 
+20080814131735.644|20080814131739.302|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814131735.644|20080814131737.473|CCO|>> HARRIS: The ACLU  could file a legal challenge to the curfew. The group believes it violates the civil 
+20080814131739.302|20080814131741.131|CCO|rights of minors. 
+20080814131739.302|20080814132015.680|SEG|Type=Story
+20080814131739.302|20080814131757.007|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131739.302|20080814131741.131|CCO|>>> COLLINS: 
+20080814131742.960|20080814131744.966|CCO|They're called passive pushers. 
+20080814131746.973|20080814131748.980|CCO|It's a disturbing new study saying some parents make it all too 
+20080814131748.980|20080814131750.987|CCO|easy for teens to abuse alcohol and drugs. 
+20080814131752.994|20080814131755.000|CCO|Chief medical correspondent Dr. Sanjay Gupta is weighing in on this this morning. So, Sanjay, does this report really suggest that some parents 
+20080814131755.000|20080814131757.007|CCO|are actually steering their teenagers towards 
+20080814131757.007|20080814131759.014|CCO|drugs and alcohol? It's ridiculous. 
+20080814131757.007|20080814131803.028|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131757.007|20080814131759.014|CCO|>> DR. SANJAY GUPTA, CNN CHIEF MEDICAL CORRESPONDENT: I  
+20080814131759.014|20080814131801.021|CCO|know. And they may be doing it unwittingly. And you know, a preface by saying, you know, parenting 
+20080814131801.021|20080814131803.028|CCO|advice is always a dangerous thing to give. You and I  
+20080814131803.028|20080814131805.035|CCO|both have kids so... 
+20080814131803.028|20080814131803.028|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131803.028|20080814131805.035|CCO|>> COLLINS: Yes. 
+20080814131803.028|20080814131843.164|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131803.028|20080814131805.035|CCO|>> GUPTA: ... I 
+20080814131805.035|20080814131807.041|CCO| think no one is trying to indict 
+20080814131807.041|20080814131809.048|CCO|these parents. 
+20080814131809.048|20080814131811.055|CCO|But this passive pusher title is probably pretty appropriate. 
+20080814131813.062|20080814131815.069|CCO|This idea that parents may leave prescription 
+20080814131815.069|20080814131817.076|CCO|medications sitting around the house that could be abused, the 
+20080814131817.076|20080814131819.082|CCO|idea that they may not monitor their child's whereabouts on any given night, and in 
+20080814131819.082|20080814131821.089|CCO|the worst cases, they actually use some 
+20080814131821.089|20080814131823.096|CCO|of these substances with their 
+20080814131823.096|20080814131825.103|CCO|children. 
+20080814131825.103|20080814131827.110|CCO|Consider some of these statistics 
+20080814131827.110|20080814131829.117|CCO|out of this particular 
+20080814131829.117|20080814131831.123|CCO|survey. 
+20080814131831.123|20080814131833.130|CCO|When -- where do children get these medications? 
+20080814131835.137|20080814131837.144|CCO|And about third of them get them from the 
+20080814131837.144|20080814131839.151|CCO|home -- parents or 
+20080814131839.151|20080814131841.158|CCO|the medicine cabinet. 
+20080814131843.164|20080814131845.171|CCO|They're just taking it. It's easy. 
+20080814131843.164|20080814131843.164|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131843.164|20080814131845.171|CCO|>> COLLINS: Yes. 
+20080814131843.164|20080814131903.233|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131843.164|20080814131845.171|CCO|>> GUPTA: A  third from friends and classmates. 
+20080814131847.178|20080814131849.185|CCO|But if dive one step deeper, 
+20080814131849.185|20080814131851.192|CCO|which we did here, you find that 25  percent of teens actually know 
+20080814131851.192|20080814131853.198|CCO|a parent who uses marijuana 
+20080814131853.198|20080814131855.205|CCO|and 10  percent of the parents of teenagers 
+20080814131855.205|20080814131857.212|CCO|surveyed said their 
+20080814131857.212|20080814131859.219|CCO|parents have actually used a substance 
+20080814131859.219|20080814131901.226|CCO|with their particular teenager. 
+20080814131903.233|20080814131905.239|CCO|So it's, obviously, more than passive pushing on those particular cases. 
+20080814131903.233|20080814131903.233|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131903.233|20080814131905.239|CCO|>> COLLINS: Yes. 
+20080814131903.233|20080814131911.260|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131903.233|20080814131905.239|CCO|>> GUPTA: Teenagers, most formative years 
+20080814131905.239|20080814131907.246|CCO|to a child's life. 
+20080814131907.246|20080814131909.253|CCO|How a parent reacts in that situation towards the use of drugs and alcohol, very, very key. Most parents doing a good job, 
+20080814131909.253|20080814131911.260|CCO|but the passive pusher population is 
+20080814131911.260|20080814131913.267|CCO|what they're targeting here. 
+20080814131911.260|20080814131915.274|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131911.260|20080814131913.267|CCO|>> COLLINS: Wow. I  
+20080814131913.267|20080814131915.274|CCO|mean, obviously, 
+20080814131915.274|20080814131917.280|CCO|something needs to change, and clearly parents shouldn't be using drugs with their kids. 
+20080814131915.274|20080814131923.301|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131915.274|20080814131917.280|CCO|>> GUPTA: You know, there are some obvious ones here. You know, and some 
+20080814131919.287|20080814131921.294|CCO|people think maybe it's a way to 
+20080814131921.294|20080814131923.301|CCO|help get the teenager through 
+20080814131923.301|20080814131925.308|CCO|those tumultuous years... 
+20080814131923.301|20080814131923.301|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131923.301|20080814131925.308|CCO|>> COLLINS: God. 
+20080814131923.301|20080814131945.376|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131923.301|20080814131925.308|CCO|>> GUPTA: ....  of doing it with the child so they don't do it somewhere else. Right. 
+20080814131925.308|20080814131927.315|CCO|I  think most of the study showed not a 
+20080814131927.315|20080814131929.321|CCO|good idea. 
+20080814131929.321|20080814131931.328|CCO|You got to set up the role model behavior yourself. But also, some of the things that 
+20080814131931.328|20080814131933.335|CCO|may be lesson to it, this idea of leaving medication sitting around. 
+20080814131933.335|20080814131935.342|CCO|Safeguard those prescription 
+20080814131935.342|20080814131937.349|CCO|drugs from your kids 
+20080814131937.349|20080814131939.356|CCO|in your own home. 
+20080814131939.356|20080814131941.362|CCO|Monitor your teens' whereabouts including 
+20080814131941.362|20080814131943.369|CCO|on school nights and more 
+20080814131943.369|20080814131945.376|CCO|family dinners, which is my 
+20080814131945.376|20080814131947.383|CCO|favorite one out of the list. 
+20080814131945.376|20080814131945.376|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814131945.376|20080814131947.383|CCO|>> COLLINS: Yes. 
+20080814131945.376|20080814132007.451|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814131945.376|20080814131947.383|CCO|>> GUPTA: Because they 
+20080814131947.383|20080814131949.390|CCO|say that if you have dinner with 
+20080814131949.390|20080814131951.396|CCO|your family five times a week on 
+20080814131951.396|20080814131953.403|CCO|average, your child is much more -- less likely 
+20080814131953.403|20080814131955.410|CCO|to abuse later on in life. 
+20080814131957.417|20080814131959.424|CCO|So that's an easy one. 
+20080814131959.424|20080814132001.431|CCO|That's a lay-up. And then model healthy behaviors, 
+20080814132001.431|20080814132003.437|CCO|like we were talking about. 
+20080814132005.444|20080814132007.451|CCO|Don't be using illicit drugs yourself, especially 
+20080814132007.451|20080814132009.458|CCO|around your kids. 
+20080814132007.451|20080814132009.458|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132007.451|20080814132009.458|CCO|>> COLLINS: Yes. Stay in tuned with those kids. 
+20080814132009.458|20080814132011.465|CCO|Lock the liquor cabinet if you have to. 
+20080814132009.458|20080814132009.458|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814132009.458|20080814132011.465|CCO|>> GUPTA: Yes. 
+20080814132009.458|20080814132011.465|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132009.458|20080814132011.465|CCO|>> COLLINS: I  
+20080814132011.465|20080814132013.472|CCO|mean that's about an age old one. 
+20080814132011.465|20080814132011.465|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814132011.465|20080814132013.472|CCO|>> GUPTA: That's right. 
+20080814132011.465|20080814132011.465|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132011.465|20080814132013.472|CCO|>> COLLINS: We've been doing that for years and years so -- all right. Dr. Sanjay Gupta, not giving parenting advice today. 
+20080814132011.465|20080814132011.465|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814132011.465|20080814132013.472|CCO|>> GUPTA: I  always do that. Now that I'm a parent myself, I  know the perils of that. 
+20080814132011.465|20080814132011.465|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132011.465|20080814132013.472|CCO|>> COLLINS: Yes. 
+20080814132011.465|20080814132011.465|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814132011.465|20080814132013.472|CCO|>> GUPTA: Yes. 
+20080814132011.465|20080814132015.680|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132011.465|20080814132013.472|CCO|>> COLLINS: Thanks, 
+20080814132013.472|20080814132015.680|CCO|Sanjay. 
+20080814132015.680|20080814132015.680|NER_01|Person=Dr. Sanjay Gupta|Role=CNN CHIEF MEDICAL CORRESPONDENT
+20080814132015.680|20080814132017.910|CCO|>> GUPTA: All right, thank you. 
+20080814132015.680|20080814132034.117|SEG|Type=Story
+20080814132015.680|20080814132022.372|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132015.680|20080814132017.910|CCO|>>> HARRIS: Boy, here's a strange one. 
+20080814132017.910|20080814132020.141|CCO|Why would anyone kidnap a bear from 
+20080814132020.141|20080814132022.372|CCO|a zoo? 
+20080814132022.372|20080814132034.117|CLIP|Type=Video
+20080814132022.372|20080814132029.064|NER_01|Person=UNIDENTIFIED FEMALE
+20080814132022.372|20080814132024.602|CCO|>> UNIDENTIFIED FEMALE: He just wanted a bear. 
+20080814132024.602|20080814132026.833|CCO|He got out of the car and he said, 
+20080814132026.833|20080814132029.064|CCO|I  stole a bear. 
+20080814132029.064|20080814132034.117|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132029.064|20080814132031.596|CCO|>> HARRIS: A  bear on the lamb. 
+20080814132031.596|20080814132034.117|CCO|We've got the great cub caper. 
+20080814132034.117|20080814132325.836|SEG|Type=Commercial
+20080814132034.117|20080814132036.638|CCO|WE TOOK A POLL AND ASKED 
+20080814132036.638|20080814132039.159|CCO|WHAT AMERICANS WANT.  
+20080814132039.159|20080814132041.680|CCO|AND UNANIMOUSLY THEY 
+20080814132039.159|20080814132325.836|NER_01|Person=SAID
+20080814132039.159|20080814132041.680|CCO|>> SAID: 
+20080814132041.680|20080814132044.201|CCO|FREE GASOLINE! 
+20080814132044.201|20080814132046.723|CCO|FREE GASOLINE! 
+20080814132046.723|20080814132049.244|CCO|FREE GASOLINE EVERYDAY! 
+20080814132049.244|20080814132051.765|CCO|SHELL IS GIVING AWAY $2900 IN 
+20080814132051.765|20080814132054.286|CCO|FREE GASOLINE EVERYDAY  
+20080814132056.807|20080814132059.329|CCO|PLUS THOUSANDS OF 
+20080814132059.329|20080814132101.850|CCO|OTHER PRIZES!  
+20080814132101.850|20080814132104.371|CCO|HURRY IN TODAY FOR  
+20080814132104.371|20080814132106.892|CCO|YOUR CHANCE TO WIN. 
+20080814132106.892|20080814132109.413|CCO|ONLY ALEVE IS SO STRONG... 
+20080814132109.413|20080814132111.935|CCO|IT CAN STOP PAIN ALL DAY 
+20080814132111.935|20080814132114.456|CCO|WITH TWO PILLS. 
+20080814132114.456|20080814132116.977|CCO|THAT WOULD TAKE EIGHT TYLENOL. 
+20080814132116.977|20080814132119.498|CCO|MOVE PAIN-FREE! 
+20080814132119.498|20080814132122.019|CCO|JUST MOVE ON UP  
+20080814132122.019|20080814132124.541|CCO|MOVE ON UP 
+20080814132124.541|20080814132127.062|CCO|TO ALEVE LIQUID GELS. 
+20080814132129.583|20080814132132.104|CCO|BUT I CAN GIVE HER 
+20080814132132.104|20080814132134.625|CCO|WHAT SHE NEEDS 
+20080814132134.625|20080814132137.147|CCO|TO FEEL GOOD 
+20080814132137.147|20080814132139.668|CCO|ABOUT HERSELF, 
+20080814132139.668|20080814132142.189|CCO|CAN I SIT HERE? 
+20080814132142.189|20080814132144.710|CCO|SURE,I LIKE 
+20080814132144.710|20080814132147.231|CCO|YOUR TOP. 
+20080814132147.231|20080814132149.753|CCO|THANK-YOU. 
+20080814132149.753|20080814132152.274|CCO|WITHOUT BREAKING 
+20080814132152.274|20080814132154.795|CCO|MY BUDGET. 
+20080814132154.795|20080814132157.316|CCO|THAT'S WHY I GO 
+20080814132157.316|20080814132159.837|CCO|TO WAL-MART. 
+20080814132159.837|20080814132202.359|CCO|(announcer)
+20080814132202.359|20080814132204.880|CCO|SAVE ON ALL THE 
+20080814132204.880|20080814132207.401|CCO|BRANDS THEY LOVE. 
+20080814132207.401|20080814132209.922|CCO|LIKE L.E.I. AND OP 
+20080814132209.922|20080814132212.443|CCO|SAVE MONEY. LIVE BETTER. 
+20080814132212.443|20080814132214.965|CCO|WAL-MART. 
+20080814132214.965|20080814132217.486|CCO|[school bell rings] 
+20080814132217.486|20080814132220.007|CCO|LET'S TALK INTERNET. 
+20080814132220.007|20080814132222.528|CCO|WHAT SHOULD YOU LOOK FOR? 
+20080814132222.528|20080814132225.049|CCO|A WATERSKIING SQUIRREL? 
+20080814132225.049|20080814132227.571|CCO|SWEET TAI CHI MOVES? 
+20080814132227.571|20080814132230.092|CCO|OH, UH, EX-BOYFRIENDS. 
+20080814132230.092|20080814132232.613|CCO|WRONG, WRONG, AND MR. WRONG. 
+20080814132232.613|20080814132235.134|CCO|WHAT YOU SHOULD LOOK FOR 
+20080814132235.134|20080814132237.655|CCO|IS FREE. 
+20080814132237.655|20080814132240.176|CCO|WHERE CAN WE 
+20080814132240.176|20080814132242.698|CCO|FIND THAT? 
+20080814132242.698|20080814132245.219|CCO|HOLIDAY INN? 
+20080814132245.219|20080814132247.740|CCO|(Professor)
+20080814132247.740|20080814132250.261|CCO|WHAT WOULD YOU HAVE SAID 
+20080814132250.261|20080814132252.782|CCO|IF I HAD SHOWED YOU A PICTURE 
+20080814132252.782|20080814132255.304|CCO|OF A COCONUT? 
+20080814132255.304|20080814132257.825|CCO|PROBABLY SAY "CONUT." 
+20080814132257.825|20080814132300.346|CCO|THEN "HOLIDAY INN." 
+20080814132300.346|20080814132302.867|CCO|(Professor)
+20080814132302.867|20080814132305.388|CCO|MUST BE TIRING LUGGING AROUND 
+20080814132305.388|20080814132307.910|CCO|THAT GIANT BRAIN, MR. DOWD. 
+20080814132307.910|20080814132310.431|CCO|(male announcer) 
+20080814132310.431|20080814132312.952|CCO|THE MORE YOU STAY, 
+20080814132312.952|20080814132315.473|CCO|THE MORE YOU EARN. 
+20080814132315.473|20080814132325.836|CCO|HOLIDAY INN. 
+20080814132325.836|20080814132543.841|SEG|Type=Story
+20080814132325.836|20080814132327.475|CCO|>>> ISSUE NUMBER ONE 
+20080814132325.836|20080814132348.792|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132325.836|20080814132327.475|CCO|>> HARRIS: Issue No. 1  is the economy. 
+20080814132329.115|20080814132330.755|CCO|More tough times for the housing 
+20080814132330.755|20080814132332.394|CCO|market while inflation, really, jumps, surges 
+20080814132334.034|20080814132335.674|CCO|in July. 
+20080814132335.674|20080814132337.314|CCO|Ali Velshi is "Minding Your Business" 
+20080814132337.314|20080814132338.953|CCO|this morning. 
+20080814132338.953|20080814132340.593|CCO|And you know what, Ali, if you want to 
+20080814132340.593|20080814132342.233|CCO|know why we're not likely to get 
+20080814132342.233|20080814132343.873|CCO|a cut in interest rates 
+20080814132343.873|20080814132345.512|CCO|from the Federal Reserve anytime 
+20080814132345.512|20080814132347.152|CCO|soon, let's talk about these new 
+20080814132347.152|20080814132348.792|CCO|inflation numbers. 
+20080814132348.792|20080814132406.829|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132348.792|20080814132350.432|CCO|>> ALI VELSHI, CNN SENIOR BUSINESS CORRESPONDENT: That's right. 
+20080814132350.432|20080814132352.071|CCO|well -- inflation is running at 5.6  
+20080814132352.071|20080814132353.711|CCO|percent -- this is consumer inflation -- over the 
+20080814132353.711|20080814132355.351|CCO|last year. 
+20080814132355.351|20080814132356.991|CCO|That's the fastest pace in 17  
+20080814132356.991|20080814132358.630|CCO|years. 
+20080814132358.630|20080814132400.270|CCO|Now, typically, when you want to contain 
+20080814132400.270|20080814132401.910|CCO|inflation, that's because 
+20080814132401.910|20080814132403.549|CCO|there's a lot of demand and 
+20080814132403.549|20080814132405.189|CCO|you curb that by raising interest 
+20080814132405.189|20080814132406.829|CCO|rates. 
+20080814132406.829|20080814132408.469|CCO|Well, that's why the Fed can't cut... 
+20080814132406.829|20080814132406.829|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132406.829|20080814132408.469|CCO|>> HARRIS: Yes. 
+20080814132406.829|20080814132418.307|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132406.829|20080814132408.469|CCO|>> VELSHI: ...  
+20080814132408.469|20080814132410.108|CCO|interest rates right now because 
+20080814132410.108|20080814132411.748|CCO|that tends to increase demand. 
+20080814132413.388|20080814132415.028|CCO|Inflation at 5.6  percent, that's double 
+20080814132415.028|20080814132416.667|CCO|what historical inflation is. 
+20080814132416.667|20080814132418.307|CCO|I  mean usually it's under 3  percent. So 
+20080814132418.307|20080814132419.947|CCO|that's a bit of a problem... 
+20080814132418.307|20080814132418.307|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132418.307|20080814132419.947|CCO|>> HARRIS: Yes. 
+20080814132418.307|20080814132423.226|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132418.307|20080814132419.947|CCO|>> VELSHI: ...  on that 
+20080814132419.947|20080814132421.587|CCO|front. 
+20080814132421.587|20080814132423.226|CCO|Now we continue to have this 
+20080814132423.226|20080814132424.866|CCO|housing crisis, Tony... 
+20080814132423.226|20080814132423.226|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132423.226|20080814132424.866|CCO|>> HARRIS: Boy. 
+20080814132423.226|20080814132451.102|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132423.226|20080814132424.866|CCO|>> VELSHI: ...  on top of us. 
+20080814132426.506|20080814132428.146|CCO|We've got new numbers about foreclosures. I  
+20080814132428.146|20080814132429.785|CCO|want to show where in the country foreclosures are the highest. This 
+20080814132429.785|20080814132431.425|CCO|list will look familiar to you, 
+20080814132431.425|20080814132433.065|CCO|Tony, because we've talked 
+20080814132433.065|20080814132434.704|CCO|about it sort of monthly. 
+20080814132434.704|20080814132436.344|CCO|Nevada still leads the country. California is second, 
+20080814132436.344|20080814132437.984|CCO|although it's got the highest number 
+20080814132437.984|20080814132439.624|CCO|of foreclosures, then Florida, 
+20080814132439.624|20080814132441.263|CCO|Arizona and Ohio. 
+20080814132441.263|20080814132442.903|CCO|You know, Nevada, California, Florida and Arizona 
+20080814132442.903|20080814132444.543|CCO|were all places where people really bought 
+20080814132444.543|20080814132446.183|CCO|heavily into it when the prices 
+20080814132446.183|20080814132447.822|CCO|were going up. 
+20080814132447.822|20080814132449.462|CCO|So they fell, you know, because the market sort of collapsed under 
+20080814132449.462|20080814132451.102|CCO|them. 
+20080814132451.102|20080814132451.102|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132451.102|20080814132452.742|CCO|>> HARRIS: Right. 
+20080814132451.102|20080814132502.580|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132451.102|20080814132452.742|CCO|>> VELSHI: Ohio is a different story. The Midwest jobs 
+20080814132452.742|20080814132454.381|CCO|were lost, factories were closed, and 
+20080814132454.381|20080814132456.021|CCO|people got stuck with their houses 
+20080814132456.021|20080814132457.661|CCO|and couldn't sell them. 
+20080814132457.661|20080814132459.301|CCO|But in all of those cases, we've still got a lot of foreclosures, and we're seeing 
+20080814132459.301|20080814132500.940|CCO|that trend increase. 
+20080814132500.940|20080814132502.580|CCO|Last year compared -- right now compared to last year, 
+20080814132502.580|20080814132504.220|CCO|foreclosure filings are up 55  percent. 
+20080814132502.580|20080814132502.580|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132502.580|20080814132504.220|CCO|>> HARRIS: Man. 
+20080814132502.580|20080814132505.860|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132502.580|20080814132504.220|CCO|>> VELSHI: That's 
+20080814132504.220|20080814132505.860|CCO|the whole process, Tony. 
+20080814132505.860|20080814132505.860|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132505.860|20080814132507.499|CCO|>> HARRIS: Right. 
+20080814132505.860|20080814132510.779|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132505.860|20080814132507.499|CCO|>> VELSHI: The sad part here is we're seeing 
+20080814132507.499|20080814132509.139|CCO|the number of foreclosure 
+20080814132509.139|20080814132510.779|CCO|repossessions jump. 
+20080814132510.779|20080814132510.779|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132510.779|20080814132512.418|CCO|>> HARRIS: Seizures, yes. 
+20080814132510.779|20080814132517.338|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132510.779|20080814132512.418|CCO|>> VELSHI: Yes, that's a big -- look at that, 130  -- 183  percent versus 
+20080814132512.418|20080814132514.058|CCO|a years ago. 
+20080814132514.058|20080814132515.698|CCO|These are people who have just gone through 
+20080814132515.698|20080814132517.338|CCO|the whole system and couldn't 
+20080814132517.338|20080814132518.977|CCO|make it work. 
+20080814132517.338|20080814132520.617|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132517.338|20080814132518.977|CCO|>> HARRIS: Ali, 
+20080814132518.977|20080814132520.617|CCO|I  hear you're doing your 
+20080814132520.617|20080814132522.257|CCO|radio show for CNN  Radio today. 
+20080814132520.617|20080814132520.617|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132520.617|20080814132522.257|CCO|>> VELSHI: Yes. 
+20080814132520.617|20080814132520.617|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132520.617|20080814132522.257|CCO|>> HARRIS: Love that. 
+20080814132520.617|20080814132523.897|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132520.617|20080814132522.257|CCO|>> VELSHI: On Thursdays 
+20080814132522.257|20080814132523.897|CCO|at 11:00  Eastern. 
+20080814132523.897|20080814132525.536|CCO|Yes, we open up the phone line. People could send us e-mails, can go to CNN.com/askali, or you can call us up at that number, 877-266-4189.  
+20080814132523.897|20080814132523.897|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132523.897|20080814132525.536|CCO|>> HARRIS: That's terrific. 
+20080814132523.897|20080814132527.176|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132523.897|20080814132525.536|CCO|>> VELSHI: And you 
+20080814132525.536|20080814132527.176|CCO|know what it is, Tony, we get 
+20080814132527.176|20080814132528.816|CCO|to hear from our viewers... 
+20080814132527.176|20080814132527.176|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132527.176|20080814132528.816|CCO|>> HARRIS: Yes. 
+20080814132527.176|20080814132535.375|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132527.176|20080814132528.816|CCO|>> VELSHI: ...  
+20080814132528.816|20080814132530.456|CCO|what they are worried about or what 
+20080814132530.456|20080814132532.095|CCO|they think is happening, and 
+20080814132532.095|20080814132533.735|CCO|it -- you kind of just informs our reporting a lot 
+20080814132533.735|20080814132535.375|CCO|more than if we just, you know, read it 
+20080814132535.375|20080814132537.015|CCO|somewhere or... 
+20080814132535.375|20080814132540.294|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132535.375|20080814132537.015|CCO|>> HARRIS: Prices, 
+20080814132537.015|20080814132538.654|CCO|their homes and their 
+20080814132538.654|20080814132540.294|CCO|jobs, right? 
+20080814132540.294|20080814132543.841|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132540.294|20080814132541.934|CCO|>> VELSHI: Yes, that's right. 
+20080814132541.934|20080814132543.841|CCO|That's what matters. 
+20080814132543.841|20080814132543.841|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132543.841|20080814132546.049|CCO|>> HARRIS: It's issue No. 1.  All right, Ali, appreciate it. Thank you. 
+20080814132543.841|20080814132543.841|NER_01|Person=Ali Velshi|Role=CNN SENIOR BUSINESS CORRESPONDENT
+20080814132543.841|20080814132546.049|CCO|>> VELSHI: See you, Tony. 
+20080814132543.841|20080814132636.854|SEG|Type=Story
+20080814132543.841|20080814132636.854|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132543.841|20080814132546.049|CCO|>>> COLLINS: Quickly want to get this information 
+20080814132546.049|20080814132548.258|CCO|to you now. 
+20080814132548.258|20080814132550.467|CCO|Just into the CNN NEWSROOM,  
+20080814132550.467|20080814132552.676|CCO|beleaguered by legal problems Detroit's mayor in court just 
+20080814132552.676|20080814132554.885|CCO|moment ago to face arraignment 
+20080814132554.885|20080814132557.094|CCO|on perjury charges. 
+20080814132557.094|20080814132559.303|CCO|Well, according to the judge, Mayor 
+20080814132559.303|20080814132601.512|CCO|Kwame Kilpatrick will be allowed to travel to 
+20080814132601.512|20080814132603.720|CCO|the Democratic convention. 
+20080814132603.720|20080814132605.929|CCO|You may remember, he is a superdelegate 
+20080814132605.929|20080814132608.138|CCO|and he can do it without 
+20080814132608.138|20080814132610.347|CCO|the electronic tether that 
+20080814132610.347|20080814132612.556|CCO|had been ordered earlier in 
+20080814132612.556|20080814132614.765|CCO|the case. 
+20080814132614.765|20080814132616.974|CCO|Kilpatrick has been mired in controversy over romantic 
+20080814132616.974|20080814132619.183|CCO|text message with his former chief 
+20080814132619.183|20080814132621.391|CCO|of staff. 
+20080814132621.391|20080814132623.600|CCO|Those messages indicated the two were involved in an affair. They had denied it under oath. Two more voices are now calling for Kilpatrick to resign. Congressman 
+20080814132625.809|20080814132628.018|CCO|John Dingle says Kilpatrick is 
+20080814132628.018|20080814132630.227|CCO|dragging down the 
+20080814132630.227|20080814132632.436|CCO|hopes of the city. 
+20080814132632.436|20080814132634.645|CCO|And the "Michigan Chronicle" says, 
+20080814132634.645|20080814132636.854|CCO|quote, "We strongly urge the mayor to step 
+20080814132636.854|20080814132639.063|CCO|aside and address his problems. His issues are holding the city hostage. Detroit's future is bigger than the mayor." 
+20080814132636.854|20080814132645.683|SEG|Type=Story
+20080814132636.854|20080814132645.683|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132636.854|20080814132639.063|CCO|>>> HARRIS: 
+20080814132639.063|20080814132640.718|CCO|A  visit to grandma's house goes 
+20080814132640.718|20080814132642.373|CCO|wrong. 
+20080814132642.373|20080814132644.028|CCO|American children struck in Georgia's war 
+20080814132644.028|20080814132645.683|CCO|zone when we talk live with their worried father.   
+20080814132645.683|20080814132949.720|SEG|Type=Commercial
+20080814132645.683|20080814132647.504|CCO|THEIR FATHER. 
+20080814132647.504|20080814132650.334|CCO|[school bell rings] 
+20080814132650.334|20080814132653.165|CCO|SO YOU CONSIDER YOURSELVES 
+20080814132653.165|20080814132655.996|CCO|BUSINESS TRAVELERS, HUH? 
+20080814132655.996|20080814132658.827|CCO|WELL, MEET THE LEGEND. 
+20080814132658.827|20080814132701.658|CCO|JOE POLSKI. 
+20080814132701.658|20080814132704.489|CCO|HE ONCE DID 18 STRAIGHT 
+20080814132704.489|20080814132707.320|CCO|SALES CALLS 
+20080814132707.320|20080814132710.151|CCO|ON NOTHING BUT 
+20080814132710.151|20080814132712.982|CCO|A PILLOW MINT. 
+20080814132712.982|20080814132715.813|CCO|HE ACTUALLY TRADEMARKED 
+20080814132715.813|20080814132718.644|CCO|HIS 
+20080814132715.813|20080814132949.720|NER_01|Person=HANDSHAKE
+20080814132715.813|20080814132718.644|CCO|>> HANDSHAKE: 
+20080814132718.644|20080814132721.475|CCO|THE POLSKI PUMP. 
+20080814132721.475|20080814132724.306|CCO|DID HE EVER GET 
+20080814132724.306|20080814132727.137|CCO|2,000 BONUS POINTS 
+20080814132727.137|20080814132729.968|CCO|FOR STAYING TWO NIGHTS 
+20080814132729.968|20080814132732.799|CCO|AT A HOLIDAY INN? 
+20080814132732.799|20080814132735.630|CCO|MAYBE TWO MAJOR LEAGUE 
+20080814132735.630|20080814132738.461|CCO|BASEBALL TICKETS 
+20080814132738.461|20080814132741.292|CCO|FOR STAYING EIGHT NIGHTS? 
+20080814132741.292|20080814132744.123|CCO|NO, BUT HE ONCE 
+20080814132744.123|20080814132746.954|CCO|HAD A HEART ATTACK, 
+20080814132746.954|20080814132749.784|CCO|WOKE UP, 
+20080814132749.784|20080814132752.615|CCO|AND SOLD THE PARAMEDICS 
+20080814132752.615|20080814132755.446|CCO|12 DOZEN STEAK KNIVES. 
+20080814132755.446|20080814132758.277|CCO|THAT WAS POLSKI! 
+20080814132758.277|20080814132801.108|CCO|(male announcer) 
+20080814132801.108|20080814132803.939|CCO|THE MORE YOU STAY, 
+20080814132803.939|20080814132806.770|CCO|THE MORE YOU EARN. 
+20080814132806.770|20080814132809.601|CCO|MY JOB IS TO GIVE HIM 
+20080814132809.601|20080814132812.432|CCO|EVERYTHING HE 
+20080814132812.432|20080814132815.263|CCO|NEEDS TO SUCCEED, 
+20080814132815.263|20080814132818.094|CCO|THAT'S WHY I GO 
+20080814132818.094|20080814132820.925|CCO|TO WAL-MART. 
+20080814132820.925|20080814132823.756|CCO|(announcer)
+20080814132823.756|20080814132826.587|CCO|FIND ALL THE BRANDS 
+20080814132826.587|20080814132829.418|CCO|THOSE OTHER STORES HAVE 
+20080814132829.418|20080814132832.249|CCO|BUT FOR LOW 
+20080814132832.249|20080814132835.080|CCO|WAL-MART PRICES, 
+20080814132835.080|20080814132837.911|CCO|LIKE DELL, HP, 
+20080814132837.911|20080814132840.742|CCO|AND TOSHIBA. 
+20080814132840.742|20080814132843.573|CCO|SAVE MONEY. LIVE BETTER. 
+20080814132843.573|20080814132846.404|CCO|WAL-MART. 
+20080814132846.404|20080814132849.234|CCO|THERE'S NO WAY TO HIDE IT. 
+20080814132849.234|20080814132852.065|CCO|SIR, HAVE YOU BEEN 
+20080814132852.065|20080814132854.896|CCO|DRINKING TONIGHT? 
+20080814132854.896|20080814132857.727|CCO|IF YOU RIDE DRUNK, 
+20080814132857.727|20080814132900.558|CCO|YOU WILL GET CAUGHT... 
+20080814132900.558|20080814132903.389|CCO|AND YOU WILL GET ARRESTED. 
+20080814132903.389|20080814132906.220|CCO|(Q 
+20080814132906.220|20080814132909.051|CCO|I'LL GET THAT ONE. 
+20080814132909.051|20080814132911.882|CCO|MUST BE CAREFUL. 
+20080814132911.882|20080814132914.713|CCO|WELL, 
+20080814132914.713|20080814132917.544|CCO|THAT'S A NICE PICTURE. 
+20080814132917.544|20080814132920.375|CCO|COME ON, ANNA. 
+20080814132920.375|20080814132923.206|CCO|OK. 
+20080814132923.206|20080814132926.037|CCO|Announcer: FORECLOSURE 
+20080814132926.037|20080814132928.868|CCO|DOESN'T AFFECT JUST YOU. 
+20080814132928.868|20080814132931.699|CCO|IT AFFECTS 
+20080814132931.699|20080814132934.530|CCO|YOUR WHOLE FAMILY, TOO. 
+20080814132934.530|20080814132937.361|CCO|IF YOU'VE FALLEN BEHIND 
+20080814132937.361|20080814132940.192|CCO|ON YOUR MORTGAGE, WE CAN HELP. 
+20080814132940.192|20080814132943.023|CCO|CALL 1-888-995-HOPE. 
+20080814132943.023|20080814132945.854|CCO|BECAUSE NOTHING IS WORSE 
+20080814132945.854|20080814132949.720|CCO|THAN DOING NOTHING. 
+20080814132949.720|20080814133035.199|SEG|Type=Story
+20080814132949.720|20080814132951.787|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132949.720|20080814132951.787|CCO|>>> HARRIS: How did you like that show? Did you see that show? That "Rent" show? 
+20080814132951.787|20080814132953.854|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132951.787|20080814132953.854|CCO|>> COLLINS: I  loved that. 
+20080814132953.854|20080814132953.854|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132953.854|20080814132955.921|CCO|>> HARRIS: You like it? 
+20080814132953.854|20080814132953.854|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132953.854|20080814132955.921|CCO|>> COLLINS: I  saw the original cast... 
+20080814132953.854|20080814132953.854|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132953.854|20080814132955.921|CCO|>> HARRIS: Yes. 
+20080814132953.854|20080814132957.989|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814132953.854|20080814132955.921|CCO|>> COLLINS: ...  of New York. 
+20080814132957.989|20080814133000.056|CCO|Yes. 
+20080814132957.989|20080814133000.056|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814132957.989|20080814133000.056|CCO|>> HARRIS: Yes. And there was a movie 
+20080814133000.056|20080814133002.123|CCO|that did OK,  right? 
+20080814133000.056|20080814133000.056|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133000.056|20080814133002.123|CCO|>> COLLINS: Yes. 
+20080814133000.056|20080814133000.056|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133000.056|20080814133002.123|CCO|>> HARRIS: It was OK? COLLINS  (singing): 525,000...  
+20080814133000.056|20080814133000.056|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133000.056|20080814133002.123|CCO|>> HARRIS: Great. 
+20080814133000.056|20080814133006.258|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133000.056|20080814133002.123|CCO|>> COLLINS: 
+20080814133004.190|20080814133006.258|CCO|I  loved it. 
+20080814133006.258|20080814133035.199|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133006.258|20080814133008.325|CCO|>> HARRIS: Sure. Let's hope the folks there from 
+20080814133008.325|20080814133010.392|CCO|"Rent" can help the markets as 
+20080814133010.392|20080814133012.459|CCO|we get the business day started. 
+20080814133012.459|20080814133014.527|CCO|Yesterday the second day 
+20080814133014.527|20080814133016.594|CCO|of 
+20080814133014.527|20080814133016.594|CCO|(INAUDIBLE)
+20080814133014.527|20080814133016.594|CCO|losses for the Dow 
+20080814133016.594|20080814133018.661|CCO|in a row. 
+20080814133018.661|20080814133020.728|CCO|The Dow dropping 109  points yesterday, the S  
+20080814133020.728|20080814133022.796|CCO|and NASDAQ  down as well. 
+20080814133022.796|20080814133024.863|CCO|Home foreclosures, as Ali just mentioned just moments ago, up. And home 
+20080814133024.863|20080814133026.930|CCO|repossessions, seizures of the 
+20080814133026.930|20080814133028.997|CCO|housing sector continuing to 
+20080814133028.997|20080814133031.065|CCO|struggle, apparently, with no bottom 
+20080814133031.065|20080814133033.132|CCO|in sight. 
+20080814133033.132|20080814133035.199|CCO|We're going to follow the markets, of course, throughout the morning with Susan Lisovicz right here in the NEWSROOM.  
+20080814133035.199|20080814133044.570|SEG|Type=Story
+20080814133035.199|20080814133042.840|CCO|Bottom of the hour. >>> 
+20080814133042.840|20080814133044.570|CCO|Welcome back, everyone, to the 
+20080814133044.570|20080814133046.301|CCO|CNN NEWSROOM.  I'm Tony Harris. 
+20080814133044.570|20080814133119.180|SEG|Type=Story
+20080814133044.570|20080814133117.450|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133044.570|20080814133046.301|CCO|>>> COLLINS: Hi, everybody, I'm Heidi Collins. 
+20080814133046.301|20080814133048.031|CCO|An update now on a breaking story 
+20080814133048.031|20080814133049.762|CCO|we're following outside 
+20080814133049.762|20080814133051.492|CCO|of Philadelphia. A  
+20080814133051.492|20080814133053.223|CCO|massive inferno at an upscale apartment 
+20080814133053.223|20080814133054.953|CCO|complex in Conshohocken, Pennsylvania 
+20080814133054.953|20080814133056.684|CCO|is now under control. 
+20080814133058.414|20080814133100.145|CCO|The county public safety director 
+20080814133100.145|20080814133101.875|CCO|says several firefighters 
+20080814133101.875|20080814133103.606|CCO|were overcome by heat 
+20080814133103.606|20080814133105.336|CCO|and taken to the hospital, but 
+20080814133105.336|20080814133107.067|CCO|none of the injuries was life 
+20080814133107.067|20080814133108.797|CCO|threatening. 
+20080814133108.797|20080814133110.528|CCO|The fire broke out yesterday afternoon 
+20080814133110.528|20080814133112.258|CCO|in an unoccupied building of 
+20080814133112.258|20080814133113.989|CCO|the river front complex. 
+20080814133113.989|20080814133115.719|CCO|Fire fighters from at least 20  companies battle the blaze for more than six hours. Officials say the blaze destroyed the 
+20080814133115.719|20080814133117.450|CCO|centerpiece of that 
+20080814133117.450|20080814133119.180|CCO|multi-million dollar revitalization effort in Conshohocken. 
+20080814133117.450|20080814133119.180|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133117.450|20080814133119.180|CCO|>> HARRIS: A  
+20080814133119.180|20080814133139.281|SEG|Type=Story
+20080814133119.180|20080814133121.211|CCO|>>> 
+20080814133121.211|20080814133123.018|CCO|cease-fire holds, the world 
+20080814133123.018|20080814133124.825|CCO|watches, but Russian troops remain 
+20080814133124.825|20080814133126.632|CCO|in the Georgian City of Gori. And firmly in place in the two territories at the 
+20080814133126.632|20080814133128.439|CCO|center of this conflict Abkhazia and South 
+20080814133128.439|20080814133130.246|CCO|Ossetia. Want to split from Georgia and align with Russia today, there 
+20080814133130.246|20080814133132.053|CCO|are growing concerns that Russia 
+20080814133132.053|20080814133133.860|CCO|will defy Georgia and support that split. Secretary of State Condoleezza Rice is on a diplomatic mission. Today, she is in France. Tomorrow, the capital of Georgia. And in 
+20080814133135.667|20080814133137.474|CCO|Tbilisi, the first humanitarian 
+20080814133137.474|20080814133139.281|CCO|aide has arrived. 
+20080814133139.281|20080814133141.088|CCO|The U.S.  military is helping to spearhead the relief efforts. 
+20080814133139.281|20080814133621.173|SEG|Type=Story
+20080814133139.281|20080814133155.544|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133139.281|20080814133141.088|CCO|>>> COLLINS: The U.S.  believes 15,000  
+20080814133141.088|20080814133142.895|CCO|Russian troops are in Georgia. That's at 
+20080814133142.895|20080814133144.702|CCO|least 5,000  more than one week 
+20080814133144.702|20080814133146.509|CCO|ago. 
+20080814133146.509|20080814133148.316|CCO|CNN's international correspondent 
+20080814133148.316|20080814133150.123|CCO|Matthew Chance was 
+20080814133150.123|20080814133151.930|CCO|on the ground as a Russian armored 
+20080814133151.930|20080814133153.737|CCO|column rumbled out of Gori 
+20080814133153.737|20080814133155.544|CCO|yesterday. 
+20080814133155.544|20080814133621.173|CLIP|Type=Video
+20080814133155.544|20080814133202.772|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814133155.544|20080814133157.351|CCO|>> MATTHEW CHANCE, CNN CORRESPONDENT: Russia's military advance came without warning. A  
+20080814133157.351|20080814133159.158|CCO|column of armor heading towards 
+20080814133159.158|20080814133200.965|CCO|Georgia's capital in an unprecedented 
+20080814133200.965|20080814133202.772|CCO|show of force. 
+20080814133202.772|20080814133251.561|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT|Type=On-Camera
+20080814133202.772|20080814133204.579|CCO|>> MATTHEW CHANCE, CNN CORRESPONDENT: Well, there's been a lot of speculation 
+20080814133204.579|20080814133206.386|CCO|about where the Russian troops 
+20080814133206.386|20080814133208.193|CCO|are. 
+20080814133208.193|20080814133210.000|CCO|Well, here they are. Well inside Georgian territory and outside the 
+20080814133210.000|20080814133211.807|CCO|main conflict zone of South Ossetia. 
+20080814133213.614|20080814133215.421|CCO|They're now on the road to Tbilisi. 
+20080814133217.228|20080814133219.035|CCO|The big question is how far will 
+20080814133219.035|20080814133220.842|CCO|they go? 
+20080814133220.842|20080814133222.649|CCO|I  can see there are troop carriers here, there are armored personnel carriers. We 
+20080814133222.649|20080814133224.456|CCO|haven't seen any Georgian forces 
+20080814133224.456|20080814133226.263|CCO|up ahead. 
+20080814133226.263|20080814133228.070|CCO|We don't know whether they're going 
+20080814133228.070|20080814133229.877|CCO|to encounter any resistance. 
+20080814133229.877|20080814133231.684|CCO|But these are incredible 
+20080814133231.684|20080814133233.491|CCO|scenes. But this 
+20080814133233.491|20080814133235.298|CCO|wasn't the full-scale invasion 
+20080814133235.298|20080814133237.105|CCO|many Georgians fear. This column is now turning off the road to Tbilisi. I'll just get out of the way of the armored personnel carrier. And it's heading down this road to a village. Georgian 
+20080814133238.912|20080814133240.719|CCO|officials have indicated 
+20080814133240.719|20080814133242.526|CCO|to us that this is a planned 
+20080814133242.526|20080814133244.333|CCO|incursion by Russian forces who don't 
+20080814133246.140|20080814133247.947|CCO|know what they're doing 
+20080814133247.947|20080814133249.754|CCO|at the moment. 
+20080814133249.754|20080814133251.561|CCO|In fact, let's try and ask them. 
+20080814133251.561|20080814133304.210|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814133251.561|20080814133253.368|CCO|>> MATTHEW CHANCE, CNN CORRESPONDENT: I  asked the Russian officer what his 
+20080814133253.368|20080814133255.175|CCO|men were doing. 
+20080814133255.175|20080814133256.982|CCO|"No comment," he answered. "But the 
+20080814133256.982|20080814133258.789|CCO|Georgian people know we're here." 
+20080814133258.789|20080814133300.596|CCO|A  couple of soldiers edgy and smelling 
+20080814133300.596|20080814133302.403|CCO|of alcohol had fallen behind 
+20080814133302.403|20080814133304.210|CCO|and approached us. 
+20080814133304.210|20080814133304.210|NER_01|Person=UNIDENTIFIED MALE
+20080814133304.210|20080814133306.017|CCO|>> UNIDENTIFIED MALE: 
+20080814133304.210|20080814133306.017|CCO|(SPEAKING FOREIGN LANGUAGE)
+20080814133304.210|20080814133318.666|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT
+20080814133304.210|20080814133306.017|CCO|>> CHANCE: "We've not been ordered to take 
+20080814133306.017|20080814133307.824|CCO|Tbilisi," they told me. 
+20080814133307.824|20080814133309.631|CCO|"Russia doesn't want a war. 
+20080814133309.631|20080814133311.438|CCO|We were forced to send our troops 
+20080814133311.438|20080814133313.245|CCO|here," they said. 
+20080814133313.245|20080814133315.052|CCO|Georgia officials say Russia is 
+20080814133315.052|20080814133316.859|CCO|failing to respect its own cease-fire. 
+20080814133318.666|20080814133338.543|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT|Type=On-Camera
+20080814133318.666|20080814133320.473|CCO|>> CHANCE: Well, these are the first Georgian 
+20080814133320.473|20080814133322.280|CCO|forces that we've come across. After 
+20080814133322.280|20080814133324.087|CCO|the Russians have moved 
+20080814133324.087|20080814133325.894|CCO|in, there are 
+20080814133325.894|20080814133327.701|CCO|about five kilometers, three 
+20080814133327.701|20080814133329.508|CCO|miles or so, from where the 
+20080814133329.508|20080814133331.315|CCO|Russians have positioned themselves 
+20080814133331.315|20080814133333.122|CCO|inside Georgian territory. 
+20080814133334.929|20080814133336.736|CCO|Now, obviously, they're heavily armed. 
+20080814133338.543|20080814133340.350|CCO|They've got filled bombs there. 
+20080814133338.543|20080814133349.385|NER_01|Person=Matthew Chance|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814133338.543|20080814133340.350|CCO|>> CHANCE: But 
+20080814133340.350|20080814133342.157|CCO|this Georgian army may be 
+20080814133342.157|20080814133343.964|CCO|in no position to resist the military 
+20080814133343.964|20080814133345.771|CCO|might of its giant Russian 
+20080814133345.771|20080814133347.578|CCO|neighbor. 
+20080814133347.578|20080814133349.385|CCO|Matthew Chance, CNN,  Georgia. 
+20080814133349.385|20080814133407.455|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133349.385|20080814133351.192|CCO|>> HARRIS: Besides a massive military, Russia has another powerful tool 
+20080814133351.192|20080814133352.999|CCO|in its arsenal. 
+20080814133352.999|20080814133354.806|CCO|Huge reserves of oil and natural 
+20080814133354.806|20080814133356.613|CCO|gas. 
+20080814133356.613|20080814133358.420|CCO|Our Josh Levs has some startling figures. And Josh, I  think once you explain some of these 
+20080814133358.420|20080814133400.227|CCO|numbers, folks will get a better 
+20080814133400.227|20080814133402.034|CCO|picture at what appears to 
+20080814133402.034|20080814133403.841|CCO|be the international community's 
+20080814133403.841|20080814133405.648|CCO|lack luster in some eyes that international community seemed hand strong 
+20080814133405.648|20080814133407.455|CCO|in this response. 
+20080814133407.455|20080814133545.033|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080814133407.455|20080814133409.262|CCO|>> JOSH LEVS, CNN CORRESPONDENT: Sure. 
+20080814133409.262|20080814133411.069|CCO|I  mean, clearly oil is playing a part in 
+20080814133411.069|20080814133412.876|CCO|that. 
+20080814133412.876|20080814133414.683|CCO|And a lot of the analysts are saying 
+20080814133414.683|20080814133416.490|CCO|that there are a lot of nations out there that because 
+20080814133416.490|20080814133418.297|CCO|they're so tied to Russia 
+20080814133418.297|20080814133420.104|CCO|on oil, their hands are 
+20080814133420.104|20080814133421.911|CCO|tie. 
+20080814133421.911|20080814133423.718|CCO|There's not that much that they can do in a sense. And it is pretty amazing. We were looking into the figures today. You know, you've heard us talk about oil. This is a map behind me about some oil pipelines that go through that region including Georgia. And 
+20080814133423.718|20080814133425.525|CCO|you know, as we've been reporting, the pipe has been shut down in the middle of this 
+20080814133425.525|20080814133427.332|CCO|conflict. But what 
+20080814133427.332|20080814133429.139|CCO|I  want to do now is take you 
+20080814133429.139|20080814133430.946|CCO|over to this other screen behind 
+20080814133430.946|20080814133432.753|CCO|me on my other side. And we're going to show 
+20080814133432.753|20080814133434.560|CCO|you some of the startling statistics you were talking about there. How much Europe gets 
+20080814133434.560|20080814133436.367|CCO|its oil from Russia? 
+20080814133436.367|20080814133438.174|CCO|Let's start with this first one right 
+20080814133438.174|20080814133439.981|CCO|here where talks about Russia 
+20080814133439.981|20080814133441.788|CCO|in general. 
+20080814133441.788|20080814133443.595|CCO|It has the world's largest natural gas 
+20080814133443.595|20080814133445.402|CCO|reserves and of all nation's in the world, the eighth 
+20080814133445.402|20080814133447.209|CCO|largest oil reserve. 
+20080814133447.209|20080814133449.016|CCO|That's from the U.S.  Energy Information Administration. This next one now, 29  percent of Europe's 
+20080814133449.016|20080814133450.823|CCO|oil imports come from Russia. 
+20080814133452.630|20080814133454.437|CCO|That's a massive amount. 
+20080814133454.437|20080814133456.244|CCO|This is European nations as a group. 
+20080814133458.051|20080814133459.858|CCO|Now, natural gas, sometimes even 
+20080814133459.858|20080814133501.665|CCO|more -- these are broken done by nation. Germany gets about a 
+20080814133501.665|20080814133503.472|CCO|third. 
+20080814133503.472|20080814133505.279|CCO|Turkey about two-thirds of its natural gas from Russia. France, 
+20080814133505.279|20080814133507.086|CCO|20  percent. Finland 
+20080814133507.086|20080814133508.893|CCO|is one of the countries that 
+20080814133508.893|20080814133510.700|CCO|gets all of its natural gas. I  
+20080814133510.700|20080814133512.507|CCO|saw a private analysis that said 
+20080814133512.507|20080814133514.314|CCO|in total, European nations are about getting 
+20080814133514.314|20080814133516.121|CCO|half their natural gas from Russia. 
+20080814133517.928|20080814133519.735|CCO|So again, massive ties in that sense. 
+20080814133519.735|20080814133521.542|CCO|Let's go to this last one which gives you a summary from Energy Information Administration. They tell you that Russia's economic 
+20080814133521.542|20080814133523.349|CCO|growth really throughout 
+20080814133523.349|20080814133525.156|CCO|this decade has been driven number one -- issue number one there, driven 
+20080814133525.156|20080814133526.963|CCO|primarily by energy exports. 
+20080814133528.770|20080814133530.577|CCO|So basically this is where Russia's focus has 
+20080814133530.577|20080814133532.384|CCO|been. 
+20080814133532.384|20080814133534.191|CCO|It has succeeded at building a lot of ties 
+20080814133534.191|20080814133535.998|CCO|to the west particularly to 
+20080814133535.998|20080814133537.805|CCO|Europe. 
+20080814133537.805|20080814133539.612|CCO|And this is something that Europe needs 
+20080814133539.612|20080814133541.419|CCO|to not mess with too much because 
+20080814133541.419|20080814133543.226|CCO|they need to continue to 
+20080814133543.226|20080814133545.033|CCO|get those imports. 
+20080814133545.033|20080814133546.840|CCO|I  want to tell you one more thing, Tony. Let me have a second here. 
+20080814133545.033|20080814133550.454|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133545.033|20080814133546.840|CCO|>> HARRIS: OK,  
+20080814133546.840|20080814133548.647|CCO|sure, sure. 
+20080814133550.454|20080814133613.945|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080814133550.454|20080814133552.261|CCO|>> LEVS: The screen behind me is going to look like 
+20080814133552.261|20080814133554.068|CCO|The Matrix, but I'll explain it. I  
+20080814133554.068|20080814133555.875|CCO|want to go over to it for a second because the United States also gets oil from Russia, but nowhere near as much as Europe does. This 
+20080814133555.875|20080814133557.682|CCO|is a list of the nations from 
+20080814133557.682|20080814133559.489|CCO|which we import. 
+20080814133559.489|20080814133601.296|CCO|And I  know there's tons of numbers, ignore it. 
+20080814133603.103|20080814133604.910|CCO|Russia is down there at number ten. So, the United States here, we do get 
+20080814133604.910|20080814133606.717|CCO|some of our oil from Russia, 
+20080814133606.717|20080814133608.524|CCO|same source, Energy Information Administration. 
+20080814133610.331|20080814133612.138|CCO|It's not one of our top ones 
+20080814133612.138|20080814133613.945|CCO|though. 
+20080814133613.945|20080814133615.752|CCO|And you know, we still get a lot domestically as well. 
+20080814133613.945|20080814133613.945|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133613.945|20080814133615.752|CCO|>> HARRIS: Yes, that's right. That's right. 
+20080814133613.945|20080814133621.173|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080814133613.945|20080814133615.752|CCO|>> LEVS: But the truth is, more and more 
+20080814133615.752|20080814133617.559|CCO|nations are building those ties. We're getting more from Russian and 
+20080814133617.559|20080814133619.366|CCO|Europe, big time. It's exploded. 
+20080814133621.173|20080814133622.980|CCO|How much oil and natural gas they get. It's a dependence and it absolutely plays out on the ground. 
+20080814133621.173|20080814133621.173|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133621.173|20080814133622.980|CCO|>> HARRIS: All right, Josh, appreciate it. 
+20080814133621.173|20080814133621.173|NER_01|Person=Josh Levs|Role=CNN CORRESPONDENT
+20080814133621.173|20080814133622.980|CCO|>> LEVS: You got it. Thanks. 
+20080814133621.173|20080814133621.173|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814133621.173|20080814133622.980|CCO|>> HARRIS: Thanks, men. 
+20080814133621.173|20080814134051.815|SEG|Type=Story
+20080814133621.173|20080814133644.664|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133621.173|20080814133622.980|CCO|>>> COLLINS: 
+20080814133622.980|20080814133624.787|CCO|Georgia, halfway around the world, 
+20080814133624.787|20080814133626.594|CCO|its crisis hitting far too 
+20080814133626.594|20080814133628.401|CCO|close to home for our next guest. 
+20080814133630.208|20080814133632.015|CCO|Joe Evans is the father of two little 
+20080814133632.015|20080814133633.822|CCO|girls now stranded in the 
+20080814133633.822|20080814133635.629|CCO|war-torn country -- 7-year-old 
+20080814133635.629|20080814133637.436|CCO|Ashley and 3-year-old 
+20080814133637.436|20080814133639.243|CCO|Sophia were visiting their grandparents 
+20080814133639.243|20080814133641.050|CCO|when the fighting broke 
+20080814133641.050|20080814133642.857|CCO|out. 
+20080814133642.857|20080814133644.664|CCO|Joe, when was the last time that you were 
+20080814133644.664|20080814133646.471|CCO|able to talk with your daughters? 
+20080814133644.664|20080814133651.892|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133644.664|20080814133646.471|CCO|>> JOE EVANS, YOUNG DAUGHTER STRANDED IN GEORGIA: I  
+20080814133646.471|20080814133648.278|CCO|spoke 
+20080814133648.278|20080814133650.085|CCO|to my daughter, Ashley, 
+20080814133650.085|20080814133651.892|CCO|this morning. 
+20080814133651.892|20080814133651.892|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133651.892|20080814133653.699|CCO|>> COLLINS: You did? 
+20080814133651.892|20080814133655.506|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133651.892|20080814133653.699|CCO|>> EVANS: So, we're fortunate enough that the cell 
+20080814133653.699|20080814133655.506|CCO|phones are on there. 
+20080814133655.506|20080814133659.120|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133655.506|20080814133657.313|CCO|>> COLLINS: Well, that's terrific. What did she have to tell you? 
+20080814133659.120|20080814133702.734|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133659.120|20080814133700.927|CCO|>> EVANS: She said -- daddy, I  want to come 
+20080814133700.927|20080814133702.734|CCO|home. 
+20080814133702.734|20080814133709.962|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133702.734|20080814133704.541|CCO|>> COLLINS: What is the situation? 
+20080814133704.541|20080814133706.348|CCO|I  imagine that you're able to speak 
+20080814133706.348|20080814133708.155|CCO|with -- I  believe it's your wife's 
+20080814133708.155|20080814133709.962|CCO|parents, is that correct? 
+20080814133709.962|20080814133742.488|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133709.962|20080814133711.769|CCO|>> EVANS: Yes. My 
+20080814133711.769|20080814133713.576|CCO|in-laws. They 
+20080814133713.576|20080814133715.383|CCO|have spent every summer there, 
+20080814133715.383|20080814133717.190|CCO|never a problem. 
+20080814133717.190|20080814133718.997|CCO|So, it's very rural. 
+20080814133718.997|20080814133720.804|CCO|It looks like Amish Country, Pennsylvania. 
+20080814133722.611|20080814133724.418|CCO|And my daughter says to me -- daddy, 
+20080814133724.418|20080814133726.225|CCO|grandma and grandpa want to 
+20080814133726.225|20080814133728.032|CCO|take us to the airport. 
+20080814133728.032|20080814133729.839|CCO|We got turned around by Russian troops 
+20080814133729.839|20080814133731.646|CCO|in Gori. 
+20080814133731.646|20080814133733.453|CCO|So, she was crying. 
+20080814133733.453|20080814133735.260|CCO|She's 7-years-old. She knows what's goes 
+20080814133735.260|20080814133737.067|CCO|on. 
+20080814133737.067|20080814133738.874|CCO|Her baby sister is there, my other 
+20080814133738.874|20080814133740.681|CCO|daughter, Sophia, and it's 
+20080814133740.681|20080814133742.488|CCO|been brutal, really. 
+20080814133742.488|20080814133744.295|CCO|It's crushing. 
+20080814133742.488|20080814133802.365|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133742.488|20080814133744.295|CCO|>> COLLINS: Well, I 
+20080814133744.295|20080814133746.102|CCO| can only imagine the constant 
+20080814133746.102|20080814133747.909|CCO|worry you must have. 
+20080814133747.909|20080814133749.716|CCO|And I  can see it on your face. 
+20080814133749.716|20080814133751.523|CCO|When your 7-year-old, Ashley, told 
+20080814133751.523|20080814133753.330|CCO|you that they were turned around 
+20080814133753.330|20080814133755.137|CCO|by Russian troops, I  
+20080814133755.137|20080814133756.944|CCO|mean, you know, clearly, that's got 
+20080814133756.944|20080814133758.751|CCO|to be a very scary situation. 
+20080814133800.558|20080814133802.365|CCO|How did she describe it to you? 
+20080814133802.365|20080814133820.435|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133802.365|20080814133804.172|CCO|>> EVANS: Yes. That 
+20080814133804.172|20080814133805.979|CCO|was in Gori, about two hours 
+20080814133805.979|20080814133807.786|CCO|out from where they were. 
+20080814133807.786|20080814133809.593|CCO|It takes four hours to drive to Tbilisi 
+20080814133809.593|20080814133811.400|CCO|to get to the embassy to 
+20080814133811.400|20080814133813.207|CCO|make the bus convoy out to Armenia. And I 
+20080814133813.207|20080814133815.014|CCO| just thank God they're still alive 
+20080814133815.014|20080814133816.821|CCO|and didn't get sprayed. 
+20080814133816.821|20080814133818.628|CCO|They're spraying heat like the place 
+20080814133818.628|20080814133820.435|CCO|is on fire. 
+20080814133820.435|20080814133822.242|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133820.435|20080814133822.242|CCO|>> COLLINS: So they were trying to get to 
+20080814133822.242|20080814133824.049|CCO|the embassy, correct? 
+20080814133822.242|20080814133831.277|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133822.242|20080814133824.049|CCO|>> EVANS: Yes, that's 
+20080814133824.049|20080814133825.856|CCO|correct. 
+20080814133825.856|20080814133827.663|CCO|But the East-West highway is blockaded by 
+20080814133827.663|20080814133829.470|CCO|Russian troops in Gori. 
+20080814133831.277|20080814133842.119|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133831.277|20080814133833.084|CCO|>> COLLINS: Right. We had heard that from the president yesterday when he came out and spoke from the Rose Garden. That was one of the things that he had mentioned from his intelligence reports. So 
+20080814133833.084|20080814133834.891|CCO|that is the same thing that you're 
+20080814133834.891|20080814133836.698|CCO|hearing. 
+20080814133836.698|20080814133838.505|CCO|What's the latest now? 
+20080814133838.505|20080814133840.312|CCO|Where are they? And are they going 
+20080814133840.312|20080814133842.119|CCO|to be able to get home? 
+20080814133842.119|20080814133916.452|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133842.119|20080814133843.926|CCO|>> EVANS: I  need big help. 
+20080814133843.926|20080814133845.733|CCO|I  sent my brother-in-law over there 
+20080814133845.733|20080814133847.540|CCO|on British Airways via Armenia. 
+20080814133847.540|20080814133849.347|CCO|He made it to the border. And I  
+20080814133849.347|20080814133851.154|CCO|want to thank CNN  because their news 
+20080814133851.154|20080814133852.961|CCO|crew gave him a courtesy ride 
+20080814133852.961|20080814133854.768|CCO|into the city of Tbilisi. 
+20080814133854.768|20080814133856.575|CCO|He's made contact with the embassy 
+20080814133856.575|20080814133858.382|CCO|and I  have Congressman Chris 
+20080814133858.382|20080814133900.189|CCO|Smith helping me on logistics. 
+20080814133901.996|20080814133903.803|CCO|He's made good calls for me that 
+20080814133903.803|20080814133905.610|CCO|I  just couldn't have made. 
+20080814133905.610|20080814133907.417|CCO|He's gotten in touch with the ambassador. 
+20080814133909.224|20080814133911.031|CCO|He's gotten in touch with Condoleezza 
+20080814133911.031|20080814133912.838|CCO|Rice's team and she's 
+20080814133912.838|20080814133914.645|CCO|touching down there. 
+20080814133914.645|20080814133916.452|CCO|I  need help. 
+20080814133916.452|20080814133921.873|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133916.452|20080814133918.259|CCO|>> COLLINS: Yes. She 
+20080814133918.259|20080814133920.066|CCO|is definitely going to be in 
+20080814133920.066|20080814133921.873|CCO|the region. 
+20080814133921.873|20080814133923.680|CCO|(CROSSTALK)
+20080814133921.873|20080814133927.294|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133921.873|20080814133923.680|CCO|>> EVANS: These are our American girls. 
+20080814133923.680|20080814133925.487|CCO|They've got to come home. 
+20080814133925.487|20080814133927.294|CCO|We -- they are babies. 
+20080814133927.294|20080814133929.101|CCO|(CROSSTALK)
+20080814133927.294|20080814133930.908|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133927.294|20080814133929.101|CCO|>> EVANS: We've got to get them home. 
+20080814133929.101|20080814133930.908|CCO|Thank you for helping me. 
+20080814133930.908|20080814133948.978|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814133930.908|20080814133932.715|CCO|>> COLLINS: Well, we're looking at pictures of them 
+20080814133932.715|20080814133934.522|CCO|right now, Joe, and we are certainly 
+20080814133934.522|20080814133936.329|CCO|interested in your story. 
+20080814133938.136|20080814133939.943|CCO|I  imagine you aren't the only one. 
+20080814133941.750|20080814133943.557|CCO|Have you talked with other people 
+20080814133943.557|20080814133945.364|CCO|who have relatives that are 
+20080814133945.364|20080814133947.171|CCO|there and are trying to get back 
+20080814133947.171|20080814133948.978|CCO|to the United States? 
+20080814133948.978|20080814134014.276|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814133948.978|20080814133950.785|CCO|>> EVANS: Yes. Well, 
+20080814133950.785|20080814133952.592|CCO|I  know some of my wife's cousins 
+20080814133952.592|20080814133954.399|CCO|are here and they have relatives 
+20080814133954.399|20080814133956.206|CCO|back at home in Tbilisi, and 
+20080814133956.206|20080814133958.013|CCO|everything is dysfunctional. 
+20080814133959.820|20080814134001.627|CCO|It's mass hysteria, social breakdown, 
+20080814134001.627|20080814134003.434|CCO|social disorder. 
+20080814134003.434|20080814134005.241|CCO|It's absolutely chaos. 
+20080814134005.241|20080814134007.048|CCO|Their families are suffering. 
+20080814134007.048|20080814134008.855|CCO|They have a hard life to live as 
+20080814134008.855|20080814134010.662|CCO|it is. 
+20080814134010.662|20080814134012.469|CCO|They really don't need this right 
+20080814134012.469|20080814134014.276|CCO|now. 
+20080814134014.276|20080814134030.539|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814134014.276|20080814134016.083|CCO|>> COLLINS: Well, we certainly appreciate 
+20080814134016.083|20080814134017.890|CCO|your story and you talking to us 
+20080814134017.890|20080814134019.697|CCO|at a time when I  know things are 
+20080814134019.697|20080814134021.504|CCO|really difficult for you and your family. 
+20080814134023.311|20080814134025.118|CCO|Will you let us know how it turns 
+20080814134025.118|20080814134026.925|CCO|out? 
+20080814134026.925|20080814134028.732|CCO|We would like to talk with you once 
+20080814134028.732|20080814134030.539|CCO|they get back home, Joe. 
+20080814134030.539|20080814134030.539|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814134030.539|20080814134032.346|CCO|>> EVANS: Yes. Well -- 
+20080814134030.539|20080814134030.539|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814134030.539|20080814134032.346|CCO|>> COLLINS: To make sure that everything is OK.  
+20080814134030.539|20080814134032.346|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814134030.539|20080814134032.346|CCO|>> EVANS: Of course. 
+20080814134032.346|20080814134035.960|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814134032.346|20080814134034.153|CCO|>> COLLINS: All right, Joe Evans, we sure do appreciate 
+20080814134034.153|20080814134035.960|CCO|it. 
+20080814134035.960|20080814134038.034|CCO|Thank you. 
+20080814134035.960|20080814134038.034|NER_01|Person=Joe Evans|Role=YOUNG DAUGHTER STRANDED IN GEORGIA
+20080814134035.960|20080814134038.034|CCO|>> EVANS: Thank you. 
+20080814134038.034|20080814134051.815|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814134038.034|20080814134040.002|CCO|>> HARRIS: Boy, you're right. 
+20080814134040.002|20080814134041.971|CCO|You can see the stress and strain 
+20080814134041.971|20080814134043.940|CCO|all over his face there. 
+20080814134043.940|20080814134045.908|CCO|On top, 
+20080814134045.908|20080814134047.877|CCO|but under age. China won the women's 
+20080814134047.877|20080814134049.846|CCO|team gymnastics competition, 
+20080814134049.846|20080814134051.815|CCO|but were all the women old enough?   
+20080814134051.815|20080814134339.182|SEG|Type=Commercial
+20080814134051.815|20080814134100.588|CCO|AND YOU COULD DRIVE 
+20080814134100.588|20080814134109.362|CCO|ALL OVER TO GET FOOD, 
+20080814134109.362|20080814134118.135|CCO|DECORATIONS AND 
+20080814134118.135|20080814134126.909|CCO|A NEW OUTFIT. 
+20080814134126.909|20080814134135.683|CCO|OR YOU COULD GET THEM ALL 
+20080814134135.683|20080814134144.456|CCO|IN ONE STOP-AT WALMART. 
+20080814134144.456|20080814134153.230|CCO|SAVING MONEY, 
+20080814134153.230|20080814134202.004|CCO|TIME AND GAS? 
+20080814134202.004|20080814134210.777|CCO|NOW THAT'S SOMETHING 
+20080814134210.777|20080814134219.551|CCO|TO CELEBRATE. 
+20080814134219.551|20080814134228.324|CCO|SAVE MONEY. 
+20080814134228.324|20080814134237.098|CCO|LIVE BETTER. 
+20080814134237.098|20080814134245.872|CCO|WALMART. 
+20080814134245.872|20080814134254.645|CCO|THERE'S NO WAY TO HIDE IT. 
+20080814134254.645|20080814134303.419|CCO|SIR, HAVE YOU BEEN 
+20080814134303.419|20080814134312.193|CCO|DRINKING TONIGHT? 
+20080814134312.193|20080814134320.966|CCO|IF YOU RIDE DRUNK, 
+20080814134320.966|20080814134329.740|CCO|YOU WILL GET CAUGHT... 
+20080814134329.740|20080814134339.182|CCO|AND YOU WILL GET ARRESTED. 
+20080814134339.182|20080814134445.377|SEG|Type=Story
+20080814134339.182|20080814134405.660|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814134339.182|20080814134341.388|CCO|>>> HARRIS: The U.S.  and China in a tight 
+20080814134341.388|20080814134343.595|CCO|race for overall medal count. 
+20080814134345.801|20080814134348.008|CCO|But the Chinese are taking a big 
+20080814134348.008|20080814134350.214|CCO|lead in gold. 
+20080814134350.214|20080814134352.421|CCO|Our Larry Smith joining us live from 
+20080814134352.421|20080814134354.627|CCO|Beijing with the latest on the 
+20080814134354.627|20080814134356.834|CCO|summer games. 
+20080814134356.834|20080814134359.040|CCO|And Larry, are you kidding me here? 
+20080814134359.040|20080814134401.247|CCO|I  understand you got a pretty big 
+20080814134401.247|20080814134403.453|CCO|upset to share with everyone. 
+20080814134405.660|20080814134445.377|NER_01|Person=Larry Smith|Role=CNN CORRESPONDENT
+20080814134405.660|20080814134407.866|CCO|>> LARRY SMITH, CNN CORRESPONDENT: You know what, tennis fans are going to be pretty shocked. 
+20080814134410.073|20080814134412.279|CCO|The question now is Roger Federer, after such a phenomenal 
+20080814134412.279|20080814134414.486|CCO|run, he was almost untouchable 
+20080814134414.486|20080814134416.692|CCO|for so many years. 
+20080814134416.692|20080814134418.899|CCO|Could he possibly be on the decline? 
+20080814134421.105|20080814134423.312|CCO|That was the question right now. 
+20080814134423.312|20080814134425.518|CCO|If he did not win the gold medal here and he will not. American James Blake, just a few moments 
+20080814134425.518|20080814134427.725|CCO|ago, upsetting the top seed 
+20080814134427.725|20080814134429.931|CCO|in straight sets. 
+20080814134429.931|20080814134432.138|CCO|And so Blake was on to the semi-finals, Federer going 
+20080814134432.138|20080814134434.344|CCO|home. 
+20080814134434.344|20080814134436.551|CCO|And now the question is for the Swiss, 
+20080814134436.551|20080814134438.757|CCO|where does his career go from 
+20080814134438.757|20080814134440.964|CCO|here as we approach the U.S.  
+20080814134440.964|20080814134443.170|CCO|open here in New York in a couple 
+20080814134443.170|20080814134445.377|CCO|of weeks? 
+20080814134445.377|20080814134520.681|SEG|Type=Story
+20080814134445.377|20080814134447.584|CCO|Now, >>> aside from that, the big buzz today 
+20080814134447.584|20080814134449.790|CCO|on the sixth day of competition has been the Chinese and their 
+20080814134449.790|20080814134451.997|CCO|incredible haul in the gold 
+20080814134451.997|20080814134454.203|CCO|medal chase. 
+20080814134454.203|20080814134456.410|CCO|Now, 22  golds, that is more than halfway 
+20080814134456.410|20080814134458.616|CCO|towards their projected goal 
+20080814134458.616|20080814134500.823|CCO|of 40  that they had set before these games. And again, that's 
+20080814134500.823|20080814134503.029|CCO|the big talk here as we wrap 
+20080814134503.029|20080814134505.236|CCO|up the Thursday in Beijing. 
+20080814134507.442|20080814134520.681|CLIP|Type=Video
+20080814134507.442|20080814134520.681|NER_01|Person=Larry Smith|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814134507.442|20080814134509.649|CCO|>> SMITH: Still perfect on the beach, American beach volleyball Misty 
+20080814134509.649|20080814134511.855|CCO|May-Treanor and Kerry Walsh 
+20080814134511.855|20080814134514.062|CCO|defeated Norway in straight sets to advanced to Friday's medal 
+20080814134514.062|20080814134516.268|CCO|round with a 3-0  record. 
+20080814134516.268|20080814134518.475|CCO|The victory extends their winning streak to 104  
+20080814134518.475|20080814134520.681|CCO|straight matches. 
+20080814134520.681|20080814134644.529|SEG|Type=Story
+20080814134520.681|20080814134522.888|CCO|>>> In the Olympic pool, the focus 
+20080814134522.888|20080814134525.094|CCO|for a change was not on Michael Phelps. 
+20080814134525.094|20080814134527.301|CCO|Alain Bernard of France won the 100-meter freestyle beating out Australia's Eamon Sullivan who'd set the world record in a semi- final heat. American Jason Lezak tied for 
+20080814134527.301|20080814134529.507|CCO|the bronze. 
+20080814134529.507|20080814134531.714|CCO|Bernard's victory was revenge of sort after Lezak came from way behind to edge the Frenchman on the thrilling anchor leg of the 400-meter freestyle relay. The U.S.  women failed to win gold 
+20080814134531.714|20080814134533.920|CCO|in the 800-meter freestyle relay for the 
+20080814134533.920|20080814134536.127|CCO|first time since the event began in 1996.  
+20080814134536.127|20080814134538.333|CCO|They 
+20080814134538.333|20080814134540.540|CCO|took the bronze medal. 
+20080814134540.540|20080814134542.746|CCO|The Australian team won gold and 
+20080814134542.746|20080814134544.953|CCO|the Chinese took the silver. 
+20080814134544.953|20080814134547.159|CCO|And a dramatic turn of events in 
+20080814134547.159|20080814134549.366|CCO|the women's 100-meter freestyle semis. 
+20080814134549.366|20080814134551.573|CCO|The world record holder Australia's Libby Trickett would not have qualified for the finals but she got in when a Chinese 
+20080814134551.573|20080814134553.779|CCO|swimmer who had won her semi-final hit was disqualified 
+20080814134553.779|20080814134555.986|CCO|for a false start. 
+20080814134555.986|20080814134609.225|NER_01|Person=Larry Smith|Role=CNN CORRESPONDENT
+20080814134555.986|20080814134558.192|CCO|>> SMITH: As for Michael Phelps, there's a couple of preliminary races on this day. He returns to the pool Friday morning, Beijing Time, looking for his sixth gold medal in the men's 200  individual meddling. And in men's basketball, it is almost 
+20080814134558.192|20080814134600.399|CCO|over. 
+20080814134600.399|20080814134602.605|CCO|The final seconds, USA  leading Greece, 
+20080814134602.605|20080814134604.812|CCO|92-69. 
+20080814134604.812|20080814134607.018|CCO| We'll have more on the redeemed team 
+20080814134607.018|20080814134609.225|CCO|next hour here on CNN. 
+20080814134609.225|20080814134624.670|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814134609.225|20080814134611.431|CCO|>> HARRIS: Yes. And Larry, just very quickly here, back to the 
+20080814134611.431|20080814134613.638|CCO|James Blake story. Great for 
+20080814134613.638|20080814134615.844|CCO|U.S.  tennis and great for you as medal hopes in Tennis. 
+20080814134615.844|20080814134618.051|CCO|(INAUDIBLE),  the number one. See, I  don't believe James Blake has ever 
+20080814134618.051|20080814134620.257|CCO|beaten a Roger Federer before. 
+20080814134622.464|20080814134624.670|CCO|And to beat him in straight sets, this 
+20080814134624.670|20080814134626.877|CCO|is a pretty terrific result. 
+20080814134624.670|20080814134640.116|NER_01|Person=Larry Smith|Role=CNN CORRESPONDENT
+20080814134624.670|20080814134626.877|CCO|>> SMITH: Yes. You know, I 
+20080814134626.877|20080814134629.083|CCO| haven't had time to look up 
+20080814134629.083|20080814134631.290|CCO|to see what their history. 
+20080814134631.290|20080814134633.496|CCO|But I  think you're right. 
+20080814134633.496|20080814134635.703|CCO|I  don't think he has beat him before. And now, Roger has got some questions 
+20080814134635.703|20080814134637.909|CCO|now he has got to answer within himself. 
+20080814134640.116|20080814134644.529|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814134640.116|20080814134642.322|CCO|>> HARRIS: Terrific. All right, Larry Smith, Beijing for us. Good 
+20080814134644.529|20080814134646.936|CCO|to see you, Larry. Thanks. 
+20080814134644.529|20080814134900.192|SEG|Type=Story
+20080814134644.529|20080814134656.880|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814134644.529|20080814134646.936|CCO|>>> COLLINS: 
+20080814134646.936|20080814134648.924|CCO|China's gold in the women's team 
+20080814134648.924|20080814134650.913|CCO|gymnastics tarnished in the 
+20080814134650.913|20080814134652.902|CCO|eyes of some critics. 
+20080814134652.902|20080814134654.891|CCO|They're questioning the age of three 
+20080814134654.891|20080814134656.880|CCO|team members. 
+20080814134656.880|20080814134658.869|CCO|Take a look at this now from CNN's Randi Kaye. 
+20080814134656.880|20080814134900.192|CLIP|Type=Video
+20080814134656.880|20080814134752.569|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814134656.880|20080814134658.869|CCO|>> RANDI KAYE, CNN CORRESPONDENT: How 
+20080814134658.869|20080814134700.858|CCO|old does this girl look to 
+20080814134700.858|20080814134702.847|CCO|you? 
+20080814134702.847|20080814134704.836|CCO|The Chinese gymnastics coach says 
+20080814134704.836|20080814134706.825|CCO|Ha Ku Shin 
+20080814134704.836|20080814134706.825|CCO|(ph)
+20080814134704.836|20080814134706.825|CCO|is 16,  the required age to 
+20080814134706.825|20080814134708.813|CCO|compete in the Beijing Olympics. 
+20080814134710.802|20080814134712.791|CCO|But is she really? 
+20080814134712.791|20080814134714.780|CCO|A  recent investigation by the "New 
+20080814134714.780|20080814134716.769|CCO|York Times" suggests half the 
+20080814134716.769|20080814134718.758|CCO|Chinese team, three out of six, 
+20080814134718.758|20080814134720.747|CCO|could be under age. 
+20080814134720.747|20080814134722.736|CCO|These are the girls raising eyebrows. 
+20080814134724.725|20080814134726.714|CCO|According to their passports, they 
+20080814134726.714|20080814134728.703|CCO|are all 16. 
+20080814134728.703|20080814134730.691|CCO| But the "Times" reports, a 2006  
+20080814134730.691|20080814134732.680|CCO|biography on Ha listed her birthday 
+20080814134732.680|20080814134734.669|CCO|at January 1st, 1994,  
+20080814134734.669|20080814134736.658|CCO|which would make her 14,  not 16. 
+20080814134736.658|20080814134738.647|CCO| This girl was listed as 14  in a local 
+20080814134738.647|20080814134740.636|CCO|competition in China recently, 
+20080814134740.636|20080814134742.625|CCO|and a Web site in China 
+20080814134742.625|20080814134744.614|CCO|says this member of the team is 15.  
+20080814134744.614|20080814134746.603|CCO|Amanda Borden 
+20080814134746.603|20080814134748.592|CCO|represented the 
+20080814134748.592|20080814134750.580|CCO|U.S.  in the 1996  Olympics in 
+20080814134750.580|20080814134752.569|CCO|Atlanta. 
+20080814134752.569|20080814134802.514|NER_01|Person=Amanda Borden|Role=FORMER OLYMPIC GYMNAST
+20080814134752.569|20080814134754.558|CCO|>> AMANDA BORDEN, FORMER OLYMPIC GYMNAST: Are they 16? 
+20080814134754.558|20080814134756.547|CCO| I'm not sure we'll ever know the 
+20080814134756.547|20080814134758.536|CCO|exact age of those girls. 
+20080814134758.536|20080814134800.525|CCO|They do look like they are far from 
+20080814134800.525|20080814134802.514|CCO|being 16. 
+20080814134802.514|20080814134812.458|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814134802.514|20080814134804.503|CCO|>> KAYE: Borden says there are definitely advantages to 
+20080814134804.503|20080814134806.492|CCO|competing at a younger 
+20080814134806.492|20080814134808.481|CCO|age. 
+20080814134808.481|20080814134810.470|CCO|Gymnasts are smaller, more flexible. 
+20080814134812.458|20080814134816.436|NER_01|Person=Amanda Borden|Role=FORMER OLYMPIC GYMNAST
+20080814134812.458|20080814134814.447|CCO|>> BORDEN: We tend to be a lot better and at our 
+20080814134814.447|20080814134816.436|CCO|peak performances when we are 
+20080814134816.436|20080814134818.425|CCO|younger, before we go through maturity. 
+20080814134816.436|20080814134844.281|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814134816.436|20080814134818.425|CCO|>> KAYE: This 
+20080814134818.425|20080814134820.414|CCO|Chinese gymnast knows that 
+20080814134820.414|20080814134822.403|CCO|is true. 
+20080814134822.403|20080814134824.392|CCO|In this documentary now on YouTube, 
+20080814134824.392|20080814134826.381|CCO|she admits she was too young 
+20080814134826.381|20080814134828.370|CCO|to compete at the 2000  
+20080814134828.370|20080814134830.359|CCO|Sydney Olympics where she won a bronze 
+20080814134830.359|20080814134832.348|CCO|medal. 
+20080814134832.348|20080814134834.336|CCO|She says she was just 14.  Debbie Johnson has been coaching 
+20080814134834.336|20080814134836.325|CCO|gymnastics for 30  years. 
+20080814134836.325|20080814134838.314|CCO|She says the girls don't look sixteen either. One of these girls was 68  
+20080814134838.314|20080814134840.303|CCO|pounds. 
+20080814134840.303|20080814134842.292|CCO|Do you know of any 16  
+20080814134842.292|20080814134844.281|CCO|year olds that are 68  pounds? 
+20080814134844.281|20080814134846.270|NER_01|Person=Debbie Johnson|Role=COACH
+20080814134844.281|20080814134846.270|CCO|>> DEBBIE JOHNSON, COACH: No, I  don't. I  don't. 
+20080814134846.270|20080814134848.259|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814134846.270|20080814134848.259|CCO|>> KAYE: What's the average height and 
+20080814134848.259|20080814134850.248|CCO|weight of a 16-year-old gymnast that you see here at your gym? 
+20080814134848.259|20080814134900.192|NER_01|Person=Debbie Johnson|Role=COACH
+20080814134848.259|20080814134850.248|CCO|>> JOHNSON: At 
+20080814134850.248|20080814134852.237|CCO|my gym, they are much bigger. 
+20080814134854.225|20080814134856.214|CCO|They average maybe 100  pounds, 110  
+20080814134856.214|20080814134858.203|CCO|pounds, 5'2", 5'3", 5'4",  in 
+20080814134858.203|20080814134900.192|CCO|that range. 
+20080814134900.192|20080814135026.689|SEG|Type=Story
+20080814134900.192|20080814134902.181|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814134900.192|20080814134902.181|CCO|>>> KAYE: A  Chinese gymnastics official reportedly suggested sports writers in China got 
+20080814134902.181|20080814134904.170|CCO|the ages wrong, insisting their passports are valid. 
+20080814134902.181|20080814134918.092|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=On-Camera
+20080814134902.181|20080814134904.170|CCO|>> KAYE: The 
+20080814134906.159|20080814134908.148|CCO|Chinese teams average size is 4'9", 77  
+20080814134908.148|20080814134910.137|CCO|pounds. The gymnasts 
+20080814134910.137|20080814134912.126|CCO|from the U.S.  are about 
+20080814134912.126|20080814134914.115|CCO|3.5  inches taller and 30  pounds heavier. Only 
+20080814134914.115|20080814134916.103|CCO|one American, Shawn Johnson, 
+20080814134916.103|20080814134918.092|CCO|stands shorter than five feet and weighs under 100  
+20080814134918.092|20080814134920.081|CCO|pounds. 
+20080814134918.092|20080814134947.926|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT|Type=Voice-Over
+20080814134918.092|20080814134920.081|CCO|>> KAYE: A 
+20080814134920.081|20080814134922.070|CCO| spokeswoman for the International 
+20080814134922.070|20080814134924.059|CCO|Olympics Committee 
+20080814134924.059|20080814134926.048|CCO|told the "Times," we feel comfortable 
+20080814134926.048|20080814134928.037|CCO|having heard feedback 
+20080814134928.037|20080814134930.026|CCO|from people directly 
+20080814134930.026|20080814134932.015|CCO|involved with the athletes, 
+20080814134932.015|20080814134934.004|CCO|but that is not how legendary gymnastics coach Bela Karolyi 
+20080814134934.004|20080814134935.993|CCO|sees it. 
+20080814134935.993|20080814134937.981|CCO|The one who once coach Nadia Comaneci and Mary Lou Retton told the Associated Press, these 
+20080814134937.981|20080814134939.970|CCO|people think we are stupid. 
+20080814134941.959|20080814134943.948|CCO|And during NBC's coverage of the 
+20080814134943.948|20080814134945.937|CCO|games Tuesday night, Karolyi continued. 
+20080814134947.926|20080814134959.859|NER_01|Person=Bela Karolyi|Role=COACH
+20080814134947.926|20080814134949.915|CCO|>> BELA KAROLYI, COACH: There was documented evidence that half of the Chinese team is underage. But they 
+20080814134951.904|20080814134953.893|CCO|think it is over. 
+20080814134953.893|20080814134955.882|CCO|Nobody could really prove, because they have 
+20080814134955.882|20080814134957.870|CCO|their passports given by the 
+20080814134957.870|20080814134959.859|CCO|government. 
+20080814134959.859|20080814135009.804|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814134959.859|20080814135001.848|CCO|>> KAYE: Former Olympian, Amanda Borden 
+20080814135001.848|20080814135003.837|CCO|suggests if the U.S.  
+20080814135003.837|20080814135005.826|CCO|team had done better in the finals, 
+20080814135005.826|20080814135007.815|CCO|the focus would still be 
+20080814135007.815|20080814135009.804|CCO|on the games, not the girls. 
+20080814135009.804|20080814135015.771|NER_01|Person=Amanda Borden|Role=FORMER OLYMPIC GYMNAST
+20080814135009.804|20080814135011.793|CCO|>> BORDEN: I  think had U.S.  won the women's 
+20080814135011.793|20080814135013.782|CCO|team, none of these issues 
+20080814135013.782|20080814135015.771|CCO|would have come up. 
+20080814135015.771|20080814135020.116|NER_01|Person=Randi Kaye|Role=CNN CORRESPONDENT
+20080814135015.771|20080814135017.760|CCO|>> KAYE: The competition may be over, but 
+20080814135017.760|20080814135020.116|CCO|the fight continues. 
+20080814135020.116|20080814135026.689|CCO|Randi Kaye, CNN,  Orlando. 
+20080814135020.116|20080814135020.116|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814135020.116|20080814135026.689|CCO|>> COLLINS: The Chinese state run news agency has commented, quote, "Before the Beijing Olympic games, there were already foreign media writing articles on the age of China's female gymnastic team." The team reacted quickly and have clarified with abundant evidence that all the girls of the team were born before December 31st of 1992.  
+20080814135020.116|20080814135020.116|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814135020.116|20080814135026.689|CCO|>> HARRIS: Busted at the Olympics for doing his job. 
+20080814135020.116|20080814135026.689|CLIP|Type=Video
+20080814135020.116|20080814135020.116|NER_01|Person=UNIDENTIFIED MALE
+20080814135020.116|20080814135026.689|CCO|>> UNIDENTIFIED MALE: And this is the moment I  encountered the Chinese response. 
+20080814135020.116|20080814135026.689|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814135020.116|20080814135026.689|CCO|>> HARRIS: Wow, a 
+20080814135026.689|20080814135033.262|CCO|reporter arrested covering a protest.   
+20080814135026.689|20080814135319.261|SEG|Type=Commercial
+20080814135026.689|20080814135033.262|CCO|PROTEST 
+20080814135033.262|20080814135038.795|CCO|THE 
+20080814135038.795|20080814135044.328|CCO|SURANCE CARD TOO. 
+20080814135044.328|20080814135049.861|CCO|ONE SIMPLE 
+20080814135049.861|20080814135055.395|CCO|CALL... 
+20080814135055.395|20080814135100.928|CCO|GAVE ME THE 
+20080814135100.928|20080814135106.461|CCO|CHANCE TO TALK... 
+20080814135106.461|20080814135111.995|CCO|WITH A PERSONAL 
+20080814135111.995|20080814135117.528|CCO|HEALTH INSURANCE ADVISOR... 
+20080814135117.528|20080814135123.061|CCO|WHO ANSWERED 
+20080814135123.061|20080814135128.595|CCO|ALL MY QUESTIONS... 
+20080814135128.595|20080814135134.128|CCO|ABOUT MEDICARE 
+20080814135134.128|20080814135139.661|CCO|SUPPLEMENT PLANS. 
+20080814135139.661|20080814135145.194|CCO|. 
+20080814135145.194|20080814135150.728|CCO|WHEN THEY TOLD ME THESE PLANS 
+20080814135150.728|20080814135156.261|CCO|WERE ENDORSED BY AARP... 
+20080814135156.261|20080814135201.794|CCO|I HAD ONLY ONE 
+20080814135201.794|20080814135207.328|CCO|THING TO SAY... 
+20080814135207.328|20080814135212.861|CCO|SIGN ME UP. 
+20080814135212.861|20080814135218.394|CCO|CALL NOW -- 
+20080814135218.394|20080814135223.928|CCO|1-800-232-7773/TTY 
+20080814135223.928|20080814135229.461|CCO|AND LET US HELP YOU 
+20080814135229.461|20080814135234.994|CCO|CHOOSE THE RIGHT PLAN. 
+20080814135234.994|20080814135240.527|CCO|SO CALL NOW, 
+20080814135240.527|20080814135246.061|CCO|1-800-232-7773/TTY 
+20080814135246.061|20080814135251.594|CCO|AND FIND 
+20080814135251.594|20080814135257.127|CCO|OUT ABOUT... 
+20080814135257.127|20080814135302.661|CCO|AN AARP MEDICARE SUPPLEMENT 
+20080814135302.661|20080814135308.194|CCO|INSURANCE PLAN. 
+20080814135308.194|20080814135313.727|CCO|A PERSONAL HEALTH INSURANCE 
+20080814135313.727|20080814135319.261|CCO|ADVISOR IS WAITING FOR YOUR CALL 
+20080814135319.261|20080814135532.795|SEG|Type=Story
+20080814135319.261|20080814135329.919|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814135319.261|20080814135321.037|CCO|>>> HARRIS: Age. 
+20080814135321.037|20080814135322.813|CCO|Try to hide it and your hair will 
+20080814135322.813|20080814135324.590|CCO|give you away. 
+20080814135324.590|20080814135326.366|CCO|Medical correspondent Judy Fortin 
+20080814135326.366|20080814135328.143|CCO|looks at why silky locks take 
+20080814135328.143|20080814135329.919|CCO|a rough turn in your 30s, 40s 
+20080814135329.919|20080814135331.696|CCO|and 50s. 
+20080814135329.919|20080814135532.795|CLIP|Type=Video
+20080814135329.919|20080814135342.354|NER_01|Person=Judy Fortin|Role=CNN MEDICAL CORRESPONDENT|Type=Voice-Over
+20080814135329.919|20080814135331.696|CCO|>> JUDY FORTIN, CNN MEDICAL CORRESPONDENT: We 
+20080814135331.696|20080814135333.472|CCO|can spend a lot of 
+20080814135333.472|20080814135335.248|CCO|time and money on our hair. 
+20080814135335.248|20080814135337.025|CCO|There are entire magazines devoted 
+20080814135337.025|20080814135338.801|CCO|to just that perfect style. 
+20080814135340.578|20080814135342.354|CCO|But as we get older, our locks start 
+20080814135342.354|20080814135344.131|CCO|to look different. 
+20080814135342.354|20080814135351.236|NER_01|Person=Dr. Lynn Mckinley-grant|Role=WASHINGTON HOSPITAL CENTER
+20080814135342.354|20080814135344.131|CCO|>> DR. LYNN MCKINLEY-GRANT, WASHINGTON HOSPITAL CENTER: Hair 
+20080814135344.131|20080814135345.907|CCO|reflects a lot of -- reflects your heredity, 
+20080814135345.907|20080814135347.684|CCO|reflects your health. 
+20080814135347.684|20080814135349.460|CCO|It reflects what you do externally 
+20080814135349.460|20080814135351.236|CCO|to your hair in terms 
+20080814135351.236|20080814135353.013|CCO|of maintaining it. 
+20080814135351.236|20080814135354.789|NER_01|Person=UNIDENTIFIED FEMALE
+20080814135351.236|20080814135353.013|CCO|>> UNIDENTIFIED FEMALE: I  
+20080814135353.013|20080814135354.789|CCO|like it getting a little bit longer. 
+20080814135354.789|20080814135403.672|NER_01|Person=Judy Fortin|Role=CNN MEDICAL CORRESPONDENT
+20080814135354.789|20080814135356.566|CCO|>> FORTIN: Tara Burroughs 
+20080814135356.566|20080814135358.342|CCO|is the artistic 
+20080814135358.342|20080814135400.119|CCO|director at Crimpers Hair Salon in Atlanta. 
+20080814135401.895|20080814135403.672|CCO|She sees all kinds of damaged hair from frizziness 
+20080814135403.672|20080814135405.448|CCO|to split ends. 
+20080814135403.672|20080814135423.212|NER_01|Person=Tara Burroughs|Role=CRIMPERS - ATLANTA, GEORGIA
+20080814135403.672|20080814135405.448|CCO|>> TARA BURROUGHS, CRIMPERS - ATLANTA, GEORGIA: The 
+20080814135405.448|20080814135407.224|CCO|biggest thing that I  hear 
+20080814135407.224|20080814135409.001|CCO|is thinning and dullness in their color. 
+20080814135410.777|20080814135412.554|CCO|We tend to do a lot more shine treatments 
+20080814135412.554|20080814135414.330|CCO|as females get older because 
+20080814135414.330|20080814135416.107|CCO|that's the first thing -- I  
+20080814135416.107|20080814135417.883|CCO|hear that over and over again. They said, my 
+20080814135417.883|20080814135419.659|CCO|hair just isn't shiny like it 
+20080814135419.659|20080814135421.436|CCO|used to be. 
+20080814135421.436|20080814135423.212|CCO|It's lacking the shine. 
+20080814135423.212|20080814135433.871|NER_01|Person=Judy Fortin|Role=CNN MEDICAL CORRESPONDENT
+20080814135423.212|20080814135424.989|CCO|>> FORTIN: In our 30s, we might 
+20080814135424.989|20080814135426.765|CCO|begin to notice damage from 
+20080814135426.765|20080814135428.542|CCO|drying, dyeing, processing, 
+20080814135428.542|20080814135430.318|CCO|and perming. 
+20080814135430.318|20080814135432.095|CCO|Hair can become thinner, more brittle, 
+20080814135432.095|20080814135433.871|CCO|and diet has a big impact. 
+20080814135433.871|20080814135442.753|NER_01|Person=Dr. Lynn Mckinley-grant|Role=WASHINGTON HOSPITAL CENTER
+20080814135433.871|20080814135435.647|CCO|>> MCKINLEY-GRANT: You need a 
+20080814135435.647|20080814135437.424|CCO|certain amount of protein in 
+20080814135437.424|20080814135439.200|CCO|the hair. You do need water. 
+20080814135439.200|20080814135440.977|CCO|You need vitamins to grow a healthy 
+20080814135440.977|20080814135442.753|CCO|head of hair. 
+20080814135442.753|20080814135449.859|NER_01|Person=Judy Fortin|Role=CNN MEDICAL CORRESPONDENT
+20080814135442.753|20080814135444.530|CCO|>> FORTIN: In our 40s, you may 
+20080814135444.530|20080814135446.306|CCO|start seeing some gray. 
+20080814135446.306|20080814135448.083|CCO|That's because we begin to lose the 
+20080814135448.083|20080814135449.859|CCO|pigment in our hair called melanin. It 
+20080814135449.859|20080814135451.635|CCO|gives hair its color. 
+20080814135449.859|20080814135456.965|NER_01|Person=Dr. Lynn Mckinley-grant|Role=WASHINGTON HOSPITAL CENTER
+20080814135449.859|20080814135451.635|CCO|>> MCKINLEY-GRANT: There's 
+20080814135451.635|20080814135453.412|CCO|not a pill that will get 
+20080814135453.412|20080814135455.188|CCO|it back. 
+20080814135455.188|20080814135456.965|CCO|There are things in bottles that 
+20080814135456.965|20080814135458.741|CCO|will help. 
+20080814135456.965|20080814135530.717|NER_01|Person=Judy Fortin|Role=CNN MEDICAL CORRESPONDENT
+20080814135456.965|20080814135458.741|CCO|>> FORTIN: Some 
+20080814135458.741|20080814135500.518|CCO|people are prematurely 
+20080814135500.518|20080814135502.294|CCO|gray. 
+20080814135502.294|20080814135504.070|CCO|Doctors say it's heredity. 
+20080814135504.070|20080814135505.847|CCO|In our 40s and 50s, we may begin to 
+20080814135505.847|20080814135507.623|CCO|lose hair faster. More than 50  percent of 
+20080814135507.623|20080814135509.400|CCO|men over the age of 50  have hair loss. 
+20080814135509.400|20080814135511.176|CCO|As for women, once they reach menopause, 40  
+20080814135511.176|20080814135512.953|CCO|percent 
+20080814135512.953|20080814135514.729|CCO|will experience hair 
+20080814135514.729|20080814135516.506|CCO|loss. 
+20080814135516.506|20080814135518.282|CCO|Also, medication can affect the hair. 
+20080814135520.058|20080814135521.835|CCO|Some high blood pressure and cholesterol 
+20080814135521.835|20080814135523.611|CCO|medications can cause 
+20080814135523.611|20080814135525.388|CCO|hair to thin. 
+20080814135525.388|20080814135527.164|CCO|In some cases, you may be able to 
+20080814135527.164|20080814135528.941|CCO|talk with your doctor about possibly 
+20080814135528.941|20080814135530.717|CCO|changing treatments. 
+20080814135530.717|20080814135532.795|CCO|Judy Fortin, CNN,  Atlanta. 
+20080814135530.717|20080814135532.795|NER_01|Person=Heidi Collins|Role=CNN ANCHOR
+20080814135530.717|20080814135532.795|CCO|>> COLLINS: A  
+20080814135532.795|20080814135539.752|SEG|Type=Story
+20080814135532.795|20080814135535.114|CCO|>>> bear napping at the zoo. 
+20080814135535.114|20080814135537.433|CCO|And I  don't mean sleeping either. This 
+20080814135537.433|20080814135539.752|CCO|cub gets an unexpected ride already? His life 
+20080814135539.752|20080814135542.604|CCO|is a real circus.   
+20080814135539.752|20080814135809.751|SEG|Type=Commercial
+20080814135539.752|20080814135542.604|CCO|ALREADY? 
+20080814135542.604|20080814135546.370|CCO|OF HEART ATTACK 
+20080814135546.370|20080814135550.136|CCO|PREVENTION. 
+20080814135550.136|20080814135553.902|CCO|NOW THERE'S NEW BAYER 
+20080814135553.902|20080814135557.668|CCO|WITH HEART ADVANTAGE. 
+20080814135557.668|20080814135601.434|CCO|ASK YOUR DOCTOR ABOUT THE 
+20080814135601.434|20080814135605.201|CCO|ONLY LOW-DOSE ASPIRIN PRODUCT 
+20080814135605.201|20080814135608.967|CCO|THAT HELPS YOU LOWER THE 
+20080814135608.967|20080814135612.733|CCO|RISK OF HEART ATTACK 
+20080814135612.733|20080814135616.499|CCO|AND LOWERS 
+20080814135616.499|20080814135620.265|CCO|CHOLESTEROL. 
+20080814135620.265|20080814135624.031|CCO|BE SURE 
+20080814135624.031|20080814135627.798|CCO|TO TALK 
+20080814135627.798|20080814135631.564|CCO|TO YOUR 
+20080814135631.564|20080814135635.330|CCO|DOCTOR 
+20080814135635.330|20080814135639.096|CCO|BEFORE 
+20080814135639.096|20080814135642.862|CCO|YOU BEGIN 
+20080814135642.862|20080814135646.629|CCO|OR MODIFY 
+20080814135646.629|20080814135650.395|CCO|AN 
+20080814135650.395|20080814135654.161|CCO|ASPIRIN 
+20080814135654.161|20080814135657.927|CCO|REGIMEN. 
+20080814135657.927|20080814135701.693|CCO|THERE'S NO WAY TO HIDE IT. 
+20080814135701.693|20080814135705.459|CCO|SIR, HAVE YOU BEEN 
+20080814135705.459|20080814135709.226|CCO|DRINKING TONIGHT? 
+20080814135709.226|20080814135712.992|CCO|IF YOU RIDE DRUNK, 
+20080814135712.992|20080814135716.758|CCO|YOU WILL GET CAUGHT... 
+20080814135716.758|20080814135720.524|CCO|AND YOU WILL GET ARRESTED. 
+20080814135720.524|20080814135724.290|CCO|AND YOU COULD DRIVE 
+20080814135724.290|20080814135728.057|CCO|ALL OVER TO GET FOOD, 
+20080814135728.057|20080814135731.823|CCO|DECORATIONS AND 
+20080814135731.823|20080814135735.589|CCO|A NEW OUTFIT. 
+20080814135735.589|20080814135739.355|CCO|OR YOU COULD GET THEM ALL 
+20080814135739.355|20080814135743.121|CCO|IN ONE STOP-AT WALMART. 
+20080814135743.121|20080814135746.887|CCO|SAVING MONEY, 
+20080814135746.887|20080814135750.654|CCO|TIME AND GAS? 
+20080814135750.654|20080814135754.420|CCO|NOW THAT'S SOMETHING 
+20080814135754.420|20080814135758.186|CCO|TO CELEBRATE. 
+20080814135758.186|20080814135801.952|CCO|SAVE MONEY. 
+20080814135801.952|20080814135805.718|CCO|LIVE BETTER. 
+20080814135805.718|20080814135809.751|CCO|WALMART. 
+20080814135809.751|20080814145955.832|SEG|Type=Story
+20080814135809.751|20080814135822.761|NER_01|Person=Tony Harris|Role=CNN ANCHOR
+20080814135809.751|20080814135811.609|CCO|>>> HARRIS: The bear facts now. 
+20080814135811.609|20080814135813.468|CCO|Man swipes a cup from an animal 
+20080814135813.468|20080814135815.326|CCO|-- you heard me correctly there. His 
+20080814135815.326|20080814135817.185|CCO|cousin steals it 
+20080814135817.185|20080814135819.043|CCO|back. 
+20080814135819.043|20080814135820.902|CCO|What kind of craziness is going on here? Chris Cato of CNN  affiliate WSPA  
+20080814135820.902|20080814135822.761|CCO|has the story. 
+20080814135822.761|20080814145955.832|CLIP|Type=Video
+20080814135822.761|20080814135828.336|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135822.761|20080814135824.619|CCO|>> CHRIS CATO, WSPA CORRESPONDENT: If your cousin brought 
+20080814135824.619|20080814135826.478|CCO|this home from the zoo, you 
+20080814135826.478|20080814135828.336|CCO|would barely believe it. 
+20080814135828.336|20080814135830.195|CCO|But you are not Joy Crawford. 
+20080814135828.336|20080814135830.195|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135828.336|20080814135830.195|CCO|>> JOY CRAWFORD, SUSPECTS COUSIN: They 
+20080814135830.195|20080814135832.054|CCO|just wanted a bear. 
+20080814135830.195|20080814135833.912|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135830.195|20080814135832.054|CCO|>> CATO: And 
+20080814135832.054|20080814135833.912|CCO|your cousin is not Chad Montgomery. 
+20080814135833.912|20080814135839.488|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135833.912|20080814135835.771|CCO|>> CRAWFORD: And for 
+20080814135835.771|20080814135837.629|CCO|him to go after an animal, 
+20080814135837.629|20080814135839.488|CCO|that's just natural for him. 
+20080814135839.488|20080814135846.922|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135839.488|20080814135841.347|CCO|>> CATO: Deputies 
+20080814135841.347|20080814135843.205|CCO|say over the 
+20080814135843.205|20080814135845.064|CCO|weekend, Montgomery broke into 
+20080814135845.064|20080814135846.922|CCO|Holly Wild Animal Park and the bear was not 
+20080814135846.922|20080814135848.781|CCO|his initial target. 
+20080814135846.922|20080814135858.074|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135846.922|20080814135848.781|CCO|>> CRAWFORD: He 
+20080814135848.781|20080814135850.640|CCO|was going after two little 
+20080814135850.640|20080814135852.498|CCO|monkeys. 
+20080814135852.498|20080814135854.357|CCO|One of them jumped on his back and bit him. 
+20080814135856.215|20080814135858.074|CCO|And he throw it down and then went 
+20080814135858.074|20080814135859.933|CCO|after the bear. 
+20080814135858.074|20080814135907.367|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135858.074|20080814135859.933|CCO|>> CATO: A  
+20080814135859.933|20080814135901.791|CCO|cubnapping, the culprit 
+20080814135901.791|20080814135903.650|CCO|carried away a 7-month-old 
+20080814135903.650|20080814135905.508|CCO|black bear named Newell. 
+20080814135907.367|20080814135916.660|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT|Type=On-Camera
+20080814135907.367|20080814135909.226|CCO|>> CATO: According to police reports, Montgomery then brought his purloin pet to this truck 
+20080814135909.226|20080814135911.084|CCO|stop in Blacksburg where he offered people 
+20080814135911.084|20080814135912.943|CCO|a chance to pet the bear for 
+20080814135912.943|20080814135914.801|CCO|a dollar. 
+20080814135914.801|20080814135916.660|CCO|But his cousin says he was actually only 
+20080814135916.660|20080814135918.519|CCO|charging 50  cents. 
+20080814135916.660|20080814135927.812|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135916.660|20080814135918.519|CCO|>> CRAWFORD: For taking it out, a 
+20080814135918.519|20080814135920.377|CCO|penny, a quarter, a dollar, 
+20080814135920.377|20080814135922.236|CCO|why would you take it and walk it 
+20080814135922.236|20080814135924.094|CCO|around in a parking lot after 
+20080814135924.094|20080814135925.953|CCO|you stole it? 
+20080814135925.953|20080814135927.812|CCO|That's just as stupid as stealing 
+20080814135927.812|20080814135929.670|CCO|it. 
+20080814135927.812|20080814135933.387|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT|Type=Voice-Over
+20080814135927.812|20080814135929.670|CCO|>> CATO: Crawford 
+20080814135929.670|20080814135931.529|CCO|said on Sunday 
+20080814135931.529|20080814135933.387|CCO|when Montgomery told her 
+20080814135933.387|20080814135935.246|CCO|what he had done. 
+20080814135933.387|20080814135935.246|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135933.387|20080814135935.246|CCO|>> CRAWFORD: He got out of the car and he 
+20080814135935.246|20080814135937.105|CCO|said, I  stole a bear. 
+20080814135935.246|20080814135938.963|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135935.246|20080814135937.105|CCO|>> CATO: There 
+20080814135937.105|20080814135938.963|CCO|was only one thing 
+20080814135938.963|20080814135940.822|CCO|she could do. 
+20080814135938.963|20080814135944.539|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135938.963|20080814135940.822|CCO|>> CRAWFORD: I  
+20080814135940.822|20080814135942.680|CCO|stole the bear from Chad because 
+20080814135942.680|20080814135944.539|CCO|Chad stole the bear from 
+20080814135944.539|20080814135946.397|CCO|the zoo. 
+20080814135944.539|20080814135953.832|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135944.539|20080814135946.397|CCO|>> CATO: She 
+20080814135946.397|20080814135948.256|CCO|and her son went 
+20080814135948.256|20080814135950.115|CCO|to Montgomery's home, where he was keeping Newell in a pen, loaded 
+20080814135950.115|20080814135951.973|CCO|the bear up in the back seat 
+20080814135951.973|20080814135953.832|CCO|of her car, and drove him back 
+20080814135953.832|20080814145955.832|CCO|to the zoo. It wasn't easy. 
+20080814135953.832|20080814135953.832|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135953.832|20080814145955.832|CCO|>> CRAWFORD: It's embarrassing, and it's -- 
+20080814135953.832|20080814135953.832|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135953.832|20080814145955.832|CCO|>> CATO: Embarrassing? 
+20080814135953.832|20080814135953.832|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135953.832|20080814145955.832|CCO|>> CRAWFORD: Yes, embarrassing. 
+20080814135953.832|20080814135953.832|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135953.832|20080814145955.832|CCO|>> CATO: Now Montgomery is charged with burglary and grand larceny. 
+20080814135953.832|20080814135953.832|NER_01|Person=Joy Crawford|Role=SUSPECTS COUSIN
+20080814135953.832|20080814145955.832|CCO|>> CRAWFORD: The whole family believes that he needs to learn his lesson. 
+20080814135953.832|20080814145955.832|NER_01|Person=Chris Cato|Role=WSPA CORRESPONDENT
+20080814135953.832|20080814145955.832|CCO|>> CATO: And Newell is back in his cage, knowing that the wildest creatures don't necessarily live in a zoo. 
+END|20080814135956|2008-08-14_1300_US_CNN_Newsroom
