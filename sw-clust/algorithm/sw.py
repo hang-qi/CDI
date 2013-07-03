@@ -213,7 +213,10 @@ class _SWCuts(object):
             weight = 1.0
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
-            posterior = weight * target_eval_func(labeling)
+            val = target_eval_func(labeling)
+            print(val)
+            posterior = weight * val
+
 
             labeling_candidates.append(labeling)
             posteriors.append(posterior)

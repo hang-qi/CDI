@@ -12,6 +12,7 @@ def intermediate_callback(current_labeling):
 
 def SW_Process():
     [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = readingfiles.preprocessing('2008081519', 'preprocessing/model_segmenter.txt')
+    print('Reading Files Finished')
     node_number = all_nodes.node_num
     edges = []
     for i in range(0, node_number-1):

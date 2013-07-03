@@ -28,7 +28,10 @@ class Statistics(object):
 
     def target_evaluation_func(self, current_labeling):
         #print(current_labeling)
-        return math.exp(-self.calculate_energy(current_labeling))
+        energy = self.calculate_energy(current_labeling)
+        #print(energy)
+        energy /= 1000
+        return math.exp(-energy)
 
     def calculate_energy(self, current_labeling):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
@@ -41,7 +44,7 @@ class Statistics(object):
                 if current_labeling[i] != prev_label:
                     if prev_label != -1:  # Not the first segment
                         [current_seg_cat, prob] = self.classification(current_seg)
-                        print('Classification Result: Category {0}, Probability {1}'.format(current_seg_cat, prob))
+                        # print('Classification Result: Category {0}, Probability {1}'.format(current_seg_cat, prob))
                         energy += math.log(prob)
                         if previous_seg_cat != -1:  # Add the transition prob
                             energy += math.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
