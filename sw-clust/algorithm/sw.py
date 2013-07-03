@@ -144,7 +144,7 @@ class _SWCuts(object):
         size = self.adjacency_graph.size
         visited = [False for v in range(0, size)]
 
-        # From one CP from a random vertex
+        # Form one CP from a random vertex
         random_vertex = random.randint(0, size-1)
         (component, cut_edges) = self.__grow_component_by_bfs(
             random_vertex, current_labeling, edge_status, visited)
