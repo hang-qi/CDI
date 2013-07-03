@@ -13,7 +13,6 @@ def SW_Process():
     for i in range(0, node_number-1):
         j = i + 1
         edges.append([i, j])
-    adj_graph = sw.AdjacencyGraph(node_number, edges)
-    swclass = sw.SWCuts()
+
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
-    swclass.sample(adj_graph, stat.calculate_Qe, stat.target_evaluation_func)
+    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func)
