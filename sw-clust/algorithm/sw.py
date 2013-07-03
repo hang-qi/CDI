@@ -79,7 +79,11 @@ class _SWCuts(object):
 
     def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None):
         # Initial labeling.
-        current_labeling = [0] * adjacency_graph.size
+        # current_labeling = [0] * adjacency_graph.size
+        current_labeling = []
+        for i in range(0, adjacency_graph.size):
+            current_labeling.append(i%2)
+
 
         self.adjacency_graph = adjacency_graph
         self.max_labels = adjacency_graph.size

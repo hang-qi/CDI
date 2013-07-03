@@ -14,6 +14,7 @@ from model.nodes import Node, Nodes
 def read_test_file(filenameprefix):
     """Read the triplets files of the segments that correspond to the test file"""
     file_name = 'triplet_files/' + filenameprefix + '*.txt'
+    files = glob.glob(file_name)
     files.sort()
     true_segment = segment.Segment()
     all_nodes = Nodes()
@@ -66,11 +67,11 @@ def read_training_classification_data(file_in):
         f.readline()  # Blank line
         # (3) Priors for classes
         if class_num == int(f.readline()[:-1]):
-            class_prior_prob = probability.Probability(0, class_num)
+            class_prior_prob = probability.Probability(1, class_num)
             for i in range(0, class_num):
                 class_prior_prob.set_value(0, i, float(f.readline()[:-1]))
-            if not class_prior_dist.check_probability(1):
-                print('Error in the Class Prior Probability in File {0}'.format(file_in))
+            #if not class_prior_prob.check_probability(1):
+            #    print('Error in the Class Prior Probability in File {0}'.format(file_in))
         else:
             print('Class Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -83,8 +84,8 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     np1_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            if not np1_prob.check_probability(class_num):
-                print('Error in the NP1 Probability in File {0}'.format(file_in))
+            #if not np1_prob.check_probability(class_num):
+            #    print('Error in the NP1 Probability in File {0}'.format(file_in))
         else:
             print('NP1 Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -96,8 +97,8 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     vp_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            if not vp_prob.check_probability(class_num):
-                print('Error in the VP Probability in File {0}'.format(file_in))
+            #if not vp_prob.check_probability(class_num):
+            #    print('Error in the VP Probability in File {0}'.format(file_in))
         else:
             print('VP Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -109,8 +110,8 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     np2_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            if not np2_prob.check_probability(class_num):
-                print('Error in the NP2 Probability in File {0}'.format(file_in))
+            #if not np2_prob.check_probability(class_num):
+            #    print('Error in the NP2 Probability in File {0}'.format(file_in))
         else:
             print('NP2 Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -122,8 +123,8 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     transition_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            if not transition_prob.check_probability(class_num):
-                print('Error in the Class Transition Probability in File {0}'.format(file_in))
+            #if not transition_prob.check_probability(class_num):
+            #    print('Error in the Class Transition Probability in File {0}'.format(file_in))
             f.readline()
         else:
             print('Class Number Does Not Match in File {0}'.format(file_in))
@@ -139,5 +140,5 @@ def read_training_clusters(file_in):
 
 def preprocessing(test_filenameprefix, training_file_in):
     [all_nodes, true_segment] = read_test_file(test_filenameprefix)
-    [class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = read_training_classification_data('model_segmenter.txt')
+    [class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = read_training_classification_data(training_file_in)
     return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob]
