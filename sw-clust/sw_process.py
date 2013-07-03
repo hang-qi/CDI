@@ -5,9 +5,29 @@ from model.nodes import Node, Nodes
 from preprocessing import readingfiles
 from statistics.statistics import Statistics
 
+import matplotlib.pyplot as plt
 
-def intermediate_callback(current_labeling):
-    print(current_labeling)
+
+class Plotter(object):
+    def __init__(self, stat):
+        self.iterations = []
+        self.energies = []
+        self.stat = stat
+
+        # You probably won't need this if you're embedding things in a tkinter plot...
+        plt.ion()
+        self.fig = plt.figure()
+        self.energy_plot = self.fig.add_subplot(111)
+
+    def plot_callback(self, current_labeling, context):
+        print(current_labeling)
+
+        self.iterations.append(context.iteration_counter)
+        self.energies.append(self.stat.calculate_energy(current_labeling))
+
+        self.energy_plot.clear()
+        self.energy_plot.plot(self.iterations, self.energies)
+        self.fig.canvas.draw()
 
 
 def SW_Process():
@@ -23,8 +43,9 @@ def SW_Process():
         edges.append([i, j])
 
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
+    plotter = Plotter(stat)
     print('Start Sampling')
-    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, intermediate_callback)
+    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback)
 
 
 def main():

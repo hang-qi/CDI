@@ -121,7 +121,7 @@ class _SWCuts(object):
 
             # Propagate intermediate result if has callback function.
             if intermediate_callback is not None:
-                intermediate_callback(copy.copy(current_labeling))
+                intermediate_callback(copy.copy(current_labeling), self.context)
 
         return current_labeling
 
