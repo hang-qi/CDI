@@ -133,7 +133,7 @@ class _SWCuts(object):
         """Store turn-on probability of each edge in a adjacent list."""
         self.__edge_on_prob_cache = defaultdict(dict)
         for (s, t) in self.adjacency_graph.edges:
-                self.__edge_on_prob_cache[s][t] = edge_prob_func(s, t)
+                self.__edge_on_prob_cache[s][t] = edge_prob_func(s, t, self.context)
 
     def __edge_on_probability(self, s, t):
         # Ensure s < t

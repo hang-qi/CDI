@@ -19,12 +19,15 @@ class Statistics(object):
         self.transition_prob = transprob
         self.class_prior = classpriorprob
 
-    def calculate_Qe(self, left, right):
+    def calculate_Qe(self, left, right, context):
         right_node = self.all_nodes.nodes[right]
         if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
             return 1
         else:  # Return the probability
-            return 0.6
+            count = int(context.iteration_counter/2000)
+            if count > 7:
+                count = 7
+            return 0.2 + 0.1*count
 
     def target_evaluation_func(self, current_labeling):
         #print(current_labeling)
