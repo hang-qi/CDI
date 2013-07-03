@@ -48,6 +48,14 @@ Parameters:
         _AdjacencyGraph(graph_size, edges), edge_prob_func, target_eval_func, intermediate_callback)
 
 
+class SWContext(object):
+    def __init__(self):
+        self.iteration_counter = 0
+
+    def count_iteration(self):
+        self.iteration_counter += 1
+
+
 class _AdjacencyGraph(object):
     """Adjacency Graph on which to perform Swendsen-Wang Cuts."""
     def __init__(self, size, edges):
@@ -76,6 +84,7 @@ class _SWCuts(object):
     """Swendsen-Wang cuts."""
     def __init__(self):
         super(_SWCuts, self).__init__()
+        self.context = SWContext()
 
     def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None):
         # Initial labeling.
@@ -89,6 +98,7 @@ class _SWCuts(object):
 
         self.adjacency_graph = adjacency_graph
         self.max_labels = adjacency_graph.size
+        self.edge_prob_func = edge_prob_func
 
         # Cache turn-on probability of each edge and stored in a adjacent list.
         # Since the edge probability only concern the two end point of the edge,
@@ -96,6 +106,8 @@ class _SWCuts(object):
         self.__cache_turn_on_probability_func(edge_prob_func)
 
         while not self.__has_converged():
+            self.context.count_iteration()
+
             # Determine edge status (on or off) probabilistically.
             edge_status = self.__determine_edge_status()
 
@@ -135,7 +147,8 @@ class _SWCuts(object):
             # Determine the status of each edge probabilistically.
             # Turn edge 'on' if r < prob(on), 'off' otherwise.
             r = random.random()
-            if (r < self.__edge_on_probability(s, t)):
+            #if (r < self.__edge_on_probability(s, t)):
+            if (r < self.edge_prob_func(s, t, self.context)):
                 edge_status[s][t] = True
                 edge_status[t][s] = True
             else:
