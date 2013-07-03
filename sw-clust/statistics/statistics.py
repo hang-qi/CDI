@@ -50,28 +50,29 @@ class Statistics(object):
                             energy += math.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
                         previous_seg_cat = current_seg_cat
                         current_seg = []  # clear the current segment
+                    prev_label = current_labeling[i]
                 current_seg.append(i)
-                prev_label = current_labeling[i]
         else:
             print('Error: Node Number Does Not Match')
         energy = -energy
         return energy
 
     def classification(self, current_seg):
-        np1_set = []
-        vp_set = []
-        np2_set = []
-        for i in current_seg:
-            current_node = self.all_nodes.nodes[i]
-            for w in current_node.NP1:
-                np1_set.append(w)
-            for w in current_node.VP:
-                vp_set.append(w)
-            for w in current_node.NP2:
-                np2_set.append(w)
-        np1_cat_prob = self.calculate_prob_CatGivenWord(np1_set, self.np1_voc, self.np1_prob)
-        vp_cat_prob = self.calculate_prob_CatGivenWord(vp_set, self.vp_voc, self.vp_prob)
-        np2_cat_prob = self.calculate_prob_CatGivenWord(np2_set, self.np2_voc, self.np2_prob)
+        #np1_set = []
+        #vp_set = []
+        #np2_set = []
+        #for i in current_seg:
+        #    current_node = self.all_nodes.nodes[i]
+        #    for w in current_node.NP1:
+        #        np1_set.append(w)
+        #    for w in current_node.VP:
+        #        vp_set.append(w)
+        #    for w in current_node.NP2:
+        #        np2_set.append(w)
+        #np1_cat_prob = self.calculate_prob_CatGivenWord(np1_set, self.np1_voc, self.np1_prob)
+        #vp_cat_prob = self.calculate_prob_CatGivenWord(vp_set, self.vp_voc, self.vp_prob)
+        #np2_cat_prob = self.calculate_prob_CatGivenWord(np2_set, self.np2_voc, self.np2_prob)
+        [np1_cat_prob, vp_cat_prob, np2_cat_prob] = self.calculate_prob(current_seg)
         max_prob = -1
         label = -1
         for i in range(0, self.class_num):
@@ -82,6 +83,27 @@ class Statistics(object):
                 max_prob = prob
                 label = i
         return [label, max_prob]
+
+    def calculate_prob(self, current_seg):
+        np1_cat_prob = probability.Probability(1, self.class_num)
+        vp_cat_prob = probability.Probability(1, self.class_num)
+        np2_cat_prob = probability.Probability(1, self.class_num)
+        for i in range(0, self.class_num):
+            prob_np1 = 1
+            prob_vp = 1
+            prob_np2 = 1
+            for j in current_seg:
+                prob_np1 *= self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i)
+                prob_vp *= self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i)
+                prob_np2 *= self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i)
+            prior = self.class_prior.get_value(0, i)
+            prob_np1 *= prior
+            prob_vp *= prior
+            prob_np2 *= prior
+            np1_cat_prob.set_value(0, i, prob_np1)
+            vp_cat_prob.set_value(0, i, prob_vp)
+            np2_cat_prob.set_value(0, i, prob_np2)
+        return [np1_cat_prob, vp_cat_prob, np2_cat_prob]
 
     def calculate_prob_CatGivenWord(self, words, voc, voc_prob):
         word_id = []

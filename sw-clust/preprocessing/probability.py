@@ -9,10 +9,9 @@ class Probability(object):
         self.prob = numpy.empty((nrow, ncol))
 
     def set_value(self, row, col, value):
-        if row in range(0, self.row_num) and col in range(0, self.col_num):
-            self.prob[row, col] = value
-        else:
-            print('Set Probability Out of Index {0}, {1}'.format(row, col))
+        assert(row >= 0 and row < self.row_num)
+        assert(col >= 0 and col < self.col_num)
+        self.prob[row, col] = value
 
     def check_probability(self, value):
         if sum(sum(self.prob)) == value:
@@ -22,11 +21,9 @@ class Probability(object):
             return False
 
     def get_value(self, row, col):
-        if row in range(0, self.row_num) and col in range(0, self.col_num):
-            return self.prob[row, col]
-        else:
-            print('Get Probability Out of Index {0}, {1}'.format(row, col))
-            return -1
+        assert(row >= 0 and row < self.row_num)
+        assert(col >= 0 and col < self.col_num)
+        return self.prob[row, col]
 
     def print_prob(self):
         for i in range(self.row_num):
