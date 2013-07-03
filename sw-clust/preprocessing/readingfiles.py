@@ -66,7 +66,7 @@ def read_training_classification_data(file_in):
         f.readline()  # Blank line
         # (3) Priors for classes
         if class_num == int(f.readline()[:-1]):
-            class_prior_prob = probability.Probability(1, class_num)
+            class_prior_prob = probability.Probability(0, class_num)
             for i in range(0, class_num):
                 class_prior_prob.set_value(0, i, float(f.readline()[:-1]))
             if not class_prior_dist.check_probability(1):
