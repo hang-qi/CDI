@@ -14,7 +14,7 @@ import copy
 import random
 
 
-def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None):
+def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, max_labels=None):
     """Generating fair samples by Swendsen-Wang Cuts.
 Parameters:
 - graph_size:
@@ -45,15 +45,19 @@ Parameters:
 """
     sw = _SWCuts()
     return sw.sample(
-        _AdjacencyGraph(graph_size, edges), edge_prob_func, target_eval_func, intermediate_callback)
+        _AdjacencyGraph(graph_size, edges), edge_prob_func, target_eval_func, intermediate_callback, initial_labeling, max_labels)
 
 
 class SWContext(object):
     def __init__(self):
         self.iteration_counter = 0
+        self.current_labeling = []
 
     def count_iteration(self):
         self.iteration_counter += 1
+
+    def set_result(self, current_labeling):
+        self.current_labeling = current_labeling
 
 
 class _AdjacencyGraph(object):
@@ -86,19 +90,22 @@ class _SWCuts(object):
         super(_SWCuts, self).__init__()
         self.context = SWContext()
 
-    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None):
+    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, max_labels=None):
         # Initial labeling.
-        # current_labeling = [0] * adjacency_graph.size
-        current_labeling = []
-        for i in range(0, adjacency_graph.size):
-            if (i % 8 < 4):
-                current_labeling.append(0)
-            else:
-                current_labeling.append(1)
+        if initial_labeling is not None:
+            current_labeling = initial_labeling
+        else:
+            current_labeling = [0] * adjacency_graph.size
+
+        if max_labels is not None:
+            self.max_labels = max_labels
+        else:
+            self.max_labels = adjacency_graph.size
 
         self.adjacency_graph = adjacency_graph
-        self.max_labels = adjacency_graph.size
         self.edge_prob_func = edge_prob_func
+
+        self.context.set_result(current_labeling)
 
         # Cache turn-on probability of each edge and stored in a adjacent list.
         # Since the edge probability only concern the two end point of the edge,
@@ -107,6 +114,7 @@ class _SWCuts(object):
 
         while not self.__has_converged():
             self.context.count_iteration()
+            self.context.set_result(current_labeling)
 
             # Determine edge status (on or off) probabilistically.
             edge_status = self.__determine_edge_status()
