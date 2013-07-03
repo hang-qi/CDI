@@ -24,7 +24,7 @@ class Statistics(object):
         if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
             return 1
         else:  # Return the probability
-            count = int(context.iteration_counter/2000)
+            count = int(context.iteration_counter/100)
             if count > 7:
                 count = 7
             return 0.2 + 0.1*count

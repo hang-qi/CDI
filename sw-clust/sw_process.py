@@ -4,30 +4,43 @@ from model import segment
 from model.nodes import Node, Nodes
 from preprocessing import readingfiles
 from statistics.statistics import Statistics
+from model.segment import Segment
 
 import matplotlib.pyplot as plt
 
 
 class Plotter(object):
-    def __init__(self, stat):
+    def __init__(self, stat, true_segment):
         self.iterations = []
         self.energies = []
         self.stat = stat
+        self.true_segment = true_segment
 
         # You probably won't need this if you're embedding things in a tkinter plot...
         plt.ion()
-        self.fig = plt.figure()
-        self.energy_plot = self.fig.add_subplot(111)
+        self.fig = plt.figure(figsize=(16, 10))
+        self.energy_plot = self.fig.add_subplot(211)
+        self.segment_plot = self.fig.add_subplot(212)
 
     def plot_callback(self, current_labeling, context):
         print(current_labeling)
 
         self.iterations.append(context.iteration_counter)
-        self.energies.append(self.stat.calculate_energy(current_labeling))
+        self.energies.append(self.stat.target_evaluation_func(current_labeling))
 
         self.energy_plot.clear()
         self.energy_plot.plot(self.iterations, self.energies)
         self.fig.canvas.draw()
+
+        self.segment_plot.clear()
+        self.segment_plot.plot(self.true_segment.seg_boundary, [2]*len(self.true_segment.seg_boundary), '.r')
+        self.segment_plot.hold(True)
+        current_seg = []
+        for i in range(1, len(current_labeling)):
+            if current_labeling[i] != current_labeling[i-1]:
+                current_seg.append(i)
+        self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
+        self.segment_plot.axis([0, self.stat.all_nodes.node_num, 0, 3])
 
 
 def SW_Process():
@@ -38,14 +51,18 @@ def SW_Process():
 
     node_number = all_nodes.node_num
     edges = []
+    initial_labeling = []
     for i in range(0, node_number-1):
         j = i + 1
         edges.append([i, j])
 
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
-    plotter = Plotter(stat)
+    plotter = Plotter(stat, true_segment)
     print('Start Sampling')
-    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback)
+    initial_labeling = []
+    for i in range(0, node_number):
+        initial_labeling.append(i % 2)
+    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=initial_labeling)
 
 
 def main():
