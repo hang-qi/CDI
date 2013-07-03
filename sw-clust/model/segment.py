@@ -10,4 +10,3 @@ class Segment(object):
     def add_boundary(self, boundary):
         self.seg_num += 1
         self.seg_boundary.append(boundary)
-

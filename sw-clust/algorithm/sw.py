@@ -1,15 +1,59 @@
+"""
+The implementation of Swendsen-Wang Cuts algorithm for clustering.
+
+Usage:
+        import sw
+        labeling = sw.sample(...)
+
+    See sample() function for details.
+"""
+
 from collections import defaultdict
 from collections import deque
 import copy
 import random
 
 
-class AdjacencyGraph(object):
+def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None):
+    """Generating fair samples by Swendsen-Wang Cuts.
+Parameters:
+- graph_size:
+    number of nodes in the adjacency graph.
+
+- edges:
+    edges in the adjacency graph. This shall be a list of edges,
+    where each edge is expressed as a tuple of two end points.
+        e.g. [(0, 2), (1, 2), (2, 3)]
+
+- edge_prob_func:
+    the callback function which calculates the probability of
+    turning on edges (s, t). This function shall be in the
+    following form:
+        edge_func(s, t)
+
+- target_eval_func:
+    the callback function which evaluates the probability of a
+    cluster labeling. This probability does not need to be normalized.
+    MCMC theory guarantees that fair samples will be generated from
+    this target distribution when the chain converges.
+        target_eval_func(labeling)
+
+- intermediate_callback (optional):
+    this function will be called with current labeling result at
+    the end of every iteration.
+        callback(labeling)
+"""
+    sw = _SWCuts()
+    return sw.sample(
+        _AdjacencyGraph(graph_size, edges), edge_prob_func, target_eval_func, intermediate_callback)
+
+
+class _AdjacencyGraph(object):
     """Adjacency Graph on which to perform Swendsen-Wang Cuts."""
     def __init__(self, size, edges):
         """size is a integer.
         Edges is a list of edge tuples. i.e. [ (s, t) ]. """
-        super(AdjacencyGraph, self).__init__()
+        super(_AdjacencyGraph, self).__init__()
 
         self.size = size
         self.edges = set()
@@ -28,12 +72,12 @@ class AdjacencyGraph(object):
         return
 
 
-class SWCuts(object):
+class _SWCuts(object):
     """Swendsen-Wang cuts."""
     def __init__(self):
-        super(SWCuts, self).__init__()
+        super(_SWCuts, self).__init__()
 
-    def sample(self, adjacency_graph, edge_prob_func, target_evaluation_func, intermediate_callback=None):
+    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None):
         # Initial labeling.
         current_labeling = [0] * adjacency_graph.size
 
@@ -55,7 +99,7 @@ class SWCuts(object):
 
             # Flip the connect components probabilistically.
             current_labeling = self.__flip_connected_component(
-                current_labeling, connected_component, target_evaluation_func)
+                current_labeling, connected_component, target_eval_func)
 
             # Propagate intermediate result if has callback function.
             if intermediate_callback is not None:
@@ -129,7 +173,7 @@ class SWCuts(object):
         cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
         return (component, cut_edges)
 
-    def __flip_connected_component(self, current_labeling, connected_component, target_evaluation_func):
+    def __flip_connected_component(self, current_labeling, connected_component, target_eval_func):
         (component, cut_edges) = connected_component
 
         # Possible labels for for connected component:
@@ -165,7 +209,7 @@ class SWCuts(object):
             weight = 1.0
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
-            posterior = weight * target_evaluation_func(labeling)
+            posterior = weight * target_eval_func(labeling)
 
             labeling_candidates.append(labeling)
             posteriors.append(posterior)

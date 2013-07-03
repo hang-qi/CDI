@@ -1,5 +1,5 @@
 # This is a toy example of SW-Cuts.
-from algorithm.sw import AdjacencyGraph, SWCuts
+from algorithm import sw
 
 
 class Model:
@@ -24,9 +24,9 @@ intermediate_callback.iteration = 0
 
 def main():
     m = Model()
-    graph = AdjacencyGraph(3, [(0, 1), (1, 2)])
-    swcut = SWCuts()
-    swcut.sample(graph, m.edge_func, m.target_func, intermediate_callback)
+    graph_size = 3
+    edges = [(0, 1), (1, 2)]
+    sw.sample(graph_size, edges, m.edge_func, m.target_func, intermediate_callback)
     return
 
 
