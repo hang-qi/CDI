@@ -82,8 +82,10 @@ class _SWCuts(object):
         # current_labeling = [0] * adjacency_graph.size
         current_labeling = []
         for i in range(0, adjacency_graph.size):
-            current_labeling.append(i%2)
-
+            if (i % 8 < 4):
+                current_labeling.append(0)
+            else:
+                current_labeling.append(1)
 
         self.adjacency_graph = adjacency_graph
         self.max_labels = adjacency_graph.size
@@ -214,9 +216,7 @@ class _SWCuts(object):
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
             val = target_eval_func(labeling)
-            print(val)
             posterior = weight * val
-
 
             labeling_candidates.append(labeling)
             posteriors.append(posterior)
@@ -224,9 +224,16 @@ class _SWCuts(object):
         # Normalize the posterior probability.
         posteriors = [p/denominator for p in posteriors]
 
+        print('Component: {0}'.format(component))
+        print('Candidate: {0}'.format(candidate_labels))
+        print('Previous Labeling: {0}'.format([current_labeling[v] for v in component]))
         # Sample from the posterior probability.
+        selected_labeling = []
         cdf = [sum(posteriors[0:x]) for x in range(1, len(posteriors)+1)]
         r = random.random()
         for i in range(0, len(cdf)):
             if cdf[i] > r:
-                return labeling_candidates[i]
+                selected_labeling = labeling_candidates[i]
+                print('Selected Labeling: {0}'.format([selected_labeling[v] for v in component]))
+                break
+        return selected_labeling
