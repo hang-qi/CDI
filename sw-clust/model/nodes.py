@@ -21,9 +21,6 @@ class Node(object):
         self.NP2 = np2
         self.pronoun = ispronounflag
 
-    def set_node_prob(self, prob):
-        self.probgivencat = prob
-
 
 class Nodes(object):
     def __init__(self):
