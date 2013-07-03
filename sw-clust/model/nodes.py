@@ -22,4 +22,4 @@ class Nodes(object):
 
     def add_node(self, newnode):
         self.nodes.append(newnode)
-        self.nodes_num += 1
+        self.node_num += 1

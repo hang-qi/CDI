@@ -85,7 +85,7 @@ class Statistics(object):
                 word_id.append(-1)
         prob_all_cats = probability.Probability(0, self.class_num)
         for i in range(0, self.class_num):
-            for wid in word_id:     
+            for wid in word_id:
                 if wid != -1:
                     prob *= voc_prob.get_value(wid, i)
             prob *= self.class_prior.get_value(0, i)
