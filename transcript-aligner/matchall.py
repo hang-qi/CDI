@@ -26,6 +26,12 @@ def renameHTMLTranscript(oldFilename, newFilename):
     if not os.path.exists(newFilename):
         # os.system("cp -p {src} {tgt}".format(src=oldFilename,
         # tgt=newFilename))
+
+        # Make new directory if necessary.
+        directory = '/'.join(newFilename.split('/')[0:-1])
+        if not os.path.exists(directory):
+            os.mkdirs(directory)
+
         r = subprocess.call(['cp', '-p', oldFilename, newFilename])
         print('[GOOD] HTML renamed: {0}'.format(newFilename))
     else:
