@@ -1,5 +1,9 @@
 # The whole SW Process
 from algorithm import sw
+from model import segment
+from model.nodes import Node, Nodes
+from preprocessing import readingfiles
+from statistics.statistics import Statistics
 import math
 
 import matplotlib.pyplot as plt

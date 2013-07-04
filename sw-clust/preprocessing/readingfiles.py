@@ -37,7 +37,7 @@ def read_test_file(filenameprefix):
                     current_node = Node()
                     current_node.set_node(np1, vp, np2, pronoun_flag)
                     all_nodes.add_node(current_node)
-        true_segment.add_boundary(line_count - 1)
+        true_segment.add_boundary(line_count)
     return [all_nodes, true_segment]
 
 
