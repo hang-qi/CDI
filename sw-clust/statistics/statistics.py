@@ -33,7 +33,7 @@ class Statistics(object):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
         #print(energy)
-        energy /= 1000
+        energy /= 10000
         return math.exp(-energy)
 
     def calculate_energy(self, current_labeling):
@@ -126,3 +126,17 @@ class Statistics(object):
             prob *= self.class_prior.get_value(0, i)
             prob_all_cats.set_value(0, i, prob)
         return prob_all_cats
+
+    def calculate_ground_truth(self, true_segment):
+        true_labeling = []
+        seg = 0
+        ts_index = 0
+        for i in range(0, self.all_nodes.node_num):
+            if i == true_segment.seg_boundary[ts_index]:
+                seg = 1 - seg
+                true_labeling.append(seg)
+                ts_index += 1
+            else:
+                true_labeling.append(seg)
+        true_eval = self.target_evaluation_func(true_labeling)
+        return true_eval

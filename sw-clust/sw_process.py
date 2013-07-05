@@ -10,11 +10,12 @@ import matplotlib.pyplot as plt
 
 
 class Plotter(object):
-    def __init__(self, stat, true_segment):
+    def __init__(self, stat, true_segment, true_eval):
         self.iterations = []
         self.energies = []
         self.stat = stat
         self.true_segment = true_segment
+        self.true_eval = true_eval
 
         # You probably won't need this if you're embedding things in a tkinter plot...
         plt.ion()
@@ -30,6 +31,8 @@ class Plotter(object):
 
         self.energy_plot.clear()
         self.energy_plot.plot(self.iterations, self.energies)
+        self.energy_plot.hold(True)
+        self.energy_plot.plot(self.iterations, [self.true_eval]*len(self.iterations), 'r')
         self.fig.canvas.draw()
 
         self.segment_plot.clear()
@@ -57,7 +60,8 @@ def SW_Process():
         edges.append([i, j])
 
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
-    plotter = Plotter(stat, true_segment)
+    true_eval = stat.calculate_ground_truth(true_segment)
+    plotter = Plotter(stat, true_segment, true_eval)
     print('Start Sampling')
     initial_labeling = []
     for i in range(0, node_number):
