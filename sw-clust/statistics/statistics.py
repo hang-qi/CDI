@@ -1,8 +1,10 @@
 # Provide the statistics for SW Process
 import sys
-sys.path.append('..')
 import math
-from model.nodes import Node, Nodes
+sys.path.append('..')
+
+import mpmath
+
 from model import probability
 
 
@@ -48,9 +50,13 @@ class Statistics(object):
                     if prev_label != -1:  # Not the first segment
                         [current_seg_cat, prob] = self.classification(current_seg)
                         # print('Classification Result: Category {0}, Probability {1}'.format(current_seg_cat, prob))
-                        energy += math.log(prob)
+                        try:
+                            energy += mpmath.log(prob)
+                        except ValueError, e:
+                            print(prob)
+                            raise e
                         if previous_seg_cat != -1:  # Add the transition prob
-                            energy += math.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
+                            energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
                         previous_seg_cat = current_seg_cat
                         current_seg = []  # clear the current segment
                     prev_label = current_labeling[i]
@@ -76,7 +82,7 @@ class Statistics(object):
         #vp_cat_prob = self.calculate_prob_CatGivenWord(vp_set, self.vp_voc, self.vp_prob)
         #np2_cat_prob = self.calculate_prob_CatGivenWord(np2_set, self.np2_voc, self.np2_prob)
         [np1_cat_prob, vp_cat_prob, np2_cat_prob] = self.calculate_prob(current_seg)
-        max_prob = -1
+        max_prob = -1.0
         label = -1
         for i in range(0, self.class_num):
             prob = np1_cat_prob.get_value(0, i) * vp_cat_prob.get_value(0, i) * np2_cat_prob.get_value(0, i)

@@ -1,10 +1,7 @@
 # The whole SW Process
 from algorithm import sw
-from model import segment
-from model.nodes import Node, Nodes
 from preprocessing import readingfiles
 from statistics.statistics import Statistics
-from model.segment import Segment
 
 import matplotlib.pyplot as plt
 
@@ -29,12 +26,13 @@ class Plotter(object):
         self.iterations.append(context.iteration_counter)
         self.energies.append(self.stat.target_evaluation_func(current_labeling))
 
+        # energy plot
         self.energy_plot.clear()
         self.energy_plot.plot(self.iterations, self.energies)
         self.energy_plot.hold(True)
         self.energy_plot.plot(self.iterations, [self.true_eval]*len(self.iterations), 'r')
-        self.fig.canvas.draw()
 
+        # segmentation plot
         self.segment_plot.clear()
         self.segment_plot.plot(self.true_segment.seg_boundary, [2]*len(self.true_segment.seg_boundary), '.r')
         self.segment_plot.hold(True)
@@ -45,6 +43,8 @@ class Plotter(object):
         self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
         self.segment_plot.axis([0, self.stat.all_nodes.node_num, 0, 3])
 
+        self.fig.canvas.draw()
+
 
 def SW_Process():
     [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = readingfiles.preprocessing('2008081519', 'preprocessing/model_segmenter.txt')
@@ -54,7 +54,6 @@ def SW_Process():
 
     node_number = all_nodes.node_num
     edges = []
-    initial_labeling = []
     for i in range(0, node_number-1):
         j = i + 1
         edges.append([i, j])
@@ -62,11 +61,13 @@ def SW_Process():
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
     true_eval = stat.calculate_ground_truth(true_segment)
     plotter = Plotter(stat, true_segment, true_eval)
-    print('Start Sampling')
+
     initial_labeling = []
     for i in range(0, node_number):
         initial_labeling.append(i % 2)
-    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=initial_labeling)
+
+    print('Start Sampling')
+    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=None)
 
 
 def main():
