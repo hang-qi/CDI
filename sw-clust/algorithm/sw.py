@@ -42,10 +42,24 @@ Parameters:
     this function will be called with current labeling result at
     the end of every iteration.
         callback(labeling)
+
+- inital_labeling (optional):
+    the initial status to begin from.
+    All vertex will have the save initial label if not provided.
+
+- max_labels (optional):
+    the max number of labels can be used.
+    Each vertex can have its own unique label if max_labels is not specified.
+
 """
     sw = _SWCuts()
     return sw.sample(
-        _AdjacencyGraph(graph_size, edges), edge_prob_func, target_eval_func, intermediate_callback, initial_labeling, max_labels)
+        _AdjacencyGraph(graph_size, edges),
+        edge_prob_func,
+        target_eval_func,
+        intermediate_callback,
+        initial_labeling,
+        max_labels)
 
 
 class SWContext(object):
