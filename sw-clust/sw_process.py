@@ -64,7 +64,12 @@ def SW_Process():
 
     initial_labeling = []
     for i in range(0, node_number):
-        initial_labeling.append(i % 2)
+        j = i % 100
+        if j < 50:
+            initial_labeling.append(0)
+        else:
+            initial_labeling.append(1)
+        #initial_labeling.append(0)
 
     print('Start Sampling')
     sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=None)

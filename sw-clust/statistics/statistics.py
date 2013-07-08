@@ -36,8 +36,8 @@ class Statistics(object):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
         #print(energy)
-        energy /= 10000
-        return math.exp(-energy)
+        energy /= 200000
+        return mpmath.exp(-energy)
 
     def calculate_energy(self, current_labeling):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
@@ -51,20 +51,33 @@ class Statistics(object):
                     if prev_label != -1:  # Not the first segment
                         [current_seg_cat, prob] = self.classification(current_seg)
                         # print('Classification Result: Category {0}, Probability {1}'.format(current_seg_cat, prob))
-                        try:
-                            energy += mpmath.log(prob)
-                        except ValueError, e:
-                            print(prob)
-                            raise e
-                        # Add the transition prob
-                        if previous_seg_cat != -1:
-                            energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
-                        # Add the prior prob
-                        energy += self.length_prior[len(current_seg) - 1]
+                        if prob != 0:
+                            try:
+                                energy += mpmath.log(prob)
+                            except ValueError, e:
+                                print(prob)
+                                raise e
+                            # Add the transition prob
+                            if previous_seg_cat != -1:
+                                energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
+                            # Add the prior prob
+                            energy += self.length_prior[len(current_seg) - 1]
                         previous_seg_cat = current_seg_cat
                         current_seg = []  # clear the current segment
                     prev_label = current_labeling[i]
                 current_seg.append(i)
+            [current_seg_cat, prob] = self.classification(current_seg)
+            if prob != 0:
+                try:
+                    energy += mpmath.log(prob)
+                except ValueError, e:
+                    print(prob)
+                    raise e
+                # Add the transition prob
+                if previous_seg_cat != -1:
+                    energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
+                # Add the prior prob
+                energy += self.length_prior[len(current_seg) - 1]
         else:
             print('Error: Node Number Does Not Match')
         energy = -energy

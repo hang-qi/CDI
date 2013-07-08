@@ -148,7 +148,8 @@ def preprocessing(test_filenameprefix, training_file_in):
     prior_dist_range = 500
     for i in range(0, prior_dist_range):
         j = i + 1.0
-        length_prior.append(100.0/j + 10.0*norm(25, 15).pdf(j))
+        length_prior.append(100.0/j + 10.0*norm(15, 15).pdf(j) + 10.0*norm(2, 10).pdf(j))
+        #length_prior.append(1)
     # Norm the probability
     dist_sum = sum(length_prior)
     for i in range(0, prior_dist_range):
