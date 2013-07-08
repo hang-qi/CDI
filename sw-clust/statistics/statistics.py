@@ -26,7 +26,7 @@ class Statistics(object):
         if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
             return 1
         else:  # Return the probability
-            count = int(context.iteration_counter/100)
+            count = int(context.iteration_counter/500)
             if count > 7:
                 count = 7
             return 0.2 + 0.1*count
@@ -84,7 +84,7 @@ class Statistics(object):
 
             # transition prob term
             if previous_category != -1:
-                energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-100)
+                energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-10)
             previous_category = category
 
             # prior prob term
@@ -110,9 +110,9 @@ class Statistics(object):
         max_prob = -1.0
         label = -1
         for i in range(0, self.class_num):
-            prob = np1_cat_prob.get_value(0, i) * vp_cat_prob.get_value(0, i) * np2_cat_prob.get_value(0, i)
+            prob = mpmath.mpf(np1_cat_prob.get_value(0, i)) * mpmath.mpf(vp_cat_prob.get_value(0, i)) * mpmath.mpf(np2_cat_prob.get_value(0, i))
             if prob != 0:
-                prob /= (self.class_prior.get_value(0, i) * self.class_prior.get_value(0, i))
+                prob /= mpmath.mpf(self.class_prior.get_value(0, i) * self.class_prior.get_value(0, i))
             if prob > max_prob:
                 max_prob = prob
                 label = i
@@ -123,14 +123,14 @@ class Statistics(object):
         vp_cat_prob = probability.Probability(1, self.class_num)
         np2_cat_prob = probability.Probability(1, self.class_num)
         for i in range(0, self.class_num):
-            prob_np1 = 1
-            prob_vp = 1
-            prob_np2 = 1
+            prob_np1 = mpmath.mpf(1.0)
+            prob_vp = mpmath.mpf(1.0)
+            prob_np2 = mpmath.mpf(1.0)
             for j in current_seg:
-                prob_np1 *= self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i)
-                prob_vp *= self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i)
-                prob_np2 *= self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i)
-            prior = self.class_prior.get_value(0, i)
+                prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i))
+                prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i))
+                prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i))
+            prior = mpmath.mpf(self.class_prior.get_value(0, i))
             prob_np1 *= prior
             prob_vp *= prior
             prob_np2 *= prior

@@ -11,6 +11,7 @@ from model.nodes import Node, Nodes
 from model import probability
 
 from scipy.stats import norm
+import mpmath
 
 
 def read_test_file(filenameprefix):
@@ -72,8 +73,6 @@ def read_training_classification_data(file_in):
             class_prior_prob = probability.Probability(1, class_num)
             for i in range(0, class_num):
                 class_prior_prob.set_value(0, i, float(f.readline()[:-1]))
-            #if not class_prior_prob.check_probability(1):
-            #    print('Error in the Class Prior Probability in File {0}'.format(file_in))
         else:
             print('Class Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -86,8 +85,6 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     np1_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            #if not np1_prob.check_probability(class_num):
-            #    print('Error in the NP1 Probability in File {0}'.format(file_in))
         else:
             print('NP1 Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -99,8 +96,6 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     vp_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            #if not vp_prob.check_probability(class_num):
-            #    print('Error in the VP Probability in File {0}'.format(file_in))
         else:
             print('VP Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -112,8 +107,6 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     np2_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            #if not np2_prob.check_probability(class_num):
-            #    print('Error in the NP2 Probability in File {0}'.format(file_in))
         else:
             print('NP2 Number Does Not Match in File {0}'.format(file_in))
         f.readline()  # Blank line
@@ -125,8 +118,7 @@ def read_training_classification_data(file_in):
                 for j in range(0, class_num):
                     transition_prob.set_value(i, j, float(f.readline()[:-1]))
                 f.readline()  # Blank line
-            #if not transition_prob.check_probability(class_num):
-            #    print('Error in the Class Transition Probability in File {0}'.format(file_in))
+
             f.readline()
         else:
             print('Class Number Does Not Match in File {0}'.format(file_in))
@@ -148,7 +140,7 @@ def preprocessing(test_filenameprefix, training_file_in):
     prior_dist_range = 500
     for i in range(0, prior_dist_range):
         j = i + 1.0
-        length_prior.append(100.0/j + 10.0*norm(15, 15).pdf(j) + 10.0*norm(2, 10).pdf(j))
+        length_prior.append(mpmath.mpf(100.0/j + 10.0*norm(15, 15).pdf(j) + 10.0*norm(2, 10).pdf(j)))
         #length_prior.append(1)
     # Norm the probability
     dist_sum = sum(length_prior)

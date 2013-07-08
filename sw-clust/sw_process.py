@@ -13,6 +13,10 @@ class Plotter(object):
         self.stat = stat
         self.true_segment = true_segment
         self.true_eval = true_eval
+        self.pronoun = []
+        for i in range(0, self.stat.all_nodes.node_num):
+            if self.stat.all_nodes.nodes[i].pronoun:
+                self.pronoun.append(i)
 
         # You probably won't need this if you're embedding things in a tkinter plot...
         plt.ion()
@@ -42,6 +46,8 @@ class Plotter(object):
                 current_seg.append(i)
         self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
         self.segment_plot.axis([0, self.stat.all_nodes.node_num, 0, 3])
+        self.segment_plot.hold(True)
+        self.segment_plot.plot(self.pronoun, [0.5]*len(self.pronoun), '.')
 
         self.fig.canvas.draw()
 

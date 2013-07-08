@@ -1,12 +1,12 @@
 # Probability
-import numpy
+import mpmath
 
 
 class Probability(object):
     def __init__(self, nrow, ncol):
         self.row_num = nrow
         self.col_num = ncol
-        self.prob = numpy.empty((nrow, ncol))
+        self.prob = mpmath.matrix(nrow, ncol)  # numpy.empty((nrow, ncol))
 
     def set_value(self, row, col, value):
         assert(row >= 0 and row < self.row_num)

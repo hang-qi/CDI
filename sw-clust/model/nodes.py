@@ -3,6 +3,7 @@ import sys
 sys.path.append('..')
 from preprocessing.vocabulary import Vocabulary
 import probability
+import mpmath
 
 
 class Node(object):
@@ -46,11 +47,11 @@ class Nodes(object):
                 word_id.append(-1)
         prob_all_cats = probability.Probability(1, class_num)
         for i in range(0, class_num):
-            prob = 1
+            prob = mpmath.mpf(1.0)
             for wid in word_id:
                 if wid != -1:
                     if voc_prob.get_value(wid, i) == 0:
                         print('Error')
-                    prob *= voc_prob.get_value(wid, i)
+                    prob *= mpmath.mpf(voc_prob.get_value(wid, i))
             prob_all_cats.set_value(0, i, prob)
         return prob_all_cats
