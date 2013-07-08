@@ -88,7 +88,7 @@ class Statistics(object):
             previous_category = category
 
             # prior prob term
-            energy += -self.length_prior[len(segment) - 1]
+            energy += -mpmath.log(self.length_prior[len(segment) - 1])
         return energy
 
     def classification(self, current_seg):
