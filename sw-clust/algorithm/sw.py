@@ -126,7 +126,7 @@ class _SWCuts(object):
         # Cache turn-on probability of each edge and stored in a adjacent list.
         # Since the edge probability only concern the two end point of the edge,
         # this probability will remain the same during the run.
-        self.__cache_turn_on_probability_func(edge_prob_func)
+        #self.__cache_turn_on_probability_func(edge_prob_func)
 
         while not self.__has_converged():
             self.context.count_iteration()
@@ -153,17 +153,17 @@ class _SWCuts(object):
         """Convergence Test."""
         return False
 
-    def __cache_turn_on_probability_func(self, edge_prob_func):
-        """Store turn-on probability of each edge in a adjacent list."""
-        self.__edge_on_prob_cache = defaultdict(dict)
-        for (s, t) in self.adjacency_graph.edges:
-                self.__edge_on_prob_cache[s][t] = edge_prob_func(s, t, self.context)
+    #def __cache_turn_on_probability_func(self, edge_prob_func):
+    #    """Store turn-on probability of each edge in a adjacent list."""
+    #    self.__edge_on_prob_cache = defaultdict(dict)
+    #    for (s, t) in self.adjacency_graph.edges:
+    #            self.__edge_on_prob_cache[s][t] = edge_prob_func(s, t, self.context)
 
     def __edge_on_probability(self, s, t):
         # Ensure s < t
         if s > t:
             s, t = t, s
-        return self.__edge_on_prob_cache[s][t]
+        return self.edge_prob_func(s, t, self.context)
 
     def __determine_edge_status(self):
         edge_status = defaultdict(dict)
@@ -171,8 +171,8 @@ class _SWCuts(object):
             # Determine the status of each edge probabilistically.
             # Turn edge 'on' if r < prob(on), 'off' otherwise.
             r = random.random()
-            #if (r < self.__edge_on_probability(s, t)):
-            if (r < self.edge_prob_func(s, t, self.context)):
+            if (r < self.__edge_on_probability(s, t)):
+            #if (r < self.edge_prob_func(s, t, self.context)):
                 edge_status[s][t] = True
                 edge_status[t][s] = True
             else:
