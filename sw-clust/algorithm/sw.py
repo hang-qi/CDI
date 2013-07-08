@@ -258,14 +258,18 @@ class _SWCuts(object):
             labeling_candidates.append(labeling)
             posteriors.append(posterior)
             denominator += posterior
+
         # Normalize the posterior probability.
+        assert(denominator != 0)
         posteriors = [p/denominator for p in posteriors]
 
+        print('Posteriors: {0}'.format(posteriors))
         print('Component: {0}'.format(component))
         print('Candidate: {0}'.format(candidate_labels))
         print('Previous Labeling: {0}'.format([current_labeling[v] for v in component]))
+
         # Sample from the posterior probability.
-        selected_labeling = []
+        selected_labeling = current_labeling
         cdf = [sum(posteriors[0:x]) for x in range(1, len(posteriors)+1)]
         r = random.random()
         for i in range(0, len(cdf)):

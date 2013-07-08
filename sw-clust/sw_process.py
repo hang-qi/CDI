@@ -30,7 +30,7 @@ class Plotter(object):
         self.energy_plot.clear()
         self.energy_plot.plot(self.iterations, self.energies)
         self.energy_plot.hold(True)
-        self.energy_plot.plot(self.iterations, [self.true_eval]*len(self.iterations), 'r')
+        self.energy_plot.plot([1, len(self.iterations)], [self.true_eval, self.true_eval], 'r')
 
         # segmentation plot
         self.segment_plot.clear()

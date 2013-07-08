@@ -1,6 +1,5 @@
 # Provide the statistics for SW Process
 import sys
-import math
 sys.path.append('..')
 
 import mpmath
@@ -36,51 +35,60 @@ class Statistics(object):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
         #print(energy)
-        energy /= 200000
-        return mpmath.exp(-energy)
+        tempreture = 200000.0
+        return mpmath.exp(-(energy/tempreture))
+
+    def calculate_ground_truth(self, true_segment):
+        true_labeling = []
+        seg = 0
+        ts_index = 0
+        for i in range(0, self.all_nodes.node_num):
+            if i == true_segment.seg_boundary[ts_index]:
+                seg = 1 - seg
+                true_labeling.append(seg)
+                ts_index += 1
+            else:
+                true_labeling.append(seg)
+        true_eval = self.target_evaluation_func(true_labeling)
+        return true_eval
+
+    def __labeling_to_segments(self, labeling):
+        segmentation = []
+        current_segment = []
+        current_segment_label = labeling[0]
+        for (node_index, label) in enumerate(labeling):
+            if label == current_segment_label:
+                current_segment.append(node_index)
+            else:
+                # New segment
+                segmentation.append(current_segment)
+                current_segment = [node_index]
+                current_segment_label = label
+        if len(current_segment) > 0:
+            segmentation.append(current_segment)
+        return segmentation
 
     def calculate_energy(self, current_labeling):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
-        energy = 0
-        if len(current_labeling) == self.all_nodes.node_num:
-            current_seg = []
-            previous_seg_cat = -1
-            prev_label = -1
-            for i in range(0, self.all_nodes.node_num):
-                if current_labeling[i] != prev_label:
-                    if prev_label != -1:  # Not the first segment
-                        [current_seg_cat, prob] = self.classification(current_seg)
-                        # print('Classification Result: Category {0}, Probability {1}'.format(current_seg_cat, prob))
-                        if prob != 0:
-                            try:
-                                energy += mpmath.log(prob)
-                            except ValueError, e:
-                                print(prob)
-                                raise e
-                            # Add the transition prob
-                            if previous_seg_cat != -1:
-                                energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
-                            # Add the prior prob
-                            energy += self.length_prior[len(current_seg) - 1]
-                        previous_seg_cat = current_seg_cat
-                        current_seg = []  # clear the current segment
-                    prev_label = current_labeling[i]
-                current_seg.append(i)
-            [current_seg_cat, prob] = self.classification(current_seg)
-            if prob != 0:
-                try:
-                    energy += mpmath.log(prob)
-                except ValueError, e:
-                    print(prob)
-                    raise e
-                # Add the transition prob
-                if previous_seg_cat != -1:
-                    energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
-                # Add the prior prob
-                energy += self.length_prior[len(current_seg) - 1]
-        else:
-            print('Error: Node Number Does Not Match')
-        energy = -energy
+        assert(len(current_labeling) == self.all_nodes.node_num)
+        segmentation = self.__labeling_to_segments(current_labeling)
+
+        energy = 0.0
+        previous_category = -1
+        for segment in segmentation:
+            # likelihood term
+            [category, prob] = self.classification(segment)
+            if prob == 0:
+                prob = 1e-100
+            energy += -mpmath.log(prob)
+
+            # transition prob term
+            if previous_category != -1:
+                energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-100)
+            previous_category = category
+
+            # prior prob term
+            energy += -self.length_prior[len(segment) - 1]
         return energy
 
     def classification(self, current_seg):
@@ -149,17 +157,3 @@ class Statistics(object):
             prob *= self.class_prior.get_value(0, i)
             prob_all_cats.set_value(0, i, prob)
         return prob_all_cats
-
-    def calculate_ground_truth(self, true_segment):
-        true_labeling = []
-        seg = 0
-        ts_index = 0
-        for i in range(0, self.all_nodes.node_num):
-            if i == true_segment.seg_boundary[ts_index]:
-                seg = 1 - seg
-                true_labeling.append(seg)
-                ts_index += 1
-            else:
-                true_labeling.append(seg)
-        true_eval = self.target_evaluation_func(true_labeling)
-        return true_eval
