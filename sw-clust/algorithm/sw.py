@@ -13,6 +13,8 @@ from collections import deque
 import copy
 import random
 
+import mpmath
+
 
 def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, max_labels=None):
     """Generating fair samples by Swendsen-Wang Cuts.
@@ -240,17 +242,17 @@ class _SWCuts(object):
         # Compute posterior probability of each candidate.
         labeling_candidates = []
         posteriors = []
-        denominator = 0.0
+        denominator = mpmath.mpf(0.0)
         for label in candidate_labels:
             labeling = copy.copy(current_labeling)
             for v in component:
                 labeling[v] = label
 
             # This weighted posterior guarantees the detailed balance.
-            weight = 1.0
+            weight = mpmath.mpf(1.0)
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
-            val = target_eval_func(labeling)
+            val = mpmath.mpf(target_eval_func(labeling))
             posterior = weight * val
 
             labeling_candidates.append(labeling)
