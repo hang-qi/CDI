@@ -47,7 +47,7 @@ class Plotter(object):
 
 
 def SW_Process():
-    [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = readingfiles.preprocessing('2008081519', 'preprocessing/model_segmenter.txt')
+    [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior] = readingfiles.preprocessing('2008081519', 'preprocessing/model_segmenter.txt')
     print('Reading Files Finished')
     print('Calculate Probability Given Category for Each Node')
     all_nodes.set_nodes_prob(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob)
@@ -58,7 +58,7 @@ def SW_Process():
         j = i + 1
         edges.append([i, j])
 
-    stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob)
+    stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior)
     true_eval = stat.calculate_ground_truth(true_segment)
     plotter = Plotter(stat, true_segment, true_eval)
 

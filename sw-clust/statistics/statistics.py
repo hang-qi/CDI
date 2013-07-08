@@ -9,7 +9,7 @@ from model import probability
 
 
 class Statistics(object):
-    def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob):
+    def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob, length_prior):
         self.all_nodes = nodes
         self.class_num = cnum
         self.np1_voc = np1voc
@@ -20,6 +20,7 @@ class Statistics(object):
         self.np2_prob = np2prob
         self.transition_prob = transprob
         self.class_prior = classpriorprob
+        self.length_prior = length_prior
 
     def calculate_Qe(self, left, right, context):
         right_node = self.all_nodes.nodes[right]
@@ -55,8 +56,11 @@ class Statistics(object):
                         except ValueError, e:
                             print(prob)
                             raise e
-                        if previous_seg_cat != -1:  # Add the transition prob
+                        # Add the transition prob
+                        if previous_seg_cat != -1:
                             energy += mpmath.log(self.transition_prob.get_value(current_seg_cat, previous_seg_cat) + 1e-100)
+                        # Add the prior prob
+                        energy += self.length_prior[len(current_seg) - 1]
                         previous_seg_cat = current_seg_cat
                         current_seg = []  # clear the current segment
                     prev_label = current_labeling[i]

@@ -6,9 +6,11 @@ sys.path.append('..')
 import func
 import cleansing
 import vocabulary
-import probability
 from model import segment
 from model.nodes import Node, Nodes
+from model import probability
+
+from scipy.stats import norm
 
 
 def read_test_file(filenameprefix):
@@ -141,4 +143,14 @@ def read_training_clusters(file_in):
 def preprocessing(test_filenameprefix, training_file_in):
     [all_nodes, true_segment] = read_test_file(test_filenameprefix)
     [class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = read_training_classification_data(training_file_in)
-    return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob]
+    # Add the Length Priors
+    length_prior = []
+    prior_dist_range = 500
+    for i in range(0, prior_dist_range):
+        j = i + 1.0
+        length_prior.append(100.0/j + 10.0*norm(25, 15).pdf(j))
+    # Norm the probability
+    dist_sum = sum(length_prior)
+    for i in range(0, prior_dist_range):
+        length_prior[i] /= dist_sum
+    return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior]
