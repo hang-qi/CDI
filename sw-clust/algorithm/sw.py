@@ -136,12 +136,15 @@ class _SWCuts(object):
             edge_status = self.__determine_edge_status()
 
             # Form connected components over the whole space.
-            connected_component = self.__form_connected_component(
+            connected_components = self.__form_connected_components(
                 current_labeling, edge_status)
 
-            # Flip the connect components probabilistically.
-            current_labeling = self.__flip_connected_component(
-                current_labeling, connected_component, target_eval_func)
+            # Do a sweep
+            for component in connected_components:
+                # Flip the connect component probabilistically.
+                current_labeling = self.__flip_connected_component(
+                    current_labeling, component, target_eval_func)
+                self.context.set_result(current_labeling)
 
             # Propagate intermediate result if has callback function.
             if intermediate_callback is not None:
@@ -180,22 +183,27 @@ class _SWCuts(object):
                 edge_status[t][s] = False
         return edge_status
 
-    def __form_connected_component(self, current_labeling, edge_status):
-        """Form a connected component (CP) probabilistically from a random vertex.
-        This function returns a tuple (CP, cut_edges).
-        CP is a list of vertexes. And cut_edges is a list of edges, i.e. [(s, t)]."""
+    def __form_connected_components(self, current_labeling, edge_status):
+        """Form connected components (CP) probabilistically.
+        This function returns a list of CPs.
+        Each CP is a list of vertexes. And cut_edges is a list of edges, i.e. [(s, t)]."""
         size = self.adjacency_graph.size
         visited = [False for v in range(0, size)]
 
-        # Form one CP from a random vertex
-        random_vertex = random.randint(0, size-1)
-        (component, cut_edges) = self.__grow_component_by_bfs(
-            random_vertex, current_labeling, edge_status, visited)
-        return (component, cut_edges)
+        connected_components = []
+        for v in range(0, self.adjacency_graph.size):
+            if not visited[v]:
+                seed_vertex = v
+                # Form one CP from a random vertex
+                #seed_vertex = random.randint(0, size-1)
+                component = self.__grow_component_by_bfs(
+                    seed_vertex, current_labeling, edge_status, visited)
+                connected_components.append(component)
+        return connected_components
 
     def __grow_component_by_bfs(self, start_vertex, current_labeling, edge_status, visited):
         component = []
-        cut_edges = []
+        # cut_edges = []
         original_label = current_labeling[start_vertex]
         d = deque([start_vertex])
         while(len(d) != 0):
@@ -211,14 +219,12 @@ class _SWCuts(object):
                 if current_labeling[u] == original_label:
                     if edge_status[v][u]:
                         d.append(u)
-                    else:
-                        cut_edges.append((v, u))
-        cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
-        return (component, cut_edges)
+                    #else:
+                        # cut_edges.append((v, u))
+        # cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
+        return component
 
-    def __flip_connected_component(self, current_labeling, connected_component, target_eval_func):
-        (component, cut_edges) = connected_component
-
+    def __flip_connected_component(self, current_labeling, component, target_eval_func):
         # Possible labels for for connected component:
         #   - Label of any neighbors, so that the CP will be merged into a neighbor.
         #   - New label, so that the CP will be a new cluster.
