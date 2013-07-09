@@ -38,7 +38,7 @@ Parameters:
     cluster labeling. This probability does not need to be normalized.
     MCMC theory guarantees that fair samples will be generated from
     this target distribution when the chain converges.
-        target_eval_func(labeling)
+        target_eval_func(labeling, context)
 
 - intermediate_callback (optional):
     this function will be called with current labeling result at
@@ -252,7 +252,7 @@ class _SWCuts(object):
             weight = mpmath.mpf(1.0)
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
-            val = mpmath.mpf(target_eval_func(labeling))
+            val = mpmath.mpf(target_eval_func(labeling, self.context))
             posterior = weight * val
 
             labeling_candidates.append(labeling)
