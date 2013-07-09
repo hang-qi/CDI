@@ -27,18 +27,19 @@ class Statistics(object):
         if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
             return 1
         else:  # Return the probability
-            count = int(context.iteration_counter/100)
-            if count > 7:
-                count = 7
-            return 0.2 + 0.1*count
+            #count = int(context.iteration_counter/100)
+            #if count > 7:
+            #    count = 7
+            #return 0.2 + 0.1*count
+            return 0.9
 
     def target_evaluation_func(self, current_labeling, context=None):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
-        temperature = 10000
+        temperature = 1000
         #print(energy)
         #if context is not None:
-        #    count = int(context.iteration_counter/100)
+        #    count = int(context.iteration_counter/50)
         #    if count > 19:
         #        count = 19
         #    temperature = 200000.0 - 10000*count
@@ -90,8 +91,8 @@ class Statistics(object):
             energy += -mpmath.log(prob)
 
             # transition prob term
-            if previous_category != -1:
-                energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-100)
+            #if previous_category != -1:
+            #    energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-100)
             previous_category = category
 
             # prior prob term

@@ -152,6 +152,7 @@ def preprocessing(test_filenameprefix, training_file_in):
     seg_num_prior = prob_normalization(seg_num_prior)
     return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior]
 
+
 def prob_normalization(dist):
     dist_sum = sum(dist)
     for i in range(0, len(dist)):

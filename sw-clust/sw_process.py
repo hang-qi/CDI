@@ -68,14 +68,15 @@ def SW_Process():
     true_eval = stat.calculate_ground_truth(true_segment)
     plotter = Plotter(stat, true_segment, true_eval)
 
-    initial_labeling = []
-    for i in range(0, node_number):
-        j = i % 100
-        if j < 50:
-            initial_labeling.append(0)
-        else:
-            initial_labeling.append(1)
-        #initial_labeling.append(0)
+    #initial_labeling = []
+    #seglabel = 0
+    #for i in range(0, node_number):
+    #    if all_nodes.nodes[i].pronoun:
+    #        initial_labeling.append(seglabel)
+    #    else:
+    #        seglabel = 1 - seglabel
+    #        initial_labeling.append(seglabel)
+    #    #initial_labeling.append(0)
 
     print('Start Sampling')
     sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=None)
