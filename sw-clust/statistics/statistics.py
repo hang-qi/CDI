@@ -31,12 +31,17 @@ class Statistics(object):
                 count = 7
             return 0.2 + 0.1*count
 
-    def target_evaluation_func(self, current_labeling):
+    def target_evaluation_func(self, current_labeling, context=None):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
+        temperature = 10000
         #print(energy)
-        tempreture = 200000.0
-        return mpmath.exp(-(energy/tempreture))
+        if context is not None:
+            count = int(context.iteration_counter/100)
+            if count > 19:
+                count = 19
+            temperature = 200000.0 - 10000*count
+        return mpmath.exp(-(energy/temperature))
 
     def calculate_ground_truth(self, true_segment):
         true_labeling = []
