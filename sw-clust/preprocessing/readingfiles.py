@@ -30,7 +30,7 @@ def read_test_file(filenameprefix):
                     line = (line[:-2]).lower()
                     triplets = line.split('|')
                     np1 = triplets[0].split()
-                    if func.ispronoun(np1[0]):
+                    if np1 != [] and func.ispronoun(np1[0]):
                         pronoun_flag = True
                     else:
                         pronoun_flag = False
@@ -143,7 +143,17 @@ def preprocessing(test_filenameprefix, training_file_in):
         length_prior.append(mpmath.mpf(100.0/j + 10.0*norm(15, 15).pdf(j) + 10.0*norm(2, 10).pdf(j)))
         #length_prior.append(1)
     # Norm the probability
-    dist_sum = sum(length_prior)
+    length_prior = prob_normalization(length_prior)
+
+    # Add the Total Segment Number Prior
+    seg_num_prior = []
     for i in range(0, prior_dist_range):
-        length_prior[i] /= dist_sum
-    return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior]
+        seg_num_prior.append(mpmath.mpf(norm(30.0, 20.0).pdf(i)))
+    seg_num_prior = prob_normalization(seg_num_prior)
+    return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior]
+
+def prob_normalization(dist):
+    dist_sum = sum(dist)
+    for i in range(0, len(dist)):
+        dist[i] /= dist_sum
+    return dist

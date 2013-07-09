@@ -8,7 +8,7 @@ from model import probability
 
 
 class Statistics(object):
-    def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob, length_prior):
+    def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob, length_prior, seg_num_prior):
         self.all_nodes = nodes
         self.class_num = cnum
         self.np1_voc = np1voc
@@ -20,6 +20,7 @@ class Statistics(object):
         self.transition_prob = transprob
         self.class_prior = classpriorprob
         self.length_prior = length_prior
+        self.seg_num_prior = seg_num_prior
 
     def calculate_Qe(self, left, right, context):
         right_node = self.all_nodes.nodes[right]
@@ -36,11 +37,11 @@ class Statistics(object):
         energy = self.calculate_energy(current_labeling)
         temperature = 10000
         #print(energy)
-        if context is not None:
-            count = int(context.iteration_counter/100)
-            if count > 19:
-                count = 19
-            temperature = 200000.0 - 10000*count
+        #if context is not None:
+        #    count = int(context.iteration_counter/100)
+        #    if count > 19:
+        #        count = 19
+        #    temperature = 200000.0 - 10000*count
         return mpmath.exp(-(energy/temperature))
 
     def calculate_ground_truth(self, true_segment):
@@ -80,6 +81,7 @@ class Statistics(object):
 
         energy = 0.0
         previous_category = -1
+        #print(len(segmentation))
         for segment in segmentation:
             # likelihood term
             [category, prob] = self.classification(segment)
@@ -94,6 +96,7 @@ class Statistics(object):
 
             # prior prob term
             energy += -mpmath.log(self.length_prior[len(segment) - 1])
+        energy += -mpmath.log(self.seg_num_prior[len(segmentation)])
         return energy
 
     def classification(self, current_seg):
