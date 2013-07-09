@@ -47,7 +47,7 @@ class Plotter(object):
         self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
         self.segment_plot.axis([0, self.stat.all_nodes.node_num, 0, 3])
         self.segment_plot.hold(True)
-        self.segment_plot.plot(self.pronoun, [0.5]*len(self.pronoun), '.')
+        self.segment_plot.plot(self.pronoun, [1.5]*len(self.pronoun), '.')
 
         self.fig.canvas.draw()
 
