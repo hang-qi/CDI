@@ -16,7 +16,7 @@ import random
 import mpmath
 
 
-def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, max_labels=None):
+def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, monitor_statistics=None, max_labels=None):
     """Generating fair samples by Swendsen-Wang Cuts.
 Parameters:
 - graph_size:
@@ -59,9 +59,10 @@ Parameters:
         _AdjacencyGraph(graph_size, edges),
         edge_prob_func,
         target_eval_func,
-        intermediate_callback,
-        initial_labeling,
-        max_labels)
+        intermediate_callback=intermediate_callback,
+        initial_labeling=initial_labeling,
+        monitor_statistics_func=monitor_statistics,
+        max_labels=max_labels)
 
 
 class SWContext(object):
@@ -100,26 +101,58 @@ class _AdjacencyGraph(object):
         return
 
 
+class _ConvergenceMonitor(object):
+    def __init__(self, monitor_func, epsilon=0, stationary_steps=500):
+        self.monitor_statistics_func = monitor_func
+        self.epsilon = epsilon
+        self.stationary_steps = stationary_steps
+        self.history = []
+        self.window = (0, 0)
+
+    def has_converged(self, context):
+        if self.monitor_statistics_func is None:
+            return False
+
+        current_statistics = self.monitor_statistics_func(context.current_labeling)
+        # record history
+        self.history.append(current_statistics)
+        # adjust convergence window
+        self.window = (self.window[0], len(self.history) - 1)
+
+        values_in_window = self.history[self.window[0]: self.window[1]+1]
+        while max(values_in_window) - min(values_in_window) > self.epsilon:
+            self.window = (self.window[0]+1, self.window[1])
+            values_in_window = self.history[self.window[0]: self.window[1]+1]
+
+        if self.window[1]-self.window[0] < self.stationary_steps:
+            return False
+        else:
+            return True
+
+
 class _SWCuts(object):
     """Swendsen-Wang cuts."""
     def __init__(self):
         super(_SWCuts, self).__init__()
         self.context = SWContext()
 
-    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, max_labels=None):
+    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, monitor_statistics_func=None, max_labels=None):
         # Initial labeling.
         if initial_labeling is not None:
             current_labeling = initial_labeling
         else:
             current_labeling = [0] * adjacency_graph.size
 
+        self.adjacency_graph = adjacency_graph
         if max_labels is not None:
             self.max_labels = max_labels
         else:
-            self.max_labels = adjacency_graph.size
+            self.max_labels = self.adjacency_graph.size
 
-        self.adjacency_graph = adjacency_graph
+        # Functions
         self.edge_prob_func = edge_prob_func
+        self.target_eval_func = target_eval_func
+        self.convergence_monitor = _ConvergenceMonitor(monitor_statistics_func)
 
         self.context.set_result(current_labeling)
 
@@ -144,7 +177,7 @@ class _SWCuts(object):
             component = connected_components[random.randint(0, len(connected_components)-1)]
             # Flip the connect component probabilistically.
             current_labeling = self.__flip_connected_component(
-                current_labeling, component, target_eval_func)
+                current_labeling, component)
             self.context.set_result(current_labeling)
 
             # Propagate intermediate result if has callback function.
@@ -155,7 +188,7 @@ class _SWCuts(object):
 
     def __has_converged(self):
         """Convergence Test."""
-        return False
+        return self.convergence_monitor.has_converged(self.context)
 
     #def __cache_turn_on_probability_func(self, edge_prob_func):
     #    """Store turn-on probability of each edge in a adjacent list."""
@@ -225,7 +258,7 @@ class _SWCuts(object):
         # cut_edges = [(s, t) for (s, t) in cut_edges if not (s in component and t in component)]
         return component
 
-    def __flip_connected_component(self, current_labeling, component, target_eval_func):
+    def __flip_connected_component(self, current_labeling, component):
         # Possible labels for for connected component:
         #   - Label of any neighbors, so that the CP will be merged into a neighbor.
         #   - New label, so that the CP will be a new cluster.
@@ -259,7 +292,7 @@ class _SWCuts(object):
             weight = mpmath.mpf(1.0)
             for (s, t) in cut_edges_dict[label]:
                 weight *= (1 - self.__edge_on_probability(s, t))
-            val = mpmath.mpf(target_eval_func(labeling, self.context))
+            val = mpmath.mpf(self.target_eval_func(labeling, self.context))
             posterior = weight * val
 
             labeling_candidates.append(labeling)
