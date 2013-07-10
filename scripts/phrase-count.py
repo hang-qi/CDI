@@ -1,6 +1,8 @@
 import threading
 import Queue
 
+import cleansing
+
 #write_lock = threading.Lock()
 
 
@@ -42,6 +44,17 @@ def read_phrases(phrase_file):
     return phrases
 
 
+def read_caption_and_clean(captionfile):
+    words = []
+    content_tags = set(['CC0', 'CC1', 'TR0', 'TR1'])
+    with open(captionfile, 'r', encoding='ISO-8859-1') as f:
+        for line in f:
+            if line[0] == '2' or line[0:3] in content_tags:
+                content = line.split('|')[-1]
+                words.extend(content.split())
+    return cleansing.clean(words)
+
+
 def count(phrases, i, q):
     #with write_lock:
     q.put(i)
@@ -49,6 +62,7 @@ def count(phrases, i, q):
 
 def main():
     phrases = read_phrases('phrases.csv')
+    stopwords = read_stopwords('stopwords.txt')
     #result = count(phrases)
     q = Queue.Queue()
 
