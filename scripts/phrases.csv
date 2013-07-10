@@ -1,0 +1,1001 @@
+"","PHRASE_STUB","PHRASE","ORIGINALPHRASE","WORDS","ALPHA","BETA","DEM_COUNT","REP_COUNT","slant","Rshare"
+"1","ablebuygun","able buy gun","able to buy a gun",3,0.0003835,-0.000481,26,0,-26,0
+"2","abortionclinic","abortion clinic","abortion clinics",2,-3.3e-05,0.0003221,10,41,31,0.803921568627451
+"3","abughraib","abu ghraib","abu ghraib",2,0.0020824,-0.0020391,232,106,-126,0.313609467455621
+"4","abughraibprison","abu ghraib prison","abu ghraib prison",3,0.0003715,-0.0002566,49,15,-34,0.234375
+"5","abusepower","abuse power","abuse of power",2,0.002754,-0.0035974,218,32,-186,0.128
+"6","abusedneglectedchild","abused neglected children","abused and neglected children",3,0.0009221,-0.0014589,21,2,-19,0.0869565217391304
+"7","actionfairnessact","action fairness act","action fairness act",3,-0.0005819,0.0019492,25,92,67,0.786324786324786
+"8","actionlawsuit","action lawsuit","action lawsuits",2,-0.0023918,0.0069647,66,161,95,0.709251101321586
+"9","additionalfunding","additional funding","additional funding",2,0.0011934,0.0002572,160,63,-97,0.282511210762332
+"10","additionaltaxcut","additional tax cut","additional tax cuts",3,0.0003963,-0.0003731,63,0,-63,0
+"11","adequatehealthcare","adequate health care","adequate health care",3,0.00045,-0.0004752,24,2,-22,0.0769230769230769
+"12","administrationoffici","administration official","administration officials",2,0.0008108,-0.0008929,96,21,-75,0.179487179487179
+"13","adultstem","adult stem","adult stem",2,-0.0008004,0.0040642,52,224,172,0.811594202898551
+"14","adultstemcel","adult stem cel","adult stem cells",3,-0.0007952,0.0040378,52,223,171,0.810909090909091
+"15","affordablehousing","affordable housing","affordable housing",2,0.0112977,-0.0160457,235,72,-163,0.234527687296417
+"16","africanamerican","african american","african american",2,0.0452225,-0.069642,1021,313,-708,0.234632683658171
+"17","africanamericancommu","african american community","african american community",3,0.0028523,-0.0040692,51,7,-44,0.120689655172414
+"18","africanamericanlatin","african american latino","african americans and latinos",3,0.0002961,-0.0004977,18,0,-18,0
+"19","africanamericanwomen","african american women","african american women",3,0.0025795,-0.0039015,57,15,-42,0.208333333333333
+"20","alternativeminimumta","alternative minimum tax","alternative minimum tax",3,0.0032195,-0.0031241,206,74,-132,0.264285714285714
+"21","americabloodcent","america blood cent","america blood centers",3,0.0001894,0.0001669,2,16,14,0.888888888888889
+"22","americanbarassociati","american bar association","american bar association",3,6.54e-05,0.000732,51,102,51,0.666666666666667
+"23","americancommunity","american community","american community",2,0.0060466,-0.0078508,147,40,-107,0.213903743315508
+"24","americanconsumer","american consumer","american consumers",2,-0.0005321,0.0044251,211,89,-122,0.296666666666667
+"25","americanfarmbureau","american farm bureau","american farm bureau",3,0.0008782,-0.0007857,6,43,37,0.877551020408163
+"26","americanforceradio","american force radio","american forces radio",3,2.31e-05,6.3e-06,22,2,-20,0.0833333333333333
+"27","americanfretrade","american fre trade","american free trade",3,0.002804,-0.0025736,409,123,-286,0.231203007518797
+"28","americanheritagemont","american heritage month","american heritage month",3,0.0014452,-0.0022185,46,5,-41,0.0980392156862745
+"29","americanlivingpovert","american living poverty","americans living in poverty",3,0.000213,-0.0003609,16,0,-16,0
+"30","americanpacificislan","american pacific islander","american and pacific islander",3,0.0005732,-0.0009199,32,1,-31,0.0303030303030303
+"31","americanpeople","american people","american people",2,0.0487591,-0.032202,4149,2082,-2067,0.334135772749157
+"32","americanpeopledeserv","american people deserve","american people deserve",3,0.0012328,-0.0008239,164,50,-114,0.233644859813084
+"33","americanvalue","american value","american values",2,-0.0027496,0.0077302,141,37,-104,0.207865168539326
+"34","americanworker","american worker","american workers",2,0.0043144,-0.001359,547,214,-333,0.281208935611038
+"35","amnestyillegalalien","amnesty illegal alien","amnesty to illegal aliens",3,-9.53e-05,0.0004229,0,12,12,1
+"36","angelecitycouncil","angele city council","angeles city council",3,0.0009941,-0.0015752,18,0,-18,0
+"37","antigun","anti gun","anti gun",2,-0.0002972,0.0007923,1,30,29,0.967741935483871
+"38","appropriationbil","appropriation bil","appropriations bill",2,0.0023032,0.0247972,1149,1204,55,0.511687207819804
+"39","araboilembargo","arab oil embargo","arab oil embargo",3,-3.73e-05,0.0001238,2,16,14,0.888888888888889
+"40","arcticnationalwildli","arctic national wildlife","arctic national wildlife",3,0.0031704,-0.0043482,198,37,-161,0.157446808510638
+"41","arcticrefuge","arctic refuge","arctic refuge",2,0.0008778,-0.0009479,139,8,-131,0.054421768707483
+"42","arcticwildliferefuge","arctic wildlife refuge","arctic wildlife refuge",3,0.0003164,-0.00041,45,2,-43,0.0425531914893617
+"43","armembargo","arm embargo","arms embargo",2,-3.29e-05,0.0009054,7,37,30,0.840909090909091
+"44","armembargochina","arm embargo china","arms embargo against china",3,-3.77e-05,0.0002773,0,12,12,1
+"45","armeniangenocide","armenian genocide","armenian genocide",2,0.0026006,-0.0027991,111,25,-86,0.183823529411765
+"46","armoredcavalryregime","armored cavalry regiment","armored cavalry regiment",3,-0.0001372,0.0006907,27,3,-24,0.1
+"47","asianamerican","asian american","asian american",2,0.0029666,-0.0045384,112,6,-106,0.0508474576271186
+"48","asianamericanpacific","asian american pacific","asian american and pacific",3,0.0005963,-0.0009564,33,1,-32,0.0294117647058824
+"49","asianpacific","asian pacific","asian pacific",2,0.0052913,-0.0075747,173,11,-162,0.0597826086956522
+"50","asianpacificamerican","asian pacific american","asian pacific american",3,0.0037142,-0.0054143,103,6,-97,0.055045871559633
+"51","asianpacificislander","asian pacific islander","asian and pacific islander",3,0.0010819,-0.0016945,53,1,-52,0.0185185185185185
+"52","assaultweapon","assault weapon","assault weapons",2,0.0006477,-0.0008028,108,2,-106,0.0181818181818182
+"53","assaultweaponban","assault weapon ban","assault weapons ban",3,0.0001745,-0.0001674,37,2,-35,0.0512820512820513
+"54","assistantsecretary","assistant secretary","assistant secretary",2,-3.95e-05,0.0028516,83,168,85,0.669322709163347
+"55","assistantsecretaryco","assistant secretary commerce","assistant secretary of commerce",3,-7.9e-06,6.03e-05,0,13,13,1
+"56","atomicenergyagency","atomic energy agency","atomic energy agency",3,0.0001218,0.000532,12,38,26,0.76
+"57","aymanalzawahiri","ayman al zawahiri","ayman al zawahiri",3,-6.92e-05,0.0003461,1,14,13,0.933333333333333
+"58","backgroundchecksyste","background check system","background check system",3,0.0001971,-0.0001951,21,2,-19,0.0869565217391304
+"59","baddeal","bad deal","bad deal",2,0.0010134,-0.0014828,47,2,-45,0.0408163265306122
+"60","bankinghousingurban","banking housing urban","banking housing and urban",3,-0.0002342,0.0010118,14,68,54,0.829268292682927
+"61","bankruptcycourt","bankruptcy court","bankruptcy court",2,0.0008363,-0.0005332,213,78,-135,0.268041237113402
+"62","bankruptcyreform","bankruptcy reform","bankruptcy reform",2,-0.0005057,0.0018399,57,114,57,0.666666666666667
+"63","bankruptcyreformact","bankruptcy reform act","bankruptcy reform act",3,-1.05e-05,9.67e-05,1,19,18,0.95
+"64","baseclosing","base closing","base closing",2,-9.9e-06,0.0021382,17,69,52,0.802325581395349
+"65","basicright","basic right","basic rights",2,-0.0001912,0.0011739,61,10,-51,0.140845070422535
+"66","belowpovertyline","below poverty line","below the poverty line",3,0.0011796,-0.0018511,55,4,-51,0.0677966101694915
+"67","benefitcut","benefit cut","benefit cuts",2,0.0016689,-0.0014688,176,53,-123,0.231441048034935
+"68","benefitsocialsecurit","benefit social security","benefits of social security",3,0.0009212,-0.0009152,81,29,-52,0.263636363636364
+"69","bidcontract","bid contract","bid contracts",2,0.0008426,-0.0010294,95,16,-79,0.144144144144144
+"70","bilcut","bil cut","bill cuts",2,0.0032361,-0.0025329,206,20,-186,0.0884955752212389
+"71","bilfail","bil fail","bill fails",2,9.09e-05,0.0017615,80,13,-67,0.139784946236559
+"72","bilfalshort","bil fal short","bill falls short",3,0.0005598,-0.0008429,22,2,-20,0.0833333333333333
+"73","billiondeficit","billion deficit","billion deficit",2,0.0013769,-0.0011385,126,38,-88,0.231707317073171
+"74","billiondollar","billion dollar","billions of dollars",2,0.019863,-0.0238543,817,355,-462,0.302901023890785
+"75","billiondollartax","billion dollar tax","billions of dollars in tax",3,0.0005125,-0.0007618,26,2,-24,0.0714285714285714
+"76","billiontax","billion tax","billion in tax",2,0.0039451,-0.0038963,295,67,-228,0.185082872928177
+"77","billiontaxbreak","billion tax break","billion in tax breaks",3,0.0017871,-0.002681,51,2,-49,0.0377358490566038
+"78","billiontaxcut","billion tax cut","billion in tax cuts",3,0.002083,-0.0023968,185,10,-175,0.0512820512820513
+"79","billiontradedeficit","billion trade deficit","billion trade deficit",3,0.000468,-0.0005562,103,6,-97,0.055045871559633
+"80","birthabortion","birth abortion","birth abortion",2,1.6e-06,0.0002554,5,32,27,0.864864864864865
+"81","birthcontrol","birth control","birth control",2,0.000503,-0.0007338,45,4,-41,0.0816326530612245
+"82","blackcaucu","black caucu","black caucus",2,0.0124203,-0.0208221,206,8,-198,0.0373831775700935
+"83","blessamerica","bless america","bless america",2,-0.0009115,0.0027658,12,54,42,0.818181818181818
+"84","blockgrant","block grant","block grant",2,0.0048867,-0.0052126,243,92,-151,0.274626865671642
+"85","bloodstemcel","blood stem cel","blood stem cells",3,3.69e-05,0.0008384,16,73,57,0.820224719101124
+"86","bodyarmor","body armor","body armor",2,0.0009991,-0.0002759,107,31,-76,0.22463768115942
+"87","borderpatrol","border patrol","border patrol",2,-0.001164,0.0102431,164,315,151,0.657620041753653
+"88","bordersecurity","border security","border security",2,0.0003811,0.0089534,154,334,180,0.684426229508197
+"89","borrowmoney","borrow money","borrow money",2,5.82e-05,0.0016348,140,34,-106,0.195402298850575
+"90","bottomline","bottom line","bottom line",2,0.0063711,-0.0059485,442,203,-239,0.314728682170543
+"91","boygirlclub","boy girl club","boys and girls clubs",3,-3.48e-05,0.0003902,32,5,-27,0.135135135135135
+"92","boyscout","boy scout","boy scouts",2,-0.0040053,0.0130684,69,285,216,0.805084745762712
+"93","boyscoutamerica","boy scout america","boy scouts of america",3,-0.0013449,0.0041483,22,91,69,0.805309734513274
+"94","breakrule","break rule","break the rules",2,0.0004134,-0.0004301,120,12,-108,0.0909090909090909
+"95","bringtroop","bring troop","bring our troops",2,0.002246,-0.0031651,159,23,-136,0.126373626373626
+"96","bringtroophome","bring troop home","bring our troops home",3,0.0022806,-0.0033264,152,21,-131,0.121387283236994
+"97","brownboardeducation","brown board education","brown v board of education",3,0.0010125,-0.0014345,46,12,-34,0.206896551724138
+"98","budgetcommitte","budget committe","budget committee",2,-0.0008936,0.0062567,180,329,149,0.646365422396857
+"99","budgetcut","budget cut","budget cuts",2,0.0051961,-0.0068328,351,33,-318,0.0859375
+"100","budgetdeficit","budget deficit","budget deficit",2,0.0036256,-0.0029935,376,86,-290,0.186147186147186
+"101","budgetoffice","budget office","budget office",2,0.0026334,-0.0014276,288,144,-144,0.333333333333333
+"102","budgetpolicyprioriti","budget policy prioriti","budget and policy priorities",3,0.0003434,-0.0005307,25,1,-24,0.0384615384615385
+"103","budgetprioriti","budget prioriti","budget priorities",2,0.0008168,-0.0011066,51,5,-46,0.0892857142857143
+"104","budgetproposal","budget proposal","budget proposal",2,0.0013383,-0.0008925,122,35,-87,0.222929936305732
+"105","budgetsurplu","budget surplu","budget surplus",2,0.0004475,-0.0003099,51,2,-49,0.0377358490566038
+"106","budgetsurpluse","budget surpluse","budget surpluses",2,0.0002975,-0.0002606,43,4,-39,0.0851063829787234
+"107","buleye","bul eye","bull eye",2,0.000617,-0.0008542,58,6,-52,0.09375
+"108","bunkerbuster","bunker buster","bunker buster",2,0.0005608,-0.0008425,98,0,-98,0
+"109","bushadministrationbu","bush administration budget","bush administration budget",3,0.0002707,-0.0003359,19,1,-18,0.05
+"110","bushbudget","bush budget","bush budget",2,0.0013002,-0.0017185,74,12,-62,0.13953488372093
+"111","bushplan","bush plan","bush plan",2,0.0004385,-0.0005717,42,4,-38,0.0869565217391304
+"112","bushwhitehouse","bush white house","bush white house",3,0.0003432,-0.000273,38,4,-34,0.0952380952380952
+"113","businessmeeting","business meeting","business meeting",2,-0.0001865,0.0006971,8,59,51,0.880597014925373
+"114","businessowner","business owner","business owners",2,0.0034723,0.0020428,154,250,96,0.618811881188119
+"115","busyweek","busy week","busy week",2,-0.0001547,0.0004505,2,41,39,0.953488372093023
+"116","buyamerican","buy american","buy american",2,-0.0006041,0.0023331,106,18,-88,0.145161290322581
+"117","buyamericanproduct","buy american product","buy american products",3,-0.000233,0.0007133,35,2,-33,0.0540540540540541
+"118","buygun","buy gun","buy guns",2,0.0008633,-0.0010163,82,4,-78,0.0465116279069767
+"119","calibersniperrifle","caliber sniper rifle","caliber sniper rifles",3,0.0003584,-0.0004902,56,0,-56,0
+"120","californiasupremecou","california supreme court","california supreme court",3,-0.0004152,0.0017915,43,94,51,0.686131386861314
+"121","camppendleton","camp pendleton","camp pendleton",2,0.0002036,9.33e-05,61,10,-51,0.140845070422535
+"122","cardcompani","card compani","card companies",2,0.000886,-0.0008562,227,27,-200,0.106299212598425
+"123","carddebt","card debt","card debt",2,0.0004899,-0.0005163,78,15,-63,0.161290322580645
+"124","carecut","care cut","care cuts",2,0.000389,-0.0005323,44,1,-43,0.0222222222222222
+"125","careeducation","care education","care education",2,0.0007114,-6.36e-05,96,20,-76,0.172413793103448
+"126","carefunding","care funding","care funding",2,0.0005393,-0.0003868,62,11,-51,0.150684931506849
+"127","careprescriptiondrug","care prescription drug","care and prescription drugs",3,3.63e-05,-1.27e-05,19,0,-19,0
+"128","cashflow","cash flow","cash flow",2,-0.0004145,0.0015161,6,36,30,0.857142857142857
+"129","celline","cel line","cell lines",2,0.0006129,5.58e-05,42,129,87,0.754385964912281
+"130","celresearch","cel research","cell research",2,0.0018761,0.004562,227,400,173,0.637958532695375
+"131","celstemcel","cel stem cel","cells and stem cells",3,0.0001157,-0.000102,2,16,14,0.888888888888889
+"132","centbudgetpolicy","cent budget policy","center on budget and policy",3,0.0003434,-0.0005307,25,1,-24,0.0384615384615385
+"133","centdiseasecontrol","cent disease control","centers for disease control",3,0.001831,-0.0017745,114,48,-66,0.296296296296296
+"134","centralamerican","central american","central american",2,0.0057506,-0.0033949,649,261,-388,0.286813186813187
+"135","centralamericanfre","central american fre","central american free",3,0.0024407,-0.0022535,353,102,-251,0.224175824175824
+"136","changeheart","change heart","change hearts",2,0.0003842,-0.0002856,18,72,54,0.8
+"137","changeheartmind","change heart mind","change hearts and minds",3,0.0002959,-0.0003434,2,66,64,0.970588235294118
+"138","changerule","change rule","change the rules",2,0.0018297,-0.0011241,342,70,-272,0.169902912621359
+"139","changesenaterule","change senate rule","change the senate rules",3,0.0001286,-3.21e-05,50,14,-36,0.21875
+"140","checkbal","check bal","checks and balances",2,0.0024061,-0.0014065,483,94,-389,0.162911611785095
+"141","chemicplant","chemic plant","chemical plants",2,0.0035042,-0.0053246,109,20,-89,0.155038759689922
+"142","chemicplantsecurity","chemic plant security","chemical plant security",3,0.0008024,-0.0012992,17,0,-17,0
+"143","chiefjudge","chief judge","chief judge",2,-0.0001827,0.0008257,19,68,49,0.781609195402299
+"144","chiefjustice","chief justice","chief justice",2,-0.0030805,0.0131357,310,523,213,0.627851140456183
+"145","chiefjusticerehnquis","chief justice rehnquist","chief justice rehnquist",3,0.0004018,0.0006097,66,135,69,0.671641791044776
+"146","chiefjusticewilliam","chief justice william","chief justice william",3,-0.0001148,0.0007522,12,41,29,0.773584905660377
+"147","chiefnavaloperation","chief naval operation","chief of naval operations",3,-1.06e-05,0.0002933,3,28,25,0.903225806451613
+"148","childcareassistance","child care assistance","child care assistance",3,0.0004272,-0.0007011,22,0,-22,0
+"149","childlabor","child labor","child labor",2,0.0012343,-0.0015241,145,8,-137,0.0522875816993464
+"150","childlaborlaw","child labor law","child labor laws",3,0.0002441,-0.0002265,29,2,-27,0.0645161290322581
+"151","childleft","child left","child left",2,0.0052213,-0.0061849,367,155,-212,0.296934865900383
+"152","childleftact","child left act","child left behind act",3,0.0011056,-0.0010813,100,38,-62,0.27536231884058
+"153","childsupport","child support","child support",2,0.006295,-0.0084329,418,101,-317,0.194605009633911
+"154","childsupportenforcem","child support enforcement","child support enforcement",3,0.0021646,-0.0031158,117,15,-102,0.113636363636364
+"155","childsupportprogram","child support program","child support programs",3,0.0002272,-0.0002237,26,0,-26,0
+"156","childrenfamili","children famili","children and families",2,0.0019679,-0.0016929,159,54,-105,0.253521126760563
+"157","childrenlivepoverty","children live poverty","children live in poverty",3,0.0004452,-0.0007498,19,0,-19,0
+"158","chinajapan","china japan","china and japan",2,-1.5e-06,0.0004607,66,4,-62,0.0571428571428571
+"159","ciaagent","cia agent","cia agent",2,0.0020449,-0.0031924,176,13,-163,0.0687830687830688
+"160","circuitcourt","circuit court","circuit court",2,2.93e-05,0.0049299,268,425,157,0.613275613275613
+"161","circuitcourtappeal","circuit court appeal","circuit court of appeals",3,-0.0006712,0.003478,106,196,90,0.649006622516556
+"162","circuitcourtjudge","circuit court judge","circuit court judge",3,-0.0002247,0.0008123,20,50,30,0.714285714285714
+"163","circuitjudge","circuit judge","circuit judge",2,-0.0001255,0.0010264,49,121,72,0.711764705882353
+"164","citysanfrancisco","city san francisco","city of san francisco",3,0.0003881,-0.0006632,20,0,-20,0
+"165","civilright","civil right","civil rights",2,0.0240155,-0.0308522,1042,409,-633,0.281874569262578
+"166","civilrightmovement","civil right movement","civil rights movement",3,0.0066094,-0.0082257,180,67,-113,0.271255060728745
+"167","civilrightorganizati","civil right organization","civil rights organizations",3,0.0004166,-0.0006714,21,1,-20,0.0454545454545455
+"168","civilrightprotection","civil right protection","civil rights protections",3,0.0013694,-0.0022156,46,2,-44,0.0416666666666667
+"169","classaction","class action","class action",2,-0.0066652,0.0240842,472,945,473,0.666901905434016
+"170","classactionfairness","class action fairness","class action fairness",3,-0.0006249,0.002191,27,106,79,0.796992481203007
+"171","classactionreform","class action reform","class action reform",3,-0.0005144,0.001884,21,72,51,0.774193548387097
+"172","cleanairact","clean air act","clean air act",3,0.0010724,-0.000792,122,46,-76,0.273809523809524
+"173","cleandrinkingwater","clean drinking water","clean drinking water",3,0.0004015,-0.0006399,19,1,-18,0.05
+"174","cleanenergy","clean energy","clean energy",2,-0.0002472,0.0013386,42,101,59,0.706293706293706
+"175","cleanwateract","clean water act","clean water act",3,0.0016744,-0.0023695,78,20,-58,0.204081632653061
+"176","climatechange","climate change","climate change",2,0.0005805,0.0018472,206,319,113,0.607619047619048
+"177","clinicsocialworker","clinic social worker","clinical social workers",3,0.0002921,-0.0002904,27,2,-25,0.0689655172413793
+"178","closeddoor","closed door","closed doors",2,-0.0012336,0.0038166,117,20,-97,0.145985401459854
+"179","coalitionforce","coalition force","coalition forces",2,0.0003011,0.0007352,19,74,55,0.795698924731183
+"180","coalitionprovisional","coalition provisional authority","coalition provisional authority",3,0.0003652,-0.0003029,46,9,-37,0.163636363636364
+"181","collegecost","college cost","college costs",2,0.0003468,-0.0004386,38,2,-36,0.05
+"182","collegeeducation","college education","college education",2,0.0010786,-0.0005322,126,39,-87,0.236363636363636
+"183","collegestudent","college student","college students",2,0.002641,-0.0030225,192,66,-126,0.255813953488372
+"184","collegetuition","college tuition","college tuition",2,0.0011165,-0.0015458,97,20,-77,0.170940170940171
+"185","columbiarivergorge","columbia river gorge","columbia river gorge",3,0.0010858,-0.000862,23,2,-21,0.08
+"186","committebusinessentr","committe business entrepreneurship","committee on small business and entrepreneurship",3,0.0002044,-0.0002058,8,33,25,0.804878048780488
+"187","committecommercescie","committe commerce science","committee on commerce science",3,-0.0001964,0.0011532,27,95,68,0.778688524590164
+"188","committeforeignrelat","committe foreign relation","committee on foreign relations",3,-0.0004057,0.0016074,30,111,81,0.787234042553192
+"189","committegovernmentre","committe government reform","committee on government reform",3,0.0017059,0.0005542,64,103,39,0.616766467065868
+"190","committeholdhearing","committe hold hearing","committee to hold hearings",3,7.29e-05,-8.36e-05,16,0,-16,0
+"191","committehomelandsecu","committe homeland security","committee on homeland security",3,0.0027616,-0.0002632,123,195,72,0.613207547169811
+"192","commonsensereform","common sense reform","common sense reforms",3,-0.0002872,0.0010992,3,18,15,0.857142857142857
+"193","commonlyprescribeddr","commonly prescribed drug","commonly prescribed drugs",3,0.00013,6.93e-05,0,15,15,1
+"194","communitydevelopment","community development","community development",2,0.003848,-0.0036139,205,73,-132,0.262589928057554
+"195","communitydevelopmen2","community development block","community development block",3,0.0027437,-0.0033818,107,39,-68,0.267123287671233
+"196","communityorientedpol","community oriented policing","community oriented policing",3,0.0001957,-6e-07,27,3,-24,0.1
+"197","confercivilright","confer civil right","conference on civil rights",3,0.0001514,-0.0002356,23,2,-21,0.08
+"198","congresswhitehouse","congress white house","congress and the white house",3,0.0005358,-0.0001886,47,9,-38,0.160714285714286
+"199","congressionalblackca","congressional black caucu","congressional black caucus",3,0.0122676,-0.0206314,202,6,-196,0.0288461538461538
+"200","congressionalbudgeto","congressional budget office","congressional budget office",3,0.0026075,-0.0015185,276,140,-136,0.336538461538462
+"201","congressionalhispani","congressional hispanic caucu","congressional hispanic caucus",3,0.0045068,-0.0070369,54,1,-53,0.0181818181818182
+"202","consentdecre","consent decre","consent decrees",2,-4.08e-05,0.0002699,1,65,64,0.984848484848485
+"203","consumerfederationam","consumer federation america","consumer federation of america",3,-2.62e-05,0.0002841,31,2,-29,0.0606060606060606
+"204","consumerproductsafet","consumer product safety","consumer product safety",3,0.0001772,-0.0002055,30,1,-29,0.032258064516129
+"205","consumerprotection","consumer protection","consumer protection",2,0.0014355,0.0002092,174,72,-102,0.292682926829268
+"206","cordblood","cord blood","cord blood",2,0.0037156,-0.0022143,175,299,124,0.630801687763713
+"207","cordbloodstem","cord blood stem","cord blood stem",3,-0.0002456,0.0012925,13,70,57,0.843373493975904
+"208","corporationpublicbro","corporation public broadcasting","corporation for public broadcasting",3,0.0023172,-0.0035294,99,12,-87,0.108108108108108
+"209","costbillion","cost billion","cost billion",2,0.0012914,-5.81e-05,230,98,-132,0.298780487804878
+"210","costnaturalga","cost natural ga","cost of natural gas",3,-0.0001714,0.0007109,10,37,27,0.787234042553192
+"211","costprescriptiondrug","cost prescription drug","cost of prescription drugs",3,0.0006777,-0.0005323,84,28,-56,0.25
+"212","costtaxcut","cost tax cut","cost of the tax cuts",3,0.0003691,-0.0005315,36,1,-35,0.027027027027027
+"213","costwar","cost war","cost of the war",2,0.0017316,-0.0023725,137,12,-125,0.0805369127516778
+"214","countynorthcarolina","county north carolina","county north carolina",3,-5.74e-05,0.000483,1,14,13,0.933333333333333
+"215","courtappeal","court appeal","court of appeals",2,2.6e-05,0.0043182,293,401,108,0.577809798270893
+"216","courtjudge","court judge","court judge",2,-0.0003307,0.0028369,123,208,85,0.628398791540785
+"217","createjob","create job","create jobs",2,0.0009914,0.005082,213,317,104,0.59811320754717
+"218","creditcard","credit card","credit card",2,0.0033213,-0.002094,827,179,-648,0.1779324055666
+"219","creditcardcompani","credit card compani","credit card companies",3,0.0008862,-0.0008659,226,27,-199,0.106719367588933
+"220","creditcarddebt","credit card debt","credit card debt",3,0.0004899,-0.0005163,78,15,-63,0.161290322580645
+"221","creditcardindustry","credit card industry","credit card industry",3,9.5e-05,5.42e-05,82,4,-78,0.0465116279069767
+"222","creditcardissuer","credit card issuer","credit card issuers",3,0.0001988,-0.0002612,33,1,-32,0.0294117647058824
+"223","crimelaw","crime law","crimes law",2,0.0002371,0.0001609,7,79,72,0.918604651162791
+"224","currentsystem","current system","current system",2,-0.0029629,0.0101866,69,128,59,0.649746192893401
+"225","customborderprotecti","custom border protection","customs and border protection",3,6.7e-05,0.0004981,18,41,23,0.694915254237288
+"226","cutbenefit","cut benefit","cut benefits",2,0.0011685,-0.000829,159,39,-120,0.196969696969697
+"227","cutbil","cut bil","cut bill",2,0.001163,-0.0010454,108,10,-98,0.0847457627118644
+"228","cutbudget","cut budget","cut the budget",2,0.001469,-0.0016754,110,22,-88,0.166666666666667
+"229","cutchildsupport","cut child support","cuts to child support",3,0.0006015,-0.0008015,41,0,-41,0
+"230","cuteducation","cut education","cuts in education",2,0.0012813,-0.0016831,101,3,-98,0.0288461538461538
+"231","cutfoodstamp","cut food stamp","cut food stamps",3,0.001059,-0.0015871,72,7,-65,0.0886075949367089
+"232","cutfund","cut fund","cut funds",2,0.0006231,-0.000713,47,4,-43,0.0784313725490196
+"233","cutfunding","cut funding","cut funding",2,0.003734,-0.0045133,176,22,-154,0.111111111111111
+"234","cuthealth","cut health","cut health",2,0.00067,-0.0007644,71,6,-65,0.0779220779220779
+"235","cuthealthcare","cut health care","cut health care",3,0.0004432,-0.0005247,54,4,-50,0.0689655172413793
+"236","cutmedicaid","cut medicaid","cut medicaid",2,0.0033476,-0.0042971,265,25,-240,0.0862068965517241
+"237","cutprogram","cut program","cut programs",2,0.0024152,-0.0031684,172,19,-153,0.0994764397905759
+"238","cutsocialsecurity","cut social security","cut social security",3,0.0004274,-0.0005856,54,3,-51,0.0526315789473684
+"239","cutspending","cut spending","cut spending",2,0.0001545,0.0014217,132,47,-85,0.262569832402235
+"240","cutstudentaid","cut student aid","cuts to student aid",3,0.0003882,-0.0004911,26,1,-25,0.037037037037037
+"241","cutstudentloan","cut student loan","cut student loans",3,0.001208,-0.0017894,57,1,-56,0.0172413793103448
+"242","cuttaxcut","cut tax cut","cuts tax cuts",3,0.0003595,2.93e-05,62,14,-48,0.184210526315789
+"243","cuttaxe","cut taxe","cut taxes",2,0.0017964,-0.0014553,147,52,-95,0.261306532663317
+"244","cuttinghealthcare","cutting health care","cutting health care",3,0.0002219,-0.000277,24,1,-23,0.04
+"245","datetime","date time","date the time",2,-0.0004976,0.0017403,6,163,157,0.964497041420118
+"246","deathpenaltysystem","death penalty system","death penalty system",3,0.0001004,-0.0001474,16,0,-16,0
+"247","deathtax","death tax","death tax",2,-0.0073482,0.0245246,35,365,330,0.9125
+"248","deathtaxrepeal","death tax repeal","death tax repeal",3,-0.0009385,0.0027223,0,37,37,1
+"249","deepseacoral","deep sea coral","deep sea corals",3,9.31e-05,-0.0001021,16,0,-16,0
+"250","defenseappropriation","defense appropriation bil","defense appropriations bill",3,0.0012823,-8.02e-05,211,113,-98,0.348765432098765
+"251","defenseauthorization","defense authorization bil","defense authorization bill",3,0.0007493,0.0006726,285,167,-118,0.369469026548673
+"252","defenseintelligencea","defense intelligence agency","defense intelligence agency",3,0.0016536,-0.0017547,12,37,25,0.755102040816326
+"253","deficitreductionbil","deficit reduction bil","deficit reduction bill",3,-2.82e-05,0.0004108,14,79,65,0.849462365591398
+"254","democratleader","democrat leader","democrat leader",2,-0.0004332,0.0012762,3,54,51,0.947368421052632
+"255","democratrepublican","democrat republican","democrats and republicans",2,0.0056127,-0.0005773,479,239,-240,0.332869080779944
+"256","democratwhitehouse","democrat white house","democrat in the white house",3,9.05e-05,-0.0001099,27,4,-23,0.129032258064516
+"257","democraticleader","democratic leader","democratic leader",2,0.0013409,-0.0002094,221,451,230,0.671130952380952
+"258","dependenceforeignoil","dependence foreign oil","dependence on foreign oil",3,0.0019585,-0.0004505,292,74,-218,0.202185792349727
+"259","deputychiefstaff","deputy chief staff","deputy chief of staff",3,0.000571,-0.000718,36,6,-30,0.142857142857143
+"260","developmentblockgran","development block grant","development block grant",3,0.002694,-0.0032148,111,44,-67,0.283870967741935
+"261","disabledamericanvete","disabled american veteran","disabled american veterans",3,-3.9e-05,0.000461,28,2,-26,0.0666666666666667
+"262","diseasecontrolpreven","disease control prevention","disease control and prevention",3,0.0007203,-0.0007372,62,15,-47,0.194805194805195
+"263","districtjudge","district judge","district judge",2,-0.000371,0.0015026,30,76,46,0.716981132075472
+"264","dividendtaxcut","dividend tax cut","dividend tax cuts",3,0.0007586,-0.0010548,35,2,-33,0.0540540540540541
+"265","dollartaxcut","dollar tax cut","dollars in tax cuts",3,0.0004376,-0.000672,30,1,-29,0.032258064516129
+"266","domesticviolence","domestic violence","domestic violence",2,0.010106,-0.0091666,508,209,-299,0.291492329149233
+"267","domesticviolencesexu","domestic violence sexual","domestic violence and sexual",3,0.0007715,-0.0007805,53,9,-44,0.145161290322581
+"268","drmartinluther","dr martin luther","dr martin luther",3,0.0020552,-0.002927,66,19,-47,0.223529411764706
+"269","drillingarcticnation","drilling arctic national","drilling in the arctic national",3,0.0019513,-0.0030565,61,7,-54,0.102941176470588
+"270","drinkingwater","drinking water","drinking water",2,0.0066253,-0.0094161,177,60,-117,0.253164556962025
+"271","drivereducation","driver education","driver education",2,0.000112,-7.8e-06,0,24,24,1
+"272","driverlicense","driver license","driver licenses",2,-0.0008864,0.0103218,185,283,98,0.604700854700855
+"273","dropoutpreventionpro","dropout prevention program","dropout prevention program",3,3.53e-05,2.33e-05,16,0,-16,0
+"274","drugbil","drug bil","drug bill",2,0.0010067,-0.0010094,112,21,-91,0.157894736842105
+"275","drugcompani","drug compani","drug companies",2,0.0028383,-0.003769,177,32,-145,0.15311004784689
+"276","dutyfre","duty fre","duty free",2,-0.0015104,0.0054126,47,96,49,0.671328671328671
+"277","earthday","earth day","earth day",2,0.0010646,-0.0016389,62,1,-61,0.0158730158730159
+"278","easttexa","east texa","east texas",2,-0.0010479,0.0026431,3,46,43,0.938775510204082
+"279","economicgrowth","economic growth","economic growth",2,-0.000112,0.0081508,272,410,138,0.601173020527859
+"280","economicgrowthjob","economic growth job","economic growth and job",3,0.0002641,-7.36e-05,2,24,22,0.923076923076923
+"281","economycontinuegrow","economy continue grow","economy continues to grow",3,-0.0001787,0.0006769,3,21,18,0.875
+"282","economygrowing","economy growing","economy is growing",2,-0.0007775,0.0027049,21,69,48,0.766666666666667
+"283","educationcut","education cut","education cuts",2,0.0004175,-0.0005267,42,3,-39,0.0666666666666667
+"284","educationhealth","education health","education health",2,0.0016952,-0.0014526,140,46,-94,0.247311827956989
+"285","educationhealthcare","education health care","education health care",3,0.0013359,-0.0012524,110,31,-79,0.219858156028369
+"286","educationprogram","education program","education programs",2,0.0042648,-0.0028502,324,141,-183,0.303225806451613
+"287","elderlydisabled","elderly disabled","elderly and disabled",2,0.0013886,-0.001782,81,19,-62,0.19
+"288","electionreform","election reform","election reform",2,0.0010902,-0.0015904,58,8,-50,0.121212121212121
+"289","electronicvotingmach","electronic voting machine","electronic voting machines",3,0.0016775,-0.0027878,25,1,-24,0.0384615384615385
+"290","embryostemcel","embryo stem cel","embryo stem cells",3,-8.22e-05,0.0003576,1,20,19,0.952380952380952
+"291","embryonicstem","embryonic stem","embryonic stem",2,7.21e-05,0.0066103,137,446,309,0.765008576329331
+"292","embryonicstemcel","embryonic stem cel","embryonic stem cell",3,7.15e-05,0.0066059,136,446,310,0.766323024054983
+"293","endmeet","end meet","ends meet",2,0.0001695,0.0006534,119,25,-94,0.173611111111111
+"294","endangeredspeciact","endangered speci act","endangered species act",3,-0.0007802,0.0099972,180,95,-85,0.345454545454545
+"295","endingseptember","ending september","ending september",2,-0.0011176,0.0046752,8,57,49,0.876923076923077
+"296","enemycombatant","enemy combatant","enemy combatant",2,-0.0009195,0.0035786,68,130,62,0.656565656565657
+"297","energynaturalresourc","energy natural resource","energy and natural resources",3,-0.0008563,0.0035393,89,232,143,0.722741433021807
+"298","enforceimmigrationla","enforce immigration law","enforce our immigration laws",3,-0.0002252,0.0009351,6,25,19,0.806451612903226
+"299","environmentlaw","environment law","environmental laws",2,0.0013779,-0.0007486,120,26,-94,0.178082191780822
+"300","equalpay","equal pay","equal pay",2,0.0003321,-0.0004592,55,1,-54,0.0178571428571429
+"301","estatetax","estate tax","estate tax",2,0.001905,0.0013509,195,46,-149,0.190871369294606
+"302","ethicrule","ethic rule","ethics rules",2,0.0005039,-0.0002229,70,10,-60,0.125
+"303","europeanunion","european union","european union",2,-0.0015246,0.0064028,73,186,113,0.718146718146718
+"304","explosivedevicedeton","explosive device detonated","explosive device detonated",3,9.01e-05,7.67e-05,57,7,-50,0.109375
+"305","exportimport","export import","export import",2,-0.0002783,0.0008902,10,44,34,0.814814814814815
+"306","exportimportbank","export import bank","export import bank",3,-0.0002196,0.0006865,5,40,35,0.888888888888889
+"307","extendpatriotact","extend patriot act","extend the patriot act",3,0.0001935,-0.0001687,37,6,-31,0.13953488372093
+"308","exxonmobil","exxon mobil","exxon mobil",2,0.000454,-0.0006391,40,3,-37,0.0697674418604651
+"309","familybusiness","family business","family business",2,-0.0009087,0.0046087,35,84,49,0.705882352941177
+"310","familymedicleave","family medic leave","family and medical leave",3,0.0001167,-0.0001087,39,5,-34,0.113636363636364
+"311","familyvalue","family value","family values",2,0.0053286,-0.0085741,76,6,-70,0.0731707317073171
+"312","farmbureau","farm bureau","farm bureau",2,0.0001769,0.0015559,30,90,60,0.75
+"313","farmbureaufederation","farm bureau federation","farm bureau federation",3,-0.0002322,0.0006725,2,21,19,0.91304347826087
+"314","fasttrack","fast track","fast track",2,-0.0001125,0.0013678,106,18,-88,0.145161290322581
+"315","federairmarshal","feder air marshal","federal air marshals",3,-0.0001587,0.0004938,0,15,15,1
+"316","federbudget","feder budget","federal budget",2,-0.0004128,0.0052895,156,242,86,0.608040201005025
+"317","federelection","feder election","federal elections",2,0.0023,-0.0031886,118,18,-100,0.132352941176471
+"318","federemergencymanage","feder emergency management","federal emergency management",3,0.0014187,-0.0017069,64,23,-41,0.264367816091954
+"319","federincometax","feder income tax","federal income tax",3,-0.0003517,0.0012155,7,33,26,0.825
+"320","federspending","feder spending","federal spending",2,-0.0009067,0.0040261,37,180,143,0.829493087557604
+"321","federtrade","feder trade","federal trade",2,0.0005004,0.0011127,141,39,-102,0.216666666666667
+"322","federtradecommission","feder trade commission","federal trade commission",3,0.0004994,0.0011097,140,38,-102,0.213483146067416
+"323","fifthcircuitcourt","fifth circuit court","fifth circuit court",3,-0.0001833,0.0008609,14,54,40,0.794117647058823
+"324","fifthcongressionaldi","fifth congressional district","fifth congressional district",3,-0.0001612,0.0006978,3,20,17,0.869565217391304
+"325","fightingwarterror","fighting war terror","fighting the war on terror",3,0.0001749,0.0005439,11,34,23,0.755555555555556
+"326","finalminute","final minute","final minutes",2,-0.0001467,0.0004261,3,35,32,0.921052631578947
+"327","financecommitte","finance committe","finance committee",2,-7.77e-05,0.0031055,295,398,103,0.574314574314574
+"328","financetaxcut","finance tax cut","finance tax cuts",3,0.0005583,-0.0008355,24,0,-24,0
+"329","financialaccountings","financial accounting standard","financial accounting standards",3,0.0002329,-0.0002956,1,14,13,0.933333333333333
+"330","financialmanagement","financial management","financial management",2,-0.0006273,0.0022929,18,58,40,0.763157894736842
+"331","finishjob","finish job","finish the job",2,-0.0009207,0.0028197,19,58,39,0.753246753246753
+"332","flagdrapedcoffin","flag draped coffin","flag draped coffins",3,0.0002209,-0.0003021,26,3,-23,0.103448275862069
+"333","flagprotectionamendm","flag protection amendment","flag protection amendment",3,-0.0019703,0.0050299,0,12,12,1
+"334","floodinsuranceprogra","flood insurance program","flood insurance program",3,-4.21e-05,0.0023074,38,67,29,0.638095238095238
+"335","foodprogram","food program","food program",2,-0.0006073,0.0039997,40,123,83,0.754601226993865
+"336","foodscandal","food scandal","food scandal",2,-0.0003524,0.0015733,4,45,41,0.918367346938776
+"337","foodstamp","food stamp","food stamps",2,0.0052712,-0.004972,439,165,-274,0.27317880794702
+"338","foodstampcut","food stamp cut","food stamp cuts",3,0.0005222,-0.0008134,30,0,-30,0
+"339","foodstampprogram","food stamp program","food stamp program",3,0.0011016,-0.0009559,110,36,-74,0.246575342465753
+"340","forceiraq","force iraq","forces in iraq",2,0.0013771,-0.0003807,129,46,-83,0.262857142857143
+"341","foreignaffair","foreign affair","foreign affairs",2,0.0001135,0.0006147,18,58,40,0.763157894736842
+"342","foreignoil","foreign oil","foreign oil",2,0.003039,0.000484,535,147,-388,0.215542521994135
+"343","foreignrelation","foreign relation","foreign relations",2,0.0011752,0.0015068,206,271,65,0.568134171907757
+"344","forestservice","forest service","forest service",2,-0.0016326,0.0079124,84,178,94,0.679389312977099
+"345","franklindelanoroosev","franklin delano roosevelt","franklin delano roosevelt",3,0.0007274,-0.0009058,58,20,-38,0.256410256410256
+"346","freelection","fre election","free elections",2,-0.0002366,0.0022502,20,60,40,0.75
+"347","freenterprise","fre enterprise","free enterprise",2,-0.0002989,0.0014333,20,79,59,0.797979797979798
+"348","freenterprisesystem","fre enterprise system","free enterprise system",3,-5.81e-05,0.0005244,5,29,24,0.852941176470588
+"349","fretrade","fre trade","free trade",2,0.0075758,-0.0036829,850,423,-427,0.332285938727416
+"350","fueleconomy","fuel economy","fuel economy",2,0.0009804,-0.0008324,116,25,-91,0.177304964539007
+"351","fueleconomystandard","fuel economy standard","fuel economy standards",3,0.0005153,-0.0007079,42,2,-40,0.0454545454545455
+"352","fuelefficiency","fuel efficiency","fuel efficiency",2,0.0023267,-0.0032396,133,8,-125,0.0567375886524823
+"353","fuelefficiencystanda","fuel efficiency standard","fuel efficiency standards",3,0.0006508,-0.000942,28,2,-26,0.0666666666666667
+"354","fundtaxcut","fund tax cut","fund tax cuts",3,0.0001232,-8.87e-05,16,0,-16,0
+"355","fundingcut","funding cut","funding cuts",2,-0.0001124,0.0015016,88,10,-78,0.102040816326531
+"356","fundingveteranhealth","funding veteran health","funding for veterans health",3,0.0004089,-0.0002397,57,5,-52,0.0806451612903226
+"357","gacompani","ga compani","gas companies",2,0.0018211,-0.0025873,80,11,-69,0.120879120879121
+"358","ganatural","ga natural","gas natural",2,-8.48e-05,0.0003668,4,31,27,0.885714285714286
+"359","ganaturalga","ga natural ga","gas natural gas",3,-0.000116,0.000406,3,28,25,0.903225806451613
+"360","gaoil","ga oil","gas and oil",2,0.0002718,0.0003597,25,66,41,0.725274725274725
+"361","gapricereduction","ga price reduction","gas price reduction",3,-3.47e-05,0.0001018,0,15,15,1
+"362","gapump","ga pump","gas pump",2,0.000603,-0.0003228,101,17,-84,0.144067796610169
+"363","gagrule","gag rule","gag rule",2,0.0001725,2.35e-05,74,2,-72,0.0263157894736842
+"364","gaintaxcut","gain tax cut","gains tax cuts",3,0.000355,-0.0005507,19,1,-18,0.05
+"365","gasolineprice","gasoline price","gasoline prices",2,9.43e-05,0.0020571,214,67,-147,0.238434163701068
+"366","giftedtalentedstuden","gifted talented student","gifted and talented students",3,1.38e-05,-3.7e-06,0,11,11,1
+"367","globalgagrule","global gag rule","global gag rule",3,0.000246,-0.000329,45,0,-45,0
+"368","globalwar","global war","global war",2,-0.0029118,0.0106732,67,258,191,0.793846153846154
+"369","globalwarterror","global war terror","global war on terror",3,-0.0016572,0.0056207,25,125,100,0.833333333333333
+"370","globalwarterrorism","global war terrorism","global war on terrorism",3,-0.0012746,0.0050546,40,128,88,0.761904761904762
+"371","godbless","god bless","god bless",2,-0.0017198,0.0081961,131,217,86,0.623563218390805
+"372","godblessamerica","god bless america","god bless america",3,-0.000412,0.0014702,11,34,23,0.755555555555556
+"373","governmentresponse","government response","government response",2,0.0008436,-0.00077,57,8,-49,0.123076923076923
+"374","governmentspending","government spending","government spending",2,-0.0006369,0.0030197,37,127,90,0.774390243902439
+"375","grandoleopry","grand ole opry","grand ole opry",3,-1.64e-05,7.46e-05,0,22,22,1
+"376","greencard","green card","green card",2,-0.0006343,0.0023003,21,59,38,0.7375
+"377","grossnationalproduct","gross national product","gross national product",3,-0.0001657,0.0005883,3,36,33,0.923076923076923
+"378","growingeconomy","growing economy","growing economy",2,-0.0008312,0.0033537,15,78,63,0.838709677419355
+"379","growthjob","growth job","growth and job",2,0.0001907,0.0003558,5,45,40,0.9
+"380","growthjobcreation","growth job creation","growth and job creation",3,-8.24e-05,0.0005319,2,27,25,0.931034482758621
+"381","growthrate","growth rate","growth rate",2,-0.0011931,0.0038321,20,115,95,0.851851851851852
+"382","guardreserve","guard reserve","guard and reserve",2,-0.0001729,0.0052954,418,197,-221,0.320325203252033
+"383","guestworker","guest worker","guest worker",2,-0.0001894,0.0027427,35,80,45,0.695652173913043
+"384","guestworkerprogram","guest worker program","guest worker program",3,-0.0004114,0.0019529,15,44,29,0.745762711864407
+"385","gulfcoast","gulf coast","gulf coast",2,0.0051044,0.0039894,726,446,-280,0.380546075085324
+"386","gundeal","gun deal","gun dealers",2,0.001744,-0.002155,233,70,-163,0.231023102310231
+"387","gunindustry","gun industry","gun industry",2,0.0009733,-0.000357,186,63,-123,0.253012048192771
+"388","gunlobby","gun lobby","gun lobby",2,0.0003364,-0.0004594,63,1,-62,0.015625
+"389","gunsafety","gun safety","gun safety",2,0.0007024,-0.0010718,58,0,-58,0
+"390","gunsafetylaw","gun safety law","gun safety laws",3,0.0004247,-0.0006983,20,0,-20,0
+"391","gunviolence","gun violence","gun violence",2,0.0033361,-0.0049072,213,10,-203,0.0448430493273543
+"392","hatecrime","hate crime","hate crimes",2,0.002515,-0.0032419,84,302,218,0.782383419689119
+"393","hatecrimelaw","hate crime law","hate crimes law",3,0.0001687,-3.93e-05,3,71,68,0.959459459459459
+"394","hatecrimelegislation","hate crime legislation","hate crimes legislation",3,0.0006135,-0.000644,7,143,136,0.953333333333333
+"395","hazardoumaterial","hazardou material","hazardous materials",2,0.0025335,-0.0021952,131,26,-105,0.165605095541401
+"396","headstart","head start","head start",2,0.0092059,-0.0023851,648,300,-348,0.316455696202532
+"397","headstartteacher","head start teacher","head start teachers",3,0.000803,-0.0011515,37,8,-29,0.177777777777778
+"398","healthcarebenefit","health care benefit","health care benefits",3,0.0007648,-0.0001731,88,34,-54,0.278688524590164
+"399","healthcarebudget","health care budget","health care budget",3,0.0002039,2.88e-05,40,6,-34,0.130434782608696
+"400","healthcarechildren","health care children","health care for children",3,0.0002977,-0.0003721,26,4,-22,0.133333333333333
+"401","healthcarecoverage","health care coverage","health care coverage",3,0.0014475,-0.0012696,113,39,-74,0.256578947368421
+"402","healthcarecrisi","health care crisi","health care crisis",3,0.001683,-0.0022564,56,11,-45,0.164179104477612
+"403","healthcarecut","health care cut","health care cuts",3,0.0002678,-0.0004092,24,0,-24,0
+"404","healthcareeducation","health care education","health care education",3,0.0005761,-2.9e-05,87,13,-74,0.13
+"405","healthcarefunding","health care funding","health care funding",3,7.6e-06,0.0003121,44,5,-39,0.102040816326531
+"406","healthcarehousing","health care housing","health care housing",3,0.0002196,-0.0002503,30,0,-30,0
+"407","healthcarepoor","health care poor","health care for the poor",3,0.0001965,-0.0002843,22,1,-21,0.0434782608695652
+"408","healthcareservice","health care service","health care services",3,0.0001603,0.0016189,126,49,-77,0.28
+"409","healthcareveteran","health care veteran","health care for veterans",3,0.000555,0.0008227,88,18,-70,0.169811320754717
+"410","healthsaving","health saving","health savings",2,-0.0004622,0.0018457,10,59,49,0.855072463768116
+"411","healthsavingaccount","health saving account","health savings accounts",3,-0.0004654,0.0018487,9,59,50,0.867647058823529
+"412","hearingscheduled","hearing scheduled","hearing has been scheduled",2,-0.0001739,0.0006906,10,60,50,0.857142857142857
+"413","heartmind","heart mind","hearts and minds",2,0.001242,-0.0012589,48,98,50,0.671232876712329
+"414","heatingcost","heating cost","heating costs",2,0.0005667,-0.0007598,48,6,-42,0.111111111111111
+"415","heatingoil","heating oil","heating oil",2,0.0014763,-0.0019324,140,47,-93,0.251336898395722
+"416","helpveteran","help veteran","help veterans",2,0.0003491,-0.0001381,46,4,-42,0.08
+"417","heritagemonth","heritage month","heritage month",2,0.001705,-0.0021403,61,9,-52,0.128571428571429
+"418","highwaybil","highway bil","highway bill",2,-0.0015655,0.0069852,131,347,216,0.725941422594142
+"419","highwaytrustfund","highway trust fund","highway trust fund",3,-0.0010074,0.0046806,41,119,78,0.74375
+"420","holdhearing","hold hearing","hold a hearing",2,-0.0003078,0.0025079,75,162,87,0.683544303797468
+"421","homeheatingfuel","home heating fuel","home heating fuel",3,4.35e-05,-4.35e-05,17,0,-17,0
+"422","houserepublican","house republican","house republicans",2,0.0032717,-0.0028699,255,62,-193,0.195583596214511
+"423","housingmarket","housing market","housing market",2,-0.0005748,0.0020756,8,39,31,0.829787234042553
+"424","housingurbanaffair","housing urban affair","housing and urban affairs",3,-0.0002036,0.0009442,15,68,53,0.819277108433735
+"425","hugochavez","hugo chavez","hugo chavez",2,-0.0022581,0.0067043,2,42,40,0.954545454545455
+"426","humancloning","human cloning","human cloning",2,2.5e-05,0.0004322,11,45,34,0.803571428571429
+"427","humanembryo","human embryo","human embryos",2,-0.001286,0.0040259,11,99,88,0.9
+"428","humanlife","human life","human life",2,-0.0019698,0.0094952,59,197,138,0.76953125
+"429","humanrightbody","human right body","human rights body",3,-0.0002659,0.0008802,0,13,13,1
+"430","hundredbilliondollar","hundred billion dollar","hundreds of billions of dollars",3,0.0009657,-0.0011635,65,24,-41,0.269662921348315
+"431","hurricanekatrina","hurricane katrina","hurricane katrina",2,0.0160563,-0.0069348,1295,717,-578,0.356361829025845
+"432","illegalalien","illegal alien","illegal aliens",2,-0.0083343,0.0261399,38,367,329,0.906172839506173
+"433","illegalimmigrant","illegal immigrant","illegal immigrants",2,-0.0016004,0.0084687,59,210,151,0.780669144981413
+"434","illegalimmigration","illegal immigration","illegal immigration",2,-0.0045157,0.0187195,73,332,259,0.819753086419753
+"435","immigrationlaw","immigration law","immigration laws",2,-0.0005735,0.004929,83,166,83,0.666666666666667
+"436","immigrationreform","immigration reform","immigration reform",2,-0.0001867,0.0055785,100,198,98,0.664429530201342
+"437","improvisedexplosived","improvised explosive device","improvised explosive device",3,-9.65e-05,0.001266,121,39,-82,0.24375
+"438","incomefamili","income famili","income families",2,0.0027748,-0.0021662,250,89,-161,0.262536873156342
+"439","incomepeople","income people","income people",2,0.0012453,-0.0011483,108,34,-74,0.23943661971831
+"440","increaseminimumwage","increase minimum wage","increase in the minimum wage",3,0.0010447,-0.0013693,153,42,-111,0.215384615384615
+"441","increasetaxe","increase taxe","increase taxes",2,-0.0002696,0.0018957,7,90,83,0.927835051546392
+"442","indianaffair","indian affair","indian affairs",2,0.0002163,0.0005125,34,107,73,0.75886524822695
+"443","indianartcraft","indian art craft","indian arts and crafts",3,-4e-06,6.04e-05,0,13,13,1
+"444","indiantribe","indian tribe","indian tribes",2,1.39e-05,0.0011021,39,92,53,0.702290076335878
+"445","insurancecompani","insurance compani","insurance companies",2,0.0060338,-0.0082118,201,61,-140,0.232824427480916
+"446","insuranceindustry","insurance industry","insurance industry",2,0.0025916,-0.0029981,116,21,-95,0.153284671532847
+"447","integratedoilcompani","integrated oil compani","integrated oil companies",3,1.11e-05,4.98e-05,39,2,-37,0.0487804878048781
+"448","internationalatomice","international atomic energy","international atomic energy",3,0.0001218,0.000532,12,38,26,0.76
+"449","internationallaboror","international labor organization","international labor organization",3,0.0008817,-0.0011924,57,8,-49,0.123076923076923
+"450","internationallaborst","international labor standard","international labor standards",3,0.0005583,-0.000793,26,2,-24,0.0714285714285714
+"451","internationalpeacese","international peace security","international peace and security",3,-0.0005269,0.0015195,2,17,15,0.894736842105263
+"452","invasioniraq","invasion iraq","invasion of iraq",2,0.0005759,-0.0007485,77,6,-71,0.072289156626506
+"453","iraqafghanistan","iraq afghanistan","iraq and afghanistan",2,0.0031391,0.0040797,684,354,-330,0.341040462427746
+"454","iraqpolicy","iraq policy","iraq policy",2,0.0006258,-0.0008167,51,5,-46,0.0892857142857143
+"455","iraqpresident","iraq president","iraq the president",2,0.0007312,-0.000944,68,14,-54,0.170731707317073
+"456","iraqwar","iraq war","iraq war",2,0.0040046,-0.0053137,249,58,-191,0.188925081433225
+"457","iraqweaponmass","iraq weapon mass","iraq weapons of mass",3,0.0004079,-0.0005256,32,3,-29,0.0857142857142857
+"458","iraqipeople","iraqi people","iraqi people",2,0.0017848,0.0067564,322,454,132,0.585051546391753
+"459","iraqiwomen","iraqi women","iraqi women",2,-0.0037875,0.0107935,22,85,63,0.794392523364486
+"460","issuefacingamerican","issue facing american","issues that are facing americans",3,0.0035324,-0.0061843,24,0,-24,0
+"461","iwojima","iwo jima","iwo jima",2,-0.0013241,0.006604,32,80,48,0.714285714285714
+"462","japaneseamerican","japanese american","japanese americans",2,0.0006324,-0.0002569,65,9,-56,0.121621621621622
+"463","jeffersoncounty","jefferson county","jefferson county",2,-0.0001417,0.0004877,5,32,27,0.864864864864865
+"464","jobcreated","job created","jobs created",2,0.0010976,0.0007747,63,146,83,0.698564593301435
+"465","jobcreation","job creation","job creation",2,0.0010556,0.0012854,86,151,65,0.637130801687764
+"466","jobhealthcare","job health care","jobs and health care",3,0.0002036,-0.0002365,25,3,-22,0.107142857142857
+"467","jobloss","job loss","job loss",2,0.0021239,-0.0023546,147,38,-109,0.205405405405405
+"468","joblost","job lost","jobs lost",2,0.0017765,-0.001672,146,42,-104,0.223404255319149
+"469","joboversea","job oversea","jobs overseas",2,0.0009866,-0.0009793,135,32,-103,0.191616766467066
+"470","jobtrainingprogram","job training program","job training programs",3,0.0006806,-0.0004324,50,12,-38,0.193548387096774
+"471","johnrobert","john robert","john roberts",2,-0.0004111,0.0020567,81,160,79,0.663900414937759
+"472","jointcommitte","joint committe","joint committee",2,-0.0003874,0.0020464,36,80,44,0.689655172413793
+"473","judgealbertogonzale","judge alberto gonzale","judge alberto gonzales",3,-4e-06,0.0002927,7,34,27,0.829268292682927
+"474","judgejohnrobert","judge john robert","judge john roberts",3,-0.0002793,0.0010107,13,47,34,0.783333333333333
+"475","judgerobert","judge robert","judge roberts",2,-0.0005869,0.004258,312,424,112,0.576086956521739
+"476","judicialconfirmation","judicial confirmation process","judicial confirmation process",3,-9.85e-05,0.0003998,4,30,26,0.882352941176471
+"477","judicialnomine","judicial nomine","judicial nominees",2,-0.0006518,0.0056139,381,478,97,0.556461001164144
+"478","justicedepartment","justice department","justice department",2,0.0028669,-0.0007386,334,175,-159,0.343811394891945
+"479","justicejaniceroger","justice janice roger","justice janice rogers",3,-0.0001813,0.0007516,14,50,36,0.78125
+"480","justicepriscillaowen","justice priscilla owen","justice priscilla owen",3,-0.0001701,0.0006537,11,45,34,0.803571428571429
+"481","justicesupremecourt","justice supreme court","justice of the supreme court",3,-0.0004449,0.0019697,53,113,60,0.680722891566265
+"482","justicewilliamrehnqu","justice william rehnquist","justice william rehnquist",3,-9.36e-05,0.0007136,12,43,31,0.781818181818182
+"483","kaiserfamilyfoundati","kaiser family foundation","kaiser family foundation",3,0.0005902,-0.0007871,20,1,-19,0.0476190476190476
+"484","karlrove","karl rove","karl rove",2,0.0021419,-0.0030385,182,30,-152,0.141509433962264
+"485","katrinasurvivor","katrina survivor","katrina survivors",2,0.0004876,-0.0007034,38,2,-36,0.05
+"486","katrinavictim","katrina victim","katrina victims",2,0.0011664,-0.0014434,94,24,-70,0.203389830508475
+"487","laborlaw","labor law","labor laws",2,0.0028817,-0.0039246,155,39,-116,0.201030927835052
+"488","landwaterconservatio","land water conservation","land and water conservation",3,0.0005158,-0.0005343,44,9,-35,0.169811320754717
+"489","largestexportmarket","largest export market","largest export market",3,-0.0005038,0.001873,2,19,17,0.904761904761905
+"490","lawchange","law change","law we can change",2,0.0004413,-0.0001956,23,90,67,0.79646017699115
+"491","lawenforcementagenci","law enforcement agenci","law enforcement agencies",3,0.0057648,-0.0062755,141,70,-71,0.33175355450237
+"492","lawenforcementintell","law enforcement intelligence","law enforcement and intelligence",3,0.0002609,0.0005064,15,48,33,0.761904761904762
+"493","lawreview","law review","law review",2,-0.0002761,0.000855,4,52,48,0.928571428571429
+"494","leadershipconfercivi","leadership confer civil","leadership conference on civil",3,0.0001514,-0.0002356,23,2,-21,0.08
+"495","legalsystem","legal system","legal system",2,-0.0009864,0.0043625,56,146,90,0.722772277227723
+"496","legislativesession","legislative session","legislative session",2,-5.6e-05,0.0006425,14,66,52,0.825
+"497","levelingplayingfield","leveling playing field","leveling the playing field",3,-0.0002232,0.0008335,5,26,21,0.838709677419355
+"498","liabilityinsurance","liability insurance","liability insurance",2,0.0003217,0.0004545,19,60,41,0.759493670886076
+"499","libertypursuithappin","liberty pursuit happiness","liberty and the pursuit of happiness",3,-0.0006839,0.0020396,5,24,19,0.827586206896552
+"500","lifelibertypursuit","life liberty pursuit","life liberty and the pursuit",3,-0.0006839,0.0020396,5,24,19,0.827586206896552
+"501","limitedtime","limited time","limited time",2,-0.0005531,0.0021647,21,67,46,0.761363636363636
+"502","littlegirl","little girl","little girl",2,-0.0007024,0.0028012,20,57,37,0.74025974025974
+"503","littlerock","little rock","little rock",2,0.0019724,-0.0007914,140,21,-119,0.130434782608696
+"504","littlerocknine","little rock nine","little rock nine",3,0.0008225,-0.0007414,42,1,-41,0.0232558139534884
+"505","livepoverty","live poverty","live in poverty",2,0.0015613,-0.0025003,105,4,-101,0.036697247706422
+"506","livingpoverty","living poverty","living in poverty",2,0.0013561,-0.0019489,120,3,-117,0.024390243902439
+"507","loanprogram","loan program","loan program",2,0.0036779,-0.0022178,191,76,-115,0.284644194756554
+"508","lookforward","look forward","look forward",2,0.0019079,0.0235936,761,864,103,0.531692307692308
+"509","losejob","lose job","lose their jobs",2,0.000748,-0.0002864,130,43,-87,0.248554913294798
+"510","lostjob","lost job","lost their jobs",2,0.0018555,-0.0008453,244,45,-199,0.155709342560554
+"511","louisianamississippi","louisiana mississippi alabama","louisiana mississippi and alabama",3,0.0001845,0.0022459,124,57,-67,0.314917127071823
+"512","lowcostreliable","low cost reliable","low cost reliable",3,-6.4e-06,5.7e-05,0,12,12,1
+"513","lowincome","low income","low income",2,0.0128872,-0.0129224,930,438,-492,0.320175438596491
+"514","lowincomeamerican","low income american","low income americans",3,0.0004389,-0.0002311,59,20,-39,0.253164556962025
+"515","lowincomechildren","low income children","low income children",3,0.0012263,-0.0014742,76,20,-56,0.208333333333333
+"516","lowincomefamili","low income famili","low income families",3,0.0015319,-0.0007111,167,66,-101,0.283261802575107
+"517","lowincomeindividual","low income individual","low income individuals",3,0.0001959,6.55e-05,15,37,22,0.711538461538462
+"518","lowincomepeople","low income people","low income people",3,0.0006075,-0.0004322,58,15,-43,0.205479452054795
+"519","lutherking","luther king","luther king",2,0.0052585,-0.0073698,153,52,-101,0.253658536585366
+"520","madisoncounty","madison county","madison county",2,-0.0005254,0.0018397,15,59,44,0.797297297297297
+"521","majoroilcompani","major oil compani","major oil companies",3,0.0001274,-9.62e-05,45,3,-42,0.0625
+"522","majorityvote","majority vote","majority vote",2,-0.0007265,0.00321,83,168,85,0.669322709163347
+"523","malpracticeinsuranc2","malpractice insurance","malpractice insurance",2,0.0040557,-0.0055435,116,30,-86,0.205479452054795
+"524","malpracticeinsuranc3","malpractice insurance premium","malpractice insurance premiums",3,0.0010356,-0.0015379,34,6,-28,0.15
+"525","malpracticeinsurance","malpractice insurance rate","malpractice insurance rates",3,0.0009869,-0.0014498,24,3,-21,0.111111111111111
+"526","manufacturingjob","manufacturing job","manufacturing jobs",2,0.0029925,-0.002771,310,74,-236,0.192708333333333
+"527","manufacturingjoblost","manufacturing job lost","manufacturing jobs lost",3,0.0004779,-0.000703,43,7,-36,0.14
+"528","marketaccess","market access","market access",2,-0.0005184,0.0024548,22,65,43,0.747126436781609
+"529","marriageprotectionam","marriage protection amendment","marriage protection amendment",3,2.01e-05,4.99e-05,0,14,14,1
+"530","martinluther","martin luther","martin luther",2,0.0052585,-0.0073698,153,52,-101,0.253658536585366
+"531","massivetaxcut","massive tax cut","massive tax cuts",3,0.000321,-0.0004745,28,0,-28,0
+"532","maternalchildhealth","maternal child health","maternal and child health",3,0.0002861,-0.0003867,24,1,-23,0.04
+"533","medicbil","medic bil","medical bills",2,0.0008152,-0.0011577,99,13,-86,0.116071428571429
+"534","medicleaveact","medic leave act","medical leave act",3,7.86e-05,-5.76e-05,29,4,-25,0.121212121212121
+"535","medicliability","medic liability","medical liability",2,-0.0007965,0.0050621,21,171,150,0.890625
+"536","medicliabilitycrisi","medic liability crisi","medical liability crisis",3,-0.0001568,0.0008493,1,22,21,0.956521739130435
+"537","medicliabilityinsura","medic liability insurance","medical liability insurance",3,0.0003175,-8.75e-05,8,27,19,0.771428571428571
+"538","medicliabilityreform","medic liability reform","medical liability reform",3,-0.0004279,0.0016799,0,40,40,1
+"539","medicmalpractice","medic malpractice","medical malpractice",2,0.0095962,-0.0129879,239,66,-173,0.216393442622951
+"540","medicmalpracticebil","medic malpractice bil","medical malpractice bill",3,0.0006535,-0.0010836,16,0,-16,0
+"541","medicmalpracticeinsu","medic malpractice insurance","medical malpractice insurance",3,0.0024997,-0.0033908,70,17,-53,0.195402298850575
+"542","medicaidcut","medicaid cut","medicaid cuts",2,0.0013932,-0.0019203,151,2,-149,0.0130718954248366
+"543","medicaremedicaid","medicare medicaid","medicare and medicaid",2,-0.0020209,0.0071019,132,194,62,0.595092024539877
+"544","medicaremodernizatio","medicare modernization act","medicare modernization act",3,8.98e-05,0.000198,14,44,30,0.758620689655172
+"545","medicareprescription","medicare prescription drug","medicare prescription drug",3,0.0006922,0.0004383,150,67,-83,0.308755760368664
+"546","memorialday","memorial day","memorial day",2,0.0001406,0.0024031,148,52,-96,0.26
+"547","menthealthcare","ment health care","mental health care",3,0.0016786,-0.0020041,65,21,-44,0.244186046511628
+"548","methlab","meth lab","meth labs",2,-0.0012415,0.0070082,54,102,48,0.653846153846154
+"549","middleclass","middle class","middle class",2,0.0113848,-0.0129955,573,92,-481,0.138345864661654
+"550","middleclassamerican","middle class american","middle class americans",3,0.0011453,-0.0016548,55,4,-51,0.0677966101694915
+"551","middleclassfamili","middle class famili","middle class families",3,0.0019086,-0.0022459,92,14,-78,0.132075471698113
+"552","middleclasstax","middle class tax","middle class tax",3,4.92e-05,7.1e-05,23,2,-21,0.08
+"553","middleincome","middle income","middle income",2,0.0021229,-0.0018965,167,49,-118,0.226851851851852
+"554","middleincomefamili","middle income famili","middle income families",3,0.0006536,-0.0008159,47,6,-41,0.113207547169811
+"555","militaryfamili","military famili","military families",2,0.0013195,0.0011978,192,62,-130,0.244094488188976
+"556","militaryoperation","military operation","military operations",2,0.0019519,-0.0014539,130,47,-83,0.265536723163842
+"557","militaryoperationira","military operation iraq","military operations in iraq",3,0.0004043,-0.0004559,37,7,-30,0.159090909090909
+"558","militarypresenceiraq","military presence iraq","military presence in iraq",3,0.0003733,-0.0004953,27,3,-24,0.1
+"559","millionamerican","million american","million americans",2,0.0157569,-0.0145471,851,408,-443,0.324066719618745
+"560","millionbudgetrequest","million budget request","million above the budget request",3,-0.0004883,0.0023362,2,20,18,0.909090909090909
+"561","millionchildren","million children","million children",2,0.0037546,-0.0047117,226,57,-169,0.201413427561837
+"562","millioncut","million cut","million cut",2,0.0027629,-0.003252,119,14,-105,0.105263157894737
+"563","millionillegalalien","million illegal alien","million illegal aliens",3,-0.0007661,0.0019673,1,27,26,0.964285714285714
+"564","millionillegalimmigr","million illegal immigrant","million illegal immigrants",3,-0.0004376,0.0012164,0,17,17,1
+"565","millionjob","million job","million jobs",2,-0.000456,0.0048258,119,196,77,0.622222222222222
+"566","millionjobcreated","million job created","million new jobs have been created",3,-0.0002813,0.0011659,3,44,41,0.936170212765957
+"567","millionlowincome","million low income","million low income",3,0.0004258,-0.00042,46,7,-39,0.132075471698113
+"568","minimumtax","minimum tax","minimum tax",2,0.0032175,-0.0030246,210,76,-134,0.265734265734266
+"569","minimumwage","minimum wage","minimum wage",2,0.0064106,-0.0077256,767,294,-473,0.277097078228087
+"570","minimumwagejob","minimum wage job","minimum wage jobs",3,0.0002156,-0.0002768,24,3,-21,0.111111111111111
+"571","minorityleader","minority leader","minority leader",2,0.0009163,0.0019326,135,257,122,0.655612244897959
+"572","minorityownedbusines","minority owned business","minority owned businesses",3,0.002348,-0.0037169,24,3,-21,0.111111111111111
+"573","minorityright","minority right","minority rights",2,0.0002606,0.0002213,126,45,-81,0.263157894736842
+"574","minoritywomenowned","minority women owned","minority and women owned",3,0.0031262,-0.0043562,23,2,-21,0.08
+"575","missedopportunity","missed opportunity","missed opportunity",2,0.0009236,-0.0010201,69,8,-61,0.103896103896104
+"576","missionaccomplished","mission accomplished","mission accomplished",2,0.0008648,-0.0009936,64,5,-59,0.072463768115942
+"577","moneytaxcut","money tax cut","money for tax cuts",3,0.0002094,-8.82e-05,29,1,-28,0.0333333333333333
+"578","moralvalue","moral value","moral values",2,0.0007152,-0.0010112,55,8,-47,0.126984126984127
+"579","mountsthelen","mount st helen","mount st helens",3,0.0001013,-0.000114,23,0,-23,0
+"580","movejoboversea","move job oversea","move jobs overseas",3,0.0001122,-0.0001435,22,1,-21,0.0434782608695652
+"581","nationoilfood","nation oil food","nations oil for food",3,-6.33e-05,0.0002692,0,13,13,1
+"582","nationaladcampaign","national ad campaign","national ad campaign",3,-0.0005875,0.0014462,0,16,16,1
+"583","nationalconferlegisl","national confer legislature","national conference of state legislatures",3,0.0004064,-0.0005775,29,1,-28,0.0333333333333333
+"584","nationaldebt","national debt","national debt",2,0.0034535,-0.0009735,354,68,-286,0.161137440758294
+"585","nationaldefense","national defense","national defense",2,-0.0007266,0.005782,123,197,74,0.615625
+"586","nationaldefenseautho","national defense authorization","national defense authorization",3,-0.0003519,0.0013941,19,48,29,0.716417910447761
+"587","nationalendowmentart","national endowment art","national endowment for the arts",3,0.0004366,-0.0002079,29,4,-25,0.121212121212121
+"588","nationalendowmenthum","national endowment humaniti","national endowment for the humanities",3,0.0004979,-0.0007265,19,0,-19,0
+"589","nationalfloodinsuran","national flood insurance","national flood insurance",3,-0.0005227,0.0030207,17,71,54,0.806818181818182
+"590","nationalforest","national forest","national forest",2,0.0009184,0.0039053,71,176,105,0.712550607287449
+"591","nationalguard","national guard","national guard",2,0.0012041,0.0080308,613,332,-281,0.351322751322751
+"592","nationalguardreserve","national guard reserve","national guard and reserve",3,0.0002737,0.0010283,126,48,-78,0.275862068965517
+"593","nationalheritagecorr","national heritage corridor","national heritage corridor",3,0.0001408,0.0006444,0,11,11,1
+"594","nationalhomeownershi","national homeownership month","national homeownership month",3,-0.0002419,0.0007736,0,11,11,1
+"595","nationalpassengerrai","national passenger rail","national passenger rail",3,0.000766,-0.0011674,22,0,-22,0
+"596","nationalrifleassocia","national rifle association","national rifle association",3,0.0001564,-0.0001691,35,3,-32,0.0789473684210526
+"597","nationalsaving","national saving","national savings",2,0.0001604,-0.0001254,34,1,-33,0.0285714285714286
+"598","nationalsecurityagen","national security agency","national security agency",3,0.0001957,-8.02e-05,37,9,-28,0.195652173913043
+"599","nationalsecurityissu","national security issue","national security issue",3,-0.0006945,0.0029472,27,66,39,0.709677419354839
+"600","nationalsecuritylett","national security letter","national security letters",3,0.0017211,0.0001262,142,190,48,0.572289156626506
+"601","nationalwildlife","national wildlife","national wildlife",2,0.003261,-0.0034308,248,56,-192,0.184210526315789
+"602","nationalwildliferefu","national wildlife refuge","national wildlife refuge",3,0.001901,-0.0013461,234,46,-188,0.164285714285714
+"603","naturaldisaster","natural disaster","natural disaster",2,0.0072676,-0.0042359,459,248,-211,0.350777934936351
+"604","naturalga","natural ga","natural gas",2,-0.0056803,0.0273256,501,1273,772,0.717587373167982
+"605","naturalganatural","natural ga natural","natural gas natural",3,-0.0001053,0.0003769,2,27,25,0.931034482758621
+"606","naturalgaoil","natural ga oil","natural gas and oil",3,-0.0002228,0.0007497,5,27,22,0.84375
+"607","naturalresource","natural resource","natural resources",2,-0.0006425,0.0070884,240,347,107,0.59114139693356
+"608","nearearthobject","near earth object","near earth objects",3,-0.0002993,0.001167,0,20,20,1
+"609","nearretirementage","near retirement age","near retirement age",3,-0.000203,0.0005107,0,11,11,1
+"610","ninthcircuitcourt","ninth circuit court","ninth circuit court",3,-0.0002029,0.0009964,17,46,29,0.73015873015873
+"611","northamericanfre","north american fre","north american free",3,0.0003547,-0.0003082,66,20,-46,0.232558139534884
+"612","northernireland","northern ireland","northern ireland",2,0.0004067,-0.0005684,69,4,-65,0.0547945205479452
+"613","nuclearbunkerbuster","nuclear bunker buster","nuclear bunker buster",3,0.000254,-0.0003754,30,0,-30,0
+"614","nuclearoption","nuclear option","nuclear option",2,0.0015993,-0.0007454,592,88,-504,0.129411764705882
+"615","nuclearpower","nuclear power","nuclear power",2,0.0004871,0.0018247,108,215,107,0.665634674922601
+"616","nuclearweapon","nuclear weapon","nuclear weapons",2,0.0100947,-0.0087075,654,173,-481,0.20918984280532
+"617","nunnlugarprogram","nunn lugar program","nunn lugar program",3,-0.0001586,0.0005846,6,30,24,0.833333333333333
+"618","nursinghome","nursing home","nursing home",2,0.0023594,-0.0022829,238,102,-136,0.3
+"619","offsettaxcut","offset tax cut","offset tax cuts",3,9.12e-05,-2.43e-05,22,1,-21,0.0434782608695652
+"620","ohioelectoralvote","ohio electoral vote","ohio electoral votes",3,0.0012572,-0.0021316,18,0,-18,0
+"621","oilcompani","oil compani","oil companies",2,0.0047149,-0.0056594,624,74,-550,0.106017191977077
+"622","oildrilling","oil drilling","oil drilling",2,0.0011015,-0.0012576,87,9,-78,0.09375
+"623","oilfield","oil field","oil fields",2,-0.0001771,0.0007411,18,66,48,0.785714285714286
+"624","oilfood","oil food","oil for food",2,-0.0010667,0.0061395,19,178,159,0.903553299492386
+"625","oilfoodprogram","oil food program","oil for food program",3,-0.0006069,0.0033906,10,109,99,0.915966386554622
+"626","oilfoodscandal","oil food scandal","oil for food scandal",3,-0.0003524,0.0015733,4,45,41,0.918367346938776
+"627","oilgacompani","oil ga compani","oil and gas companies",3,0.0018083,-0.0026346,76,5,-71,0.0617283950617284
+"628","oilgadrilling","oil ga drilling","oil and gas drilling",3,0.0003971,-0.0001954,40,9,-31,0.183673469387755
+"629","oilgaexploration","oil ga exploration","oil and gas exploration",3,-0.0001892,0.0013145,19,43,24,0.693548387096774
+"630","oilgaindustri","oil ga industri","oil and gas industries",3,0.0003964,-0.0006022,17,0,-17,0
+"631","oilindustry","oil industry","oil industry",2,0.0011493,-0.0008566,146,32,-114,0.179775280898876
+"632","oilnaturalga","oil natural ga","oil and natural gas",3,-0.0008339,0.0033492,49,84,35,0.631578947368421
+"633","oilproduction","oil production","oil production",2,3.66e-05,0.0009398,51,110,59,0.683229813664596
+"634","operationiraqifreedo","operation iraqi freedom","operation iraqi freedom",3,9.37e-05,0.00253,151,65,-86,0.300925925925926
+"635","outingciaagent","outing cia agent","outing a cia agent",3,0.0005339,-0.0008942,39,1,-38,0.025
+"636","ownparty","own party","own party",2,0.0011443,-0.0014349,86,17,-69,0.16504854368932
+"637","pacificamericanherit","pacific american heritage","pacific american heritage",3,0.0013313,-0.0019898,40,5,-35,0.111111111111111
+"638","pacificislander","pacific islander","pacific islander",2,0.0016894,-0.0026554,88,3,-85,0.032967032967033
+"639","palestinianauthority","palestinian authority","palestinian authority",2,0.0005649,0.0001554,23,65,42,0.738636363636364
+"640","paralyzedveteranamer","paralyzed veteran america","paralyzed veterans of america",3,8.49e-05,0.0001788,25,2,-23,0.0740740740740741
+"641","parentnotification","parent notification","parental notification",2,0.000836,5.5e-05,47,101,54,0.682432432432432
+"642","parentright","parent right","parental rights",2,-7.54e-05,0.0007373,4,32,28,0.888888888888889
+"643","partialbirth","partial birth","partial birth",2,1.6e-06,0.0002554,5,32,27,0.864864864864865
+"644","partialbirthabortion","partial birth abortion","partial birth abortion",3,1.6e-06,0.0002554,5,32,27,0.864864864864865
+"645","partyline","party line","party line",2,0.0034321,-0.0043778,172,43,-129,0.2
+"646","partylinevote","party line vote","party line vote",3,0.0021571,-0.0030459,110,12,-98,0.0983606557377049
+"647","passbil","pass bil","pass the bill",2,-0.0081821,0.0313113,220,419,199,0.655712050078247
+"648","passengerrail","passenger rail","passenger rail",2,0.0057334,-0.0075144,184,43,-141,0.18942731277533
+"649","passengerrailservice","passenger rail service","passenger rail service",3,0.0017764,-0.0024034,55,8,-47,0.126984126984127
+"650","passengerrailsystem","passenger rail system","passenger rail system",3,0.0014855,-0.0019349,42,6,-36,0.125
+"651","patientsafety","patient safety","patient safety",2,-0.0019345,0.0074709,42,89,47,0.679389312977099
+"652","paycollege","pay college","pay for college",2,0.0007818,-0.0008941,55,5,-50,0.0833333333333333
+"653","paynationaldebt","pay national debt","pay off the national debt",3,0.0003655,-0.00034,27,4,-23,0.129032258064516
+"654","paytax","pay tax","pay for tax",2,0.001832,-0.0020517,124,43,-81,0.25748502994012
+"655","paytaxcut","pay tax cut","pay for tax cuts",3,0.0019385,-0.0028545,75,4,-71,0.0506329113924051
+"656","pensionplan","pension plan","pension plans",2,0.0017388,0.0002652,291,131,-160,0.31042654028436
+"657","peopledisabiliti","people disabiliti","people with disabilities",2,0.0006996,-0.0003931,162,33,-129,0.169230769230769
+"658","peoplehealthcare","people health care","people health care",3,0.0004428,-0.0004485,46,12,-34,0.206896551724138
+"659","peoplelivingpoverty","people living poverty","people living in poverty",3,0.000419,-0.0006722,19,0,-19,0
+"660","peoplelostjob","people lost job","people who have lost their jobs",3,0.0002483,-0.000282,20,1,-19,0.0476190476190476
+"661","peoplemiddleeast","people middle east","people of the middle east",3,-0.000116,0.000362,0,14,14,1
+"662","percentafricanameric","percent african american","percent of african american",3,0.002587,-0.004195,41,6,-35,0.127659574468085
+"663","percentgrowth","percent growth","percent growth",2,-0.0005199,0.0020235,13,121,108,0.902985074626866
+"664","percentgrowthrate","percent growth rate","percent growth rate",3,-0.0001693,0.0005938,2,35,33,0.945945945945946
+"665","permanentresidentsta","permanent resident statu","permanent resident status",3,-0.000367,0.0010643,3,18,15,0.857142857142857
+"666","permanenttaxcut","permanent tax cut","permanent tax cuts",3,0.0002194,-0.0003457,18,0,-18,0
+"667","personalaccount","personal account","personal accounts",2,-0.0013197,0.0063144,48,184,136,0.793103448275862
+"668","personaldata","personal data","personal data",2,0.0006523,-0.0006977,15,54,39,0.782608695652174
+"669","personalinformation","personal information","personal information",2,0.0024875,-0.0033817,106,28,-78,0.208955223880597
+"670","personalinjurylawyer","personal injury lawyer","personal injury lawyers",3,-7.74e-05,0.0001958,0,11,11,1
+"671","personalretirementac","personal retirement account","personal retirement accounts",3,-0.0011965,0.003622,2,82,80,0.976190476190476
+"672","personalsavingaccoun","personal saving account","personal savings accounts",3,-0.0004034,0.0011162,1,23,22,0.958333333333333
+"673","pharmaceuticcompani","pharmaceutic compani","pharmaceutical companies",2,0.0012672,-0.0010942,126,32,-94,0.20253164556962
+"674","pharmaceuticindustry","pharmaceutic industry","pharmaceutical industry",2,0.000915,-0.000501,131,25,-106,0.16025641025641
+"675","planbringtroop","plan bring troop","plan to bring our troops",3,0.0002536,-0.0003728,21,0,-21,0
+"676","planprivatize","plan privatize","plan to privatize",2,0.0005037,-0.0007491,41,0,-41,0
+"677","planprivatizesocial","plan privatize social","plan to privatize social",3,0.0004709,-0.0007053,37,0,-37,0
+"678","planreform","plan reform","plan to reform",2,-0.0005197,0.0016735,3,39,36,0.928571428571429
+"679","plansocialsecurity","plan social security","plan for social security",3,-9.42e-05,0.0006425,44,8,-36,0.153846153846154
+"680","playingfieldbusiness","playing field business","playing field for small businesses",3,-0.0001628,0.0005323,3,18,15,0.857142857142857
+"681","pledgeallegiance","pledge allegiance","pledge of allegiance",2,-0.0010031,0.0040543,51,118,67,0.698224852071006
+"682","pluripotentstemcel","pluripotent stem cel","pluripotent stem cells",3,-8.03e-05,0.0002149,0,23,23,1
+"683","policyiraq","policy iraq","policy in iraq",2,0.0007271,-0.0008887,48,6,-42,0.111111111111111
+"684","politicparty","politic party","political party",2,0.0009532,-0.0003991,124,24,-100,0.162162162162162
+"685","poorfamili","poor famili","poor families",2,0.0005557,-0.0008083,49,5,-44,0.0925925925925926
+"686","poorpeople","poor people","poor people",2,0.0047541,-0.0071871,205,33,-172,0.138655462184874
+"687","postoffice","post office","post office",2,0.0016597,0.0056352,125,258,133,0.673629242819843
+"688","posttraumatic","post traumatic","post traumatic",2,0.000694,-0.0007525,54,7,-47,0.114754098360656
+"689","posttraumaticstress","post traumatic stress","post traumatic stress",3,0.000694,-0.0007525,54,7,-47,0.114754098360656
+"690","postalservice","postal service","postal service",2,0.006125,-0.0017393,235,389,154,0.623397435897436
+"691","povertyline","poverty line","poverty line",2,0.0016306,-0.0025074,91,8,-83,0.0808080808080808
+"692","prescriptiondrug","prescription drug","prescription drug",2,-0.0001469,0.012256,905,478,-427,0.345625451916124
+"693","prescriptiondrugbil","prescription drug bil","prescription drug bill",3,0.0010659,-0.0013812,101,16,-85,0.136752136752137
+"694","presidentannounce","president announce","president i would like to announce",2,-0.0004379,0.0015256,5,98,93,0.951456310679612
+"695","presidentbudget","president budget","president budget",2,0.0050234,-0.0018536,514,151,-363,0.227067669172932
+"696","presidentbudgetcut","president budget cut","president budget cuts",3,0.0001674,-0.0001928,26,1,-25,0.037037037037037
+"697","presidentbushoffice","president bush office","president bush took office",3,0.0012735,-0.0016398,107,8,-99,0.0695652173913043
+"698","presidentbushplan","president bush plan","president bush plan",3,0.0001277,-0.0001139,25,2,-23,0.0740740740740741
+"699","presidentbushsigned","president bush signed","president bush signed",3,0.0002531,-0.0001495,59,20,-39,0.253164556962025
+"700","presidentbusiness","president business","president if there is no further business",2,0.0001786,0.0001446,16,95,79,0.855855855855856
+"701","presidentcheney","president cheney","president cheney",2,0.0014117,-0.0018315,127,7,-120,0.0522388059701493
+"702","presidentjudicialnom","president judicial nomine","president judicial nominees",3,-0.0001199,0.0005184,24,51,27,0.68
+"703","presidentmove","president move","president i move",2,-0.0007854,0.0029608,47,188,141,0.8
+"704","presidentoffice","president office","president office",2,0.000717,-0.0010367,59,9,-50,0.132352941176471
+"705","presidentplan","president plan","president plan",2,0.0019414,-0.002324,249,20,-229,0.0743494423791822
+"706","presidentprotempore","president pro tempore","president pro tempore",3,-0.0001063,0.0013945,143,186,43,0.565349544072948
+"707","presidentpropose","president propose","president proposes",2,0.001443,-0.0021866,54,2,-52,0.0357142857142857
+"708","presidentsocialsecur","president social security","president social security",3,0.0002734,-0.0003046,47,4,-43,0.0784313725490196
+"709","presidenttaxcut","president tax cut","president tax cuts",3,5.78e-05,0.00021,47,5,-42,0.0961538461538462
+"710","pricegouging","price gouging","price gouging",2,0.0017334,-0.0018208,194,33,-161,0.145374449339207
+"711","pricenaturalga","price natural ga","price of natural gas",3,0.0001371,0.0003599,25,72,47,0.742268041237113
+"712","privateaccount","private account","private accounts",2,0.0056328,-0.0079909,542,5,-537,0.00914076782449726
+"713","privateaccountsocial","private account social","private accounts for social",3,0.00028,-0.0004033,27,0,-27,0
+"714","privateproperty","private property","private property",2,-0.0050499,0.0207317,163,346,183,0.679764243614931
+"715","privatepropertyowner","private property owner","private property owners",3,-0.0022513,0.0073123,16,48,32,0.75
+"716","privatepropertyright","private property right","private property rights",3,-0.0016967,0.0059405,37,100,63,0.72992700729927
+"717","privatizationplan","privatization plan","privatization plan",2,0.0016903,-0.0025027,156,1,-155,0.00636942675159236
+"718","privatizationsocials","privatization social security","privatization of social security",3,0.0008812,-0.0012762,85,2,-83,0.0229885057471264
+"719","privatizesocialsecur","privatize social security","privatize social security",3,0.0017108,-0.0025283,142,1,-141,0.00699300699300699
+"720","privatizingsocialsec","privatizing social security","privatizing social security",3,0.0011247,-0.0016373,85,3,-82,0.0340909090909091
+"721","producestemcel","produce stem cel","produce a stem cell",3,1.36e-05,0.0001187,0,14,14,1
+"722","productsafety","product safety","product safety",2,0.0002242,-0.0002508,41,2,-39,0.0465116279069767
+"723","productsafetycommiss","product safety commission","product safety commission",3,0.0001357,-0.0001624,23,1,-22,0.0416666666666667
+"724","professionalsport","professional sport","professional sports",2,0.0001424,0.000845,9,44,35,0.830188679245283
+"725","programcut","program cut","program cuts",2,0.0011249,0.0012474,144,22,-122,0.132530120481928
+"726","programhelp","program help","programs that help",2,0.0041181,-0.0030073,273,95,-178,0.258152173913043
+"727","projectsafeneighborh","project safe neighborhood","project safe neighborhoods",3,-1.02e-05,0.0001222,5,24,19,0.827586206896552
+"728","propertyright","property right","property rights",2,-0.0033624,0.0134007,126,270,144,0.681818181818182
+"729","protectminorityright","protect minority right","protect minority rights",3,1.01e-05,6.87e-05,24,2,-22,0.0769230769230769
+"730","protectprivateproper","protect private property","protect private property",3,-0.0004987,0.0014914,3,21,18,0.875
+"731","protectsocialsecurit","protect social security","protect social security",3,0.0003481,2.93e-05,43,12,-31,0.218181818181818
+"732","protectworker","protect worker","protect workers",2,0.0014412,-0.0020734,71,10,-61,0.123456790123457
+"733","providehealthcare","provide health care","provide health care",3,0.0016123,-0.0020109,95,35,-60,0.269230769230769
+"734","provisionalballot","provisional ballot","provisional ballots",2,0.0019837,-0.0029861,73,7,-66,0.0875
+"735","publicbroadcasting","public broadcasting","public broadcasting",2,0.0036682,-0.0002912,276,37,-239,0.118210862619808
+"736","publiccollege","public college","public college",2,0.0003843,-0.0005761,41,0,-41,0
+"737","publictelevision","public television","public television",2,0.0009081,-0.0011961,51,6,-45,0.105263157894737
+"738","purchasingpower","purchasing power","purchasing power",2,0.0007397,-0.0002593,97,25,-72,0.204918032786885
+"739","racialethnicminoriti","racial ethnic minoriti","racial and ethnic minorities",3,0.0009323,-0.0015785,33,7,-26,0.175
+"740","railpassengerservice","rail passenger service","rail passenger service",3,0.0002071,-0.0001688,26,3,-23,0.103448275862069
+"741","railservice","rail service","rail service",2,0.0020483,-0.0016532,95,23,-72,0.194915254237288
+"742","railsystem","rail system","rail system",2,0.0039296,-0.0045287,141,30,-111,0.175438596491228
+"743","raiseminimumwage","raise minimum wage","raise the minimum wage",3,0.0004949,-0.0006563,53,16,-37,0.231884057971014
+"744","raisetaxe","raise taxe","raise taxes",2,-0.0018178,0.0060103,43,187,144,0.81304347826087
+"745","raisingtaxe","raising taxe","raising taxes",2,-0.0002964,0.0020213,19,85,66,0.817307692307692
+"746","rateincrease","rate increase","rate increases",2,0.000316,0.0008379,31,91,60,0.745901639344262
+"747","ratereturn","rate return","rate of return",2,0.0104654,-0.0163462,76,163,87,0.682008368200837
+"748","readymixedconcrete","ready mixed concrete","ready mixed concrete",3,-8.53e-05,0.0002215,0,17,17,1
+"749","recordbudgetdeficit","record budget deficit","record budget deficits",3,0.0002409,-0.0003121,23,0,-23,0
+"750","recorddeficit","record deficit","record deficits",2,0.0011105,-0.0013415,89,4,-85,0.043010752688172
+"751","recordprofit","record profit","record profits",2,0.0011611,-0.0016019,111,4,-107,0.0347826086956522
+"752","recordtradedeficit","record trade deficit","record trade deficit",3,0.0001601,-0.0001712,22,1,-21,0.0434782608695652
+"753","reducedependencefore","reduce dependence foreign","reduce our dependence on foreign",3,0.0003124,0.001259,110,38,-72,0.256756756756757
+"754","reformclassaction","reform class action","reform class action",3,-0.0003415,0.0008969,1,19,18,0.95
+"755","reformprogram","reform program","reform the program",2,-0.0002404,0.00182,13,70,57,0.843373493975904
+"756","reformsocialsecurity","reform social security","reform social security",3,-0.0003601,0.0016005,10,42,32,0.807692307692308
+"757","reformunitednation","reform united nation","reform the united nations",3,0.0001389,0.0010511,31,58,27,0.651685393258427
+"758","regionaltrainingcent","regional training cent","regional training center",3,-3.09e-05,9.87e-05,0,11,11,1
+"759","reliefmiddleclass","relief middle class","relief to the middle class",3,0.0006332,-0.0009033,19,1,-18,0.05
+"760","religiouleader","religiou leader","religious leaders",2,0.0009388,-0.0008855,93,21,-72,0.184210526315789
+"761","rememberedfamilyfrie","remembered family friend","remembered by family members friends",3,-0.000293,0.0009802,23,2,-21,0.08
+"762","repealdeathtax","repeal death tax","repeal of the death tax",3,-0.0012932,0.003921,4,55,51,0.932203389830508
+"763","republiccypru","republic cypru","republic of cyprus",2,4.16e-05,0.0004573,0,26,26,1
+"764","republicanleader","republican leader","republican leader",2,0.00122,-0.0007884,223,41,-182,0.15530303030303
+"765","republicannationalco","republican national committe","republican national committee",3,0.0002948,-0.0003994,48,7,-41,0.127272727272727
+"766","republicanparty","republican party","republican party",2,0.0056777,-0.0082682,295,49,-246,0.142441860465116
+"767","republicansenator","republican senator","republican senators",2,0.001612,-0.0021635,241,29,-212,0.107407407407407
+"768","reservistnationalgua","reservist national guard","reservists and national guard",3,0.0002042,-0.0002997,22,0,-22,0
+"769","retirementaccount","retirement account","retirement accounts",2,-0.0018597,0.0062123,32,119,87,0.788079470198676
+"770","reverserobinhood","reverse robin hood","reverse robin hood",3,0.0005491,-0.000835,18,0,-18,0
+"771","rhodeisland","rhode island","rhode island",2,0.0043859,-0.0055171,256,99,-157,0.27887323943662
+"772","righthumanright","right human right","rights human rights",3,0.0006197,-0.0009911,24,3,-21,0.111111111111111
+"773","rightlifeliberty","right life liberty","rights that among these are life liberty",3,-0.0001357,0.0004446,3,19,16,0.863636363636364
+"774","rightmovement","right movement","rights movement",2,0.006764,-0.0083994,190,70,-120,0.269230769230769
+"775","rightworker","right worker","rights of workers",2,0.0010236,-0.0015584,60,4,-56,0.0625
+"776","risingenergyprice","rising energy price","rising energy prices",3,-8.55e-05,0.0004289,29,5,-24,0.147058823529412
+"777","risinggaprice","rising ga price","rising gas prices",3,0.0001007,8.6e-06,26,4,-22,0.133333333333333
+"778","roewade","roe wade","roe v wade",2,3.21e-05,0.0005794,29,72,43,0.712871287128713
+"779","ronaldreagan","ronald reagan","ronald reagan",2,0.0003552,0.0031127,118,188,70,0.61437908496732
+"780","rosapark","rosa park","rosa parks",2,0.0199853,-0.0278059,555,172,-383,0.236588720770289
+"781","rubberstamp","rubber stamp","rubber stamp",2,0.0009016,-0.0014347,50,6,-44,0.107142857142857
+"782","rulechange","rule change","rules changes",2,0.0005116,0.0015661,194,61,-133,0.23921568627451
+"783","ryanwhitecare","ryan white care","ryan white care",3,0.0029449,-0.0048389,46,3,-43,0.0612244897959184
+"784","saddamhussein","saddam hussein","saddam hussein",2,0.0094495,-0.0078275,221,423,202,0.656832298136646
+"785","safedrinkingwater","safe drinking water","safe drinking water",3,0.0013048,-0.0018619,57,17,-40,0.22972972972973
+"786","safetybeltlaw","safety belt law","safety belt laws",3,-0.0001738,0.0007343,2,16,14,0.888888888888889
+"787","safetylaw","safety law","safety laws",2,0.0008189,-0.0009323,58,9,-49,0.134328358208955
+"788","safetynet","safety net","safety net",2,0.0041689,-0.0038546,318,111,-207,0.258741258741259
+"789","safetynetprogram","safety net program","safety net program",3,0.0003331,-0.0003171,40,6,-34,0.130434782608696
+"790","safetystandard","safety standard","safety standards",2,0.0013223,-0.0017934,74,11,-63,0.129411764705882
+"791","saletax","sale tax","sales tax",2,-6.48e-05,0.0015533,35,90,55,0.72
+"792","sanctityhumanlife","sanctity human life","sanctity of human life",3,-0.0002809,0.0007512,1,14,13,0.933333333333333
+"793","savemoney","save money","save money",2,-0.0001455,0.0042884,88,149,61,0.628691983122363
+"794","savingaccount","saving account","savings accounts",2,-0.0010169,0.0042143,50,132,82,0.725274725274725
+"795","secretaryairforce","secretary air force","secretary of the air force",3,-0.0006127,0.0019683,5,25,20,0.833333333333333
+"796","secretarycolinpowel","secretary colin powel","secretary of state colin powell",3,0.0004318,-0.0003197,56,18,-38,0.243243243243243
+"797","securitybenefit","security benefit","security benefits",2,0.0022521,-0.0008042,273,125,-148,0.314070351758794
+"798","securityplan","security plan","security plan",2,0.0025591,-0.0029795,109,32,-77,0.226950354609929
+"799","securityprivateaccou","security private account","security and private accounts",3,0.0002309,-0.0003235,30,0,-30,0
+"800","securityprivatizatio","security privatization plan","security privatization plan",3,0.0002557,-0.0003997,21,0,-21,0
+"801","securityreform","security reform","security reform",2,-0.0011838,0.0039121,31,78,47,0.715596330275229
+"802","securitysystem","security system","security system",2,0.0012663,0.0019452,151,235,84,0.60880829015544
+"803","securitytrust","security trust","security trust",2,0.0012978,0.0003122,309,62,-247,0.16711590296496
+"804","securitytrustfund","security trust fund","security trust fund",3,0.0012581,0.0003201,302,60,-242,0.165745856353591
+"805","senatecommittebusine","senate committe business","senate committee on small business",3,0.0001822,-0.0002301,4,22,18,0.846153846153846
+"806","senateenergybil","senate energy bil","senate energy bill",3,0.0001008,-4.1e-06,34,5,-29,0.128205128205128
+"807","senateintelligenceco","senate intelligence committe","senate intelligence committee",3,-0.0001028,0.0008235,74,21,-53,0.221052631578947
+"808","senaterepublican","senate republican","senate republicans",2,0.0019225,-0.0024055,224,44,-180,0.164179104477612
+"809","senatewhitehouse","senate white house","senate and the white house",3,0.0004167,-0.0004286,47,7,-40,0.12962962962963
+"810","sendjoboversea","send job oversea","send jobs overseas",3,0.0002328,-0.0003413,21,1,-20,0.0454545454545455
+"811","seniorcitizen","senior citizen","senior citizens",2,0.0019713,0.0001553,355,114,-241,0.243070362473348
+"812","seriouconcern","seriou concern","serious concerns",2,0.0013111,-0.0011521,102,29,-73,0.221374045801527
+"813","servingcountry","serving country","serving our country",2,-0.0019055,0.0068863,160,57,-103,0.262672811059908
+"814","sexoffender","sex offender","sex offenders",2,-0.0042957,0.0152382,100,184,84,0.647887323943662
+"815","sexoffenderregistrat","sex offender registration","sex offender registration",3,-0.0004108,0.0014705,1,19,18,0.95
+"816","sexualpredator","sexual predator","sexual predators",2,0.002766,-0.0033202,151,50,-101,0.248756218905473
+"817","singleday","single day","single day",2,0.0004007,0.0015502,168,51,-117,0.232876712328767
+"818","sneakpeeksearche","sneak peek searche","sneak and peek searches",3,0.0003059,-0.0004129,23,1,-22,0.0416666666666667
+"819","sniperrifle","sniper rifle","sniper rifles",2,0.0004696,-0.0005754,66,2,-64,0.0294117647058824
+"820","socialsecuritybenefi","social security benefit","social security benefits",3,0.0021331,-0.0007016,262,121,-141,0.315926892950392
+"821","socialsecuritycard","social security card","social security card",3,-5.46e-05,0.0007591,6,27,21,0.818181818181818
+"822","socialsecuritycrisi","social security crisi","social security crisis",3,0.0002215,-1.77e-05,44,8,-36,0.153846153846154
+"823","socialsecurityplan","social security plan","social security plan",3,0.0004015,-0.0001601,73,13,-60,0.151162790697674
+"824","socialsecuritypresid","social security president","social security the president",3,0.0005459,-0.0003752,85,19,-66,0.182692307692308
+"825","socialsecuritypriva2","social security private","social security and private",3,0.000243,-0.000337,35,1,-34,0.0277777777777778
+"826","socialsecurityprivat","social security privatization","social security privatization",3,0.0015704,-0.0024,85,0,-85,0
+"827","socialsecurityprogra","social security program","social security program",3,0.000451,0.0007241,115,47,-68,0.290123456790123
+"828","socialsecurityreform","social security reform","social security reform",3,-0.0014056,0.00421,26,76,50,0.745098039215686
+"829","socialsecurityshortf","social security shortfal","social security shortfall",3,0.0002519,-0.0002776,28,2,-26,0.0666666666666667
+"830","socialsecuritysolven","social security solvency","social security solvency",3,0.000191,-0.0001833,31,2,-29,0.0606060606060606
+"831","socialsecuritysurplu","social security surplu","social security surplus",3,0.0022878,-0.003277,63,21,-42,0.25
+"832","socialsecuritysystem","social security system","social security system",3,0.0011655,0.0016379,140,215,75,0.605633802816901
+"833","socialsecuritytrust","social security trust","social security trust",3,0.0012248,0.000429,305,62,-243,0.168937329700272
+"834","solarenergy","solar energy","solar energy",2,0.0011352,-0.0011923,9,46,37,0.836363636363636
+"835","solesourcecontract","sole source contract","sole source contracts",3,5.81e-05,-4.57e-05,19,0,-19,0
+"836","solvencysocialsecuri","solvency social security","solvency of social security",3,0.0005178,-0.0003661,70,11,-59,0.135802469135802
+"837","southcarolinasenator","south carolina senator","south carolina and the senator",3,1.75e-05,9.56e-05,4,27,23,0.870967741935484
+"838","southeasttexa","southeast texa","southeast texas",2,-0.0004469,0.0012405,2,45,43,0.957446808510638
+"839","sovietunion","soviet union","soviet union",2,0.0002351,0.0044803,129,199,70,0.606707317073171
+"840","speakertable","speaker table","speaker table",2,-0.0007423,0.0028008,0,28,28,1
+"841","spendmoney","spend money","spend money",2,-0.0003587,0.0082483,180,272,92,0.601769911504425
+"842","spendingcut","spending cut","spending cuts",2,0.0012414,-2.96e-05,209,43,-166,0.170634920634921
+"843","spendingcutbil","spending cut bil","spending cut bill",3,0.000142,0.0001815,20,0,-20,0
+"844","spendingsocialsecuri","spending social security","spending social security",3,-0.0003879,0.0011319,2,17,15,0.894736842105263
+"845","stpaul","st paul","st paul",2,0.0009914,-0.0007953,18,54,36,0.75
+"846","starttalking","start talking","start talking",2,0.000532,-0.0003852,98,22,-76,0.183333333333333
+"847","stemcel","stem cel","stem cell",2,0.0028674,0.0124933,452,1247,795,0.733961153619776
+"848","stemcelline","stem cel line","stem cell lines",3,0.0005892,-6.42e-05,38,109,71,0.741496598639456
+"849","strategicpetroleumre","strategic petroleum reserve","strategic petroleum reserve",3,0.0003712,-0.0002254,60,10,-50,0.142857142857143
+"850","stressdisorder","stress disorder","stress disorder",2,0.0004696,-0.0004256,53,5,-48,0.0862068965517241
+"851","strongopposition","strong opposition","strong opposition",2,0.0062051,-0.0067183,186,55,-131,0.228215767634855
+"852","strongsupport","strong support","strong support",2,0.0004982,0.0346727,519,587,68,0.530741410488246
+"853","studentaid","student aid","student aid",2,0.0023855,-0.0031812,128,21,-107,0.140939597315436
+"854","studentaidprogram","student aid program","student aid programs",3,0.0005745,-0.0007815,32,5,-27,0.135135135135135
+"855","studentloan","student loan","student loans",2,0.0066911,-0.0087052,416,101,-315,0.195357833655706
+"856","studentloancut","student loan cut","student loan cuts",3,0.0002497,-0.000338,20,1,-19,0.0476190476190476
+"857","studentloanprogram","student loan program","student loan programs",3,0.001041,-0.0013197,65,13,-52,0.166666666666667
+"858","suicidebomber","suicide bomber","suicide bombers",2,-4.24e-05,0.0016777,30,77,47,0.719626168224299
+"859","summacumlaude","summa cum laude","summa cum laude",3,-4.73e-05,0.0001734,1,19,18,0.95
+"860","supplinaturalga","suppli natural ga","supplies of natural gas",3,-2.71e-05,0.0001523,3,19,16,0.863636363636364
+"861","supplynaturalga","supply natural ga","supply of natural gas",3,-6.32e-05,0.0002751,3,28,25,0.903225806451613
+"862","supportboyscout","support boy scout","support the boy scouts",3,-0.0004497,0.0014308,3,18,15,0.857142857142857
+"863","supremecourtrejected","supreme court rejected","supreme court rejected",3,7.08e-05,-9.34e-05,24,2,-22,0.0769230769230769
+"864","supremecourttexa","supreme court texa","supreme court of texas",3,-7.35e-05,0.000441,6,36,30,0.857142857142857
+"865","supremecourtunited","supreme court united","supreme court of the united",3,0.000105,0.0003231,27,91,64,0.771186440677966
+"866","surplusocialsecurity","surplu social security","surplus in social security",3,0.0005407,-0.0008022,30,5,-25,0.142857142857143
+"867","systemcheckbal","system check bal","system of checks and balances",3,0.0005107,-0.0004984,95,15,-80,0.136363636363636
+"868","taxbreak","tax break","tax breaks",2,0.0073337,-0.0097956,501,25,-476,0.0475285171102662
+"869","taxbreakcompani","tax break compani","tax breaks to companies",3,0.0005969,-0.0008752,17,0,-17,0
+"870","taxbreakoil","tax break oil","tax breaks to oil",3,0.0002592,-0.0003787,16,0,-16,0
+"871","taxbreakrich","tax break rich","tax breaks for the rich",3,0.0005466,-0.000834,26,1,-25,0.037037037037037
+"872","taxbreakwealthy","tax break wealthy","tax breaks for the wealthy",3,0.0002184,-0.0003336,25,0,-25,0
+"873","taxcutbenefit","tax cut benefit","tax cuts that benefit",3,0.0006214,-0.0009216,26,1,-25,0.037037037037037
+"874","taxcutbil","tax cut bil","tax cut bill",3,0.0004371,-0.0005622,39,3,-36,0.0714285714285714
+"875","taxcutpeople","tax cut people","tax cuts for people",3,0.0015132,-0.0021852,79,6,-73,0.0705882352941176
+"876","taxcutpermanent","tax cut permanent","tax cuts permanent",3,0.0004915,-0.0004363,48,10,-38,0.172413793103448
+"877","taxcutrich","tax cut rich","tax cuts for the rich",3,0.0008058,-0.0010077,54,8,-46,0.129032258064516
+"878","taxcutspending","tax cut spending","tax cuts and spending",3,6.33e-05,8.3e-05,32,1,-31,0.0303030303030303
+"879","taxcutwealthy","tax cut wealthy","tax cuts for the wealthy",3,0.0023379,-0.0034612,115,2,-113,0.0170940170940171
+"880","taxhaven","tax haven","tax haven",2,0.000174,-0.0001973,50,0,-50,0
+"881","taxincrease","tax increase","tax increase",2,2.93e-05,0.0047738,83,253,170,0.75297619047619
+"882","taxrate","tax rate","tax rates",2,-0.0004603,0.0036149,105,179,74,0.630281690140845
+"883","taxrelief","tax relief","tax relief",2,-0.0025937,0.0126956,176,497,321,0.738484398216939
+"884","taxreliefact","tax relief act","tax relief act",3,-0.0004426,0.0020114,18,41,23,0.694915254237288
+"885","taxreliefpackage","tax relief package","tax relief package",3,-4.5e-05,0.0002476,3,26,23,0.896551724137931
+"886","taxrepeal","tax repeal","tax repeal",2,-0.0009267,0.0029323,6,42,36,0.875
+"887","taxrevenue","tax revenue","tax revenue",2,-0.0003976,0.0036217,82,150,68,0.646551724137931
+"888","teltruth","tel truth","tell the truth",2,0.0012771,-0.0015715,94,22,-72,0.189655172413793
+"889","temporaryworker","temporary worker","temporary worker",2,-0.000759,0.0023656,10,81,71,0.89010989010989
+"890","temporaryworkerprogr","temporary worker program","temporary worker program",3,-0.000631,0.0016836,2,38,36,0.95
+"891","tencommandment","ten commandment","ten commandments",2,-0.0008325,0.0027802,14,73,59,0.839080459770115
+"892","termcareinsurance","term care insurance","term care insurance",3,-1.62e-05,0.0001877,0,24,24,1
+"893","terrischiavo","terri schiavo","terri schiavo",2,0.0004006,0.007371,60,166,106,0.734513274336283
+"894","terrorismriskinsuran","terrorism risk insurance","terrorism risk insurance",3,0.0011438,-0.0008253,60,19,-41,0.240506329113924
+"895","terroristwatchlist","terrorist watch list","terrorist watch list",3,0.0015458,-0.0024296,49,5,-44,0.0925925925925926
+"896","thirdquarterprofit","third quarter profit","third quarter profits",3,9.52e-05,-0.0001043,18,0,-18,0
+"897","thirdtime","third time","third time",2,-0.0001129,0.002799,75,232,157,0.755700325732899
+"898","throughoutmiddleeast","throughout middle east","throughout the middle east",3,-8.88e-05,0.0003861,3,24,21,0.888888888888889
+"899","timberindustry","timber industry","timber industry",2,-0.0006359,0.0016927,2,45,43,0.957446808510638
+"900","timbersale","timber sale","timber sales",2,-0.0001437,0.00056,2,35,33,0.945945945945946
+"901","timemove","time move","time and i move",2,-0.0015154,0.0050971,37,118,81,0.761290322580645
+"902","timevote","time vote","time to vote",2,-0.0017457,0.0052746,56,110,54,0.662650602409639
+"903","timewhitehouse","time white house","time the white house",3,0.0002026,-0.0002858,20,1,-19,0.0476190476190476
+"904","titleix","title ix","title ix",2,0.0004473,-0.0001221,100,24,-76,0.193548387096774
+"905","tongassnationalfores","tongass national forest","tongass national forest",3,-0.0001283,0.000583,2,28,26,0.933333333333333
+"906","tradeadjustmentassis","trade adjustment assistance","trade adjustment assistance",3,0.0004137,-0.0002597,44,6,-38,0.12
+"907","tradeagreement","trade agreement","trade agreement",2,0.0125184,-0.0048779,1750,570,-1180,0.245689655172414
+"908","tradecommission","trade commission","trade commission",2,0.0005507,0.0014078,178,59,-119,0.248945147679325
+"909","tradedeal","trade deal","trade deal",2,0.0007896,-0.0005664,77,4,-73,0.0493827160493827
+"910","tradedeficit","trade deficit","trade deficit",2,0.0034278,-0.0002794,795,144,-651,0.153354632587859
+"911","tradedeficitchina","trade deficit china","trade deficit with china",3,0.0005681,-0.0007536,55,11,-44,0.166666666666667
+"912","tradepolici","trade polici","trade policies",2,0.0020975,-0.0026817,118,24,-94,0.169014084507042
+"913","tradepolicy","trade policy","trade policy",2,0.0014719,-0.0007608,249,38,-211,0.132404181184669
+"914","traininghealthcare","training health care","training and health care",3,8.49e-05,-7.2e-05,16,0,-16,0
+"915","transitsystem","transit system","transit systems",2,0.0031429,-0.0020421,180,48,-132,0.210526315789474
+"916","traumaticstress","traumatic stress","traumatic stress",2,0.000694,-0.0007525,54,7,-47,0.114754098360656
+"917","traumaticstressdisor","traumatic stress disorder","traumatic stress disorder",3,0.0004471,-0.0003946,47,5,-42,0.0961538461538462
+"918","triallawyer","trial lawyer","trial lawyers",2,-0.0006092,0.0026669,35,104,69,0.748201438848921
+"919","trilliontaxcut","trillion tax cut","trillion in tax cuts",3,-0.0001277,0.0005353,21,1,-20,0.0454545454545455
+"920","troopbringhome","troop bring home","troops by bringing them home",3,0.0006743,-0.0011671,16,0,-16,0
+"921","troopfamili","troop famili","troops and their families",2,0.0001736,0.0001765,63,10,-53,0.136986301369863
+"922","troophome","troop home","troops home",2,0.0024836,-0.0027184,217,49,-168,0.184210526315789
+"923","troopiraq","troop iraq","troops in iraq",2,0.0025868,-0.0022509,185,69,-116,0.271653543307087
+"924","tuskegeairmen","tuskege airmen","tuskegee airmen",2,0.0092116,-0.0108661,152,60,-92,0.283018867924528
+"925","typestemcel","type stem cel","types of stem cells",3,-3.09e-05,0.0002402,3,18,15,0.857142857142857
+"926","umbiliccord","umbilic cord","umbilical cord",2,0.0008314,-0.0004427,28,70,42,0.714285714285714
+"927","umbiliccordblood","umbilic cord blood","umbilical cord blood",3,0.0002572,-5.81e-05,11,34,23,0.755555555555556
+"928","unofficial","un official","un officials",2,-5.4e-05,0.0006212,0,27,27,1
+"929","unpeacekeeper","un peacekeeper","un peacekeepers",2,-0.0002258,0.0013789,13,50,37,0.793650793650794
+"930","unreform","un reform","un reform",2,0.001443,-0.0003018,45,122,77,0.730538922155689
+"931","unbornchild","unborn child","unborn child",2,-0.0002078,0.0007845,3,30,27,0.909090909090909
+"932","undergroundstorageta","underground storage tank","underground storage tank",3,-0.0019933,0.0068883,24,63,39,0.724137931034483
+"933","unitedairforce","united air force","united states air force",3,-0.000313,0.0014499,10,30,20,0.75
+"934","unitedairline","united airline","united airlines",2,0.0021011,-0.0029913,117,11,-106,0.0859375
+"935","unitedairlineemploye","united airline employe","united airlines employees",3,0.000196,-0.0003197,15,0,-15,0
+"936","unitednationoil","united nation oil","united nations oil",3,-7.2e-05,0.0003031,0,14,14,1
+"937","unitednationreform","united nation reform","united nations reform",3,-0.000742,0.0028588,18,59,41,0.766233766233766
+"938","unitedpostalservice","united postal service","united states postal service",3,0.0006147,0.0015396,25,76,51,0.752475247524752
+"939","unitedsupremecourt","united supreme court","united states supreme court",3,0.0006215,0.0007955,47,79,32,0.626984126984127
+"940","unitedtraderepresent","united trade representative","united states trade representative",3,-0.0005973,0.0018065,10,32,22,0.761904761904762
+"941","universalhealth","universal health","universal health",2,0.0011003,-0.0018073,49,4,-45,0.0754716981132075
+"942","universalhealthcare","universal health care","universal health care",3,0.0008894,-0.0014485,43,4,-39,0.0851063829787234
+"943","urbanaffair","urban affair","urban affairs",2,-0.0001956,0.0009318,16,68,52,0.80952380952381
+"944","urgesupport","urge support","urge support",2,-0.0027529,0.0165383,110,224,114,0.67065868263473
+"945","urgeswiftpassage","urge swift passage","urge swift passage",3,0.0011064,-0.0018503,30,1,-29,0.032258064516129
+"946","usingadultstem","using adult stem","using adult stem",3,-9.69e-05,0.0003082,0,13,13,1
+"947","vahealthcare","va health care","va health care",3,0.0001838,0.0016369,188,9,-179,0.0456852791878173
+"948","vahospital","va hospital","va hospitals",2,0.0003496,4.9e-05,72,12,-60,0.142857142857143
+"949","validdriverlicense","valid driver license","valid driver licenses",3,-0.0001207,0.0006608,0,13,13,1
+"950","veteranhealth","veteran health","veterans health",2,0.0032338,-0.0010321,421,81,-340,0.161354581673307
+"951","veteranhealthcare","veteran health care","veterans health care",3,0.0027875,-0.0010904,384,58,-326,0.131221719457014
+"952","vicepresidentcheney","vice president cheney","vice president cheney",3,0.0014117,-0.0018315,127,7,-120,0.0522388059701493
+"953","vicepresidentunited","vice president united","vice president of the united",3,0.0007801,-0.0009091,52,16,-36,0.235294117647059
+"954","victimdomestic","victim domestic","victims of domestic",2,0.0021074,-0.0023685,108,29,-79,0.211678832116788
+"955","victimdomesticviolen","victim domestic violence","victims of domestic violence",3,0.0016504,-0.0018062,93,27,-66,0.225
+"956","victimgunviolence","victim gun violence","victims of gun violence",3,0.0005412,-0.0008495,44,1,-43,0.0222222222222222
+"957","victimidentitytheft","victim identity theft","victims of identity theft",3,4.73e-05,-2.99e-05,19,1,-18,0.05
+"958","violencesexualassaul","violence sexual assault","violence and sexual assault",3,0.0009657,-0.0008934,69,18,-51,0.206896551724138
+"959","violencewomen","violence women","violence against women",2,0.0034934,-0.0034016,233,86,-147,0.269592476489028
+"960","violencewomenact","violence women act","violence against women act",3,0.0023461,-0.002607,144,56,-88,0.28
+"961","violentsexualpredato","violent sexual predator","violent sexual predator",3,-1.68e-05,5.66e-05,20,0,-20,0
+"962","votecounted","vote counted","vote is counted",2,0.0019897,-0.0023644,81,20,-61,0.198019801980198
+"963","votejudicialnomine","vote judicial nomine","vote on judicial nominees",3,-3.02e-05,0.000344,17,48,31,0.738461538461539
+"964","voterregistration","voter registration","voter registration",2,0.0042543,-0.0064959,92,24,-68,0.206896551724138
+"965","votingmachine","voting machine","voting machines",2,0.0042671,-0.0060952,94,17,-77,0.153153153153153
+"966","votingright","voting right","voting rights",2,0.0025204,-0.0034139,198,44,-154,0.181818181818182
+"967","votingrightact","voting right act","voting rights act",3,0.0013596,-0.0017801,112,31,-81,0.216783216783217
+"968","votingsystem","voting system","voting system",2,0.0012403,-0.0017868,49,5,-44,0.0925925925925926
+"969","wageworker","wage worker","wage workers",2,0.0006051,-0.0007119,99,28,-71,0.220472440944882
+"970","warcost","war cost","war costs",2,0.0001877,0.000121,80,16,-64,0.166666666666667
+"971","wariraq","war iraq","war in iraq",2,0.011651,-0.0145443,748,162,-586,0.178021978021978
+"972","wariraqafghanistan","war iraq afghanistan","war in iraq and afghanistan",3,0.0006144,-0.0005171,83,17,-66,0.17
+"973","warterror","war terror","war on terror",2,0.0097892,-0.0021556,237,604,367,0.718192627824019
+"974","warterrorism","war terrorism","war on terrorism",2,-0.0022343,0.0128975,223,369,146,0.623310810810811
+"975","warrenbuffett","warren buffett","warren buffett",2,2.04e-05,2.56e-05,32,0,-32,0
+"976","washingtondc","washington dc","washington dc",2,0.0019246,0.0083058,381,493,112,0.564073226544622
+"977","watchlist","watch list","watch list",2,0.0017289,-0.0025782,68,11,-57,0.139240506329114
+"978","wateract","water act","water act",2,0.0023728,-0.0033919,106,27,-79,0.203007518796992
+"979","waterconservationfun","water conservation fund","water conservation fund",3,0.0004624,-0.0005089,38,9,-29,0.191489361702128
+"980","weapongradeplutonium","weapon grade plutonium","weapons grade plutonium",3,-0.0001069,0.0004058,0,13,13,1
+"981","westernenergycrisi","western energy crisi","western energy crisis",3,6.73e-05,-7.82e-05,18,0,-18,0
+"982","whitecareact","white care act","white care act",3,0.0028751,-0.0047166,44,3,-41,0.0638297872340425
+"983","whitehousecongress","white house congress","white house and the congress",3,0.0001823,-0.0001586,24,2,-22,0.0769230769230769
+"984","whitehouseofficial","white house official","white house official",3,0.0003655,-0.0005554,29,2,-27,0.0645161290322581
+"985","whitehousepress","white house press","white house press",3,0.0003216,-0.000512,18,0,-18,0
+"986","whitehouserepublican","white house republican","white house and the republican",3,0.0002659,-0.0003499,40,4,-36,0.0909090909090909
+"987","wildbird","wild bird","wild birds",2,0.0003042,-0.0003728,33,0,-33,0
+"988","wildliferefuge","wildlife refuge","wildlife refuge",2,0.0019843,-0.0002268,355,81,-274,0.185779816513761
+"989","winwarterror","win war terror","win the war on terror",3,-0.0005278,0.0016777,7,30,23,0.810810810810811
+"990","winningwar","winning war","winning the war",2,-0.0005021,0.0017326,10,50,40,0.833333333333333
+"991","winningwariraq","winning war iraq","winning the war in iraq",3,-0.0001316,0.0003515,0,14,14,1
+"992","winningwarterror","winning war terror","winning the war on terror",3,-0.0002773,0.0009151,1,21,20,0.954545454545455
+"993","witnesstestify","witness testify","witnesses may testify",2,-0.000257,0.0008642,2,51,49,0.962264150943396
+"994","womenarmedforce","women armed force","women of our armed forces",3,0.000114,0.0012424,43,73,30,0.629310344827586
+"995","workerright","worker right","workers rights",2,0.0024425,-0.0033302,158,14,-144,0.0813953488372093
+"996","worldpoorest","world poorest","world poorest",2,0.0007167,-0.0010439,45,5,-40,0.1
+"997","worldpoorestpeople","world poorest people","world poorest people",3,0.0001632,-0.0002498,20,0,-20,0
+"998","worldtrade","world trade","world trade",2,-0.0012355,0.0081199,124,199,75,0.61609907120743
+"999","worldtradeorganizati","world trade organization","world trade organization",3,-0.000309,0.0020674,45,80,35,0.64
+"1000","wrongdirection","wrong direction","wrong direction",2,0.0008661,-0.0007167,111,22,-89,0.165413533834586
