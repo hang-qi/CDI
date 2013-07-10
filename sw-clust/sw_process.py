@@ -28,7 +28,7 @@ class Plotter(object):
         print(current_labeling)
 
         self.iterations.append(context.iteration_counter)
-        self.energies.append(self.stat.target_evaluation_func(current_labeling))
+        self.energies.append(self.stat.calculate_energy(current_labeling))
 
         # energy plot
         self.energy_plot.clear()

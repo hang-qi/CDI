@@ -33,16 +33,23 @@ class Statistics(object):
             #return 0.2 + 0.1*count
             return 0.9
 
+    def cooling_schedule(self, iteration_counter):
+        starting_temperature = 1000
+        period = 30
+        step_size = 10
+
+        current_temperature = starting_temperature - int(iteration_counter/period)*step_size
+        if current_temperature <= 0:
+            current_temperature = 0.1
+        return current_temperature
+
     def target_evaluation_func(self, current_labeling, context=None):
         #print(current_labeling)
         energy = self.calculate_energy(current_labeling)
         temperature = 1000
         #print(energy)
-        #if context is not None:
-        #    count = int(context.iteration_counter/50)
-        #    if count > 19:
-        #        count = 19
-        #    temperature = 200000.0 - 10000*count
+        if context is not None:
+            temperature = self.cooling_schedule(context.iteration_counter)
         return mpmath.exp(-(energy/temperature))
 
     def calculate_ground_truth(self, true_segment):
@@ -56,7 +63,7 @@ class Statistics(object):
                 ts_index += 1
             else:
                 true_labeling.append(seg)
-        true_eval = self.target_evaluation_func(true_labeling)
+        true_eval = self.calculate_energy(true_labeling)
         return true_eval
 
     def __labeling_to_segments(self, labeling):
