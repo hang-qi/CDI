@@ -31,11 +31,11 @@ class Statistics(object):
             #if count > 7:
             #    count = 7
             #return 0.2 + 0.1*count
-            return 0.9
+            return 0.6
 
     def cooling_schedule(self, iteration_counter):
         starting_temperature = 1000
-        period = 30
+        period = 2
         step_size = 10
 
         current_temperature = starting_temperature - int(iteration_counter/period)*step_size

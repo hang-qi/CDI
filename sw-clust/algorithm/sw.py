@@ -140,11 +140,12 @@ class _SWCuts(object):
                 current_labeling, edge_status)
 
             # Do a sweep
-            for component in connected_components:
-                # Flip the connect component probabilistically.
-                current_labeling = self.__flip_connected_component(
-                    current_labeling, component, target_eval_func)
-                self.context.set_result(current_labeling)
+            #for component in connected_components:
+            component = connected_components[random.randint(0, len(connected_components)-1)]
+            # Flip the connect component probabilistically.
+            current_labeling = self.__flip_connected_component(
+                current_labeling, component, target_eval_func)
+            self.context.set_result(current_labeling)
 
             # Propagate intermediate result if has callback function.
             if intermediate_callback is not None:
