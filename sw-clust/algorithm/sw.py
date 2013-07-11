@@ -290,7 +290,7 @@ class _SWCuts(object):
         else:
             new_candidate[host_cluster_index] -= component
             new_candidate.append(component)
-        candidates.append(new_candidate, set())
+        candidates.append((new_candidate, set()))
 
         posteriors = []
         denominator = mpmath.mpf(0.0)
@@ -318,4 +318,5 @@ class _SWCuts(object):
         r = random.random()
         for i in range(0, len(cdf)):
             if cdf[i] > r:
-                return candidates[i]
+                (selected_candidate, cut_set) = candidates[i]
+                return selected_candidate
