@@ -3,10 +3,8 @@ import glob
 import sys
 sys.path.append('..')
 
-import func
 import cleansing
 import vocabulary
-from model import segment
 from model.nodes import Node, Nodes
 from model import probability
 
@@ -14,23 +12,32 @@ from scipy.stats import norm
 import mpmath
 
 
+def ispronoun(word):
+    pronoun_set = ['they', 'he', 'she', 'his', 'her', 'they', 'their', 'those', 'that', 'these', 'which', 'its']
+    if word in pronoun_set:
+        return True
+    else:
+        return False
+
+
 def read_test_file(filenameprefix):
     """Read the triplets files of the segments that correspond to the test file"""
     file_name = 'triplet_files/' + filenameprefix + '*.txt'
     files = glob.glob(file_name)
     files.sort()
-    true_segment = segment.Segment()
+    true_segment = []
     all_nodes = Nodes()
-    line_count = 0
+    line_count = -1
     for segments_file in files:
         with open(segments_file, 'r') as f:
+            current_seg = []
             for line in f:
                 if(line[0] != '<'):
                     line_count += 1
                     line = (line[:-2]).lower()
                     triplets = line.split('|')
                     np1 = triplets[0].split()
-                    if np1 != [] and func.ispronoun(np1[0]):
+                    if np1 != [] and ispronoun(np1[0]):
                         pronoun_flag = True
                     else:
                         pronoun_flag = False
@@ -40,7 +47,8 @@ def read_test_file(filenameprefix):
                     current_node = Node()
                     current_node.set_node(np1, vp, np2, pronoun_flag)
                     all_nodes.add_node(current_node)
-        true_segment.add_boundary(line_count)
+                    current_seg.append(line_count)
+        true_segment.append(set(current_seg))
     return [all_nodes, true_segment]
 
 
@@ -140,7 +148,7 @@ def preprocessing(test_filenameprefix, training_file_in):
     prior_dist_range = 500
     for i in range(0, prior_dist_range):
         j = i + 1.0
-        length_prior.append(mpmath.mpf(100.0/j + 10.0*norm(15, 15).pdf(j) + 10.0*norm(2, 10).pdf(j)))
+        length_prior.append(mpmath.mpf(10.0*norm(15, 15).pdf(j) + 5.0*norm(2, 20).pdf(j)))
         #length_prior.append(1)
     # Norm the probability
     length_prior = prob_normalization(length_prior)

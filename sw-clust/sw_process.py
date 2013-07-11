@@ -48,13 +48,11 @@ class Plotter(object):
         self.temperature_plot.plot(self.iterations, self.temperatures)
 
         # segmentation plot
-        current_seg = []
-        for i in range(1, len(current_labeling)):
-            if current_labeling[i] != current_labeling[i-1]:
-                current_seg.append(i)
+        current_seg = [max(x)+1 for x in current_labeling]
         self.segment_plot.clear()
         self.segment_plot.set_title('Segmentation')
-        self.segment_plot.plot(self.true_segment.seg_boundary, [2]*len(self.true_segment.seg_boundary), '.r')
+        seg_boundary = [max(x)+1 for x in self.true_segment]
+        self.segment_plot.plot(seg_boundary, [2]*len(seg_boundary), '.r')
         self.segment_plot.hold(True)
         self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
         self.segment_plot.axis([0, self.stat.all_nodes.node_num, 0, 3])
@@ -80,7 +78,7 @@ def SW_Process():
         edges.append([i, j])
 
     stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior)
-    true_eval = stat.calculate_ground_truth(true_segment)
+    true_eval = stat.calculate_energy(true_segment)
     plotter = Plotter(stat, true_segment, true_eval)
 
     #initial_labeling = []

@@ -43,28 +43,14 @@ class Statistics(object):
             current_temperature = 0.1
         return current_temperature
 
-    def target_evaluation_func(self, current_labeling, context=None):
+    def target_evaluation_func(self, current_clustering, context=None):
         #print(current_labeling)
-        energy = self.calculate_energy(current_labeling)
+        energy = self.calculate_energy(current_clustering)
         temperature = 1000
         #print(energy)
         if context is not None:
             temperature = self.cooling_schedule(context.iteration_counter)
         return mpmath.exp(-(energy/temperature))
-
-    def calculate_ground_truth(self, true_segment):
-        true_labeling = []
-        seg = 0
-        ts_index = 0
-        for i in range(0, self.all_nodes.node_num):
-            if i == true_segment.seg_boundary[ts_index]:
-                seg = 1 - seg
-                true_labeling.append(seg)
-                ts_index += 1
-            else:
-                true_labeling.append(seg)
-        true_eval = self.calculate_energy(true_labeling)
-        return true_eval
 
     def __labeling_to_segments(self, labeling):
         segmentation = []
@@ -82,15 +68,15 @@ class Statistics(object):
             segmentation.append(current_segment)
         return segmentation
 
-    def calculate_energy(self, current_labeling):
+    def calculate_energy(self, current_clustering):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
-        assert(len(current_labeling) == self.all_nodes.node_num)
-        segmentation = self.__labeling_to_segments(current_labeling)
+        #assert(len(current_labeling) == self.all_nodes.node_num)
+        #segmentation = self.__labeling_to_segments(current_labeling)
 
         energy = 0.0
         previous_category = -1
         #print(len(segmentation))
-        for segment in segmentation:
+        for segment in current_clustering:
             # likelihood term
             [category, prob] = self.classification(segment)
             if prob == 0:
@@ -104,7 +90,7 @@ class Statistics(object):
 
             # prior prob term
             energy += -mpmath.log(self.length_prior[len(segment) - 1])
-        energy += -mpmath.log(self.seg_num_prior[len(segmentation)])
+        energy += -mpmath.log(self.seg_num_prior[len(current_clustering)])
         return energy
 
     def classification(self, current_seg):
