@@ -221,7 +221,7 @@ class _SWCuts(object):
                     # Form one CP from a random vertex
                     #seed_vertex = random.randint(0, size-1)
                     component = self.__grow_component_by_bfs(
-                        seed_vertex, seed_cluster, edge_status, visited)
+                        seed_vertex, cluster, edge_status, visited)
                     connected_components.append(component)
 
         return connected_components
