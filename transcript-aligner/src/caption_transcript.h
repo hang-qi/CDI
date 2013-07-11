@@ -346,7 +346,7 @@ private:
     int ConvertToWords()
     {
         stringstream ss(text_);
-        bool videoClip = false;
+        //bool videoClip = false;
         string line;
         while (!ss.eof())
         {

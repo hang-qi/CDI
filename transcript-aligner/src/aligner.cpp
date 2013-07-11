@@ -215,7 +215,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
         vector<CaptionLine> linesBuffer;
         string currentTimestamp = pCaption_->captionLines[i].timestamp;
         string currentTimestamp_end = pCaption_->captionLines[i].timestamp_end;
-        string previousTimestamp = i > 0 ? pCaption_->captionLines[i-1].timestamp : "";
+        string previousTimestamp = i > 0 ? pCaption_->captionLines[i-1].timestamp : pCaption_->captionLines[0].timestamp;
         for (int k = 0; k < sublines.size(); k++)
         {
             if (utility::string_utility::trim(sublines[k]).empty())
@@ -359,9 +359,15 @@ const Caption Aligner::BuildTimeAlignedCaption()
             }
             else if (linesBuffer[k].tag == "CLIP")
             {
-                // terminate previous CLIP, NER
+                // terminate previous CLIP, NER, SEG(Commercial)
                 AddEndTimeToTag(tptCaption.captionLines, prev_clip_idx, linesBuffer[k].timestamp);
                 prev_clip_idx = tptCaption.captionLines.size() -1;
+
+                if (prev_seg_idx != -1 && tptCaption.captionLines[prev_seg_idx].content == "Type=Commercial")
+                {
+                    AddEndTimeToTag(tptCaption.captionLines, prev_seg_idx, linesBuffer[k].timestamp);
+                    prev_seg_idx = -1;
+                }
 
                 AddEndTimeToTag(tptCaption.captionLines, prev_ner_idx, linesBuffer[k].timestamp);
                 prev_ner_idx = -1;

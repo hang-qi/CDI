@@ -1,4 +1,5 @@
 #include "datetime_utility.h"
+#include <iostream>
 
 namespace utility
 {
@@ -9,7 +10,7 @@ namespace utility
 		    time_t     now = time(0);
 		    char       buf[80];
 		    tm* tstruct = localtime(&now);
-		    
+
 		    // Visit http://www.cplusplus.com/reference/clibrary/ctime/strftime/
 		    // for more information about date/time format
 		    strftime(buf, sizeof(buf), format.c_str(), tstruct);
@@ -32,13 +33,14 @@ namespace utility
 		// 20061003231943.000
 		const std::string timestampAdd(const std::string& orgTimeStr, int deltaInSeconds)
 		{
+			std::cout << orgTimeStr << std::endl;
 			tm t = str2timestruct(orgTimeStr);
 			t.tm_sec += deltaInSeconds;
-			mktime(&t);	// normalize time			
+			mktime(&t);	// normalize time
 			std::string newTimeString = time2str(t);
 			if (orgTimeStr.size() > 14)
 			{
-				std::string milliseconds = orgTimeStr.substr(15,3);				
+				std::string milliseconds = orgTimeStr.substr(15,3);
 			 	newTimeString = newTimeString + "." + milliseconds;
 			}
 			return newTimeString;
