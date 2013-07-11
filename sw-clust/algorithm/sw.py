@@ -255,6 +255,7 @@ class _SWCuts(object):
         for (cluster_index, cluster) in enumerate(current_clustering):
             for v in cluster:
                 cluster_dict[v] = cluster_index
+        assert(len(cluster_dict) == self.adjacency_graph.size)
 
         for v in component:
             host_cluster_index = cluster_dict[v]
@@ -277,7 +278,8 @@ class _SWCuts(object):
         for neighbor_cluster_index in neighbor_clusters:
             candidate = copy.deepcopy(current_clustering)
             if neighbor_cluster_index != host_cluster_index:
-                candidate[neighbor_cluster_index].union(component)
+                for v in component:
+                    candidate[neighbor_cluster_index].add(v)
                 if current_clustering[host_cluster_index] == component:
                     candidate.remove(component)
                 else:
@@ -289,9 +291,7 @@ class _SWCuts(object):
         if current_clustering[host_cluster_index] != component:
             new_candidate[host_cluster_index] -= component
             new_candidate.append(component)
-            candidates.append((new_candidate, set()))
-        else:
-            candidates.append((new_candidate, set()))
+        candidates.append((new_candidate, set()))
 
         posteriors = []
         denominator = mpmath.mpf(0.0)
