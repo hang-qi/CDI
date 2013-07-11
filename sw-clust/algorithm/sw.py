@@ -251,6 +251,7 @@ class _SWCuts(object):
 
         # Find candidate labels from neighbors
 
+        cluster_dict = dict()
         for (cluster_index, cluster) in enumerate(current_clustering):
             for v in cluster:
                 cluster_dict[v] = cluster_index
@@ -272,12 +273,12 @@ class _SWCuts(object):
         candidates = []
         for neighbor_cluster_index in neighbor_clusters:
             candidate = copy.deepcopy(current_clustering)
-            candidate[neighbors_cluster_index].union(component)
+            candidate[neighbor_cluster_index].union(component)
             if current_clustering[host_cluster_index] == component:
                 candidate.remove(component)
             else:
                 candidate[host_cluster_index] -= component
-            candidates.append((candidate, cut_edges_dict[neighbors_cluster_index]))
+            candidates.append((candidate, cut_edges_dict[neighbor_cluster_index]))
 
         # 2. As a new cluster
         new_candidate = copy.deepcopy(current_clustering)
