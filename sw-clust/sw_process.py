@@ -92,7 +92,7 @@ def SW_Process():
     #    #initial_labeling.append(0)
 
     print('Start Sampling')
-    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_labeling=None, monitor_statistics=stat.calculate_energy)
+    sw.sample(node_number, edges, stat.calculate_Qe, stat.target_evaluation_func, plotter.plot_callback, initial_clustering=None, monitor_statistics=stat.calculate_energy)
     print('Converged.')
     plotter.save()
 

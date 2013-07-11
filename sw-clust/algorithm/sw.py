@@ -16,7 +16,7 @@ import random
 import mpmath
 
 
-def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, monitor_statistics=None, max_labels=None):
+def sample(graph_size, edges, edge_prob_func, target_eval_func, intermediate_callback=None, initial_clustering=None, monitor_statistics=None):
     """Generating fair samples by Swendsen-Wang Cuts.
 Parameters:
 - graph_size:
@@ -45,14 +45,9 @@ Parameters:
     the end of every iteration.
         callback(labeling)
 
-- inital_labeling (optional):
+- inital_clustering (optional):
     the initial status to begin from.
-    All vertex will have the save initial label if not provided.
-
-- max_labels (optional):
-    the max number of labels can be used.
-    Each vertex can have its own unique label if max_labels is not specified.
-
+    All vertex will be in the same cluster if not provided.
 """
     sw = _SWCuts()
     return sw.sample(
@@ -60,9 +55,8 @@ Parameters:
         edge_prob_func,
         target_eval_func,
         intermediate_callback=intermediate_callback,
-        initial_labeling=initial_labeling,
-        monitor_statistics_func=monitor_statistics,
-        max_labels=max_labels)
+        initial_clustering=initial_clustering,
+        monitor_statistics_func=monitor_statistics)
 
 
 class SWContext(object):
@@ -136,18 +130,14 @@ class _SWCuts(object):
         super(_SWCuts, self).__init__()
         self.context = SWContext()
 
-    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None, initial_labeling=None, monitor_statistics_func=None, max_labels=None):
+    def sample(self, adjacency_graph, edge_prob_func, target_eval_func, intermediate_callback=None, initial_clustering=None, monitor_statistics_func=None):
         # Initial labeling.
-        if initial_labeling is not None:
-            current_clustering = initial_labeling
+        if initial_clustering is not None:
+            current_clustering = initial_clustering
         else:
             current_clustering = [set(range(0, adjacency_graph.size))]
 
         self.adjacency_graph = adjacency_graph
-        if max_labels is not None:
-            self.max_labels = max_labels
-        else:
-            self.max_labels = self.adjacency_graph.size
 
         # Functions
         self.edge_prob_func = edge_prob_func
@@ -167,8 +157,9 @@ class _SWCuts(object):
             connected_components = self.__form_connected_components(
                 current_clustering, edge_status)
 
-            # Do a sweep
-            #for component in connected_components:
+            # Option 1: Do a sweep.
+            #  for component in connected_components:
+            # Option 2: only randomly select one component.
             component = connected_components[random.randint(0, len(connected_components)-1)]
             # Flip the connect component probabilistically.
             current_clustering = self.__flip_connected_component(
@@ -208,8 +199,7 @@ class _SWCuts(object):
 
     def __form_connected_components(self, current_clustering, edge_status):
         """Form connected components (CP) probabilistically.
-        This function returns a list of CPs.
-        Each CP is a list of vertexes. And cut_edges is a list of edges, i.e. [(s, t)]."""
+        This function returns a list of CPs. Each CP is a list of vertexes."""
         size = self.adjacency_graph.size
         visited = [False for v in range(0, size)]
 
@@ -226,7 +216,7 @@ class _SWCuts(object):
 
         return connected_components
 
-    def __grow_component_by_bfs(self, seed_vertex, seed_cluster, edge_status, visited):
+    def __grow_component_by_bfs(self, seed_vertex, host_cluster, edge_status, visited):
         component = set()
         d = deque([seed_vertex])
         while(len(d) != 0):
@@ -239,18 +229,13 @@ class _SWCuts(object):
 
             # Add all connected vertex into the queue.
             for u in self.adjacency_graph.adj_list[v]:
-                if u in seed_cluster:
+                if u in host_cluster:
                     if edge_status[v][u]:
                         d.append(u)
         return component
 
     def __flip_connected_component(self, current_clustering, component):
-        # Possible labels for for connected component:
-        #   - Label of any neighbors, so that the CP will be merged into a neighbor.
-        #   - New label, so that the CP will be a new cluster.
-
-        # Find candidate labels from neighbors
-
+        # Cache the cluster index of every vertex.
         cluster_dict = dict()
         for (cluster_index, cluster) in enumerate(current_clustering):
             for v in cluster:
@@ -261,6 +246,7 @@ class _SWCuts(object):
             host_cluster_index = cluster_dict[v]
             break
 
+        # Find all neighbor clusters of the component.
         neighbor_clusters = set()
         cut_edges_dict = defaultdict(set)
 
@@ -272,9 +258,11 @@ class _SWCuts(object):
                     cut_edges_dict[neighbor_cluster_index].add((v, u))
 
         # Generate candidates
-        # 1. Add all vertex in component to one of the neighbor
-        #    and remove from host cluster.
+        # Each element is a tuple (candidate_clustering, cut_set)
         candidates = []
+
+        # 1. Merge the component to one of the neighbor
+        #    and remove from its host cluster.
         for neighbor_cluster_index in neighbor_clusters:
             candidate = copy.deepcopy(current_clustering)
             if neighbor_cluster_index != host_cluster_index:
@@ -286,13 +274,14 @@ class _SWCuts(object):
                     candidate[host_cluster_index] -= component
             candidates.append((candidate, cut_edges_dict[neighbor_cluster_index]))
 
-        # 2. As a new cluster
+        # 2. Add component as a new cluster.
         new_candidate = copy.deepcopy(current_clustering)
         if current_clustering[host_cluster_index] != component:
             new_candidate[host_cluster_index] -= component
             new_candidate.append(component)
         candidates.append((new_candidate, set()))
 
+        # Calculate the posterior probability of each candidate.
         posteriors = []
         denominator = mpmath.mpf(0.0)
         for (candidate, cut_set) in candidates:
