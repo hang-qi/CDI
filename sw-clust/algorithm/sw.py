@@ -148,7 +148,6 @@ class _SWCuts(object):
 
         while not self.__has_converged():
             self.context.count_iteration()
-            self.context.set_result(current_clustering)
 
             # Determine edge status (on or off) probabilistically.
             edge_status = self.__determine_edge_status()
@@ -189,7 +188,6 @@ class _SWCuts(object):
             # Turn edge 'on' if r < prob(on), 'off' otherwise.
             r = random.random()
             if (r < self.__edge_on_probability(s, t)):
-            #if (r < self.edge_prob_func(s, t, self.context)):
                 edge_status[s][t] = True
                 edge_status[t][s] = True
             else:
@@ -209,7 +207,7 @@ class _SWCuts(object):
                 if not visited[v]:
                     seed_vertex = v
                     # Form one CP from a random vertex
-                    #seed_vertex = random.randint(0, size-1)
+                    # seed_vertex = random.randint(0, size-1)
                     component = self.__grow_component_by_bfs(
                         seed_vertex, cluster, edge_status, visited)
                     connected_components.append(component)
