@@ -256,7 +256,10 @@ class _SWCuts(object):
             for v in cluster:
                 cluster_dict[v] = cluster_index
 
-        host_cluster_index = cluster_dict[component[0]]
+        for v in component:
+            host_cluster_index = cluster_dict[v]
+            break
+
         neighbor_clusters = set()
         cut_edges_dict = defaultdict(set)
 
