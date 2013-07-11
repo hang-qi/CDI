@@ -5,6 +5,27 @@ sys.path.append('..')
 from algorithm import sw
 
 
+class _Plotter(object):
+    def plot_callback(self):
+        pass
+
+
+class SWConfig(object):
+    """One shall inherit this class to give more specific configurations."""
+    def __init__(self, graph_size, edges):
+        self.graph_size = graph_size
+        self.edges = edges
+
+    def edge_prob_func(self):
+        return 0.5
+
+    def target_eval_func(self):
+        return 1
+
+    def monitor_statistics(self):
+        return 0.5
+
+
 class TopicModel(object):
     def __init__(self):
         self.corpus = None
@@ -25,37 +46,57 @@ class TopicModel(object):
 
         # Reform the tree if necessary.
         if (self.__need_reform()):
-            self.__reform_by_sw()
+            self.__reform_by_multilevel_sw()
         pass
 
     def __inference(self, new_document):
         """Inference and attach the new document to the current topic tree."""
+        # This shall base on the likelihood and depth prior.
         pass
 
-    def __reform_by_sw(self):
+    def __reform_by_multilevel_sw(self):
         """Reform the whole tree by doing multi-level SW-Cuts."""
-        current_level = 0
-        max_labels_agenda = [10, 5]
-        while current_level < len(max_labels_agenda):
-            num_labels_this_level = max_labels_agenda[current_level]
 
-            samples = sw.sample(
-                _AdjacencyGraph(graph_size, edges),
-                self.edge_prob_func,
-                self.target_eval_func,
-                intermediate_callback=None,
-                initial_labeling=None,
-                max_labels=num_labels_this_level)
+        plotter = _Plotter()
+        current_clustering = []
+        need_next_level = True
+        level_counter = 0
 
-            # pick one sample from samples
-            sample = samples[0]
+        while need_next_level:
+            level_counter += 1
+            config = self.__generate_sw_configuration(current_clustering, level_counter)
 
-            # reform the graph setting for next level.
-            graph_size = 0
-            edges = []
+            # Clustering by SW.
+            current_clustering = sw.sample(
+                config.graph_size,
+                config.edges,
+                config.edge_prob_func,
+                config.target_eval_func,
+                intermediate_callback=plotter.plot_callback,
+                initial_clustering=None,
+                monitor_statistics=config.monitor_statistics)
 
-            current_level += 1
+            # Save current clustering as a new level to the tree.
+            self.__add_level_to_tree(current_clustering)
+
+            # Determine if need more level.
+            # TODO: determine if need next level.
+            need_next_level = True
         pass
+
+    def __generate_sw_configuration(self, current_clustering, level_counter):
+        """Generate sw configuration for next run base on current clustering result."""
+        if current_clustering == [] or level_counter == 1:
+            # Generate initial configuration
+            config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)])
+
+        elif level_counter == 2:
+            config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)])
+
+        elif level_counter == 3:
+            config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)])
+
+        return config
 
     def __need_reform(self):
         """Returns if the current topic_tree needs reforming."""
@@ -63,15 +104,8 @@ class TopicModel(object):
             return True
         return False
 
-    def edge_prob(self, s, t, context):
-        # The connectivity depends on multiple criterion
-        #  - time
-        #  - likelihood
-        return 0.5
-
-    def target_prob(self, labeling):
-        # Evaluate the target probability (up to a constant).
-        return self.topic_tree.prior() * self.topic_tree.likelihood(self.corpus)
+    def __add_level_to_tree(self, current_clustering):
+        """Add a level to tree."""
 
 
 class ModelMonitor():
