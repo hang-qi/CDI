@@ -38,10 +38,10 @@ class Statistics(object):
         period = 2
         step_size = 10
 
-        current_temperature = starting_temperature - int(iteration_counter/period)*step_size
-        if current_temperature <= 0:
-            current_temperature = 0.1
-        return current_temperature
+        temperature = starting_temperature - int(iteration_counter/period)*step_size
+        if temperature <= 0:
+            temperature = 0.1
+        return temperature
 
     def target_evaluation_func(self, current_clustering, context=None):
         #print(current_labeling)
