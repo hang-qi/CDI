@@ -19,7 +19,7 @@ def __remove_stopwords(words):
     stopwords_file = open('stopwords.txt', 'r')
     data = stopwords_file.read()
     stopwords = set(data.split(', '))
-    stopwords.add([''])
+    stopwords.add('')
 
     filtered_words = []
     for i in range(0, len(words)):
