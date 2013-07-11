@@ -1,5 +1,4 @@
 #include "datetime_utility.h"
-#include <iostream>
 
 namespace utility
 {
@@ -33,7 +32,6 @@ namespace utility
 		// 20061003231943.000
 		const std::string timestampAdd(const std::string& orgTimeStr, int deltaInSeconds)
 		{
-			std::cout << orgTimeStr << std::endl;
 			tm t = str2timestruct(orgTimeStr);
 			t.tm_sec += deltaInSeconds;
 			mktime(&t);	// normalize time
