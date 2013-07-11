@@ -276,21 +276,22 @@ class _SWCuts(object):
         candidates = []
         for neighbor_cluster_index in neighbor_clusters:
             candidate = copy.deepcopy(current_clustering)
-            candidate[neighbor_cluster_index].union(component)
-            if current_clustering[host_cluster_index] == component:
-                candidate.remove(component)
-            else:
-                candidate[host_cluster_index] -= component
+            if neighbor_cluster_index != host_cluster_index:
+                candidate[neighbor_cluster_index].union(component)
+                if current_clustering[host_cluster_index] == component:
+                    candidate.remove(component)
+                else:
+                    candidate[host_cluster_index] -= component
             candidates.append((candidate, cut_edges_dict[neighbor_cluster_index]))
 
         # 2. As a new cluster
         new_candidate = copy.deepcopy(current_clustering)
-        if current_clustering[host_cluster_index] == component:
-            new_candidate.append(new_candidate)
-        else:
+        if current_clustering[host_cluster_index] != component:
             new_candidate[host_cluster_index] -= component
             new_candidate.append(component)
-        candidates.append((new_candidate, set()))
+            candidates.append((new_candidate, set()))
+        else:
+            candidates.append((new_candidate, set()))
 
         posteriors = []
         denominator = mpmath.mpf(0.0)
