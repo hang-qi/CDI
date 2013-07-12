@@ -26,18 +26,29 @@ class SWConfig(object):
         self.monitor_statistics = self.energy
 
     def edge_prob_func(self, s, t, context):
-        # TODO: calculate base on KL divergence.
-        return 0.5
+        """Calculate edge probability based on KL divergence."""
+        p = s
+        q = t
+        assert(len(p) == len(q))
+        kl_array_pq = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, len(p))]
+        kl_pq = mpmath.sum(kl_array_pq)
+        kl_array_qp = [q[i]*(mpmath.log(q[i] + 1e-100) - mpmath.log(p[i]) + 1e-100) for i in range(0, len(p))]
+        kl_qp = mpmath.sum(kl_array_qp)
+        # TO BE DISCUSSED: Using the same or different temperature settings?
+        temperature = self.cooling_schedule(context.iteration_counter)
+        return mpmath.exp(-(kl_pq + kl_qp)*temperature/2)
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(- self.energy() / temperature)
+        return mpmath.exp(- self.energy(clustering) / temperature)
 
-    def energy(self, clustering):
-        energy = 0
+    def energy(self, clustering):  # Need the distribution here. How to add it?
+        energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
         #     energy += -mpmath.log(P)
+        for cluster in clustering:
+            energy += mpmath.log()
         return energy
 
     def cooling_schedule(self, iteration_counter):
@@ -54,7 +65,7 @@ class SWConfig(object):
 
 class TopicModel(object):
     def __init__(self):
-        self.corpus = None
+        self.corpus = None  # No further use?
         self.topic_tree = _Tree()
         self.date_range = None
         self.monitor = ModelMonitor()
@@ -113,16 +124,29 @@ class TopicModel(object):
     def __generate_sw_configuration(self, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
-        if current_clustering == [] or level_counter == 1:
-            # Generate initial configuration
-            config = SWConfig(graph_size=15, edges=[(1, 2), (0, 3)], level=level_counter)
+        #if current_clustering == [] or level_counter == 1:
+        #    # Generate initial configuration
+        #    config = SWConfig(graph_size=15, edges=[(1, 2), (0, 3)], level=level_counter)
 
-        elif level_counter == 2:
-            config = SWConfig(graph_size=10, edges=[(1, 2), (0, 3)], level=level_counter)
+        #elif level_counter == 2:
+        #    config = SWConfig(graph_size=10, edges=[(1, 2), (0, 3)], level=level_counter)
 
-        elif level_counter == 3:
-            config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)], level=level_counter)
+        #elif level_counter == 3:
+        #    config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)], level=level_counter)
 
+        graph_size = len(current_clustering)
+        # Generate the edges. Delete some edges in the complete graph using some criteria.
+        edges = []
+        distance_threshold = 0.5*level_counter  # TODO: Decide the threshold based on the current level
+        for i in range(0, graph_size-1):
+            for j in range(i+1, graph_size):
+                dist_i = []  # TODO: Add the distribution
+                dist_j = []
+                distance = calculate_tv_norm(dist_i, dist_j)
+                if distance <= distance_threshold:
+                    edges.append((i, j))
+                    edges.append((j, i))
+        config = SWConfig(graph_size, edges, level=level_counter)
         return config
 
     def __need_reform(self):
@@ -181,7 +205,7 @@ class _TreeNode(object):
         self.__np2_distribution = None
 
     def add_child(self, node):
-        self.__childend.append(node)
+        self.__children.append(node)
         # TODO: merge distribution after add a child
         # What if add a node to a terminal node (document).
 
