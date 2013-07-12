@@ -337,10 +337,10 @@ class _DocumentFeature(object):
             name,
             timestamp,
             np1_word_ids=None,
-            np1_word_ids=None,
-            np1_word_ids=None,
+            vp_word_ids=None,
+            np2_word_ids=None,
             ocr_words=None):
         self.name = name
         self.timestamp = timestamp
-        self.word_ids = (np1_word_ids, np1_word_ids, np1_word_ids)
+        self.word_ids = (np1_word_ids, vp_word_ids, np2_word_ids)
         self.ocr_words = ocr_words
