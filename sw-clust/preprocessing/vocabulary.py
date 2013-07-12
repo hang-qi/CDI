@@ -28,6 +28,9 @@ class Vocabulary(object):
         """Return True is word is in the vocabulary."""
         return word in self.dict
 
+    def __contains__(self, word):
+        return word in self.dict
+
     def get_word_index(self, word):
         """Return the word index in the vocabulary. Return -1 if no found."""
         if self.contain(word):

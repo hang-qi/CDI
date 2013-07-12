@@ -6,7 +6,8 @@ import numpy as np
 import mpmath
 from scipy.stats import norm
 
-from preprocessing import vacabulary
+from model import *
+from preprocessing import vocabulary
 from algorithm import sw
 
 
@@ -288,21 +289,42 @@ class Corpus(object):
         np2_vocab = vocabulary.Vocabulary()
         self.vocabularies = (np1_vocab, vp_vocab, np2_vocab)
 
-    def add_document(self, document):
-        # convert document to document feature.
-        # probably need to adjust vocabulary. (change other documents' feature vector)
+    def __len__(self):
+        return len(self.documents)
 
-        # generate document histogram
+    def __iter__(self):
+        return iter(self.documents)
 
-        # save document
-        document_feature = _DocumentFeature()
+    def __getitem__(self, document_id):
+        return self.documents[document_id]
+
+    def add_document(self, original_doc):
+        """Convert document to feature and save into document list."""
+        document_feature = self.__convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
+
+    def __convert_doc_to_feature(self, original_doc):
+        document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
+        document_feature.ocr_words = original_doc.ocr_words
+
+        for word_type in WORD_TYPES:
+            document_feature.word_ids[word_type] = self.__convert_words_to_ids(word_type, original_doc.word_lists[word_type])
+        return document_feature
+
+    def __convert_words_to_ids(self, word_type, word_list):
+        assert(word_type < NUM_WORD_TYPE)
+        ids = []
+        for word in word_list:
+            # If word is in current vocabulary, we directly look up the word_id.
+            # Otherwise, we add this word to the vocabulary and then look up.
+            if word not in self.vocabularies[word_type]:
+                self.vocabularies[word_type].add(word_type)
+            word_id = self.vocabularies[word_type].get_word_index(word)
+            ids.append(word_id)
+        return ids
 
     def get_document_name(self, doc_id):
         return self.documents[doc_id].name
-
-    def size(self):
-        return len(self.documents)
 
     def vocabulary_size(self, word_type):
         assert(word_type < NUM_WORD_TYPE)
@@ -314,17 +336,11 @@ class _DocumentFeature(object):
             self,
             name,
             timestamp,
-            np1_word_ids,
-            np1_word_ids,
-            np1_word_ids,
-            np1_distribution,
-            vp_distribution,
-            np2_distribution,
-            ocr_words):
+            np1_word_ids=None,
+            np1_word_ids=None,
+            np1_word_ids=None,
+            ocr_words=None):
         self.name = name
         self.timestamp = timestamp
         self.word_ids = (np1_word_ids, np1_word_ids, np1_word_ids)
         self.ocr_words = ocr_words
-
-        # FIXME: Probably don't need to store distribution.
-        self.distributions = (np1_distribution, vp_distribution, np2_distribution)
