@@ -21,11 +21,12 @@ class _Plotter(object):
 
 class SWConfig(object):
     """One shall inherit this class to give more specific configurations."""
-    def __init__(self, graph_size, edges, level):
+    def __init__(self, graph_size, edges, vertex_distribution, level):
         self.graph_size = graph_size
         self.edges = edges
-        self.level = level
         self.monitor_statistics = self.energy
+        self.vertex_distribution
+        self.level = level
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
@@ -173,7 +174,7 @@ class TopicModel(object):
                 if distance <= distance_threshold:
                     edges.append((i, j))
                     edges.append((j, i))
-        config = SWConfig(graph_size, edges, level=level_counter)
+        config = SWConfig(graph_size, edges, vertex_distribution=None, level=level_counter)
         return config
 
     def __need_reform(self):
