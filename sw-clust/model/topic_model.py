@@ -26,7 +26,7 @@ class SWConfig(object):
         self.graph_size = graph_size
         self.edges = edges
         self.monitor_statistics = self.energy
-        self.vertex_distribution
+        self.vertex_distribution = vertex_distribution
         self.level = level
         self.documents = documents
 
@@ -45,35 +45,32 @@ class SWConfig(object):
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(- self.energy(clustering) / temperature)
+        return mpmath.exp(- self.energy(clustering, context.iteration_counter) / temperature)
 
-    def energy(self, clustering):  # Need the distribution here. How to add it?
+    def energy(self, clustering, iteration_counter):  # Need the distribution here. How to add it?
         energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
         #     energy += -mpmath.log(P)
         for cluster in clustering:
-            energy += -mpmath.log(self._likelihood(cluster)) - mpmath.log(self._time_prior(cluster))
+            energy += -mpmath.log(self.__likelihood(cluster))
+        if iteration_counter == 1:
+            for cluster in clustering:
+                energy += -mpmath.log(self.__time_prior(cluster))
         return energy
 
     def _likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
         likelihood = 0.0
-        # TODO: Calculate the likelihood
-        for node_index in cluster:
-            for type_id in range(0, NUM_WORD_TYPE):
-                if (len(document.word_lists[type_id]) == 0):
-                    continue
-                prob_type = 0
-                for word in document.word_lists[type_id]:
-                    prob_type += math.log(self.__get_probability(target_branch_id, word, type_id))
-                prob_doc += prob_type * weights[type_id] / sum(weights)
-            likelihood += 0
+        # First generate the distribution of the current cluster
+        cluster_distribution = mpmath.matrix(1, len(self.vertex_distribution[0]))
+        for dist_index in cluster:
+            cluster_distribution += self.vertex_distribution(dist_index)
         return likelihood
 
     def _time_prior(self, cluster):
         time_series = []
-        for node_index in cluster:
-            time_series.append()  # TODO: Get the corresponding time of the story
+        for doc_id in cluster:
+            time_series.append(self.documents[doc_id].timestamp)
         time_series.sort()
         dif = 0.0
         for i in range(0, len(time_series)-1):
@@ -96,7 +93,7 @@ class SWConfig(object):
 
 class TopicModel(object):
     def __init__(self):
-        self.corpus = None  # No further use?
+        self.corpus = None
         self.topic_tree = _Tree()
         self.date_range = None
         self.monitor = ModelMonitor()
@@ -156,24 +153,15 @@ class TopicModel(object):
     def _generate_sw_configuration(self, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
-        #if current_clustering == [] or level_counter == 1:
-        #    # Generate initial configuration
-        #    config = SWConfig(graph_size=15, edges=[(1, 2), (0, 3)], level=level_counter)
-
-        #elif level_counter == 2:
-        #    config = SWConfig(graph_size=10, edges=[(1, 2), (0, 3)], level=level_counter)
-
-        #elif level_counter == 3:
-        #    config = SWConfig(graph_size=5, edges=[(1, 2), (0, 3)], level=level_counter)
-
         graph_size = len(current_clustering)
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
-        distance_threshold = 0.5*level_counter  # TODO: Decide the threshold based on the current level
+        # TODO: Decide the threshold based on the current level
+        distance_threshold = 0.5*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
-                dist_i = []  # TODO: Add the distribution
-                dist_j = []
+                dist_i = vertex_distribution[i]
+                dist_j = vertex_distribution[j]
                 distance = calculate_tv_norm(dist_i, dist_j)
                 if distance <= distance_threshold:
                     edges.append((i, j))
@@ -243,6 +231,7 @@ class _Distribution(object):
         top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
         return top_words_id.tolist()
 
+
 #
 # Definitions for Topic Tree.
 #
@@ -252,7 +241,6 @@ class _TreeNode(object):
         self._vp_distribution = None
         self._np1_distribution = None
         self._np2_distribution = None
-        self._time = 0
 
     def add_child(self, node):
         self._children.append(node)
@@ -264,9 +252,6 @@ class _TreeNode(object):
 
     def is_terminal(self):
         return (len(self._children) == 0)
-
-    def get_time(self):
-        return self._time
 
 
 class _Tree(object):
