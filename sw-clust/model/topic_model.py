@@ -130,7 +130,7 @@ class TopicModel(object):
 
         while need_next_level:
             level_counter += 1
-            config = self._generate_sw_configuration(current_clustering, level_counter)
+            config = self._generate_next_sw_config(current_clustering, level_counter)
 
             # Clustering by SW.
             current_clustering = sw.sample(
@@ -150,10 +150,15 @@ class TopicModel(object):
             need_next_level = True
         pass
 
-    def _generate_sw_configuration(self, current_clustering, level_counter):
+    def _generate_next_sw_config(self, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
         graph_size = len(current_clustering)
+
+        # create new vertex_distribution
+        # depend on vertex_dist of last level and current_clustering
+        new_vertex_distribution = [VertexDistribution] * graph_size
+
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
@@ -166,7 +171,8 @@ class TopicModel(object):
                 if distance <= distance_threshold:
                     edges.append((i, j))
                     edges.append((j, i))
-        config = SWConfig(graph_size, edges, vertex_distribution=None, corpus=self.corpus.documents, level=level_counter)
+
+        config = SWConfig(graph_size, edges, vertex_distribution=new_vertex_distribution, corpus=self.corpus.documents, level=level_counter)
         return config
 
     def _need_reform(self):
@@ -341,3 +347,12 @@ class _DocumentFeature(object):
         self.timestamp = timestamp
         self.word_ids = (np1_word_ids, vp_word_ids, np2_word_ids)
         self.ocr_words = ocr_words
+
+
+class VertexDistribution:
+    def __init__(self, dist1, dist2, dist3):
+        self.distributions = (dist1, dist2, dist3)
+
+    def __getitem__(self, word_type):
+        assert(word_type < NUM_WORD_TYPE)
+        return self.distributions[word_type]
