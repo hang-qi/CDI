@@ -21,12 +21,13 @@ class _Plotter(object):
 
 class SWConfig(object):
     """One shall inherit this class to give more specific configurations."""
-    def __init__(self, graph_size, edges, vertex_distribution, level):
+    def __init__(self, graph_size, edges, vertex_distribution, documents, level):
         self.graph_size = graph_size
         self.edges = edges
         self.monitor_statistics = self.energy
         self.vertex_distribution
         self.level = level
+        self.documents = documents
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
@@ -174,7 +175,7 @@ class TopicModel(object):
                 if distance <= distance_threshold:
                     edges.append((i, j))
                     edges.append((j, i))
-        config = SWConfig(graph_size, edges, vertex_distribution=None, level=level_counter)
+        config = SWConfig(graph_size, edges, vertex_distribution=None, corpus=self.corpus.documents, level=level_counter)
         return config
 
     def __need_reform(self):
@@ -225,6 +226,9 @@ class _Distribution(object):
         return self.hist[0, word_id]
 
 
+#
+# Definitions for Topic Tree.
+#
 class _TreeNode(object):
     def __init__(self):
         self.__children = []
@@ -266,3 +270,50 @@ class _Tree(object):
             for vertex_index in cluster:
                 new_parent_node.add_child(self.__root.get_child(vertex_index))
         self.__root = new_root
+
+
+#
+# Definitions for corpus and document.
+#
+class _Corpus(object):
+    """A Corpus object includes all documents' content and corpus statistics."""
+    def __init__(self, corpus_stat):
+        self.documents = []
+        self.statistics = corpus_stat
+
+    def add_document(self, document):
+        document_stat = _DocumentStatistics(document)
+        self.documents.append(document)
+        self.statistics.add_document(document)
+
+    def get_document_name(self, doc_id):
+        return self.documents[doc_id].name
+
+    def size(self):
+        return len(self.documents)
+
+
+
+class _CorpusStatistics(object):
+    """Contains vocabulary and all document statistics."""
+    def __init__(self, np1_vocab, vp_vocab, np2_vocab):
+        self.documents_stats = []
+        self.vocabularies = (np1_vocab, vp_vocab, np2_vocab)
+        pass
+
+    def add_document(self, document):
+        self.documents_stats.append(document_stat)
+
+    def size(self):
+        return len(self.documents_stats)
+
+
+class _DocumentStatistics(object):
+    """Statistics of a document. This contains a distribution for each type of word."""
+    def __init__(self, document):
+        distributions, ocr_words = None
+        self.distributions = distributions
+        if ocr_words is None:
+            self.ocr_words = []
+        else:
+            self.ocr_words = ocr_words
