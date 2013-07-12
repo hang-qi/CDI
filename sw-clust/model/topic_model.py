@@ -53,10 +53,10 @@ class SWConfig(object):
         # Candidate terms: likelihood, time prior, and etc.
         #     energy += -mpmath.log(P)
         for cluster in clustering:
-            energy += -mpmath.log(self.__likelihood(cluster)) - mpmath.log(self.__time_prior(cluster))
+            energy += -mpmath.log(self._likelihood(cluster)) - mpmath.log(self._time_prior(cluster))
         return energy
 
-    def __likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
+    def _likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
         likelihood = 0.0
         # TODO: Calculate the likelihood
         for node_index in cluster:
@@ -70,7 +70,7 @@ class SWConfig(object):
             likelihood += 0
         return likelihood
 
-    def __time_prior(self, cluster):
+    def _time_prior(self, cluster):
         time_series = []
         for node_index in cluster:
             time_series.append()  # TODO: Get the corresponding time of the story
@@ -110,20 +110,20 @@ class TopicModel(object):
 
         # Inference and attach to trees
         for document in new_corpus.documents:
-            self.__inference(document)
+            self._inference(document)
             self.corpus.add_document(document)
 
         # Reform the tree if necessary.
-        if (self.__need_reform()):
-            self.__reform_by_multilevel_sw()
+        if (self._need_reform()):
+            self._reform_by_multilevel_sw()
         pass
 
-    def __inference(self, new_document):
+    def _inference(self, new_document):
         """Inference and attach the new document to the current topic tree."""
         # TODO: This shall base on the likelihood and depth prior.
         pass
 
-    def __reform_by_multilevel_sw(self):
+    def _reform_by_multilevel_sw(self):
         """Reform the whole tree by doing multi-level SW-Cuts."""
 
         plotter = _Plotter()
@@ -133,7 +133,7 @@ class TopicModel(object):
 
         while need_next_level:
             level_counter += 1
-            config = self.__generate_sw_configuration(current_clustering, level_counter)
+            config = self._generate_sw_configuration(current_clustering, level_counter)
 
             # Clustering by SW.
             current_clustering = sw.sample(
@@ -146,14 +146,14 @@ class TopicModel(object):
                 monitor_statistics=config.monitor_statistics)
 
             # Save current clustering as a new level to the tree.
-            self.__add_level_to_tree(current_clustering)
+            self._add_level_to_tree(current_clustering)
 
             # Determine if need more level.
             # TODO: determine if need next level.
             need_next_level = True
         pass
 
-    def __generate_sw_configuration(self, current_clustering, level_counter):
+    def _generate_sw_configuration(self, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
         #if current_clustering == [] or level_counter == 1:
@@ -181,7 +181,7 @@ class TopicModel(object):
         config = SWConfig(graph_size, edges, vertex_distribution=None, corpus=self.corpus.documents, level=level_counter)
         return config
 
-    def __need_reform(self):
+    def _need_reform(self):
         """Returns if the current topic_tree needs reforming."""
         if (self.monitor.last_reform_date - datetime.datetime.now()) > datetime.timedelta(days=30):
             return True
@@ -189,7 +189,7 @@ class TopicModel(object):
         #       is needed, like Dunn Index, Davies-Bouldin Index, etc.
         return False
 
-    def __add_level_to_tree(self, current_clustering):
+    def _add_level_to_tree(self, current_clustering):
         """Add a level to tree."""
         self.topic_tree.add_level_on_top(current_clustering)
         pass
@@ -208,50 +208,62 @@ class ModelMonitor():
 class _Distribution(object):
     """A 1D histogram (normalized to 1)."""
     def __init__(self, hist, denominator):
-        self.hist = hist
-        self.denominator = denominator
+        self._hist = hist
+        self._denominator = denominator
 
-    def combine(self, other):
-        # Recover the histogram before normalization and add up two histograms
-        self.hist = self.hist * self.denominator + other.hist * other.denominator
+    def __getitem__(self, word_id):
+        return self._hist[word_id]
+
+    def __add__(self, other):
+        # Recover histogram and add.
+        new_hist = self._hist * self._denominator + other._hist * other._denominator
 
         # Re-normalize to 1
-        denominator = self.hist.sum()
+        denominator = new_hist.sum()
         if denominator != 0:
-            self.hist /= denominator
-        self.denominator = denominator
+            new_hist /= denominator
+        return _Distribution(new_hist, denominator)
+
+    def __radd__(self, other):
+        # The 'add' operation among distribution if symmetric.
+        return self.__add__(other)
+
+    def __iadd__(self, other):
+        return self.__add__(other)
+
+    def kl_divergence(self, other):
+        return kl_value
+
+    def combine(self, other):
+        self = self.__add__(other)
 
     def synthesize(self, num_words):
         """Synthesize a set of words from the distribution."""
-        indexes = np.argsort(self.hist)
-        top_words_id = indexes[0][::-1][0:min(num_words, np.shape(self.hist)[1])]
+        indexes = np.argsort(self._hist)
+        top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
         return top_words_id.tolist()
-
-    def __getitem__(self, word_id):
-        return self.hist[0, word_id]
-
 
 #
 # Definitions for Topic Tree.
 #
 class _TreeNode(object):
     def __init__(self):
-        self.__children = []
-        self.__vp_distribution = None
-        self.__np1_distribution = None
-        self.__np2_distribution = None
-        self.__time = 0
+        self._children = []
+        self._vp_distribution = None
+        self._np1_distribution = None
+        self._np2_distribution = None
+        self._time = 0
 
     def add_child(self, node):
-        self.__children.append(node)
+        self._children.append(node)
         # TODO: merge distribution after add a child
         # What if add a node to a terminal node (document).
 
     def get_child(self, index):
-        return self.__children[index]
+        return self._children[index]
 
     def is_terminal(self):
-        return (len(self.__children) == 0)
+        return (len(self._children) == 0)
 
     def get_time(self):
         return self._time
@@ -260,11 +272,11 @@ class _TreeNode(object):
 class _Tree(object):
     """A Tree structure."""
     def __init__(self):
-        self.__root = _TreeNode()
+        self._root = _TreeNode()
 
     def add_to_root(self, node):
         """Add a node to the root."""
-        self.__root.add_child(node)
+        self._root.add_child(node)
 
     def add_level_on_top(self, clustering):
         """Add a new level on the top of the tree."""
@@ -273,8 +285,8 @@ class _Tree(object):
         for cluster in clustering:
             new_parent_node = _TreeNode()
             for vertex_index in cluster:
-                new_parent_node.add_child(self.__root.get_child(vertex_index))
-        self.__root = new_root
+                new_parent_node.add_child(self._root.get_child(vertex_index))
+        self._root = new_root
 
 
 #
@@ -300,18 +312,18 @@ class Corpus(object):
 
     def add_document(self, original_doc):
         """Convert document to feature and save into document list."""
-        document_feature = self.__convert_doc_to_feature(original_doc)
+        document_feature = self._convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
 
-    def __convert_doc_to_feature(self, original_doc):
+    def _convert_doc_to_feature(self, original_doc):
         document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
         document_feature.ocr_words = original_doc.ocr_words
 
         for word_type in WORD_TYPES:
-            document_feature.word_ids[word_type] = self.__convert_words_to_ids(word_type, original_doc.word_lists[word_type])
+            document_feature.word_ids[word_type] = self._convert_words_to_ids(word_type, original_doc.word_lists[word_type])
         return document_feature
 
-    def __convert_words_to_ids(self, word_type, word_list):
+    def _convert_words_to_ids(self, word_type, word_list):
         assert(word_type < NUM_WORD_TYPE)
         ids = []
         for word in word_list:

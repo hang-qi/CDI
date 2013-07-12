@@ -97,28 +97,28 @@ class _AdjacencyGraph(object):
 
 class _ConvergenceMonitor(object):
     def __init__(self, monitor_func, epsilon=0, stationary_steps=500):
-        self.__monitor_statistics_func = monitor_func
-        self.__epsilon = epsilon
-        self.__stationary_steps = stationary_steps
-        self.__history = []
-        self.__window = (0, 0)
+        self._monitor_statistics_func = monitor_func
+        self._epsilon = epsilon
+        self._stationary_steps = stationary_steps
+        self._history = []
+        self._window = (0, 0)
 
     def has_converged(self, context):
-        if self.__monitor_statistics_func is None:
+        if self._monitor_statistics_func is None:
             return False
 
-        current_statistics = self.__monitor_statistics_func(context.current_clustering)
+        current_statistics = self._monitor_statistics_func(context.current_clustering)
         # record history
-        self.__history.append(current_statistics)
+        self._history.append(current_statistics)
         # adjust convergence window
-        self.__window = (self.__window[0], len(self.__history) - 1)
+        self._window = (self._window[0], len(self._history) - 1)
 
-        values_in_window = self.__history[self.__window[0]: self.__window[1]+1]
-        while max(values_in_window) - min(values_in_window) > self.__epsilon:
-            self.__window = (self.__window[0]+1, self.__window[1])
-            values_in_window = self.__history[self.__window[0]: self.__window[1]+1]
+        values_in_window = self._history[self._window[0]: self._window[1]+1]
+        while max(values_in_window) - min(values_in_window) > self._epsilon:
+            self._window = (self._window[0]+1, self._window[1])
+            values_in_window = self._history[self._window[0]: self._window[1]+1]
 
-        if self.__window[1]-self.__window[0] < self.__stationary_steps:
+        if self._window[1]-self._window[0] < self._stationary_steps:
             return False
         else:
             return True
@@ -137,23 +137,23 @@ class _SWCuts(object):
         else:
             current_clustering = [set(range(0, adjacency_graph.size))]
 
-        self.adjacency_graph = adjacency_graph
+        self._adjacency_graph = adjacency_graph
 
         # Functions
-        self.edge_prob_func = edge_prob_func
-        self.target_eval_func = target_eval_func
-        self.convergence_monitor = _ConvergenceMonitor(monitor_statistics_func)
+        self._edge_prob_func = edge_prob_func
+        self._target_eval_func = target_eval_func
+        self._convergence_monitor = _ConvergenceMonitor(monitor_statistics_func)
 
         self.context.set_result(current_clustering)
 
-        while not self.__has_converged():
+        while not self._has_converged():
             self.context.count_iteration()
 
             # Determine edge status (on or off) probabilistically.
-            edge_status = self.__determine_edge_status()
+            edge_status = self._determine_edge_status()
 
             # Form connected components over the whole space.
-            connected_components = self.__form_connected_components(
+            connected_components = self._form_connected_components(
                 current_clustering, edge_status)
 
             # Option 1: Do a sweep.
@@ -161,7 +161,7 @@ class _SWCuts(object):
             # Option 2: only randomly select one component.
             component = connected_components[random.randint(0, len(connected_components)-1)]
             # Flip the connect component probabilistically.
-            current_clustering = self.__flip_connected_component(
+            current_clustering = self._flip_connected_component(
                 current_clustering, component)
             self.context.set_result(current_clustering)
 
@@ -171,23 +171,23 @@ class _SWCuts(object):
 
         return current_clustering
 
-    def __has_converged(self):
+    def _has_converged(self):
         """Convergence Test."""
-        return self.convergence_monitor.has_converged(self.context)
+        return self._convergence_monitor.has_converged(self.context)
 
-    def __edge_on_probability(self, s, t):
+    def _edge_on_probability(self, s, t):
         # Ensure s < t
         if s > t:
             s, t = t, s
-        return self.edge_prob_func(s, t, self.context)
+        return self._edge_prob_func(s, t, self.context)
 
-    def __determine_edge_status(self):
+    def _determine_edge_status(self):
         edge_status = defaultdict(dict)
-        for (s, t) in self.adjacency_graph.edges:
+        for (s, t) in self._adjacency_graph.edges:
             # Determine the status of each edge probabilistically.
             # Turn edge 'on' if r < prob(on), 'off' otherwise.
             r = random.random()
-            if (r < self.__edge_on_probability(s, t)):
+            if (r < self._edge_on_probability(s, t)):
                 edge_status[s][t] = True
                 edge_status[t][s] = True
             else:
@@ -195,10 +195,10 @@ class _SWCuts(object):
                 edge_status[t][s] = False
         return edge_status
 
-    def __form_connected_components(self, current_clustering, edge_status):
+    def _form_connected_components(self, current_clustering, edge_status):
         """Form connected components (CP) probabilistically.
         This function returns a list of CPs. Each CP is a list of vertexes."""
-        size = self.adjacency_graph.size
+        size = self._adjacency_graph.size
         visited = [False for v in range(0, size)]
 
         connected_components = []
@@ -208,13 +208,13 @@ class _SWCuts(object):
                     seed_vertex = v
                     # Form one CP from a random vertex
                     # seed_vertex = random.randint(0, size-1)
-                    component = self.__grow_component_by_bfs(
+                    component = self._grow_component_by_bfs(
                         seed_vertex, cluster, edge_status, visited)
                     connected_components.append(component)
 
         return connected_components
 
-    def __grow_component_by_bfs(self, seed_vertex, host_cluster, edge_status, visited):
+    def _grow_component_by_bfs(self, seed_vertex, host_cluster, edge_status, visited):
         component = set()
         d = deque([seed_vertex])
         while(len(d) != 0):
@@ -226,19 +226,19 @@ class _SWCuts(object):
             component.add(v)
 
             # Add all connected vertex into the queue.
-            for u in self.adjacency_graph.adj_list[v]:
+            for u in self._adjacency_graph.adj_list[v]:
                 if u in host_cluster:
                     if edge_status[v][u]:
                         d.append(u)
         return component
 
-    def __flip_connected_component(self, current_clustering, component):
+    def _flip_connected_component(self, current_clustering, component):
         # Cache the cluster index of every vertex.
         cluster_dict = dict()
         for (cluster_index, cluster) in enumerate(current_clustering):
             for v in cluster:
                 cluster_dict[v] = cluster_index
-        assert(len(cluster_dict) == self.adjacency_graph.size)
+        assert(len(cluster_dict) == self._adjacency_graph.size)
 
         for v in component:
             host_cluster_index = cluster_dict[v]
@@ -249,7 +249,7 @@ class _SWCuts(object):
         cut_edges_dict = defaultdict(set)
 
         for v in component:
-            for u in self.adjacency_graph.adj_list[v]:
+            for u in self._adjacency_graph.adj_list[v]:
                 if u not in component:
                     neighbor_cluster_index = cluster_dict[u]
                     neighbor_clusters.add(neighbor_cluster_index)
@@ -286,8 +286,8 @@ class _SWCuts(object):
             # This weighted posterior guarantees the detailed balance.
             weight = mpmath.mpf(1.0)
             for (s, t) in cut_set:
-                weight *= (1 - self.__edge_on_probability(s, t))
-            val = mpmath.mpf(self.target_eval_func(candidate, self.context))
+                weight *= (1 - self._edge_on_probability(s, t))
+            val = mpmath.mpf(self._target_eval_func(candidate, self.context))
             posterior = weight * val
 
             posteriors.append(posterior)
