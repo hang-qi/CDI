@@ -31,8 +31,8 @@ class SWConfig(object):
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
-        p = s
-        q = t
+        p = self.vertex_distribution[s]
+        q = self.vertex_distribution[t]
         assert(len(p) == len(q))
         kl_array_pq = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, len(p))]
         kl_pq = mpmath.sum(kl_array_pq)
@@ -76,9 +76,10 @@ class SWConfig(object):
         time_series.sort()
         dif = 0.0
         for i in range(0, len(time_series)-1):
-            dif += (time_series(i+1) - time_series(i))
+            date_dif = time_series(i+1) - time_series(i)
+            dif += date_dif.days
         dif /= (len(time_series) - 1)
-        return mpmath.mpf(norm(1.0, 20.0).pdf(dif))
+        return mpmath.mpf(norm(1, 5).pdf(dif))
 
     def cooling_schedule(self, iteration_counter):
         # TODO: Cooling schedule may depend on level.
@@ -183,6 +184,8 @@ class TopicModel(object):
         """Returns if the current topic_tree needs reforming."""
         if (self.monitor.last_reform_date - datetime.datetime.now()) > datetime.timedelta(days=30):
             return True
+        # TODO: Add other criterion for judging whether reforming the tree
+        #       is needed, like Dunn Index, Davies-Bouldin Index, etc.
         return False
 
     def __add_level_to_tree(self, current_clustering):
