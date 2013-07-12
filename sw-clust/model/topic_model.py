@@ -7,6 +7,8 @@ import mpmath
 
 from algorithm import sw
 
+from scipy.stats import norm
+
 
 class _Plotter(object):
     def __init__(self):
@@ -48,8 +50,33 @@ class SWConfig(object):
         # Candidate terms: likelihood, time prior, and etc.
         #     energy += -mpmath.log(P)
         for cluster in clustering:
-            energy += mpmath.log()
+            energy += -mpmath.log(self.__likelihood(cluster)) - mpmath.log(self.__time_prior(cluster))
         return energy
+
+    def __likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
+        likelihood = 0.0
+        # TODO: Calculate the likelihood
+        for node_index in cluster:
+            for type_id in range(0, NUM_WORD_TYPE):
+                if (len(document.word_lists[type_id]) == 0):
+                    continue
+                prob_type = 0
+                for word in document.word_lists[type_id]:
+                    prob_type += math.log(self.__get_probability(target_branch_id, word, type_id))
+                prob_doc += prob_type * weights[type_id] / sum(weights)
+            likelihood += 0
+        return likelihood
+
+    def __time_prior(self, cluster):
+        time_series = []
+        for node_index in cluster:
+            time_series.append()  # TODO: Get the corresponding time of the story
+        time_series.sort()
+        dif = 0.0
+        for i in range(0, len(time_series)-1):
+            dif += (time_series(i+1) - time_series(i))
+        dif /= (len(time_series) - 1)
+        return mpmath.mpf(norm(1.0, 20.0).pdf(dif))
 
     def cooling_schedule(self, iteration_counter):
         # TODO: Cooling schedule may depend on level.
@@ -203,6 +230,7 @@ class _TreeNode(object):
         self.__vp_distribution = None
         self.__np1_distribution = None
         self.__np2_distribution = None
+        self.__time = 0
 
     def add_child(self, node):
         self.__children.append(node)
@@ -214,6 +242,9 @@ class _TreeNode(object):
 
     def is_terminal(self):
         return (len(self.__children) == 0)
+
+    def get_time(self):
+        return self._time
 
 
 class _Tree(object):
