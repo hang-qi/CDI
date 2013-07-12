@@ -279,7 +279,7 @@ class _Tree(object):
 #
 # Definitions for corpus and document.
 #
-class _Corpus(object):
+class Corpus(object):
     """A Corpus object includes all documents' feature and corpus vocabulary."""
     def __init__(self):
         self.documents = []
@@ -314,16 +314,16 @@ class _DocumentFeature(object):
             self,
             name,
             timestamp,
-            np1_vector,
-            vp_vector,
-            np2_vector,
+            np1_word_ids,
+            np1_word_ids,
+            np1_word_ids,
             np1_distribution,
             vp_distribution,
             np2_distribution,
             ocr_words):
         self.name = name
         self.timestamp = timestamp
-        self.word_vectors = (np1_vector, vp_vector, np2_vector)
+        self.word_ids = (np1_word_ids, np1_word_ids, np1_word_ids)
         self.ocr_words = ocr_words
 
         # FIXME: Probably don't need to store distribution.
