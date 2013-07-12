@@ -4,10 +4,10 @@ sys.path.append('..')
 
 import numpy as np
 import mpmath
-
-from algorithm import sw
-
 from scipy.stats import norm
+
+from preprocessing import vacabulary
+from algorithm import sw
 
 
 class _Plotter(object):
@@ -109,6 +109,7 @@ class TopicModel(object):
         # Inference and attach to trees
         for document in new_corpus.documents:
             self.__inference(document)
+            self.corpus.add_document(document)
 
         # Reform the tree if necessary.
         if (self.__need_reform()):
@@ -276,15 +277,23 @@ class _Tree(object):
 # Definitions for corpus and document.
 #
 class _Corpus(object):
-    """A Corpus object includes all documents' content and corpus statistics."""
-    def __init__(self, corpus_stat):
+    """A Corpus object includes all documents' feature and corpus vocabulary."""
+    def __init__(self):
         self.documents = []
-        self.statistics = corpus_stat
+        np1_vocab = vocabulary.Vocabulary()
+        vp_vocab = vocabulary.Vocabulary()
+        np2_vocab = vocabulary.Vocabulary()
+        self.vocabularies = (np1_vocab, vp_vocab, np2_vocab)
 
     def add_document(self, document):
-        document_stat = _DocumentStatistics(document)
-        self.documents.append(document)
-        self.statistics.add_document(document)
+        # convert document to document feature.
+        # probably need to adjust vocabulary. (change other documents' feature vector)
+
+        # generate document histogram
+
+        # save document
+        document_feature = _DocumentFeature()
+        self.documents.append(document_feature)
 
     def get_document_name(self, doc_id):
         return self.documents[doc_id].name
@@ -292,28 +301,27 @@ class _Corpus(object):
     def size(self):
         return len(self.documents)
 
+    def vocabulary_size(self, word_type):
+        assert(word_type < NUM_WORD_TYPE)
+        return len(self.vocabularies[word_type])
 
 
-class _CorpusStatistics(object):
-    """Contains vocabulary and all document statistics."""
-    def __init__(self, np1_vocab, vp_vocab, np2_vocab):
-        self.documents_stats = []
-        self.vocabularies = (np1_vocab, vp_vocab, np2_vocab)
-        pass
+class _DocumentFeature(object):
+    def __init__(
+            self,
+            name,
+            timestamp,
+            np1_vector,
+            vp_vector,
+            np2_vector,
+            np1_distribution,
+            vp_distribution,
+            np2_distribution,
+            ocr_words):
+        self.name = name
+        self.timestamp = timestamp
+        self.word_vectors = (np1_vector, vp_vector, np2_vector)
+        self.ocr_words = ocr_words
 
-    def add_document(self, document):
-        self.documents_stats.append(document_stat)
-
-    def size(self):
-        return len(self.documents_stats)
-
-
-class _DocumentStatistics(object):
-    """Statistics of a document. This contains a distribution for each type of word."""
-    def __init__(self, document):
-        distributions, ocr_words = None
-        self.distributions = distributions
-        if ocr_words is None:
-            self.ocr_words = []
-        else:
-            self.ocr_words = ocr_words
+        # FIXME: Probably don't need to store distribution.
+        self.distributions = (np1_distribution, vp_distribution, np2_distribution)
