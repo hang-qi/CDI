@@ -81,7 +81,7 @@ class SWConfig(object):
         for i in range(0, len(time_series)-1):
             date_dif = time_series(i+1) - time_series(i)
             dif += date_dif.days
-        dif /= (len(time_series) - 1)
+        dif /= (len(time_series))
         return mpmath.mpf(norm(1, 5).pdf(dif))
 
     def cooling_schedule(self, iteration_counter):
