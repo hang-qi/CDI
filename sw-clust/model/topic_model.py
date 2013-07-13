@@ -68,15 +68,8 @@ class SWConfig(object):
         for i, cluster in enumerate(clustering):
             for item in cluster:
                 for word_type in WORD_TYPES:
-                    cluster_distribution = _VertexDistribution()
-                cluster_distribution = (cluster_distribution, )
-
-
-                    cluster_distribution = self.vertex_distribution[word_type][item]
-                else:
-                    cluster_distribution.combine(self.vertex_distribution[word_type][item])
-        #for i, item in enumerate(cluster):
-        #    likelihood +=
+                    likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i][word_type][item])
+        likelihood /= sum(weights)
         return likelihood
 
     def _time_prior(self, cluster):
