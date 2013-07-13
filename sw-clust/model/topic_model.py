@@ -32,16 +32,18 @@ class SWConfig(object):
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
-        p = self.vertex_distributions[s]
-        q = self.vertex_distributions[t]
-        assert(len(p) == len(q))
-        kl_array_pq = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, len(p))]
-        kl_pq = mpmath.sum(kl_array_pq)
-        kl_array_qp = [q[i]*(mpmath.log(q[i] + 1e-100) - mpmath.log(p[i]) + 1e-100) for i in range(0, len(p))]
-        kl_qp = mpmath.sum(kl_array_qp)
+        kl_value_all = 0.0
+        for word_type in WORD_TYPES:
+            p = self.vertex_distribution[word_type][s]
+            q = self.vertex_distribution[word_type][t]
+            kl_pq = p.kl_divergence(q)
+            kl_qp = q.kl_divergence(p)
+            kl_value_all += kl_pq
+            kl_value_all += kl_qp
+        kl_value_all /= 3
         # TO BE DISCUSSED: Using the same or different temperature settings?
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(-(kl_pq + kl_qp)*temperature/2)
+        return mpmath.exp(-kl_value_all*temperature/2)
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
@@ -62,9 +64,18 @@ class SWConfig(object):
     def _likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
         likelihood = 0.0
         # First generate the distribution of the current cluster
-        cluster_distribution = mpmath.matrix(1, len(self.vertex_distributions[0]))
-        for dist_index in cluster:
-            cluster_distribution += self.vertex_distributions(dist_index)
+        for i, item in enumerate(cluster):
+            if i == 0:
+                for word_type in WORD_TYPES:
+                    cluster_distribution = _VertexDistribution()
+                cluster_distribution = (cluster_distribution, )
+            
+                
+                    cluster_distribution = self.vertex_distribution[word_type][item]
+                else:
+                    cluster_distribution.combine(self.vertex_distribution[word_type][item])
+        #for i, item in enumerate(cluster):
+        #    likelihood +=
         return likelihood
 
     def _time_prior(self, cluster):
