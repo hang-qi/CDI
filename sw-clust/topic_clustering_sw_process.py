@@ -2,14 +2,14 @@ import glob
 import logging
 from model import topic_model
 from model import document
-from preprocessing import cleansing, vocabulary
+from preprocessing import cleansing
 import datetime
 
 
 def read_triplet_file(triplet_filename, use_ocr=False):
     ocr_file = None
     if use_ocr:
-        ocr_file = triplet_filename.replace('triplet_files_small/', 'ocr/ocr_result/').replace('.txt', '.ocr').lower()
+        ocr_file = triplet_filename.replace('data/triplet_files_small/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
     np1_words = []
     vp_words = []
     np2_words = []
@@ -35,22 +35,20 @@ def read_triplet_file(triplet_filename, use_ocr=False):
 
 def main():
     logging.basicConfig(level=logging.DEBUG)
-    input_triplet_files = glob.glob('triplet_files_small/2008*.txt')
+    input_triplet_files = glob.glob('data/triplet_files_small/2008*.txt')
     input_triplet_files.sort()
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
     # Generate initial corpus
-    initial_corpus = topic_model._Corpus()
+    initial_corpus = topic_model.Corpus()
 
     # Read in the triplets files, including the triplets and the time of the story
     for triplet_file in input_triplet_files:
-        initial_corpus.add_document(read_files(triplet_file, use_ocr=True))
+        initial_corpus.add_document(read_triplet_file(triplet_file, use_ocr=True))
 
     # Train topic model
-    model = TopicMode()
+    model = topic_model.TopicMode()
     model.feed(initial_corpus)
-
-        # waiting long long time (multiple level sw)...
 
     # current_tree = model.topic_tree
 

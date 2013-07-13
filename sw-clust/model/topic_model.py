@@ -117,14 +117,17 @@ class TopicModel(object):
 
     def feed(self, new_corpus):
         # Do Segmentation (if not segmented)
-        if not new_corpus.segmented:
+        #if not new_corpus.segmented:
             # TODO: Do segmentation first
-            pass
+        #    pass
 
-        # Inference and attach to trees
-        for document in new_corpus.documents:
-            self._inference(document)
-            self.corpus.add_document(document)
+        if self.corpus is None:
+            self.corpus = new_corpus
+        else:
+            # Inference and attach to trees
+            for document in new_corpus.documents:
+                self._inference(document)
+                self.corpus.add_document(document)
 
         # Reform the tree if necessary.
         if (self._need_reform()):
@@ -166,7 +169,7 @@ class TopicModel(object):
             current_vertex_distributions = config.vertex_distributions
 
             # Save current clustering as a new level to the tree.
-            self._add_level_to_tree(current_clustering)
+            # self._add_level_to_tree(current_clustering)
 
             # Determine if need more level.
             # TODO: determine if need next level.
@@ -213,11 +216,9 @@ class TopicModel(object):
 
     def _need_reform(self):
         """Returns if the current topic_tree needs reforming."""
-        if (self.monitor.last_reform_date - datetime.datetime.now()) > datetime.timedelta(days=30):
-            return True
         # TODO: Add other criterion for judging whether reforming the tree
         #       is needed, like Dunn Index, Davies-Bouldin Index, etc.
-        return False
+        return True
 
     def _add_level_to_tree(self, current_clustering):
         """Add a level to tree."""
