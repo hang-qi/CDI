@@ -47,7 +47,7 @@ def main():
         initial_corpus.add_document(read_triplet_file(triplet_file, use_ocr=True))
 
     # Train topic model
-    model = topic_model.TopicMode()
+    model = topic_model.TopicModel()
     model.feed(initial_corpus)
 
     # current_tree = model.topic_tree

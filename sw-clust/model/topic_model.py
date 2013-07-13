@@ -332,7 +332,7 @@ class Corpus(object):
             # If word is in current vocabulary, we directly look up the word_id.
             # Otherwise, we add this word to the vocabulary and then look up.
             if word not in self.vocabularies[word_type]:
-                self.vocabularies[word_type].add(word_type)
+                self.vocabularies[word_type].add(word)
             word_id = self.vocabularies[word_type].get_word_index(word)
             ids.append(word_id)
         return ids
