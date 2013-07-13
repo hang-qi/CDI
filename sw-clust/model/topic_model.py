@@ -68,8 +68,15 @@ class SWConfig(object):
         for i, cluster in enumerate(clustering):
             for item in cluster:
                 for word_type in WORD_TYPES:
-                    likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i][word_type][item])
-        likelihood /= sum(weights)
+                    cluster_distribution = _VertexDistribution()
+                cluster_distribution = (cluster_distribution, )
+
+
+                    cluster_distribution = self.vertex_distribution[word_type][item]
+                else:
+                    cluster_distribution.combine(self.vertex_distribution[word_type][item])
+        #for i, item in enumerate(cluster):
+        #    likelihood +=
         return likelihood
 
     def _time_prior(self, cluster):
@@ -143,8 +150,11 @@ class TopicModel(object):
         need_next_level = True
         level_counter = 0
 
-        current_vertex_distributions = self._calculate_initial_vertex_distributions()
-        current_clustering = [set([v]) for v in range(0, len(self.corpus))]
+        # Initially, each document is a vertex.
+        current_vertex_distributions = []
+
+        # Initial clustering treat all vertex in the same cluster.
+        current_clustering = [set(range(0, len(self.corpus)))]
 
         while need_next_level:
             level_counter += 1
@@ -160,6 +170,7 @@ class TopicModel(object):
                 intermediate_callback=plotter.plot_callback,
                 initial_clustering=None,
                 monitor_statistics=config.monitor_statistics)
+            current_vertex_distributions = config.vertex_distributions
 
             # Save current clustering as a new level to the tree.
             self._add_level_to_tree(current_clustering)
@@ -169,12 +180,12 @@ class TopicModel(object):
             need_next_level = True
         pass
 
-    def _calculate_initial_vertex_distributions(self):
+    def _generate_initial_vertex_distributions(self):
         initial_vertex_distributions = []
-        for document in self.corpus:
+        for (doc_id, document) in enumerate(self.corpus):
             vertex_distribution = _VertexDistribution()
             for word_type in WORD_TYPES:
-                vertex_distribution[word_type] = self.corpus.doc_to_distribution(document, word_type)
+                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type, include_ocr=True)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
 
@@ -183,9 +194,12 @@ class TopicModel(object):
         # TODO: give different configurations based on level.
         graph_size = len(current_clustering)
 
-        # create new vertex distribution
-        next_vertex_distributions = _combine_vertex_distributions_given_clustering(
-            current_vertex_distributions, current_clustering)
+        if level_counter == 1:
+            next_vertex_distributions = self._generate_initial_vertex_distributions()
+        else:
+            # create new vertex distribution
+            next_vertex_distributions = _combine_vertex_distributions_given_clustering(
+                current_vertex_distributions, current_clustering)
 
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
@@ -280,7 +294,7 @@ class Corpus(object):
         np1_vocab = vocabulary.Vocabulary()
         vp_vocab = vocabulary.Vocabulary()
         np2_vocab = vocabulary.Vocabulary()
-        self.vocabularies = (np1_vocab, vp_vocab, np2_vocab)
+        self.vocabularies = [np1_vocab, vp_vocab, np2_vocab]
 
     def __len__(self):
         return len(self.documents)
@@ -295,6 +309,19 @@ class Corpus(object):
         """Convert document to feature and save into document list."""
         document_feature = self._convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
+
+    def get_dococument_distribution(self, doc_id, word_type, include_ocr=False):
+        histogram = np.zeros(self.vocabulary_size(word_type))
+        for word_id in self.documents[doc_id].word_ids[word_type]:
+            histogram[word_id] += 1
+
+        # Include OCR in the distribution.
+        if include_ocr:
+            for ocr_word in self.documents[doc_id].ocr_words:
+                if ocr_word in self.vocabularies[word_type]:
+                    word_id = self.vocabularies[word_type][ocr_word]
+                    histogram[word_id] += 1
+        return _Distribution(histogram)
 
     def _convert_doc_to_feature(self, original_doc):
         document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
@@ -370,26 +397,34 @@ class _VertexDistribution:
 
 class _Distribution(object):
     """A 1D histogram (normalized to 1)."""
-    def __init__(self, length):
-        self._hist = np.zeros(length)
-        self._denominator = 0
-        self._length = length
+    def __init__(self, histogram=None):
+        if histogram is not None:
+            self.set_histogram(histogram)
+        else:
+            self._hist = None
+            self._denominator = 1
+            self._length = 0
 
     def set_histogram(self, histogram):
         self._hist = histogram
         self._denominator = sum(histogram)
+        self._length = len(histogram)
         if self._denominator != 1 and self._denominator != 0:
             self._hist /= self._denominator
 
     def __getitem__(self, word_id):
-        return self._hist[word_id]
+        if self._hist is not None:
+            return self._hist[word_id]
+        else:
+            raise ValueError('The distribution is empty.')
 
     def __add__(self, other):
         # Recover histogram and add.
-        result = _Distribution(self._length)
-        new_hist = self._hist * self._denominator + other._hist * other._denominator
-        result.set_histogram(new_hist)
-        return result
+        if self._hist is not None:
+            new_hist = self._hist * self._denominator + other._hist * other._denominator
+            return _Distribution(new_hist)
+        else:
+            return other
 
     def __radd__(self, other):
         # The 'add' operation among distribution if symmetric.
