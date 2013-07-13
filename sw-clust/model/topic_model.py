@@ -22,18 +22,18 @@ class _Plotter(object):
 
 class SWConfig(object):
     """One shall inherit this class to give more specific configurations."""
-    def __init__(self, graph_size, edges, vertex_distribution, documents, level):
+    def __init__(self, graph_size, edges, vertex_distributions, documents, level):
         self.graph_size = graph_size
         self.edges = edges
         self.monitor_statistics = self.energy
-        self.vertex_distribution = vertex_distribution
+        self.vertex_distributions = vertex_distributions
         self.level = level
         self.documents = documents
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
-        p = self.vertex_distribution[s]
-        q = self.vertex_distribution[t]
+        p = self.vertex_distributions[s]
+        q = self.vertex_distributions[t]
         assert(len(p) == len(q))
         kl_array_pq = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, len(p))]
         kl_pq = mpmath.sum(kl_array_pq)
@@ -62,9 +62,9 @@ class SWConfig(object):
     def _likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
         likelihood = 0.0
         # First generate the distribution of the current cluster
-        cluster_distribution = mpmath.matrix(1, len(self.vertex_distribution[0]))
+        cluster_distribution = mpmath.matrix(1, len(self.vertex_distributions[0]))
         for dist_index in cluster:
-            cluster_distribution += self.vertex_distribution(dist_index)
+            cluster_distribution += self.vertex_distributions(dist_index)
         return likelihood
 
     def _time_prior(self, cluster):
@@ -124,13 +124,16 @@ class TopicModel(object):
         """Reform the whole tree by doing multi-level SW-Cuts."""
 
         plotter = _Plotter()
-        current_clustering = []
         need_next_level = True
         level_counter = 0
 
+        current_vertex_distributions = self._calculate_initial_vertex_distributions()
+        current_clustering = [set([v]) for v in range(0, len(self.corpus))]
+
         while need_next_level:
             level_counter += 1
-            config = self._generate_next_sw_config(current_clustering, level_counter)
+            config = self._generate_next_sw_config(
+                current_vertex_distributions, current_clustering, level_counter)
 
             # Clustering by SW.
             current_clustering = sw.sample(
@@ -150,14 +153,33 @@ class TopicModel(object):
             need_next_level = True
         pass
 
-    def _generate_next_sw_config(self, current_clustering, level_counter):
+    def _calculate_initial_vertex_distributions(self):
+        initial_vertex_distributions = []
+        for document in self.corpus:
+            vertex_distribution = _VertexDistribution()
+            for word_type in WORD_TYPES:
+                vertex_distribution[word_type] = self.corpus.doc_to_distribution(document, word_type)
+            initial_vertex_distributions.append(vertex_distribution)
+        return initial_vertex_distributions
+
+    def _combine_vertex_distributions_given_clustering(self, current_vertex_distributions, clustering):
+        # create new vertex distribution
+        new_vertex_distributions = []
+        for cluster in clustering:
+            vertex_distribution = _VertexDistribution()
+            for v in cluster:
+                vertex_distribution += current_vertex_distributions[v]
+            new_vertex_distributions.append(vertex_distribution)
+        return new_vertex_distributions
+
+    def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
         graph_size = len(current_clustering)
 
-        # create new vertex_distribution
-        # depend on vertex_dist of last level and current_clustering
-        new_vertex_distribution = [VertexDistribution] * graph_size
+        # create new vertex distribution
+        next_vertex_distributions = _combine_vertex_distributions_given_clustering(
+            current_vertex_distributions, current_clustering)
 
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
@@ -172,7 +194,7 @@ class TopicModel(object):
                     edges.append((i, j))
                     edges.append((j, i))
 
-        config = SWConfig(graph_size, edges, vertex_distribution=new_vertex_distribution, corpus=self.corpus.documents, level=level_counter)
+        config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, corpus=self.corpus.documents, level=level_counter)
         return config
 
     def _need_reform(self):
@@ -197,45 +219,6 @@ class ModelMonitor():
     def update_reform_time(self):
         self.last_reform_date = datetime.datetime.now()
         self.reform_counter += 1
-
-
-class _Distribution(object):
-    """A 1D histogram (normalized to 1)."""
-    def __init__(self, hist, denominator):
-        self._hist = hist
-        self._denominator = denominator
-
-    def __getitem__(self, word_id):
-        return self._hist[word_id]
-
-    def __add__(self, other):
-        # Recover histogram and add.
-        new_hist = self._hist * self._denominator + other._hist * other._denominator
-
-        # Re-normalize to 1
-        denominator = new_hist.sum()
-        if denominator != 0:
-            new_hist /= denominator
-        return _Distribution(new_hist, denominator)
-
-    def __radd__(self, other):
-        # The 'add' operation among distribution if symmetric.
-        return self.__add__(other)
-
-    def __iadd__(self, other):
-        return self.__add__(other)
-
-    def kl_divergence(self, other):
-        return kl_value
-
-    def combine(self, other):
-        self = self.__add__(other)
-
-    def synthesize(self, num_words):
-        """Synthesize a set of words from the distribution."""
-        indexes = np.argsort(self._hist)
-        top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
-        return top_words_id.tolist()
 
 
 #
@@ -345,14 +328,77 @@ class _DocumentFeature(object):
             ocr_words=None):
         self.name = name
         self.timestamp = timestamp
-        self.word_ids = (np1_word_ids, vp_word_ids, np2_word_ids)
+        self.word_ids = [np1_word_ids, vp_word_ids, np2_word_ids]
         self.ocr_words = ocr_words
 
 
-class VertexDistribution:
-    def __init__(self, dist1, dist2, dist3):
-        self.distributions = (dist1, dist2, dist3)
+class _VertexDistribution:
+    # Three _Distribution objects
+    def __init__(self):
+        self.distributions = [None] * NUM_WORD_TYPE
 
     def __getitem__(self, word_type):
         assert(word_type < NUM_WORD_TYPE)
         return self.distributions[word_type]
+
+    def __setitem__(self, word_type, distribution):
+        assert(word_type < NUM_WORD_TYPE)
+        self.distributions[word_type] = distribution
+
+    def __add__(self, other):
+        result = _VertexDistribution()
+        for word_type in WORD_TYPES:
+            if self.distributions[word_type] is None:
+                result.distributions[word_type] = other.distributions[word_type]
+            else:
+                result.distributions[word_type] = self.distributions[word_type] + other.distributions[word_type]
+        return result
+
+    def __radd__(self, other):
+        return self.__add__(other)
+
+    def __iadd__(self, other):
+        return self.__add__(other)
+
+
+class _Distribution(object):
+    """A 1D histogram (normalized to 1)."""
+    def __init__(self, length):
+        self._hist = np.zeros(length)
+        self._denominator = 0
+        self._length = length
+
+    def set_histogram(self, histogram):
+        self._hist = histogram
+        self._denominator = sum(histogram)
+        if self._denominator != 1 and self._denominator != 0:
+            self._hist /= self._denominator
+
+    def __getitem__(self, word_id):
+        return self._hist[word_id]
+
+    def __add__(self, other):
+        # Recover histogram and add.
+        result = _Distribution(self._length)
+        new_hist = self._hist * self._denominator + other._hist * other._denominator
+        result.set_histogram(new_hist)
+        return result
+
+    def __radd__(self, other):
+        # The 'add' operation among distribution if symmetric.
+        return self.__add__(other)
+
+    def __iadd__(self, other):
+        return self.__add__(other)
+
+    def kl_divergence(self, other):
+        return kl_value
+
+    def combine(self, other):
+        self = self.__add__(other)
+
+    def synthesize(self, num_words):
+        """Synthesize a set of words from the distribution."""
+        indexes = np.argsort(self._hist)
+        top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
+        return top_words_id.tolist()
