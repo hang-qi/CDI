@@ -47,9 +47,9 @@ class SWConfig(object):
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(- self.energy(clustering, context.iteration_counter) / temperature)
+        return mpmath.exp(- self.energy(clustering) / temperature)
 
-    def energy(self, clustering, iteration_counter):
+    def energy(self, clustering):
         energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
@@ -58,7 +58,7 @@ class SWConfig(object):
         new_vertex_distribution = _combine_vertex_distributions_given_clustering(
             self.vertex_distributions, clustering)
         energy += -self._log_likelihood(clustering, new_vertex_distribution)
-        if iteration_counter == 1:
+        if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
         return energy
@@ -112,7 +112,7 @@ class TopicModel(object):
         self.corpus = None
         self.topic_tree = _Tree()
         self.date_range = None
-        self.monitor = ModelMonitor()
+        #self.monitor = ModelMonitor()
         pass
 
     def feed(self, new_corpus):
@@ -211,7 +211,7 @@ class TopicModel(object):
                     edges.append((i, j))
                     edges.append((j, i))
 
-        config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, corpus=self.corpus.documents, level=level_counter)
+        config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, level=level_counter)
         return config
 
     def _need_reform(self):
@@ -226,14 +226,14 @@ class TopicModel(object):
         pass
 
 
-class ModelMonitor():
-    def __init__(self):
-        self.last_reform_date = datetime.datetime.now() - datetime.timedelta(year=1)
-        self.reform_counter = 0
+#class ModelMonitor():
+#    def __init__(self):
+#        self.last_reform_date = datetime.datetime.now() - datetime.timedelta(year=1)
+#        self.reform_counter = 0
 
-    def update_reform_time(self):
-        self.last_reform_date = datetime.datetime.now()
-        self.reform_counter += 1
+#    def update_reform_time(self):
+#        self.last_reform_date = datetime.datetime.now()
+#        self.reform_counter += 1
 
 
 #
@@ -313,7 +313,7 @@ class Corpus(object):
         if include_ocr:
             for ocr_word in self.documents[doc_id].ocr_words:
                 if ocr_word in self.vocabularies[word_type]:
-                    word_id = self.vocabularies[word_type][ocr_word]
+                    word_id = self.vocabularies[word_type].get_word_index(ocr_word)
                     histogram[word_id] += 1
         return _Distribution(histogram)
 
@@ -342,7 +342,7 @@ class Corpus(object):
 
     def vocabulary_size(self, word_type):
         assert(word_type < NUM_WORD_TYPE)
-        return len(self.vocabularies[word_type])
+        return self.vocabularies[word_type].size()
 
 
 class _DocumentFeature(object):
