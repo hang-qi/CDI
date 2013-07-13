@@ -28,7 +28,7 @@ def read_triplet_file(triplet_filename, use_ocr=False):
                 line = (line[:-2]).lower()
                 ocr_words.extend(cleansing.clean(line.split()))
 
-    timestamp = datetime.datetime.strptime((triplet_filename.split('_')[0]).split('.')[0], '%Y%m%d%H%M%S')
+    timestamp = datetime.datetime.strptime(((triplet_filename.split('/')[-1]).split('_')[0]).split('.')[0], '%Y%m%d%H%M%S')
 
     return document.OrignalDocument(triplet_filename[:-4].split('_')[1], timestamp, np1_words, vp_words, np2_words, ocr_words)
 
