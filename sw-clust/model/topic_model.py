@@ -49,33 +49,27 @@ class SWConfig(object):
         temperature = self.cooling_schedule(context.iteration_counter)
         return mpmath.exp(- self.energy(clustering, context.iteration_counter) / temperature)
 
-    def energy(self, clustering, iteration_counter):  # Need the distribution here. How to add it?
+    def energy(self, clustering, iteration_counter):
         energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
         #     energy += -mpmath.log(P)
-        for cluster in clustering:
-            energy += -mpmath.log(self.__likelihood(cluster))
+
+        new_vertex_distribution = _combine_vertex_distributions_given_clustering(
+            self.vertex_distributions, clustering)
+        energy += -self._log_likelihood(clustering, new_vertex_distribution)
         if iteration_counter == 1:
             for cluster in clustering:
-                energy += -mpmath.log(self.__time_prior(cluster))
+                energy += -mpmath.log(self._time_prior(cluster))
         return energy
 
-    def _likelihood(self, cluster, weights=[1]*NUM_WORD_TYPE):
+    def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
         likelihood = 0.0
-        # First generate the distribution of the current cluster
-        for i, item in enumerate(cluster):
-            if i == 0:
+        for i, cluster in enumerate(clustering):
+            for item in cluster:
                 for word_type in WORD_TYPES:
-                    cluster_distribution = _VertexDistribution()
-                cluster_distribution = (cluster_distribution, )
-            
-                
-                    cluster_distribution = self.vertex_distribution[word_type][item]
-                else:
-                    cluster_distribution.combine(self.vertex_distribution[word_type][item])
-        #for i, item in enumerate(cluster):
-        #    likelihood +=
+                    likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i][word_type][item])
+        likelihood /= sum(weights)
         return likelihood
 
     def _time_prior(self, cluster):
@@ -199,9 +193,10 @@ class TopicModel(object):
         distance_threshold = 0.5*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
-                dist_i = vertex_distribution[i]
-                dist_j = vertex_distribution[j]
-                distance = calculate_tv_norm(dist_i, dist_j)
+                for word_type in WORD_TYPES:
+                    dist_i = next_vertex_distributions[i][word_type]
+                    dist_j = next_vertex_distributions[j][word_type]
+                    distance = dist_i.tv_norm(dist_j)
                 if distance <= distance_threshold:
                     edges.append((i, j))
                     edges.append((j, i))
@@ -404,7 +399,19 @@ class _Distribution(object):
         return self.__add__(other)
 
     def kl_divergence(self, other):
+        p = self._hist
+        q = other._hist
+        assert(self._length == other._length)
+        kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, self._length)]
+        kl_value = sum(kl_array)
         return kl_value
+
+    def tv_norm(self, other):
+        assert(self._length == other._length)
+        diff = self._hist - other._hist
+        diff = np.asarray(diff, dtype=np.float)
+        diff = np.absolute(diff)
+        return np.sum(diff)/2
 
     def combine(self, other):
         self = self.__add__(other)
