@@ -102,6 +102,17 @@ class SWConfig(object):
         return temperature
 
 
+def _combine_vertex_distributions_given_clustering(current_vertex_distributions, clustering):
+    # create new vertex distribution
+    new_vertex_distributions = []
+    for cluster in clustering:
+        vertex_distribution = _VertexDistribution()
+        for v in cluster:
+            vertex_distribution += current_vertex_distributions[v]
+        new_vertex_distributions.append(vertex_distribution)
+    return new_vertex_distributions
+
+
 class TopicModel(object):
     def __init__(self):
         self.corpus = None
@@ -172,16 +183,6 @@ class TopicModel(object):
                 vertex_distribution[word_type] = self.corpus.doc_to_distribution(document, word_type)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
-
-    def _combine_vertex_distributions_given_clustering(self, current_vertex_distributions, clustering):
-        # create new vertex distribution
-        new_vertex_distributions = []
-        for cluster in clustering:
-            vertex_distribution = _VertexDistribution()
-            for v in cluster:
-                vertex_distribution += current_vertex_distributions[v]
-            new_vertex_distributions.append(vertex_distribution)
-        return new_vertex_distributions
 
     def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
