@@ -39,23 +39,16 @@ def main():
     input_triplet_files.sort()
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
+    # Generate initial corpus
     initial_corpus = topic_model._Corpus()
 
     # Read in the triplets files, including the triplets and the time of the story
     for triplet_file in input_triplet_files:
         initial_corpus.add_document(read_files(triplet_file, use_ocr=True))
 
-    ###########################
-
-    # Read triplets file -> OriginalDocuments
-
-    # Generate initial corpus
-    # initial_corpus = Corpus()
-    # initial_corpus.add_document(original_doc)
-
     # Train topic model
-    # model = TopicMode()
-    # model.feed(initial_corpus)
+    model = TopicMode()
+    model.feed(initial_corpus)
 
         # waiting long long time (multiple level sw)...
 
