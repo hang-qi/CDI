@@ -1,5 +1,6 @@
 import sys
 import datetime
+import logging
 sys.path.append('..')
 
 import numpy as np
@@ -16,7 +17,7 @@ class _Plotter(object):
         pass
 
     def plot_callback(self, clustering, context):
-        # TODO: some drawings.
+        print(clustering)
         pass
 
 
@@ -151,6 +152,7 @@ class TopicModel(object):
 
         # Initial clustering treat all vertex in the same cluster.
         current_clustering = [set(range(0, len(self.corpus)))]
+        print(current_clustering)
 
         while need_next_level:
             level_counter += 1
@@ -188,11 +190,12 @@ class TopicModel(object):
     def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
         # TODO: give different configurations based on level.
-        graph_size = len(current_clustering)
 
         if level_counter == 1:
+            graph_size = len(self.corpus)
             next_vertex_distributions = self._generate_initial_vertex_distributions()
         else:
+            graph_size = len(current_clustering)
             # create new vertex distribution
             next_vertex_distributions = _combine_vertex_distributions_given_clustering(
                 current_vertex_distributions, current_clustering)
@@ -200,16 +203,21 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.5*level_counter
+        distance_threshold = 1.1  # 0.5*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
+                distance = 0.0
                 for word_type in WORD_TYPES:
                     dist_i = next_vertex_distributions[i][word_type]
                     dist_j = next_vertex_distributions[j][word_type]
-                    distance = dist_i.tv_norm(dist_j)
+                    distance += dist_i.tv_norm(dist_j)
+                distance /= NUM_WORD_TYPE
+                logging.debug('d({0}, {1}) = {2}'.format(i, j, distance))
                 if distance <= distance_threshold:
                     edges.append((i, j))
-                    edges.append((j, i))
+
+        logging.debug(edges)
+        exit(0)
 
         config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, level=level_counter)
         return config
@@ -437,10 +445,8 @@ class _Distribution(object):
 
     def tv_norm(self, other):
         assert(self._length == other._length)
-        diff = self._hist - other._hist
-        diff = np.asarray(diff, dtype=np.float)
-        diff = np.absolute(diff)
-        return np.sum(diff)/2
+        diff = np.absolute(self._hist - other._hist)
+        return mpmath.mpf(np.sum(diff))/2.0
 
     def combine(self, other):
         self = self.__add__(other)
