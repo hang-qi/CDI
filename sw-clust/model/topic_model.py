@@ -73,6 +73,11 @@ class SWConfig(object):
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
+        # FIXME: calculate likelihood of generating the data (self.documents)
+        #   To get documents associate with vertex s:
+        #         new_vertex_distribution[s].document_ids
+        #   To get words in each document:
+        #         self.documents[doc_id].word_ids[word_type]
         likelihood = 0.0
         for i, cluster in enumerate(clustering):
             for item in cluster:
@@ -190,6 +195,7 @@ class TopicModel(object):
         initial_vertex_distributions = []
         for (doc_id, document) in enumerate(self.corpus):
             vertex_distribution = _VertexDistribution()
+            vertex_distribution.document_ids = [doc_id]
             for word_type in WORD_TYPES:
                 vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type, include_ocr=True)
             initial_vertex_distributions.append(vertex_distribution)
@@ -381,6 +387,7 @@ class _VertexDistribution:
     # Three _Distribution objects
     def __init__(self):
         self.distributions = [None] * NUM_WORD_TYPE
+        self.document_ids = []
 
     def __getitem__(self, word_type):
         try:
@@ -396,6 +403,7 @@ class _VertexDistribution:
 
     def __add__(self, other):
         result = _VertexDistribution()
+        self.document_ids.extend(other.document_ids)
         for word_type in WORD_TYPES:
             if self.distributions[word_type] is None:
                 result.distributions[word_type] = other.distributions[word_type]
