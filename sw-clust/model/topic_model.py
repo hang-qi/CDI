@@ -30,20 +30,34 @@ class SWConfig(object):
         self.vertex_distributions = vertex_distributions
         self.level = level
         self.documents = documents
+
+        # cache
         self._likelihood_cache = dict()
+        self._kl_cache = dict()
+
+    def _kl_key(self, s, t):
+        return '{0}, {1}'.format(s, t)
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
         #logging.debug('Calaulate Edge Prob {0}, {1}'.format(s, t))
         kl_value_all = 0.0
-        for word_type in WORD_TYPES:
-            p = self.vertex_distributions[s][word_type]
-            q = self.vertex_distributions[t][word_type]
-            kl_pq = p.kl_divergence(q)
-            kl_qp = q.kl_divergence(p)
-            kl_value_all += kl_pq
-            kl_value_all += kl_qp
-        kl_value_all /= 3
+
+        # Cache KL divergence between two vertexes.
+        kl_key = self._kl_key(s, t)
+        if kl_key in self._kl_cache:
+            kl_value_all = self._kl_cache[kl_key]
+        else:
+            for word_type in WORD_TYPES:
+                p = self.vertex_distributions[s][word_type]
+                q = self.vertex_distributions[t][word_type]
+                kl_pq = p.kl_divergence(q)
+                kl_qp = q.kl_divergence(p)
+                kl_value_all += kl_pq
+                kl_value_all += kl_qp
+            kl_value_all /= 3
+            self._kl_cache[kl_key] = kl_value_all
+
         logging.debug('KL Value {0}'.format(kl_value_all))
         # TO BE DISCUSSED: Using the same or different temperature settings?
         temperature = self.cooling_schedule(context.iteration_counter)
