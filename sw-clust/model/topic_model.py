@@ -80,9 +80,10 @@ class SWConfig(object):
         #         self.documents[doc_id].word_ids[word_type]
         likelihood = 0.0
         for i, cluster in enumerate(clustering):
-            for item in cluster:
+            for doc in new_vertex_distribution[i].document_ids:
                 for word_type in WORD_TYPES:
-                    likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i][word_type][item])
+                    for word in self.documents[doc].word_ids[word_type]:
+                        likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i].distributions[word][word_type])
         likelihood /= sum(weights)
         return likelihood
 
