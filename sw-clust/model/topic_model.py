@@ -6,6 +6,7 @@ sys.path.append('..')
 import numpy as np
 import mpmath
 from scipy.stats import norm
+import matplotlib.pyplot as plt
 
 from model import *
 from preprocessing import vocabulary
@@ -13,12 +14,43 @@ from algorithm import sw
 
 
 class _Plotter(object):
-    def __init__(self):
-        pass
+    def __init__(self, sw_config):
+        self.iterations = []
+        self.energies = []
+        self.temperatures = []
+        self._sw_config = sw_config
+
+        plt.ion()
+        self.fig = plt.figure(figsize=(16, 10))
+        #self.energy_plot = self.fig.add_subplot(211)
+        #self.segment_plot = self.fig.add_subplot(212)
+        self.energy_plot = self.fig.add_subplot(plt.subplot2grid((1, 3), (0, 0), colspan=2))
+        self.temperature_plot = self.fig.add_subplot(plt.subplot2grid((1, 3), (0, 2)))
 
     def plot_callback(self, clustering, context):
-        print(clustering)
-        pass
+        for cluster in clustering:
+            for doc_id in cluster:
+                print(self._sw_config.documents[doc_id].name)
+            print('')
+
+        self.iterations.append(context.iteration_counter)
+        self.energies.append(self._sw_config.energy(clustering))
+        self.temperatures.append(self._sw_config.cooling_schedule(context.iteration_counter))
+
+        # energy plot
+        self.energy_plot.clear()
+        self.energy_plot.set_title('Energy')
+        self.energy_plot.plot(self.iterations, self.energies)
+
+        # temperature plot
+        self.temperature_plot.clear()
+        self.temperature_plot.set_title('Temperature')
+        self.temperature_plot.plot(self.iterations, self.temperatures)
+
+        self.fig.canvas.draw()
+
+    def save(self):
+        self.fig.savefig('multi_level_plot.png', transparent=False, bbox_inches=None, pad_inches=0.1)
 
 
 class SWConfig(object):
@@ -58,21 +90,17 @@ class SWConfig(object):
             kl_value_all /= 3
             self._kl_cache[kl_key] = kl_value_all
 
-        logging.debug('KL Value {0}'.format(kl_value_all))
-        # TO BE DISCUSSED: Using the same or different temperature settings?
         temperature = self.cooling_schedule(context.iteration_counter)
-        edge_prob = mpmath.exp(-kl_value_all*temperature/2)
+        edge_prob = mpmath.exp(-kl_value_all*temperature/200000)
         logging.debug('Edge probability {0}'.format(edge_prob))
         return edge_prob
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
         target = mpmath.exp(- self.energy(clustering) / temperature)
-        logging.debug('target = {0}'.format(target))
         return target
 
     def energy(self, clustering):
-        logging.debug('Calculating energy of {0}'.format(clustering))
         energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
@@ -84,7 +112,6 @@ class SWConfig(object):
         if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
-        logging.debug('energy = {0}'.format(energy))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -174,7 +201,6 @@ class TopicModel(object):
     def _reform_by_multilevel_sw(self):
         """Reform the whole tree by doing multi-level SW-Cuts."""
 
-        plotter = _Plotter()
         need_next_level = True
         level_counter = 0
 
@@ -189,6 +215,7 @@ class TopicModel(object):
             level_counter += 1
             config = self._generate_next_sw_config(
                 current_vertex_distributions, current_clustering, level_counter)
+            plotter = _Plotter(config)
 
             # Clustering by SW.
             current_clustering = sw.sample(
@@ -408,11 +435,7 @@ class _VertexDistribution:
         self.document_ids = []
 
     def __getitem__(self, word_type):
-        try:
-            assert(word_type < NUM_WORD_TYPE)
-        except AssertionError, e:
-            logging.error('word_type={0}'.format(word_type))
-            raise e
+        assert(word_type < NUM_WORD_TYPE)
         return self.distributions[word_type]
 
     def __setitem__(self, word_type, distribution):
