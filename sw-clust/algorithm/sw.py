@@ -12,6 +12,7 @@ from collections import defaultdict
 from collections import deque
 import copy
 import random
+import logging
 
 import mpmath
 
@@ -283,12 +284,14 @@ class _SWCuts(object):
         posteriors = []
         denominator = mpmath.mpf(0.0)
         for (candidate, cut_set) in candidates:
+            logging.debug('cut set = {0}'.format(cut_set))
             # This weighted posterior guarantees the detailed balance.
             weight = mpmath.mpf(1.0)
             for (s, t) in cut_set:
                 weight *= (1 - self._edge_on_probability(s, t))
             val = mpmath.mpf(self._target_eval_func(candidate, self.context))
             posterior = weight * val
+            logging.debug('post = weight * val = {0} * {1} = {2} '.format(weight, val, posterior))
 
             posteriors.append(posterior)
             denominator += posterior
@@ -297,9 +300,9 @@ class _SWCuts(object):
         assert(denominator != 0)
         posteriors = [p/denominator for p in posteriors]
 
-        print('Posteriors: {0}'.format(posteriors))
         print('Component: {0}'.format(component))
         print('# of candidate: {0}'.format(len(candidates)))
+        print('Posteriors: {0}'.format(posteriors))
 
         # Sample from the posterior probability.
         cdf = [sum(posteriors[0:x]) for x in range(1, len(posteriors)+1)]

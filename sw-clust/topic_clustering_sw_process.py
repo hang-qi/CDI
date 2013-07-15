@@ -5,6 +5,7 @@ from model import document
 from preprocessing import cleansing
 import datetime
 
+
 def read_triplet_file(triplet_filename, use_ocr=False):
     ocr_file = None
     if use_ocr:

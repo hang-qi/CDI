@@ -35,8 +35,8 @@ class SWConfig(object):
         """Calculate edge probability based on KL divergence."""
         kl_value_all = 0.0
         for word_type in WORD_TYPES:
-            p = self.vertex_distribution[word_type][s]
-            q = self.vertex_distribution[word_type][t]
+            p = self.vertex_distributions[s][word_type]
+            q = self.vertex_distributions[t][word_type]
             kl_pq = p.kl_divergence(q)
             kl_qp = q.kl_divergence(p)
             kl_value_all += kl_pq
@@ -48,9 +48,12 @@ class SWConfig(object):
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(- self.energy(clustering) / temperature)
+        target = mpmath.exp(- self.energy(clustering) / temperature)
+        logging.debug('target = {0}'.format(target))
+        return target
 
     def energy(self, clustering):
+        logging.debug('Calculating energy of {0}'.format(clustering))
         energy = 0.0
         # TODO: target function may depend on level.
         # Candidate terms: likelihood, time prior, and etc.
@@ -62,6 +65,7 @@ class SWConfig(object):
         if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
+        logging.debug('energy = {0}'.format(energy))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -80,7 +84,7 @@ class SWConfig(object):
         time_series.sort()
         dif = 0.0
         for i in range(0, len(time_series)-1):
-            date_dif = time_series(i+1) - time_series(i)
+            date_dif = time_series[i+1] - time_series[i]
             dif += date_dif.days
         dif /= (len(time_series))
         return mpmath.mpf(norm(1, 5).pdf(dif))
@@ -203,7 +207,7 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 1.1  # 0.5*level_counter
+        distance_threshold = 0.8*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
@@ -217,7 +221,8 @@ class TopicModel(object):
                     edges.append((i, j))
 
         logging.debug(edges)
-        exit(0)
+        logging.debug('# of vertex: {0}'.format(graph_size))
+        logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
 
         config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, level=level_counter)
         return config
@@ -374,7 +379,11 @@ class _VertexDistribution:
         self.distributions = [None] * NUM_WORD_TYPE
 
     def __getitem__(self, word_type):
-        assert(word_type < NUM_WORD_TYPE)
+        try:
+            assert(word_type < NUM_WORD_TYPE)
+        except AssertionError, e:
+            logging.error('word_type={0}'.format(word_type))
+            raise e
         return self.distributions[word_type]
 
     def __setitem__(self, word_type, distribution):
