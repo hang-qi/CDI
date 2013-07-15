@@ -452,7 +452,6 @@ class _Distribution(object):
         p = self._hist
         q = other._hist
         assert(self._length == other._length)
-        kl_value = 0.0
         kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i] + 1e-100)) for i in range(0, self._length)]
         kl_value = sum(kl_array)
         return kl_value
