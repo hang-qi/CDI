@@ -33,6 +33,7 @@ class SWConfig(object):
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
+        #logging.debug('Calaulate Edge Prob {0}, {1}'.format(s, t))
         kl_value_all = 0.0
         for word_type in WORD_TYPES:
             p = self.vertex_distributions[s][word_type]
@@ -42,9 +43,12 @@ class SWConfig(object):
             kl_value_all += kl_pq
             kl_value_all += kl_qp
         kl_value_all /= 3
+        logging.debug('KL Value {0}'.format(kl_value_all))
         # TO BE DISCUSSED: Using the same or different temperature settings?
         temperature = self.cooling_schedule(context.iteration_counter)
-        return mpmath.exp(-kl_value_all*temperature/2)
+        edge_prob = mpmath.exp(-kl_value_all*temperature/2)
+        logging.debug('Edge probability {0}'.format(edge_prob))
+        return edge_prob
 
     def target_eval_func(self, clustering, context=None):
         temperature = self.cooling_schedule(context.iteration_counter)
@@ -448,7 +452,8 @@ class _Distribution(object):
         p = self._hist
         q = other._hist
         assert(self._length == other._length)
-        kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i]) + 1e-100) for i in range(0, self._length)]
+        kl_value = 0.0
+        kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i] + 1e-100)) for i in range(0, self._length)]
         kl_value = sum(kl_array)
         return kl_value
 
