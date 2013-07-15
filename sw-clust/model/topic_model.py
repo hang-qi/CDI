@@ -30,6 +30,7 @@ class SWConfig(object):
         self.vertex_distributions = vertex_distributions
         self.level = level
         self.documents = documents
+        self._likelihood_cache = dict()
 
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
@@ -73,17 +74,19 @@ class SWConfig(object):
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
-        # FIXME: calculate likelihood of generating the data (self.documents)
-        #   To get documents associate with vertex s:
-        #         new_vertex_distribution[s].document_ids
-        #   To get words in each document:
-        #         self.documents[doc_id].word_ids[word_type]
         likelihood = 0.0
         for i, cluster in enumerate(clustering):
-            for doc in new_vertex_distribution[i].document_ids:
-                for word_type in WORD_TYPES:
-                    for word in self.documents[doc].word_ids[word_type]:
-                        likelihood += weights[word_type]*mpmath.log(new_vertex_distribution[i].distributions[word][word_type])
+            # Cache the likelihood of cluster to reduce duplicate computation.
+            current_cluster_likelihood = 0.0
+            if new_vertex_distribution[i] in self._likelihood_cache:
+                current_cluster_likelihood = self._likelihood_cache[new_vertex_distribution[i]]
+            else:
+                for doc in new_vertex_distribution[i].document_ids:
+                    for word_type in WORD_TYPES:
+                        for word_id in self.documents[doc].word_ids[word_type]:
+                            current_cluster_likelihood = weights[word_type] * mpmath.log(new_vertex_distribution[i][word_type][word_id] + 1e-100)
+                self._likelihood_cache[new_vertex_distribution[i]] = current_cluster_likelihood
+            likelihood += current_cluster_likelihood
         likelihood /= sum(weights)
         return likelihood
 
@@ -405,6 +408,7 @@ class _VertexDistribution:
     def __add__(self, other):
         result = _VertexDistribution()
         self.document_ids.extend(other.document_ids)
+        self.document_ids.sort()
         for word_type in WORD_TYPES:
             if self.distributions[word_type] is None:
                 result.distributions[word_type] = other.distributions[word_type]
@@ -417,6 +421,16 @@ class _VertexDistribution:
 
     def __iadd__(self, other):
         return self.__add__(other)
+
+    def __hash__(self):
+        """Make it hashable. The key is the the string format of sorted document id list.
+        key =  str(document_ids)
+        e.g. '[10, 11, 12]' is the key for [10, 11, 12]
+        """
+        return hash(str(self.document_ids))
+
+    def __eq__(self, other):
+        return hash(self) == hash(other)
 
 
 class _Distribution(object):
