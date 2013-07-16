@@ -125,10 +125,11 @@ class SWConfig(object):
                 for doc in new_vertex_distribution[i].document_ids:
                     for word_type in WORD_TYPES:
                         for word_id in self.documents[doc].word_ids[word_type]:
-                            current_cluster_likelihood = weights[word_type] * mpmath.log(new_vertex_distribution[i][word_type][word_id] + 1e-100)
+                            current_cluster_likelihood += weights[word_type] * mpmath.log(new_vertex_distribution[i][word_type][word_id] + 1e-100)
                 self._likelihood_cache[new_vertex_distribution[i]] = current_cluster_likelihood
             likelihood += current_cluster_likelihood
         likelihood /= sum(weights)
+        logging.debug('Likelihood {0}'.format(likelihood))
         return likelihood
 
     def _time_prior(self, cluster):
@@ -165,6 +166,7 @@ def _combine_vertex_distributions_given_clustering(current_vertex_distributions,
         for v in cluster:
             vertex_distribution += current_vertex_distributions[v]
         new_vertex_distributions.append(vertex_distribution)
+    logging.debug('New vertex distribution {0}'.format(new_vertex_distributions[0].document_ids))
     return new_vertex_distributions
 
 
@@ -264,7 +266,7 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.9*level_counter
+        distance_threshold = 0.7*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
@@ -454,6 +456,7 @@ class _VertexDistribution:
                 result.distributions[word_type] = other.distributions[word_type]
             else:
                 result.distributions[word_type] = self.distributions[word_type] + other.distributions[word_type]
+        result.document_ids = self.document_ids
         return result
 
     def __radd__(self, other):
