@@ -102,18 +102,22 @@ class SWConfig(object):
 
     def energy(self, clustering):
         energy = 0.0
-        # TODO: target function may depend on level.
-        # Candidate terms: likelihood, time prior, and etc.
-        #     energy += -mpmath.log(P)
-
         new_vertex_distribution = _combine_vertex_distributions_given_clustering(
             self.vertex_distributions, clustering)
+
+        # likelihood
         energy += -self._log_likelihood(clustering, new_vertex_distribution)
+
+        # prior on time (for level 1 only)
         if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
+
+        # prior on cluster size: prefer small clusters ?
         for cluster in clustering:
             energy += -len(cluster)
+
+        # prior on clustering complexity: prefer small number of clusters.
         energy += -50*len(clustering)
         return energy
 
