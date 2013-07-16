@@ -50,8 +50,8 @@ class _Plotter(object):
 
         self.fig.canvas.draw()
 
-    def save(self):
-        self.fig.savefig('multi_level_plot.png', transparent=False, bbox_inches=None, pad_inches=0.1)
+    def save(self, filename):
+        self.fig.savefig(filename, transparent=False, bbox_inches=None, pad_inches=0.1)
 
 
 class SWConfig(object):
@@ -247,6 +247,7 @@ class TopicModel(object):
             # Save current clustering as a new level to the tree.
             self._add_level_to_tree(current_clustering, _combine_vertex_distributions_given_clustering(current_vertex_distributions, current_clustering))
             self.topic_tree.print_hiearchy(labels=document_labels)
+            plotter.save('multilevel_sw_{0}.png'.format(level_counter))
 
             # Determine if need more level.
             # TODO: determine if need next level.
