@@ -231,6 +231,10 @@ class TopicModel(object):
                 current_vertex_distributions, current_clustering, level_counter)
             plotter = _Plotter(config)
 
+            if level_counter == 1:
+                ground_truth = [{0, 4, 14, 27, 33, 10, 41, 65, 30, 49}, {5, 42, 12}, {1, 20, 11, 31, 51}, {6, 18, 23, 55, 29, 32, 50}, {7, 19}, {22, 61}, {13, 60}, {9, 26, 47}, {8, 25, 48}, {21, 68}, {2, 15, 54, 40, 46, 39}, {59, 16}, {35}, {17, 36, 58}, {34, 57}, {28}, {38}, {44}, {45}, {56, 73}, {62}, {63}, {64}, {66}, {67}, {69}, {70}, {71}, {72}, {74}, {37}, {3, 53}, {24, 52}, {43}]
+                plotter.truth = ground_truth
+
             # Add the very bottom level of tree.
             if (level_counter == 1):
                 self._initialize_tree(config.vertex_distributions)
