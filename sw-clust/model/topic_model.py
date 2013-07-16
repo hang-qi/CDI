@@ -29,8 +29,9 @@ class _Plotter(object):
 
     def plot_callback(self, clustering, context):
         for cluster in clustering:
-            for doc_id in cluster:
-                print(self._sw_config.documents[doc_id].name)
+            for v in cluster:
+                for doc_id in self._sw_config.vertex_distributions[v].document_ids:
+                    print(self._sw_config.documents[doc_id].name)
             print('')
 
         self.iterations.append(context.iteration_counter)
@@ -144,13 +145,13 @@ class SWConfig(object):
 
     def cooling_schedule(self, iteration_counter):
         # TODO: Cooling schedule may depend on level.
-        starting_temperature = 10000
-        period = 2
+        starting_temperature = 1000
+        period = 5
         step_size = 10
 
         temperature = starting_temperature - int(iteration_counter/period)*step_size
-        if temperature <= 10:
-            temperature = 10
+        if temperature <= 0:
+            temperature = 0.1
         return temperature
 
 
