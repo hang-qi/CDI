@@ -90,9 +90,8 @@ class SWConfig(object):
             kl_value_all /= 3
             self._kl_cache[kl_key] = kl_value_all
 
-        temperature = self.cooling_schedule(context.iteration_counter)
-        edge_prob = mpmath.exp(-kl_value_all*temperature/200000)
-        logging.debug('Edge probability {0}'.format(edge_prob))
+        #temperature = self.cooling_schedule(context.iteration_counter)
+        edge_prob = mpmath.exp(-kl_value_all/(2*1000))
         return edge_prob
 
     def target_eval_func(self, clustering, context=None):
@@ -145,13 +144,13 @@ class SWConfig(object):
 
     def cooling_schedule(self, iteration_counter):
         # TODO: Cooling schedule may depend on level.
-        starting_temperature = 1000
+        starting_temperature = 10000
         period = 2
         step_size = 10
 
         temperature = starting_temperature - int(iteration_counter/period)*step_size
-        if temperature <= 0:
-            temperature = 0.1
+        if temperature <= 10:
+            temperature = 10
         return temperature
 
 
@@ -382,6 +381,7 @@ class Corpus(object):
             for ocr_word in self.documents[doc_id].ocr_words:
                 if ocr_word in self.vocabularies[word_type]:
                     word_id = self.vocabularies[word_type].get_word_index(ocr_word)
+                    self.documents[doc_id].word_ids[word_type].append(word_id)
                     histogram[word_id] += 1
         return _Distribution(histogram)
 
