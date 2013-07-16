@@ -113,12 +113,12 @@ class SWConfig(object):
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
 
-        # prior on cluster size: prefer small clusters ?
+        # prior on cluster size: prefer large clusters
         for cluster in clustering:
-            energy += -len(cluster)
+            energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -50*len(clustering)
+        energy += -mpmath.log(mpmath.exp(-50*len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
