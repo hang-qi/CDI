@@ -203,22 +203,28 @@ class TopicModel(object):
 
     def _reform_by_multilevel_sw(self):
         """Reform the whole tree by doing multi-level SW-Cuts."""
-
         need_next_level = True
         level_counter = 0
 
+        # Create label list for printing labels.
+        document_labels = [d.name for d in self.corpus.documents]
+
         # Initially, each document is a vertex.
         current_vertex_distributions = []
-
         # Initial clustering treat all vertex in the same cluster.
         current_clustering = [set(range(0, len(self.corpus)))]
-        print(current_clustering)
 
         while need_next_level:
             level_counter += 1
+
             config = self._generate_next_sw_config(
                 current_vertex_distributions, current_clustering, level_counter)
             plotter = _Plotter(config)
+
+            # Add the very bottom level of tree.
+            if (level_counter == 1):
+                self._initialize_tree(config.vertex_distributions)
+                self.topic_tree.print_hiearchy(labels=document_labels)
 
             # Clustering by SW.
             current_clustering = sw.sample(
@@ -232,7 +238,8 @@ class TopicModel(object):
             current_vertex_distributions = config.vertex_distributions
 
             # Save current clustering as a new level to the tree.
-            # self._add_level_to_tree(current_clustering)
+            self._add_level_to_tree(current_clustering, _combine_vertex_distributions_given_clustering(current_vertex_distributions, current_clustering))
+            self.topic_tree.print_hiearchy(labels=document_labels)
 
             # Determine if need more level.
             # TODO: determine if need next level.
@@ -291,9 +298,14 @@ class TopicModel(object):
         #       is needed, like Dunn Index, Davies-Bouldin Index, etc.
         return True
 
-    def _add_level_to_tree(self, current_clustering):
+    def _initialize_tree(self, vertex_distributions):
+        """Initialize the tree by add the bottom level where each vertex is a document."""
+        self.topic_tree.initialize(vertex_distributions)
+        pass
+
+    def _add_level_to_tree(self, clustering, vertex_distributions):
         """Add a level to tree."""
-        self.topic_tree.add_level_on_top(current_clustering)
+        self.topic_tree.add_level_on_top(clustering, vertex_distributions)
         pass
 
 
@@ -311,11 +323,19 @@ class TopicModel(object):
 # Definitions for Topic Tree.
 #
 class _TreeNode(object):
-    def __init__(self):
-        self._children = []
-        self._vp_distribution = None
-        self._np1_distribution = None
-        self._np2_distribution = None
+    def __init__(self, vertex_distribution=None, children=None):
+        if vertex_distribution is not None:
+            self._vertex_distribution = vertex_distribution
+        else:
+            self._vertex_distribution = _VertexDistribution()
+
+        if children is not None:
+            self._children = children
+        else:
+            self._children = []
+
+    def __iter__(self):
+        return iter(self._children)
 
     def add_child(self, node):
         self._children.append(node)
@@ -333,20 +353,56 @@ class _Tree(object):
     """A Tree structure."""
     def __init__(self):
         self._root = _TreeNode()
+        self._height = 0
 
-    def add_to_root(self, node):
+    def _add_to_root(self, node):
         """Add a node to the root."""
         self._root.add_child(node)
 
-    def add_level_on_top(self, clustering):
+    def initialize(self, vertex_distributions):
+        """Initialize by adding a bottom level."""
+        assert(self._height == 0)
+        for vertex_distribution in vertex_distributions:
+            terminal_node = _TreeNode(vertex_distribution)
+            self._add_to_root(terminal_node)
+        self._height += 1
+
+    def add_level_on_top(self, clustering, vertex_distributions):
         """Add a new level on the top of the tree."""
         # e.g. clustering = [{1,2,3}, {4,5}, {5,6,7}]
+        assert(self._height > 0)
         new_root = _TreeNode()
-        for cluster in clustering:
-            new_parent_node = _TreeNode()
+        for (clust_id, cluster) in enumerate(clustering):
+            new_parent_node = _TreeNode(vertex_distributions[clust_id])
             for vertex_index in cluster:
-                new_parent_node.add_child(self._root.get_child(vertex_index))
+                child = self._root.get_child(vertex_index)
+                new_parent_node.add_child(child)
+            new_root.add_child(new_parent_node)
         self._root = new_root
+        self._height += 1
+
+    def print_hiearchy(self, labels=None, synthesize_title=False):
+        self.__print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title)
+
+    def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, branch_id=0):
+        if synthesize_title and level_indents == 1:
+            print('{0}+ {1}'.format('|  ', self.synthesize_title(branch_id)))
+        else:
+            print('{0}+'.format(level_indents*'|  '))
+        for (bid, child_node) in enumerate(root):
+            if not child_node.is_terminal():
+                # Have next level.
+                self.__print_hiearchy_recursive(
+                    child_node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, branch_id=bid)
+            else:
+                # Terminal node is a document.
+                assert(len(child_node._vertex_distribution.document_ids) == 1)
+                doc_id = child_node._vertex_distribution.document_ids[0]
+                if labels is not None:
+                    label_to_print = labels[doc_id]
+                else:
+                    label_to_print = doc_id
+                print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
 
 
 #
