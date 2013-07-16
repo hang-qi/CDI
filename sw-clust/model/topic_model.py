@@ -112,6 +112,9 @@ class SWConfig(object):
         if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
+        for cluster in clustering:
+            energy += -len(cluster)
+        energy += -50*len(clustering)
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -129,7 +132,7 @@ class SWConfig(object):
                 self._likelihood_cache[new_vertex_distribution[i]] = current_cluster_likelihood
             likelihood += current_cluster_likelihood
         likelihood /= sum(weights)
-        logging.debug('Likelihood {0}'.format(likelihood))
+        #logging.debug('Likelihood {0}'.format(likelihood))
         return likelihood
 
     def _time_prior(self, cluster):
@@ -154,7 +157,7 @@ class SWConfig(object):
 
         temperature = starting_temperature - int(iteration_counter/period)*step_size
         if temperature <= 0:
-            temperature = 0.1
+            temperature = 10  # 0.1
         return temperature
 
 
@@ -265,7 +268,7 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.7*level_counter
+        distance_threshold = 0.8*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0

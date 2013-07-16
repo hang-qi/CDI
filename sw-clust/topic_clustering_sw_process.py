@@ -9,7 +9,7 @@ import datetime
 def read_triplet_file(triplet_filename, use_ocr=False):
     ocr_file = None
     if use_ocr:
-        ocr_file = triplet_filename.replace('data/triplet_files_small/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
+        ocr_file = triplet_filename.replace('data/triplet_files_new_test_set/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
     np1_words = []
     vp_words = []
     np2_words = []
@@ -35,7 +35,7 @@ def read_triplet_file(triplet_filename, use_ocr=False):
 
 def main():
     logging.basicConfig(level=logging.DEBUG)
-    input_triplet_files = glob.glob('data/triplet_files_small/2008*.txt')
+    input_triplet_files = glob.glob('data/triplet_files_new_test_set/2008*.txt')
     input_triplet_files.sort()
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
