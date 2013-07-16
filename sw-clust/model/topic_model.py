@@ -14,12 +14,13 @@ from algorithm import sw
 
 
 class _Plotter(object):
-    def __init__(self, sw_config, true_val=0):
+    def __init__(self, sw_config, ground_truth=None):
         self.iterations = []
         self.energies = []
         self.temperatures = []
         self._sw_config = sw_config
-        self.true_val = true_val
+        self.ground_truth = ground_truth
+        self._ground_truth_val = None
 
         plt.ion()
         self.fig = plt.figure(figsize=(16, 10))
@@ -27,6 +28,10 @@ class _Plotter(object):
         #self.segment_plot = self.fig.add_subplot(212)
         self.energy_plot = self.fig.add_subplot(plt.subplot2grid((1, 3), (0, 0), colspan=2))
         self.temperature_plot = self.fig.add_subplot(plt.subplot2grid((1, 3), (0, 2)))
+
+    def set_ground_truth(self, ground_truth):
+        self.ground_truth = ground_truth
+        self._ground_truth_val = self._sw_config.energy(self.ground_truth)
 
     def plot_callback(self, clustering, context):
         for cluster in clustering:
@@ -43,8 +48,10 @@ class _Plotter(object):
         self.energy_plot.clear()
         self.energy_plot.set_title('Energy')
         self.energy_plot.plot(self.iterations, self.energies)
-        self.energy_plot.hold(True)
-        self.energy_plot.plot(self.iterations, [self.true_val]*len(self.iterations))
+
+        if self._ground_truth_val is not None:
+            self.energy_plot.hold(True)
+            self.energy_plot.plot([1, len(self.iterations)], [self._ground_truth_val]*2, 'r')
 
         # temperature plot
         self.temperature_plot.clear()
@@ -233,7 +240,7 @@ class TopicModel(object):
 
             if level_counter == 1:
                 ground_truth = [{0, 4, 14, 27, 33, 10, 41, 65, 30, 49}, {5, 42, 12}, {1, 20, 11, 31, 51}, {6, 18, 23, 55, 29, 32, 50}, {7, 19}, {22, 61}, {13, 60}, {9, 26, 47}, {8, 25, 48}, {21, 68}, {2, 15, 54, 40, 46, 39}, {59, 16}, {35}, {17, 36, 58}, {34, 57}, {28}, {38}, {44}, {45}, {56, 73}, {62}, {63}, {64}, {66}, {67}, {69}, {70}, {71}, {72}, {74}, {37}, {3, 53}, {24, 52}, {43}]
-                plotter.truth = ground_truth
+                plotter.set_ground_truth(ground_truth)
 
             # Add the very bottom level of tree.
             if (level_counter == 1):
