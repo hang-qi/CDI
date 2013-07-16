@@ -139,8 +139,10 @@ class SWConfig(object):
         dif = 0.0
         for i in range(0, len(time_series)-1):
             date_dif = time_series[i+1] - time_series[i]
-            dif += date_dif.days
-        dif /= (len(time_series))
+            dif_tmp = date_dif.days
+            if dif_tmp > dif:
+                dif = dif_tmp
+        #dif /= (len(time_series))
         return mpmath.mpf(norm(1, 5).pdf(dif))
 
     def cooling_schedule(self, iteration_counter):
@@ -262,7 +264,7 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.8*level_counter
+        distance_threshold = 0.9*level_counter
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
