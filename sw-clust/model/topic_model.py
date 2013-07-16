@@ -124,11 +124,11 @@ class SWConfig(object):
                 energy += -mpmath.log(self._time_prior(cluster))
 
         # prior on cluster size: prefer large clusters
-        for cluster in clustering:
-            energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
+        #for cluster in clustering:
+        #    energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -mpmath.log(mpmath.exp(-50*len(clustering)))
+        energy += -mpmath.log(mpmath.exp(-20*len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -167,11 +167,11 @@ class SWConfig(object):
         # TODO: Cooling schedule may depend on level.
         starting_temperature = 1000
         period = 5
-        step_size = 10
+        step_size = 5
 
         temperature = starting_temperature - int(iteration_counter/period)*step_size
         if temperature <= 0:
-            temperature = 10  # 0.1
+            temperature = 0.1
         return temperature
 
 
@@ -294,7 +294,7 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.8*level_counter
+        distance_threshold = 0.9
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
