@@ -14,11 +14,12 @@ from algorithm import sw
 
 
 class _Plotter(object):
-    def __init__(self, sw_config):
+    def __init__(self, sw_config, true_val=0):
         self.iterations = []
         self.energies = []
         self.temperatures = []
         self._sw_config = sw_config
+        self.true_val = true_val
 
         plt.ion()
         self.fig = plt.figure(figsize=(16, 10))
@@ -42,6 +43,8 @@ class _Plotter(object):
         self.energy_plot.clear()
         self.energy_plot.set_title('Energy')
         self.energy_plot.plot(self.iterations, self.energies)
+        self.energy_plot.hold(True)
+        self.energy_plot.plot(self.iterations, [self.true_val]*len(self.iterations))
 
         # temperature plot
         self.temperature_plot.clear()
