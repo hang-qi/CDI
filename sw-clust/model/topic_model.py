@@ -284,11 +284,9 @@ class TopicModel(object):
                     dist_j = next_vertex_distributions[j][word_type]
                     distance += dist_i.tv_norm(dist_j)
                 distance /= NUM_WORD_TYPE
-                logging.debug('d({0}, {1}) = {2}'.format(i, j, distance))
                 if distance <= distance_threshold:
                     edges.append((i, j))
 
-        logging.debug(edges)
         logging.debug('# of vertex: {0}'.format(graph_size))
         logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
 
