@@ -1,0 +1,8 @@
+<story>Justice|Mayor-jail-time</story>
+<start>20080808150031.763</start>
+<end>20080808150108.900</end>
+a judge | ordered | Mayor Kwame Kilpatrick 
+He | s also ordered | Kilpatrick not 
+He | took | a business trip 
+Kilpatrick | faces | felon charges of perjury 
+The charges | stem | romantic text messages 
