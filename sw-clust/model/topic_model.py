@@ -166,7 +166,6 @@ def _combine_vertex_distributions_given_clustering(current_vertex_distributions,
         for v in cluster:
             vertex_distribution += current_vertex_distributions[v]
         new_vertex_distributions.append(vertex_distribution)
-    logging.debug('New vertex distribution {0}'.format(new_vertex_distributions[0].document_ids))
     return new_vertex_distributions
 
 
@@ -449,14 +448,14 @@ class _VertexDistribution:
 
     def __add__(self, other):
         result = _VertexDistribution()
-        self.document_ids.extend(other.document_ids)
-        self.document_ids.sort()
         for word_type in WORD_TYPES:
             if self.distributions[word_type] is None:
                 result.distributions[word_type] = other.distributions[word_type]
             else:
                 result.distributions[word_type] = self.distributions[word_type] + other.distributions[word_type]
         result.document_ids = self.document_ids
+        result.document_ids.extend(other.document_ids)
+        result.document_ids.sort()
         return result
 
     def __radd__(self, other):
