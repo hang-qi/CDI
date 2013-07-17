@@ -1,0 +1,66 @@
+#!/bin/bash
+#
+# Align a downloaded transcript with a closed captioning file
+#
+# Usage: align-transcript-single <filename>
+#
+# Written 2013-07-13 FFS
+#
+# The script is a wrapper around the aligner utility, written by Hang Qi - qih@qihang.im
+#
+# ------------------------------------------------------------------------
+
+# Help screen
+if [ "$1" = "-h" -o "$1" = "--help" -o "$1" = "help" ]
+ then echo -e "\n\tAlign a CNN transcript with a closed captioning file."
+  echo -e "\n\t\t`basename $0` <filename>"
+  echo -e "\n\tExample:"
+  echo -e "\n\t\t`basename $0` 2008-08-21_0200_US_CNN_CNN_Presents"
+  echo -e "\n\tThe .txt file must be present in the tv tree, and the .rawtxt or .html file in the present directory."
+  echo -e "\n\tThe script generates a .tpt that should be checked and copied to the tv tree on roma by user tna.\n"
+   exit
+fi
+
+# File name (stem only)
+if [ "$1" = "" ]
+ then echo -e "\nSee '`basename $0` -h' for usage\n" ; exit
+ else FIL=${1%.*}
+fi
+
+# Aligner base directory
+ALIGN=/usr/local/bin/transcript_aligner/
+
+# Current directory
+DIR=`pwd`
+
+# Generate the rawtxt file if it is missing but the html file is present
+if [ ! -f $FIL.rawtxt -a -f $FIL.html ] ; then
+  echo -e "\n\tGenerating the rawtxt file ...\n"
+  python3 $ALIGN/htmlparser.py $FIL.html
+fi
+
+# Verify that the rawtxt file exists
+if [ ! -f $FIL.rawtxt ] ; then
+  echo -e "\n\tUnable to find $FIL.rawtxt\n"
+  DAY="$[$[$(date +%s)-$(date -d "${FIL%%_*}" +%s)]/86400]"
+  echo -e "\tConsider running this command to generate rawtxt files from the downloaded html files:\n"
+  echo -e "\talign-transcripts.sh $DAY" ; exit
+fi
+
+# TV tree
+DDIR="/tv/$(echo $FIL | sed -r 's/([0-9]{4})-([0-9]{2})-([0-9]{2}).*/\1\/\1-\2\/\1-\2-\3/')"
+
+# Verify that the txt file exists
+if [ ! -f $DDIR/$FIL.txt ] ; then echo -e "\n\tUnable to find $DDIR/$FIL.txt\n" ; exit ; fi
+
+# Run the aligner
+$ALIGN/bin/aligner $DDIR/$FIL.txt $FIL.rawtxt
+
+# Receipt
+if [ -f $FIL.tpt ]
+  then WC="$(cat $FIL.tpt | wc -l)"
+    echo -e "\n\tCreated $FIL.tpt ($WC lines) -- please verify and copy to the tv tree on roma.\n"
+  else echo -e "\n\tFile creation failed -- please investigate.\n"
+fi
+
+# EOF
