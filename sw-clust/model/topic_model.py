@@ -303,19 +303,20 @@ class TopicModel(object):
                     distance += dist_j.kl_divergence(dist_i)
                 distance /= NUM_WORD_TYPE*2
                 #distance_tv /= NUM_WORD_TYPE
-                logging.debug('KL Divergence {0}, Point {1},{2}'.format(distance, i, j))
                 #logging.debug('TV Norm {0}'.format(distance_tv))
                 distance_all.append(distance)
                 #if distance <= distance_threshold:
                 #    edges.append((i, j))
-        distance_all_sort = distance_all.sort()
+        distance_all_sort = sorted(distance_all, key=float)
         distance_threshold = distance_all_sort[graph_size]
+        logging.debug('Distance Threshold {0}'.format(distance_threshold))
         count = 0
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 if distance_all[count] < distance_threshold:
                     edges.append((i, j))
-                    count += 1
+                count += 1
+        logging.debug('Selected Edges {0}'.format(edges))
 
         logging.debug('# of vertex: {0}'.format(graph_size))
         logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
@@ -622,7 +623,8 @@ class _Distribution(object):
         p = self._hist
         q = other._hist
         assert(self._length == other._length)
-        kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i] + 1e-100)) for i in range(0, self._length)]
+        #kl_array = [p[i]*(mpmath.log(p[i] + 1e-100) - mpmath.log(q[i] + 1e-100)) for i in range(0, self._length)]
+        kl_array = p*np.log((p + 1e-100)/(q + 1e-100))
         kl_value = sum(kl_array)
         return kl_value
 
