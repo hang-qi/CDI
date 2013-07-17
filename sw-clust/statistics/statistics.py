@@ -22,6 +22,8 @@ class Statistics(object):
         self.length_prior = length_prior
         self.seg_num_prior = seg_num_prior
 
+        self._segment_classification_cache = dict()
+
     def calculate_Qe(self, left, right, context):
         right_node = self.all_nodes.nodes[right]
         if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
@@ -68,6 +70,11 @@ class Statistics(object):
             segmentation.append(current_segment)
         return segmentation
 
+    def _segment_key(self, segment):
+        l = list(segment)
+        l.sort()
+        return str(l)
+
     def calculate_energy(self, current_clustering):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
         #assert(len(current_labeling) == self.all_nodes.node_num)
@@ -77,8 +84,14 @@ class Statistics(object):
         previous_category = -1
         #print(len(segmentation))
         for segment in current_clustering:
-            # likelihood term
-            [category, prob] = self.classification(segment)
+            # likelihood term (cache to prevent repeat computation)
+            key = self._segment_key(segment)
+            if key in self._segment_classification_cache:
+                [category, prob] = self._segment_classification_cache[key]
+            else:
+                [category, prob] = self.classification(segment)
+                self._segment_classification_cache[key] = [category, prob]
+
             if prob == 0:
                 prob = 1e-100
             energy += -mpmath.log(prob)
