@@ -91,14 +91,9 @@ class SWConfig(object):
         if kl_key in self._kl_cache:
             kl_value_all = self._kl_cache[kl_key]
         else:
-            for word_type in WORD_TYPES:
-                p = self.vertex_distributions[s][word_type]
-                q = self.vertex_distributions[t][word_type]
-                kl_pq = p.kl_divergence(q)
-                kl_qp = q.kl_divergence(p)
-                kl_value_all += kl_pq
-                kl_value_all += kl_qp
-            kl_value_all /= 3
+            kl_pq = self.vertex_distributions[s].kl_divergence(self.vertex_distributions[t])
+            kl_qp = self.vertex_distributions[t].kl_divergence(self.vertex_distributions[s])
+            kl_value_all = kl_pq + kl_qp
             self._kl_cache[kl_key] = kl_value_all
 
         #temperature = self.cooling_schedule(context.iteration_counter)
@@ -549,6 +544,24 @@ class _VertexDistribution:
 
     def __eq__(self, other):
         return hash(self) == hash(other)
+
+    def kl_divergence(self, other):
+        kl = 0.0
+        for word_type in WORD_TYPES:
+            dist_i = self[word_type]
+            dist_j = other[word_type]
+            kl += dist_i.kl_divergence(dist_j)
+        kl /= NUM_WORD_TYPE
+        return kl
+
+    def tv_norm(self, other):
+        distance = 0.0
+        for word_type in WORD_TYPES:
+            dist_i = self[word_type]
+            dist_j = other[word_type]
+            distance += dist_i.tv_norm(dist_j)
+        distance /= NUM_WORD_TYPE
+        return distance
 
 
 class _Distribution(object):
