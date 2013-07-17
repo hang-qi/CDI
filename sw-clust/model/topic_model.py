@@ -97,7 +97,7 @@ class SWConfig(object):
             self._kl_cache[kl_key] = kl_value_all
 
         #temperature = self.cooling_schedule(context.iteration_counter)
-        edge_prob = mpmath.exp(-kl_value_all/(2*1000))
+        edge_prob = mpmath.exp(-kl_value_all/(2*500))
         return edge_prob
 
     def target_eval_func(self, clustering, context=None):
@@ -123,7 +123,7 @@ class SWConfig(object):
         #    energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -mpmath.log(mpmath.exp(-20*len(clustering)))
+        energy += -25*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -289,17 +289,33 @@ class TopicModel(object):
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.9
+        distance_threshold = 0.9*level_counter
+        distance_all = []
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
+                distance_tv = 0.0
                 for word_type in WORD_TYPES:
                     dist_i = next_vertex_distributions[i][word_type]
                     dist_j = next_vertex_distributions[j][word_type]
-                    distance += dist_i.tv_norm(dist_j)
-                distance /= NUM_WORD_TYPE
-                if distance <= distance_threshold:
+                    #distance_tv += dist_i.tv_norm(dist_j)
+                    distance += dist_i.kl_divergence(dist_j)
+                    distance += dist_j.kl_divergence(dist_i)
+                distance /= NUM_WORD_TYPE*2
+                #distance_tv /= NUM_WORD_TYPE
+                logging.debug('KL Divergence {0}, Point {1},{2}'.format(distance, i, j))
+                #logging.debug('TV Norm {0}'.format(distance_tv))
+                distance_all.append(distance)
+                #if distance <= distance_threshold:
+                #    edges.append((i, j))
+        distance_all_sort = distance_all.sort()
+        distance_threshold = distance_all_sort[graph_size]
+        count = 0
+        for i in range(0, graph_size-1):
+            for j in range(i+1, graph_size):
+                if distance_all[count] < distance_threshold:
                     edges.append((i, j))
+                    count += 1
 
         logging.debug('# of vertex: {0}'.format(graph_size))
         logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
