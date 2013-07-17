@@ -122,7 +122,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
     string postFlagLineContent = "";    // for any content after flag tags, but in the same line
 
     string word;
-    auto itWord = resultWords_.begin();
+    vector<string>::iterator itWord = resultWords_.begin();
 
     string previousSegType = "";
     int prev_seg_idx = -1;
@@ -151,6 +151,11 @@ const Caption Aligner::BuildTimeAlignedCaption()
         int numWordsInLine = 0;
         while (numWordsInLine < resultLineLengths_[i])
         {
+            if (itWord == resultWords_.end())
+            {
+                // Fix segmentation fault. 2013/7/16.
+                break;
+            }
             word = *itWord;
             string name;
 
@@ -204,7 +209,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
 
             numWordsInLine++;
             itWord++;
-        }
+        }// END of 'while (numWordsInLine < resultLineLengths_[i])'
         if (!currentLineContent.empty())
         {
             sublines.push_back(currentLineContent);
