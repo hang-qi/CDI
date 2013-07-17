@@ -255,7 +255,7 @@ class TopicModel(object):
 
             # Save current clustering as a new level to the tree.
             self._add_level_to_tree(current_clustering, _combine_vertex_distributions_given_clustering(current_vertex_distributions, current_clustering))
-            self.topic_tree.print_hiearchy(labels=document_labels)
+            self.topic_tree.print_hiearchy(labels=document_labels, synthesize_title=True, vocabularies=self.corpus.vocabularies)
             plotter.save('multilevel_sw_{0}.png'.format(level_counter))
 
             # Determine if need more level.
@@ -380,6 +380,13 @@ class _TreeNode(object):
     def is_terminal(self):
         return (len(self._children) == 0)
 
+    def synthesize_title(self, vocabularies):
+        [np1_top_ids, np2_top_ids] = self._vertex_distribution.synthesize_title(5, [WORD_TYPE_NP1, WORD_TYPE_NP2])
+        np1_words = [vocabularies[WORD_TYPE_NP1].get_word(wid) for wid in np1_top_ids]
+        np2_words = [vocabularies[WORD_TYPE_NP2].get_word(wid) for wid in np2_top_ids]
+        union = [w for w in np1_words if w in np2_words]
+        return union
+
 
 class _Tree(object):
     """A Tree structure."""
@@ -413,19 +420,18 @@ class _Tree(object):
         self._root = new_root
         self._height += 1
 
-    def print_hiearchy(self, labels=None, synthesize_title=False):
-        self.__print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title)
+    def print_hiearchy(self, labels=None, synthesize_title=False, vocabularies=None):
+        self.__print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
 
-    def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, branch_id=0):
-        if synthesize_title and level_indents == 1:
-            print('{0}+ {1}'.format('|  ', self.synthesize_title(branch_id)))
-        else:
-            print('{0}+'.format(level_indents*'|  '))
-        for (bid, child_node) in enumerate(root):
+    def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
+        if synthesize_title:
+            assert(vocabularies is not None)
+            print('{0}+ {1}'.format('|  ', root.synthesize_title(vocabularies)))
+        for child_node in root:
             if not child_node.is_terminal():
                 # Have next level.
                 self.__print_hiearchy_recursive(
-                    child_node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, branch_id=bid)
+                    child_node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
             else:
                 # Terminal node is a document.
                 assert(len(child_node._vertex_distribution.document_ids) == 1)
@@ -580,6 +586,15 @@ class _VertexDistribution:
         distance /= NUM_WORD_TYPE
         return distance
 
+    def get_top_word_ids(self, num_words, word_types):
+        result_list = []
+        for word_type in word_types:
+            if self.distributions[word_type] is None:
+                result_list.append([])
+            else:
+                result_list.append(self.distributions[word_type].get_top_word_ids(num_words))
+        return result_list
+
 
 class _Distribution(object):
     """A 1D histogram (normalized to 1)."""
@@ -636,7 +651,7 @@ class _Distribution(object):
     def combine(self, other):
         self = self.__add__(other)
 
-    def synthesize(self, num_words):
+    def get_top_word_ids(self, num_words):
         """Synthesize a set of words from the distribution."""
         indexes = np.argsort(self._hist)
         top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
