@@ -381,11 +381,18 @@ class _TreeNode(object):
         return (len(self._children) == 0)
 
     def synthesize_title(self, vocabularies):
-        [np1_top_ids, np2_top_ids] = self._vertex_distribution.synthesize_title(5, [WORD_TYPE_NP1, WORD_TYPE_NP2])
+        [np1_top_ids, np2_top_ids] = self._vertex_distribution.get_top_word_ids(10, [WORD_TYPE_NP1, WORD_TYPE_NP2])
         np1_words = [vocabularies[WORD_TYPE_NP1].get_word(wid) for wid in np1_top_ids]
         np2_words = [vocabularies[WORD_TYPE_NP2].get_word(wid) for wid in np2_top_ids]
         union = [w for w in np1_words if w in np2_words]
-        return union
+
+        if len(union) > 0:
+            title = ' '.join(union)
+        else:
+            keep = np1_words[0:3]
+            keep.extend(np2_words[0:3])
+            title = ' '.join(keep)
+        return title
 
 
 class _Tree(object):
@@ -426,7 +433,7 @@ class _Tree(object):
     def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
         if synthesize_title:
             assert(vocabularies is not None)
-            print('{0}+ {1}'.format('|  ', root.synthesize_title(vocabularies)))
+            print('{0}+ {1}'.format(level_indents*'|  ', root.synthesize_title(vocabularies)))
         for child_node in root:
             if not child_node.is_terminal():
                 # Have next level.
