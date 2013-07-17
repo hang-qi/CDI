@@ -308,7 +308,7 @@ class TopicModel(object):
                 #if distance <= distance_threshold:
                 #    edges.append((i, j))
         distance_all_sort = sorted(distance_all, key=float)
-        distance_threshold = distance_all_sort[graph_size]
+        distance_threshold = distance_all_sort[graph_size*2]
         logging.debug('Distance Threshold {0}'.format(distance_threshold))
         count = 0
         for i in range(0, graph_size-1):
