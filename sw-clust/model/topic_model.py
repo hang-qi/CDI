@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from model import *
 from preprocessing import vocabulary
 from algorithm import sw
-
+from model import word_similarity
 
 class _Plotter(object):
     def __init__(self, sw_config, ground_truth=None):
@@ -121,13 +121,40 @@ class SWConfig(object):
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
 
-        # prior on similarity
-        #if self.level == 2:
-        #    for cluster in clustering:
-        #        for v in cluster:
-        #            self.vertex_distributions[v].get_top_word_ids(5, WORD_TYPES)
-        #        distance_in_cluster = 0
-        #        energy += -mpmath.log(mpmath.exp(distance_in_cluster - 1))
+        # prior on similarity: prefer large similarity
+        # - the similarity of two clusters is the largest similarities among
+        #   all pairs of vertexes in the cluster.
+        # - the similarity of a pair of vertexes is measured by the similarity
+        #   of top 5 words in the distribution. (measure each word type
+        #   respectively and take average)
+        if self.level == 2:
+            for cluster in clustering:
+                if len(cluster) == 1:
+                    similarity_in_cluster = 1.0
+                else:
+                    words_all = []
+                    for v in cluster:
+                        # get top 5 word ids for given types
+                        top_word_ids = self.vertex_distributions[v].get_top_word_ids(5, WORD_TYPES)
+                        # convert word ids to words using vocabulary
+                        top_words = []
+                        for word_type in WORD_TYPES:
+                            top_words.append([self.corpus.vocabularies[word_type].get_word(wid) for wid in top_word_ids[word_type]])
+                        words_all.append(top_words)
+
+                    # calculate pair wise similarity between vertexes
+                    # select the maximum as the similarity of the cluster.
+                    max_similarity = 0.0
+                    for i in range(0, len(cluster) - 1):
+                        for j in range(1, len(cluster)):
+                            distance_i_j = 0.0
+                            for word_type in WORD_TYPES:
+                                distance_i_j += word_similarity.word_set_similarity(words_all[i][word_type], words_all[j][word_type])
+                            distance_i_j /= NUM_WORD_TYPES
+                            if distance_i_j > max_similarity:
+                                max_similarity = distance_i_j
+                    similarity_in_cluster = max_similarity
+                energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
 
         # prior on cluster size: prefer large clusters
         #for cluster in clustering:
