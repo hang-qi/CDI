@@ -111,12 +111,23 @@ class SWConfig(object):
             self.vertex_distributions, clustering)
 
         # likelihood
-        energy += -self._log_likelihood(clustering, new_vertex_distribution)
+        if self.level == 1:
+            energy += -self._log_likelihood(clustering, new_vertex_distribution)
+        else:
+            energy += - (self._log_likelihood(clustering, new_vertex_distribution)/2.0)
 
         # prior on time (for level 1 only)
         if self.level == 1:
             for cluster in clustering:
                 energy += -mpmath.log(self._time_prior(cluster))
+
+        # prior on similarity
+        #if self.level == 2:
+        #    for cluster in clustering:
+        #        for v in cluster:
+        #            self.vertex_distributions[v].get_top_word_ids(5, WORD_TYPES)
+        #        distance_in_cluster = 0
+        #        energy += -mpmath.log(mpmath.exp(distance_in_cluster - 1))
 
         # prior on cluster size: prefer large clusters
         #for cluster in clustering:
@@ -233,8 +244,8 @@ class TopicModel(object):
                 current_vertex_distributions, current_clustering, level_counter)
             plotter = _Plotter(config)
 
-            if level_counter == 1:
-                ground_truth = [{0, 4, 14, 27, 33, 10, 41, 65, 30, 49}, {5, 42, 12}, {1, 20, 11, 31, 51}, {6, 18, 23, 55, 29, 32, 50}, {7, 19}, {22, 61}, {13, 60}, {9, 26, 47}, {8, 25, 48}, {21, 68}, {2, 15, 54, 40, 46, 39}, {59, 16}, {35}, {17, 36, 58}, {34, 57}, {28}, {38}, {44}, {45}, {56, 73}, {62}, {63}, {64}, {66}, {67}, {69}, {70}, {71}, {72}, {74}, {37}, {3, 53}, {24, 52}, {43}]
+            if len(GROUND_TRUTHS) >= level_counter:
+                ground_truth = GROUND_TRUTHS[level_counter - 1]
                 plotter.set_ground_truth(ground_truth)
 
             # Add the very bottom level of tree.
@@ -242,15 +253,19 @@ class TopicModel(object):
                 self._initialize_tree(config.vertex_distributions)
                 self.topic_tree.print_hiearchy(labels=document_labels)
 
-            # Clustering by SW.
-            current_clustering = sw.sample(
-                config.graph_size,
-                config.edges,
-                config.edge_prob_func,
-                config.target_eval_func,
-                intermediate_callback=plotter.plot_callback,
-                initial_clustering=None,
-                monitor_statistics=config.monitor_statistics)
+            ### FIXME: This condition check is keep here temporarily for testing level 2.
+            if (level_counter == 1):
+                current_clustering = ground_truth
+            else:
+                # Clustering by SW.
+                current_clustering = sw.sample(
+                    config.graph_size,
+                    config.edges,
+                    config.edge_prob_func,
+                    config.target_eval_func,
+                    intermediate_callback=plotter.plot_callback,
+                    initial_clustering=None,
+                    monitor_statistics=config.monitor_statistics)
             current_vertex_distributions = config.vertex_distributions
 
             # Save current clustering as a new level to the tree.
