@@ -13,6 +13,7 @@ from preprocessing import vocabulary
 from algorithm import sw
 from model import word_similarity
 
+
 class _Plotter(object):
     def __init__(self, sw_config, ground_truth=None):
         self.iterations = []
@@ -66,17 +67,19 @@ class _Plotter(object):
 
 class SWConfig(object):
     """One shall inherit this class to give more specific configurations."""
-    def __init__(self, graph_size, edges, vertex_distributions, documents, level):
+    def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level):
         self.graph_size = graph_size
         self.edges = edges
         self.monitor_statistics = self.energy
         self.vertex_distributions = vertex_distributions
         self.level = level
         self.documents = documents
+        self.vocabularies = vocabularies
 
         # cache
         self._likelihood_cache = dict()
         self._kl_cache = dict()
+        self._distance_cache = dict()
 
     def _kl_key(self, s, t):
         return '{0}, {1}'.format(s, t)
@@ -114,7 +117,7 @@ class SWConfig(object):
         if self.level == 1:
             energy += -self._log_likelihood(clustering, new_vertex_distribution)
         else:
-            energy += - (self._log_likelihood(clustering, new_vertex_distribution)/2.0)
+            energy += -(self._log_likelihood(clustering, new_vertex_distribution)/2.0)
 
         # prior on time (for level 1 only)
         if self.level == 1:
@@ -128,7 +131,10 @@ class SWConfig(object):
         #   of top 5 words in the distribution. (measure each word type
         #   respectively and take average)
         if self.level == 2:
-            for cluster in clustering:
+            for c in clustering:
+                logging.debug('Similarity clustering: {0}'.format(clustering))
+                cluster = list(c)
+                logging.debug('Similarity cluster: {0}'.format(cluster))
                 if len(cluster) == 1:
                     similarity_in_cluster = 1.0
                 else:
@@ -139,20 +145,29 @@ class SWConfig(object):
                         # convert word ids to words using vocabulary
                         top_words = []
                         for word_type in WORD_TYPES:
-                            top_words.append([self.corpus.vocabularies[word_type].get_word(wid) for wid in top_word_ids[word_type]])
+                            top_words.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids[word_type]])
                         words_all.append(top_words)
 
                     # calculate pair wise similarity between vertexes
                     # select the maximum as the similarity of the cluster.
                     max_similarity = 0.0
                     for i in range(0, len(cluster) - 1):
-                        for j in range(1, len(cluster)):
-                            distance_i_j = 0.0
-                            for word_type in WORD_TYPES:
-                                distance_i_j += word_similarity.word_set_similarity(words_all[i][word_type], words_all[j][word_type])
-                            distance_i_j /= NUM_WORD_TYPES
+                        for j in range(i+1, len(cluster)):
+
+                            key = self._kl_key(cluster[i], cluster[j])
+                            if key in self._distance_cache:
+                                distance_i_j = self._distance_cache[key]
+                            else:
+                                distance_i_j = 0.0
+                                for word_type in WORD_TYPES:
+                                    distance_i_j += word_similarity.word_set_similarity(words_all[i][word_type], words_all[j][word_type])
+                                distance_i_j /= NUM_WORD_TYPE
+                                self._distance_cache[key] = distance_i_j
+
                             if distance_i_j > max_similarity:
                                 max_similarity = distance_i_j
+
+                            logging.debug('Similarity between {0}, {1} = {2}'.format(cluster[i], cluster[j], distance_i_j))
                     similarity_in_cluster = max_similarity
                 energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
 
@@ -161,7 +176,10 @@ class SWConfig(object):
         #    energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -25*mpmath.log(mpmath.exp(-len(clustering)))
+        if self.level == 1:
+            energy += -25*mpmath.log(mpmath.exp(-len(clustering)))
+        elif self.level == 2:
+            energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
@@ -249,6 +267,8 @@ class TopicModel(object):
     def _inference(self, new_document):
         """Inference and attach the new document to the current topic tree."""
         # TODO: This shall base on the likelihood and depth prior.
+        #   Search along the tree and evaluate a posterior probability at every
+        #   possible node to mount. Select the node with max posterior.
         pass
 
     def _reform_by_multilevel_sw(self):
@@ -363,7 +383,7 @@ class TopicModel(object):
         logging.debug('# of vertex: {0}'.format(graph_size))
         logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
 
-        config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, level=level_counter)
+        config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         return config
 
     def _need_reform(self):
