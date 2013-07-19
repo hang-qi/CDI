@@ -186,7 +186,7 @@ class SWConfigLevel2(SWConfig):
         return '{0}, {1}'.format(s, t)
 
     def _between_similarity_key(self, cluster_i, cluster_j):
-        list_i, list_j = list(cluster_i), list(clister_j)
+        list_i, list_j = list(cluster_i), list(cluster_j)
         list_i.sort()
         list_j.sort()
         if list_j > list_i:
