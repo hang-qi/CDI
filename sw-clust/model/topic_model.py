@@ -539,9 +539,9 @@ class _TreeNode(object):
         return (len(self._children) == 0)
 
     def synthesize_title(self, vocabularies):
-        [np1_top_ids, np2_top_ids] = self._vertex_distribution.get_top_word_ids(10, [WORD_TYPE_NP1, WORD_TYPE_NP2])
-        np1_words = [vocabularies[WORD_TYPE_NP1].get_word(wid) for wid in np1_top_ids]
-        np2_words = [vocabularies[WORD_TYPE_NP2].get_word(wid) for wid in np2_top_ids]
+        top_word_ids = self._vertex_distribution.get_top_word_ids(10, [WORD_TYPE_NP1, WORD_TYPE_NP2])
+        np1_words = [vocabularies[WORD_TYPE_NP1].get_word(wid) for wid in top_word_ids[WORD_TYPE_NP1]]
+        np2_words = [vocabularies[WORD_TYPE_NP2].get_word(wid) for wid in top_word_ids[WORD_TYPE_NP2]]
         union = [w for w in np1_words if w in np2_words]
 
         if len(union) > 0:
@@ -752,13 +752,13 @@ class _VertexDistribution:
         return distance
 
     def get_top_word_ids(self, num_words, word_types):
-        result_list = []
+        result_dict = dict()
         for word_type in word_types:
             if self.distributions[word_type] is None:
-                result_list.append([])
+                result_dict[word_type] = []
             else:
-                result_list.append(self.distributions[word_type].get_top_word_ids(num_words))
-        return result_list
+                result_dict[word_type] = self.distributions[word_type].get_top_word_ids(num_words)
+        return result_dict
 
 
 class _Distribution(object):
