@@ -251,13 +251,15 @@ class SWConfigLevel2(SWConfig):
                 # Read cached classification result
                 [category, prob] = self._classification_cache[new_vertex_distribution[i]]
             else:
-                word_ids_all_type = []
+                # Convert document or vertex distribution to word list
+                word_list_all_type = [[], [], []]
                 for doc_id in new_vertex_distribution[i].document_ids:
-                    # TODO: Convert document or vertex distribution to word list
-                    pass
+                    for word_type in WORD_TYPES:
+                        words = [self.vocabularies[word_type].get_word(wid) for wid in self.document[doc_id].word_ids[word_type]]
+                        word_list_all_type[word_type].extend(words)
 
                 # Classify
-                [category, prob] = self._classifier.classify(word_ids_all_type)
+                [category, prob] = self._classifier.classify(word_list_all_type)
                 self._classification_cache[new_vertex_distribution[i]] = [category, prob]
             category_set.add(category)
         return len(category_set)
