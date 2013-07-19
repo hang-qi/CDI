@@ -125,9 +125,10 @@ class SegmentationModel(object):
         max_prob = -1.0
         label = -1
         for i in range(0, self.class_num):
-            prob = mpmath.mpf(np1_cat_prob.get_value(0, i)) * mpmath.mpf(vp_cat_prob.get_value(0, i)) * mpmath.mpf(np2_cat_prob.get_value(0, i))
+            #prob = mpmath.mpf(np1_cat_prob.get_value(0, i)) * mpmath.mpf(vp_cat_prob.get_value(0, i)) * mpmath.mpf(np2_cat_prob.get_value(0, i))
+            prob = mpmath.mpf(np1_cat_prob[i]) * mpmath.mpf(vp_cat_prob[i]) * mpmath.mpf(np2_cat_prob[i])
             if prob != 0:
-                prob /= mpmath.mpf(self.class_prior.get_value(0, i) * self.class_prior.get_value(0, i))
+                prob /= mpmath.mpf(self.class_prior[i] * self.class_prior[i])
             if prob > max_prob:
                 max_prob = prob
                 label = i
@@ -142,16 +143,23 @@ class SegmentationModel(object):
             prob_vp = mpmath.mpf(1.0)
             prob_np2 = mpmath.mpf(1.0)
             for j in current_seg:
-                prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i))
-                prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i))
-                prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i))
-            prior = mpmath.mpf(self.class_prior.get_value(0, i))
+                #prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i))
+                prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat[i])
+                #prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i))
+                prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat[i])
+                #prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i))
+                prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat[i])
+            #prior = mpmath.mpf(self.class_prior.get_value(0, i))
+            prior = mpmath.mpf(self.class_prior[i])
             prob_np1 *= prior
             prob_vp *= prior
             prob_np2 *= prior
-            np1_cat_prob.set_value(0, i, prob_np1)
-            vp_cat_prob.set_value(0, i, prob_vp)
-            np2_cat_prob.set_value(0, i, prob_np2)
+            #np1_cat_prob.set_value(0, i, prob_np1)
+            np1_cat_prob[i] = prob_np1
+            #vp_cat_prob.set_value(0, i, prob_vp)
+            vp_cat_prob[i] = prob_vp
+            #np2_cat_prob.set_value(0, i, prob_np2)
+            np2_cat_prob[i] = prob_np2
         return [np1_cat_prob, vp_cat_prob, np2_cat_prob]
 
     def calculate_prob_CatGivenWord(self, words, voc, voc_prob):
@@ -166,9 +174,13 @@ class SegmentationModel(object):
             prob = 1
             for wid in word_id:
                 if wid != -1:
-                    if voc_prob.get_value(wid, i) == 0:
+                    #if voc_prob.get_value(wid, i) == 0:
+                    if voc_prob[wid, i] == 0:
                         print('Error')
-                    prob *= voc_prob.get_value(wid, i)
-            prob *= self.class_prior.get_value(0, i)
-            prob_all_cats.set_value(0, i, prob)
+                    #prob *= voc_prob.get_value(wid, i)
+                    prob *= voc_prob[wid, i]
+            #prob *= self.class_prior.get_value(0, i)
+            prob *= self.class_prior[i]
+            #prob_all_cats.set_value(0, i, prob)
+            prob_all_cats[i] = prob
         return prob_all_cats

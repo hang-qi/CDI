@@ -52,6 +52,8 @@ class Nodes(object):
                 if wid != -1:
                     if voc_prob.get_value(wid, i) == 0:
                         print('Error')
-                    prob *= mpmath.mpf(voc_prob.get_value(wid, i))
-            prob_all_cats.set_value(0, i, prob)
+                    #prob *= mpmath.mpf(voc_prob.get_value(wid, i))
+                    prob *= mpmath.mpf(voc_prob[wid, i])
+            #prob_all_cats.set_value(0, i, prob)
+            prob_all_cats[i] = prob
         return prob_all_cats
