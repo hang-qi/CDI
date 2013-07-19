@@ -7,7 +7,7 @@ import mpmath
 from model import probability
 
 
-class Statistics(object):
+class SegmentationModel(object):
     def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob, length_prior, seg_num_prior):
         self.all_nodes = nodes
         self.class_num = cnum

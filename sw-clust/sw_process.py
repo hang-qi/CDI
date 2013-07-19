@@ -1,7 +1,7 @@
 # The whole SW Process
 from algorithm import sw
 from preprocessing import readingfiles
-from statistics.statistics import Statistics
+from model.segmentation_model import SegmentationModel
 
 import matplotlib.pyplot as plt
 
@@ -77,7 +77,7 @@ def SW_Process():
         j = i + 1
         edges.append([i, j])
 
-    stat = Statistics(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior)
+    stat = SegmentationModel(all_nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior)
     true_eval = stat.calculate_energy(true_segment)
     plotter = Plotter(stat, true_segment, true_eval)
 
