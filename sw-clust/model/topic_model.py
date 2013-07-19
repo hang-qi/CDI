@@ -174,7 +174,7 @@ class SWConfig(object):
 class SWConfigLevel2(SWConfig):
     """SWConfig for level 2."""
     def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level, classifier):
-        super(SWConfigLevel2, self).__init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level)
+        super(SWConfigLevel2, self).__init__(graph_size, edges, vertex_distributions, documents, vocabularies, level)
         self._similarity_cache = dict()
         self._classification_cache = dict()
         self._classifier = classifier
@@ -237,8 +237,9 @@ class SWConfigLevel2(SWConfig):
             energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
 
         # classification: prefer small number of categories.
-        num_classes = self._calculate_num_of_categories(clustering)
-        energy += -20*mpmath.log(mpmath.exp(-num_classes))
+        if self._classifier is not None:
+            num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
+            energy += -20*mpmath.log(mpmath.exp(-num_classes))
 
         # prior on clustering complexity: prefer small number of clusters.
         energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
@@ -246,7 +247,7 @@ class SWConfigLevel2(SWConfig):
 
     def _calculate_num_of_categories(self, clustering, new_vertex_distribution):
         category_set = set()
-        for i, cluster in clustering:
+        for i, cluster in enumerate(clustering):
             if new_vertex_distribution[i] in self._classification_cache:
                 # Read cached classification result
                 [category, prob] = self._classification_cache[new_vertex_distribution[i]]
@@ -255,7 +256,7 @@ class SWConfigLevel2(SWConfig):
                 word_list_all_type = [[], [], []]
                 for doc_id in new_vertex_distribution[i].document_ids:
                     for word_type in WORD_TYPES:
-                        words = [self.vocabularies[word_type].get_word(wid) for wid in self.document[doc_id].word_ids[word_type]]
+                        words = [self.vocabularies[word_type].get_word(wid) for wid in self.documents[doc_id].word_ids[word_type]]
                         word_list_all_type[word_type].extend(words)
 
                 # Classify
@@ -277,10 +278,11 @@ def _combine_vertex_distributions_given_clustering(current_vertex_distributions,
 
 
 class TopicModel(object):
-    def __init__(self):
+    def __init__(self, classifier_model_filename=None):
         self.corpus = None
         self.topic_tree = _Tree()
         self.date_range = None
+        self._classifier_model_file = classifier_model_filename
         #self.monitor = ModelMonitor()
         pass
 
@@ -426,7 +428,10 @@ class TopicModel(object):
             config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         elif level_counter == 2:
             # TODO: load classifier and initialize the object
-            classifier = Classifier()
+            classifier = None
+            if self._classifier_model_file is not None:
+                classifier = Classifier()
+                classifier.load(self._classifier_model_file)
             config = SWConfigLevel2(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
         return config
 
