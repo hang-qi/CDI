@@ -177,12 +177,21 @@ class SWConfigLevel2(SWConfig):
         super(SWConfigLevel2, self).__init__(graph_size, edges, vertex_distributions, documents, vocabularies, level)
         self._similarity_cache = dict()
         self._classification_cache = dict()
+        self._between_similarity_cache = dict()
         self._classifier = classifier
 
     def _similarity_key(self, s, t):
         if s > t:
             s, t = t, s
         return '{0}, {1}'.format(s, t)
+
+    def _between_similarity_key(self, cluster_i, cluster_j):
+        list_i, list_j = list(cluster_i), list(clister_j)
+        list_i.sort()
+        list_j.sort()
+        if list_j > list_i:
+            list_i, list_j = list_j, list_i
+        return str(list_i) + str(list_j)
 
     def energy(self, clustering):
         energy = 0.0
@@ -206,12 +215,8 @@ class SWConfigLevel2(SWConfig):
             else:
                 words_all = []
                 for v in cluster:
-                    # get top 10 word ids for given types
-                    top_word_ids = self.vertex_distributions[v].get_top_word_ids(10, WORD_TYPES)
-                    # convert word ids to words using vocabulary
-                    top_words = []
-                    for word_type in WORD_TYPES:
-                        top_words.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids[word_type]])
+                    # get top 10 words
+                    top_words = self._get_top_words(self.vertex_distributions[v], 10, WORD_TYPES)
                     words_all.append(top_words)
 
                 # calculate pair wise similarity between vertexes
@@ -219,7 +224,6 @@ class SWConfigLevel2(SWConfig):
                 min_similarity = 1.0
                 for i in range(0, len(cluster) - 1):
                     for j in range(i+1, len(cluster)):
-
                         key = self._similarity_key(cluster[i], cluster[j])
                         if key in self._similarity_cache:
                             distance_i_j = self._similarity_cache[key]
@@ -240,40 +244,52 @@ class SWConfigLevel2(SWConfig):
         #  - For each pair of clusters, we want to find the pair of words with maximum similarity
         #    and prefer this similarity value to be small.
         if len(clustering) > 1:
-            # TODO: Cache word transform.
-            # Get top words for each cluster.
-            types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
-            top_words_for_all_clusters = []
-            for i, cluster in enumerate(clustering):
-                # Select top 10 word ids
-                top_word_ids_all_type = self.new_vertex_distribution[i].get_top_word_ids(10, types_of_interest)
-
-                # Convert word id to words
-                top_words_all_type = []
-                for word_type in types_of_interest:
-                    top_words_all_type.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]])
-                top_words_for_all_clusters.append(top_words_all_type)
-
-            # TODO: Cache the similarity.
             # Calculate pair-wise similarity.
+            temporary_word_cache = dict()
             for i in range(0, len(clustering)-1):
+                if new_vertex_distribution[i] in temporary_word_cache:
+                    words_i = temporary_word_cache[new_vertex_distribution[i]]
+                else:
+                    words_i = self._get_top_words(new_vertex_distribution[i], 10, types_of_interest)
+                    temporary_word_cache[new_vertex_distribution[i]] = words_i
+
                 for j in range(i+1, len(clustering)):
-                    max_similarity = 0.0
-                    for word_type in types_of_interest:
-                        # TODO: implement this function. if two words are same return 1
-                        similarity = word_similarity.find_max_similarity(top_words_all_type[i][word_type], top_words_all_type[j][word_type])
-                        if similarity > max_similarity:
-                            max_similarity = similarity
+                    if new_vertex_distribution[j] in temporary_word_cache:
+                        words_j = temporary_word_cache[new_vertex_distribution[j]]
+                    else:
+                        words_j = self._get_top_words(new_vertex_distribution[j], 10, types_of_interest)
+                        temporary_word_cache[new_vertex_distribution[i]] = words_j
+
+                    key = self._between_similarity_key(clustering[i], clustering[j])
+                    if key in self._between_similarity_cache:
+                        max_similarity = self._between_similarity_cache[key]
+                    else:
+                        max_similarity = 0.0
+                        for word_type in types_of_interest:
+                            similarity = word_similarity.word_set_similarity(words_i[word_type], words_j[word_type])
+                            if similarity > max_similarity:
+                                max_similarity = similarity
+                        self._between_similarity_cache[key] = max_similarity
                     energy += -mpmath.log(mpmath.exp(-max_similarity))
 
         # classification: prefer small number of categories.
-        if self._classifier is not None:
-            num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
-            energy += -20*mpmath.log(mpmath.exp(-num_classes))
+        #if self._classifier is not None:
+        #    num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
+        #    energy += -20*mpmath.log(mpmath.exp(-num_classes))
 
         # prior on clustering complexity: prefer small number of clusters.
         energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
+
+    def _get_top_words(self, vertex_distribution, num_words, type_of_interest):
+        # Select top 10 word ids
+        top_word_ids_all_type = vertex_distribution.get_top_word_ids(10, types_of_interest)
+
+        # Convert word id to words
+        words_all_type = []
+        for word_type in types_of_interest:
+            words_all_type.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]])
+        return words_all_type
 
     def _calculate_num_of_categories(self, clustering, new_vertex_distribution):
         category_set = set()
