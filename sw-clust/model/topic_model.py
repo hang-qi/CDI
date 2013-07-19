@@ -287,9 +287,9 @@ class SWConfigLevel2(SWConfig):
         top_word_ids_all_type = vertex_distribution.get_top_word_ids(10, types_of_interest)
 
         # Convert word id to words
-        words_all_type = []
+        words_all_type = dict()
         for word_type in types_of_interest:
-            words_all_type.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]])
+            words_all_type[word_type] = [self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]]
         return words_all_type
 
     def _calculate_num_of_categories(self, clustering, new_vertex_distribution):
