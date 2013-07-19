@@ -132,16 +132,16 @@ class SWConfig(object):
         #   respectively and take average)
         if self.level == 2:
             for c in clustering:
-                logging.debug('Similarity clustering: {0}'.format(clustering))
+                #logging.debug('Similarity clustering: {0}'.format(clustering))
                 cluster = list(c)
-                logging.debug('Similarity cluster: {0}'.format(cluster))
+                #logging.debug('Similarity cluster: {0}'.format(cluster))
                 if len(cluster) == 1:
                     similarity_in_cluster = 1.0
                 else:
                     words_all = []
                     for v in cluster:
                         # get top 5 word ids for given types
-                        top_word_ids = self.vertex_distributions[v].get_top_word_ids(5, WORD_TYPES)
+                        top_word_ids = self.vertex_distributions[v].get_top_word_ids(10, WORD_TYPES)
                         # convert word ids to words using vocabulary
                         top_words = []
                         for word_type in WORD_TYPES:
@@ -150,7 +150,8 @@ class SWConfig(object):
 
                     # calculate pair wise similarity between vertexes
                     # select the maximum as the similarity of the cluster.
-                    max_similarity = 0.0
+                    #max_similarity = 0.0
+                    min_similarity = 1.0
                     for i in range(0, len(cluster) - 1):
                         for j in range(i+1, len(cluster)):
 
@@ -159,16 +160,18 @@ class SWConfig(object):
                                 distance_i_j = self._distance_cache[key]
                             else:
                                 distance_i_j = 0.0
-                                for word_type in WORD_TYPES:
+                                for word_type in [0, 2]:
                                     distance_i_j += word_similarity.word_set_similarity(words_all[i][word_type], words_all[j][word_type])
-                                distance_i_j /= NUM_WORD_TYPE
+                                distance_i_j /= 2
                                 self._distance_cache[key] = distance_i_j
+                                logging.debug('Similarity between {0}, {1} = {2}'.format(cluster[i], cluster[j], distance_i_j))
 
-                            if distance_i_j > max_similarity:
-                                max_similarity = distance_i_j
-
-                            logging.debug('Similarity between {0}, {1} = {2}'.format(cluster[i], cluster[j], distance_i_j))
-                    similarity_in_cluster = max_similarity
+                            #if distance_i_j > max_similarity:
+                            #    max_similarity = distance_i_j
+                            if distance_i_j < min_similarity:
+                                min_similarity = distance_i_j
+                    #similarity_in_cluster = max_similarity
+                    similarity_in_cluster = min_similarity
                 energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
 
         # prior on cluster size: prefer large clusters
@@ -179,7 +182,7 @@ class SWConfig(object):
         if self.level == 1:
             energy += -25*mpmath.log(mpmath.exp(-len(clustering)))
         elif self.level == 2:
-            energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
+            energy += -70*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
