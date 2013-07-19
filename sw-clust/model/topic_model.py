@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 from model import *
 from model import word_similarity
-from model import classifier
+from model.classifier import Classifier
 from preprocessing import vocabulary
 from algorithm import sw
 
@@ -425,7 +425,9 @@ class TopicModel(object):
         if level_counter == 1:
             config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         elif level_counter == 2:
-            config = SWConfigLevel2(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
+            # TODO: load classifier and initialize the object
+            classifier = Classifier()
+            config = SWConfigLevel2(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
         return config
 
     def _need_reform(self):
