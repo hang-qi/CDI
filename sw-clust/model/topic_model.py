@@ -8,9 +8,10 @@ from scipy.stats import norm
 import matplotlib.pyplot as plt
 
 from model import *
+from model import word_similarity
+from model import classifier
 from preprocessing import vocabulary
 from algorithm import sw
-from model import word_similarity
 
 
 class _Plotter(object):
@@ -172,10 +173,11 @@ class SWConfig(object):
 
 class SWConfigLevel2(SWConfig):
     """SWConfig for level 2."""
-    def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level):
+    def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level, classifier):
         super(SWConfigLevel2, self).__init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level)
         self._similarity_cache = dict()
         self._classification_cache = dict()
+        self._classifier = classifier
 
     def _similarity_key(self, s, t):
         if s > t:
@@ -249,8 +251,13 @@ class SWConfigLevel2(SWConfig):
                 # Read cached classification result
                 [category, prob] = self._classification_cache[new_vertex_distribution[i]]
             else:
-                # Assign class label to the cluster
-                [category, prob] = self.classification(new_vertex_distribution[i])
+                word_ids_all_type = []
+                for doc_id in new_vertex_distribution[i].document_ids:
+                    # TODO: Convert document or vertex distribution to word list
+                    pass
+
+                # Classify
+                [category, prob] = self._classifier.classify(word_ids_all_type)
                 self._classification_cache[new_vertex_distribution[i]] = [category, prob]
             category_set.add(category)
         return len(category_set)
