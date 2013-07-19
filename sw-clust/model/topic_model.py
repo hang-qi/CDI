@@ -236,6 +236,36 @@ class SWConfigLevel2(SWConfig):
                 similarity_in_cluster = min_similarity
             energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
 
+        # Between cluster similarity:
+        #  - For each pair of clusters, we want to find the pair of words with maximum similarity
+        #    and prefer this similarity value to be small.
+        if len(clustering) > 1:
+            # TODO: Cache word transform.
+            # Get top words for each cluster.
+            types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
+            top_words_for_all_clusters = []
+            for i, cluster in enumerate(clustering):
+                # Select top 10 word ids
+                top_word_ids_all_type = self.new_vertex_distribution[i].get_top_word_ids(10, types_of_interest)
+
+                # Convert word id to words
+                top_words_all_type = []
+                for word_type in types_of_interest:
+                    top_words_all_type.append([self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]])
+                top_words_for_all_clusters.append(top_words_all_type)
+
+            # TODO: Cache the similarity.
+            # Calculate pair-wise similarity.
+            for i in range(0, len(clustering)-1):
+                for j in range(i+1, len(clustering)):
+                    max_similarity = 0.0
+                    for word_type in types_of_interest:
+                        # TODO: implement this function. if two words are same return 1
+                        similarity = word_similarity.find_max_similarity(top_words_all_type[i][word_type], top_words_all_type[j][word_type])
+                        if similarity > max_similarity:
+                            max_similarity = similarity
+                    energy += -mpmath.log(mpmath.exp(-max_similarity))
+
         # classification: prefer small number of categories.
         if self._classifier is not None:
             num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
