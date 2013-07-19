@@ -243,6 +243,7 @@ class SWConfigLevel2(SWConfig):
         # Between cluster similarity:
         #  - For each pair of clusters, we want to find the pair of words with maximum similarity
         #    and prefer this similarity value to be small.
+        types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
         if len(clustering) > 1:
             # Calculate pair-wise similarity.
             temporary_word_cache = dict()
@@ -281,7 +282,7 @@ class SWConfigLevel2(SWConfig):
         energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
 
-    def _get_top_words(self, vertex_distribution, num_words, type_of_interest):
+    def _get_top_words(self, vertex_distribution, num_words, types_of_interest):
         # Select top 10 word ids
         top_word_ids_all_type = vertex_distribution.get_top_word_ids(10, types_of_interest)
 
