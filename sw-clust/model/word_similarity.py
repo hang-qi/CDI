@@ -1,4 +1,5 @@
 from nltk.corpus import wordnet as wn
+import numpy
 
 
 def calculate_word_similarity_using_wordnet(word1, word2):
@@ -12,27 +13,27 @@ def calculate_word_similarity_using_wordnet(word1, word2):
     return max_similarity
 
 
-def calculate_words_similarity(words1, words2):
+def word_set_similarity(words1, words2):
     """Calculate the similarity of one word set to the other"""
-    all_word_similarity = []
-    for word1 in words1:
-        sim_max = 0
-        for word2 in words2:
+    similarity_between_words = numpy.empty((len(words1), len(words2)))
+    for i, word1 in enumerate(words1):
+        for j, word2 in enumerate(words2):
             sim = calculate_word_similarity_using_wordnet(word1, word2)
-            if sim > sim_max:
-                sim_max = sim
-        all_word_similarity.append(sim_max)
-    all_word_similarity_sorted = sorted(all_word_similarity, key=float, reverse=True)
-    word_sim_num = int(len(words1)/2)
-    result = 0
-    for i in range(0, word_sim_num):
-        result += all_word_similarity_sorted[i]
-    result /= word_sim_num
-    return result
+            similarity_between_words[i][j] = sim
 
+    all_word_similarity_12 = numpy.amax(similarity_between_words, axis=1)
+    all_word_similarity_21 = numpy.amax(similarity_between_words, axis=0)
+    all_word_similarity_12_sort = sorted(all_word_similarity_12, key=float, reverse=True)
+    all_word_similarity_21_sort = sorted(all_word_similarity_21, key=float, reverse=True)
 
-def word_set_similarity(word_set1, word_set2):
-    """Give the similarity score between two word sets"""
-    similarity12 = calculate_words_similarity(word_set1, word_set2)
-    similarity21 = calculate_words_similarity(word_set2, word_set1)
-    return (similarity12 + similarity21)/2
+    word_sim_num1 = int(len(words1)/2)
+    word_sim_num2 = int(len(words2)/2)
+    result1 = 0
+    for i in range(0, word_sim_num1):
+        result1 += all_word_similarity_12_sort[i]
+    result1 /= word_sim_num1
+    result2 = 0
+    for j in range(0, word_sim_num2):
+        result2 += all_word_similarity_21_sort[j]
+    result2 /= word_sim_num2
+    return (result1 + result2)/2
