@@ -1,6 +1,5 @@
 import sys
 import logging
-import threading
 sys.path.append('..')
 
 import numpy as np
@@ -196,27 +195,15 @@ class SWConfigLevel2(SWConfig):
             top_words = self._get_top_words(self.vertex_distributions[s], 10, types_of_interest)
             words_all_types.append(top_words)
 
-        threads = []
-        #for year in range(2006, 2014):
         for s in range(0, self.graph_size-1):
-                t = threading.Thread(target=self._calculate_similarity, args=(s, self.graph_size, types_of_interest, words_all_types))
-                t.daemon = True
-                t.start()
-                threads.append(t)
-        for t in threads:
-            t.join()
-
-    def _calculate_similarity(self, s, graph_size, types_of_interest, words_all_types):
-        for t in range(s+1, graph_size):
-            key = self._similarity_key(s, t)
-            distance_s_t = 0.0
-            for word_type in types_of_interest:
-                distance_s_t += word_similarity.word_set_similarity(words_all_types[s][word_type], words_all_types[t][word_type])
-            distance_s_t /= len(types_of_interest)
-
-            self._similarity_cache[key] = distance_s_t
-
-            logging.debug('Cache vertex similarity {0}, {1} = {2}'.format(s, t, distance_s_t))
+            for t in range(s+1, self.graph_size):
+                key = self._similarity_key(s, t)
+                distance_s_t = 0.0
+                for word_type in types_of_interest:
+                    distance_s_t += word_similarity.word_set_similarity(words_all_types[s][word_type], words_all_types[t][word_type])
+                distance_s_t /= len(types_of_interest)
+                self._similarity_cache[key] = distance_s_t
+                logging.debug('Cache vertex similarity {0}, {1} = {2}'.format(s, t, distance_s_t))
 
     def _between_similarity_key(self, cluster_i, cluster_j):
         list_i, list_j = list(cluster_i), list(cluster_j)
