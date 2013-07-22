@@ -1,5 +1,6 @@
 import sys
 import logging
+import threading
 sys.path.append('..')
 
 import numpy as np
@@ -176,14 +177,46 @@ class SWConfigLevel2(SWConfig):
     def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level, classifier):
         super(SWConfigLevel2, self).__init__(graph_size, edges, vertex_distributions, documents, vocabularies, level)
         self._similarity_cache = dict()
-        self._classification_cache = dict()
+        self._within_similarity_cache = dict()
         self._between_similarity_cache = dict()
+        self._classification_cache = dict()
         self._classifier = classifier
+        self._cache_similarity()
 
     def _similarity_key(self, s, t):
         if s > t:
             s, t = t, s
         return '{0}, {1}'.format(s, t)
+
+    def _cache_similarity(self):
+        types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
+        words_all_types = []
+        for s in range(0, self.graph_size):
+            # get top 10 words
+            top_words = self._get_top_words(self.vertex_distributions[s], 10, types_of_interest)
+            words_all_types.append(top_words)
+
+        threads = []
+        #for year in range(2006, 2014):
+        for s in range(0, self.graph_size-1):
+                t = threading.Thread(target=self._calculate_similarity, args=(s, self.graph_size, types_of_interest, words_all_types))
+                t.daemon = True
+                t.start()
+                threads.append(t)
+        for t in threads:
+            t.join()
+
+    def _calculate_similarity(self, s, graph_size, types_of_interest, words_all_types):
+        for t in range(s+1, graph_size):
+            key = self._similarity_key(s, t)
+            distance_s_t = 0.0
+            for word_type in types_of_interest:
+                distance_s_t += word_similarity.word_set_similarity(words_all_types[s][word_type], words_all_types[t][word_type])
+            distance_s_t /= len(types_of_interest)
+
+            self._similarity_cache[key] = distance_s_t
+
+            logging.debug('Cache vertex similarity {0}, {1} = {2}'.format(s, t, distance_s_t))
 
     def _between_similarity_key(self, cluster_i, cluster_j):
         list_i, list_j = list(cluster_i), list(cluster_j)
@@ -192,6 +225,29 @@ class SWConfigLevel2(SWConfig):
         if list_j > list_i:
             list_i, list_j = list_j, list_i
         return str(list_i) + str(list_j)
+
+    def _min_similarity_within_cluster(self, cluster_id, cluster_vertex_set, new_vertex_distribution):
+        cluster = list(cluster_vertex_set)
+        if len(cluster) == 1:
+            min_similarity_within_cluster = 1.0
+        else:
+            if new_vertex_distribution[cluster_id] in self._within_similarity_cache:
+                min_similarity_within_cluster = self._within_similarity_cache[new_vertex_distribution[cluster_id]]
+            else:
+                # calculate pair wise similarity between vertexes
+                min_within_similarity = 1.0
+                for i in range(0, len(cluster) - 1):
+                    for j in range(i+1, len(cluster)):
+                        key = self._similarity_key(cluster[i], cluster[j])
+                        assert(key in self._similarity_cache)
+                        distance_i_j = self._similarity_cache[key]
+
+                        if distance_i_j < min_within_similarity:
+                            min_within_similarity = distance_i_j
+                min_similarity_within_cluster = min_within_similarity
+                logging.debug('Within min similarity {0} = {1}'.format(cluster_vertex_set, min_similarity_within_cluster))
+                self._within_similarity_cache[new_vertex_distribution[cluster_id]] = min_similarity_within_cluster
+        return min_similarity_within_cluster
 
     def energy(self, clustering):
         energy = 0.0
@@ -204,79 +260,39 @@ class SWConfigLevel2(SWConfig):
         # prior on similarity:
         # We prefer the cluster whose minimum similarity is large.
         # - the similarity of a pair of vertexes is measured by the similarity
-        #   of top 5 words in the distribution. (measure each word type
+        #   of top 10 words in the distribution. (measure each word type
         #   respectively and take average)
-        for c in clustering:
-            #logging.debug('Similarity clustering: {0}'.format(clustering))
-            cluster = list(c)
-            #logging.debug('Similarity cluster: {0}'.format(cluster))
-            if len(cluster) == 1:
-                similarity_in_cluster = 1.0
-            else:
-                words_all = []
-                for v in cluster:
-                    # get top 10 words
-                    top_words = self._get_top_words(self.vertex_distributions[v], 10, WORD_TYPES)
-                    words_all.append(top_words)
-
-                # calculate pair wise similarity between vertexes
-                # select the maximum as the similarity of the cluster.
-                min_similarity = 1.0
-                for i in range(0, len(cluster) - 1):
-                    for j in range(i+1, len(cluster)):
-                        key = self._similarity_key(cluster[i], cluster[j])
-                        if key in self._similarity_cache:
-                            distance_i_j = self._similarity_cache[key]
-                        else:
-                            distance_i_j = 0.0
-                            for word_type in [WORD_TYPE_NP1, WORD_TYPE_NP2]:
-                                distance_i_j += word_similarity.word_set_similarity(words_all[i][word_type], words_all[j][word_type])
-                            distance_i_j /= 2
-                            self._similarity_cache[key] = distance_i_j
-                            logging.debug('Similarity between {0}, {1} = {2}'.format(cluster[i], cluster[j], distance_i_j))
-
-                        if distance_i_j < min_similarity:
-                            min_similarity = distance_i_j
-                similarity_in_cluster = min_similarity
-            energy += -mpmath.log(mpmath.exp(similarity_in_cluster - 1))
+        for cluster_id, cluster_vertex_set in enumerate(clustering):
+            min_similarity_within_cluster = self._min_similarity_within_cluster(cluster_id, cluster_vertex_set, new_vertex_distribution)
+            energy += -mpmath.log(mpmath.exp(min_similarity_within_cluster - 1))
 
         # Between cluster similarity:
         #  - For each pair of clusters, we want to find the pair of words with maximum similarity
         #    and prefer this similarity value to be small.
-        types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
         if len(clustering) > 1:
-            # Calculate pair-wise similarity.
-            temporary_word_cache = dict()
             for i in range(0, len(clustering)-1):
-                if new_vertex_distribution[i] in temporary_word_cache:
-                    words_i = temporary_word_cache[new_vertex_distribution[i]]
-                else:
-                    words_i = self._get_top_words(new_vertex_distribution[i], 10, types_of_interest)
-                    temporary_word_cache[new_vertex_distribution[i]] = words_i
-
+                cluster_i = list(clustering[i])
                 for j in range(i+1, len(clustering)):
-                    if new_vertex_distribution[j] in temporary_word_cache:
-                        words_j = temporary_word_cache[new_vertex_distribution[j]]
-                    else:
-                        words_j = self._get_top_words(new_vertex_distribution[j], 10, types_of_interest)
-                        temporary_word_cache[new_vertex_distribution[i]] = words_j
+                    cluster_j = list(clustering[j])
 
-                    key = self._between_similarity_key(clustering[i], clustering[j])
-                    if key in self._between_similarity_cache:
-                        max_similarity = self._between_similarity_cache[key]
+                    between_key = self._between_similarity_key(clustering[i], clustering[j])
+                    if between_key in self._between_similarity_cache:
+                        max_similarity_between_clusters = self._between_similarity_cache[between_key]
                     else:
+                        # Calculate the most similar words between two clusters (cluster_i and cluster_j)
                         max_similarity = 0.0
-                        for word_type in types_of_interest:
-                            similarity = word_similarity.word_set_similarity(words_i[word_type], words_j[word_type])
-                            if similarity > max_similarity:
-                                max_similarity = similarity
-                        self._between_similarity_cache[key] = max_similarity
-                    energy += -mpmath.log(mpmath.exp(-max_similarity))
+                        for v in range(0, len(cluster_i)):
+                            for u in range(0, len(cluster_j)):
+                                key = self._similarity_key(cluster_i[v], cluster_j[u])
+                                assert(key in self._similarity_cache)
+                                distance_v_u = self._similarity_cache[key]
+                                if distance_v_u > max_similarity:
+                                    max_similarity = distance_v_u
+                        max_similarity_between_clusters = max_similarity
+                        logging.debug('Between max similarity {0}, {1} = {2}'.format(clustering[i], clustering[j], max_similarity_between_clusters))
+                        self._between_similarity_cache[between_key] = max_similarity_between_clusters
 
-        # classification: prefer small number of categories.
-        #if self._classifier is not None:
-        #    num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
-        #    energy += -20*mpmath.log(mpmath.exp(-num_classes))
+                    energy += -mpmath.log(mpmath.exp(-max_similarity_between_clusters))
 
         # prior on clustering complexity: prefer small number of clusters.
         energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
