@@ -277,7 +277,7 @@ class SWConfigLevel2(SWConfig):
         return max_similarity_between_clusters
 
     def energy(self, clustering):
-        energy = 0.0
+        energy = mpmath.mpf(0.0)
         new_vertex_distribution = _combine_vertex_distributions_given_clustering(
             self.vertex_distributions, clustering)
 
@@ -289,7 +289,7 @@ class SWConfigLevel2(SWConfig):
         # - the similarity of a pair of vertexes is measured by the similarity
         #   of top 10 words in the distribution. (measure each word type
         #   respectively and take average)
-        intra_cluster_energy = 0.0
+        intra_cluster_energy = mpmath.mpf(0.0)
         for cluster_id, cluster_vertex_set in enumerate(clustering):
             min_similarity_within_cluster = self._min_similarity_within_cluster(cluster_vertex_set, new_vertex_distribution[cluster_id])
             intra_cluster_energy += -mpmath.log(mpmath.exp(min_similarity_within_cluster - 1))
@@ -297,7 +297,7 @@ class SWConfigLevel2(SWConfig):
         # Between cluster similarity:
         #  - For each pair of clusters, we want to find the pair of words with maximum similarity
         #    and prefer this similarity value to be small.
-        inter_cluster_energy = 0.0
+        inter_cluster_energy = mpmath.mpf(0.0)
         if len(clustering) > 1:
             for i in range(0, len(clustering)-1):
                 for j in range(i+1, len(clustering)):
@@ -307,7 +307,7 @@ class SWConfigLevel2(SWConfig):
         # prior on clustering complexity: prefer small number of clusters.
         length_energy = -mpmath.log(mpmath.exp(-len(clustering)))
 
-        energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 50*length_energy
+        energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 50.0*length_energy
         logging.debug('ENERGY: {0:12.6f}\t{1:12.6f}\t{2:12.6f}\t{3:12.6f}'.format(
             likelihood_energy.__float__(),
             intra_cluster_energy.__float__(),
@@ -376,7 +376,7 @@ class TopicModel(object):
             # Inference and attach to trees
             for document in new_corpus.documents:
                 self._inference(document)
-                self.corpus.add_document(document, include_ocr=True)
+                self.corpus.add_document(document)
 
         # Reform the tree if necessary.
         if (self._need_reform()):
@@ -450,7 +450,7 @@ class TopicModel(object):
             vertex_distribution = _VertexDistribution()
             vertex_distribution.document_ids = [doc_id]
             for word_type in WORD_TYPES:
-                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type)
+                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type, include_ocr=True)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
 
@@ -644,30 +644,32 @@ class Corpus(object):
     def __getitem__(self, document_id):
         return self.documents[document_id]
 
-    def get_dococument_distribution(self, doc_id, word_type):
+    def get_dococument_distribution(self, doc_id, word_type, include_ocr=False):
         histogram = np.zeros(self.vocabulary_size(word_type))
         for word_id in self.documents[doc_id].word_ids[word_type]:
             histogram[word_id] += 1
+        # Include OCR.
+        if include_ocr:
+            for ocr_word in self.documents[doc_id].ocr_words:
+                if ocr_word in self.vocabularies[word_type]:
+                    ocr_word_id = self.vocabularies[word_type].get_word_index(ocr_word)
+                    self.documents[doc_id].word_ids[word_type].append(ocr_word_id)
+                    histogram[ocr_word_id] += 1
+
         return _Distribution(histogram)
 
-    def add_document(self, original_doc, include_ocr=False):
+    def add_document(self, original_doc):
         """Convert the document to feature and save into document list.
         Adding a document containing words not seen before will also extend the vocabulary of the corpus."""
-        document_feature = self._convert_doc_to_feature(original_doc, include_ocr)
+        document_feature = self._convert_doc_to_feature(original_doc, )
         self.documents.append(document_feature)
 
-    def _convert_doc_to_feature(self, original_doc, include_ocr):
+    def _convert_doc_to_feature(self, original_doc):
         document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
         document_feature.ocr_words = original_doc.ocr_words
 
         for word_type in WORD_TYPES:
             document_feature.word_ids[word_type] = self._convert_words_to_ids(word_type, original_doc.word_lists[word_type])
-            # Include OCR in the word list.
-            if include_ocr:
-                for ocr_word in original_doc.ocr_words:
-                    if ocr_word in self.vocabularies[word_type]:
-                        ocr_word_id = self.vocabularies[word_type].get_word_index(ocr_word)
-                        document_feature.word_ids[word_type].append(ocr_word_id)
         return document_feature
 
     def _convert_words_to_ids(self, word_type, word_list):
