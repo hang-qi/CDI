@@ -430,8 +430,6 @@ class TopicModel(object):
 
     def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
-        # TODO: give different configurations based on level.
-
         if level_counter == 1:
             graph_size = len(self.corpus)
             next_vertex_distributions = self._generate_initial_vertex_distributions()
@@ -443,13 +441,11 @@ class TopicModel(object):
 
         # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
-        # TODO: Decide the threshold based on the current level
-        distance_threshold = 0.9*level_counter
         distance_all = []
         for i in range(0, graph_size-1):
             for j in range(i+1, graph_size):
                 distance = 0.0
-                distance_tv = 0.0
+                #distance_tv = 0.0
                 for word_type in WORD_TYPES:
                     dist_i = next_vertex_distributions[i][word_type]
                     dist_j = next_vertex_distributions[j][word_type]
@@ -458,11 +454,9 @@ class TopicModel(object):
                     distance += dist_j.kl_divergence(dist_i)
                 distance /= NUM_WORD_TYPE*2
                 #distance_tv /= NUM_WORD_TYPE
-                #logging.debug('TV Norm {0}'.format(distance_tv))
                 distance_all.append(distance)
-                #if distance <= distance_threshold:
-                #    edges.append((i, j))
         distance_all_sort = sorted(distance_all, key=float)
+
         distance_threshold = distance_all_sort[graph_size*2]
         logging.debug('Distance Threshold {0}'.format(distance_threshold))
         count = 0
@@ -620,10 +614,10 @@ class Corpus(object):
     """A Corpus object includes all documents' feature and corpus vocabulary."""
     def __init__(self):
         self.documents = []
-        np1_vocab = vocabulary.Vocabulary()
-        vp_vocab = vocabulary.Vocabulary()
-        np2_vocab = vocabulary.Vocabulary()
-        self.vocabularies = [np1_vocab, vp_vocab, np2_vocab]
+        self.vocabularies = {
+            WORD_TYPE_NP1: vocabulary.Vocabulary(),
+            WORD_TYPE_VP: vocabulary.Vocabulary(),
+            WORD_TYPE_NP2: vocabulary.Vocabulary()}
 
     def __len__(self):
         return len(self.documents)
@@ -662,7 +656,7 @@ class Corpus(object):
         return document_feature
 
     def _convert_words_to_ids(self, word_type, word_list):
-        assert(word_type < NUM_WORD_TYPE)
+        assert(word_type in WORD_TYPES)
         ids = []
         for word in word_list:
             # If word is in current vocabulary, we directly look up the word_id.
@@ -677,7 +671,7 @@ class Corpus(object):
         return self.documents[doc_id].name
 
     def vocabulary_size(self, word_type):
-        assert(word_type < NUM_WORD_TYPE)
+        assert(word_type in WORD_TYPES)
         return self.vocabularies[word_type].size()
 
 
@@ -692,22 +686,27 @@ class _DocumentFeature(object):
             ocr_words=None):
         self.name = name
         self.timestamp = timestamp
-        self.word_ids = [np1_word_ids, vp_word_ids, np2_word_ids]
+        self.word_ids = {
+            WORD_TYPE_NP1: np1_word_ids,
+            WORD_TYPE_VP: vp_word_ids,
+            WORD_TYPE_NP2: np2_word_ids}
         self.ocr_words = ocr_words
 
 
 class _VertexDistribution:
     # Three _Distribution objects
     def __init__(self):
-        self.distributions = [None] * NUM_WORD_TYPE
+        self.distributions = dict()
+        for word_type in WORD_TYPES:
+            self.distributions[word_type] = None
         self.document_ids = []
 
     def __getitem__(self, word_type):
-        assert(word_type < NUM_WORD_TYPE)
+        assert(word_type in WORD_TYPES)
         return self.distributions[word_type]
 
     def __setitem__(self, word_type, distribution):
-        assert(word_type < NUM_WORD_TYPE)
+        assert(word_type in WORD_TYPES)
         self.distributions[word_type] = distribution
 
     def __add__(self, other):
