@@ -263,28 +263,32 @@ class SWConfigLevel2(SWConfig):
             self.vertex_distributions, clustering)
 
         # likelihood
-        energy += -(self._log_likelihood(clustering, new_vertex_distribution)/2.0)
+        likelihood_energy = -self._log_likelihood(clustering, new_vertex_distribution)
 
         # prior on similarity:
         # We prefer the cluster whose minimum similarity is large.
         # - the similarity of a pair of vertexes is measured by the similarity
         #   of top 10 words in the distribution. (measure each word type
         #   respectively and take average)
+        intra_cluster_energy = 0.0
         for cluster_id, cluster_vertex_set in enumerate(clustering):
             min_similarity_within_cluster = self._min_similarity_within_cluster(cluster_vertex_set, new_vertex_distribution[cluster_id])
-            energy += -mpmath.log(mpmath.exp(min_similarity_within_cluster - 1))
+            intra_cluster_energy += -mpmath.log(mpmath.exp(min_similarity_within_cluster - 1))
 
         # Between cluster similarity:
         #  - For each pair of clusters, we want to find the pair of words with maximum similarity
         #    and prefer this similarity value to be small.
+        inter_cluster_energy = 0.0
         if len(clustering) > 1:
             for i in range(0, len(clustering)-1):
                 for j in range(i+1, len(clustering)):
                     max_similarity_between_clusters = self._max_similarity_between_clusters(clustering[i], clustering[j])
-                    energy += -mpmath.log(mpmath.exp(-max_similarity_between_clusters))
+                    inter_cluster_energy += -mpmath.log(mpmath.exp(-max_similarity_between_clusters))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -50*mpmath.log(mpmath.exp(-len(clustering)))
+        length_energy = -mpmath.log(mpmath.exp(-len(clustering)))
+
+        energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 50*length_energy
         return energy
 
     def _get_top_words(self, vertex_distribution, num_words, types_of_interest):
