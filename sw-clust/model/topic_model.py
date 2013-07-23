@@ -180,14 +180,14 @@ class SWConfigLevel2(SWConfig):
         self._between_similarity_cache = dict()
         self._classification_cache = dict()
         self._classifier = classifier
-        self._cache_similarity()
+        self._precalculate_all_similarities()
 
     def _similarity_key(self, s, t):
         if s > t:
             s, t = t, s
         return '{0}, {1}'.format(s, t)
 
-    def _cache_similarity(self):
+    def _precalculate_all_similarities(self):
         types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
         words_all_types = []
         for s in range(0, self.graph_size):
@@ -333,9 +333,7 @@ class TopicModel(object):
     def __init__(self, classifier_model_filename=None):
         self.corpus = None
         self.topic_tree = _Tree()
-        self.date_range = None
         self._classifier_model_file = classifier_model_filename
-        #self.monitor = ModelMonitor()
         pass
 
     def feed(self, new_corpus):
@@ -350,7 +348,7 @@ class TopicModel(object):
             # Inference and attach to trees
             for document in new_corpus.documents:
                 self._inference(document)
-                self.corpus.add_document(document)
+                self.corpus.add_document(document, include_ocr=True)
 
         # Reform the tree if necessary.
         if (self._need_reform()):
@@ -424,7 +422,7 @@ class TopicModel(object):
             vertex_distribution = _VertexDistribution()
             vertex_distribution.document_ids = [doc_id]
             for word_type in WORD_TYPES:
-                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type, include_ocr=True)
+                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
 
@@ -496,16 +494,6 @@ class TopicModel(object):
         """Add a level to tree."""
         self.topic_tree.add_level_on_top(clustering, vertex_distributions)
         pass
-
-
-#class ModelMonitor():
-#    def __init__(self):
-#        self.last_reform_date = datetime.datetime.now() - datetime.timedelta(year=1)
-#        self.reform_counter = 0
-
-#    def update_reform_time(self):
-#        self.last_reform_date = datetime.datetime.now()
-#        self.reform_counter += 1
 
 
 #
@@ -628,31 +616,30 @@ class Corpus(object):
     def __getitem__(self, document_id):
         return self.documents[document_id]
 
-    def add_document(self, original_doc):
-        """Convert document to feature and save into document list."""
-        document_feature = self._convert_doc_to_feature(original_doc)
-        self.documents.append(document_feature)
-
-    def get_dococument_distribution(self, doc_id, word_type, include_ocr=False):
+    def get_dococument_distribution(self, doc_id, word_type):
         histogram = np.zeros(self.vocabulary_size(word_type))
         for word_id in self.documents[doc_id].word_ids[word_type]:
             histogram[word_id] += 1
-
-        # Include OCR in the distribution.
-        if include_ocr:
-            for ocr_word in self.documents[doc_id].ocr_words:
-                if ocr_word in self.vocabularies[word_type]:
-                    word_id = self.vocabularies[word_type].get_word_index(ocr_word)
-                    self.documents[doc_id].word_ids[word_type].append(word_id)
-                    histogram[word_id] += 1
         return _Distribution(histogram)
 
-    def _convert_doc_to_feature(self, original_doc):
+    def add_document(self, original_doc, include_ocr=False):
+        """Convert the document to feature and save into document list.
+        Adding a document containing words not seen before will also extend the vocabulary of the corpus."""
+        document_feature = self._convert_doc_to_feature(original_doc, include_ocr)
+        self.documents.append(document_feature)
+
+    def _convert_doc_to_feature(self, original_doc, include_ocr):
         document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
         document_feature.ocr_words = original_doc.ocr_words
 
         for word_type in WORD_TYPES:
             document_feature.word_ids[word_type] = self._convert_words_to_ids(word_type, original_doc.word_lists[word_type])
+            # Include OCR in the word list.
+            if include_ocr:
+                for ocr_word in original_doc.ocr_words:
+                    if ocr_word in self.vocabularies[word_type]:
+                        ocr_word_id = self.vocabularies[word_type].get_word_index(ocr_word)
+                        document_feature.word_ids[word_type].append(ocr_word_id)
         return document_feature
 
     def _convert_words_to_ids(self, word_type, word_list):
