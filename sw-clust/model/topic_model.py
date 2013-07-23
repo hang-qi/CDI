@@ -1,5 +1,7 @@
 import sys
 import logging
+import pickle
+
 sys.path.append('..')
 
 import numpy as np
@@ -42,7 +44,9 @@ class _Plotter(object):
             print('')
 
         self.iterations.append(context.iteration_counter)
+        logging.debug('>>>')
         self.energies.append(self._sw_config.energy(clustering))
+        logging.debug('<<<')
         self.temperatures.append(self._sw_config.cooling_schedule(context.iteration_counter))
 
         # energy plot
@@ -188,6 +192,16 @@ class SWConfigLevel2(SWConfig):
         return '{0}, {1}'.format(s, t)
 
     def _precalculate_all_similarities(self):
+        try:
+            # Load pre-calculated result
+            with open('similarity_cache.dat') as similarity_file:
+                self._similarity_cache = pickle.load(similarity_file)
+                logging.debug('Similarity cache loaded.')
+                return
+        except IOError:
+            # Calculate and Dump
+            pass
+
         types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
         words_all_types = []
         for s in range(0, self.graph_size):
@@ -204,6 +218,11 @@ class SWConfigLevel2(SWConfig):
                 distance_s_t /= len(types_of_interest)
                 self._similarity_cache[key] = distance_s_t
                 logging.debug('Cache vertex similarity {0}, {1} = {2}'.format(s, t, distance_s_t))
+
+        # Dump result.
+        with open('similarity_cache.dat', 'w') as similarity_file:
+            pickle.dump(self._similarity_cache, similarity_file)
+            logging.debug('Similarity cache saved.')
 
     def _min_similarity_within_cluster(self, cluster_vertex_set, cluster_distribution):
         cluster = list(cluster_vertex_set)
@@ -289,6 +308,11 @@ class SWConfigLevel2(SWConfig):
         length_energy = -mpmath.log(mpmath.exp(-len(clustering)))
 
         energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 50*length_energy
+        logging.debug('ENERGY: {0:12.6f}\t{1:12.6f}\t{2:12.6f}\t{3:12.6f}'.format(
+            likelihood_energy.__float__(),
+            intra_cluster_energy.__float__(),
+            inter_cluster_energy.__float__(),
+            length_energy.__float__()))
         return energy
 
     def _get_top_words(self, vertex_distribution, num_words, types_of_interest):
