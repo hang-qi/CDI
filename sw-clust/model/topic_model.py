@@ -307,6 +307,11 @@ class SWConfigLevel2(SWConfig):
         # prior on clustering complexity: prefer small number of clusters.
         length_energy = -mpmath.log(mpmath.exp(-len(clustering)))
 
+        # classification: prefer small number of categories.
+        if self._classifier is not None:
+            num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
+            energy += -20*mpmath.log(mpmath.exp(-(abs(num_classes-len(clustering)))))
+
         energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 50.0*length_energy
         logging.debug('ENERGY: {0:12.6f}\t{1:12.6f}\t{2:12.6f}\t{3:12.6f}'.format(
             likelihood_energy.__float__(),
