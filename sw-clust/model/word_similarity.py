@@ -1,12 +1,13 @@
 from nltk.corpus import wordnet as wn
 import numpy
+import logging
 
 
 def calculate_word_similarity_using_wordnet(word1, word2):
     """Calculate the similarity between two words"""
     max_similarity = 0
-    for w1 in wn.synsets(word1):
-        for w2 in wn.synsets(word2):
+    for w1 in wn.synsets(word1, pos=wn.NOUN):
+        for w2 in wn.synsets(word2, pos=wn.NOUN):
             sim = w1.path_similarity(w2)
             if sim > max_similarity:
                 max_similarity = sim
