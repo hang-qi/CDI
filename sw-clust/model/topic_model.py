@@ -86,22 +86,20 @@ class SWConfig(object):
 
     def setup(self):
         self.edges = self._initialize_edges()
+        logging.debug('Selected Edges {0}'.format(self.edges))
+        logging.debug('# of vertex: {0}'.format(self.graph_size))
+        logging.debug('# of edges: {0} [complete: {1}]'.format(len(self.edges), (self.graph_size*(self.graph_size-1)/2)))
 
     def _initialize_edges(self):
-    # Generate the edges. Delete some edges in the complete graph using some criteria.
+        """Generate the edges for the graph."""
         edges = []
         distance_all = []
         for i in range(0, self.graph_size-1):
             for j in range(i+1, self.graph_size):
                 distance = 0.0
-                #distance_tv = 0.0
-                for word_type in WORD_TYPES:
-                    dist_i = self.vertex_distributions[i][word_type]
-                    dist_j = self.vertex_distributions[j][word_type]
-                    #distance_tv += dist_i.tv_norm(dist_j)
-                    distance += dist_i.kl_divergence(dist_j)
-                    distance += dist_j.kl_divergence(dist_i)
-                distance /= NUM_WORD_TYPE*2
+                distance += self._kl_divergence(i, j)
+                distance += self._kl_divergence(j, i)
+                distance /= 2
                 #distance_tv /= NUM_WORD_TYPE
                 distance_all.append(distance)
         distance_all_sort = sorted(distance_all, key=float)
@@ -114,32 +112,26 @@ class SWConfig(object):
                 if distance_all[count] < distance_threshold:
                     edges.append((i, j))
                 count += 1
-        logging.debug('Selected Edges {0}'.format(edges))
-
-        logging.debug('# of vertex: {0}'.format(self.graph_size))
-        logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (self.graph_size*(self.graph_size-1)/2)))
         return edges
 
     def _kl_key(self, s, t):
         return '{0}, {1}'.format(s, t)
 
+    def _kl_divergence(self, s, t):
+        kl_key = self._kl_key(s, t)
+        if kl_key not in self._kl_cache:
+            self._kl_cache[kl_key] = self.vertex_distributions[s].kl_divergence(self.vertex_distributions[t])
+        return self._kl_cache[kl_key]
+
     def edge_prob_func(self, s, t, context):
         """Calculate edge probability based on KL divergence."""
-        #logging.debug('Calaulate Edge Prob {0}, {1}'.format(s, t))
-        kl_value_all = 0.0
-
         # Cache KL divergence between two vertexes.
-        kl_key = self._kl_key(s, t)
-        if kl_key in self._kl_cache:
-            kl_value_all = self._kl_cache[kl_key]
-        else:
-            kl_pq = self.vertex_distributions[s].kl_divergence(self.vertex_distributions[t])
-            kl_qp = self.vertex_distributions[t].kl_divergence(self.vertex_distributions[s])
-            kl_value_all = kl_pq + kl_qp
-            self._kl_cache[kl_key] = kl_value_all
+        kl_pq = self._kl_divergence(s, t)
+        kl_qp = self._kl_divergence(t, s)
+        kl_sum = kl_pq + kl_qp
 
         #temperature = self.cooling_schedule(context.iteration_counter)
-        edge_prob = mpmath.exp(-kl_value_all/(2*500))
+        edge_prob = mpmath.exp(-kl_sum/(2*500))
         return edge_prob
 
     def target_eval_func(self, clustering, context=None):
