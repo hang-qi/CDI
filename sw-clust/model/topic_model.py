@@ -85,9 +85,9 @@ class SWConfig(object):
         self._kl_cache = dict()
 
     def setup(self):
-        self.edges = self._determine_edges()
+        self.edges = self._initialize_edges()
 
-    def _determine_edges(self):
+    def _initialize_edges(self):
     # Generate the edges. Delete some edges in the complete graph using some criteria.
         edges = []
         distance_all = []
@@ -222,7 +222,7 @@ class SWConfigLevel2(SWConfig):
         self._classifier = classifier
         self._precalculate_all_similarities()
 
-    def _determine_edges(self):
+    def _initialize_edges(self):
         edges = []
         # TODO: overwrite the edge generation logic.
         return edges
