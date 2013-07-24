@@ -71,9 +71,9 @@ class _Plotter(object):
 
 class SWConfig(object):
     """One shall inherit this class to give more specific configurations."""
-    def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level):
+    def __init__(self, graph_size, vertex_distributions, documents, vocabularies, level):
         self.graph_size = graph_size
-        self.edges = edges
+        self.edges = []
         self.monitor_statistics = self.energy
         self.vertex_distributions = vertex_distributions
         self.level = level
@@ -83,6 +83,42 @@ class SWConfig(object):
         # cache
         self._likelihood_cache = dict()
         self._kl_cache = dict()
+
+    def setup(self):
+        self.edges = self._determine_edges()
+
+    def _determine_edges(self):
+    # Generate the edges. Delete some edges in the complete graph using some criteria.
+        edges = []
+        distance_all = []
+        for i in range(0, self.graph_size-1):
+            for j in range(i+1, self.graph_size):
+                distance = 0.0
+                #distance_tv = 0.0
+                for word_type in WORD_TYPES:
+                    dist_i = self.vertex_distributions[i][word_type]
+                    dist_j = self.vertex_distributions[j][word_type]
+                    #distance_tv += dist_i.tv_norm(dist_j)
+                    distance += dist_i.kl_divergence(dist_j)
+                    distance += dist_j.kl_divergence(dist_i)
+                distance /= NUM_WORD_TYPE*2
+                #distance_tv /= NUM_WORD_TYPE
+                distance_all.append(distance)
+        distance_all_sort = sorted(distance_all, key=float)
+
+        distance_threshold = distance_all_sort[self.graph_size*2]
+        logging.debug('Distance Threshold {0}'.format(distance_threshold))
+        count = 0
+        for i in range(0, self.graph_size-1):
+            for j in range(i+1, self.graph_size):
+                if distance_all[count] < distance_threshold:
+                    edges.append((i, j))
+                count += 1
+        logging.debug('Selected Edges {0}'.format(edges))
+
+        logging.debug('# of vertex: {0}'.format(self.graph_size))
+        logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (self.graph_size*(self.graph_size-1)/2)))
+        return edges
 
     def _kl_key(self, s, t):
         return '{0}, {1}'.format(s, t)
@@ -177,14 +213,19 @@ class SWConfig(object):
 
 class SWConfigLevel2(SWConfig):
     """SWConfig for level 2."""
-    def __init__(self, graph_size, edges, vertex_distributions, documents, vocabularies, level, classifier):
-        super(SWConfigLevel2, self).__init__(graph_size, edges, vertex_distributions, documents, vocabularies, level)
+    def __init__(self, graph_size, vertex_distributions, documents, vocabularies, level, classifier):
+        super(SWConfigLevel2, self).__init__(graph_size, vertex_distributions, documents, vocabularies, level)
         self._similarity_cache = dict()
         self._within_similarity_cache = dict()
         self._between_similarity_cache = dict()
         self._classification_cache = dict()
         self._classifier = classifier
         self._precalculate_all_similarities()
+
+    def _determine_edges(self):
+        edges = []
+        # TODO: overwrite the edge generation logic.
+        return edges
 
     def _similarity_key(self, s, t):
         if s > t:
@@ -472,46 +513,16 @@ class TopicModel(object):
             next_vertex_distributions = _combine_vertex_distributions_given_clustering(
                 current_vertex_distributions, current_clustering)
 
-        # Generate the edges. Delete some edges in the complete graph using some criteria.
-        edges = []
-        distance_all = []
-        for i in range(0, graph_size-1):
-            for j in range(i+1, graph_size):
-                distance = 0.0
-                #distance_tv = 0.0
-                for word_type in WORD_TYPES:
-                    dist_i = next_vertex_distributions[i][word_type]
-                    dist_j = next_vertex_distributions[j][word_type]
-                    #distance_tv += dist_i.tv_norm(dist_j)
-                    distance += dist_i.kl_divergence(dist_j)
-                    distance += dist_j.kl_divergence(dist_i)
-                distance /= NUM_WORD_TYPE*2
-                #distance_tv /= NUM_WORD_TYPE
-                distance_all.append(distance)
-        distance_all_sort = sorted(distance_all, key=float)
-
-        distance_threshold = distance_all_sort[graph_size*2]
-        logging.debug('Distance Threshold {0}'.format(distance_threshold))
-        count = 0
-        for i in range(0, graph_size-1):
-            for j in range(i+1, graph_size):
-                if distance_all[count] < distance_threshold:
-                    edges.append((i, j))
-                count += 1
-        logging.debug('Selected Edges {0}'.format(edges))
-
-        logging.debug('# of vertex: {0}'.format(graph_size))
-        logging.debug('# of edges: {0} [complete: {1}]'.format(len(edges), (graph_size*(graph_size-1)/2)))
-
         if level_counter == 1:
-            config = SWConfig(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
+            config = SWConfig(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         elif level_counter == 2:
             # TODO: load classifier and initialize the object
             classifier = None
             if self._classifier_model_file is not None:
                 classifier = Classifier()
                 classifier.load(self._classifier_model_file)
-            config = SWConfigLevel2(graph_size, edges, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
+            config = SWConfigLevel2(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
+        config.setup()
         return config
 
     def _need_reform(self):
