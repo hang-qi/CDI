@@ -616,16 +616,16 @@ class _Tree(object):
         self._height += 1
 
     def print_hiearchy(self, labels=None, synthesize_title=False, vocabularies=None):
-        self.__print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
+        self._print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
 
-    def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
+    def _print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
         if synthesize_title:
             assert(vocabularies is not None)
             print('{0}+ {1}'.format(level_indents*'|  ', root.synthesize_title(vocabularies)))
         for child_node in root:
             if not child_node.is_terminal():
                 # Have next level.
-                self.__print_hiearchy_recursive(
+                self._print_hiearchy_recursive(
                     child_node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
             else:
                 # Terminal node is a document.
