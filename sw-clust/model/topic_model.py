@@ -579,6 +579,9 @@ class _TreeNode(object):
             title = ' '.join(keep)
         return title
 
+    def get_num_children(self):
+        return len(self._children)
+
 
 class _Tree(object):
     """A Tree structure."""
@@ -628,11 +631,46 @@ class _Tree(object):
                 # Terminal node is a document.
                 assert(len(child_node._vertex_distribution.document_ids) == 1)
                 doc_id = child_node._vertex_distribution.document_ids[0]
+                label_to_print = doc_id
                 if labels is not None:
                     label_to_print = labels[doc_id]
-                else:
-                    label_to_print = doc_id
                 print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
+
+    def print_hiearchy_json(self, fw, labels=None, synthesize_title=False, vocabularies=None):
+        self.__print_hiearchy_recursive_json(fw, root=self.nodes, labels=labels, synthesize_title=synthesize_title)
+
+    def _print_hiearchy_recursive_json(self, fw, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
+        fw.write(level_indents*'  '+'{')
+        if synthesize_title:
+            assert(vocabularies is not None)
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(root.synthesize_title(vocabularies)))
+
+        else:
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(branch_id))
+            #print('{0}+'.format(level_indents*'|  '))
+
+        if root.get_num_children() > 0:
+            fw.write((level_indents+1)*'  ' + '"children": [')
+            for cid, child_node in enumerate(root):
+                if not child_node.is_terminal():
+                    # Have next level
+                    self.__print_hiearchy_recursive_json(
+                        fw, node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
+                    if cid != root.get_num_children() - 1:
+                        fw.write((level_indents+1)*'  ' + ',')
+                else:
+                    # Terminal node is a document.
+                    assert(len(child_node._vertex_distribution.document_ids) == 1)
+                    doc_id = child_node._vertex_distribution.document_ids[0]
+                    label_to_print = doc_id
+                    if labels is not None:
+                        label_to_print = labels[doc_id]
+                    append = ''
+                    if cid != root.get_num_children() - 1:
+                        append = ','
+                    fw.write((level_indents+1)*'  ' + '{' + '"name": "{0}"'.format((label_to_print)) + '}' + append)
+            fw.write((level_indents+1)*'  ' + ']')
+        fw.write(level_indents*'  '+'}')
 
 
 #
