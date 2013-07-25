@@ -10,6 +10,15 @@ class Vocabulary(object):
         self.word_list = []     # maps id -> word
         self.dict = dict()      # maps word -> id
 
+    def __contains__(self, word):
+        return word in self.dict
+
+    def __len__(self):
+        return len(self.word_list)
+
+    def __getitem__(self, index):
+        return self.word_list[index]
+
     def build_by_list(self, word_list):
         super(Vocabulary, self).__init__()
         self.word_list = []     # maps id -> word
@@ -26,10 +35,10 @@ class Vocabulary(object):
 
     def contain(self, word):
         """Return True is word is in the vocabulary."""
-        return word in self.dict
+        return self.__contains__(word)
 
-    def __contains__(self, word):
-        return word in self.dict
+    def size(self):
+        return self.__len__()
 
     def get_word_index(self, word):
         """Return the word index in the vocabulary. Return -1 if no found."""
@@ -39,31 +48,15 @@ class Vocabulary(object):
             raise ValueError('Cannot find the word: {0}'.format(word))
 
     def get_word(self, index):
-        return self.word_list[index]
-
-    def size(self):
-        return len(self.word_list)
+        return self.__getitem__(index)
 
     def save(self, filename):
-        #with codecs.open('{0}.dict'.format(filename), "w", encoding='ISO-8859-1') as f:
-        #    for key, val in self.dict.items():
-        #        try:
-        #            f.writelines('{0},{1}\n'.format(key, val))
-        #        except Exception, e:
-        #            continue
-
         with codecs.open(filename, "w", encoding='ISO-8859-1') as f:
             for val in self.word_list:
                 f.writelines(val + '\n')
         return
 
     def load(self, filename):
-        #self.dict = {}
-        #with codecs.open('{0}.dict'.format(filename), encoding='ISO-8859-1') as f:
-        #    for line in f:
-        #        item = line.split(',')
-        #        self.dict[item[0].strip('\n')] = item[1].strip('\n')
-
         self.dict = {}
         self.word_list = []
         with codecs.open(filename, "r", encoding='ISO-8859-1') as f:
