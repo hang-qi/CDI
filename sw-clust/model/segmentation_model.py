@@ -4,17 +4,15 @@ from collections import defaultdict
 import mpmath
 
 from model import *
-from model.classifier import Classifier
 
 
 class SegmentationModel(object):
-    def __init__(self, nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transprob, length_prior, seg_num_prior):
+    def __init__(self, nodes, transprob, length_prior, seg_num_prior, classifier):
         self.all_nodes = nodes
         self.transition_prob = transprob
         self.length_prior = length_prior
         self.seg_num_prior = seg_num_prior
-
-        self.classifier = Classifier(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
+        self.classifier = classifier
 
         self._segment_classification_cache = dict()
 
