@@ -9,8 +9,12 @@ from preprocessing import vocabulary
 
 
 class Classifier(object):
-    def __init__(self, class_num=0, np1_voc=None, vp_voc=None, np2_voc=None, np1_prob=None, vp_prob=None, np2_prob=None, class_prior_prob=None):
-        self.setup(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
+    def __init__(self, model_filename=None):
+        if (model_filename is not None):
+            self.load(model_filename)
+
+    #def __init__(self, class_num=0, np1_voc=None, vp_voc=None, np2_voc=None, np1_prob=None, vp_prob=None, np2_prob=None, class_prior_prob=None):
+    #    self.setup(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
 
     def setup(self, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob):
         self._class_num = class_num
@@ -108,8 +112,8 @@ class Classifier(object):
 
         self.setup(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
 
-    def classify(self, word_list_all_type):
-        [np1_cat_prob, vp_cat_prob, np2_cat_prob] = self._calculate_category_likelihood(word_list_all_type, WORD_TYPES)
+    def predict(self, word_list_all_type, word_types):
+        [np1_cat_prob, vp_cat_prob, np2_cat_prob] = self._calculate_category_likelihood(word_list_all_type, word_types)
         max_posterior = -1.0
         label = -1
         for class_index in range(0, self._class_num):

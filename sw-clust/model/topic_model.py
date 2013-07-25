@@ -1,6 +1,7 @@
 import sys
 import logging
 import pickle
+from collections import defaultdict
 
 sys.path.append('..')
 
@@ -370,14 +371,14 @@ class SWConfigLevel2(SWConfig):
     def _predict_label(self, vertex_distribution):
         if vertex_distribution not in self._classification_cache:
             # Convert document or vertex distribution to word list.
-            word_list_all_type = [[], [], []]
+            word_list_all_type = defaultdict(list)
             for doc_id in vertex_distribution.document_ids:
                 for word_type in WORD_TYPES:
                     words = [self.vocabularies[word_type].get_word(wid) for wid in self.documents[doc_id].word_ids[word_type]]
                     word_list_all_type[word_type].extend(words)
 
             # Classify and save result to cache.
-            (category, confidence) = self._classifier.classify(word_list_all_type)
+            (category, confidence) = self._classifier.predict(word_list_all_type, WORD_TYPES)
             self._classification_cache[vertex_distribution] = (category, confidence)
         return self._classification_cache[vertex_distribution]
 
@@ -511,11 +512,9 @@ class TopicModel(object):
         if level_counter == 1:
             config = SWConfig(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         elif level_counter == 2:
-            # TODO: load classifier and initialize the object
             classifier = None
             if self._classifier_model_file is not None:
-                classifier = Classifier()
-                classifier.load(self._classifier_model_file)
+                classifier = Classifier(self._classifier_model_file)
             config = SWConfigLevel2(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
         config.setup()
         return config

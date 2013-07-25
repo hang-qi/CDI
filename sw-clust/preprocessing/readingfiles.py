@@ -20,7 +20,7 @@ def ispronoun(word):
         return False
 
 
-def read_test_file(filenameprefix):
+def read_testing_file(filenameprefix):
     """Read the triplets files of the segments that correspond to the test file"""
     file_name = 'triplet_files/' + filenameprefix + '*.txt'
     files = glob.glob(file_name)
@@ -52,7 +52,29 @@ def read_test_file(filenameprefix):
     return [all_nodes, true_segment]
 
 
-def read_training_classification_data(file_in):
+def load_model_parameters(training_file_in):
+    [class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = _read_training_classification_data(training_file_in)
+    # Add the Length Priors
+    length_prior = []
+    prior_dist_range = 500
+    for i in range(0, prior_dist_range):
+        j = i + 1.0
+        length_prior.append(mpmath.mpf(10.0*norm(15, 15).pdf(j) + 5.0*norm(2, 20).pdf(j)))
+        #length_prior.append(1)\
+
+    # Norm the probability
+    length_prior = _prob_normalization(length_prior)
+
+    # Add the Total Segment Number Prior
+    seg_num_prior = []
+    for i in range(0, prior_dist_range):
+        seg_num_prior.append(mpmath.mpf(norm(30.0, 20.0).pdf(i)))
+    seg_num_prior = _prob_normalization(seg_num_prior)
+
+    return [transition_prob, length_prior, seg_num_prior]
+
+
+def _read_training_classification_data(file_in):
     """Read the data for classification"""
     with open(file_in, 'r') as f:
         # (1) Class Number
@@ -140,28 +162,7 @@ def read_training_clusters(file_in):
     return
 
 
-def preprocessing(test_filenameprefix, training_file_in):
-    [all_nodes, true_segment] = read_test_file(test_filenameprefix)
-    [class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob] = read_training_classification_data(training_file_in)
-    # Add the Length Priors
-    length_prior = []
-    prior_dist_range = 500
-    for i in range(0, prior_dist_range):
-        j = i + 1.0
-        length_prior.append(mpmath.mpf(10.0*norm(15, 15).pdf(j) + 5.0*norm(2, 20).pdf(j)))
-        #length_prior.append(1)
-    # Norm the probability
-    length_prior = prob_normalization(length_prior)
-
-    # Add the Total Segment Number Prior
-    seg_num_prior = []
-    for i in range(0, prior_dist_range):
-        seg_num_prior.append(mpmath.mpf(norm(30.0, 20.0).pdf(i)))
-    seg_num_prior = prob_normalization(seg_num_prior)
-    return [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior]
-
-
-def prob_normalization(dist):
+def _prob_normalization(dist):
     dist_sum = sum(dist)
     for i in range(0, len(dist)):
         dist[i] /= dist_sum

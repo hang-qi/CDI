@@ -50,20 +50,20 @@ class SegmentationModel(object):
 
         for segment in current_clustering:
             # likelihood term (cache to prevent repeat computation)
-            [category, prob] = self.classification(segment)
-
+            (category, prob) = self._classification(segment)
             if prob == 0:
                 prob = 1e-100
             energy += -mpmath.log(prob)
 
-            # transition prob term
+            # transition prob
             #if previous_category != -1:
             #    energy += -mpmath.log(self.transition_prob.get_value(category, previous_category) + 1e-100)
             previous_category = category
 
-            # prior prob term
+            # prior on the length of each segments
             energy += -mpmath.log(self.length_prior[len(segment) - 1])
 
+        # prior on number of segments
         energy += -mpmath.log(self.seg_num_prior[len(current_clustering)])
 
         return energy
@@ -73,7 +73,7 @@ class SegmentationModel(object):
         l.sort()
         return str(l)
 
-    def classification(self, segment):
+    def _classification(self, segment):
         key = self._segment_key(segment)
         if key not in self._segment_classification_cache:
 
@@ -84,6 +84,6 @@ class SegmentationModel(object):
                 word_list_all_type[WORD_TYPE_VP].extend(current_node.VP)
                 word_list_all_type[WORD_TYPE_NP2].extend(current_node.NP2)
 
-            [category, prob] = self.classifier.classify(word_list_all_type)
-            self._segment_classification_cache[key] = [category, prob]
+            (category, prob) = self.classifier.predict(word_list_all_type, WORD_TYPES)
+            self._segment_classification_cache[key] = (category, prob)
         return self._segment_classification_cache[key]
