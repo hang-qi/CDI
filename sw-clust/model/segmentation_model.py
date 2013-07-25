@@ -1,38 +1,29 @@
 # Provide the statistics for SW Process
-import sys
-sys.path.append('..')
+from collections import defaultdict
 
 import mpmath
 
-from model import probability
+from model import *
+from model.classifier import Classifier
 
 
 class SegmentationModel(object):
-    def __init__(self, nodes, cnum, np1voc, vpvoc, np2voc, np1prob, vpprob, np2prob, classpriorprob, transprob, length_prior, seg_num_prior):
+    def __init__(self, nodes, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transprob, length_prior, seg_num_prior):
         self.all_nodes = nodes
-        self.class_num = cnum
-        self.np1_voc = np1voc
-        self.np1_prob = np1prob
-        self.vp_voc = vpvoc
-        self.vp_prob = vpprob
-        self.np2_voc = np2voc
-        self.np2_prob = np2prob
         self.transition_prob = transprob
-        self.class_prior = classpriorprob
         self.length_prior = length_prior
         self.seg_num_prior = seg_num_prior
+
+        self.classifier = Classifier(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
 
         self._segment_classification_cache = dict()
 
     def calculate_Qe(self, left, right, context):
         right_node = self.all_nodes.nodes[right]
-        if right_node.pronoun:  # If the beginning of the right node is pronoun, turn on the edge
+        if right_node.pronoun:
+            # If the beginning of the right node is pronoun, turn on the edge
             return 1
-        else:  # Return the probability
-            #count = int(context.iteration_counter/100)
-            #if count > 7:
-            #    count = 7
-            #return 0.2 + 0.1*count
+        else:
             return 0.6
 
     def cooling_schedule(self, iteration_counter):
@@ -54,43 +45,14 @@ class SegmentationModel(object):
             temperature = self.cooling_schedule(context.iteration_counter)
         return mpmath.exp(-(energy/temperature))
 
-    def __labeling_to_segments(self, labeling):
-        segmentation = []
-        current_segment = []
-        current_segment_label = labeling[0]
-        for (node_index, label) in enumerate(labeling):
-            if label == current_segment_label:
-                current_segment.append(node_index)
-            else:
-                # New segment
-                segmentation.append(current_segment)
-                current_segment = [node_index]
-                current_segment_label = label
-        if len(current_segment) > 0:
-            segmentation.append(current_segment)
-        return segmentation
-
-    def _segment_key(self, segment):
-        l = list(segment)
-        l.sort()
-        return str(l)
-
     def calculate_energy(self, current_clustering):
         """Energy Function: Category Posterior + Category Transition + Length Prior(Currently not included)"""
-        #assert(len(current_labeling) == self.all_nodes.node_num)
-        #segmentation = self.__labeling_to_segments(current_labeling)
-
         energy = 0.0
         previous_category = -1
-        #print(len(segmentation))
+
         for segment in current_clustering:
             # likelihood term (cache to prevent repeat computation)
-            key = self._segment_key(segment)
-            if key in self._segment_classification_cache:
-                [category, prob] = self._segment_classification_cache[key]
-            else:
-                [category, prob] = self.classification(segment)
-                self._segment_classification_cache[key] = [category, prob]
+            [category, prob] = self.classification(segment)
 
             if prob == 0:
                 prob = 1e-100
@@ -103,84 +65,27 @@ class SegmentationModel(object):
 
             # prior prob term
             energy += -mpmath.log(self.length_prior[len(segment) - 1])
+
         energy += -mpmath.log(self.seg_num_prior[len(current_clustering)])
+
         return energy
 
-    def classification(self, current_seg):
-        #np1_set = []
-        #vp_set = []
-        #np2_set = []
-        #for i in current_seg:
-        #    current_node = self.all_nodes.nodes[i]
-        #    for w in current_node.NP1:
-        #        np1_set.append(w)
-        #    for w in current_node.VP:
-        #        vp_set.append(w)
-        #    for w in current_node.NP2:
-        #        np2_set.append(w)
-        #np1_cat_prob = self.calculate_prob_CatGivenWord(np1_set, self.np1_voc, self.np1_prob)
-        #vp_cat_prob = self.calculate_prob_CatGivenWord(vp_set, self.vp_voc, self.vp_prob)
-        #np2_cat_prob = self.calculate_prob_CatGivenWord(np2_set, self.np2_voc, self.np2_prob)
-        [np1_cat_prob, vp_cat_prob, np2_cat_prob] = self.calculate_prob(current_seg)
-        max_prob = -1.0
-        label = -1
-        for i in range(0, self.class_num):
-            #prob = mpmath.mpf(np1_cat_prob.get_value(0, i)) * mpmath.mpf(vp_cat_prob.get_value(0, i)) * mpmath.mpf(np2_cat_prob.get_value(0, i))
-            prob = mpmath.mpf(np1_cat_prob[i]) * mpmath.mpf(vp_cat_prob[i]) * mpmath.mpf(np2_cat_prob[i])
-            if prob != 0:
-                prob /= mpmath.mpf(self.class_prior[i] * self.class_prior[i])
-            if prob > max_prob:
-                max_prob = prob
-                label = i
-        return [label, max_prob]
+    def _segment_key(self, segment):
+        l = list(segment)
+        l.sort()
+        return str(l)
 
-    def calculate_prob(self, current_seg):
-        np1_cat_prob = probability.Probability(1, self.class_num)
-        vp_cat_prob = probability.Probability(1, self.class_num)
-        np2_cat_prob = probability.Probability(1, self.class_num)
-        for i in range(0, self.class_num):
-            prob_np1 = mpmath.mpf(1.0)
-            prob_vp = mpmath.mpf(1.0)
-            prob_np2 = mpmath.mpf(1.0)
-            for j in current_seg:
-                #prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat.get_value(0, i))
-                prob_np1 *= mpmath.mpf(self.all_nodes.nodes[j].np1_probgivencat[i])
-                #prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat.get_value(0, i))
-                prob_vp *= mpmath.mpf(self.all_nodes.nodes[j].vp_probgivencat[i])
-                #prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat.get_value(0, i))
-                prob_np2 *= mpmath.mpf(self.all_nodes.nodes[j].np2_probgivencat[i])
-            #prior = mpmath.mpf(self.class_prior.get_value(0, i))
-            prior = mpmath.mpf(self.class_prior[i])
-            prob_np1 *= prior
-            prob_vp *= prior
-            prob_np2 *= prior
-            #np1_cat_prob.set_value(0, i, prob_np1)
-            np1_cat_prob[i] = prob_np1
-            #vp_cat_prob.set_value(0, i, prob_vp)
-            vp_cat_prob[i] = prob_vp
-            #np2_cat_prob.set_value(0, i, prob_np2)
-            np2_cat_prob[i] = prob_np2
-        return [np1_cat_prob, vp_cat_prob, np2_cat_prob]
+    def classification(self, segment):
+        key = self._segment_key(segment)
+        if key not in self._segment_classification_cache:
 
-    def calculate_prob_CatGivenWord(self, words, voc, voc_prob):
-        word_id = []
-        for w in words:
-            if voc.contain(w):
-                word_id.append(voc.get_word_index(w))
-            else:
-                word_id.append(-1)
-        prob_all_cats = probability.Probability(1, self.class_num)
-        for i in range(0, self.class_num):
-            prob = 1
-            for wid in word_id:
-                if wid != -1:
-                    #if voc_prob.get_value(wid, i) == 0:
-                    if voc_prob[wid, i] == 0:
-                        print('Error')
-                    #prob *= voc_prob.get_value(wid, i)
-                    prob *= voc_prob[wid, i]
-            #prob *= self.class_prior.get_value(0, i)
-            prob *= self.class_prior[i]
-            #prob_all_cats.set_value(0, i, prob)
-            prob_all_cats[i] = prob
-        return prob_all_cats
+            word_list_all_type = defaultdict(list)
+            for i in segment:
+                current_node = self.all_nodes.nodes[i]
+                word_list_all_type[WORD_TYPE_NP1].extend(current_node.NP1)
+                word_list_all_type[WORD_TYPE_VP].extend(current_node.VP)
+                word_list_all_type[WORD_TYPE_NP2].extend(current_node.NP2)
+
+            [category, prob] = self.classifier.classify(word_list_all_type)
+            self._segment_classification_cache[key] = [category, prob]
+        return self._segment_classification_cache[key]
