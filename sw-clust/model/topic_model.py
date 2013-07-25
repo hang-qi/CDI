@@ -637,7 +637,7 @@ class _Tree(object):
                 print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
 
     def print_hiearchy_json(self, fw, labels=None, synthesize_title=False, vocabularies=None):
-        self.__print_hiearchy_recursive_json(fw, root=self.nodes, labels=labels, synthesize_title=synthesize_title)
+        self._print_hiearchy_recursive_json(fw, root=self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
 
     def _print_hiearchy_recursive_json(self, fw, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
         fw.write(level_indents*'  '+'{')
@@ -654,7 +654,7 @@ class _Tree(object):
             for cid, child_node in enumerate(root):
                 if not child_node.is_terminal():
                     # Have next level
-                    self.__print_hiearchy_recursive_json(
+                    self._print_hiearchy_recursive_json(
                         fw, node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
                     if cid != root.get_num_children() - 1:
                         fw.write((level_indents+1)*'  ' + ',')
