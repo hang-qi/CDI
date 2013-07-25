@@ -31,23 +31,29 @@ Parameters:
     the callback function which calculates the probability of
     turning on edges (s, t). This function shall be in the
     following form:
-        edge_func(s, t)
+        edge_func(s, t, context)
 
 - target_eval_func:
     the callback function which evaluates the probability of a
     cluster labeling. This probability does not need to be normalized.
     MCMC theory guarantees that fair samples will be generated from
     this target distribution when the chain converges.
-        target_eval_func(labeling, context)
+        target_eval_func(clustering, context)
 
 - intermediate_callback (optional):
     this function will be called with current labeling result at
     the end of every iteration.
-        callback(labeling)
+        callback(labeling, context)
 
-- inital_clustering (optional):
+- initial_clustering (optional):
     the initial status to begin from.
     All vertex will be in the same cluster if not provided.
+
+- monitor_statistics (optional):
+    the statistics to diagnose convergence. The process converges when
+    this designated statistics remain unchanged for 500 iterations.
+    The process will not stop if this parameter is not provided.
+        monitor_statistics(clustering)
 """
     sw = _SWCuts()
     return sw.sample(
