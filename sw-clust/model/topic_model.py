@@ -306,11 +306,11 @@ class SWConfigLevel2(SWConfig):
 
     def energy(self, clustering):
         energy = mpmath.mpf(0.0)
-        new_vertex_distribution = _combine_vertex_distributions_given_clustering(
+        new_vertex_distributions = _combine_vertex_distributions_given_clustering(
             self.vertex_distributions, clustering)
 
         # likelihood
-        likelihood_energy = -self._log_likelihood(clustering, new_vertex_distribution)
+        likelihood_energy = -self._log_likelihood(clustering, new_vertex_distributions)
 
         # prior on similarity:
         # We prefer the cluster whose minimum similarity is large.
@@ -319,7 +319,7 @@ class SWConfigLevel2(SWConfig):
         #   respectively and take average)
         intra_cluster_energy = mpmath.mpf(0.0)
         for cluster_id, cluster_vertex_set in enumerate(clustering):
-            min_similarity_within_cluster = self._min_similarity_within_cluster(cluster_vertex_set, new_vertex_distribution[cluster_id])
+            min_similarity_within_cluster = self._min_similarity_within_cluster(cluster_vertex_set, new_vertex_distributions[cluster_id])
             intra_cluster_energy += -mpmath.log(mpmath.exp(min_similarity_within_cluster - 1))
 
         # Between cluster similarity:
@@ -338,16 +338,23 @@ class SWConfigLevel2(SWConfig):
         # classification: prefer small number of categories.
         class_energy = 0.0
         if self._classifier is not None:
-            num_classes = self._calculate_num_of_categories(clustering, new_vertex_distribution)
+            num_classes = self._calculate_num_of_categories(clustering, new_vertex_distributions)
             class_energy = -mpmath.log(mpmath.exp(-(abs(num_classes-len(clustering)))))
 
-        energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 30.0*length_energy + 20.0*class_energy
-        logging.debug('ENERGY: {0:12.6f}\t{1:12.6f}\t{2:12.6f}\t{3:12.6f}\t{4:12.6f}'.format(
+        # classification confidence: maximize the classification confidence
+        confidence_energy = 0.0
+        for cluster_id, cluster_vertex_set in enumerate(clustering):
+            (category, confidence) = self._predict_label(new_vertex_distributions[cluster_id])
+            confidence_energy += -mpmath.log(confidence)
+
+        energy += (0.5)*likelihood_energy + intra_cluster_energy + inter_cluster_energy + 30.0*length_energy + 20.0*class_energy + confidence_energy
+        logging.debug('ENERGY: {0:12.6f}\t{1:12.6f}\t{2:12.6f}\t{3:12.6f}\t{4:12.6f}\t{5:12.6f}'.format(
             likelihood_energy.__float__(),
             intra_cluster_energy.__float__(),
             inter_cluster_energy.__float__(),
             length_energy.__float__(),
-            class_energy.__float__()))
+            class_energy.__float__(),
+            confidence_energy.__float__()))
         return energy
 
     def _get_top_words(self, vertex_distribution, num_words, types_of_interest):
@@ -360,23 +367,24 @@ class SWConfigLevel2(SWConfig):
             words_all_type[word_type] = [self.vocabularies[word_type].get_word(wid) for wid in top_word_ids_all_type[word_type]]
         return words_all_type
 
-    def _calculate_num_of_categories(self, clustering, new_vertex_distribution):
+    def _predict_label(self, vertex_distribution):
+        if vertex_distribution not in self._classification_cache:
+            # Convert document or vertex distribution to word list.
+            word_list_all_type = [[], [], []]
+            for doc_id in vertex_distribution.document_ids:
+                for word_type in WORD_TYPES:
+                    words = [self.vocabularies[word_type].get_word(wid) for wid in self.documents[doc_id].word_ids[word_type]]
+                    word_list_all_type[word_type].extend(words)
+
+            # Classify and save result to cache.
+            (category, confidence) = self._classifier.classify(word_list_all_type)
+            self._classification_cache[vertex_distribution] = (category, confidence)
+        return self._classification_cache[vertex_distribution]
+
+    def _calculate_num_of_categories(self, clustering, vertex_distributions):
         category_set = set()
         for i, cluster in enumerate(clustering):
-            if new_vertex_distribution[i] in self._classification_cache:
-                # Read cached classification result
-                [category, prob] = self._classification_cache[new_vertex_distribution[i]]
-            else:
-                # Convert document or vertex distribution to word list
-                word_list_all_type = [[], [], []]
-                for doc_id in new_vertex_distribution[i].document_ids:
-                    for word_type in WORD_TYPES:
-                        words = [self.vocabularies[word_type].get_word(wid) for wid in self.documents[doc_id].word_ids[word_type]]
-                        word_list_all_type[word_type].extend(words)
-
-                # Classify
-                [category, prob] = self._classifier.classify(word_list_all_type)
-                self._classification_cache[new_vertex_distribution[i]] = [category, prob]
+            (category, confidence) = self._predict_label(vertex_distributions[i])
             category_set.add(category)
         return len(category_set)
 
