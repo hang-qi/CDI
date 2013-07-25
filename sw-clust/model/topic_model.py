@@ -214,11 +214,6 @@ class SWConfigLevel2(SWConfig):
         self._classifier = classifier
         self._precalculate_all_similarities()
 
-    def _initialize_edges(self):
-        edges = []
-        # TODO: overwrite the edge generation logic.
-        return edges
-
     def _similarity_key(self, s, t):
         if s > t:
             s, t = t, s
