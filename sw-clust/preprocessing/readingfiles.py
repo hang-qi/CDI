@@ -12,14 +12,6 @@ from scipy.stats import norm
 import mpmath
 
 
-def ispronoun(word):
-    pronoun_set = ['they', 'he', 'she', 'his', 'her', 'they', 'their', 'those', 'that', 'these', 'which', 'its']
-    if word in pronoun_set:
-        return True
-    else:
-        return False
-
-
 def read_testing_file(filenameprefix):
     """Read the triplets files of the segments that correspond to the test file"""
     file_name = 'triplet_files/' + filenameprefix + '*.txt'
@@ -37,7 +29,7 @@ def read_testing_file(filenameprefix):
                     line = (line[:-2]).lower()
                     triplets = line.split('|')
                     np1 = triplets[0].split()
-                    if np1 != [] and ispronoun(np1[0]):
+                    if np1 != [] and _is_pronoun(np1[0]):
                         pronoun_flag = True
                     else:
                         pronoun_flag = False
@@ -50,6 +42,11 @@ def read_testing_file(filenameprefix):
                     current_seg.append(line_count)
         true_segment.append(set(current_seg))
     return [all_nodes, true_segment]
+
+
+def _is_pronoun(word):
+    return word in _is_pronoun.pronoun_set
+_is_pronoun.pronoun_set = {'they', 'he', 'she', 'his', 'her', 'they', 'their', 'those', 'that', 'these', 'which', 'its'}
 
 
 def load_model_parameters(training_file_in):
