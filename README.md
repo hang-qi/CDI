@@ -3,7 +3,7 @@ CDI
 
 Code for CDI project, including transcript-caption alignment, story segmentation and topic modeling.
 
-    + ner	                    folders for ner auto-mated scripts. 
+    + ner	                    NER (Name Entity Recognition) automated scripts.
     + py-story-clust	        [OBSOLETED] greedy story clustering algorithm and biclustering.
     + scripts	                tools and helper scripts
     + story-classification      [OBSOLETED]
