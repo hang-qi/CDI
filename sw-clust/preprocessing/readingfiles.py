@@ -29,6 +29,9 @@ def read_test_file(filenameprefix):
     all_nodes = Nodes()
     line_count = -1
     for segments_file in files:
+        # Delete the teaser files
+        if segments_file.split('/')[-1].split('_')[-1].split('|')[0].split(':')[-1] == 'Teaser':
+            continue
         with open(segments_file, 'r') as f:
             current_seg = []
             for line in f:
