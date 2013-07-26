@@ -67,11 +67,11 @@ class Plotter(object):
         self.fig.savefig('plot.png', transparent=False, bbox_inches=None, pad_inches=0.1)
 
 
-def SW_Process():
-    [all_nodes, true_segment, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob, transition_prob, length_prior, seg_num_prior] = readingfiles.preprocessing('2008080814', 'preprocessing/model_segmenter.txt')
-    print('Reading Files Finished')
+def sw_Process():
+    [all_nodes, true_segment] = readingfiles.read_testing_file('2008080814')
+    [transition_prob, length_prior, seg_num_prior] = readingfiles.load_model_parameters('preprocessing/model_segmenter.txt')
+    classifier = Classifier('preprocessing/model_segmenter.txt')
 
-    classifier = Classifier(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
     segmentation_model = SegmentationModel(all_nodes, transition_prob, length_prior, seg_num_prior, classifier)
     plotter = Plotter(segmentation_model, true_segment)
 
@@ -88,7 +88,7 @@ def SW_Process():
 
 
 def main():
-    SW_Process()
+    sw_Process()
 
 
 if __name__ == '__main__':

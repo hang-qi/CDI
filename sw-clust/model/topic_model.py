@@ -1,6 +1,7 @@
 import sys
 import logging
 import pickle
+from collections import defaultdict
 
 sys.path.append('..')
 
@@ -370,14 +371,14 @@ class SWConfigLevel2(SWConfig):
     def _predict_label(self, vertex_distribution):
         if vertex_distribution not in self._classification_cache:
             # Convert document or vertex distribution to word list.
-            word_list_all_type = [[], [], []]
+            word_list_all_type = defaultdict(list)
             for doc_id in vertex_distribution.document_ids:
                 for word_type in WORD_TYPES:
                     words = [self.vocabularies[word_type].get_word(wid) for wid in self.documents[doc_id].word_ids[word_type]]
                     word_list_all_type[word_type].extend(words)
 
             # Classify and save result to cache.
-            (category, confidence) = self._classifier.classify(word_list_all_type)
+            (category, confidence) = self._classifier.predict(word_list_all_type, WORD_TYPES)
             self._classification_cache[vertex_distribution] = (category, confidence)
         return self._classification_cache[vertex_distribution]
 
@@ -511,11 +512,9 @@ class TopicModel(object):
         if level_counter == 1:
             config = SWConfig(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter)
         elif level_counter == 2:
-            # TODO: load classifier and initialize the object
             classifier = None
             if self._classifier_model_file is not None:
-                classifier = Classifier()
-                classifier.load(self._classifier_model_file)
+                classifier = Classifier(self._classifier_model_file)
             config = SWConfigLevel2(graph_size, vertex_distributions=next_vertex_distributions, documents=self.corpus.documents, vocabularies=self.corpus.vocabularies, level=level_counter, classifier=classifier)
         config.setup()
         return config
@@ -580,6 +579,9 @@ class _TreeNode(object):
             title = ' '.join(keep)
         return title
 
+    def get_num_children(self):
+        return len(self._children)
+
 
 class _Tree(object):
     """A Tree structure."""
@@ -614,26 +616,61 @@ class _Tree(object):
         self._height += 1
 
     def print_hiearchy(self, labels=None, synthesize_title=False, vocabularies=None):
-        self.__print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
+        self._print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
 
-    def __print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
+    def _print_hiearchy_recursive(self, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
         if synthesize_title:
             assert(vocabularies is not None)
             print('{0}+ {1}'.format(level_indents*'|  ', root.synthesize_title(vocabularies)))
         for child_node in root:
             if not child_node.is_terminal():
                 # Have next level.
-                self.__print_hiearchy_recursive(
+                self._print_hiearchy_recursive(
                     child_node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
             else:
                 # Terminal node is a document.
                 assert(len(child_node._vertex_distribution.document_ids) == 1)
                 doc_id = child_node._vertex_distribution.document_ids[0]
+                label_to_print = doc_id
                 if labels is not None:
                     label_to_print = labels[doc_id]
-                else:
-                    label_to_print = doc_id
                 print('{0}{1}{2}'.format((level_indents)*'|  ', '|- ', label_to_print))
+
+    def print_hiearchy_json(self, fw, labels=None, synthesize_title=False, vocabularies=None):
+        self._print_hiearchy_recursive_json(fw, root=self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
+
+    def _print_hiearchy_recursive_json(self, fw, root, labels=None, level_indents=0, synthesize_title=False, vocabularies=None):
+        fw.write(level_indents*'  '+'{')
+        if synthesize_title:
+            assert(vocabularies is not None)
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(root.synthesize_title(vocabularies)))
+
+        else:
+            fw.write((level_indents+1)*'  ' + '"name": "{0}",'.format(branch_id))
+            #print('{0}+'.format(level_indents*'|  '))
+
+        if root.get_num_children() > 0:
+            fw.write((level_indents+1)*'  ' + '"children": [')
+            for cid, child_node in enumerate(root):
+                if not child_node.is_terminal():
+                    # Have next level
+                    self._print_hiearchy_recursive_json(
+                        fw, node, labels=labels, level_indents=level_indents+1, synthesize_title=synthesize_title, vocabularies=vocabularies)
+                    if cid != root.get_num_children() - 1:
+                        fw.write((level_indents+1)*'  ' + ',')
+                else:
+                    # Terminal node is a document.
+                    assert(len(child_node._vertex_distribution.document_ids) == 1)
+                    doc_id = child_node._vertex_distribution.document_ids[0]
+                    label_to_print = doc_id
+                    if labels is not None:
+                        label_to_print = labels[doc_id]
+                    append = ''
+                    if cid != root.get_num_children() - 1:
+                        append = ','
+                    fw.write((level_indents+1)*'  ' + '{' + '"name": "{0}"'.format((label_to_print)) + '}' + append)
+            fw.write((level_indents+1)*'  ' + ']')
+        fw.write(level_indents*'  '+'}')
 
 
 #
