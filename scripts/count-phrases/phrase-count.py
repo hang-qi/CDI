@@ -106,35 +106,38 @@ def _count_phrases(captionfile, phrases_dict):
     return feature_vector
 
 
-def count_year_month(year, month, phrases_dict):
-    logging.info('Counting for {0}-{1:02d} started.'.format(year, month))
-    outputfile = 'data/count_{0}-{1:02}.txt'.format(year, month)
-    with open(outputfile, 'w') as fout:
-        # Get all files in the year
-        caption_files = []
-        for day in range(1, 31):
-            caption_files.extend(_get_all_captionfiles('/tv/{0}/{0}-{1:02d}/{0}-{1:02d}-{2:02d}/'.format(year, month, day)))
-        logging.info('Files found for {0}-{1:02d}.'.format(year, month))
+def count_year(year, phrases_dict):
+    for month in range(1, 13):
+        logging.info('Counting for {0}-{1:02d} started.'.format(year, month))
+        outputfile = 'data/count_{0}-{1:02}.txt'.format(year, month)
+        with open(outputfile, 'w') as fout:
+            # Get all files in the year
+            caption_files = []
+            for day in range(1, 32):
+                folder = '/tv/{0}/{0}-{1:02d}/{0}-{1:02d}-{2:02d}/'.format(year, month, day)
+                caption_files.extend(_get_all_captionfiles(folder))
+            logging.info('Files found for {0}-{1:02d}.'.format(year, month))
 
-        # Count files one by one
-        for captionfile in caption_files:
-            # Extract meta-data from the filename
-            filename = captionfile.split('/')[-1]
-            (broadcast_datetime, country, network_and_show) = _parse_filename(filename)
+            # Count files one by one
+            for captionfile in caption_files:
+                # Extract meta-data from the filename
+                filename = captionfile.split('/')[-1]
+                (broadcast_datetime, country, network_and_show) = _parse_filename(filename)
 
-            # Only count for US network
-            if country != 'US':
-                continue
+                # Only count for US network
+                if country != 'US':
+                    continue
 
-            # Count
-            logging.info('Counting: {0}'.format(filename))
-            feature_vector = _count_phrases(captionfile, phrases_dict)
+                # Count
+                logging.info('Counting: {0}'.format(filename))
+                feature_vector = _count_phrases(captionfile, phrases_dict)
 
-            feature_string = [str(x) for x in feature_vector]
-            # output counting result
-            fout.write('{date:%Y-%m-%d}, {hour:%H:%M}, {show}, {feature}\n'.format(
-                date=broadcast_datetime, hour=broadcast_datetime, show=network_and_show, feature=', '.join(feature_string)))
-    logging.info('Counting for year {0}-{1:02d} done.'.format(year, month))
+                feature_string = [str(x) for x in feature_vector]
+                # output counting result
+                fout.write('{date:%Y-%m-%d}, {hour:%H:%M}, {show}, {feature}\n'.format(
+                    date=broadcast_datetime, hour=broadcast_datetime, show=network_and_show, feature=', '.join(feature_string)))
+        logging.info('Counting for {0}-{1:02d} done.'.format(year, month))
+    logging.info('Counting for year {0} done.'.format(year))
 
 
 def main():
@@ -146,14 +149,12 @@ def main():
         phrases_dict[phrase.phrase] = index
 
     threads = []
-    #for year in range(2006, 2014):
-    for year in range(2006, 2007):
-        for month in range(1, 3):
-            #count_whole_year(year, phrases_dict)
-            t = threading.Thread(target=count_year_month, args=(year, month, phrases_dict))
-            t.daemon = True
-            t.start()
-            threads.append(t)
+    for year in range(2006, 2014):
+        #count_whole_year(year, phrases_dict)
+        t = threading.Thread(target=count_year, args=(year, phrases_dict))
+        t.daemon = True
+        t.start()
+        threads.append(t)
 
     for t in threads:
         t.join()
