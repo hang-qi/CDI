@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812124341.217</start>
+<end>20080812124625.581</end>
+Michael Phelps | continues breaking | records 

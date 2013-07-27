@@ -1,0 +1,9 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808205344.018</start>
+<end>20080808205725.973</end>
+We | 're also continuing to monitor | the breaking news 
+ABC News | is now reporting | he 
+We | 're waiting | a formal statement 
+we | 're going to hear | the tabloid reporter 
+Our Drew Griffin | is working | this part of the story 
+more | to come right here | THE SITUATION ROOM 

@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080812195841.416</start>
+<end>20080812195909.778</end>
+we | have n't mastered | the technology 
+We | were | just children 

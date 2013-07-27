@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Moore-Griffin-terror-watch-list</story>
+<start>20080814003303.547</start>
+<end>20080814003327.938</end>
+he | gets stopped | the ticket counter 
+somehow his name | got | the government's terror watch list 

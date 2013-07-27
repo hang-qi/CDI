@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Campaigns-stagecraft-vacations</story>
+<start>20080815004007.936</start>
+<end>20080815004235.450</end>
+a vacation | 's just | a vacation 

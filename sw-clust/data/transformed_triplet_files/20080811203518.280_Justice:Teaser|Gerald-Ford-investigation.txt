@@ -1,0 +1,6 @@
+<story>Justice:Teaser|Gerald-Ford-investigation</story>
+<start>20080811203518.280</start>
+<end>20080811203531.327</end>
+We | 're learning | surprising new information 
+a future president | contacted | the FBI 
+he | was | part 

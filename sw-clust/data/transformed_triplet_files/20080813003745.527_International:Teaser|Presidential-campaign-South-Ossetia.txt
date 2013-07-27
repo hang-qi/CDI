@@ -1,0 +1,6 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080813003745.527</start>
+<end>20080813004017.346</end>
+the candidates | are saying | the fighting 
+Georgia | put | Georgia 
+We | 'll be | the break 

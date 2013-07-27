@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812133639.663</start>
+<end>20080812133930.200</end>
+He | wins | number three 
+his quest | to catch | an Olympic legend 

@@ -1,0 +1,6 @@
+<story>Human-interest:Teaser|Chupacabra-sighting</story>
+<start>20080813025106.728</start>
+<end>20080813025123.078</end>
+many | are convinced | the chupacabra 
+The dashcam video | captured | the creature 
+the dashcam video | 's just | a dog 

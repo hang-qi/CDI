@@ -1,0 +1,6 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815124721.770</start>
+<end>20080815124732.280</end>
+the U.S. Secretary of State | is | the Georgian capital 
+Russian troops | entrenched | in and several cities 
+We | 'll be | top of that 

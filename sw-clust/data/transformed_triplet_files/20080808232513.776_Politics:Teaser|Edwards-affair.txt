@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808232513.776</start>
+<end>20080808232636.426</end>
+he | had | an extramarital affair 
+We | 'll examine | the political fallout 

@@ -1,0 +1,5 @@
+<story>Money|House-foreclosures</story>
+<start>20080814122913.983</start>
+<end>20080814122932.101</end>
+the month of July | compared | the same period 
+more than 270,000 homes | received | at least one foreclosure-related notice 

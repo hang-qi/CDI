@@ -1,0 +1,17 @@
+<story>Health|Race-affects-cancer</story>
+<start>20080811174602.391</start>
+<end>20080811174736.986</end>
+the rate | screening | prostate cancer 
+race | matters when | CNN NEWSROOM 
+only one in three African-American men | is getting screened | three African-American men 40s 
+which | is when | they 
+we | need to do | a better job 
+African-American men | need to get screened | African-American men 40s 
+men | should get tested | prostate cancer 
+which | includes | all black men 
+Everybody else | can wait | their 50 
+some people | need to even do | their 50 
+someone | has | several relatives 
+several relatives family | have had | prostate cancer 
+they | should even get tested | age 40 
+Right | is usually | 40 and 50 

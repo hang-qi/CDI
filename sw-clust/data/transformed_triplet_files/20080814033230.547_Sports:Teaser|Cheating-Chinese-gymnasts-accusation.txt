@@ -1,0 +1,7 @@
+<story>Sports:Teaser|Cheating-Chinese-gymnasts-accusation</story>
+<start>20080814033230.547</start>
+<end>20080814033518.181</end>
+the Chinese gymnast | grabbed | gold 
+they | 're | 16 
+other evidence | suggest | they 
+China | bend | the rules 

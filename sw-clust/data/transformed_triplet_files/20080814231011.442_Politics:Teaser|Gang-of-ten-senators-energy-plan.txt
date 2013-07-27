@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Gang-of-ten-senators-energy-plan</story>
+<start>20080814231011.442</start>
+<end>20080814231023.053</end>
+energy policy | stalled | Congress 
+our elected officials | come | a energy bill 

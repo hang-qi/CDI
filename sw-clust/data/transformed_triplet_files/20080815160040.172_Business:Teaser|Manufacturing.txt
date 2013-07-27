@@ -1,0 +1,4 @@
+<story>Business:Teaser|Manufacturing</story>
+<start>20080815160040.172</start>
+<end>20080815160044.410</end>
+some interesting and positive news | manufacturing | this country 

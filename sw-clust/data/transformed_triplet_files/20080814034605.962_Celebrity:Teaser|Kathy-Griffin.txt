@@ -1,0 +1,6 @@
+<story>Celebrity:Teaser|Kathy-Griffin</story>
+<start>20080814034605.962</start>
+<end>20080814034849.058</end>
+We | are | Kathy Griffin 
+nervous laughter | seemed to turn | stage 
+a python | slithered | up one pant leg 

@@ -1,0 +1,4 @@
+<story>Entertainment:Teaser|Isaac-Hayes-death</story>
+<start>20080811024700.883</start>
+<end>20080811024927.430</end>
+shaft | was | his introduction 

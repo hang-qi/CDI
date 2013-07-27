@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Fuel-efficient-cars</story>
+<start>20080815162611.969</start>
+<end>20080815162618.876</end>
+the right car | will get | better mileage 

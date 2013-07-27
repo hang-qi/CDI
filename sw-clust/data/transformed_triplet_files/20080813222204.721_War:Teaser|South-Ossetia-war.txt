@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813222204.721</start>
+<end>20080813222504.534</end>
+Condoleezza Rice | is warning | Russia 
+Georgia | be | a headache 

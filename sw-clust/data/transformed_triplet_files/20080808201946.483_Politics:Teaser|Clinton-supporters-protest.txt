@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Clinton-supporters-protest</story>
+<start>20080808201946.483</start>
+<end>20080808202000.397</end>
+Hillary Clinton | is now speaking | Barack Obama's behalf 
+The Obama camp | is | Clinton's hold-out supporters 
+We | have | a full report 

@@ -1,0 +1,4 @@
+<story>Human-interest|Bush-attends-Olympics</story>
+<start>20080812022626.951</start>
+<end>20080812022639.597</end>
+Wow daughter Barbara | attend | a swimming competition 

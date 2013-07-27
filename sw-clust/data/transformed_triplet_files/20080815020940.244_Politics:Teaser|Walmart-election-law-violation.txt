@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Walmart-election-law-violation</story>
+<start>20080815020940.244</start>
+<end>20080815020954.191</end>
+Wal-Mart | have | another policy 
+the company | is now sending | its employees 
+We | have got | the facts 

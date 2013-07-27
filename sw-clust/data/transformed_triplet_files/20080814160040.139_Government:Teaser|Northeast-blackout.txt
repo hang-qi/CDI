@@ -1,0 +1,4 @@
+<story>Government:Teaser|Northeast-blackout</story>
+<start>20080814160040.139</start>
+<end>20080814160047.413</end>
+your | hometown | any safer 

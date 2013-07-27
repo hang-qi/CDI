@@ -1,0 +1,5 @@
+<story>Human-interest:Teaser|Fatal-spider</story>
+<start>20080814215224.507</start>
+<end>20080814215238.053</end>
+we | are working | this hour 
+doctors | are seeing | even more of these cases 

@@ -1,0 +1,9 @@
+<story>Politics|Presidential-campaign-polls</story>
+<start>20080815233356.800</start>
+<end>20080815233433.670</end>
+Senator McCain | dead even | the race 
+The Gallop Daily Tracking Poll | shows | senators Obama and McCain 
+that Senator Obama | was leading | a margin of six percent 
+the liberal national media | appears to be | Senator Obama 
+We | 'll have | the results 
+We | 'll have | much more 

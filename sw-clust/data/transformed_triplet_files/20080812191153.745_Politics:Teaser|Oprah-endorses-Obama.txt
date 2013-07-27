@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Oprah-endorses-Obama</story>
+<start>20080812191153.745</start>
+<end>20080812191345.190</end>
+She | threw | Oprah 's weight 

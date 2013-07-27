@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080815163334.778</start>
+<end>20080815163353.063</end>
+We | 'll hang | Don Lemon 
+we | 'll be following | the top of the hour 

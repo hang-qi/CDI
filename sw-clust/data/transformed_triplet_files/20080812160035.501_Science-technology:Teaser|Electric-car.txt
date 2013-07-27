@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Electric-car</story>
+<start>20080812160035.501</start>
+<end>20080812160039.872</end>
+The push | to make | the electric car 

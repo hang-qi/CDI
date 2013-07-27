@@ -1,0 +1,5 @@
+<story>Celebrity|Bill-Murray</story>
+<start>20080815225237.618</start>
+<end>20080815225259.973</end>
+actor Bill Murray | is earning | his stripes 
+Murray | made | the tandem jump 

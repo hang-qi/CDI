@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Bush-vacation</story>
+<start>20080815215411.013</start>
+<end>20080815215423.993</end>
+President Bush | heading | his ranch 
+vacation | send | the wrong message 

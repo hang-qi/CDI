@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Florida-police-brutality</story>
+<start>20080812212045.943</start>
+<end>20080812212347.024</end>
+We | have | the surveillance tapes 

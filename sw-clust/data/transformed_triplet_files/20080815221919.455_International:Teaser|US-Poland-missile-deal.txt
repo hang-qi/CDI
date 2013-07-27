@@ -1,0 +1,5 @@
+<story>International:Teaser|US-Poland-missile-deal</story>
+<start>20080815221919.455</start>
+<end>20080815221927.696</end>
+The U.S. | pushes | something 
+Poland | to keep | America 

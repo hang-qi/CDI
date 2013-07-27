@@ -1,0 +1,4 @@
+<story>International|Dalai-Lama</story>
+<start>20080811225629.817</start>
+<end>20080811225634.756</end>
+the Dalai Lama | receives | greetings 

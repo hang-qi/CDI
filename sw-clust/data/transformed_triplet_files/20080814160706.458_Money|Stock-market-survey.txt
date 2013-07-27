@@ -1,0 +1,8 @@
+<story>Money|Stock-market-survey</story>
+<start>20080814160706.458</start>
+<end>20080814160737.622</end>
+the show | get to weigh | our 
+Poppy Harlow | is here | today's question 
+we | 're focusing | the stock market 
+people | feel | people money 
+We | see | the Dow 

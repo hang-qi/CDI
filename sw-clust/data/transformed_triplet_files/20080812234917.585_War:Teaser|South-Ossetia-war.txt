@@ -1,0 +1,7 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812234917.585</start>
+<end>20080812234936.571</end>
+we | are going to stay | the breaking news 
+the cease-fire | announced | the fighting 
+We | will cover | everything 
+they | have been seeing | the ground 

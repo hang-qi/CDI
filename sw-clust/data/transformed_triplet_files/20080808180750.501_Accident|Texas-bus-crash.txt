@@ -1,0 +1,8 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808180750.501</start>
+<end>20080808180815.092</end>
+We | 're hearing | a blown tire 
+A bus | carrying | members of a Vietnamese church group 
+a highway overpass | plunged | a ravine 
+They | were taking | an annual pilgrimage 
+Federal safety inspectors | are | Federal safety inspectors way 

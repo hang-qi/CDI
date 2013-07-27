@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810160148.573</start>
+<end>20080810160219.270</end>
+Barack Obama | may be | vacation 
+John McCain | is n't taking | time 

@@ -1,0 +1,7 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080811180543.441</start>
+<end>20080811180925.996</end>
+Something similar | may have happened | Sherman 
+Something similar | appears | a recapped tire 
+the crash | killed | 17 passengers 
+the charter company | operating | bus 

@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Wounded-Sergeant-Ottoman-next-mission</story>
+<start>20080808235644.732</start>
+<end>20080808235926.694</end>
+a badly wounded Army sergeant | prepares | his next mission 

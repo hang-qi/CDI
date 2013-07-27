@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080814231854.931</start>
+<end>20080814231905.408</end>
+they | found | a way 
+they | think | they 

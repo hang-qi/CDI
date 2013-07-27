@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080812121547.879</start>
+<end>20080812121556.020</end>
+We | 'll take | The AC 
+yesterday | will be | nice today 

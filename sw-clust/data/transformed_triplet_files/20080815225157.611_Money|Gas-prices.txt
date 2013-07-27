@@ -1,0 +1,6 @@
+<story>Money|Gas-prices</story>
+<start>20080815225157.611</start>
+<end>20080815225217.464</end>
+notice | 're spending | less money 
+Gas prices | have fallen | the 29th straight day 
+A AAA survey | shows | the nationwide average of regular unleaded 

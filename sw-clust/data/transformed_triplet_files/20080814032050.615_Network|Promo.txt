@@ -1,0 +1,5 @@
+<story>Network|Promo</story>
+<start>20080814032050.615</start>
+<end>20080814032058.756</end>
+We | will announce | the winner 
+The winner | gets | a T-shirt 

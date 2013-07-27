@@ -1,0 +1,8 @@
+<story>Business|Small-cars-comeback</story>
+<start>20080811161939.042</start>
+<end>20080811162005.468</end>
+Small car sales | are growing | the United States 
+small car sales | could increase | more than 10 percent 
+the new trend | shows how | seriously American consumers 
+the new trend | will remain | gas prices 
+they | 're cranking up | production 

@@ -1,0 +1,6 @@
+<story>Money:Teaser|Gas-prices</story>
+<start>20080814120738.856</start>
+<end>20080814120800.211</end>
+The third of the gas stations | have | a problem 
+We | 're following | inspectors 
+they | put | gas pumps 

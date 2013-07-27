@@ -1,0 +1,7 @@
+<story>Politics|Democratic-convention-tickets</story>
+<start>20080808195054.817</start>
+<end>20080808195115.905</end>
+Tickets | sold | within 24 hours 
+they | went | sale 
+The Democratic candidate | is delivering | his address 
+which | seats | 75,000 people 

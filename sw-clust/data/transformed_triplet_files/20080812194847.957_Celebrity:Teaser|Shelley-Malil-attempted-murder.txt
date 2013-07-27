@@ -1,0 +1,4 @@
+<story>Celebrity:Teaser|Shelley-Malil-attempted-murder</story>
+<start>20080812194847.957</start>
+<end>20080812195157.746</end>
+a hit film | now facing | attempted murder charges 

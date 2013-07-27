@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080812003323.934</start>
+<end>20080812003511.241</end>
+We | 're going to check | the facts 
+John Edwards | is telling | his affair 

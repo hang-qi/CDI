@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080811124746.128</start>
+<end>20080811124755.504</end>
+Olympic athletes | are n't just competing | gold 
+they | 're going | the green 

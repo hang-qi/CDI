@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080813163501.363</start>
+<end>20080813163509.839</end>
+some folks | want to work | five days 

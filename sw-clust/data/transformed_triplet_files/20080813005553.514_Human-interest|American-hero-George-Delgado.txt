@@ -1,0 +1,4 @@
+<story>Human-interest|American-hero-George-Delgado</story>
+<start>20080813005553.514</start>
+<end>20080813005618.773</end>
+s | stop and remember | Army Private First Class George Delgado 

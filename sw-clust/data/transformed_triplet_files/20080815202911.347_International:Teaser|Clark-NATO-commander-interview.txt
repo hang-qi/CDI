@@ -1,0 +1,5 @@
+<story>International:Teaser|Clark-NATO-commander-interview</story>
+<start>20080815202911.347</start>
+<end>20080815202927.430</end>
+a man | knows | crisis 
+the former supreme | allied | commander of NATO 

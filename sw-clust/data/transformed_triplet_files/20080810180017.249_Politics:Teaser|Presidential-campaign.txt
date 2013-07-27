@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810180017.249</start>
+<end>20080810180040.039</end>
+The candidates | are twisting and turning | over energy policy 
+Their staffs | are | a split-second competition 

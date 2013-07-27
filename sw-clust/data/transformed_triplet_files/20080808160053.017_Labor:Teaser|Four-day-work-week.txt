@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080808160053.017</start>
+<end>20080808160100.291</end>
+The state of Utah | finished | its first four-day week 

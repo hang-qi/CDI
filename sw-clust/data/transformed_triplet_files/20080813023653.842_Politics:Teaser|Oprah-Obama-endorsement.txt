@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Oprah-Obama-endorsement</story>
+<start>20080813023653.842</start>
+<end>20080813023704.086</end>
+they | had proved | Oprah 
+Clout | may have helped | Obama 

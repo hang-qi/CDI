@@ -1,0 +1,9 @@
+<story>Justice|Mayor-jail-time</story>
+<start>20080809004140.763</start>
+<end>20080809004201.784</end>
+Detroit Mayor Kwame Kilpatrick | is | jail 
+he | is | trouble 
+Charged today | assaulting | two police officers 
+Kilpatrick | spent | the night 
+he | went | Canada 
+He | must wear | a monitoring device 

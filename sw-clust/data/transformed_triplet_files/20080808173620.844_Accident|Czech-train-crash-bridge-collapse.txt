@@ -1,0 +1,8 @@
+<story>Accident|Czech-train-crash-bridge-collapse</story>
+<start>20080808173620.844</start>
+<end>20080808173640.664</end>
+We | 're talking | a double disaster 
+construction | collapses | the path of a passenger train 
+at least six people | were killed | 41 
+The train | was traveling | Prague 
+Many of the passengers | were headed | an Iron Maiden concert 

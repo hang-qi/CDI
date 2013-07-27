@@ -1,0 +1,6 @@
+<story>Money|Oil-price</story>
+<start>20080812191955.927</start>
+<end>20080812192019.684</end>
+Gas prices | dropped | another cent 
+a gallon of unleaded regular | is now | $ 3.80 
+The dip | is believed to be fueled | part 

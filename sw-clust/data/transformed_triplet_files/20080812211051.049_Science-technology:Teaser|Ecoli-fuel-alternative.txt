@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Ecoli-fuel-alternative</story>
+<start>20080812211051.049</start>
+<end>20080812211058.957</end>
+This hour | might actually become | a source of fuel 

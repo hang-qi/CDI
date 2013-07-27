@@ -1,0 +1,5 @@
+<story>Accident|Toronto-propane-plant-explosion</story>
+<start>20080811211223.007</start>
+<end>20080811211243.695</end>
+Toronto authorities | are taking | a close look 
+a propane distribution plant | forced | thousands 

@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808200043.641</start>
+<end>20080808200054.052</end>
+Russian tanks | roll | Georgia 
+reports of bombs | dropped | bodies 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|H-Clinton-2008-08-08-Nevada-speech</story>
+<start>20080808192032.530</start>
+<end>20080808192043.975</end>
+A lot | happening here | the CNN NEWSROOM 
+She | is speaking | this hour 

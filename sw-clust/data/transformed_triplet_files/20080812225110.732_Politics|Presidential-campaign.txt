@@ -1,0 +1,12 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080812225110.732</start>
+<end>20080812225152.040</end>
+Barack Obama | is hammering | John McCain 
+The Wall Street Journal | reports | Obama 
+John McCain | has n't run | any campaign spots 
+the Republican | has | a slight edge 
+an | update | Obama's Hawaii vacation 
+We | are told | he 
+He | 's visited | his grandmother 
+he | went | the movies 
+he | had | a four star meal 

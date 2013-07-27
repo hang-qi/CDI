@@ -1,0 +1,4 @@
+<story>International:Teaser|Palestinian-militants-training</story>
+<start>20080814205512.474</start>
+<end>20080814205802.611</end>
+Palestinian militants | are training | the Middle East 

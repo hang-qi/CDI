@@ -1,0 +1,7 @@
+<story>Politics|Obama-campaign</story>
+<start>20080812024533.896</start>
+<end>20080812024554.117</end>
+Barack Obama | has run | a pretty unconventional campaign 
+His campaign | is now offering | supporters 
+the chance | to be | the first 
+Senator Obama | will make | that decision 

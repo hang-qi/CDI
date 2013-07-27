@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810162641.097</start>
+<end>20080810162945.782</end>
+we | 're standing | a live conversation 
+Russian war planes | are dropping | bombs 

@@ -1,0 +1,10 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080814165601.457</start>
+<end>20080814165647.102</end>
+a good day | to ask | this question 
+The Dow | is up | 169 points 
+CNNmoney.com's Poppy Harlow | is back | the results 
+the Dow | can go back down just | as much 
+The 30 percent | pulled | all their money 
+Ali's | going to back | me 
+We | talked | inflation 

@@ -1,0 +1,13 @@
+<story>Network|Anchor-chat</story>
+<start>20080815160517.049</start>
+<end>20080815160617.876</end>
+They | have | many , many culinary delights 
+we | 're going to settle here | one of the local specialties 
+They | make | A very delicious thing 
+A fried Twinkie | is really | a doughnut 
+Bill Schneider | were traveling | plane 
+he | 'd have | other things 
+he | were traveling | plane 
+he | 'd have to pay to check | his luggage 
+even | might not even get | a blanket 
+he | forked | 5 , 6 or 7 bucks 

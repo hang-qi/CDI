@@ -1,0 +1,5 @@
+<story>Politics|Obama-vacation</story>
+<start>20080808201905.675</start>
+<end>20080808201917.954</end>
+New York | turned | just fine 
+Barack Obama | to take | a vacation 

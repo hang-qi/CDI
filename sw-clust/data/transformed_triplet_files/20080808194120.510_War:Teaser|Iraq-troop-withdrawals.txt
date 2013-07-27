@@ -1,0 +1,5 @@
+<story>War:Teaser|Iraq-troop-withdrawals</story>
+<start>20080808194120.510</start>
+<end>20080808194136.326</end>
+We | are following | this developing story today 
+one | involves | John Edwards 

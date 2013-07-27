@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-candidates-taxes</story>
+<start>20080808235143.932</start>
+<end>20080808235420.888</end>
+The candidates | tackle | one of the most important issues 
+one of the most important issues facing middle class families | could mean | your family 

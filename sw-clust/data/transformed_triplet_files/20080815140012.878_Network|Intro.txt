@@ -1,0 +1,4 @@
+<story>Network|Intro</story>
+<start>20080815140012.878</start>
+<end>20080815140021.487</end>
+Michael Phelps | makes | And pool shark . 

@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812025714.563</start>
+<end>20080812025721.370</end>
+We | 've got | the latest 

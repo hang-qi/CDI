@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080813025235.950</start>
+<end>20080813025258.806</end>
+he | doing | he 
+some substance | made | COOPER 

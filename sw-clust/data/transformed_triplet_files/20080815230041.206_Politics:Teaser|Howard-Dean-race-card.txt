@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Howard-Dean-race-card</story>
+<start>20080815230041.206</start>
+<end>20080815230050.849</end>
+he | playing | the race card 
+he | make | a slip of the tongue 

@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808235045.840</start>
+<end>20080808235115.703</end>
+We | are going to talk | he 
+president | knowing | he 
+We | have got | all that 

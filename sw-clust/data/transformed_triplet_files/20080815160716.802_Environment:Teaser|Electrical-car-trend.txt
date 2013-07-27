@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Electrical-car-trend</story>
+<start>20080815160716.802</start>
+<end>20080815160957.062</end>
+We | are | the issues 

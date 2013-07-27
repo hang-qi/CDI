@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812124851.427</start>
+<end>20080812124909.378</end>
+he | 's told | his troops 

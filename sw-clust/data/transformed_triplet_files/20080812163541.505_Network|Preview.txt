@@ -1,0 +1,5 @@
+<story>Network|Preview</story>
+<start>20080812163541.505</start>
+<end>20080812163549.412</end>
+Don Lemon | is | the `` CNN NEWSROOM 
+We | are following developing | news 

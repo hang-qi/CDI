@@ -1,0 +1,5 @@
+<story>Celebrity:Teaser|Political-parodies</story>
+<start>20080808122301.045</start>
+<end>20080808122316.127</end>
+they | 're making | news 
+the celebs | living | the good life 

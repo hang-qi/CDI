@@ -1,0 +1,4 @@
+<story>War|Afghanistan-pictures</story>
+<start>20080808225951.119</start>
+<end>20080808225951.119</end>
+a boy | gives | his thirsty dog 

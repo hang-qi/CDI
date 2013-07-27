@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-candidates-on-jobs</story>
+<start>20080808162608.631</start>
+<end>20080808162616.673</end>
+the presidential candidates | are talking | this country 

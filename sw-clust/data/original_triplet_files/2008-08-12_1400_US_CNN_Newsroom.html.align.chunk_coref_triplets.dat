@@ -1,0 +1,1206 @@
+<story>Network|Intro</story>
+<start>20080812140030.863</start>
+Stay informed all day at the CNN NEWSROOM.
+Stay/NP; informed/VP; all day/NP	-Infinity
+<end>20080812140037.002</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812140037.002</start>
+Russia says it halted its attack on its neighbor, but Georgia says the bombs are still falling.
+Russia 's/NP; halted/VP; its attack/NP	-Infinity
+<end>20080812140045.310</end>
+
+<story>Justice:Teaser|Florida-police-brutality</story>
+<start>20080812140045.310</start>
+COLLINS: Police officers unleashing their fists and feet on a handcuffed suspect.
+Police officers/NP; unleashing/VP; Police officers fists and feet/NP	-Infinity
+<end>20080812140051.784</end>
+
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812140051.784</start>
+HARRIS: He needs eight to break an Olympic record.
+He/NP; needs/VP; eight/NP	-Infinity
+<end>20080812140109.268</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080812140109.268</start>
+Russia says it has stopped its attacks, but Georgia says the bombings continue even after the pledge.
+Russia 's/NP; has stopped/VP; its attacks/NP	-Infinity
+
+Russia says it has stopped its attacks, but Georgia says the bombings continue even after the pledge.
+the bombings/NP; continue even/VP after/PP; the pledge/NP	-Infinity
+
+Let's back up a bit here.
+Let/NP; 's back up/VP; a bit/NP	-Infinity
+
+Today Russia's president said the former Soviet Republic had been punished enough for its attack on South Ossetia.
+Today Russia's president/NP; said/VP; the former Soviet Republic/NP	-Infinity
+
+The province had tried to break away from Georgia and align with Russia.
+The province/NP; had tried to break/VP away/PRT; Georgia/NP	-Infinity
+
+Moscow's pledge to halt the fighting came as French President Nicolas Sarkozy arrived in Russia.
+Moscow's pledge/NP; to halt/VP; the fighting/NP	-Infinity
+
+Moscow's pledge to halt the fighting came as French President Nicolas Sarkozy arrived in Russia.
+French President Nicolas Sarkozy/NP; arrived/VP in/PP; Russia/NP	-Infinity
+
+He is hand-delivering Western demands Russia pull back its troops.
+hand-delivering Western demands Russia/NP; pull/VP back/PRT; its troops/NP	-Infinity
+
+The United Nations and NATO have also called meetings today.
+The United Nations and NATO/NP; have also called/VP; meetings/NP	-Infinity
+
+Russia stirred international concerns by launching attacks deep into Georgia, a U.S. ally.
+Russia/NP; stirred/VP; international concerns/NP	-Infinity
+
+The push went beyond provinces that have close ties to Russia.
+The push/NP; went/VP beyond/PP; provinces/NP	-Infinity
+
+COLLINS: Let's get the very latest now on the diplomatic efforts.
+Let/NP; 's get/VP; the very latest/NP	-Infinity
+
+State Department officials says that the U.S. has seen the reports about the so-called Russia halt to attacks but they're saying that they're unable to verify it.
+the U.S./NP; has seen/VP; the reports/NP	-Infinity
+
+State Department officials says that the U.S. has seen the reports about the so-called Russia halt to attacks but they're saying that they're unable to verify it.
+they/NP; 're saying/VP; they/NP	-Infinity
+
+The priority today at the State Department is the Secretary of State Rice is to speak to world leaders like Britain, France and Germany and find that diplomatic solution.
+the Secretary of State Rice/NP; is to speak/VP to/PP; world leaders/NP	-Infinity
+
+The priority today at the State Department is the Secretary of State Rice is to speak to world leaders like Britain, France and Germany and find that diplomatic solution.
+Britain , France and Germany/NP; find/VP; that diplomatic solution/NP	-Infinity
+
+Secretary Rice has sent a mid-level envoy to Georgia to work out some sort of mediation.
+Secretary Rice/NP; has sent/VP; a mid-level envoy/NP	-Infinity
+
+Secretary Rice has sent a mid-level envoy to Georgia to work out some sort of mediation.
+Georgia/NP; to work/VP out/PRT; some sort of mediation/NP	-Infinity
+
+The U.S. is still calling for Russia's troops to get out.
+The U.S./NP; is still calling/VP for/PP; Russia's troops/NP	-Infinity
+
+Now before Russia's announcement today, President Bush had some surprisingly tough words.
+President Bush/NP; had/VP; some surprisingly tough words/NP	-Infinity
+
+Prime Minister Vladimir Putin appearing to dare the U.S. and the west to stop him.
+Prime Minister Vladimir Putin/NP; appearing to dare/VP; the U.S./NP	-Infinity
+
+Prime Minister Vladimir Putin appearing to dare the U.S. and the west to stop him.
+the west/NP; to stop/VP; Our Zain Verjee/NP	-Infinity
+
+President Bush pushes back, warning Russia not to attack Georgia's capital, Tbilisi.
+Russia not/NP; to attack/VP; Georgia's capital/NP	-Infinity
+
+GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: These Russian actions would represent a dramatic and brutal escalation of the conflict in Georgia.
+These Russian actions/NP; would represent/VP; a dramatic and brutal escalation of the conflict/NP	-Infinity
+
+BUSH: Russia has invaded a sovereign neighboring state and threatens a democratic government elected by its people.
+Russia/NP; has invaded/VP; a sovereign neighboring state/NP	-Infinity
+
+BUSH: Russia has invaded a sovereign neighboring state and threatens a democratic government elected by its people.
+a democratic government/NP; elected/VP by/PP; its people/NP	-Infinity
+
+Such an action is unacceptable in the 21st century.
+Such an action/NP; is/VP in/PP; the 21st century/NP	-Infinity
+
+Secretary of State Condoleezza Rice is working with world leaders, sending envoy Matthew Bryza to Georgia to get a cease-fire.
+Secretary of State Condoleezza Rice/NP; is working/VP with/PP; world leaders/NP	-Infinity
+
+Secretary of State Condoleezza Rice is working with world leaders, sending envoy Matthew Bryza to Georgia to get a cease-fire.
+Georgia/NP; to get/VP; a cease-fire/NP	-Infinity
+
+But the U.S. and NATO have made it clear they won't intervene militarily to defend their allies.
+NATO/NP; have made/VP; the U.S. and NATO/NP	-Infinity
+
+One that President Bush has made a point of visiting and holding up as a beacon of democracy.
+President Bush/NP; has made/VP; a point of visiting and/NP	-Infinity
+
+VERJEE : Those close ties with the former Soviet republic have angered Russia.
+the former Soviet republic/NP; have angered/VP; Russia/NP	-Infinity
+
+ROBERT HUNTER, RAND CORPORATION: This is a moment for the Russians to take a deep breath and say, are we going to be a real great power in the post-cold war era, or are we just going to go back and play stupid hegemonic games, but frankly lead to their isolation over time.
+the Russians/NP; to take/VP; a deep breath/NP	-Infinity
+
+ROBERT HUNTER, RAND CORPORATION: This is a moment for the Russians to take a deep breath and say, are we going to be a real great power in the post-cold war era, or are we just going to go back and play stupid hegemonic games, but frankly lead to their isolation over time.
+we/NP; going to be/VP; a real great power/NP	-Infinity
+
+VERJEE : And President Bush says Russia's actions have already damaged its standing in the world.
+Russia's actions/NP; have already damaged/VP; its standing/NP	-Infinity
+
+BUSH: And these actions jeopardize Russia's relations with the United States and Europe.
+these actions/NP; jeopardize/VP; Russia's relations/NP	-Infinity
+
+(END VIDEOTAPE) VERJEE : Washington's been pushing the U.N. security council to act, but, Heidi that's not likely to go anywhere because Russia's got veto power there.
+Washington's/NP; been pushing/VP; the U.N. security council/NP	-Infinity
+
+(END VIDEOTAPE) VERJEE : Washington's been pushing the U.N. security council to act, but, Heidi that's not likely to go anywhere because Russia's got veto power there.
+Russia's/NP; got/VP; veto power/NP	-Infinity
+
+The U.S. also needs Russia to help put pressure on Iran's nuclear program.
+The U.S./NP; needs/VP; Russia/NP	-Infinity
+
+Iran, as you know, is a top foreign policy priority for the U.S. And Heidi, we're just learning another thing from a senior U.S. official who told us that the Russian invasion was actually planned for sometime and suggested that Russia could be retreating to some of its old Soviet ways -- Heidi.
+we/NP; 're just learning/VP; another thing/NP	-Infinity
+
+Iran, as you know, is a top foreign policy priority for the U.S. And Heidi, we're just learning another thing from a senior U.S. official who told us that the Russian invasion was actually planned for sometime and suggested that Russia could be retreating to some of its old Soviet ways -- Heidi.
+the Russian invasion/NP; was actually planned/VP for/PP; sometime/NP	-Infinity
+
+Iran, as you know, is a top foreign policy priority for the U.S. And Heidi, we're just learning another thing from a senior U.S. official who told us that the Russian invasion was actually planned for sometime and suggested that Russia could be retreating to some of its old Soviet ways -- Heidi.
+Russia/NP; could be retreating/VP to/PP; some of its old Soviet ways/NP	-Infinity
+
+COLLINS: Yes, and before we really talk too much about diplomacy, it seems we can't even get the story about whether or not the cease-fire is actually being honored.
+we/NP; talk/VP; too much/NP	-Infinity
+
+COLLINS: Yes, and before we really talk too much about diplomacy, it seems we can't even get the story about whether or not the cease-fire is actually being honored.
+Iran 's/NP; seems/VP; we/NP	-Infinity
+
+I mean, just this morning we spoke with the representative from the Russian foreign ministry who kind of wouldn't give us a straight answer on what we have been hearing from the Georgian side of things about attacks after that cease-fire was announced.
+we/NP; spoke/VP with/PP; the representative/NP	-Infinity
+
+I mean, just this morning we spoke with the representative from the Russian foreign ministry who kind of wouldn't give us a straight answer on what we have been hearing from the Georgian side of things about attacks after that cease-fire was announced.
+we/NP; have been hearing/VP from/PP; the Georgian side of things/NP	-Infinity
+
+So it makes you kind of wonder, how much is this invasion about battling the U.S. now for influence in the region?
+this invasion/NP; battling/VP; the U.S./NP	-Infinity
+
+VERJEE: Well, the influence and the battles between Russia and the U.S. is really a significant part of it.
+the U.S./NP; is really/VP; a significant part of the influence/NP	-Infinity
+
+I mean, Russia's been feeling threatened because the U.S. has been increasing its foothold in Russia's own backyard.
+Russia's/NP; been feeling threatened/VP because/PP; the U.S./NP	-Infinity
+
+Russia doesn't like that.
+Russia/NP; does n't like/VP; Russia 's/NP	-Infinity
+
+The U.S. also wants missile defense plans and a system in Poland and the Czech Republic.
+The U.S./NP; wants/VP; missile defense plans/NP	-Infinity
+
+So, the message or at least part of it that they're sending to the U.S. is that Russia is in charge and the U.S. can't do anything in the region without considering Russia's own interests -- Heidi .
+they/NP; 're sending/VP to/PP; the U.S./NP	-Infinity
+
+So, the message or at least part of it that they're sending to the U.S. is that Russia is in charge and the U.S. can't do anything in the region without considering Russia's own interests -- Heidi .
+Russia/NP; is/VP in/PP; charge/NP	-Infinity
+
+So, the message or at least part of it that they're sending to the U.S. is that Russia is in charge and the U.S. can't do anything in the region without considering Russia's own interests -- Heidi .
+the U.S./NP; ca n't do/VP; anything/NP	-Infinity
+
+So, the message or at least part of it that they're sending to the U.S. is that Russia is in charge and the U.S. can't do anything in the region without considering Russia's own interests -- Heidi .
+the region/NP; considering/VP; Russia's own interests/NP	-Infinity
+
+CNN's Frederik Pleitgen is in the capital city of Tbilisi.
+CNN's Frederik Pleitgen/NP; is/VP in/PP; the capital city of Tbilisi/NP	-Infinity
+
+And Frederick, just moments ago at a news conference, we heard some strong language from Georgia's president saying in part, we will never, ever allow Georgia to be broken into pieces.
+we/NP; heard/VP; some strong language/NP	-Infinity
+
+And Frederick, just moments ago at a news conference, we heard some strong language from Georgia's president saying in part, we will never, ever allow Georgia to be broken into pieces.
+Georgia's president/NP; saying/VP in/PP; part/NP	-Infinity
+
+And Frederick, just moments ago at a news conference, we heard some strong language from Georgia's president saying in part, we will never, ever allow Georgia to be broken into pieces.
+Georgia/NP; to be broken/VP into/PP; pieces/NP	-Infinity
+
+We will get back to him in just a couple of minutes .
+We/NP; will get back/VP to/PP; Frederick/NP	-Infinity
+
+COLLINS: In the meantime, let's talk a little bit more about the detailed area that we're talking about here.
+let 's/NP; talk/VP; a little bit/NP	-Infinity
+
+COLLINS: In the meantime, let's talk a little bit more about the detailed area that we're talking about here.
+we/NP; 're talking/VP about/PP; here/NP	-Infinity
+
+Josh Levs has been following that portion of the story and trying to show us some maps that really can make sense and help us understand the situation at least geographically -- Josh.
+Josh Levs/NP; has been following/VP that/PP; portion of the story/NP	-Infinity
+
+Josh Levs has been following that portion of the story and trying to show us some maps that really can make sense and help us understand the situation at least geographically -- Josh.
+some maps/NP; can make/VP; sense/NP	-Infinity
+
+I mean, it's a confusing story that sometimes , the map is the simplest way to follow it.
+the simplest way/NP; to follow/VP; the map/NP	-Infinity
+
+I'll tell you what we've been learning from our correspondents in the field like Frederik and others.
+we/NP; 've been learning/VP from/PP; our correspondents/NP	-Infinity
+
+This is the key area where all the fighting took off last week.
+all the fighting/NP; took/VP off/PRT; last week/NP	-Infinity
+
+This for a long time, for years and years, since the early 90s has had peacekeepers, some Georgian, some Russians.
+the early 90s/NP; has had/VP; peacekeepers/NP	-Infinity
+
+Last week separatists began some new fighting, Georgia went in there with troops with assault.
+Last week separatists/NP; began/VP; some new fighting/NP	-Infinity
+
+Russia then came in and sent in their air troops, then it expanded through more of Georgia.
+Russia 's/NP; expanded/VP through/PP; more of Georgia/NP	-Infinity
+
+Because I want to tell you what Russia has said today.
+what Russia/NP; has said/VP; today/NP	-Infinity
+
+Yes, they're saying they're interested in stopping the assault, their military actions.
+they/NP; 're saying/VP; they/NP	-Infinity
+
+They don't want any Georgian peacekeepers but they want all the Russian peacekeepers to stay there, which would give them a presence and not Georgia.
+They/NP; do n't want/VP; any Georgian peacekeepers/NP	-Infinity
+
+They don't want any Georgian peacekeepers but they want all the Russian peacekeepers to stay there, which would give them a presence and not Georgia.
+they/NP; want/VP; all the Russian peacekeepers/NP	-Infinity
+
+So Russia could not be or Georgia rather could not be militarize on the outside.
+Russia/NP; could not be or/VP; Georgia/NP	-Infinity
+
+So, here's what the discussion has turned into, Heidi, the talk about who would be in control in South Ossetia.
+the talk/NP; would be/VP in/PP; control/NP	-Infinity
+
+Would there be this international force that would control it?
+this international force/NP; would control/VP; the discussion has turned into , Heidi , the talk about who/NP	-Infinity
+
+Would it be through the U.N.?
+this international force that would control it/NP; be/VP through/PP; the U.N./NP	-Infinity
+
+South Ossetia is inside Georgia but it's autonomous.
+South Ossetia/NP; is/VP inside/PP; Georgia/NP	-Infinity
+
+Russia supports the autonomous government there.
+Russia/NP; supports/VP; the autonomous government/NP	-Infinity
+
+Does Russia have to approve whatever deal is made?
+Does Russia/NP; have to approve/VP; whatever deal/NP	-Infinity
+
+This, what's the next step for demilitarizing and keeping peace keeping troops in South Ossetia -- Heidi.
+demilitarizing and keeping peace/NP; keeping/VP; troops/NP	-Infinity
+
+Josh, we'll check back with you a little later on.
+we/NP; 'll check/VP back/PRT; with/NP	-Infinity
+
+And Frederik, if you would, give us a bit of a rap on the huge rally from earlier today there in Tbilisi, the pro-government rally, and some of the strong statements from Georgia's president just a short time ago saying, in part, "we will never ever allow Georgia to be broken into pieces."
+we/NP; will never ever allow/VP; Georgia/NP	-Infinity
+
+Sorry, we were having some audio trouble before.
+we/NP; were having/VP; some audio trouble before/NP	-Infinity
+
+You're absolutely right, the Georgians making a strong statement.
+the Georgians/NP; making/VP; a strong statement/NP	-Infinity
+
+It was a gigantic rally that was taking place right in the center of Tbilisi, in front of the Parliament Building.
+a gigantic rally/NP; was taking/VP; place/NP	-Infinity
+
+They were waving flags, chanting the Georgia national anthem.
+They/NP; were waving/VP; flags/NP	-Infinity
+
+What this demo was all about?
+this demo/NP; was/VP; all about/NP	-Infinity
+
+It was all about being behind Georgia and being behind the Georgian government.
+all/NP; being/VP behind/PP; Georgia/NP	-Infinity
+
+Of course, the people here are saying that their government has taken a lot of heat from the Russians, but they said they had come together here in Tbilisi to show support for their president.
+the people/NP; are saying/VP; the people government/NP	-Infinity
+
+Of course, the people here are saying that their government has taken a lot of heat from the Russians, but they said they had come together here in Tbilisi to show support for their president.
+they/NP; said/VP; they/NP	-Infinity
+
+Of course, the people here are saying that their government has taken a lot of heat from the Russians, but they said they had come together here in Tbilisi to show support for their president.
+Tbilisi/NP; to show/VP; support/NP	-Infinity
+
+They say it was the Georgians who started firing first and they blame the president Mikheil Saakashvili for what they say started all of this conflict.
+the Georgians/NP; started firing first/VP; they/NP	-Infinity
+
+They say it was the Georgians who started firing first and they blame the president Mikheil Saakashvili for what they say started all of this conflict.
+they/NP; say started/VP; all of this conflict/NP	-Infinity
+
+Today, as you said, Saakashvili finding some very, very strong words for the Russian government.
+Saakashvili/NP; finding/VP; some very/NP	-Infinity
+
+They demonstrate to the world.
+They/NP; demonstrate/VP to/PP; the world/NP	-Infinity
+
+They couldn't care less about world reaction to continue to cripple the country.
+They/NP; could n't care less/VP about/PP; world reaction/NP	-Infinity
+
+They clearly articulate their regime change objective.
+They/NP; articulate/VP; their regime change objective/NP	-Infinity
+
+This is about killing the freedom and the independence of this country and scare those around us.
+the independence of this country/NP; scare/VP; those/NP	-Infinity
+
+Well, I think our message to them is, no matter what they do, no matter how much they bomb us, no matter how they want to cripple us and undermine us, we are not going to give up our freedom and Georgia will never surrender.
+we/NP; are not going to give/VP up/PRT; our freedom and Georgia/NP	-Infinity
+
+The big question is, have the Russians really stopped their military operations here in Georgia?
+the Russians/NP; stopped/VP; those around us military operations/NP	-Infinity
+
+What we're hearing from the Georgian government is that is not the case.
+we/NP; 're hearing/VP from/PP; the Georgian government/NP	-Infinity
+
+They say two villages have been bombed south of that breakaway province of South Ossetia.
+two villages/NP; have been bombed south/VP of/PP; that breakaway province of South Ossetia/NP	-Infinity
+
+Two villages they say, telecommunications installations have been hit in that area.
+telecommunications installations/NP; have been hit/VP in/PP; that area/NP	-Infinity
+
+Also they were saying, earlier this morning, that the town of Gori was also hit by Russian warplanes, and of course, a very, very important strategic town, one that's saw a lot of fighting only yesterday and that saw Georgian troops retreat from that area under a heavy barrage of Russian fire -- Tony.
+the town of Gori/NP; was also hit/VP by/PP; Russian warplanes/NP	-Infinity
+
+Also they were saying, earlier this morning, that the town of Gori was also hit by Russian warplanes, and of course, a very, very important strategic town, one that's saw a lot of fighting only yesterday and that saw Georgian troops retreat from that area under a heavy barrage of Russian fire -- Tony.
+a lot/NP; fighting only/VP; yesterday/NP	-Infinity
+
+Also they were saying, earlier this morning, that the town of Gori was also hit by Russian warplanes, and of course, a very, very important strategic town, one that's saw a lot of fighting only yesterday and that saw Georgian troops retreat from that area under a heavy barrage of Russian fire -- Tony.
+Georgian troops/NP; retreat/VP from/PP; that area/NP	-Infinity
+<end>20080812141110.902</end>
+
+<story>Weather|US</story>
+<start>20080812141110.902</start>
+Boy, after severe weather slammed the northeast, city streets near Albany, New York, under water.
+severe weather/NP; slammed/VP; the northeast/NP	-Infinity
+
+Heavy rains pounded the region over the weekend.
+Heavy rains/NP; pounded/VP; the region/NP	-Infinity
+
+Fire officials say at least 27 people had to get out of their homes as the water just kept right on rising.
+at least 27 people/NP; had to get/VP out/PP of/PP; at least 27 people homes/NP	-Infinity
+
+Fire officials say at least 27 people had to get out of their homes as the water just kept right on rising.
+the water/NP; kept right/VP on/PP; rising/NP	-Infinity
+
+A lot of rain expected in the south today.
+A lot of rain/NP; expected/VP in/PP; the south today/NP	-Infinity
+
+Rob Marciano is tracking that and keeping an eye on the tropics.
+Rob Marciano/NP; is tracking/VP; ROB MARCIANO , CNN , METEOROLOGIST : Hey , Heidi . and/NP	-Infinity
+
+We had some rough weather across the northeast and across the parts of the mid-south and plains.
+We/NP; had/VP; some rough weather/NP	-Infinity
+
+Boston still getting some light showers, this is all the circulation that was over upstate New York that kind of drifted down to the tri-state area and the metropolitan areas.
+Boston/NP; getting/VP; some light showers/NP	-Infinity
+
+Boston still getting some light showers, this is all the circulation that was over upstate New York that kind of drifted down to the tri-state area and the metropolitan areas.
+all the circulation/NP; was/VP over/PP; upstate New York/NP	-Infinity
+
+Boston still getting some light showers, this is all the circulation that was over upstate New York that kind of drifted down to the tri-state area and the metropolitan areas.
+of/NP; drifted/VP down/PRT to/PP; the tri-state area/NP	-Infinity
+
+Now it's up through Maine, in the coastal areas there down east.
+right now/NP; 's up/VP through/PP; Maine/NP	-Infinity
+
+Here's the action across parts of the mid-south, now it's starting to get into Dixie here with Georgia in the crosshairs, Alabama, Mississippi, some of this is certainly heavy enough to cause flooding.
+right now/NP; 's starting to get/VP into/PP; Dixie/NP	-Infinity
+
+And because of that, the National Weather Service has issued some flash flood watches and warnings for this area.
+the National Weather Service/NP; has issued/VP; some flash flood watches and warnings/NP	-Infinity
+
+Question is, will it get to an area that really desperately needs it?
+Shreveport over to Jackson , and this/NP; get/VP to/PP; an area/NP	-Infinity
+
+The real focus is going to be across the mid parts of this state, as opposed to the northern part which is where we need the rain the most.
+The real focus/NP; is going to be/VP across/PP; the mid parts of this state/NP	-Infinity
+
+The real focus is going to be across the mid parts of this state, as opposed to the northern part which is where we need the rain the most.
+which/NP; is where/VP; we/NP	-Infinity
+
+Nonetheless, heavy rain expected here over the next couple of days.
+heavy rain/NP; expected here/VP over/PP; the next couple of days/NP	-Infinity
+
+Do we have the plantation shot?
+we/NP; have/VP; the plantation shot/NP	-Infinity
+
+Quick before we throw it back to you.
+we/NP; throw/VP; the plantation shot/NP	-Infinity
+
+Wanted to mention Miami and the surrounding areas, showers and thundershowers pop up in the afternoon, 91 degrees the expected high temperature, and we're watching this disturbance in the tropics which National Hurricane Center looks like they'll probably send a plane out to today.
+the surrounding areas , showers and thundershowers/NP; pop/VP up/PRT in/PP; the afternoon/NP	-Infinity
+
+Wanted to mention Miami and the surrounding areas, showers and thundershowers pop up in the afternoon, 91 degrees the expected high temperature, and we're watching this disturbance in the tropics which National Hurricane Center looks like they'll probably send a plane out to today.
+we/NP; 're watching/VP; this disturbance/NP	-Infinity
+
+Wanted to mention Miami and the surrounding areas, showers and thundershowers pop up in the afternoon, 91 degrees the expected high temperature, and we're watching this disturbance in the tropics which National Hurricane Center looks like they'll probably send a plane out to today.
+National Hurricane Center/NP; looks/VP like/PP; they/NP	-Infinity
+
+They haven't quite pulled the trigger on that yet.
+They/NP; have n't quite pulled/VP; the trigger/NP	-Infinity
+
+Obviously, once we get it there, then you have Florida kind of sticking its nose out in the Atlantic.
+we/NP; get/VP; once/NP	-Infinity
+
+Obviously, once we get it there, then you have Florida kind of sticking its nose out in the Atlantic.
+Florida kind/NP; sticking/VP; its nose out/NP	-Infinity
+
+We have bigger problems.
+We/NP; have/VP; bigger problems/NP	-Infinity
+<end>20080812141310.889</end>
+
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812141310.889</start>
+And we've got your ticket to ride.
+we/NP; 've got/VP; your ticket/NP	-Infinity
+<end>20080812141610.868</end>
+
+<story>Politics|Presidential-campaign</story>
+<start>20080812141610.868</start>
+John McCain wrapping up a two-day swing through Pennsylvania.
+John McCain/NP; wrapping/VP up/PRT; a two-day swing/NP	-Infinity
+
+That state has 21 electorate votes.
+That state/NP; has/VP; 21 electorate votes/NP	-Infinity
+
+McCain will hold a town hall meeting in York, Pennsylvania next hour.
+McCain/NP; will hold/VP; a town hall meeting/NP	-Infinity
+
+We'll keep our eye on that for you and bring you some of his remarks.
+We/NP; 'll keep/VP; our eye/NP	-Infinity
+
+He will attend a fundraiser tonight.
+He/NP; will attend/VP; a fundraiser tonight/NP	-Infinity
+<end>20080812141633.791</end>
+
+<story>International|Presidential-campaign-South-Ossetia</story>
+<start>20080812141633.791</start>
+The presidential candidates weighing in on Russia.
+The presidential candidates/NP; weighing/VP in/PRT on/PP; Russia/NP	-Infinity
+
+CNN's Ed Henry has more.
+CNN's Ed Henry/NP; has/VP; more/NP	-Infinity
+
+(BEGIN VIDEOTAPE) ED HENRY, CNN WHITE HOUSE CORRESPONDENT (voice-over) : Appearing in Pennsylvania with Tom Ridge, the former Homeland Security Secretary, John McCain tried to showcase his own foreign policy credentials.
+John McCain/NP; tried/VP to/PP; showcase/NP	-Infinity
+
+SEN. JOHN MCCAIN (R), PRESIDENTIAL CANDIDATE: The United States and our allies should continue efforts to bring a resolution before the United Nations security council, condemning Russian aggression.
+our allies/NP; should continue/VP; efforts/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+Barack Obama/NP; vacationing/VP in/PP; Hawaii/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+McCain/NP; has/VP; the stage/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+himself/NP; to try and show/VP; he/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+the experience/NP; to handle/VP; a crisis/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+he/NP; was ahead/VP of/PP; the curve months/NP	-Infinity
+
+HENRY : With Barack Obama vacationing in Hawaii, McCain has the stage to himself to try and show he has the experience to handle a crisis and claim he was ahead of the curve months ago when he started denouncing Russian leader Vladimir Putin's anti-democratic moves.
+he/NP; started denouncing/VP; Russian leader Vladimir Putin's anti-democratic moves/NP	-Infinity
+
+MCCAIN: We must remind Russia's leaders that the benefits they enjoy from being part of the civilized world require their respect for the values, stability, and peace of the world.
+We/NP; must remind/VP; Russia's leaders/NP	-Infinity
+
+MCCAIN: We must remind Russia's leaders that the benefits they enjoy from being part of the civilized world require their respect for the values, stability, and peace of the world.
+part of the civilized world/NP; require/VP; Russia 's leaders respect/NP	-Infinity
+
+HENRY : Obama has been getting briefings on the situation in Georgia and spoke out Friday, though he was not quite as forceful in denouncing Russia.
+Obama/NP; has been getting/VP; briefings/NP	-Infinity
+
+HENRY : Obama has been getting briefings on the situation in Georgia and spoke out Friday, though he was not quite as forceful in denouncing Russia.
+Georgia/NP; spoke/VP; out/NP	-Infinity
+
+SEN. BARACK OBAMA (D), PRESIDENTIAL CANDIDATE: Russia has escalated its military campaign through strategic bombing and the movement of its ground forces into the heart of Georgia.
+Russia/NP; has escalated/VP; its military campaign/NP	-Infinity
+
+HENRY : McCain's offensive hearkens back to the 3:00 a.m. ad Hillary Clinton ran in the democratic primaries to suggest Obama was not up to the job.
+the 3:00 a.m. ad Hillary Clinton/NP; ran/VP in/PP; the democratic primaries/NP	-Infinity
+
+HENRY : McCain's offensive hearkens back to the 3:00 a.m. ad Hillary Clinton ran in the democratic primaries to suggest Obama was not up to the job.
+Obama/NP; was up/VP to/PP; the job/NP	-Infinity
+
+HENRY : The ad didn't work for Clinton, but the McCain camp thinks the issue may resonate more in the general election with independent voters concerned about security.
+The ad/NP; did n't work/VP for/PP; Clinton/NP	-Infinity
+
+HENRY : The ad didn't work for Clinton, but the McCain camp thinks the issue may resonate more in the general election with independent voters concerned about security.
+the McCain camp/NP; thinks/VP; the issue/NP	-Infinity
+
+HENRY : The ad didn't work for Clinton, but the McCain camp thinks the issue may resonate more in the general election with independent voters concerned about security.
+independent voters/NP; concerned/VP about/PP; security/NP	-Infinity
+
+Though McCain's claim to have a handle on national security could be slightly undermined by mispronouncing the name of the Georgian President Mikheil Saakashvili three times.
+McCain's claim/NP; to have/VP; a/NP	-Infinity
+
+HENRY (on-camera): And ABC-"Washington Post" poll last month found when asked who they trust more to handle an unforeseen crisis, 50 percent said McCain, 41 percent said Obama.
+last month/NP; found when/VP; asked/NP	-Infinity
+
+HENRY (on-camera): And ABC-"Washington Post" poll last month found when asked who they trust more to handle an unforeseen crisis, 50 percent said McCain, 41 percent said Obama.
+they/NP; trust/VP; more/NP	-Infinity
+
+HENRY (on-camera): And ABC-"Washington Post" poll last month found when asked who they trust more to handle an unforeseen crisis, 50 percent said McCain, 41 percent said Obama.
+50 percent/NP; said/VP; McCain/NP	-Infinity
+
+HENRY (on-camera): And ABC-"Washington Post" poll last month found when asked who they trust more to handle an unforeseen crisis, 50 percent said McCain, 41 percent said Obama.
+41 percent/NP; said/VP; Obama/NP	-Infinity
+
+For example when asked who they trust more to handle the economy, 54 percent said Obama, 35 percent McCain, a 19-point edge for the Democrat.
+they/NP; trust/VP; more/NP	-Infinity
+
+For example when asked who they trust more to handle the economy, 54 percent said Obama, 35 percent McCain, a 19-point edge for the Democrat.
+54 percent/NP; said/VP; Obama/NP	-Infinity
+<end>20080812141901.939</end>
+
+<story>Politics|Presidential-campaigns</story>
+<start>20080812141901.939</start>
+So, Tom, what are people saying about the presidential campaign along the road there?
+people/NP; saying/VP about/PP; the presidential campaign/NP	-Infinity
+
+TOM FOREMAN, CNN CORRESPONDENT : Well, I tell you we just left Youngstown, we're headed toward Toledo, along the Ohio turnpike.
+we/NP; left/VP; Youngstown/NP	-Infinity
+
+TOM FOREMAN, CNN CORRESPONDENT : Well, I tell you we just left Youngstown, we're headed toward Toledo, along the Ohio turnpike.
+we/NP; 're headed/VP toward/PP; Toledo/NP	-Infinity
+
+We were in Pennsylvania yesterday.
+We/NP; were/VP in/PP; Pennsylvania/NP	-Infinity
+
+In these battleground states what a lot of people are saying is no matter how much they've heard from the candidates so far, they really want to hear more.
+they/NP; 've heard/VP from/PP; the candidates/NP	-Infinity
+
+In these battleground states what a lot of people are saying is no matter how much they've heard from the candidates so far, they really want to hear more.
+they/NP; want to hear/VP; more/NP	-Infinity
+
+And many of them say they're simply waiting for the spark, the thing that's really going to light them up.
+they/NP; 're simply waiting/VP for/PP; the spark/NP	-Infinity
+
+And many of them say they're simply waiting for the spark, the thing that's really going to light them up.
+the thing/NP; 's really going to light/VP; many of them/NP	-Infinity
+
+Listen to a couple of them we talked to in Youngstown just yesterday.
+we/NP; talked/VP to/PP; in/NP	-Infinity
+
+(BEGIN VIDEOTAPE) UNIDENTIFIED MALE: I haven't really been following it a whole lot and so I'm kind of one of those ones that are just kind of floating around out there and really -- FOREMAN : Waiting to hear something that excites you.
+a whole lot/NP; 'm/VP; kind of one/NP	-Infinity
+
+UNIDENTIFIED FEMALE: I'd like to know more about what each candidate has to offer rather than why their opponent is the wrong candidate.
+each candidate/NP; has to offer rather/VP than/PP; their opponent/NP	-Infinity
+
+(END VIDEOTAPE) FOREMAN : Plenty of people have an idea of which direction they're going.
+Plenty of people/NP; have/VP; an idea of which/NP	-Infinity
+
+The last example says she's leaning toward Obama right now, will probably vote for him.
+she/NP; 's leaning/VP toward/PP; Obama/NP	-Infinity
+
+But when it comes down to the brass tax, a lot of people say they just need to hear more from these candidates and these candidates are doing all they can, particularly in this crucial battleground state like Ohio right behind me, Pennsylvania, on over into Ohio, states like that -- we're on our way to Denver.
+The last example says she 's leaning toward Obama right now ,/NP; comes down/VP to/PP; the brass tax/NP	-Infinity
+
+But when it comes down to the brass tax, a lot of people say they just need to hear more from these candidates and these candidates are doing all they can, particularly in this crucial battleground state like Ohio right behind me, Pennsylvania, on over into Ohio, states like that -- we're on our way to Denver.
+they/NP; need to hear more/VP from/PP; these candidates/NP	-Infinity
+
+But when it comes down to the brass tax, a lot of people say they just need to hear more from these candidates and these candidates are doing all they can, particularly in this crucial battleground state like Ohio right behind me, Pennsylvania, on over into Ohio, states like that -- we're on our way to Denver.
+these candidates/NP; are doing/VP; all they/NP	-Infinity
+
+But when it comes down to the brass tax, a lot of people say they just need to hear more from these candidates and these candidates are doing all they can, particularly in this crucial battleground state like Ohio right behind me, Pennsylvania, on over into Ohio, states like that -- we're on our way to Denver.
+we/NP; 're/VP on/PP; our way/NP	-Infinity
+<end>20080812142049.647</end>
+
+<story>War|Afghanistan-and-Iraqi-war</story>
+<start>20080812142049.647</start>
+FOREMAN : You know, it's a good question, Heidi, because actually in all the people we talked to yesterday, not one of them brought up the war.
+we/NP; talked/VP to/PP; yesterday/NP	-Infinity
+
+FOREMAN : You know, it's a good question, Heidi, because actually in all the people we talked to yesterday, not one of them brought up the war.
+one of them/NP; brought up/VP; the war/NP	-Infinity
+
+Some of them talked about international affairs in a very vague way, but by and large every single person was saying, look, this is a region that's hurting.
+Some of them/NP; talked/VP about/PP; international affairs/NP	-Infinity
+<end>20080812142132.023</end>
+
+<story>Network|Anchor-chat</story>
+<start>20080812142132.023</start>
+This is a region where the cost of gas and education and homes is really hitting people and the candidate who connects with them on that issue stands a very good chance of getting their votes -- Heidi.
+homes/NP; is really hitting/VP; people/NP	-Infinity
+
+This is a region where the cost of gas and education and homes is really hitting people and the candidate who connects with them on that issue stands a very good chance of getting their votes -- Heidi.
+the candidate/NP; connects/VP with/PP; the people/NP	-Infinity
+
+This is a region where the cost of gas and education and homes is really hitting people and the candidate who connects with them on that issue stands a very good chance of getting their votes -- Heidi.
+that issue/NP; stands/VP; a very good chance/NP	-Infinity
+
+FOREMAN : They're a gift from a loving viewer.
+They/NP; 're/VP; a gift/NP	-Infinity
+<end>20080812142209.126</end>
+
+<story>Justice:Teaser|Florida-police-brutality</story>
+<start>20080812142209.126</start>
+You'll see a kick to the head here coming up here in just a moment.
+the head/NP; here coming up here/VP in/PP; just a moment/NP	-Infinity
+<end>20080812142515.513</end>
+
+<story>International|US-aid-to-Georgia</story>
+<start>20080812142515.513</start>
+(COMMERCIAL BREAK) HARRIS : We are getting information about the first humanitarian flights into Georgia, the site of so much violence over the last five days.
+We/NP; are getting/VP; information/NP	-Infinity
+
+CNN has learned that the first U.S. military humanitarian flights into Georgia are now expected by the end of the week.
+CNN/NP; has learned/VP that/PP; the first U.S. military humanitarian flights/NP	-Infinity
+
+CNN has learned that the first U.S. military humanitarian flights into Georgia are now expected by the end of the week.
+Georgia/NP; are now expected/VP by/PP; the end of the week/NP	-Infinity
+
+U.S. administration officials now telling CNN the plan calls for the first flight actually to fly from Germany into Georgia on Thursday.
+U.S. administration officials/NP; now telling/VP; CNN/NP	-Infinity
+
+U.S. administration officials now telling CNN the plan calls for the first flight actually to fly from Germany into Georgia on Thursday.
+the plan/NP; calls/VP for/PP; the first flight/NP	-Infinity
+
+A U.S. C-17 expected to try and make that flight into Tbilisi.
+A U.S. C-17/NP; expected to try and make/VP; that flight/NP	-Infinity
+
+The U.S. however wants assurances from the Russians that they will not interfere with that U.S. military flight.
+The U.S./NP; wants/VP; assurances/NP	-Infinity
+
+The U.S. however wants assurances from the Russians that they will not interfere with that U.S. military flight.
+they/NP; will not interfere/VP with/PP; that U.S. military flight/NP	-Infinity
+
+That radar has been repaired, according to administration officials, but the U.S. very adamantly making contacts with the Russians to say, don't interfere with these flights.
+the U.S./NP; very adamantly making/VP; contacts/NP	-Infinity
+
+Administration officials say they will start with one flight, but they expect to follow up with what one official calls a robust package of military humanitarian assistance.
+they/NP; will start/VP with/PP; one flight/NP	-Infinity
+
+Administration officials say they will start with one flight, but they expect to follow up with what one official calls a robust package of military humanitarian assistance.
+they/NP; expect to follow/VP up/PRT; with what one official/NP	-Infinity
+
+You know, you can assume that part of this is the Bush administration's effort to state that it, too, has a presence in that country and they certainly haven't any intention of going away.
+they/NP; have/VP; any intention/NP	-Infinity
+
+We may, we are told, also see the Navy Hospital Ship Comfort make plans to sail to the Black Sea in the coming days, also to offer humanitarian relief.
+the Navy Hospital Ship Comfort/NP; make/VP; plans/NP	-Infinity
+
+So, again, the first military flight expected as soon as Thursday possibly, but the U.S. military wants assurances from the Russians they won't cause any trouble -- Tony.
+the first military flight/NP; expected as soon/VP as/PP; Thursday/NP	-Infinity
+
+So, again, the first military flight expected as soon as Thursday possibly, but the U.S. military wants assurances from the Russians they won't cause any trouble -- Tony.
+the U.S. military/NP; wants/VP; assurances/NP	-Infinity
+
+So, again, the first military flight expected as soon as Thursday possibly, but the U.S. military wants assurances from the Russians they won't cause any trouble -- Tony.
+they/NP; wo n't cause/VP; any trouble/NP	-Infinity
+
+There was some concern that the airport there in Tbilisi might be a military target for the Russians, correct?
+Tbilisi/NP; might be/VP; a military target/NP	-Infinity
+
+You will recall yesterday President Bush addressed that point very specifically in his afternoon appearance at the White House, saying there was information, intelligence that the Russians might intend to bomb that airport.
+yesterday President Bush/NP; addressed/VP that/PP; point/NP	-Infinity
+
+You will recall yesterday President Bush addressed that point very specifically in his afternoon appearance at the White House, saying there was information, intelligence that the Russians might intend to bomb that airport.
+the Russians/NP; might intend to bomb/VP; that airport/NP	-Infinity
+
+So his message perhaps heard by the Russians today, and the U.S. following up by making clear it's going to send U.S. military flights into that airport again, carrying, again, humanitarian supplies -- Tony.
+his message/NP; perhaps heard/VP by/PP; the Russians/NP	-Infinity
+
+So his message perhaps heard by the Russians today, and the U.S. following up by making clear it's going to send U.S. military flights into that airport again, carrying, again, humanitarian supplies -- Tony.
+The U.S./NP; 's going to send/VP; U.S. military flights/NP	-Infinity
+<end>20080812142744.228</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080812142744.228</start>
+We want to take you to a press conference being held by the Russian President Dmitry Medvedev and also French President Nicolas Sarkozy.
+a press conference/NP; being held/VP by/PP; the Russian President Dmitry Medvedev/NP	-Infinity
+
+(JOINED IN PROGRESS) PRES. DMITRY MEDVEDEV, RUSSIA (through translator): Yesterday, unfortunately, there were losses, there were casualties and there was artillery and small arms fire were used and there was no cease-fire from the Georgian side.
+-LRB-/NP; JOINED/VP IN/PP; PROGRESS/NP	-Infinity
+
+(JOINED IN PROGRESS) PRES. DMITRY MEDVEDEV, RUSSIA (through translator): Yesterday, unfortunately, there were losses, there were casualties and there was artillery and small arms fire were used and there was no cease-fire from the Georgian side.
+RUSSIA/NP; -LRB-/VP through/PP; translator -RRB-/NP	-Infinity
+
+(JOINED IN PROGRESS) PRES. DMITRY MEDVEDEV, RUSSIA (through translator): Yesterday, unfortunately, there were losses, there were casualties and there was artillery and small arms fire were used and there was no cease-fire from the Georgian side.
+casualties/NP; was/VP; artillery/NP	-Infinity
+
+People who don't smell blood, well, it's difficult to act in a surgical way.
+People/NP; do n't smell/VP; blood/NP	-Infinity
+
+Now today, all the conditions exist for achieving our mission.
+all the conditions exist/NP; achieving/VP; our mission/NP	-Infinity
+
+And this brought about the possibility to look at the basic questions of peace once again on the basis of the principles which, together with President Sarkozy, we have referred to.
+the possibility/NP; to look/VP at/PP; the basic questions of peace/NP	-Infinity
+
+PRES. NICOLAS SARKOZY, FRANCE (through translator): I would like to confirm that Georgia is not part of the European Union.
+FRANCE/NP; -LRB-/VP through/PP; translator -RRB-/NP	-Infinity
+
+I cannot force a head of state not to put up a European flag, a European Union flag.
+a head of state not/NP; to put/VP up/PRT; a European flag/NP	-Infinity
+
+And, Mr. Medvedev, do you at this moment accept the territorial integrity of Georgia?
+this moment/NP; accept/VP; the territorial integrity of Georgia/NP	-Infinity
+
+Do you foresee the citizens of Southern Ossetia carrying on living within Georgia?
+the citizens of Southern Ossetia/NP; carrying/VP on/PP; living/NP	-Infinity
+
+And in order to get out of that crisis, the people who are at war have to stop fighting .
+the people/NP; are/VP at/PP; war/NP	-Infinity
+
+And we are in a situation of urgency where that is the most important thing.
+we/NP; are/VP in/PP; a situation of urgency/NP	-Infinity
+
+There are bigger issues involved of Southern Ossetia, bigger problems that relate to the whole of the caucuses which we cannot resolve here.
+bigger issues/NP; involved/VP of/PP; Southern Ossetia/NP	-Infinity
+
+There are bigger issues involved of Southern Ossetia, bigger problems that relate to the whole of the caucuses which we cannot resolve here.
+bigger problems/NP; relate/VP to/PP; the whole of the caucuses/NP	-Infinity
+
+If there hadn't been problems, if there hadn't been people contesting those regions and who they should be part of, we wouldn't have had this war.
+people/NP; contesting/VP; those regions/NP	-Infinity
+
+If there hadn't been problems, if there hadn't been people contesting those regions and who they should be part of, we wouldn't have had this war.
+they/NP; should be/VP; part/NP	-Infinity
+
+If there hadn't been problems, if there hadn't been people contesting those regions and who they should be part of, we wouldn't have had this war.
+we/NP; would n't have had/VP; this war/NP	-Infinity
+
+At this point, we now have two solutions.
+we/NP; have/VP; two solutions/NP	-Infinity
+
+If we try and solve all the problems of the region, we will not solve anything due.
+we/NP; will not solve/VP; anything/NP	-Infinity
+
+If we just try and solve problems by restoring peace and working towards long-term solutions, that's something we can do now.
+we/NP; try and solve/VP; problems/NP	-Infinity
+
+If we just try and solve problems by restoring peace and working towards long-term solutions, that's something we can do now.
+peace/NP; working/VP towards/PP; long-term solutions/NP	-Infinity
+
+I'm well aware that a lot of people throughout the world are concerned about sovereignty and also people's territorial independence.
+the world/NP; are concerned/VP about/PP; sovereignty/NP	-Infinity
+
+So, the whole point of mediation is to kind of bring closer together different positions that are contesting each other.
+the whole point of mediation/NP; is/VP to/PP; kind of bring closer together different positions/NP	-Infinity
+
+These will be resolved not today, but in the future.
+These/NP; will be resolved not/VP; today/NP	-Infinity
+
+All we need to do now is to stop suffering, to stop the death of people and so we have agreed on the idea of sovereignty.
+we/NP; have agreed/VP on/PP; the idea of sovereignty/NP	-Infinity
+
+And the Russians and the president of Russia have no intention of moving into Georgia, annexing Georgia.
+the president of Russia/NP; have/VP; no intention/NP	-Infinity
+
+And this statement doesn't cover those bigger questions.
+this statement/NP; does n't cover/VP; those bigger questions/NP	-Infinity
+
+This is not the time to treat those rather difficult issues.
+the time/NP; to treat/VP; those rather difficult issues/NP	-Infinity
+
+I want to tell you that we have not given up various principles and ideas.
+we/NP; have not given/VP up/PRT; various principles and ideas/NP	-Infinity
+
+We have just ensured that protagonists, people who are contesting things, are coming together and talking.
+We/NP; have just ensured/VP that/PP; protagonists/NP	-Infinity
+
+We have just ensured that protagonists, people who are contesting things, are coming together and talking.
+people/NP; are contesting/VP; things/NP	-Infinity
+
+There are various different nationalities living in those places so I can confirm to you that I have not renounced or given up any ideal or principle.
+various different nationalities/NP; living/VP in/PP; those places/NP	-Infinity
+
+It's just a matter of being lucid and looking clearly at what we have to deal with now.
+we/NP; have to deal/VP with/PP; now/NP	-Infinity
+
+It's not -- it's much more -- it's far easier to write about something in an inflammatory way in the press than to actually bring together people who are currently at war or who are fighting.
+the press/NP; to actually bring/VP together/PRT; people/NP	-Infinity
+
+No doubt we recognize the sovereignty of Georgia and the independence of the Georgian authorities and other countries, as well.
+we/NP; recognize/VP; the sovereignty of Georgia/NP	-Infinity
+
+But, this does not mean that sovereign state has or should have the possibility to do whatever it wants, even sovereign countries have to answer for their actions.
+the possibility/NP; to do/VP; whatever/NP	-Infinity
+
+But, this does not mean that sovereign state has or should have the possibility to do whatever it wants, even sovereign countries have to answer for their actions.
+even sovereign countries/NP; have to answer/VP for/PP; the Georgian authorities actions/NP	-Infinity
+
+And if sovereignty is based on the will of the people and on the constitution, then territorial integrity as a rule can be demonstrated by the actual facts on the ground.
+sovereignty/NP; is based/VP on/PP; the will of the people/NP	-Infinity
+
+And if sovereignty is based on the will of the people and on the constitution, then territorial integrity as a rule can be demonstrated by the actual facts on the ground.
+a rule/NP; can be demonstrated/VP by/PP; the actual facts/NP	-Infinity
+
+And the question of territorial integrity is a very difficult and complicated question which cannot be solved in any demonstrations or in parliament even, or in meetings among leaders.
+which/NP; can not be solved/VP in/PP; any demonstrations/NP	-Infinity
+
+It is it the wish of people to live together in one state and you correctly ask the question -- can the Ossetians and the (INAUDIBLE), can they and do they want to live within the body of Georgia?
+the wish of people/NP; to live/VP together/PRT in/PP; one state/NP	-Infinity
+
+It is it the wish of people to live together in one state and you correctly ask the question -- can the Ossetians and the (INAUDIBLE), can they and do they want to live within the body of Georgia?
+the Ossetians/NP; -LRB-/VP; INAUDIBLE -RRB-/NP	-Infinity
+
+It is it the wish of people to live together in one state and you correctly ask the question -- can the Ossetians and the (INAUDIBLE), can they and do they want to live within the body of Georgia?
+they/NP; do/VP; they/NP	-Infinity
+
+This is a question they have to be asked themselves.
+they/NP; have to be asked/VP; themselves/NP	-Infinity
+
+And they will give a clear cut answer to the question.
+they/NP; will give/VP; a clear cut answer/NP	-Infinity
+
+Also want to let you know that Nicolas Sarkozy will be meeting later on today with the President of Georgia, Saakashvili, as well.
+Nicolas Sarkozy/NP; will be/VP; meeting/NP	-Infinity
+
+So, we will stay on top of this story as you would expect us to here at CNN.
+we/NP; will stay/VP on/PP; top of this story/NP	-Infinity
+
+Russia says it has reigned in its attacks.
+Russia 's/NP; has reigned/VP in/PP; its attacks/NP	-Infinity
+
+But, Georgia still says bombs have continued to rain down on at least two villages.
+bombs/NP; have continued to rain/VP down/PP; on/NP	-Infinity
+
+Want to show you this map, once again, as we talk about it here.
+we/NP; talk/VP about/PP; the map/NP	-Infinity
+
+Backing up five days ago, fighting broke out in South Ossetia.
+fighting/NP; broke/VP out/PRT in/PP; South Ossetia/NP	-Infinity
+
+The province had tried to break away from Georgia and strengthen ties to Russia.
+The province/NP; had tried to break/VP away/PRT; Georgia/NP	-Infinity
+
+Now, key players to watch in this crisis throughout the day will be those two men you just saw.
+key players/NP; to watch/VP in/PP; this crisis/NP	-Infinity
+
+Now, key players to watch in this crisis throughout the day will be those two men you just saw.
+the day/NP; will be/VP; those two men/NP	-Infinity
+
+Russian President Dmitry Medvedev says his troops must defend themselves and crush any signs of Georgian resistance.
+his troops/NP; must defend/VP; themselves/NP	-Infinity
+
+Earlier he did meet with French President Nicolas Sarkozy, who also serves as President of the European Union.
+he/NP; did meet/VP with/PP; French President Nicolas Sarkozy/NP	-Infinity
+
+And President Sarkozy hand-delivered that western message, demands that Russia pull back its troops.
+President Sarkozy/NP; hand-delivered/VP; western message/NP	-Infinity
+
+And President Sarkozy hand-delivered that western message, demands that Russia pull back its troops.
+Russia/NP; pull/VP back/PRT; its troops/NP	-Infinity
+
+He also will visit the capital of Georgia.
+He/NP; will visit/VP; the capital of Georgia/NP	-Infinity
+
+In Tiblisi, he'll meet with Georgia's president, as I mentioned, Mikheil Saakashvili, who's already signed that ceasefire agreement.
+he/NP; 'll meet/VP with/PP; Georgia's president/NP	-Infinity
+<end>20080812143800.577</end>
+
+<story>International|World-leaders-deliberate-South-Ossetia-war</story>
+<start>20080812143800.577</start>
+HARRIS: At the top of the hour we will hear from the White House and National Security Adviser Stephen Hadley.
+we/NP; will hear/VP from/PP; the White House/NP	-Infinity
+
+And Kate, I'm wondering, is the plan to take some questions at that event at the top of the hour?
+the plan/NP; to take/VP; some questions/NP	-Infinity
+
+We do know that we heard from White House spokesperson Tony Fratto, that they had canceled the usual daily briefing and that National Security Adviser Stephen Hadley was going to be speaking to us.
+We/NP; do know/VP; we/NP	-Infinity
+
+We do know that we heard from White House spokesperson Tony Fratto, that they had canceled the usual daily briefing and that National Security Adviser Stephen Hadley was going to be speaking to us.
+they/NP; had canceled/VP; the usual daily briefing/NP	-Infinity
+
+We have heard that it's been postponed due to some developments.
+We/NP; have heard/VP; White House/NP	-Infinity
+
+But we do anticipate to hear something today, explicitly on this issue of Georgia.
+we/NP; do anticipate to hear/VP; something today/NP	-Infinity
+
+And of course, we hope to get questions in, Tony.
+we/NP; hope to get/VP; questions in/NP	-Infinity
+
+But, to what the president has been doing since he's returned from his trip to Beijing.
+the president/NP; has been doing/VP; he/NP	-Infinity
+
+This morning he received another round of intelligence briefings from National Security Adviser Stephen Hadley, as well as speaking to Secretary of State Condoleezza Rice.
+he/NP; received/VP; another round of intelligence briefings/NP	-Infinity
+
+Now we hear from -- during this morning gaggle, the off-camera on the record gaggle, that the president is now consulting with other world leaders on this very issue of the conflict between Georgia and Russia.
+the president/NP; is now consulting/VP with/PP; other world leaders/NP	-Infinity
+
+White House spokesperson Tony Fratto says the president since -- while he was coming home as well as through this morning, has spoken to British Prime Minister Gordon Brown, as well as the presidents of Lithuania and Poland and Georgian's President Saakashvili.
+he/NP; was coming/VP; home/NP	-Infinity
+
+And just this morning, President Bush spoke with Italy's Prime Minister and the German Chancellor.
+President Bush/NP; spoke/VP with/PP; Italy's Prime Minister/NP	-Infinity
+
+So, clearly a lot of conversations going on among world leaders.
+a lot of conversations/NP; going/VP on/PP among/PP; world leaders/NP	-Infinity
+
+We have also been told that the White House is now really trying to get a read of what Russia's statement of halting military options actually means .
+We/NP; have also been told/VP; the White House/NP	-Infinity
+
+We have also been told that the White House is now really trying to get a read of what Russia's statement of halting military options actually means .
+Russia's statement/NP; halting/VP; military options/NP	-Infinity
+
+Tony Fratto said it's not clear if halt means ceasefire .
+Tony Fratto/NP; said/VP; the White House/NP	-Infinity
+
+Tony Fratto said it's not clear if halt means ceasefire .
+halt/NP; means/VP; ceasefire/NP	-Infinity
+
+And that of course, is what the White House, President Bush and European Union; they're are all calling for right now, Tony.
+they/NP; 're are/VP; all calling for/NP	-Infinity
+<end>20080812143955.725</end>
+
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812143955.725</start>
+COLLINS: Michael Phelps proving unbeatable in the pool, a third gold medal.
+Michael Phelps/NP; proving unbeatable/VP in/PP; the pool/NP	-Infinity
+<end>20080812144002.832</end>
+
+<story>Commercial|Block</story>
+<start>20080812144002.832</start>
+We are live in Beijing.
+We/NP; are/VP in/PP; Beijing/NP	-Infinity
+
+(COMMERCIAL BREAK) COLLINS: Oil pipelines are being shut down in Georgia , but surprisingly , crude prices are no going up .
+Oil pipelines/NP; are being shut/VP down/PRT in/PP; Georgia/NP	-Infinity
+
+Susan Lisovicz is at the New York Stock Exchange with details on all of this .
+Susan Lisovicz/NP; is/VP at/PP; the New York Stock Exchange/NP	-Infinity
+
+We thought for sure there would be an impact here .
+We/NP; thought/VP for/PP; sure there/NP	-Infinity
+<end>20080812144305.448</end>
+
+<story>Money|Oil-prices</story>
+<start>20080812144305.448</start>
+SUSAN LISOVICZ , CNN CORRESPONDENT : Well, basically, for the oil prices today are doing nothing.
+today/NP; are doing/VP; nothing/NP	-Infinity
+
+They're up less than 50 cents, despite the fact that several pipelines have been shut down.
+They/NP; 're up/VP; less than 50 cents/NP	-Infinity
+
+A couple of months ago, Heidi, just the mere threat of a pipeline shutdown would spark a huge rally in crude.
+just the mere threat of a pipeline shutdown/NP; would spark/VP; a huge rally/NP	-Infinity
+
+And basically, we touched upon this yesterday, that when you see something that would automatically prompt a big rally into, say, something like oil prices and it doesn't happen, it is a telltale sign that the bubble has been broken.
+we/NP; touched/VP upon/PP; this yesterday/NP	-Infinity
+
+And basically, we touched upon this yesterday, that when you see something that would automatically prompt a big rally into, say, something like oil prices and it doesn't happen, it is a telltale sign that the bubble has been broken.
+something/NP; would automatically prompt/VP; a big rally/NP	-Infinity
+
+One analyst I talked to, Heidi, Steven Schork, who puts out a daily report, said it's not only happening with what we're seeing in Georgia and Russia, it's also, he said -- Hurricane Dolly didn't really move oil prices and the stepped-up military attacks in Nigeria.
+we/NP; 're seeing/VP in/PP; Georgia and Russia/NP	-Infinity
+
+One analyst I talked to, Heidi, Steven Schork, who puts out a daily report, said it's not only happening with what we're seeing in Georgia and Russia, it's also, he said -- Hurricane Dolly didn't really move oil prices and the stepped-up military attacks in Nigeria.
+Hurricane Dolly/NP; did n't really move/VP; oil prices/NP	-Infinity
+
+What we've been seeing is a bear market, actually, in oil prices, down more than 20 percent from that all-time high which we just had a month ago.
+we/NP; had/VP; a month/NP	-Infinity
+
+Well, here's the key question, and I know you have an answer, where ultimately will oil prices go, Susan?
+ultimately/NP; will/VP; oil prices/NP	-Infinity
+
+Not only Steven Schork , who's been following oil for years, but a veteran trader that I talked to both say that, basically, they expect oil to go down into the double digits this year.
+a veteran trader/NP; talked/VP to/PP; both/NP	-Infinity
+
+Not only Steven Schork , who's been following oil for years, but a veteran trader that I talked to both say that, basically, they expect oil to go down into the double digits this year.
+they/NP; expect/VP; oil/NP	-Infinity
+
+One of the things Steven Schork said is that when you see a bubble that's broken, what you often see is that it will -- that the prices will retrace where the bubble began.
+the prices/NP; will retrace where/VP; the bubble/NP	-Infinity
+
+If that holds true, that would bring oil to, like, $70 or $80 a barrel.
+One of the things Steven Schork said/NP; would bring/VP; oil/NP	-Infinity
+
+Now what did we talk about over the past couple of days about living in the past?
+we/NP; talk/VP about/PP over/PP; the past couple of days/NP	-Infinity
+
+The Federal Reserve has indicated it is not going to cut rates any further.
+The Federal Reserve/NP; has indicated/VP; The Federal Reserve/NP	-Infinity
+
+And because oil is priced in dollars that, basically, you're going to see traders and investors move away from it.
+oil/NP; is priced/VP in/PP; dollars/NP	-Infinity
+
+And because oil is priced in dollars that, basically, you're going to see traders and investors move away from it.
+traders and investors/NP; move away/VP from/PP; next/NP	-Infinity
+
+We'll be watching it very closely.
+We/NP; 'll be watching/VP; next/NP	-Infinity
+<end>20080812144532.428</end>
+
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812144532.428</start>
+HARRIS: Michael Phelps has fins.
+Michael Phelps/NP; has/VP; fins/NP	-Infinity
+
+He's unbeatable in the pool.
+He/NP; is/VP in/PP; the pool/NP	-Infinity
+
+We're live in Beijing .
+We/NP; 're/VP in/PP; Beijing/NP	-Infinity
+<end>20080812144904.473</end>
+
+<story>Sports|Olympics</story>
+<start>20080812144904.473</start>
+(COMMERCIAL BREAK) HARRIS: More than a game in Beijing, the U.S. men's indoor volleyball team winning their second contest.
+the U.S. men's indoor volleyball team/NP; winning/VP; MEN 'S second contest/NP	-Infinity
+
+They beat Italy.
+They/NP; beat/VP; Italy/NP	-Infinity
+
+It was an emotional victory for the team that is still without its head coach.
+the team/NP; is still/VP without/PP; its head coach/NP	-Infinity
+
+You'll remember Coach Hugh McCutcheon's father and mother-in- law were attacked on the games first day.
+law/NP; were attacked/VP on/PP; the games/NP	-Infinity
+
+It's unknown if McCutcheon will return to the team.
+McCutcheon/NP; will return/VP to/PP; the team/NP	-Infinity
+
+We're going to talk more about him in just a minute.
+We/NP; 're going to talk/VP; more/NP	-Infinity
+
+But, as we see our Larry Smith there in Beijing.
+we/NP; see/VP; our Larry Smith/NP	-Infinity
+
+We want to talk about the men's basketball team.
+We/NP; want to talk/VP about/PP; the men's basketball team/NP	-Infinity
+
+LARRY SMITH, CNN SPORTS CORRESPONDENT : The latest scoop is, well, they're not Michael Phelps, haven't won a gold medal yet, but they're still playing along.
+they/NP; 're/VP; Michael Phelps/NP	-Infinity
+
+Remember back in 1996 when USA just simply ran over Angola, Charles Barkley, the forearm schibber (ph) and all that?
+USA/NP; ran/VP over/PP; Angola/NP	-Infinity
+
+Big win, but not quite the same effect, 97-76 the final score in this one, a game that just ended within the past hour.
+a game/NP; ended/VP within/PP; the past hour/NP	-Infinity
+
+Dwayne Wade had 19 points as Team USA, the redeem team, looking to get gold back, they go to 2-0 here in these games.
+Dwayne Wade/NP; had/VP; 19 points/NP	-Infinity
+
+Dwayne Wade had 19 points as Team USA, the redeem team, looking to get gold back, they go to 2-0 here in these games.
+they/NP; go/VP to/PP; 2-0 here/NP	-Infinity
+
+But it was a no- hitter combined by pitchers Jennie Finch and Monica Abbott.
+11-0 the score over Venezuela ./NP; was/VP; a no/NP	-Infinity
+
+But it was a no- hitter combined by pitchers Jennie Finch and Monica Abbott.
+hitter/NP; combined/VP by/PP; pitchers Jennie Finch/NP	-Infinity
+
+And keep in mind, softball goes off the Olympic menu after this year.
+softball/NP; goes/VP off/PP; the Olympic menu/NP	-Infinity
+
+The ladies try to maybe encourage them to keep it around.
+The ladies/NP; try to maybe encourage/VP; The ladies/NP	-Infinity
+
+Keep in mind, the U.S. team without Paul Hamm, who became the first American male to win the all- around competition in Athens four years ago.
+the first American male/NP; to win/VP; the all/NP	-Infinity
+
+He was out with an injury as was his twin brother, Morgan, also not in action.
+He/NP; was out/VP with/PP; an injury/NP	-Infinity
+
+He was out with an injury as was his twin brother, Morgan, also not in action.
+as/NP; was/VP; his twin brother/NP	-Infinity
+
+But they still fight to get the bronze behind China and Japan.
+they/NP; still fight to get/VP; the bronze/NP	-Infinity
+
+This is like they won the gold, although it is bronze.
+they/NP; won/VP; the gold/NP	-Infinity
+
+Certainly it is unexpected, but welcome for the U.S. (BEGIN VIDEO CLIP) JUSTIN SPRING, WON BRONZE IN MEN'S TEAM GYMNASTICS: I don't think this team ever doubted -- we never doubted ourselves, but we had to go out and hit.
+we/NP; doubted/VP; ourselves/NP	-Infinity
+
+We had some momentum just building throughout the competition.
+We/NP; had/VP; some momentum/NP	-Infinity
+
+Everyone up here has got an amazing story behind them, and I guess with the injuries I've had it's kind of mine.
+Everyone/NP; has got/VP; an amazing story/NP	-Infinity
+
+Everyone up here has got an amazing story behind them, and I guess with the injuries I've had it's kind of mine.
+the injuries/NP; 've had/VP; an amazing story/NP	-Infinity
+
+But, yes, it's still, I'll say it again, it's pretty amazing just to be up here right now with something hanging around my neck.
+something/NP; hanging/VP around/PP; my neck/NP	-Infinity
+<end>20080812145140.629</end>
+
+<story>Sports|Olympics-Phelps</story>
+<start>20080812145140.629</start>
+He returns to the pool Wednesday morning Beijing time with two golds at stake, one in the 200-meter butterfly and the other in the 4 by 200 meter freestyle relay.
+He/NP; returns/VP to/PP; the pool/NP	-Infinity
+
+Maybe if they drained the pool that would help.
+they/NP; drained/VP; the pool/NP	-Infinity
+
+COLLINS: Yes, he's really got to scurry around because you see him going up there and trying to receive one of his gold medals and kind of looking at the clock, trying to do the swim down, trying to get back in the pool for the next event.
+kind/NP; looking/VP at/PP; the clock/NP	-Infinity
+
+It's really been interesting to watch, and we are certainly doing just that.
+we/NP; are certainly doing/VP; just that/NP	-Infinity
+<end>20080812145229.545</end>
+
+<story>Human-interest:Teaser|Lincoln-car-enthusiast</story>
+<start>20080812145229.545</start>
+Check out the Lincoln that goes back to the president of the same name.
+the Lincoln/NP; goes back/VP to/PP; the president of the same name/NP	-Infinity
+<end>20080812145511.807</end>
+
+<story>Human-interest|Lincoln-car-enthusiast</story>
+<start>20080812145511.807</start>
+(COMMERCIAL BREAK) HARRIS: It is a love affair, the story of a Lincoln Towncar and a driver who doesn't believe in trade-ins.
+a driver/NP; does n't believe/VP in/PP; trade-ins/NP	-Infinity
+
+HANNAH WOOLDRIDGE, KSNT REPORTER: Chet Belisle loves driving his 1983 Lincoln Towncar.
+Chet Belisle/NP; loves driving/VP; his 1983 Lincoln Towncar/NP	-Infinity
+
+And I feel safe in it because I've got more room.
+Chet Belisle/NP; 've got/VP; more room/NP	-Infinity
+
+BELISLE: That car is good on gasoline, 22 on the highway, at least probably about 15, 16 in town.
+That car/NP; is/VP on/PP; gasoline/NP	-Infinity
+
+WOOLDRIDGE : The odometer has rolled over a couple of times, but Chet says that's expected when a car hits the 1,300,000 mile mark.
+The odometer/NP; has rolled/VP over/PP; a couple of times/NP	-Infinity
+
+WOOLDRIDGE : The odometer has rolled over a couple of times, but Chet says that's expected when a car hits the 1,300,000 mile mark.
+Chet Belisle/NP; 's expected when/VP; a car/NP	-Infinity
+
+WOOLDRIDGE : And the secret to the car's longevity lies under that heavy medal hood Chet says his mechanics are used to lifting.
+the car's longevity/NP; lies/VP under/PP; that heavy medal hood/NP	-Infinity
+
+WOOLDRIDGE : And the secret to the car's longevity lies under that heavy medal hood Chet says his mechanics are used to lifting.
+his mechanics/NP; are used/VP to/PP; lifting/NP	-Infinity
+
+And that thing has power.
+that thing/NP; has/VP; power/NP	-Infinity
+
+WOOLDRIDGE : Chet began logging miles and tracking tune-ups the day he car drove off the lot.
+Chet/NP; began logging/VP; miles/NP	-Infinity
+
+WOOLDRIDGE : Chet began logging miles and tracking tune-ups the day he car drove off the lot.
+he/NP; drove/VP off/PRT; the lot/NP	-Infinity
+
+Then it only had 53 miles.
+WOOLDRIDGE : Chet began logging miles and tracking tune-ups the day he car drove off the lot ./NP; had/VP; 53 miles/NP	-Infinity
+
+BELISLE: I can't go anywhere where somebody don't know this Lincoln.
+somebody/NP; do n't know/VP; this Lincoln/NP	-Infinity
+
+WOOLDRIDGE : Since then, he's rebuilt the engine and transmission and made full use of the lifetime warranties on nearly every other part.
+the engine and transmission/NP; made/VP; full use of the lifetime/NP	-Infinity
+
+For now, Chet says he'll stick with his Lincoln until the day it stops running.
+he/NP; 'll stick/VP with/PP; his Lincoln/NP	-Infinity
+
+(END VIDEOTAPE) HARRIS: Chet paid $2,200 for his Lincoln when it was brand new.
+Chet/NP; paid/VP; $ 2,200/NP	-Infinity
+<end>20080812145659.448</end>
+
+<story>Accident|Massachusetts-plane-crash</story>
+<start>20080812145659.448</start>
+The reason why this is particularly bad is because it crashed in a grocery store parking lot.
+The reason why this is particularly bad/NP; crashed/VP in/PP; a grocery store parking lot/NP	-Infinity
+
+We are hearing from firefighters that there are multiple fatalities there.
+We/NP; are hearing/VP from/PP; firefighters/NP	-Infinity
+
+Not sure if they were mostly on the ground or if that also includes inside the plane.
+they/NP; were mostly/VP on/PP; the ground/NP	-Infinity
+
+Not sure if they were mostly on the ground or if that also includes inside the plane.
+the ground/NP; includes/VP inside/PP; the plane/NP	-Infinity
+
+So we'll stay on top of that story, again, out of Easton, Massachusetts.
+we/NP; 'll stay/VP on/PP; top of that story/NP	-Infinity
+<end>20080812145734.016</end>
+
+<story>Commercial|Block</story>
+<start>20080812145739.788</start>
+HARRIS: Russia and Georgia come to blows, continuing live coverage of the crisis all day on CNN .
+Russia and Georgia/NP; come/VP to/PP; blows/NP	-Infinity
+<end>20080812145933.095</end>
+

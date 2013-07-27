@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Georgian-reporter-shot</story>
+<start>20080814224458.961</start>
+<end>20080814224809.318</end>
+reporter close | calls caught | tape 
+the story | takes | a dangerous turn 

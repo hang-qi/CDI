@@ -1,0 +1,7 @@
+<story>International:Teaser|South-Ossetia-war-Mikheil-Saakashvili-interview</story>
+<start>20080813122433.470</start>
+<end>20080813122459.462</end>
+we | get | word of a broken ceasefire 
+We | are going to be speaking | Georgia's President Mikheil Saakashvili 
+We | 're also going to check | our correspondents 
+they | change | moment 

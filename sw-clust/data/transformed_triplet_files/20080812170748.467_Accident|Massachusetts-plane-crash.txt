@@ -1,0 +1,7 @@
+<story>Accident|Massachusetts-plane-crash</story>
+<start>20080812170748.467</start>
+<end>20080812170813.525</end>
+The plane | was carrying | a patient 
+The crash | happened | an area 
+people | rarely park | no cars 
+patients | need to travel | life-saving medical treatment 

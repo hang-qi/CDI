@@ -1,0 +1,6 @@
+<story>Health:Teaser|Food-safety</story>
+<start>20080814124614.636</start>
+<end>20080814124627.115</end>
+we | know | eating food 
+unrefrigerated | is probably | a good thing 
+Dr. Sanjay Gupta | answers | your question 

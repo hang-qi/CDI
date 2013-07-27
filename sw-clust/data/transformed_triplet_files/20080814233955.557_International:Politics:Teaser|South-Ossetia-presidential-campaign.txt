@@ -1,0 +1,4 @@
+<story>International:Politics:Teaser|South-Ossetia-presidential-campaign</story>
+<start>20080814233955.557</start>
+<end>20080814233955.557</end>
+We | 're going to take | break 

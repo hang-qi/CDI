@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Obama-convention</story>
+<start>20080813205323.531</start>
+<end>20080813205332.640</end>
+Former Virginia Governor and current Senate Candidate Mark Warner | will give | the keynote speech 

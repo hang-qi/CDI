@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080810163750.532</start>
+<end>20080810163757.640</end>
+what Hillary Clinton | wants | the Democratic Convention 

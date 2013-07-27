@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811214129.519</start>
+<end>20080811214442.478</end>
+The U.S. | pushes | with diplomacy 

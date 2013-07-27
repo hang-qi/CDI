@@ -1,0 +1,8 @@
+<story>Network|Anchor-chat</story>
+<start>20080814032014.512</start>
+<end>20080814032032.530</end>
+we | have | the picture 
+we | actually going to show | the picture 
+we | show | a picture 
+a picture | is | a picture 
+we | 're doing | the `` Beat 360 

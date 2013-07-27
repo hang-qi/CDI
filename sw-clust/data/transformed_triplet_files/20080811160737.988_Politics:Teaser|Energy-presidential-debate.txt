@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Energy-presidential-debate</story>
+<start>20080811160737.988</start>
+<end>20080811161027.591</end>
+the bickering | has | the better energy plan 
+the bickering | 's playing | your living room 
+others | are spending just to win | your vote 

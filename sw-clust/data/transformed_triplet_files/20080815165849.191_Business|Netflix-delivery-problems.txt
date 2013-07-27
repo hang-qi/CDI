@@ -1,0 +1,9 @@
+<story>Business|Netflix-delivery-problems</story>
+<start>20080815165849.191</start>
+<end>20080815165916.251</end>
+those | prefer to go | the mailbox 
+The pioneer and online DVD rental | suffered | a technical glitch 
+which | meant | a stoppage of roughly a third 
+They | 've | resumed shipping 
+the second such technical issue | to hit | Netflix 
+the matter | did not interfere | video streaming 

@@ -1,0 +1,5 @@
+<story>Money:Teaser|House-foreclosures</story>
+<start>20080814162452.490</start>
+<end>20080814162459.597</end>
+how many people | were evicted | their homes 
+We | 're going to have | a look 

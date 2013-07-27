@@ -1,0 +1,8 @@
+<story>Disaster|Flooding-U.S.</story>
+<start>20080808163248.664</start>
+<end>20080808163321.163</end>
+meteorologist Bonnie Schneider | tracking | some storms 
+We | are watching | for flooding 
+we | 're expecting | more thunderstorms today 
+more thunderstorms | may trigger | some flooding 
+the evening | to cloud to ground | lighting 

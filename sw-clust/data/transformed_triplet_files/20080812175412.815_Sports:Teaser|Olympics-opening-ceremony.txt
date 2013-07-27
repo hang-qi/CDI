@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-opening-ceremony</story>
+<start>20080812175412.815</start>
+<end>20080812175659.314</end>
+Chinese officials | send | an impostor 

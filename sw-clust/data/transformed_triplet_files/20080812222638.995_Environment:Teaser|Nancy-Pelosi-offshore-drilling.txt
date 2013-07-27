@@ -1,0 +1,5 @@
+<story>Environment:Teaser|Nancy-Pelosi-offshore-drilling</story>
+<start>20080812222638.995</start>
+<end>20080812222649.572</end>
+she | took | a hard line 
+House Speaker Nancy Pelosi | is softening | House Speaker Nancy Pelosi stance 

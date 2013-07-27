@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815120834.745</start>
+<end>20080815120843.988</end>
+Barack Obama | are trying to win | young America 

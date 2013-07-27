@@ -1,0 +1,5 @@
+<story>Politics:Teaser|H-Clinton-campaigning-for-Obama</story>
+<start>20080808220049.948</start>
+<end>20080808220110.669</end>
+She | 's speaking | his behalf 
+her supporters | might actually throw | Obama 

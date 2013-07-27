@@ -1,0 +1,9 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808150453.624</start>
+<end>20080808150528.326</end>
+A bus | loaded | 55 church members 
+They | think | a flat tire 
+a blown tire | might have set | a flat tire 
+we | spoke | the phone 
+He | had | several things 
+The passengers | were | part of that church group 

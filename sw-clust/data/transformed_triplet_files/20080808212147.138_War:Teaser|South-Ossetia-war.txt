@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808212147.138</start>
+<end>20080808212201.319</end>
+we | 're also watching | other news 
+including Russian tanks | rolling | the Republic of Georgia 

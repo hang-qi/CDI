@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Walmart-election-law-violation</story>
+<start>20080815204256.538</start>
+<end>20080815204546.641</end>
+some company executives | are hoping to persuade | some company executives employees 

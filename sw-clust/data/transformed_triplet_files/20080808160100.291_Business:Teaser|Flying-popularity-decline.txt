@@ -1,0 +1,4 @@
+<story>Business:Teaser|Flying-popularity-decline</story>
+<start>20080808160100.291</start>
+<end>20080808160104.762</end>
+fewer and fewer folks | are flying | these days 

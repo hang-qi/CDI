@@ -1,0 +1,5 @@
+<story>Money:Teaser|Gas-prices</story>
+<start>20080813172546.810</start>
+<end>20080813172556.587</end>
+we | 're going to be talking | we 
+Americans | are coping | gas prices 

@@ -1,0 +1,6 @@
+<story>Health:Teaser|Veterinarian-shortage</story>
+<start>20080811121549.847</start>
+<end>20080811121606.698</end>
+A shortage of veterinarians | has | farmers 
+They | 're | our lifeline 
+END VIDEO CLIP | can mean | the food supply 

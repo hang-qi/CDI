@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Obama-convention</story>
+<start>20080808121753.237</start>
+<end>20080808121759.911</end>
+we | 'll hear | Barack Obama 

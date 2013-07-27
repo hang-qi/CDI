@@ -1,0 +1,5 @@
+<story>Activism:Teaser|Anti-Obama-prayers</story>
+<start>20080812222701.017</start>
+<end>20080812222708.992</end>
+rain | prompts | a deluge of criticism 
+the heavens | to open up | Barack Obama 

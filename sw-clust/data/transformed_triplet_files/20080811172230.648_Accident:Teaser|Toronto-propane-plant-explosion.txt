@@ -1,0 +1,9 @@
+<story>Accident:Teaser|Toronto-propane-plant-explosion</story>
+<start>20080811172230.648</start>
+<end>20080811172837.481</end>
+which | shook | a major metropolitan skyline 
+let's | go | outer space 
+Today | made | its 100,000 th orbit of Earth 
+The Hubble | has been taking | snapshots of outer space 
+the Hubble | will get | one more service call 
+Atlantis | is set to launch | early October 

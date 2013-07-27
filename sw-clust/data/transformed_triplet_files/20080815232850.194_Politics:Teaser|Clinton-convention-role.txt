@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080815232850.194</start>
+<end>20080815232857.067</end>
+next , top Democrats | trying to avoid | a showdown 

@@ -1,0 +1,6 @@
+<story>Sports|Olympics</story>
+<start>20080812125218.934</start>
+<end>20080812125233.949</end>
+some people | are doing | Our Dr. Gupta 
+The U.S. | leads | total medals of 21 
+China's | got | 13 golds 

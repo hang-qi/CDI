@@ -1,0 +1,4 @@
+<story>Social:Teaser|Chinese-South-Africans</story>
+<start>20080812181011.141</start>
+<end>20080812181017.881</end>
+KEILAR : And the thorny issue of race in South Africa . | goes | black and white 

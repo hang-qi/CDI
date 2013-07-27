@@ -1,0 +1,6 @@
+<story>Politics|Oprah-Obama-endorsesment</story>
+<start>20080814121838.815</start>
+<end>20080814121848.925</end>
+supporter | will be watching | the Democratic convention 
+Oprah Winfrey | will be | the audience 
+fast | to see | stories 

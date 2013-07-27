@@ -1,0 +1,5 @@
+<story>International|South-Ossetia-presidential-campaign</story>
+<start>20080814013853.429</start>
+<end>20080814013918.687</end>
+actions | will make | a re-ignition of the Cold War 
+Mikhail Gorbachev | will be | our special guest tomorrow night 

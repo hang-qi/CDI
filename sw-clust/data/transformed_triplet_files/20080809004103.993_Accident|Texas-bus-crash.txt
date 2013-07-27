@@ -1,0 +1,7 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080809004103.993</start>
+<end>20080809004124.414</end>
+the charter bus | crashed just | Dallas early 
+a highway guardrail | slid down | an embankment 
+Regulators | ordered | the operator 
+the company | changed | its name 

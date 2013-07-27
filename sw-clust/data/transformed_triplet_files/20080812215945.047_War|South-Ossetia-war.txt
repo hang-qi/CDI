@@ -1,0 +1,4 @@
+<story>War|South-Ossetia-war</story>
+<start>20080812215945.047</start>
+<end>20080812215952.279</end>
+Russia | sign | a cease-fire deal 

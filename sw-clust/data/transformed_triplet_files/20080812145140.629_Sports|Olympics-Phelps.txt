@@ -1,0 +1,7 @@
+<story>Sports|Olympics-Phelps</story>
+<start>20080812145140.629</start>
+<end>20080812145229.545</end>
+He | returns | the pool 
+they | drained | the pool 
+kind | looking | the clock 
+we | are certainly doing | just that 

@@ -1,0 +1,12 @@
+<story>Network|Baggage-fees-survey</story>
+<start>20080815165427.763</start>
+<end>20080815165849.191</end>
+Have | added | baggage fees 
+Airlines | have passed | the fuel bill 
+Some | changed | the way 
+CNNMoney.com's Poppy Harlow | is back | the results 
+Twenty percent | have changed | airlines 
+7 percent | are | Poppy 
+7 percent | are | me 
+the not traveling thing | to change | your habits 
+they | 're not traveling | different reasons 

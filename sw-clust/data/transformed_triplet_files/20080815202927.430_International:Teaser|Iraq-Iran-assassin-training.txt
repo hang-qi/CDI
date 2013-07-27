@@ -1,0 +1,4 @@
+<story>International:Teaser|Iraq-Iran-assassin-training</story>
+<start>20080815202927.430</start>
+<end>20080815202940.376</end>
+Iran | is training | these assassination squads 

@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Ohio-Diocese-touching-rules</story>
+<start>20080812124918.554</start>
+<end>20080812124926.796</end>
+An Ohio diocese | sets | touching rules 

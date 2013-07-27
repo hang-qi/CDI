@@ -1,0 +1,5 @@
+<story>War:Teaser|Americans-evacuate-Georgia</story>
+<start>20080812000944.316</start>
+<end>20080812000957.996</end>
+The U.S. | has already evacuated | 170 
+We | are going to hear | an American 

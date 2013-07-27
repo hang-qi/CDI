@@ -1,0 +1,5 @@
+<story>Health:Teaser|Terror-attack-children-heal</story>
+<start>20080808213725.909</start>
+<end>20080808213732.148</end>
+children | scarred | some of the worst terror acts 
+they | find | a unique place 

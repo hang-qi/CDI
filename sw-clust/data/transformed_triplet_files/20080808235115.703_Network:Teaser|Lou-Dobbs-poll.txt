@@ -1,0 +1,7 @@
+<story>Network:Teaser|Lou-Dobbs-poll</story>
+<start>20080808235115.703</start>
+<end>20080808235143.932</end>
+A reminder | to vote | tonight's poll 
+the border incursion | was | a momentary misunderstanding 
+the exact location of the border | is encouraging | more incursions 
+LouDobbsRadio.com | to find | the local listings 

@@ -1,0 +1,5 @@
+<story>Celebrity:Teaser|Kathy-Griffin</story>
+<start>20080814030956.728</start>
+<end>20080814031010.942</end>
+Kathy Griffin | joins | me 
+The comedienne | has recently performed | injured American troops 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-vice-president</story>
+<start>20080812200030.128</start>
+<end>20080812200037.035</end>
+Barack Obama | gets | closer 
+his top prospects | seem to be | falling 

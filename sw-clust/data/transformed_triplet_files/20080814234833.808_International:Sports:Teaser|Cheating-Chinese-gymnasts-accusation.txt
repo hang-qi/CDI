@@ -1,0 +1,5 @@
+<story>International:Sports:Teaser|Cheating-Chinese-gymnasts-accusation</story>
+<start>20080814234833.808</start>
+<end>20080814234848.890</end>
+the newsroom | was talking | this today 
+China | is saying | the gold medal 

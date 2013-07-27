@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Rockefeller-kidnapping</story>
+<start>20080812023951.955</start>
+<end>20080812024212.061</end>
+the man | kidnapped | his own daughter 
+We | 'll have | details 

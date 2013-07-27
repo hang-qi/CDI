@@ -1,0 +1,4 @@
+<story>Sports|Olympics-Phelps</story>
+<start>20080812195727.476</start>
+<end>20080812195747.996</end>
+a | win | the 200 

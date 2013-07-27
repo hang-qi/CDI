@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812143955.725</start>
+<end>20080812144002.832</end>
+Michael Phelps | proving unbeatable | the pool 

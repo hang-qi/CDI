@@ -1,0 +1,9 @@
+<story>Money|Grape-prices</story>
+<start>20080812195909.778</start>
+<end>20080812195938.440</end>
+time | to talk | these grapes 
+a single bunch | going | as much as $ 900 or $ 26 
+A Japanese hotel manager | paid | that amount 
+they | are called | ruby roman grapes 
+they | are | a ping-pong ball 
+fruit | is considered | a luxury 

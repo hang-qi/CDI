@@ -1,0 +1,4 @@
+<story>International:Teaser|Clark-NATO-commander-interview</story>
+<start>20080815203636.258</start>
+<end>20080815204009.571</end>
+former Democratic presidential candidate Wesley Clark | gives | his take 

@@ -1,0 +1,8 @@
+<story>Politics|Obama-vacation</story>
+<start>20080808195036.499</start>
+<end>20080808195054.817</end>
+Barack Obama | is taking | some time 
+He | is starting | a week-long vacation 
+his family | left | Chicago earlier today 
+The Democratic candidate | is scheduled to arrive | his native state 
+he | 'll visit | his sister 

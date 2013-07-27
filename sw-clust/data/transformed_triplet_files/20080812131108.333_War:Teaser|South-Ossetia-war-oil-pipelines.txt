@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war-oil-pipelines</story>
+<start>20080812131108.333</start>
+<end>20080812131418.756</end>
+the shooting | put | holes 

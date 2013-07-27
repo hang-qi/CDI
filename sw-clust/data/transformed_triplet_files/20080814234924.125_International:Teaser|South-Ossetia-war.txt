@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080814234924.125</start>
+<end>20080814235200.281</end>
+We | 'll be examining | the geopolitical crisis 
+we | 'll be telling | the military implications 

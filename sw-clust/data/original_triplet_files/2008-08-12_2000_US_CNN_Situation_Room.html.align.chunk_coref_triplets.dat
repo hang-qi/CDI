@@ -1,0 +1,1263 @@
+<story>War|South-Ossetia-war</story>
+<start>20080812200009.941</start>
+Russia declares an end to punishing attacks on Georgia, but there are reports of continued fighting as Georgians confront the ruins of their homes and their lives.
+Russia/NP; declares/VP; an end/NP	-Infinity
+
+Russia declares an end to punishing attacks on Georgia, but there are reports of continued fighting as Georgians confront the ruins of their homes and their lives.
+Georgians/NP; confront/VP; the ruins of their homes/NP	-Infinity
+<end>20080812200021.886</end>
+
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812200021.886</start>
+The White House struggles to keep the pressure on Russia.
+The White House/NP; struggles to keep/VP; the pressure/NP	-Infinity
+
+Are the presidential candidates supporting or stepping on Mr. Bush's message?
+the presidential candidates/NP; supporting or stepping/VP; Mr. Bush's message/NP	-Infinity
+<end>20080812200030.128</end>
+
+<story>Politics:Teaser|Obama-vice-president</story>
+<start>20080812200030.128</start>
+And Barack Obama gets closer to naming his running mate.
+Barack Obama/NP; gets/VP; closer/NP	-Infinity
+
+And his top prospects seem to be falling, well, into two groups.
+his top prospects/NP; seem to be/VP; falling/NP	-Infinity
+<end>20080812200037.035</end>
+
+<story>Network|Intro</story>
+<start>20080812200037.035</start>
+Wolf Blitzer is off today.
+Wolf Blitzer/NP; is/VP off/PP; today/NP	-Infinity
+<end>20080812200037.035</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080812200050.314</start>
+The terrified residents are waiting to see if Russia lives up to its new promise to end air and ground attacks.
+The terrified residents/NP; are waiting to see/VP; Russia/NP	-Infinity
+
+The terrified residents are waiting to see if Russia lives up to its new promise to end air and ground attacks.
+its new promise/NP; to end/VP; air and ground attacks/NP	-Infinity
+
+Across Georgia, a former Soviet republic and U.S. ally, tens of thousands of people have sought refuge, some escaping the bombardment in cold, wet, rat-infested cellars.
+people/NP; have sought/VP; refuge/NP	-Infinity
+
+Across Georgia, a former Soviet republic and U.S. ally, tens of thousands of people have sought refuge, some escaping the bombardment in cold, wet, rat-infested cellars.
+some/NP; escaping/VP; the bombardment/NP	-Infinity
+
+Right now huge crowds of Georgian are showing their support for President Mikheil Saakashvili.
+huge crowds of Georgian/NP; are showing/VP; witnesses support/NP	-Infinity
+
+Georgia moved Thursday to crack down on separatists in two breakaway provinces supported by Russia.
+Georgia/NP; moved/VP; Thursday/NP	-Infinity
+
+Georgia moved Thursday to crack down on separatists in two breakaway provinces supported by Russia.
+two breakaway provinces/NP; supported/VP by/PP; Russia/NP	-Infinity
+
+Now, Moscow responded with a show of military muscle that was reminiscent of the Cold War era.
+Moscow/NP; responded/VP with/PP; a show of military muscle/NP	-Infinity
+
+Our CNN's Frederik Pleitgen is in the Georgian capital, Tbilisi.
+Our CNN's Frederik Pleitgen/NP; is/VP in/PP; the Georgian capital/NP	-Infinity
+
+Of course, the big news coming out of Moscow today, with the Russian president saying that as far as he is concerned, the military operations of Russian forces here in Georgia are over and that he has ordered his troops to stop fighting.
+the big news/NP; coming/VP out/PP of/PP; Moscow today/NP	-Infinity
+
+Of course, the big news coming out of Moscow today, with the Russian president saying that as far as he is concerned, the military operations of Russian forces here in Georgia are over and that he has ordered his troops to stop fighting.
+the Russian president/NP; saying/VP as/PP; far/NP	-Infinity
+
+Of course, the big news coming out of Moscow today, with the Russian president saying that as far as he is concerned, the military operations of Russian forces here in Georgia are over and that he has ordered his troops to stop fighting.
+Georgia/NP; are/VP over and/PP; he/NP	-Infinity
+
+Now, the big question that many people here in Tbilisi, Georgia, in the capital of this city, are asking, does that mean there's going to be a cease-fire?
+mean there/NP; 's going to be/VP; a cease-fire/NP	-Infinity
+
+Does that mean there is going to be peace?
+mean there/NP; is going to be/VP; peace/NP	-Infinity
+
+You're absolutely right, there were demonstrations all throughout the day here in Tbilisi, with people waving the Georgian flag, singing the Georgian national anthem, and showing support for their government and their president.
+people/NP; waving/VP; the Georgian flag/NP	-Infinity
+
+We talked to many of those people at those demonstrations, and many of them say they are not sure that this peace or this cease-fire will actually hold.
+We/NP; talked/VP to/PP; many of those people/NP	-Infinity
+
+Having said that, we heard from Georgian authorities today that after the Russian president made that announcement that his forces would stop using hostilities against the Georgians, that two Georgian towns were bombed by Russian airplanes, and also that a contingent of Georgian forces was attacked in the breakaway province of Abkhazia -- Suzanne.
+we/NP; heard/VP from/PP; Georgian authorities/NP	-Infinity
+
+Having said that, we heard from Georgian authorities today that after the Russian president made that announcement that his forces would stop using hostilities against the Georgians, that two Georgian towns were bombed by Russian airplanes, and also that a contingent of Georgian forces was attacked in the breakaway province of Abkhazia -- Suzanne.
+the Russian president/NP; made/VP that/PP; announcement/NP	-Infinity
+
+Having said that, we heard from Georgian authorities today that after the Russian president made that announcement that his forces would stop using hostilities against the Georgians, that two Georgian towns were bombed by Russian airplanes, and also that a contingent of Georgian forces was attacked in the breakaway province of Abkhazia -- Suzanne.
+his forces/NP; would stop using/VP; hostilities/NP	-Infinity
+
+Having said that, we heard from Georgian authorities today that after the Russian president made that announcement that his forces would stop using hostilities against the Georgians, that two Georgian towns were bombed by Russian airplanes, and also that a contingent of Georgian forces was attacked in the breakaway province of Abkhazia -- Suzanne.
+two Georgian towns/NP; were bombed/VP by/PP; Russian airplanes/NP	-Infinity
+
+Having said that, we heard from Georgian authorities today that after the Russian president made that announcement that his forces would stop using hostilities against the Georgians, that two Georgian towns were bombed by Russian airplanes, and also that a contingent of Georgian forces was attacked in the breakaway province of Abkhazia -- Suzanne.
+a contingent of Georgian forces/NP; was attacked/VP in/PP; the breakaway province of Abkhazia/NP	-Infinity
+
+PLEITGEN : There's a lot going in the diplomatic channels today.
+a lot/NP; going/VP in/PP; the diplomatic channels/NP	-Infinity
+
+President Sarkozy of France, who seems to be becoming something like the top mediator between these two countries, he visited Moscow earlier today, held a press conference there with Dmitry Medvedev, where the two of them put forward a cease-fire proposal that Sarkozy backed.
+he/NP; visited/VP; Moscow earlier today/NP	-Infinity
+
+President Sarkozy of France, who seems to be becoming something like the top mediator between these two countries, he visited Moscow earlier today, held a press conference there with Dmitry Medvedev, where the two of them put forward a cease-fire proposal that Sarkozy backed.
+the two of them/NP; put forward/VP; a cease-fire proposal/NP	-Infinity
+
+It calls for both nations to end their hostility and for Russian forces to leave this country of Georgia.
+both nations/NP; to end/VP; their hostility/NP	-Infinity
+
+It calls for both nations to end their hostility and for Russian forces to leave this country of Georgia.
+Russian forces/NP; to leave/VP; this country of Georgia/NP	-Infinity
+
+Sarkozy right now is here in Tbilisi, in the capital of Georgia.
+Sarkozy/NP; is here/VP in/PP; Tbilisi/NP	-Infinity
+
+He's been holding talks with the Georgian president, Saakashvili.
+He/NP; 's been holding/VP; talks/NP	-Infinity
+<end>20080812200341.485</end>
+
+<story>International|Presidential-campaign-South-Ossetia</story>
+<start>20080812200341.485</start>
+The United States and its allies are trying to show Russia that the Soviet-style aggression in Georgia will not stand, but their options are limited essentially.
+its allies/NP; are trying to show/VP; Russia/NP	-Infinity
+
+The presidential race in this country isn't making the diplomatic situation any less complicated.
+this country/NP; is n't making/VP; the diplomatic situation/NP	-Infinity
+
+When seeing the president of Georgia not mention President Bush and the Bush administration, but talked about John McCain saying that, " We are all Georgians now."
+the president of Georgia not/NP; mention/VP; President Bush/NP	-Infinity
+
+And what are they doing about this situation?
+they/NP; doing/VP about/PP; this situation/NP	-Infinity
+
+Top U.S. officials are privately saying they are getting assurances from the Russians that they don't plan to stay in Georgia, but officials here are trying to be cautious about the whole situation.
+Top U.S. officials/NP; are privately saying/VP; they/NP	-Infinity
+
+Top U.S. officials are privately saying they are getting assurances from the Russians that they don't plan to stay in Georgia, but officials here are trying to be cautious about the whole situation.
+they/NP; do n't plan to stay/VP in/PP; Georgia/NP	-Infinity
+
+Top U.S. officials are privately saying they are getting assurances from the Russians that they don't plan to stay in Georgia, but officials here are trying to be cautious about the whole situation.
+officials/NP; are trying to be/VP about/PP; the whole situation/NP	-Infinity
+
+(BEGIN VIDEOTAPE) HENRY (voice-over): One day after President Bush demanded an end to what he called Russia's brutal escalation of violence in Georgia, a more measured tone from Secretary of State Condoleezza Rice.
+President Bush/NP; demanded/VP; an end/NP	-Infinity
+
+(BEGIN VIDEOTAPE) HENRY (voice-over): One day after President Bush demanded an end to what he called Russia's brutal escalation of violence in Georgia, a more measured tone from Secretary of State Condoleezza Rice.
+he/NP; called/VP; Russia's brutal escalation of violence/NP	-Infinity
+
+CONDOLEEZZA RICE, SECRETARY OF STATE: It is very important now that all parties cease fire.
+all parties/NP; cease/VP; fire/NP	-Infinity
+
+The Georgians have agreed to a cease- fire .
+The Georgians/NP; have agreed/VP to/PP; a cease/NP	-Infinity
+
+The Russians need to stop their military operations, as they have apparently said that they will.
+The Russians/NP; need to stop/VP; their military operations/NP	-Infinity
+
+The Russians need to stop their military operations, as they have apparently said that they will.
+they/NP; have apparently said/VP; they/NP	-Infinity
+
+HENRY : Using the word "apparently" shows how much the White House is struggling to get a handle on Russia's real intention.
+the word/NP; shows/VP; how much/NP	-Infinity
+
+HENRY : Using the word "apparently" shows how much the White House is struggling to get a handle on Russia's real intention.
+the White House/NP; is struggling to get/VP; a handle/NP	-Infinity
+
+U.S. military options could dramatically escalate tensions, and it's unlikely the United Nations will take tough action to stop Russia.
+U.S. military options/NP; could dramatically escalate/VP; tensions/NP	-Infinity
+
+U.S. military options could dramatically escalate tensions, and it's unlikely the United Nations will take tough action to stop Russia.
+the United Nations/NP; will take/VP; tough action/NP	-Infinity
+
+So Rice focused on steps the U.S. can take to aid Georgia rather than specifics to stop Russia's invasion.
+Rice/NP; focused/VP on/PP; steps/NP	-Infinity
+
+So Rice focused on steps the U.S. can take to aid Georgia rather than specifics to stop Russia's invasion.
+specifics/NP; to stop/VP; Russia's invasion/NP	-Infinity
+
+RICE: We are reviewing our options for humanitarian and reconstruction assistance to Georgia.
+We/NP; are reviewing/VP; our options/NP	-Infinity
+
+HENRY : The presidential candidates are not being so diplomatic, with Republican John McCain going much further than the White House in denouncing Russia on WIPF Radio in Harrisburg, Pennsylvania.
+Republican John McCain/NP; going much further/VP than/PP; the White House/NP	-Infinity
+
+SEN. JOHN MCCAIN (R-AZ), PRESIDENTIAL CANDIDATE: I think it's very clear that Russian ambitions are to restore the old Russian empire.
+Russian ambitions/NP; are to restore/VP; the old Russian empire/NP	-Infinity
+
+HENRY : Democrat Barack Obama, who interrupted his vacation Monday to lash out at Russia on camera, released a tough written statement Tuesday.
+Monday/NP; to lash out/VP at/PP; Russia/NP	-Infinity
+
+"Now is the time for action, not just words," Obama said of Russia.
+Obama/NP; said/VP of/PP; Russia/NP	-Infinity
+
+"It is past time for the Russian government to immediately sign and implement a cease-fire."
+the Russian government/NP; to immediately sign and implement/VP; a cease-fire/NP	-Infinity
+
+Both candidates also keep calling Georgian President Mikheil Saakashvili and are not shy about what they tell him.
+Both candidates/NP; keep calling/VP; Georgian President Mikheil Saakashvili/NP	-Infinity
+
+Both candidates also keep calling Georgian President Mikheil Saakashvili and are not shy about what they tell him.
+they/NP; tell/VP; Georgian President Mikheil Saakashvili/NP	-Infinity
+
+MCCAIN: And I told him that I know I speak for every American when I say to him, today, we are all Georgians.
+every American/NP; say/VP to/PP; John McCain saying that/NP	-Infinity
+
+And as you noticed, Suzanne, even more remarkable, you had the president of Georgia just a few moments ago at a huge, huge rally in Tbilisi recounting that conversation for the crowd, that conversation he had with John McCain.
+Tbilisi/NP; recounting/VP that/PP; conversation/NP	-Infinity
+
+And as you noticed, Suzanne, even more remarkable, you had the president of Georgia just a few moments ago at a huge, huge rally in Tbilisi recounting that conversation for the crowd, that conversation he had with John McCain.
+he/NP; had/VP with/PP; John McCain/NP	-Infinity
+
+And you and I were both out there when President Bush visited Georgia, and we saw the kind of warm reception he got.
+President Bush/NP; visited/VP; Georgia/NP	-Infinity
+
+And you and I were both out there when President Bush visited Georgia, and we saw the kind of warm reception he got.
+we/NP; saw/VP; the kind of warm reception/NP	-Infinity
+
+Thousands of people gathering there, and we see that again today before the Georgian president.
+we/NP; see/VP; that again today/NP	-Infinity
+
+What does the White House make of all of these kind of conflicting messages or these various messages that are coming from the candidates themselves?
+the White House/NP; make/VP of/PP; all of these kind/NP	-Infinity
+
+What does the White House make of all of these kind of conflicting messages or these various messages that are coming from the candidates themselves?
+these various messages/NP; are coming/VP from/PP; the candidates/NP	-Infinity
+
+Is it getting in the way of theirs?
+the current White House/NP; getting/VP in/PP; the way of theirs/NP	-Infinity
+
+HENRY : They continue to say that it's not interfering, that the president is not too focused on what the candidates have to say, that he's got to still do his job for the final few months.
+They/NP; continue to say/VP; the current White House/NP	-Infinity
+
+But the bottom line, as you know full well, there's that old adage about America speaking with one voice in a crisis.
+America/NP; speaking/VP with/PP; one voice/NP	-Infinity
+
+Right now it certainly sounds like we're speaking with three voices -- Suzanne.
+right now/NP; sounds/VP; we/NP	-Infinity
+
+I guess they just can't help themselves at this time.
+they/NP; ca n't help/VP; themselves/NP	-Infinity
+<end>20080812200739.256</end>
+
+<story>War|South-Ossetia-war-oil-pipelines</story>
+<start>20080812200739.256</start>
+MALVEAUX: Well, on top of the bloodshed in Georgia, there is this disturbing reality for people all over the world: oil pipelines smack dab in the conflict zone in the midst of an energy crisis.
+oil pipelines/NP; smack/VP; dab/NP	-Infinity
+
+It's really just about a million barrels of oil that goes through Georgia every day, but right now we only have about a two-million- barrel surplus in the world.
+a million barrels of oil/NP; goes/VP through/PP; Georgia/NP	-Infinity
+
+It's really just about a million barrels of oil that goes through Georgia every day, but right now we only have about a two-million- barrel surplus in the world.
+we/NP; have/VP; about a two-million/NP	-Infinity
+
+We make about 87 million barrels of oil in the world every day.
+We/NP; make/VP; about 87 million barrels of oil/NP	-Infinity
+
+We consume about 85 million.
+We/NP; consume/VP; about 85 million/NP	-Infinity
+
+The Caspian sea is entirely landlocked, so if you get oil out of there, you've got to get it out by pipeline.
+the Caspian Sea/NP; out/VP by/PP; pipeline/NP	-Infinity
+
+The West needs a way to get the oil out, so it used to go through that blue pipeline you see which goes through Russia to a port on the Black Sea.
+The West/NP; needs/VP; a way/NP	-Infinity
+
+The West needs a way to get the oil out, so it used to go through that blue pipeline you see which goes through Russia to a port on the Black Sea.
+The West/NP; used to go/VP through/PP; that blue pipeline/NP	-Infinity
+
+The West needs a way to get the oil out, so it used to go through that blue pipeline you see which goes through Russia to a port on the Black Sea.
+which/NP; goes/VP through/PP; Russia/NP	-Infinity
+
+But what happened is, about five years ago, the western-led consortium decided to build a pipeline that goes through friendlier countries, Azerbaijan, then Georgia, then through Turkey, and over to the Mediterranean, where that fuel goes to Middle Eastern and European countries.
+the western-led consortium/NP; decided to build/VP; a pipeline/NP	-Infinity
+
+But what happened is, about five years ago, the western-led consortium decided to build a pipeline that goes through friendlier countries, Azerbaijan, then Georgia, then through Turkey, and over to the Mediterranean, where that fuel goes to Middle Eastern and European countries.
+that fuel/NP; goes/VP to/PP; Middle Eastern/NP	-Infinity
+
+That pipeline is shut down, but it wasn't shut down because of this fighting.
+that blue pipeline you see which goes through Russia to a port on the Black Sea/NP; was n't shut down/VP because of/PP; this fighting/NP	-Infinity
+
+It was shut down last week because Kurdish rebels had attacked that pipeline and set fire to a portion of it.
+Kurdish rebels/NP; had attacked/VP that/PP; pipeline and set fire/NP	-Infinity
+
+BP, which leads this consortium, has also shut down that line which goes from Baku on the Caspian Sea, the red line which goes to the Black Sea.
+which/NP; leads/VP; this consortium/NP	-Infinity
+
+BP, which leads this consortium, has also shut down that line which goes from Baku on the Caspian Sea, the red line which goes to the Black Sea.
+which/NP; goes/VP from/PP; Baku/NP	-Infinity
+
+BP, which leads this consortium, has also shut down that line which goes from Baku on the Caspian Sea, the red line which goes to the Black Sea.
+which/NP; goes/VP to/PP; the Black Sea/NP	-Infinity
+
+So, right now, of the four pipelines that run through Georgia, three of them are shut down.
+the four pipelines/NP; run/VP through/PP; Georgia/NP	-Infinity
+
+Oil markets are not reacting strongly to this news, but we'll continue to monitor it for you -- Suzanne.
+Oil markets/NP; are not reacting strongly/VP to/PP; this news/NP	-Infinity
+
+Oil markets are not reacting strongly to this news, but we'll continue to monitor it for you -- Suzanne.
+we/NP; 'll continue to monitor/VP; the big news coming out of Moscow today , with the Russian president saying that as far as he is concerned , the military operations of Russian forces here in Georgia are over and that he/NP	-Infinity
+<end>20080812200917.721</end>
+
+<story>Politics|Clinton-convention-role</story>
+<start>20080812200917.721</start>
+JACK CAFFERTY, CNN ANCHOR: Some Hillary Clinton supporters want to make sure that the upcoming Democratic convention doesn't turn into a coronation of Barack Obama.
+Some Hillary Clinton supporters/NP; want to make/VP that/PP; the upcoming Democratic convention/NP	-Infinity
+
+A humorless organization called The Denver Group ran an ad in a Capitol Hill newspaper demanding that Hillary Clinton's name be placed in nomination at the convention and demanding that speeches be allowed in support of her nomination.
+A humorless organization/NP; called/VP; The Denver Group/NP	-Infinity
+
+A humorless organization called The Denver Group ran an ad in a Capitol Hill newspaper demanding that Hillary Clinton's name be placed in nomination at the convention and demanding that speeches be allowed in support of her nomination.
+a Capitol Hill newspaper/NP; demanding/VP that/PP; Hillary Clinton's name/NP	-Infinity
+
+A humorless organization called The Denver Group ran an ad in a Capitol Hill newspaper demanding that Hillary Clinton's name be placed in nomination at the convention and demanding that speeches be allowed in support of her nomination.
+the convention/NP; demanding/VP; speeches/NP	-Infinity
+
+These are folks who have many demands.
+folks/NP; have/VP; many demands/NP	-Infinity
+
+And if they don't get their way, they are threatening a revolt.
+they/NP; do n't get/VP; These way/NP	-Infinity
+
+And if they don't get their way, they are threatening a revolt.
+they/NP; are threatening/VP; a revolt/NP	-Infinity
+
+The ad says, "Will Howard Dean and the DNC turn the Democratic Party into the Boston Tea Party?"
+the DNC/NP; turn/VP; the Democratic Party/NP	-Infinity
+
+They demand a roll call vote on her nomination, presumably after those speeches that they're demanding.
+They/NP; demand/VP; a roll call vote/NP	-Infinity
+
+Of course, Clinton herself has not ruled out the idea of placing her name in nomination, saying that her supporters would experience a catharsis if their voices were heard.
+herself/NP; has not ruled/VP out/PP; the idea/NP	-Infinity
+
+Of course, Clinton herself has not ruled out the idea of placing her name in nomination, saying that her supporters would experience a catharsis if their voices were heard.
+her supporters/NP; would experience/VP; a catharsis/NP	-Infinity
+
+Another group of Clinton supporters is planning a march in Denver on the same day that she is expected to address the convention.
+Another group of Clinton supporters/NP; is planning/VP; a march/NP	-Infinity
+
+Another group of Clinton supporters is planning a march in Denver on the same day that she is expected to address the convention.
+she/NP; is expected to address/VP; the convention/NP	-Infinity
+
+And there are Clinton delegates who have started collecting signatures on petitions to place Clinton's name in the nomination.
+Clinton delegates/NP; have started collecting/VP; signatures/NP	-Infinity
+
+And there are Clinton delegates who have started collecting signatures on petitions to place Clinton's name in the nomination.
+petitions/NP; to place/VP; Clinton's name/NP	-Infinity
+
+They say their effort is about respect.
+Clinton delegates who have started collecting signatures on petitions to place Clinton 's name in the nomination effort/NP; is/VP about/PP; respect/NP	-Infinity
+
+They won't be able to do that, but in the process of trying, they can go a long way toward diminishing the historic nature of Obama's achievement, disrupting the convention itself, taking the spotlight away from the nominee, and slowing his momentum going into November.
+they/NP; can go/VP; a long way/NP	-Infinity
+
+They won't be able to do that, but in the process of trying, they can go a long way toward diminishing the historic nature of Obama's achievement, disrupting the convention itself, taking the spotlight away from the nominee, and slowing his momentum going into November.
+his momentum/NP; going/VP into/PP; November/NP	-Infinity
+
+Is this what they call party unity?
+they/NP; call/VP; party unity/NP	-Infinity
+
+Here's the question: In order to satisfy Hillary Clinton's supporters, should her name be placed in nomination at the convention?
+her name/NP; be placed/VP in/PP; nomination/NP	-Infinity
+
+I'll be at that convention and we'll see how many of those demands actually get met.
+we/NP; 'll see/VP; how many of those demands/NP	-Infinity
+<end>20080812201128.385</end>
+
+<story>Politics:Teaser|Obama-vice-president</story>
+<start>20080812201128.385</start>
+MALVEAUX: Less than two weeks before the Democratic convention, Barack Obama's VP short list, well, it may be getting just a bit shorter.
+Obama 's short list/NP; may be getting just/VP; a bit/NP	-Infinity
+
+And some of this potential running mates' strengths could make up for his weaknesses.
+' strengths/NP; could make/VP up/PRT for/PP; his weaknesses/NP	-Infinity
+<end>20080812201138.829</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080812201138.829</start>
+Plus, as a Hillary Clinton ally tells it, John McCain infamous celebrity ad against Obama is working.
+a Hillary Clinton ally/NP; tells/VP; a Hillary Clinton ally/NP	-Infinity
+<end>20080812201145.969</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812201145.969</start>
+And we'll get the latest from Russia on its agreement to stop the violence in Georgia.
+we/NP; 'll get/VP; the latest/NP	-Infinity
+
+And we'll get the latest from Russia on its agreement to stop the violence in Georgia.
+its agreement/NP; to stop/VP; the violence/NP	-Infinity
+<end>20080812201431.001</end>
+
+<story>International|Russian-ambassador-interview</story>
+<start>20080812201431.001</start>
+(COMMERCIAL BREAK) MALVEAUX: We're following breaking developments in the battle between Russian and Georgian forces.
+We/NP; 're following/VP; breaking developments/NP	-Infinity
+
+A potential (ph) cease-fire is in place.
+A potential/NP; -LRB-/VP; ph -RRB- cease-fire/NP	-Infinity
+
+MALVEAUX: First thing, it's been reported that the Russian foreign minister has essentially said that Georgia's president must go.
+First/NP; 's been reported/VP that/PP; the Russian foreign minister/NP	-Infinity
+
+CHURKIN: It is our recommendation, yes, because we think that he has performed some horrific acts toward the people of South Ossetia, some major crimes against humanity have been committed which can been qualified as genocide and ethnic cleansing.
+we/NP; think/VP; he/NP	-Infinity
+
+CHURKIN: It is our recommendation, yes, because we think that he has performed some horrific acts toward the people of South Ossetia, some major crimes against humanity have been committed which can been qualified as genocide and ethnic cleansing.
+humanity/NP; have been committed/VP; which/NP	-Infinity
+
+And it would be good for everybody, for him , his country, and the international community, if he were to go.
+CHURKIN/NP; would be/VP for/PP; everybody/NP	-Infinity
+
+Of course, there are others in the Georgian capital, other people with whom we can talk in the government of Georgia.
+we/NP; can talk/VP in/PP; the government of Georgia/NP	-Infinity
+
+What makes you think that Russia's in a position to determine their leadership?
+a position/NP; to determine/VP; others in the Georgian capital , other people with whom we can talk in the government of Georgia leadership/NP	-Infinity
+
+CHURKIN: Russia -- Russia -- we are not determining the leadership.
+we/NP; are not determining/VP; the leadership/NP	-Infinity
+
+We are expressing our opinion.
+We/NP; are expressing/VP; our opinion/NP	-Infinity
+
+Of course, it's for the people of Georgia ultimately to decide who is going to be their president.
+our opinion/NP; is/VP for/PP; the people of Georgia/NP	-Infinity
+
+MALVEAUX: Secretary Rice said earlier today that the violence, the military operation, must cease.
+Secretary Rice/NP; said/VP; earlier today/NP	-Infinity
+
+CHURKIN: Well, first of all, President Medvedev have given orders -- has given orders to our armed forces to end the peacemaking operation in Georgia.
+President Medvedev/NP; have given/VP; orders/NP	-Infinity
+
+CHURKIN: Well, first of all, President Medvedev have given orders -- has given orders to our armed forces to end the peacemaking operation in Georgia.
+our armed forces/NP; to end/VP; the peacemaking operation/NP	-Infinity
+
+And secondly, there was a meeting in Moscow between President Sarkozy of France and President Medvedev, and they came up with six principles for the settlement of the situation there.
+they/NP; came/VP up/PRT; with six principles/NP	-Infinity
+
+The Georgian forces must go back to their initial bases.
+The Georgian forces/NP; must go back/VP to/PP; their initial bases/NP	-Infinity
+
+Russian forces will go back to the lines where they were on August 6th.
+Russian forces/NP; will go back/VP to/PP; the lines/NP	-Infinity
+
+Russian forces will go back to the lines where they were on August 6th.
+they/NP; were/VP on/PP; August 6th/NP	-Infinity
+
+However, they will be taking measures to make sure there is heightened security, until there is an international arrangement for that.
+they/NP; will be taking/VP; measures/NP	-Infinity
+
+When will Russia begin to pull back its tanks?
+will Russia/NP; begin to pull/VP back/PRT; its tanks/NP	-Infinity
+
+When will those ships leave the Black Sea?
+those ships/NP; leave/VP; the Black Sea/NP	-Infinity
+
+First of all, we need to be sure that there are no provocation from the Georgians, that really they pull out of South Ossetia and they go to the places from where they cannot relaunch their assault on South Ossetia.
+they/NP; pull out/VP of/PP; South Ossetia/NP	-Infinity
+
+First of all, we need to be sure that there are no provocation from the Georgians, that really they pull out of South Ossetia and they go to the places from where they cannot relaunch their assault on South Ossetia.
+they/NP; go/VP to/PP; the places/NP	-Infinity
+
+First of all, we need to be sure that there are no provocation from the Georgians, that really they pull out of South Ossetia and they go to the places from where they cannot relaunch their assault on South Ossetia.
+they/NP; can not relaunch/VP; their assault/NP	-Infinity
+
+And secondly, we must make sure that the Georgian government accepts the six principles which have been worked out by the president of France -- he is also presiding in the European Union now -- and the president of the Russian federation.
+we/NP; must make/VP that/PP; the Georgian government/NP	-Infinity
+
+And secondly, we must make sure that the Georgian government accepts the six principles which have been worked out by the president of France -- he is also presiding in the European Union now -- and the president of the Russian federation.
+which/NP; have been worked/VP out/PRT by/PP; the president of France/NP	-Infinity
+
+And secondly, we must make sure that the Georgian government accepts the six principles which have been worked out by the president of France -- he is also presiding in the European Union now -- and the president of the Russian federation.
+he/NP; is also presiding/VP in/PP; the European Union now/NP	-Infinity
+
+And then things on the ground will be worked out as a practical matter, and things will start hopefully rolling in the positive direction.
+the ground/NP; will be worked/VP out/PRT as/PP; a practical matter/NP	-Infinity
+
+MALVEAUX: But certainly the Russian government officials that you are speaking to are telling you that the bombing has stopped?
+the Russian government officials/NP; are speaking/VP; to/NP	-Infinity
+
+CHURKIN: Well, there has been an order of the Russian president to stop the fighting and to respond to Georgian provocations if there are any.
+an order of the Russian president/NP; to stop/VP; the fighting/NP	-Infinity
+
+And I have no direct information, up-to-the-minute information of what is happening on the ground.
+up-to-the-minute information of what/NP; is happening/VP on/PP; the ground/NP	-Infinity
+
+MALVEAUX: I want to point to an op-ed here from the last president of the Soviet Union, Mikhail Gorbachev, who essentially says that he believes that perhaps Georgia got a wink and a nod in terms of its own operation to move forward, a green light from the West.
+he/NP; believes/VP; Georgia/NP	-Infinity
+
+He said specifically that "... Georgian President Mikheil Saakashvili was expected unconditional support from the West and the West had given him reason to think that he would have it."
+He/NP; said/VP; specifically that/NP	-Infinity
+
+He said specifically that "... Georgian President Mikheil Saakashvili was expected unconditional support from the West and the West had given him reason to think that he would have it."
+Georgian President Mikheil Saakashvili/NP; was expected/VP; unconditional support/NP	-Infinity
+
+He said specifically that "... Georgian President Mikheil Saakashvili was expected unconditional support from the West and the West had given him reason to think that he would have it."
+the West/NP; had given/VP; the last president of the Soviet Union , Mikhail Gorbachev , who essentially says that he believes that perhaps Georgia got a wink and a nod in terms of its own operation to move forward , a green light from the West/NP	-Infinity
+
+He said specifically that "... Georgian President Mikheil Saakashvili was expected unconditional support from the West and the West had given him reason to think that he would have it."
+reason/NP; to think/VP; he/NP	-Infinity
+
+But what is clear is that the United States has had a very close relationship with Mr. Saakashvili.
+the United States/NP; has had/VP; a very close relationship/NP	-Infinity
+
+Now we are told the United States is going to try to sort out how come he started this operation without, according to them, direct green light from the United States.
+we/NP; are told/VP; the United States/NP	-Infinity
+
+Now we are told the United States is going to try to sort out how come he started this operation without, according to them, direct green light from the United States.
+he/NP; started/VP; this operation/NP	-Infinity
+
+Do you have any proof of that, there were any signals coming from the United States that gave the green light?
+any signals/NP; coming/VP from/PP; the United States/NP	-Infinity
+
+CHURKIN: Well, we do not want to believe that the United States has given a green light to this adventurous (ph) act, but our American colleagues are telling us that they're investigating now what may have happened in the channels of communication for Mr. Saakashvili to have behaved in such a reckless manner.
+we/NP; do not want to believe/VP; the United States/NP	-Infinity
+
+CHURKIN: Well, we do not want to believe that the United States has given a green light to this adventurous (ph) act, but our American colleagues are telling us that they're investigating now what may have happened in the channels of communication for Mr. Saakashvili to have behaved in such a reckless manner.
+Mr. Saakashvili/NP; to have behaved/VP in/PP; such a reckless manner/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: These actions have substantially damaged Russia's standing in the world.
+These actions/NP; have substantially damaged/VP; Russia's standing/NP	-Infinity
+
+And these actions jeopardize Russian relations with the United States and Europe.
+these actions/NP; jeopardize/VP; Russian relations/NP	-Infinity
+
+Now we have a new reality, when there is a joint Russian/French initiative to resolve the conflict.
+we/NP; have/VP; a new reality/NP	-Infinity
+
+Now we have a new reality, when there is a joint Russian/French initiative to resolve the conflict.
+a joint Russian\/French initiative/NP; to resolve/VP; the conflict/NP	-Infinity
+
+Of course, we hope that we'll continue normal relations with the United States and other members of the international community, including the European Union.
+we/NP; hope/VP; we/NP	-Infinity
+
+However, if there is interest on the part of some people in the United States to undermine our relations, to curtail our relations, we might as well let the United States deal on its own with some of the issues we work together on internationally.
+the United States/NP; to undermine/VP; our relations/NP	-Infinity
+
+However, if there is interest on the part of some people in the United States to undermine our relations, to curtail our relations, we might as well let the United States deal on its own with some of the issues we work together on internationally.
+we/NP; might as well let/VP; the United States deal/NP	-Infinity
+
+However, if there is interest on the part of some people in the United States to undermine our relations, to curtail our relations, we might as well let the United States deal on its own with some of the issues we work together on internationally.
+we/NP; work together/VP on/PP; internationally/NP	-Infinity
+
+You know, we have equal interest, we believe, in mutual cooperation between the Russian federation and the United States.
+we/NP; have/VP; equal interest/NP	-Infinity
+
+And we should look and try to resolve international and regional crises like the one we've seen in Georgia in the past few days, and others.
+we/NP; should look and try to resolve/VP; international and regional crises/NP	-Infinity
+
+And we should look and try to resolve international and regional crises like the one we've seen in Georgia in the past few days, and others.
+we/NP; 've seen/VP in/PP; Georgia/NP	-Infinity
+
+So, we hope that this thing is going to be overcome.
+we/NP; hope/VP that/PP; this thing/NP	-Infinity
+
+We are not happy with the way the United States has been behaving, and essentially propping up Mr. Saakashvili in the past few years.
+We/NP; are/VP with/PP; the way/NP	-Infinity
+
+But... MALVEAUX: Is there anything your government is going to do to follow up on that?
+your government/NP; is going to do to follow/VP up/PRT; on that/NP	-Infinity
+
+CHURKIN: Well, we're going to do the things that we have been doing all along.
+we/NP; 're going to do/VP; the things/NP	-Infinity
+
+We are going to talk frankly to them.
+We/NP; are going to talk frankly/VP to/PP; But/NP	-Infinity
+
+And I hope they are going to draw some conclusions.
+they/NP; are going to draw/VP; some conclusions/NP	-Infinity
+
+The United States has been a major arms supplier to the Saakashvili government.
+The United States/NP; has been/VP; a major arms/NP	-Infinity
+
+And I've heard media reports lately, for example, that -- yesterday, as a matter of fact -- that Israel, which has also been one of the arms suppliers, is reconsidering its relationship in the arms area with Georgia.
+which/NP; has also been/VP; one of the arms suppliers/NP	-Infinity
+
+So, we hope that the United States will draw some of those conclusions in the political and other fields, and will draw a proper conclusion about Mr. Saakashvili.
+we/NP; hope/VP; the United States/NP	-Infinity
+
+I heard my colleague, Ambassador Khalilzad , U.S. ambassador to the United Nations, say today on the waves that Mr. Saakashvili may have made some tactical mistakes.
+Mr. Saakashvili/NP; may have made/VP; some tactical mistakes/NP	-Infinity
+
+He deserve a more serious assessment of what he has done in terms of war crimes, genocide, and ethnic cleansing in South Ossetia.
+He/NP; deserve/VP; a more serious assessment of what/NP	-Infinity
+
+He deserve a more serious assessment of what he has done in terms of war crimes, genocide, and ethnic cleansing in South Ossetia.
+he/NP; has done/VP in/PP; terms of war crimes/NP	-Infinity
+<end>20080812202223.340</end>
+
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080812202223.340</start>
+MALVEAUX: Soaked in controversy, one conservative group prays for rain of biblical proportions to drown out Barack Obama's moment in the spotlight.
+one conservative group/NP; prays/VP for/PP; rain of biblical proportions/NP	-Infinity
+
+But that has unleashed a flood of criticism.
+MALVEAUX/NP; has unleashed/VP; a flood of criticism/NP	-Infinity
+<end>20080812203009.605</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080812203009.605</start>
+Could he be weighing two competing factors ?
+he/NP; be weighing/VP; two competing factors/NP	-Infinity
+
+Happening now, diplomatic bad blood leaves blood in the streets.
+diplomatic bad blood/NP; leaves/VP; blood/NP	-Infinity
+
+Amid efforts to end the conflict in Georgia, we look at efforts to help those suffering residents trapped in the warfare.
+efforts/NP; to end/VP; the conflict/NP	-Infinity
+
+Amid efforts to end the conflict in Georgia, we look at efforts to help those suffering residents trapped in the warfare.
+we/NP; look/VP at/PP; efforts/NP	-Infinity
+
+Amid efforts to end the conflict in Georgia, we look at efforts to help those suffering residents trapped in the warfare.
+those suffering residents/NP; trapped/VP in/PP; the warfare/NP	-Infinity
+<end>20080812203021.717</end>
+
+<story>Environment|Pelosi-offshore-drilling</story>
+<start>20080812203021.717</start>
+Regarding helping you pay less for oil and gas, House Speaker Nancy Pelosi reverses herself on one option.
+House Speaker Nancy Pelosi/NP; reverses/VP; herself/NP	-Infinity
+
+But President Bush warns of political trickery.
+President Bush/NP; warns/VP of/PP; political trickery/NP	-Infinity
+<end>20080812203032.295</end>
+
+<story>Money:Teaser|Troops-checked-backage</story>
+<start>20080812203032.295</start>
+And some troops flying to fight the war are fighting the airlines over one thing, checked bagged fees.
+some troops/NP; flying to fight/VP; the war/NP	-Infinity
+
+Some troops are forced to pay out of pocket at the airport.
+Some troops/NP; are forced to pay/VP out/PP of/PP; pocket/NP	-Infinity
+<end>20080812203045.408</end>
+
+<story>Politics|Obama-campaign</story>
+<start>20080812203055.251</start>
+Some call them Obamacans.
+Some/NP; call/VP; Some/NP	-Infinity
+
+They are Republicans who support Barack Obama.
+Republicans/NP; support/VP; Barack Obama/NP	-Infinity
+
+Today, that group grew at least by one.
+group/NP; grew at least/VP by/PP; one/NP	-Infinity
+
+Now he is behind Obama, saying that the United States needs a new foreign policy approach.
+he/NP; is/VP behind/PP; Obama/NP	-Infinity
+
+Now he is behind Obama, saying that the United States needs a new foreign policy approach.
+the United States/NP; needs/VP; a new foreign policy approach/NP	-Infinity
+<end>20080812203115.037</end>
+
+<story>Politics|Obama-vice-president</story>
+<start>20080812203115.037</start>
+Meanwhile, what approach Obama takes regarding a vice president, well, that's anybody's guess.
+Obama/NP; takes regarding/VP; a vice president/NP	-Infinity
+
+But CNN's Jessica Yellin joins me for this guessing game.
+CNN's Jessica Yellin/NP; joins/VP; me/NP	-Infinity
+
+Everybody has a different set of names.
+Everybody/NP; has/VP; a different set of names/NP	-Infinity
+
+But the candidates believed to be on Obama's short list generally fall into two broad categories, Suzanne, those who would reinforce Obama's message of change and those who would reassure voters about some of Obama's perceived weaknesses.
+the candidates/NP; believed to be/VP on/PP; Obama's short list/NP	-Infinity
+
+But the candidates believed to be on Obama's short list generally fall into two broad categories, Suzanne, those who would reinforce Obama's message of change and those who would reassure voters about some of Obama's perceived weaknesses.
+those/NP; would reinforce/VP; Obama's message of change/NP	-Infinity
+
+But the candidates believed to be on Obama's short list generally fall into two broad categories, Suzanne, those who would reinforce Obama's message of change and those who would reassure voters about some of Obama's perceived weaknesses.
+those/NP; would reassure/VP; voters/NP	-Infinity
+
+(BEGIN VIDEOTAPE) YELLIN (voice-over): Among those who reinforce the change message, Virginia Governor Tim Kaine.
+those/NP; reinforce/VP; the change message/NP	-Infinity
+
+He's young, new on the national scene, a Washington outsider who speaks fluent Spanish, and could help win Virginia, a crucial swing state.
+a Washington outsider/NP; speaks/VP; fluent Spanish/NP	-Infinity
+
+GOV. TIM KAINE (D), VIRGINIA: Although this has been a traditionally red state that had n't gone Democrat since 1964, everything I see across Virginia makes me believe that Obama can win in November.
+a traditionally red state/NP; had n't gone/VP; Democrat/NP	-Infinity
+
+GOV. TIM KAINE (D), VIRGINIA: Although this has been a traditionally red state that had n't gone Democrat since 1964, everything I see across Virginia makes me believe that Obama can win in November.
+everything/NP; see/VP across/PP; Virginia/NP	-Infinity
+
+GOV. TIM KAINE (D), VIRGINIA: Although this has been a traditionally red state that had n't gone Democrat since 1964, everything I see across Virginia makes me believe that Obama can win in November.
+Obama/NP; can win/VP in/PP; November/NP	-Infinity
+
+YELLIN : Senator Evan Bayh arguably reinforces the change message as well.
+Senator Evan Bayh/NP; reinforces/VP; the change message/NP	-Infinity
+
+SEN. EVAN BAYH (D), INDIANA: The time has come for America not to be divided any longer into red states and blue states.
+The time/NP; has come/VP for/PP; America not/NP	-Infinity
+
+YELLIN : Young, with preteen kids, he's not considered a true Washington insider, thanks to his two terms as Indiana's governor.
+he/NP; 's not considered/VP; a true Washington insider/NP	-Infinity
+
+Sebelius could help make traditionally Republican Kansas competitive.
+Sebelius/NP; could help make/VP; traditionally Republican Kansas competitive/NP	-Infinity
+
+GOV. KATHLEEN SEBELIUS (D), KANSAS: We have strong ties to the presidential nominee.
+We/NP; have/VP; strong ties/NP	-Infinity
+
+He was raised by Kansans.
+He/NP; was raised/VP by/PP; Kansans/NP	-Infinity
+
+His mother and grandparents came out of Kansas.
+His mother and grandparents/NP; came/VP out/PP of/PP; Kansas/NP	-Infinity
+
+YELLIN : As a woman and a newcomer, she would also make it a clear change ticket , though there are risks in picking a woman other than Clinton.
+she/NP; would also make/VP; Kansas/NP	-Infinity
+
+YELLIN : As a woman and a newcomer, she would also make it a clear change ticket , though there are risks in picking a woman other than Clinton.
+risks/NP; picking/VP; a woman/NP	-Infinity
+
+But, instead of emphasizing change, Obama could pick a vice president who reassures voters on experience and national security, like six-term Delaware Senator Joseph Biden, who is chairman of the Senate Foreign Relations Committee, or five-term Connecticut Senator Chris Dodd, who is very close to Senator Ted Kennedy, one of Obama's most trusted mentors.
+Obama/NP; could pick/VP; a vice president/NP	-Infinity
+
+(END VIDEOTAPE) YELLIN: And, Suzanne, according to the sources I talked to, we should add two other names, Senator Jack Reed of Rhode Island, who is a national -- national security heavyweight in the Democratic Party, and, of course, Senator Hillary Clinton.
+we/NP; should add/VP; two other names/NP	-Infinity
+
+Although most of the sources we all talked to think she's unlikely, they say, you never know -- Suzanne.
+all/NP; talked to think/VP; she/NP	-Infinity
+
+I know we're reading the tea leaves a little bit, but what do you think is the key factor in Obama's decision at this time?
+we/NP; 're reading/VP; the tea/NP	-Infinity
+
+YELLIN : You know, everyone I talk to says it's not about who is going to deliver a state or help him pick up a few more votes.
+everyone/NP; talk to says/VP; the tea/NP	-Infinity
+
+YELLIN : You know, everyone I talk to says it's not about who is going to deliver a state or help him pick up a few more votes.
+a state/NP; help/VP; -LRB- BEGIN VIDEOTAPE -RRB- YELLIN -LRB- voice-over -RRB- : Among those who reinforce the change message , Virginia Governor Tim Kaine/NP	-Infinity
+
+It's about the person he wants to spend that much time with and the person with whom he feels most comfortable personally.
+he/NP; wants to spend/VP; that much time/NP	-Infinity
+<end>20080812203402.471</end>
+
+<story>Activism|Anti-Obama-prayers</story>
+<start>20080812203402.471</start>
+MALVEAUX: The conservative organization Focus on the Family has pulled an online video asking people to pray for rain during Barack Obama's acceptance speech at Invesco Field in Denver this month.
+the Family/NP; has pulled/VP; an online video/NP	-Infinity
+
+MALVEAUX: The conservative organization Focus on the Family has pulled an online video asking people to pray for rain during Barack Obama's acceptance speech at Invesco Field in Denver this month.
+people/NP; to pray/VP for/PP; rain/NP	-Infinity
+
+Let's go to our Internet reporter, Abbi Tatton.
+Let's/NP; go/VP to/PP; our Internet reporter/NP	-Infinity
+
+Then they put it.
+they/NP; put/VP; Abbi/NP	-Infinity
+
+ABBI TATTON, CNN INTERNET REPORTER: Well, this was a video that was up there online, Suzanne, asking for people to pray not just for a quick shower, but rain of biblical proportions, during the speech, wanting it to start maybe a couple minutes before Obama started talking.
+people/NP; to pray not/VP for/PP; a quick shower/NP	-Infinity
+
+ABBI TATTON, CNN INTERNET REPORTER: Well, this was a video that was up there online, Suzanne, asking for people to pray not just for a quick shower, but rain of biblical proportions, during the speech, wanting it to start maybe a couple minutes before Obama started talking.
+Abbi/NP; to start maybe/VP; a couple minutes/NP	-Infinity
+
+(BEGIN VIDEO CLIP, FOCUS ON THE FAMILY) UNIDENTIFIED MALE: I'm talking "umbrella ain't going to help you" rain, not "flood people out of their houses" rain, just good old "swamp the intersections" rain.
+THE FAMILY/NP; -RRB-/VP; UNIDENTIFIED MALE/NP	-Infinity
+
+(BEGIN VIDEO CLIP, FOCUS ON THE FAMILY) UNIDENTIFIED MALE: I'm talking "umbrella ain't going to help you" rain, not "flood people out of their houses" rain, just good old "swamp the intersections" rain.
+just good old ``/NP; swamp/VP; the intersections '' rain/NP	-Infinity
+
+We're not asking for hail the size of canned hams or lightning bolts to set the bunting on fire, just rain, beautiful rain, "network cameras can't see the podium" rain.
+We/NP; 're not asking/VP for/PP; hail/NP	-Infinity
+
+We're not asking for hail the size of canned hams or lightning bolts to set the bunting on fire, just rain, beautiful rain, "network cameras can't see the podium" rain.
+the size of canned hams or lightning bolts/NP; to set/VP; the bunting/NP	-Infinity
+
+We're not asking for hail the size of canned hams or lightning bolts to set the bunting on fire, just rain, beautiful rain, "network cameras can't see the podium" rain.
+network cameras/NP; ca n't see/VP; the podium '' rain/NP	-Infinity
+
+The narrator says he's calling on the downpour for Obama because he says, "I'm pro-life, I'm against gay marriage, and I want the next president to agree."
+he/NP; 's calling/VP on/PP; the downpour/NP	-Infinity
+
+And now the video has been pulled, the group saying, "We never want to mislead people on importance subject of prayer" -- Suzanne.
+We/NP; want to mislead/VP; people/NP	-Infinity
+<end>20080812203524.954</end>
+
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080812203524.954</start>
+The conflict in Georgia is giving John McCain an opening to show off his foreign policy chops.
+Georgia/NP; is giving/VP; John McCain/NP	-Infinity
+
+The conflict in Georgia is giving John McCain an opening to show off his foreign policy chops.
+an/NP; opening to show/VP off/PRT; his foreign policy chops/NP	-Infinity
+
+Is he making the most of it?
+he/NP; making/VP; the most of the conflict in Georgia/NP	-Infinity
+<end>20080812203532.962</end>
+
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080812203532.962</start>
+(COMMERCIAL BREAK) (MUSIC) MALVEAUX: Well, that music in a dramatic -- dramatic moment rolled out today in Pennsylvania.
+dramatic moment/NP; rolled/VP; out today/NP	-Infinity
+
+John McCain, in the biggest political fight, came out to the "Rocky" theme song and drove into a huge rally in this Straight Talk Express -- all the theatrics meant to suggest that John McCain is the fighter Americans want in times of crises.
+the `` Rocky '' theme song/NP; drove/VP into/PP; a huge rally/NP	-Infinity
+
+John McCain, in the biggest political fight, came out to the "Rocky" theme song and drove into a huge rally in this Straight Talk Express -- all the theatrics meant to suggest that John McCain is the fighter Americans want in times of crises.
+all the theatrics/NP; meant to suggest/VP; John McCain/NP	-Infinity
+
+John McCain, in the biggest political fight, came out to the "Rocky" theme song and drove into a huge rally in this Straight Talk Express -- all the theatrics meant to suggest that John McCain is the fighter Americans want in times of crises.
+the fighter Americans/NP; want/VP in/PP; times of crises/NP	-Infinity
+
+CNN senior political analyst Bill Schneider joining me now regarding the crisis in Georgia.
+Bill Schneider/NP; joining/VP; me/NP	-Infinity
+
+WILLIAM SCHNEIDER, CNN SENIOR POLITICAL ANALYST : Well, he is certainly acting as if it is.
+he/NP; is certainly acting/VP; CNN/NP	-Infinity
+
+(BEGIN VIDEOTAPE) SCHNEIDER (voice-over): A major international crisis, it could be just what John McCain needs to highlight his strengths.
+A major international crisis/NP; could be just what/VP; John McCain/NP	-Infinity
+
+McCain has talked tough from the outset of the crisis.
+McCain/NP; has talked/VP from/PP; the outset of the crisis/NP	-Infinity
+
+MCCAIN: Russia should immediately and unconditionally cease its military operations and withdraw all forces out of sovereign Georgian territory.
+Russia/NP; should immediately and unconditionally cease/VP; its military operations/NP	-Infinity
+
+SEN. BARACK OBAMA (D-IL), PRESIDENTIAL CANDIDATE: I think it is important at this point for all sides to show restraint and to stop this armed conflict.
+all sides/NP; to show/VP; restraint/NP	-Infinity
+
+OBAMA: No matter how this conflict started, Russia has escalated it well beyond the dispute over South Ossetia, and -- and has now violated the space of another country.
+Russia/NP; has escalated/VP; No/NP	-Infinity
+
+But McCain had the edge on handling an unexpected major crisis, like, presumably, the one in Georgia.
+McCain/NP; had/VP; the edge/NP	-Infinity
+
+At a town hall in Pennsylvania that drew an unusually large turnout, McCain talked about the relevance of the crisis to Americans.
+Pennsylvania/NP; drew/VP; an unusually large turnout/NP	-Infinity
+
+At a town hall in Pennsylvania that drew an unusually large turnout, McCain talked about the relevance of the crisis to Americans.
+McCain/NP; talked/VP about/PP; the relevance of the crisis/NP	-Infinity
+
+MCCAIN: There's a pipeline, an oil pipeline in Baku, Tbilisi and Ceyhan which brings oil from the Caspian to points west and traverses Georgia.
+which/NP; brings/VP; oil/NP	-Infinity
+
+MCCAIN: There's a pipeline, an oil pipeline in Baku, Tbilisi and Ceyhan which brings oil from the Caspian to points west and traverses Georgia.
+points west/NP; traverses/VP; Georgia/NP	-Infinity
+
+SCHNEIDER : He played to the emotions when he recounted his remarks to the president of Georgia.
+He/NP; played/VP to/PP; the emotions/NP	-Infinity
+
+SCHNEIDER : He played to the emotions when he recounted his remarks to the president of Georgia.
+he/NP; recounted/VP; his remarks/NP	-Infinity
+
+MCCAIN: And I told him that I know I speak for every American when I say to him, today, we are all Georgians.
+every American/NP; say/VP to/PP; John McCain saying that/NP	-Infinity
+
+(BEGIN AUDIO CLIP) MCCAIN: I think it's very clear that Russian ambitions are to restore the old Russian empire.
+Russian ambitions/NP; are to restore/VP; the old Russian empire/NP	-Infinity
+
+The risk for McCain is that he could overplay the issue and frighten war-weary voters, whose priorities are at home right now.
+he/NP; could overplay/VP; the issue/NP	-Infinity
+
+The risk for McCain is that he could overplay the issue and frighten war-weary voters, whose priorities are at home right now.
+whose priorities/NP; are/VP at/PP; home right/NP	-Infinity
+
+The Russians are doing a pretty good job of frightening people already -- Suzanne.
+The Russians/NP; are doing/VP; a pretty good job of frightening people/NP	-Infinity
+
+A lot of people paying attention to the candidates' words regarding the conflict .
+A lot of people/NP; paying/VP; attention/NP	-Infinity
+
+A lot of people paying attention to the candidates' words regarding the conflict .
+' words/NP; regarding/VP; the conflict/NP	-Infinity
+<end>20080812204147.736</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080812204147.736</start>
+MALVEAUX: In the "Strategy Session": John McCain says he's going to come from behind to win.
+he/NP; 's going to come/VP from/PP; behind/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: But is he appealing to older voters, concerned that Obama's the voice of a younger generation?
+he/NP; appealing/VP to/PP; older voters/NP	-Infinity
+
+And Tom Foreman is with the CNN Election Express.
+Tom Foreman/NP; is/VP with/PP; the CNN Election Express/NP	-Infinity
+
+They're rolling through the battleground states.
+They/NP; 're rolling/VP through/PP; the battleground/NP	-Infinity
+
+He's live on the campaign trail .
+He/NP; is/VP on/PP; the campaign trail/NP	-Infinity
+<end>20080812204514.176</end>
+
+<story>Politics|Presidential-campaigns-negative-ads</story>
+<start>20080812204514.176</start>
+(COMMERCIAL BREAK) MALVEAUX : Senator John McCain's been getting a lot of attention for his first negative ad, now that he is running some more, we see.
+Senator John McCain's/NP; been getting/VP; a lot of attention/NP	-Infinity
+
+Let's take a listen.
+Let/NP; 's take/VP; a listen/NP	-Infinity
+
+(BEGIN VIDEO CLIP, OBAMA CAMPAIGN AD) NARRATOR: For decades, he's been Washington's biggest celebrity.
+he/NP; 's been/VP; Washington's biggest celebrity/NP	-Infinity
+
+NARRATOR: And, as Washington embraced him, John McCain hugged right back, the lobbyists running his low-road campaign, the money, billions in tax breaks for oil and drug companies, but almost nothing for families like yours.
+Washington/NP; embraced/VP; UNIDENTIFIED MALE : John McCain !/NP	-Infinity
+
+NARRATOR: And, as Washington embraced him, John McCain hugged right back, the lobbyists running his low-road campaign, the money, billions in tax breaks for oil and drug companies, but almost nothing for families like yours.
+the lobbyists/NP; running/VP; his low-road campaign/NP	-Infinity
+
+We hear a lot from guys like you, the pundits, and the media that -- you know, they kind of pooh- pooh this, say it's distasteful.
+We/NP; hear/VP; a lot/NP	-Infinity
+
+TERRY JEFFREY, EDITOR IN CHIEF, CYBERCAST NEWS SERVICE: Well, they can be, first of all, if they're honest, if they are based on facts that you can demonstrate and prove it's true, and if it goes to a core issue that people really care about.
+they/NP; are based/VP on/PP; facts/NP	-Infinity
+
+TERRY JEFFREY, EDITOR IN CHIEF, CYBERCAST NEWS SERVICE: Well, they can be, first of all, if they're honest, if they are based on facts that you can demonstrate and prove it's true, and if it goes to a core issue that people really care about.
+the Cybercast News Service/NP; goes/VP to/PP; a core issue/NP	-Infinity
+
+Suzanne, the liberal media is not going to carry the message of the McCain campaign.
+the liberal media/NP; is not going to carry/VP; the message of the McCain campaign/NP	-Infinity
+
+And, as a matter of fact, they shouldn't carry the message of the Obama campaign.
+they/NP; should n't carry/VP; the message of the Obama campaign/NP	-Infinity
+
+If these candidates are going to get their message out, they have to get it out themselves, including why they think the other guy shouldn't be elected.
+these candidates/NP; are going to get/VP; Both candidates message out/NP	-Infinity
+
+If these candidates are going to get their message out, they have to get it out themselves, including why they think the other guy shouldn't be elected.
+they/NP; have to get/VP; the message of the Obama campaign/NP	-Infinity
+
+If these candidates are going to get their message out, they have to get it out themselves, including why they think the other guy shouldn't be elected.
+they/NP; think/VP; the other guy/NP	-Infinity
+
+I will say, first off, the so-called liberal media is so in the tank for John McCain, it's embarrassing.
+the so-called liberal media/NP; is/VP in/PP; the tank/NP	-Infinity
+
+(LAUGHTER) BEGALA: But we can have that debate later.
+we/NP; can have/VP; that debate/NP	-Infinity
+
+The most devastating ad is when you take something the candidate himself said and put it out there where the public can see it.
+the public/NP; can see/VP; The most devastating ad/NP	-Infinity
+
+And talk about the liberal media, there are things that Barack Obama has been saying in this campaign that the liberal media is not reporting, that, if the Republicans want out there, they are going to have to pay to get it out there on their own... (CROSSTALK) MALVEAUX: I want to play that ad that we referred to before, the RNC, this new video ad.
+that Barack Obama/NP; has been saying/VP in/PP; this campaign/NP	-Infinity
+
+And talk about the liberal media, there are things that Barack Obama has been saying in this campaign that the liberal media is not reporting, that, if the Republicans want out there, they are going to have to pay to get it out there on their own... (CROSSTALK) MALVEAUX: I want to play that ad that we referred to before, the RNC, this new video ad.
+they/NP; are going to have to pay to get/VP; this campaign/NP	-Infinity
+
+And talk about the liberal media, there are things that Barack Obama has been saying in this campaign that the liberal media is not reporting, that, if the Republicans want out there, they are going to have to pay to get it out there on their own... (CROSSTALK) MALVEAUX: I want to play that ad that we referred to before, the RNC, this new video ad.
+we/NP; referred/VP to/PP; before/NP	-Infinity
+
+Let's take a quick listen here.
+Let/NP; 's take/VP; a quick/NP	-Infinity
+
+(BEGIN VIDEO CLIP, REPUBLICAN NATIONAL COMMITTEE AD) UNIDENTIFIED FEMALE: We're not usually busy whenever it's raining.
+We/NP; 're usually/VP; REPUBLICAN NATIONAL COMMITTEE AD/NP	-Infinity
+
+And it's been busy all day.
+REPUBLICAN NATIONAL COMMITTEE AD/NP; 's been/VP; all day/NP	-Infinity
+
+We know he doesn't have much experience and isn't ready to lead, but that doesn't mean he isn't dreamy.
+We/NP; know/VP; he/NP	-Infinity
+
+UNIDENTIFIED FEMALE: The aura around him is just really nice UNIDENTIFIED FEMALE: What I love most about him is that he has very soft eyes.
+he/NP; has/VP; very soft eyes/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: The ad is called "Fan Club."
+The ad/NP; is called/VP; Fan Club/NP	-Infinity
+
+And what we're seeing here, a strategy often used, both sides, but Republicans specifically, to take a strength of the candidate and turn it into a perceived weakness.
+a strength of the candidate/NP; turn/VP; a strength of the candidate/NP	-Infinity
+
+That ad is going after a few atmospherics.
+That ad/NP; is going/VP after/PP; a few atmospherics/NP	-Infinity
+
+One is that Obama seems to be running sometimes for president of the world, instead of president of the United States.
+Obama/NP; seems to be running sometimes/VP for/PP; president of the world/NP	-Infinity
+
+I think the ad would be more effective if, again, it used exactly what Obama said.
+an ad/NP; used exactly/VP; what Obama/NP	-Infinity
+
+And, by the way, I think speech he gave in Berlin, there are a lot of things Obama said in that speech you might see in ads later in this campaign.
+he/NP; gave/VP in/PP; Berlin/NP	-Infinity
+
+And, by the way, I think speech he gave in Berlin, there are a lot of things Obama said in that speech you might see in ads later in this campaign.
+Obama/NP; said/VP in/PP; that speech/NP	-Infinity
+
+MALVEAUX: The one thing, Paul, that we also saw in that ad was the fact that they used a lot of young people, young faces here.
+we/NP; saw/VP in/PP; that ad/NP	-Infinity
+
+MALVEAUX: The one thing, Paul, that we also saw in that ad was the fact that they used a lot of young people, young faces here.
+they/NP; used/VP; a lot of young people/NP	-Infinity
+
+(LAUGHTER) BEGALA: I'm sure they view the Obama campaign... JEFFREY: His V.P. will be 93.
+they/NP; view/VP; the Obama campaign/NP	-Infinity
+
+(LAUGHTER) BEGALA: I'm sure they view the Obama campaign... JEFFREY: His V.P. will be 93.
+His V.P./NP; will be/VP; 93/NP	-Infinity
+
+(LAUGHTER) JEFFREY: He's going to need a more experienced guy there... (CROSSTALK) BEGALA: His nickname for Strom Thurmond was "The Kid."
+He/NP; 's going to need/VP; a more experienced guy/NP	-Infinity
+
+(LAUGHTER) JEFFREY: He's going to need a more experienced guy there... (CROSSTALK) BEGALA: His nickname for Strom Thurmond was "The Kid."
+Strom Thurmond/NP; was/VP; The Kid/NP	-Infinity
+
+But I think that they might view it as a bit of a children's crusade.
+they/NP; might view/VP; -LRB- CROSSTALK -RRB- -LRB- LAUGHTER -RRB-/NP	-Infinity
+
+I think to indict Barack Obama's leadership by saying he has millions of followers doesn't make a lot of sense to me.
+Barack Obama's leadership/NP; saying/VP; he/NP	-Infinity
+
+I think to indict Barack Obama's leadership by saying he has millions of followers doesn't make a lot of sense to me.
+millions of followers/NP; does n't make/VP; a lot of sense/NP	-Infinity
+
+The fact that he's inspired a whole new generation of Americans to service, just as John Kennedy did back when John McCain was only middle-aged, I think that's a wonderful thing.
+he/NP; 's inspired/VP; a whole new generation of Americans/NP	-Infinity
+
+The fact that he's inspired a whole new generation of Americans to service, just as John Kennedy did back when John McCain was only middle-aged, I think that's a wonderful thing.
+John Kennedy/NP; did back/VP; John McCain/NP	-Infinity
+
+It's an inconsistent message to say he's not an experienced leader, but he has millions of people following him.
+an inconsistent message/NP; to say/VP; he/NP	-Infinity
+
+It's an inconsistent message to say he's not an experienced leader, but he has millions of people following him.
+he/NP; has/VP; millions of people/NP	-Infinity
+
+MALVEAUX: I want to bring up this quote, this from the former chief strategist of Hillary Clinton, Mark Penn, who said in "The Politico": "The tactic meets with media and pundit disapproval, and spawns accusations of negativity, but the reality is that a clever negative ad can be devastatingly effective."
+The tactic/NP; meets/VP with/PP; media/NP	-Infinity
+
+I think they're -- like I said, there are things that Barack Obama has said in this campaign that aren't getting covered in the media very much that I think would hurt him with a lot of voters.
+that Barack Obama/NP; has said/VP in/PP; this campaign/NP	-Infinity
+
+For example, Barack Obama says he's for full repeal of the Defense of Marriage Act.
+he/NP; is/VP for/PP; full repeal of the Defense/NP	-Infinity
+
+On Saturday, in Pittsburgh, the platform committee of the Democratic Party forwarded a platform to the full national convention that says, we oppose the Defense of Marriage Act.
+the platform committee of the Democratic Party/NP; forwarded/VP; a platform/NP	-Infinity
+
+On Saturday, in Pittsburgh, the platform committee of the Democratic Party forwarded a platform to the full national convention that says, we oppose the Defense of Marriage Act.
+we/NP; oppose/VP; the Defense of Marriage Act/NP	-Infinity
+
+If the Republicans want that out there, they're going have to put it out in their own ads.
+they/NP; 're going have to put/VP; Saturday/NP	-Infinity
+
+MALVEAUX: ... but does he have a point here?
+he/NP; have/VP; a point/NP	-Infinity
+
+You wonder, though, did he pay full price for that Harvard degree, right?
+he/NP; pay/VP; full price/NP	-Infinity
+
+And I would note that he didn't say an ethical negative ad, which I would have included.
+he/NP; did n't say/VP; an ethical negative ad/NP	-Infinity
+
+The first thing he said, if it's fair and factual, if it's on the public record, then if it's ethical, not just clever -- so, clever is important, and humor matters, and Penn is right.
+The first thing he/NP; is/VP on/PP; the public record/NP	-Infinity
+
+But it needs to be about something that affects people's lives.
+The first thing he/NP; needs to be/VP; about something/NP	-Infinity
+
+If you do a campaign and you are doing ads in a presidential campaign, you know you have the documentation of that that is completely unassailable, even at a higher standard than a lot of journalists in this town go when they're writing stories.
+a campaign/NP; are doing/VP; ads/NP	-Infinity
+
+If you do a campaign and you are doing ads in a presidential campaign, you know you have the documentation of that that is completely unassailable, even at a higher standard than a lot of journalists in this town go when they're writing stories.
+this town/NP; go when/VP; they/NP	-Infinity
+<end>20080812205114.402</end>
+
+<story>International|Presidential-campaign-foreign-policy</story>
+<start>20080812205114.402</start>
+They have picked up the phone and said, look, I have talked with -- I have talked to the Georgian president, and here's what needs to be done.
+They/NP; have picked/VP up/PRT; the phone/NP	-Infinity
+
+Are they stepping on President Bush's message?
+they/NP; stepping/VP on/PP; President Bush's message/NP	-Infinity
+
+Is somebody coming out on top of this?
+somebody/NP; coming/VP out/PRT; on top of this/NP	-Infinity
+
+First, he looked liked a doofus at the Olympics.
+he/NP; looked liked/VP; a doofus/NP	-Infinity
+
+But he's patting volleyball players on the rear end and holding up the American flag backwards, while his buddy Pootie-Poot -- the president's nickname for Putin -- Pootie-Poot is invading Georgia.
+he/NP; 's patting/VP; volleyball players/NP	-Infinity
+
+But he's patting volleyball players on the rear end and holding up the American flag backwards, while his buddy Pootie-Poot -- the president's nickname for Putin -- Pootie-Poot is invading Georgia.
+the rear end/NP; holding/VP up/PRT; the American flag/NP	-Infinity
+
+But he's patting volleyball players on the rear end and holding up the American flag backwards, while his buddy Pootie-Poot -- the president's nickname for Putin -- Pootie-Poot is invading Georgia.
+Pootie-Poot/NP; is invading/VP; Georgia/NP	-Infinity
+
+McCain showed some strength.
+McCain/NP; showed/VP; some strength/NP	-Infinity
+
+Obama then showed strength.
+Obama/NP; showed/VP; strength/NP	-Infinity
+
+And it's actually President Bush who look like he's irrelevant here.
+some strength/NP; is actually/VP; President Bush/NP	-Infinity
+
+And maybe that's good for McCain.
+some strength/NP; is/VP for/PP; McCain/NP	-Infinity
+
+JEFFREY: We're having a serious foreign policy debate in this country over the wars we're fighting in Iraq and Afghanistan.
+We/NP; 're having/VP; a serious foreign policy debate/NP	-Infinity
+
+JEFFREY: We're having a serious foreign policy debate in this country over the wars we're fighting in Iraq and Afghanistan.
+we/NP; 're fighting/VP in/PP; Iraq and Afghanistan/NP	-Infinity
+
+And part of the debate centers on the fact that we really didn't know what we were getting into when we got into these two foreign wars in two countries we didn't know a lot about.
+part of the debate/NP; centers/VP on/PP; the fact/NP	-Infinity
+
+And part of the debate centers on the fact that we really didn't know what we were getting into when we got into these two foreign wars in two countries we didn't know a lot about.
+we/NP; were getting/VP into/PP; we/NP	-Infinity
+
+And part of the debate centers on the fact that we really didn't know what we were getting into when we got into these two foreign wars in two countries we didn't know a lot about.
+we/NP; did n't know/VP; a lot/NP	-Infinity
+
+I would want to see these candidates demonstrate that they have a thorough knowledge of really what's going on between Georgia and Russia... (CROSSTALK) BEGALA: Well, say, be able to pronounce the president's name.
+these candidates/NP; demonstrate/VP; they/NP	-Infinity
+
+I would want to see these candidates demonstrate that they have a thorough knowledge of really what's going on between Georgia and Russia... (CROSSTALK) BEGALA: Well, say, be able to pronounce the president's name.
+a thorough knowledge of really/NP; 's going/VP on/PRT between/PP; Georgia/NP	-Infinity
+
+But McCain talked to Saakashvili, but he couldn't get the name right.
+McCain/NP; talked/VP to/PP; Saakashvili/NP	-Infinity
+
+But McCain talked to Saakashvili, but he couldn't get the name right.
+he/NP; could n't get/VP; the name right/NP	-Infinity
+
+(CROSSTALK) JEFFREY: Let's have an intelligent debate about what the U.S. interests are there and how each one of these candidates can optimize our interests there.
+Let/NP; 's have/VP; an intelligent debate/NP	-Infinity
+
+(CROSSTALK) JEFFREY: Let's have an intelligent debate about what the U.S. interests are there and how each one of these candidates can optimize our interests there.
+the U.S. interests/NP; are there/VP; each one of these candidates/NP	-Infinity
+
+MALVEAUX: All right, we are going to have to let it go at that.
+we/NP; are going to have to let/VP; -LRB- CROSSTALK -RRB- JEFFREY : Let 's have an intelligent debate about what the U.S. interests are there and how each one of these candidates can optimize our interests there ./NP	-Infinity
+<end>20080812205229.444</end>
+
+<story>Activism:Teaser|Sheehan-versus-Pelosi</story>
+<start>20080812205229.444</start>
+Some stories we're working on here in THE SITUATION ROOM: House Speaker Nancy Pelosi's primary challenger, a well-known anti-war voice from the left.
+we/NP; 're working/VP on/PP in/PP; THE SITUATION ROOM/NP	-Infinity
+
+Should the House speaker be looking over her shoulder?
+the House speaker/NP; be looking/VP over/PP; House Speaker Nancy Pelosi shoulder/NP	-Infinity
+<end>20080812205241.389</end>
+
+<story>Crime:Teaser|Subway-hackers</story>
+<start>20080812205241.389</start>
+And subway hacking -- three college students barred by a federal judge from teaching you how to hitch a free ride on Boston's subways.
+three college students/NP; barred/VP by/PP; a federal judge/NP	-Infinity
+<end>20080812205249.697</end>
+
+<story>Money:Teaser|Troops-checked-backage</story>
+<start>20080812205249.697</start>
+Plus, on their way to war, some troops are greeted by an unwelcome surprise -- a bill from a leading airliner for their luggage.
+some troops/NP; are greeted/VP by/PP; an unwelcome surprise/NP	-Infinity
+
+Deborah Feyerick is covering that story .
+Deborah Feyerick/NP; is covering/VP that/PP; story/NP	-Infinity
+<end>20080812205541.569</end>
+
+<story>Human-interest|Hot-shot-pictures</story>
+<start>20080812205541.569</start>
+(COMMERCIAL BREAK) MALVEAUX : Here's a look at "Hot Shots" coming in from our friends at the Associated Press, pictures likely to be in your newspaper tomorrow.
+Hot Shots/NP; coming/VP in/PRT from/PP; our friends/NP	-Infinity
+
+(COMMERCIAL BREAK) MALVEAUX : Here's a look at "Hot Shots" coming in from our friends at the Associated Press, pictures likely to be in your newspaper tomorrow.
+pictures/NP; to be/VP in/PP; your newspaper tomorrow/NP	-Infinity
+
+In South Carolina, a mechanic walks by school buses as the rising cost of fuel prices may prevent school districts from purchasing -- purchasing new ones.
+a mechanic/NP; walks/VP by/PP; school buses/NP	-Infinity
+
+In South Carolina, a mechanic walks by school buses as the rising cost of fuel prices may prevent school districts from purchasing -- purchasing new ones.
+the rising cost of fuel prices/NP; may prevent/VP; school districts/NP	-Infinity
+
+In Iraq, a soldier holds the Iraqi flag during a handover ceremony with the U.S. military.
+a soldier/NP; holds/VP; the Iraqi flag/NP	-Infinity
+
+In China, Germany's Alexander Grimm celebrates with a beer after winning his first gold medal.
+Germany's Alexander Grimm/NP; celebrates/VP with/PP; a beer/NP	-Infinity
+
+And, in Afghanistan, a boy rides a donkey as his friend follows along.
+his friend/NP; follows/VP; along/NP	-Infinity
+<end>20080812205620.608</end>
+
+<story>Politics|Presidential-campaign</story>
+<start>20080812205620.608</start>
+And on our "Political Ticker": Barack Obama is hammering John McCain in the Florida ad war.
+Barack Obama/NP; is hammering/VP; John McCain/NP	-Infinity
+
+"The Wall Street Journal" reports, Obama has aired more than 9,700 local television commercials in that battleground state so far, at a cost of about $6.5 million.
+Obama/NP; has aired/VP; more than 9,700 local television commercials/NP	-Infinity
+
+John McCain hasn't run any campaign spots in Florida, and, yet, the Republican has a slight edge over Obama in state polls.
+John McCain/NP; has n't run/VP; any campaign spots/NP	-Infinity
+
+John McCain hasn't run any campaign spots in Florida, and, yet, the Republican has a slight edge over Obama in state polls.
+the Republican/NP; has/VP; a slight edge/NP	-Infinity
+
+And here's an update on Obama's vacation in Hawaii.
+an/NP; update/VP on/PP; Obama's vacation/NP	-Infinity
+
+We are told that he has been jogging, golfing, and has visited his grandmother.
+We/NP; are told/VP; he/NP	-Infinity
+
+Yesterday, he went to the movies, seeing the blockbuster Batman film "The Dark Knight."
+he/NP; went/VP to/PP; the movies/NP	-Infinity
+
+After the show, he had a four-star meal, his second this week.
+he/NP; had/VP; a four-star meal/NP	-Infinity
+<end>20080812205705.420</end>
+
+<story>Activism|Sheehan-versus-Pelosi</story>
+<start>20080812205705.420</start>
+And anti-war activist Cindy Sheehan has qualified to challenge House Speaker Nancy Pelosi for her seat in Congress.
+anti-war activist Cindy Sheehan/NP; has qualified to challenge/VP; House Speaker Nancy Pelosi/NP	-Infinity
+
+Sheehan says she is running because Pelosi failed to persuade Democrats to end funding the war for Iraq.
+she/NP; is running because/VP; Pelosi/NP	-Infinity
+
+Sheehan says she is running because Pelosi failed to persuade Democrats to end funding the war for Iraq.
+Democrats/NP; to end funding/VP; the war/NP	-Infinity
+
+Yesterday, San Francisco election officials certified that Sheehan turned into enough signatures to get a spot on the November ballot as an independent candidate.
+San Francisco election officials/NP; certified/VP; Sheehan/NP	-Infinity
+
+Yesterday, San Francisco election officials certified that Sheehan turned into enough signatures to get a spot on the November ballot as an independent candidate.
+enough signatures/NP; to get/VP; a spot/NP	-Infinity
+
+Pelosi's spokesman says that the speaker welcomes the challenge.
+the speaker/NP; welcomes/VP; the challenge/NP	-Infinity
+<end>20080812205732.880</end>
+
+<story>Politics|Minnesota-senators-youtube-debate</story>
+<start>20080812205732.880</start>
+And, in the Minnesota Senate race, Republican incumbent Norm Coleman and Democratic challenger Al Franken are taking their fight online.
+Republican incumbent Norm Coleman and Democratic challenger Al Franken/NP; are taking/VP; San Francisco election officials fight online/NP	-Infinity
+
+Minnesota Public Radio reports that the candidates will answer questions on YouTube beginning today.
+Minnesota Public Radio/NP; reports/VP; the candidates/NP	-Infinity
+
+YouTube solicited questions just a few weeks ago as part of the election coverage.
+YouTube/NP; solicited/VP; questions/NP	-Infinity
+<end>20080812205751.866</end>
+
+<story>Politics|Clinton-convention-role</story>
+<start>20080812205806.080</start>
+The question this hour is: In order to satisfy Hillary Clinton's supporters, should her name be placed in nomination at the Democratic Convention?
+Suzanne name/NP; be placed/VP in/PP; nomination/NP	-Infinity
+
+Jenny in Denver: "Hillary needs to come out now, announce that she will not support any effort to place her name into nomination at the convention.
+she/NP; will not support/VP; any effort/NP	-Infinity
+
+She has the power to unify the party, once she remembers this is not about her.
+She/NP; has/VP; the power/NP	-Infinity
+
+She was the democratic process when she thought she would win.
+She/NP; was/VP; the democratic process/NP	-Infinity
+
+She was the democratic process when she thought she would win.
+she/NP; thought/VP; she/NP	-Infinity
+
+She needs to support the process in her loss as well."
+She/NP; needs to support/VP; the process/NP	-Infinity
+<end>20080812205949.304</end>
+

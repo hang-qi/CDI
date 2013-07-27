@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-convention</story>
+<start>20080811201129.620</start>
+<end>20080811201138.228</end>
+We | have | new details today 
+that Hillary Clinton's supporters | might not follow | the script 

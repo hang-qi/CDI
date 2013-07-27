@@ -1,0 +1,4 @@
+<story>Money|Stock-market</story>
+<start>20080808195920.589</start>
+<end>20080808195953.276</end>
+we | 're heading | the weekend 

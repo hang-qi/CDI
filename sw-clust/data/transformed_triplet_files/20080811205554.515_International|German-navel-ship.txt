@@ -1,0 +1,4 @@
+<story>International|German-navel-ship</story>
+<start>20080811205554.515</start>
+<end>20080811205604.392</end>
+a German naval ship | take | time 

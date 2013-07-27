@@ -1,0 +1,5 @@
+<story>Business:Teaser|Major-airlines-merger</story>
+<start>20080814160034.967</start>
+<end>20080814160040.139</end>
+Three major airlines | to join | forces 
+Three | means | the future of flying 

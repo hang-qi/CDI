@@ -1,0 +1,9 @@
+<story>Labor|Verizon-union-workers</story>
+<start>20080811163805.281</start>
+<end>20080811163830.406</end>
+The company | hammered | a new contract 
+The agreement | has to be ratified | union members 
+Workers | have been | the job 
+the previous contract | expired | a week 
+Job security and health care benefits | were | the main points of contention 
+workers | get | a 10.5 percent pay hike 

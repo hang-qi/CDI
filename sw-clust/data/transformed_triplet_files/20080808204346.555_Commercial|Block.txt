@@ -1,0 +1,7 @@
+<story>Commercial|Block</story>
+<start>20080808204346.555</start>
+<end>20080808204648.336</end>
+We | will get back | the breaking news 
+We | 're standing | a formal statement 
+we | get | Once 
+we | will share | Once 

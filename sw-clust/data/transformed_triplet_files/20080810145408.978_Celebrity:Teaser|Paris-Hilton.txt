@@ -1,0 +1,4 @@
+<story>Celebrity:Teaser|Paris-Hilton</story>
+<start>20080810145408.978</start>
+<end>20080810145738.387</end>
+empty-headed heiress | starting to make | sense 

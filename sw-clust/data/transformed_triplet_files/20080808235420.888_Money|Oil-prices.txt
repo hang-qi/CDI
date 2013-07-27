@@ -1,0 +1,8 @@
+<story>Money|Oil-prices</story>
+<start>20080808235420.888</start>
+<end>20080808235451.119</end>
+Oil prices | plunge | nearly $ 5 today 
+Gas prices | continuing | presidential candidates decline 
+a gallon of regular unleaded | fell | the 22nd straight day 
+The average price for a gallon of regular unleaded | was | a year 
+10 states | are now averaging | more than $ 4 

@@ -1,0 +1,4 @@
+<story>Network|Promotion</story>
+<start>20080810175934.268</start>
+<end>20080810175954.791</end>
+we | have | much of August 

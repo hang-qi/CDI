@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080815165916.251</start>
+<end>20080815165934.403</end>
+a video | does n't sound | a big deal 
+Some people | can afford to take | a few days 

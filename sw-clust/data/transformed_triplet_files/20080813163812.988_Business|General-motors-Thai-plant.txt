@@ -1,0 +1,10 @@
+<story>Business|General-motors-Thai-plant</story>
+<start>20080813163812.988</start>
+<end>20080813163845.154</end>
+General Motors | is pouring | big bucks 
+The automaker | will invest | $ 445 million 
+Bangkok | upgrade | existing assembly operations 
+The new plant | could produce | up to 100,000 engines 
+Production | set to begin | 2010 
+GM | announced | plans 
+four plants | make | pickups 

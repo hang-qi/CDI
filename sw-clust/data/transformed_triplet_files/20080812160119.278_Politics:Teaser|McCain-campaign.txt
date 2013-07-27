@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080812160119.278</start>
+<end>20080812160127.019</end>
+we | 're standing | a John McCain town hall meeting 
+the senator | starts | speaking 

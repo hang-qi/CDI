@@ -1,0 +1,5 @@
+<story>Disaster|Utah-national-park</story>
+<start>20080812032640.331</start>
+<end>20080812032655.245</end>
+That wall arch | collapsed | gravity and erosion 
+Last time | was | a collapse 

@@ -1,0 +1,6 @@
+<story>Network|Promo</story>
+<start>20080815023107.096</start>
+<end>20080815023126.883</end>
+We | picked | great interns 
+We | 're going to announce | the winner 
+Winner | gets | a t-shirt 

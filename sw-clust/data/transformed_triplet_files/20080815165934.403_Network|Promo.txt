@@ -1,0 +1,5 @@
+<story>Network|Promo</story>
+<start>20080815165934.403</start>
+<end>20080815165953.146</end>
+the news of the week | affects | your bottom line 
+Saturday | is | 1:00 p.m. Eastern and Sundays 

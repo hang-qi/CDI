@@ -1,0 +1,6 @@
+<story>Labor:Teaser|Union-endorses-Obama</story>
+<start>20080814160027.326</start>
+<end>20080814160034.967</end>
+A major union | gets set to endorse | Barack Obama 
+We | look | the power of unions 
+they | do influence | votes 

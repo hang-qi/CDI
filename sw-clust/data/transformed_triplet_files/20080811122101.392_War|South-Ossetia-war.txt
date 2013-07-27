@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war</story>
+<start>20080811122101.392</start>
+<end>20080811122117.041</end>
+Russia | goes | war 
+a potential | to impact | everything 

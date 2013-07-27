@@ -1,0 +1,4 @@
+<story>Network:Teaser|Preview</story>
+<start>20080815201844.087</start>
+<end>20080815201855.765</end>
+we | 've been talking about right here | CNN 

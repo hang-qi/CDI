@@ -1,0 +1,7 @@
+<story>Celebrity:Teaser|Margaret-Cho</story>
+<start>20080814121545.442</start>
+<end>20080814121602.693</end>
+comedian Margaret Cho | returning | TV 
+She | has | a new series out 
+She | 's bearing | a new series out 
+this time | is | CHETRY : And comedian Margaret Cho returning to TV . own terms 

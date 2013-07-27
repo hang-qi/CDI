@@ -1,0 +1,5 @@
+<story>Money:Teaser|Housing-crisis</story>
+<start>20080810152819.763</start>
+<end>20080810152830.007</end>
+we | 'll speak | the housing secretary 
+the government | is trying to do | the Housing Secretary Steve Preston 

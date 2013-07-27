@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080814203846.990</start>
+<end>20080814203855.098</end>
+his Internet experience | comes | technology 
+he | gets | his Internet experience 

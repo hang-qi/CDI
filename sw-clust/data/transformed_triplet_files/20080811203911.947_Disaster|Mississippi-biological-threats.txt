@@ -1,0 +1,8 @@
+<story>Disaster|Mississippi-biological-threats</story>
+<start>20080811203911.947</start>
+<end>20080811203940.309</end>
+questions | are being raised | the Homeland Security Department's selection of Mississippi 
+a multibillion-dollar laboratory | to study | biological threats 
+documents | obtained | the Associated Press 
+Homeland Security | brushed | experts 
+' recommendations | to select | Mississippi 

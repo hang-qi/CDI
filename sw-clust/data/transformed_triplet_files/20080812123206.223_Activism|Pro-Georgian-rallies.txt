@@ -1,0 +1,5 @@
+<story>Activism|Pro-Georgian-rallies</story>
+<start>20080812123206.223</start>
+<end>20080812123223.974</end>
+that huge pro-Georgia rally | happening right now | downtown Tbilisi 
+Mikheil Saakashvili | has appeared | the demonstrators 

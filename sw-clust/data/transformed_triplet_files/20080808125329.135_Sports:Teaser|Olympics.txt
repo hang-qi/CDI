@@ -1,0 +1,7 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080808125329.135</start>
+<end>20080808125352.861</end>
+many eyes | turning | the skies 
+the Olympics | get | smog 
+an athlete | going to do | about this 
+they | show | up and train 

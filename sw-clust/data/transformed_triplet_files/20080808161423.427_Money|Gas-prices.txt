@@ -1,0 +1,8 @@
+<story>Money|Gas-prices</story>
+<start>20080808161423.427</start>
+<end>20080808161501.665</end>
+the Dow's | up | almost 200 points 
+oil | is | $ 4 
+They | 're giving | a barrel 
+we | are seeing | a lower price 
+Part of AAA | might be | the gaining strength of the U.S. dollar 

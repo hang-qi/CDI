@@ -1,0 +1,4 @@
+<story>Money:Teaser|Rising-medicine-prices</story>
+<start>20080811160728.479</start>
+<end>20080811160737.988</end>
+drug companies | are getting away | Prescription price explosion 

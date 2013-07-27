@@ -1,0 +1,12 @@
+<story>Money|China-economy</story>
+<start>20080811164603.024</start>
+<end>20080811164702.951</end>
+We | want to clarify | a story 
+The Financial Times | reported | China 
+the newspaper | reported | the information 
+CNN | checked | Global Insight 
+no such analysis | done | the FT. 
+one of its staffers | sent | the FT raw data 
+the FT reporter | interpreted | his own 
+Global Insight | is presently doing | the analysis 
+CNN | spoke | the FT reporter 

@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812170010.809</start>
+<end>20080812170025.858</end>
+The diplomatic blitz | hits | Moscow 
+the president of Russia | saying | the fighting 

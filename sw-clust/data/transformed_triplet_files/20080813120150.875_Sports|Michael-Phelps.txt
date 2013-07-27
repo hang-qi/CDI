@@ -1,0 +1,6 @@
+<story>Sports|Michael-Phelps</story>
+<start>20080813120150.875</start>
+<end>20080813120211.696</end>
+history | taking | two more gold medals 
+a team mate | shattered | the 800-meter relay record 
+he | has | three more events 

@@ -1,0 +1,12 @@
+<story>Money|Inflation</story>
+<start>20080814160047.413</start>
+<end>20080814160224.243</end>
+this country | is running | the highest annual rate 
+The actual annual inflation rate | stands | 5.6 percent 
+these arguments | is why | food up 6 percent 
+we | 're watching how | many people 
+every week | are lining up to file | unemployment benefits 
+unemployment claims | dropped | last week 
+the decline | was | expected 
+many economists | consider | anything 
+which | is considered | more reliable 

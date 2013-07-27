@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813230017.549</start>
+<end>20080813230028.093</end>
+The liberal national media | is completely baffled | the race between Senators Obama and McCain , incredibly tight , still 

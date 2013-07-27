@@ -1,0 +1,6 @@
+<story>War|Afghanistan-and-Iraqi-war</story>
+<start>20080812142049.647</start>
+<end>20080812142132.023</end>
+we | talked | yesterday 
+one of them | brought up | the war 
+Some of them | talked | international affairs 

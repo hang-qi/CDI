@@ -1,0 +1,6 @@
+<story>War|Iraqi-troops</story>
+<start>20080812003953.189</start>
+<end>20080812004014.177</end>
+we | ask | your thoughts and prayers 
+Iraq | soaring | the 100s 
+They | need | your prayers 

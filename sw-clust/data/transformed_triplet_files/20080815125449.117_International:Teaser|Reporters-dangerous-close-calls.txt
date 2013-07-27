@@ -1,0 +1,5 @@
+<story>International:Teaser|Reporters-dangerous-close-calls</story>
+<start>20080815125449.117</start>
+<end>20080815125505.333</end>
+reporters | step | the danger zone 
+the line of fire | 's just | bullets 

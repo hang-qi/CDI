@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-sponsorships</story>
+<start>20080812165422.625</start>
+<end>20080812165721.103</end>
+Olympic athletes | going | the gold 

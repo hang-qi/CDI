@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080810151559.757</start>
+<end>20080810151913.484</end>
+television | will assess | the fallout 

@@ -1,0 +1,6 @@
+<story>Politics|McCain-campaign</story>
+<start>20080812191345.190</start>
+<end>20080812191402.373</end>
+Republican John McCain | is campaigning | a third straight day 
+he | held | a town hall meeting 
+McCain | flies | New Jersey 

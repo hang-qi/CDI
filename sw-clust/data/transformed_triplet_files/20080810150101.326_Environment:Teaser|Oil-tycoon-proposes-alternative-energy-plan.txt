@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Oil-tycoon-proposes-alternative-energy-plan</story>
+<start>20080810150101.326</start>
+<end>20080810150112.171</end>
+we | ca n't drill | our way 

@@ -1,0 +1,8 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080812204147.736</start>
+<end>20080812204514.176</end>
+he | 's going to come | behind 
+he | appealing | older voters 
+Tom Foreman | is | the CNN Election Express 
+They | 're rolling | the battleground 
+He | is | the campaign trail 

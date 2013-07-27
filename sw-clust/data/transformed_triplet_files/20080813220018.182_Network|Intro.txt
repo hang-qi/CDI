@@ -1,0 +1,5 @@
+<story>Network|Intro</story>
+<start>20080813220018.182</start>
+<end>20080813220032.030</end>
+We | welcome | our viewers 
+Wolf Blitzer | is | today 

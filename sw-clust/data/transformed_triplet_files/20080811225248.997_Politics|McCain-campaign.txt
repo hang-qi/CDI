@@ -1,0 +1,6 @@
+<story>Politics|McCain-campaign</story>
+<start>20080811225248.997</start>
+<end>20080811225307.749</end>
+John McCain | to show | he 
+he | is touting | the endorsement of the mayor 
+he | was elected | an Independent 

@@ -1,0 +1,7 @@
+<story>War|Soldier-Andrew-Habsieger</story>
+<start>20080812005603.292</start>
+<end>20080812005952.692</end>
+s | stop and remember | Army Private First Class Andrew Habsieger 
+Said | to become | a godfather 
+he | lost | his life 
+a smile | lit | a room 

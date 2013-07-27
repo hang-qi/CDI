@@ -1,0 +1,4 @@
+<story>Government:Teaser|Manhattan-security</story>
+<start>20080813213837.213</start>
+<end>20080813214151.207</end>
+the extraordinary security | might soon see | New York City 

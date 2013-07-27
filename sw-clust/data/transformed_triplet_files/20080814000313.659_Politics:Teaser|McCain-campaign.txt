@@ -1,0 +1,9 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080814000313.659</start>
+<end>20080814000341.253</end>
+we | are hearing | hints 
+some insiders | are weighing | a pretty bold idea 
+John McCain | to serve | only one four-year term 
+he | would not have to think | reelection 
+right now | would make | a McCain White House bulletproof 
+right now | would be | a bold move 

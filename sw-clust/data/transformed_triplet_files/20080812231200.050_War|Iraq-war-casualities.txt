@@ -1,0 +1,6 @@
+<story>War|Iraq-war-casualities</story>
+<start>20080812231200.050</start>
+<end>20080812231219.403</end>
+insurgents | have killed | two more of our troops 
+Thirteen of our troops | have been killed | Iraq 
+4,140 of our troops | have been killed | the war 

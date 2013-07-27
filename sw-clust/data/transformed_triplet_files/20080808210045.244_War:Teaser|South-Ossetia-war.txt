@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808210045.244</start>
+<end>20080808210056.155</end>
+Russia | launches | ground and air attacks 

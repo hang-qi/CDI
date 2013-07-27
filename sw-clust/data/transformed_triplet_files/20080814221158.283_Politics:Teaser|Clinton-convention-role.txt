@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814221158.283</start>
+<end>20080814221441.479</end>
+Barack Obama's campaign | does | something 

@@ -1,0 +1,6 @@
+<story>Weather|Tropical-storm-Fay</story>
+<start>20080815225118.238</start>
+<end>20080815225140.394</end>
+Carol Costello | monitoring | stories 
+Tropical Storm Fay | is developing | the Dominican Republic 
+Warnings | are | the country's north coast and parts of the southern coast 

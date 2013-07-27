@@ -1,0 +1,7 @@
+<story>Accident|Car-crashes-711</story>
+<start>20080812195747.996</start>
+<end>20080812195817.059</end>
+this driver | hit | the gas 
+the brake | trying to park | this 7-Eleven 
+the entire car | ended | inside of the store 
+the store | got | the way 

@@ -1,0 +1,6 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080813002410.914</start>
+<end>20080813002655.812</end>
+we | are back out | the campaign trail 
+the McCain campaign | tries to make | a splash 
+David Mattingly | has | tonight's briefing 

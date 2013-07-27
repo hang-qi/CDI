@@ -1,0 +1,6 @@
+<story>Network|Intro</story>
+<start>20080812170025.858</start>
+<end>20080812170053.419</end>
+the reporters | working | their stories 
+Our producers | are working | Our producers sources 
+Don Lemon | live | the CNN World Headquarters 

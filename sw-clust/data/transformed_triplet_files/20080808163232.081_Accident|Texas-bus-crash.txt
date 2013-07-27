@@ -1,0 +1,6 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808163232.081</start>
+<end>20080808163248.664</end>
+Investigators | think | a blown tire 
+13 people | were killed when | the bus 
+They | were | 55 members of a church group 

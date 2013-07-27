@@ -1,0 +1,6 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080812203524.954</start>
+<end>20080812203532.962</end>
+Georgia | is giving | John McCain 
+an | opening to show | his foreign policy chops 
+he | making | the most of the conflict in Georgia 

@@ -1,0 +1,7 @@
+<story>War|South-Ossetia-war</story>
+<start>20080814122827.170</start>
+<end>20080814122854.597</end>
+We | 're following breaking | news 
+Russian troops and tanks | have returned | the city of Gori 
+U.S. Secretary of State Condoleezza Rice | has arrived | France 
+she | is to travel | Tbilisi 

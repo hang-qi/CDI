@@ -1,0 +1,7 @@
+<story>Accident|Las-Vegas-bus-crash</story>
+<start>20080811180526.991</start>
+<end>20080811180543.441</end>
+tire failure | may be to blame | another bus accident 
+Almost 30 casino employees shuttle bus | crashed | last night 
+they | found | evidence 
+tread | had separated | the left front tire 

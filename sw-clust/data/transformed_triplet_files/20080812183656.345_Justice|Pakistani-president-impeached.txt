@@ -1,0 +1,6 @@
+<story>Justice|Pakistani-president-impeached</story>
+<start>20080812183656.345</start>
+<end>20080812183728.210</end>
+the assembly | passes | a resolution 
+Musharraf | to resign or face | impeachment 
+Pakistan | could happen as early | next week 

@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815230009.008</start>
+<end>20080815230018.684</end>
+Russian tanks | have moved | the Georgian capital of Tbilisi 
+Moscow | now defying | U.S. demands 

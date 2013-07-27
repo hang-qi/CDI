@@ -1,0 +1,6 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810163025.688</start>
+<end>20080810163041.604</end>
+we | 're going to be talking | the president of the republic 
+his country | neighboring | Russia 
+We | 'll get | the analysis 

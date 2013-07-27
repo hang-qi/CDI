@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Ohio-Diocese-touching-rules</story>
+<start>20080812134559.889</start>
+<end>20080812134846.055</end>
+One dioceses | spell | the rules 
+BEGIN VIDEO CLIP -RRB- UNIDENTIFIED MALE : Now common sense | is | the culture 

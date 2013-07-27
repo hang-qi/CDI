@@ -1,0 +1,5 @@
+<story>Commercial|Block</story>
+<start>20080814031010.942</start>
+<end>20080814031236.554</end>
+We | 'll talk | The comedienne 
+she | wants to talk | Walter Reed and more 

@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080812162313.657</start>
+<end>20080812162325.836</end>
+another way | to save | some money 

@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808223941.111</start>
+<end>20080808224241.524</end>
+bombs | falling | the Georgian capital 
+a war | going | Washington 

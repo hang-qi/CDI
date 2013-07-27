@@ -1,0 +1,4 @@
+<story>Crime|Kilpatrick-assault-case</story>
+<start>20080812192701.885</start>
+<end>20080812192716.600</end>
+A judge | has ruled | Kilpatrick 

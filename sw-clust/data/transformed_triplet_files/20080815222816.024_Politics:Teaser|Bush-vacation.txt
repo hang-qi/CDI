@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Bush-vacation</story>
+<start>20080815222816.024</start>
+<end>20080815222823.632</end>
+the U.S. | faces | off 
+President Bush | goes | vacation 
+President Bush | to head | town 

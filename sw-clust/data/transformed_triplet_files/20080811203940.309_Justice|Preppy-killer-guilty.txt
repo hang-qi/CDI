@@ -1,0 +1,6 @@
+<story>Justice|Preppy-killer-guilty</story>
+<start>20080811203940.309</start>
+<end>20080811203959.561</end>
+Robert Chambers | pleaded | guilty today 
+he | will get | 19 years 
+Chambers | has already served | 15 years 

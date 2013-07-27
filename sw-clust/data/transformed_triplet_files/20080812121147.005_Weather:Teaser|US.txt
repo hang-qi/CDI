@@ -1,0 +1,7 @@
+<story>Weather:Teaser|US</story>
+<start>20080812121147.005</start>
+<end>20080812121409.147</end>
+He | 's checking | extreme weather 
+We | have | a series of tropical waves 
+One of which | could take | aim 
+a nasty weather | rolled | the northeast 

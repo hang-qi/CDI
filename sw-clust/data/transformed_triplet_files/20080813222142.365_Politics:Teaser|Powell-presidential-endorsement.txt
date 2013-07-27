@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Powell-presidential-endorsement</story>
+<start>20080813222142.365</start>
+<end>20080813222155.445</end>
+a prize | is coveted | both 
+we | 're hearing right now | Powell 
+sides | possibly cross | party lines 

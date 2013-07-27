@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Hillary-Clinton-loss</story>
+<start>20080810160133.524</start>
+<end>20080810160148.573</end>
+BLOOMBERG | : | Hillary 
+We | 'll talk | New York City Mayor Michael Bloomberg 

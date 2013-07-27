@@ -1,0 +1,7 @@
+<story>War|Terrorist-attacks-Lebanon</story>
+<start>20080813120134.158</start>
+<end>20080813120150.875</end>
+a bomb | targeting | a civilian bus 
+11 people | killed including | civilians 
+That attack | happened | the height of Tripoli's rush hour 
+Qaeda-inspired militants | are believed to be | that attack 

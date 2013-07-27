@@ -1,0 +1,5 @@
+<story>Sports|Michael-Phelps</story>
+<start>20080816025643.865</start>
+<end>20080816025929.397</end>
+U.S. swimmer Michael Phelps | won | a record-tying seventh gold medal 
+He | will swim | No. 8 tomorrow 

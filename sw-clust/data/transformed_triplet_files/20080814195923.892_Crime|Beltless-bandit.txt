@@ -1,0 +1,10 @@
+<story>Crime|Beltless-bandit</story>
+<start>20080814195923.892</start>
+<end>20080814195953.890</end>
+all | caught | tape 
+Oklahoma City Police | are hoping | somebody 
+this beltless bandit | robbed | a convenience store 
+They | released | this video 
+The crook | getting | 80 bucks 
+some cigarettes | almost lost | his pants 
+someone | wears | a belt 

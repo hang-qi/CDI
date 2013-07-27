@@ -1,0 +1,4 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080814003931.034</start>
+<end>20080814003950.887</end>
+We | 'll check | the bold idea 

@@ -1,0 +1,4 @@
+<story>Business:Teaser|Major-airlines-merger</story>
+<start>20080814161441.880</start>
+<end>20080814161447.919</end>
+three big airlines | are coming together | a major business deal 

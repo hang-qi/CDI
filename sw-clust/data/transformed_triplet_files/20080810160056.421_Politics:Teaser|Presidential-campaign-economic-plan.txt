@@ -1,0 +1,8 @@
+<story>Politics:Teaser|Presidential-campaign-economic-plan</story>
+<start>20080810160056.421</start>
+<end>20080810160133.524</end>
+We | 're going to invest | $ 150 billion 
+private capital | to harness | America's energy 
+a successful economic surge | to keep | jobs 
+home | create | new ones 
+We | 'll ask | the governors of two battleground states 

@@ -1,0 +1,4 @@
+<story>Health:Teaser|Healthy-delivery-food</story>
+<start>20080812124942.345</start>
+<end>20080812125218.934</end>
+all | having | cook 

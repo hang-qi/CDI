@@ -1,0 +1,5 @@
+<story>Human-interest:Teaser|Dalai-Lama</story>
+<start>20080811225319.194</start>
+<end>20080811225623.578</end>
+the Dalai Lama | arrives | the City of Light 
+He | is | Paris 

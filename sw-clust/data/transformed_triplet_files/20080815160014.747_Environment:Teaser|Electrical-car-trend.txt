@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Electrical-car-trend</story>
+<start>20080815160014.747</start>
+<end>20080815160014.747</end>
+the price | pay | food 

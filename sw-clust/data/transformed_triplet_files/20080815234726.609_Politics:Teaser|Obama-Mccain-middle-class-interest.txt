@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-Mccain-middle-class-interest</story>
+<start>20080815234726.609</start>
+<end>20080815234737.553</end>
+they | want to help | our struggling middle class 
+they | 're spending | a lot of time 

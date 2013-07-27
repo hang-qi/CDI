@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812135802.945</start>
+<end>20080812135952.987</end>
+Georgia | telling | a different story 

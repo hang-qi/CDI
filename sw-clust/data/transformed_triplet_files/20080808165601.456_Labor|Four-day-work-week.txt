@@ -1,0 +1,11 @@
+<story>Labor|Four-day-work-week</story>
+<start>20080808165601.456</start>
+<end>20080808165639.460</end>
+Time now | to get | the results of today's Quick Vote 
+More than 15,000 | weighed | the question 
+Sixty-five percent | said | 10 hours 
+Twenty-three percent | said | 12 hours 
+Three percent | said | 14 hours 
+our viewers | understand | our viewers math 
+a day | to work | four days 
+case | 'll take | four of them 

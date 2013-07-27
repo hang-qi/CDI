@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080811234838.581</start>
+<end>20080811234849.859</end>
+we | are checking | the facts 
+how much of the truth John Edwards | was telling when | he 
+We | 've got | all of that 

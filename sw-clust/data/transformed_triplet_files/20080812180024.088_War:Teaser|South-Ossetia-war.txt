@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812180024.088</start>
+<end>20080812180039.670</end>
+The diplomatic blitz | hits | Moscow 
+the fighting | has served | the fighting 

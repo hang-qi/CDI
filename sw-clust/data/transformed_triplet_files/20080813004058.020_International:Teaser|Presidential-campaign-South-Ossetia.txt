@@ -1,0 +1,5 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080813004058.020</start>
+<end>20080813004314.990</end>
+he | 's telling | crowds 
+Our Tom Foreman | will put | Our Tom Foreman 

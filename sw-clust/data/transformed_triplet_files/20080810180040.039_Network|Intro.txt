@@ -1,0 +1,5 @@
+<story>Network|Intro</story>
+<start>20080810180040.039</start>
+<end>20080810180152.845</end>
+we | 'll be scoring | this week's round of the eternal game 
+a look | is | the news 

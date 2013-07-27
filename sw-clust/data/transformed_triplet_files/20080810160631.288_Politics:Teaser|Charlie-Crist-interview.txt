@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Charlie-Crist-interview</story>
+<start>20080810160631.288</start>
+<end>20080810160645.302</end>
+He | is | all accounts 

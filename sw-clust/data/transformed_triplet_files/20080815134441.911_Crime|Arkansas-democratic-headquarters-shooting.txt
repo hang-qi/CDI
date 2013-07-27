@@ -1,0 +1,10 @@
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080815134441.911</start>
+<end>20080815134515.344</end>
+a state Democratic Party leader | was gunned | his office 
+More than 250 people | gathered | front of the Arkansas state capitol 
+He | was | the chairman of the Arkansas Democratic Party 
+Wednesday | shot | Gwatney 
+The gunman | was later shot | police 
+they | found | a post-it note 
+they | do n't know | any link 

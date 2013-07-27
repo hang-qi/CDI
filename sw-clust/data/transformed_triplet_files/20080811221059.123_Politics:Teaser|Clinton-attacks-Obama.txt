@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Clinton-attacks-Obama</story>
+<start>20080811221059.123</start>
+<end>20080811221109.533</end>
+John McCain | becomes | president 
+he | may have | Hillary Clinton 
+A magazine | reveals | startling tactics 
+Clinton's campaign | wanted to use | Barack Obama 

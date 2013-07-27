@@ -1,0 +1,4 @@
+<story>International|Bush-intelligence-briefing</story>
+<start>20080814121848.925</start>
+<end>20080814121904.107</end>
+The president | will get | updates 

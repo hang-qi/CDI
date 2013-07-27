@@ -1,0 +1,10 @@
+<story>Business|US-Iberia-airlines-alliance</story>
+<start>20080815164759.909</start>
+<end>20080815164835.044</end>
+More head | butting | American Airlines 
+American Airlines officials | contesting | a proposed $ 7 million 
+maintenance violations | lingering | deficiency 
+The FAA | calls | the fine appropriate 
+American | flew | planes 
+they | knew needed | maintenance 
+they | want to talk | the FAA 

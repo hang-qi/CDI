@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Subway-hackers</story>
+<start>20080812220013.177</start>
+<end>20080812220017.148</end>
+hackers | threaten to reveal | a way 
+transit officials | stop | transit officials 

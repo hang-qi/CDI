@@ -1,0 +1,11 @@
+<story>Health|AIDS-vaccine</story>
+<start>20080808174414.917</start>
+<end>20080808174445.081</end>
+We | have | some health news 
+The 17th annual International AIDS Conference | has wrapped | Mexico City 
+researchers | saying | they 
+the `` Washington Post | reports | the focus 
+specific antibodies | found | some long-term HIV survivors 
+Researchers | believe | they 
+the body's immune system | to produce | the antibodies 
+they | 'd have | a vaccine 

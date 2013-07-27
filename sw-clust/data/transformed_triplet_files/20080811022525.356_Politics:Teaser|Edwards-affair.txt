@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080811022525.356</start>
+<end>20080811022755.472</end>
+Mark Preston | is still | one of the hottest topics 

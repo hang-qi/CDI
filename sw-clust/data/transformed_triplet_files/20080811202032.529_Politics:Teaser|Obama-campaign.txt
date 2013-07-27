@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080811202032.529</start>
+<end>20080811202040.737</end>
+we | 're told | Senator Obama 
+He | is | vacation 

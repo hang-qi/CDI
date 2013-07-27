@@ -1,0 +1,4 @@
+<story>Money:Teaser|Rising-medicine-prices</story>
+<start>20080811160054.519</start>
+<end>20080811160105.029</end>
+the drug companies | are jacking | prices 

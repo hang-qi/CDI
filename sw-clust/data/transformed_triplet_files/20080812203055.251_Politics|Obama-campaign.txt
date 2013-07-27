@@ -1,0 +1,8 @@
+<story>Politics|Obama-campaign</story>
+<start>20080812203055.251</start>
+<end>20080812203115.037</end>
+Some | call | Some 
+Republicans | support | Barack Obama 
+group | grew at least | one 
+he | is | Obama 
+the United States | needs | a new foreign policy approach 

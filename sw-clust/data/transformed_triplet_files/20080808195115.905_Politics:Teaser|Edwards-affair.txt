@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808195115.905</start>
+<end>20080808195432.768</end>
+we | are going to continue to follow | this John Edwards story 
+he | was running | president 

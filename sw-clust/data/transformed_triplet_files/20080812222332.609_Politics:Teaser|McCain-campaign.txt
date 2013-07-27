@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080812222332.609</start>
+<end>20080812222341.618</end>
+John McCain | suggests | he 
+The best political team | is standing | talk 

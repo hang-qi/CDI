@@ -1,0 +1,5 @@
+<story>Labor|Disneyland-labor-protest</story>
+<start>20080815224832.740</start>
+<end>20080815224841.815</end>
+a fairy tale | ending | Disneyland 
+protesters | dressed | Mickey and Minnie 

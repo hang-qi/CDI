@@ -1,0 +1,6 @@
+<story>Money:Teaser|Gas-prices</story>
+<start>20080808161129.787</start>
+<end>20080808161423.427</end>
+we | 've got | the latest 
+they | would do | they 
+We | 're | all 

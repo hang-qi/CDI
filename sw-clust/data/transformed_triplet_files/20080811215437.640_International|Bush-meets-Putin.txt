@@ -1,0 +1,4 @@
+<story>International|Bush-meets-Putin</story>
+<start>20080811215437.640</start>
+<end>20080811215449.151</end>
+President Bush | accuses | Russia of a brutal escalation 

@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080811200022.420</start>
+<end>20080811200032.630</end>
+John McCain | sees | an opening 
+he | would be | a tough commander 
+Obama | would handle | Russia's invasion of Georgia 

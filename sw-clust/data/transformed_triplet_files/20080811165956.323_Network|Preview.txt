@@ -1,0 +1,7 @@
+<story>Network|Preview</story>
+<start>20080811165956.323</start>
+<end>20080811165959.539</end>
+money | protect | your house 
+the news of the week | affects | your bottom line 
+Saturday | is | 1:00 p.m. Eastern 
+Sunday | is | 3:00 right 

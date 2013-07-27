@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war-citizens-description</story>
+<start>20080812191651.476</start>
+<end>20080812191955.927</end>
+Thousand of people | rallying | part of their country 
+A woman | calls | Georgia home 

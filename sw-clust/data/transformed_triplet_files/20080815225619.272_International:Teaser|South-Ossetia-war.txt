@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815225619.272</start>
+<end>20080815225626.346</end>
+out | stay | out 
+We | 'll have | the latest 

@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Oil-tycoon-proposes-alternative-energy-plan</story>
+<start>20080810151553.151</start>
+<end>20080810151559.757</end>
+he | 's putting | a big bet 

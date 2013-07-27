@@ -1,0 +1,5 @@
+<story>Accident|Philadelphia-apartment-fire</story>
+<start>20080814183052.014</start>
+<end>20080814183107.129</end>
+Almost 400 people | have been displaced | a fire 
+Several firefighters | suffering | minor injuries 

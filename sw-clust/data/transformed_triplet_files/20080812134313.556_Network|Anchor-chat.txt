@@ -1,0 +1,4 @@
+<story>Network|Anchor-chat</story>
+<start>20080812134313.556</start>
+<end>20080812134328.738</end>
+all this sleeping | makes me think | snoring 

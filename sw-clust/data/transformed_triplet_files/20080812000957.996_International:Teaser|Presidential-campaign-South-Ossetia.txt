@@ -1,0 +1,5 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812000957.996</start>
+<end>20080812001215.533</end>
+the crisis | is already proving to be | a test 
+Senators McCain and Obama | made | a point 

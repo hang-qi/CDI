@@ -1,0 +1,4 @@
+<story>Celebrity|Michael-Phelps</story>
+<start>20080814032032.530</start>
+<end>20080814032050.615</end>
+Michael Phelps | removes | his skullcap 

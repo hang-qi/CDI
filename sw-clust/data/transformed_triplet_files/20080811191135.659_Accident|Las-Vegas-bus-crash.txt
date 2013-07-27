@@ -1,0 +1,5 @@
+<story>Accident|Las-Vegas-bus-crash</story>
+<start>20080811191135.659</start>
+<end>20080811191152.309</end>
+Almost 30 casino employees shuttle bus | crashed | last night 
+they | found evidence | the tread 

@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Biggest-job-fair</story>
+<start>20080808122316.127</start>
+<end>20080808122331.308</end>
+9,000 people | fighting | work 

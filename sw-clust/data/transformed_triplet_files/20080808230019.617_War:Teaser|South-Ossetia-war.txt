@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808230019.617</start>
+<end>20080808230026.324</end>
+Russia | invades | one of this country's closest allies 

@@ -1,0 +1,5 @@
+<story>Government:Teaser|Homeland-security</story>
+<start>20080814224831.374</start>
+<end>20080814224841.851</end>
+the federal government | is failing to secure | our ports 
+Violent drug cartels | now exploiting | gaping holes 

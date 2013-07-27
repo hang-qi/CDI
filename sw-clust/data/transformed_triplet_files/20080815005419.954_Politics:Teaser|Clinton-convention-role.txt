@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080815005419.954</start>
+<end>20080815005427.762</end>
+we | 'll talk | Hillary Clinton's name 

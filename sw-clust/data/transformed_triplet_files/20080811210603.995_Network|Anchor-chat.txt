@@ -1,0 +1,6 @@
+<story>Network|Anchor-chat</story>
+<start>20080811210603.995</start>
+<end>20080811210616.908</end>
+President Bush | was pushing | Georgian membership 
+He | looked | his eyes 
+he | saw | his soul 

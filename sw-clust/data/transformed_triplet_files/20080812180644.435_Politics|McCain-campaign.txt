@@ -1,0 +1,5 @@
+<story>Politics|McCain-campaign</story>
+<start>20080812180644.435</start>
+<end>20080812180659.150</end>
+he | spoke | a town hall meeting 
+the Republican candidate | flies | New Jersey 

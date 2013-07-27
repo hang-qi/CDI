@@ -1,0 +1,4 @@
+<story>Money:Teaser|Dollar-strength</story>
+<start>20080815163758.041</start>
+<end>20080815163759.109</end>
+They | 're starting to gain | momentum 

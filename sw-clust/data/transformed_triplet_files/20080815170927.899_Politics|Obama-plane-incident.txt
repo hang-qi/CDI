@@ -1,0 +1,13 @@
+<story>Politics|Obama-plane-incident</story>
+<start>20080815170927.899</start>
+<end>20080815171028.994</end>
+we | hear | the pilot 
+FAA tapes | released | ABC News 
+we | 'd like to declare | this an emergency 
+we | 'd like | 3-0 
+we | have | Senator Obama 
+The crew | was having | trouble 
+They | did | land 
+An FAA spokeswoman | tells | CNN 
+The National Transportation Safety Board | said | last month 
+The National Transportation Safety Board | found | no evidence 

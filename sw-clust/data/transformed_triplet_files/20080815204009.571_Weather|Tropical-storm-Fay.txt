@@ -1,0 +1,14 @@
+<story>Weather|Tropical-storm-Fay</story>
+<start>20080815204009.571</start>
+<end>20080815204106.895</end>
+We | have been watching | this storm 
+this storm | 's going to be | Fay 
+this storm | 's going to be | Fay 
+this storm | is now | a 40-mile-per-hour storm 
+we | thought | Now 
+the storm | will stay south | the islands 
+the forecast | is still | the forecast 
+a hurricane | makes | landfall 
+This thing | could be | west 
+Now | does look | Florida's 
+We | 're going to watch | this thing 

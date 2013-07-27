@@ -1,0 +1,4 @@
+<story>Network|Intro</story>
+<start>20080815222823.632</start>
+<end>20080815222835.610</end>
+Wolf Blitzer | is | today 

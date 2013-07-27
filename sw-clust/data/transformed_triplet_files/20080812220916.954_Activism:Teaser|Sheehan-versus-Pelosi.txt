@@ -1,0 +1,4 @@
+<story>Activism:Teaser|Sheehan-versus-Pelosi</story>
+<start>20080812220916.954</start>
+<end>20080812220922.626</end>
+the powerful speaker of the House | facing | a challenge 

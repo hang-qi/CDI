@@ -1,0 +1,7 @@
+<story>Network|Anchor-chat</story>
+<start>20080812163720.670</start>
+<end>20080812163746.529</end>
+Kathy Ireland | started | sock company 
+a local New York station | got to interview | Ali Velshi in New York 
+She | 's done | a great job 
+VELSHI | was | fun 

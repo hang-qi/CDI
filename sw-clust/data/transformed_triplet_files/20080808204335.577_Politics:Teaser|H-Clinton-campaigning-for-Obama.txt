@@ -1,0 +1,4 @@
+<story>Politics:Teaser|H-Clinton-campaigning-for-Obama</story>
+<start>20080808204335.577</start>
+<end>20080808204346.555</end>
+Hillary Clinton | is going | the campaign trail 

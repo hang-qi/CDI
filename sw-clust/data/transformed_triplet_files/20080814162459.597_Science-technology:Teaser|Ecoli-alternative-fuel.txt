@@ -1,0 +1,5 @@
+<story>Science-technology:Teaser|Ecoli-alternative-fuel</story>
+<start>20080814162459.597</start>
+<end>20080814162801.278</end>
+a microscope | to find | oil 
+a small bacteria | be | the solution 

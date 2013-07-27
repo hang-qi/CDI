@@ -1,0 +1,6 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812033402.439</start>
+<end>20080812033410.680</end>
+the next president of the United States | handle | Russia 
+We | 'll hear | both candidates 
+yourself | has | the right solution 

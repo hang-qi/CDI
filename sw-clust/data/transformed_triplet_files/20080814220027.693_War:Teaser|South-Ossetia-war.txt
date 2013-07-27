@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814220027.693</start>
+<end>20080814220036.835</end>
+Russian troops | keeping | a firm grip 

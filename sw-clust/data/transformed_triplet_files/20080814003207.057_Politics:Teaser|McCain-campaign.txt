@@ -1,0 +1,4 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080814003207.057</start>
+<end>20080814003214.431</end>
+John McCain pledge | to serve | just one term 

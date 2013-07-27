@@ -1,0 +1,6 @@
+<story>Justice|Mark-Chapman-denied-parole</story>
+<start>20080813002742.959</start>
+<end>20080813002758.708</end>
+Mark David Chapman | shot | Lennon 
+Chapman | was denied | parole today 
+He | must remain | bars 

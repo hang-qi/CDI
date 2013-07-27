@@ -1,0 +1,5 @@
+<story>Business:Teaser|Delta-Northwest-airline-merger</story>
+<start>20080812164024.053</start>
+<end>20080812164027.190</end>
+Tom | will want | a break 
+a major merger in the skies | could mean | the future of flying 

@@ -1,0 +1,4 @@
+<story>Money:Teaser|Rising-medicine-prices</story>
+<start>20080811161631.922</start>
+<end>20080811161638.929</end>
+We | 'll have to stay | top of that one 

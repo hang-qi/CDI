@@ -1,0 +1,8 @@
+<story>Sports|Olympics-Phelps</story>
+<start>20080812125233.949</start>
+<end>20080812125256.805</end>
+Michael Phelps | won | his third gold medal 
+He | set | a world record 
+he | can get | halfway 
+he | competes | the 200-meter butterfly 
+he | makes | ROBERTS : Three down and five more to go for Michael Phelps . 

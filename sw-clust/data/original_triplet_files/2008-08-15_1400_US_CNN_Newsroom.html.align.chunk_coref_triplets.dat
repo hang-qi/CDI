@@ -1,0 +1,1260 @@
+<story>NULL</story>
+<start>20080815135951.000</start>
+Tony Harris is off today.
+Tony Harris/NP; is/VP off/PP; today/NP	-Infinity
+
+Stay informed all day right here in the CNN NEWSROOM.
+Stay/NP; informed/VP; all day/NP	-Infinity
+
+A crowd lifts that bus off a traffic officer hoping to save the pregnant woman.
+A crowd/NP; lifts/VP that/PP; bus/NP	-Infinity
+
+A crowd lifts that bus off a traffic officer hoping to save the pregnant woman.
+a traffic officer/NP; hoping to save/VP; the pregnant woman/NP	-Infinity
+<end>20080815140001.467</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815140001.467</start>
+Barack Obama making waves and heading back.
+Barack Obama/NP; making/VP; waves/NP	-Infinity
+
+Our guests raring to talk politics.
+Our guests/NP; to talk/VP; politics/NP	-Infinity
+<end>20080815140005.904</end>
+
+<story>Network|Intro</story>
+<start>20080815140012.878</start>
+Michael Phelps makes it six Olympic gold medals today, Friday August 15th, you are in the CNN NEWSROOM.
+Michael Phelps/NP; makes/VP; And pool shark ./NP	-Infinity
+<end>20080815140021.487</end>
+
+<story>Disaster|Atlantic-developing-hurricane</story>
+<start>20080815140021.487</start>
+You know, it's always this time of year we have to keep a sharp eye on the tropics.
+the CNN NEWSROOM/NP; is always/VP; this time of year/NP	-Infinity
+
+You know, it's always this time of year we have to keep a sharp eye on the tropics.
+we/NP; have to keep/VP; a sharp eye/NP	-Infinity
+
+Right now, we're watching this area, right near Puerto Rico, San Juan.
+we/NP; 're watching/VP; this area/NP	-Infinity
+
+We've got some scattered showers, a few storms there.
+We/NP; 've got/VP; some scattered showers/NP	-Infinity
+
+You're seeing a little bit of moisture right near Haiti that's being kicked up just from one of the sides, just helping push a few waves right near there.
+Haiti/NP; 's being kicked/VP up/PRT; just from one of the sides/NP	-Infinity
+
+In the higher elevations, it's going to interact with that cooler air.
+a little bit of moisture right near Haiti that 's being kicked up just from one of the sides , just helping push a few waves right near there/NP; 's going to interact/VP with/PP; that cooler air/NP	-Infinity
+
+You have that (INAUDIBLE) you have the rain.
+INAUDIBLE/NP; have/VP; the rain/NP	-Infinity
+
+The thing is, we're going to see more of that, even though right now we don't have any watches or warnings there in effect at this point.
+we/NP; 're going to see/VP; more of The thing/NP	-Infinity
+
+The thing is, we're going to see more of that, even though right now we don't have any watches or warnings there in effect at this point.
+we/NP; do n't have/VP; any watches or warnings/NP	-Infinity
+
+I can tell you that people happen to be say in San Juan or in southern part of Puerto Rico this hour are certainly going to be dealing with this heavy rainfall, some heavy surf in the southern end of the island.
+people/NP; happen to be say/VP in/PP; San Juan/NP	-Infinity
+
+I can tell you that people happen to be say in San Juan or in southern part of Puerto Rico this hour are certainly going to be dealing with this heavy rainfall, some heavy surf in the southern end of the island.
+this hour/NP; are certainly going to be dealing/VP with/PP; this heavy rainfall/NP	-Infinity
+
+And as the system draws its way a little bit to the north and to the northwest and some locations just to the west, the Dominican Republic, that rain is going to intensify.
+the system/NP; draws/VP; its way/NP	-Infinity
+
+Now, I can also tell you that our friends at the National Hurricane Center are going to be sending in quite a few planes, reconnaissance aircraft to the system to take a better look at it as we get to the afternoon hours, looking for that center of circulation.
+the National Hurricane Center/NP; are going to be sending/VP in/PP; quite a few planes/NP	-Infinity
+
+Now, I can also tell you that our friends at the National Hurricane Center are going to be sending in quite a few planes, reconnaissance aircraft to the system to take a better look at it as we get to the afternoon hours, looking for that center of circulation.
+the system/NP; to take/VP; a better look/NP	-Infinity
+
+Now, I can also tell you that our friends at the National Hurricane Center are going to be sending in quite a few planes, reconnaissance aircraft to the system to take a better look at it as we get to the afternoon hours, looking for that center of circulation.
+we/NP; get/VP to/PP; the afternoon hours/NP	-Infinity
+
+It is not a tropical storm, certainly not a hurricane but there is every possibility that could indeed occur as we make your way closer into the weekend.
+every possibility/NP; could indeed occur/VP; we/NP	-Infinity
+
+Now, in terms of the path, in terms of the computer models, they do vary quite a bit from place to place.
+they/NP; do vary quite/VP; a bit/NP	-Infinity
+
+However, most of them are in agreement that the storm is expected to go west and then pull a little bit more to the northwest.
+most of our friends at the National Hurricane Center/NP; are/VP in/PP; agreement/NP	-Infinity
+
+However, most of them are in agreement that the storm is expected to go west and then pull a little bit more to the northwest.
+the storm/NP; is expected to go/VP; west/NP	-Infinity
+
+There's a lot that can happen with these systems especially as it interacts with land.
+a lot/NP; can happen/VP with/PP; these systems/NP	-Infinity
+
+As it moves a little bit to the north.
+a lot that can happen with these systems especially as it interacts with land/NP; moves/VP; a little bit/NP	-Infinity
+
+If it does follow that path, that goes back over to the warm ocean water.
+a lot that can happen with these systems especially as it interacts with land/NP; does follow/VP; that path/NP	-Infinity
+
+If it does follow that path, that goes back over to the warm ocean water.
+the path/NP; goes back/VP over/PP to/PP; the warm ocean water/NP	-Infinity
+
+That center of circulation, if it stays in that area, could certainly intensify.
+a lot that can happen with these systems especially as it interacts with land/NP; stays/VP in/PP; that area/NP	-Infinity
+
+We could see this thing really develop, gain some strength, especially over the next 12 to 24 to 48 hours.
+We/NP; could see/VP; this thing/NP	-Infinity
+
+WOLF: Certainly, we're nowhere close to the time to evacuate or anything like that, but you need to have that plan in your mind because when these storms draw closer, rapid decisions are very rarely do you make the right choices.
+we/NP; 're nowhere/VP to/PP; the time/NP	-Infinity
+
+COLLINS: Better to have a plan in mind.
+Better/NP; to have/VP; a plan/NP	-Infinity
+<end>20080815140301.113</end>
+
+<story>Accident|Pregnant-New-Yorker-run-over</story>
+<start>20080815140301.113</start>
+COLLINS: Ordinary citizens undertake an extraordinary rescue effort in New York.
+Ordinary citizens/NP; undertake/VP; an extraordinary rescue effort/NP	-Infinity
+
+A pregnant traffic officer is hit by a van and then run over by a bus.
+A pregnant traffic officer/NP; is hit/VP by/PP; a van/NP	-Infinity
+
+The woman dies but her baby survives.
+The woman/NP; dies/VP; the pregnant woman baby/NP	-Infinity
+
+We say that we see a lot of incredible story, but I certainly haven't heard one like this.
+we/NP; see/VP; a lot of incredible story/NP	-Infinity
+
+I just got off the phone with the spokesman for the hospital who tells me there are signs of hope for this child.
+the hospital/NP; tells/VP; me/NP	-Infinity
+
+The child remains in critical condition though, three pounds six ounces.
+The child/NP; remains/VP in/PP; critical condition/NP	-Infinity
+
+Man arrested for hitting, killing pregnant Bronx traffic agent.
+Man/NP; arrested/VP for/PP; hitting/NP	-Infinity
+
+Over here, we've got "New York Post" saying 30 men and a baby.
+we/NP; 've got/VP; New York Post/NP	-Infinity
+
+Let's back up a little bit.
+Let/NP; 's back/VP up/PRT; a little bit/NP	-Infinity
+
+We'll do into some of the video from the scene which should be in this other screen over here.
+We/NP; 'll do/VP into/PP; some of the video/NP	-Infinity
+
+We'll do into some of the video from the scene which should be in this other screen over here.
+which/NP; should be/VP in/PP; this other screen/NP	-Infinity
+
+This is for those of you who know the area or don't, this is in the Bronx, 188th and Webster.
+those of you/NP; know/VP; the area/NP	-Infinity
+
+And this traffic agent was apparently about to leave for lunch when a van hit her, which left her in the middle of the road, too late for a bus to stop.
+which/NP; left/VP; Here/NP	-Infinity
+
+A bus ends up on top of her and we have an eyewitness who will tell you from here what happened.
+A bus/NP; ends/VP up/PRT; on top of Here/NP	-Infinity
+
+A bus ends up on top of her and we have an eyewitness who will tell you from here what happened.
+we/NP; have/VP; an eyewitness/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GARY BURGESS, PULLS WOMAN FROM UNDER THE BUS: I was standing across the street when we heard a loud bang and then I heard a second bang and then a third bang.
+we/NP; heard/VP; a loud bang/NP	-Infinity
+
+So I walked over to the corner to see what had had happened, and when I got there I seen that somebody was trapped under that bus there.
+somebody/NP; was trapped/VP under/PP; that bus/NP	-Infinity
+
+Somebody was saying there was a lady, it was a lady.
+the corner/NP; was/VP; a lady/NP	-Infinity
+
+So what we did, it was like there was 30 to 40 of us, we actually lifted that bus off of her, lifted the bus up, pulled her from under the bus.
+we/NP; lifted/VP that/PP; bus/NP	-Infinity
+
+When we pulled her out and I seen she was pregnant, I just started to want to cry.
+we/NP; pulled/VP; a lady/NP	-Infinity
+
+(END VIDEO CLIP) LEVS: The driver has now been charged with criminally negligent homicide and aggravated unlicensed operation of a motor vehicle.
+The driver/NP; has now been charged/VP with/PP; criminally negligent homicide/NP	-Infinity
+
+And Mayor Bloomberg has weighed in on this.
+Mayor Bloomberg/NP; has weighed/VP; in/NP	-Infinity
+
+Mayor Bloomberg offering his condolences to Sanz husband.
+Mayor Bloomberg/NP; offering/VP; his condolences/NP	-Infinity
+
+And saying he hopes that this child grows up, he will come to understand his mother gave her life serving the city.
+he/NP; hopes/VP; this child/NP	-Infinity
+
+And saying he hopes that this child grows up, he will come to understand his mother gave her life serving the city.
+his mother/NP; gave/VP; this child life/NP	-Infinity
+
+First of all, it's amazing that the sheer impact from the van and then the bus didn't kill that unborn child.
+the bus/NP; did n't kill/VP; that unborn child/NP	-Infinity
+
+COHEN: The second thing that's amazing is that during this trauma, during this accident, the mother's heart kept beating.
+amazing/NP; is/VP during/PP; this trauma/NP	-Infinity
+
+COHEN: The second thing that's amazing is that during this trauma, during this accident, the mother's heart kept beating.
+the mother's heart/NP; kept/VP; beating/NP	-Infinity
+
+We know that it kept beating because that's the only way that baby would stay alive.
+We/NP; know/VP; The second thing that 's amazing is that during this trauma , during this accident , the mother 's heart kept beating/NP	-Infinity
+
+COHEN: That is the key thing, for a baby to stay alive in the uterus, the mother's heart has to keep beating.
+a baby/NP; to stay/VP in/PP; the uterus/NP	-Infinity
+
+COHEN: That is the key thing, for a baby to stay alive in the uterus, the mother's heart has to keep beating.
+the mother's heart/NP; has to keep/VP; beating/NP	-Infinity
+
+And how that heart kept beating after that woman was hit by a van and then under a bus, I mean, it's truly amazing.
+that heart/NP; kept beating/VP after/PP; that woman/NP	-Infinity
+
+COLLINS: Well, I would imagine it's possible that when the paramedics finally got on the scene after all of these citizens rallied to get that bus off of her, that they might have helped to try to keep the mother's heart beating?
+the paramedics/NP; got/VP on/PP; the scene/NP	-Infinity
+
+COLLINS: Well, I would imagine it's possible that when the paramedics finally got on the scene after all of these citizens rallied to get that bus off of her, that they might have helped to try to keep the mother's heart beating?
+they/NP; might have helped to try to keep/VP; the mother's heart beating/NP	-Infinity
+
+We're talking about blood flow here.
+We/NP; 're talking/VP about/PP; blood flow/NP	-Infinity
+
+And then once they got to the hospital, they might have given her medication to help her keep her heart going.
+they/NP; got/VP to/PP; the hospital/NP	-Infinity
+
+And then once they got to the hospital, they might have given her medication to help her keep her heart going.
+they/NP; might have given/VP; her medication/NP	-Infinity
+
+We don't know those details but those are possibilities.
+We/NP; do n't know/VP; those details/NP	-Infinity
+<end>20080815140632.557</end>
+
+<story>Justice|Pennsylvania-sex-offender-released</story>
+<start>20080815140632.557</start>
+George Fagely served more than 30 years for sex crimes against children.
+George Fagely/NP; served/VP; more than 30 years/NP	-Infinity
+
+He won't have to check in with police or wear a tracking device.
+He/NP; wo n't have to check/VP in/PRT with/PP; police/NP	-Infinity
+
+He won't be on parole and he won't have to register as a sex offender under Megan's law.
+He/NP; wo n't be/VP on/PP; parole/NP	-Infinity
+
+He won't be on parole and he won't have to register as a sex offender under Megan's law.
+he/NP; wo n't have to register/VP as/PP; a sex offender/NP	-Infinity
+
+Last hour we talked with a Harrisburg resident angry over that prospect.
+we/NP; talked/VP with/PP; a Harrisburg resident angry/NP	-Infinity
+
+Frankly, I'm not sure that's sealed in stone.
+COLLINS : Yes ./NP; 's sealed/VP in/PP; stone/NP	-Infinity
+
+The federal statute, I think, it's a Jacob Willaby statute says if they abuse children, upon release, it doesn't say anything about when the crime was committed.
+they/NP; abuse/VP; children/NP	-Infinity
+
+The federal statute, I think, it's a Jacob Willaby statute says if they abuse children, upon release, it doesn't say anything about when the crime was committed.
+The federal statute/NP; does n't say/VP; anything/NP	-Infinity
+
+They have scars that they say will never go away, and that they have trouble relating to men.
+They/NP; have/VP; scars/NP	-Infinity
+
+They have scars that they say will never go away, and that they have trouble relating to men.
+they/NP; have/VP; trouble/NP	-Infinity
+
+They have trouble relating to women.
+They/NP; have/VP; trouble/NP	-Infinity
+
+They have trouble relating to anybody.
+They/NP; have/VP; trouble/NP	-Infinity
+
+(END VIDEO CLIP) COLLINS: Annette Antoun talking about the victims of Fagely.
+Annette Antoun/NP; talking/VP about/PP; the victims of Fagely/NP	-Infinity
+
+Authorities say Fagely is the founder of a religion that advocates using children for sexual gratification.
+the founder of a religion/NP; advocates using/VP; children/NP	-Infinity
+<end>20080815140736.588</end>
+
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815140736.588</start>
+The guns are mostly silent this morning but the concerns are growing louder.
+The guns/NP; are mostly silent/VP; this morning/NP	-Infinity
+
+This morning, Russian troops are still blocking entry into the strategic Georgian city of Gori.
+Russian troops/NP; are still blocking/VP; entry/NP	-Infinity
+
+Secretary of State Condoleezza Rice is in Georgia with a new cease-fire proposal in hand.
+Secretary of State Condoleezza Rice/NP; is/VP in/PP; Georgia/NP	-Infinity
+
+It would require Russia to immediately withdraw its combat troops.
+Russia/NP; to immediately withdraw/VP; its combat troops/NP	-Infinity
+
+The United Nations says nearly 120,000 Georgians have been displaced by the fighting.
+nearly 120,000 Georgians/NP; have been displaced/VP by/PP; the fighting/NP	-Infinity
+
+Let's begin our coverage now on Georgia with the new diplomatic efforts.
+Let/NP; begin/VP; our coverage/NP	-Infinity
+
+CNN State Department correspondent Zain Verjee has the very latest.
+CNN State Department correspondent Zain Verjee/NP; has/VP; the very latest/NP	-Infinity
+
+So Zain, what are U.S. leaders saying about this trip and Condoleezza Rice's trip and the latest on the situation this morning?
+U.S. leaders/NP; saying/VP about/PP; this trip/NP	-Infinity
+
+ZAIN VERJEE, CNN STATE DEPARTMENT CORRESPONDENT: Well, President Bush spoke just a short while ago and said that Russian bullying and intimidation is just not acceptable foreign policy.
+President Bush/NP; spoke/VP; just a short while/NP	-Infinity
+
+ZAIN VERJEE, CNN STATE DEPARTMENT CORRESPONDENT: Well, President Bush spoke just a short while ago and said that Russian bullying and intimidation is just not acceptable foreign policy.
+Russian bullying and intimidation/NP; is just/VP; acceptable foreign policy/NP	-Infinity
+
+The President says that "Russia needs to just act responsibly."
+Russia/NP; needs to just act/VP; responsibly/NP	-Infinity
+
+That the cold war is over and that Russia really has nothing to worry about from the U.S. (BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: Unfortunately, Russia has tended to view the expansion of freedom and democracy as a threat to its interests.
+the cold war/NP; is/VP over and that/PP; Russia/NP	-Infinity
+
+That the cold war is over and that Russia really has nothing to worry about from the U.S. (BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: Unfortunately, Russia has tended to view the expansion of freedom and democracy as a threat to its interests.
+nothing/NP; to worry about/VP from/PP; the U.S./NP	-Infinity
+
+That the cold war is over and that Russia really has nothing to worry about from the U.S. (BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: Unfortunately, Russia has tended to view the expansion of freedom and democracy as a threat to its interests.
+Russia/NP; has tended to view/VP; the expansion of freedom and democracy/NP	-Infinity
+
+Free and prosperous societies on Russia's borders will advance Russia's interests by serving as sources of stability and economic opportunity.
+Russia's borders/NP; will advance/VP; Russia's interests/NP	-Infinity
+
+(END VIDEO CLIP) VERJEE: Now, the U.S. wants a cease-fire deal signed.
+the U.S./NP; wants/VP; a cease-fire deal/NP	-Infinity
+
+She's meeting right now with the Georgian leader, Mikheil Saakashvili.
+She/NP; 's meeting right now/VP with/PP; the Georgian leader/NP	-Infinity
+
+And it's taking a lot longer to get things wrapped up than anticipated.
+Right now/NP; 's taking/VP; a lot longer/NP	-Infinity
+
+And it's taking a lot longer to get things wrapped up than anticipated.
+things/NP; wrapped up/VP than/PP; anticipated/NP	-Infinity
+
+She also is demanding that Russia get out of Georgia.
+She/NP; is demanding/VP; Russia/NP	-Infinity
+
+The U.S., Heidi, does have cards to play.
+The U.S. , Heidi ,/NP; does have/VP; cards/NP	-Infinity
+
+It can pressure Russia, like threatening to kick Russia out of international clubs like the group of eight industrialized nations, an exclusive little club, and suspending contacts with Russia and essentially diplomatically isolating it.
+Russia/NP; essentially diplomatically isolating/VP; Russia 's/NP	-Infinity
+
+But you know, the Russians may look at the situation on the ground and weigh their own interests and then just not care.
+the Russians/NP; may look/VP at/PP; the situation/NP	-Infinity
+
+But you know, the Russians may look at the situation on the ground and weigh their own interests and then just not care.
+the ground/NP; weigh/VP; their own interests/NP	-Infinity
+
+One other important thing Secretary Rice is not going to Russia.
+One other important thing Secretary Rice/NP; is not going/VP to/PP; Russia/NP	-Infinity
+
+The message the U.S. is sending by that is that it's not business as usual with Russia and that there will be consequences for this invasion.
+the U.S./NP; is sending/VP by/PP; the U.S./NP	-Infinity
+
+The message the U.S. is sending by that is that it's not business as usual with Russia and that there will be consequences for this invasion.
+The message the U.S. is sending by that/NP; 's/VP; business/NP	-Infinity
+
+The message the U.S. is sending by that is that it's not business as usual with Russia and that there will be consequences for this invasion.
+Russia/NP; will be/VP; consequences/NP	-Infinity
+
+That was very obvious, that she would not be making that trip to Russia.
+she/NP; would not be making/VP that/PP; trip/NP	-Infinity
+
+I wonder though if the missile defense deal with Poland could be making things worse.
+Poland/NP; could be making/VP; things/NP	-Infinity
+
+I mean, it's really another big poke in the eye of Russia.
+the missile defense deal with Poland/NP; is really/VP; another big poke/NP	-Infinity
+
+The Russians are really angry about that deal, and saying essentially that it's already made things worse, that preliminary agreement between the U.S. and Poland.
+The Russians/NP; are/VP about/PP; that deal/NP	-Infinity
+
+The Russians are really angry about that deal, and saying essentially that it's already made things worse, that preliminary agreement between the U.S. and Poland.
+Russia 's/NP; 's already made/VP; things/NP	-Infinity
+
+The U.S. is saying Russia has got nothing to worry about.
+The U.S./NP; is saying/VP; Russia/NP	-Infinity
+
+That's really aimed at Iran having this missile defense shield in Poland and the Czech Republic, but Russia is feeling really threatened.
+Iran/NP; having/VP; this missile defense shield/NP	-Infinity
+
+Because it's in its backyard.
+the U.S./NP; is/VP in/PP; its backyard/NP	-Infinity
+
+It would kind of be like the Russians putting a missile defense system in Cuba, in the U.S.'s backyard.
+the Russians/NP; putting/VP; a missile defense system/NP	-Infinity
+
+The wouldn't like it and it's in a hostile country -- Heidi.
+the U.S./NP; is/VP in/PP; a hostile country/NP	-Infinity
+
+CNN's Frederik Pleitgen is in the Georgian capital of Tbilisi.
+CNN's Frederik Pleitgen/NP; is/VP in/PP; the Georgian capital of Tbilisi/NP	-Infinity
+
+We're monitoring the situation here on the ground especially in that strategically very important town of Gori, which, of course, still being held by Russian forces.
+We/NP; 're monitoring/VP; the situation/NP	-Infinity
+
+What we're hearing from Georgian officials is apparently there are no Russian tanks or Russian troops in the center of town.
+we/NP; 're hearing/VP from/PP; Georgian officials/NP	-Infinity
+
+However, they are telling us that there are Russian forces controlling the roads leading into that town and also out of that town.
+Russian forces/NP; controlling/VP; the roads/NP	-Infinity
+
+They say that the Russian forces are in a military base outside of Gori.
+the Russian forces/NP; are/VP in/PP; a military base/NP	-Infinity
+
+Now, what we're hearing from the Georgian side is apparently they're in negotiations with the Russian forces there in Gori trying to get some sort of transition going there, trying to bring in Georgian police forces to establish what the Georgians civil administration put it back in that town of Gori.
+we/NP; 're hearing/VP from/PP; the Georgian side/NP	-Infinity
+
+Now, what we're hearing from the Georgian side is apparently they're in negotiations with the Russian forces there in Gori trying to get some sort of transition going there, trying to bring in Georgian police forces to establish what the Georgians civil administration put it back in that town of Gori.
+they/NP; 're/VP in/PP; negotiations/NP	-Infinity
+
+Now, what we're hearing from the Georgian side is apparently they're in negotiations with the Russian forces there in Gori trying to get some sort of transition going there, trying to bring in Georgian police forces to establish what the Georgians civil administration put it back in that town of Gori.
+Gori/NP; trying to get/VP; some sort of transition/NP	-Infinity
+
+Now, what we're hearing from the Georgian side is apparently they're in negotiations with the Russian forces there in Gori trying to get some sort of transition going there, trying to bring in Georgian police forces to establish what the Georgians civil administration put it back in that town of Gori.
+civil administration/NP; put/VP; the Georgians civil administration/NP	-Infinity
+
+And also to try and get the Georgian civil administration put it back into that town of Gori.
+the Georgian civil administration/NP; put/VP; the Georgian civil administration/NP	-Infinity
+
+I want to give you an update on a couple of other towns in Georgia.
+an/NP; update/VP on/PP; a couple of other towns/NP	-Infinity
+
+Georgian officials speaking of about 30 Russian tanks there and also you might remember last night there was a Russian tank column that was making its way from a town of Senaki, deeper into Georgian territory.
+Georgian officials speaking of about 30 Russian tanks/NP; might remember/VP; last night/NP	-Infinity
+
+Georgian officials speaking of about 30 Russian tanks there and also you might remember last night there was a Russian tank column that was making its way from a town of Senaki, deeper into Georgian territory.
+a Russian tank column/NP; was making/VP; its way/NP	-Infinity
+
+And now let's go from Georgia's capital to another strategic point, you just heard Frederik talking about it, that port city of Poti.
+Frederik/NP; talking/VP about/PP; Right now/NP	-Infinity
+
+CNN's Michael Ware has this exclusive report.
+CNN's Michael Ware/NP; has/VP; this exclusive report/NP	-Infinity
+
+(BEGIN VIDEOTAPE) MICHAEL WARE, CNN CORRESPONDENT (on-camera) : Despite conflicting reports, Russian troops are not in control of the Georgian seaport city of Poti.
+Russian troops/NP; are/VP in/PP; control of the Georgian seaport city/NP	-Infinity
+
+However , they have sunk five Georgian Navy and Coast Guard vessels.
+they/NP; have sunk/VP; five Georgian Navy and Coast Guard vessels/NP	-Infinity
+
+And as we speak, just behind this wall, a small element of Russian troops and armored vehicles is in control of this part of the harbor.
+armored vehicles/NP; is/VP in/PP; control of this part/NP	-Infinity
+
+Locals say the troops arrived early in the conflict.
+the troops/NP; arrived early/VP in/PP; the conflict/NP	-Infinity
+
+Their presence quickly followed by bombing, which led to a number of civilian and Georgian military deaths and casualties.
+Their presence/NP; quickly followed/VP by/PP; bombing/NP	-Infinity
+
+Their presence quickly followed by bombing, which led to a number of civilian and Georgian military deaths and casualties.
+which/NP; led/VP to/PP; a number of civilian and Georgian military deaths and casualties/NP	-Infinity
+
+Life appears to be returning to normal here in Poti.
+Life/NP; appears to be returning/VP to/PP; normal/NP	-Infinity
+
+However, residents say the Russians are conducting occasional patrols in their armored vehicles.
+the Russians/NP; are conducting/VP; occasional patrols/NP	-Infinity
+<end>20080815141328.506</end>
+
+<story>Politics|Obama-plane-incident</story>
+<start>20080815141328.506</start>
+(END VIDEOTAPE) COLLINS: Barack Obama called it a glitch, but the pilots called that incident with his campaign plane last month an emergency.
+Barack Obama/NP; called/VP; the CNN NEWSROOM/NP	-Infinity
+
+(END VIDEOTAPE) COLLINS: Barack Obama called it a glitch, but the pilots called that incident with his campaign plane last month an emergency.
+the pilots/NP; called/VP; that incident/NP	-Infinity
+<end>20080815141609.033</end>
+
+<story>Justice|Kilpatrick-assault-case</story>
+<start>20080815141609.033</start>
+A judge will decide whether there's probable cause to try Kwame Kilpatrick on assault charges.
+probable cause/NP; to try/VP; Kwame Kilpatrick/NP	-Infinity
+
+Some live pictures there for you inside the courtroom.
+Some/NP; live/VP; pictures/NP	-Infinity
+
+The case stems from a confrontation with the investigators trying to serve a subpoena.
+The case/NP; stems/VP from/PP; a confrontation/NP	-Infinity
+
+The case stems from a confrontation with the investigators trying to serve a subpoena.
+the investigators/NP; trying to serve/VP; a subpoena/NP	-Infinity
+
+Kilpatrick was in court yesterday on perjury charges.
+Kilpatrick/NP; was/VP in/PP; court/NP	-Infinity
+
+During a hearing a judge told Kilpatrick he could remove his electronic tracking device and attend the Democratic Convention.
+a judge/NP; told/VP; Kilpatrick/NP	-Infinity
+
+During a hearing a judge told Kilpatrick he could remove his electronic tracking device and attend the Democratic Convention.
+he/NP; could remove/VP; his electronic tracking device/NP	-Infinity
+
+But later in the day, another judge ordered the mayor to put the device back on.
+another judge/NP; ordered/VP; the mayor/NP	-Infinity
+
+We'll stay on top of that story for you.
+We/NP; 'll stay/VP on/PP; top of that story/NP	-Infinity
+<end>20080815141640.398</end>
+
+<story>Politics|Obama-plane-incident</story>
+<start>20080815141640.398</start>
+New details coming out about last month's unscheduled stop in St. Louis.
+New details/NP; coming/VP out/PRT; about/NP	-Infinity
+
+Obama's plane had mechanical problems.
+Obama's plane/NP; had/VP; mechanical problems/NP	-Infinity
+
+Newly released FAA tapes show the pilot no longer had control of the plane, he requested crash equipment standing by.
+FAA tapes/NP; show/VP; the pilot/NP	-Infinity
+
+Newly released FAA tapes show the pilot no longer had control of the plane, he requested crash equipment standing by.
+he/NP; requested/VP; crash equipment standing/NP	-Infinity
+
+(BEGIN VIDEO CLIP) PILOT: At this time, we'd like to declare this an emergency.
+we/NP; 'd like to declare/VP; this an emergency/NP	-Infinity
+
+We'd like 3-0 left and just for informational purposes, we have Senator Obama on board the aircraft and his campaign.
+We/NP; 'd like/VP; 3-0/NP	-Infinity
+
+We'd like 3-0 left and just for informational purposes, we have Senator Obama on board the aircraft and his campaign.
+we/NP; have/VP; Senator Obama/NP	-Infinity
+
+(END VIDEO CLIP) COLLINS: The FAA now admits its earlier statements of no emergency were wrong after the plane landed, Obama joked that they decided to spice things up a little bit.
+The FAA/NP; admits/VP; its earlier statements of no emergency/NP	-Infinity
+
+(END VIDEO CLIP) COLLINS: The FAA now admits its earlier statements of no emergency were wrong after the plane landed, Obama joked that they decided to spice things up a little bit.
+Obama/NP; joked/VP; they/NP	-Infinity
+
+(END VIDEO CLIP) COLLINS: The FAA now admits its earlier statements of no emergency were wrong after the plane landed, Obama joked that they decided to spice things up a little bit.
+spice things/NP; up/VP; a little bit/NP	-Infinity
+
+Officials say an evacuation slide had inflated inside the tail of the jet.
+an evacuation slide/NP; had inflated/VP inside/PP; the tail of the jet/NP	-Infinity
+
+An investigation of course is under way.
+An investigation of course/NP; is/VP under/PP; way/NP	-Infinity
+<end>20080815141739.424</end>
+
+<story>Politics|Obama-Mccain-Warren-debate</story>
+<start>20080815141739.424</start>
+Barack Obama hoping to make inroads among evangelical voters who overwhelmingly favor Republicans.
+Barack Obama/NP; hoping to make/VP; inroads/NP	-Infinity
+
+Barack Obama hoping to make inroads among evangelical voters who overwhelmingly favor Republicans.
+evangelical voters/NP; favor/VP; Republicans/NP	-Infinity
+
+Take a look at CNN Opinion Research Corporation poll that shows whites, born- agains or evangelical voters favor John McCain over Obama 67 percent to 24 percent.
+CNN Opinion Research Corporation poll/NP; shows/VP; whites/NP	-Infinity
+
+Take a look at CNN Opinion Research Corporation poll that shows whites, born- agains or evangelical voters favor John McCain over Obama 67 percent to 24 percent.
+evangelical voters/NP; favor/VP; John McCain/NP	-Infinity
+
+Back in 2004, 78 percent of evangelicals supported President Bush.
+78 percent of evangelicals/NP; supported/VP; President Bush/NP	-Infinity
+
+COLLINS: Tomorrow night, Barack Obama and John McCain will bid for those evangelical votes at a live forum hosted by pastor Rick Warren.
+John McCain/NP; will bid/VP for/PP; those evangelical votes/NP	-Infinity
+
+COLLINS: Tomorrow night, Barack Obama and John McCain will bid for those evangelical votes at a live forum hosted by pastor Rick Warren.
+a live forum/NP; hosted/VP by/PP; pastor Rick Warren/NP	-Infinity
+
+Earlier Warren told CNN's "AMERICAN MORNING" what he'll look for in a candidate .
+Earlier Warren/NP; told/VP; CNN's `` AMERICAN MORNING/NP	-Infinity
+
+Earlier Warren told CNN's "AMERICAN MORNING" what he'll look for in a candidate .
+he/NP; 'll look for/VP in/PP; a candidate/NP	-Infinity
+
+(BEGIN VIDEO CLIP) REV. RICK WARREN, PRESIDENTIAL CIVIL FORUM: We're going to look at four different segments, one a segment on leadership.
+We/NP; 're going to look/VP at/PP; four different segments/NP	-Infinity
+
+One section will be on what I call stewardship, which is on the role and responsibility of the presidency, what they believe about the constitution, about the role of America.
+which/NP; is/VP on/PP; the role and responsibility of the presidency/NP	-Infinity
+
+One section will be on what I call stewardship, which is on the role and responsibility of the presidency, what they believe about the constitution, about the role of America.
+they/NP; believe/VP about/PP; the constitution/NP	-Infinity
+
+We're going to look at a section on world view, which is all of those minefield questions that no matter how you answer them somebody isn't going to like them.
+We/NP; 're going to look/VP at/PP; a section/NP	-Infinity
+
+We're going to look at a section on world view, which is all of those minefield questions that no matter how you answer them somebody isn't going to like them.
+no matter/NP; answer/VP; each of these guys/NP	-Infinity
+
+We're going to look at a section on world view, which is all of those minefield questions that no matter how you answer them somebody isn't going to like them.
+somebody/NP; is n't going to like/VP; each of these guys/NP	-Infinity
+
+And then we're going to look at America's role internationally, how we've been a blessed nation an how should we bless others.
+we/NP; 're going to look/VP at/PP; America's role/NP	-Infinity
+
+And then we're going to look at America's role internationally, how we've been a blessed nation an how should we bless others.
+we/NP; 've been/VP; a blessed nation/NP	-Infinity
+
+And then we're going to look at America's role internationally, how we've been a blessed nation an how should we bless others.
+we/NP; bless/VP; others/NP	-Infinity
+
+KIRAN CHETRY, CNN ANCHOR: You can watch that forum live here on CNN.
+forum/NP; live here/VP on/PP; CNN/NP	-Infinity
+
+Mixing religion and politics live on CNN, 8:00 Eastern.
+politics/NP; live/VP on/PP; CNN/NP	-Infinity
+<end>20080815141907.078</end>
+
+<story>Human-interest:Teaser|300-punder-olympian</story>
+<start>20080815141907.078</start>
+(END VIDEO CLIP) COLLINS: A 300-pounder doing a victory lap?
+A 300-pounder/NP; doing/VP; a victory lap/NP	-Infinity
+<end>20080815142209.660</end>
+
+<story>Sports|Olympics</story>
+<start>20080815142209.660</start>
+(COMMERCIAL BREAK) COLLINS: The U.S. racking up medals in the pool and now the gym.
+The U.S./NP; racking/VP up/PRT; medals/NP	-Infinity
+
+Our Larry Smith covering the Beijing games has a live update.
+Our Larry Smith/NP; covering/VP; the Beijing games/NP	-Infinity
+
+For the fist time ever, the U.S. goes gold and silver in the women's all-around individual competition.
+the U.S./NP; goes/VP; gold and silver/NP	-Infinity
+
+And what a performance it was by Nastia Luken.
+the fist time/NP; was/VP by/PP; Nastia Luken/NP	-Infinity
+
+She beats her best friend and teammate Shawn Johnson to take the gold in just a tremendous competition.
+She/NP; beats/VP; Heidi best friend and teammate Shawn Johnson/NP	-Infinity
+
+So, again, first-time one-two and they keep China from sweeping the gold in this competition.
+they/NP; keep/VP; China/NP	-Infinity
+
+The Chinese already had won gold team, gold medals and also in the men's all-around.
+The Chinese/NP; had won/VP; gold team/NP	-Infinity
+
+But again it is Luken who takes gold in this.
+Luken/NP; takes/VP; gold/NP	-Infinity
+
+He's breaking records all the way through, this time in the men's 200-meter individual medley.
+He/NP; 's breaking/VP; records/NP	-Infinity
+
+And so he now is one away from tying Mark Spitz's record of seven golds in the same Olympics.
+one/NP; tying/VP; Mark Spitz's record of seven golds/NP	-Infinity
+
+He will go for that record, tying that record, Friday night east coast time in the men's 100-meter butterfly.
+He/NP; will go/VP for/PP; that record/NP	-Infinity
+<end>20080815142312.556</end>
+
+<story>Human-interest|Reese-Hoffa-olympian-orphan</story>
+<start>20080815142312.556</start>
+Now, today was the fist day, Friday, of the track and field competition.
+today/NP; was/VP; the fist day/NP	-Infinity
+
+Well, some of the attention was on Reese Hoffa.
+some of the attention/NP; was/VP on/PP; Reese Hoffa/NP	-Infinity
+
+You see he is a shot putter who once called himself the unknown shot putter.
+a shot putter/NP; called/VP; himself/NP	-Infinity
+
+But now he's very well known in the world of track & field.
+he/NP; 's very well known/VP in/PP; the world of track & field/NP	-Infinity
+
+(BEGIN VIDEOTAPE) SMITH (voice-over) : One weighs just a few ounces, the other a hefty 16 pounds.
+One/NP; weighs/VP; just a few ounces/NP	-Infinity
+
+But two-time Olympian Reese Hoffa sees the Rubik's cube and the shot put as the same, as objects that must be conquered.
+two-time Olympian Reese Hoffa/NP; sees/VP; the Rubik's cube/NP	-Infinity
+
+But two-time Olympian Reese Hoffa sees the Rubik's cube and the shot put as the same, as objects that must be conquered.
+the shot/NP; put/VP as/PP; the same ,/NP	-Infinity
+
+SMITH : And few could have predicted Hoffa would be doing this.
+few/NP; could have predicted/VP; Hoffa/NP	-Infinity
+
+He was put up for adoption and placed in an orphanage at age four, encouraged by his adoptive family to play sports, he gave up baseball in his junior year of high school to try the shot put and won a state championship in his first year.
+He/NP; was put/VP up/PRT; for adoption/NP	-Infinity
+
+He was put up for adoption and placed in an orphanage at age four, encouraged by his adoptive family to play sports, he gave up baseball in his junior year of high school to try the shot put and won a state championship in his first year.
+his adoptive family/NP; to play/VP; sports/NP	-Infinity
+
+He was put up for adoption and placed in an orphanage at age four, encouraged by his adoptive family to play sports, he gave up baseball in his junior year of high school to try the shot put and won a state championship in his first year.
+he/NP; gave/VP up/PRT; baseball/NP	-Infinity
+
+He was put up for adoption and placed in an orphanage at age four, encouraged by his adoptive family to play sports, he gave up baseball in his junior year of high school to try the shot put and won a state championship in his first year.
+his junior year of high school/NP; to try/VP; the shot/NP	-Infinity
+
+Whereas now, he's turning to be about the most steady shot putter in the world.
+he/NP; 's turning to be/VP about/PP; the most steady shot putter/NP	-Infinity
+
+SMITH : It's the same focus that's drawn him to the Rubik's cube, which he can usually solve in less than a minute.
+the same focus/NP; 's drawn/VP; -LRB- BEGIN VIDEOTAPE -RRB- SMITH -LRB- voice-over -RRB- : One weighs just a few ounces , the other a hefty 16 pounds ./NP	-Infinity
+
+SMITH : It's the same focus that's drawn him to the Rubik's cube, which he can usually solve in less than a minute.
+he/NP; can usually solve/VP in/PP; less than a minute/NP	-Infinity
+
+HOFFA: When I first started doing the shot put as a pro, there weren't very many people that thought this guy is going to go 70 feet and you know make his way up to be one of the top in the world.
+the shot/NP; put/VP as/PP; a pro/NP	-Infinity
+
+HOFFA: When I first started doing the shot put as a pro, there weren't very many people that thought this guy is going to go 70 feet and you know make his way up to be one of the top in the world.
+many people/NP; thought/VP; this guy/NP	-Infinity
+
+HOFFA: When I first started doing the shot put as a pro, there weren't very many people that thought this guy is going to go 70 feet and you know make his way up to be one of the top in the world.
+70 feet/NP; know make/VP; his way/NP	-Infinity
+
+And it's the same thing I got with the Rubik's cube, I just kept doing it and doing it.
+the same thing/NP; got/VP with/PP; the Rubik's cube/NP	-Infinity
+
+And it's the same thing I got with the Rubik's cube, I just kept doing it and doing it.
+First of all/NP; doing/VP; First of all/NP	-Infinity
+
+SMITH : As the number one ranked shot putter in the world, Hoffa may lock down on a gold medal in Beijing.
+the number one/NP; ranked/VP; shot putter/NP	-Infinity
+
+SMITH : As the number one ranked shot putter in the world, Hoffa may lock down on a gold medal in Beijing.
+Hoffa/NP; may lock down/VP on/PP; a gold medal/NP	-Infinity
+
+And if he does, those who know him best expect him to do it with flare.
+those/NP; know/VP; -LRB- BEGIN VIDEOTAPE -RRB- SMITH -LRB- voice-over -RRB- : One weighs just a few ounces , the other a hefty 16 pounds ./NP	-Infinity
+
+And if he does, those who know him best expect him to do it with flare.
+best/NP; expect/VP; -LRB- BEGIN VIDEOTAPE -RRB- SMITH -LRB- voice-over -RRB- : One weighs just a few ounces , the other a hefty 16 pounds ./NP	-Infinity
+
+BABBITT : I remember, you know, when he won the Drake relays one year, he took an impromptu victory lap and the place went crazy.
+he/NP; won/VP; the Drake/NP	-Infinity
+
+BABBITT : I remember, you know, when he won the Drake relays one year, he took an impromptu victory lap and the place went crazy.
+he/NP; took/VP; an impromptu victory lap/NP	-Infinity
+
+They never saw a guy his size do a victory lap.
+They/NP; saw/VP; a guy/NP	-Infinity
+
+They never saw a guy his size do a victory lap.
+his size/NP; do/VP; a victory lap/NP	-Infinity
+
+HOFFA: I definitely try to bring a little bit of personality to shot putting just to show that we're not just a bunch of guys who go out there, throw, and then just leave.
+we/NP; 're just/VP; a bunch of guys/NP	-Infinity
+
+We have personalities and we're a lot of fun to hang out with.
+We/NP; have/VP; personalities/NP	-Infinity
+
+We have personalities and we're a lot of fun to hang out with.
+we/NP; 're/VP; a lot of fun/NP	-Infinity
+
+(END VIDEOTAPE) SMITH : Well, the shot put competition is almost completed and Hoffa didn't have his best night.
+the shot/NP; put/VP; competition/NP	-Infinity
+
+(END VIDEOTAPE) SMITH : Well, the shot put competition is almost completed and Hoffa didn't have his best night.
+Hoffa/NP; did n't have/VP; his best night/NP	-Infinity
+
+He will not medal in that even.
+He/NP; will not medal/VP in/PP; that even/NP	-Infinity
+
+We love the story anyway.
+We/NP; love/VP; the story/NP	-Infinity
+<end>20080815142532.963</end>
+
+<story>International:Teaser|South-Ossetia-reporters-attacked</story>
+<start>20080815142532.963</start>
+Bullets peppered the windshield.
+Bullets/NP; peppered/VP; the windshield/NP	-Infinity
+<end>20080815142853.130</end>
+
+<story>Disaster|Northeast-airports-runway-problems</story>
+<start>20080815142853.130</start>
+(COMMERCIAL BREAK) COLLINS: Quickly want to get over to our Reynolds Wolf who is standing by to talk a little bit more about this tropical disturbance that we've been watching over the last few hours .
+we/NP; 've been watching/VP over/PP; the last few hours/NP	-Infinity
+<end>20080815143033.130</end>
+
+<story>International|South-Ossetia-war</story>
+<start>20080815143033.130</start>
+( WEATHER REPORT) COLLINS: Nine days after Russian forces rolled into the former Soviet Republic of Georgia, there are new concerns today.
+Russian forces/NP; rolled/VP into/PP; the former Soviet Republic of Georgia/NP	-Infinity
+
+This morning, Secretary of State Condoleezza Rice is in the Georgian capital Tbilisi.
+Secretary of State Condoleezza Rice/NP; is/VP in/PP; the Georgian capital Tbilisi/NP	-Infinity
+
+She's delivering a new cease-fire proposal.
+She/NP; 's delivering/VP; a new cease-fire proposal/NP	-Infinity
+
+It would require concessions from Georgia that force a more immediate withdrawal of Russian combat troops.
+Georgia/NP; force/VP; a more immediate withdrawal of Russian combat troops/NP	-Infinity
+
+Russia's president says he hopes Georgia will sign it.
+he/NP; hopes/VP; Georgia/NP	-Infinity
+
+The United Nations says nearly 120,000 Georgians have been displaced by the fighting.
+nearly 120,000 Georgians/NP; have been displaced/VP by/PP; the fighting/NP	-Infinity
+
+President Bush speaking out this morning on this conflict.
+President Bush/NP; speaking/VP out/PRT; this morning/NP	-Infinity
+
+He praised Georgia as a strong ally of the U.S., and blasted Russia for its aggressive actiona .
+He/NP; praised/VP; Georgia/NP	-Infinity
+
+A contentious relationship with Russia is not in America's interest.
+Russia/NP; is/VP in/PP; America's interest/NP	-Infinity
+
+And a contentious relationship with America is not in Russia's interest.
+America/NP; is/VP in/PP; Russia's interest/NP	-Infinity
+
+(END VIDEO CLIP) COLLINS: President Bush says he's being continually briefed both on the diplomatic efforts and humanitarian efforts for refugees.
+he/NP; 's being continually briefed/VP; both/NP	-Infinity
+<end>20080815143142.032</end>
+
+<story>International|South-Ossetia-reporters-attacked</story>
+<start>20080815143142.032</start>
+Their harrowing encounters caught on tape.
+Their harrowing encounters/NP; caught/VP on/PP; tape/NP	-Infinity
+
+And boy it is -- frightening just seems like such an understatement.
+frightening/NP; seems/VP like/PP; such an understatement/NP	-Infinity
+
+"Bullets fly at news crew's car."
+Bullets/NP; fly/VP at/PP; news crew's car/NP	-Infinity
+
+We're going to back up a little bit and we're going to start now with the first piece of really dramatic video.
+We/NP; 're going to back/VP up/PRT; a little bit/NP	-Infinity
+
+We're going to back up a little bit and we're going to start now with the first piece of really dramatic video.
+we/NP; 're going to start now/VP with/PP; the first piece of really dramatic video/NP	-Infinity
+
+One of them says he got hit in the head.
+he/NP; got hit/VP in/PP; the head/NP	-Infinity
+
+I'll let you know right now, we are told that they're all fine.
+we/NP; are told/VP; they/NP	-Infinity
+
+They all made it safely back to Turkey.
+all/NP; made/VP; Right now/NP	-Infinity
+
+Let's go to the second piece of video now.
+Let's/NP; go/VP to/PP; the second piece of video/NP	-Infinity
+
+That is Tamara Urushadze, she's with Georgian State Channel.
+she/NP; is/VP with/PP; Georgian State Channel/NP	-Infinity
+
+We believe it was only superficial.
+We/NP; believe/VP; some sort of superficial wound/NP	-Infinity
+
+We can't know whether she was targeted.
+We/NP; ca n't know/VP; she/NP	-Infinity
+
+But we know something obviously happened.
+we/NP; know/VP; something/NP	-Infinity
+
+(VIDEO CLIP COURTESY OF RUSTAVI 2, NEAR GORI, GEORGIA) I'm going to keep talking at the beginning, I want you to know what this is.
+GEORGIA/NP; 'm going to keep talking/VP at/PP; the beginning/NP	-Infinity
+
+And we are told that this group, who was working to cover the crisis, they were just near Gori.
+we/NP; are told/VP; this group/NP	-Infinity
+
+And we are told that this group, who was working to cover the crisis, they were just near Gori.
+they/NP; were just/VP near/PP; Gori/NP	-Infinity
+
+And what happens is a civilian who is driving a car with South Ossetian plates is about to show up.
+a civilian/NP; is driving/VP; a car/NP	-Infinity
+
+You'll see him, he's wearing fatigues.
+he/NP; 's wearing/VP; fatigues/NP	-Infinity
+
+And he's carrying a weapon which he will then point at the crew.
+he/NP; 's carrying/VP; a weapon/NP	-Infinity
+
+And he's carrying a weapon which he will then point at the crew.
+he/NP; will then point/VP at/PP; the crew/NP	-Infinity
+
+But they believe this was a civilian and they also believe that because he was -- had a car with South Ossetian plates, he may have come from that area.
+they/NP; believe/VP; he/NP	-Infinity
+
+But they believe this was a civilian and they also believe that because he was -- had a car with South Ossetian plates, he may have come from that area.
+he/NP; may have come/VP from/PP; that area/NP	-Infinity
+
+(END VIDEO CLIP) We don't know if he was affair THAT they were journalists.
+We/NP; do n't know/VP; he/NP	-Infinity
+
+(END VIDEO CLIP) We don't know if he was affair THAT they were journalists.
+they/NP; were/VP; journalists/NP	-Infinity
+
+Apparently he was apparently trying to car jack.
+he/NP; was apparently trying/VP to/PP; car jack/NP	-Infinity
+
+If you're interested to learn more about the kinds of concerns that journalists face in war zones all over the world, let me show you a web site before I bring it back to Heidi.
+journalists/NP; face/VP in/PP; war zones/NP	-Infinity
+
+If you're interested to learn more about the kinds of concerns that journalists face in war zones all over the world, let me show you a web site before I bring it back to Heidi.
+a web site/NP; bring/VP; a web site/NP	-Infinity
+
+This is the Committee to Protect Journalists -- it's cpj.org.
+the Committee/NP; to Protect/VP; Journalists/NP	-Infinity
+
+Nothing new from this week, but, they total deaths to journalists in countries all over the world each year.
+they/NP; total/VP; deaths/NP	-Infinity
+
+And obviously, Heidi, a lot of precautions taken by all journalists in the region.
+a lot of precautions/NP; taken/VP by/PP; all journalists/NP	-Infinity
+
+Josh Levs, watching that situation for us regarding Georgia and everything that's happening there.
+situation/NP; regarding/VP; Georgia and everything/NP	-Infinity
+<end>20080815143459.062</end>
+
+<story>Environment|Home-heating-costs</story>
+<start>20080815143459.062</start>
+COLLINS: Well, it may be the dog days of summer, but, it's never too early to start worrying about upcoming winter heating bills.
+the situation/NP; may be/VP; the dog days of summer/NP	-Infinity
+
+Especially since those bills are set to jump this year.
+those bills/NP; are set to jump/VP; this year/NP	-Infinity
+
+com's Poppy Harlow has our Enery Fix from New York.
+com's Poppy Harlow/NP; has/VP; our Enery Fix/NP	-Infinity
+
+Well, before you crank up the thermostat this winter, think about this: Consumers are expected to pay an average of $1100 to heat their homes this year.
+Consumers/NP; are expected to pay/VP; an average of $ 1100/NP	-Infinity
+
+Heating costs in that area expected to near $3,000 this year.
+that area/NP; expected/VP; to near $ 3,000/NP	-Infinity
+
+There are some government programs out there to help pay the bill.
+some government programs/NP; to help pay/VP; the bill/NP	-Infinity
+
+Both of those help low-income families make their homes a lot more energy efficient, Heidi.
+those help low-income families/NP; make/VP; low-income families homes/NP	-Infinity
+
+So people should definitely check those out.
+people/NP; should definitely check/VP; those out/NP	-Infinity
+
+An audit pinpoints where your home is losing energy, it evaluates the efficiency of your energy system.
+your home/NP; is losing/VP; energy/NP	-Infinity
+
+An audit pinpoints where your home is losing energy, it evaluates the efficiency of your energy system.
+your home/NP; evaluates/VP; the efficiency of your energy system/NP	-Infinity
+
+Keep in mind -- older furnaces they're about 60 percent efficient only.
+they/NP; 're/VP; about 60 percent efficient/NP	-Infinity
+
+That means about 40 percent of the heat is escaping your home.
+about 40 percent of the heat/NP; is escaping/VP; your home/NP	-Infinity
+
+Now, modern heating systems can be as much as 97 percent efficient.
+modern heating systems/NP; can be/VP; as much as 97 percent/NP	-Infinity
+
+Usually, though, Heidi, it does make more sense for colder climates like Minnesota, as you and I both know well.
+one of those/NP; does make/VP; more sense/NP	-Infinity
+
+The government actually does say that water heating can account for up to about a quarter of the energy that your home uses.
+The government/NP; does say/VP; water heating/NP	-Infinity
+
+A 10 degree reduction will cut your bill by about 5 percent.
+A 10 degree reduction/NP; will cut/VP; your bill/NP	-Infinity
+
+As for the water heater tank, if it's warm to the touch, consider insulating it.
+the water heater tank/NP; is/VP to/PP; the touch/NP	-Infinity
+
+It costs about $20, or some utility companies will actually give you one for free.
+some utility companies/NP; will actually give/VP; you one/NP	-Infinity
+
+But we want to hear folks' Energy Fixes out there.
+we/NP; want to hear/VP; folks/NP	-Infinity
+<end>20080815143723.340</end>
+
+<story>Business|Flooded-iowans-mortgage-relief</story>
+<start>20080815143723.340</start>
+Three major mortgage lenders now allowing flood-ravaged homeowners to delay payments for up to three months.
+Three major mortgage lenders/NP; now allowing/VP; flood-ravaged homeowners/NP	-Infinity
+
+Wells Fargo, Bank of America and Citigroup say those eligible must be in declared disaster areas and suffering from financial hardship due to the loss of their home or income in the floods.
+those eligible/NP; must be/VP in/PP; declared disaster areas/NP	-Infinity
+<end>20080815143746.029</end>
+
+<story>Justice|Victoria-Osteen-assault-case</story>
+<start>20080815144110.667</start>
+Victoria Osteen was sued by a Continental Airlines flight attendant who accused the pastor's wife of assault during a flight in 2005.
+Victoria Osteen/NP; was sued/VP by/PP; a Continental Airlines flight attendant/NP	-Infinity
+
+Sharon Brown claimed Osteen got so upset over a drink spill on her that she threw Brown against the door and elbowed her.
+Sharon Brown/NP; claimed/VP; Osteen/NP	-Infinity
+
+Sharon Brown claimed Osteen got so upset over a drink spill on her that she threw Brown against the door and elbowed her.
+she/NP; threw/VP; Brown/NP	-Infinity
+
+Sharon Brown claimed Osteen got so upset over a drink spill on her that she threw Brown against the door and elbowed her.
+the door/NP; elbowed/VP; the pastor 's wife of assault/NP	-Infinity
+
+Osteen testified she never touched Brown.
+Osteen/NP; testified/VP; she/NP	-Infinity
+<end>20080815144145.168</end>
+
+<story>Celebrity|Trump-purchases-McMahon-home</story>
+<start>20080815144145.168</start>
+Brown had been seeking more than $400,000 in damages.
+Brown/NP; had been seeking/VP; more than $ 400,000/NP	-Infinity
+
+Donald Trump coming to the rescue of Ed McMahon.
+Donald Trump/NP; coming/VP to/PP; the rescue of Ed McMahon/NP	-Infinity
+
+The developer says he'll buy McMahon mansion and lease it back to the 85 year entertainer.
+he/NP; 'll buy/VP; McMahon mansion/NP	-Infinity
+
+The home has been on the market for two years, listed most recently for $4.6 million.
+The home/NP; has been/VP on/PP; the market/NP	-Infinity
+
+McMahon defaulted on the mortgage and was headed for foreclosure.
+McMahon/NP; defaulted/VP on/PP; the mortgage/NP	-Infinity
+
+Trump says he was a fan of McMahon 's during his "Tonight Show" days and helping him out would be an honor .
+he/NP; was/VP; a fan of McMahon's/NP	-Infinity
+
+Trump says he was a fan of McMahon 's during his "Tonight Show" days and helping him out would be an honor .
+his `` Tonight Show '' days/NP; helping/VP; Donald Trump coming to the rescue of Ed McMahon ./NP	-Infinity
+
+Trump says he was a fan of McMahon 's during his "Tonight Show" days and helping him out would be an honor .
+out/NP; would be/VP; an honor/NP	-Infinity
+<end>20080815144430.366</end>
+
+<story>Politics|Clinton-convention-role</story>
+<start>20080815144726.576</start>
+So Bill, there's a lot of talk, as I'm sure you know, about Hillary Clinton having put in her name for nomination at the convention.
+Hillary Clinton/NP; having put/VP in/PP; her name/NP	-Infinity
+
+WILLIAM SCHNEIDER, CNN SENIOR POLITICAL ANALYST: Well, the convention could be headed for a big showdown.
+the convention/NP; could be headed/VP for/PP; a big showdown/NP	-Infinity
+
+(BEGIN VIDEOTAPE) (voice-over): Hillary Clinton says her supporters are looking for catharsis at the convention.
+her supporters/NP; are looking/VP for/PP; catharsis/NP	-Infinity
+
+SEN. HILLARY CLINTON (D), NEW YORK: We do not want any Democrat either in the hall or in the stadium or at home walking away saying, well you know, I'm just not satisfied.
+We/NP; do not want/VP; any Democrat/NP	-Infinity
+
+SCHNEIDER : Clinton's name will be placed into nomination and her delegates will have the opportunity to vote for her.
+Clinton's name/NP; will be placed/VP into/PP; nomination/NP	-Infinity
+
+SCHNEIDER : Clinton's name will be placed into nomination and her delegates will have the opportunity to vote for her.
+her delegates/NP; will have/VP; the opportunity/NP	-Infinity
+
+KEATING HOLLAND, CNN POLLING DIRECTOR: The Obama campaign and the Clinton folks put out a joint statement on this which makes it seem like they've struck some sort of peace deal.
+the Clinton folks/NP; put/VP out/PRT; a joint statement/NP	-Infinity
+
+KEATING HOLLAND, CNN POLLING DIRECTOR: The Obama campaign and the Clinton folks put out a joint statement on this which makes it seem like they've struck some sort of peace deal.
+this which/NP; makes it seem/VP; they/NP	-Infinity
+
+SCHNEIDER : Will the vote make the party look united or divided?
+the vote/NP; make/VP; the party look/NP	-Infinity
+
+MARK PRESTON, CNN POLITICAL EDITOR: If Hillary Clinton's name is called and she walks to the stage, or, we hear some kind of a roll call and we have Barack Obama supporters booing, that is not what the Democratic party needs.
+Hillary Clinton's name/NP; is called/VP; she/NP	-Infinity
+
+MARK PRESTON, CNN POLITICAL EDITOR: If Hillary Clinton's name is called and she walks to the stage, or, we hear some kind of a roll call and we have Barack Obama supporters booing, that is not what the Democratic party needs.
+we/NP; hear/VP; some kind of a roll call/NP	-Infinity
+
+MARK PRESTON, CNN POLITICAL EDITOR: If Hillary Clinton's name is called and she walks to the stage, or, we hear some kind of a roll call and we have Barack Obama supporters booing, that is not what the Democratic party needs.
+we/NP; have/VP; Barack Obama supporters/NP	-Infinity
+
+SCHNEIDER : If the Florida and Michigan delegations have their full votes restored, something Obama now says he favors and if the superdelegates hold fast for Obama, Clinton should get about 37 percent of the votes.
+the Florida and Michigan delegations/NP; have/VP; Barack Obama supporters booing full votes/NP	-Infinity
+
+SCHNEIDER : If the Florida and Michigan delegations have their full votes restored, something Obama now says he favors and if the superdelegates hold fast for Obama, Clinton should get about 37 percent of the votes.
+he/NP; favors/VP; the superdelegates/NP	-Infinity
+
+SCHNEIDER : If the Florida and Michigan delegations have their full votes restored, something Obama now says he favors and if the superdelegates hold fast for Obama, Clinton should get about 37 percent of the votes.
+Clinton/NP; should get/VP about/PP; 37 percent of the votes/NP	-Infinity
+
+PRESTON: Clinton will have the chance to get to the stage and to tell all of her supporters, thank you for helping me make all those cracks in the glass ceiling that's above our heads.
+Clinton/NP; will have/VP; the chance/NP	-Infinity
+
+PRESTON: Clinton will have the chance to get to the stage and to tell all of her supporters, thank you for helping me make all those cracks in the glass ceiling that's above our heads.
+the stage/NP; to tell/VP; all of her supporters/NP	-Infinity
+
+PRESTON: Clinton will have the chance to get to the stage and to tell all of her supporters, thank you for helping me make all those cracks in the glass ceiling that's above our heads.
+me/NP; make/VP; all those cracks/NP	-Infinity
+
+PRESTON: Clinton will have the chance to get to the stage and to tell all of her supporters, thank you for helping me make all those cracks in the glass ceiling that's above our heads.
+the glass ceiling/NP; is/VP above/PP; our heads/NP	-Infinity
+
+We almost made it.
+We/NP; made/VP; PRESTON : Clinton will have the chance to get to the stage and to tell all of her supporters ,/NP	-Infinity
+
+Let's get behind Barack Obama.
+Let/NP; 's get/VP behind/PP; Barack Obama/NP	-Infinity
+
+COLLINS: I guess the first question is going to be about Hillary, obviously, putting her name in for nomination.
+the first question/NP; is going to be/VP about/PP; Hillary/NP	-Infinity
+
+Does it guarantee any sort of Unity?
+the first question/NP; guarantee/VP; any sort of Unity/NP	-Infinity
+
+But, I don't see why -- look, we had a very healthy primary process, God knows it was long enough.
+we/NP; had/VP; a very healthy primary process/NP	-Infinity
+
+But, I don't see why -- look, we had a very healthy primary process, God knows it was long enough.
+God/NP; knows/VP; the party look/NP	-Infinity
+
+Obama won and Hillary lost.
+Obama/NP; won/VP; Hillary/NP	-Infinity
+
+And to go to the convention now and re-open that debate I think is like ripping a scab off an old wound and looking backwards.
+the convention/NP; re-open/VP; that debate/NP	-Infinity
+
+I really think the convention should show unity and look forward.
+the convention/NP; should show/VP; unity/NP	-Infinity
+
+We're taking notes here.
+We/NP; 're taking/VP; notes/NP	-Infinity
+
+You know, I think I know why they did it, which is that she's got power.
+they/NP; did/VP; the popular list/NP	-Infinity
+
+You know, I think I know why they did it, which is that she's got power.
+she/NP; 's got/VP; power/NP	-Infinity
+
+We're ripping the scab off.
+We/NP; 're ripping/VP; the scab off/NP	-Infinity
+
+She says that her folks wanted catharsis .
+Shall we move on folks/NP; wanted/VP; catharsis/NP	-Infinity
+
+Catharsis usually happens on the stage with catharsis -- there's often a lot of blood.
+Catharsis/NP; happens/VP on/PP; the stage/NP	-Infinity
+
+But the notion they will stick to the script and this will unify the party -- we're talking about the Democratic Party here.
+they/NP; will stick/VP to/PP; the script/NP	-Infinity
+
+But the notion they will stick to the script and this will unify the party -- we're talking about the Democratic Party here.
+we/NP; 're talking/VP about/PP; the Democratic Party/NP	-Infinity
+
+BENNETT: We've never met a rule we didn't like.
+We/NP; 've never met/VP; a rule/NP	-Infinity
+<end>20080815145126.415</end>
+
+<story>Politics|South-Ossetia-presidential-campaign</story>
+<start>20080815145126.415</start>
+You guys have never met a rule you didn't want to break.
+guys/NP; have never met/VP; a rule/NP	-Infinity
+
+An opportunity for the candidates to react to this very hot foreign policy situation.
+the candidates/NP; to react/VP to/PP; this very hot foreign policy situation/NP	-Infinity
+
+(BEGIN VIDEO CLIP) SEN. JOHN MCCAIN (R), PRESIDENTIAL CANDIDATE: Russian actions in clear violation of international law have no place in 21st century Europe.
+clear violation of international law/NP; have/VP; no place/NP	-Infinity
+
+PRESS: You know, first of all, I think both candidates pulled together and are behind the White House in their efforts to get a cessation to hostilities and to get things back on track there.
+both candidates efforts/NP; to get/VP; a cessation/NP	-Infinity
+
+PRESS: You know, first of all, I think both candidates pulled together and are behind the White House in their efforts to get a cessation to hostilities and to get things back on track there.
+hostilities/NP; to get/VP; things/NP	-Infinity
+
+But, I think McCain has overplayed his hand.
+McCain/NP; has overplayed/VP; his hand/NP	-Infinity
+
+You know, he was out there before the White House.
+he/NP; was/VP; out/NP	-Infinity
+
+At first it sounded like he wanted to start World War III.
+First of all/NP; sounded/VP; he/NP	-Infinity
+
+And now he says he's going to send Joe Lieberman and Lindsay Graham as his envoys to Tbilisi.
+he/NP; 's going to send/VP; Joe Lieberman/NP	-Infinity
+
+This is George Bush's controversy to take care of.
+George Bush's controversy/NP; to take/VP; care/NP	-Infinity
+
+That first part where he said it advantaged McCain.
+he/NP; said/VP; That first part/NP	-Infinity
+
+I said, you know, we've been talking about China and other things on the radio show.
+we/NP; 've been talking/VP about/PP; China/NP	-Infinity
+
+Who's been talking about Russia and seeing this coming?
+Russia/NP; seeing/VP; this coming/NP	-Infinity
+
+A couple of people, Bob Kagan was one, a couple of Democrats were actually talking about it, Richard Holbrook.
+Bob Kagan/NP; was/VP; one/NP	-Infinity
+
+But John McCain's been talking about it for two or three years and so credit to him for seeing that.
+John McCain/NP; seeing/VP; John McCain/NP	-Infinity
+
+He's understood what's going on in Russia, he's understood Putin and he has predicted this.
+he/NP; 's understood/VP; Putin/NP	-Infinity
+
+Obama was shaky at first but has now fallen in, as Bill said, behind the President and in line with what John McCain has been saying.
+Obama/NP; was/VP at/PP; first/NP	-Infinity
+
+But, these situations remind you of what it means to be a president, as the commander in chief.
+these situations/NP; remind/VP; you of what/NP	-Infinity
+
+PRESS: But you know, Bill, I think in all fairness, if Barack Obama had sent Susan Rice or his people over to Tbilisi, you and others would be rightly condemning him for such arrogance, for such presumptuous actions as a candidate for president.
+Barack Obama/NP; had sent/VP; Susan Rice/NP	-Infinity
+
+PRESS: But you know, Bill, I think in all fairness, if Barack Obama had sent Susan Rice or his people over to Tbilisi, you and others would be rightly condemning him for such arrogance, for such presumptuous actions as a candidate for president.
+others/NP; would be rightly condemning/VP; Barack Obama making waves and heading back ./NP	-Infinity
+
+I think John McCain is guilty of the same thing.
+John McCain/NP; is/VP of/PP; the same thing/NP	-Infinity
+
+BENNETT: Well, Barack has been everywhere else in the world, except there.
+Barack/NP; has been everywhere else/VP in/PP; the world/NP	-Infinity
+
+The problem with the Susan Rice was that she started by attacking John McCain and then had to pull back from it.
+the Susan Rice/NP; was/VP; she/NP	-Infinity
+
+The problem with the Susan Rice was that she started by attacking John McCain and then had to pull back from it.
+John McCain/NP; had to pull back/VP from/PP; The problem with the Susan Rice/NP	-Infinity
+<end>20080815145422.024</end>
+
+<story>Politics|Obama-Mccain-Warren-debate</story>
+<start>20080815145422.024</start>
+But something that we're doing today, I want to get to this question real quickly before we let you go.
+we/NP; 're doing/VP; today/NP	-Infinity
+
+We're focusing some of our coverage on faith and politics.
+We/NP; 're focusing/VP; some of our coverage/NP	-Infinity
+
+If John McCain picks a pro-choice running mate like Tom Ridge or Joe Lieberman, I think his numbers are going to evaporate, cut in half.
+John McCain/NP; picks/VP; a pro-choice running mate/NP	-Infinity
+
+But yes, if he picks a provide pro-choice candidate, his numbers will go down.
+he/NP; picks/VP; a/NP	-Infinity
+
+I think when people get a real sense of Barack Obama on the issue of life, that he's to the left of the NARAL, I think his numbers could go down, too.
+people/NP; get/VP; a real sense of Barack Obama/NP	-Infinity
+
+I think when people get a real sense of Barack Obama on the issue of life, that he's to the left of the NARAL, I think his numbers could go down, too.
+he/NP; is/VP to/PP; the left of the NARAL/NP	-Infinity
+
+But, let me give a promo like everyone else is, to this debate Saturday night.
+me/NP; give/VP; a promo/NP	-Infinity
+
+I hope Rick Warren doesn't take a dive and I hope he asks the tough questions about tough issues because he's got a singular kind of authority on these kinds of things now.
+Rick Warren/NP; does n't take/VP; a dive/NP	-Infinity
+
+I hope Rick Warren doesn't take a dive and I hope he asks the tough questions about tough issues because he's got a singular kind of authority on these kinds of things now.
+he/NP; 's got/VP; a singular kind of authority/NP	-Infinity
+
+Maybe we should talk further about this, you guys.
+we/NP; should talk/VP; further/NP	-Infinity
+<end>20080815145601.757</end>
+
+<story>Human-interest:Teaser|Dog-eats-fork</story>
+<start>20080815145601.757</start>
+And this fork was causing the problem.
+this fork/NP; was causing/VP; the problem/NP	-Infinity
+<end>20080815145843.318</end>
+
+<story>Human-interest|Dog-eats-fork</story>
+<start>20080815145843.318</start>
+This beautiful Husky has an odd appetite .
+This beautiful Husky/NP; has/VP; an odd appetite/NP	-Infinity
+
+(COMMERCIAL BREAK) COLLINS: Talk about biting off more than you can chew.
+Talk/NP; biting/VP off/PRT; more/NP	-Infinity
+
+About two weeks ago, Apache ate a fork.
+Apache/NP; ate/VP; a fork/NP	-Infinity
+
+Vets discovered the fork had pierced a vein in his chest and was causing bleeding around his lungs.
+Vets/NP; discovered/VP; the fork/NP	-Infinity
+
+Vets discovered the fork had pierced a vein in his chest and was causing bleeding around his lungs.
+his chest/NP; was causing bleeding/VP around/PP; his lungs/NP	-Infinity
+
+They rushed Apache into surgery, removed the fork and gave him multiple blood transfusions.
+They/NP; rushed/VP; Apache/NP	-Infinity
+<end>20080815145949.751</end>
+

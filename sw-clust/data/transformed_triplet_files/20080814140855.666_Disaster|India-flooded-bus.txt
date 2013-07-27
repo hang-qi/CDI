@@ -1,0 +1,8 @@
+<story>Disaster|India-flooded-bus</story>
+<start>20080814140855.666</start>
+<end>20080814140921.592</end>
+a bus | filled | schoolchildren 
+right now | skidded | a waterlogged road 
+Firefighters and locals | managed to rescue | six boys 
+they | have recovered | 11 bodies 
+The area | inundated | days of heavy rain 

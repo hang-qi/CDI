@@ -1,0 +1,5 @@
+<story>Business:Teaser|Indymac-failure-update</story>
+<start>20080814164347.890</start>
+<end>20080814164355.565</end>
+we | have | an important update 
+Folks | might not be losing as much | they 

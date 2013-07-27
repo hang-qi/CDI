@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-Mccain-Warren-faith-forum</story>
+<start>20080815232340.184</start>
+<end>20080815232350.094</end>
+They | are speaking | this weekend 
+We | 'll have | that story 

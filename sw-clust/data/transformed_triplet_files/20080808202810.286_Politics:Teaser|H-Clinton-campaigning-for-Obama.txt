@@ -1,0 +1,7 @@
+<story>Politics:Teaser|H-Clinton-campaigning-for-Obama</story>
+<start>20080808202810.286</start>
+<end>20080808203113.402</end>
+Barack Obama | starts | his vacation 
+Hillary Clinton | starts | campaigning 
+She | talks | their hard-fought campaign 
+She | spoke | the past hour 

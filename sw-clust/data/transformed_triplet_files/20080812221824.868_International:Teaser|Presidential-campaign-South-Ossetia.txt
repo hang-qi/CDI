@@ -1,0 +1,5 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812221824.868</start>
+<end>20080812221835.879</end>
+The U.S. | sends | messages 
+all | giving | Both candidates opinions 

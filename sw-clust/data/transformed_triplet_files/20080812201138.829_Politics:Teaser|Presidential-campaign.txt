@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080812201138.829</start>
+<end>20080812201145.969</end>
+a Hillary Clinton ally | tells | a Hillary Clinton ally 

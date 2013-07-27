@@ -1,0 +1,5 @@
+<story>International:Teaser|Presidential-campaign</story>
+<start>20080815202940.376</start>
+<end>20080815202950.153</end>
+The other | was | the military 
+Guess which of these presidential candidates | is apparently getting | more money 

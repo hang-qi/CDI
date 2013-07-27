@@ -1,0 +1,5 @@
+<story>Commercial|Block</story>
+<start>20080812191051.916</start>
+<end>20080812191051.916</end>
+Republican lawmakers | keep | Republican lawmakers push 
+House Speaker Nancy Pelosi | softens | PELOSI 

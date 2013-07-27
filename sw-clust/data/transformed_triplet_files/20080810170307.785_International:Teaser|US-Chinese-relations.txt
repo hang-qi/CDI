@@ -1,0 +1,4 @@
+<story>International:Teaser|US-Chinese-relations</story>
+<start>20080810170307.785</start>
+<end>20080810170327.071</end>
+opposite things | are | the same time 

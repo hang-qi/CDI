@@ -1,0 +1,5 @@
+<story>Activism:Teaser|Montreal-riot</story>
+<start>20080811210847.325</start>
+<end>20080811210854.032</end>
+details of the incident | sparked | a night of fiery violence 
+Montreal | gripped | rioting 

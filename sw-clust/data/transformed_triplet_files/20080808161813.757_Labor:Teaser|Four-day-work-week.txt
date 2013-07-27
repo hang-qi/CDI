@@ -1,0 +1,5 @@
+<story>Labor:Teaser|Four-day-work-week</story>
+<start>20080808161813.757</start>
+<end>20080808161822.899</end>
+Folks | working | the state of Utah 
+We | 're going to check | The state of Utah 

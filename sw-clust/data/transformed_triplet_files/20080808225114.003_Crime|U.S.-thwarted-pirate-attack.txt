@@ -1,0 +1,8 @@
+<story>Crime|U.S.-thwarted-pirate-attack</story>
+<start>20080808225114.003</start>
+<end>20080808225132.121</end>
+pirates | attack | a ship 
+the U.S. Navy | stops | a ship 
+the Navy | responded | a call 
+the ship | said | a ship 
+the pirates | fled once | the Americans 

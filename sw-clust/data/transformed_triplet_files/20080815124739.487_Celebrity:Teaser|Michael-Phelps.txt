@@ -1,0 +1,4 @@
+<story>Celebrity:Teaser|Michael-Phelps</story>
+<start>20080815124739.487</start>
+<end>20080815124749.130</end>
+We | 've got | the menu 

@@ -1,0 +1,4 @@
+<story>International:Teaser|Clark-NATO-commander-interview</story>
+<start>20080815211022.921</start>
+<end>20080815211037.736</end>
+He | knows | something 

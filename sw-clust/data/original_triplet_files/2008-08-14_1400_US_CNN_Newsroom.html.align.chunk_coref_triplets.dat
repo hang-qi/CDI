@@ -1,0 +1,1242 @@
+<story>NULL</story>
+<start>20080814140012.000</start>
+Police believe Montgomery may have had some help in the bear caper.
+Police/NP; believe/VP; Montgomery/NP	-Infinity
+
+They are looking for two other suspects.
+They/NP; are looking/VP for/PP; two other suspects/NP	-Infinity
+<end>20080814140024.055</end>
+
+<story>Network|Intro</story>
+<start>20080814140024.055</start>
+Stay informed all day in the CNN NEWSROOM.
+Stay/NP; informed/VP; all day/NP	-Infinity
+<end>20080814140031.629</end>
+
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080814140031.629</start>
+Russians troops making moves but are they the moves the U.S. wants?
+Russians troops/NP; making/VP; moves/NP	-Infinity
+<end>20080814140037.635</end>
+
+<story>International:Teaser|Olympics-Tibet-reporter-arrested</story>
+<start>20080814140044.809</start>
+HARRIS: China promised press freedom to get the Olympics reporter hauled away for covering protesters, his network protesting to Beijing today, Thursday, August 14th.
+China/NP; promised/VP; press freedom/NP	-Infinity
+
+HARRIS: China promised press freedom to get the Olympics reporter hauled away for covering protesters, his network protesting to Beijing today, Thursday, August 14th.
+his network/NP; protesting/VP to/PP; Beijing today/NP	-Infinity
+<end>20080814140103.995</end>
+
+<story>Accident|Philadelphia-apartment-fire</story>
+<start>20080814140103.995</start>
+And we are following breaking developments outside Philadelphia.
+we/NP; are following/VP; breaking developments/NP	-Infinity
+
+A massive inferno has destroyed much of an upscale apartment complex in Conshohocken, Philadelphia.
+A massive inferno/NP; has destroyed much/VP of/PP; an upscale apartment complex/NP	-Infinity
+
+The county public safety director says several firefighters were overcome by heat and taken to the hospital after it started late yesterday, but none of the injuries were life- threatening.
+several firefighters/NP; were overcome/VP by/PP; heat/NP	-Infinity
+
+The county public safety director says several firefighters were overcome by heat and taken to the hospital after it started late yesterday, but none of the injuries were life- threatening.
+the hospital/NP; started/VP; late yesterday/NP	-Infinity
+
+The county public safety director says several firefighters were overcome by heat and taken to the hospital after it started late yesterday, but none of the injuries were life- threatening.
+none of the injuries/NP; were/VP; life/NP	-Infinity
+
+The fast moving blaze broke out in a building under construction at a riverfront complex.
+The fast moving blaze/NP; broke/VP out/PRT in/PP; a building/NP	-Infinity
+
+Firefighters from 20 different companies battled the flames for more than six hours.
+20 different companies/NP; battled/VP; the flames/NP	-Infinity
+
+The fire destroyed the centerpiece of a multi-million dollar revitalization project.
+The fire/NP; destroyed/VP; the centerpiece of a multi-million dollar revitalization project/NP	-Infinity
+<end>20080814140144.869</end>
+
+<story>Government|Hartford-teen-curfew</story>
+<start>20080814140144.869</start>
+Enforcement of a strict teen curfew begins tonight in Hartford, Connecticut, following recent shootings.
+Enforcement of a strict teen curfew/NP; begins tonight/VP in/PP; Hartford/NP	-Infinity
+
+Reporter Bob Wilson of affiliate WTNH gets reaction from the streets.
+Reporter Bob Wilson of affiliate WTNH/NP; gets/VP; reaction/NP	-Infinity
+
+WILSON : They're the young faces of Hartford forced to think about shootings instead of shooting a basketball.
+They/NP; 're/VP; the young faces of Hartford/NP	-Infinity
+
+WILSON : They're the young faces of Hartford forced to think about shootings instead of shooting a basketball.
+shootings/NP; shooting/VP; a basketball/NP	-Infinity
+
+UNIDENTIFIED FEMALE: There's a lot going on, and young kids should be in the house after 9:00.
+young kids/NP; should be/VP in/PP; the house/NP	-Infinity
+
+WILSON : Most young kids we talked to like the idea of a curfew after 11 people were shot over the weekend in Hartford neighborhoods.
+we/NP; talked to like/VP; the idea of a curfew/NP	-Infinity
+
+WILSON : Most young kids we talked to like the idea of a curfew after 11 people were shot over the weekend in Hartford neighborhoods.
+11 people/NP; were shot/VP over/PP; the weekend/NP	-Infinity
+
+The mayor announcing that starting Thursday night at 9:00, officers will be looking for teens loitering.
+The mayor/NP; announcing/VP that/PP; starting Thursday night/NP	-Infinity
+
+The mayor announcing that starting Thursday night at 9:00, officers will be looking for teens loitering.
+officers/NP; will be looking/VP for/PP; teens loitering/NP	-Infinity
+
+The first time they're stopped they'll be given a written warning and taken home to their parents.
+they/NP; 're/VP; they/NP	-Infinity
+
+The first time they're stopped they'll be given a written warning and taken home to their parents.
+a written warning/NP; taken/VP; home/NP	-Infinity
+
+The second time, they'll be charged with a misdemeanor and then taken home again.
+they/NP; 'll be charged/VP with/PP; a misdemeanor/NP	-Infinity
+
+UNIDENTIFIED FEMALE: Anything you can to stop kids from killing kids is a good thing.
+Anything/NP; can to stop/VP; kids/NP	-Infinity
+
+WILSON : Now, originally the mayor came out of a press conference saying all the kids rounded up will be taken to detention centers and from there their parents will pick them up.
+the mayor/NP; came/VP out/PP of/PP; a press conference/NP	-Infinity
+
+WILSON : Now, originally the mayor came out of a press conference saying all the kids rounded up will be taken to detention centers and from there their parents will pick them up.
+all the kids/NP; rounded/VP; up/NP	-Infinity
+
+WILSON : Now, originally the mayor came out of a press conference saying all the kids rounded up will be taken to detention centers and from there their parents will pick them up.
+kids parents/NP; will pick/VP; their parents/NP	-Infinity
+
+Now he's saying they'll be pick up and taken home, which for people on the streets say it's too bad.
+he/NP; 's saying/VP; they/NP	-Infinity
+
+They want to see the parents get more involved.
+They/NP; want to see/VP; the parents/NP	-Infinity
+
+UNIDENTIFIED MALE: That's when the strength of the curfew is going to come in, not as much as getting them off the streets but it's getting the parents back involved, forcing the parents to be back involved.
+the strength of the curfew/NP; 's getting/VP; the parents/NP	-Infinity
+
+(END VIDEOTAPE) COLLINS: Once again, that curfew goes into effect tonight at 9:00.
+curfew/NP; goes/VP into/PP; effect tonight/NP	-Infinity
+<end>20080814140315.193</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080814140315.193</start>
+Let's get the latest from the former Soviet Republic of Georgia.
+Let/NP; 's get/VP; the latest/NP	-Infinity
+
+One week after Russian troops first swept in, they are now on the move around Gori.
+they/NP; are now/VP on/PP; the move/NP	-Infinity
+
+Abkhazia and South Ossetia wanted to split from Georgia and were closely aligned with Russia.
+Abkhazia and South Ossetia/NP; wanted to split/VP from/PP; Georgia/NP	-Infinity
+
+Georgia has said it will not surrender any of its territories.
+Georgia/NP; has said/VP; Georgia/NP	-Infinity
+
+Secretary of State Condoleezza Rice in France today to meet with President Sarkozy.
+today/NP; to meet/VP with/PP; President Sarkozy/NP	-Infinity
+
+He helped broker the cease-fire.
+He/NP; helped broker/VP; the cease-fire/NP	-Infinity
+
+Tomorrow Rice heads to Georgia's capital of Tbilisi.
+Tomorrow Rice/NP; heads/VP to/PP; Georgia's capital of Tbilisi/NP	-Infinity
+
+And the first planes have delivered humanitarian aid to Tbilisi.
+the first planes/NP; have delivered/VP; humanitarian aid/NP	-Infinity
+
+The U.S. military is spearheading relief efforts.
+The U.S. military/NP; is spearheading/VP; relief efforts/NP	-Infinity
+
+Condoleezza Rice is in France, the first stop of her emergency talks.
+Condoleezza Rice/NP; is/VP in/PP; France/NP	-Infinity
+
+CNN's Jim Bitterman is in Paris.
+CNN's Jim Bitterman/NP; is/VP in/PP; Paris/NP	-Infinity
+
+In fact, things are happening right now in the south of France, in Fort Bregancon, which is one of President Sarkozy's many presidential residences around the country.
+things/NP; are happening right now/VP in/PP; the south of France/NP	-Infinity
+
+He is down there along with Condoleezza Rice and foreign minister Bernard Kouchner.
+He/NP; is down/VP along/PP with/PP; Condoleezza Rice and foreign minister Bernard Kouchner/NP	-Infinity
+
+In fact, they are talking as we speak about exactly what that cease-fire deal means.
+they/NP; are talking/VP; we/NP	-Infinity
+
+As far as Mr. Sarkozy is concerned, he hammered it out on Tuesday.
+he/NP; hammered/VP; that cease-fire deal/NP	-Infinity
+
+The Russians say they're expecting it to the letter but others disagree with that.
+they/NP; 're expecting/VP; The Russians/NP	-Infinity
+
+The Russians say they're expecting it to the letter but others disagree with that.
+others/NP; disagree/VP with/PP; the letter/NP	-Infinity
+
+One of the points, the fifth point provides that pending an international peace monitoring mechanism, Russian peacekeepers will take on additional security measures.
+Russian peacekeepers/NP; will take/VP; on additional security measures/NP	-Infinity
+
+That, of course, would give them justification for the kind of things that are going on right now in Georgia.
+the kind of things/NP; are going/VP on/PP; right/NP	-Infinity
+
+So there's a lot of discussion going to happen here and then from here Secretary Rice will go tomorrow morning to Tbilisi to talk to the Georgians and give them her support for the United States.
+a lot of discussion/NP; going to happen here and then/VP from/PP; here Secretary Rice/NP	-Infinity
+
+So there's a lot of discussion going to happen here and then from here Secretary Rice will go tomorrow morning to Tbilisi to talk to the Georgians and give them her support for the United States.
+Tbilisi/NP; to talk/VP to/PP; the Georgians/NP	-Infinity
+
+HARRIS: Well, Jim, is Secretary Rice getting some kind of a debrief from President Sarkozy on his conversation with the Russian president?
+Secretary Rice/NP; getting/VP; some kind of a debrief/NP	-Infinity
+
+The fact is that President Sarkozy is the last western leader to talk to the President Medvedev and may have some insight as to what is going on inside his head and what the actual thrust of this Russian operation is.
+the last western leader/NP; to talk/VP to/PP; the President Medvedev/NP	-Infinity
+
+The fact is that President Sarkozy is the last western leader to talk to the President Medvedev and may have some insight as to what is going on inside his head and what the actual thrust of this Russian operation is.
+some insight/NP; is going/VP on/PRT inside/PP; his head/NP	-Infinity
+
+That's one of the things that's been questionable throughout this, exactly what are the Russians trying to do with this sweep into Georgia?
+the Russians/NP; trying to do/VP with/PP; this sweep/NP	-Infinity
+
+Clearly through those independence-minded territories, they're into Georgia proper and that's something that a lot of people would like to fathom, exactly what are they attempting to do.
+they/NP; 're/VP into/PP; Georgia proper/NP	-Infinity
+
+HARRIS: And it's curious to know why the United States and Russia aren't speaking directly to one another.
+the United States and Russia/NP; are n't speaking directly/VP to/PP; one another/NP	-Infinity
+<end>20080814140621.212</end>
+
+<story>War|South-Ossetia-war-humanitarian-aid</story>
+<start>20080814140621.212</start>
+COLLINS: The United Nations says about 100,000 people have been left homeless by the fighting.
+about 100,000 people/NP; have been left/VP by/PP; the fighting/NP	-Infinity
+
+The U.S. is helping spearhead the delivery of emergency supplies.
+The U.S./NP; is helping/VP; spearhead/NP	-Infinity
+
+CNN's Frederik Pleitgen is in the Georgian capital of Tbilisi where those first shipments came in last night.
+CNN's Frederik Pleitgen/NP; is/VP in/PP; the Georgian capital of Tbilisi/NP	-Infinity
+
+CNN's Frederik Pleitgen is in the Georgian capital of Tbilisi where those first shipments came in last night.
+those first shipments/NP; came/VP in/PP; last night/NP	-Infinity
+
+The humanitarian effort is really getting under way here in Georgia now.
+The humanitarian effort/NP; is really getting/VP under/PP; way/NP	-Infinity
+
+And this refugee camp is just actually now under construction.
+this refugee camp/NP; is just actually/VP under/PP; construction/NP	-Infinity
+
+But if you look behind me, right now, you can see even though the refugee camp isn't even fully constructed yet, there are already refugees here and many of them have been telling us that they have been on the run for days throughout Georgia.
+they/NP; have been/VP on/PP; the run/NP	-Infinity
+
+Now, as you said, the humanitarian effort getting under way.
+the humanitarian effort/NP; getting/VP under/PP; way/NP	-Infinity
+
+The U.S. drastically ramping up its aid efforts, sending two c-17 cargo planes here into the Georgian capital of Tbilisi.
+The U.S./NP; drastically ramping/VP up/PRT; its aid efforts/NP	-Infinity
+
+Those were greeted at the airport, at least one of them by a demonstration in favor of the United States there last night.
+Those/NP; were greeted/VP at/PP; the airport/NP	-Infinity
+
+I can tell you one thing, the people that I have talked to say they are very grateful for the aid and they say they are badly in need of getting that aid, especially medical supplies, especially food and water but also clothing.
+the people/NP; have talked to say/VP; they/NP	-Infinity
+
+I can tell you one thing, the people that I have talked to say they are very grateful for the aid and they say they are badly in need of getting that aid, especially medical supplies, especially food and water but also clothing.
+they/NP; are badly/VP in/PP; need/NP	-Infinity
+
+They say they need everything that they can get.
+they/NP; need/VP; everything/NP	-Infinity
+
+COLLINS: Fred, is aid coming in from anywhere other than the United States?
+aid/NP; coming in/VP from/PP; anywhere other/NP	-Infinity
+
+And they say there are some international aid planes coming in on commercial aircraft, that will be chartered by international aid organizations.
+some international aid planes/NP; coming/VP in/PRT on/PP; commercial aircraft/NP	-Infinity
+
+For instance, like UNICEF, they say they have things coming in as well.
+they/NP; have/VP; things/NP	-Infinity
+
+He said they really still don't have an overview of the entire situation in this country.
+He/NP; said/VP; they/NP	-Infinity
+
+But they say they are ramping those efforts up.
+they/NP; are ramping/VP; those efforts/NP	-Infinity
+
+They're trying to get convoys going to some of those more remote areas to get humanitarian aid in there.
+They/NP; 're trying to get/VP; convoys/NP	-Infinity
+
+They're trying to get convoys going to some of those more remote areas to get humanitarian aid in there.
+some of those more remote areas/NP; to get/VP; humanitarian aid/NP	-Infinity
+
+And what else is really, really important is to actually get people out who are in need of help, who are injured or in need of some other medical attention to try and get those people out of those areas that have been affected by the fighting and to get them to relatively safe places like where I am standing right now.
+really important/NP; is to actually get/VP; people/NP	-Infinity
+
+And what else is really, really important is to actually get people out who are in need of help, who are injured or in need of some other medical attention to try and get those people out of those areas that have been affected by the fighting and to get them to relatively safe places like where I am standing right now.
+need of some other medical attention/NP; to try and get/VP; those people/NP	-Infinity
+
+And what else is really, really important is to actually get people out who are in need of help, who are injured or in need of some other medical attention to try and get those people out of those areas that have been affected by the fighting and to get them to relatively safe places like where I am standing right now.
+those areas/NP; have been affected/VP by/PP; the fighting/NP	-Infinity
+
+CNN's Frederik Pleitgen there from one of those camps that is being set up as we speak right outside of Tbilisi.
+one of those camps/NP; is being set/VP up/PRT; we/NP	-Infinity
+<end>20080814140855.666</end>
+
+<story>Disaster|India-flooded-bus</story>
+<start>20080814140855.666</start>
+Back now in a different part of the world, a tragedy on a bus filled with schoolchildren in southern India.
+a bus/NP; filled/VP with/PP; schoolchildren/NP	-Infinity
+
+Police say it skidded off a waterlogged road and into a river.
+right now/NP; skidded/VP off/PRT; a waterlogged road/NP	-Infinity
+
+Firefighters and locals managed to rescue six boys from the water, but sadly they have recovered 11 bodies, and most of them children.
+Firefighters and locals/NP; managed to rescue/VP; six boys/NP	-Infinity
+
+Firefighters and locals managed to rescue six boys from the water, but sadly they have recovered 11 bodies, and most of them children.
+they/NP; have recovered/VP; 11 bodies/NP	-Infinity
+
+The area inundated with days of heavy rain.
+The area/NP; inundated/VP with/PP; days of heavy rain/NP	-Infinity
+<end>20080814140921.592</end>
+
+<story>Weather|US</story>
+<start>20080814140921.592</start>
+HARRIS: What do you say we spend some time with Rob Marciano in the severe weather center.
+we/NP; spend/VP; some time/NP	-Infinity
+
+Rob, what, if anything, at this point is developing in the Atlantic?
+this point/NP; is developing/VP in/PP; the Atlantic/NP	-Infinity
+
+ROB MARCIANO, CNN, METEOROLOGIST: We've got this thing we've been watching for a few days.
+We/NP; 've got/VP; this thing/NP	-Infinity
+
+ROB MARCIANO, CNN, METEOROLOGIST: We've got this thing we've been watching for a few days.
+we/NP; 've been watching/VP for/PP; a few days/NP	-Infinity
+
+Now they're going to throw another one in there.
+they/NP; 're going to throw/VP; another one/NP	-Infinity
+
+Actually, they had a research one going there.
+they/NP; had/VP; a research one/NP	-Infinity
+
+There's two planes, a C-130 that the air force throws out there.
+the air force/NP; throws/VP; out/NP	-Infinity
+
+And then there's the P-3 NOAA ones, and they're equipped with other things.
+they/NP; 're/VP with/PP; other things/NP	-Infinity
+
+They're more for research.
+They/NP; 're more/VP for/PP; research/NP	-Infinity
+
+They flew in last night, still didn't find circulation.
+They/NP; flew/VP in/PP; last night/NP	-Infinity
+
+But now it looks a little bit more impressive.
+right now/NP; looks/VP; a little bit/NP	-Infinity
+
+So, they'll fly in there again today, they'll launch in about an hour.
+they/NP; 'll fly/VP in/PP; there again/NP	-Infinity
+
+So, they'll fly in there again today, they'll launch in about an hour.
+they/NP; 'll launch/VP in/PRT about/PP; an hour/NP	-Infinity
+
+Our National Hurricane Center has ramped it up to a greater than 50 percent probability of it becoming one here today or tomorrow.
+Our National Hurricane Center/NP; has ramped/VP; Our National Hurricane Center/NP	-Infinity
+
+Our National Hurricane Center has ramped it up to a greater than 50 percent probability of it becoming one here today or tomorrow.
+a greater than 50 percent probability of Our National Hurricane Center/NP; becoming/VP; one here today or tomorrow/NP	-Infinity
+
+And it still makes its trek towards the Bahamas.
+Our National Hurricane Center/NP; makes/VP; its trek/NP	-Infinity
+
+Shoot, we thought we had -- try to get to the Puerto Rican radar site here in just a little bit and show you some of those actions.
+we/NP; thought/VP; we/NP	-Infinity
+
+Radar will be popping parts of the plains today.
+Radar/NP; will be popping/VP; parts of the plains/NP	-Infinity
+
+Some light showers with the cool air that's aloft across the northeast.
+the cool air/NP; is aloft/VP across/PP; the northeast/NP	-Infinity
+
+And places like the Carolinas should be real nice at least for the time being.
+the Carolinas/NP; should be/VP nice/PP for/PP; the time/NP	-Infinity
+
+They do a big run over it every year.
+They/NP; do/VP; a big run/NP	-Infinity
+
+They got a little bit of morning haziness, but that should burn off before the day is done.
+They/NP; got/VP; a little bit of morning haziness/NP	-Infinity
+
+They got a little bit of morning haziness, but that should burn off before the day is done.
+this morning 's/NP; should burn/VP off/PRT before/PP; the day/NP	-Infinity
+
+And then as folks go to and from the beach, it should be OK.
+folks/NP; go/VP to and/PP from/PP; the beach/NP	-Infinity
+
+Heavier rains expected down across parts of Florida.
+Heavier rains/NP; expected down/VP across/PP; parts of Florida/NP	-Infinity
+
+By the way, I threw up South Carolina there because you're going to want to pay attention to what this thing in the tropics does over the next couple of days.
+South Carolina/NP; 're going to want to pay/VP; attention/NP	-Infinity
+
+By the way, I threw up South Carolina there because you're going to want to pay attention to what this thing in the tropics does over the next couple of days.
+the tropics/NP; does/VP over/PP; the next couple of days/NP	-Infinity
+
+So looks like it's starting to feel bit like September.
+85/NP; 's starting to feel/VP; bit/NP	-Infinity
+
+MARCIANO: Of course, that means the peak of hurricane season, too.
+MARCIANO/NP; means/VP; the peak of hurricane season/NP	-Infinity
+<end>20080814141126.583</end>
+
+<story>Accident|Florida-apartment-fire</story>
+<start>20080814141126.583</start>
+HARRIS: Boy, we spent a lot of time this morning talking about the big fire in Philadelphia, along the river .
+we/NP; spent/VP; a lot of time/NP	-Infinity
+
+HARRIS: Boy, we spent a lot of time this morning talking about the big fire in Philadelphia, along the river .
+this morning/NP; talking/VP about/PP; the big fire/NP	-Infinity
+
+Residents were possibly trapped in this one.
+Residents/NP; were possibly trapped/VP in/PP; this one/NP	-Infinity
+
+You can see the firefighters in that shot just a moment ago doing the best they can to get this fire and folks on the ground just watching as well, don't know if everyone has been able to get out of there.
+just a moment/NP; doing/VP; the best/NP	-Infinity
+
+You can see the firefighters in that shot just a moment ago doing the best they can to get this fire and folks on the ground just watching as well, don't know if everyone has been able to get out of there.
+they/NP; can to get/VP; this fire and folks/NP	-Infinity
+
+Again, word that there may be some folks trapped inside.
+word/NP; may be/VP; some folks/NP	-Infinity
+
+No injuries at least reported now, and I would imagine more companies might be on their way to respond to this.
+more companies/NP; might be/VP on/PP; 20 different companies way/NP	-Infinity
+
+We're going to keep an eye on this situation.
+We/NP; 're going to keep/VP; an eye/NP	-Infinity
+<end>20080814141217.768</end>
+
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080814141507.037</start>
+(COMMERCIAL BREAK) HARRIS: Arkansas police are trying to figure out why a man shot and killed the state democratic party chairman.
+Arkansas police/NP; are trying to figure/VP out/PRT; a man shot/NP	-Infinity
+
+Witnesses say the man walked into the party headquarters in Little Rock, then shot Bill Gwatney several times.
+the man/NP; walked/VP into/PP; the party headquarters/NP	-Infinity
+
+The gunman identified by police as Timothy Dale Johnson was shot dead after leading authorities on a chase.
+The gunman/NP; identified/VP by/PP; police/NP	-Infinity
+
+It spun the vehicle around and as the Grant County sheriff's unit went by, the subject came out of the vehicle and fired two rounds at the vehicle, at the Grant County sheriff's office vehicle.
+the subject/NP; came/VP out/PP of/PP; the vehicle/NP	-Infinity
+
+About that time that a state police unit also rammed into the vehicle, and other shots were fired by the Arkansas state police.
+a state police unit/NP; rammed/VP into/PP; the vehicle/NP	-Infinity
+
+About that time that a state police unit also rammed into the vehicle, and other shots were fired by the Arkansas state police.
+other shots/NP; were fired/VP by/PP; the Arkansas state police/NP	-Infinity
+
+HARRIS: The shoot out with police happened in Sheridan, Arkansas, That's about 30 miles south of Little Rock.
+police/NP; happened/VP in/PP; Sheridan/NP	-Infinity
+
+There is no indication yet that the shooter even knew Gwatney.
+the shooter/NP; even knew/VP; Gwatney/NP	-Infinity
+<end>20080814141601.692</end>
+
+<story>Justice|Kilpatrick-assault-case</story>
+<start>20080814141601.692</start>
+Detroit's mayor in court just moments ago to face arraignment on perjury charges.
+court/NP; just/VP; moments/NP	-Infinity
+
+A judge eased the travel restrictions on the mayor Kwami Kilpatrick.
+A judge/NP; eased/VP; the travel restrictions/NP	-Infinity
+
+He can attend the democratic convention.
+He/NP; can attend/VP; the democratic convention/NP	-Infinity
+
+The messages indicated the two were involved in an affair.
+The messages/NP; indicated/VP; the two/NP	-Infinity
+
+Both denied it under oath, not guilty pleas were entered on their behalf at this morning's arraignment.
+Both/NP; denied/VP; two/NP	-Infinity
+
+Both denied it under oath, not guilty pleas were entered on their behalf at this morning's arraignment.
+not guilty pleas/NP; were entered/VP on/PP; Both behalf/NP	-Infinity
+<end>20080814141631.021</end>
+
+<story>Politics|Presidential-campaign</story>
+<start>20080814141631.021</start>
+The "CNN Election Express" is rolling through Illinois this morning.
+The `` CNN Election Express/NP; is rolling/VP through/PP; Illinois/NP	-Infinity
+
+Senior political analyst Bill Schneider live aboard the election express, Bill, I understand you've just gotten on the bus.
+Senior political analyst Bill Schneider/NP; live/VP aboard/PP; the election/NP	-Infinity
+
+We're now crossing the state of Illinois, headed for Iowa.
+We/NP; 're now crossing/VP; the state of Illinois/NP	-Infinity
+
+Not much contest here in Illinois, but Iowa is a real battleground state so we're headed directly there to Des Moines.
+we/NP; 're headed directly there/VP to/PP; Des Moines/NP	-Infinity
+
+Bill, sorry we're having a little bit of difficulty when we talk to you.
+we/NP; 're having/VP; a little bit of difficulty/NP	-Infinity
+
+But I wonder, as you travel along, I know you just got there last night, what do you expect to be hearing from people as you make these stops along the way to Denver?
+people/NP; make/VP; these stops/NP	-Infinity
+
+SCHNEIDER : I think a lot of people are still undecided and they are a little conflicted in this election because they have a lot of questions about the democratic candidate, Barack Obama.
+a lot of people/NP; are still/VP; they/NP	-Infinity
+
+SCHNEIDER : I think a lot of people are still undecided and they are a little conflicted in this election because they have a lot of questions about the democratic candidate, Barack Obama.
+they/NP; have/VP; a lot of questions/NP	-Infinity
+
+And I quickly add, Iowa is neighboring state to Illinois.
+Iowa/NP; is neighboring/VP; state/NP	-Infinity
+
+So in Iowa they have heard something about Barack Obama.
+they/NP; have heard/VP; something/NP	-Infinity
+
+He's made some serious effort to try to establish that he set on his own course, that he was not part of the Bush administration.
+He/NP; 's made/VP; some serious effort/NP	-Infinity
+
+He's made some serious effort to try to establish that he set on his own course, that he was not part of the Bush administration.
+he/NP; set/VP on/PP; his own course/NP	-Infinity
+
+He's made some serious effort to try to establish that he set on his own course, that he was not part of the Bush administration.
+he/NP; was not part/VP of/PP; the Bush administration/NP	-Infinity
+
+So I think a lot of people are still conflicted over this campaign and we'll be asking what their thinking is when we get to Iowa.
+a lot of people/NP; are still conflicted/VP over/PP; this campaign/NP	-Infinity
+
+So I think a lot of people are still conflicted over this campaign and we'll be asking what their thinking is when we get to Iowa.
+people on the streets thinking/NP; is when/VP; we/NP	-Infinity
+<end>20080814141825.635</end>
+
+<story>Accident|Florida-apartment-fire</story>
+<start>20080814142133.056</start>
+Just as soon as we get it in here.
+we/NP; get/VP; -LRB- COMMERCIAL BREAK -RRB- COLLINS : Want to get some information out to you ./NP	-Infinity
+
+Of course, at the CNN NEWSROOM, happening in west Miami-Dade, Florida, we'll go ahead and show you some of the pictures we have from our affiliate there now, WSVN.
+we/NP; have/VP from/PP; our affiliate/NP	-Infinity
+
+This is an apartment fire, west or Miami-Dade fire and rescue are actually on the scene of this fire.
+Miami-Dade fire and rescue/NP; are actually/VP on/PP; the scene of this fire/NP	-Infinity
+
+The reason they are concerned, at least according to our wire reports, is that there's a possibility that some residents could be trapped inside that apartment complex.
+some residents/NP; could be trapped/VP inside/PP; that apartment complex/NP	-Infinity
+
+Lieutenant Elkin Sierra is actually on the line with us now from Miami-Dade Fire Rescue.
+Lieutenant Elkin Sierra/NP; is actually/VP on/PP; the line/NP	-Infinity
+
+Any more information regarding the possibility of people being trapped inside?
+Any more information/NP; regarding/VP; the possibility of people/NP	-Infinity
+
+VOICE OF LT. ELKIN SIERRA, MIAMI-DAD FIRE RESCUE: Well, someone was trapped when units arrived that was successfully extracted from this unit.
+someone/NP; was trapped when/VP; units/NP	-Infinity
+
+VOICE OF LT. ELKIN SIERRA, MIAMI-DAD FIRE RESCUE: Well, someone was trapped when units arrived that was successfully extracted from this unit.
+the Miami-Dad Fire Rescue/NP; was successfully extracted/VP from/PP; this unit/NP	-Infinity
+
+We have two patients that we're treating, one will be transported for smoke inhalation and one will be treated on the scene for minor burns.
+We/NP; have/VP; two patients/NP	-Infinity
+
+We have two patients that we're treating, one will be transported for smoke inhalation and one will be treated on the scene for minor burns.
+one/NP; will be transported/VP for/PP; smoke inhalation/NP	-Infinity
+
+We have two patients that we're treating, one will be transported for smoke inhalation and one will be treated on the scene for minor burns.
+one/NP; will be treated/VP on/PP; the scene/NP	-Infinity
+
+We've evacuated the entire building and we have units making entry from the front door of the apartment unit and also hammering the building as well to access and aggressively attack this fire.
+We/NP; 've evacuated/VP; the entire building/NP	-Infinity
+
+We've evacuated the entire building and we have units making entry from the front door of the apartment unit and also hammering the building as well to access and aggressively attack this fire.
+we/NP; have/VP; units/NP	-Infinity
+
+We've evacuated the entire building and we have units making entry from the front door of the apartment unit and also hammering the building as well to access and aggressively attack this fire.
+the front door of the apartment unit/NP; hammering/VP; the building/NP	-Infinity
+
+She is just awaiting an escort downstairs.
+She/NP; is just awaiting/VP; an escort/NP	-Infinity
+
+She is out of the apartment and in the hallway.
+She/NP; is/VP out/PP of/PP; the apartment/NP	-Infinity
+
+We've fought this fire very aggressively.
+We/NP; 've fought/VP; this fire/NP	-Infinity
+
+We are looking at more pictures of the scene there from our affiliate WSVN.
+We/NP; are looking/VP at/PP; more pictures of the scene/NP	-Infinity
+
+And we'll keep our eye on this one for you.
+we/NP; 'll keep/VP; our eye/NP	-Infinity
+<end>20080814142309.753</end>
+
+<story>Human-interest|Travel-horrors</story>
+<start>20080814142309.753</start>
+Turns out many of you spent it nursing some pretty horrible diseases you caught while traveling.
+out many/NP; spent/VP; your summer vacation/NP	-Infinity
+
+COHEN: So we heard about - let me look at my list - food poisoning from raw shellfish in China.
+we/NP; heard/VP; about/NP	-Infinity
+
+COHEN: So we heard about - let me look at my list - food poisoning from raw shellfish in China.
+me/NP; look/VP at/PP; my list/NP	-Infinity
+
+2:00 in the morning lost seven pounds overnight in fluids.
+the morning/NP; lost/VP; seven pounds/NP	-Infinity
+
+Finding a dentist to do a root canal at 2:00 in the morning in Guatemala.
+a dentist/NP; to do/VP; a root canal/NP	-Infinity
+
+Judy was hiking in the Amazon in Brazil and broke her leg, tore ligaments in her ankle.
+Judy/NP; was hiking/VP in/PP; the Amazon/NP	-Infinity
+
+Judy was hiking in the Amazon in Brazil and broke her leg, tore ligaments in her ankle.
+Brazil/NP; broke/VP; Judy leg/NP	-Infinity
+
+Four Brazilians had to carry her down the mountain and they airlifted her to safety.
+Four Brazilians/NP; had to carry/VP; Judy/NP	-Infinity
+
+Four Brazilians had to carry her down the mountain and they airlifted her to safety.
+they/NP; airlifted/VP; Judy/NP	-Infinity
+
+So, yes, we definitely heard a lot of stories.
+we/NP; heard/VP; a lot of stories/NP	-Infinity
+
+These folks who ran into some pretty disastrous situations give their tips for what happens.
+These folks/NP; ran/VP into/PP; some pretty disastrous situations/NP	-Infinity
+
+I'm wondering even before you leave are there some things that you can do to make it a healthier trip overall?
+there some things/NP; can do to make/VP; right now/NP	-Infinity
+
+These folks who had these nightmares, said, I wish I had done XYZ before I left.
+These folks/NP; had/VP; these nightmares/NP	-Infinity
+
+Let's take a look at what that XYZ is.
+Let/NP; 's take/VP; a look/NP	-Infinity
+
+Also, consider travel insurance because your fabulous U.S. health insurance may mean nothing, nada, zipo when you're abroad.
+your fabulous U.S. health insurance/NP; may mean/VP; nothing , nada , zipo/NP	-Infinity
+
+I really hadn't thought much about that, but one woman we talked to, she dove into this beautiful lake in Brazil and ended up with a nasty infection because she realized the lake was kind of that community sewer.
+she/NP; dove/VP into/PP; this beautiful lake/NP	-Infinity
+
+I really hadn't thought much about that, but one woman we talked to, she dove into this beautiful lake in Brazil and ended up with a nasty infection because she realized the lake was kind of that community sewer.
+Brazil/NP; ended/VP up/PRT with/PP; a nasty infection/NP	-Infinity
+
+I really hadn't thought much about that, but one woman we talked to, she dove into this beautiful lake in Brazil and ended up with a nasty infection because she realized the lake was kind of that community sewer.
+she/NP; realized/VP; the lake/NP	-Infinity
+
+HARRIS: You know, adventure traveling, I'm thinking about the woman who was in the Amazon jungle and I'm thinking that adventure travel is really big right now.
+the woman/NP; was/VP in/PP; the Amazon jungle/NP	-Infinity
+
+So is there any advice to make sure that in those areas you're taking every precaution that's available to you?
+any advice/NP; to make/VP in/PP; those areas/NP	-Infinity
+
+We give you links in the column to where you can go on the state department web site .
+the column/NP; can go/VP on/PP; the state department web site/NP	-Infinity
+
+Another thing, you can go to the state department and register your trip if you're going to a dangerous area so if something happens they know where you are and everything.
+the state department/NP; register/VP; your trip/NP	-Infinity
+
+Another thing, you can go to the state department and register your trip if you're going to a dangerous area so if something happens they know where you are and everything.
+something/NP; happens/VP; they/NP	-Infinity
+
+COHEN: This is something that really amazed me.
+something/NP; amazed/VP; me/NP	-Infinity
+
+Almost everyone who wrote in with their nightmare travel health story said they were amazed at the quality of care that they got and, even more, how cheap it was.
+Almost everyone/NP; wrote/VP in/PP with/PP; Yes nightmare travel health story/NP	-Infinity
+
+Almost everyone who wrote in with their nightmare travel health story said they were amazed at the quality of care that they got and, even more, how cheap it was.
+they/NP; were amazed/VP at/PP; the quality of care/NP	-Infinity
+
+The guy in China who had to go to the hospital, they didn't charge him at all.
+China/NP; had to go/VP to/PP; the hospital/NP	-Infinity
+
+The guy in China who had to go to the hospital, they didn't charge him at all.
+they/NP; did n't charge/VP; The guy in China who had to go to the hospital/NP	-Infinity
+
+Another person who had a skin infection in Singapore, no charge for several days in the hospital.
+Another person/NP; had/VP; a skin infection/NP	-Infinity
+
+They said, gosh, what do these countries know that we don't know?
+these countries/NP; know/VP; we/NP	-Infinity
+
+HARRIS: Well, the intestinal problems, time will take care of that mostly.
+time/NP; will take/VP; care of TONY HARRIS mostly/NP	-Infinity
+
+But yes, time will take care of it.
+time/NP; will take/VP; care of Charleston/NP	-Infinity
+<end>20080814142636.059</end>
+
+<story>International:Teaser|South-Ossetia-war-humanitarian-aid</story>
+<start>20080814142636.059</start>
+COLLINS: Defense Secretary Robert Gates discussing humanitarian aid for the republic of Georgia.
+Defense Secretary Robert Gates/NP; discussing/VP; humanitarian aid/NP	-Infinity
+<end>20080814142643.633</end>
+
+<story>War|South-Ossetia-war-humanitarian-aid</story>
+<start>20080814142938.508</start>
+A cease-fire seemingly holds Russian troops remain in the Georgian city of Gori.
+A cease-fire/NP; holds/VP; Russian troops/NP	-Infinity
+
+They say they'll return control by the end of the day.
+they/NP; 'll return/VP; control/NP	-Infinity
+
+Abkhazia and South Ossetia want to split with Georgia and align with Russia.
+Abkhazia and South Ossetia/NP; want to split/VP with/PP; Georgia/NP	-Infinity
+
+Today there are growing concerns that Russia will defy Georgia and support that split.
+Today/NP; are growing/VP; concerns/NP	-Infinity
+
+Today there are growing concerns that Russia will defy Georgia and support that split.
+Russia/NP; will defy/VP; Georgia and support/NP	-Infinity
+
+Secretary of State Condoleezza Rice is on a diplomatic mission today.
+Secretary of State Condoleezza Rice/NP; is/VP on/PP; a diplomatic mission/NP	-Infinity
+
+She is in France.
+She/NP; is/VP in/PP; France/NP	-Infinity
+
+The U.S. military is helping to spearhead the relief efforts.
+The U.S. military/NP; is helping/VP to/PP; spearhead/NP	-Infinity
+
+COLLINS: The desperate race to get emergency supplies into Georgia.
+The desperate race/NP; to get/VP; emergency supplies/NP	-Infinity
+
+The U.S. military is playing a key role.
+The U.S. military/NP; is playing/VP; a key role/NP	-Infinity
+
+CNN's Barbara Starr is at the Pentagon this morning now, where the Defense Secretary is due to speak at the top of the hour, about 30 minutes from now.
+CNN's Barbara Starr/NP; is/VP at/PP; the Pentagon/NP	-Infinity
+
+About 30 minutes from now, Defense Secretary Robert Gates and General James Cartwright, the Vice Chairman of the Joint Chiefs of Staff expected here in the briefing room.
+Staff/NP; expected here/VP in/PP; the briefing room/NP	-Infinity
+
+Another C-17 did land in Tbilisi earlier today, carrying humanitarian relief supplies.
+Another C-17/NP; did/VP; land/NP	-Infinity
+
+We're told that the Georgians specifically did ask for antibiotics to be delivered, as well as other supplies, blankets and other medical supplies.
+We/NP; 're told/VP; the Georgians/NP	-Infinity
+
+But, it remains to be seen when the next humanitarian flight take place.
+Georgia/NP; remains to be seen when/VP; the next humanitarian flight/NP	-Infinity
+
+An assessment team -- a U.S. assessment team is on the ground looking at the situation, reporting back to the Pentagon.
+a U.S. assessment team/NP; is/VP on/PP; the ground/NP	-Infinity
+
+And that's really probably going to be the focus of the questions for Secretary Gates.
+An assessment team -- a U.S. assessment team is on the ground looking at the situation , reporting back to the Pentagon ./NP; 's really probably going to be/VP; the focus of the questions/NP	-Infinity
+
+How deeply involved will the U.S. Military become in Georgia?
+deeply involved/NP; will/VP; the U.S. Military/NP	-Infinity
+
+Is this the U.S. Military staking its presence in this country, showing the Russians that the U.S. Military does intend to be there -- Heidi.
+the U.S. Military/NP; staking/VP; its presence/NP	-Infinity
+
+STARR : Well, what we are told so far is that there is a network, if you will, of development agencies, the U.S. Agency for International Development, non-government organizations working throughout the country to distribute this aid once it is dropped off at the Tbilisi airport.
+non-government organizations/NP; working/VP throughout/PP; the country/NP	-Infinity
+
+STARR : Well, what we are told so far is that there is a network, if you will, of development agencies, the U.S. Agency for International Development, non-government organizations working throughout the country to distribute this aid once it is dropped off at the Tbilisi airport.
+Once/NP; is dropped/VP; off/NP	-Infinity
+
+We are continuing to get reports all the time about violence across the country.
+We/NP; are continuing to get/VP; reports/NP	-Infinity
+
+They can get the aid into Tbilisi, but, how will it get distributed because the U.S. has no intention of sending any type of ground troops, if you will, at this point to help distribute that aid -- Heidi.
+They/NP; can get/VP; the aid/NP	-Infinity
+
+They can get the aid into Tbilisi, but, how will it get distributed because the U.S. has no intention of sending any type of ground troops, if you will, at this point to help distribute that aid -- Heidi.
+the aid/NP; get distributed/VP because/PP; the U.S./NP	-Infinity
+
+They can get the aid into Tbilisi, but, how will it get distributed because the U.S. has no intention of sending any type of ground troops, if you will, at this point to help distribute that aid -- Heidi.
+no intention/NP; sending/VP; any type of ground troops/NP	-Infinity
+
+They can get the aid into Tbilisi, but, how will it get distributed because the U.S. has no intention of sending any type of ground troops, if you will, at this point to help distribute that aid -- Heidi.
+this point/NP; to help distribute/VP; that aid/NP	-Infinity
+
+Again, Secretary Gates coming up in about 25 minutes or so.
+Secretary Gates/NP; coming up/VP in/PP; about 25 minutes or so/NP	-Infinity
+<end>20080814143233.683</end>
+
+<story>War|South-Ossetia-war-photos</story>
+<start>20080814143233.683</start>
+HARRIS: A recent photos out of the Republic of Georgia show how the fighting caught civilians completely off guard.
+the Republic of Georgia/NP; show how/VP; the fighting caught civilians/NP	-Infinity
+
+Josh Levs has been looking through this images which CNN obtained from Georgia's Ministry of Defense.
+Josh Levs/NP; has been looking/VP through/PP; this images/NP	-Infinity
+
+Josh Levs has been looking through this images which CNN obtained from Georgia's Ministry of Defense.
+CNN/NP; obtained/VP from/PP; Georgia's Ministry of Defense/NP	-Infinity
+
+And I know that in some cases, Josh, these are pretty tough photos and we can't even put them on air.
+we/NP; ca n't even put/VP; civilians/NP	-Infinity
+
+And as you said, we got them from the Georgian government.
+we/NP; got/VP; civilians/NP	-Infinity
+
+Clearly Georgia has its own view and it wants to present a certain view of everything that's happened over the past week.
+Georgia/NP; has/VP; its own view/NP	-Infinity
+
+Clearly Georgia has its own view and it wants to present a certain view of everything that's happened over the past week.
+Georgia/NP; wants to present/VP; a certain view of everything/NP	-Infinity
+
+And we don't want to take part in that.
+we/NP; do n't want to take/VP; part/NP	-Infinity
+
+And some of these stories do in and of themselves, tell a story.
+some of these stories/NP; do/VP in and of/PP; themselves/NP	-Infinity
+
+So, we're going to to into these pictures.
+we/NP; 're going to to/VP into/PP; these pictures/NP	-Infinity
+
+Keep in mind as you see them, that Russia says Georgia is behind death and injuries to a lot of civilians, as well.
+mind/NP; see/VP; some of these stories/NP	-Infinity
+
+Keep in mind as you see them, that Russia says Georgia is behind death and injuries to a lot of civilians, as well.
+Georgia/NP; is/VP behind/PP; death and injuries/NP	-Infinity
+
+We're going to see the story presented by these photos.
+We/NP; 're going to see/VP; the story/NP	-Infinity
+
+And we do have reports of (INAUDIBLE) having happened.
+we/NP; do have/VP; reports of -LRB-/NP	-Infinity
+
+Let's just scroll through fairly quickly so we can tell everyone the whole story.
+we/NP; can tell everyone/VP; the whole story/NP	-Infinity
+
+Here we see what seems to be a dead body on the ground and another man apparently just wailing, struggling to see he's lost his home.
+he/NP; 's lost/VP; his home/NP	-Infinity
+
+People in a lot of these civilian areas were fleeing because all of a sudden their homes were in the middle of a war.
+a lot of these civilian areas/NP; were fleeing/VP because/PP; all of a sudden their homes/NP	-Infinity
+
+So, we're seeing a lot of pictures like this, people just trying to absorb the shock of what's happened.
+we/NP; 're seeing/VP; a lot of pictures/NP	-Infinity
+
+So, we're seeing a lot of pictures like this, people just trying to absorb the shock of what's happened.
+people/NP; just trying to absorb/VP; the shock of what/NP	-Infinity
+
+A lot of these people have not seen war, it's not something they expected.
+A lot of these people/NP; have not seen/VP; war/NP	-Infinity
+
+A lot of these people have not seen war, it's not something they expected.
+A lot of these people/NP; 's/VP; something/NP	-Infinity
+
+Young people who may have never seen anything like this, just struggling to comprehend what's happened with them.
+Young people/NP; may have never seen/VP; anything/NP	-Infinity
+
+And again, we're seeing firefighters and other first responders -- the Georgian equivalent of that -- responding to the scene.
+we/NP; 're seeing/VP; firefighters/NP	-Infinity
+
+We chose to show some of them.
+We/NP; chose to show/VP; some of Firefighters and locals/NP	-Infinity
+
+Because we do have one photo of some wounded Russian troops that I've seen.
+we/NP; do have/VP; one photo of some wounded Russian troops/NP	-Infinity
+
+And I'll read you the caption that came along with this.
+the caption/NP; came/VP along/PRT; with this/NP	-Infinity
+
+This says that these two Russian army troops are speaking with a doctor here at a military hospital in southern Russia in Rustovondon.
+these two Russian army troops/NP; are speaking/VP with/PP; a doctor/NP	-Infinity
+
+This is after they were wounded during an assault in Tskhinvali, which is the capital of South Ossetia.
+they/NP; were wounded/VP during/PP; an assault/NP	-Infinity
+
+Tony, you know, we're keeping a close eye on all the photos that come in.
+we/NP; 're keeping/VP; a close eye/NP	-Infinity
+
+And obviously they do tell a story.
+they/NP; do tell/VP; a story/NP	-Infinity
+
+And we're trying to contextualize it the best we can.
+we/NP; 're trying to contextualize/VP; a story/NP	-Infinity
+
+I mean, we get great moving pictures of these zones.
+we/NP; get/VP; great moving pictures of these zones/NP	-Infinity
+
+But, the still pictures, they still leave some room for interpretation.
+they/NP; leave/VP; some room/NP	-Infinity
+
+I hope we got more of them .
+we/NP; got/VP; more of them/NP	-Infinity
+
+And we'll keep in mind you know, civilians come from all ethnicities in that area.
+we/NP; 'll keep/VP in/PP; mind/NP	-Infinity
+
+And we'll keep in mind you know, civilians come from all ethnicities in that area.
+civilians/NP; come/VP from/PP; all ethnicities/NP	-Infinity
+
+One was in Pakidura (ph), Russians, there are South Ossetians , there are Georgian ethnicities there.
+One/NP; was/VP in/PP; Pakidura/NP	-Infinity
+<end>20080814143533.062</end>
+
+<story>Justice:Teaser|Illegal-immigrants-arrested-Dulles-airport</story>
+<start>20080814143533.062</start>
+COLLINS: 42 suspected illegal immigrants rounded up at the Dulles Airport outside of Washington.
+42 suspected illegal immigrants/NP; rounded/VP up/PRT at/PP; the Dulles Airport/NP	-Infinity
+
+Federal agents settle up check points yesterday at construction sites around the airport.
+Federal agents/NP; settle/VP up/PRT; check points/NP	-Infinity
+
+Airports now considered a priority for immigration checks because of terrorism concerns.
+Airports/NP; considered/VP; a priority/NP	-Infinity
+
+None of those arrested had access to secure areas of the airport .
+None of those arrested/NP; had/VP; access/NP	-Infinity
+<end>20080814143821.196</end>
+
+<story>Crime:Teaser|Beltless-bandit-Oklahoma-city</story>
+<start>20080814143821.196</start>
+(WEATHER REPORT) HARRIS: Police in Oklahoma City trying to crack the case of the beltless bandit.
+Oklahoma City/NP; trying to crack/VP; the case of the beltless bandit/NP	-Infinity
+
+A convenience store robber was caught on tape flashing more than a gun.
+A convenience store robber/NP; was caught/VP on/PP; tape/NP	-Infinity
+
+So the man who walked into the store -- yes, yes.
+the man/NP; walked/VP into/PP; the store/NP	-Infinity
+
+He had his shirt over his head and his pants -- they just kept falling down.
+He/NP; had/VP; his shirt/NP	-Infinity
+
+Police are hoping to get to the bottom of the case -- sorry.
+Police/NP; are hoping to get/VP to/PP; the bottom of the case/NP	-Infinity
+
+They say anyone willing to admit they recognize the man should call them.
+anyone/NP; to admit/VP; they/NP	-Infinity
+
+They say anyone willing to admit they recognize the man should call them.
+the man/NP; should call/VP; Police/NP	-Infinity
+<end>20080814143900.269</end>
+
+<story>Human-interest:Teaser|Future-American-population</story>
+<start>20080814143900.269</start>
+Minorities becoming the majority and sooner than we thought .
+Minorities/NP; becoming/VP; the majority/NP	-Infinity
+<end>20080814144439.274</end>
+
+<story>Social|Future-American-population</story>
+<start>20080814144439.274</start>
+The Census Bureau reporting a big shift that will soon leave whites in the minority.
+The Census Bureau/NP; reporting/VP; a big shift/NP	-Infinity
+
+(BEGIN VIDEOTAPE) ALINA CHO, CNN CORRESPONDENT : This census report came out at midnight.
+This census report/NP; came/VP out/PRT; at midnight/NP	-Infinity
+
+And the surprising projection is that by the year 2042, that's eight years sooner than earlier estimates, minorities will indeed become the majority.
+the surprising projection/NP; is/VP by/PP; the year 2042/NP	-Infinity
+
+And the surprising projection is that by the year 2042, that's eight years sooner than earlier estimates, minorities will indeed become the majority.
+minorities/NP; will indeed become/VP; the majority/NP	-Infinity
+
+And eight years after that, by 2050, minorities are expected to make up 54 percent of the population.
+minorities/NP; are expected to make/VP up/PRT; 54 percent of the population/NP	-Infinity
+
+Now, this is most evident in the Hispanic population which will nearly triple from nearly 47 million right now to nearly 133 million by the year 2050, making up 30 percent of the population versus 15 today.
+which/NP; will nearly triple/VP from/PP; nearly 47 million/NP	-Infinity
+
+Now, the Asian population will rise from about five to nine percent of the total.
+the Asian population/NP; will rise/VP from/PP; about five to nine percent of the total/NP	-Infinity
+
+And the black population will go up slightly from 14 to 15 percent.
+the black population/NP; will go up/VP from/PP; 14/NP	-Infinity
+
+The number of people over 85 will triple in the next 40 years.
+85/NP; will triple/VP in/PP; the next 40 years/NP	-Infinity
+
+America's face is changing and of course that raises a lot of questions about quality of life.
+America's face/NP; is changing/VP of/PP; course/NP	-Infinity
+<end>20080814144613.535</end>
+
+<story>Sports:Teaser|Olympics-Tibet-reporter-arrested</story>
+<start>20080814144613.535</start>
+(END VIDEOTAPE) COLLINS: He went to cover a story.
+He/NP; went to cover/VP; a story/NP	-Infinity
+
+Then police made him part of it.
+police/NP; made/VP; -LRB- END VIDEOTAPE -RRB- COLLINS : He went to cover a story ./NP	-Infinity
+<end>20080814144858.099</end>
+
+<story>Sports|Olympics</story>
+<start>20080814144858.099</start>
+(COMMERCIAL BREAK) HARRIS : The U.S. men's basketball team getting payback against Greece at the Beijing games today.
+The U.S. men's basketball team/NP; getting/VP against/PP; Greece/NP	-Infinity
+
+Yes , this Greece team beat the U.S. national team.
+this Greece team/NP; beat/VP; the U.S. national team/NP	-Infinity
+
+Two years ago in the world championships and Greece has not been kind to the U.S.
+Greece/NP; has not been/VP; kind/NP	-Infinity
+
+It was in Greece where they showed up with possibly -- let's just say it -- their worst Olympics since NBA players were added to the roster in 1992.
+they/NP; showed/VP up/PRT; with possibly/NP	-Infinity
+
+It was in Greece where they showed up with possibly -- let's just say it -- their worst Olympics since NBA players were added to the roster in 1992.
+let's/NP; just say/VP; Greece/NP	-Infinity
+
+It was in Greece where they showed up with possibly -- let's just say it -- their worst Olympics since NBA players were added to the roster in 1992.
+NBA players/NP; were added/VP to/PP; the roster/NP	-Infinity
+
+A 92-69 victory on this evening as they go to 3-0.
+they/NP; go/VP to/PP; 3-0/NP	-Infinity
+
+It's the most impressive win so far in this tournament for them.
+the most impressive/NP; win so far/VP in/PP; this tournament/NP	-Infinity
+
+Kobe Bryant and Chris Bosh each scored 18 points.
+Chris Bosh/NP; scored/VP; 18 points/NP	-Infinity
+
+And so now, they get an undefeated showdown on Saturday night in Beijing, against Spain.
+they/NP; get/VP; an undefeated showdown/NP	-Infinity
+
+They posed for a picture that ran for an ad in a Spanish newspaper, with their fingers up to their eyes to make their eyes more slanted.
+They/NP; posed/VP for/PP; a picture/NP	-Infinity
+
+They posed for a picture that ran for an ad in a Spanish newspaper, with their fingers up to their eyes to make their eyes more slanted.
+their eyes/NP; to make/VP; their eyes/NP	-Infinity
+
+Now, some of the players try to explain it.
+some of the players/NP; try to explain/VP; right now/NP	-Infinity
+
+It was meant to be funny and they didn't mean to offend anybody .
+they/NP; did n't mean to offend/VP; anybody/NP	-Infinity
+
+Another player said that the photographer told them to do that.
+Another player/NP; said/VP; the photographer/NP	-Infinity
+
+Another player said that the photographer told them to do that.
+some of the players/NP; to do/VP; Another player/NP	-Infinity
+
+But again, this has caused quit a bit of a stir as everyone -- this picture has been sent around the e-mail, you probably have seen it yourself all around.
+a bit of a/NP; stir/VP as/PP; everyone/NP	-Infinity
+
+But again, this has caused quit a bit of a stir as everyone -- this picture has been sent around the e-mail, you probably have seen it yourself all around.
+this picture/NP; has been sent/VP around/PP; the e-mail/NP	-Infinity
+
+Roger Federer, the top seed, knocked off by James Blake who said before the Olympics that a Roger Federer/Rafael Nadal final would be great for the sport, but he hoped to be the one that ruined it.
+James Blake/NP; said/VP before/PP; the Olympics/NP	-Infinity
+
+Roger Federer, the top seed, knocked off by James Blake who said before the Olympics that a Roger Federer/Rafael Nadal final would be great for the sport, but he hoped to be the one that ruined it.
+a Roger Federer\/Rafael Nadal final/NP; would be/VP for/PP; the sport/NP	-Infinity
+
+Roger Federer, the top seed, knocked off by James Blake who said before the Olympics that a Roger Federer/Rafael Nadal final would be great for the sport, but he hoped to be the one that ruined it.
+he/NP; hoped to be/VP; the one/NP	-Infinity
+
+He goes on moves on to the semifinals.
+He/NP; goes/VP on/PP; moves/NP	-Infinity
+
+By the way, Serena Williams losing in three sets.
+Serena Williams/NP; losing/VP in/PP; three sets/NP	-Infinity
+
+Also in swimming, Michael Phelps, no gold medals on Thursday, but he's back in the pool twice in less than 30 minutes, it will be Thursday night East Coast time.
+he/NP; is back/VP in/PP; the pool/NP	-Infinity
+<end>20080814145116.171</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080814145116.171</start>
+COLLINS: Have some breaking news to get to now regarding the situation with Russia and Georgia.
+some breaking news/NP; to get/VP to now regarding/PP; the situation/NP	-Infinity
+
+Matthew, we want to know right off the bat what you are seeing around you.
+we/NP; want to know right/VP off/PP; the bat/NP	-Infinity
+
+INTERNATIONAL CORRESPONDENT : Well, this is the fist time we've managed to gain access to the South Ossetian rebel capital of Tskhinvali.
+we/NP; 've managed to gain/VP; access/NP	-Infinity
+
+It's been the center of the fierce fighting that's taken place over the course of the past week between Russia and Georgia.
+the center of the fierce fighting/NP; 's taken/VP; place/NP	-Infinity
+
+It is a scene of utter devastation that we're witnessing in Tskhinvali this afternoon here in South Ossetia.
+we/NP; 're witnessing/VP in/PP; Tskhinvali/NP	-Infinity
+
+Many of the buildings have been destroyed as a result of the fierce fighting that raged here over the course of the past week or so.
+Many of the buildings/NP; have been destroyed/VP as/PP; a result of the fierce fighting/NP	-Infinity
+
+A lot of Russian and military vehicles standing destroyed, their metal twisted in the streets of this rebel capital.
+Many of the buildings metal/NP; twisted/VP in/PP; the streets of this rebel capital/NP	-Infinity
+
+Russian forces are now here in force, several thousand of them with tanks and armored personnel carriers, positioned at key installations around the city.
+Russian forces/NP; are now/VP in/PP; force/NP	-Infinity
+
+There are some civilians left but only just a few pockets.
+some civilians/NP; left/VP; only just a few pockets/NP	-Infinity
+
+Most people took the opportunity when they could to flee the fighting.
+Most people/NP; took/VP; the opportunity/NP	-Infinity
+
+Most people took the opportunity when they could to flee the fighting.
+they/NP; could to flee/VP; the fighting/NP	-Infinity
+
+There's been very different claims between the Russians, who say up to 2,000 people were killed as a result of this conflict, and the Georgians, who say the real figure is perhaps more close to a few hundred.
+up to 2,000 people/NP; were killed/VP as/PP; a result of this conflict/NP	-Infinity
+
+There's been very different claims between the Russians, who say up to 2,000 people were killed as a result of this conflict, and the Georgians, who say the real figure is perhaps more close to a few hundred.
+the real figure/NP; is/VP to/PP; a few hundred/NP	-Infinity
+
+We don't have any clarity on that yet, but we're working with the Russians, we're here on the ground in Tskhinvali and we hope to be able to kind of -- give you some kind of better picture of the real cost of this conflict between Georgia and Russia, the human cost in the days ahead.
+We/NP; do n't have/VP; any clarity/NP	-Infinity
+
+We don't have any clarity on that yet, but we're working with the Russians, we're here on the ground in Tskhinvali and we hope to be able to kind of -- give you some kind of better picture of the real cost of this conflict between Georgia and Russia, the human cost in the days ahead.
+we/NP; 're working/VP with/PP; the Russians/NP	-Infinity
+
+We don't have any clarity on that yet, but we're working with the Russians, we're here on the ground in Tskhinvali and we hope to be able to kind of -- give you some kind of better picture of the real cost of this conflict between Georgia and Russia, the human cost in the days ahead.
+we/NP; 're here/VP on/PP; the ground/NP	-Infinity
+
+We don't have any clarity on that yet, but we're working with the Russians, we're here on the ground in Tskhinvali and we hope to be able to kind of -- give you some kind of better picture of the real cost of this conflict between Georgia and Russia, the human cost in the days ahead.
+we/NP; hope to be/VP to/PP; kind/NP	-Infinity
+
+Will it be soldiers, if you will, or fighters, from both sides to try and get some sort of perspective?
+and a difficult thing to do , obviously , Matthew , because as you say/NP; be/VP; soldiers/NP	-Infinity
+
+Will it be soldiers, if you will, or fighters, from both sides to try and get some sort of perspective?
+both sides/NP; to try and get/VP; some sort of perspective/NP	-Infinity
+
+Initially it is with the Russian authorities, the military authorities, the people who brought us in here.
+Matthew Chance/NP; is/VP with/PP; the Russian authorities/NP	-Infinity
+
+We drove across the Georgian lines through the Russian lines and were escorted through the town of Gori, which is now completely under the occupation of Russian forces.
+We/NP; drove/VP across/PP; the Georgian lines/NP	-Infinity
+
+We drove across the Georgian lines through the Russian lines and were escorted through the town of Gori, which is now completely under the occupation of Russian forces.
+the Russian lines/NP; were escorted/VP through/PP; the town of Gori/NP	-Infinity
+
+We drove across the Georgian lines through the Russian lines and were escorted through the town of Gori, which is now completely under the occupation of Russian forces.
+which/NP; is now/VP under/PP; the occupation of Russian forces/NP	-Infinity
+
+We're going to be speaking to soldiers as well.
+We/NP; 're going to be speaking/VP to/PP; soldiers/NP	-Infinity
+
+And, as I say, there are some civilians who decided to stay and brave out the fighting.
+some civilians/NP; decided to stay and brave out/VP; the fighting/NP	-Infinity
+
+And I also expect that as the situation continues to be calm (ph) some of the thousands of civilians, the refugees who have fled the fighting over the course of the past week who want to come back to pick up the pieces of their lives and their homes as soon as they can as well.
+the situation/NP; continues to be/VP; ph/NP	-Infinity
+
+And I also expect that as the situation continues to be calm (ph) some of the thousands of civilians, the refugees who have fled the fighting over the course of the past week who want to come back to pick up the pieces of their lives and their homes as soon as they can as well.
+the refugees/NP; have fled/VP; the fighting/NP	-Infinity
+
+We hope to -- ( INAUDIBLE) part of Georgia.
+We/NP; hope to --/VP -LRB-/PP; INAUDIBLE -RRB- part of Georgia/NP	-Infinity
+
+But the South Ossetian leadership, which is backed by (INAUDIBLE), is very much (INAUDIBLE) independent.
+which/NP; is backed/VP by/PP; -LRB- INAUDIBLE -RRB-/NP	-Infinity
+
+And it was their conflict with the Georgians that initially started this whole war between Georgia and Russia.
+the Georgians/NP; started/VP; this whole war/NP	-Infinity
+
+So we're hoping to get a better picture from this side of the conflict over the coming days.
+we/NP; 're hoping to get/VP; a better picture/NP	-Infinity
+
+Our senior international correspondent, Matthew Chance, in an area known as Tskhinvali, some of the very first people in and looking around at the damage that's been left behind, at least so far in this conflict.
+an area/NP; known/VP as/PP; Tskhinvali/NP	-Infinity
+
+Our senior international correspondent, Matthew Chance, in an area known as Tskhinvali, some of the very first people in and looking around at the damage that's been left behind, at least so far in this conflict.
+some of the very first people/NP; looking/VP around/PRT at/PP; the damage/NP	-Infinity
+
+We'll stay on top of that and be in close contact with Matthew.
+We/NP; 'll stay/VP on/PP; top of that/NP	-Infinity
+
+Meanwhile, Defense Secretary Robert Gates discussing humanitarian aid for the Republic of Georgia.
+Defense Secretary Robert Gates/NP; discussing/VP; humanitarian aid/NP	-Infinity
+
+Live remarks coming up at the top of the hour -- just about five minutes away .
+Live remarks/NP; coming/VP up/PRT at/PP; the top of the hour/NP	-Infinity
+<end>20080814145744.125</end>
+
+<story>Network|Intro</story>
+<start>20080814145744.125</start>
+Developments keep coming into the CNN NEWSROOM on Thursday, August 14th.
+Developments/NP; keep coming/VP into/PP; the CNN NEWSROOM/NP	-Infinity
+<end>20080814145752.567</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080814145752.567</start>
+Russia says it hopes to get its troops out of the strategic town by the end of the day.
+The Russians/NP; hopes to get/VP; its troops/NP	-Infinity
+
+The U.S. Defense Secretary live this hour.
+The U.S. Defense Secretary/NP; live/VP; this hour/NP	-Infinity
+<end>20080814145802.076</end>
+
+<story>Accident|Philadelphia-apartment-fire</story>
+<start>20080814145802.076</start>
+Hundreds of people find themselves homeless this morning.
+Hundreds of people/NP; find/VP; themselves/NP	-Infinity
+<end>20080814145807.882</end>
+
+<story>Government|Bush-terror-watchlist</story>
+<start>20080814145807.882</start>
+COLLINS: A critic of President Bush finds himself on a terror watch list .
+A critic of President Bush/NP; finds/VP; himself/NP	-Infinity
+<end>20080814145824.165</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080814145824.165</start>
+Let's get the very latest now from the former Soviet of Republic of Georgia.
+Let/NP; 's get/VP; the very latest/NP	-Infinity
+
+Russian troops remain in the Georgian city of Gori but say they will return control by the end of the day.
+Russian troops/NP; remain/VP in/PP; the Georgian city of Gori/NP	-Infinity
+
+Russian troops remain in the Georgian city of Gori but say they will return control by the end of the day.
+they/NP; will return/VP; control/NP	-Infinity
+
+Russian forces also firmly in place in the two territories at the center of this conflict, South Ossetia and Abhkazia, wanted to split from Georgia and more closely align with Russia.
+Georgia and more/NP; closely align/VP with/PP; Russia/NP	-Infinity
+
+One ominous question today -- will Russia seize the two breakaway territories?
+will Russia/NP; seize/VP; the two breakaway territories/NP	-Infinity
+
+Georgia has said it will not surrender any land.
+Georgia/NP; has said/VP; Georgia/NP	-Infinity
+
+And minutes ago, CNN's Matthew Chance, our senior international correspondent, reported he is looking at "other destruction" in parts of South Ossetia.
+he/NP; is looking/VP at/PP; other destruction/NP	-Infinity
+
+Secretary of State Condoleezza Rice in France today to meet with President Nicolas Sarkozy.
+today/NP; to meet/VP with/PP; President Nicolas Sarkozy/NP	-Infinity
+
+He helped broker the cease-fire.
+He/NP; helped broker/VP; the cease-fire/NP	-Infinity
+
+Tomorrow, Rice heads to Georgia's capital of Tbilisi.
+Rice/NP; heads/VP to/PP; Georgia's capital of Tbilisi/NP	-Infinity
+
+The first planes have now delivered humanitarian aid to Tbilisi.
+The first planes/NP; have now delivered/VP; humanitarian aid/NP	-Infinity
+
+The U.S. military is spearheading relief efforts there.
+The U.S. military/NP; is spearheading/VP; relief efforts/NP	-Infinity
+
+Of course, CNN has deployed its vast international resources to bring you all of the angles of this developing story.
+CNN/NP; has deployed/VP; its vast international resources/NP	-Infinity
+
+Frederik Pleitgen is outside the Georgian capital of Tbilisi.
+Frederik Pleitgen/NP; is/VP outside/PP; the Georgian capital of Tbilisi/NP	-Infinity
+
+Zain Verjee is following diplomatic efforts.
+Zain Verjee/NP; is following/VP; diplomatic efforts/NP	-Infinity
+
+And CNN's Barbara Starr is covering the humanitarian efforts.
+CNN's Barbara Starr/NP; is covering/VP; the humanitarian efforts/NP	-Infinity
+
+We want to begin with Barbara at the Pentagon.
+We/NP; want to begin/VP with/PP; Barbara/NP	-Infinity
+
+Barbara, we know Secretary Gates is moments away from taking the podium.
+we/NP; know/VP; Secretary Gates/NP	-Infinity
+
+Barbara, we know Secretary Gates is moments away from taking the podium.
+moments/NP; taking/VP; the podium/NP	-Infinity
+
+BARBARA STARR, CNN PENTAGON CORRESPONDENT: Heidi, we are inside a two-minute warning here at the Pentagon.
+we/NP; are/VP inside/PP; a two-minute warning/NP	-Infinity
+
+Secretary Gates expected any minute here to brief reporters, the first military briefing on the record about the U.S. military involvement in delivering humanitarian aid.
+Secretary Gates/NP; expected/VP; any minute/NP	-Infinity
+
+Secretary Gates expected any minute here to brief reporters, the first military briefing on the record about the U.S. military involvement in delivering humanitarian aid.
+the U.S. military involvement/NP; delivering/VP; humanitarian aid/NP	-Infinity
+<end>20080814145954.061</end>
+

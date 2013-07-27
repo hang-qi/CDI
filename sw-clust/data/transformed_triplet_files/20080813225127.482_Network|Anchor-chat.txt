@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080813225127.482</start>
+<end>20080813225142.864</end>
+Our Carol Costello | is monitoring | the stories 
+he | likes | Mamma Miami 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080814223713.697</start>
+<end>20080814223713.697</end>
+Detroit's embattled mayor | can go | the Democratic Convention 
+Barack Obama | want | Barack Obama 

@@ -1,0 +1,6 @@
+<story>Crime|Pakistani-bus-bombing</story>
+<start>20080812123116.540</start>
+<end>20080812123132.556</end>
+12 people | are | Pakistan 
+The bomb | was placed | a car 
+an area | populated | Islamic extremists 

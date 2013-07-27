@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Spanish-basketball-team-racism</story>
+<start>20080814124558.153</start>
+<end>20080814124604.993</end>
+this photo of the Spanish basketball team | raising | a fuss 

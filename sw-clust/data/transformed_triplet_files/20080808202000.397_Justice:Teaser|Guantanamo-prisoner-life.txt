@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Guantanamo-prisoner-life</story>
+<start>20080808202000.397</start>
+<end>20080808202011.675</end>
+what life | looks | some prisoners 

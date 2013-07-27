@@ -1,0 +1,6 @@
+<story>Accident:Teaser|Tractor-plunges-into-Chesapeake</story>
+<start>20080811021404.742</start>
+<end>20080811021559.691</end>
+some of the vehicles | ended | in real bad shape 
+a picture of a vehicle | falling | a bridge 
+gephydrophobia | means | fear 

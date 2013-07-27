@@ -1,0 +1,5 @@
+<story>Health:Teaser|Rising-medicine-prices</story>
+<start>20080811124755.504</start>
+<end>20080811125045.207</end>
+Some | getting | people 
+Our medical correspondent Elizabeth Cohen | is standing | Atlanta 

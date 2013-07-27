@@ -1,0 +1,6 @@
+<story>Network|Promo</story>
+<start>20080815020919.523</start>
+<end>20080815020929.433</end>
+we | have | a new Web 
+Erica Hill | will | special content 
+Just | go | AC360 

@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Environmentally-friendly-postal-service</story>
+<start>20080812160110.302</start>
+<end>20080812160114.139</end>
+the U.S. Postal Service | is proving | the U.S. Postal Service 

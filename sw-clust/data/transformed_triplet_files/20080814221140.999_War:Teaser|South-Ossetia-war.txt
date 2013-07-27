@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814221140.999</start>
+<end>20080814221149.574</end>
+the U.S. | intervene | a military operation 

@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war</story>
+<start>20080812183422.758</start>
+<end>20080812183445.214</end>
+we | want to alert | our viewers 
+the money | 've been paying | gas 

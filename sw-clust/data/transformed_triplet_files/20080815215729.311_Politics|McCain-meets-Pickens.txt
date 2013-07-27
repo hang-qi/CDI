@@ -1,0 +1,10 @@
+<story>Politics|McCain-meets-Pickens</story>
+<start>20080815215729.311</start>
+<end>20080815215752.301</end>
+Senator John McCain | met | Colorado 
+McCain | traveled | Aspen 
+Pickens | has been running | a national ad campaign 
+his ideas | weaning | the U.S. 
+The pair | met | private 
+The meeting | was closed | reporters 
+McCain | planned to meet | campaign advisers 

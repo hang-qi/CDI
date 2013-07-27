@@ -1,0 +1,4 @@
+<story>NULL</story>
+<start>20080810170012.000</start>
+<end>20080810170252.837</end>
+today | 'm having | some fascinating conversations 

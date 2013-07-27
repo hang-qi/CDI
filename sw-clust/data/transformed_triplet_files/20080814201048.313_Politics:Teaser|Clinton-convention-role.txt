@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814201048.313</start>
+<end>20080814201058.923</end>
+Hillary Clinton | reach | a new agreement 
+the plan | to let | Clinton's name 

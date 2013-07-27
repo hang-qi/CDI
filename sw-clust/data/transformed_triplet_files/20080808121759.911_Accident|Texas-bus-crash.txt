@@ -1,0 +1,11 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808121759.911</start>
+<end>20080808122038.236</end>
+we | 're continuing to follow | breaking news of that deadly bus crash north 
+Police | now saying | 13 people 
+surgery | fighting | Police now saying 13 people lives 
+We | 're getting breaking | details 
+a bus | plunged | a highway bridge 
+four people | are | critical condition 
+The bus | was carrying | 55 people 
+investigators | think | a blown tire 

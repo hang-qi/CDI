@@ -1,0 +1,9 @@
+<story>Weather:Teaser|US</story>
+<start>20080814121128.318</start>
+<end>20080814121337.714</end>
+He | 's tracking | extreme weather 
+a lot | to talk | today 
+We | 're going to start | the tropics 
+We | 'll talk | this thing 
+we | 're going to talk | tropics 
+we | 're going to talk | sea turtles 

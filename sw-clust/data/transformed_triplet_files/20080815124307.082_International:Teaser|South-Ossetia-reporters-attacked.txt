@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-reporters-attacked</story>
+<start>20080815124307.082</start>
+<end>20080815124558.353</end>
+reporters | caught | the cross fire 
+the cross fire | 's | just bullets and bombs 

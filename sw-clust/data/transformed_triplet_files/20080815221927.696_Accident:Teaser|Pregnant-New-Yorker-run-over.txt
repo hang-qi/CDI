@@ -1,0 +1,6 @@
+<story>Accident:Teaser|Pregnant-New-Yorker-run-over</story>
+<start>20080815221927.696</start>
+<end>20080815221937.840</end>
+some say | comes straight | fiction 
+A tragedy | takes | the life of a pregnant mother 
+a superhuman effort | to save | a pregnant mother child 

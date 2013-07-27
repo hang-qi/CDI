@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war-oil-pipelines</story>
+<start>20080812213623.079</start>
+<end>20080812213904.140</end>
+Georgia | have | an impact 

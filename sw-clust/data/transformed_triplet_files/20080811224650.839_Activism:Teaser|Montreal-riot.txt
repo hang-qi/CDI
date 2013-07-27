@@ -1,0 +1,5 @@
+<story>Activism:Teaser|Montreal-riot</story>
+<start>20080811224650.839</start>
+<end>20080811224659.314</end>
+Anger | spills | the streets 
+the mayor | are trying to apse | Montreal's immigrant community 

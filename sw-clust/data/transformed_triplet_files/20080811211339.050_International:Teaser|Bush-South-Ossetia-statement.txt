@@ -1,0 +1,5 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080811211339.050</start>
+<end>20080811211345.790</end>
+We | 're waiting | President Bush 
+We | have n't got | an indication 

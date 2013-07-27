@@ -1,0 +1,4 @@
+<story>Network|Intro</story>
+<start>20080811203907.109</start>
+<end>20080811203911.947</end>
+Our Carol Costello | is monitoring | stories 

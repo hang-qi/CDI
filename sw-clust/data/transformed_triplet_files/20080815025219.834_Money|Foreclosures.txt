@@ -1,0 +1,5 @@
+<story>Money|Foreclosures</story>
+<start>20080815025219.834</start>
+<end>20080815025231.946</end>
+foreclosure | jumped | 55 percent 
+Florida | were | some of the hardest hit states 

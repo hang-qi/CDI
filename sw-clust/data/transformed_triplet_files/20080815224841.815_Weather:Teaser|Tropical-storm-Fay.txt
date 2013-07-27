@@ -1,0 +1,4 @@
+<story>Weather:Teaser|Tropical-storm-Fay</story>
+<start>20080815224841.815</start>
+<end>20080815224847.922</end>
+We | 're tracking | Tropical Storm Fay 

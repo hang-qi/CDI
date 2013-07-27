@@ -1,0 +1,4 @@
+<story>Social:Teaser|Race-factor-presidential-election</story>
+<start>20080814013556.318</start>
+<end>20080814013853.429</end>
+We | 'll tackle | another controversial topic , race 

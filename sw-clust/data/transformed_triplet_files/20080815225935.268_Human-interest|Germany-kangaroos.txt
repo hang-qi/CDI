@@ -1,0 +1,4 @@
+<story>Human-interest|Germany-kangaroos</story>
+<start>20080815225935.268</start>
+<end>20080815225943.076</end>
+two kangaroos | tussle | a zoo 

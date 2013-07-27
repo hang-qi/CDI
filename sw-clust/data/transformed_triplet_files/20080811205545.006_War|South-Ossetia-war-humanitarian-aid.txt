@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war-humanitarian-aid</story>
+<start>20080811205545.006</start>
+<end>20080811205550.111</end>
+families | flee | families like yours home 
+the fighting | to find | Red Cross humanitarian aid 

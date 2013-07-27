@@ -1,0 +1,10 @@
+<story>International|Bush-attends-Olympics</story>
+<start>20080811123034.231</start>
+<end>20080811123106.630</end>
+President bush | heading back | the U.S. 
+President Bush | spoke | the Chinese President Hu Jintao 
+the need | to allow | religious freedom 
+China | understand | we 
+future presidents | to understand | the relationship 
+America | is engaged | China 
+we | may have | some disagreements 

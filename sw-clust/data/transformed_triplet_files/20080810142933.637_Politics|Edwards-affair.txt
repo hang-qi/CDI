@@ -1,0 +1,4 @@
+<story>Politics|Edwards-affair</story>
+<start>20080810142933.637</start>
+<end>20080810142941.345</end>
+we | 'll dig | the John Edwards story 

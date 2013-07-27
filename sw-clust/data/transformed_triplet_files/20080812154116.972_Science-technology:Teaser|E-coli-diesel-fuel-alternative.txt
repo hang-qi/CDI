@@ -1,0 +1,5 @@
+<story>Science-technology:Teaser|E-coli-diesel-fuel-alternative</story>
+<start>20080812154116.972</start>
+<end>20080812154413.782</end>
+tiny bacteria | make | a difference 
+we | 're going to check | a fuel alternative 

@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080812025248.731</start>
+<end>20080812025519.181</end>
+John Edwards | telling | the truth 
+he | covering | the real story 
+We | 've got | the `` Raw Politics 

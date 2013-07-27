@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Powell-presidential-endorsement</story>
+<start>20080814031618.509</start>
+<end>20080814031626.884</end>
+he | about to endorse | Barack Obama 
+That story | has been floating | today 
+We | 've got | the `` Raw Politics 

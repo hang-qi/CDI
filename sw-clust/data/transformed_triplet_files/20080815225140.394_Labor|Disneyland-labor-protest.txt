@@ -1,0 +1,5 @@
+<story>Labor|Disneyland-labor-protest</story>
+<start>20080815225140.394</start>
+<end>20080815225157.611</end>
+The costumed demonstrators | were arrested | yesterday 
+they | consider | unaffordable health care 

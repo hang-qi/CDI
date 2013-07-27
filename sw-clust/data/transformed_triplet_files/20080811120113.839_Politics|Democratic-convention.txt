@@ -1,0 +1,8 @@
+<story>Politics|Democratic-convention</story>
+<start>20080811120113.839</start>
+<end>20080811120132.558</end>
+the Democratic National Committee | has announced | its line-up 
+its convention speakers | confirming | what CNN 
+that Hillary Clinton | will speak | Tuesday 
+Michelle Obama | will speak | the night 
+Wednesday night | will feature | the still undecided vice presidential candidate 

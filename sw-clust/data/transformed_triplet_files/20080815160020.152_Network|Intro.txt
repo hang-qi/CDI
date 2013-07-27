@@ -1,0 +1,5 @@
+<story>Network|Intro</story>
+<start>20080815160020.152</start>
+<end>20080815160040.172</end>
+we | 're | the stories 
+Gerri Willis | is | today 

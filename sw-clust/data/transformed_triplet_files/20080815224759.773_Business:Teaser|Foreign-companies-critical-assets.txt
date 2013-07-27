@@ -1,0 +1,5 @@
+<story>Business:Teaser|Foreign-companies-critical-assets</story>
+<start>20080815224759.773</start>
+<end>20080815224810.651</end>
+We | 'll have | that story 
+foreign companies | spending | billions of dollars 

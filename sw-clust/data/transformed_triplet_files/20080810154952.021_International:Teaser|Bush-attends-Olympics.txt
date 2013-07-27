@@ -1,0 +1,5 @@
+<story>International:Teaser|Bush-attends-Olympics</story>
+<start>20080810154952.021</start>
+<end>20080810154959.595</end>
+we | 're going to get | a live report 
+President Bush | is attending | the Olympic Games 

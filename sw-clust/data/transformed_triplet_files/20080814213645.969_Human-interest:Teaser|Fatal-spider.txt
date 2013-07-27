@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Fatal-spider</story>
+<start>20080814213645.969</start>
+<end>20080814213944.948</end>
+the medical mystery | started | a bite 

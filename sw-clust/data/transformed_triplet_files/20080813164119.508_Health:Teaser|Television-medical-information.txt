@@ -1,0 +1,5 @@
+<story>Health:Teaser|Television-medical-information</story>
+<start>20080813164119.508</start>
+<end>20080813164127.015</end>
+we | 've got | important information 
+one segment of the population | gets | State officials medical information 

@@ -1,0 +1,6 @@
+<story>Network|Outro</story>
+<start>20080816025316.191</start>
+<end>20080816025341.783</end>
+the place | to be | politics 
+each candidate | announces | his V.P. choice 
+we | 'll bring | his V.P. For months now , reporters and pundits have been looking for clues 

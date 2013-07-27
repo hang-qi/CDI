@@ -1,0 +1,7 @@
+<story>Entertainment:Teaser|Isaac-Hayes-death</story>
+<start>20080811023035.098</start>
+<end>20080811023053.717</end>
+We | know | this entertainer 
+our parents | know | this entertainer 
+our kids | know | this entertainer 
+we | continue to develop | this information 

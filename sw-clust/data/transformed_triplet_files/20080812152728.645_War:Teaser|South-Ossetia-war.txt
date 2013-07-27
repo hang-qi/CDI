@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812152728.645</start>
+<end>20080812152735.918</end>
+Russia and Georgia | come | blows 

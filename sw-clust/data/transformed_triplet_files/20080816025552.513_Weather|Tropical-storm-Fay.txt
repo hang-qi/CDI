@@ -1,0 +1,7 @@
+<story>Weather|Tropical-storm-Fay</story>
+<start>20080816025552.513</start>
+<end>20080816025626.981</end>
+A new tropical storm | has formed | the Caribbean 
+Meteorologist Chad Myers | has | the latest 
+We | have | our sixth named storm 
+over land and storms | get | water 

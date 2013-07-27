@@ -1,0 +1,4 @@
+<story>International|France-protests-Dalai-Lama-visit</story>
+<start>20080815225928.662</start>
+<end>20080815225935.268</end>
+demonstrators | stand | a banner and protest 

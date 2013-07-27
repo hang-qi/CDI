@@ -1,0 +1,6 @@
+<story>Politics|McCain-convention</story>
+<start>20080811122045.376</start>
+<end>20080811122055.620</end>
+questions | swirling | this morning 
+he | will make | a one and done pledge 
+a good idea | to seek | just a single term 

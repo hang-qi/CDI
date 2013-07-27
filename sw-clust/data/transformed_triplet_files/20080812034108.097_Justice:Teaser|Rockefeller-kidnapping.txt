@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Rockefeller-kidnapping</story>
+<start>20080812034108.097</start>
+<end>20080812034118.508</end>
+the man | kidnapped | his own daughter 

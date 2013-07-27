@@ -1,0 +1,6 @@
+<story>Sports|Olympics</story>
+<start>20080812122202.987</start>
+<end>20080812122217.968</end>
+South Korea's | got | 12 
+the home team | is still winning | the race 
+China's | got | 11 gold medals 

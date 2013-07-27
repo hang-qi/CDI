@@ -1,0 +1,6 @@
+<story>Money|Gas-prices</story>
+<start>20080812024620.910</start>
+<end>20080812024639.462</end>
+The price of gasoline | fell | the 25th day 
+Gas prices | remain | more than $ 1 
+they | were | last August 

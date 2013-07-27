@@ -1,0 +1,14 @@
+<story>Business|Male-retail-sales</story>
+<start>20080812120925.730</start>
+<end>20080812121012.844</end>
+people | see | the movie 
+they | 'll get where | we 
+we | did n't mean to find | anybody 
+We | 'll have | more 
+men | have been | a clothes buying spree 
+We | have | recent data 
+a market research firm | showed | men's wear sales 
+the year period | ending | May 
+Women's sales of clothing | actually fell | 3.5 percent 
+the new | slimmed | styles 
+women's wear | have painted | themselves 

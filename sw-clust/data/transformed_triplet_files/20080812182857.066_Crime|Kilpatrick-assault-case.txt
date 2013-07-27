@@ -1,0 +1,5 @@
+<story>Crime|Kilpatrick-assault-case</story>
+<start>20080812182857.066</start>
+<end>20080812182912.548</end>
+A judge | has ruled | he 
+The state attorney general | had argued otherwise | the mayor 

@@ -1,0 +1,5 @@
+<story>Weather|US</story>
+<start>20080812130909.214</start>
+<end>20080812131108.333</end>
+the rain | 's heading | the south 
+We | could use | the rain 

@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-campaign</story>
+<start>20080812122229.180</start>
+<end>20080812122458.262</end>
+Hillary Clinton | refused to follow | advice 

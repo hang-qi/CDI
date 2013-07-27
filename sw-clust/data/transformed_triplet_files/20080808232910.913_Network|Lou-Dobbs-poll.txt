@@ -1,0 +1,5 @@
+<story>Network|Lou-Dobbs-poll</story>
+<start>20080808232910.913</start>
+<end>20080808232930.733</end>
+the border incursion | was | quote 
+the exact location of the border | is encouraging | more incursions 

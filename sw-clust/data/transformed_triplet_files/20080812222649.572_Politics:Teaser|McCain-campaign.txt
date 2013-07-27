@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080812222649.572</start>
+<end>20080812222701.017</end>
+he | speaks | all Americans 
+we | sending | mixed messages 

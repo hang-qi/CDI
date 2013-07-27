@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Arctic-oil-drilling</story>
+<start>20080813161107.297</start>
+<end>20080813161115.572</end>
+We | 'll hear | both sides of the Capitol Hill aisle 

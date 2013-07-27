@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-opening-ceremony</story>
+<start>20080813022609.866</start>
+<end>20080813022810.920</end>
+she | amazed | the crowd 
+now | 's coming | fire 

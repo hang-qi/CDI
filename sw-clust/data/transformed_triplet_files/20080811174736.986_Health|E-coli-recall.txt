@@ -1,0 +1,7 @@
+<story>Health|E-coli-recall</story>
+<start>20080811174736.986</start>
+<end>20080811174805.514</end>
+The Agriculture Department | has announced | a recall of more than a million pounds 
+The meat | has been linked | some 31 cases of E. coli 
+The recall | covers | primal cuts 
+subprimal cuts | boxed | beef 

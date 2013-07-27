@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Home-heating-costs</story>
+<start>20080815160703.688</start>
+<end>20080815160708.393</end>
+the best time | to think | home heating oil 

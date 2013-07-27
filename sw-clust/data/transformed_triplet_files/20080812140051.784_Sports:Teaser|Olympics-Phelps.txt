@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812140051.784</start>
+<end>20080812140109.268</end>
+He | needs | eight 

@@ -1,0 +1,6 @@
+<story>War|South-Ossetia-war</story>
+<start>20080812123148.105</start>
+<end>20080812123206.223</end>
+he | has called | off military action 
+Russian war planes | have attacked | two villages 
+Medvedev | is meeting | French President Nicolas Sarkozy 

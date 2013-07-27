@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080811214119.509</start>
+<end>20080811214129.519</end>
+John McCain | hopes to overcome | Barack Obama's lead 
+He | 's getting | help 

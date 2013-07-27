@@ -1,0 +1,1245 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810160048.046</start>
+We'll have the latest on this dangerous situation.
+We/NP; 'll have/VP; the latest/NP	-Infinity
+<end>20080810160056.421</end>
+
+<story>Politics:Teaser|Presidential-campaign-economic-plan</story>
+<start>20080810160056.421</start>
+OBAMA: We're going to invest $150 billion over the next decade and leverage billions of dollars more in private capital to harness America's energy and create five million jobs in the process.
+We/NP; 're going to invest/VP; $ 150 billion/NP	-Infinity
+
+OBAMA: We're going to invest $150 billion over the next decade and leverage billions of dollars more in private capital to harness America's energy and create five million jobs in the process.
+private capital/NP; to harness/VP; America's energy/NP	-Infinity
+
+MCCAIN: What we need is an economic strategy, an economic surge, a successful economic surge to keep jobs here at home and create new ones.
+a successful economic surge/NP; to keep/VP; jobs/NP	-Infinity
+
+MCCAIN: What we need is an economic strategy, an economic surge, a successful economic surge to keep jobs here at home and create new ones.
+home/NP; create/VP; new ones/NP	-Infinity
+
+We'll ask the governors of two battleground states, Republican Charlie Crist of Florida and Democrat Ed Rendell of Pennsylvania.
+We/NP; 'll ask/VP; the governors of two battleground states/NP	-Infinity
+<end>20080810160133.524</end>
+
+<story>Politics:Teaser|Hillary-Clinton-loss</story>
+<start>20080810160133.524</start>
+BLOOMBERG: With Hillary back on the job, you ain't seen nothing yet.
+BLOOMBERG/NP; :/VP With/PP; Hillary/NP	-Infinity
+
+BLITZER: We'll talk with New York City Mayor Michael Bloomberg about Senator Clinton's future, the presidential race, and much more.
+We/NP; 'll talk/VP with/PP; New York City Mayor Michael Bloomberg/NP	-Infinity
+<end>20080810160148.573</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810160148.573</start>
+BLITZER: And Barack Obama may be on vacation, but John McCain isn't taking time off, and neither are we.
+Barack Obama/NP; may be/VP on/PP; vacation/NP	-Infinity
+
+BLITZER: And Barack Obama may be on vacation, but John McCain isn't taking time off, and neither are we.
+John McCain/NP; is n't taking/VP; time/NP	-Infinity
+<end>20080810160219.270</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080810160219.270</start>
+We'll get to our conversation with Governor Rendell and Mayor Bloomberg in just a moment.
+We/NP; 'll get/VP to/PP; our conversation/NP	-Infinity
+
+But we're following breaking news involving the conflict between Russia and the neighboring republic of Georgia.
+news/NP; involving/VP; the conflict/NP	-Infinity
+
+Richard Roth is standing by, live at the United Nations today where the Security Council is meeting in emergency session.
+the Security Council/NP; is meeting/VP in/PP; emergency session/NP	-Infinity
+
+U.N. CORRESPONDENT : Well, the latest is the Georgian ambassador has issued a very dramatic, passionate appeal to the members of the United Nations Security Council, asking for diplomatic and humanitarian intervention.
+the Georgian ambassador/NP; has issued/VP; a very dramatic , passionate appeal/NP	-Infinity
+
+The United States ambassador to the U.N. Zalmay Khalilzad is currently speaking to the Security Council, saying there's been a dangerous, dramatic development with Russian expansion, military operations against Georgia, and there is grave concern here about development in on Abkhazia, which there is filled with people who are more closer to Russia than Georgia , though it's Georgia territory, though highly disputed.
+the U.N. Zalmay Khalilzad/NP; is currently speaking/VP to/PP; the Security Council/NP	-Infinity
+
+The United States ambassador to the U.N. Zalmay Khalilzad is currently speaking to the Security Council, saying there's been a dangerous, dramatic development with Russian expansion, military operations against Georgia, and there is grave concern here about development in on Abkhazia, which there is filled with people who are more closer to Russia than Georgia , though it's Georgia territory, though highly disputed.
+which/NP; is filled/VP with/PP; people/NP	-Infinity
+
+There's even anger there that there will be a resolution move against Russia.
+anger/NP; will be/VP; a resolution move/NP	-Infinity
+
+But because it has a veto, Moscow would certainly kill that resolution.
+a resolution move against Russia/NP; has/VP; a veto/NP	-Infinity
+
+But because it has a veto, Moscow would certainly kill that resolution.
+Moscow/NP; would certainly kill/VP; that resolution/NP	-Infinity
+
+BLITZER: Is there a sense that if the Russians go ahead and veto any strong resolution, obviously if the Security Council, if the members want to condemn Russia for its military actions in Georgia, what happens then?
+the members/NP; want to condemn/VP; Russia/NP	-Infinity
+
+ROTH : That's what would happen and has been happening since Russia has been very angry about any statement that would point the finger at Moscow for the flare-up in fighting.
+Russia/NP; has been/VP about/PP; any statement/NP	-Infinity
+
+Moscow has blamed Georgia for biting off more than it could chew.
+Moscow/NP; has blamed/VP; Georgia/NP	-Infinity
+
+All hope rested on diplomat elsewhere in the union and direct appeals.
+All hope/NP; rested/VP on/PP; diplomat/NP	-Infinity
+
+But the Georgian ambassador just said to the council that the Russia president failed to even talk to the Georgian president when he was appealing for some type of cease-fire.
+the Georgian ambassador/NP; said/VP to/PP; the council/NP	-Infinity
+
+But the Georgian ambassador just said to the council that the Russia president failed to even talk to the Georgian president when he was appealing for some type of cease-fire.
+the Russia president/NP; failed to even talk/VP to/PP; the Georgian president/NP	-Infinity
+
+But the Georgian ambassador just said to the council that the Russia president failed to even talk to the Georgian president when he was appealing for some type of cease-fire.
+he/NP; was appealing/VP for/PP; some type of cease-fire/NP	-Infinity
+
+BLITZER: We're hopefully going to be talking this hour with the president of Georgia, Mikheil Saakashvili.
+We/NP; 're hopefully going to be talking/VP; this hour/NP	-Infinity
+
+We're standing by live for that.
+We/NP; 're standing/VP by/PP; live/NP	-Infinity
+
+Matthew Chance has been on the front lines.
+Matthew Chance/NP; has been/VP on/PP; the front lines/NP	-Infinity
+
+He's now in Tbilisi.
+He/NP; is now/VP in/PP; Tbilisi/NP	-Infinity
+
+He's joining us live with an update on the military battle.
+an/NP; update/VP on/PP; the military battle/NP	-Infinity
+
+CHANCE : Well Wolf, the latest is that Georgian forces have moved, active site, the area where they've been in the most intense conflict with Russia over the course of the past several days.
+they/NP; 've been/VP in/PP; the most intense conflict/NP	-Infinity
+
+They've done that because of two reasons.
+They/NP; 've done/VP that/PP because/PP; of two reasons/NP	-Infinity
+
+One, in the hope that it will create the situation, create the circumstances on the ground for a cease-fire to come into force.
+One/NP; will create/VP; the situation/NP	-Infinity
+
+One, in the hope that it will create the situation, create the circumstances on the ground for a cease-fire to come into force.
+a cease-fire/NP; to come/VP into/PP; force/NP	-Infinity
+
+The other reason they say, Georgian officials, that they made this order, they made this withdrawal at this time is because they've come over the course of the past 24 hours under such intense military pressure from the Russians, a ferocious bombardment by Russian artillery, war planes conducting air strikes again forces in South Ossetia, as well as others, against other targets around Georgia as well.
+they/NP; made/VP; this order/NP	-Infinity
+
+The other reason they say, Georgian officials, that they made this order, they made this withdrawal at this time is because they've come over the course of the past 24 hours under such intense military pressure from the Russians, a ferocious bombardment by Russian artillery, war planes conducting air strikes again forces in South Ossetia, as well as others, against other targets around Georgia as well.
+they/NP; made/VP; this withdrawal/NP	-Infinity
+
+The other reason they say, Georgian officials, that they made this order, they made this withdrawal at this time is because they've come over the course of the past 24 hours under such intense military pressure from the Russians, a ferocious bombardment by Russian artillery, war planes conducting air strikes again forces in South Ossetia, as well as others, against other targets around Georgia as well.
+they/NP; 've come/VP over/PP; the course of the past 24 hours/NP	-Infinity
+
+The other reason they say, Georgian officials, that they made this order, they made this withdrawal at this time is because they've come over the course of the past 24 hours under such intense military pressure from the Russians, a ferocious bombardment by Russian artillery, war planes conducting air strikes again forces in South Ossetia, as well as others, against other targets around Georgia as well.
+war planes/NP; conducting/VP; air strikes/NP	-Infinity
+
+We cannot confront the Russians anymore and we have to go back to the position we were in before these hostilities, you know, kind of started off.
+We/NP; can not confront/VP; the Russians/NP	-Infinity
+
+We cannot confront the Russians anymore and we have to go back to the position we were in before these hostilities, you know, kind of started off.
+we/NP; have to go back/VP to/PP; the position/NP	-Infinity
+
+We cannot confront the Russians anymore and we have to go back to the position we were in before these hostilities, you know, kind of started off.
+we/NP; were/VP in/PP before/PP; these hostilities/NP	-Infinity
+
+The hope being that that will lead to a cease-fire.
+The hope/NP; being/VP; the hope that it will create the situation/NP	-Infinity
+
+But at the moment, there's still very much -- no cease- fire in place and there is still reports from around the country of Russian war planes striking at targets across Georgia, Wolf.
+place/NP; is still/VP; reports/NP	-Infinity
+
+But at the moment, there's still very much -- no cease- fire in place and there is still reports from around the country of Russian war planes striking at targets across Georgia, Wolf.
+around the country of Russian war planes/NP; striking/VP at/PP; targets/NP	-Infinity
+
+And I said, we're hoping to speak later this hour live with the president of Georgia, Mikheil Saakashvili.
+we/NP; 're hoping to speak later/VP; this hour/NP	-Infinity
+<end>20080810160631.288</end>
+
+<story>Politics:Teaser|Charlie-Crist-interview</story>
+<start>20080810160631.288</start>
+He's by all accounts on the short list for vice presidential running mate for John McCain.
+He/NP; is/VP by/PP; all accounts/NP	-Infinity
+<end>20080810160645.302</end>
+
+<story>Politics|US-infrastructure</story>
+<start>20080810160645.302</start>
+But right now we're joined by two other influential politicians.
+we/NP; 're joined/VP by/PP; two other influential politicians/NP	-Infinity
+
+Both of you are teaming up with a Republican, Arnold Schwarzenegger, the governor of California to try to do something about the nation's infrastructure right now.
+the governor of California/NP; to try to do/VP; something/NP	-Infinity
+
+BLOOMBERG: Well, the country's stopped investing in infrastructure.
+the country's/NP; stopped investing/VP in/PP; infrastructure/NP	-Infinity
+
+If you go back, Jefferson invested in canals, opened up the West.
+Jefferson/NP; invested/VP in/PP; canals/NP	-Infinity
+
+Roosevelt invested in public works, brought us out of the Depression and gave us the infrastructure we needed for decades.
+Roosevelt/NP; invested/VP in/PP; public works/NP	-Infinity
+
+Roosevelt invested in public works, brought us out of the Depression and gave us the infrastructure we needed for decades.
+we/NP; needed/VP for/PP; decades/NP	-Infinity
+
+Eisenhower built the interstate highway system.
+Eisenhower/NP; built/VP; the interstate highway system/NP	-Infinity
+
+Since then, public works have become pork barrel things.
+public works/NP; have become/VP; pork barrel things/NP	-Infinity
+
+And Ed Rendell really deserves all the credit for this.
+Ed Rendell/NP; deserves/VP; all the credit/NP	-Infinity
+
+Arnold Schwarzenegger and I are just so thrilled to be joined him.
+Arnold Schwarzenegger/NP; are just so thrilled to be joined/VP; Arnold Schwarzenegger/NP	-Infinity
+
+We've got to make Washington understand that if we don't make the investments now, no matter how tough they are, no matter how politically popular they may be, we're not going to have a society for our kids and grandkids.
+We/NP; 've got to make/VP; Washington/NP	-Infinity
+
+We've got to make Washington understand that if we don't make the investments now, no matter how tough they are, no matter how politically popular they may be, we're not going to have a society for our kids and grandkids.
+we/NP; do n't make/VP; the investments/NP	-Infinity
+
+We've got to make Washington understand that if we don't make the investments now, no matter how tough they are, no matter how politically popular they may be, we're not going to have a society for our kids and grandkids.
+we/NP; 're not going to have/VP; a society/NP	-Infinity
+
+Nearly half of all the bridges in the United States will exceed their life span in 15 years.
+the United States/NP; will exceed/VP; their life span/NP	-Infinity
+
+And rising costs prevent the states, like Pennsylvania, from maintenance and construction.
+rising costs/NP; prevent/VP; the states/NP	-Infinity
+
+Here's a question I asked Senator Levin and Senator Cornyn just about this just a little while ago on LATE EDITION.
+a question/NP; asked/VP; Senator Levin/NP	-Infinity
+
+At a time when the U.S. is in such desperate financial straits, needing to repair infrastructure like roads and bridges, and the U.S. taxpayer is still spending billions in Iraq to do infrastructure development there and they have a huge oil budget surplus, $80 billion sitting in banks right now, what does that say to you?
+the U.S./NP; is/VP in/PP; such desperate financial straits/NP	-Infinity
+
+At a time when the U.S. is in such desperate financial straits, needing to repair infrastructure like roads and bridges, and the U.S. taxpayer is still spending billions in Iraq to do infrastructure development there and they have a huge oil budget surplus, $80 billion sitting in banks right now, what does that say to you?
+the U.S. taxpayer/NP; is still spending/VP; billions/NP	-Infinity
+
+At a time when the U.S. is in such desperate financial straits, needing to repair infrastructure like roads and bridges, and the U.S. taxpayer is still spending billions in Iraq to do infrastructure development there and they have a huge oil budget surplus, $80 billion sitting in banks right now, what does that say to you?
+Iraq/NP; to do/VP; infrastructure development/NP	-Infinity
+
+At a time when the U.S. is in such desperate financial straits, needing to repair infrastructure like roads and bridges, and the U.S. taxpayer is still spending billions in Iraq to do infrastructure development there and they have a huge oil budget surplus, $80 billion sitting in banks right now, what does that say to you?
+they/NP; have/VP; a huge oil budget surplus/NP	-Infinity
+
+At a time when the U.S. is in such desperate financial straits, needing to repair infrastructure like roads and bridges, and the U.S. taxpayer is still spending billions in Iraq to do infrastructure development there and they have a huge oil budget surplus, $80 billion sitting in banks right now, what does that say to you?
+$ 80 billion/NP; sitting/VP in/PRT; banks/NP	-Infinity
+
+RENDELL: Well, it says to me, and I don't mean to be political, but what Senator Obama's been saying is correct.
+a time when the U.S. is in such desperate financial straits/NP; says/VP to/PP; me/NP	-Infinity
+
+We are robbing our future by spending the amount of money we're spending in Iraq and letting the Iraqis off the hook.
+We/NP; are robbing/VP; our future/NP	-Infinity
+
+We are robbing our future by spending the amount of money we're spending in Iraq and letting the Iraqis off the hook.
+we/NP; 're spending/VP in/PP; Iraq/NP	-Infinity
+
+We have challenges -- the mayor is absolutely right.
+We/NP; have/VP; challenges/NP	-Infinity
+
+We're in danger of becoming a second or third-rate economic power if we don't turn our attention to our infrastructure.
+We/NP; 're/VP in/PP; danger/NP	-Infinity
+
+We're in danger of becoming a second or third-rate economic power if we don't turn our attention to our infrastructure.
+we/NP; do n't turn/VP; our attention/NP	-Infinity
+
+Just a week and a year ago, you saw what happened in Minnesota., Pennsylvania leads the nation in structurally deficient bridges.
+Pennsylvania/NP; leads/VP; the nation/NP	-Infinity
+
+I've gone from $250 million a year to over $1 billion a year and we're barely making a dent.
+we/NP; 're barely making/VP; a dent/NP	-Infinity
+
+We can't get there without smart, federal intervention and good federal money distributed in the right way, not politics, not pork barrel.
+We/NP; ca n't get there/VP without/PP; smart , federal intervention/NP	-Infinity
+
+We can't get there without smart, federal intervention and good federal money distributed in the right way, not politics, not pork barrel.
+good federal money/NP; distributed/VP in/PP; the right way/NP	-Infinity
+
+BLITZER: They seem to be pretty sturdy right now, but I want your reaction to what a lot of Americans see as an outrage, that American taxpayers are spending billions and billions of dollars on bridge reconstruction in Iraq, but -- at a time when that funding could be used right here in the United States.
+a lot of Americans/NP; see/VP as/PP; an outrage/NP	-Infinity
+
+BLITZER: They seem to be pretty sturdy right now, but I want your reaction to what a lot of Americans see as an outrage, that American taxpayers are spending billions and billions of dollars on bridge reconstruction in Iraq, but -- at a time when that funding could be used right here in the United States.
+American taxpayers/NP; are spending/VP; billions and billions of dollars/NP	-Infinity
+
+BLITZER: They seem to be pretty sturdy right now, but I want your reaction to what a lot of Americans see as an outrage, that American taxpayers are spending billions and billions of dollars on bridge reconstruction in Iraq, but -- at a time when that funding could be used right here in the United States.
+that funding/NP; could be used right here/VP in/PP; the United States/NP	-Infinity
+
+We may have foreign policy concerns and obligations overseas.
+We/NP; may have/VP; foreign policy concerns/NP	-Infinity
+
+And in New York, we've reached into the taxpayers' pockets and we've been fixing up all the bridges with our own money.
+we/NP; 've reached/VP into/PP; the taxpayers/NP	-Infinity
+
+And in New York, we've reached into the taxpayers' pockets and we've been fixing up all the bridges with our own money.
+we/NP; 've been fixing/VP up/PRT; all the bridges/NP	-Infinity
+
+And other states may not have the wherewithal, if even they had the will, to go and do it.
+other states/NP; may not have/VP; the wherewithal/NP	-Infinity
+
+And other states may not have the wherewithal, if even they had the will, to go and do it.
+they/NP; had/VP; the will/NP	-Infinity
+
+And it's not just the bridges that are substandard and getting worse, while we're not maintaining them; we aren't building the next set of bridges for an increased population and a different kind of technology and different living places and patterns and transportation kinds of things.
+the will/NP; 's just/VP; the bridges/NP	-Infinity
+
+And it's not just the bridges that are substandard and getting worse, while we're not maintaining them; we aren't building the next set of bridges for an increased population and a different kind of technology and different living places and patterns and transportation kinds of things.
+we/NP; 're not maintaining/VP; the wherewithal/NP	-Infinity
+
+And it's not just the bridges that are substandard and getting worse, while we're not maintaining them; we aren't building the next set of bridges for an increased population and a different kind of technology and different living places and patterns and transportation kinds of things.
+we/NP; are n't building/VP; the next set of bridges/NP	-Infinity
+
+It's our airports that can't handle the number of flights.
+our airports/NP; ca n't handle/VP; the number of flights/NP	-Infinity
+
+When you look at these two presidential candidates right now, who's got a better plan dealing with the nation's infrastructure?
+a better plan/NP; dealing/VP with/PP; the nation's infrastructure/NP	-Infinity
+
+BLOOMBERG: Well, I think they've both said that we have to have better infrastructure, and they've basically left it at that.
+we/NP; have to have/VP; better infrastructure/NP	-Infinity
+
+BLOOMBERG: Well, I think they've both said that we have to have better infrastructure, and they've basically left it at that.
+they/NP; 've basically left/VP; Mayor Bloomberg in just a moment/NP	-Infinity
+
+(LAUGHTER) What I've wanted to hear from both of them is how they'd going to pay for it, what we can't have if we invest the money in this -- that's a hard question to answer, but one the public has a right to know -- and how they'll bring Congress along.
+LAUGHTER/NP; 've wanted to hear/VP from/PP; both of these two presidential candidates/NP	-Infinity
+
+(LAUGHTER) What I've wanted to hear from both of them is how they'd going to pay for it, what we can't have if we invest the money in this -- that's a hard question to answer, but one the public has a right to know -- and how they'll bring Congress along.
+they/NP; 'd going to pay/VP for/PP; -LRB- LAUGHTER -RRB- What I 've wanted to hear from both of them/NP	-Infinity
+
+(LAUGHTER) What I've wanted to hear from both of them is how they'd going to pay for it, what we can't have if we invest the money in this -- that's a hard question to answer, but one the public has a right to know -- and how they'll bring Congress along.
+we/NP; ca n't have/VP; we/NP	-Infinity
+
+(LAUGHTER) What I've wanted to hear from both of them is how they'd going to pay for it, what we can't have if we invest the money in this -- that's a hard question to answer, but one the public has a right to know -- and how they'll bring Congress along.
+the public/NP; has/VP; a right/NP	-Infinity
+
+(LAUGHTER) What I've wanted to hear from both of them is how they'd going to pay for it, what we can't have if we invest the money in this -- that's a hard question to answer, but one the public has a right to know -- and how they'll bring Congress along.
+they/NP; 'll bring/VP; Congress/NP	-Infinity
+
+A president can provide a vision, but it's Congress that's got to vote the money.
+A president/NP; can provide/VP; a vision/NP	-Infinity
+
+A president can provide a vision, but it's Congress that's got to vote the money.
+Congress/NP; 's got to vote/VP; the money/NP	-Infinity
+
+BLITZER: We're going to speak to Governor Charlie Crist in a little while, the governor of Florida.
+We/NP; 're going to speak/VP to/PP; Governor Charlie Crist/NP	-Infinity
+
+I know he'll have a different answer.
+he/NP; 'll have/VP; a different answer/NP	-Infinity
+
+RENDELL: Well, Senator Obama has proposed an infrastructure bank funded with $60 billion of public/private money.
+Senator Obama/NP; has proposed/VP; an infrastructure bank/NP	-Infinity
+
+And the infrastructure bank's important because it gets it out of pork barrel politics, and has a group of experts determine which are the most cost-effective and the most needed federal projects.
+an infrastructure bank funded with $ 60 billion of public\/private money/NP; gets/VP; an infrastructure bank funded with $ 60 billion of public\/private money/NP	-Infinity
+
+And the infrastructure bank's important because it gets it out of pork barrel politics, and has a group of experts determine which are the most cost-effective and the most needed federal projects.
+a group of experts/NP; determine/VP; which/NP	-Infinity
+
+Interestingly, Wolf, the $10 to $12 billion a month we're spending in Iraq comes to about $140 million a year.
+we/NP; 're spending/VP in/PP; Iraq/NP	-Infinity
+
+The American Society of Civil Engineers says we could repair all of the American infrastructure, all of the things that Mayor Bloomberg talked about, water and waste water systems, passenger rail, freight rail, for bout $1.6 trillion, in one shot.
+we/NP; could repair/VP; all of the American infrastructure/NP	-Infinity
+
+That $10 billion to $12 billion a month, $144 a year -- that's the debt service if we had federal capital budget.
+we/NP; had/VP; federal capital budget/NP	-Infinity
+
+And that's going to put more people to work than anything Washington's done.
+a month/NP; 's going to put/VP; more people/NP	-Infinity
+<end>20080810161301.512</end>
+
+<story>Politics|Presidential-campaign-economic-plan</story>
+<start>20080810161301.512</start>
+Very interesting, Obama got 40 percent; McCain got 40 percent; 16 percent of independent voters -- and you're an independent right now -- undecided.
+Obama/NP; got/VP; 40 percent/NP	-Infinity
+
+Very interesting, Obama got 40 percent; McCain got 40 percent; 16 percent of independent voters -- and you're an independent right now -- undecided.
+McCain/NP; got/VP; 40 percent/NP	-Infinity
+
+I think both candidates really are principled people who have experience and want to take this country forward.
+principled people/NP; have/VP; experience/NP	-Infinity
+
+Both have ideas, but I don't think the public understands where either is going, or at least how they're going to get us there.
+Both/NP; have/VP; ideas/NP	-Infinity
+
+Obama's $60 billion bank is a great idea, but how are you ever going to get Congress to give up the right to bring home goodies to their state... (LAUGHTER) ... or to their districts?
+Congress/NP; to give/VP up/PRT; the right/NP	-Infinity
+
+And if you're going to vote for one candidate or another, one of the things that should be at the top of your checklist is, who would be the better person to do that?
+one of the things/NP; should be/VP at/PP; the top of your checklist/NP	-Infinity
+
+I'll make my decision before I get to the voting booth... (CROSSTALK) BLITZER: But Senator McCain -- Ssenator McCain, Mayor Bloomberg, he says that this pork barrel spending with, the so-called earmarks, that's right at the top of his agenda.
+my decision/NP; get/VP to/PP; the voting booth/NP	-Infinity
+
+And he says he'll veto any spending bills that has this kind of spending in it.
+he/NP; 'll veto/VP; any spending bills/NP	-Infinity
+
+He's been on the right side of this issue.
+He/NP; 's been/VP on/PP; the right side of this issue/NP	-Infinity
+
+They keep the president from being able to pick and choose which things to veto and which things to not veto.
+They/NP; keep/VP; the president/NP	-Infinity
+
+And we've got to find a ways to get out of that paralysis that this partisanship in this country has forced on us.
+we/NP; 've got to find/VP; a ways/NP	-Infinity
+
+Other countries are investing and building infrastructure, when we are not.
+Other countries/NP; are investing and building/VP; infrastructure/NP	-Infinity
+
+I had dinner with the ambassador of the United Nations from one of the emirates, and all he talked about at dinner was how his country was making investments so they won't be dependent on foreign oil when the oil in their country runs out.
+he/NP; talked about/VP; dinner/NP	-Infinity
+
+I had dinner with the ambassador of the United Nations from one of the emirates, and all he talked about at dinner was how his country was making investments so they won't be dependent on foreign oil when the oil in their country runs out.
+his country/NP; was making/VP; investments/NP	-Infinity
+
+I had dinner with the ambassador of the United Nations from one of the emirates, and all he talked about at dinner was how his country was making investments so they won't be dependent on foreign oil when the oil in their country runs out.
+they/NP; wo n't be/VP on/PP; foreign oil/NP	-Infinity
+<end>20080810161512.309</end>
+
+<story>Politics|Clinton-convention-role</story>
+<start>20080810161512.309</start>
+Governor Rendell, as a former chairman of the Democratic Party and as a former supporter of Hillary Clinton, now a supporter of Barack Obama, how do you feel about this notion of having a formal role call at the Democratic convention in Denver, in a couple of weeks, in which Hillary Clinton's name would be put in nomination?
+about this notion/NP; having/VP; a formal role call/NP	-Infinity
+
+Governor Rendell, as a former chairman of the Democratic Party and as a former supporter of Hillary Clinton, now a supporter of Barack Obama, how do you feel about this notion of having a formal role call at the Democratic convention in Denver, in a couple of weeks, in which Hillary Clinton's name would be put in nomination?
+Hillary Clinton's name/NP; would be put/VP in/PP; nomination/NP	-Infinity
+
+RENDELL: Well, I think that's for Senator Clinton and Senator Obama to work out.
+Governor Rendell/NP; is/VP for/PP; Senator Clinton/NP	-Infinity
+
+And whatever they work out is satisfactory to us.
+they/NP; work/VP; out/NP	-Infinity
+
+We all know Senator Obama will win the roll call.
+all/NP; know/VP; Senator Obama/NP	-Infinity
+
+BLITZER: She says it would be a catharsis?
+-LRB- CROSSTALK -RRB- BLITZER/NP; would be/VP; a catharsis/NP	-Infinity
+
+RENDELL: Well, it might be a catharsis for some of us.
+-LRB- CROSSTALK -RRB- BLITZER/NP; might be/VP; a catharsis/NP	-Infinity
+
+BLITZER: We're out of time.
+We/NP; 're/VP out/PP of/PP; time/NP	-Infinity
+
+The country needs all the help it can get right now.
+The country/NP; needs/VP; all the help/NP	-Infinity
+<end>20080810161635.759</end>
+
+<story>Politics:Teaser|Charlie-Crist-interview</story>
+<start>20080810161635.759</start>
+And straight ahead, we'll get a different perspective, the Florida governor, Charlie Crist.
+we/NP; 'll get/VP; a different perspective/NP	-Infinity
+
+He announced a new partnership this week as well.
+He/NP; announced/VP; a new partnership/NP	-Infinity
+<end>20080810161645.569</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810161645.569</start>
+And later, three of the best political team on television will break down all the ups and downs of this week on the campaign trail, including the political fallout from the John Edwards scandal.
+television/NP; will break/VP down/PRT; all the ups and downs of this week/NP	-Infinity
+<end>20080810161959.930</end>
+
+<story>Politics|Charlie-Crist-interview</story>
+<start>20080810161959.930</start>
+BLITZER: My next guest is widely thought to be on the so-called short list to join John McCain on the Republican ticket.
+My next guest/NP; is widely thought to be/VP on/PP; the so-called short list/NP	-Infinity
+
+Have they started a formal vetting process with you?
+they/NP; started/VP; a formal vetting process/NP	-Infinity
+
+In other words, are they asking for documents, IRS returns, stuff like that?
+they/NP; asking/VP for/PP; documents/NP	-Infinity
+
+Listen to Senator Obama, because he's been very critical of the man you want to be the president of the United States, John McCain.
+he/NP; 's been/VP of/PP; the man/NP	-Infinity
+
+(BEGIN VIDEO CLIP) OBAMA: Instead of offering a comprehensive plan that will lower gas prices, the centerpiece of his entire energy pan is more drilling.
+Instead/NP; offering/VP; a comprehensive plan/NP	-Infinity
+
+(END VIDEO CLIP) BLITZER: Like Senator McCain, like President Bush for that matter, governor, you've recently changed your opinion and you now support offshore oil drilling off the coast of Florida.
+your opinion/NP; support/VP; offshore oil drilling/NP	-Infinity
+
+And from a Florida perspective, so long as it's far enough, clean enough and safe enough, we're in favor of looking into it in order to alleviate the problem at the pump.
+we/NP; 're/VP in/PP; favor/NP	-Infinity
+
+And from a Florida perspective, so long as it's far enough, clean enough and safe enough, we're in favor of looking into it in order to alleviate the problem at the pump.
+a Florida perspective/NP; to alleviate/VP; the problem/NP	-Infinity
+
+This is a guy who has a common sense approach.
+a guy/NP; has/VP; a common sense approach/NP	-Infinity
+
+It's not just drilling, as well, but he talks about solar, wind, nuclear, which is very important.
+he/NP; talks/VP; about solar , wind , nuclear/NP	-Infinity
+
+We're transferring $700 billion of wealth to the Middle East, to some people who don't even like the United States.
+We/NP; 're transferring/VP; $ 700 billion of wealth/NP	-Infinity
+
+We're transferring $700 billion of wealth to the Middle East, to some people who don't even like the United States.
+some people/NP; do n't even/VP like/PP; the United States/NP	-Infinity
+
+We could be keeping that money at home, helping us with infrastructure, helping the American family keep more of the money that they earn in their pocket and helping our country be as strong as she possibly can.
+We/NP; could be keeping/VP; that money/NP	-Infinity
+
+We could be keeping that money at home, helping us with infrastructure, helping the American family keep more of the money that they earn in their pocket and helping our country be as strong as she possibly can.
+the American family/NP; keep/VP; more of the money/NP	-Infinity
+
+We could be keeping that money at home, helping us with infrastructure, helping the American family keep more of the money that they earn in their pocket and helping our country be as strong as she possibly can.
+they/NP; earn/VP in/PP; some people who do n't pocket/NP	-Infinity
+
+We could be keeping that money at home, helping us with infrastructure, helping the American family keep more of the money that they earn in their pocket and helping our country be as strong as she possibly can.
+our country/NP; be/VP; she/NP	-Infinity
+
+BLITZER: So I take it, governor, you're ready to start seeing a whole bunch of nuclear power stations being built in Florida?
+a whole bunch of nuclear power stations/NP; being built/VP in/PP; Florida/NP	-Infinity
+
+I have recently appointed a new public service commission which regulates that industry, the utility industry, in our state.
+which/NP; regulates/VP that/PP; industry/NP	-Infinity
+
+They're allowing for two more nuclear plants in the Sunshine State.
+They/NP; 're allowing/VP for/PP; two more nuclear plants/NP	-Infinity
+
+Well, safety and welfare and health in Florida means that those people have power, especially if we have to face hurricanes.
+Florida/NP; means/VP; those people/NP	-Infinity
+
+Well, safety and welfare and health in Florida means that those people have power, especially if we have to face hurricanes.
+we/NP; have to face/VP; hurricanes/NP	-Infinity
+
+I want to make sure that the people I work for are always safe, they have the power that they need, the lights go on.
+they/NP; have/VP; the power/NP	-Infinity
+
+That helps keep our community safe and our great law enforcement officers do their job better as well.
+our great law enforcement officers/NP; do/VP; enforcement officers job/NP	-Infinity
+
+He's worried about California, you're obviously worried about Florida.
+He/NP; is/VP about/PP; California/NP	-Infinity
+
+And we know all about hurricanes, category three, category four, category five.
+we/NP; know/VP; all/NP	-Infinity
+
+Are you concerned that a hurricane could cause some of those offshore oil drilling prospects that you're now supporting off the coast of Florida, damaging the beaches, the coastlines of your beautiful state?
+a hurricane/NP; could cause/VP; some of those offshore oil drilling prospects/NP	-Infinity
+
+CRIST: Like I tell my friends in the press corps in Tallahassee all the time, it's my job to be concerned about everything in Florida.
+my job/NP; to be concerned/VP about/PP; everything/NP	-Infinity
+
+Of course I'm concerned about it.
+course/NP; 'm/VP about/PP; CRIST : Like I tell my friends in the press corps in Tallahassee all the time , it 's my job to be concerned about everything in Florida ./NP	-Infinity
+
+That's why I think it's important that when we look at this issue, that it is in fact far enough, that it is safe enough and that it is clean enough to protect those beaches.
+we/NP; look/VP at/PP; this issue/NP	-Infinity
+
+That's why I think it's important that when we look at this issue, that it is in fact far enough, that it is safe enough and that it is clean enough to protect those beaches.
+danger of becoming a second or third-rate economic power if we do n't turn our attention to our infrastructure/NP; is/VP in/PP; fact/NP	-Infinity
+
+85 million people toured the Sunshine State last year alone.
+85 million people/NP; toured/VP; the Sunshine State/NP	-Infinity
+
+Disney had a record attendance last year.
+Disney/NP; had/VP; a record attendance/NP	-Infinity
+
+Things are going well in Florida.
+Things/NP; are going well/VP in/PP; Florida/NP	-Infinity
+
+We have challenges, but they are presenting opportunities.
+We/NP; have/VP; challenges/NP	-Infinity
+
+We have challenges, but they are presenting opportunities.
+they/NP; are presenting/VP; opportunities/NP	-Infinity
+
+Number one, we've got to protect our environment.
+we/NP; 've got to protect/VP; our environment/NP	-Infinity
+
+He was the first guy who talked to me in fact about climate change and being concerned about it.
+He/NP; was/VP; the first guy/NP	-Infinity
+
+He was the first guy who talked to me in fact about climate change and being concerned about it.
+climate change/NP; being concerned/VP about/PP; first/NP	-Infinity
+
+He's a great leader in California and he's doing right by my sister, who happen to be a Californian.
+he/NP; 's doing right/VP by/PP; my sister/NP	-Infinity
+
+But we have to do things that help our domestic supply.
+we/NP; have to do/VP; things/NP	-Infinity
+
+The people who founded this country got it.
+The people/NP; founded/VP; this country/NP	-Infinity
+
+They understood it when they signed the Declaration of Independence, not dependence.
+They/NP; understood/VP; the country of Russian war planes striking at targets across Georgia , Wolf/NP	-Infinity
+
+They understood it when they signed the Declaration of Independence, not dependence.
+they/NP; signed/VP; the Declaration of Independence , not dependence/NP	-Infinity
+
+We need to make sure our country is independent, that we're strong, that we're not dependent on foreign oil.
+We/NP; need to make/VP; sure our country/NP	-Infinity
+
+We need to make sure our country is independent, that we're strong, that we're not dependent on foreign oil.
+we/NP; 're/VP on/PP; foreign oil/NP	-Infinity
+
+BLITZER: Here's another criticism leveled against Senator McCain from Senator Obama.
+another criticism/NP; leveled/VP against/PP; Senator McCain/NP	-Infinity
+
+(BEGIN VIDEO CLIP) OBAMA: If Senator McCain wants to talk about how Washington is broken, that's a debate I'm happy to have.
+Senator McCain/NP; wants to talk/VP about/PP; Washington/NP	-Infinity
+
+Because Senator McCain's energy plan reads like an early Christmas list for oil and gas lobbyists.
+Senator McCain's energy plan/NP; reads/VP like/PP; an early Christmas list/NP	-Infinity
+
+(END VIDEO CLIP) BLITZER: And he also makes the point that of the energy crisis and the dependence on foreign oil imports the United States over the past 30 years are simply getting worse and worse and worse.
+he/NP; makes/VP; the point/NP	-Infinity
+
+(END VIDEO CLIP) BLITZER: And he also makes the point that of the energy crisis and the dependence on foreign oil imports the United States over the past 30 years are simply getting worse and worse and worse.
+the past 30 years/NP; are simply getting/VP; worse and worse and worse/NP	-Infinity
+
+He says Senator McCain has been in Washington for 26 of those years and he really hasn't done much to stop it.
+Senator McCain/NP; has been/VP in/PP; Washington/NP	-Infinity
+
+I know Senator Obama has not been in the United States Senate for that long, but he's been there long enough to vote.
+Senator Obama/NP; has not been/VP in/PP; the United States Senate/NP	-Infinity
+
+Long enough to vote in 2005.
+Long enough/NP; to vote/VP in/PP; 2005/NP	-Infinity
+
+And the irony here is that Senator Obama voted for the Bush/Cheney energy policy that gave billions of dollars in subsidies to big oil.
+Senator Obama/NP; voted/VP for/PP; the Bush\/Cheney energy policy/NP	-Infinity
+
+It was Senator John McCain, the maverick, the independent, he's his own guy, goes down to the floor of the U.S. Senate and on that same 2005 Bush/Cheney energy bill voted against it.
+that same 2005 Bush\/Cheney energy bill/NP; voted/VP against/PP; that same 2005/NP	-Infinity
+
+John McCain puts country first.
+John McCain/NP; puts/VP; country/NP	-Infinity
+
+He understands the most important thing we need to do is to protect Americans, fight for them.
+He/NP; understands/VP; the most important thing/NP	-Infinity
+
+We don't need to be subsidizing big oil.
+We/NP; do n't need to be subsidizing/VP; big oil/NP	-Infinity
+
+We need to be fighting for the American people.
+We/NP; need to be fighting/VP for/PP; the American people/NP	-Infinity
+
+John McCain has a right, Senator Obama just doesn't understand it and that's a shame.
+John McCain/NP; has/VP; a right/NP	-Infinity
+
+John McCain has a right, Senator Obama just doesn't understand it and that's a shame.
+Senator Obama/NP; does n't understand/VP; a right/NP	-Infinity
+<end>20080810162641.097</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810162641.097</start>
+Coming up next on LATE EDITION, we're standing by for a live conversation with the president of the republic of Georgia.
+we/NP; 're standing/VP by/PRT for/PP; a live conversation/NP	-Infinity
+
+Even as Russian war planes are dropping bombs right now on this small nation's capital Tbilisi.
+Russian war planes/NP; are dropping/VP; bombs/NP	-Infinity
+<end>20080810162945.782</end>
+
+<story>Network:Teaser|Preview</story>
+<start>20080810162945.782</start>
+He takes a comprehensive look at international affairs with world leaders, policy experts and journalists.
+He/NP; takes/VP; a comprehensive look/NP	-Infinity
+<end>20080810162956.125</end>
+
+<story>Justice:Teaser|Pakistani-president-impeached</story>
+<start>20080810162956.125</start>
+This week, Fareed discusses the future of the Pakistani government with a former politician, Imran Khan.
+Fareed/NP; discusses/VP; the future of the Pakistani government/NP	-Infinity
+
+(BEGIN VIDEO CLIP) IMRAN KHAN, FORMER PAKISTAN PARLIAMENT MEMBER: Musharraf's policy made the rich richer and impoverished the poor.
+Musharraf's policy/NP; made/VP; the rich richer/NP	-Infinity
+
+So the anti-Musharraf feeling went against the U.S.
+the anti-Musharraf feeling/NP; went/VP against/PP; the U.S./NP	-Infinity
+
+Now the U.S. should learn that they must back Democratic forces and not actually prop up a military dictator.
+the U.S./NP; should learn/VP; they/NP	-Infinity
+
+Now the U.S. should learn that they must back Democratic forces and not actually prop up a military dictator.
+Democratic forces/NP; not actually prop/VP up/PRT; a military dictator/NP	-Infinity
+<end>20080810163018.614</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810163025.688</start>
+And up next on LATE EDITION, we're going to be talking live with the president of the republic of Georgia , Mikheil Saakashvili.
+we/NP; 're going to be talking/VP with/PP; the president of the republic/NP	-Infinity
+
+The latest on the breaking news, the escalating fighting between his country and neighboring Russia.
+his country/NP; neighboring/VP; Russia/NP	-Infinity
+
+We'll get the analysis on what's going on.
+We/NP; 'll get/VP; the analysis/NP	-Infinity
+<end>20080810163041.604</end>
+
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080810163041.604</start>
+We'll assess the latest on the political fallout from the John Edwards scandal .
+We/NP; 'll assess/VP; the latest/NP	-Infinity
+<end>20080810163411.881</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080810163411.881</start>
+The fighting intensifying right now between Russia and Georgia.
+The fighting/NP; intensifying right now/VP between/PP; Russia and Georgia/NP	-Infinity
+
+We'll have all the latest, coming up.
+We/NP; 'll have/VP; all the latest/NP	-Infinity
+<end>20080810163426.195</end>
+
+<story>Politics|Edwards-affair</story>
+<start>20080810163426.195</start>
+Meanwhile, there's important political news we're following as well here in the United States.
+we/NP; 're following as well here/VP in/PP; the United States/NP	-Infinity
+
+Right now, Senator Barack Obama is visiting his grandmother in Hawaii, but John McCain isn't taking a break, neither is our political panel.
+Senator Barack Obama/NP; is visiting/VP; his grandmother/NP	-Infinity
+
+Right now, Senator Barack Obama is visiting his grandmother in Hawaii, but John McCain isn't taking a break, neither is our political panel.
+John McCain/NP; is n't taking/VP; a break/NP	-Infinity
+
+Joe Johns, he keeps politicians honest every weeknight on "ANDERSON COOPER 360."
+he/NP; keeps/VP; politicians/NP	-Infinity
+
+You were there, you had obviously no idea what was going on, that he was having this affair back in 2006 with this woman.
+he/NP; was having/VP; this affair/NP	-Infinity
+
+He was never particularly close with Barack Obama.
+He/NP; was never/VP with/PP; Barack Obama/NP	-Infinity
+
+There was that one time he endorsed Obama.
+he/NP; endorsed/VP; Obama/NP	-Infinity
+
+He's not been out there as a surrogate.
+He/NP; 's not been out/VP as/PP; a surrogate/NP	-Infinity
+
+Look, it's damaging in general to everyone's impression of politicians and how honest they are, but I don't see this as having repercussions on the race.
+one time/NP; is/VP in/PP to/PP; everyone's impression of politicians/NP	-Infinity
+
+HENRY: Democrats are just lucky he didn't win the nomination because right now your show would be a lot more exciting.
+he/NP; did n't win/VP; the nomination/NP	-Infinity
+
+HENRY: Democrats are just lucky he didn't win the nomination because right now your show would be a lot more exciting.
+your show/NP; would be/VP; a lot/NP	-Infinity
+
+The fact that -- not just the affair, but the fact that he ran for president anyway, with apparently both he and his wife knowing that this could come out.
+The fact/NP; --/VP; not/NP	-Infinity
+
+The fact that -- not just the affair, but the fact that he ran for president anyway, with apparently both he and his wife knowing that this could come out.
+he/NP; ran/VP for/PP; president/NP	-Infinity
+
+Listen to what he told Bob Woodruff of ABC News when he had this exclusive interview, sort of explaining everything from his perspective.
+he/NP; told/VP; Bob Woodruff of ABC News/NP	-Infinity
+
+Listen to what he told Bob Woodruff of ABC News when he had this exclusive interview, sort of explaining everything from his perspective.
+he/NP; had/VP; this exclusive interview/NP	-Infinity
+
+Listen to what he told Bob Woodruff of ABC News when he had this exclusive interview, sort of explaining everything from his perspective.
+sort/NP; explaining/VP; everything/NP	-Infinity
+
+My lord and my wife have forgiven me.
+my wife/NP; have forgiven/VP; me/NP	-Infinity
+
+JOHNS: Well, Bill Clinton survived and he got hit with an impeachment hearing.
+Bill Clinton/NP; survived/VP; he/NP	-Infinity
+
+That's a family that's just been through so much.
+a family/NP; 's just been/VP through/PP; so much/NP	-Infinity
+
+They've had a child die, I couldn't imagine that.
+They/NP; 've had/VP; a child die/NP	-Infinity
+
+BLITZER: And Elizabeth Edwards last year was diagnosed with incurable cancer.
+last year/NP; was diagnosed/VP with/PP; incurable cancer/NP	-Infinity
+
+But looking forward, the only thing they have to worry about in the immediate future is this thing dragging out.
+they/NP; have to worry/VP; about/NP	-Infinity
+
+There are these payments floating around and of course he says that he wasn't paying anybody.
+these payments/NP; floating around/VP of/PP; course/NP	-Infinity
+
+There are these payments floating around and of course he says that he wasn't paying anybody.
+he/NP; was n't paying/VP; anybody/NP	-Infinity
+
+She got paid by the campaign.
+She/NP; got paid/VP by/PP; the campaign/NP	-Infinity
+
+There were some lawyer from Dallas who was kicking in some money.
+Dallas/NP; was kicking/VP in/PP; some money/NP	-Infinity
+
+So there's some questions there that need to be answered and there needs to be full disclosure so they can put this thing completely to rest, for the good of the Democrats too.
+they/NP; can put/VP; this thing/NP	-Infinity
+
+BLITZER: And the other point that's still sort of a question mark out there right now, a big question mark.
+the other point/NP; 's still sort/VP of/PP; a question mark/NP	-Infinity
+
+He says he's ready to take a paternity test because a child was born, and she now says, the other woman, that she doesn't want any paternity test.
+she/NP; does n't want/VP; any paternity test/NP	-Infinity
+
+YELLIN: Hollywood couldn't write it this good.
+Hollywood/NP; could n't write/VP; Hollywood/NP	-Infinity
+
+It's just -- he -- you know, now she suddenly doesn't want his to happen, it can't happen without her will, so suddenly it can't be resolved.
+she/NP; does n't want/VP; his to happen/NP	-Infinity
+
+It's just -- he -- you know, now she suddenly doesn't want his to happen, it can't happen without her will, so suddenly it can't be resolved.
+Hollywood/NP; ca n't happen/VP; a child/NP	-Infinity
+
+He's not a candidate, he's not an office holder.
+He/NP; 's/VP; a candidate/NP	-Infinity
+
+He's not a candidate, he's not an office holder.
+he/NP; 's/VP; an office holder/NP	-Infinity
+<end>20080810163750.532</end>
+
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080810163750.532</start>
+BLITZER: Guys, I want all of you to stand by, because there's more presidential politics to discuss, including what Hillary Clinton really wants at the Democratic Convention.
+what Hillary Clinton/NP; wants/VP at/PP; the Democratic Convention/NP	-Infinity
+<end>20080810163757.640</end>
+
+<story>International:Teaser|Saakashvili-interview</story>
+<start>20080810163757.640</start>
+What's the latest in terms of what your government understands as far as the Russian troops and your troops fighting in Georgia?
+your government/NP; understands/VP as/PP as/PP; the Russian troops/NP	-Infinity
+
+What's the latest in terms of what your government understands as far as the Russian troops and your troops fighting in Georgia?
+your troops/NP; fighting/VP in/PP; Georgia/NP	-Infinity
+
+Unfortunately, I don't think he's hearing me yet.
+he/NP; 's hearing/VP; me/NP	-Infinity
+
+We're going to try to clarify that, pick that up, but let's take a quick break.
+let/NP; 's take/VP; a quick break/NP	-Infinity
+
+We'll speak with the president of Georgia right after this .
+We/NP; 'll speak/VP with/PP; the president of Georgia/NP	-Infinity
+<end>20080810164144.199</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080810164144.199</start>
+We're standing to speak live with the president of Georgia, Mikheil Saakashvili.
+We/NP; 're standing to speak/VP with/PP; the president of Georgia/NP	-Infinity
+
+He's in Tbilisi right now.
+He/NP; is/VP in/PP; Tbilisi/NP	-Infinity
+
+There are reports that Russian war plain planes have just bombed the international airport at Tbilisi, the Georgian capital.
+Russian war plain planes/NP; have just bombed/VP; the international airport/NP	-Infinity
+
+As we wait to speak with the Georgian president, let's assess what's going on.
+we/NP; wait to speak/VP with/PP; the Georgian president/NP	-Infinity
+
+President Bush's support of the ascension to NATO by Georgia has been a sticking point with Vladimir Putin.
+Georgia/NP; has been/VP; a sticking point/NP	-Infinity
+
+This raises questions about President Bush's long relationship with Vladimir Putin, whether he's misjudged to Vladimir Putin, as to whether he really wants freedom, whether he really wants democracy.
+he/NP; 's misjudged/VP to/PP; Vladimir Putin/NP	-Infinity
+
+This raises questions about President Bush's long relationship with Vladimir Putin, whether he's misjudged to Vladimir Putin, as to whether he really wants freedom, whether he really wants democracy.
+he/NP; wants/VP; freedom/NP	-Infinity
+
+This raises questions about President Bush's long relationship with Vladimir Putin, whether he's misjudged to Vladimir Putin, as to whether he really wants freedom, whether he really wants democracy.
+he/NP; wants/VP; democracy/NP	-Infinity
+
+BLITZER: So much oil and natural gas flows through the caucuses.
+So much oil and natural gas/NP; flows/VP through/PP; the caucuses/NP	-Infinity
+
+Now, Ukraine, another former republic of the Soviet Union says it's going to ally itself with Georgia against Russia and both of these countries, Ukraine and Georgia, they want to be members of NATO.
+right now/NP; 's going to ally/VP; itself/NP	-Infinity
+
+Now, Ukraine, another former republic of the Soviet Union says it's going to ally itself with Georgia against Russia and both of these countries, Ukraine and Georgia, they want to be members of NATO.
+they/NP; want to be/VP; members of NATO/NP	-Infinity
+
+I was with President Bush when we went to Tbilisi, Georgia, the press corps followed him there.
+we/NP; went/VP to/PP; Tbilisi/NP	-Infinity
+
+I was with President Bush when we went to Tbilisi, Georgia, the press corps followed him there.
+the press corps/NP; followed/VP; Bush/NP	-Infinity
+
+We met with this president, Saakashvili, who came to talk to us, so excited about the democracy that was taking hold in his country and about the implications for that spreading throughout the region.
+We/NP; met/VP with/PP; this president/NP	-Infinity
+
+We met with this president, Saakashvili, who came to talk to us, so excited about the democracy that was taking hold in his country and about the implications for that spreading throughout the region.
+the democracy/NP; was taking/VP; hold/NP	-Infinity
+
+BLITZER: It's an issue that seems to unite Democrats and Republicans right now, Joe.
+an issue/NP; seems to unite/VP; Democrats and Republicans/NP	-Infinity
+
+And the statements that are coming out from John McCain and Barack Obama, I don't see a whole lot of difference in those statements, as well as the statements coming from the Bush administration.
+the statements/NP; are coming/VP out/PRT from/PP; John McCain/NP	-Infinity
+
+And the statements that are coming out from John McCain and Barack Obama, I don't see a whole lot of difference in those statements, as well as the statements coming from the Bush administration.
+the statements/NP; coming/VP from/PP; the Bush administration/NP	-Infinity
+
+The world is watching this, even while we in the United States are kicking around a presidential campaign, it still shows you that the world can be a very dangerous place.
+the United States/NP; are kicking/VP around/PP; a presidential campaign/NP	-Infinity
+
+The world is watching this, even while we in the United States are kicking around a presidential campaign, it still shows you that the world can be a very dangerous place.
+the world/NP; can be/VP; a very dangerous place/NP	-Infinity
+
+BLITZER: Does it bring into light that Hillary Clinton ad that she ran when she was running for the Democratic presidential nomination.
+she/NP; ran when/VP; she/NP	-Infinity
+
+And you look at the John McCain ads, the thing he's doing right now in this race, questioning whether Barack Obama is ready to lead.
+he/NP; 's doing right now/VP in/PP; this race/NP	-Infinity
+
+Americans can watch the headlines and say, oh, my gosh, this is a real, live situation in Georgia and what would these two guys do about it?
+Americans/NP; can watch/VP; the headlines/NP	-Infinity
+
+Americans can watch the headlines and say, oh, my gosh, this is a real, live situation in Georgia and what would these two guys do about it?
+Georgia/NP; would/VP; these two guys/NP	-Infinity
+
+There's a war still going on in Iraq, in Afghanistan.
+a war/NP; going/VP on/PP in/PP; Iraq/NP	-Infinity
+
+Now you see these two countries that want to be NATO allies, Ukraine and Georgia in serious tensions.
+these two countries/NP; want to be/VP; NATO allies/NP	-Infinity
+
+Because obviously, as Joe was saying, the bottom line is that John McCain is trying to say boldly that Barack Obama is not ready to be president.
+John McCain/NP; is trying to say boldly/VP that/PP; Barack Obama/NP	-Infinity
+
+That's why both men in the last few days have been jumping out there, trying to make statements.
+the last few days/NP; have been jumping/VP; out/NP	-Infinity
+
+They want to show that they're ready to be commander in chief, but there's very -- there's real limits to what they can actually do as candidates.
+They/NP; want to show/VP; they/NP	-Infinity
+
+They want to show that they're ready to be commander in chief, but there's very -- there's real limits to what they can actually do as candidates.
+they/NP; can actually do/VP as/PP; candidates/NP	-Infinity
+<end>20080810164549.911</end>
+
+<story>International|Saakashvili-interview</story>
+<start>20080810164549.911</start>
+I think we've connected with the president of the republic of Georgia, Mikheil Saakashvili right now in Tbilisi.
+we/NP; 've connected/VP with/PP; the president of the republic/NP	-Infinity
+
+Mr. President, what is the latest as far as the actual battle, the fighting that is going on between your troops and the Russian troops?
+the fighting/NP; is going/VP on/PRT between/PP; your troops/NP	-Infinity
+
+We sometimes -- our lines get under cyber attack, that's a new technology these days of war.
+our lines/NP; get/VP under/PP; cyber attack/NP	-Infinity
+
+I think -- I mean, the point was that for the last several days, over 150 Russian tanks have entered the Georgian territories on the night of August 7th, and the whole hostility erupted when we responded to the tanks entering the Georgian territory.
+the point/NP; was/VP for/PP; the last several days/NP	-Infinity
+
+I think -- I mean, the point was that for the last several days, over 150 Russian tanks have entered the Georgian territories on the night of August 7th, and the whole hostility erupted when we responded to the tanks entering the Georgian territory.
+150 Russian tanks/NP; have entered/VP; the Georgian territories/NP	-Infinity
+
+I think -- I mean, the point was that for the last several days, over 150 Russian tanks have entered the Georgian territories on the night of August 7th, and the whole hostility erupted when we responded to the tanks entering the Georgian territory.
+the whole hostility/NP; erupted when/VP; we/NP	-Infinity
+
+I think -- I mean, the point was that for the last several days, over 150 Russian tanks have entered the Georgian territories on the night of August 7th, and the whole hostility erupted when we responded to the tanks entering the Georgian territory.
+the tanks/NP; entering/VP; the Georgian territory/NP	-Infinity
+
+We had three days of fighting, but mostly we had -- besides fighting, the main thing was three days of intensifying bombing of Georgia and basically the bombing of 90 percent of predominantly civilian targets.
+We/NP; had/VP; three days of fighting/NP	-Infinity
+
+We had three days of fighting, but mostly we had -- besides fighting, the main thing was three days of intensifying bombing of Georgia and basically the bombing of 90 percent of predominantly civilian targets.
+the main thing/NP; was/VP; three days/NP	-Infinity
+
+BLITZER: Is it true, Mr. President -- excuse me for interrupting -- that Russian war planes have now bombed the international airport where you are in Tbilisi?
+Russian war planes/NP; have now bombed/VP; the international airport/NP	-Infinity
+
+SAAKASHVILI: They've targeted international airport on a number of occasions.
+They/NP; 've/VP; targeted international airport/NP	-Infinity
+
+But they've been hitting -- you know, yesterday they blew up the whole residential quarter, killing lots and lots of people.
+they/NP; blew up/VP; the whole residential quarter/NP	-Infinity
+
+Today, they just hit a residential area in Tbilisi out of any strategic war military or anything, any enterprise.
+they/NP; hit/VP; a residential area/NP	-Infinity
+
+They've been continuously hitting some companies here.
+They/NP; 've been continuously hitting/VP; some companies/NP	-Infinity
+
+In South Ossetia, we control always this part and then Russian-backed separatists, basically Russia directly administered this part.
+we/NP; control always/VP; this part/NP	-Infinity
+
+In South Ossetia, we control always this part and then Russian-backed separatists, basically Russia directly administered this part.
+Russia/NP; administered/VP; this part/NP	-Infinity
+
+Now -- but Russian troops entered in from here, from here and Russian troops also came to our border here, with 100 tanks yesterday night.
+Russian troops/NP; entered in/VP from/PP; here/NP	-Infinity
+
+Now -- but Russian troops entered in from here, from here and Russian troops also came to our border here, with 100 tanks yesterday night.
+Russian troops/NP; came/VP to/PP; our border/NP	-Infinity
+
+Here in Abkhazia, Russians entered yesterday with 100 plus tanks.
+Russians/NP; entered/VP; yesterday/NP	-Infinity
+
+They already had hundreds in place, and 10,000 or 15,000 extra troops.
+They/NP; had/VP; hundreds/NP	-Infinity
+
+So they're here basically in this area.
+they/NP; 're here basically/VP in/PP; this area/NP	-Infinity
+
+BLITZER: The Russians, as you know -- excuse me for a second, the Russians are now disputing assertions from your government that you have pulled out your troops from these disputed areas of Abkhazia.
+the Russians/NP; are now disputing/VP; assertions/NP	-Infinity
+
+BLITZER: The Russians, as you know -- excuse me for a second, the Russians are now disputing assertions from your government that you have pulled out your troops from these disputed areas of Abkhazia.
+your government/NP; have pulled/VP out/PRT; your troops/NP	-Infinity
+
+SAAKASHVILI: Well, look -- I mean, there have been no troops in Abkhazia, we are speaking about South Ossetia.
+we/NP; are speaking/VP about/PP; South Ossetia/NP	-Infinity
+
+We are talking about mass (inaudible) land intrusion of Russia into any countries, bigger than with the force -- the tank force that went into Afghanistan in 1979 or Czechoslovakia in 1968.
+We/NP; are talking/VP about/PP; mass/NP	-Infinity
+
+We are talking about mass (inaudible) land intrusion of Russia into any countries, bigger than with the force -- the tank force that went into Afghanistan in 1979 or Czechoslovakia in 1968.
+the tank force/NP; went/VP into/PP; Afghanistan/NP	-Infinity
+
+So certainly we don't have an interest in pursuing... (CROSSTALK) BLITZER: Excuse me, excuse me.
+we/NP; do n't have/VP; an interest/NP	-Infinity
+
+SAAKASHVILI: I mean, we relocated -- we had our troops in the town of Tskhinvali, and we relocated them out of the town of Tskhinvali outside the zone where they usually were stationed before, after they've completed the task of cleaning there -- basically, they're out.
+we/NP; had/VP; our troops/NP	-Infinity
+
+SAAKASHVILI: I mean, we relocated -- we had our troops in the town of Tskhinvali, and we relocated them out of the town of Tskhinvali outside the zone where they usually were stationed before, after they've completed the task of cleaning there -- basically, they're out.
+we/NP; relocated/VP; the Russian troops and your troops/NP	-Infinity
+
+SAAKASHVILI: I mean, we relocated -- we had our troops in the town of Tskhinvali, and we relocated them out of the town of Tskhinvali outside the zone where they usually were stationed before, after they've completed the task of cleaning there -- basically, they're out.
+they/NP; 've completed/VP; the task/NP	-Infinity
+
+(CROSSTALK) BLITZER: Because they're denying -- the Russian foreign minister is denying it.
+the Russian foreign minister/NP; is denying/VP; -LRB- CROSSTALK -RRB- BLITZER : Because they 're denying --/NP	-Infinity
+
+SAAKASHVILI: Well, I mean -- again, we have no interest whatsoever in pursuing hostilities.
+we/NP; have/VP; no interest/NP	-Infinity
+
+Today I was traveling for the road in Georgia, and I saw with my own eyes, because I also can't take planes because the air belongs now to the Russians -- I saw with my own eyes, it's a holiday season and people are going and now running back to from the seaside holidays and from the mountains, because they had to find safe refuge.
+Today I/NP; was traveling/VP for/PP; the road/NP	-Infinity
+
+Today I was traveling for the road in Georgia, and I saw with my own eyes, because I also can't take planes because the air belongs now to the Russians -- I saw with my own eyes, it's a holiday season and people are going and now running back to from the seaside holidays and from the mountains, because they had to find safe refuge.
+the air/NP; belongs now/VP to/PP; the Russians/NP	-Infinity
+
+Today I was traveling for the road in Georgia, and I saw with my own eyes, because I also can't take planes because the air belongs now to the Russians -- I saw with my own eyes, it's a holiday season and people are going and now running back to from the seaside holidays and from the mountains, because they had to find safe refuge.
+they/NP; had to find/VP; safe refuge/NP	-Infinity
+
+SAAKASHVILI: And I saw with my own eyes how Russian planes were descending very low on the over the road, chasing the cars and dropping bombs in proximity of the place where there was a compilation of cars.
+Russian planes/NP; were descending/VP; very low/NP	-Infinity
+
+SAAKASHVILI: And I saw with my own eyes how Russian planes were descending very low on the over the road, chasing the cars and dropping bombs in proximity of the place where there was a compilation of cars.
+the cars/NP; dropping/VP; bombs/NP	-Infinity
+
+SAAKASHVILI: And I saw with my own eyes how Russian planes were descending very low on the over the road, chasing the cars and dropping bombs in proximity of the place where there was a compilation of cars.
+proximity of the place/NP; was/VP; a compilation of cars/NP	-Infinity
+
+But I had to drive there, and they couldn't do anything about it.
+they/NP; could n't do/VP; anything/NP	-Infinity
+
+And we need to... BLITZER: Mr. President... SAAKASHVILI: And we need to stop... BLITZER: Mr. President, I just want to alert our viewers, we may lose the satellite.
+we/NP; need/VP; to/NP	-Infinity
+
+And we need to... BLITZER: Mr. President... SAAKASHVILI: And we need to stop... BLITZER: Mr. President, I just want to alert our viewers, we may lose the satellite.
+we/NP; may lose/VP; the satellite/NP	-Infinity
+
+If it goes down, that will be the explanation.
+the satellite/NP; will be/VP; the explanation/NP	-Infinity
+
+SAAKASHVILI: The United States and the world community should stop intervention and invasion of my sovereign country... (CROSSTALK) BLITZER: How should the U.S. do that?
+the world community/NP; should stop intervention/VP; invasion of my sovereign country/NP	-Infinity
+
+I think the U.S. has lots of leverage.
+the U.S./NP; has/VP; lots of leverage/NP	-Infinity
+
+And I think there are much bigger things that are at stake here than just Georgia.
+much bigger things/NP; are/VP at/PP; stake/NP	-Infinity
+
+But for the wider world, it's about the future world order.
+the wider world/NP; is/VP about/PP; the future world order/NP	-Infinity
+
+Something that's happening here, you know, people -- history will judge very badly people who are doing this... BLITZER: Well, let me ask... SAAKASHVILI: ... killing (ph) innocent civilians.
+history/NP; will judge very/VP; people/NP	-Infinity
+
+Would you like the United States to offer military assistance to your country right now?
+the United States/NP; to offer/VP; military assistance/NP	-Infinity
+
+SAAKASHVILI: Well, I wouldn't speculate about it, because I think our forces are capable enough, and they've been really doing a good job.
+they/NP; 've been really doing/VP; a good job/NP	-Infinity
+
+But, you know, we need to stop hostility.
+we/NP; need to stop/VP; hostility/NP	-Infinity
+
+We don't need further military action.
+We/NP; do n't need/VP; further military action/NP	-Infinity
+
+We need to stop it.
+We/NP; need to stop/VP; the United States/NP	-Infinity
+
+We need to bring back peace.
+We/NP; need to bring back/VP; peace/NP	-Infinity
+
+We proclaimed a cease-fire.
+We/NP; proclaimed/VP; a cease-fire/NP	-Infinity
+
+We need to bring back peace and to stop these innocent -- senseless, brutal, absolutely unacceptable killings.
+We/NP; need to bring/VP back/PRT; peace/NP	-Infinity
+
+Let me play this little clip.
+me/NP; play/VP; this little clip/NP	-Infinity
+
+I interviewed, in the last hour, the charge d'affairs at the Russian embassy here in Washington, and he leveled a direct charge against you.
+he/NP; leveled/VP; a direct charge/NP	-Infinity
+
+(BEGIN VIDEO CLIP) DARCHIEV: He should be held accountable for the barbaric and treacherous attack on innocent civilians in South Ossetia, that he should be held accountable for the aggression against South Ossetia.
+He/NP; should be held/VP for/PP; the barbaric and treacherous attack/NP	-Infinity
+
+(BEGIN VIDEO CLIP) DARCHIEV: He should be held accountable for the barbaric and treacherous attack on innocent civilians in South Ossetia, that he should be held accountable for the aggression against South Ossetia.
+he/NP; should be held/VP for/PP; the aggression/NP	-Infinity
+
+And the best thing he could do right now is to unconditionally -- I repeat -- unconditionally withdraw his troops and sign a legally binding agreement with Ossetians on non-use of force.
+his troops/NP; sign/VP; a legally binding agreement/NP	-Infinity
+
+SAAKASHVILI: Well, I mean, it sounds a little -- quite Orwellian to me and a little bit like old times, which I still remember.
+END VIDEO CLIP/NP; sounds/VP; a little/NP	-Infinity
+
+I was the youngest president of the world when I got elected, but I still remember old times and I still remember Brezhnev's times.
+old times/NP; remember/VP; Brezhnev's times/NP	-Infinity
+
+We are talking about a place just in the middle of Georgia, in the middle of my country.
+We/NP; are talking/VP about/PP; a place/NP	-Infinity
+
+And what we are talking about is we are talking about -- we controlled most of this area always, but there is a small area directly administered and run by the Russians.
+we/NP; are talking/VP; about/NP	-Infinity
+
+And what we are talking about is we are talking about -- we controlled most of this area always, but there is a small area directly administered and run by the Russians.
+we/NP; controlled most/VP of/PP; this area/NP	-Infinity
+
+And what we are talking about is we are talking about -- we controlled most of this area always, but there is a small area directly administered and run by the Russians.
+a small area/NP; administered and run/VP by/PP; the Russians/NP	-Infinity
+
+And, you know, when they talk about South Ossetian separatists and say "South Ossetian tank," what kind of South Ossetian tank can live there?
+they/NP; talk/VP about/PP; South Ossetian separatists/NP	-Infinity
+
+And this place needs to get back to normal.
+this place/NP; needs to get back/VP to/PP; normal/NP	-Infinity
+
+And certainly... BLITZER: Are you ready, Mr. President, to go back -- are you ready to go back to the status quo ante, what existed last week when there were Russian peacekeepers in that area before the situation escalated?
+last week/NP; were/VP; Russian peacekeepers/NP	-Infinity
+
+SAAKASHVILI: There were Russian peacekeepers and there were Georgian peacekeepers.
+Russian peacekeepers/NP; were/VP; Georgian peacekeepers/NP	-Infinity
+
+And certainly we are willing to go to status quo ante, but certainly this mass intrusion of troops stop, troops should withdraw from sovereign Georgian territory, and we should do our best to just demilitarize the areas and then protect the civilians.
+troops/NP; should withdraw/VP from/PP; sovereign Georgian territory/NP	-Infinity
+
+And certainly we are willing to go to status quo ante, but certainly this mass intrusion of troops stop, troops should withdraw from sovereign Georgian territory, and we should do our best to just demilitarize the areas and then protect the civilians.
+we/NP; should do/VP; our best/NP	-Infinity
+
+And certainly we are willing to go to status quo ante, but certainly this mass intrusion of troops stop, troops should withdraw from sovereign Georgian territory, and we should do our best to just demilitarize the areas and then protect the civilians.
+the areas/NP; protect/VP; the civilians/NP	-Infinity
+
+You know, the point here is we have the population here that is under our control is ethnically Georgian, but also mixed, because we are a multi-ethnic country.
+we/NP; have/VP; the population/NP	-Infinity
+
+There is this town of Tskhinvali that was under control of the Russian peacekeepers, and that's fine.
+this town of Tskhinvali/NP; was/VP under/PP; control of the Russian peacekeepers/NP	-Infinity
+
+So far as we should do our best not to allow a resumption of criminal activities.
+we/NP; should do/VP; our best/NP	-Infinity
+
+The point here is that it got to the point when it's not just a matter of not anymore respecting the borders.
+the point/NP; got/VP to/PP; the point/NP	-Infinity
+
+The point here is that it got to the point when it's not just a matter of not anymore respecting the borders.
+the point/NP; 's just/VP; a matter/NP	-Infinity
+
+The point here is that it got to the point when it's not just a matter of not anymore respecting the borders.
+of/NP; not anymore respecting/VP; the borders/NP	-Infinity
+
+These are very, very high mountains, and we have such a natural boundary that can hardly be overcome even by fast-flying Russian jets.
+we/NP; have/VP; such a natural boundary/NP	-Infinity
+
+BLITZER: But Mr. President, do you honestly believe that Georgia's relatively modest military can compete with a superpower like Russia?
+military/NP; can compete/VP with/PP; a superpower/NP	-Infinity
+
+And certainly, you know, freedom is not about size.
+freedom/NP; is/VP about/PP; size/NP	-Infinity
+
+Freedom is about our ability to, you know, stand up for your ideals, even if it comes at sacrifice of your life.
+Freedom/NP; comes/VP at/PP; sacrifice of your life/NP	-Infinity
+
+But the point here is, our troops have been performing very well, but now we really absolutely need to halt these hostilities, because it's killing people.
+we/NP; need to halt/VP; these hostilities/NP	-Infinity
+
+But the point here is, our troops have been performing very well, but now we really absolutely need to halt these hostilities, because it's killing people.
+the point/NP; 's killing/VP; people/NP	-Infinity
+
+And it's killing much more civilians than it can ever kill the troops.
+the point/NP; 's killing/VP; much more civilians/NP	-Infinity
+
+And it's killing much more civilians than it can ever kill the troops.
+the point/NP; can ever kill/VP; the troops/NP	-Infinity
+
+You know, the planes that are flying over, Georgian troops shot down almost 20 of them.
+Georgian troops/NP; shot down/VP; almost 20 of Georgian troops/NP	-Infinity
+
+Because they're equipped, they have the air defenses, but civilians on the ground, on the roads, in the crowded cafes, at their apartments where they got killed when the whole residential area was destroyed, they're not equipped with air defenses and we cannot supply them with air defenses.
+they/NP; have/VP; the air defenses/NP	-Infinity
+
+Because they're equipped, they have the air defenses, but civilians on the ground, on the roads, in the crowded cafes, at their apartments where they got killed when the whole residential area was destroyed, they're not equipped with air defenses and we cannot supply them with air defenses.
+they/NP; got killed when/VP; the whole residential area/NP	-Infinity
+
+Because they're equipped, they have the air defenses, but civilians on the ground, on the roads, in the crowded cafes, at their apartments where they got killed when the whole residential area was destroyed, they're not equipped with air defenses and we cannot supply them with air defenses.
+they/NP; 're not equipped/VP with/PP; air defenses/NP	-Infinity
+
+Because they're equipped, they have the air defenses, but civilians on the ground, on the roads, in the crowded cafes, at their apartments where they got killed when the whole residential area was destroyed, they're not equipped with air defenses and we cannot supply them with air defenses.
+we/NP; can not supply/VP; civilians on the ground/NP	-Infinity
+
+So the point here is that it's exactly doing that.
+the point/NP; 's exactly doing/VP; the point/NP	-Infinity
+
+So it's not about troops performing or not performing.
+the point/NP; 's/VP about/PP; troops/NP	-Infinity
+
+Its' right now a huge human tragedy on the ground, and we absolutely need it to stop.
+we/NP; need/VP; the point/NP	-Infinity
+
+BLITZER: The Russians say that your troops have killed some 2,000 people in Ossetia among other places.
+The Russians/NP; say/VP that/PP; your troops/NP	-Infinity
+
+Do you have any estimates as far as how many people have been killed and injured so far over the course of these few days of warfare that's been going on?
+far as how many people/NP; have been killed and injured so far/VP over/PP; the course of these few days/NP	-Infinity
+
+And prior to the fighting, anticipating the fighting, local Russian authorities evacuated most of the population.
+local Russian authorities/NP; evacuated/VP; most of the population/NP	-Infinity
+
+And we only responded when after many hours of artillery barrage, after a unilateral cease-fire declared by us that killed lots of people, by the way, because we wouldn't respond on our side.
+we/NP; responded when/VP; after many hours of artillery barrage/NP	-Infinity
+
+And we only responded when after many hours of artillery barrage, after a unilateral cease-fire declared by us that killed lots of people, by the way, because we wouldn't respond on our side.
+we/NP; would n't respond/VP on/PP; our side/NP	-Infinity
+
+Then when I heard around 11:30, 11:50 p.m. that 150 Russian tanks are entering our sovereign territory from this place -- there is a very mountain -- you know, long, mountainous tunnel called the Rocky Tunnel -- into the Georgian territory, our forces were stationed somewhere here.
+150 Russian tanks/NP; are entering/VP; our sovereign territory/NP	-Infinity
+
+Then when I heard around 11:30, 11:50 p.m. that 150 Russian tanks are entering our sovereign territory from this place -- there is a very mountain -- you know, long, mountainous tunnel called the Rocky Tunnel -- into the Georgian territory, our forces were stationed somewhere here.
+mountainous tunnel/NP; called/VP; the Rocky Tunnel/NP	-Infinity
+
+So when they got entered, the only way we could get them was to respond with artillery fire to stop mass land invasion of the sort that happened to Afghanistan and Czechoslovakia in 1968.
+we/NP; could get/VP; people/NP	-Infinity
+
+So when they got entered, the only way we could get them was to respond with artillery fire to stop mass land invasion of the sort that happened to Afghanistan and Czechoslovakia in 1968.
+artillery fire/NP; to stop/VP; mass land invasion of the sort/NP	-Infinity
+
+SAAKASHVILI: Now... BLITZER: Let me interrupt for a second, Mr. President... SAAKASHVILI: Of course, of course, of course there were -- yes .
+me/NP; interrupt/VP for/PP; a second/NP	-Infinity
+
+About 2,000 U.S. citizens live in Georgia.
+About 2,000 U.S. citizens/NP; live/VP in/PP; Georgia/NP	-Infinity
+
+SAAKASHVILI: Well, one has to say that America is very highly regarded in Georgia.
+one/NP; has to say/VP; America/NP	-Infinity
+
+You know, one of the bombs -- one of the unexploded bombs found on a shut down Russian plane yesterday, tragicomically said, "this is for Americans, this is for NATO," in Russian.
+one of the unexploded bombs/NP; found/VP on/PP; a shut down Russian plane/NP	-Infinity
+
+And the point here is that today, two journalists from the West, one Georgian and one Polish, were killed in Tskhinvali by the fire of entering troops from Russia.
+the point/NP; is/VP that/PP; today/NP	-Infinity
+
+And the point here is that today, two journalists from the West, one Georgian and one Polish, were killed in Tskhinvali by the fire of entering troops from Russia.
+the fire/NP; entering/VP; troops/NP	-Infinity
+
+And please, we should halt this violence, halt this madness.
+we/NP; should halt/VP; this violence/NP	-Infinity
+<end>20080810165953.788</end>
+

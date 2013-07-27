@@ -1,0 +1,8 @@
+<story>Politics|Clinton-convention-role</story>
+<start>20080808171557.422</start>
+<end>20080808171622.947</end>
+Bill Clinton | will speak | the third night of the party's convention 
+which | gets | way August 25th 
+The former president's appearance | will come | one day 
+Senator Hillary Clinton | addresses | the party faithful 
+he | 'll speak | the night 

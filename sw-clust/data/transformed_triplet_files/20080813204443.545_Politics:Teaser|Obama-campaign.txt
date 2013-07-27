@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080813204443.545</start>
+<end>20080813204800.876</end>
+Barack Obama | is repeating | John Kerry's mistakes 
+we | 're reading | the convention tea 

@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Packers-Brett-Favre-retirement</story>
+<start>20080810144325.902</start>
+<end>20080810144737.420</end>
+Brett Favre | leaves | the Packers 
+Have journalists | become | cheerleaders 

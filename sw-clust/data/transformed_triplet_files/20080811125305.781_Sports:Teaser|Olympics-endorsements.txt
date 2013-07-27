@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-endorsements</story>
+<start>20080811125305.781</start>
+<end>20080811125545.040</end>
+endorsement deals | are up | grabs 
+companies | try to sign | America's Olympic heroes 

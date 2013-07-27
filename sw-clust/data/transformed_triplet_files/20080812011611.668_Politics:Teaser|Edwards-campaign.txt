@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Edwards-campaign</story>
+<start>20080812011611.668</start>
+<end>20080812011908.245</end>
+The political rumor | exploding | reality 

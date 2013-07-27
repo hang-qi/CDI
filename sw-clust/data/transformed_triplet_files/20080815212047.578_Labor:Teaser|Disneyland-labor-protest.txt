@@ -1,0 +1,6 @@
+<story>Labor:Teaser|Disneyland-labor-protest</story>
+<start>20080815212047.578</start>
+<end>20080815212354.365</end>
+a fairy tale | ending | Disneyland 
+protesters | dressed | Cinderella 
+Tinker Bell | are handcuffed , frisked and loaded | police vans 

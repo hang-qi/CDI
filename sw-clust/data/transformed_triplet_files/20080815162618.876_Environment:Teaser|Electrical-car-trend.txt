@@ -1,0 +1,6 @@
+<story>Environment:Teaser|Electrical-car-trend</story>
+<start>20080815162618.876</start>
+<end>20080815162917.020</end>
+the electric car | sounds | some sort of myth 
+the electric car | be | part of your driving future 
+We | 're going to check | the electric car 

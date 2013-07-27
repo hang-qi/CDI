@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Mexico-city-kidnappings</story>
+<start>20080812171839.484</start>
+<end>20080812171848.626</end>
+your loved one | get | voters in the toss-up state of Ohio 
+a Mexico City gang | is clearly playing | its 

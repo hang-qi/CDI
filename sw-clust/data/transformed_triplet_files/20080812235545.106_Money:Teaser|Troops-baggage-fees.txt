@@ -1,0 +1,5 @@
+<story>Money:Teaser|Troops-baggage-fees</story>
+<start>20080812235545.106</start>
+<end>20080812235810.618</end>
+airlines | keep piling | extra charges 
+they | 're charging | the wrong people 

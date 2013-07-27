@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Vice-presidential-campaign</story>
+<start>20080815201143.367</start>
+<end>20080815201426.063</end>
+he | might consider | a pro-choice vice president 

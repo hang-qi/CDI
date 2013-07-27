@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Swift-boat-book-Obamanation</story>
+<start>20080814031845.690</start>
+<end>20080814031900.371</end>
+a new book | attacking | Barack Obama 
+the same one | went | John Kerry's war credentials 

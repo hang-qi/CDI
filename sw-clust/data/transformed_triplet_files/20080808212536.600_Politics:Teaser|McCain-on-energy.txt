@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-on-energy</story>
+<start>20080808212536.600</start>
+<end>20080808212554.985</end>
+He | is | a news conference 
+he | 's answering | reporters 

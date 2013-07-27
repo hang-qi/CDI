@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812230009.941</start>
+<end>20080812230018.316</end>
+Tonight , Russia | has halted | its invasion of Georgia 
+Which nation | could be | Russia's next target 

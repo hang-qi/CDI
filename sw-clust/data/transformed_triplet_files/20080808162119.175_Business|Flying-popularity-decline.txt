@@ -1,0 +1,5 @@
+<story>Business|Flying-popularity-decline</story>
+<start>20080808162119.175</start>
+<end>20080808162153.943</end>
+an entire industry | flying | the brink of financial uncertainty 
+about 60 million | may affect | American domestic flights 

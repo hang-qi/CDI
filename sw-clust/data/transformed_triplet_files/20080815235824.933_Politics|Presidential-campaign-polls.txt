@@ -1,0 +1,4 @@
+<story>Politics|Presidential-campaign-polls</story>
+<start>20080815235824.933</start>
+<end>20080815235840.182</end>
+the liberal national media | appears to be | Senator Barack Obama 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080811194028.357</start>
+<end>20080811194039.168</end>
+some of you | are saying | your e-mails 
+We | 're going to read | some of you 

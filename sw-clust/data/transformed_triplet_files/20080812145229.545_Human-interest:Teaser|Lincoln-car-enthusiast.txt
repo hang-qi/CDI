@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Lincoln-car-enthusiast</story>
+<start>20080812145229.545</start>
+<end>20080812145511.807</end>
+the Lincoln | goes back | the president of the same name 

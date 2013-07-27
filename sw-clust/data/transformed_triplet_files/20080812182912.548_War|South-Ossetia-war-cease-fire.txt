@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war-cease-fire</story>
+<start>20080812182912.548</start>
+<end>20080812182926.129</end>
+Russia | announced | the Russians 
+the EU | is calling | a provisional cease-fire 

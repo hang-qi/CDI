@@ -1,0 +1,8 @@
+<story>Crime|Melissa-Haller-missing</story>
+<start>20080809002257.875</start>
+<end>20080809002628.819</end>
+She | was | last seen Sunday 
+she | returned | home 
+Her car | was found abandoned | gas 
+Haller | suffers | mental illness 
+120 pounds | has | brown hair 

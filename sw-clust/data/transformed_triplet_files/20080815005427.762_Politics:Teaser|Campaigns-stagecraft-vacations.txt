@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Campaigns-stagecraft-vacations</story>
+<start>20080815005427.762</start>
+<end>20080815005441.409</end>
+Barack Obama | dressed | summer vacation 

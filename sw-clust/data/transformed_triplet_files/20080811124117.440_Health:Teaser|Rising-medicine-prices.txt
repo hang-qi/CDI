@@ -1,0 +1,5 @@
+<story>Health:Teaser|Rising-medicine-prices</story>
+<start>20080811124117.440</start>
+<end>20080811124127.150</end>
+some prescription drug prices | rising | 1,000 percent 
+companies | are getting away | CHETRY : Well , Zain , what about U.S. officials ? 

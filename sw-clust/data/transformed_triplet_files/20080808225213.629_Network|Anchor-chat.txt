@@ -1,0 +1,6 @@
+<story>Network|Anchor-chat</story>
+<start>20080808225213.629</start>
+<end>20080808225225.107</end>
+Let | go back | Jack 
+He | 's got | The Cafferty File 
+The Cafferty File -- Jack | was | an interesting situation 

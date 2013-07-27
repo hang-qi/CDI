@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814171002.934</start>
+<end>20080814171013.645</end>
+Hillary Clinton supporters | get | Hillary Clinton supporters wish 
+The senator's name | will be placed | nomination 

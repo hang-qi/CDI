@@ -1,0 +1,5 @@
+<story>Network|Promo</story>
+<start>20080814234906.975</start>
+<end>20080814234924.125</end>
+Monday my guests | will include | Congressman Elton Gallegly 
+the way | to eliminate | the California state deficit 

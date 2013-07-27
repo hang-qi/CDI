@@ -1,0 +1,8 @@
+<story>Politics|McCain-campaign</story>
+<start>20080814201811.189</start>
+<end>20080814201831.109</end>
+the Democrats | arrive | Denver 
+John McCain | is | Colorado 
+He | has | an event 
+We | 'll be monitoring | his remarks 
+McCain | has | several fund-raisers 

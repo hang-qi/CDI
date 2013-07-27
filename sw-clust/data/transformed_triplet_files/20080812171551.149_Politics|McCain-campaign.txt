@@ -1,0 +1,6 @@
+<story>Politics|McCain-campaign</story>
+<start>20080812171551.149</start>
+<end>20080812171605.997</end>
+Time | to talk | America Votes 2008 
+Republican John McCain | is campaigning | a third straight day 
+McCain | flies | New Jersey 

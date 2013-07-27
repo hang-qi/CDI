@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814234813.455</start>
+<end>20080814234826.001</end>
+We | have | a lot of politics 
+Hillary Clinton's name | will be placed | nomination 
+We | 're going | talk 

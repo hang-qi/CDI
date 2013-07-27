@@ -1,0 +1,4 @@
+<story>Business:Teaser|Kathy-Ireland-interview</story>
+<start>20080812160114.139</start>
+<end>20080812160119.278</end>
+we | 'll talk | supermodel Kathy Ireland 

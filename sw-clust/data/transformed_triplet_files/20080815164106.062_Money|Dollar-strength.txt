@@ -1,0 +1,7 @@
+<story>Money|Dollar-strength</story>
+<start>20080815164106.062</start>
+<end>20080815164128.818</end>
+The U.S. dollar | bucking | the trend of some foreign currencies 
+the dollar | ascending | a near two 
+economic slowdown | hitting | the rest of the world 
+which | saw | its economy 

@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Electrical-car-trend</story>
+<start>20080815163329.539</start>
+<end>20080815163334.778</end>
+We | 're going to check | Sounds 

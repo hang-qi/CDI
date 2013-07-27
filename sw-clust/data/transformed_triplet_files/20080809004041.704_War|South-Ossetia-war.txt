@@ -1,0 +1,10 @@
+<story>War|South-Ossetia-war</story>
+<start>20080809004041.704</start>
+<end>20080809004103.993</end>
+we | begin | news 
+hundreds | are | a major conflict 
+Georgia | ran | the offensive today 
+That province | is called | South Ossetia 
+they | want to return | a breakaway province 
+Two thousand Georgian troops | will now head | home 
+tomorrow | to fight | this conflict 

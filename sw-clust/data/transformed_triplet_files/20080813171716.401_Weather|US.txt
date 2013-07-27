@@ -1,0 +1,17 @@
+<story>Weather|US</story>
+<start>20080813171716.401</start>
+<end>20080813171844.822</end>
+we | 're seeing | storms 
+showers | are popping up | the airports 
+those delays | are going to be | the southeast 
+the brunt of this weather | will be | northern Florida 
+a tornado watch box | was just issued | northern Florida 
+the tornado | is possible there | any of these storms 
+We | watched | kind of a rotating storm 
+we | did find | something today 
+They | canceled | all the flights 
+we | 're seeing | kind of a little bit 
+we | 'll watch | the rest of the night 
+This dry air | has | kind of entrained itself 
+dry air's | going away | this flare-up 
+We | 'll see | this turns 

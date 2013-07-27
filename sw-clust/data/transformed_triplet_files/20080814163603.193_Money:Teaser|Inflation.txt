@@ -1,0 +1,6 @@
+<story>Money:Teaser|Inflation</story>
+<start>20080814163603.193</start>
+<end>20080814163624.014</end>
+certain cities | are doing better | others 
+better | comes | energy 
+inflation | will affect | your life 

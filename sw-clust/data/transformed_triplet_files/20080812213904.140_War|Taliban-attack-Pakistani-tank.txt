@@ -1,0 +1,9 @@
+<story>War|Taliban-attack-Pakistani-tank</story>
+<start>20080812213904.140</start>
+<end>20080812213930.500</end>
+Our Carol Costello | is monitoring | the stories 
+Taliban insurgents | claim | responsibility 
+which | killed | at least 12 people 
+a nearby vehicle | was | the dead 
+the attack | is | retaliation 
+which | has killed | dozens 

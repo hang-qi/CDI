@@ -1,0 +1,12 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808123028.091</start>
+<end>20080808123109.766</end>
+we | 've been following | this morning 
+bus crash | happened | Texas 
+They | are now saying | authorities 
+13 people | were killed | another four 
+this crash | happened | north of Dallas 
+the bus | may have blown | a tire 
+we | spoke | Chief Jeff Jones of the Sherman Texas Fire Department 
+we | 're trying to clear | the scene 
+we | 'll be | sometime 

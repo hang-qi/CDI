@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Cindy-McCain-interview</story>
+<start>20080813222526.556</start>
+<end>20080813222538.234</end>
+The blogger | happens to be | their daughter 

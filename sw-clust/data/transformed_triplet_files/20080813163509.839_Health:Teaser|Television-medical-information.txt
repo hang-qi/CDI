@@ -1,0 +1,4 @@
+<story>Health:Teaser|Television-medical-information</story>
+<start>20080813163509.839</start>
+<end>20080813163812.988</end>
+one segment of the population | gets | ROMANS : Ali , there 's a fear that conflict in that region could have ultimately consequences for oil and gas prices here in the United States . medical information 

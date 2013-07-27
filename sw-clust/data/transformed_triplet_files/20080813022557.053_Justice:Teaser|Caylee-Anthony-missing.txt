@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Caylee-Anthony-missing</story>
+<start>20080813022557.053</start>
+<end>20080813022609.866</end>
+they | are faced | these lies 
+they | try to find | Caylee 

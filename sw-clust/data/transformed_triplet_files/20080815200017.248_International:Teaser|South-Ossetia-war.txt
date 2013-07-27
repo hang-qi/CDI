@@ -1,0 +1,4 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815200017.248</start>
+<end>20080815200029.761</end>
+its allies | to get | Moscow's troops 

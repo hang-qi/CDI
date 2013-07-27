@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080815021648.705</start>
+<end>20080815021657.180</end>
+TV | weighs | the Democratic convention 
+the very delicate stagecraft | bringing | Hillary supporters 

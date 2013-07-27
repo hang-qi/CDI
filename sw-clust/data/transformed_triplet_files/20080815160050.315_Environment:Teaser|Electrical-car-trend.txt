@@ -1,0 +1,5 @@
+<story>Environment:Teaser|Electrical-car-trend</story>
+<start>20080815160050.315</start>
+<end>20080815160058.590</end>
+the electric car | could soon become | a reality 
+Christine Romans | is | me 

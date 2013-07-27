@@ -1,0 +1,4 @@
+<story>Religion:Teaser|Obama-campaign-Reverend-Wright</story>
+<start>20080814033220.370</start>
+<end>20080814033230.547</end>
+the preacher | has caused | the Obama campaign 

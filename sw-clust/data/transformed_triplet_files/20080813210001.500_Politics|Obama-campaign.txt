@@ -1,0 +1,7 @@
+<story>Politics|Obama-campaign</story>
+<start>20080813210001.500</start>
+<end>20080813210049.448</end>
+Georgia's president | telling | CNN 
+Our cameras | captured | Russian forces 
+President Bush | ordering | military relief flights 
+the battle | being fought | online 

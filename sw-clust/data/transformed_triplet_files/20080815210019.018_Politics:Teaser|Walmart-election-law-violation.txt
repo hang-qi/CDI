@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Walmart-election-law-violation</story>
+<start>20080815210019.018</start>
+<end>20080815210029.762</end>
+Some employees | complained | they 

@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810161645.569</start>
+<end>20080810161959.930</end>
+television | will break | all the ups and downs of this week 

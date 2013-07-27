@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814030047.146</start>
+<end>20080814030104.430</end>
+President Bush | sending | aids 
+so many words | telling | the president 

@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808224722.004</start>
+<end>20080808224729.512</end>
+She | made | short documentaries 
+she | is | the center of his affair 
+We | found | her videos 

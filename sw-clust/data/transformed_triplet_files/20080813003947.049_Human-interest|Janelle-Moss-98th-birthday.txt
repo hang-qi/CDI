@@ -1,0 +1,7 @@
+<story>Human-interest|Janelle-Moss-98th-birthday</story>
+<start>20080813003947.049</start>
+<end>20080813004020.249</end>
+s | held | three jobs 
+She | s | an expert seamstress 
+She | s | the oldest employee 
+They | love | 98th 

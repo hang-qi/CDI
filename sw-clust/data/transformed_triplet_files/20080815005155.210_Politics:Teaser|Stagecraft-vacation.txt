@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Stagecraft-vacation</story>
+<start>20080815005155.210</start>
+<end>20080815005354.462</end>
+Barack Obama | has been | vacation 
+President Bush | supposed to start | his tomorrow 
+The dos | do | n'ts 

@@ -1,0 +1,5 @@
+<story>Weather|US</story>
+<start>20080815122020.850</start>
+<end>20080815122108.565</end>
+We | 're going to head | Reynolds Wolf 
+a look | 's going | weather wise 

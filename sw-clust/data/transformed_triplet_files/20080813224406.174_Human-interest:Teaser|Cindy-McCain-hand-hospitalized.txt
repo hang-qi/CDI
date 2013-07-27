@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Cindy-McCain-hand-hospitalized</story>
+<start>20080813224406.174</start>
+<end>20080813224411.079</end>
+An injury | takes | Cindy McCain 

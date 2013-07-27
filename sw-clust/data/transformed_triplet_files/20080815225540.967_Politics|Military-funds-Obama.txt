@@ -1,0 +1,9 @@
+<story>Politics|Military-funds-Obama</story>
+<start>20080815225540.967</start>
+<end>20080815225611.164</end>
+A nonpartisan group | reports | Barack Obama 
+more military donations | went | Republicans 
+A nonpartisan group | would be | McCain 
+Obama | served | the military 
+Responsive Politics | based | its study 
+859 | gave | Obama 

@@ -1,0 +1,6 @@
+<story>Money|Stock-market</story>
+<start>20080809022602.992</start>
+<end>20080809022615.171</end>
+a stronger dollar sending stocks | surging | today 
+the Dow | up | more than 300 points 
+S&P | had | double-digit gains 

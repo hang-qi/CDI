@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808163321.163</start>
+<end>20080808163333.476</end>
+we | will have | much more 

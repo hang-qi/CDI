@@ -1,0 +1,5 @@
+<story>International:Teaser|Prime-minister-Putin</story>
+<start>20080813001702.185</start>
+<end>20080813001727.644</end>
+Vladimir Putin | is no longer | Russia's president 
+Putin | is still running | the country 

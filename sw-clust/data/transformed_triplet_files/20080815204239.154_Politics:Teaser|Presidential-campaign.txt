@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815204239.154</start>
+<end>20080815204256.538</end>
+the election | is still | months 
+some parts of the country | will cast | people in some parts of the country ballots 
+the early election | might help | one candidate 
+people | think | the early election 

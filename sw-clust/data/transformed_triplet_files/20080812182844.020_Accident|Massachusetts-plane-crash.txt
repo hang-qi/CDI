@@ -1,0 +1,5 @@
+<story>Accident|Massachusetts-plane-crash</story>
+<start>20080812182844.020</start>
+<end>20080812182857.066</end>
+A fiery plane crash | has killed | three people 
+This aircraft | was taking | a cancer patient 

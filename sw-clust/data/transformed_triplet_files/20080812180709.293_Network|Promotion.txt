@@ -1,0 +1,4 @@
+<story>Network|Promotion</story>
+<start>20080812180709.293</start>
+<end>20080812180717.868</end>
+our Political Ticker | out | CNNPolitics.com 

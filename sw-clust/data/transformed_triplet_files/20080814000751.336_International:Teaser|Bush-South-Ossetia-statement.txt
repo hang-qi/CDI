@@ -1,0 +1,5 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080814000751.336</start>
+<end>20080814000802.681</end>
+President Bush | was standing | front of the White House again today 
+We | are going to ask | two advisers 

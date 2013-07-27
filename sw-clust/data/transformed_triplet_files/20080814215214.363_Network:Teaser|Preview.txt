@@ -1,0 +1,4 @@
+<story>Network:Teaser|Preview</story>
+<start>20080814215214.363</start>
+<end>20080814215224.507</end>
+Georgia | is also | the topic of LARRY KING LIVE 

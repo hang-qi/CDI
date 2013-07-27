@@ -1,0 +1,4 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812141310.889</start>
+<end>20080812141610.868</end>
+we | 've got | your ticket 

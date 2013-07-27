@@ -1,0 +1,6 @@
+<story>Environment:Teaser|Energy-crisis</story>
+<start>20080812010649.373</start>
+<end>20080812010940.344</end>
+we | 'll talk | some issues of the day 
+the energy crisis | might be done | the day 
+the House | is | vacation 

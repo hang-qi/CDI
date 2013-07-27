@@ -1,0 +1,12 @@
+<story>Network|Anchor-chat</story>
+<start>20080811210757.542</start>
+<end>20080811210833.812</end>
+Most people | will say | the members of Congress 
+My weasel | is | your weasel 
+President Bush | said | he 
+he | said | Beijing something 
+we | have | this great relationship 
+They | 're going to do | regime change 
+they | 'll control | that pipeline 
+He | nicknamed | ROBERTS 
+he | 's calling | ROBERTS 

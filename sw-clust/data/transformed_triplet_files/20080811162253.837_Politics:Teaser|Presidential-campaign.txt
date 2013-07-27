@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080811162253.837</start>
+<end>20080811162307.851</end>
+the candidates | are saying | our energy crisis 
+they | plan to fix | our energy crisis 
+other organizations | are spending | a ton of money 
+just | to win | your vote 

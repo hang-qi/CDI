@@ -1,0 +1,4 @@
+<story>Money:Teaser|Save-money-tips</story>
+<start>20080808165935.670</start>
+<end>20080808165949.951</end>
+money | protect | your house 

@@ -1,0 +1,7 @@
+<story>Money:Teaser|Bipartisan-plan-energy-prices</story>
+<start>20080814224841.851</start>
+<end>20080814224857.233</end>
+a bipartisan group of senators | has | a plan 
+men and women | pay | high energy and gasoline prices 
+that plan | is stalled | Congress 
+the way | may be | a very good idea 

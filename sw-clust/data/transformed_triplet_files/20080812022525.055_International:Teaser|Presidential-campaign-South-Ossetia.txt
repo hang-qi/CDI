@@ -1,0 +1,4 @@
+<story>International:Teaser|Presidential-campaign-South-Ossetia</story>
+<start>20080812022525.055</start>
+<end>20080812022530.961</end>
+Russian forces | continue | unifiers attack 

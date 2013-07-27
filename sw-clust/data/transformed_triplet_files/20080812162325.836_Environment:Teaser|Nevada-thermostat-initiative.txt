@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Nevada-thermostat-initiative</story>
+<start>20080812162325.836</start>
+<end>20080812162554.652</end>
+one electric company's offer | to cut | your electric bill 

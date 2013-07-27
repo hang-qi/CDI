@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Ecoli-alternative-fuel</story>
+<start>20080814165234.150</start>
+<end>20080814165242.992</end>
+E. Coli | be | the answer 

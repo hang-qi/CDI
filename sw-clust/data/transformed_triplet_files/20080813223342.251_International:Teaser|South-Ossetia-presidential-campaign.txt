@@ -1,0 +1,4 @@
+<story>International:Teaser|South-Ossetia-presidential-campaign</story>
+<start>20080813223342.251</start>
+<end>20080813223642.831</end>
+John McCain | handling | an international crisis -- war in the former Soviet Union 

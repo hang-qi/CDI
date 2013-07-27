@@ -1,0 +1,4 @@
+<story>Business:Teaser|Kathy-Ireland-interview</story>
+<start>20080812161522.620</start>
+<end>20080812161807.151</end>
+tips | to be | a model businesswoman 

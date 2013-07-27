@@ -1,0 +1,5 @@
+<story>Celebrity:Teaser|Bernie-Mac-death-Kutcher</story>
+<start>20080816011657.681</start>
+<end>20080816012016.079</end>
+me | sleeping here | a bed upstairs 
+she | gets | a good night's sleep 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-candidates-religious-views</story>
+<start>20080815220009.840</start>
+<end>20080815220021.385</end>
+John McCain | are set to appear | side 
+Wolf Blitzer | is | today 

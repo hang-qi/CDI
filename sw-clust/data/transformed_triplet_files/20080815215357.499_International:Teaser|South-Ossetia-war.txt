@@ -1,0 +1,7 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815215357.499</start>
+<end>20080815215411.013</end>
+Tensions | mount | the former Soviet Republic of Georgia 
+Russian troops | bear | its capital city 
+CNN's Michael Ware | is | the ground 
+reports | come | that Russian troops 

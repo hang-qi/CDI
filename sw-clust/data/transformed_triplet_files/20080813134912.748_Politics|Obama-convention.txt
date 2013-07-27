@@ -1,0 +1,9 @@
+<story>Politics|Obama-convention</story>
+<start>20080813134912.748</start>
+<end>20080813134937.473</end>
+we | 'll check | Tom Foreman 
+He | is somewhere | Indiana 
+The Election Express | left | Washington 
+the convention | begins | August 25th 
+We | will be sharing | reports 
+the road | stops | the way 

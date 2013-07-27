@@ -1,0 +1,9 @@
+<story>Politics|McCain-economy</story>
+<start>20080808195019.248</start>
+<end>20080808195036.499</end>
+John McCain | is | the campaign trail today 
+The Republican candidate | stopped off | the Iowa State Fair 
+he | talked | voters 
+he | held | a fundraiser 
+He | 's scheduled to arrive | Arkansas 
+we | 'll hear | McCain 

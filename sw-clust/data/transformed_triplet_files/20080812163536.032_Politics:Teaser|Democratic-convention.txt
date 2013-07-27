@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Democratic-convention</story>
+<start>20080812163536.032</start>
+<end>20080812163541.505</end>
+we | 're taking | the pulse of America 

@@ -1,0 +1,5 @@
+<story>International:Teaser|Bin-Laden-message</story>
+<start>20080811202833.443</start>
+<end>20080811202839.716</end>
+Osama bin Laden's top deputy | delivers | a chilling message 
+he | delivers | a chilling message 

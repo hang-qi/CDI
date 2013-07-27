@@ -1,0 +1,7 @@
+<story>Accident|Traffic-deaths-decline</story>
+<start>20080815023019.882</start>
+<end>20080815023035.565</end>
+the U.S. | are | the lowest level 
+41,000 people | were killed | the road 
+industry | expects say | the slowing economy 
+high gas prices | could actually lead | even fewer deaths 

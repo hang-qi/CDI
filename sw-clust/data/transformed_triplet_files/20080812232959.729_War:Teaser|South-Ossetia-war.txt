@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812232959.729</start>
+<end>20080812233253.502</end>
+Moscow | tries to intimidate | its neighbors 

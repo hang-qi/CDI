@@ -1,0 +1,5 @@
+<story>Celebrity:Teaser|Bill-Murray</story>
+<start>20080815224847.922</start>
+<end>20080815225118.238</end>
+Bill Murray | spends | most of his time 
+the first time | looks | he 

@@ -1,0 +1,12 @@
+<story>Government|American-Airlines-safety-violation</story>
+<start>20080814202957.694</start>
+<end>20080814203048.412</end>
+We | have breaking | news 
+huge fines | are being levied | American Airlines 
+We | want to go | Carol Costello 
+federal regulators | announcing | $ 7.1 million 
+huge fine | was | American Airlines 
+the planes | needed | maintenance 
+American Airlines | can appeal | this ruling 
+we | have not heard | American Airlines 
+American Airlines | fined | $ 7.1 million 

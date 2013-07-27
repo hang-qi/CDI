@@ -1,0 +1,8 @@
+<story>Crime|Colombia-bombing</story>
+<start>20080815212607.064</start>
+<end>20080815212628.385</end>
+Our Carol Costello | is monitoring | other stories 
+Colombian rescue teams | scramble to help | more 
+The explosion | ripped | a town northeast of Bogota 
+townspeople | were having | a music festival 
+Authorities | are blaming | the attack 

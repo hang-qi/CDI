@@ -1,0 +1,5 @@
+<story>Politics|Obama-campaign</story>
+<start>20080812171605.997</start>
+<end>20080812171615.907</end>
+The Democratic candidate | has | a fundraiser 
+he | spent much | his childhood 

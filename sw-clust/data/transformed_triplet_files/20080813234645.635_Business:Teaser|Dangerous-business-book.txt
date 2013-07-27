@@ -1,0 +1,4 @@
+<story>Business:Teaser|Dangerous-business-book</story>
+<start>20080813234645.635</start>
+<end>20080813234917.119</end>
+the threat globalization | poses | this nation's working men and women 

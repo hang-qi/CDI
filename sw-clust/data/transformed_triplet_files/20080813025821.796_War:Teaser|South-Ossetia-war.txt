@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813025821.796</start>
+<end>20080813025831.416</end>
+a deal | to end | the fighting 

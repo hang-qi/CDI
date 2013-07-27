@@ -1,0 +1,7 @@
+<story>International:Teaser|South-Osssetia-oil-prices</story>
+<start>20080811215449.151</start>
+<end>20080811215746.495</end>
+Mr. Bush | calls | Prime Minister Vladmir Putin 
+Georgia | to do | Georgia 
+a vital pipeline | crossing | Georgia 
+Lou Dobbs | joins | me 

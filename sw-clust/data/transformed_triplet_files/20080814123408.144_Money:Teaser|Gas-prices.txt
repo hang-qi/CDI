@@ -1,0 +1,7 @@
+<story>Money:Teaser|Gas-prices</story>
+<start>20080814123408.144</start>
+<end>20080814123646.936</end>
+The gas stations | have | a problem 
+We | 're following | inspectors 
+they | put | gas pumps 
+The pump | has | the state seal of approval 

@@ -1,0 +1,7 @@
+<story>Politics|Edwards-affair</story>
+<start>20080808194456.626</start>
+<end>20080808194512.475</end>
+A developing story | concerning | former vice presidential candidate 
+ABC News | reporting | Edwards 
+he | had | an extra-marital affair 
+Edwards | denies fathering | a child 

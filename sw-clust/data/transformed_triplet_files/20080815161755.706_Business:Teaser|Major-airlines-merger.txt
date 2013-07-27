@@ -1,0 +1,5 @@
+<story>Business:Teaser|Major-airlines-merger</story>
+<start>20080815161755.706</start>
+<end>20080815161801.312</end>
+a big new airline deal | could change | the landscape of the airline industry 
+We | 're going right | the top 

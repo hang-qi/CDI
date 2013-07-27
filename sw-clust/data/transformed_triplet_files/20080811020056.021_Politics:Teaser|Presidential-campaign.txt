@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080811020056.021</start>
+<end>20080811020110.536</end>
+We | 're trying to work | that out 

@@ -1,0 +1,7 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812021554.252</start>
+<end>20080812021606.297</end>
+the streets and soldiers | locked | combat 
+the United Nations | has called | a cease-fire 
+Russia | turned | the idea 
+We | will have | a live report 

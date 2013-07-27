@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-swimming</story>
+<start>20080814121957.594</start>
+<end>20080814122007.504</end>
+swimmers | shattering | world records 
+We | 're going to take | a look 

@@ -1,0 +1,4 @@
+<story>Environment:Teaser|Environmentally-friendly-postal-service</story>
+<start>20080812161518.316</start>
+<end>20080812161522.620</end>
+the United States Postal Service | is having | trouble 

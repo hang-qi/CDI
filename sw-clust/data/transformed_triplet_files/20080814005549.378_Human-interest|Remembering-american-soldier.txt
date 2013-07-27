@@ -1,0 +1,5 @@
+<story>Human-interest|Remembering-american-soldier</story>
+<start>20080814005549.378</start>
+<end>20080814005614.236</end>
+s | stop and remember | Army Staff Sergeant Joseph Gamboa 
+two weeks | finishing | a second tour 

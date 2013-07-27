@@ -1,0 +1,6 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808120148.774</start>
+<end>20080808120204.823</end>
+Russian troops | entering | a breakaway region 
+Moscow TV | shows | a convoy of Russian tanks 
+which | borders | Russia 

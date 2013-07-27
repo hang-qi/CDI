@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Vice-presidential-campaign</story>
+<start>20080813221638.562</start>
+<end>20080813221646.403</end>
+John McCain | makes | a comment 
+pick | will make | conservatives 

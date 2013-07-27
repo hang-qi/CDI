@@ -1,0 +1,9 @@
+<story>War|Terrorist-attack-Lebanon</story>
+<start>20080813143114.037</start>
+<end>20080813143140.831</end>
+officials | report | 11 dead , 40 
+most of those killed | were | Lebanese soldiers 
+the blast | was caused | a roadside bomb 
+the attack | coming | just hours 
+Lebanon's president | makes | a landmark visit 
+He | is hoping | patch 

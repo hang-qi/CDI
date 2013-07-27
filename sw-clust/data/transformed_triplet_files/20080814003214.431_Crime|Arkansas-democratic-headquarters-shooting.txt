@@ -1,0 +1,8 @@
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080814003214.431</start>
+<end>20080814003237.220</end>
+Ted Rowlands | has | The Briefing '' tonight 
+He | was murdered | today 
+Bill Gwatney | was | a longtime friend and supporter of Bill and Hillary Clinton 
+a gunman | walked | party headquarters 
+Police shot | killed | the suspect 

@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign-economy</story>
+<start>20080811160105.029</start>
+<end>20080811160109.033</end>
+Americans | are losing | the drug companies jobs 
+some | are turning | some next check 

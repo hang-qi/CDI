@@ -1,0 +1,9 @@
+<story>Politics|Edwards-affair</story>
+<start>20080808201917.954</start>
+<end>20080808201933.336</end>
+we | 're standing | a statement 
+We | expect | that statement 
+He | 's now acknowledging | ABC News 
+he | did | fact 
+an extramarital affair | starting back | 2006 
+we | get | a statement from John Edwards 

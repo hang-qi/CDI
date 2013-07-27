@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Florida-police-brutality</story>
+<start>20080812182456.826</start>
+<end>20080812182511.074</end>
+Police officers | are caught | camera 

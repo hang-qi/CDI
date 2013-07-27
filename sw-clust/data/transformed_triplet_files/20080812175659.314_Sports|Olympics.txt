@@ -1,0 +1,11 @@
+<story>Sports|Olympics</story>
+<start>20080812175659.314</start>
+<end>20080812175800.075</end>
+Olympians | are resting | another day of competition 
+a look | see how | things 
+Team USA | moving | No. 2 
+America's athletes | have racked | a total of 22 medals 
+they | 've actually snagged | a bunch 
+Three countries | have scored | nine medals 
+The swimmer | took | his third race 
+a | win | the 200 meter freestyle 

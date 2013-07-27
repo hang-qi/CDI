@@ -1,0 +1,6 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811210833.812</start>
+<end>20080811210847.325</end>
+He | has just returned | the White House 
+China | will be speaking | about the crisis 
+We | 'll also get | the details of the frantic drive 

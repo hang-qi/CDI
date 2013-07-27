@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080811120656.615</start>
+<end>20080811120704.322</end>
+the advertising frenzy | 's waiting | the winner 

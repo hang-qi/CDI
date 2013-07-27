@@ -1,0 +1,5 @@
+<story>Money:Teaser|Troops-checked-backage</story>
+<start>20080812203032.295</start>
+<end>20080812203045.408</end>
+some troops | flying to fight | the war 
+Some troops | are forced to pay | pocket 

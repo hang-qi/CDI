@@ -1,0 +1,8 @@
+<story>Labor|Four-day-work-week</story>
+<start>20080808161109.533</start>
+<end>20080808161129.787</end>
+we | 're going to talk | the governor of Utah 
+that state | wraps up | its first four-day workweek 
+a day | would you work | return 
+CNNMoney.com | cast | your vote 
+Results | coming | a bit 

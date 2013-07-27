@@ -1,0 +1,4 @@
+<story>Justice:Teaser|Ohio-Diocese-touching-rules</story>
+<start>20080812130027.960</start>
+<end>20080812130046.145</end>
+Priests | get | a list of the dos 

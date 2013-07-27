@@ -1,0 +1,4 @@
+<story>Business:Teaser|Dangerous-business-book</story>
+<start>20080813233726.910</start>
+<end>20080813233736.586</end>
+globalization | is threatening | our economy 

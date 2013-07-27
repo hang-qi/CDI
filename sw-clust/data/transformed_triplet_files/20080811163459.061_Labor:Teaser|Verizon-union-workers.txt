@@ -1,0 +1,4 @@
+<story>Labor:Teaser|Verizon-union-workers</story>
+<start>20080811163459.061</start>
+<end>20080811163505.067</end>
+what Verizon | is saying | its union workers 

@@ -1,0 +1,8 @@
+<story>International|Rice-Saakashvili-cease-fire-conference</story>
+<start>20080815183311.786</start>
+<end>20080815183333.008</end>
+we | 're working | the CNN NEWSROOM 
+Russian forces | remain | control of several key cities 
+Georgia's president | met | State Condoleezza Rice 
+President Mikheil Saakashvili | signed | a cease-fire agreement 
+she | has been assured | Russia 

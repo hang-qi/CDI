@@ -1,0 +1,7 @@
+<story>Network|Anchor-chat</story>
+<start>20080812035817.426</start>
+<end>20080812035834.743</end>
+the kids | stay | this late 
+Wish | have | recipes or something 
+we | do | recipes 
+We | have | everything else 

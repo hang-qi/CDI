@@ -1,0 +1,4 @@
+<story>Business:Teaser|US-trade-deficit</story>
+<start>20080812164027.190</start>
+<end>20080812164315.692</end>
+a major merger in the skies | is actually | good news 

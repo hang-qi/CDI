@@ -1,0 +1,8 @@
+<story>Business|Foreign-companies-income-tax</story>
+<start>20080812232923.292</start>
+<end>20080812232959.729</end>
+The vast majority of foreign companies | operating | this country 
+they | do n't pay | income tax 
+nearly three-quarters of foreign corporations | pay | no federal income tax 
+that period | paid | no federal income tax 
+American families | paid | nearly $ 7 trillion 

@@ -1,0 +1,10 @@
+<story>War|South-Ossetia-cease-fire</story>
+<start>20080812000602.194</start>
+<end>20080812000704.423</end>
+Russia | agree | a cease-fire 
+its cease-fire | have not yet been met | the Georgian forces 
+Georgia | is still carrying | military operations 
+which | is backed | Moscow 
+Georgian forces | have been shelling | civilian and military targets 
+Georgians | do n't buy | some evidence 
+They | believe | the Russians 

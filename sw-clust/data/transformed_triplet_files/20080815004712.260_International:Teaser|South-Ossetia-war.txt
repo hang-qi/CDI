@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815004712.260</start>
+<end>20080815004933.902</end>
+Thousands of Georgians | forced | Thousands of Georgians homes 
+Russian troops | move | new territory 

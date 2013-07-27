@@ -1,0 +1,6 @@
+<story>Accident|Bus-crash-China</story>
+<start>20080813143054.284</start>
+<end>20080813143114.037</end>
+24 people | killed | a bus crash 
+most of the victims | were | students 
+a trip | to get | health checkups 

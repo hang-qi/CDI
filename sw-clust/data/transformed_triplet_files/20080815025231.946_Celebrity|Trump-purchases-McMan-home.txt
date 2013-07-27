@@ -1,0 +1,7 @@
+<story>Celebrity|Trump-purchases-McMan-home</story>
+<start>20080815025231.946</start>
+<end>20080815025243.925</end>
+Ed McMahon | facing | foreclosure 
+thanks | to help | another celebrity 
+Donald Trump | plans to buy | McMahon's Beverly Hills home 
+he | will then release | McMahon 's Beverly Hills home for an undisclosed amount 

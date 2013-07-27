@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814200017.549</start>
+<end>20080814200027.326</end>
+Hillary Clinton's name | will be placed | nomination 

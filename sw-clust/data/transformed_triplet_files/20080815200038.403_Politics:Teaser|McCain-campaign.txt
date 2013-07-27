@@ -1,0 +1,5 @@
+<story>Politics:Teaser|McCain-campaign</story>
+<start>20080815200038.403</start>
+<end>20080815200044.609</end>
+John McCain | sets | off new alarm bells 
+conservatives | were | his White House bid 

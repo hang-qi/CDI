@@ -1,0 +1,7 @@
+<story>Network|Anchor-chat</story>
+<start>20080813225208.323</start>
+<end>20080813225305.847</end>
+the lead singer | used to be | my favorite soap opera 
+We | had | Dancing Queen 
+She | has | a new album 
+They | make | a comeback 

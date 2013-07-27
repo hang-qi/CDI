@@ -1,0 +1,7 @@
+<story>Accident|Massachusetts-plane-crash</story>
+<start>20080813002655.812</start>
+<end>20080813002715.531</end>
+a Boston hospital | was killed | a plane crash 
+the pilot | died when | the small plane 
+A medical charity | arranged | the flight 
+Investigators | want to know | the plane's propeller 

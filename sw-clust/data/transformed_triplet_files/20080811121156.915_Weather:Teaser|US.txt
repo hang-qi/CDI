@@ -1,0 +1,4 @@
+<story>Weather:Teaser|US</story>
+<start>20080811121156.915</start>
+<end>20080811121213.765</end>
+we | had | some rough weather yesterday 

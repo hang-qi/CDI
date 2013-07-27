@@ -1,0 +1,24 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080810185329.872</start>
+<end>20080810185430.733</end>
+time | to jump | the fast track 
+they | 'd all go | our CNN senior political analyst Bill Schneider 
+both of the candidates | are heading | this Olympic week 
+Barack Obama | is going | grandma's house 
+He | does | this every summer 
+Grandma | lives | Honolulu 
+which | is where | Barack Obama's from 
+He | takes | a week 
+the polls | show | a lot of voters 
+they | 've been hearing | a little 
+He | 's going to give | the voters 
+he | feels | they 
+He | 's going to be | campaigning 
+we | 're hearing | more 
+the candidates | get back | next weekend 
+they | 're going to | both 
+He | 's going to interview | The candidates 
+He | has | good relations 
+the latest polls | show | why white evangelical voters 
+white evangelicals | are supporting | McCain 
+they | 're | John McCain 

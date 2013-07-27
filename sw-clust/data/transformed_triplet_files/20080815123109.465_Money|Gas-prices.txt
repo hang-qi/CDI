@@ -1,0 +1,4 @@
+<story>Money|Gas-prices</story>
+<start>20080815123109.465</start>
+<end>20080815123126.849</end>
+We | are tracking | the prices of oil and gasoline 

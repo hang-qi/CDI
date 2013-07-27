@@ -1,0 +1,11 @@
+<story>War|Russia-captures-Gori</story>
+<start>20080811174511.641</start>
+<end>20080811174602.391</end>
+the Associated Press | reporting | the State Department 
+the State Department | has evacuated | more than 170 Americans 
+some of those Americans | there to train | Georgians 
+that Russian troops | have occupied | Gori 
+which | is | central Georgia 
+Now | comes | this report of the State Department 
+State Department correspondent Zain Verjee | going to have | a live report 
+the State Department | has evacuated | more than 170 Americans 

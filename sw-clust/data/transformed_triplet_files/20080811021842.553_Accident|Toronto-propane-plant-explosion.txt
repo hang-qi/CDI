@@ -1,0 +1,10 @@
+<story>Accident|Toronto-propane-plant-explosion</story>
+<start>20080811021842.553</start>
+<end>20080811021912.884</end>
+explosions | rocking | Toronto 
+out windows | shaking | people's homes 
+The blast | came | a propane gas facility 
+the air | can be seen | miles 
+Thousands | were forced to evacuate | authorities 
+A veteran firefighter | died trying to extinguish | the flames 
+this point | caused | these explosions 

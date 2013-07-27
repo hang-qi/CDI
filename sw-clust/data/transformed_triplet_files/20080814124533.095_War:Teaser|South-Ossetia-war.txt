@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814124533.095</start>
+<end>20080814124551.847</end>
+We | 'll follow | The developing situation in the republic of Georgia . 
+Russian troops | pulling | the strategic city of Gori 

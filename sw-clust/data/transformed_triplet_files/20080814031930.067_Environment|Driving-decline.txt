@@ -1,0 +1,7 @@
+<story>Environment|Driving-decline</story>
+<start>20080814031930.067</start>
+<end>20080814031943.781</end>
+The government | says driving declined again | June 
+fact | clocking | more than 12 billion fewer miles 
+we | did | a year 
+Americans | have cut | back 

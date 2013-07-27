@@ -1,0 +1,7 @@
+<story>Money|Gas-prices</story>
+<start>20080811160659.850</start>
+<end>20080811160728.479</end>
+We | 're talking | today 
+about 25 straight consecutive days | falling | gas prices 
+We | stand | $ 3.81 
+me | to buy | a hybrid 

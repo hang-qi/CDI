@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Obama-fatigue</story>
+<start>20080808192043.975</start>
+<end>20080808192346.524</end>
+something | called | Obama fatigue 
+We | are going to speak | our deputy political expert 

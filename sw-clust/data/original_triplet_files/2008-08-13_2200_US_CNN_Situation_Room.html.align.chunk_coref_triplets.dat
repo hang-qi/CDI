@@ -1,0 +1,1227 @@
+<story>NULL</story>
+<start>20080813215952.000</start>
+SUZANNE MALVEAUX, CNN ANCHOR: Happening now, breaking news: The U.S. warns Russia, live up to a cease-fire with Georgia or face the consequences.
+The U.S./NP; warns/VP; Russia/NP	-Infinity
+
+SUZANNE MALVEAUX, CNN ANCHOR: Happening now, breaking news: The U.S. warns Russia, live up to a cease-fire with Georgia or face the consequences.
+Georgia/NP; face/VP; the consequences/NP	-Infinity
+<end>20080813220002.433</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813220002.433</start>
+And Moscow ups the tensions, telling Washington to choose sides, or else.
+Washington/NP; to choose/VP; sides/NP	-Infinity
+
+Also this hour, the playbook against John Kerry now being used against Barack Obama.
+John Kerry/NP; now being used/VP against/PP; Barack Obama/NP	-Infinity
+
+An author admits he's on a mission to defeat the Democrat.
+An author/NP; admits/VP; he/NP	-Infinity
+
+An author admits he's on a mission to defeat the Democrat.
+a mission/NP; to defeat/VP; the Democrat/NP	-Infinity
+<end>20080813220018.182</end>
+
+<story>Network|Intro</story>
+<start>20080813220018.182</start>
+We welcome our viewers in the United States and around the world.
+We/NP; welcome/VP; our viewers/NP	-Infinity
+
+Wolf Blitzer is off today.
+Wolf Blitzer/NP; is/VP off/PP; today/NP	-Infinity
+<end>20080813220032.030</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080813220032.030</start>
+Russia's foreign minister now is telling the U.S. to choose between supporting Georgia or continuing its partnership with Moscow on international issues.
+Russia's foreign minister/NP; is telling/VP; the U.S./NP	-Infinity
+
+Russia's foreign minister now is telling the U.S. to choose between supporting Georgia or continuing its partnership with Moscow on international issues.
+Georgia/NP; continuing/VP; its partnership/NP	-Infinity
+
+President Bush today making it clear he is siding with Georgia.
+President Bush today/NP; making/VP; Russia/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: We expect Russia to meet its commitment to cease all military activities in Georgia, and we expect all Russian forces that entered Georgia in recent days to withdraw from that country.
+We/NP; expect/VP; Russia/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: We expect Russia to meet its commitment to cease all military activities in Georgia, and we expect all Russian forces that entered Georgia in recent days to withdraw from that country.
+its commitment/NP; to cease/VP; all military activities/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: We expect Russia to meet its commitment to cease all military activities in Georgia, and we expect all Russian forces that entered Georgia in recent days to withdraw from that country.
+we/NP; expect/VP; all Russian forces/NP	-Infinity
+
+(BEGIN VIDEO CLIP) GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: We expect Russia to meet its commitment to cease all military activities in Georgia, and we expect all Russian forces that entered Georgia in recent days to withdraw from that country.
+recent days/NP; to withdraw/VP from/PP; that country/NP	-Infinity
+
+So, I have made clear, Russia's ongoing action raised serious questions about its intentions in Georgia and the region.
+Russia's ongoing action/NP; raised/VP; serious questions/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: The president driving home his concerns by sending Secretary of State Condoleezza Rice to the Georgian capital, Tbilisi.
+The president/NP; driving home/VP; his concerns/NP	-Infinity
+
+(BEGIN VIDEO CLIP) CONDOLEEZZA RICE, U.S. SECRETARY OF STATE: This is not 1968 and the invasion of Czechoslovakia, where Russia can threaten its neighbors, occupy a capital, overthrow a government, and get away with it.
+Russia/NP; can threaten/VP; its neighbors/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: This comes as Georgia is accusing Russia of violating a day-old cease-fire.
+Georgia/NP; is accusing/VP; Russia/NP	-Infinity
+
+Russian armored vehicles were seen today in or around the cities of Gori, Poti, and the capital, Tbilisi.
+Russian armored vehicles/NP; were seen/VP; today/NP	-Infinity
+
+(BEGIN VIDEO CLIP) MIKHAIL SAAKASHVILI, PRESIDENT OF GEORGIA: We've done our best.
+We/NP; 've done/VP; our best/NP	-Infinity
+
+(BEGIN VIDEO CLIP) UNIDENTIFIED FEMALE (through translator): It's a bad situation.
+UNIDENTIFIED FEMALE/NP; -LRB-/VP through/PP; translator -RRB-/NP	-Infinity
+
+(END VIDEO CLIP) MATTHEWS: We have reporters standing by in Georgia, Russia and here in Washington.
+We/NP; have/VP; reporters/NP	-Infinity
+
+First to our White House correspondent, Ed Henry -- Ed.
+First/NP; to/VP; our White House correspondent/NP	-Infinity
+
+ED HENRY, CNN WHITE HOUSE CORRESPONDENT : Well, Suzanne, you just heard Secretary Rice declare that Russia just can't barge into a neighbor's country and overthrow its government, but the White House right now seems to be struggling to figure out how to stop Russia from doing just that.
+Secretary Rice/NP; declare/VP that/PP; Russia/NP	-Infinity
+
+ED HENRY, CNN WHITE HOUSE CORRESPONDENT : Well, Suzanne, you just heard Secretary Rice declare that Russia just can't barge into a neighbor's country and overthrow its government, but the White House right now seems to be struggling to figure out how to stop Russia from doing just that.
+a neighbor's country/NP; overthrow/VP; its government/NP	-Infinity
+
+ED HENRY, CNN WHITE HOUSE CORRESPONDENT : Well, Suzanne, you just heard Secretary Rice declare that Russia just can't barge into a neighbor's country and overthrow its government, but the White House right now seems to be struggling to figure out how to stop Russia from doing just that.
+the White House/NP; seems to be struggling to figure/VP; out/NP	-Infinity
+
+ED HENRY, CNN WHITE HOUSE CORRESPONDENT : Well, Suzanne, you just heard Secretary Rice declare that Russia just can't barge into a neighbor's country and overthrow its government, but the White House right now seems to be struggling to figure out how to stop Russia from doing just that.
+Russia/NP; doing/VP; just that/NP	-Infinity
+
+GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: To begin to repair the damage to its relations with the United States, Europe and other nations, and to begin restoring its place in the world, Russia must keep its word and act to end this crisis.
+Russia/NP; must keep/VP; its word and act/NP	-Infinity
+
+HENRY : The president declared he's dispatching Secretary of State Condoleezza Rice to the region and sending in humanitarian relief.
+The president/NP; declared/VP; he/NP	-Infinity
+
+HENRY : The president declared he's dispatching Secretary of State Condoleezza Rice to the region and sending in humanitarian relief.
+the region/NP; sending/VP in/PP; humanitarian relief/NP	-Infinity
+
+But six days into the crisis, Georgian President Mikhail Saakashvili charged the West has not done enough to help them deal with Russia's invasion.
+Georgian President Mikhail Saakashvili/NP; charged/VP; the West/NP	-Infinity
+
+And the West has been -- first of all, they failed to analyze the Russians' intentions in advance, and they failed to react promptly towards what's been happening now.
+they/NP; failed to analyze/VP; the Russians/NP	-Infinity
+
+HENRY : On top of that, withering criticism from the conservative editorial page of The Wall Street Journal, charging, So far, the administration has been missing in action, to put it mildly.
+the administration/NP; has been missing/VP in/PP; action/NP	-Infinity
+
+If Mr. Bush doesn't revisit his Russian failures, the rout of Georgia will stand as the embarrassing coda to his presidency.
+Mr. Bush/NP; does n't revisit/VP; his Russian failures/NP	-Infinity
+
+If Mr. Bush doesn't revisit his Russian failures, the rout of Georgia will stand as the embarrassing coda to his presidency.
+the rout of Georgia/NP; will stand/VP as/PP; the embarrassing coda/NP	-Infinity
+
+Administration officials say they have no regrets, insisting they have taken aggressive action.
+they/NP; have/VP; no regrets/NP	-Infinity
+
+Administration officials say they have no regrets, insisting they have taken aggressive action.
+they/NP; have taken/VP; aggressive action/NP	-Infinity
+
+DANA PERINO, WHITE HOUSE PRESS SECRETARY: We rallied our international partners to help solve -- get the cease-fire in place.
+We/NP; rallied/VP; our international partners/NP	-Infinity
+
+That was the most important thing to do so that we could help protect innocent life.
+the most important thing/NP; to do so/VP; we/NP	-Infinity
+
+PERINO: Well, first of all, you had to get them to agree to it.
+on-camera/NP; to agree/VP to/PP; PERINO : Well , first of all/NP	-Infinity
+
+(END VIDEOTAPE) HENRY: Now, the president announced today as well that he's going to delay the start of his vacation in Texas by a day or two, stay back here in Washington, and deal with this crisis -- Suzanne.
+the president/NP; announced/VP; today/NP	-Infinity
+
+(END VIDEOTAPE) HENRY: Now, the president announced today as well that he's going to delay the start of his vacation in Texas by a day or two, stay back here in Washington, and deal with this crisis -- Suzanne.
+he/NP; 's going to delay/VP; the start of his vacation/NP	-Infinity
+
+Our CNN's Matthew Chance saw Russian troops on the move for himself.
+Our CNN's Matthew Chance/NP; saw/VP; Russian troops/NP	-Infinity
+
+He is in the capital of Tbilisi.
+He/NP; is/VP in/PP; the capital of Tbilisi/NP	-Infinity
+
+MATTHEW CHANCE, CNN SENIOR INTERNATIONAL CORRESPONDENT : Well, Suzanne, Georgia is very intense this evening, because, as you're aware, Russian forces have penetrated deep into this country, breaking out of the South Ossetia conflict, where they said they would stay, and pushing maybe 20 miles or so into Georgian territory.
+Russian forces/NP; have penetrated deep/VP into/PP; this country/NP	-Infinity
+
+MATTHEW CHANCE, CNN SENIOR INTERNATIONAL CORRESPONDENT : Well, Suzanne, Georgia is very intense this evening, because, as you're aware, Russian forces have penetrated deep into this country, breaking out of the South Ossetia conflict, where they said they would stay, and pushing maybe 20 miles or so into Georgian territory.
+they/NP; said/VP; they/NP	-Infinity
+
+Now, they turned back before they gotten as far as the Georgian capital, Tbilisi, but, nevertheless, it sent shivers down the spines of many Georgians who really believe that Tbilisi itself is under threat from some kind of Russian invasion.
+they/NP; turned/VP back/PRT; they/NP	-Infinity
+
+Now, they turned back before they gotten as far as the Georgian capital, Tbilisi, but, nevertheless, it sent shivers down the spines of many Georgians who really believe that Tbilisi itself is under threat from some kind of Russian invasion.
+Tbilisi/NP; sent/VP; shivers/NP	-Infinity
+
+Now, they turned back before they gotten as far as the Georgian capital, Tbilisi, but, nevertheless, it sent shivers down the spines of many Georgians who really believe that Tbilisi itself is under threat from some kind of Russian invasion.
+the spines of many Georgians/NP; believe/VP that/PP; Tbilisi/NP	-Infinity
+
+Now, they turned back before they gotten as far as the Georgian capital, Tbilisi, but, nevertheless, it sent shivers down the spines of many Georgians who really believe that Tbilisi itself is under threat from some kind of Russian invasion.
+itself/NP; is/VP under/PP; threat/NP	-Infinity
+
+Now, that hasn't happened at this point.
+now/NP; has n't happened/VP at/PP; this point/NP	-Infinity
+
+But this Russian incursion certainly represents a serious breach of the cease-fire.
+this Russian incursion/NP; represents/VP; a serious breach of the cease-fire/NP	-Infinity
+
+For the latest now from Moscow and analysis of the tough, tough talk coming from both sides, here is CNN's Jill Dougherty, who is in the Russian capital.
+Moscow and analysis of the tough , tough talk/NP; coming/VP from/PP; both sides/NP	-Infinity
+
+JILL DOUGHERTY, CNN INTERNATIONAL U.S. AFFAIRS EDITOR : Well, Suzanne, it's almost unbelievable to think that this fighting began less than a week ago.
+this fighting/NP; began/VP than/PP; a week/NP	-Infinity
+
+(BEGIN VIDEOTAPE) DOUGHERTY (voice-over): A fragile cease-fire agreement pulled together by European envoys is no match for the chaotic confrontation between Georgia and Russia.
+A fragile cease-fire agreement/NP; pulled together/VP by/PP; European envoys/NP	-Infinity
+
+At one point, a convoy of Russian soldiers is spotted on a major road leading to the Georgian capital Tbilisi.
+a convoy of Russian soldiers/NP; is spotted/VP on/PP; a major road/NP	-Infinity
+
+The Georgian president presumes the worst.
+The Georgian president/NP; presumes/VP; the worst/NP	-Infinity
+
+SAAKASHVILI: What they are doing, they are encroaching up on the capital, and you know that they want to -- they have blocked the main road from the east to the west.
+they/NP; are encroaching/VP up/PRT on/PP; the capital/NP	-Infinity
+
+SAAKASHVILI: What they are doing, they are encroaching up on the capital, and you know that they want to -- they have blocked the main road from the east to the west.
+they/NP; have blocked/VP; the main road/NP	-Infinity
+
+So, they have basically isolated the capital.
+they/NP; have basically isolated/VP; the capital/NP	-Infinity
+
+They cut the bloodline of Tbilisi .
+They/NP; cut/VP; the bloodline of Tbilisi/NP	-Infinity
+
+And, of course, it all looks like an all-out attempt of occupation of Georgia.
+all/NP; looks/VP like/PP; an all-out attempt of occupation/NP	-Infinity
+
+DOUGHERTY : But Russian officials say the troops are securing caches of weapons and equipment that could be used to attack civilians or peacekeepers.
+the troops/NP; are securing/VP; caches of weapons/NP	-Infinity
+
+There was never any plan, they say, to attack the Georgian capital or overthrow its president.
+the Georgian capital/NP; overthrow/VP; its president/NP	-Infinity
+
+DMITRY PESKOV, RUSSIAN GOVERNMENT SPOKESMAN: We strongly disagree with Mr. Saakashvili that someone is killing democracy, someone is killing people.
+We/NP; disagree/VP with/PP; Mr. Saakashvili/NP	-Infinity
+
+DMITRY PESKOV, RUSSIAN GOVERNMENT SPOKESMAN: We strongly disagree with Mr. Saakashvili that someone is killing democracy, someone is killing people.
+someone/NP; is killing/VP; democracy/NP	-Infinity
+
+DMITRY PESKOV, RUSSIAN GOVERNMENT SPOKESMAN: We strongly disagree with Mr. Saakashvili that someone is killing democracy, someone is killing people.
+someone/NP; is killing/VP; people/NP	-Infinity
+
+To the contrary, I would just suggest that we remember the very beginning of this story, when Georgian leadership has made an order to stop tart South Ossetia with heavy weapons, killing thousands and thousands of innocent civilians.
+we/NP; remember/VP; the very beginning of this story/NP	-Infinity
+
+To the contrary, I would just suggest that we remember the very beginning of this story, when Georgian leadership has made an order to stop tart South Ossetia with heavy weapons, killing thousands and thousands of innocent civilians.
+Georgian leadership/NP; has made/VP; an order/NP	-Infinity
+
+DOUGHERTY : A top Russian military official says, in fact, Russian troops have stopped active military operations in the conflict zone and Moscow has started planning the withdrawal of its troops back to their permanent bases.
+Russian troops/NP; have stopped/VP; active military operations/NP	-Infinity
+
+DOUGHERTY : A top Russian military official says, in fact, Russian troops have stopped active military operations in the conflict zone and Moscow has started planning the withdrawal of its troops back to their permanent bases.
+Moscow/NP; has started planning/VP; the withdrawal of its troops/NP	-Infinity
+
+The Russians claim it's the Georgians who are not fulfilling the cease-fire.
+The Russians/NP; claim/VP; many Georgians/NP	-Infinity
+
+The Russians claim it's the Georgians who are not fulfilling the cease-fire.
+the Georgians/NP; are not fulfilling/VP; the cease-fire/NP	-Infinity
+
+(END VIDEOTAPE) DOUGHERTY: So, there have been very strong comments being lobbed back and forth between the Russians and the Americans, some actually personal.
+very strong comments/NP; being lobbed back and forth/VP between/PP; the Russians/NP	-Infinity
+
+In fact, the foreign minister, Lavrov, saying that President Bush needs some new speechwriters -- Suzanne.
+President Bush/NP; needs/VP; some new speechwriters/NP	-Infinity
+
+Have you seen anything like this?
+Have/NP; seen/VP; anything/NP	-Infinity
+
+They're really talking about Russia's role in the world right now.
+They/NP; 're really talking/VP about/PP; Russia's role/NP	-Infinity
+
+And it is such a small, contained conflict.
+such a small ,/NP; contained/VP; conflict/NP	-Infinity
+
+Jack Cafferty is off today.
+Jack Cafferty/NP; is/VP off/PP; today/NP	-Infinity
+
+Straight ahead, the U.S. stands with Georgia in this conflict.
+the U.S./NP; stands/VP with/PP; Georgia/NP	-Infinity
+
+But Georgia's president says the U.S. should do more to help.
+the U.S./NP; should do/VP; more/NP	-Infinity
+<end>20080813220824.735</end>
+
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813220824.735</start>
+John McCain and Barack Obama hope to look presidential amid this conflict -- the latest on what they're saying.
+Barack Obama/NP; hope to look/VP amid/PP; this conflict/NP	-Infinity
+<end>20080813220831.108</end>
+
+<story>Politics:Teaser|Swift-boat-book-Obamanation</story>
+<start>20080813220831.108</start>
+And a new book about Barack Obama mixes facts with wild accusations.
+Barack Obama/NP; mixes/VP; facts/NP	-Infinity
+<end>20080813220841.218</end>
+
+<story>International|Mikheil-Saakashvili-interview</story>
+<start>20080813221122.312</start>
+(COMMERCIAL BREAK) MALVEAUX: The United States stands with Georgia in the conflict unfolding, but Georgia's president says that the U.S. should do more to help.
+the U.S./NP; should do/VP; more/NP	-Infinity
+
+Earlier today you accused the United States of having language that was too soft.
+Earlier today/NP; accused/VP; the United States/NP	-Infinity
+
+You said earlier on CNN that some of the first statements from Washington were pursued by the Russians as almost a green light for doing this because they were too soft.
+Washington/NP; were pursued/VP by/PP; the Russians/NP	-Infinity
+
+There was an ultimatum that was given by a Russian official to the United States that said the Bush administration either backs Russia or Georgia.
+an ultimatum/NP; was given/VP by/PP; a Russian official/NP	-Infinity
+
+There was an ultimatum that was given by a Russian official to the United States that said the Bush administration either backs Russia or Georgia.
+the United States/NP; said/VP; the Bush administration/NP	-Infinity
+
+We heard from Secretary of State Condoleezza Rice just moments ago.
+We/NP; heard/VP from/PP of/PP; State Condoleezza Rice/NP	-Infinity
+
+(BEGIN VIDEO CLIP) RICE: As to choosing, the United States has made very clear that it is standing by the democratically- elected government of Georgia.
+the United States/NP; has made/VP; the United States/NP	-Infinity
+
+What more do you want the Bush administration to do in terms of support?
+the Bush administration/NP; to do/VP in/PP; terms of support/NP	-Infinity
+
+I just said that the Russians mistook some of the statements at certain levels.
+the Russians/NP; mistook/VP; some of the statements/NP	-Infinity
+
+That you know, for, you know, an inability of the U.S. to react to flagrant violation of every international law and any principles of justice.
+an inability of the U.S./NP; to react/VP to/PP; flagrant violation of every international law/NP	-Infinity
+
+What we've been witnessing for the last few days is brutal, calculated, cold-blooded, premeditated murder by Russia of a small democracy on its borders.
+we/NP; 've been witnessing/VP for/PP; the last few days/NP	-Infinity
+
+And what -- and, you know, it's not about Georgia or choosing between Georgia and Russia for the United States.
+what -- and , you know/NP; 's/VP about/PP; Georgia/NP	-Infinity
+
+It's about choosing whether the U.S. is willing to stand up for freedom, not to lose the whole region, not to lose eastern and central Europe, not to lose central Asia and the Caspian and wider Middle East, or -- and succumb to Russian pressure and succumb to never- ending appetites and ultimatums of military rhetoric in Moscow, and of the voice of people who are committing war crimes right now on my territory.
+the voice of people/NP; are committing/VP; war crimes/NP	-Infinity
+
+It's not like what Neville Chamberlain said about Czechoslovakia in '38, that, you know, why should we care about a faraway country of what which know very little?
+what Neville Chamberlain/NP; said/VP about/PP; Czechoslovakia/NP	-Infinity
+
+It's not like what Neville Chamberlain said about Czechoslovakia in '38, that, you know, why should we care about a faraway country of what which know very little?
+we/NP; care/VP; about a faraway country of what/NP	-Infinity
+
+Well, they gave up Czechoslovakia, they compromised in Munich, and the huge tragedy of Second World War with tens of millions of people dead have followed.
+they/NP; gave/VP; up Czechoslovakia/NP	-Infinity
+
+Well, they gave up Czechoslovakia, they compromised in Munich, and the huge tragedy of Second World War with tens of millions of people dead have followed.
+they/NP; compromised/VP in/PP; Munich/NP	-Infinity
+
+Now -- what we have now is -- what we really have now is Georgia being -- you know, Georgia being attacked, and I think this is just the starting of a big chain of events that might unfold if Georgia falls... MALVEAUX: Mr. President... SAAKASHVILI: ... if people in the West, in the world, don't stand up for freedom.
+we/NP; have/VP; now is/NP	-Infinity
+
+Now -- what we have now is -- what we really have now is Georgia being -- you know, Georgia being attacked, and I think this is just the starting of a big chain of events that might unfold if Georgia falls... MALVEAUX: Mr. President... SAAKASHVILI: ... if people in the West, in the world, don't stand up for freedom.
+events/NP; might unfold/VP; Georgia/NP	-Infinity
+
+What has he said in terms of the United States' help or aid to your country?
+he/NP; said/VP in/PP; terms of the United States/NP	-Infinity
+
+SAAKASHVILI: President Bush expressed unwavering support for Georgia's elected government, for our independence and territorial integrity.
+President Bush/NP; expressed/VP; unwavering support/NP	-Infinity
+
+And there will be no compromise at the expense of our territorial integrity like there were compromises in the past in terms of appeasing one dictatorship or another that was in the past century.
+the expense of our territorial integrity/NP; were/VP; compromises/NP	-Infinity
+
+And there will be no compromise at the expense of our territorial integrity like there were compromises in the past in terms of appeasing one dictatorship or another that was in the past century.
+terms/NP; appeasing/VP; one dictatorship/NP	-Infinity
+
+And there will be no compromise at the expense of our territorial integrity like there were compromises in the past in terms of appeasing one dictatorship or another that was in the past century.
+another/NP; was/VP in/PP; the past century/NP	-Infinity
+
+The U. S. , the only big democracy in the world that never went for appeasement and never went for all kinds of shady deals.
+the world/NP; went/VP for/PP; appeasement/NP	-Infinity
+
+That's why my people are so sympathetic of the United States.
+my people/NP; are/VP of/PP; the United States/NP	-Infinity
+
+That's why we had forces in Iraq to fight for the U.S. and our people died there.
+we/NP; had/VP; forces/NP	-Infinity
+
+That's why we had forces in Iraq to fight for the U.S. and our people died there.
+Iraq/NP; to fight/VP for/PP; the U.S./NP	-Infinity
+
+But we never, ever asked for extra gratitude, because we have common values, we share those values.
+we/NP; have/VP; common values/NP	-Infinity
+
+But we never, ever asked for extra gratitude, because we have common values, we share those values.
+we/NP; share/VP; those values/NP	-Infinity
+
+And what Russia is trying to kill right now in Georgia is not just killing my country and getting rid of me as its president, but it's about killing -- it's about killing the idea of freedom, democracy and future for the whole region.
+what Russia/NP; is trying to kill right now/VP in/PP; Georgia/NP	-Infinity
+
+And what Russia is trying to kill right now in Georgia is not just killing my country and getting rid of me as its president, but it's about killing -- it's about killing the idea of freedom, democracy and future for the whole region.
+my country/NP; getting rid/VP of/PP; me/NP	-Infinity
+
+And what Russia is trying to kill right now in Georgia is not just killing my country and getting rid of me as its president, but it's about killing -- it's about killing the idea of freedom, democracy and future for the whole region.
+Russia/NP; is/VP about/PP; killing/NP	-Infinity
+<end>20080813221522.219</end>
+
+<story>International|South-Ossetia-presidential-campaign</story>
+<start>20080813221522.219</start>
+(END VIDEOTAPE) MALVEAUX: The presidential candidates also are weighing on this conflict.
+The presidential candidates/NP; are weighing/VP on/PP; this conflict/NP	-Infinity
+
+John McCain says Russia's invasion should force the U.S. to reexamine its relations with Moscow.
+Russia's invasion/NP; should force/VP; the U.S./NP	-Infinity
+
+McCain is also talking about the potential for Georgia to join NATO.
+McCain/NP; is also talking/VP about/PP; the potential/NP	-Infinity
+
+McCain is also talking about the potential for Georgia to join NATO.
+Georgia/NP; to join/VP; NATO/NP	-Infinity
+
+After the events of the past six days, no one should wonder why countries on Russia's periphery so ardently seek the security guarantees alliance membership represents.
+no one/NP; should wonder why/VP; countries/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: Barack Obama is on vacation, but he is also keeping track of the situation.
+Barack Obama/NP; is/VP on/PP; vacation/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: Barack Obama is on vacation, but he is also keeping track of the situation.
+he/NP; is also keeping/VP; track of the situation/NP	-Infinity
+
+Obama today saying in a statement -- quote -- "I welcome President Bush's decision to send aid to the people of Georgia.
+Obama today/NP; saying/VP in/PP; a statement/NP	-Infinity
+
+Obama today saying in a statement -- quote -- "I welcome President Bush's decision to send aid to the people of Georgia.
+President Bush's decision/NP; to send/VP; aid/NP	-Infinity
+
+And Americans stand united in support of the men and women who will carry out this humanitarian mission.
+Americans/NP; stand united/VP in/PP; support of the men and women/NP	-Infinity
+
+And Russia must back up its commitment to stop its violence and violation of Georgia's sovereignty with actions, not just words."
+Russia/NP; must back/VP up/PRT; its commitment/NP	-Infinity
+<end>20080813221629.519</end>
+
+<story>Politics:Teaser|Vice-presidential-campaign</story>
+<start>20080813221638.562</start>
+And John McCain makes a comment about a potential V.P .
+John McCain/NP; makes/VP; a comment/NP	-Infinity
+
+pick that will make conservatives uneasy.
+pick/NP; will make/VP; conservatives/NP	-Infinity
+<end>20080813221646.403</end>
+
+<story>Politics:Teaser|Cindy-McCain-interview</story>
+<start>20080813221646.403</start>
+And Cindy McCain taken off the trail and to the hospital.
+Cindy McCain/NP; taken off/VP; the trail/NP	-Infinity
+<end>20080813222014.978</end>
+
+<story>Politics:Teaser|Powell-presidential-endorsement</story>
+<start>20080813222142.365</start>
+(COMMERCIAL BREAK) ( NEWS BREAK) MALVEAUX: Colin Powell's presidential endorsement is a prize that is coveted by both John McCain and Barack Obama.
+a prize/NP; is coveted/VP by/PP; both/NP	-Infinity
+
+We will tell you what we're hearing right now about whether Powell is ready to choose sides and possibly cross party lines.
+we/NP; 're hearing right now/VP about/PP; Powell/NP	-Infinity
+
+We will tell you what we're hearing right now about whether Powell is ready to choose sides and possibly cross party lines.
+sides/NP; possibly cross/VP; party lines/NP	-Infinity
+<end>20080813222155.445</end>
+
+<story>Politics:Teaser|Swift-boat-book-Obamanation</story>
+<start>20080813222155.445</start>
+New concerns among some Democrats that Obama may get the Swift Boat treatment that helped defeat John Kerry -- details on a new bestselling book.
+Obama/NP; may get/VP; the Swift Boat treatment/NP	-Infinity
+<end>20080813222204.721</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813222204.721</start>
+And Condoleezza Rice is warning Russia to stop resorting to its old Soviet ways.
+Condoleezza Rice/NP; is warning/VP; Russia/NP	-Infinity
+
+Will the conflict in Georgia be a headache for the next administration?
+Georgia/NP; be/VP; a headache/NP	-Infinity
+<end>20080813222504.534</end>
+
+<story>Politics:Teaser|Cindy-McCain-interview</story>
+<start>20080813222526.556</start>
+The blogger happens to be their daughter -- all of this plus the best political team on television.
+The blogger/NP; happens to be/VP; their daughter/NP	-Infinity
+<end>20080813222538.234</end>
+
+<story>Network|Intro</story>
+<start>20080813222538.234</start>
+Wolf Blitzer is off today.
+Wolf Blitzer/NP; is/VP off/PP; today/NP	-Infinity
+<end>20080813222538.234</end>
+
+<story>Politics|Swift-boat-book-Obamanation</story>
+<start>20080813222549.178</start>
+The facts are mixed with accusations about Obama that are misleading or just flat-out wrong.
+The facts/NP; are mixed/VP with/PP; accusations/NP	-Infinity
+
+Yet, despite all of this, there is concern that the author's claims might actually catch on with some voters.
+the author's claims/NP; might actually catch/VP on/PP with/PP; some voters/NP	-Infinity
+
+Our CNN's Jessica Yellin joining me now.
+Our CNN's Jessica Yellin/NP; joining/VP; me/NP	-Infinity
+
+And he says he is concerned about Barack Obama becoming president because he doesn't like what he calls Obama's leftist politics.
+he/NP; is/VP about/PP; Barack Obama/NP	-Infinity
+
+And he says he is concerned about Barack Obama becoming president because he doesn't like what he calls Obama's leftist politics.
+he/NP; calls/VP; Obama's leftist politics/NP	-Infinity
+
+And he wants to see him defeated.
+he/NP; wants to see/VP; YELLIN : Now the man who wrote the Swift Boat book/NP	-Infinity
+
+AL FRENCH, SWIFT BOAT VETERANS FOR TRUTH: He is lying about his record.
+He/NP; is lying/VP about/PP; his record/NP	-Infinity
+
+(END VIDEO CLIP) YELLIN : Now the man who wrote the Swift Boat book has a new book out on Barack Obama , and he's been promoting it in appearances like this one on FOX News.
+the man/NP; wrote/VP; the Swift Boat book/NP	-Infinity
+
+(END VIDEO CLIP) YELLIN : Now the man who wrote the Swift Boat book has a new book out on Barack Obama , and he's been promoting it in appearances like this one on FOX News.
+he/NP; 's been promoting/VP; END VIDEO CLIP/NP	-Infinity
+
+(BEGIN VIDEO CLIP) JEROME CORSI, AUTHOR, "THE OBAMA NATION": I feel Americans know very little about Obama.
+Americans/NP; know/VP about/PP; Obama/NP	-Infinity
+
+Four years ago, he was a state senator in the legislature in Illinois.
+he/NP; was/VP; a state senator/NP	-Infinity
+
+(END VIDEO CLIP) YELLIN : The book debuted at number one on the "New York Times" bestseller list and scored an article on that paper's front page.
+The book/NP; debuted/VP at/PP; number one/NP	-Infinity
+
+(END VIDEO CLIP) YELLIN : The book debuted at number one on the "New York Times" bestseller list and scored an article on that paper's front page.
+the `` New York Times '' bestseller list/NP; scored/VP; an article/NP	-Infinity
+
+It alleges, Obama is on the extreme left of American politics, and has extensive connections to Islam and with radical racial politics, this despite the fact that, for months, Obama's been explaining he is not Muslim.
+Obama/NP; is/VP on/PP; the extreme left of American politics/NP	-Infinity
+
+It alleges, Obama is on the extreme left of American politics, and has extensive connections to Islam and with radical racial politics, this despite the fact that, for months, Obama's been explaining he is not Muslim.
+Obama's/NP; been explaining/VP; he/NP	-Infinity
+
+This -- this is just stuff that is designed to make people suspicious.
+just stuff/NP; is designed to make/VP; people/NP	-Infinity
+
+YELLIN : It includes lines that some might consider racially insensitive, such as, "Obama 's mother chose another Third World prospect for her second husband, a second man of color, to be her mate."
+Obama's mother/NP; chose/VP; another Third World prospect/NP	-Infinity
+
+In 2004, the Associated Press verified he posted comments on a conservative Web site describing Islam as a religion in which the "boys are buggered and the infidels are killed," and calling Pope John Paul II "senile."
+the Associated Press/NP; verified/VP; he/NP	-Infinity
+
+In 2004, the Associated Press verified he posted comments on a conservative Web site describing Islam as a religion in which the "boys are buggered and the infidels are killed," and calling Pope John Paul II "senile."
+a conservative Web site/NP; describing/VP; Islam/NP	-Infinity
+
+In 2004, the Associated Press verified he posted comments on a conservative Web site describing Islam as a religion in which the "boys are buggered and the infidels are killed," and calling Pope John Paul II "senile."
+the `` boys/NP; are buggered/VP; the infidels/NP	-Infinity
+
+Campaign supporters say that's reason enough to dismiss the book.
+Campaign supporters/NP; 's reason/VP; enough/NP	-Infinity
+
+JAMAL SIMMONS, DEMOCRATIC STRATEGIST: I don't think anybody's going to take Jerome Corsi all that seriously, once they learn who this guy really is .
+anybody's/NP; going to take/VP; Jerome Corsi/NP	-Infinity
+
+Even people on the right wing haven't associated themselves with him, because of some of the pretty bigoted and outrageous things he's said in his career.
+the right wing/NP; have n't associated/VP; themselves/NP	-Infinity
+
+Even people on the right wing haven't associated themselves with him, because of some of the pretty bigoted and outrageous things he's said in his career.
+he/NP; 's said/VP in/PP; his career/NP	-Infinity
+
+(END VIDEOTAPE) YELLIN : Suzanne, when I spoke to Corsi , he says he long apologized for those insensitive postings online and insisted he's not a racist .
+he/NP; apologized/VP for/PP; those insensitive postings online/NP	-Infinity
+
+(END VIDEOTAPE) YELLIN : Suzanne, when I spoke to Corsi , he says he long apologized for those insensitive postings online and insisted he's not a racist .
+he/NP; 's/VP; a racist/NP	-Infinity
+
+The Obama campaign, through a spokesman, told me they believe this book is nothing but a series of lies that have been discredited.
+they/NP; believe/VP; this book/NP	-Infinity
+
+They say it's written by a person who wrote a similar book to get Bush and Cheney reelected and that this is just an attempt to continue that four years later.
+The Obama campaign/NP; 's written/VP by/PP; a person/NP	-Infinity
+
+They say it's written by a person who wrote a similar book to get Bush and Cheney reelected and that this is just an attempt to continue that four years later.
+a similar book/NP; to get/VP; Bush and Cheney/NP	-Infinity
+
+They say it's written by a person who wrote a similar book to get Bush and Cheney reelected and that this is just an attempt to continue that four years later.
+just an attempt/NP; to continue/VP; Even people on the right wing four years/NP	-Infinity
+
+They insist more people are going to try to make more money in this presidential campaign, and they will -- quote -- "respond to these smears forcefully."
+They/NP; insist/VP; more people/NP	-Infinity
+
+Even if a lot of people know it's misleading, they're lies, could this catch on and could this be another problem for Obama?
+a lot of people/NP; know/VP; a lot of people/NP	-Infinity
+
+Even if a lot of people know it's misleading, they're lies, could this catch on and could this be another problem for Obama?
+they/NP; 're/VP; lies/NP	-Infinity
+
+Even if a lot of people know it's misleading, they're lies, could this catch on and could this be another problem for Obama?
+this catch/NP; could this be/VP; another problem/NP	-Infinity
+
+And that is, it isn't so much the people reading the book.
+much the people/NP; reading/VP; the book/NP	-Infinity
+
+They believe that mostly those will be people who are already not inclined to vote for Obama.
+They/NP; believe/VP; mostly those/NP	-Infinity
+
+They believe that mostly those will be people who are already not inclined to vote for Obama.
+people/NP; are already not inclined to vote/VP for/PP; Obama/NP	-Infinity
+
+It's the fact it was on the front page "The New York Times."
+a certain young blogger 's coverage of her husband/NP; was/VP on/PP; the front page/NP	-Infinity
+
+It's the fact that we're talking about it now and you see those little clips from the book -- or, rather, those excerpts from the books.
+we/NP; 're talking/VP about/PP; a certain young blogger 's coverage of her husband/NP	-Infinity
+
+Nonetheless, they have John Kerry, who is setting up a Web site to respond to it.
+they/NP; have/VP; John Kerry/NP	-Infinity
+
+Nonetheless, they have John Kerry, who is setting up a Web site to respond to it.
+a Web site/NP; to respond/VP to/PP; a Web site/NP	-Infinity
+
+They understand that swift-boating has become a part of the political culture and that people have a negative reaction to that.
+They/NP; understand/VP; swift-boating/NP	-Infinity
+
+They understand that swift-boating has become a part of the political culture and that people have a negative reaction to that.
+people/NP; have/VP; a negative reaction/NP	-Infinity
+
+But it is mostly the coverage of it that they worry about.
+how/NP; is mostly/VP; the coverage of how/NP	-Infinity
+
+Obviously, they have been out there, and they know the idea that he is a Muslim is -- is obviously a tricky one for them, other things like that.
+they/NP; know/VP; the idea/NP	-Infinity
+
+But right now, the book is just one of these things that they're trying to swat away as, look, this is a man who has no credibility.
+a man/NP; has/VP; no credibility/NP	-Infinity
+
+Do they need to do more?
+they/NP; need to do/VP; more/NP	-Infinity
+
+Do they need to be very aggressive about discrediting this book?
+they/NP; need to be/VP about/PP; discrediting/NP	-Infinity
+
+DANA MILBANK, "WASHINGTON POST" STAFF WRITER AND AUTHOR: I think it does a great deal of discrediting on its own.
+MILBANK/NP; does/VP; a great deal of discrediting/NP	-Infinity
+
+In most cases, the sequel is not as good as the original and this is the case here, as well.
+the sequel/NP; is/VP as/PP; the original/NP	-Infinity
+
+And I suspect Professor Matalin's scholastic credentials may be in question on that particular point.
+Professor Matalin's scholastic credentials/NP; may be/VP in/PP; question/NP	-Infinity
+<end>20080813223103.226</end>
+
+<story>Politics|McCain-campaign</story>
+<start>20080813223103.226</start>
+Is there anything as comparable that John McCain is dealing with, when it comes to kind of these misstatements about the candidates?
+MALVEAUX : Steven , what do you think ?/NP; comes/VP to/PP; kind of these misstatements/NP	-Infinity
+
+There's one out called "The Myth of the Maverick," I believe, written by "Reason" magazine editor Matt Welch, which is, you know, it takes a look at McCain's books and challenges certain assertions in those.
+one out/NP; called/VP; The Myth of the Maverick/NP	-Infinity
+
+There's one out called "The Myth of the Maverick," I believe, written by "Reason" magazine editor Matt Welch, which is, you know, it takes a look at McCain's books and challenges certain assertions in those.
+one out called `` The Myth of the Maverick , '' I believe , written by `` Reason '' magazine editor Matt Welch , which is , you know/NP; takes/VP; a look/NP	-Infinity
+
+But, look, I think the big problem that this book faces is that there were, as pointed out in " The New York Times" article, several sort of easy and obviously false allegations contained in it, so it makes it easy to discredit.
+several sort of easy and obviously false allegations/NP; contained/VP in/PP; The New York Times '' article/NP	-Infinity
+
+But, look, I think the big problem that this book faces is that there were, as pointed out in " The New York Times" article, several sort of easy and obviously false allegations contained in it, so it makes it easy to discredit.
+the big problem that this book faces/NP; makes/VP; the big problem that this book faces/NP	-Infinity
+
+MALVEAUX: And you've had a chance to actually interview John McCain.
+a chance/NP; to actually interview/VP; John McCain/NP	-Infinity
+
+Tell us what the highlight was , particularly -- I know that he was with Tom Ridge.
+he/NP; was/VP with/PP; Tom Ridge/NP	-Infinity
+
+I had spoke to Senator McCain today for about 40 minutes on his campaign plane and asked him a variety of questions.
+his campaign plane/NP; asked/VP; John McCain/NP	-Infinity
+
+I think maybe the most interesting thing to come out of the interview was what he told me about a potential vice presidential pick, which he hasn't really talked about much.
+the most interesting thing/NP; to come out/VP of/PP; the interview/NP	-Infinity
+
+I think maybe the most interesting thing to come out of the interview was what he told me about a potential vice presidential pick, which he hasn't really talked about much.
+he/NP; told/VP; me/NP	-Infinity
+
+He mentioned -- I asked him about a conversation that we had had with a couple of other reporters back in February, where McCain said that picking a pro-choice running mate would be difficult for him because the Republican Party is fundamentally a pro-life party.
+we/NP; had had/VP with/PP; a couple of other reporters/NP	-Infinity
+
+He mentioned -- I asked him about a conversation that we had had with a couple of other reporters back in February, where McCain said that picking a pro-choice running mate would be difficult for him because the Republican Party is fundamentally a pro-life party.
+a pro-choice running mate/NP; would be/VP for/PP; a pro-choice running mate/NP	-Infinity
+
+And I asked him if he still feels the same way.
+he/NP; feels/VP; the same way/NP	-Infinity
+
+And he seemed to back off a little bit to me and said no, you know, I think we're a pro-life party, but that doesn't mean we would exclude people who are pro- choice.
+he/NP; seemed to back/VP off/PRT; a little bit/NP	-Infinity
+
+And he seemed to back off a little bit to me and said no, you know, I think we're a pro-life party, but that doesn't mean we would exclude people who are pro- choice.
+me/NP; said/VP; no/NP	-Infinity
+
+And he seemed to back off a little bit to me and said no, you know, I think we're a pro-life party, but that doesn't mean we would exclude people who are pro- choice.
+we/NP; 're/VP; a pro-life party/NP	-Infinity
+
+And he seemed to back off a little bit to me and said no, you know, I think we're a pro-life party, but that doesn't mean we would exclude people who are pro- choice.
+we/NP; would exclude/VP; people/NP	-Infinity
+
+And then McCain, on his own, brought up Tom Ridge as an example of someone who would merit serious consideration.
+an example of someone/NP; would merit/VP; serious consideration/NP	-Infinity
+
+CROWLEY: They already knew that McCain, as every Republican does, is looking at the middle and that most people seeing him as a sort of a maverick and not a real Republican.
+They/NP; knew/VP that/PP; McCain/NP	-Infinity
+
+CROWLEY: They already knew that McCain, as every Republican does, is looking at the middle and that most people seeing him as a sort of a maverick and not a real Republican.
+that most people/NP; seeing/VP; senior political correspondent Candy Crowley/NP	-Infinity
+
+It's why they are already out there -- and have been incessantly, in ads and on the campaign trail, talking about McCain/Bush and tying them together.
+McCain\/Bush/NP; tying/VP; my people/NP	-Infinity
+
+So this kind of fits into that, where they can say look, the number two doesn't matter.
+they/NP; can say/VP; look/NP	-Infinity
+
+John McCain is really the third term of George Bush.
+John McCain/NP; is really/VP; the third term of George Bush/NP	-Infinity
+
+So that's how they'll handle it.
+John McCain/NP; is how/VP; they/NP	-Infinity
+<end>20080813223326.068</end>
+
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080813223326.068</start>
+On the next subject, Hillary Clinton will get a major prime time moment at the Democratic National Convention.
+Hillary Clinton/NP; will get/VP; a major prime time/NP	-Infinity
+
+But some analysts are asking just how she's going to aim her speech.
+some analysts/NP; are asking just/VP; she/NP	-Infinity
+
+Will she use her speech to get Barack Obama elected or improve her own chances for another presidential bid?
+she/NP; use/VP; Dana speech/NP	-Infinity
+<end>20080813223342.251</end>
+
+<story>International:Teaser|South-Ossetia-presidential-campaign</story>
+<start>20080813223342.251</start>
+How are Barack Obama and John McCain handling it?
+John McCain/NP; handling/VP; an international crisis -- war in the former Soviet Union/NP	-Infinity
+<end>20080813223642.831</end>
+
+<story>Politics|Powell-presidential-endorsement</story>
+<start>20080813223642.831</start>
+(COMMERCIAL BREAK) MALVEAUX: There is a lot of buzz right now about Colin Powell and whether he may endorse one of the presidential candidates any time soon.
+he/NP; may endorse/VP; one of the presidential candidates/NP	-Infinity
+
+There is talk that Powell might endorse Barack Obama, perhaps at the convention.
+Powell/NP; might endorse/VP; Barack Obama/NP	-Infinity
+
+JOHN KING, CNN CHIEF NATIONAL CORRESPONDENT: Well, Bill Kristol, who is the editor of the conservative "Weekly Standard" and a Fox News contributor says flat out that he is told by sources that Colin Powell will endorse Barack Obama and most likely do so in a speech at the Democratic Convention.
+a Fox News contributor/NP; says/VP out/PP; he/NP	-Infinity
+
+JOHN KING, CNN CHIEF NATIONAL CORRESPONDENT: Well, Bill Kristol, who is the editor of the conservative "Weekly Standard" and a Fox News contributor says flat out that he is told by sources that Colin Powell will endorse Barack Obama and most likely do so in a speech at the Democratic Convention.
+Colin Powell/NP; will endorse/VP; Barack Obama and most likely/NP	-Infinity
+
+Well, ABC caught up with General Powell and he said no, he's not going to the Democratic Convention.
+ABC/NP; caught/VP up/PRT with/PP; General Powell/NP	-Infinity
+
+Well, ABC caught up with General Powell and he said no, he's not going to the Democratic Convention.
+he/NP; 's not going/VP to/PP; the Democratic Convention/NP	-Infinity
+
+He did not let the conversation go on to answer the bigger question -- who will he vote for and might he endorse anybody.
+He/NP; did not let/VP; the conversation/NP	-Infinity
+
+He did not let the conversation go on to answer the bigger question -- who will he vote for and might he endorse anybody.
+he/NP; endorse/VP; anybody/NP	-Infinity
+
+Suzanne, I'm told by two sources very close to Powell that he has not made up his mind.
+he/NP; has not made/VP up/PRT; his mind/NP	-Infinity
+
+He served in the Bush administration.
+He/NP; served/VP in/PP; the Bush administration/NP	-Infinity
+
+He's been a friend of John McCain for more three decades.
+He/NP; 's been/VP; a friend of John McCain/NP	-Infinity
+
+One of these sources told me he would like to vote for John McCain, but he hasn't found a reason to do that.
+One of these sources/NP; told/VP; me/NP	-Infinity
+
+One of these sources told me he would like to vote for John McCain, but he hasn't found a reason to do that.
+he/NP; would like to vote/VP for/PP; John McCain/NP	-Infinity
+
+One of these sources told me he would like to vote for John McCain, but he hasn't found a reason to do that.
+he/NP; has n't found/VP; a reason/NP	-Infinity
+
+The second source said he would not be surprised at all if, in the end, Colin Powell voted for Barack Obama -- maybe even endorsed Obama.
+The second source/NP; said/VP; he/NP	-Infinity
+
+The second source said he would not be surprised at all if, in the end, Colin Powell voted for Barack Obama -- maybe even endorsed Obama.
+Colin Powell/NP; voted/VP for/PP; Barack Obama/NP	-Infinity
+
+But he says Colin Powell told both candidates in face-to-face private meetings, I want to see who you pick for a running mate, I want to see the tone and the tenor of your conventions and I want to see what you're talking about out on the trail.
+Colin Powell/NP; told/VP; both candidates/NP	-Infinity
+
+So, first and foremost, he's waiting for the V.P. picks.
+he/NP; 's waiting/VP; the V.P. picks/NP	-Infinity
+
+He likes drama.
+He/NP; likes/VP; drama/NP	-Infinity
+
+But he will not be going to the Democratic Convention.
+he/NP; will not be going/VP to/PP; the Democratic Convention/NP	-Infinity
+
+I'm also told the McCain people asked him to come to the Republican Convention and he said no.
+the McCain people/NP; asked/VP; John McCain/NP	-Infinity
+
+KING: Make no mistake about it, the Obama people would love Colin Powell to endorse.
+the Obama people/NP; would love/VP; Colin Powell/NP	-Infinity
+
+They would love for him to come to the Democratic Convention because it would disprove something McCain is saying.
+They/NP; would love/VP for/PP; Barack Obama/NP	-Infinity
+
+They would love for him to come to the Democratic Convention because it would disprove something McCain is saying.
+the Democratic National Convention/NP; would disprove/VP; something McCain/NP	-Infinity
+
+If Barack Obama could get a prominent Republican like Colin Powell, who served in the Bush administration, has stature on national security issues, it would help him in so many ways.
+Barack Obama/NP; could get/VP; a prominent Republican/NP	-Infinity
+
+If Barack Obama could get a prominent Republican like Colin Powell, who served in the Bush administration, has stature on national security issues, it would help him in so many ways.
+the Bush administration/NP; would help/VP; Barack Obama/NP	-Infinity
+
+He also has a lot of Republican friends who are telling him, are you crazy?
+He/NP; has/VP; a lot of Republican friends/NP	-Infinity
+
+You're going to go into the Democratic Convention and do something like that?
+the Democratic Convention/NP; do/VP; something/NP	-Infinity
+
+Again, General Powell likes the drama.
+General Powell/NP; likes/VP; the drama/NP	-Infinity
+
+He also keeps his cards close to his vest.
+He/NP; keeps/VP; his cards/NP	-Infinity
+
+Those closest to him say they think, at the moment, he is inclined to vote for Barack Obama.
+he/NP; is inclined to vote/VP for/PP; Barack Obama/NP	-Infinity
+
+The big question in their minds, will he say anything public about that and will he make an endorsement?
+Colin Powell 's and/NP; will he make/VP; an endorsement/NP	-Infinity
+
+Those are open questions and the McCain people continue to lobby a bit more furiously after they saw those reports today.
+the McCain people/NP; continue to lobby/VP; a bit/NP	-Infinity
+
+Those are open questions and the McCain people continue to lobby a bit more furiously after they saw those reports today.
+they/NP; saw/VP; those reports/NP	-Infinity
+
+We enjoy the drama, as well.
+We/NP; enjoy/VP; the drama/NP	-Infinity
+
+MALVEAUX: We want to go back to our team, as well, just to get quick reaction.
+We/NP; want to go back/VP to/PP; our team/NP	-Infinity
+
+MALVEAUX: We want to go back to our team, as well, just to get quick reaction.
+just/NP; to get/VP; quick reaction/NP	-Infinity
+
+We know that Hillary Clinton speaking at the Democratic Convention .
+We/NP; know/VP that/PP; Hillary Clinton/NP	-Infinity
+
+The question is, does she have an ulterior motive possibly to undermine Barack Obama?
+she/NP; have/VP; an ulterior motive/NP	-Infinity
+
+But we want to get back to the best political team on television, senior political correspondent, Candy Crowley; our CNN contributor, Dana Milbank of "The Washington Post;" and Stephen Hayes, senior writer for "The Weekly Standard."
+we/NP; want to get back/VP to/PP; the best political team/NP	-Infinity
+
+CROWLEY: Well, I mean, obviously, it would be a great get.
+John King 's point/NP; would be/VP; a great get/NP	-Infinity
+
+Again, for all the reasons that John explained, this would be huge for Barack Obama , although people close to Colin Powell say it would not be a surprise to them.
+an August surprise/NP; would not be/VP; a surprise/NP	-Infinity
+
+Right now, I can tell you, the Obama camp is very excited about this and it hasn't said a word.
+now/NP; has n't said/VP; a word/NP	-Infinity
+
+Obviously, they're all waiting for Powell, who, I'm also told, may not say, may just go on in and vote and never say who he voted for.
+they/NP; 're/VP; all waiting/NP	-Infinity
+<end>20080813224019.681</end>
+
+<story>Politics|Clinton-convention-role</story>
+<start>20080813224019.681</start>
+And she says that: "Hillary feels no guilt about encouraging her supporters to mess up Obama's big moment, thus undermining his odds of beating John McCain and improving her odds of being the nominee in 2012."
+Hillary/NP; feels/VP; no guilt/NP	-Infinity
+
+And she says that: "Hillary feels no guilt about encouraging her supporters to mess up Obama's big moment, thus undermining his odds of beating John McCain and improving her odds of being the nominee in 2012."
+his odds/NP; beating/VP; John McCain/NP	-Infinity
+
+And she says that: "Hillary feels no guilt about encouraging her supporters to mess up Obama's big moment, thus undermining his odds of beating John McCain and improving her odds of being the nominee in 2012."
+Hillary odds/NP; being/VP; the nominee/NP	-Infinity
+
+She believes that Hillary Clinton and Bill Clinton having such a prominent position on the stage, one of the speakers at the convention, is really going to hurt Obama as opposed to help him.
+She/NP; believes/VP; Hillary Clinton/NP	-Infinity
+
+She believes that Hillary Clinton and Bill Clinton having such a prominent position on the stage, one of the speakers at the convention, is really going to hurt Obama as opposed to help him.
+Bill Clinton/NP; having/VP; such a prominent position/NP	-Infinity
+
+But Obama doesn't really have a choice.
+Obama/NP; does n't really have/VP; a choice/NP	-Infinity
+
+Now, the one thing that weighs in the favor of her not harming things at the convention is if she does really wish to run in 2012, assuming Obama loses, she can't be perceived as having been the spoiler in the race.
+the one thing/NP; weighs/VP in/PP; the favor of Dana not/NP	-Infinity
+
+Now, the one thing that weighs in the favor of her not harming things at the convention is if she does really wish to run in 2012, assuming Obama loses, she can't be perceived as having been the spoiler in the race.
+she/NP; does really wish to run/VP in/PP; 2012/NP	-Infinity
+
+So, yes, she can mess up at the convention, but no, she probably won't .
+she/NP; can mess up/VP at/PP; the convention/NP	-Infinity
+
+In public, she needs to appear to be a team player.
+she/NP; needs to appear to be/VP; a team player/NP	-Infinity
+
+So I think Obama can sleep relatively easily on that one.
+Obama/NP; can sleep relatively easily/VP on/PP; that one/NP	-Infinity
+
+MALVEAUX: And, Steve, what do you think about the notion -- before there was some supporters who were saying that she should be put into nomination, there should be at least a vote and something at least symbolic, we've heard in the past from Hillary Clinton, for the sake of Chelsea, to show that there was a lot of female support and that this was a very close race?
+some supporters/NP; were saying/VP; she/NP	-Infinity
+
+MALVEAUX: And, Steve, what do you think about the notion -- before there was some supporters who were saying that she should be put into nomination, there should be at least a vote and something at least symbolic, we've heard in the past from Hillary Clinton, for the sake of Chelsea, to show that there was a lot of female support and that this was a very close race?
+we/NP; 've heard/VP in/PP; the past/NP	-Infinity
+
+MALVEAUX: And, Steve, what do you think about the notion -- before there was some supporters who were saying that she should be put into nomination, there should be at least a vote and something at least symbolic, we've heard in the past from Hillary Clinton, for the sake of Chelsea, to show that there was a lot of female support and that this was a very close race?
+a lot of female support/NP; was/VP; a very close race/NP	-Infinity
+
+I mean she was caught on YouTube video telling her supporters that this was a possibility, saying that it might be a catharsis .
+she/NP; was caught/VP on/PP; YouTube video/NP	-Infinity
+
+I mean she was caught on YouTube video telling her supporters that this was a possibility, saying that it might be a catharsis .
+her not supporters/NP; was/VP; a possibility/NP	-Infinity
+
+I mean she was caught on YouTube video telling her supporters that this was a possibility, saying that it might be a catharsis .
+YouTube video/NP; might be/VP; a catharsis/NP	-Infinity
+
+So I think, you know, she's been up to some sort of behind-the- scenes mischief.
+she/NP; 's been up/VP to/PP; some sort of behind-the/NP	-Infinity
+
+But I agree with Dana's basic point that, you know, at the end of the day, if she wants to run again in 2012, she's going to need to behave herself and to be seen as a strong supporter of Barack Obama.
+she/NP; wants to run again/VP in/PP; 2012/NP	-Infinity
+
+But I agree with Dana's basic point that, you know, at the end of the day, if she wants to run again in 2012, she's going to need to behave herself and to be seen as a strong supporter of Barack Obama.
+she/NP; 's going to need to behave/VP; herself/NP	-Infinity
+<end>20080813224210.392</end>
+
+<story>International|South-Ossetia-presidential-campaign</story>
+<start>20080813224210.392</start>
+MALVEAUX: We have seen, in the last couple of days, both of these candidates obviously trying to stay a step ahead of the other one when it comes to this conflict between Russia and Georgia.
+both of these candidates/NP; obviously trying to stay/VP; a step/NP	-Infinity
+
+MALVEAUX: We have seen, in the last couple of days, both of these candidates obviously trying to stay a step ahead of the other one when it comes to this conflict between Russia and Georgia.
+a step ahead of the other one/NP; comes/VP to/PP; this conflict/NP	-Infinity
+
+But, of course, it's time to pass from deeds to -- from words to deeds.
+time/NP; to pass/VP from/PP; deeds/NP	-Infinity
+
+(END VIDEO CLIP) MALVEAUX: Candy, he's actually asking for some action from John McCain.
+he/NP; 's actually asking/VP for/PP; some action/NP	-Infinity
+
+He's very focused on John McCain.
+He/NP; 's very focused/VP on/PP; John McCain/NP	-Infinity
+
+He also mentioned Barack Obama in my interview.
+He/NP; mentioned/VP; Barack Obama/NP	-Infinity
+
+Does this seem to undermine that we still have a commander-in- chief, that's neither one of these candidates or do they seem to be successfully overshadowing this administration?
+we/NP; have/VP; a commander-in/NP	-Infinity
+
+Does this seem to undermine that we still have a commander-in- chief, that's neither one of these candidates or do they seem to be successfully overshadowing this administration?
+neither one of these candidates/NP; do/VP; they/NP	-Infinity
+
+CROWLEY: Well, I think, actually, what we have here is a lame duck and we have people looking forward.
+we/NP; have/VP; people/NP	-Infinity
+
+So, necessarily, what Obama has to say and what John McCain has to say are both kind of overshadowing what the president has to say.
+what Obama/NP; has to say/VP; what John McCain/NP	-Infinity
+
+Nonetheless, it's the president who's going to carry out policy.
+the president/NP; 's going to carry/VP; out policy/NP	-Infinity
+
+It's been interesting to watch the Obama reaction versus the McCain reaction, because what the Obama people attempted to do was say well, we applaud President Bush doing this and we think we ought to now move forward, we're talking to the Europeans and being in the forefront of the diplomacy.
+we/NP; applaud/VP; President Bush/NP	-Infinity
+
+It's been interesting to watch the Obama reaction versus the McCain reaction, because what the Obama people attempted to do was say well, we applaud President Bush doing this and we think we ought to now move forward, we're talking to the Europeans and being in the forefront of the diplomacy.
+we/NP; think/VP; we/NP	-Infinity
+
+It's been interesting to watch the Obama reaction versus the McCain reaction, because what the Obama people attempted to do was say well, we applaud President Bush doing this and we think we ought to now move forward, we're talking to the Europeans and being in the forefront of the diplomacy.
+we/NP; 're talking/VP to/PP; the Europeans/NP	-Infinity
+
+On the other hand, they're trying to frame John McCain as having been too belligerent and outside what President Bush has suggested.
+they/NP; 're trying to frame/VP; John McCain/NP	-Infinity
+
+MILBANK: I think... MALVEAUX: Does anyone come out on top?
+Does anyone/NP; come/VP out/PRT; on top/NP	-Infinity
+
+MILBANK: In theory, it benefits McCain on his foreign policy credentials.
+MILBANK/NP; benefits/VP; McCain/NP	-Infinity
+
+But the fact of the matter is once most Americans realize we're not talking about the Georgia that Atlanta is in the middle of, they lose a lot of interest.
+the fact of the matter/NP; is once/VP; most Americans/NP	-Infinity
+
+But the fact of the matter is once most Americans realize we're not talking about the Georgia that Atlanta is in the middle of, they lose a lot of interest.
+we/NP; 're not talking/VP about/PP; the Georgia/NP	-Infinity
+
+But the fact of the matter is once most Americans realize we're not talking about the Georgia that Atlanta is in the middle of, they lose a lot of interest.
+Atlanta/NP; is/VP in/PP; the middle/NP	-Infinity
+
+But the fact of the matter is once most Americans realize we're not talking about the Georgia that Atlanta is in the middle of, they lose a lot of interest.
+they/NP; lose/VP; a lot of interest/NP	-Infinity
+<end>20080813224406.174</end>
+
+<story>Human-interest:Teaser|Cindy-McCain-hand-hospitalized</story>
+<start>20080813224406.174</start>
+An injury takes Cindy McCain off the campaign trail and into the hospital.
+An injury/NP; takes/VP; Cindy McCain/NP	-Infinity
+<end>20080813224411.079</end>
+
+<story>Politics|Megan-McCain-campaign-blog</story>
+<start>20080813224722.971</start>
+(COMMERCIAL BREAK) MALVEAUX: While Cindy McCain's sprained hand got a little attention to the trail today, her daughter has been busy blogging about the campaign.
+Cindy McCain's sprained hand/NP; got/VP; a little attention/NP	-Infinity
+
+CNN national correspondent, Gary Tuchman, tells us how Meghan McCain is help keep the McCain campaign cool and talks to Cindy McCain about her daughter's role.
+how Meghan McCain/NP; is help keep/VP; the McCain campaign cool and talks/NP	-Infinity
+
+GARY TUCHMAN, CNN NATIONAL CORRESPONDENT : Suzanne, John McCain can be described in many ways, but hip is not one of them.
+John McCain/NP; can be described/VP in/PP; many ways/NP	-Infinity
+
+Meghan McCain is out on the campaign trail with her father and she's chronicling her adventures with her eye on people more likely to watch "American Idol" than one of her father's campaign events.
+Meghan McCain/NP; is/VP out/PRT on/PP; the campaign trail/NP	-Infinity
+
+Meghan McCain is out on the campaign trail with her father and she's chronicling her adventures with her eye on people more likely to watch "American Idol" than one of her father's campaign events.
+she/NP; 's chronicling/VP; his 23-year-old daughter adventures/NP	-Infinity
+
+Meghan McCain is out on the campaign trail with her father and she's chronicling her adventures with her eye on people more likely to watch "American Idol" than one of her father's campaign events.
+people/NP; to watch/VP; American Idol/NP	-Infinity
+
+She has a blog site called McCainBlogette.com.
+She/NP; has/VP; a blog site/NP	-Infinity
+
+She shows pictures of her dad, like this one that she says is "one of my all time fave pictures of him."
+She/NP; shows/VP; pictures of his 23-year-old daughter dad/NP	-Infinity
+
+She has this breaking news on the blog that she decided on Father's Day to register as a Republican efficient first time.
+She/NP; has/VP; this breaking news/NP	-Infinity
+
+She has this breaking news on the blog that she decided on Father's Day to register as a Republican efficient first time.
+she/NP; decided/VP on/PP; Father's Day/NP	-Infinity
+
+She had been an Independent.
+She/NP; had been/VP; an Independent/NP	-Infinity
+
+She writes to her dad: "Happy Father's Day."
+She/NP; writes/VP to/PP; his 23-year-old daughter dad/NP	-Infinity
+
+And then she also has videos, including this one.
+she/NP; has/VP; videos/NP	-Infinity
+
+And I believe that we will because my dad is the best candidate.
+we/NP; will because/VP; my dad/NP	-Infinity
+
+He has the most experience.
+He/NP; has/VP; the most experience/NP	-Infinity
+
+It's hard sometimes because I know I'm his daughter and I'm -- we share DNA.
+we/NP; share/VP; DNA/NP	-Infinity
+
+(END VIDEO CLIP) TUCHMAN: Megan McCain would not do an interview with us.
+Megan McCain/NP; would not do/VP; an interview/NP	-Infinity
+
+Campaign officials say she has written a children's book about her father that is being released next month and she will do no interviews before that.
+she/NP; has written/VP; a children's book/NP	-Infinity
+
+Campaign officials say she has written a children's book about her father that is being released next month and she will do no interviews before that.
+his 23-year-old daughter father/NP; is being released/VP; next month/NP	-Infinity
+
+Campaign officials say she has written a children's book about her father that is being released next month and she will do no interviews before that.
+she/NP; will do/VP; no interviews/NP	-Infinity
+
+But, another person who knows her very well talked to us, her mother.
+another person/NP; knows/VP; his 23-year-old daughter very/NP	-Infinity
+
+(BEGIN VIDEO CLIP) CINDY MCCAIN, WIFE OF JOHN MCCAIN: The blog was her idea.
+The blog/NP; was/VP; her idea/NP	-Infinity
+
+And she came up with it on her own.
+she/NP; came/VP up/PRT with/PP; The blog was her idea/NP	-Infinity
+
+And she came up with the idea of how -- of what she wanted on the blog, which is, as you know, is completely different from any other political blogs that's out there.
+she/NP; came/VP up/PRT with/PP; the idea/NP	-Infinity
+
+And she came up with the idea of how -- of what she wanted on the blog, which is, as you know, is completely different from any other political blogs that's out there.
+she/NP; wanted/VP on/PP; the blog/NP	-Infinity
+
+And as it turned out, we both love the blog and she's done such a marvelous job on it.
+both/NP; love/VP; the blog/NP	-Infinity
+
+And as it turned out, we both love the blog and she's done such a marvelous job on it.
+she/NP; 's done/VP; such a marvelous job/NP	-Infinity
+
+But the campaign says it does not approve Meghan's copy.
+the McCain campaign/NP; does not approve/VP; Meghan's copy/NP	-Infinity
+
+So when she shows pictures of Henry Kissinger's and Joe Lieberman's shoes, it wasn't necessarily with the endorsement of the McCain campaign -- Suzanne.
+she/NP; shows/VP; pictures of Henry Kissinger's/NP	-Infinity
+
+So when she shows pictures of Henry Kissinger's and Joe Lieberman's shoes, it wasn't necessarily with the endorsement of the McCain campaign -- Suzanne.
+the McCain campaign/NP; was necessarily/VP with/PP; the endorsement of the McCain campaign/NP	-Infinity
+<end>20080813224941.743</end>
+
+<story>Politics|Presidential-campaign</story>
+<start>20080813224941.743</start>
+In New Jersey, Barack Obama leads John McCain by 10 points in a new Quinnipiac University survey of likely voters.
+Barack Obama/NP; leads/VP; John McCain/NP	-Infinity
+
+A poll by the Congressional Sportsman Foundation finds McCain leading Obama 45 to 31 percent.
+the Congressional Sportsman Foundation/NP; finds/VP; McCain/NP	-Infinity
+
+Politico.com reports McCain's lead is far smaller than the advantage George W. Bush had with the hunters and fishermen in 2004 over John Kerry and in 2000 over Al Gore.
+McCain's lead/NP; is/VP than/PP; the advantage/NP	-Infinity
+
+Politico.com reports McCain's lead is far smaller than the advantage George W. Bush had with the hunters and fishermen in 2004 over John Kerry and in 2000 over Al Gore.
+George W. Bush/NP; had/VP with/PP; the hunters and fishermen/NP	-Infinity
+
+He tells "Blender" magazine the Abba classic is his favorite song.
+He/NP; tells/VP; Blender/NP	-Infinity
+
+He tells "Blender" magazine the Abba classic is his favorite song.
+''/NP; magazine/VP; the Abba classic/NP	-Infinity
+
+Also making his top five, "Blue Bayou" by Roy Orbison; Abba again with "Take A Chance On Me," "If We Can Make It Through December" by Merle Haggard; and Dooley Wilson singing "As Time Goes By."
+Abba/NP; Take/VP; A Chance/NP	-Infinity
+
+Also making his top five, "Blue Bayou" by Roy Orbison; Abba again with "Take A Chance On Me," "If We Can Make It Through December" by Merle Haggard; and Dooley Wilson singing "As Time Goes By."
+Dooley Wilson/NP; singing/VP; Time/NP	-Infinity
+<end>20080813225127.482</end>
+
+<story>Network|Anchor-chat</story>
+<start>20080813225127.482</start>
+Our Carol Costello is monitoring the stories incoming to THE SITUATION ROOM right now -- Carol, what are you watching?
+Our Carol Costello/NP; is monitoring/VP; the stories/NP	-Infinity
+
+COSTELLO: I bet he likes "Mamma Miami," too.
+he/NP; likes/VP; Mamma Miami/NP	-Infinity
+<end>20080813225142.864</end>
+
+<story>Health|Prince-Charles-organic-food</story>
+<start>20080813225142.864</start>
+(LAUGHTER) COSTELLO: Anyway, in the news tonight, Prince Charles warns that oversized orange you're holding is killing the environment.
+Prince Charles/NP; warns/VP; oversized orange/NP	-Infinity
+
+The Prince of Wales telling a British newspaper that genetically modified food may weaken the Earth's soil to the point there's no more food.
+The Prince of Wales/NP; telling/VP; a British newspaper/NP	-Infinity
+
+The Prince of Wales telling a British newspaper that genetically modified food may weaken the Earth's soil to the point there's no more food.
+genetically modified food/NP; may weaken/VP; the Earth's soil/NP	-Infinity
+
+As an organic farmer, he calls crop modification "an experiment with nature gone seriously wrong."
+he/NP; calls/VP; crop modification/NP	-Infinity
+<end>20080813225208.323</end>
+
+<story>Network|Anchor-chat</story>
+<start>20080813225208.323</start>
+And the lead singer actually used to be in my favorite soap opera, "As the World Turns".
+the lead singer/NP; used to be/VP in/PP; my favorite soap opera/NP	-Infinity
+
+We had "Dancing Queen."
+We/NP; had/VP; Dancing Queen/NP	-Infinity
+
+She has a new album.
+She/NP; has/VP; a new album/NP	-Infinity
+
+MALVEAUX: They always make a comeback at some point, huh, Carol?
+They/NP; make/VP; a comeback/NP	-Infinity
+<end>20080813225305.847</end>
+
+<story>Human-interest:Teaser|Candidate-flip-flops</story>
+<start>20080813225305.847</start>
+MALVEAUX: When it comes to politics, the term flip-flop is usually considered an insult.
+COSTELLO : Bye-bye ./NP; comes/VP to/PP; politics/NP	-Infinity
+
+MALVEAUX: When it comes to politics, the term flip-flop is usually considered an insult.
+the term flip-flop/NP; is usually considered/VP; an insult/NP	-Infinity
+
+Jeanne Moos reports on a "Moost Unusual" new brand of footwear.
+Jeanne Moos/NP; reports/VP on/PP; a `` Moost Unusual/NP	-Infinity
+<end>20080813225316.624</end>
+
+<story>War|South-Ossetia-war</story>
+<start>20080813225620.375</start>
+(COMMERCIAL BREAK) MALVEAUX: Here's a look at "Hot Shots" coming in from our friends at the Associated Press -- pictures likely to be in your newspaper tomorrow.
+Hot Shots/NP; coming/VP in/PRT from/PP; our friends/NP	-Infinity
+
+(COMMERCIAL BREAK) MALVEAUX: Here's a look at "Hot Shots" coming in from our friends at the Associated Press -- pictures likely to be in your newspaper tomorrow.
+pictures/NP; to be/VP in/PP; your newspaper tomorrow/NP	-Infinity
+
+In Georgia, that country's president questions members of the media about developments in the war torn region.
+country's president/NP; questions/VP; members of the media/NP	-Infinity
+<end>20080813225633.721</end>
+
+<story>Weather|England-high-waves</story>
+<start>20080813225633.721</start>
+In England, high winds hamper sea travel, as waves engulf a ship arriving in a port.
+high winds/NP; hamper/VP; sea travel/NP	-Infinity
+
+In England, high winds hamper sea travel, as waves engulf a ship arriving in a port.
+waves/NP; engulf/VP; a ship/NP	-Infinity
+<end>20080813225639.394</end>
+
+<story>Sports|Olympics</story>
+<start>20080813225639.394</start>
+In China, the Ivory Coast soccer team jumps in celebration of an Olympic victory over Australia.
+the Ivory Coast soccer team/NP; jumps/VP in/PP; celebration of an Olympic victory/NP	-Infinity
+<end>20080813225645.633</end>
+
+<story>Politics|Candidate-flip-flops</story>
+<start>20080813225655.743</start>
+Well, the term flip-flop can refer to something you may wear on your feet or politics, but usually not both -- at least not until now, that is.
+the term flip-flop/NP; can refer/VP to/PP; something/NP	-Infinity
+
+Jeanne Moos finds the "Moost Unusual."
+Jeanne Moos/NP; finds/VP; the `` Moost Unusual/NP	-Infinity
+
+(BEGIN VIDEOTAPE) JEANNE MOOS, CNN CORRESPONDENT (voice-over) : Ah, for the days when fish were what flip-flopped.
+fish/NP; were/VP; what flip-flopped/NP	-Infinity
+
+OBAMA: The only person who's flip-flopped on this issue is John McCain.
+The only person/NP; is flip-flopped/VP on/PP; this issue/NP	-Infinity
+
+UNIDENTIFIED FEMALE: I'm not sure McCain would want me to have him on my toes.
+McCain/NP; would want/VP; me/NP	-Infinity
+
+MOOS : The once lowly flip-flop has been upgraded in recent years with everything from a hidden flask to knitback (ph) to a bottle opener.
+The once lowly flip-flop/NP; has been upgraded/VP in/PP; recent years/NP	-Infinity
+
+The flip-flop peaked as a political weapon when Republicans shook them to try to stigmatize John Kerry.
+The flip-flop/NP; peaked/VP as/PP; a political weapon/NP	-Infinity
+
+She patented the one piece mold that's featured everything from grapes to footballs -- and now heads.
+She/NP; patented/VP; the one piece mold/NP	-Infinity
+
+(voice-over): Obama is leading in sales two to one , which is fitting since he's a guy who seems to wear flip-flops.
+Obama/NP; is leading/VP in/PP; sales two/NP	-Infinity
+
+(voice-over): Obama is leading in sales two to one , which is fitting since he's a guy who seems to wear flip-flops.
+a guy/NP; seems to wear/VP; flip-flops/NP	-Infinity
+
+SEAN JACKSON, HOTFLOPS CEO: Are they supporting him or are they saying he's flip-flopping on some issues?
+they/NP; supporting/VP; SEAN JACKSON/NP	-Infinity
+
+SEAN JACKSON, HOTFLOPS CEO: Are they supporting him or are they saying he's flip-flopping on some issues?
+they/NP; saying/VP; he/NP	-Infinity
+
+But I think if we see... UNIDENTIFIED FEMALE: Oh, like everybody, you wear these because you support your candidate.
+these/NP; support/VP; your candidate/NP	-Infinity
+<end>20080813225938.606</end>
+
+<story>Network|Promo</story>
+<start>20080813225938.606</start>
+(END VIDEOTAPE) MALVEAUX: Well, check out our SITUATION ROOM screen saver and stay up to date on the latest political news.
+our SITUATION ROOM screen saver/NP; stay up/VP to/PP; date/NP	-Infinity
+<end>20080813225953.277</end>
+

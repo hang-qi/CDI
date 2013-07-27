@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808232930.733</start>
+<end>20080808233228.577</end>
+A close U.S. ally | is invaded | Russia 
+the Republic of the Georgia | escalate | a war 

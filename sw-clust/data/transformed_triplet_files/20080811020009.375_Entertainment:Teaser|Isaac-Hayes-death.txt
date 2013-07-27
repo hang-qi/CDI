@@ -1,0 +1,4 @@
+<story>Entertainment:Teaser|Isaac-Hayes-death</story>
+<start>20080811020009.375</start>
+<end>20080811020025.257</end>
+the man | would risk | his neck 

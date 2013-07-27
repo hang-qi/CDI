@@ -1,0 +1,5 @@
+<story>Money|Stock-market-highlights</story>
+<start>20080812172601.992</start>
+<end>20080812172618.008</end>
+we | 're seeing | Wall Street today 
+The Dow Industrials | are | 91 

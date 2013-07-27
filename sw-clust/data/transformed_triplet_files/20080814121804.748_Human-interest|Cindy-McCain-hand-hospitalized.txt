@@ -1,0 +1,8 @@
+<story>Human-interest|Cindy-McCain-hand-hospitalized</story>
+<start>20080814121804.748</start>
+<end>20080814121838.815</end>
+We | had | a great lunch and fund-raiser 
+a great lunch | got | me 
+Cindy McCain | nursing | a minor wrist sprain 
+She | was treated | a local hospital 
+She | had | some previous surgeries 

@@ -1,0 +1,5 @@
+<story>Money:Teaser|Inflation</story>
+<start>20080814164355.565</start>
+<end>20080814164410.713</end>
+We | put together | some great minds 
+me | to help figure | rising inflation 

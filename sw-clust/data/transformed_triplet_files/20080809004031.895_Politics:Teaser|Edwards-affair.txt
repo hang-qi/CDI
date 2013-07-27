@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080809004031.895</start>
+<end>20080809004041.704</end>
+we | 're going to talk | a little bit 
+John Edwards | got | this mess 

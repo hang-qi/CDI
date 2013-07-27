@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Machete-attack</story>
+<start>20080811205226.541</start>
+<end>20080811205232.947</end>
+a retired couple's dream vacation | turns | a nightmare 
+robbers | jump | robbers boat 

@@ -1,0 +1,6 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815005354.462</start>
+<end>20080815005419.954</end>
+LIVE | has | an exclusive look 
+The former Soviet leader | has | some harsh words 
+Gorbachev | has | a warning 

@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Special-security-bag</story>
+<start>20080815161801.312</start>
+<end>20080815162100.958</end>
+one type of bag | could make | a big difference 

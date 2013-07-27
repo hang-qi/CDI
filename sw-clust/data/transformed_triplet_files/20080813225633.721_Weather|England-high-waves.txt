@@ -1,0 +1,5 @@
+<story>Weather|England-high-waves</story>
+<start>20080813225633.721</start>
+<end>20080813225639.394</end>
+high winds | hamper | sea travel 
+waves | engulf | a ship 

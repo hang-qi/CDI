@@ -1,0 +1,7 @@
+<story>Government:Teaser|Northeast-blackout</story>
+<start>20080814161447.919</start>
+<end>20080814161501.432</end>
+we | 'll see | we 
+we | were | five years 
+50 million people | lost | power 
+We | 'll check | a major blackout 

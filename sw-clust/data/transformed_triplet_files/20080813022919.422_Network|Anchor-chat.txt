@@ -1,0 +1,4 @@
+<story>Network|Anchor-chat</story>
+<start>20080813022919.422</start>
+<end>20080813022934.203</end>
+the one | told | that little girl 

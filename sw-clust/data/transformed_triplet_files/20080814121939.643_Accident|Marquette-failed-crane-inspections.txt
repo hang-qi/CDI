@@ -1,0 +1,6 @@
+<story>Accident|Marquette-failed-crane-inspections</story>
+<start>20080814121939.643</start>
+<end>20080814121957.594</end>
+Former Department | building | inspector Edward Marquette 
+Seven people | were killed | that incident 
+Marquette | faces | up to four years 

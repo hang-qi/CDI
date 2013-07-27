@@ -1,0 +1,4 @@
+<story>Government:Teaser|Manhattan-security</story>
+<start>20080813212804.348</start>
+<end>20080813212814.324</end>
+the city | remains | the list of potential terrorist targets 

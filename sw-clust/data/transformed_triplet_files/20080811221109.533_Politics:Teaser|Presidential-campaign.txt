@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080811221109.533</start>
+<end>20080811221119.176</end>
+Barack Obama | uses | other well-known names 

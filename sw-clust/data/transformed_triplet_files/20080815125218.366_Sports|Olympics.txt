@@ -1,0 +1,8 @@
+<story>Sports|Olympics</story>
+<start>20080815125218.366</start>
+<end>20080815125239.754</end>
+The United States | still leads | total medals 
+Australia | is | 20 
+China | dominating | the race 
+China | added | a gold 
+weight | lifting to bring | its total 

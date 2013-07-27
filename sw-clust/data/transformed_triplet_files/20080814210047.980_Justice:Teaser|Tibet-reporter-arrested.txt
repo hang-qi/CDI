@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Tibet-reporter-arrested</story>
+<start>20080814210047.980</start>
+<end>20080814210057.656</end>
+a Western journalist | manhandled and detained | Chinese police 
+press restrictions | boils | over 

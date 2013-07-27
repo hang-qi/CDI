@@ -1,0 +1,22 @@
+<story>Environment|Home-heating-costs</story>
+<start>20080815143459.062</start>
+<end>20080815143723.340</end>
+the situation | may be | the dog days of summer 
+those bills | are set to jump | this year 
+com's Poppy Harlow | has | our Enery Fix 
+Consumers | are expected to pay | an average of $ 1100 
+that area | expected | to near $ 3,000 
+some government programs | to help pay | the bill 
+those help low-income families | make | low-income families homes 
+people | should definitely check | those out 
+your home | is losing | energy 
+your home | evaluates | the efficiency of your energy system 
+they | 're | about 60 percent efficient 
+about 40 percent of the heat | is escaping | your home 
+modern heating systems | can be | as much as 97 percent 
+one of those | does make | more sense 
+The government | does say | water heating 
+A 10 degree reduction | will cut | your bill 
+the water heater tank | is | the touch 
+some utility companies | will actually give | you one 
+we | want to hear | folks 

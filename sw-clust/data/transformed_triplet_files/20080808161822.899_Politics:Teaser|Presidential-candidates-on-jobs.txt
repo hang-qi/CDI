@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-candidates-on-jobs</story>
+<start>20080808161822.899</start>
+<end>20080808162119.175</end>
+we | 'll hear | both 

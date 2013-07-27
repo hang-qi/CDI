@@ -1,0 +1,6 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812220853.030</start>
+<end>20080812220916.954</end>
+A Russian diplomat | accuses | Georgia's president of war crimes 
+the U.S. | is handling | A Russian diplomat 
+the United Nations | accuses | Georgia's president of genocide 

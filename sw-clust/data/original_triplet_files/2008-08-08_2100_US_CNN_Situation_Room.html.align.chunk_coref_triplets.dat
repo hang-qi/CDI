@@ -1,0 +1,1551 @@
+<story>NULL</story>
+<start>20080808205951.000</start>
+Everybody needs a vacation.
+Everybody/NP; needs/VP; a vacation/NP	-Infinity
+
+My wife and kids hate me."
+My wife and kids/NP; hate/VP; me/NP	-Infinity
+<end>20080808210001.000</end>
+
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808210001.000</start>
+We're going to do a question about it in the next hour of THE SITUATION ROOM.
+We/NP; 're going to do/VP; a question/NP	-Infinity
+
+Go to CNN.com/caffertyfile and vent your thoughts on the John Edwards admission that he's been having an extra- marital affair.
+CNN.com\/caffertyfile/NP; vent/VP; your thoughts/NP	-Infinity
+
+Go to CNN.com/caffertyfile and vent your thoughts on the John Edwards admission that he's been having an extra- marital affair.
+he/NP; 's been having/VP; an extra/NP	-Infinity
+
+It's a story that's been around for almost a year and he finally copped to it in an interview with ABC News .
+a story/NP; 's been/VP for/PP; almost a year/NP	-Infinity
+
+It's a story that's been around for almost a year and he finally copped to it in an interview with ABC News .
+he/NP; copped/VP to/PP; the John Edwards admission/NP	-Infinity
+
+We'll be doing a little more right after the top of the hour -- back to you, Mr. Blitzer.
+We/NP; 'll be doing/VP; a little/NP	-Infinity
+
+And happening now, more on the breaking news -- the political rumor exploding into reality.
+the political rumor/NP; exploding/VP into/PP; reality/NP	-Infinity
+
+He says he did have an extra-marital affair over the past couple of years.
+he/NP; did have/VP; an extra-marital affair/NP	-Infinity
+<end>20080808210045.244</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808210045.244</start>
+Also, the U.S. deeply concerned as Russia launches ground and air attacks on the neighboring Republic of Georgia.
+Russia/NP; launches/VP; ground and air attacks/NP	-Infinity
+<end>20080808210056.155</end>
+
+<story>Health:Teaser|911-rescuers-wrong-address</story>
+<start>20080808210056.155</start>
+And they're sparking fear right now of an all-out war.
+they/NP; 're sparking/VP; fear/NP	-Infinity
+
+She died when rescuers went to the wrong address in the wrong town.
+She/NP; died when/VP; rescuers/NP	-Infinity
+<end>20080808210115.541</end>
+
+<story>Politics|Edwards-affair</story>
+<start>20080808210115.541</start>
+But let's continue with the breaking news this hour.
+let/NP; 's continue/VP with/PP; the breaking news/NP	-Infinity
+
+An explosion rocking the political landscape.
+An explosion/NP; rocking/VP; the political landscape/NP	-Infinity
+
+The former Democratic presidential candidate, John Edwards, now confirming months of speculation, admitting to ABC News he did, in fact, have an extra-marital affair -- a charge he repeatedly denied, as recently as two weeks ago.
+a/NP; charge/VP; he/NP	-Infinity
+
+We're awaiting a formal statement from Senator Edwards.
+We/NP; 're awaiting/VP; a formal statement/NP	-Infinity
+
+Drew Griffin of CNN's Special Investigations Unit has been working this story for some time now.
+Drew Griffin of CNN's Special Investigations Unit/NP; has been working/VP; this story/NP	-Infinity
+
+Let's go to Drew and find out what he's been learning -- Drew, it's shocking to a lot of our viewers out there, given his very squeaky clean reputation as a devoted, loving family man.
+Let/NP; 's go/VP to/PP; Drew/NP	-Infinity
+
+Let's go to Drew and find out what he's been learning -- Drew, it's shocking to a lot of our viewers out there, given his very squeaky clean reputation as a devoted, loving family man.
+CNN 's Special Investigations Unit/NP; is/VP to/PP; a lot of our viewers/NP	-Infinity
+
+And, quite frankly, a lot of people believed him until now.
+a lot of people/NP; believed/VP; Drew Griffin of CNN 's Special Investigations Unit/NP	-Infinity
+
+But really what this came down to was two weeks ago he was caught sneaking out of the Beverly Hilton Hotel at 2:40 in the morning and he had nothing to say about it.
+to/NP; was/VP; two weeks/NP	-Infinity
+
+But really what this came down to was two weeks ago he was caught sneaking out of the Beverly Hilton Hotel at 2:40 in the morning and he had nothing to say about it.
+he/NP; was caught sneaking out/VP of/PP; the Beverly Hilton Hotel/NP	-Infinity
+
+But really what this came down to was two weeks ago he was caught sneaking out of the Beverly Hilton Hotel at 2:40 in the morning and he had nothing to say about it.
+he/NP; had/VP; nothing/NP	-Infinity
+
+(BEGIN VIDEOTAPE) GRIFFIN (voice-over): The Edwards story has been fodder of the "National Enquirer" for more than a year.
+The Edwards story/NP; has been/VP; fodder of the `` National Enquirer/NP	-Infinity
+
+The headlines show why -- a presidential candidate and former U.S. Senator with a cancer-stricken wife has an affair and, according to the tabloid, fathers a child with this woman, a campaign consultant named Rielle Hunter.
+a cancer-stricken wife/NP; has/VP; an affair and/NP	-Infinity
+
+The headlines show why -- a presidential candidate and former U.S. Senator with a cancer-stricken wife has an affair and, according to the tabloid, fathers a child with this woman, a campaign consultant named Rielle Hunter.
+a campaign consultant/NP; named/VP; Rielle Hunter/NP	-Infinity
+
+John Edwards had dismissed the "National Enquirer" allegations.
+John Edwards/NP; had dismissed/VP; the `` National Enquirer '' allegations/NP	-Infinity
+
+This is what he said last month in New Orleans.
+he/NP; said/VP; last month/NP	-Infinity
+
+(END VIDEO CLIP) GRIFFIN : The pressure had been mounting on Edwards for several weeks since new stories appeared about a confrontation with the "National Enquirer" here at the Beverly Hilton Hotel last month.
+The pressure/NP; had been mounting/VP on/PP; Edwards/NP	-Infinity
+
+(END VIDEO CLIP) GRIFFIN : The pressure had been mounting on Edwards for several weeks since new stories appeared about a confrontation with the "National Enquirer" here at the Beverly Hilton Hotel last month.
+new stories/NP; appeared/VP about/PP; a confrontation/NP	-Infinity
+
+On July 21st, the former senator was in Los Angeles raising awareness for the homeless.
+the former senator/NP; was/VP in/PP; Los Angeles raising awareness/NP	-Infinity
+
+That night, "National Enquirer" reporter Alex Hitchens was waiting for Edwards at the hotel.
+National Enquirer '' reporter Alex Hitchens/NP; was waiting/VP for/PP; Edwards/NP	-Infinity
+
+The paper says it had a tip Edwards, Rielle Hunter and Hunter's baby were meeting in a room .
+The paper/NP; had/VP; a tip Edwards/NP	-Infinity
+
+The paper says it had a tip Edwards, Rielle Hunter and Hunter's baby were meeting in a room .
+Hunter's baby/NP; were meeting/VP in/PP; a room/NP	-Infinity
+
+At 2:40 in the morning, Hitchens says he surprised Edwards as he was trying to leave .
+he/NP; surprised/VP; Edwards/NP	-Infinity
+
+And then we said to him, don't you think it's about time to actually tell everyone that you are actually the father of this child?
+we/NP; said/VP to/PP; Rielle Hunter/NP	-Infinity
+
+And then we said to him, don't you think it's about time to actually tell everyone that you are actually the father of this child?
+time/NP; to actually tell/VP; everyone/NP	-Infinity
+
+And then we said to him, don't you think it's about time to actually tell everyone that you are actually the father of this child?
+the child 's father/NP; are actually/VP; the father of this child/NP	-Infinity
+
+GRIFFIN (on camera) : And the reaction again was?
+GRIFFIN/NP; -LRB-/VP on/PP; camera -RRB-/NP	-Infinity
+
+GRIFFIN (voice-over) : Hitchens says Edwards did not say a word.
+Edwards/NP; did not say/VP; a word/NP	-Infinity
+
+Instead, he ran down the stairs, into this bathroom and held the door shut.
+he/NP; ran/VP down/PRT; the stairs/NP	-Infinity
+
+Instead, he ran down the stairs, into this bathroom and held the door shut.
+this bathroom/NP; held/VP; the door/NP	-Infinity
+
+Wednesday, the tabloid published this blurry photograph -- a photo the paper claims was shot in the Beverly Hilton Hotel on the night of July 21st.
+the tabloid/NP; published/VP; this blurry photograph/NP	-Infinity
+
+Wednesday, the tabloid published this blurry photograph -- a photo the paper claims was shot in the Beverly Hilton Hotel on the night of July 21st.
+the paper claims/NP; was shot/VP in/PP; the Beverly Hilton Hotel/NP	-Infinity
+
+And Edwards told ABC News Hunter's child could not be his because of the timing of the birth.
+Edwards/NP; told/VP; ABC News Hunter's child/NP	-Infinity
+
+But the former senator said he has not taken a paternity test.
+the former senator/NP; said/VP; he/NP	-Infinity
+
+Still, the child's birth certificate adds to the injury.
+the child's birth certificate/NP; adds/VP to/PP; the injury/NP	-Infinity
+
+(END VIDEO TAPE) GRIFFIN: And, Wolf, just last week, we tried to get a comment from John Edwards.
+we/NP; tried to get/VP; a comment/NP	-Infinity
+
+He was speaking at a hotel in Washington, D.C. .
+He/NP; was speaking/VP at/PP; a hotel/NP	-Infinity
+
+We couldn't get a question to him.
+We/NP; could n't get/VP; a question/NP	-Infinity
+
+BLITZER: But as you say, in this interview now with ABC, that ABC is releasing today, he flatly denies that he's the father of this child.
+ABC/NP; is releasing/VP; today/NP	-Infinity
+
+BLITZER: But as you say, in this interview now with ABC, that ABC is releasing today, he flatly denies that he's the father of this child.
+he/NP; denies/VP; he/NP	-Infinity
+
+He says the timing, going back to when the child was born, simply wouldn't work out, as far as he was concerned, although he says he hasn't taken a paternity test.
+he/NP; has n't taken/VP; a paternity test/NP	-Infinity
+
+We're still waiting for a statement from John Edwards to see what else he says.
+We/NP; 're still waiting/VP for/PP; a statement/NP	-Infinity
+
+We're still waiting for a statement from John Edwards to see what else he says.
+John Edwards/NP; to see/VP; what else/NP	-Infinity
+
+I mean the big question is, you know, he says he wasn't in love with this woman and that the affair apparently happened a while ago.
+he/NP; was/VP in/PP; love/NP	-Infinity
+
+I mean the big question is, you know, he says he wasn't in love with this woman and that the affair apparently happened a while ago.
+the affair/NP; happened/VP; a while/NP	-Infinity
+
+What's he doing in the hotel room, Wolf just a couple of weeks ago with this woman so late at night?
+he/NP; doing/VP in/PP; the hotel room/NP	-Infinity
+
+His former campaign manager, the former congressman, David Bonior, is quoted in an Associated Press article as having this reaction to this shocking news about John Edwards.
+an Associated Press article/NP; having/VP; this reaction/NP	-Infinity
+
+Bonior says this: "Thousands of friends of the senator's and his supporters have put their faith and confidence in him and he's let them down.
+his supporters/NP; have put/VP; Thousands of friends of the senator 's and his supporters faith and confidence/NP	-Infinity
+
+Bonior says this: "Thousands of friends of the senator's and his supporters have put their faith and confidence in him and he's let them down.
+he/NP; 's let/VP; Thousands of friends of the senator 's and his supporters/NP	-Infinity
+
+They've been betrayed by his action."
+They/NP; 've been betrayed/VP by/PP; his action/NP	-Infinity
+
+Let's continue our coverage of the breaking news.
+Let/NP; continue/VP; our coverage of the breaking news/NP	-Infinity
+
+But virtually no major national news organization -- not "The Washington Post" or "The New York Times" or "The Wall Street Journal" or CNN or ABC or NBC or any of the major national news organizations touched it, really, until today, when John Edwards publicly told ABC News, you know what, the extra-marital affair is true, although he denied fathering the child.
+any of the major national news organizations/NP; touched/VP; virtually no major national news organization -- not `` The Washington Post '' or `` The New York Times '' or `` The Wall Street Journal '' or CNN or ABC or NBC/NP	-Infinity
+
+But virtually no major national news organization -- not "The Washington Post" or "The New York Times" or "The Wall Street Journal" or CNN or ABC or NBC or any of the major national news organizations touched it, really, until today, when John Edwards publicly told ABC News, you know what, the extra-marital affair is true, although he denied fathering the child.
+John Edwards/NP; told/VP; ABC News/NP	-Infinity
+
+But virtually no major national news organization -- not "The Washington Post" or "The New York Times" or "The Wall Street Journal" or CNN or ABC or NBC or any of the major national news organizations touched it, really, until today, when John Edwards publicly told ABC News, you know what, the extra-marital affair is true, although he denied fathering the child.
+he/NP; denied fathering/VP; the child/NP	-Infinity
+
+HOWARD KURTZ, CNN'S "RELIABLE SOURCES": Well, it's been a real quandary for news organizations, Wolf.
+Howard Kurtz of CNN 's `` RELIABLE SOURCES '' and `` The Washington Post '' -- Howie/NP; 's been/VP; a real quandary/NP	-Infinity
+
+I can tell from the piece you just ran that CNN spent a lot of time looking into this.
+the piece/NP; ran/VP; CNN/NP	-Infinity
+
+You had two people denying it.
+two people/NP; denying/VP; two/NP	-Infinity
+
+We now know John Edwards has acknowledged that he was lying.
+We/NP; know/VP; John Edwards/NP	-Infinity
+
+Edwards said it didn't happen.
+Edwards/NP; said/VP; Right now/NP	-Infinity
+
+It appeared in the "National Enquirer," which has accurately broken a number of major stories, but still has the kind of taint of a supermarket tabloid that pays for stories.
+which/NP; has accurately broken/VP; a number of major stories/NP	-Infinity
+
+It appeared in the "National Enquirer," which has accurately broken a number of major stories, but still has the kind of taint of a supermarket tabloid that pays for stories.
+a supermarket tabloid/NP; pays/VP for/PP; stories/NP	-Infinity
+
+And so it seemed that everybody was waiting for someone else to break the ice.
+Right now/NP; seemed/VP; everybody/NP	-Infinity
+
+And so it seemed that everybody was waiting for someone else to break the ice.
+someone else/NP; to break/VP; the ice/NP	-Infinity
+
+And the "National Enquirer," I believe -- correct me if I'm wrong -- also pays for information and, as a result, maybe a lot of national news organizations said that their information might be suspect?
+a lot of national news organizations/NP; said/VP; most major national news organizations information/NP	-Infinity
+
+KURTZ: I think that was definitely a factor.
+a result/NP; was/VP; definitely a factor/NP	-Infinity
+
+In fact, the editor of the "National Enquirer" told me that the newspaper did pay for some information in this case.
+the editor of the `` National Enquirer/NP; told/VP; me/NP	-Infinity
+
+In fact, the editor of the "National Enquirer" told me that the newspaper did pay for some information in this case.
+the newspaper/NP; did pay/VP for/PP; some information/NP	-Infinity
+
+They didn't who was paid.
+They/NP; did/VP; n't/NP	-Infinity
+
+I think -- I don't believe for a moment that this has anything to do with Edwards being a Democrat or even a likable Democrat, as some critics, particularly online, have charged.
+a moment/NP; has/VP; anything/NP	-Infinity
+
+I think -- I don't believe for a moment that this has anything to do with Edwards being a Democrat or even a likable Democrat, as some critics, particularly online, have charged.
+Edwards/NP; being/VP; a Democrat/NP	-Infinity
+
+I think there's a lot of sympathy that we have, and, of course, that much of America has for Elizabeth Edwards, who has an incurable form of cancer.
+America/NP; has/VP for/PP; Elizabeth Edwards/NP	-Infinity
+
+And I think that may have limited the appetite just a bit for going hard after this story.
+BLITZER/NP; may have limited/VP; the appetite/NP	-Infinity
+
+And I think that may have limited the appetite just a bit for going hard after this story.
+just a bit/NP; going hard/VP after/PP; this story/NP	-Infinity
+
+And one of the things, I think, that makes this story so devastating for John Edwards -- it's not just the fact that he lied, not just the fact that he had an affair, but that Elizabeth and her battle against her disease was such a front and center part of his presidential campaign.
+this story/NP; devastating/VP for/PP; John Edwards/NP	-Infinity
+
+And one of the things, I think, that makes this story so devastating for John Edwards -- it's not just the fact that he lied, not just the fact that he had an affair, but that Elizabeth and her battle against her disease was such a front and center part of his presidential campaign.
+this story so devastating/NP; 's just/VP; the fact/NP	-Infinity
+
+And one of the things, I think, that makes this story so devastating for John Edwards -- it's not just the fact that he lied, not just the fact that he had an affair, but that Elizabeth and her battle against her disease was such a front and center part of his presidential campaign.
+he/NP; had/VP; an affair/NP	-Infinity
+
+And one of the things, I think, that makes this story so devastating for John Edwards -- it's not just the fact that he lied, not just the fact that he had an affair, but that Elizabeth and her battle against her disease was such a front and center part of his presidential campaign.
+Elizabeth disease/NP; was/VP; such a front and center part of his presidential campaign/NP	-Infinity
+
+We all saw the pictures.
+all/NP; saw/VP; the pictures/NP	-Infinity
+
+We all remember that live news conference when they came out and talked about how the cancer had recurred.
+all/NP; remember/VP that/PP; live news conference/NP	-Infinity
+
+And for him now to acknowledge that he had this affair with somebody who worked for his campaign, a lot of people are going to have trouble getting past that.
+Senator Edwards/NP; to acknowledge/VP; he/NP	-Infinity
+
+And for him now to acknowledge that he had this affair with somebody who worked for his campaign, a lot of people are going to have trouble getting past that.
+somebody/NP; worked/VP for/PP; his campaign/NP	-Infinity
+
+And for him now to acknowledge that he had this affair with somebody who worked for his campaign, a lot of people are going to have trouble getting past that.
+a lot of people/NP; are going to have/VP; trouble/NP	-Infinity
+
+BLITZER: As one of the best media critics out there, you know what, the criticism coming in especially from the conservatives from the right is that John Edwards is a liberal and the "liberal news media" would protect him, as if this had -- if these allegations involved a conservative, it would have been a far different story.
+the criticism/NP; coming/VP; in/NP	-Infinity
+
+BLITZER: As one of the best media critics out there, you know what, the criticism coming in especially from the conservatives from the right is that John Edwards is a liberal and the "liberal news media" would protect him, as if this had -- if these allegations involved a conservative, it would have been a far different story.
+the `` liberal news media/NP; would protect/VP; John Edwards/NP	-Infinity
+
+BLITZER: As one of the best media critics out there, you know what, the criticism coming in especially from the conservatives from the right is that John Edwards is a liberal and the "liberal news media" would protect him, as if this had -- if these allegations involved a conservative, it would have been a far different story.
+these allegations/NP; involved/VP; a conservative/NP	-Infinity
+
+BLITZER: As one of the best media critics out there, you know what, the criticism coming in especially from the conservatives from the right is that John Edwards is a liberal and the "liberal news media" would protect him, as if this had -- if these allegations involved a conservative, it would have been a far different story.
+one of the best media critics out there/NP; would have been/VP; a far different story/NP	-Infinity
+
+You know, some people point for example, to Larry Craig, the Idaho senator who got caught in that men's bathroom mess.
+the Idaho senator/NP; got caught/VP in/PP; that men's bathroom mess/NP	-Infinity
+
+The "National Enquirer" had it.
+The `` National Enquirer/NP; had/VP; that corroboration/NP	-Infinity
+
+We didn't have it.
+We/NP; did n't have/VP; that corroboration/NP	-Infinity
+
+CNN didn't have it.
+CNN/NP; did n't have/VP; CNN 's Special Investigations Unit/NP	-Infinity
+
+"The Washington Post" didn't have it.
+The Washington Post/NP; did n't have/VP; `` The Washington Post '' or `` The New York Times '' or `` The Wall Street Journal '' or CNN or ABC or NBC/NP	-Infinity
+
+I don't believe the fact that John Edwards is a Democrat has anything to do with this.
+a Democrat/NP; has/VP; anything/NP	-Infinity
+
+I do think the fact that he has a wife who is battling an incurable disease may have something to do with this.
+he/NP; has/VP; a wife/NP	-Infinity
+
+I do think the fact that he has a wife who is battling an incurable disease may have something to do with this.
+an incurable disease/NP; may have/VP; something/NP	-Infinity
+
+And I also think that all these organizations were waiting for some kind of admission, some kind of corroboration, some kind of incontrovertible evidence to go with this story.
+all these organizations/NP; were waiting/VP for/PP; some kind of admission/NP	-Infinity
+
+And I also think that all these organizations were waiting for some kind of admission, some kind of corroboration, some kind of incontrovertible evidence to go with this story.
+some kind of incontrovertible evidence/NP; to go/VP with/PP; this story/NP	-Infinity
+
+BLITZER: And that happened today when he told ABC News that yes, in fact, he did have an extra-marital affair.
+BLITZER/NP; happened/VP; today/NP	-Infinity
+
+BLITZER: And that happened today when he told ABC News that yes, in fact, he did have an extra-marital affair.
+he/NP; told/VP; ABC News/NP	-Infinity
+
+BLITZER: And that happened today when he told ABC News that yes, in fact, he did have an extra-marital affair.
+he/NP; did have/VP; an extra-marital affair/NP	-Infinity
+
+Howie is going to have a lot more on this story coming up on Sunday morning on "RELIABLE SOURCES," 10:00 a.m. Eastern.
+Howie/NP; is going to have/VP; a lot/NP	-Infinity
+
+Howie is going to have a lot more on this story coming up on Sunday morning on "RELIABLE SOURCES," 10:00 a.m. Eastern.
+this story/NP; coming/VP up/PRT; on Sunday morning/NP	-Infinity
+
+The stunning new development could have a dramatic political impact, as well.
+The stunning new development/NP; could have/VP; a dramatic political impact/NP	-Infinity
+
+Let's continue our coverage with our CNN political contributor, the Democratic strategist, Paul Begala, and Republican strategist, Alex Castellanos.
+Let/NP; continue/VP; our coverage/NP	-Infinity
+
+He's not running for anything.
+He/NP; 's not running/VP for/PP; anything/NP	-Infinity
+
+He's not -- he doesn't hold any public office.
+he/NP; does n't hold/VP; any public office/NP	-Infinity
+
+He's not seeking any public office.
+He/NP; 's not seeking/VP; any public office/NP	-Infinity
+
+But, no, I don't think -- there's not a huge -- this is nothing endemic to being a Democrat or a Republican here.
+nothing/NP; being/VP; a Democrat/NP	-Infinity
+
+BLITZER: You think he can make a comeback?
+he/NP; can make/VP; a comeback/NP	-Infinity
+
+And I don't want to disparage others, but there are prominent politicians in America today who have committed the very same sin and after repairing their family, or moving on to start a new marriage, have been able to pursue successful careers in public life.
+today/NP; have committed/VP; the very same sin/NP	-Infinity
+
+BLITZER: Assuming he wants to have a political future, Alex -- and put your hat on as an adviser, as a strategist for politicians, which you've been doing excellently for so many years -- what advice would you give him and his family right now, assuming he wants to have a second act?
+he/NP; wants to have/VP; a political future/NP	-Infinity
+
+BLITZER: Assuming he wants to have a political future, Alex -- and put your hat on as an adviser, as a strategist for politicians, which you've been doing excellently for so many years -- what advice would you give him and his family right now, assuming he wants to have a second act?
+which/NP; 've been doing excellently/VP for/PP; so many years/NP	-Infinity
+
+BLITZER: Assuming he wants to have a political future, Alex -- and put your hat on as an adviser, as a strategist for politicians, which you've been doing excellently for so many years -- what advice would you give him and his family right now, assuming he wants to have a second act?
+what advice/NP; give/VP; the -- the only -- maybe one of the few dumb things F. Scott Fitzgerald/NP	-Infinity
+
+BLITZER: Assuming he wants to have a political future, Alex -- and put your hat on as an adviser, as a strategist for politicians, which you've been doing excellently for so many years -- what advice would you give him and his family right now, assuming he wants to have a second act?
+he/NP; wants to have/VP; a second act/NP	-Infinity
+
+He just needs to get out of the political scene.
+He/NP; needs to get out/VP of/PP; the political scene/NP	-Infinity
+
+He's got a, you know, a wife with a serious health situation.
+He/NP; 's got/VP; a/NP	-Infinity
+
+Go home and take care of that.
+home/NP; take/VP; care of BEGALA/NP	-Infinity
+
+I think it may end his political career because it's not just a mistake that others have made.
+my mistake/NP; may end/VP; his political career/NP	-Infinity
+
+I think it may end his political career because it's not just a mistake that others have made.
+my mistake/NP; 's just/VP; a mistake/NP	-Infinity
+
+And I think it shows just horrible judgment in that sense.
+my mistake/NP; shows/VP; just horrible judgment/NP	-Infinity
+
+And I think a lot of people may see it that way.
+a lot of people/NP; may see/VP; a lot of people/NP	-Infinity
+
+You know reporters are going to ask him about it.
+reporters/NP; are going to ask/VP; John McCain/NP	-Infinity
+
+If you're John McCain, Alex, and you're asked to comment on the John Edwards bombshell today -- his acknowledging he did, in fact, have an extra-marital affair, what do you say?
+Senator McCain/NP; 're/VP; John McCain/NP	-Infinity
+
+You react as a human being, as someone who's been out on the campaign trail with this family as somebody who's, you know, their wives, I'm sure, have chatted and gotten to know each other in this process.
+someone/NP; 's been/VP on/PP; the campaign trail/NP	-Infinity
+
+You know, these candidates are tested against each other, but they're also tested with each other on the campaign trail.
+these candidates/NP; are tested/VP against/PP; each other/NP	-Infinity
+
+You know, these candidates are tested against each other, but they're also tested with each other on the campaign trail.
+they/NP; 're also tested/VP with/PP; each other/NP	-Infinity
+
+They develop a respect, I think, for each other.
+They/NP; develop/VP; a respect/NP	-Infinity
+
+And I think this would be a time to reach out one family to another.
+a time/NP; to reach/VP; out one family/NP	-Infinity
+
+The less said the better.
+The less/NP; said/VP; the better/NP	-Infinity
+
+BEGALA: He should say no comment, it's none of my business.
+He/NP; should say/VP; no comment/NP	-Infinity
+
+Because, there's a very slight risk, if he talks about it, that voters will wrongly believe that he was pushing it.
+he/NP; talks/VP about/PP; a very slight risk/NP	-Infinity
+
+Because, there's a very slight risk, if he talks about it, that voters will wrongly believe that he was pushing it.
+voters/NP; will wrongly believe/VP; he/NP	-Infinity
+
+But I remember when Bill Clinton was the governor of Arkansas -- and I don't know if it made the papers where you live, but there was a woman who accused him of having an affair.
+Bill Clinton/NP; was/VP; the governor of Arkansas/NP	-Infinity
+
+But I remember when Bill Clinton was the governor of Arkansas -- and I don't know if it made the papers where you live, but there was a woman who accused him of having an affair.
+Arkansas/NP; made/VP; the papers/NP	-Infinity
+
+But I remember when Bill Clinton was the governor of Arkansas -- and I don't know if it made the papers where you live, but there was a woman who accused him of having an affair.
+a woman/NP; accused/VP; Bill Clinton/NP	-Infinity
+
+Poor Tom Harkin, one of his primary opponents, was asked about it and he commented basically almost no comment.
+he/NP; commented almost/VP; no comment/NP	-Infinity
+
+I had a lot of voters think that poor Senator Harkin was pushing that story, which he was not.
+a lot of voters/NP; think/VP; poor Senator Harkin/NP	-Infinity
+
+So you don't want to give the voters the wrong impression that somehow you're pushing this story or somehow gleeful about it.
+the wrong impression/NP; 're pushing/VP; this story/NP	-Infinity
+
+We're just getting in the statement, by the way.
+We/NP; 're just getting/VP in/PP; the statement/NP	-Infinity
+
+And once we get it, I'm going to read it to our viewers.
+we/NP; get/VP; once/NP	-Infinity
+
+But, you know, this is a moment -- this is a moment right now where Barack Obama is going to certainly be asked about this and it's going to be a question that momentarily we're going to hear from Senator McCain, as well, because he's going to be asked about it.
+we/NP; 're going to hear/VP from/PP; Senator McCain/NP	-Infinity
+
+He's gone on vacation in Hawaii.
+He/NP; 's gone/VP on/PP; vacation/NP	-Infinity
+
+And he may be going underground for a few days.
+he/NP; may be going underground/VP for/PP; a few days/NP	-Infinity
+
+I'll read it slowly so our viewers can digest it, as well, and then we'll assess what John Edwards is now saying: "August 9, 2008, Chapel Hill, North Carolina.
+our viewers/NP; can digest/VP; the statement from Senator Edwards/NP	-Infinity
+
+In 2006, I made a serious error in judgment and conducted myself in a way that was disloyal to my family and to my core beliefs.
+judgment/NP; conducted/VP; myself/NP	-Infinity
+
+In 2006, I made a serious error in judgment and conducted myself in a way that was disloyal to my family and to my core beliefs.
+a way/NP; was/VP to/PP; my family/NP	-Infinity
+
+I recognized my mistake and I told my wife that I had a liaison with another woman and I asked for her forgiveness.
+my mistake/NP; told/VP; my wife/NP	-Infinity
+
+I recognized my mistake and I told my wife that I had a liaison with another woman and I asked for her forgiveness.
+another woman/NP; asked/VP for/PP; a liaison with another woman forgiveness/NP	-Infinity
+
+When a supermarket tabloid told a version of the story, I used the fact that the story contained many falsities to deny it.
+a supermarket tabloid/NP; told/VP; a version of the story/NP	-Infinity
+
+When a supermarket tabloid told a version of the story, I used the fact that the story contained many falsities to deny it.
+the story/NP; contained/VP; many falsities/NP	-Infinity
+
+Edwards goes on to say this: "I was and am ashamed of my conduct and choices and I had hoped that it would never become public.
+my conduct and choices/NP; had hoped/VP; my conduct and choices/NP	-Infinity
+
+And today I take full responsibility publicly.
+today/NP; take/VP; full responsibility/NP	-Infinity
+
+But that misconduct took place for a short period in 2006.
+that misconduct/NP; took/VP; place/NP	-Infinity
+
+I am and have been willing to take any tests necessary to establish the fact that I'm not the father of any baby and I am truly hopeful that a test will be done so this fact can be definitively established.
+any tests/NP; to establish/VP; the fact/NP	-Infinity
+
+I am and have been willing to take any tests necessary to establish the fact that I'm not the father of any baby and I am truly hopeful that a test will be done so this fact can be definitively established.
+the father of any baby/NP; am/VP that/PP; a test/NP	-Infinity
+
+I only know that the apparent father has said publicly that he is the father of the baby.
+the apparent father/NP; has said publicly/VP; he/NP	-Infinity
+
+A couple of more paragraphs in this statement: "It is inadequate to say to the people who believed in me that I am sorry, as it is inadequate to say to the people who love me that I am sorry.
+the people/NP; believed/VP in/PP; me/NP	-Infinity
+
+A couple of more paragraphs in this statement: "It is inadequate to say to the people who believed in me that I am sorry, as it is inadequate to say to the people who love me that I am sorry.
+the people/NP; love/VP; me/NP	-Infinity
+
+You cannot beat me up more than I've already beaten up myself.
+me/NP; up/VP; more than I/NP	-Infinity
+
+I have been stripped bare and will now work with everything I have to help my family and others who need my help."
+everything/NP; have to help/VP; my family/NP	-Infinity
+
+I have been stripped bare and will now work with everything I have to help my family and others who need my help."
+others/NP; need/VP; my help/NP	-Infinity
+
+As a former speechwriter who's unfortunately had to work on some of these types of statements, I would have hit the block delete button.
+a former speechwriter/NP; 's unfortunately had/VP to/PP; work/NP	-Infinity
+
+As a former speechwriter who's unfortunately had to work on some of these types of statements, I would have hit the block delete button.
+the block/NP; delete/VP; button/NP	-Infinity
+
+My kids would say TMI, right, too much information.
+My kids/NP; would say/VP; TMI/NP	-Infinity
+
+I would not have gone into -- I don't want to know what kind of tests is he going to take and all that.
+he/NP; going to take and/VP; all that/NP	-Infinity
+
+And as a political statement, that makes it less honest than something real from a human being.
+a political statement/NP; makes/VP; a political statement/NP	-Infinity
+
+Just stand by for a minute, because I want Jack Cafferty to weigh in, as well -- Jack, you heard the statement as I read it.
+the statement/NP; read/VP; a minute/NP	-Infinity
+
+CAFFERTY: Well, I'm -- they had slightly differing views.
+they/NP; had slightly differing/VP; views/NP	-Infinity
+
+I'd be more inclined to agree with Alex. I -- you know, the thing that occurs to me is that he made a decision to run for president with this stuff lying in the background and lied about it during the time that he was soliciting our support for the biggest office in the country.
+the thing/NP; occurs/VP to/PP; me/NP	-Infinity
+
+I'd be more inclined to agree with Alex. I -- you know, the thing that occurs to me is that he made a decision to run for president with this stuff lying in the background and lied about it during the time that he was soliciting our support for the biggest office in the country.
+he/NP; made/VP; a decision/NP	-Infinity
+
+I'd be more inclined to agree with Alex. I -- you know, the thing that occurs to me is that he made a decision to run for president with this stuff lying in the background and lied about it during the time that he was soliciting our support for the biggest office in the country.
+this stuff/NP; lying/VP in/PP; the background/NP	-Infinity
+
+I'd be more inclined to agree with Alex. I -- you know, the thing that occurs to me is that he made a decision to run for president with this stuff lying in the background and lied about it during the time that he was soliciting our support for the biggest office in the country.
+he/NP; was soliciting/VP; our support/NP	-Infinity
+
+People hitch their wagons to these people.
+People/NP; hitch/VP; their wagons/NP	-Infinity
+
+People quit their jobs to go and volunteer and work on these campaigns because they inspire some kind of hope inside them, that, you know, they can change the world and make it a better place.
+People/NP; quit/VP; people jobs/NP	-Infinity
+
+People quit their jobs to go and volunteer and work on these campaigns because they inspire some kind of hope inside them, that, you know, they can change the world and make it a better place.
+they/NP; inspire/VP; some kind of hope/NP	-Infinity
+
+People quit their jobs to go and volunteer and work on these campaigns because they inspire some kind of hope inside them, that, you know, they can change the world and make it a better place.
+they/NP; can change/VP; the world/NP	-Infinity
+
+And all the time he's packing this suitcase full of garbage around with him.
+he/NP; 's packing/VP; this suitcase/NP	-Infinity
+
+And now there was talk about him maybe being on Obama's short list for vice president.
+Senator Edwards/NP; maybe being/VP on/PP; Obama's short list/NP	-Infinity
+
+Maybe he'd be the attorney general in an Obama cabinet, if Obama wins the election.
+he/NP; 'd be/VP; the attorney general/NP	-Infinity
+
+Maybe he'd be the attorney general in an Obama cabinet, if Obama wins the election.
+Obama/NP; wins/VP; the election/NP	-Infinity
+
+And he's got this thing that he's dragging around with him.
+he/NP; 's got/VP; this thing/NP	-Infinity
+
+And he's got this thing that he's dragging around with him.
+he/NP; 's dragging/VP with/PP; Senator Edwards/NP	-Infinity
+
+You cannot beat me up more than I have already beaten up myself."
+me/NP; up/VP; more than I/NP	-Infinity
+
+You know, it's almost as if he's been going through some psychological treatment himself trying to understand what's going on.
+the course of several campaigns/NP; is almost/VP; he/NP	-Infinity
+
+I mean this thing has been around since -- the "Enquirer" started fooling with this story in October of 2007.
+the `` Enquirer/NP; started fooling/VP with/PP; this story/NP	-Infinity
+
+And then a few weeks back, he was caught in this horrible situation coming out of this hotel and ran and locked himself in a bathroom and had to be escorted out by hotel security.
+he/NP; was caught/VP in/PP; this horrible situation/NP	-Infinity
+
+And then a few weeks back, he was caught in this horrible situation coming out of this hotel and ran and locked himself in a bathroom and had to be escorted out by hotel security.
+a bathroom/NP; had to be escorted/VP out/PRT; by hotel security/NP	-Infinity
+
+I mean that stuff has got to do funny things between your ears at 3:00 in the morning.
+stuff/NP; has got to do/VP; funny things/NP	-Infinity
+
+I can't imagine that it's been a very pleasant emotional time for him to be carrying around the guilt.
+a secret/NP; 's been/VP; a very pleasant emotional time/NP	-Infinity
+
+I can't imagine that it's been a very pleasant emotional time for him to be carrying around the guilt.
+Jack Cafferty/NP; to be carrying/VP around/PP; the guilt/NP	-Infinity
+
+And this -- the whole thing -- the point that Howard Kurtz made about, one, the reluctance of the mainstream media to go hard after this story because of a consideration of the condition that his wife is in, I mean that's -- that makes this whole thing worse than it might be if Elizabeth Edwards was a healthy woman.
+Howard Kurtz/NP; made/VP; about , one/NP	-Infinity
+
+And this -- the whole thing -- the point that Howard Kurtz made about, one, the reluctance of the mainstream media to go hard after this story because of a consideration of the condition that his wife is in, I mean that's -- that makes this whole thing worse than it might be if Elizabeth Edwards was a healthy woman.
+the reluctance of the mainstream media/NP; to go hard/VP after/PP; this story/NP	-Infinity
+
+And this -- the whole thing -- the point that Howard Kurtz made about, one, the reluctance of the mainstream media to go hard after this story because of a consideration of the condition that his wife is in, I mean that's -- that makes this whole thing worse than it might be if Elizabeth Edwards was a healthy woman.
+the whole thing -- the point/NP; might be/VP if/PP; Elizabeth Edwards/NP	-Infinity
+
+You don't do this kind of stuff when you have a woman at home suffering from cancer.
+this kind of stuff/NP; have/VP; a woman/NP	-Infinity
+
+It's just, you know -- yes, I -- yes, he says beat me up if you want.
+he/NP; says beat/VP; me/NP	-Infinity
+
+John Edwards rode out onto the national stage with his charming, bright smile, a compelling message about poverty.
+John Edwards/NP; rode/VP out/PRT onto/PP; the national stage/NP	-Infinity
+
+He had fought and defeated big corporations that preyed on the vulnerable.
+big corporations/NP; preyed/VP on/PP; the vulnerable/NP	-Infinity
+
+He had a record of standing up for the little guy.
+He/NP; had/VP; a record/NP	-Infinity
+
+And he got very, very rich in the process.
+he/NP; got/VP in/PP; the process/NP	-Infinity
+
+He was tailor-made for politics -- a good-looking guy.
+He/NP; was tailor-made/VP for/PP; politics/NP	-Infinity
+
+He had that sort of aw shucks country boy down home charm.
+He/NP; had/VP that/PP; sort of aw shucks country boy/NP	-Infinity
+
+He got to the Senate, he got onto the ticket as vice president in 2004.
+He/NP; got/VP to/PP; the Senate/NP	-Infinity
+
+He got to the Senate, he got onto the ticket as vice president in 2004.
+he/NP; got/VP onto/PP; the ticket/NP	-Infinity
+
+He was in the running for the White House himself earlier this year.
+He/NP; was/VP in/PP; the running/NP	-Infinity
+
+After denying it for months, he's finally admitted in an interview to be broadcast tonight on ABC's "Nightline" that he had this extra-marital affair with a woman who worked on his campaign.
+he/NP; 's finally admitted/VP in/PP; an interview/NP	-Infinity
+
+After denying it for months, he's finally admitted in an interview to be broadcast tonight on ABC's "Nightline" that he had this extra-marital affair with a woman who worked on his campaign.
+he/NP; had/VP; this extra-marital affair/NP	-Infinity
+
+After denying it for months, he's finally admitted in an interview to be broadcast tonight on ABC's "Nightline" that he had this extra-marital affair with a woman who worked on his campaign.
+a woman/NP; worked/VP on/PP; his campaign/NP	-Infinity
+
+When the "National Enquirer" first reported this, in October of 2007, he denied everything.
+he/NP; denied/VP; everything/NP	-Infinity
+
+He said at the time, the story is false, it's completely untrue, it's ridiculous.
+He/NP; said/VP at/PP; the time/NP	-Infinity
+
+He was lying through his teeth.
+He/NP; was lying/VP through/PP; his teeth/NP	-Infinity
+
+The ABC interview will be broadcast later tonight -- the same night that the opening ceremonies of the Olympic Games will be running on NBC.
+the opening ceremonies of the Olympic Games/NP; will be running/VP on/PP; NBC/NP	-Infinity
+
+Speculation around Edwards included a possible spot on the Obama ticket as vice president, maybe as attorney general, as I mentioned, in his cabinet.
+Edwards/NP; included/VP; a possible spot/NP	-Infinity
+
+By tomorrow morning, John Edwards will be lucky to get his calls returned by Howard Dean's housekeeper.
+his calls/NP; returned/VP by/PP; Howard Dean's housekeeper/NP	-Infinity
+
+The question is this -- and I guess we were talking about it a few minutes ago -- is John Edwards' political career now over?
+we/NP; were talking/VP about/PP; this now/NP	-Infinity
+
+Go to CNN.com/caffertyfile and you can post a comment on my blog -- Wolf.
+CNN.com\/caffertyfile/NP; can post/VP; a comment/NP	-Infinity
+
+We're going to continue to watch this story.
+We/NP; 're going to continue to watch/VP; this story/NP	-Infinity
+<end>20080808212147.138</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808212147.138</start>
+But we're also watching other news as well, including Russian tanks rolling into the Republic of Georgia, threatening U.S. interests, including oil and even the war in Iraq.
+we/NP; 're also watching/VP; other news/NP	-Infinity
+
+But we're also watching other news as well, including Russian tanks rolling into the Republic of Georgia, threatening U.S. interests, including oil and even the war in Iraq.
+including Russian tanks/NP; rolling/VP into/PP; the Republic of Georgia/NP	-Infinity
+<end>20080808212201.319</end>
+
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808212207.458</start>
+Also, children scarred by some of the worst terror attacks of recent years find a unique place to heal.
+children/NP; scarred/VP by/PP; some of the worst terror attacks/NP	-Infinity
+
+Also, children scarred by some of the worst terror attacks of recent years find a unique place to heal.
+recent years/NP; find/VP; a unique place/NP	-Infinity
+
+We'll continue to follow the breaking news.
+We/NP; 'll continue to follow/VP; the breaking news/NP	-Infinity
+<end>20080808212536.600</end>
+
+<story>Politics:Teaser|McCain-on-energy</story>
+<start>20080808212536.600</start>
+He's at a news conference in Rogers, Arkansas right now.
+He/NP; is/VP at/PP; a news conference/NP	-Infinity
+
+Now, he's answering reporters' questions on energy right now.
+he/NP; 's answering/VP; reporters/NP	-Infinity
+<end>20080808212554.985</end>
+
+<story>Politics|Edwards-affair</story>
+<start>20080808212554.985</start>
+But we anticipate that one of those reporters will almost certainly ask him about the breaking news we've been following here in THE SITUATION ROOM -- the confirmation now, the acknowledgment by John Edwards that he did, in fact, have an affair back in 2006 with a woman and a statement that John Edwards has just released saying that he's very, very sorry about all of this.
+we/NP; anticipate/VP; that one of those reporters/NP	-Infinity
+
+But we anticipate that one of those reporters will almost certainly ask him about the breaking news we've been following here in THE SITUATION ROOM -- the confirmation now, the acknowledgment by John Edwards that he did, in fact, have an affair back in 2006 with a woman and a statement that John Edwards has just released saying that he's very, very sorry about all of this.
+we/NP; 've been following here/VP in/PP; THE SITUATION ROOM/NP	-Infinity
+
+But we anticipate that one of those reporters will almost certainly ask him about the breaking news we've been following here in THE SITUATION ROOM -- the confirmation now, the acknowledgment by John Edwards that he did, in fact, have an affair back in 2006 with a woman and a statement that John Edwards has just released saying that he's very, very sorry about all of this.
+John Edwards/NP; has just released saying/VP; he/NP	-Infinity
+
+He denies, though, fathering a child that this woman delivered just a few months ago.
+this woman/NP; delivered/VP; just a few months/NP	-Infinity
+
+But it's -- I know you've had a chance to take a close look now at the statement that John Edwards released.
+a chance/NP; to take/VP; a close look/NP	-Infinity
+
+We had some of our male political analysts assessing what we just heard.
+We/NP; had/VP; some of our male political analysts/NP	-Infinity
+
+And I also think that this statement is very vague about when he actually told her.
+this statement/NP; is/VP about/PP; he/NP	-Infinity
+
+He said, "With my family, I took responsibility for my actions in 2006 and today I take full responsibility publicly."
+today/NP; take/VP; full responsibility/NP	-Infinity
+
+But we don't know when he told Elizabeth Edwards.
+we/NP; do n't know when/VP; he/NP	-Infinity
+
+Was it because the "National Enquirer" had done this story?
+the `` National Enquirer/NP; had done/VP; this story/NP	-Infinity
+
+Was it before he began to run for the presidency in earnest this time around?
+he/NP; began to run/VP for/PP; the presidency/NP	-Infinity
+
+Is it something that they had discussed and they had put in their past and that she's squared away with at this point?
+they/NP; had discussed/VP; they/NP	-Infinity
+
+Is it something that they had discussed and they had put in their past and that she's squared away with at this point?
+she/NP; 's squared away with/VP at/PP; this point/NP	-Infinity
+
+Or is this something that he lied about until he could no longer lie about it anymore, because it was becoming public?
+he/NP; lied/VP; he/NP	-Infinity
+
+Those are the kinds of questions that I think people ask, particularly women, as I know you were discussing before about his political future.
+the kinds of questions/NP; think/VP; people/NP	-Infinity
+
+BLITZER: And, Gloria, if Elizabeth Edwards, his wife, comes out in some sort of statement or together with him holding hands... BORGER: Right.
+Senator Edwards/NP; holding/VP; hands/NP	-Infinity
+
+It was awful, it was terrible, but we have a lot of history, I love this man and I'm willing to go forward with this marriage -- as we've seen women of other political politicians come out and defend their husbands.
+we/NP; have/VP; a lot of history/NP	-Infinity
+
+It was awful, it was terrible, but we have a lot of history, I love this man and I'm willing to go forward with this marriage -- as we've seen women of other political politicians come out and defend their husbands.
+we/NP; 've seen/VP; women of other political politicians/NP	-Infinity
+
+BORGER: I think that's going to be very important to John Edwards.
+BLITZER/NP; 's going to be/VP to/PP; John Edwards/NP	-Infinity
+
+I remember, of course, though when Hillary Clinton came out, famously, and defended Bill Clinton talking about the right- wing conspiracy and became Bill Clinton's biggest defender in his case with Monica Lewinsky.
+Bill Clinton/NP; talking/VP about/PP; the right/NP	-Infinity
+
+I remember, of course, though when Hillary Clinton came out, famously, and defended Bill Clinton talking about the right- wing conspiracy and became Bill Clinton's biggest defender in his case with Monica Lewinsky.
+wing conspiracy/NP; became/VP; Bill Clinton's biggest defender/NP	-Infinity
+
+And so I think right now it's in Elizabeth Edwards' hands.
+Right now/NP; is/VP in/PP; Elizabeth Edwards/NP	-Infinity
+
+And we -- we don't know the entire story of the chronology of this, quite frankly.
+we/NP; do n't know/VP; the entire story of the chronology/NP	-Infinity
+
+And I think that, you know, again, we don't know why this story broke right now.
+we/NP; do n't know why/VP; this story/NP	-Infinity
+
+We don't know whether John Edwards knew about it, told his staff about it.
+We/NP; do n't know/VP; John Edwards/NP	-Infinity
+
+From David Bonior's statement, it seems to me that this was something that he hadn't told his top advisers about.
+he/NP; had n't told/VP; his top advisers/NP	-Infinity
+
+BORGER: And you sit with your staff and you answer that question.
+your staff/NP; answer/VP that/PP; question/NP	-Infinity
+
+Well, was this asked and not answered at that time?
+this asked and not/NP; answered/VP at/PP; that time/NP	-Infinity
+
+BLITZER: Because when they're vetting people, not only for vice president, let's say, but for any senior cabinet position, any important political position -- Paul Begala, you're here in THE SITUATION ROOM with us.
+they/NP; 're vetting/VP; people/NP	-Infinity
+
+In fact, that's the last question when you do the full-field FBI background check.
+the last question/NP; do/VP; the full-field FBI background check/NP	-Infinity
+
+He wasn't -- again, he -- once he stood down from his presidential campaign, he wasn't seeking any elected office.
+he/NP; stood/VP; down/NP	-Infinity
+
+He wasn't -- again, he -- once he stood down from his presidential campaign, he wasn't seeking any elected office.
+he/NP; was n't seeking/VP; any elected office/NP	-Infinity
+
+He doesn't hold any elected office.
+He/NP; does n't hold/VP; any elected office/NP	-Infinity
+
+But -- but I think -- I think Gloria's points were right, that, politically, all of this makes poor Elizabeth Edwards all the more central to any hope that John Edwards has of one day reviving a political career.
+all of this/NP; makes/VP; poor Elizabeth Edwards/NP	-Infinity
+
+But -- but I think -- I think Gloria's points were right, that, politically, all of this makes poor Elizabeth Edwards all the more central to any hope that John Edwards has of one day reviving a political career.
+John Edwards/NP; has/VP of/PP; one day/NP	-Infinity
+
+BLITZER: And -- and you know that -- you point out the staff -- and Gloria points out the staff.
+Gloria/NP; points/VP out/PRT; the staff/NP	-Infinity
+
+David Bonior, a man all of us know here, a former congressman from Michigan, who was the campaign manager, often would come into THE SITUATION ROOM to go out and strongly support Senator -- Senator Edwards and make the case for Senator Edwards.
+THE SITUATION ROOM/NP; to go out and/VP; support Senator/NP	-Infinity
+
+David Bonior, a man all of us know here, a former congressman from Michigan, who was the campaign manager, often would come into THE SITUATION ROOM to go out and strongly support Senator -- Senator Edwards and make the case for Senator Edwards.
+Senator Edwards/NP; make/VP; the case/NP	-Infinity
+
+This statement that he released: " Thousands of friends of the senator's and his supporters have put their faith and confidence in him.
+his supporters/NP; have put/VP; Thousands of friends of the senator 's and his supporters faith and confidence/NP	-Infinity
+
+And he's let them down.
+he/NP; 's let/VP; Thousands of friends of the senator 's and his supporters/NP	-Infinity
+
+They have been betrayed by his action."
+They/NP; have been betrayed/VP by/PP; his action/NP	-Infinity
+
+CASTELLANOS: Well, the people who invested the most in you of course are the ones most disappointed.
+the people/NP; invested/VP; the most/NP	-Infinity
+
+And that's why I think Edwards' statement was a little bit of a surprise to us both.
+' statement/NP; was/VP; a little bit of a surprise/NP	-Infinity
+
+It's -- it's not as his -- has his family central.
+this very carefully written statement that John Edwards has just released/NP; 's/VP as/PP; his/NP	-Infinity
+
+But he also owes David Bonior all the -- he had one of the best staffs I ever saw.
+he/NP; owes/VP; David Bonior all the/NP	-Infinity
+
+But he also owes David Bonior all the -- he had one of the best staffs I ever saw.
+he/NP; had/VP; one of the best staffs/NP	-Infinity
+
+David Bonior and the others who worked for him in that campaign, he owes them an apology.
+the others/NP; worked/VP for/PP; David Bonior/NP	-Infinity
+
+David Bonior and the others who worked for him in that campaign, he owes them an apology.
+he/NP; owes/VP; the others who worked for him in that campaign/NP	-Infinity
+
+I still have to go back to my very first response here is, though, let he who is without sin cast the first stone.
+he/NP; is/VP without/PP; sin/NP	-Infinity
+
+I mean, everybody makes mistakes.
+everybody/NP; makes/VP; mistakes/NP	-Infinity
+
+The question is, you can achieve redemption and forgiveness if you first apologize and ask for forgiveness.
+redemption and forgiveness/NP; first apologize and ask/VP for/PP; forgiveness/NP	-Infinity
+
+And we're going to pause after each section to assess what he says, because I think it's important.
+we/NP; 're going to pause/VP after/PP; each section/NP	-Infinity
+
+"In 2006," he writes, "I made a serious error in judgment and conducted myself in a way that was disloyal to my family and to my core beliefs.
+judgment/NP; conducted/VP; myself/NP	-Infinity
+
+"In 2006," he writes, "I made a serious error in judgment and conducted myself in a way that was disloyal to my family and to my core beliefs.
+a way/NP; was/VP to/PP; my family/NP	-Infinity
+
+I recognized my mistake and I told my wife that I had a liaison with another woman, and I asked for her forgiveness.
+my mistake/NP; told/VP; my wife/NP	-Infinity
+
+When a supermarket tabloid told a version of the story, I used the fact that the story contained many falsities to deny it.
+a supermarket tabloid/NP; told/VP; a version of the story/NP	-Infinity
+
+When a supermarket tabloid told a version of the story, I used the fact that the story contained many falsities to deny it.
+the story/NP; contained/VP; many falsities/NP	-Infinity
+
+I may have lied in denying it, but, technically, maybe it wasn't a lie because there were some falsities in "The National Enquirer" story?
+that statement from John Edwards that we just read to you , now admitting he/NP; was/VP; a lie/NP	-Infinity
+
+And, also, in this part of the statement, Wolf -- and I overlooked this -- he said, that he " told my wife" that he had had that liaison.
+he/NP; told/VP; my wife/NP	-Infinity
+
+And, also, in this part of the statement, Wolf -- and I overlooked this -- he said, that he " told my wife" that he had had that liaison.
+he/NP; had had/VP that/PP; liaison/NP	-Infinity
+
+So, it is perfectly plausible to think that, before he ran for the presidency, that this is something that he told Elizabeth, and that perhaps they decided to keep it to themselves, and that -- because David Bonior sure sounds like it's not something that he knew about.
+he/NP; ran/VP for/PP; the presidency/NP	-Infinity
+
+So, it is perfectly plausible to think that, before he ran for the presidency, that this is something that he told Elizabeth, and that perhaps they decided to keep it to themselves, and that -- because David Bonior sure sounds like it's not something that he knew about.
+he/NP; told/VP; Elizabeth/NP	-Infinity
+
+So, it is perfectly plausible to think that, before he ran for the presidency, that this is something that he told Elizabeth, and that perhaps they decided to keep it to themselves, and that -- because David Bonior sure sounds like it's not something that he knew about.
+the presidency/NP; 's/VP; something/NP	-Infinity
+
+So, it is perfectly plausible to think that, before he ran for the presidency, that this is something that he told Elizabeth, and that perhaps they decided to keep it to themselves, and that -- because David Bonior sure sounds like it's not something that he knew about.
+he/NP; knew/VP; about/NP	-Infinity
+
+And he was a key staffer in that campaign.
+he/NP; was/VP; a key staffer/NP	-Infinity
+
+BLITZER: Can we say, Paul, that he lied when he denied that there was anything true to this "National Enquirer" story?
+he/NP; lied when/VP; he/NP	-Infinity
+
+I mean, when he -- when he cheated, of course, he violated his wife's trust and his marital vows to her.
+he/NP; violated/VP; his wife's trust/NP	-Infinity
+
+I mean, when he -- when he cheated, of course, he violated his wife's trust and his marital vows to her.
+his marital/NP; vows/VP to/PP; a wife who is battling an incurable disease may have something to do with this/NP	-Infinity
+
+But, then, when he turned and lied to all of us, then he's violated the trust with the voters, who he was trying to get their support.
+he/NP; 's violated/VP; the trust/NP	-Infinity
+
+But, then, when he turned and lied to all of us, then he's violated the trust with the voters, who he was trying to get their support.
+he/NP; was trying to get/VP; the voters support/NP	-Infinity
+
+And I think a different model was George W. Bush when he ran.
+a different model/NP; was/VP; George W. Bush/NP	-Infinity
+
+He was governor of Texas.
+He/NP; was/VP; governor of Texas/NP	-Infinity
+
+He was running for president.
+He/NP; was running/VP for/PP; president/NP	-Infinity
+
+We can all -- I think a fair-minded person can infer from that, that, yes, he used drugs.
+he/NP; used/VP; drugs/NP	-Infinity
+
+Here's a McCain answering a question on this.
+a McCain/NP; answering/VP; a question/NP	-Infinity
+
+(JOINED IN PROGRESS) QUESTION: ... denied it while on the campaign trail seeking the Democratic nomination?
+-LRB-/NP; JOINED/VP IN/PP; PROGRESS -RRB- QUESTION/NP	-Infinity
+
+(JOINED IN PROGRESS) QUESTION: ... denied it while on the campaign trail seeking the Democratic nomination?
+the campaign trail/NP; seeking/VP; the Democratic nomination/NP	-Infinity
+
+QUESTION: Senator, yesterday, you suggested that if Saddam Hussein... BLITZER: All right, there you saw exactly what we anticipated that Senator McCain would say.
+we/NP; anticipated/VP that/PP; Senator McCain/NP	-Infinity
+
+Alex Castellanos, you said, you know, keep your mouth shut on this sensitive issue.
+your mouth/NP; shut/VP on/PP; this sensitive issue/NP	-Infinity
+
+CASTELLANOS: And that was Paul's point, too.
+BEGALA/NP; was/VP; Paul's point/NP	-Infinity
+
+If you're willing to use an issue like this for your political gain, it does not reflect well on a candidate.
+an issue/NP; does not reflect well/VP on/PP; a candidate/NP	-Infinity
+
+And she had a very, very terse, what, six- or seven-second statement, in which she said, you know, her heart goes out to the family.
+she/NP; had/VP; a very/NP	-Infinity
+
+And she had a very, very terse, what, six- or seven-second statement, in which she said, you know, her heart goes out to the family.
+her heart/NP; goes out/VP to/PP; the family/NP	-Infinity
+
+And I think that Hillary did the right thing.
+Hillary/NP; did/VP; the right thing/NP	-Infinity
+
+I think Senator McCain did the right thing, and, you know, that you don't want to get near this thing.
+Senator McCain/NP; did/VP; the right thing/NP	-Infinity
+
+It's John McCain's job to advance the issues he believes in that he would lead us on if he were president.
+John McCain's job/NP; to advance/VP; the issues/NP	-Infinity
+
+It's John McCain's job to advance the issues he believes in that he would lead us on if he were president.
+he/NP; were/VP; president/NP	-Infinity
+
+BLITZER: Gloria, you agree that John McCain did the right thing by simply refusing to comment?
+John McCain/NP; did/VP; the right thing/NP	-Infinity
+
+And I think, you know, there's more opportunity to make a mistake here for a politician, as -- as Paul was saying earlier, than -- than anything else.
+more opportunity/NP; to make/VP; a mistake/NP	-Infinity
+
+You know, Edwards' endorsement was very important to Barack Obama.
+' endorsement/NP; was/VP to/PP; Barack Obama/NP	-Infinity
+
+It came at a time when he was still in this tight race with Hillary Clinton.
+he/NP; was still/VP in/PP; this tight race/NP	-Infinity
+
+They were both courting John Edwards very assiduously.
+They/NP; were/VP; both courting John Edwards/NP	-Infinity
+
+And Edwards came down on the side of Barack Obama.
+Edwards/NP; came/VP down/PRT on/PP; the side of Barack Obama/NP	-Infinity
+
+We will parse it, we will assess it, and we will move on.
+We/NP; will parse/VP; that statement from John Edwards that we just read to you , now admitting he/NP	-Infinity
+
+We will parse it, we will assess it, and we will move on.
+we/NP; will assess/VP; that statement from John Edwards that we just read to you , now admitting he/NP	-Infinity
+<end>20080808213705.855</end>
+
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080808213705.855</start>
+But there's other news we're watching as well -- don't want to neglect that -- including a major, major development, Russian tanks rolling into the neighboring Republic of Georgia, threatening U.S. interests, including oil, even the war in Iraq, the Bush administration very concerned, fearing all-out war.
+Russian tanks/NP; rolling/VP into/PP; the neighboring Republic of Georgia/NP	-Infinity
+
+We will speak with the former U.S. Defense Secretary William Cohen.
+We/NP; will speak/VP with/PP; the former U.S. Defense Secretary William Cohen/NP	-Infinity
+<end>20080808213725.909</end>
+
+<story>Health:Teaser|Terror-attack-children-heal</story>
+<start>20080808213725.909</start>
+And children scarred by some of the worst terror acts of recent years, they find a unique place to heal.
+children/NP; scarred/VP by/PP; some of the worst terror acts/NP	-Infinity
+
+And children scarred by some of the worst terror acts of recent years, they find a unique place to heal.
+they/NP; find/VP; a unique place/NP	-Infinity
+<end>20080808213732.148</end>
+
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808213732.148</start>
+And a statement coming in from John Edwards, which we have been reading you, now admitting that he did in fact lie about having an affair.
+a statement/NP; coming in/VP from/PP; John Edwards/NP	-Infinity
+
+And a statement coming in from John Edwards, which we have been reading you, now admitting that he did in fact lie about having an affair.
+he/NP; did/VP in/PP; fact/NP	-Infinity
+
+We are going to hear from John Edwards' former communications director.
+We/NP; are going to hear/VP from/PP; John Edwards/NP	-Infinity
+
+He's standing by live as well.
+He/NP; 's standing/VP by/PP; live as well/NP	-Infinity
+<end>20080808214103.126</end>
+
+<story>Politics|Edwards-affair</story>
+<start>20080808214103.126</start>
+(COMMERCIAL BREAK) BLITZER: Major story developing involving Russia, today launching air and ground attacks on the neighboring Republic of Georgia, tensions boiling over, as troops from both countries engage in deadly fighting.
+Major story/NP; developing involving/VP; Russia/NP	-Infinity
+
+(COMMERCIAL BREAK) BLITZER: Major story developing involving Russia, today launching air and ground attacks on the neighboring Republic of Georgia, tensions boiling over, as troops from both countries engage in deadly fighting.
+today/NP; launching/VP; air and ground attacks/NP	-Infinity
+
+(COMMERCIAL BREAK) BLITZER: Major story developing involving Russia, today launching air and ground attacks on the neighboring Republic of Georgia, tensions boiling over, as troops from both countries engage in deadly fighting.
+both countries/NP; engage/VP in/PP; deadly fighting/NP	-Infinity
+
+And Georgia is now asking the U.S. government to airlift its 2,000 troops in Iraq, to get them back home from Iraq to help fight Russia.
+Georgia/NP; is now asking/VP; the U.S. government/NP	-Infinity
+
+And Georgia is now asking the U.S. government to airlift its 2,000 troops in Iraq, to get them back home from Iraq to help fight Russia.
+Iraq/NP; to help fight/VP; Russia/NP	-Infinity
+
+Our State Department correspondent, Zain Verjee, she is here in THE SITUATION ROOM watching this story for us.
+she/NP; is here/VP in/PP; THE SITUATION ROOM/NP	-Infinity
+
+She's speaking out, and she's telling Russia, pull back your troops.
+she/NP; 's telling/VP; Russia/NP	-Infinity
+
+Let's take a look at the maps here.
+Let/NP; 's take/VP; a look/NP	-Infinity
+
+This is the former Soviet Union, of which Georgia was a part.
+Georgia/NP; was/VP; a part/NP	-Infinity
+
+Then they became two countries, Russia and Georgia.
+they/NP; became/VP; two countries/NP	-Infinity
+
+Now, a major flash point between the two has been this region called South Ossetia.
+the two/NP; has been/VP; this region/NP	-Infinity
+
+Separatists there want to break away from Georgia and become part of Russia.
+Separatists/NP; want to break/VP away/PRT; Georgia/NP	-Infinity
+
+So, that's really the issue at hand here and that is what has been causing the fighting.
+an issue/NP; is really/VP; the issue/NP	-Infinity
+
+Let's take a look at what happened today.
+Let/NP; 's take/VP; a look/NP	-Infinity
+
+(BEGIN VIDEOTAPE) VERJEE (voice-over): Russian tanks roll into the Republic of Georgia, its warplanes bombing inside Georgia.
+Russian tanks/NP; roll/VP into/PP; the Republic of Georgia/NP	-Infinity
+
+Now Georgia, a U.S. ally, wants its troops airlifted from Iraq to battle Russian forces back home.
+its troops/NP; airlifted/VP from/PP; Iraq/NP	-Infinity
+
+And, if this thing is -- if they get away with this in Georgia, the world will be in trouble.
+the world/NP; will be/VP in/PP; trouble/NP	-Infinity
+
+President Bush raised concerns with the Russian prime minister, Vladimir Putin, in Beijing.
+President Bush/NP; raised/VP; concerns/NP	-Infinity
+
+Secretary of State Condoleezza Rice is calling for a cease-fire, and demanding Russia stand down, saying: "We call on Russia to cease attacks on Georgia by aircraft and missiles, respect Georgia's territorial integrity, and withdraw its ground combat forces from Georgian soil."
+Secretary of State Condoleezza Rice/NP; is calling/VP for/PP; a cease-fire/NP	-Infinity
+
+Secretary of State Condoleezza Rice is calling for a cease-fire, and demanding Russia stand down, saying: "We call on Russia to cease attacks on Georgia by aircraft and missiles, respect Georgia's territorial integrity, and withdraw its ground combat forces from Georgian soil."
+We/NP; call/VP on/PP; Russia/NP	-Infinity
+
+The flare-up over the small province of South Ossetia -- separatist rebels are fighting to break away from Georgia and become part of Russia.
+separatist rebels/NP; are fighting to break/VP away/PRT; Georgia/NP	-Infinity
+
+Breaking a cease fire, they attacked Georgian forces, triggering a harsh Georgian military price.
+they/NP; attacked/VP; Georgian forces/NP	-Infinity
+
+Russian President Dmitry Medvedev says, Russia was forced to step in when its soldiers were killed inside Georgia.
+its soldiers/NP; were killed/VP inside/PP; Georgia/NP	-Infinity
+
+Medvedev says: "Georgia's acts have caused loss of life, including among Russian peacekeepers.
+Georgia's acts/NP; have caused/VP; loss of life/NP	-Infinity
+
+We will not allow the death of our fellow citizens to go unpunished.
+We/NP; will not allow/VP; the death of our fellow citizens/NP	-Infinity
+
+The perpetrators will receive the punishment they deserve."
+The perpetrators/NP; will receive/VP; the punishment/NP	-Infinity
+
+As a U.S. envoy prepares to travel to the region to mediate, the U.S. presidential candidates are already weighing in.
+a U.S. envoy/NP; prepares to travel/VP to/PP; the region/NP	-Infinity
+
+SEN. JOHN MCCAIN (R-AZ), PRESIDENTIAL CANDIDATE: Russia should immediately and unconditionally cease its military operations and withdraw all forces from sovereign Georgian territory.
+Russia/NP; should immediately and unconditionally cease/VP; its military operations/NP	-Infinity
+
+VERJEE : NATO and the West have been courting Georgia, a former Soviet republic which has angered Russia.
+the West/NP; have been courting/VP; Georgia/NP	-Infinity
+
+VERJEE : NATO and the West have been courting Georgia, a former Soviet republic which has angered Russia.
+which/NP; has angered/VP; Russia/NP	-Infinity
+
+UNIDENTIFIED FEMALE: It does not want to see Georgia join NATO or be the self-professed Western forepost in the post-Soviet space.
+Georgia join NATO/NP; be/VP; the self-professed Western forepost/NP	-Infinity
+
+What they're doing is training Georgian troops deployed to go to Iraq -- Wolf.
+Georgian troops/NP; deployed to go/VP to/PP; Iraq/NP	-Infinity
+
+Practically since the breakup of the Soviet Union, Washington has been fearing a scenario like the one playing out right now between Georgia and Russia, with a lot at stake for the region, for the United States, indeed, for the entire world.
+Washington/NP; has been fearing/VP; a scenario/NP	-Infinity
+
+Practically since the breakup of the Soviet Union, Washington has been fearing a scenario like the one playing out right now between Georgia and Russia, with a lot at stake for the region, for the United States, indeed, for the entire world.
+the one/NP; playing out/VP between/PP; Georgia and Russia/NP	-Infinity
+
+Let's get some analysis from the former defense secretary, former us Senator William Cohen.
+Let/NP; 's get/VP; some analysis/NP	-Infinity
+
+He runs The Cohen Group, a consulting firm here in Washington.
+He/NP; runs/VP; The Cohen Group/NP	-Infinity
+
+COHEN: ... now prime minister, said the greatest catastrophe of the 20th century was the breakup of the Soviet empire.
+the greatest catastrophe of the 20th century/NP; was/VP; the breakup of the Soviet empire/NP	-Infinity
+
+And they have resented -- Russia has resented this breakup.
+Russia/NP; has resented/VP; this breakup/NP	-Infinity
+
+And they have put peacekeepers in this region.
+they/NP; have put/VP; peacekeepers/NP	-Infinity
+
+And I think they have been looking for an opportunity to try and wean the -- the people back into the Soviet -- under the Soviet flag, so to speak, but the Russian flag now.
+they/NP; have been looking/VP for/PP; an opportunity/NP	-Infinity
+
+Both of them tend to be pro-Russian in sentiment.
+Both of them/NP; tend to be/VP in/PP; sentiment/NP	-Infinity
+
+So, you have the president of Georgia trying to bring them back.
+the president of Georgia/NP; trying to bring/VP; Both of them/NP	-Infinity
+
+And the Russians are resisting that and now looking for ways to pull them back into the Russian... (CROSSTALK) BLITZER: So, if you're the U.S. right now, and you're watching this, and you really feel this is Russian aggression on sovereign Georgian soil, how far should the U.S. go in making that opposition clear?
+the Russians/NP; are resisting/VP; the Russians and/NP	-Infinity
+
+And the Russians are resisting that and now looking for ways to pull them back into the Russian... (CROSSTALK) BLITZER: So, if you're the U.S. right now, and you're watching this, and you really feel this is Russian aggression on sovereign Georgian soil, how far should the U.S. go in making that opposition clear?
+ways/NP; to pull/VP; Both of them/NP	-Infinity
+
+COHEN: I think you have to be very strong and send the signal to the Russians that you are now invading and into another country's territory, sovereign territory.
+the Russians/NP; are now invading and/VP into/PP; another country's territory/NP	-Infinity
+
+You may recall that Russia faced a situation where the Chechnyans wanted to break away from -- from Russia.
+Russia/NP; faced/VP; a situation/NP	-Infinity
+
+And they came in and they crushed Grozny.
+they/NP; came/VP in/PP; they/NP	-Infinity
+
+They absolutely leveled that city, and with very little outcry coming from the international community, compared to what they had done.
+They/NP; leveled/VP that/PP; city/NP	-Infinity
+
+They absolutely leveled that city, and with very little outcry coming from the international community, compared to what they had done.
+very little outcry/NP; coming/VP from/PP; the international community/NP	-Infinity
+
+So, they want to use force to keep their provinces in -- under the Russian flag, but they're also trying to use their muscle now to discourage any of the republics from staying within Georgia.
+they/NP; want to use/VP; force/NP	-Infinity
+
+So, they want to use force to keep their provinces in -- under the Russian flag, but they're also trying to use their muscle now to discourage any of the republics from staying within Georgia.
+they/NP; 're also trying to use/VP; Both of them muscle/NP	-Infinity
+
+So, they want to use force to keep their provinces in -- under the Russian flag, but they're also trying to use their muscle now to discourage any of the republics from staying within Georgia.
+any of the republics/NP; staying/VP within/PP; Georgia/NP	-Infinity
+
+So, they're trying to draw them in.
+they/NP; 're trying to draw/VP; Both of them/NP	-Infinity
+
+And the Pentagon's got contingency plans for getting them out, an airlift or whatever.
+the Pentagon's/NP; got/VP; contingency plans/NP	-Infinity
+
+But, if this is a very violent situation, that 's easier said than done.
+easier/NP; said/VP than/PP; done/NP	-Infinity
+
+COHEN: All the more reason to persuade the Russians that they have to cease-fire right now, have a truce imposed immediately to get their forces out, to go to the Security Council, and make sure that the Security Council takes whatever action it can.
+All the more reason/NP; to persuade/VP; the Russians/NP	-Infinity
+
+COHEN: All the more reason to persuade the Russians that they have to cease-fire right now, have a truce imposed immediately to get their forces out, to go to the Security Council, and make sure that the Security Council takes whatever action it can.
+they/NP; have to/VP; cease-fire/NP	-Infinity
+
+COHEN: All the more reason to persuade the Russians that they have to cease-fire right now, have a truce imposed immediately to get their forces out, to go to the Security Council, and make sure that the Security Council takes whatever action it can.
+the Security Council/NP; takes/VP; whatever action/NP	-Infinity
+
+Obviously, Russia being a member of that Security Council, is going to have its say.
+Russia/NP; being/VP; a member of that Security Council/NP	-Infinity
+
+BLITZER: And this -- this will only give ammunition to John McCain's call to -- to remove Russia from the G8.
+John McCain's call/NP; to -- to remove/VP; Russia/NP	-Infinity
+
+If they were a member of NATO today... BLITZER: There could be a world war.
+they/NP; were/VP; a member of NATO today/NP	-Infinity
+
+COHEN: ... then we have a situation where, under the Article 5 of the NATO charter, we would then be required to defend Georgia against Russia.
+we/NP; have/VP; a situation/NP	-Infinity
+
+So, we have got a lot at stake here.
+we/NP; have got/VP; a lot/NP	-Infinity
+
+And we have to have some sort of a cease-fire imposed.
+we/NP; have to have/VP; some sort of a cease-fire/NP	-Infinity
+
+BLITZER: Let's hope it does, cooler heads do prevail.
+Let/NP; hope/VP; some sort of a cease-fire imposed/NP	-Infinity
+
+BLITZER: More on the breaking news we're following as well: John Edwards now admitting he did indeed have an affair.
+John Edwards/NP; admitting/VP; he/NP	-Infinity
+
+James Carville standing by -- he's going to weigh in on this very sensitive subject .
+he/NP; 's going to weigh/VP in/PRT on/PP; this very sensitive subject/NP	-Infinity
+
+(COMMERCIAL BREAK) BLITZER: We want to check in with James Carville, our Democratic strategist, here in THE SITUATION ROOM to get his reaction to this bombshell acknowledgement today by former Senator John Edwards that he did, in fact, back in 2006, have an extramarital affair.
+We/NP; want to check/VP in/PRT with/PP; James Carville/NP	-Infinity
+
+(COMMERCIAL BREAK) BLITZER: We want to check in with James Carville, our Democratic strategist, here in THE SITUATION ROOM to get his reaction to this bombshell acknowledgement today by former Senator John Edwards that he did, in fact, back in 2006, have an extramarital affair.
+THE SITUATION ROOM/NP; to get/VP; his reaction/NP	-Infinity
+
+But I think, any time you hear something like this, you think about Mrs. Edwards and you think about children.
+any time/NP; hear/VP; something/NP	-Infinity
+
+But I think, any time you hear something like this, you think about Mrs. Edwards and you think about children.
+Mrs. Edwards/NP; think/VP about/PP; children/NP	-Infinity
+
+It was pretty clear that they had him, you know, pretty cold to rights there.
+they/NP; had/VP; John Edwards/NP	-Infinity
+
+BLITZER: Because "The National Enquirer " had been reporting this now for the past several weeks.
+The National Enquirer/NP; had been reporting/VP; this now/NP	-Infinity
+
+And it had been way out there on the Internet.
+this now/NP; had been way out there/VP on/PP; the Internet/NP	-Infinity
+
+A lot of others had been picking it up, although, for the most part, the national news media stayed away from this story, given the denials from John Edwards, given the denial from the woman involved in this extramarital affair, Rielle Hunter, as well.
+A lot of others/NP; had been picking/VP; A lot of others/NP	-Infinity
+
+A lot of others had been picking it up, although, for the most part, the national news media stayed away from this story, given the denials from John Edwards, given the denial from the woman involved in this extramarital affair, Rielle Hunter, as well.
+the national news media/NP; stayed away/VP from/PP; this story/NP	-Infinity
+
+A lot of others had been picking it up, although, for the most part, the national news media stayed away from this story, given the denials from John Edwards, given the denial from the woman involved in this extramarital affair, Rielle Hunter, as well.
+the woman/NP; involved/VP in/PP; this extramarital affair/NP	-Infinity
+
+Have you had a chance to dissect the lengthy statement that John Edwards just released moments ago?
+Have/NP; had/VP; a chance/NP	-Infinity
+
+Have you had a chance to dissect the lengthy statement that John Edwards just released moments ago?
+John Edwards/NP; released/VP; moments/NP	-Infinity
+
+CARVILLE: Well, I have been -- actually been watching CNN and watching our coverage of it, which I think has been excellent.
+CNN/NP; watching/VP; our coverage of CNN 's Special Investigations Unit/NP	-Infinity
+
+I thought Paul and Gloria both really made a good point, that no politician really wants to get around this.
+Paul and Gloria/NP; made/VP; a good point/NP	-Infinity
+
+And if it wouldn't be that -- and Paul made a good point.
+Paul/NP; made/VP; a good point/NP	-Infinity
+
+And I thought the most interesting thing was is that Mrs. Edwards knew about this back in 2006.
+Mrs. Edwards/NP; knew/VP about/PP; this back/NP	-Infinity
+
+That's -- she knew about it.
+she/NP; knew/VP about/PP; the most interesting thing was/NP	-Infinity
+
+It's not exactly clear from the statement that he told her back in 2006.
+he/NP; told/VP; no/NP	-Infinity
+
+So, it's unclear that 2006 was referring to his actions, which he says took place in 2006, or that's when he told Mrs. Edwards.
+2006/NP; was referring/VP to/PP; his actions/NP	-Infinity
+
+So, it's unclear that 2006 was referring to his actions, which he says took place in 2006, or that's when he told Mrs. Edwards.
+he/NP; says took/VP; place/NP	-Infinity
+
+So, it's unclear that 2006 was referring to his actions, which he says took place in 2006, or that's when he told Mrs. Edwards.
+he/NP; told/VP; Mrs. Edwards/NP	-Infinity
+
+I -- the way it came across to me, that he knew.
+a good point/NP; came/VP across/PRT to/PP; me/NP	-Infinity
+
+It's -- it's unfortunate for his family.
+the thing that occurs to me is that he made a decision to run for president with this stuff lying in the background and lied about it during the time/NP; is/VP for/PP; his family/NP	-Infinity
+
+But, you know, when you make a decision that you're going to run for president, and you have something like this in your past, it -- you have got to be ready for it to come up.
+a decision/NP; 're going to run/VP for/PP; president/NP	-Infinity
+
+BLITZER: Were you surprised that -- if he did, in fact, have this affair in 2006, he then decided last year and part of this year to actually run for president?
+he/NP; decided/VP; last year/NP	-Infinity
+
+BLITZER: Were you surprised that -- if he did, in fact, have this affair in 2006, he then decided last year and part of this year to actually run for president?
+part of this year/NP; to actually run/VP for/PP; president/NP	-Infinity
+
+And I think, if everybody that ever ran for president that had an affair didn't run for president, we might be short three or four presidents here, you know?
+everybody/NP; ever ran/VP for/PP; president/NP	-Infinity
+
+And I think, if everybody that ever ran for president that had an affair didn't run for president, we might be short three or four presidents here, you know?
+an affair/NP; did n't run/VP for/PP; president/NP	-Infinity
+
+And I think, if everybody that ever ran for president that had an affair didn't run for president, we might be short three or four presidents here, you know?
+we/NP; might be/VP; short three or four presidents/NP	-Infinity
+
+(LAUGHTER) (CROSSTALK) BLITZER: Well, you worked closely with -- you worked closely with Bill Clinton, that we all -- we're all very familiar with that history.
+we/NP; 're/VP with/PP; that history/NP	-Infinity
+
+And, you know, he didn't steal anything.
+he/NP; did n't steal/VP; anything/NP	-Infinity
+
+He didn't start a war.
+He/NP; did n't start/VP; a war/NP	-Infinity
+
+He didn't do anything like that.
+He/NP; did n't do/VP; anything/NP	-Infinity
+
+But you knew, once the story came out in "The National Enquirer " that there was probably there.
+the story/NP; came/VP out/PRT; in/NP	-Infinity
+
+And he did a human thing, and he didn't want to fess up to it.
+he/NP; did/VP; a human thing/NP	-Infinity
+
+And he did a human thing, and he didn't want to fess up to it.
+he/NP; did n't want to fess/VP up/PRT to/PP; a human thing/NP	-Infinity
+
+Thousands of friends of the senator's and his supporters have put their faith and confidence in him.
+his supporters/NP; have put/VP; Thousands of friends of the senator 's and his supporters faith and confidence/NP	-Infinity
+
+And he's let them down.
+he/NP; 's let/VP; Thousands of friends of the senator 's and his supporters/NP	-Infinity
+
+They have been betrayed by his action."
+They/NP; have been betrayed/VP by/PP; his action/NP	-Infinity
+
+And he put a lot of sweat equity in this race, if you will.
+he/NP; put/VP; a lot of sweat equity/NP	-Infinity
+
+And he put a lot behind.
+he/NP; put/VP; a lot/NP	-Infinity
+
+And I think that -- that David thought that John Edwards put a lot of people at risk by this -- by this kind of behavior.
+David/NP; thought/VP; John Edwards/NP	-Infinity
+
+And I know one thing about David Bonior is, if he said it, that's what he really believes.
+he/NP; said/VP; one thing about David Bonior/NP	-Infinity
+
+He's got "The Cafferty File."
+He/NP; 's got/VP; The Cafferty File/NP	-Infinity
+
+And it's on this subject.
+The Cafferty File/NP; is/VP on/PP; this subject/NP	-Infinity
+
+And we have gotten thousands of e-mails from folks who have some thoughts on this subject.
+we/NP; have gotten/VP; thousands of e-mails/NP	-Infinity
+
+And we have gotten thousands of e-mails from folks who have some thoughts on this subject.
+folks/NP; have/VP; some thoughts/NP	-Infinity
+
+If we persist in uncovering every detail about candidates' sex lives, we will limit our supply of good candidates," something James Carville was just suggesting.
+we/NP; will limit/VP; our supply of good candidates/NP	-Infinity
+
+No one is without skeletons in the closet.
+No one/NP; is/VP without/PP; skeletons/NP	-Infinity
+
+Roger in Baltimore says: "The morality issue is between John and Elizabeth Edwards.
+The morality issue/NP; is/VP between/PP; John and Elizabeth Edwards/NP	-Infinity
+
+But the man was willing to risk having his party lose the election, had he been nominated, and then this story come out shortly before the election.
+his party/NP; lose/VP; the election/NP	-Infinity
+
+But the man was willing to risk having his party lose the election, had he been nominated, and then this story come out shortly before the election.
+this story/NP; come out/VP; the election/NP	-Infinity
+
+His supposed commitment to the poor wasn't really his first priority after all."
+the poor/NP; was really/VP; his first priority/NP	-Infinity
+
+He presented himself as a loving, devoted husband and father.
+He/NP; presented/VP; himself/NP	-Infinity
+
+Makes me wonder how else he might have misrepresented himself.
+me/NP; wonder how else/VP; he/NP	-Infinity
+
+Edwards was a candidate for president, as Clinton was the president itself.
+Edwards/NP; was/VP; a candidate/NP	-Infinity
+
+Edwards was a candidate for president, as Clinton was the president itself.
+Clinton/NP; was/VP; the president/NP	-Infinity
+
+Bill Clinton is just fine, and is possibly more popular than he was before the incident with Monica Lewinsky.
+he/NP; was/VP before/PP; the incident/NP	-Infinity
+
+Sharon in Virginia writes: "Mr. Edwards has joined Newt Gingrich and other heels in the adultery hall of fame.
+Mr. Edwards/NP; has joined/VP; Newt Gingrich/NP	-Infinity
+
+It's bad enough to cheat, but, when your wife is battling a life- threatening disease?
+your wife/NP; is battling/VP; a life/NP	-Infinity
+
+And Elaine writes from West Virginia: "Let me see if I understand this.
+Elaine/NP; writes/VP from/PP; West Virginia/NP	-Infinity
+
+Russia is attacking another country right now, and we're worried about John Edwards and his zipper?
+Russia/NP; is attacking/VP; another country/NP	-Infinity
+
+Russia is attacking another country right now, and we're worried about John Edwards and his zipper?
+we/NP; 're/VP about/PP; John Edwards/NP	-Infinity
+
+We will be speaking with John Edwards' former campaign communications chief.
+We/NP; will be speaking/VP with/PP; John Edwards/NP	-Infinity
+<end>20080808215724.606</end>
+
+<story>Health|Terror-attack-children-heal</story>
+<start>20080808215724.606</start>
+But let's check up in on some other news that we're following right now.
+let 's/NP; check/VP up/PRT; in/NP	-Infinity
+
+Images of terror in the 21st century, attacks on the World Trade Center, European trains and subways, suicide bombings, they have left deep emotional scars on the children related to the victims.
+they/NP; have left/VP; deep emotional scars/NP	-Infinity
+
+Images of terror in the 21st century, attacks on the World Trade Center, European trains and subways, suicide bombings, they have left deep emotional scars on the children related to the victims.
+the children/NP; related/VP to/PP; the victims/NP	-Infinity
+
+Mary Snow visited that camp.
+Mary Snow/NP; visited/VP that/PP; camp/NP	-Infinity
+
+Mary, this is an important story for -- for people who want to understand the victims of these kinds of attacks.
+people/NP; want to understand/VP; the victims of these kinds/NP	-Infinity
+
+We met about four dozen teenagers, all with different backgrounds, all touched by terrorism.
+We/NP; met/VP; about four dozen teenagers/NP	-Infinity
+
+We met about four dozen teenagers, all with different backgrounds, all touched by terrorism.
+all/NP; touched/VP by/PP; terrorism/NP	-Infinity
+
+They met in Pennsylvania this week, coming face to face for the first time.
+They/NP; met/VP in/PP; Pennsylvania/NP	-Infinity
+
+They met in Pennsylvania this week, coming face to face for the first time.
+face/NP; to face/VP for/PP; the first time/NP	-Infinity
+
+(BEGIN VIDEOTAPE) SNOW (voice-over): This exercise may appear to have nothing to do with battling terrorism, but, for these kids, it's a step toward building trust.
+This exercise/NP; may appear to have/VP; nothing/NP	-Infinity
+
+(BEGIN VIDEOTAPE) SNOW (voice-over): This exercise may appear to have nothing to do with battling terrorism, but, for these kids, it's a step toward building trust.
+a step/NP; building/VP; trust/NP	-Infinity
+
+Each had a family member killed or seriously wounded.
+Each/NP; had/VP; a family member/NP	-Infinity
+
+For the first time, they have been brought together in a camp caught Project Common Bond.
+they/NP; have been brought together/VP in/PP; a camp/NP	-Infinity
+
+They share the mundane.
+They/NP; share/VP; the mundane/NP	-Infinity
+
+SNOW: And then there's the reason they have traveled to Bryn Mawr, Pennsylvania.
+they/NP; have traveled/VP to/PP; Bryn Mawr/NP	-Infinity
+
+UNIDENTIFIED MALE: We all lost someone.
+all/NP; lost/VP; someone/NP	-Infinity
+
+UNIDENTIFIED FEMALE: I guess that needs to gets added to the list.
+to/NP; gets added/VP to/PP; the list/NP	-Infinity
+
+Everyone lost someone.
+Everyone/NP; lost/VP; someone/NP	-Infinity
+
+SNOW : Martin Hart was 17 when his father was killed in the London bombing three years ago.
+Martin Hart/NP; was/VP; 17/NP	-Infinity
+
+SNOW : Martin Hart was 17 when his father was killed in the London bombing three years ago.
+his father/NP; was killed/VP in/PP; the London bombing/NP	-Infinity
+
+He left the subway that was attacked, only to be blown up by a suicide bomber on a bus.
+He/NP; left/VP; the subway/NP	-Infinity
+
+He left the subway that was attacked, only to be blown up by a suicide bomber on a bus.
+only/NP; to be blown/VP up/PRT by/PP; a suicide bomber/NP	-Infinity
+
+MARTIN HART, CAMPER, PROJECT COMMON BOND: If it's a normal situation, it's hard, but, in terrorism, it just tears a family apart.
+MARTIN HART , CAMPER , PROJECT COMMON BOND : If it 's a normal situation , it 's hard , but , in terrorism , it just tears a family apart ./NP; tears/VP; a family/NP	-Infinity
+
+SNOW : Staying strong means addressing their anger.
+strong means/NP; addressing/VP; their anger/NP	-Infinity
+
+Carolyn Iskyan 's father was killed in the World Trade Center.
+Carolyn Iskyan's father/NP; was killed/VP in/PP; the World Trade Center/NP	-Infinity
+
+CAROLYNN ISKYAN, CAMPER, PROJECT COMMON BOND: Where do you get off like just deciding one day to drive a plane into a building and killing all these people?
+like/NP; just deciding/VP; one day/NP	-Infinity
+
+CAROLYNN ISKYAN, CAMPER, PROJECT COMMON BOND: Where do you get off like just deciding one day to drive a plane into a building and killing all these people?
+a building/NP; killing/VP; all these people/NP	-Infinity
+
+I was angry at people for not stopping it.
+people/NP; stopping/VP; PROJECT COMMON BOND : Where do you get off like just deciding one day to drive a plane into a building and killing all these people ?/NP	-Infinity
+
+SNOW (on camera): What do you do with that?
+SNOW/NP; -LRB-/VP on/PP; camera -RRB-/NP	-Infinity
+
+SNOW (voice-over): It's a bond Evyatar Alush didn't think expect to find in the United States.
+Evyatar Alush/NP; did n't think expect to find/VP in/PP; the United States/NP	-Infinity
+
+A terrorist shot his parents inside a toy store in Israel, killing his father and injuring his mother, who escaped with his little brother.
+his father/NP; injuring/VP; his mother/NP	-Infinity
+
+EVYATAR ALUSH, CAMPER, PROJECT COMMON BOND: Since I was really young, like the age of 6 when my father died, I -- I thought that terrorism is only in Israel.
+terrorism/NP; is only/VP in/PP; Israel/NP	-Infinity
+
+SNOW: While, at times, they are just kids, the camp also aims to create a generation of leaders dedicated to fighting terrorism.
+the camp/NP; aims to create/VP; a generation of leaders/NP	-Infinity
+
+George Tarr's father was killed by rebels in Liberia's long- running civil war.
+George Tarr's father/NP; was killed/VP by/PP; rebels/NP	-Infinity
+<end>20080808215952.681</end>
+

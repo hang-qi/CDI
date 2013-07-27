@@ -1,0 +1,11 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080812205620.608</start>
+<end>20080812205705.420</end>
+Barack Obama | is hammering | John McCain 
+Obama | has aired | more than 9,700 local television commercials 
+John McCain | has n't run | any campaign spots 
+the Republican | has | a slight edge 
+an | update | Obama's vacation 
+We | are told | he 
+he | went | the movies 
+he | had | a four-star meal 

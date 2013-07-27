@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808213732.148</start>
+<end>20080808214103.126</end>
+a statement | coming in | John Edwards 
+he | did | fact 
+We | are going to hear | John Edwards 
+He | 's standing | live as well 

@@ -1,0 +1,7 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813230001.367</start>
+<end>20080813230006.238</end>
+Russia | ignoring | a cease-fire agreement 
+Tonight | signed | the nation of Georgia 
+Moscow | telling | the United States 
+Moscow | must choose | Russia and Georgia 

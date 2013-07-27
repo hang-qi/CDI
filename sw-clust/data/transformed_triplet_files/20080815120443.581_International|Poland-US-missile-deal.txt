@@ -1,0 +1,6 @@
+<story>International|Poland-US-missile-deal</story>
+<start>20080815120443.581</start>
+<end>20080815120502.033</end>
+an American missile interceptor base | will be placed | Poland 
+Poland | will be protected | an air defense system 
+Washington | insist | the plan 

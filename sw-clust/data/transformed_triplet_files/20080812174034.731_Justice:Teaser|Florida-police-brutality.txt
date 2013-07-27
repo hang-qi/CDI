@@ -1,0 +1,5 @@
+<story>Justice:Teaser|Florida-police-brutality</story>
+<start>20080812174034.731</start>
+<end>20080812174044.541</end>
+he | spit | victims 
+Police officers | respond | a handcuffed man 

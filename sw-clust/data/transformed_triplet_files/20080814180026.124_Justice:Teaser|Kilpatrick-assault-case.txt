@@ -1,0 +1,6 @@
+<story>Justice:Teaser|Kilpatrick-assault-case</story>
+<start>20080814180026.124</start>
+<end>20080814180040.304</end>
+Detroit | had | Kwame Kilpatrick 
+the mayor | appears | court 
+We | 'll hear | the editor 

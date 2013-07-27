@@ -1,0 +1,4 @@
+<story>Politics|Democratic-convention-tickets</story>
+<start>20080808201834.010</start>
+<end>20080808201842.953</end>
+That stadium | holds | 75,000 people 

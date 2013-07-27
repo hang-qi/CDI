@@ -1,0 +1,6 @@
+<story>Weather|US</story>
+<start>20080812121409.147</start>
+<end>20080812121547.879</end>
+we | see | some systems 
+we | 're taking | a look 
+Rob Marciano | tracking | -LRB- COMMERCIAL BREAK -RRB- CHETRY : Boy , -LRB- INAUDIBLE -RRB- in a three-piece suit . 

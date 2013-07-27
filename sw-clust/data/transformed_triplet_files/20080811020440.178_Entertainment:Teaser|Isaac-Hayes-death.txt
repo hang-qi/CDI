@@ -1,0 +1,4 @@
+<story>Entertainment:Teaser|Isaac-Hayes-death</story>
+<start>20080811020440.178</start>
+<end>20080811020501.800</end>
+Isaac Hayes | made | a splash 

@@ -1,0 +1,8 @@
+<story>Weather|US</story>
+<start>20080812163650.073</start>
+<end>20080812163720.670</end>
+our Chad Myers | is tracking | some storms 
+We | will watch | six inches of rainfall possible 
+areas | could use | the rainfall 
+we | 'll take | the rain 
+we | 'll throw | Now 

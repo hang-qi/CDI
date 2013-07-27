@@ -1,0 +1,8 @@
+<story>Government|Connecticut-teenage-curfew</story>
+<start>20080814170547.245</start>
+<end>20080814170620.679</end>
+the next month | 're | 18 
+after 9 p.m. City leaders | have imposed | an emergency curfew 
+Anything | can stop | kids 
+Washington | 'll stop | anything 
+the streets | getting | the parents 

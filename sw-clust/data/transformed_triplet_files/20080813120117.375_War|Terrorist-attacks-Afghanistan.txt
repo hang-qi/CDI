@@ -1,0 +1,7 @@
+<story>War|Terrorist-attacks-Afghanistan</story>
+<start>20080813120117.375</start>
+<end>20080813120134.158</end>
+Afghanistan | where | three female aide workers 
+all three | were | part of a U.S. aide organization 
+International Rescue Committee | based | New York City 
+The women's Afghani driver | killed | that ambush 

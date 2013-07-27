@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Swift-boat-book-Obamanation</story>
+<start>20080814002039.971</start>
+<end>20080814002055.353</end>
+Barack Obama | has | a lot of people 

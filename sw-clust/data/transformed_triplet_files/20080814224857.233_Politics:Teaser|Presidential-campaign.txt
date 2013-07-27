@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080814224857.233</start>
+<end>20080814224915.384</end>
+we | 'll examine | the posturing 

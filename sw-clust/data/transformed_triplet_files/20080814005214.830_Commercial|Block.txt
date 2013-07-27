@@ -1,0 +1,5 @@
+<story>Commercial|Block</story>
+<start>20080814005214.830</start>
+<end>20080814005403.372</end>
+every bogus rumor | 've ever heard | Barack Obama 
+this new book that 's coming out about Barack Obama | is | the top of The New York Times '' bestseller 

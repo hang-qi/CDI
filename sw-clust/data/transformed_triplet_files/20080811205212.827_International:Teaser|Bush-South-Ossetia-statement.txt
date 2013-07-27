@@ -1,0 +1,4 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080811205212.827</start>
+<end>20080811205217.999</end>
+He | 's going to be making | a statement 

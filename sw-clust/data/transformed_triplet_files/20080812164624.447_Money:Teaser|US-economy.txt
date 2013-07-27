@@ -1,0 +1,5 @@
+<story>Money:Teaser|US-economy</story>
+<start>20080812164624.447</start>
+<end>20080812164907.009</end>
+We | 'll have | that story 
+We | 're | all 

@@ -1,0 +1,11 @@
+<story>Accident|Bus-crash-China</story>
+<start>20080812184020.716</start>
+<end>20080812184109.331</end>
+China | coming | the CNN NEWSROOM 
+24 people | have died | a bus 
+this bus | was carrying | students and parents 
+they | were | a highway 
+a mountainous region and most of the dead were students | were actually | students and parents way 
+Xinhua | saying | the cause 
+the `` Associated Press | reporting | China's official news agency 
+that 24 people | have died | a bus accident 

@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Vice-presidential-campaign</story>
+<start>20080811021921.392</start>
+<end>20080811022133.591</end>
+we | 're trying to work | this now out 

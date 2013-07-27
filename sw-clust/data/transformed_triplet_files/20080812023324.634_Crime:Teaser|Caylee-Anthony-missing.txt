@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Caylee-Anthony-missing</story>
+<start>20080812023324.634</start>
+<end>20080812023334.778</end>
+she | has been missing | nearly two months 
+We | 'll get | a live report 

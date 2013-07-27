@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Charlie-Crist-interview</story>
+<start>20080810161635.759</start>
+<end>20080810161645.569</end>
+we | 'll get | a different perspective 
+He | announced | a new partnership 

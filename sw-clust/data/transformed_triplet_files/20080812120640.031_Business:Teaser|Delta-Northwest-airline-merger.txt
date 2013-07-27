@@ -1,0 +1,5 @@
+<story>Business:Teaser|Delta-Northwest-airline-merger</story>
+<start>20080812120640.031</start>
+<end>20080812120650.642</end>
+consolidation | may help | airlines 
+the next time | book | your flight 

@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814160405.877</start>
+<end>20080814160410.382</end>
+We | 've got | more news 

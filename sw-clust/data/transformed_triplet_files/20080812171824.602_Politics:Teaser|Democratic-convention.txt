@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Democratic-convention</story>
+<start>20080812171824.602</start>
+<end>20080812171839.484</end>
+The CNN Election Express | is rolling | its way 
+Democrats | gather | their convention 
+CNN's Tom Foreman | is | the bus 

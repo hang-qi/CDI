@@ -1,0 +1,5 @@
+<story>Science-technology:Teaser|Ecoli-fuel-alternative</story>
+<start>20080812214554.417</start>
+<end>20080812214600.790</end>
+a tiny microbe help | solve | America's energy problems 
+We | 're going to take | a look 

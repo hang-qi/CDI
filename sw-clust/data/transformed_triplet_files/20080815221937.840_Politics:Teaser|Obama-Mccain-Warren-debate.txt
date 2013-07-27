@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Obama-Mccain-Warren-debate</story>
+<start>20080815221937.840</start>
+<end>20080815222436.205</end>
+the first time | talking | faith 

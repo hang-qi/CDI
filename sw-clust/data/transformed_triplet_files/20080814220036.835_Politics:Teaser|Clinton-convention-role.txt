@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080814220036.835</start>
+<end>20080814220047.713</end>
+Barack Obama | agrees to give | Hillary Clinton supporters 

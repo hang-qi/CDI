@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Cheating-Chinese-gymnasts-accusation</story>
+<start>20080814031626.884</start>
+<end>20080814031845.690</end>
+China's gymnasts | win | gold 
+they | breaking | the rules 

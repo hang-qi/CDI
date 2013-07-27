@@ -1,0 +1,7 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808194440.643</start>
+<end>20080808194456.626</end>
+The news | continues to roll | the CNN NEWSROOM 
+Texas | has killed | at least 13 people 
+Investigators | trying to determine why | the bus 
+the road | smashed | a guardrail 

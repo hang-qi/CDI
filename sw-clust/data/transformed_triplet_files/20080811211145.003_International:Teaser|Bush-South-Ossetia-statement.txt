@@ -1,0 +1,7 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080811211145.003</start>
+<end>20080811211200.552</end>
+We | 're standing | President Bush 
+We | 're expecting | just a couple of minutes 
+our Carol Costello | monitoring | stories 
+She | is | Washington 

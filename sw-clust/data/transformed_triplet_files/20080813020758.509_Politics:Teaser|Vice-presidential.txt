@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Vice-presidential</story>
+<start>20080813020758.509</start>
+<end>20080813020806.684</end>
+some V.P. hopefuls | are auditioning | the job 

@@ -1,0 +1,6 @@
+<story>Money|Oil-prices</story>
+<start>20080812131418.756</start>
+<end>20080812131441.980</end>
+the 26th consecutive day prices | have fallen | the record average of $ 4.11 set 
+oil prices | do continue | a slippery slide 
+a three-month low and | dipping | again this morning 

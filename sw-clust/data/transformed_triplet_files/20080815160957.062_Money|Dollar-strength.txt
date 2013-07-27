@@ -1,0 +1,6 @@
+<story>Money|Dollar-strength</story>
+<start>20080815160957.062</start>
+<end>20080815161231.216</end>
+We | have | some positive economic signs 
+The dollar | is | a two-year high 
+manufacturing | is doing better | expected 

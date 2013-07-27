@@ -1,0 +1,4 @@
+<story>Business:Teaser|US-economy</story>
+<start>20080811164053.949</start>
+<end>20080811164400.268</end>
+the economy 's still struggling | take to turn | things 

@@ -1,0 +1,8 @@
+<story>Justice|Mark-Chapman-denied-parole</story>
+<start>20080812195632.254</start>
+<end>20080812195656.678</end>
+The man | killed | John Lennon 
+Mark David Chapman | serving | 20 years 
+members of the New York State parole board | denied | Mark David Chapman 
+They | said | 20 years 
+Chapman | can apply | parole 

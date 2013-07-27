@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080810154959.595</start>
+<end>20080810155314.290</end>
+We | 're going to talk | the race 

@@ -1,0 +1,4 @@
+<story>Sports|Olympics</story>
+<start>20080808225938.674</start>
+<end>20080808225944.179</end>
+a police officer and residents | gather to watch | the opening ceremony of the Olympic Games 

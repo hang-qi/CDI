@@ -1,0 +1,8 @@
+<story>Politics|Presidential-campaign</story>
+<start>20080812141610.868</start>
+<end>20080812141633.791</end>
+John McCain | wrapping | a two-day swing 
+That state | has | 21 electorate votes 
+McCain | will hold | a town hall meeting 
+We | 'll keep | our eye 
+He | will attend | a fundraiser tonight 

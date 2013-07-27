@@ -1,0 +1,4 @@
+<story>War|Afghanistan-bombing</story>
+<start>20080811225623.578</start>
+<end>20080811225629.817</end>
+a police officer | inspects | a car 

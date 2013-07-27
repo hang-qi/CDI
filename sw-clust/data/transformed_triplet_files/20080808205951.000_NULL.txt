@@ -1,0 +1,5 @@
+<story>NULL</story>
+<start>20080808205951.000</start>
+<end>20080808210001.000</end>
+Everybody | needs | a vacation 
+My wife and kids | hate | me 

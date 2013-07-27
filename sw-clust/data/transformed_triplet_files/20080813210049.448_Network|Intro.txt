@@ -1,0 +1,6 @@
+<story>Network|Intro</story>
+<start>20080813210049.448</start>
+<end>20080813210101.293</end>
+Wolf Blitzer | is | today 
+Suzanne Malveaux | 're | THE SITUATION ROOM 
+We | are following | breaking news 

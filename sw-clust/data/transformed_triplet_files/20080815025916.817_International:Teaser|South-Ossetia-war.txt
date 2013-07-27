@@ -1,0 +1,4 @@
+<story>International:Teaser|South-Ossetia-war</story>
+<start>20080815025916.817</start>
+<end>20080815025925.020</end>
+we | are | Georgia 

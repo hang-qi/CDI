@@ -1,0 +1,6 @@
+<story>Accident|Dangling-window-washers</story>
+<start>20080814225625.614</start>
+<end>20080814225651.740</end>
+Three construction workers | dangling | ropes 
+They | were left hanging | Three construction workers dangling from ropes 15 stories above the ground . safety belts 
+A rescuer | rappelled | the side of the building 

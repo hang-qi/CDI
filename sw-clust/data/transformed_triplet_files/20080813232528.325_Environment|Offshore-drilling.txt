@@ -1,0 +1,5 @@
+<story>Environment|Offshore-drilling</story>
+<start>20080813232528.325</start>
+<end>20080813232539.803</end>
+Pelosi | may cave | public opinion 
+time | to drill | Pelosi 

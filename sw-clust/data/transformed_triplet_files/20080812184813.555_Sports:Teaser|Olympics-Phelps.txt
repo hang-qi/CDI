@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812184813.555</start>
+<end>20080812185131.286</end>
+a blue streak | keeping | his gold streak 
+Team USA | bringing | KEILAR : So far so good for Michael Phelps , the American swimming a blue streak and keeping his gold streak alive . 

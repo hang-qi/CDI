@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080812010007.138</start>
+<end>20080812010031.362</end>
+the former candidate | telling | the whole truth 

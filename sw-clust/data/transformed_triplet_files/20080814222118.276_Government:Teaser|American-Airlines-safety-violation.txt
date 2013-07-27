@@ -1,0 +1,5 @@
+<story>Government:Teaser|American-Airlines-safety-violation</story>
+<start>20080814222118.276</start>
+<end>20080814222127.451</end>
+American Airlines | slapped | a multimillion-dollar fine 
+American Airlines | could have | passengers 

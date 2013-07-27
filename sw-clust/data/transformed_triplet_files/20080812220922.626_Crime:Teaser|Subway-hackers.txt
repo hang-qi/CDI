@@ -1,0 +1,5 @@
+<story>Crime:Teaser|Subway-hackers</story>
+<start>20080812220922.626</start>
+<end>20080812221219.436</end>
+some would-be hackers | hope to show | passengers 
+a judge | shows | some would-be hackers 

@@ -1,0 +1,6 @@
+<story>Money:Teaser|US-economy</story>
+<start>20080815164506.569</start>
+<end>20080815164759.909</end>
+We | 're going to talk | jobs 
+We | 're discussing | the biggest stories of the week 
+We | are | issue 

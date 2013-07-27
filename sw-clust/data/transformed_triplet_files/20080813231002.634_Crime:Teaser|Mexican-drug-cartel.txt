@@ -1,0 +1,4 @@
+<story>Crime:Teaser|Mexican-drug-cartel</story>
+<start>20080813231002.634</start>
+<end>20080813231014.212</end>
+We | 'll have | a special report 

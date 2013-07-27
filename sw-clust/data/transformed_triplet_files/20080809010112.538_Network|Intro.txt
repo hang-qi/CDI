@@ -1,0 +1,5 @@
+<story>Network|Intro</story>
+<start>20080809010112.538</start>
+<end>20080809010118.444</end>
+We | want to welcome | our viewers 
+Wolf Blitzer | sitting | tonight 

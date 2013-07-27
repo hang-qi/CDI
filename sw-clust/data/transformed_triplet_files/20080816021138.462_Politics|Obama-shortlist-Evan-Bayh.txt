@@ -1,0 +1,8 @@
+<story>Politics|Obama-shortlist-Evan-Bayh</story>
+<start>20080816021138.462</start>
+<end>20080816021205.989</end>
+me | welcoming | my friend 
+Obama | would like to put | in 
+Bayh | is criticized | some of his colleagues 
+he | voted | the war 
+John McCain | was | the war 

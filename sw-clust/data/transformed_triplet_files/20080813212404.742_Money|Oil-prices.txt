@@ -1,0 +1,5 @@
+<story>Money|Oil-prices</story>
+<start>20080813212404.742</start>
+<end>20080813212423.060</end>
+the government | reports | a surprise drop 
+The price of crude | rose | nearly $ 3 

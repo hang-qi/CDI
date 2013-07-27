@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Ecoli-fuel-alternative</story>
+<start>20080812212039.203</start>
+<end>20080812212045.943</end>
+bacteria | solve | our gas crunch 

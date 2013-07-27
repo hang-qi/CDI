@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign-flip-flops</story>
+<start>20080814124627.115</start>
+<end>20080814124645.901</end>
+some people | are wearing | some people politics 

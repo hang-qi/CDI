@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080810150112.171</start>
+<end>20080810150137.362</end>
+Anyone | voted | me 
+Hillary Clinton | deliver | Barack Obama 
+she | 's won | skeptics 
+We | 'll ask | New York Mayor Michael Bloomberg 

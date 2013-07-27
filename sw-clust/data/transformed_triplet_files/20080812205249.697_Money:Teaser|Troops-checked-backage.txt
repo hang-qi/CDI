@@ -1,0 +1,5 @@
+<story>Money:Teaser|Troops-checked-backage</story>
+<start>20080812205249.697</start>
+<end>20080812205541.569</end>
+some troops | are greeted | an unwelcome surprise 
+Deborah Feyerick | is covering | story 

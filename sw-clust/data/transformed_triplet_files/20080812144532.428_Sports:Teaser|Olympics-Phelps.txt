@@ -1,0 +1,6 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812144532.428</start>
+<end>20080812144904.473</end>
+Michael Phelps | has | fins 
+He | is | the pool 
+We | 're | Beijing 

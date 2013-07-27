@@ -1,0 +1,7 @@
+<story>War|Americans-evacuate-Georgia</story>
+<start>20080811230753.038</start>
+<end>20080811230806.585</end>
+The State Department today | said | The State Department today 
+its 170 American citizens | leave | Georgia 
+Those Americans | left | Georgia 
+about 2,000 American citizens | live | Georgia 

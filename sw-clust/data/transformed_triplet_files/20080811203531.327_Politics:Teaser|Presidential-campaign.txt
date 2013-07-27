@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080811203531.327</start>
+<end>20080811203538.467</end>
+a new ad | saying | John McCain 

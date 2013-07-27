@@ -1,0 +1,6 @@
+<story>Money:Teaser|Olympics-cost</story>
+<start>20080808163524.153</start>
+<end>20080808163534.296</end>
+this election cycle | is | the American people 
+they | face when | they 
+the Olympics | are more than | just a bunch of games 

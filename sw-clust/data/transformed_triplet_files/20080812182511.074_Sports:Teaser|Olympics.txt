@@ -1,0 +1,5 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080812182511.074</start>
+<end>20080812182844.020</end>
+We | 've got | the best of the day's action 
+we | 're working | the CNN NEWSROOM 

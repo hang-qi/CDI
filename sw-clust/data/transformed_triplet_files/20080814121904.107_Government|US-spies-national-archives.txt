@@ -1,0 +1,6 @@
+<story>Government|US-spies-national-archives</story>
+<start>20080814121904.107</start>
+<end>20080814121925.195</end>
+She | was | a spy 
+we | 're going to see when | the national archives 
+the secret spy list | includes | Supreme Court Justice Arthur Goldberg 

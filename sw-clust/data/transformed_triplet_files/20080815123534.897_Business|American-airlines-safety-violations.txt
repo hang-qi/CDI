@@ -1,0 +1,8 @@
+<story>Business|American-airlines-safety-violations</story>
+<start>20080815123534.897</start>
+<end>20080815123553.816</end>
+American Airlines | is facing | fines of more than $ 7 million 
+the airline | flew | jets 
+they | knew | needed repairs 
+The FAA | found | some problems 
+' executives | called | the fine excessive 

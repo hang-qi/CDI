@@ -1,0 +1,5 @@
+<story>War|South-Ossetia-war</story>
+<start>20080812200009.941</start>
+<end>20080812200021.886</end>
+Russia | declares | an end 
+Georgians | confront | the ruins of their homes 

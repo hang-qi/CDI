@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Vice-presidential-campaign-vetting-process</story>
+<start>20080816024121.610</start>
+<end>20080816024133.055</end>
+they | size | possible VPs 

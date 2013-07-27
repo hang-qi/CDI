@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080812030917.889</start>
+<end>20080812030925.096</end>
+they | 're going to do | they 

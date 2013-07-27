@@ -1,0 +1,5 @@
+<story>Money|Gas-prices</story>
+<start>20080811124421.691</start>
+<end>20080811124439.876</end>
+Prices | fell | almost a penny 
+the prices | up slightly | early trading 

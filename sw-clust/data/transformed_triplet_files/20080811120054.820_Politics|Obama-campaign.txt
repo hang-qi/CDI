@@ -1,0 +1,7 @@
+<story>Politics|Obama-campaign</story>
+<start>20080811120054.820</start>
+<end>20080811120113.839</end>
+he | will announce | his VP candidate 
+That announcement | came | Twitter 
+Obama | has embraced | the quick and easy communication 
+a database of supporters | asking | supporters 

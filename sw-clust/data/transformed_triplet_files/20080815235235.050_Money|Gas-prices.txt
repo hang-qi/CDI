@@ -1,0 +1,8 @@
+<story>Money|Gas-prices</story>
+<start>20080815235235.050</start>
+<end>20080815235309.318</end>
+Gasoline prices | continue | their decline 
+a gallon of gasoline | is now | $ 3.77 nationwide , 34 cents 
+the record of $ 4.11 | hit | July 11 
+Crude oil prices | have lost | more $ 35 
+President Bush | lifted | the executive order 

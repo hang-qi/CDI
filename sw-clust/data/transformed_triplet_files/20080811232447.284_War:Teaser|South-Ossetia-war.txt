@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811232447.284</start>
+<end>20080811232615.673</end>
+Russia | widening | its invasion of Georgia 
+Russia | trying to recreate | the Soviet empire 

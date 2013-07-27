@@ -1,0 +1,8 @@
+<story>Accident:Teaser|Philadelphia-apartment-fire</story>
+<start>20080814170418.824</start>
+<end>20080814170421.827</end>
+Firefighters | are dousing | hot spots 
+its height | showed | on weather radar 
+Three hundred seventy-five people | lost | Three hundred seventy-five people homes 
+About 200 | took | refuge 
+a fire station | supported | the Red Cross 

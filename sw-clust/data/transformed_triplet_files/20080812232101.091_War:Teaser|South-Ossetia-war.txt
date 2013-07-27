@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812232101.091</start>
+<end>20080812232227.177</end>
+Will Russia | end | its aggression 
+Russia | join | me 

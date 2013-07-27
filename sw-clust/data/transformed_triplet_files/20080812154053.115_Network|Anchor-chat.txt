@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080812154053.115</start>
+<end>20080812154116.972</end>
+the country | to grab | yourself 
+Ca | n't go | those 

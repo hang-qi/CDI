@@ -1,0 +1,5 @@
+<story>Disaster|Vietnam-tropical-storm</story>
+<start>20080811171724.275</start>
+<end>20080811171743.761</end>
+the hundreds | are racing | Vietnam's northern mountains 
+tropical storm | triggered | deadly flash floods 

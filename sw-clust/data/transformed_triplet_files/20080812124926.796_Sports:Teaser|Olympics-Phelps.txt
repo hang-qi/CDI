@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-Phelps</story>
+<start>20080812124926.796</start>
+<end>20080812124942.345</end>
+Michael Phelps | tries to get | halfway 

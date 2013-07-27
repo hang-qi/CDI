@@ -1,0 +1,5 @@
+<story>Politics|Obama-vacation</story>
+<start>20080808205824.232</start>
+<end>20080808205937.264</end>
+Barack Obama | to take | a vacation 
+his family | are off | Hawaii 

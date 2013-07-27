@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080809003806.816</start>
+<end>20080809004031.895</end>
+the Edwards story | is dominating | the news 
+American lives | could be | risk 

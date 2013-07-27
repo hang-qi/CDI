@@ -1,0 +1,6 @@
+<story>Celebrity|Michael-Phelps</story>
+<start>20080814035912.614</start>
+<end>20080814035941.376</end>
+viewers | to come | a caption 
+we | have | the picture 
+Michael Phelps | removes | his skullcap 

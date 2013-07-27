@@ -1,0 +1,5 @@
+<story>Money:Teaser|Mortgages</story>
+<start>20080812172618.008</start>
+<end>20080812172631.689</end>
+we | 're going to be talking | mortgages 
+we | 're going to be talking | financial stocks 

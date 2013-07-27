@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-reporters-attacked</story>
+<start>20080815124732.280</start>
+<end>20080815124739.487</end>
+attack | covering | the Georgia conflict 
+Bullets | were flying | the cameras 

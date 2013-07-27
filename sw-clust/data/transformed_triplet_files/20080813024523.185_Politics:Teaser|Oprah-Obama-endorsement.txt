@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Oprah-Obama-endorsement</story>
+<start>20080813024523.185</start>
+<end>20080813024536.231</end>
+we | know | Oprah Winfrey 
+she | serve | votes 
+effect Oprah Winfrey endorsement of Obama | translated | a lot of votes 
+We | 'll take | a look 

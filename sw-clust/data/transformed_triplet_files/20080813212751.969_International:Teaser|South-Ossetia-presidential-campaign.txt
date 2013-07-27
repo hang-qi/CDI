@@ -1,0 +1,5 @@
+<story>International:Teaser|South-Ossetia-presidential-campaign</story>
+<start>20080813212751.969</start>
+<end>20080813212804.348</end>
+Bill Bennett | to discuss where | the presidential candidates 
+Georgia | stands to gain or lose | the most 

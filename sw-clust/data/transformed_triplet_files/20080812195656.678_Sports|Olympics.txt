@@ -1,0 +1,12 @@
+<story>Sports|Olympics</story>
+<start>20080812195656.678</start>
+<end>20080812195727.476</end>
+Olympians | are resting | another day of competition 
+Let | see how | things 
+team USA | moving | number two 
+America's athletes | have racked | a total of 22 medals 
+Host China | is just | though 
+they | 've actually snagged | a bunch 
+South Korea | is | 12 medals 
+the Aussies | are | fourth place 
+Three countries | have scored | nine medals 

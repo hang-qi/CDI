@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Democratic-convention-tickets</story>
+<start>20080808194700.616</start>
+<end>20080808194700.616</end>
+We | 're going to take | a quick break 

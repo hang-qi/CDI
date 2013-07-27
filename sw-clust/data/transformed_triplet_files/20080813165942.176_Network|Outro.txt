@@ -1,0 +1,4 @@
+<story>Network|Outro</story>
+<start>20080813165942.176</start>
+<end>20080813165953.759</end>
+some other stories | making | headlines 

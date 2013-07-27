@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080814200009.742</start>
+<end>20080814200017.549</end>
+Georgia | is keeping | the U.S. 

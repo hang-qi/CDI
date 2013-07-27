@@ -1,0 +1,7 @@
+<story>Politics|McCain-campaign</story>
+<start>20080811205637.191</start>
+<end>20080811205654.575</end>
+John McCain | to show | he 
+he | is expected to get and tout | the endorsement of the mayor 
+the mayor | was | a lifelong Democrat 
+he | was elected | an independent back 

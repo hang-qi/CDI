@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813203425.561</start>
+<end>20080813203434.537</end>
+Russia's government | was | Russia 's government 

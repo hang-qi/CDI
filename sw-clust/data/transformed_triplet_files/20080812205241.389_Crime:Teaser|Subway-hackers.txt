@@ -1,0 +1,4 @@
+<story>Crime:Teaser|Subway-hackers</story>
+<start>20080812205241.389</start>
+<end>20080812205249.697</end>
+three college students | barred | a federal judge 

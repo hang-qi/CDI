@@ -1,0 +1,6 @@
+<story>Money|Oil-prices</story>
+<start>20080812195938.440</start>
+<end>20080812195953.398</end>
+Stock prices | got | cheaper today 
+Oil | dropped | nearly $ 1.50 
+Financials | weighed | stocks 

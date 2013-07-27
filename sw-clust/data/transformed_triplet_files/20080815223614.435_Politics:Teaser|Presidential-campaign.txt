@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815223614.435</start>
+<end>20080815223627.448</end>
+we | 'll have | frank talk 
+The two presidential candidates | will share | the stage 
+any closer | picking | a running mate 
+We | 're reading | the tea 

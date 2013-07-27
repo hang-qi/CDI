@@ -1,0 +1,5 @@
+<story>International:Teaser|US-Russia-tensions</story>
+<start>20080815220003.600</start>
+<end>20080815220009.840</end>
+President Bush | sharpens | his rhetoric 
+Vladimir Putin | turning cold | ice 

@@ -1,0 +1,7 @@
+<story>Health|Prince-Charles-organic-food</story>
+<start>20080813225142.864</start>
+<end>20080813225208.323</end>
+Prince Charles | warns | oversized orange 
+The Prince of Wales | telling | a British newspaper 
+genetically modified food | may weaken | the Earth's soil 
+he | calls | crop modification 

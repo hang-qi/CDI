@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics</story>
+<start>20080808162620.343</start>
+<end>20080808162620.343</end>
+the U.S. dollar | 's just | fun and games 

@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811124709.125</start>
+<end>20080811124721.804</end>
+Russian troops | expanding | a second breakaway province 

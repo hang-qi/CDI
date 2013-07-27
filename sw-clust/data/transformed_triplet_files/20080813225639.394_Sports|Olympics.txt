@@ -1,0 +1,4 @@
+<story>Sports|Olympics</story>
+<start>20080813225639.394</start>
+<end>20080813225645.633</end>
+the Ivory Coast soccer team | jumps | celebration of an Olympic victory 

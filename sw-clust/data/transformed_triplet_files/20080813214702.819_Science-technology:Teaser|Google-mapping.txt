@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Google-mapping</story>
+<start>20080813214702.819</start>
+<end>20080813214715.264</end>
+a new Google program | 's showing | the world up-close details 

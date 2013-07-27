@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Brendan-Oconner-green-beret-heroism</story>
+<start>20080815235309.318</start>
+<end>20080815235535.964</end>
+the story of a Green Beret | awarded | the Distinguished Service Cross 

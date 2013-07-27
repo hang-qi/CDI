@@ -1,0 +1,5 @@
+<story>Crime:Teaser|U.S.-thwarted-pirate-attack</story>
+<start>20080808222654.044</start>
+<end>20080808222823.500</end>
+the U.S. military | helping to stop | a pirate attack 
+We | 're getting | the pictures 

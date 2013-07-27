@@ -1,0 +1,5 @@
+<story>Money:Teaser|Florida-house-crash</story>
+<start>20080811171258.877</start>
+<end>20080811171308.019</end>
+the work of a pickup truck | plowed | a house 
+Florida | narrowly missing | an 80-year-old woman 

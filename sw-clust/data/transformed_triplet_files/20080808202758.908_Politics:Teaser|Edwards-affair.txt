@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080808202758.908</start>
+<end>20080808202810.286</end>
+John Edwards | involved | a sex scandal 
+We | 're following | the breaking news 
+We | 're waiting | a statement 
+he | admits lying | an affair 

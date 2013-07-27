@@ -1,0 +1,6 @@
+<story>NULL</story>
+<start>20080813155952.000</start>
+<end>20080813160002.333</end>
+Hello | to ISSUE | # 1 
+The situation | seems to be changing | every hour 
+the president of Georgia | challenging | the very fact 

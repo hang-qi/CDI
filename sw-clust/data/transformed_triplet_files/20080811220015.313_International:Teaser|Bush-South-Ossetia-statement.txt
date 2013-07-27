@@ -1,0 +1,5 @@
+<story>International:Teaser|Bush-South-Ossetia-statement</story>
+<start>20080811220015.313</start>
+<end>20080811220031.229</end>
+he | calls | a dramatic and brutal escalation of force 
+The Republic of Georgia | threatened right now | Moscow's invading forces 

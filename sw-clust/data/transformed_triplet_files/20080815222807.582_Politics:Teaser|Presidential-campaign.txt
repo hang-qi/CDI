@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080815222807.582</start>
+<end>20080815222816.024</end>
+Obama | had | his moment 
+McCain | takes | the conflict 

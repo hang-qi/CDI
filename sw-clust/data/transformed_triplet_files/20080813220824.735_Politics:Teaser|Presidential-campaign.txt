@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813220824.735</start>
+<end>20080813220831.108</end>
+Barack Obama | hope to look | this conflict 

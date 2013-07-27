@@ -1,0 +1,5 @@
+<story>Health:Teaser|911-rescuers-wrong-address</story>
+<start>20080808210056.155</start>
+<end>20080808210115.541</end>
+they | 're sparking | fear 
+She | died when | rescuers 

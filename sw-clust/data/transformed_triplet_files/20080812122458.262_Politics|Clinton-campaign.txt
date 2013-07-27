@@ -1,0 +1,4 @@
+<story>Politics|Clinton-campaign</story>
+<start>20080812122458.262</start>
+<end>20080812122506.537</end>
+she | did n't want to do to win | an election 

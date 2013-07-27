@@ -1,0 +1,5 @@
+<story>Politics|Edwards-affair</story>
+<start>20080808230010.308</start>
+<end>20080808230019.617</end>
+he | had | an extramarital affair 
+months | denying | John Edwards ' admission 

@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080811200011.409</start>
+<end>20080811200022.420</end>
+Russian troops | push deeper | the former Soviet Republic of Georgia 

@@ -1,0 +1,4 @@
+<story>Celebrity:Teaser|Kathy-Griffin</story>
+<start>20080814033919.823</start>
+<end>20080814033932.469</end>
+she | 's only won | one Emmy 

@@ -1,0 +1,4 @@
+<story>Sports|Olympics</story>
+<start>20080808194512.475</start>
+<end>20080808194520.616</end>
+About 90,000 spectators | attended opening | ceremonies 

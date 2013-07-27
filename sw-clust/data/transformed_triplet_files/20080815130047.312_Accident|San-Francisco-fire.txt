@@ -1,0 +1,12 @@
+<story>Accident|San-Francisco-fire</story>
+<start>20080815130047.312</start>
+<end>20080815130136.261</end>
+this information | comes | the CNN NEWSROOM 
+We | 're talking | a fire 
+a very difficult procedure | given | the age of the residents 
+People | were transported | the scene 
+We | 're now looking | live pictures 
+we | know | this point 
+this fire | started | 3:00 a.m. local time 
+we | 'll stay | top of the story 
+they | come | our way 

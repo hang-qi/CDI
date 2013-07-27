@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Clinton-convention-role</story>
+<start>20080815010046.611</start>
+<end>20080815010109.467</end>
+A deal | is | the works 
+a power play | to steal | the spotlight 

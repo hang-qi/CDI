@@ -1,0 +1,6 @@
+<story>Crime|Arkansas-democratic-headquarters-shooting</story>
+<start>20080814031913.351</start>
+<end>20080814031930.067</end>
+a gunman | walked | the offices 
+Bill Gwatney | fatally shot | a gunman 
+He | died | the hospital 

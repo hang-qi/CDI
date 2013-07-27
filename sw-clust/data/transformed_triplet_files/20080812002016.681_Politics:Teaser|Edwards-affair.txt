@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Edwards-affair</story>
+<start>20080812002016.681</start>
+<end>20080812002248.099</end>
+Barack Obama | speaking | the fight 
+We | are going to take | a look 

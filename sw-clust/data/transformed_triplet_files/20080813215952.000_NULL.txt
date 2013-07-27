@@ -1,0 +1,5 @@
+<story>NULL</story>
+<start>20080813215952.000</start>
+<end>20080813220002.433</end>
+The U.S. | warns | Russia 
+Georgia | face | the consequences 

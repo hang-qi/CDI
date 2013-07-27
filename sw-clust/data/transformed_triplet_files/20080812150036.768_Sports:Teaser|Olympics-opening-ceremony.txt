@@ -1,0 +1,4 @@
+<story>Sports:Teaser|Olympics-opening-ceremony</story>
+<start>20080812150036.768</start>
+<end>20080812150054.919</end>
+Olympic perfection | leads | a lip 

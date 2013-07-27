@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Obama-Mccain-Warren-debate</story>
+<start>20080815001950.554</start>
+<end>20080815001959.930</end>
+the country | speaks | the election 

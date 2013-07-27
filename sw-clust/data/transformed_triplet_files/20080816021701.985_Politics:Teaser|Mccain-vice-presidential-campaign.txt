@@ -1,0 +1,5 @@
+<story>Politics:Teaser|Mccain-vice-presidential-campaign</story>
+<start>20080816021701.985</start>
+<end>20080816021921.258</end>
+they | made | the cut 
+short | when | Crucial Choice 

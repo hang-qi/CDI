@@ -1,0 +1,4 @@
+<story>Commercial|Block</story>
+<start>20080809005809.685</start>
+<end>20080809005950.682</end>
+Wolf Blitzer | is hosting | LARRY KING 

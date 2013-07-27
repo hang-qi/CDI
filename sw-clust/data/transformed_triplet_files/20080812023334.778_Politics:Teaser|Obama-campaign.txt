@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080812023334.778</start>
+<end>20080812023609.666</end>
+Barack Obama | uses | his BlackBerry 
+unprecedented campaign dollars | using | the Web 
+he | 's using | technology 

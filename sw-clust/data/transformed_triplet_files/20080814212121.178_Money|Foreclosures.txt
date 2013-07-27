@@ -1,0 +1,9 @@
+<story>Money|Foreclosures</story>
+<start>20080814212121.178</start>
+<end>20080814212153.577</end>
+Our Carol Costello | is monitoring | the stories 
+trouble | paying | your mortgage 
+banks | foreclosed | more than 77,000 homes 
+The numbers | include | delinquency and auction notices 
+One of every 464 U.S. households | received | such a notice 
+the median house price | has dropped | more than 7 percent 

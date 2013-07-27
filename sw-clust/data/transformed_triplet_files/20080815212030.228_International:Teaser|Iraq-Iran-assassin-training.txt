@@ -1,0 +1,5 @@
+<story>International:Teaser|Iraq-Iran-assassin-training</story>
+<start>20080815212030.228</start>
+<end>20080815212039.637</end>
+Iraqi hit teams | being trained | Iran 
+they | will return | Iraq 

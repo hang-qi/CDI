@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Presidential-campaign</story>
+<start>20080813215543.038</start>
+<end>20080813215553.282</end>
+The candidates | reveal | Both presidential candidates musical tastes 
+one | likes | Nina Simone 
+Barack Obama | share | Both presidential candidates top five favorites 

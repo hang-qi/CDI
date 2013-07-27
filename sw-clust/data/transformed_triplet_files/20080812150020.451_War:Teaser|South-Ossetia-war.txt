@@ -1,0 +1,4 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080812150020.451</start>
+<end>20080812150029.627</end>
+Russia | halted | attacks 

@@ -1,0 +1,7 @@
+<story>Politics:Teaser|Clinton-attacks-Obama</story>
+<start>20080810142252.002</start>
+<end>20080810142606.230</end>
+Bill Clinton | steps up | the microphone 
+anything | to say | Barack Obama 
+We | 'll ask | Kate 
+the interview | touched | a new round of questions 

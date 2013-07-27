@@ -1,0 +1,4 @@
+<story>Entertainment:Teaser|Isaac-Hayes-death</story>
+<start>20080811025213.229</start>
+<end>20080811025453.789</end>
+He | was | the very first 

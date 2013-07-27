@@ -1,0 +1,5 @@
+<story>War:Teaser|South-Ossetia-war</story>
+<start>20080813205345.753</start>
+<end>20080813205707.555</end>
+conflict | rages | Georgia 
+Russia's government | was | Russia 's government 

@@ -1,0 +1,4 @@
+<story>Commercial|Block</story>
+<start>20080813142503.667</start>
+<end>20080813142813.290</end>
+We | 're | Beijing 

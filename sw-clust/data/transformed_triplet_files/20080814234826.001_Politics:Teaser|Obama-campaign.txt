@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Obama-campaign</story>
+<start>20080814234826.001</start>
+<end>20080814234833.808</end>
+actually | believe | Barack Obama 

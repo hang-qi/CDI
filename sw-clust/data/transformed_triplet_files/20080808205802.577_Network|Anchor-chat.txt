@@ -1,0 +1,5 @@
+<story>Network|Anchor-chat</story>
+<start>20080808205802.577</start>
+<end>20080808205824.232</end>
+Let | go back | Jack Cafferty 
+we | started | exactly three years 

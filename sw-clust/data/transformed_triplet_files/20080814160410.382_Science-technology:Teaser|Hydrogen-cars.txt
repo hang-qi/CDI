@@ -1,0 +1,4 @@
+<story>Science-technology:Teaser|Hydrogen-cars</story>
+<start>20080814160410.382</start>
+<end>20080814160423.362</end>
+Poppy Harlow | drinking | a tail pipe of a car 

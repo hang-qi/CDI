@@ -1,0 +1,4 @@
+<story>Politics:Teaser|Mccain-vice-presidential-campaign</story>
+<start>20080816022714.263</start>
+<end>20080816022720.803</end>
+John McCain | is facing | an equally tough decision 

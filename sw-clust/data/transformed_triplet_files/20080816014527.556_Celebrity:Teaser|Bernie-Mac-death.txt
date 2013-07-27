@@ -1,0 +1,6 @@
+<story>Celebrity:Teaser|Bernie-Mac-death</story>
+<start>20080816014527.556</start>
+<end>20080816014910.712</end>
+they | discovered | he 
+We | 'll talk | what life lessons 
+Bernie Mac | pass | that family 

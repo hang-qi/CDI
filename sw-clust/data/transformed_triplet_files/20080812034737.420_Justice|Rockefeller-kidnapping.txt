@@ -1,0 +1,8 @@
+<story>Justice|Rockefeller-kidnapping</story>
+<start>20080812034737.420</start>
+<end>20080812034803.980</end>
+he | is | fact 
+a German man | named | Christian Gerhartsreiter 
+he | is | a heap of trouble 
+in addition | being held | allegedly kidnapping 
+he | is already considered to be | a person of interest 

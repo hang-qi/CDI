@@ -1,0 +1,6 @@
+<story>Politics:Teaser|Political-ads-informative-value</story>
+<start>20080808224729.512</start>
+<end>20080808225048.010</end>
+a lot | coming up here | THE SITUATION ROOM 
+Carol Costello | is | today 
+Fredricka Whitfield | is monitoring | some other important stories 

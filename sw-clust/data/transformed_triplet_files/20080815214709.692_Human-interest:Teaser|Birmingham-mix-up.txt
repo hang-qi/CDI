@@ -1,0 +1,4 @@
+<story>Human-interest:Teaser|Birmingham-mix-up</story>
+<start>20080815214709.692</start>
+<end>20080815214930.433</end>
+Problem | uses | a picture 

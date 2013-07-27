@@ -1,0 +1,6 @@
+<story>Network|China-panel-introductions</story>
+<start>20080810171550.580</start>
+<end>20080810171641.264</end>
+China | introduces or reintroduces | itself 
+sound | bites | that country 
+we | have | a panel of distinguished China watchers 
