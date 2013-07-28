@@ -91,7 +91,7 @@ def _count_gram(words, i_start, ngram, phrases_dict, feature_vector):
     if len(gram) == ngram:
         phrase = ' '.join(gram)
         if phrase in phrases_dict:
-            logging.info('Phrase Found: {0}'.format(phrase))
+            logging.debug('Phrase Found: {0}'.format(phrase))
             feature_vector[phrases_dict[phrase]] += 1
     return feature_vector
 
@@ -110,26 +110,30 @@ def count_year(year, phrases_dict):
     for month in range(1, 13):
         logging.info('Counting for {0}-{1:02d} started.'.format(year, month))
         outputfile = 'data/count_{0}-{1:02}.txt'.format(year, month)
-        with open(outputfile, 'w') as fout:
-            # Get all files in the year
-            caption_files = []
-            for day in range(1, 32):
-                folder = '/tv/{0}/{0}-{1:02d}/{0}-{1:02d}-{2:02d}/'.format(year, month, day)
-                caption_files.extend(_get_all_captionfiles(folder))
-            logging.info('Files found for {0}-{1:02d}.'.format(year, month))
 
+        caption_files = []
+        for day in range(1, 32):
+            folder = '/tv/{0}/{0}-{1:02d}/{0}-{1:02d}-{2:02d}/'.format(year, month, day)
+            caption_files.extend(_get_all_captionfiles(folder))
+        logging.info('Files found for {0}-{1:02d}.'.format(year, month))
+
+        with open(outputfile, 'w') as fout:
             # Count files one by one
             for captionfile in caption_files:
                 # Extract meta-data from the filename
                 filename = captionfile.split('/')[-1]
-                (broadcast_datetime, country, network_and_show) = _parse_filename(filename)
+                logging.debug('Processing: {0}'.format(filename))
+                try:
+                    (broadcast_datetime, country, network_and_show) = _parse_filename(filename)
+                except Exception:
+                    logging.warning('File skipped: {0}'.format(filename))
+                    continue
 
                 # Only count for US network
                 if country != 'US':
                     continue
 
                 # Count
-                logging.info('Counting: {0}'.format(filename))
                 feature_vector = _count_phrases(captionfile, phrases_dict)
 
                 feature_string = [str(x) for x in feature_vector]
@@ -149,7 +153,7 @@ def main():
         phrases_dict[phrase.phrase] = index
 
     threads = []
-    for year in range(2006, 2014):
+    for year in [2007, 2008, 2009, 2010, 2011, 2012, 2013]:
         #count_whole_year(year, phrases_dict)
         t = threading.Thread(target=count_year, args=(year, phrases_dict))
         t.daemon = True
