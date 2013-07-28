@@ -464,7 +464,8 @@ class TopicModel(object):
                 self._initialize_tree(config.vertex_distributions)
                 self.topic_tree.print_hiearchy(labels=document_labels)
 
-            ### FIXME: This condition check is keep here temporarily for testing level 2.
+            # FIXME: This condition check is keep here temporarily for testing level 2.
+            # Remove 'if-condition' and only keep 'else' part before launch.
             if (level_counter == 1):
                 current_clustering = ground_truth
             else:
@@ -686,7 +687,8 @@ class _Tree(object):
 # Definitions for corpus and document.
 #
 class _Corpus(object):
-    """A Corpus object includes all documents' feature and corpus vocabulary."""
+    """A Corpus object includes all documents' feature and corpus vocabulary.
+    These are sufficient information to recover the original document."""
     def __init__(self):
         self.documents = []
         self.vocabularies = {
@@ -712,8 +714,12 @@ class _Corpus(object):
             for ocr_word in self.documents[doc_id].ocr_words:
                 if ocr_word in self.vocabularies[word_type]:
                     ocr_word_id = self.vocabularies[word_type].get_word_index(ocr_word)
-                    self.documents[doc_id].word_ids[word_type].append(ocr_word_id)
                     histogram[ocr_word_id] += 1
+                    # WARINING / FIXME:
+                    # Here the document content is extended by ocr words.
+                    # If this method is called multiple times, ocr words
+                    # will be added to the document redundantly.
+                    self.documents[doc_id].word_ids[word_type].append(ocr_word_id)
 
         return _Distribution(histogram)
 
@@ -770,8 +776,16 @@ class _DocumentFeature(object):
         self.ocr_words = ocr_words
 
 
+#
+# Definitions of VertexDistribution and Distribution.
+#
 class _VertexDistribution:
-    # Three _Distribution objects
+    """A vertex distribution can be viewed as a AND node consisting of
+    three _Distribution objects.
+    Tips:
+        Object of this class has been made hashable.
+        Add operation ('+' operator) is supported.
+        TV-norm and KL-divergence calculation will be averaged by three."""
     def __init__(self):
         self.distributions = dict()
         for word_type in WORD_TYPES:
