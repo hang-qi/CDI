@@ -43,12 +43,13 @@ def main():
     initial_corpus = topic_model.Corpus()
 
     # Read in the triplets files, including the triplets and the time of the story
+    original_documents = []
     for triplet_file in input_triplet_files:
-        initial_corpus.add_document(read_triplet_file(triplet_file, use_ocr=True))
+        original_documents.append(read_triplet_file(triplet_file, use_ocr=True))
 
     # Train topic model
     model = topic_model.TopicModel(classifier_model_filename='preprocessing/model_segmenter.txt')
-    model.feed(initial_corpus)
+    model.feed(original_documents)
 
     # current_tree = model.topic_tree
 

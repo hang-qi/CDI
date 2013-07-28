@@ -403,35 +403,36 @@ def _combine_vertex_distributions_given_clustering(current_vertex_distributions,
 
 class TopicModel(object):
     def __init__(self, classifier_model_filename=None):
-        self.corpus = None
+        self._has_initalized = False
+        self.corpus = _Corpus()
         self.topic_tree = _Tree()
         self._classifier_model_file = classifier_model_filename
         pass
 
-    def feed(self, new_corpus):
+    def feed(self, original_documents, need_segmentation=False):
         # Do Segmentation (if not segmented)
-        #if not new_corpus.segmented:
+        if need_segmentation:
             # TODO: Do segmentation first
-        #    pass
+            pass
 
-        if self.corpus is None:
-            self.corpus = new_corpus
-        else:
-            # Inference and attach to trees
-            for document in new_corpus.documents:
-                self._inference(document)
-                self.corpus.add_document(document)
+        # Inference and attach to trees
+        for original_doc in original_documents:
+            document_feature = self.corpus.add_document(original_doc)
+            if self._has_initalized:
+                self._inference(document_feature)
 
         # Reform the tree if necessary.
         if (self._need_reform()):
             self._reform_by_multilevel_sw()
+        self._has_initalized = True
         pass
 
-    def _inference(self, new_document):
+    def _inference(self, document):
         """Inference and attach the new document to the current topic tree."""
         # TODO: This shall base on the likelihood and depth prior.
         #   Search along the tree and evaluate a posterior probability at every
         #   possible node to mount. Select the node with max posterior.
+        #       see _TreeNode.log_likelihood(document)
         pass
 
     def _reform_by_multilevel_sw(self):
@@ -553,6 +554,14 @@ class _TreeNode(object):
 
     def __iter__(self):
         return iter(self._children)
+
+    def log_likelihood(self, document):
+        log_likelihood = mpmath.mpf(0.0)
+        for word_type in WORD_TYPES:
+            for word_id in document.word_ids[word_type]:
+                if word_id in self._vertex_distribution[word_type]:
+                    log_likelihood += mpmath.log(self._vertex_distribution[word_type][word_id] + 1e-100)
+        return log_likelihood
 
     def add_child(self, node):
         self._children.append(node)
@@ -676,7 +685,7 @@ class _Tree(object):
 #
 # Definitions for corpus and document.
 #
-class Corpus(object):
+class _Corpus(object):
     """A Corpus object includes all documents' feature and corpus vocabulary."""
     def __init__(self):
         self.documents = []
@@ -711,8 +720,9 @@ class Corpus(object):
     def add_document(self, original_doc):
         """Convert the document to feature and save into document list.
         Adding a document containing words not seen before will also extend the vocabulary of the corpus."""
-        document_feature = self._convert_doc_to_feature(original_doc, )
+        document_feature = self._convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
+        return document_feature
 
     def _convert_doc_to_feature(self, original_doc):
         document_feature = _DocumentFeature(original_doc.filename, original_doc.timestamp)
@@ -848,6 +858,9 @@ class _Distribution(object):
         self._length = len(histogram)
         if self._denominator != 1 and self._denominator != 0:
             self._hist /= self._denominator
+
+    def __contains__(self, word_id):
+        return (0 <= word_id < self._length)
 
     def __getitem__(self, word_id):
         if self._hist is not None:
