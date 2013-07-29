@@ -1,0 +1,18 @@
+<story>Accident|Texas-bus-crash</story>
+<start>20080808131713.698</start>
+<end>20080808131849.594</end>
+an | update | that story 
+A bus | loaded | church members 
+a highway overpass | rolled | an embankment 
+They | believe | a blown tire 
+a news conference | going | this moment 
+We | are monitoring | a news conference going on at this moment with more information coming out 
+a few things | were said | a little bit 
+some | were | first reporting 
+an embankment | had gone | its side 
+we | have | 
+| were confirmed | the scene 
+the bus | started | Houston 
+Vietnamese Catholics | were | the bus 
+some of the sound | talking | a little bit 
+we | ll continue to follow | that story 

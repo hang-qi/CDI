@@ -1,0 +1,159 @@
+{0, 4, 14, 27, 33, 10, 41, 65, 30, 49}
+{5, 42, 12}
+{1, 20, 11, 31, 51}
+{6, 18, 23, 55, 29, 32, 50}
+{7, 19}
+{22, 61}
+{13, 60}
+{9, 26, 47}
+{8, 25, 48}
+{21, 68}
+{2, 15, 54, 40, 46, 39}
+{59, 16}
+{35},
+{17, 36, 58}
+{34, 57}
+{28}
+{38}
+{44}
+{45}
+{56, 73}
+{62}
+{63}
+{64}
+{66}
+{67}
+{69}
+{70}
+{71}
+{72}
+{74}
+{37}
+{3, 53}
+{24, 52}
+{43}
+
+level 2:
+{0, 1, 23}   --- {0, 5, 66},  War
+{2, 9, 24} --- {1, 21, 67}, Accident
+{3, 4, 22} --- {6, 7, 64},  Justice
+{5, 6} --- {22, 13},  Disaster
+{7, 8, 11, 12, 13, 14, 19} --- {9, 8, 59, 35, 17, 34, 56}, Politics
+{10, 18} --- {2, 45}, Sports
+{15} --- {28}, Entertainment
+{16} --- {38}
+{27} --- {71}
+{28} --- {72}
+{17, 21, 25, 26, 29} --- {44, 63, 69, 70, 74}
+{20} --- {62},
+{30} --- {37},
+{31, 32, 33} --- {3, 24, 43}
+
+0_20080808130102.094_War|South-Ossetia-war.txt
+4_20080808133030.060_War|South-Ossetia-war.txt
+14_20080808141517.147_War|South-Ossetia-war.txt
+27_20080808145453.821_War|South-Ossetia-war.txt
+33_20080808151205.355_War|South-Ossetia-war.txt
+10_20080808140104.462_War|South-Ossetia-war.txt
+41_20080808152909.512_War|South-Ossetia-war.txt
+65_20080808173137.160_War|South-Ossetia-war.txt
+30_20080808150108.900_War|South-Ossetia-war.txt
+49_20080808170105.064_War|South-Ossetia-war.txt
+
+5_20080808133144.134_War|Iraq-war-troop-pullout.txt
+42_20080808153513.375_War|Iraq-war-troop-pullout.txt
+12_20080808140721.672_War|Iraq-war-troop-pullout.txt
+
+1_20080808131713.698_Accident|Texas-bus-crash.txt
+20_20080808143410.312_Accident|Texas-bus-crash.txt
+11_20080808140421.192_Accident|Texas-bus-crash.txt
+31_20080808150453.624_Accident|Texas-bus-crash.txt
+51_20080808170706.958_Accident|Texas-bus-crash.txt
+
+6_20080808134159.282_Justice|Mayor-jail-time.txt
+18_20080808143154.977_Justice|Mayor-jail-time.txt
+23_20080808143859.601_Justice|Mayor-jail-time.txt
+55_20080808171040.005_Justice|Mayor-jail-time.txt
+29_20080808150031.763_Justice|Mayor-jail-time.txt
+32_20080808151059.323_Justice|Mayor-jail-time.txt
+50_20080808170555.787_Justice|Mayor-jail-time.txt
+
+7_20080808134446.082_Justice|Mayor-home-raided.txt
+19_20080808143223.172_Justice|Mayor-home-raided.txt
+
+22_20080808143720.069_Disaster|Flooding-Vegas.txt
+61_20080808171714.332_Disaster|Flooding-Vegas.txt
+
+13_20080808141000.864_Disaster|Flooding-New-Hampshire.txt
+60_20080808171700.852_Disaster|Flooding-New-Hampshire.txt
+
+9_20080808135753.635_Politics|Obama-spending.txt
+26_20080808144917.953_Politics|Obama-speech-economy.txt
+47_20080808155438.406_Politics|Obama-speech-economy.txt
+
+8_20080808135515.244_Politics|McCain-spending.txt
+25_20080808144602.290_Politics|McCain-speech-economy.txt
+48_20080808155616.237_Politics|McCain-speech-economy.txt
+
+21_20080808143443.512_Accident|Florida-toddler-search.txt
+68_20080808173640.664_Accident|Florida-toddler-search.txt
+
+2_20080808132325.736_Sports|Olympics.txt
+15_20080808141746.596_Sports|Olympics.txt
+54_20080808170948.920_Sports|Olympics.txt
+40_20080808152509.138_Sports|Olympics.txt
+46_20080808154915.083_Sports|Lopez-Sudan-Olympic-athlete.txt
+39_20080808152312.255_Human-interest|Olympics-lucky-number-8.txt
+
+59_20080808171630.488_Politics|Obama-assassination-threat.txt
+16_20080808142430.099_Politics|Obama-assassination-threat.txt
+
+35_20080808151502.900_Politics|Obama-vacation.txt
+
+17_20080808142456.993_Politics|Clinton-convention-role.txt
+36_20080808151511.041_Politics|Clinton-convention-role.txt
+58_20080808171557.422_Politics|Clinton-convention-role.txt
+
+34_20080808151433.537_Politics|Cheney-RNC-convention-invitation.txt
+57_20080808171535.600_Politics|Cheney-RNC-convention-invitation.txt
+
+28_20080808145907.475_Entertainment|Young-tattoo-artist.txt
+
+38_20080808152115.338_Human-interest|Teaching-english-abroad.txt
+
+44_20080808154322.431_Health|Homeless-manipulated.txt
+
+45_20080808154833.909_Sports|Golf-PGA-championship.txt
+
+56_20080808171453.291_Politics|Presidential-campaign.txt
+73_20080808175352.995_Politics|Negative-presidential-campaigning.txt
+
+62_20080808172144.235_Celebrity|Chapman-grammy-winner-daughter-death.txt
+
+63_20080808172649.039_Health|Austin-Texas-most-alcohol-consumption.txt
+
+64_20080808173125.115_Justice|Atlanta-courthouse-shooter-trial.txt
+
+66_20080808173557.621_War|Afghanistan-troop-buildup.txt
+
+67_20080808173620.844_Accident|Czech-train-crash-bridge-collapse.txt
+
+69_20080808174414.917_Health|AIDS-vaccine.txt
+
+70_20080808174445.081_Health|Bernie-Mac-fatal-disease.txt
+
+71_20080808175046.042_Human-interest|Woman-walks-across-country-thanks-servicemen.txt
+
+72_20080808175254.770_Human-interest|Neighbor-fights-fire.txt
+
+74_20080808175803.512_Health|Mcconaughey-baby.txt
+
+37_20080808151839.583_Environment|Olympics-air-quality.txt
+
+3_20080808132944.481_Money|Stock-market.txt
+53_20080808170933.905_Money|Stock-market.txt
+
+24_20080808144313.889_Money|Fannie-mortgage-loans.txt
+52_20080808170845.590_Money|Mortgage-loans.txt
+
+43_20080808154058.554_Money|Commodity-prices.txt
