@@ -19,13 +19,15 @@ def read_testing_file(filenameprefix):
     files.sort()
     true_segment = []
     all_nodes = Nodes()
-    line_count = -1
+    line_count_total = 0
     for segments_file in files:
         # Delete the teaser files
         if segments_file.split('/')[-1].split('_')[-1].split('|')[0].split(':')[-1] == 'Teaser':
             continue
+        line_count = -1
+        current_seg = []
+        current_seg_nodes = []
         with open(segments_file, 'r') as f:
-            current_seg = []
             for line in f:
                 if(line[0] != '<'):
                     line_count += 1
@@ -41,9 +43,14 @@ def read_testing_file(filenameprefix):
                     np2 = cleansing.clean(triplets[2].split())
                     current_node = Node()
                     current_node.set_node(np1, vp, np2, pronoun_flag)
-                    all_nodes.add_node(current_node)
+                    current_seg_nodes.append(current_node)
                     current_seg.append(line_count)
-        true_segment.append(set(current_seg))
+        if (len(current_seg) > 5):
+            seg = [(s + line_count_total) for s in current_seg]
+            line_count_total += len(current_seg)
+            for node in current_seg_nodes:
+                all_nodes.add_node(node)
+            true_segment.append(set(seg))
     return [all_nodes, true_segment]
 
 
