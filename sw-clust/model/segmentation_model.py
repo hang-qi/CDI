@@ -7,8 +7,8 @@ from model import *
 
 
 class SegmentationModel(object):
-    def __init__(self, nodes, transprob, length_prior, seg_num_prior, classifier):
-        self.all_nodes = nodes
+    def __init__(self, all_sentences, transprob, length_prior, seg_num_prior, classifier):
+        self.all_sentences = all_sentences
         self.transition_prob = transprob
         self.length_prior = length_prior
         self.seg_num_prior = seg_num_prior
@@ -17,7 +17,7 @@ class SegmentationModel(object):
         self._segment_classification_cache = dict()
 
     def calculate_Qe(self, left, right, context):
-        right_node = self.all_nodes.nodes[right]
+        right_node = self.all_sentences[right]
         if right_node.pronoun:
             # If the beginning of the right node is pronoun, turn on the edge
             return 1
@@ -79,7 +79,7 @@ class SegmentationModel(object):
 
             word_list_all_type = defaultdict(list)
             for i in segment:
-                current_node = self.all_nodes.nodes[i]
+                current_node = self.all_sentences[i]
                 word_list_all_type[WORD_TYPE_NP1].extend(current_node.NP1)
                 word_list_all_type[WORD_TYPE_VP].extend(current_node.VP)
                 word_list_all_type[WORD_TYPE_NP2].extend(current_node.NP2)

@@ -5,7 +5,7 @@ sys.path.append('..')
 
 import cleansing
 import vocabulary
-from model.nodes import Node, Nodes
+from model.sentence import Sentence
 from model import probability
 
 from scipy.stats import norm
@@ -18,21 +18,21 @@ def read_testing_file(filenameprefix):
     files = glob.glob(file_name)
     files.sort()
     true_segment = []
-    all_nodes = Nodes()
+    all_sentences = []
     line_count_total = 0
     for segments_file in files:
         # Delete the teaser files
         if segments_file.split('/')[-1].split('_')[-1].split('|')[0].split(':')[-1] == 'Teaser':
             continue
         line_count = -1
-        current_seg = []
-        current_seg_nodes = []
+        current_seg_sentences = []
         with open(segments_file, 'r') as f:
             for line in f:
                 if(line[0] != '<'):
                     line_count += 1
                     line = (line[:-2]).lower()
                     triplets = line.split('|')
+
                     np1 = triplets[0].split()
                     if np1 != [] and _is_pronoun(np1[0]):
                         pronoun_flag = True
@@ -41,17 +41,16 @@ def read_testing_file(filenameprefix):
                     np1 = cleansing.clean(triplets[0].split())
                     vp = cleansing.clean(triplets[1].split())
                     np2 = cleansing.clean(triplets[2].split())
-                    current_node = Node()
-                    current_node.set_node(np1, vp, np2, pronoun_flag)
-                    current_seg_nodes.append(current_node)
-                    current_seg.append(line_count)
-        if (len(current_seg) > 5):
-            seg = [(s + line_count_total) for s in current_seg]
-            line_count_total += len(current_seg)
-            for node in current_seg_nodes:
-                all_nodes.add_node(node)
+                    current_seg_sentences.append(Sentence(np1, vp, np2, pronoun_flag))
+
+        # Only keep segments longer than 5 sentences
+        segment_length = len(current_seg_sentences)
+        if (segment_length > 5):
+            seg = [(sid + line_count_total) for sid in range(0, segment_length)]
             true_segment.append(set(seg))
-    return [all_nodes, true_segment]
+            all_sentences.extend(current_seg_sentences)
+            line_count_total += segment_length
+    return [all_sentences, true_segment]
 
 
 def _is_pronoun(word):

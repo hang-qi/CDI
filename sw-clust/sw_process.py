@@ -16,8 +16,8 @@ class Plotter(object):
         self.true_segment = true_segment
 
         self.pronoun = []
-        for i in range(0, self.segmentation_model.all_nodes.node_num):
-            if self.segmentation_model.all_nodes.nodes[i].pronoun:
+        for i in range(0, len(self.segmentation_model.all_sentences)):
+            if self.segmentation_model.all_sentences[i].pronoun:
                 self.pronoun.append(i)
         self._true_eval = self.segmentation_model.calculate_energy(true_segment)
 
@@ -57,7 +57,7 @@ class Plotter(object):
         self.segment_plot.plot(seg_boundary, [2]*len(seg_boundary), '.r')
         self.segment_plot.hold(True)
         self.segment_plot.plot(current_seg, [1]*len(current_seg), '.')
-        self.segment_plot.axis([0, self.segmentation_model.all_nodes.node_num, 0, 3])
+        self.segment_plot.axis([0, len(self.segmentation_model.all_sentences), 0, 3])
         #self.segment_plot.hold(True)
         #self.segment_plot.plot(self.pronoun, [1.5]*len(self.pronoun), '.')
 
@@ -68,14 +68,14 @@ class Plotter(object):
 
 
 def sw_Process():
-    [all_nodes, true_segment] = readingfiles.read_testing_file('2008080814')
+    [all_sentences, true_segment] = readingfiles.read_testing_file('2008080814')
     [transition_prob, length_prior, seg_num_prior] = readingfiles.load_model_parameters('preprocessing/model_segmenter.txt')
     classifier = Classifier('preprocessing/model_segmenter.txt')
 
-    segmentation_model = SegmentationModel(all_nodes, transition_prob, length_prior, seg_num_prior, classifier)
+    segmentation_model = SegmentationModel(all_sentences, transition_prob, length_prior, seg_num_prior, classifier)
     plotter = Plotter(segmentation_model, true_segment)
 
-    node_number = all_nodes.node_num
+    node_number = len(all_sentences)
     edges = []
     for i in range(0, node_number-1):
         j = i + 1
