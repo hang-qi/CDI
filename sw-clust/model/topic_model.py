@@ -726,6 +726,8 @@ class _Corpus(object):
     def add_document(self, original_doc):
         """Convert the document to feature and save into document list.
         Adding a document containing words not seen before will also extend the vocabulary of the corpus."""
+        # WARINING: When a new document is added to the corpus,
+        # the vocabulary may grow due to the words not seen before.
         document_feature = self._convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
         return document_feature

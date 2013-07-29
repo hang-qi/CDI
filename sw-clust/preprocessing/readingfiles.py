@@ -22,7 +22,8 @@ def read_testing_file(filenameprefix):
     line_count_total = 0
     for segments_file in files:
         # Delete the teaser files
-        if segments_file.split('/')[-1].split('_')[-1].split('|')[0].split(':')[-1] == 'Teaser':
+        if (segments_file.split('/')[-1].split('_')[-1].split('|')[0].split(':')[-1] == 'Teaser'
+           or segments_file.split('/')[-1].split('_')[-1].split('.')[0] == 'NULL'):
             continue
         line_count = -1
         current_seg_sentences = []
@@ -45,11 +46,11 @@ def read_testing_file(filenameprefix):
 
         # Only keep segments longer than 5 sentences
         segment_length = len(current_seg_sentences)
-        if (segment_length > 5):
-            seg = [(sid + line_count_total) for sid in range(0, segment_length)]
-            true_segment.append(set(seg))
-            all_sentences.extend(current_seg_sentences)
-            line_count_total += segment_length
+        #if (segment_length > 5):
+        seg = [(sid + line_count_total) for sid in range(0, segment_length)]
+        true_segment.append(set(seg))
+        all_sentences.extend(current_seg_sentences)
+        line_count_total += segment_length
     return [all_sentences, true_segment]
 
 

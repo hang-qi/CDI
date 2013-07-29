@@ -25,6 +25,12 @@ class Classifier(object):
             WORD_TYPE_NP2: np2_prob}
         self._class_priors = class_priors
 
+    def build_from_corpus(self, corpus, class_list):
+        # TODO:
+        # prior from class list
+        # prob from get distribution
+
+
     def load(self, classifier_model_file):
         """Load the classifier data."""
         with open(classifier_model_file, 'r') as f:
