@@ -1,6 +1,0 @@
-<story>Money|Stock-market</story>
-<start>20080811155656.512</start>
-<end>20080811155720.253</end>
-Markets | are following | developments 
-The conflict | there threatening to turn | the recent slide 
-We | re following | the markets 

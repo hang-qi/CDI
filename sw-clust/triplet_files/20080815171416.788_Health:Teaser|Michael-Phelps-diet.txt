@@ -1,6 +1,0 @@
-<story>Health:Teaser|Michael-Phelps-diet</story>
-<start>20080815171416.788</start>
-<end>20080815171559.791</end>
-Michael Phelps | completes | his task 
-we | re not talking | swimming 
-We | re talking | breakfast 

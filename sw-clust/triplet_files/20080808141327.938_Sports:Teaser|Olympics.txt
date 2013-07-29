@@ -1,5 +1,0 @@
-<story>Sports:Teaser|Olympics</story>
-<start>20080808141327.938</start>
-<end>20080808141517.147</end>
-Once | called | the forbidden city 
-We | re going | the Olympics 

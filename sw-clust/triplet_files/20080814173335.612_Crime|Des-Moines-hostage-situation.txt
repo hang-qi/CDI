@@ -1,6 +1,0 @@
-<story>Crime|Des-Moines-hostage-situation</story>
-<start>20080814173335.612</start>
-<end>20080814173353.997</end>
-Three children | rescued | police 
-a hostage situation | involving | a man 
-The man | was taken | the hospital 

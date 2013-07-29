@@ -1,4 +1,0 @@
-<story>Accident:Teaser|Florida-toddler-search</story>
-<start>20080808140046.110</start>
-<end>20080808140104.462</end>
-Police | analyzed | evidence 

@@ -1,4 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080811135606.795</start>
-<end>20080811135903.705</end>
-Moscow | trying to re assert | its super power status 

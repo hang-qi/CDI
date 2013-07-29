@@ -1,7 +1,0 @@
-<story>Accident|Dominican-Republic-bus-crash</story>
-<start>20080815191506.271</start>
-<end>20080815191528.192</end>
-a funeral | is | the golf course 
-We | have | two deadly bus crashes 
-two buses | collided | a highway 
-one bus | was trying to pass | a parked car 

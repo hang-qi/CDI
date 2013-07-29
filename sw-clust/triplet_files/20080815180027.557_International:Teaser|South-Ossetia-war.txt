@@ -1,4 +1,0 @@
-<story>International:Teaser|South-Ossetia-war</story>
-<start>20080815180027.557</start>
-<end>20080815180035.966</end>
-Russia | went | war 

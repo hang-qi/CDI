@@ -1,4 +1,0 @@
-<story>Justice:Teaser|Osteen-wife-attacks-attendant</story>
-<start>20080813183239.855</start>
-<end>20080813183252.268</end>
-she | did | she 

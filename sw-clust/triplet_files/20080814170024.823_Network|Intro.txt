@@ -1,4 +1,0 @@
-<story>Network|Intro</story>
-<start>20080814170024.823</start>
-<end>20080814170046.211</end>
-We | re following | the very latest developments 

@@ -1,4 +1,0 @@
-<story>Entertainment|North-Carolina-high-school-haunted</story>
-<start>20080808185848.356</start>
-<end>20080808185918.753</end>
-Everyone | knows | high schools 

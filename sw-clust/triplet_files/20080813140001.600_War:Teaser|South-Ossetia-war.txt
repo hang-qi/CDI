@@ -1,5 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080813140001.600</start>
-<end>20080813140006.238</end>
-Stay | informed | all day 
-Russian troops | moving | Georgia 

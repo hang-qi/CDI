@@ -1,9 +1,0 @@
-<story>Money|Stock-market-highlights</story>
-<start>20080815133436.973</start>
-<end>20080815133505.902</end>
-We | are waiting | the opening bell 
-we | take | a look 
-We | d like | a positive sign 
-We | ll be watching | the numbers 
-Dow Jones Industrial averages | now resting | 
-We | ll be talking | Susan Lisovicz 

@@ -1,5 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080813170001.667</start>
-<end>20080813170014.079</end>
-Russian forces | rumbling | the Georgian heartland 
-We | ll hear | CNN correspondents 

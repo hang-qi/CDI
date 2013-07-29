@@ -1,5 +1,0 @@
-<story>Politics:Teaser|Presidential-campaign</story>
-<start>20080815140001.467</start>
-<end>20080815140005.904</end>
-Barack Obama | making | waves 
-Our guests | to talk | politics 

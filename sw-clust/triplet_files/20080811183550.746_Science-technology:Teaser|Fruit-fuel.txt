@@ -1,7 +1,0 @@
-<story>Science-technology:Teaser|Fruit-fuel</story>
-<start>20080811183550.746</start>
-<end>20080811183901.870</end>
-scientists | are tinkering | the recipe 
-CNNs Susan Candiotti | takes | a look 
-the effort | to grow | more 
-the size of golf balls | grows | trees 

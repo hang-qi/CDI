@@ -1,4 +1,0 @@
-<story>Commercial|Block</story>
-<start>20080815131348.092</start>
-<end>20080815131645.403</end>
-The campaign | downplayed | The campaign 

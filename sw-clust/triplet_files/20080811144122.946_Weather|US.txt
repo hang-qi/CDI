@@ -1,7 +1,0 @@
-<story>Weather|US</story>
-<start>20080811144122.946</start>
-<end>20080811144450.219</end>
-we | are watching | some wicked weather 
-the hail | did knock down | some tree limbs and branches 
-a storm | tore | Philadelphia 
-Some homeowners | dealing | this kind of mess today 

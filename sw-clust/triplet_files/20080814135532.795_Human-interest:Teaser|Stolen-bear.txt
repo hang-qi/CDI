@@ -1,5 +1,0 @@
-<story>Human-interest:Teaser|Stolen-bear</story>
-<start>20080814135532.795</start>
-<end>20080814135809.751</end>
-A bear | napping | the zoo 
-This cub | gets | an unexpected ride 

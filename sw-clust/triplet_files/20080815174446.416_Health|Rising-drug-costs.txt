@@ -1,7 +1,0 @@
-<story>Health|Rising-drug-costs</story>
-<start>20080815174446.416</start>
-<end>20080815174513.609</end>
-Medicares prescription drug coverage | is going | about $ 
-Medicare officials | saying | people 
-more prescriptions | rising | drug costs 
-they | note | the $ monthly cost 

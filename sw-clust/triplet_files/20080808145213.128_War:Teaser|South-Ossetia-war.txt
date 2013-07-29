@@ -1,7 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080808145213.128</start>
-<end>20080808145453.821</end>
-his country | is | attack 
-the Republic of Georgia | has caught | many Americans 
-this conflict | has actually been running | many many years 
-Veronica De La Cruz | is | New York 

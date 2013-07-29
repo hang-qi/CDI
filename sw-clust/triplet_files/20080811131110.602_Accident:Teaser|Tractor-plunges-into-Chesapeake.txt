@@ -1,4 +1,0 @@
-<story>Accident:Teaser|Tractor-plunges-into-Chesapeake</story>
-<start>20080811131110.602</start>
-<end>20080811131413.151</end>
-A tractor trailer | plunging | the Chesapeake Bay 

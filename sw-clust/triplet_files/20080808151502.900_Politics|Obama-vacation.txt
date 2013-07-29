@@ -1,7 +1,0 @@
-<story>Politics|Obama-vacation</story>
-<start>20080808151502.900</start>
-<end>20080808151511.041</end>
-McCain | spent | the past few days 
-Ohio | talking | jobs 
-Barack Obama | heads | Hawaii 
-He | s going to visit | relatives 

@@ -1,5 +1,0 @@
-<story>Sports:Teaser|Olympic-swimmer-battling-cancer</story>
-<start>20080813192922.992</start>
-<end>20080813192932.468</end>
-he | battled | his way 
-he | got | his moment 

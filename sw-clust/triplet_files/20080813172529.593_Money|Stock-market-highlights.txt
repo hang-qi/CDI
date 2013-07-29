@@ -1,7 +1,0 @@
-<story>Money|Stock-market-highlights</story>
-<start>20080813172529.593</start>
-<end>20080813172546.810</end>
-We | re seeing | another day triple digit losses 
-The NASDAQ | is only down | 
-we | re seeing | a big rise 
-Oils | up | nearly $ 

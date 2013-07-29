@@ -1,4 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080808140031.562</start>
-<end>20080808140040.004</end>
-Russian tanks | roll | the border 

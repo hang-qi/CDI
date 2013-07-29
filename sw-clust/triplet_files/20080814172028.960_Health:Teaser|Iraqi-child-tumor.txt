@@ -1,4 +1,0 @@
-<story>Health:Teaser|Iraqi-child-tumor</story>
-<start>20080814172028.960</start>
-<end>20080814172042.673</end>
-odds | put | his chances of survival 

@@ -1,4 +1,0 @@
-<story>Justice:Teaser|Mayor-home-raided</story>
-<start>20080808181039.436</start>
-<end>20080808181359.803</end>
-whose home | was raided | a S.W.A.T. Team 

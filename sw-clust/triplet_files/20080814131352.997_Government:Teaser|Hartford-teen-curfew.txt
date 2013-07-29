@@ -1,5 +1,0 @@
-<story>Government:Teaser|Hartford-teen-curfew</story>
-<start>20080814131352.997</start>
-<end>20080814131704.555</end>
-A violent weekend | tonight | a major city 
-Anything | can stop | kids 

@@ -1,4 +1,0 @@
-<story>Accident|Philadelphia-apartment-fire</story>
-<start>20080814173353.997</start>
-<end>20080814173404.975</end>
-Hot spots | linger | the charred remains of a residential complex 

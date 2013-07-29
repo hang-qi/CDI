@@ -14,7 +14,7 @@ import mpmath
 
 def read_testing_file(filenameprefix):
     """Read the triplets files of the segments that correspond to the test file"""
-    file_name = 'triplet_files/' + filenameprefix + '*.txt'
+    file_name = 'data/transformed_triplet_files/' + filenameprefix + '*.txt'
     files = glob.glob(file_name)
     files.sort()
     true_segment = []
@@ -66,7 +66,7 @@ def load_model_parameters(training_file_in):
     prior_dist_range = 500
     for i in range(0, prior_dist_range):
         j = i + 1.0
-        length_prior.append(mpmath.mpf(10.0*norm(15, 15).pdf(j) + 5.0*norm(2, 20).pdf(j)))
+        length_prior.append(mpmath.mpf(10.0*norm(30, 20).pdf(j) + 5.0*norm(8, 20).pdf(j)))
         #length_prior.append(1)\
 
     # Norm the probability
@@ -75,7 +75,7 @@ def load_model_parameters(training_file_in):
     # Add the Total Segment Number Prior
     seg_num_prior = []
     for i in range(0, prior_dist_range):
-        seg_num_prior.append(mpmath.mpf(norm(30.0, 20.0).pdf(i)))
+        seg_num_prior.append(mpmath.mpf(norm(20.0, 10.0).pdf(i)))
     seg_num_prior = _prob_normalization(seg_num_prior)
 
     return [transition_prob, length_prior, seg_num_prior]

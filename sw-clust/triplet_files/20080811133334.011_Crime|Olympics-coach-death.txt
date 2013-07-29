@@ -1,7 +1,0 @@
-<story>Crime|Olympics-coach-death</story>
-<start>20080811133334.011</start>
-<end>20080811133407.711</end>
-an American woman | was stabbed | Beijing 
-an American woman who was stabbed in Beijing husband | were attacked | a Chinese man 
-Investigators | called | the attack 
-Beijing | is tightening | security 

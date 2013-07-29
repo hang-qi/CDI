@@ -68,7 +68,7 @@ class Plotter(object):
 
 
 def sw_Process():
-    [all_sentences, true_segment] = readingfiles.read_testing_file('2008080814')
+    [all_sentences, true_segment] = readingfiles.read_testing_file('2008080818')
     [transition_prob, length_prior, seg_num_prior] = readingfiles.load_model_parameters('preprocessing/model_segmenter.txt')
     classifier = Classifier('preprocessing/model_segmenter.txt')
 

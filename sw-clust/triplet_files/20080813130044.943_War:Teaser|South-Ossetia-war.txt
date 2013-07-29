@@ -1,5 +1,0 @@
-<story>War:Teaser|South-Ossetia-war</story>
-<start>20080813130044.943</start>
-<end>20080813130053.352</end>
-Russian troops | making | moves 
-Moscow | snubbing | a cease fire 

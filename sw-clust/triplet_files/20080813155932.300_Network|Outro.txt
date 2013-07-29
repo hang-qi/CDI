@@ -1,4 +1,0 @@
-<story>Network|Outro</story>
-<start>20080813155932.300</start>
-<end>20080813155944.345</end>
-CNN NEWSROOM | continues | just one hour 
