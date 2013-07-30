@@ -700,7 +700,6 @@ class _Tree(object):
             new_cluster_node = _TreeNode(vertex_distribution)
             new_cluster_node.add_child(new_document_node)
             max_category_node.add_child(new_cluster_node)
-            pass
         else:
             # add document to the root node,
             # create a category and cluster containing its own.
@@ -709,8 +708,6 @@ class _Tree(object):
             new_cluster_node.add_child(new_document_node)
             new_category_node.add_child(new_cluster_node)
             self._add_to_root(new_category_node)
-            pass
-        pass
 
     def _find_max_likelihood(self, nodes, document, children_list=None):
         max_likelihood = 0.0
