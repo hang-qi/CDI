@@ -436,7 +436,27 @@ class TopicModel(object):
 
     def _inference(self, document):
         """Inference and attach the new document to the current topic tree."""
-        vertex_distribution = self._generate_document_vertex_distribution(document_feature)
+        # WARINING / FIXME / CRITICAL:
+        # (1) here we do not include OCR, because otherwise OCR words
+        # will be added to the main word list, which will lead to redundant
+        # adding when reform with SW later.
+        # (2) the length of vertex distribution we obtained here is the same
+        # as new vocabulary size. This may disagree with that of existing nodes
+        # in the topic tree. Even more dangerously, the inference is done
+        # sequentially, so documents fed in same round may have different
+        # distribution length (keep increasing).
+
+        # TENTATIVE SOLUTION:
+        # Consider to create a buffer corpus, storing added documents
+        # and the vertex distribution shall be created by projecting on the
+        # vocabulary of main corpus. When the model is reformed by SW, buffer
+        # corpus shall be combined into the main corpus.
+        # HOWEVER, this may lead to another problem that every new documents of
+        # few shared words with the main corpus may potentially create a new
+        # category branch.
+
+        vertex_distribution = self._generate_document_vertex_distribution(
+            document_feature, include_ocr=False)
         self.topic_tree.inference(document, vertex_distribution)
         pass
 
@@ -494,18 +514,22 @@ class TopicModel(object):
                 need_next_level = False
 
     def _generate_initial_vertex_distributions(self):
+        # WARINING: generating vertex distribution with ocr_included will
+        # cause ocr words to be added to main word lists.
+        # If the model is further reformed with SW in a later stage,
+        # this may lead to redundant ocr words.
         initial_vertex_distributions = []
         for document in self.corpus:
             vertex_distribution = self._generate_document_vertex_distribution(
-                document)
+                document, include_ocr=True)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
 
-    def _generate_document_vertex_distribution(self, document):
+    def _generate_document_vertex_distribution(self, document, include_ocr):
         vertex_distribution = _VertexDistribution()
         vertex_distribution.document_ids = [document.doc_id]
         for word_type in WORD_TYPES:
-            vertex_distribution[word_type] = self.corpus.get_dococument_distribution(document.doc_id, word_type, include_ocr=True)
+            vertex_distribution[word_type] = self.corpus.get_dococument_distribution(document.doc_id, word_type, include_ocr)
         return vertex_distribution
 
     def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
