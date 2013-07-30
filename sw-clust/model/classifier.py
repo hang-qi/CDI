@@ -6,6 +6,7 @@ import mpmath
 from model import *
 from model import probability
 from preprocessing import vocabulary
+from preprocessing import readingfiles
 
 
 class Classifier(object):
@@ -49,6 +50,12 @@ class Classifier(object):
             # class prior
             self._class_priors[class_id] = len(category_samples)
         self._class_priors.normalize(row=0)
+
+    def train_from_files(self, input_triplet_files, category_list):
+        corpus = topic_model._Corpus()
+        for triplet_file in input_triplet_files:
+            corpus.add_document(readingfiles.read_triplet_file(triplet_file, use_ocr=True))
+        self.train_from_corpus(corpus, category_list)
 
     def load(self, classifier_model_file):
         """Load the classifier data."""

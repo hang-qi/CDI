@@ -2,6 +2,7 @@
 import glob
 import sys
 sys.path.append('..')
+import os.path
 
 import cleansing
 import vocabulary
@@ -46,11 +47,11 @@ def read_testing_file(filenameprefix):
 
         # Only keep segments longer than 5 sentences
         segment_length = len(current_seg_sentences)
-        #if (segment_length > 5):
-        seg = [(sid + line_count_total) for sid in range(0, segment_length)]
-        true_segment.append(set(seg))
-        all_sentences.extend(current_seg_sentences)
-        line_count_total += segment_length
+        if (segment_length > 5):
+            seg = [(sid + line_count_total) for sid in range(0, segment_length)]
+            true_segment.append(set(seg))
+            all_sentences.extend(current_seg_sentences)
+            line_count_total += segment_length
     return [all_sentences, true_segment]
 
 
@@ -66,7 +67,7 @@ def load_model_parameters(training_file_in):
     prior_dist_range = 500
     for i in range(0, prior_dist_range):
         j = i + 1.0
-        length_prior.append(mpmath.mpf(10.0*norm(30, 20).pdf(j) + 5.0*norm(8, 20).pdf(j)))
+        length_prior.append(mpmath.mpf(10.0*norm(20, 15).pdf(j) + 5.0*norm(5, 15).pdf(j)))
         #length_prior.append(1)\
 
     # Norm the probability
@@ -75,7 +76,7 @@ def load_model_parameters(training_file_in):
     # Add the Total Segment Number Prior
     seg_num_prior = []
     for i in range(0, prior_dist_range):
-        seg_num_prior.append(mpmath.mpf(norm(20.0, 10.0).pdf(i)))
+        seg_num_prior.append(mpmath.mpf(norm(25.0, 10.0).pdf(i)))
     seg_num_prior = _prob_normalization(seg_num_prior)
 
     return [transition_prob, length_prior, seg_num_prior]
@@ -174,3 +175,32 @@ def _prob_normalization(dist):
     for i in range(0, len(dist)):
         dist[i] /= dist_sum
     return dist
+
+
+def read_triplet_file(triplet_filename, use_ocr=False):
+    ocr_file = None
+    np1_words = []
+    vp_words = []
+    np2_words = []
+    with open(triplet_filename, 'r') as f:
+        for line in f:
+            if(line[0] != '<'):
+                line = (line[:-2]).lower()
+                triplets = line.split('|')
+                np1_words.extend(cleansing.clean(triplets[0].split()))
+                if len(triplets) == 3:
+                    vp_words.extend(cleansing.clean(triplets[1].split()))
+                    np2_words.extend(cleansing.clean(triplets[2].split()))
+    ocr_words = []
+    if use_ocr:
+        ocr_file = triplet_filename.replace('data/triplet_files_new_test_set/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
+        if os.path.exists(ocr_file):
+            with open(ocr_file, 'r') as f:
+                for line in f:
+                    if(line[0] != '<'):
+                        line = (line[:-2]).lower()
+                        ocr_words.extend(cleansing.clean(line.split()))
+
+    timestamp = datetime.datetime.strptime(((triplet_filename.split('/')[-1]).split('_')[0]).split('.')[0], '%Y%m%d%H%M%S')
+    filename = triplet_filename.split('/')[-1][:-4].split('_')[1]
+    return document.OrignalDocument(filename, timestamp, np1_words, vp_words, np2_words, ocr_words)
