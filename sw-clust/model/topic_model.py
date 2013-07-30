@@ -411,9 +411,12 @@ class TopicModel(object):
         pass
 
     def feed(self, original_documents, need_segmentation=False):
-        # Do Segmentation (if not segmented)
+        if not self._has_initalized and need_segmentation:
+            raise ValueError(
+                'The topic model has to be initialized with segmented data.')
+
         if need_segmentation:
-            # TODO: Do segmentation first
+            # TODO: Do segmentation first if not segmented
             pass
 
         # Inference and attach to trees
@@ -426,14 +429,15 @@ class TopicModel(object):
         if (self._need_reform()):
             self._reform_by_multilevel_sw()
         self._has_initalized = True
+
+        # TODO: save self.topic_tree
+        # Consider to use 'pickle' to serialize object.
         pass
 
     def _inference(self, document):
         """Inference and attach the new document to the current topic tree."""
-        # TODO: This shall base on the likelihood and depth prior.
-        #   Search along the tree and evaluate a posterior probability at every
-        #   possible node to mount. Select the node with max posterior.
-        #       see _TreeNode.log_likelihood(document)
+        vertex_distribution = self._generate_document_vertex_distribution(document_feature)
+        self.topic_tree.inference(document, vertex_distribution)
         pass
 
     def _reform_by_multilevel_sw(self):
@@ -486,20 +490,23 @@ class TopicModel(object):
             self.topic_tree.print_hiearchy(labels=document_labels, synthesize_title=True, vocabularies=self.corpus.vocabularies)
             plotter.save('multilevel_sw_{0}.png'.format(level_counter))
 
-            # Determine if need more level.
-            # TODO: determine if need next level.
-            need_next_level = True
-        pass
+            if level_counter >= 2:
+                need_next_level = False
 
     def _generate_initial_vertex_distributions(self):
         initial_vertex_distributions = []
-        for (doc_id, document) in enumerate(self.corpus):
-            vertex_distribution = _VertexDistribution()
-            vertex_distribution.document_ids = [doc_id]
-            for word_type in WORD_TYPES:
-                vertex_distribution[word_type] = self.corpus.get_dococument_distribution(doc_id, word_type, include_ocr=True)
+        for document in self.corpus:
+            vertex_distribution = self._generate_document_vertex_distribution(
+                document)
             initial_vertex_distributions.append(vertex_distribution)
         return initial_vertex_distributions
+
+    def _generate_document_vertex_distribution(self, document):
+        vertex_distribution = _VertexDistribution()
+        vertex_distribution.document_ids = [document.doc_id]
+        for word_type in WORD_TYPES:
+            vertex_distribution[word_type] = self.corpus.get_dococument_distribution(document.doc_id, word_type, include_ocr=True)
+        return vertex_distribution
 
     def _generate_next_sw_config(self, current_vertex_distributions, current_clustering, level_counter):
         """Generate sw configuration for next run base on current clustering result."""
@@ -554,8 +561,11 @@ class _TreeNode(object):
         else:
             self._children = []
 
-    def __iter__(self):
-        return iter(self._children)
+    #def __iter__(self):
+    #    return iter(self._children)
+
+    def children(self):
+        return self._children
 
     def level(self):
         """The level count from bottom. Terminal node has level 0."""
@@ -574,8 +584,7 @@ class _TreeNode(object):
 
     def add_child(self, node):
         self._children.append(node)
-        # TODO: merge distribution after add a child
-        # What if add a node to a terminal node (document).
+        # FIXME: need to merge distribution after add a child?
 
     def get_child(self, index):
         return self._children[index]
@@ -638,6 +647,56 @@ class _Tree(object):
         self._root = new_root
         self._height += 1
 
+    def inference(self, document, vertex_distribution):
+        assert(self._height == 3)
+
+        # TODO: determine a threshold to do inference
+        cluster_threshold = 100.0
+        category_threshold = 50.0
+
+        # classify as category and get all cluster nodes.
+        cluster_nodes = []
+        (max_category_node, max_cateory_likelihood) = self._find_max_likelihood(
+            root.children(), document, children_list=cluster_nodes)
+        # classify into clusters.
+        (max_cluster_node, max_cluster_likelihood) = self._find_max_likelihood(
+            cluster_nodes, document)
+
+        new_document_node = _TreeNode(vertex_distribution)
+        if max_cluster_likelihood > cluster_threshold:
+            # if max_cluster_likelihood is greater than a threshold,
+            # we add this document into the cluster.
+            max_cluster_node.add_child(new_document_node)
+        elif max_cateory_likelihood > category_threshold:
+            # add document into the max_category_node,
+            # this document will create a new cluster containing its own.
+            new_cluster_node = _TreeNode(vertex_distribution)
+            new_cluster_node.add_child(new_document_node)
+            max_category_node.add_child(new_cluster_node)
+            pass
+        else:
+            # add document to the root node,
+            # create a category and cluster containing its own.
+            new_category_node = _TreeNode(vertex_distribution)
+            new_cluster_node = _TreeNode(vertex_distribution)
+            new_cluster_node.add_child(new_document_node)
+            new_category_node.add_child(new_cluster_node)
+            self._add_to_root(new_category_node)
+            pass
+        pass
+
+    def _find_max_likelihood(self, nodes, document, children_list=None):
+        max_likelihood = 0.0
+        max_node = None
+        for node in nodes:
+            if children_list is not None:
+                children_list.extend(node.children())
+            log_likelihood = node.log_likelihood(document)
+            if log_likelihood > max_likelihood:
+                max_likelihood = log_likelihood
+                max_node = node
+        return (max_node, max_likelihood)
+
     def print_hiearchy(self, labels=None, synthesize_title=False, vocabularies=None):
         self._print_hiearchy_recursive(self._root, labels=labels, synthesize_title=synthesize_title, vocabularies=vocabularies)
 
@@ -645,7 +704,7 @@ class _Tree(object):
         if synthesize_title:
             assert(vocabularies is not None)
             print('{0}+ {1}'.format(level_indents*'|  ', root.synthesize_title(vocabularies)))
-        for child_node in root:
+        for child_node in root.children():
             if not child_node.is_terminal():
                 # Have next level.
                 self._print_hiearchy_recursive(
@@ -674,7 +733,7 @@ class _Tree(object):
 
         if root.get_num_children() > 0:
             fw.write((level_indents+1)*'  ' + '"children": [')
-            for cid, child_node in enumerate(root):
+            for cid, child_node in enumerate(root.children()):
                 if not child_node.is_terminal():
                     # Have next level
                     self._print_hiearchy_recursive_json(
@@ -743,6 +802,7 @@ class _Corpus(object):
         # the vocabulary may grow due to the words not seen before.
         document_feature = self._convert_doc_to_feature(original_doc)
         self.documents.append(document_feature)
+        document_feature.doc_id = len(self.documents)-1
         return document_feature
 
     def _convert_doc_to_feature(self, original_doc):
@@ -789,6 +849,7 @@ class _DocumentFeature(object):
             WORD_TYPE_VP: vp_word_ids,
             WORD_TYPE_NP2: np2_word_ids}
         self.ocr_words = ocr_words
+        self.doc_id = None
 
 
 #
