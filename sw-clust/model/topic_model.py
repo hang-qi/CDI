@@ -557,6 +557,13 @@ class _TreeNode(object):
     def __iter__(self):
         return iter(self._children)
 
+    def level(self):
+        """The level count from bottom. Terminal node has level 0."""
+        if len(self._children) == 0:
+            return 0
+        else:
+            return self._children[0].level() + 1
+
     def log_likelihood(self, document):
         log_likelihood = mpmath.mpf(0.0)
         for word_type in WORD_TYPES:
@@ -577,12 +584,17 @@ class _TreeNode(object):
         return (len(self._children) == 0)
 
     def synthesize_title(self, vocabularies):
+        # select top words from NP1 and NP2 respectively.
         top_word_ids = self._vertex_distribution.get_top_word_ids(10, [WORD_TYPE_NP1, WORD_TYPE_NP2])
         np1_words = [vocabularies[WORD_TYPE_NP1].get_word(wid) for wid in top_word_ids[WORD_TYPE_NP1]]
         np2_words = [vocabularies[WORD_TYPE_NP2].get_word(wid) for wid in top_word_ids[WORD_TYPE_NP2]]
-        union = [w for w in np1_words if w in np2_words]
 
+        # Select the overlap words of NP1 and NP2 as title.
+        # If no overlap, we use top 3 words from NP1 combined with top 3 words
+        # from NP2.
+        union = [w for w in np1_words if w in np2_words]
         if len(union) > 0:
+            # FIXME: if only one or two words overlap, title may be too short.
             title = ' '.join(union)
         else:
             keep = np1_words[0:3]
