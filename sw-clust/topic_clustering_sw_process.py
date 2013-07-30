@@ -39,9 +39,6 @@ def main():
     input_triplet_files.sort()
     logging.debug('Files {0}'.format(len(input_triplet_files)))
 
-    # Generate initial corpus
-    initial_corpus = topic_model.Corpus()
-
     # Read in the triplets files, including the triplets and the time of the story
     original_documents = []
     for triplet_file in input_triplet_files:

@@ -13,7 +13,8 @@ class Classifier(object):
         if (model_filename is not None):
             self.load(model_filename)
 
-    def setup(self, class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_priors):
+    def setup(self, class_num, np1_voc, vp_voc, np2_voc,
+              np1_prob, vp_prob, np2_prob, class_priors):
         self._class_num = class_num
         self._vocabularies = {
             WORD_TYPE_NP1: np1_voc,
@@ -25,10 +26,29 @@ class Classifier(object):
             WORD_TYPE_NP2: np2_prob}
         self._class_priors = class_priors
 
-    # def build_from_corpus(self, corpus, class_list):
-        # TODO:
-        # prior from class list
-        # prob from get distribution
+    def train_from_corpus(self, corpus, category_list):
+        self._class_num = len(category_list)
+        # vocabularies
+        for word_type in WORD_TYPES:
+            self._vocabularies[word_type] = corpus.vocabularies[word_type]
+            self._probabilities[word_type] = probability.Probability(
+                self._vocabularies[word_type].size(), class_num)
+
+        # category likelihood and prior
+        self._class_priors = probability.Probability(1, self._class_num)
+        for (class_id, category_samples) in enumerate(category_list):
+            # likelihood
+            for word_type in WORD_TYPES:
+                distribution = probability.Distribution()
+                for doc_id in category_samples:
+                    distribution += corpus.get_dococument_distribution(
+                        doc_id, word_type, include_ocr=False)
+                for word_id in range(0, self._vocabularies[word_type].size()):
+                    self._probabilities[word_type][word_id, class_id] = \
+                        distribution[word_id]
+            # class prior
+            self._class_priors[class_id] = len(category_samples)
+        self._class_priors.normalize(row=0)
 
     def load(self, classifier_model_file):
         """Load the classifier data."""
@@ -64,7 +84,8 @@ class Classifier(object):
                 for i in range(0, class_num):
                     class_prior_prob.set_value(0, i, float(f.readline()[:-1]))
             else:
-                print('Class Number Does Not Match in File {0}'.format(classifier_model_file))
+                print('Class Number Does Not Match in File {0}'.format(
+                    classifier_model_file))
             f.readline()  # Blank line
 
             # (4) Vocabularies' Probability
@@ -77,7 +98,8 @@ class Classifier(object):
                         np1_prob.set_value(i, j, float(f.readline()[:-1]))
                     f.readline()  # Blank line
             else:
-                print('NP1 Number Does Not Match in File {0}'.format(classifier_model_file))
+                print('NP1 Number Does Not Match in File {0}'.format(
+                    classifier_model_file))
             f.readline()  # Blank line
             # VP
             if vp_num == int(f.readline()[:-1]):
@@ -88,7 +110,8 @@ class Classifier(object):
                         vp_prob.set_value(i, j, float(f.readline()[:-1]))
                     f.readline()  # Blank line
             else:
-                print('VP Number Does Not Match in File {0}'.format(classifier_model_file))
+                print('VP Number Does Not Match in File {0}'.format(
+                    classifier_model_file))
             f.readline()  # Blank line
             # NP2
             if np2_num == int(f.readline()[:-1]):
@@ -99,7 +122,8 @@ class Classifier(object):
                         np2_prob.set_value(i, j, float(f.readline()[:-1]))
                     f.readline()  # Blank line
             else:
-                print('NP2 Number Does Not Match in File {0}'.format(classifier_model_file))
+                print('NP2 Number Does Not Match in File {0}'.format(
+                    classifier_model_file))
             f.readline()  # Blank line
 
             # (5) Classes' Transition Matrix
@@ -118,24 +142,26 @@ class Classifier(object):
             # (6) Length Distribution
             #  Currently not calculated. TO be Added
 
-        self.setup(class_num, np1_voc, vp_voc, np2_voc, np1_prob, vp_prob, np2_prob, class_prior_prob)
+        self.setup(class_num, np1_voc, vp_voc, np2_voc,
+                   np1_prob, vp_prob, np2_prob, class_prior_prob)
 
     def predict(self, word_list_all_type, word_types):
         max_posterior = -1.0
         label = -1
 
-        likelihoods = self._calculate_likelihoods_all_types(word_list_all_type, word_types)
-        for class_index in range(0, self._class_num):
+        likelihoods = self._calculate_likelihoods_all_types(word_list_all_type,
+                                                            word_types)
+        for class_id in range(0, self._class_num):
             # likelihood
             likelihood = 1.0
             for word_type in word_types:
-                likelihood *= mpmath.mpf(likelihoods[word_type][class_index])
+                likelihood *= mpmath.mpf(likelihoods[word_type][class_id])
 
-            posterior = likelihood * mpmath.mpf(self._class_priors[class_index])
+            posterior = likelihood * mpmath.mpf(self._class_priors[class_id])
 
             if posterior > max_posterior:
                 max_posterior = posterior
-                label = class_index
+                label = class_id
         return [label, max_posterior]
 
     def _calculate_likelihoods_all_types(self, word_list_all_type, word_types):
@@ -144,11 +170,12 @@ class Classifier(object):
         for word_type in word_types:
             vocabulary = self._vocabularies[word_type]
             probability = self._probabilities[word_type]
-            likelihoods_all_types[word_type] = self._calculate_likelihoods(word_list_all_type[word_type], vocabulary, probability)
+            likelihoods_all_types[word_type] = self._calculate_likelihoods(
+                word_list_all_type[word_type], vocabulary, probability)
         return likelihoods_all_types
 
     def _calculate_likelihoods(self, word_list, voc, voc_prob):
-        """Calculate likelihood p(word_list|c) = \prod p(word|c) for all category c."""
+        """Calculate p(word_list|c) = \prod p(word|c) for all category c."""
         # Convert word into word ids
         word_ids = [voc.get_word_index(w) for w in word_list if w in voc]
 
@@ -187,5 +214,8 @@ class OneTypeClassifier(Classifier):
         likelihoods_all_types = dict()
         for word_type in word_types:
             # Use the same vocabulary and distribution for all word types.
-            likelihoods_all_types[word_type] = self._calculate_likelihoods(word_list_all_type[word_type], self._vocabulary, self._likelihoods)
+            likelihoods_all_types[word_type] = self._calculate_likelihoods(
+                word_list_all_type[word_type],
+                self._vocabulary,
+                self._likelihoods)
         return likelihoods_all_types
