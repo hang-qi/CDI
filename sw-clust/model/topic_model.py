@@ -194,7 +194,6 @@ class SWConfig(object):
         return mpmath.mpf(norm(1, 5).pdf(dif))
 
     def cooling_schedule(self, iteration_counter):
-        # TODO: Cooling schedule may depend on level.
         starting_temperature = 1000
         period = 5
         step_size = 5
@@ -430,7 +429,7 @@ class TopicModel(object):
             self._reform_by_multilevel_sw()
         self._has_initalized = True
 
-        # TODO: save self.topic_tree
+        # TODO: save the current status of topic model.
         # Consider to use 'pickle' to serialize object.
         pass
 
@@ -455,6 +454,10 @@ class TopicModel(object):
         # few shared words with the main corpus may potentially create a new
         # category branch.
 
+        # See also: (Related and affected functions / methods)
+        #   _generate_initial_vertex_distributions()
+        #   Corpus.get_dococument_distribution()
+        #   Corpus.add_document()
         vertex_distribution = self._generate_document_vertex_distribution(
             document_feature, include_ocr=False)
         self.topic_tree.inference(document, vertex_distribution)
