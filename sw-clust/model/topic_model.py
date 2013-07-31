@@ -35,8 +35,9 @@ class _Plotter(object):
         self.temperature_plot = self.fig.add_subplot(plt.subplot2grid((1, 3), (0, 2)))
 
     def set_ground_truth(self, ground_truth):
-        self.ground_truth = ground_truth
-        self._ground_truth_val = self._sw_config.energy(self.ground_truth)
+        if ground_truth is not None:
+            self.ground_truth = ground_truth
+            self._ground_truth_val = self._sw_config.energy(self.ground_truth)
 
     def plot_callback(self, clustering, context):
         for cluster in clustering:
@@ -494,18 +495,18 @@ class TopicModel(object):
 
             # FIXME: This condition check is keep here temporarily for testing level 2.
             # Remove 'if-condition' and only keep 'else' part before launch.
-            if (level_counter == 1):
-                current_clustering = ground_truth
-            else:
+            #if (level_counter == 1):
+            #    current_clustering = ground_truth
+            #else:
                 # Clustering by SW.
-                current_clustering = sw.sample(
-                    config.graph_size,
-                    config.edges,
-                    config.edge_prob_func,
-                    config.target_eval_func,
-                    intermediate_callback=plotter.plot_callback,
-                    initial_clustering=None,
-                    monitor_statistics=config.monitor_statistics)
+            current_clustering = sw.sample(
+                config.graph_size,
+                config.edges,
+                config.edge_prob_func,
+                config.target_eval_func,
+                intermediate_callback=plotter.plot_callback,
+                initial_clustering=None,
+                monitor_statistics=config.monitor_statistics)
             current_vertex_distributions = config.vertex_distributions
 
             # Save current clustering as a new level to the tree.
