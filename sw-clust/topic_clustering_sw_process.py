@@ -1,10 +1,7 @@
 import glob
 import logging
 from model import topic_model
-from model import document
-from preprocessing import cleansing
 from preprocessing import readingfiles
-import datetime
 
 
 def main():

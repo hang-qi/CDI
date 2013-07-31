@@ -3,9 +3,11 @@ import glob
 import sys
 sys.path.append('..')
 import os.path
+import datetime
 
 import cleansing
 import vocabulary
+from model.document import OrignalDocument
 from model.sentence import Sentence
 from model import probability
 
@@ -203,4 +205,4 @@ def read_triplet_file(triplet_filename, use_ocr=False):
 
     timestamp = datetime.datetime.strptime(((triplet_filename.split('/')[-1]).split('_')[0]).split('.')[0], '%Y%m%d%H%M%S')
     filename = triplet_filename.split('/')[-1][:-4].split('_')[1]
-    return document.OrignalDocument(filename, timestamp, np1_words, vp_words, np2_words, ocr_words)
+    return OrignalDocument(filename, timestamp, np1_words, vp_words, np2_words, ocr_words)
