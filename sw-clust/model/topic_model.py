@@ -636,8 +636,11 @@ class _TreeNode(object):
         # from NP2.
         union = [w for w in np1_words if w in np2_words]
         if len(union) > 0:
-            # FIXME: if only one or two words overlap, title may be too short.
-            title = ' '.join(union)
+            more = []
+            if len(union) < 3:
+                more.extend([w for w in np1_words[0:3] if w not in union])
+                more.extend([w for w in np2_words[0:3] if w not in union])
+            title = ' '.join(union.extend(more))
         else:
             keep = np1_words[0:3]
             keep.extend(np2_words[0:3])
