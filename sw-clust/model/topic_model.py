@@ -640,7 +640,8 @@ class _TreeNode(object):
             if len(union) < 3:
                 more.extend([w for w in np1_words[0:3] if w not in union])
                 more.extend([w for w in np2_words[0:3] if w not in union])
-            title = ' '.join(union.extend(more))
+            union.extend(more)
+            title = ' '.join(union)
         else:
             keep = np1_words[0:3]
             keep.extend(np2_words[0:3])
