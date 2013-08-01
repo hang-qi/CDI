@@ -514,6 +514,11 @@ class TopicModel(object):
             self.topic_tree.print_hiearchy(labels=document_labels, synthesize_title=True, vocabularies=self.corpus.vocabularies)
             plotter.save('multilevel_sw_{0}.png'.format(level_counter))
 
+            # To have a classifier out of first level clustering
+            #if level_counter == 1:
+                #classifier = Classifier()
+                #classifier.train_from_corpus(self.corpus, current_clustering)
+
             if level_counter >= 2:
                 need_next_level = False
 
