@@ -65,7 +65,8 @@ class Distribution(object):
         """Synthesize a set of words from the distribution."""
         indexes = np.argsort(self._hist)
         top_words_id = indexes[::-1][0:min(num_words, len(self._hist))]
-        return top_words_id.tolist()
+        filtered_id = [wid for wid in top_words_id if self._hist[wid] > 0]
+        return filtered_id
 
 
 class Probability(object):
