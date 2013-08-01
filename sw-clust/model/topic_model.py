@@ -222,15 +222,15 @@ class SWConfigLevel2(SWConfig):
         return '{0}, {1}'.format(s, t)
 
     def _precalculate_all_similarities(self):
-        try:
-            # Load pre-calculated result
-            with open('similarity_cache.dat') as similarity_file:
-                self._similarity_cache = pickle.load(similarity_file)
-                logging.debug('Similarity cache loaded.')
-                return
-        except IOError:
-            # Calculate and Dump
-            pass
+        # try:
+        #     # Load pre-calculated result
+        #     with open('similarity_cache.dat') as similarity_file:
+        #         self._similarity_cache = pickle.load(similarity_file)
+        #         logging.debug('Similarity cache loaded.')
+        #         return
+        # except IOError:
+        #     # Calculate and Dump
+        #     pass
 
         types_of_interest = [WORD_TYPE_NP1, WORD_TYPE_NP2]
         words_all_types = []
@@ -250,9 +250,9 @@ class SWConfigLevel2(SWConfig):
                 logging.debug('Cache vertex similarity {0}, {1} = {2}'.format(s, t, distance_s_t))
 
         # Dump result.
-        with open('similarity_cache.dat', 'w') as similarity_file:
-            pickle.dump(self._similarity_cache, similarity_file)
-            logging.debug('Similarity cache saved.')
+        #with open('similarity_cache.dat', 'w') as similarity_file:
+        #    pickle.dump(self._similarity_cache, similarity_file)
+        #    logging.debug('Similarity cache saved.')
 
     def _min_similarity_within_cluster(self, cluster_vertex_set, cluster_distribution):
         cluster = list(cluster_vertex_set)
