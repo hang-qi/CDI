@@ -9,33 +9,31 @@ import config
 
 
 class MatchingAlert:
-
-    def __init__(self, captionFilename, transcriptFilename):
-        self.captionFilename = captionFilename
-        self.transcriptFilename = transcriptFilename
+    def __init__(self, caption_filename, transcript_filename):
+        self.caption_filename = caption_filename
+        self.transcript_filename = transcript_filename
 
 
 # Rematch the given transcript file with a set of caption files,
 # determine the best match by the highest similarity score, given by aligner.
-def rematch(matchingAlert):
-    candidateList = generateCandidiates(matchingAlert.captionFilename)
+def rematch(matching_alert):
+    candidateList = generate_candidiates(matching_alert.caption_filename)
     parameters = [config.ROOT_ALIGNER +
-                  'aligner', matchingAlert.transcriptFilename]
+                  'aligner', matching_alert.transcript_filename]
     parameters.extend(candidateList)
-    r = subprocess.call(parameters)
+    subprocess.call(parameters)
     return
 
 
-def generateCandidiates(captionFilename):
+def generate_candidiates(caption_filename):
     """Returns a list of candidate caption files based on
     the purposed caption file."""
     reprog = re.compile(r"""/tv/20\d\d/20\d\d-\d\d/20\d\d-\d\d-\d\d/
         (20\d\d)-(\d\d)-(\d\d)_(\d\d)(\d\d)_(.+)""", re.I | re.X)
     candidateList = []
     utcTime = datetime.datetime(2000, 1, 1, 0, 0, tzinfo=timezone.Utc)
-    name = ""
 
-    m = reprog.match(captionFilename)
+    m = reprog.match(caption_filename)
     if not m:
         print("Caption filename is not well-formated.")
         return []
@@ -45,7 +43,6 @@ def generateCandidiates(captionFilename):
         print("Caption filename is not well-formated.")
         return []
 
-    name = g[5]
     utcTime = utcTime.replace(year=int(g[0]),
                               month=int(g[1]),
                               day=int(g[2]),
@@ -54,32 +51,28 @@ def generateCandidiates(captionFilename):
 
     for deltaHour in range(-1, 5):
         newUtcTime = utcTime + datetime.timedelta(hours=deltaHour)
-        #newFilename = "/tv/{0:%Y/%Y-%m/%Y-%m-%d/%Y-%m-%d_%H%M}_{1}".format(
-        #    newUtcTime, name)
-        #candidateList.append(newFilename)
 
         # match all CNN file within the time range.
         candidate_pattern = "/tv/{0:%Y/%Y-%m/%Y-%m-%d/%Y-%m-%d_%H%M}_US_CNN_*.txt".format(
             newUtcTime)
         candidateList.extend(glob.glob(candidate_pattern))
 
-        
     return candidateList
 
     #/tv/2012/2012-01/2012-01-05/2012-01-05_2100_US_CNN_Situation_Room.txt
     #/tvspare/transcripts/CNN-automated/2012/2012-01/2012-01-05/2012-01-05_2100_US_CNN_Situation_Room.rawtxt
 
 
-def getMatchingAlerts(alertFilename):
-    """Returns missing alerts in a list given the alertFilename.
+def get_matching_alerts(alert_filename):
+    """Returns missing alerts in a list given the alert_filename.
     Each element is an instance of MatchingAlert class."""
     reprog = re.compile(r"""^.*\[MATCHING\sALERT\]\s.*
         Caption:\s(.+)\s
         Transcript:\s(.+).*$""", re.I | re.X)
     alerts = []
-    fr = open(alertFilename, "r")
-    for alertLine in fr:
-        m = reprog.match(alertLine)
+    fr = open(alert_filename, "r")
+    for alertline in fr:
+        m = reprog.match(alertline)
         if m:
             g = m.groups()
             if (len(g) == 2):
@@ -107,14 +100,14 @@ def main():
 
     dt_start = datetime.datetime.now()
     alertsFilename = sys.argv[1]
-    matchingAlerts = getMatchingAlerts(alertsFilename)
-    print("{0} matching alerts found.".format(len(matchingAlerts)))
+    matching_alerts = get_matching_alerts(alertsFilename)
+    print("{0} matching alerts found.".format(len(matching_alerts)))
     print("Start rematching...")
-    for alert in matchingAlerts:
+    for alert in matching_alerts:
         print('-' * 20)
-        print("Rematching transcript file: " + alert.transcriptFilename)
+        print("Rematching transcript file: " + alert.transcript_filename)
         rematch(alert)
-    print("Done. {0} rematchings performed.".format(len(matchingAlerts)))
+    print("Done. {0} rematchings performed.".format(len(matching_alerts)))
 
     dt_end = datetime.datetime.now()
     print('=' * 20)
@@ -124,7 +117,7 @@ def main():
     print("    Runtime:    {0}".format(str(dt_end - dt_start)))
     print("")
     print("[TIMER] {0} rematchings performed. -- runtime {1} started at {2:%Y-%m-%d %H:%M}.".format(
-        len(matchingAlerts), str(dt_end - dt_start), dt_start))
+        len(matching_alerts), str(dt_end - dt_start), dt_start))
     print('=' * 20)
 
 if __name__ == '__main__':

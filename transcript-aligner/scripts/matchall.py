@@ -1,16 +1,16 @@
 import os
 import sys
-import matchfile
 import datetime
 import subprocess
 import re
+import htmlparser
 
 import config
-import htmlparser
 import timezone
+import matchfile
 
 
-def getHTMLFiles(directory):
+def get_html_files(directory):
     """Traverse all files under given dir, save all filenames in a list."""
     files = []
     for dirpath, dirnames, filenames in os.walk(directory):  # Walk directory tree
@@ -21,31 +21,28 @@ def getHTMLFiles(directory):
     return files
 
 
-def renameHTMLTranscript(oldFilename, newFilename):
+def rename_html_transcript(old_filename, new_filename):
     """Rename the HTML transcript by cp."""
-    if not os.path.exists(newFilename):
-        # os.system("cp -p {src} {tgt}".format(src=oldFilename,
-        # tgt=newFilename))
-
+    if not os.path.exists(new_filename):
         # Make new directory if necessary.
-        directory = '/'.join(newFilename.split('/')[0:-1])
+        directory = '/'.join(new_filename.split('/')[0:-1])
         if not os.path.exists(directory):
             os.mkdirs(directory)
 
-        r = subprocess.call(['cp', '-p', oldFilename, newFilename])
-        print('[GOOD] HTML renamed: {0}'.format(newFilename))
+        subprocess.call(['cp', '-p', old_filename, new_filename])
+        print('[GOOD] HTML renamed: {0}'.format(new_filename))
     else:
-        print('[GOOD] HTML exists: {0}'.format(newFilename))
+        print('[GOOD] HTML exists: {0}'.format(new_filename))
     return True
 
 
-def matchAll(htmlTranscriptFiles, skipExistingTpt=False):
+def match_all(html_transcript_files, skip_existing_tpt=False):
     dt_dayStart = datetime.datetime.now()
     num_integrated = 0
     num_dayintegrated = 0
     num_daycount = 0
 
-    for originalHTMLTranscript in htmlTranscriptFiles:
+    for original_html_transcript in html_transcript_files:
 
         # Time keeping for each day
         dt_dayNow = datetime.datetime.now()
@@ -57,62 +54,62 @@ def matchAll(htmlTranscriptFiles, skipExistingTpt=False):
         num_daycount += 1
 
         print('-' * 20)
-        print('For ' + originalHTMLTranscript.replace(
-            os.path.dirname(originalHTMLTranscript), ''))
+        print('For ' + original_html_transcript.replace(
+            os.path.dirname(original_html_transcript), ''))
 
         try:
-            (targetHTMLFilename, targetCaptionFilename) = matchfile.get_transcript_caption_pair(
-                originalHTMLTranscript)
+            (target_html_filename, target_caption_filename) = matchfile.get_transcript_caption_pair(
+                original_html_transcript)
 
-            if (len(targetHTMLFilename) == 0):
+            if (len(target_html_filename) == 0):
                 continue
 
             caption_exists = False
             transcript_exists = False
 
             # Check if the caption file with same name exists.
-            if not os.path.exists(targetCaptionFilename):
+            if not os.path.exists(target_caption_filename):
                 print('[MISSING ALERT] Caption missing at {0}'.format(
-                    targetCaptionFilename))
+                    target_caption_filename))
             else:
                 print('[GOOD] Caption found at {0}'.format(
-                    targetCaptionFilename))
+                    target_caption_filename))
                 caption_exists = True
 
             # Rename HTML transcript file.
-            transcript_exists = renameHTMLTranscript(
-                originalHTMLTranscript, targetHTMLFilename)
+            transcript_exists = rename_html_transcript(
+                original_html_transcript, target_html_filename)
 
             if (transcript_exists):
                 # Generate rawtxt for renamed html transcript file.
-                parsedTranscriptFilename = htmlparser.convert_to_rawtxt(targetHTMLFilename)
+                parsed_transcript_filename = htmlparser.convert_to_rawtxt(target_html_filename)
                 #r = subprocess.call(
-                #    ['python3', config.ROOT_SCRIPT + 'htmlparser.py', targetHTMLFilename])
-                tptFilename = targetHTMLFilename.replace('.html', '.tpt')
+                #    ['python3', config.ROOT_SCRIPT + 'htmlparser.py', target_html_filename])
+                tptFilename = target_html_filename.replace('.html', '.tpt')
 
                 # Skip existing tpt files if this option is activated.
-                if os.path.exists(tptFilename) and skipExistingTpt:
+                if os.path.exists(tptFilename) and skip_existing_tpt:
                     print('[SKIPPED] TPT file exists.')
                     continue
 
                 if not caption_exists:
                     # When caption does not exist, see if the transcript is half hour.
                     # if so combine two rawtxt files and redo the match.
-                    aired_datetime = extract_datetime(parsedTranscriptFilename)
+                    aired_datetime = extract_datetime(parsed_transcript_filename)
                     if (aired_datetime.minute == 30):
-                        second_half_rawtxt = parsedTranscriptFilename
-                        first_half_rawtxt = replace_airedtime(parsedTranscriptFilename, aired_datetime, aired_datetime.replace(minute=0))
-                        targetCaptionFilename = replace_airedtime(targetCaptionFilename, aired_datetime, aired_datetime.replace(minute=0))
+                        second_half_rawtxt = parsed_transcript_filename
+                        first_half_rawtxt = replace_airedtime(parsed_transcript_filename, aired_datetime, aired_datetime.replace(minute=0))
+                        target_caption_filename = replace_airedtime(target_caption_filename, aired_datetime, aired_datetime.replace(minute=0))
 
-                        if os.path.exists(first_half_rawtxt) and os.path.exists(second_half_rawtxt) and os.path.exists(targetCaptionFilename):
-                            parsedTranscriptFilename = htmlparser.combine_rawtxt(first_half_rawtxt, second_half_rawtxt)
+                        if os.path.exists(first_half_rawtxt) and os.path.exists(second_half_rawtxt) and os.path.exists(target_caption_filename):
+                            parsed_transcript_filename = htmlparser.combine_rawtxt(first_half_rawtxt, second_half_rawtxt)
                             print('[MERGED] Transcript merged: {0} and {1}'.format(first_half_rawtxt, second_half_rawtxt))
                             transcript_exists = True
                             caption_exists = True
 
             if transcript_exists and caption_exists:
-                r = subprocess.call(
-                    [config.ROOT_ALIGNER + 'aligner', targetCaptionFilename, parsedTranscriptFilename])
+                subprocess.call(
+                    [config.ROOT_ALIGNER + 'aligner', target_caption_filename, parsed_transcript_filename])
                 num_integrated += 1
                 num_dayintegrated += 1
             pass
@@ -158,21 +155,21 @@ def main():
         print('e.g. > Python3 matchall.py -s data/')
         return
 
-    transcriptFolder = ''
-    skipExistingTpt = False
+    transcript_dir = ''
+    skip_existing_tpt = False
     if len(sys.argv) == 2:
-        transcriptFolder = sys.argv[1]
+        transcript_dir = sys.argv[1]
     elif len(sys.argv) == 3:
         assert(sys.argv[1] == '-s')
-        skipExistingTpt = True
-        transcriptFolder = sys.argv[2]
+        skip_existing_tpt = True
+        transcript_dir = sys.argv[2]
 
     dt_start = datetime.datetime.now()
-    print("Processing Transcript directory:" + transcriptFolder)
+    print("Processing Transcript directory:" + transcript_dir)
     print("Traversing...")
-    htmlTranscriptFiles = getHTMLFiles(transcriptFolder)
+    html_transcript_files = get_html_files(transcript_dir)
     print("Making copies...")
-    num_integrated = matchAll(htmlTranscriptFiles, skipExistingTpt)
+    num_integrated = match_all(html_transcript_files, skip_existing_tpt)
     dt_end = datetime.datetime.now()
     print("Done.")
 
@@ -183,7 +180,7 @@ def main():
     print("    Runtime:    {0}".format(str(dt_end - dt_start)))
     print("")
     print("[TIMER] {0} of {1} transcripts integrated -- runtime {2} started at {3:%Y-%m-%d %H:%M}.".format(
-        num_integrated, len(htmlTranscriptFiles), str(dt_end - dt_start), dt_start))
+        num_integrated, len(html_transcript_files), str(dt_end - dt_start), dt_start))
     print('=' * 20)
 
 if __name__ == '__main__':
