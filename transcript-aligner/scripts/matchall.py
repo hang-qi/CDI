@@ -4,6 +4,7 @@ import datetime
 import subprocess
 import re
 import htmlparser
+import argparse
 
 import config
 import timezone
@@ -147,22 +148,17 @@ def extract_datetime(filename):
     return utcTime
 
 def main():
-    if (len(sys.argv) < 2):
-        print('Usage:  Python3 matchall.py [-s] <transcript_folder>')
-        print('Option: -s     skip matching if tpt file exists.')
-        print('')
-        print('e.g. > Python3 matchall.py data/')
-        print('e.g. > Python3 matchall.py -s data/')
-        return
+    parser = argparse.ArgumentParser(description="""Match all html transcript
+        in the given directory and generate corresponding tpt files.""")
+    parser.add_argument('transcript_dir', metavar='transcript_dir',
+                       help='the directory containing html transcript files')
+    parser.add_argument('-s', dest='skip_existing', action='store_true',
+                       default=False,
+                       help='skip the existing tpt files')
+    args = parser.parse_args()
 
-    transcript_dir = ''
-    skip_existing_tpt = False
-    if len(sys.argv) == 2:
-        transcript_dir = sys.argv[1]
-    elif len(sys.argv) == 3:
-        assert(sys.argv[1] == '-s')
-        skip_existing_tpt = True
-        transcript_dir = sys.argv[2]
+    transcript_dir = args.transcript_dir
+    skip_existing_tpt = args.skip_existing
 
     dt_start = datetime.datetime.now()
     print("Processing Transcript directory:" + transcript_dir)

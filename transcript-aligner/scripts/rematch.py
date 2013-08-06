@@ -1,11 +1,11 @@
-import sys
 import re
 import datetime
 import subprocess
-import timezone
 import glob
+import argparse
 
 import config
+import timezone
 
 
 class MatchingAlert:
@@ -93,14 +93,16 @@ def get_matching_alerts(alert_filename):
 # In which the match_alerts.txt shall be grep-ed from the running result of
 # matchall.py. It only consists matching alerts, one line each.
 def main():
-    if (len(sys.argv) < 2):
-        print("Usage:")
-        print("   > python3 rematch.py match_alerts.txt")
-        return
+    parser = argparse.ArgumentParser(description='Rematch based on matching alerts.')
+    parser.add_argument('alert_filename', metavar='match_alert_file',
+                       help="""the match alert file shall be grep-ed from
+                        the result of matchall.py.
+                        Each line is a matching alert.""")
+    args = parser.parse_args()
 
+    alert_filename = args.alert_filename
     dt_start = datetime.datetime.now()
-    alertsFilename = sys.argv[1]
-    matching_alerts = get_matching_alerts(alertsFilename)
+    matching_alerts = get_matching_alerts(alert_filename)
     print("{0} matching alerts found.".format(len(matching_alerts)))
     print("Start rematching...")
     for alert in matching_alerts:
