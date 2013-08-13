@@ -7,11 +7,11 @@ namespace utility
         // Trim all occurrence of characters in trimChars from the front of str
         std::string trim_front(const std::string& str, const std::string& trimChars)
         {
-            int i = 0;
+            unsigned int i = 0;
             for (i = 0; i < str.size(); i++)
             {
                 bool found = false;
-                for (int j = 0; j < trimChars.size(); j++)
+                for (unsigned int j = 0; j < trimChars.size(); j++)
                 {
                     if (str[i] == trimChars[j])
                         found = true;
@@ -25,11 +25,11 @@ namespace utility
         // Trim all occurrence of characters in trimChars from the end of str
         std::string trim_end(const std::string& str, const std::string& trimChars)
         {
-            int i = 0;
+            unsigned int i = 0;
             for (i = str.size()-1; i >= 0; i--)
             {
                 bool found = false;
-                for (int j = 0; j < trimChars.size(); j++)
+                for (unsigned int j = 0; j < trimChars.size(); j++)
                 {
                     if (str[i] == trimChars[j])
                         found = true;
@@ -90,7 +90,7 @@ namespace utility
 
         std::vector<std::string> split(const std::string& str, char deliminator)
         {
-            std::vector<std::string> parts;         
+            std::vector<std::string> parts;
             size_t begin = 0;
             size_t found = str.find(deliminator, begin);
             while (found != std::string::npos)
@@ -106,7 +106,7 @@ namespace utility
 
         bool has_lower_case(const std::string& str)
         {
-            for (int i = 0; i < str.size(); i++)
+            for (unsigned int i = 0; i < str.size(); i++)
             {
                 if (str[i] >= 'a' && str[i] <= 'z')
                 {
@@ -119,7 +119,7 @@ namespace utility
         bool has_no_letter(const std::string& str)
         {
             char c;
-            for (int i = 0; i < str.size(); i++)
+            for (unsigned int i = 0; i < str.size(); i++)
             {
                 c = tolower(str[i]);
                 if (c >= 'a' && c <= 'z')
@@ -155,4 +155,4 @@ namespace utility
             return result;
         }
     }
-} 
+}

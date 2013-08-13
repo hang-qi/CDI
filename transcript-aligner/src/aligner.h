@@ -28,7 +28,7 @@
 #define CHEVRON_STORY       ">>>"
 
 // a self-defined flag for easy processing
-#define COMMERCIAL_END      "(COMMERCIAL END)" 
+#define COMMERCIAL_END      "(COMMERCIAL END)"
 
 
 // For test
@@ -88,7 +88,7 @@ public:
     {
         percentageOfSame = 0;
     }
-    
+
     Caption alignedCaption;
     double percentageOfSame;
 };
@@ -121,13 +121,13 @@ private:
     {
         if (table_ != 0)
         {
-            for (int i = 0; i < captionWords_.size(); ++i)
+            for (unsigned int i = 0; i < captionWords_.size(); ++i)
             {
                 delete [] table_[i];
                 table_[i] = 0;
             }
             delete [] table_;
-            table_ = 0; 
+            table_ = 0;
         }
     }
 
@@ -140,12 +140,12 @@ private:
 
         // create a table
         table_ = new Cell*[captionWords_.size()];
-        for (int i = 0; i < captionWords_.size(); ++i)
+        for (unsigned int i = 0; i < captionWords_.size(); ++i)
         {
             table_[i] = new Cell[transcriptWords_.size()];
         }
 
-        for (int i = 0; i < transcriptWords_.size(); ++i)
+        for (unsigned int i = 0; i < transcriptWords_.size(); ++i)
         {
             table_[0][i].cost = i;
             if (i > 0)
@@ -157,8 +157,8 @@ private:
                 table_[0][i].parent = -1;
             }
         }
-        
-        for (int i = 0; i < captionWords_.size(); ++i)
+
+        for (unsigned int i = 0; i < captionWords_.size(); ++i)
         {
             table_[i][0].cost = i;
             if (i > 0)
@@ -169,7 +169,7 @@ private:
             {
                 table_[i][0].parent = -1;
             }
-        }   
+        }
     }
 
     int MatchCost(const string& cap, const string& trans);
@@ -183,9 +183,9 @@ private:
         return (table_[i][j].cost);
     }
 
-    void PerformMatch(int i, int j);
-    void PerformInsert(int i, int j);
-    void PerformDelete(int i, int j);
+    void PerformMatch(unsigned int i, unsigned int j);
+    void PerformInsert(unsigned int i, unsigned int j);
+    void PerformDelete(unsigned int i, unsigned int j);
 
 private:
     const Caption* pCaption_;
@@ -200,10 +200,10 @@ private:
     vector<int> resultLineLengths_;
 
     PersonDetector personDetector_;
-    
+
     // helper variables for recover timestamp
-    int iCurrentLine_;
-    int currentLineBoundary_;
+    unsigned int iCurrentLine_;
+    unsigned int currentLineBoundary_;
 };
 
 #endif

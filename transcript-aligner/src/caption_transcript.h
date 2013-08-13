@@ -168,17 +168,17 @@ public:
         if (fout.bad())
             return;
 
-        for(int i = 0; i < headerLines.size(); i++)
+        for(unsigned int i = 0; i < headerLines.size(); i++)
         {
             fout << headerLines[i] << endl;
         }
 
-        for(int i = 0; i < captionLines.size(); i++)
+        for(unsigned int i = 0; i < captionLines.size(); i++)
         {
             captionLines[i].Print(fout);
         }
 
-        for(int i = 0; i < endLines.size(); i++)
+        for(unsigned int i = 0; i < endLines.size(); i++)
         {
             fout << endLines[i] << endl;
         }
@@ -188,7 +188,7 @@ private:
     const int ConvertToWords()
     {
         BuildLines();
-        for(int i = 0; i < captionLines.size(); i++)
+        for(unsigned int i = 0; i < captionLines.size(); i++)
         {
             stringstream ss(captionLines[i].content);
             int numWords = 0;

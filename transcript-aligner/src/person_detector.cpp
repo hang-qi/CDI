@@ -27,12 +27,12 @@ bool PersonDetector::GetSpeakerName(string& word, string& name)
 // Return a SPK string in format of Person=name|Role=role
 // Given a longNameString in transcript like "name, role:"
 string PersonDetector::GetSPKString(const string& longNameStr)
-{   
+{
     using namespace utility::string_utility;
 
     string name;
     vector<string> roles;
- 
+
     // erase the ending ':'
     string longNameString = trim_end(longNameStr, ":");
 
@@ -51,9 +51,9 @@ string PersonDetector::GetSPKString(const string& longNameStr)
     // deliminated by ',', the first part is NAME, second part is ROLE
     size_t found = longNameString.find(',');
     if (found != string::npos)
-    {   // if the person name has a corresponding role, 
+    {   // if the person name has a corresponding role,
         // we store the SPK string in a table with the person's last name as key
-        // so that we can look up the table for the full SPK string 
+        // so that we can look up the table for the full SPK string
         // when his/her last name appears again.
 
         name = ConvertToCamalStyle(longNameString.substr(0 ,found));
@@ -85,10 +85,10 @@ string PersonDetector::GetSPKString(const string& longNameStr)
         {
             name = trim(replace(name, lastPart, ""));
             lastName = nameParts[nameParts.size() - 2];
-            
+
             string party, state;
-            GetPartyAndState(lastPart, party, state);           
-            
+            GetPartyAndState(lastPart, party, state);
+
             additionalInfo = "|Party=" + party;
             //nerString = "Person=" + name + "|Role=" + trim_front(role) + "|Party=" + party;
             if (!state.empty())
@@ -99,7 +99,7 @@ string PersonDetector::GetSPKString(const string& longNameStr)
 
         // name, role, additional info
         nerString = "Person=" + name;
-        for (int i = 0; i < roles.size(); i++)
+        for (unsigned int i = 0; i < roles.size(); i++)
         {
             if (roles[i] != "")
             {
@@ -112,7 +112,7 @@ string PersonDetector::GetSPKString(const string& longNameStr)
     }
     else
     {
-        // if the name appears alone without a corresponding role, 
+        // if the name appears alone without a corresponding role,
         // we look up the last name in table.
         // If found we use the previously stored SPK string.
         // Otherwise, just display the name as it is.
@@ -134,7 +134,7 @@ string PersonDetector::GetSPKString(const string& longNameStr)
     }
     else if(isVoiceOver)
     {
-        nerString.append("|Type=Voice-Over");   
+        nerString.append("|Type=Voice-Over");
     }
 
     return nerString;
@@ -152,8 +152,8 @@ bool PersonDetector::isState(const string& str)
         "mississippi", "missouri", "montana", "nebraska", "nevada",
         "new hampshire", "new jersey", "new mexico", "new york",
         "north carolina", "north dakota", "ohio", "oklahoma", "oregon",
-        "pennsylvania", "rhode island", "south carolina", "south dakota", 
-        "tennessee", "texas", "utah", "vermont", "virginia", "washington", 
+        "pennsylvania", "rhode island", "south carolina", "south dakota",
+        "tennessee", "texas", "utah", "vermont", "virginia", "washington",
         "west virginia", "wisconsin", "wyoming"
     };
     static set<string> states(states_array,

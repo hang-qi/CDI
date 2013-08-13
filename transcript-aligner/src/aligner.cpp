@@ -141,7 +141,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
         // string previousSegType = "Intro";
     }
 
-    for (int i = 0; i < resultLineLengths_.size(); i++)
+    for (unsigned int i = 0; i < resultLineLengths_.size(); i++)
     {
         // For each line in caption, we want to find aligend text.
         // However, one line may contains several sublines deliminated by
@@ -221,7 +221,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
         string currentTimestamp = pCaption_->captionLines[i].timestamp;
         string currentTimestamp_end = pCaption_->captionLines[i].timestamp_end;
         string previousTimestamp = i > 0 ? pCaption_->captionLines[i-1].timestamp : pCaption_->captionLines[0].timestamp;
-        for (int k = 0; k < sublines.size(); k++)
+        for (unsigned int k = 0; k < sublines.size(); k++)
         {
             if (utility::string_utility::trim(sublines[k]).empty())
             {
@@ -323,7 +323,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                 if (k+1 < sublines.size() && sublines[k+1] == COMMERCIAL_END
                     && !pCaption_->isInterpolated)
                 {// Adjust start time for empty commercials
-                    for (int k = 0; k < linesBuffer.size(); k++)
+                    for (unsigned int k = 0; k < linesBuffer.size(); k++)
                     {
                         linesBuffer[k].timestamp = utility::datetime_utility::timestampAdd(previousTimestamp, 1);
                     }
@@ -347,7 +347,7 @@ const Caption Aligner::BuildTimeAlignedCaption()
                 //tptCaption.captionLines.push_back(line);
             }
         }
-        for (int k = 0; k < linesBuffer.size(); k++)
+        for (unsigned int k = 0; k < linesBuffer.size(); k++)
         {
             tptCaption.captionLines.push_back(linesBuffer[k]);
             if (linesBuffer[k].tag == "SEG")
@@ -423,7 +423,7 @@ void Aligner::AddEndTimeToTag(vector<CaptionLine>& lines, int index, string time
 int Aligner::Compare()
 {
     int opt[3];
-    int i = 0, j = 0;
+    unsigned int i = 0, j = 0;
     for (i = 1; i < captionWords_.size(); ++i)
     {
         for (j = 1; j < transcriptWords_.size(); ++j)
@@ -503,7 +503,7 @@ int Aligner::DeleteCost(const string& cap, const string& trans)
     return 1;
 }
 
-void Aligner::PerformMatch(int i, int j)
+void Aligner::PerformMatch(unsigned int i, unsigned int j)
 {
     assert(i < captionWords_.size() && j < transcriptWords_.size());
     // use the same word will not affect the timepoint offset
@@ -528,7 +528,7 @@ void Aligner::PerformMatch(int i, int j)
     }
 }
 
-void Aligner::PerformInsert(int i, int j)
+void Aligner::PerformInsert(unsigned int i, unsigned int j)
 {
     assert(i < captionWords_.size());
     assert(j < transcriptWords_.size());
@@ -545,7 +545,7 @@ void Aligner::PerformInsert(int i, int j)
     counter_.num_insert++;
 }
 
-void Aligner::PerformDelete(int i, int j)
+void Aligner::PerformDelete(unsigned int i, unsigned int j)
 {
     assert(i < captionWords_.size() && j < transcriptWords_.size());
 
