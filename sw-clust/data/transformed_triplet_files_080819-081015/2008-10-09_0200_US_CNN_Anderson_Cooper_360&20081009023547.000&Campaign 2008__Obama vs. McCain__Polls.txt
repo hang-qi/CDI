@@ -1,0 +1,43 @@
+<story>Campaign 2008 / Obama vs. McCain / Polls</story>
+<start>20081009023547.000</start>
+<end>20081009024012.000</end>
+us | look | the latest numbers 
+Obama | leads | McCain 
+they | 'll probably decide | the outcome 
+a Research poll | has | Obama 
+54 percent | said | he 
+Most of the post debate polls | are | Obama's favor 
+it | is | the debate 
+itself | was | a game changer 
+us | see where | the electoral map 
+John King | has | a look 
+> | > | J. KING 
+three weeks | left | the candidates 
+the Electoral College map | is leaning lopsidedly | favor of Barack Obama 
+You | know | the math 
+It | takes | 270 
+McCain | leading | states 
+Barack Obama | to get | the magic number of 270 
+Joe Biden | was campaigning | today 
+the Democrats | win | the White House 
+us | assume | one 
+George W. Bush | carried | it 
+Where else | could Barack | Obama 
+he | 's doing very well | the moment 
+that | was | a Bush state 
+he | wins | the White House 
+we | begin | the day 
+John McCain | get | 270 
+he | has to hold | Florida's 27 electoral votes 
+He | has to put | North Carolina 
+Ohio | has | 20 electoral votes 
+he | gets | all of those 
+That | would just get | McCain 
+He | would then have to run | the board 
+he | would just get | the 270 mark 
+you | look | the tossups 
+all | carried | George W. Bush 
+Barack Obama | would need | just one 
+he | wins | the White House 
+we | 're naming | names 
+you | know | his name 

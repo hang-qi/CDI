@@ -1,0 +1,9 @@
+<story>Alaska / Palin / Trooper Case / A Discussion</story>
+<start>20081011023732.000</start>
+<end>20081011023752.000</end>
+we | reported | earlier 
+an Alaska legislative report | has found | Sarah Palin 
+The bipartisan council | said | Palin 
+an ethics law | firing | the state's public safety commissioner 
+the report | says | firing 
+That | 's | the only news 

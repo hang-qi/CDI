@@ -1,0 +1,6 @@
+<story>Campaign 2008 / Obama vs. McCain / The Campaign</story>
+<start>20081010023202.429</start>
+<end>20081010023523.500</end>
+We | add | a new name 
+this person | is how | he 
+We | are naming | names 

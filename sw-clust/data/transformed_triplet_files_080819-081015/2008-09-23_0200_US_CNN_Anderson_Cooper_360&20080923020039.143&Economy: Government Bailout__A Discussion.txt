@@ -1,0 +1,5 @@
+<story>Economy: Government Bailout / A Discussion</story>
+<start>20080923020039.143</start>
+<end>20080923021418.500</end>
+John McCain | lead | a charge 
+Barack Obama | have | a better idea 

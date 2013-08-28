@@ -1,0 +1,5 @@
+<story>Economy: Stock Market / Orman Interview</story>
+<start>20081001022822.000</start>
+<end>20081001023644.500</end>
+the Dow's climb | told | Wall Street 
+That | is | it 

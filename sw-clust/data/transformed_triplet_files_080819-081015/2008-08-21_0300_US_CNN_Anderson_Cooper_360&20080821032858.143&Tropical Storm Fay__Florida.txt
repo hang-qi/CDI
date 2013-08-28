@@ -1,0 +1,7 @@
+<story>Tropical Storm Fay / Florida</story>
+<start>20080821032858.143</start>
+<end>20080821033359.000</end>
+it | dropped | a load of rain 
+the storm | is expected to come ashore | a third time 
+We | 'll go live | Gary Tuchman 
+Erica Hill | joins | us 

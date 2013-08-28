@@ -1,0 +1,4 @@
+<story>Campaign 2008 / Obama vs. McCain / Obama Facts</story>
+<start>20080917022306.286</start>
+<end>20080917023145.333</end>
+You | have got to do | it 
