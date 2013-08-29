@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# /usr/local/bin/cc-Vandy
+#
+# Extract useful information from Vanderbilt's segment data files
+#
+# Written 2013-06-30 (FFS)
+# Modified 2013-08-26 (Weixin Li)
+#
+# -----------------------------------------------------------------
+
+# Help screen
+if [ "$1" = "-h" -o "$1" = "--help" -o "$1" = "help" ]
+ then echo -e "\n\t`basename $0` <filename>"
+  echo -e "\n\tExtract useful information from Vanderbilt's segment data files.\n"
+  echo -e "\tExample:\n"
+  echo -e "\t\t`basename $0` 2005-02-14_CBS_Evening_News_780149.html"
+  echo -e "\n\tUnder development.\n"
+   exit
+fi
+
+# Use GNU ports if OSX
+if [ "$(uname)" = "Darwin" ]
+ then SED="gsed" ; DAT="gdate" ; LS="gls"
+ else SED="sed"  ; DAT="date"  ; LS="ls"
+fi
+
+# File name
+if [ "$1" = "" ]
+ then echo -e "\nSee '`basename $0` -h' for usage\n" ; exit
+ else FIL=$1
+fi
+
+# Header primary tag legend
+#echo "NER_03|$($DAT -u '+%Y%m%d%H%M%S')|Data_Source=Vanderbilt|Type=Video segmentation"
+#echo "SEG_03|$($DAT -u '+%Y%m%d%H%M%S')|Data_Source=Vanderbilt|Type=Video segmentation"
+
+# Get the start date from the filename
+DAY1=${FIL%%_*}
+
+#echo $DAY1
+
+# Start time and end time
+eval "$( grep 'Program Time' $FIL | $SED -r 's/.*([0-9:]{8}).*([ap]m).*([0-9:]{8}).*([ap]m).*/BEG=\1\2 END=\3\4/' )"
+
+#echo $BEG
+#echo $END
+
+# Local broadcast time in CSA format
+LocBEG="$( $DAT -d "$DAY1 $BEG" +%Y%m%d%H%M%S )" LocEND="$( $DAT -d "$DAY1 $END" +%Y%m%d%H%M%S )"
+
+#echo $LocBEG
+#echo $LocEND
+
+# If LocBEG > LocEND, assume next day
+if [ "$LocBEG" -gt "$LocEND" ] ; then DAY2=$( $DAT -d "+1 day"\ $DAY1 +%F ) ; else DAY2=$DAY1 ; fi
+
+# Relative adjustment in minutes
+#ADJ=0
+
+# UTC broadcast time adjusted to LA broadcast time
+UBEG=$( eval "$DAT -ud 'TZ=\"America/New_York\" +$ADJ minutes $DAY1 $BEG' '+%Y%m%d%H%M%S.000'" )
+UEND=$( eval "$DAT -ud 'TZ=\"America/New_York\" +$ADJ minutes $DAY2 $END' '+%Y%m%d%H%M%S.000'" )
+
+# Get the headline
+HEADLINE="$( grep Headline $FIL | $SED -e :a -e 's/<[^>]*>//g;/</N;//ba' | $SED 's/.*Headline://' | $SED 's/^ //' )"
+
+# Topics -- do a case box?
+
+#echo $UBEG
+#echo $UEND
+
+# Display
+echo -e "$UBEG|$UEND|SEG_03|Type=story|Topic=$HEADLINE"
+
+    # Pick out the interesting variables (their system is not altogether consistent)
+#    SUMMARY="$( grep Summary $FIL | grep -v "meta name" | $SED -e :a -e 's/<[^>]*>//g;/</N;//ba' | $SED 's/Summary: /\
+#/' | tail -n 100 )"
+#    KEYWORDS="$( grep TermList $FIL | grep -v "meta name" | $SED -e :a -e 's/<[^>]*>//g;/</N;//ba' | $SED 's/TermList: /\
+#/' | tail -n 1 )"
+#    SPEAKERS="$( grep TermList $FIL | grep -v "meta name" | $SED -e :a -e 's/<[^>]*>//g;/</N;//ba' | $SED 's/TermList: /\
+#/' | head -n 1 )" ; if [ "$SPEAKERS" = "$KEYWORDS" ] ; then
+#    REPORTERS="$( grep Reporters $FIL | $SED -e :a -e 's/<[^>]*>//g;/</N;//ba' | $SED 's/.*Reporters://' )" ; fi
+
+#echo -e "$UBEG|$UEND|VDY_03|Summary=$SUMMARY"
+#echo -e "$UBEG|$UEND|NER_03|Keywords=$KEYWORDS"
+#echo -e "$UBEG|$UEND|NER_03|Speakers=$SPEAKERS"
+#echo -e "$UBEG|$UEND|NER_03|Reporters=$REPORTERS"
