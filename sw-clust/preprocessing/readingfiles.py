@@ -184,15 +184,19 @@ def read_triplet_file(triplet_filename, use_ocr=False):
     np1_words = []
     vp_words = []
     np2_words = []
+    count = 0
     with open(triplet_filename, 'r') as f:
         for line in f:
             if(line[0] != '<'):
+                count += 1
                 line = (line[:-2]).lower()
                 triplets = line.split('|')
                 np1_words.extend(cleansing.clean(triplets[0].split()))
                 if len(triplets) == 3:
                     vp_words.extend(cleansing.clean(triplets[1].split()))
                     np2_words.extend(cleansing.clean(triplets[2].split()))
+    if count <= 5:
+        return OrignalDocument('', '', [], [], [], [])
     ocr_words = []
     if use_ocr:
         ocr_file = triplet_filename.replace('data/triplet_files_new_test_set/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
