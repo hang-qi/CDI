@@ -16,6 +16,8 @@ from model.classifier import Classifier
 from model.probability import Distribution
 from preprocessing import vocabulary
 from algorithm import sw
+from model import graph_cycle
+from model.graph_cycle import graph_edge
 
 
 class _Plotter(object):
@@ -104,17 +106,32 @@ class SWConfig(object):
                 distance += self._kl_divergence(j, i)
                 distance /= 2
                 #distance_tv /= NUM_WORD_TYPE
-                distance_all.append(distance)
-        distance_all_sort = sorted(distance_all, key=float)
+                #distance_all.append(distance)
+                distance_all.append((i, j, distance))
+        #distance_all_sort = sorted(distance_all, key=float)
 
-        distance_threshold = distance_all_sort[self.graph_size*2]
-        logging.debug('Distance Threshold {0}'.format(distance_threshold))
+        #distance_threshold = distance_all_sort[self.graph_size*2]
+        #logging.debug('Distance Threshold {0}'.format(distance_threshold))
+        #count = 0
+        #for i in range(0, self.graph_size-1):
+        #    for j in range(i+1, self.graph_size):
+        #        if distance_all[count] < distance_threshold:
+        #            edges.append((i, j))
+        #        count += 1
+        distance_all_sorted = sorted(distance_all, key=lambda graph_edge: graph_edge[2])
+        edge_num = self.graph_size*2
         count = 0
-        for i in range(0, self.graph_size-1):
-            for j in range(i+1, self.graph_size):
-                if distance_all[count] < distance_threshold:
-                    edges.append((i, j))
-                count += 1
+        edges_tmp = []
+        for e in distance_all_sorted:
+            edges_tmp.append((e[0], e[1]))
+            if graph_cycle.judge_if_exist_cycle(edges_tmp):
+                edges_tmp = list(edges)
+                continue
+            edges.append((e[0], e[1]))
+            logging.debug('Add edge {0} {1}'.format(e[0], e[1]))
+            count += 1
+            if count >= edge_num:
+                break
         return edges
 
     def _kl_key(self, s, t):
