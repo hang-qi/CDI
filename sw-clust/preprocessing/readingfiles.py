@@ -199,7 +199,8 @@ def read_triplet_file(triplet_filename, use_ocr=False):
         return OrignalDocument('', '', [], [], [], [])
     ocr_words = []
     if use_ocr:
-        ocr_file = triplet_filename.replace('data/triplet_files_new_test_set/', 'data/ocr_result/').replace('.txt', '.ocr').lower()
+        name_tmp = triplet_filename.split('&')[-2] + '_' + triplet_filename.split('&')[-1].replace('.txt', '.ocr')
+        ocr_file = 'data/ocr_result_080819-081015/' + name_tmp.lower()
         if os.path.exists(ocr_file):
             with open(ocr_file, 'r') as f:
                 for line in f:
