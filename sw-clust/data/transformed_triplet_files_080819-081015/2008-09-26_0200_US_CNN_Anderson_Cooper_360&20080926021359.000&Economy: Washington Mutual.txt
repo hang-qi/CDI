@@ -1,7 +1,7 @@
 <story>Economy: Washington Mutual</story>
 <start>20080926021359.000</start>
 <end>20080926022554.333</end>
-Katie Couric | is | >> > COOPER 
+That | is >> | > COOPER 
 There | is | the bailout plan 
 They | 're going to continue | tomorrow 
 This | happening | just a short time 

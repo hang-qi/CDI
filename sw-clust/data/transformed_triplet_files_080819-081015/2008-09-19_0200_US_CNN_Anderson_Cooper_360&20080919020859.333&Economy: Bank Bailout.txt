@@ -1,5 +1,0 @@
-<story>Economy: Bank Bailout</story>
-<start>20080919020859.333</start>
-<end>20080919021144.500</end>
-the issue | is playing | the trails 
-we | will tell | you 

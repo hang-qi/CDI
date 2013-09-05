@@ -1,13 +1,556 @@
 <story>Campaign 2008 / McCain / Vice President / Palin</story>
-<start>20080830021221.000</start>
->>> Just ahead, it didn't take long for the new team to hit the trail.
-it/NP; did n't take long/VP for/PP; the new team/NP
+<start>20080830020102.000</start>
+>> ANDERSON COOPER, CNN ANCHOR: We are live in New Orleans tonight.
+We/NP; are/VP in/PP; New Orleans/NP
 
-Dana Bash was with them.
-Dana Bash/NP; was/VP with/PP; them/NP
+We're at the new pumping station where the 17th Street Canal meets Lake Pontchartrain.
+We/NP; 're/VP at/PP; the new pumping station/NP
 
-We will talk to her next about both teams on the road.
-We/NP; will talk/VP to/PP; her next/NP
+We're at the new pumping station where the 17th Street Canal meets Lake Pontchartrain.
+the 17th Street Canal/NP; meets/VP; Lake Pontchartrain/NP
+
+Now, the Army Corps of Engineers built it to prevent what happened three years ago today, when lake water surged back into the canal system, flooding the city after Hurricane Katrina.
+the Army Corps of Engineers/NP; built/VP; it/NP
+
+Now, the Army Corps of Engineers built it to prevent what happened three years ago today, when lake water surged back into the canal system, flooding the city after Hurricane Katrina.
+what/NP; happened/VP; three years/NP
+
+Now, the Army Corps of Engineers built it to prevent what happened three years ago today, when lake water surged back into the canal system, flooding the city after Hurricane Katrina.
+lake water/NP; surged back/VP into/PP; the canal system/NP
+
+People here took note of Katrina's anniversary today, but, for the most part, they are busy getting ready for Hurricane Gustav, with very real doubts about how prepared their city will be, including whether or not these floodgates will actually work.
+People/NP; took/VP; note of Katrina's anniversary today/NP
+
+More on that throughout the evening, but we begin with John McCain's choice of a near unknown to be his running mate.
+we/NP; begin/VP with/PP; John McCain's choice of a near unknown/NP
+
+Now, back in April, he said that a person's readiness to be president would factor highly.
+he/NP; said/VP; a person's readiness/NP
+
+Tonight, there are serious questions about that, jubilation among some conservatives, and big-time -- big- time surprise all around.
+there/NP; are/VP; serious questions/NP
+
+Tonight, there are serious questions about that, jubilation among some conservatives, and big-time -- big- time surprise all around.
+big- time/NP; surprise/VP; around/NP
+
+JOHN MCCAIN (R-AZ), PRESIDENTIAL CANDIDATE: My friends and fellow Americans... (AUDIENCE MEMBER SHOUTS) >> MCCAIN: I am very pleased and very privileged to introduce to you the next vice president of the United States... (CHEERING AND APPLAUSE) >> MCCAIN: ...  Governor Sarah Palin of the great state of Alaska.
+( AUDIENCE MEMBER SHOUTS/NP; >/VP; > MCCAIN/NP
+
+JOHN MCCAIN (R-AZ), PRESIDENTIAL CANDIDATE: My friends and fellow Americans... (AUDIENCE MEMBER SHOUTS) >> MCCAIN: I am very pleased and very privileged to introduce to you the next vice president of the United States... (CHEERING AND APPLAUSE) >> MCCAIN: ...  Governor Sarah Palin of the great state of Alaska.
+( CHEERING AND APPLAUSE )/NP; >/VP; > MCCAIN/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: The scene, a large rally in Dayton, Ohio, today, his choice, the first woman ever on a Republican ticket.
+( CHEERING AND APPLAUSE )/NP; >/VP; > COOPER/NP
+
+SARAH PALIN (R-AK), VICE PRESIDENTIAL CANDIDATE: It was rightly noted in Denver this week that Hillary left 18  million cracks in the highest, hardest glass ceiling in America... (CHEERING AND APPLAUSE) >> PALIN: ... but it turns out the women of America aren't finished yet, and we can shatter that glass ceiling once and for all!
+It/NP; was rightly noted/VP in/PP; Denver/NP
+
+SARAH PALIN (R-AK), VICE PRESIDENTIAL CANDIDATE: It was rightly noted in Denver this week that Hillary left 18  million cracks in the highest, hardest glass ceiling in America... (CHEERING AND APPLAUSE) >> PALIN: ... but it turns out the women of America aren't finished yet, and we can shatter that glass ceiling once and for all!
+Hillary/NP; left/VP; 18 million cracks/NP
+
+SARAH PALIN (R-AK), VICE PRESIDENTIAL CANDIDATE: It was rightly noted in Denver this week that Hillary left 18  million cracks in the highest, hardest glass ceiling in America... (CHEERING AND APPLAUSE) >> PALIN: ... but it turns out the women of America aren't finished yet, and we can shatter that glass ceiling once and for all!
+( CHEERING AND APPLAUSE )/NP; >/VP; > PALIN/NP
+
+SARAH PALIN (R-AK), VICE PRESIDENTIAL CANDIDATE: It was rightly noted in Denver this week that Hillary left 18  million cracks in the highest, hardest glass ceiling in America... (CHEERING AND APPLAUSE) >> PALIN: ... but it turns out the women of America aren't finished yet, and we can shatter that glass ceiling once and for all!
+it/NP; turns/VP out/PRT; the women of America/NP
+
+SARAH PALIN (R-AK), VICE PRESIDENTIAL CANDIDATE: It was rightly noted in Denver this week that Hillary left 18  million cracks in the highest, hardest glass ceiling in America... (CHEERING AND APPLAUSE) >> PALIN: ... but it turns out the women of America aren't finished yet, and we can shatter that glass ceiling once and for all!
+we/NP; can shatter/VP; that glass ceiling/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: Governor Palin got the nod after just a couple meetings with Senator McCain.
+( CHEERING AND APPLAUSE )/NP; >/VP; > COOPER/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: Governor Palin got the nod after just a couple meetings with Senator McCain.
+Governor Palin/NP; got/VP; the nod/NP
+
+She's staunchly pro-life, a global warming skeptic, a corruption fighter who is also embroiled in a corruption scandal.
+who/NP; is also embroiled/VP in/PP; a corruption scandal/NP
+
+As you might imagine, this is causing a major stir, not all of it politically correct.
+this/NP; is causing/VP; a major stir/NP
+
+As Rush Limbaugh put it today -- quote -- "We're the ones with the babe on our ticket."
+Rush Limbaugh/NP; put/VP; it/NP
+
+As Rush Limbaugh put it today -- quote -- "We're the ones with the babe on our ticket."
+We/NP; 're/VP; the ones/NP
+
+(LAUGHTER) >> DAVID MATTINGLY, CNN CORRESPONDENT: Standing in a park overlooking the city of Anchorage, Governor Sarah Palin talked to me just three weeks ago, sounding like a long shot.
+( LAUGHTER )/NP; >/VP; > DAVID MATTINGLY/NP
+
+(LAUGHTER) >> DAVID MATTINGLY, CNN CORRESPONDENT: Standing in a park overlooking the city of Anchorage, Governor Sarah Palin talked to me just three weeks ago, sounding like a long shot.
+a park/NP; overlooking/VP; the city of Anchorage/NP
+
+(LAUGHTER) >> DAVID MATTINGLY, CNN CORRESPONDENT: Standing in a park overlooking the city of Anchorage, Governor Sarah Palin talked to me just three weeks ago, sounding like a long shot.
+Governor Sarah Palin/NP; talked/VP to/PP; me/NP
+
+>> PALIN: I'm a hockey mom from Alaska.
+I/NP; 'm/VP; a hockey mom/NP
+
+I'm not one of those movers and shakers within the Republican Party that I  think conventionally you would think would be tapped into.
+I/NP; 'm/VP; one of those movers and shakers/NP
+
+I'm not one of those movers and shakers within the Republican Party that I  think conventionally you would think would be tapped into.
+I/NP; think conventionally/VP; you/NP
+
+>> MATTINGLY: And that could be what made her so appealing to John McCain.
+that/NP; could be/VP; what/NP
+
+At 44,  she is the youngest governor Alaska's ever had and the only woman to hold the office.
+she/NP; is/VP; the youngest governor Alaska's/NP
+
+At 44,  she is the youngest governor Alaska's ever had and the only woman to hold the office.
+the only woman/NP; to hold/VP; the office/NP
+
+>> MATTINGLY: She pushed for a strong ethics law for public officials and took on members of her own party to do it.
+She/NP; pushed/VP for/PP; a strong ethics law/NP
+
+>> MATTINGLY: She pushed for a strong ethics law for public officials and took on members of her own party to do it.
+public officials/NP; took/VP on/PRT; members of her own party/NP
+
+She also challenged oil companies over pipelines and leases.
+She/NP; challenged/VP; oil companies/NP
+
+Palin also pushed back at government spending, killing the so-called bridge to nowhere, a pork barrel project guided by fellow Alaskan Republican Senator Ted Stevens.
+Palin/NP; pushed back/VP at/PP; government spending/NP
+
+Palin also pushed back at government spending, killing the so-called bridge to nowhere, a pork barrel project guided by fellow Alaskan Republican Senator Ted Stevens.
+a pork barrel project/NP; guided/VP by/PP; fellow Alaskan Republican Senator Ted Stevens/NP
+
+>> PALIN: But we're constantly battling kind of the -- the political factions within the legislature and the political machinery within my own party, still.
+we/NP; 're constantly battling/VP; kind of the/NP
+
+But it's what Alaskans have wanted and I believe, again, nationwide, this is what Americans want.
+it/NP; is/VP; what Alaskans/NP
+
+But it's what Alaskans have wanted and I believe, again, nationwide, this is what Americans want.
+this/NP; is/VP; what/NP
+
+>> PALIN: Palin has been governor less than two years, but is already the state's most popular politician.
+Palin/NP; has been/VP; governor/NP
+
+Before that, she was a small-town mayor.
+she/NP; was/VP; a small-town mayor/NP
+
+She was then appointed to chairman of the powerful State Oil and Gas Conservation Commission, all the while crafting her own message of change.
+She/NP; was then appointed/VP to/PP; chairman of the powerful State Oil/NP
+
+She was then appointed to chairman of the powerful State Oil and Gas Conservation Commission, all the while crafting her own message of change.
+all the while/NP; crafting/VP; her own message of change/NP
+
+>> PALIN: A  change that is craved, I believe, by Alaskans and by Americans is getting away with the obsessive partisanship, the partisanship that just gets in the way of doing what's right.
+Americans/NP; is getting away/VP with/PP; the obsessive partisanship/NP
+
+>> PALIN: A  change that is craved, I believe, by Alaskans and by Americans is getting away with the obsessive partisanship, the partisanship that just gets in the way of doing what's right.
+the way/NP; doing/VP; what's right/NP
+
+>> MATTINGLY: But Palin herself is under investigation by the state legislature.
+herself/NP; is/VP under/PP; investigation/NP
+
+The probe grew out of allegations she fired her public safety commissioner for refusing to sack her ex brother-in-law from the state police.
+The probe/NP; grew out/VP of/PP; allegations/NP
+
+The probe grew out of allegations she fired her public safety commissioner for refusing to sack her ex brother-in-law from the state police.
+she/NP; fired/VP; her/NP
+
+The probe grew out of allegations she fired her public safety commissioner for refusing to sack her ex brother-in-law from the state police.
+public safety commissioner/NP; refusing/VP to/PP; sack/NP
+
+Palin says she never authorized a staffer who was caught on tape pressuring state police to act.
+Palin/NP; says/VP; she/NP
+
+Palin says she never authorized a staffer who was caught on tape pressuring state police to act.
+who/NP; was caught/VP on/PP; tape pressuring state police/NP
+
+>> LARRY PERSILY, FORMER ALASKA JOURNALIST: There's nothing yet that shows the governor pressured directly the publish safety commissioner.
+There/NP; is/VP; nothing/NP
+
+>> LARRY PERSILY, FORMER ALASKA JOURNALIST: There's nothing yet that shows the governor pressured directly the publish safety commissioner.
+the governor/NP; pressured directly/VP; the publish safety commissioner/NP
+
+But her husband had contacts with the public safety commissioner, her chief of staff, members of her -- of the governor's office staff had discussions with the public safety commissioner, expressing the governor's displeasure with this trooper.
+her husband/NP; had/VP; contacts/NP
+
+But her husband had contacts with the public safety commissioner, her chief of staff, members of her -- of the governor's office staff had discussions with the public safety commissioner, expressing the governor's displeasure with this trooper.
+the governor's office staff/NP; had/VP; discussions/NP
+
+>> MATTINGLY: Palin is a mother of five.
+Palin/NP; is/VP; a mother of five/NP
+
+She has an infant with Down syndrome and one son in the Army.
+She/NP; has/VP; an infant/NP
+
+She was once a hometown beauty queen, second runner-up for Miss Alaska 1984.
+She/NP; was once/VP; a hometown beauty queen/NP
+
+A  journalism graduate, she also tried her hand at sportscasting.
+she/NP; tried/VP; her hand/NP
+
+She is the anti-Washington Republican conservative, pro-gun, anti- abortion, with a political record as far outside the beltway as anyone can get.
+She/NP; is/VP; the anti-Washington Republican conservative/NP
+
+>> COOPER: Well, President Bush today raised the Palin choice, Senators Obama and Governor Palin speaking by -- by phone, Senator Obama saying he wished her luck, but not too much luck.
+President Bush today/NP; raised/VP; the Palin choice/NP
+
+>> COOPER: Well, President Bush today raised the Palin choice, Senators Obama and Governor Palin speaking by -- by phone, Senator Obama saying he wished her luck, but not too much luck.
+Senator Obama/NP; saying/VP; he/NP
+
+Then, later today, he had this to say.
+he/NP; had/VP; this/NP
+
+BARACK OBAMA (D-IL), PRESIDENTIAL CANDIDATE: You know, I  -- I  haven't met her before.
+I/NP; have n't met/VP; her before/NP
+
+She seems like a compelling person, obviously, a terrific story, personal story.
+She/NP; seems/VP like/PP; a compelling person/NP
+
+And, you know, I'm sure that she will help make the case for the Republicans.
+I/NP; 'm/VP; she/NP
+
+Unfortunately, the case is more of the same.
+the case/NP; is/VP of/PP; the same/NP
+
+Palin said -- and I quote -- "I  don't have 30  years of political experience under my belt, but that's a good thing.
+I/NP; do n't have/VP; 30 years of political experience/NP
+
+Palin said -- and I quote -- "I  don't have 30  years of political experience under my belt, but that's a good thing.
+that/NP; is/VP; a good thing/NP
+
+I have never been part of a good old boys club."
+I/NP; have never been/VP; part of a good old boys club/NP
+
+You say this is a big gamble by McCain.
+You/NP; say/VP; this/NP
+
+On one hand, she's firing up the evangelicals and many of the social conservatives because of her pro-life, pro-gun sort of view, lifetime NRA.
+she/NP; 's firing/VP up/PRT; the evangelicals/NP
+
+She's also very popular in Alaska.
+She/NP; is also/VP in/PP; Alaska/NP
+
+I  know at least one Democratic governor of a major swing state has been telling people privately today that he thinks she will do very well among blue-collar voters.
+I/NP; know/VP; at least one Democratic governor of a major swing state/NP
+
+I  know at least one Democratic governor of a major swing state has been telling people privately today that he thinks she will do very well among blue-collar voters.
+he/NP; thinks/VP; she/NP
+
+And she reinforces John McCain's reputation as a maverick.
+she/NP; reinforces/VP; John McCain's reputation/NP
+
+But, then, on the other side, there is a view -- listen, the central argument, as you well know, of the McCain campaign has been, it is -- it is imprudent, in fact, it's reckless, to put the commander in chief role in the hands of someone with little experience like Barack Obama.
+there/NP; is/VP; a view/NP
+
+And here, a 72-year-old candidate, John McCain, who has had bouts with cancer, is asking someone to be at a heartbeat away, sitting next to him there in the White House, who has no experience in international issues, no experience in national security issues.
+who/NP; has had/VP; bouts/NP
+
+And here, a 72-year-old candidate, John McCain, who has had bouts with cancer, is asking someone to be at a heartbeat away, sitting next to him there in the White House, who has no experience in international issues, no experience in national security issues.
+someone/NP; to be/VP at/PP; a heartbeat/NP
+
+And here, a 72-year-old candidate, John McCain, who has had bouts with cancer, is asking someone to be at a heartbeat away, sitting next to him there in the White House, who has no experience in international issues, no experience in national security issues.
+who/NP; has/VP; no experience/NP
+
+There are Democrats who believe that is reckless, and they plan to make that argument in the days ahead.
+There/NP; are/VP; Democrats/NP
+
+There are Democrats who believe that is reckless, and they plan to make that argument in the days ahead.
+who/NP; believe/VP; that/NP
+
+There are Democrats who believe that is reckless, and they plan to make that argument in the days ahead.
+they/NP; plan to make/VP; that argument/NP
+
+It is a -- she's made an open appeal to Hillary Clinton -- Hillary Clinton's disaffected voters.
+It/NP; is/VP; a/NP
+
+It is a -- she's made an open appeal to Hillary Clinton -- Hillary Clinton's disaffected voters.
+she's/NP; made/VP; an open appeal/NP
+
+I'm not sure how many there are after this Democratic Convention.
+I/NP; 'm/VP; there/NP
+
+But I  can tell you, there may be some who will come over, but the CNN  blog sites today are full of women writing in saying that, if that's the appeal here, they find that insulting.
+I/NP; can tell/VP; you/NP
+
+But I  can tell you, there may be some who will come over, but the CNN  blog sites today are full of women writing in saying that, if that's the appeal here, they find that insulting.
+there/NP; may be/VP; some who/NP
+
+But I  can tell you, there may be some who will come over, but the CNN  blog sites today are full of women writing in saying that, if that's the appeal here, they find that insulting.
+today/NP; are/VP of/PP; women/NP
+
+But I  can tell you, there may be some who will come over, but the CNN  blog sites today are full of women writing in saying that, if that's the appeal here, they find that insulting.
+that/NP; is/VP; the appeal/NP
+
+But I  can tell you, there may be some who will come over, but the CNN  blog sites today are full of women writing in saying that, if that's the appeal here, they find that insulting.
+they/NP; find/VP; that insulting/NP
+
+That is not what they represent.
+That/NP; is/VP; what/NP
+
+They're just not going to be taken in by just any woman.
+They/NP; 're just not going to be taken in/VP by/PP; just any woman/NP
+
+They thought it was going to be a qualified woman with someone closer to their views.
+They/NP; thought/VP; it/NP
+
+They thought it was going to be a qualified woman with someone closer to their views.
+someone/NP; closer/VP to/PP; their views/NP
+
+>> COOPER: Alex Castellanos, Democrats made the same argument, though, about Dan Quayle.
+Democrats/NP; made/VP; the same argument/NP
+
+It didn't do them much good back then.
+It/NP; did n't do/VP; them/NP
+
+And I  hate to take exception with -- with Mr. Gergen there, but I  think he's got this issue just exactly backwards.
+I/NP; hate to take/VP; exception/NP
+
+And I  hate to take exception with -- with Mr. Gergen there, but I  think he's got this issue just exactly backwards.
+I/NP; think/VP; he/NP
+
+How can Democrats claim that Governor Palin isn't qualified and you shouldn't vote for her because she does not have the experience to be vice president, and then turn right around and say, vote for Barack Obama, though he has even less?
+Democrats/NP; claim/VP that/PP; Governor Palin/NP
+
+How can Democrats claim that Governor Palin isn't qualified and you shouldn't vote for her because she does not have the experience to be vice president, and then turn right around and say, vote for Barack Obama, though he has even less?
+you/NP; should n't vote/VP for/PP; her/NP
+
+How can Democrats claim that Governor Palin isn't qualified and you shouldn't vote for her because she does not have the experience to be vice president, and then turn right around and say, vote for Barack Obama, though he has even less?
+she/NP; does not have/VP; the experience/NP
+
+He's not a heartbeat away from the presidency.
+He/NP; 's/VP; a heartbeat/NP
+
+His heartbeat would be the president's.
+His heartbeat/NP; would be/VP; the president's/NP
+
+And he just has no experience at all.
+he/NP; has/VP; no experience/NP
+
+Look, the only candidate in this race who has actually, for example, run a $5.5  billion state budget, who has actually run an education system, who has actually run a law enforcement system, who has delivered health care, 32nd largest budget in the country, bigger than a lot of countries, give -- you better get to know this woman and give her a chance.
+who/NP; has actually run/VP; an education system/NP
+
+Look, the only candidate in this race who has actually, for example, run a $5.5  billion state budget, who has actually run an education system, who has actually run a law enforcement system, who has delivered health care, 32nd largest budget in the country, bigger than a lot of countries, give -- you better get to know this woman and give her a chance.
+who/NP; has actually run/VP; a law enforcement system/NP
+
+Look, the only candidate in this race who has actually, for example, run a $5.5  billion state budget, who has actually run an education system, who has actually run a law enforcement system, who has delivered health care, 32nd largest budget in the country, bigger than a lot of countries, give -- you better get to know this woman and give her a chance.
+who/NP; has delivered/VP; health care/NP
+
+Look, the only candidate in this race who has actually, for example, run a $5.5  billion state budget, who has actually run an education system, who has actually run a law enforcement system, who has delivered health care, 32nd largest budget in the country, bigger than a lot of countries, give -- you better get to know this woman and give her a chance.
+you/NP; get to know/VP; this woman/NP
+
+She's -- I  think America is going to be pleased with what it sees.
+I/NP; think/VP; America/NP
+
+Barack Obama hasn't had executive experience in the same way that this governor of a state has, though she's only been there for I think less than two years -- or two years, about.
+Barack Obama/NP; has n't had/VP; executive experience/NP
+
+Barack Obama hasn't had executive experience in the same way that this governor of a state has, though she's only been there for I think less than two years -- or two years, about.
+she/NP; 's only been there/VP; I/NP
+
+And so we defer to what James Surowiecki calls the wisdom of crowds.
+we/NP; defer/VP to/PP; what/NP
+
+And so we defer to what James Surowiecki calls the wisdom of crowds.
+James Surowiecki/NP; calls/VP; the wisdom of crowds/NP
+
+It's called democracy.
+It/NP; 's called/VP; democracy/NP
+
+Eighteen million people, Americans all, decided that Barack Obama had enough experience.
+Barack Obama/NP; had/VP; enough experience/NP
+
+That's how we resolve these things in a democracy.
+That/NP; is how/VP; we/NP
+
+So, I  didn't -- I  wasn't one of those 18  million, but I  defer to that choice in a democracy.
+I/NP; was/VP; n't one of those 18 million/NP
+
+So, I  didn't -- I  wasn't one of those 18  million, but I  defer to that choice in a democracy.
+I/NP; defer/VP to/PP; that choice/NP
+
+This is the choice of one man, one man who met her apparently one time.
+This/NP; is/VP; the choice of one man/NP
+
+This is the choice of one man, one man who met her apparently one time.
+who/NP; met/VP; her apparently one time/NP
+
+I'm -- I  honestly want to pull out of the sort of game schema that we're generally in.
+I/NP; want to pull out/VP of/PP; the sort of game schema/NP
+
+And I'm a political strategist.
+I/NP; 'm/VP; a political strategist/NP
+
+But ,like David, I  was a senior White House adviser.
+I/NP; was/VP; a senior White House adviser/NP
+
+And I'm thinking now actually as a citizen, as a former White House staffer.
+I/NP; 'm thinking now/VP as/PP; a citizen/NP
+
+He's 72  years old, and he's had cancer four times, and he wants a woman he's met once to be a heartbeat away from the presidency?
+He/NP; is/VP; 72 years/NP
+
+He's 72  years old, and he's had cancer four times, and he wants a woman he's met once to be a heartbeat away from the presidency?
+he/NP; 's had cancer/VP; four times/NP
+
+He's 72  years old, and he's had cancer four times, and he wants a woman he's met once to be a heartbeat away from the presidency?
+he/NP; wants/VP; a woman/NP
+
+>> CASTELLANOS: Paul, if that's irresponsible -- Paul, if that's irresponsible, what can you say about putting up Barack Obama as your candidate, who has never... >> BEGALA: Alex... (CROSSTALK) >> BEGALA: ... it's called democracy.
+it/NP; 's called/VP; democracy/NP
+
+>> CASTELLANOS: No. Well, then give democracy a chance to work in November, Paul.
+a chance/NP; to work/VP in/PP; November/NP
+
+(CROSSTALK) >> BEGALA: But we don't get a chance to vote for the vice president independently, Alex. >> CASTELLANOS: Yes, you will.
+we/NP; do n't get/VP; a chance/NP
+
+(CROSSTALK) >> CASTELLANOS: You get a chance to vote for the ticket.
+You/NP; get/VP; a chance/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+it/NP; to put/VP up/PRT; a guy/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+who/NP; was/VP; a community organizer/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+who/NP; was/VP; a state senator/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+who/NP; has never actually had/VP; any foreign policy experience/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+I/NP; 'm trying/VP to.../PP; ( CROSSTALK) > > COOPER/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+I/NP; want/VP; you/NP
+
+(CROSSTALK) >> CASTELLANOS: And is it irresponsible to put up a guy who was a community organizer, who was a state senator who voted present, who has never actually had any foreign policy experience at all? >> BEGALA: I'm trying to... (CROSSTALK) >> COOPER: Paul, I  want you to answer that, and then I want to go to John King.
+I/NP; want to go/VP to/PP; John King/NP
+
+>> BEGALA: I'm trying to act like this is on the level.
+I/NP; 'm trying to act/VP like/PP; this/NP
+
+I'm trying to act like an American citizen first.
+I/NP; 'm trying to act/VP like/PP; an American citizen/NP
+
+>> BEGALA: As a Democrat, I  think this is crazy and I  think it makes McCain look crazy.
+I/NP; think/VP; this/NP
+
+>> BEGALA: As a Democrat, I  think this is crazy and I  think it makes McCain look crazy.
+I/NP; think/VP; it/NP
+
+As an American, there's a coin-toss chance this man becomes the president, and, then, eight of our 43 presidents have died in office.
+there/NP; is/VP; a coin-toss chance/NP
+
+As an American, there's a coin-toss chance this man becomes the president, and, then, eight of our 43 presidents have died in office.
+this man/NP; becomes/VP; the president/NP
+
+As an American, there's a coin-toss chance this man becomes the president, and, then, eight of our 43 presidents have died in office.
+eight of our 43 presidents/NP; have died/VP in/PP; office/NP
+
+So, as a Democrat, I'm happy with this.
+I/NP; 'm/VP with/PP; this/NP
+
+As an American, who has family in active-duty military, I'm petrified.
+who/NP; has/VP; family/NP
+
+(CROSSTALK) >> COOPER: John King, is it true that he only met her once?
+he/NP; met/VP; her/NP
+
+And what do we know about how this all came about?
+what/NP; do we know/VP; about/NP
+
+>> JOHN KING, CNN CHIEF NATIONAL CORRESPONDENT: He had only met her once in person before.
+He/NP; had only met/VP; her/NP
+
+Then they had a secret meeting at his Sedona ranch.
+they/NP; had/VP; a secret meeting/NP
+
+But he has been an admirer of her, in part because he believes she is very much like him.
+he/NP; has been/VP; an admirer of her/NP
+
+But he has been an admirer of her, in part because he believes she is very much like him.
+he/NP; believes/VP; she/NP
+
+Now, Democrats will challenge this assertion, but he believes she has challenged the status quo, that she's drawn a line on state spending, the she stood up to Senator Ted Stevens over that bridge to nowhere.
+Democrats/NP; will challenge/VP; this assertion/NP
+
+Now, Democrats will challenge this assertion, but he believes she has challenged the status quo, that she's drawn a line on state spending, the she stood up to Senator Ted Stevens over that bridge to nowhere.
+he/NP; believes/VP; she/NP
+
+Now, Democrats will challenge this assertion, but he believes she has challenged the status quo, that she's drawn a line on state spending, the she stood up to Senator Ted Stevens over that bridge to nowhere.
+she/NP; 's drawn/VP; a line/NP
+
+Now, Democrats will challenge this assertion, but he believes she has challenged the status quo, that she's drawn a line on state spending, the she stood up to Senator Ted Stevens over that bridge to nowhere.
+the she/NP; stood up/VP to/PP; Senator Ted Stevens/NP
+
+And, Anderson, they also thinks it addresses -- and, again, this will be decided John McCain vs. Barack Obama.
+they/NP; thinks/VP; it/NP
+
+And, Anderson, they also thinks it addresses -- and, again, this will be decided John McCain vs. Barack Obama.
+this/NP; will be decided/VP; John McCain vs. Barack Obama/NP
+
+But if you look, especially coming out of the Democratic Convention, what are John McCain's two biggest weaknesses?
+what/NP; are/VP; John McCain's two biggest weaknesses/NP
+
+He votes with them most of the time, but they don't quite him.
+He/NP; votes/VP with/PP; them/NP
+
+He votes with them most of the time, but they don't quite him.
+they/NP; do quite/VP; him/NP
+
+I cannot tell you the overwhelming change of the mood among the conservative social Republican base.
+I/NP; cannot tell/VP; you/NP
+
+Barack Obama has African-American support.
+Barack Obama/NP; has/VP; African-American support/NP
+
+He's signed up hundreds of thousands of new voters.
+He/NP; 's signed/VP up/PRT; hundreds of thousands of new voters/NP
+
+And the McCain campaign came to a calculation: We need our base to turn out, just like Karl Rove used to say that it was so important for George W.  Bush to turnout.
+the McCain campaign/NP; came/VP to/PP; a calculation/NP
+
+And the McCain campaign came to a calculation: We need our base to turn out, just like Karl Rove used to say that it was so important for George W.  Bush to turnout.
+We/NP; need/VP; our base/NP
+
+And the McCain campaign came to a calculation: We need our base to turn out, just like Karl Rove used to say that it was so important for George W.  Bush to turnout.
+Karl Rove/NP; used to say/VP; it/NP
+
+They think this will help.
+They/NP; think/VP; this/NP
+
+Will it cure everything?
+it/NP; cure/VP; everything/NP
+
+Presidential races are decided at the top of the ticket, but they needed something dramatic to change the dynamics of this race.
+Presidential races/NP; are decided/VP at/PP; the top of the ticket/NP
+
+Presidential races are decided at the top of the ticket, but they needed something dramatic to change the dynamics of this race.
+they/NP; needed/VP; something/NP
+
+And they think this is it.
+they/NP; think/VP; this/NP
+
+We're going to talk to a social conservative, Tony Perkins, in just a moment, as well as James Carville.
+We/NP; 're going to talk/VP to/PP; a social conservative/NP
+
+And we will have more with our panel coming up throughout these two hours.
+we/NP; will have/VP; more/NP
+
+And we will have more with our panel coming up throughout these two hours.
+our panel/NP; coming/VP up/PRT; throughout these two hours/NP
+
+We're broadcasting for two hours live tonight.
+We/NP; 're broadcasting/VP for/PP; two hours/NP
+
+There is so much news to cover between this, Barack Obama's speech last night, the hurricane and more, a lot to talk about.
+There/NP; is/VP; so much news/NP
+
+You can join the conversation.
+You/NP; can join/VP; the conversation/NP
+
+There, you will also find a host of new material from our contributors on today's third anniversary here in New Orleans.
+you/NP; will also find/VP; a host of new material/NP
 
 >>> PALIN: Along with fellow reformers in the great state of Alaska, as governor, I  have stood up to the old politics as usual, to the special interests, to the lobbyists, the big oil companies, and the good-old-boy network.
 I/NP; have stood/VP up/PRT to/PP; the old politics/NP

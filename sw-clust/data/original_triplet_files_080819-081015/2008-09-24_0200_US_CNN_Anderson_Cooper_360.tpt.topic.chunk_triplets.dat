@@ -1,7 +1,301 @@
 <story>Economy: Wall Street Crisis / Bailout Plan</story>
-<start>20080924020458.500</start>
->>> The White House pressuring Congress for a bill by the end of this week, if not sooner.
->>/NP; >/VP; The White House/NP
+<start>20080924020041.000</start>
+We begin with the breaking news about the crisis on Wall Street.
+We/NP; begin/VP with/PP; the breaking news/NP
+
+We know it's bad.
+We/NP; know/VP; it/NP
+
+We know it's costly, but is it criminal?
+We/NP; know/VP; it/NP
+
+Just a short time ago, we learned the FBI is now investigating Fannie Mae, Freddie Mac, Lehman Brothers, and AIG, not just the companies, but also their executives, part of a board look into possible mortgage fraud involving subprime lenders.
+we/NP; learned/VP; the FBI/NP
+
+Just a short time ago, we learned the FBI is now investigating Fannie Mae, Freddie Mac, Lehman Brothers, and AIG, not just the companies, but also their executives, part of a board look into possible mortgage fraud involving subprime lenders.
+possible mortgage fraud/NP; involving/VP; subprime lenders/NP
+
+He's also the author of "Stealing elections."
+He/NP; is also/VP; the author of Stealing elections/NP
+
+Ali, what do we know about this investigation?
+what/NP; do we know/VP about/PP; this investigation/NP
+
+>> ALI VELSHI, CNN SENIOR BUSINESS CORRESPONDENT: There are now 26  companies under investigation, starting with Country Financial.
+There/NP; are/VP; now 26 companies/NP
+
+>> COOPER: Twenty-six? >> VELSHI: Twenty-six companies under FBI investigation, and they are looking into these companies for possible fraud, misrepresentation.
+Twenty-six/NP; >/VP; VELSHI/NP
+
+>> COOPER: Twenty-six? >> VELSHI: Twenty-six companies under FBI investigation, and they are looking into these companies for possible fraud, misrepresentation.
+they/NP; are looking/VP into/PP; these companies/NP
+
+Did these companies know there was more wrong or more going on that was incorrect and didn't share that with the public or with shareholders?
+these companies/NP; know/VP; there/NP
+
+Now, the good thing, Anderson, is, ever since the scandals of 2000  and 2001,  it has now become very easy to detect if there was fraud.
+there/NP; was/VP; fraud/NP
+
+If the FBI is investigating this in association with the Securities and Exchange Commission, if there was wrongdoing -- and we don't know that there is, and we don't know what specifically they're looking for -- they will find it.
+the FBI/NP; is investigating/VP; this/NP
+
+If the FBI is investigating this in association with the Securities and Exchange Commission, if there was wrongdoing -- and we don't know that there is, and we don't know what specifically they're looking for -- they will find it.
+there/NP; was/VP; wrongdoing/NP
+
+If the FBI is investigating this in association with the Securities and Exchange Commission, if there was wrongdoing -- and we don't know that there is, and we don't know what specifically they're looking for -- they will find it.
+we/NP; do n't know/VP; there/NP
+
+If the FBI is investigating this in association with the Securities and Exchange Commission, if there was wrongdoing -- and we don't know that there is, and we don't know what specifically they're looking for -- they will find it.
+we/NP; do n't know/VP; what/NP
+
+If the FBI is investigating this in association with the Securities and Exchange Commission, if there was wrongdoing -- and we don't know that there is, and we don't know what specifically they're looking for -- they will find it.
+they/NP; will find/VP; it/NP
+
+>> COOPER: John, how big a deal is this?
+a deal/NP; is/VP; this/NP
+
+>> JOHN FUND, COLUMNIST, "THE WALL STREET JOURNAL": I  think it's a very big deal because it may explain how got largely into this mess.
+I/NP; think/VP; it/NP
+
+>> COOPER: You think there's criminality?
+You/NP; think/VP; there/NP
+
+>> FUND: Well, I  have written on Fannie Mae and Freddie Mac, which were government-chartered corporations that made private profits, but dumped the risk on the public, because they had an implicit government guarantee, for 12  years now.
+I/NP; have written/VP on/PP; Fannie Mae/NP
+
+>> FUND: Well, I  have written on Fannie Mae and Freddie Mac, which were government-chartered corporations that made private profits, but dumped the risk on the public, because they had an implicit government guarantee, for 12  years now.
+which/NP; were/VP; government-chartered corporations/NP
+
+>> FUND: Well, I  have written on Fannie Mae and Freddie Mac, which were government-chartered corporations that made private profits, but dumped the risk on the public, because they had an implicit government guarantee, for 12  years now.
+that/NP; made/VP; private profits/NP
+
+>> FUND: Well, I  have written on Fannie Mae and Freddie Mac, which were government-chartered corporations that made private profits, but dumped the risk on the public, because they had an implicit government guarantee, for 12  years now.
+they/NP; had/VP; an implicit government guarantee/NP
+
+I  have heard over and over again from sources that Fannie Mae and Freddie Mac were covering up things.
+I/NP; have heard over and over again/VP from/PP; sources/NP
+
+I  have heard over and over again from sources that Fannie Mae and Freddie Mac were covering up things.
+Freddie Mac/NP; were covering up/VP; things/NP
+
+They were the public sector Enron, so to speak... >> COOPER: Wow.
+They/NP; were/VP; the public sector Enron/NP
+
+>> FUND: ... except that Enron went out of business in 2002,  when the fraud was revealed.
+Enron/NP; went/VP out/PP of/PP; business/NP
+
+In 2004  and 2005,  as Ali knows, we learned Fannie Mae and Freddie Mac were cooking their accounting books.
+we/NP; learned/VP; Fannie Mae/NP
+
+In 2004  and 2005,  as Ali knows, we learned Fannie Mae and Freddie Mac were cooking their accounting books.
+Freddie Mac/NP; were cooking/VP; their accounting books/NP
+
+Instead, they kept making more mortgages.
+they/NP; kept making/VP; more mortgages/NP
+
+So, this is a question -- this is private companies partnering with these quasi-public companies and engaging in the financial scandal of the century.
+this/NP; is/VP; a question/NP
+
+So, this is a question -- this is private companies partnering with these quasi-public companies and engaging in the financial scandal of the century.
+this/NP; is/VP; private companies/NP
+
+So, this is a question -- this is private companies partnering with these quasi-public companies and engaging in the financial scandal of the century.
+these quasi-public companies/NP; engaging/VP in/PP; the financial scandal of the century/NP
+
+>> COOPER: Wasn't there a federal agency whose sole job was to oversee Fannie Mae and Freddie Mac? >> FUND: Yes, accept that Fannie Mae and Freddie Mac were very clever.
+whose sole job/NP; was to oversee/VP; Fannie Mae/NP
+
+>> COOPER: Wasn't there a federal agency whose sole job was to oversee Fannie Mae and Freddie Mac? >> FUND: Yes, accept that Fannie Mae and Freddie Mac were very clever.
+Freddie Mac/NP; >/VP; FUND/NP
+
+They distributed campaign contributions to 348  of the 435  House members... >> COOPER: Unbelievable.
+They/NP; distributed/VP; campaign contributions/NP
+
+I mean, you were in a Washington and you were a charity, you probably got a donation from Fannie Mae/Freddie Mac.
+you/NP; were/VP in/PP; a Washington/NP
+
+I mean, you were in a Washington and you were a charity, you probably got a donation from Fannie Mae/Freddie Mac.
+you/NP; were/VP; a charity/NP
+
+I mean, you were in a Washington and you were a charity, you probably got a donation from Fannie Mae/Freddie Mac.
+you/NP; got/VP; a donation/NP
+
+They were a great corporate citizens, except they were a bizarre form of corporate citizen.
+They/NP; were/VP; a great corporate citizens/NP
+
+They were a great corporate citizens, except they were a bizarre form of corporate citizen.
+they/NP; were/VP; a bizarre form of corporate citizen/NP
+
+They made private profits.
+They/NP; made/VP; private profits/NP
+
+They paid huge private sector salaries to people who were appointed effectively by -- as government officials... >> COOPER: So... (CROSSTALK) >> FUND: ... and the risk went to the taxpayer, you and I. >> COOPER: As far as stopping this bleeding, though, I mean, where does the investigation stand?
+They/NP; paid/VP; huge private sector salaries/NP
+
+They paid huge private sector salaries to people who were appointed effectively by -- as government officials... >> COOPER: So... (CROSSTALK) >> FUND: ... and the risk went to the taxpayer, you and I. >> COOPER: As far as stopping this bleeding, though, I mean, where does the investigation stand?
+the risk/NP; went/VP to/PP; the taxpayer/NP
+
+I  mean, there's -- yes, people want more investigation, but is that going to slow down this bailout?
+people/NP; want/VP; more investigation/NP
+
+(CROSSTALK) >> VELSHI: They can go on parallel tracks.
+They/NP; can go/VP on/PP; parallel tracks/NP
+
+The FBI  can continue to investigate that, as well they should be.
+The FBI/NP; can continue to investigate/VP; that/NP
+
+This -- that does not affect the fact that this package needs to move ahead in some form.
+that/NP; does not affect/VP; the fact/NP
+
+This -- that does not affect the fact that this package needs to move ahead in some form.
+this package/NP; needs to move ahead/VP in/PP; some form/NP
+
+But what I  think the average person doesn't understand is, while we're debating whether this is a Wall Street or a Main Street bailout, the credit system in this country is coming to a halt.
+I/NP; think/VP; the average person/NP
+
+But what I  think the average person doesn't understand is, while we're debating whether this is a Wall Street or a Main Street bailout, the credit system in this country is coming to a halt.
+we/NP; 're debating/VP; this/NP
+
+But what I  think the average person doesn't understand is, while we're debating whether this is a Wall Street or a Main Street bailout, the credit system in this country is coming to a halt.
+this country/NP; is coming/VP to/PP; a halt/NP
+
+It is next to impossible for companies to get money if they need it.
+It/NP; is/VP to/PP; impossible/NP
+
+It is next to impossible for companies to get money if they need it.
+companies/NP; to get/VP; money/NP
+
+It is next to impossible for companies to get money if they need it.
+they/NP; need/VP; it/NP
+
+And, Anderson, you know where this affects Main Street?
+you/NP; know where/VP; this/NP
+
+It's not just more expensive home loans and car loans and student loans.
+It/NP; 's just more/VP; expensive home loans/NP
+
+It's the fact that there are some companies that borrow money to make payroll in this country.
+It/NP; is/VP; the fact/NP
+
+It's the fact that there are some companies that borrow money to make payroll in this country.
+there/NP; are/VP; some companies/NP
+
+It's the fact that there are some companies that borrow money to make payroll in this country.
+that/NP; borrow/VP; money/NP
+
+If this continues, there could be major corporations that just have to grind to a halt, because they can't raise money.
+there/NP; could be/VP; major corporations/NP
+
+If this continues, there could be major corporations that just have to grind to a halt, because they can't raise money.
+that/NP; have to grind/VP to/PP; a halt/NP
+
+If this continues, there could be major corporations that just have to grind to a halt, because they can't raise money.
+they/NP; ca n't raise/VP; money/NP
+
+>> FUND: We had a preview of this 20 years ago during the savings and loan crisis.
+We/NP; had/VP; a preview of this 20 years/NP
+
+>> FUND: And the government raised the loan guarantees on savings and loan deposits.
+the government/NP; raised/VP; the loan guarantees/NP
+
+The savings and loans then invested in windmills before they were popular and bull semen farms and all kinds of marginal investments.
+The savings and loans/NP; then invested/VP in/PP; windmills/NP
+
+The savings and loans then invested in windmills before they were popular and bull semen farms and all kinds of marginal investments.
+they/NP; were/VP; bull semen farms/NP
+
+That's why this current resolution trust corporation that they're trying to set up is very similar to what we set up with the savings and loan.
+That/NP; is why/VP; this current resolution trust corporation/NP
+
+That's why this current resolution trust corporation that they're trying to set up is very similar to what we set up with the savings and loan.
+we/NP; set/VP up/PRT with/PP; the savings and loan/NP
+
+The difference, as Ali mentions is, this is much bigger in scope, and it's freezing up the credit markets.
+this/NP; is much bigger/VP in/PP; scope/NP
+
+The difference, as Ali mentions is, this is much bigger in scope, and it's freezing up the credit markets.
+it/NP; 's freezing/VP up/PRT; the credit markets/NP
+
+>> FUND: Oh, this will take a couple of years, and people will go to prison.
+this/NP; will take/VP; a couple of years/NP
+
+>> FUND: Oh, this will take a couple of years, and people will go to prison.
+people/NP; will go/VP to/PP; prison/NP
+
+>> COOPER: You think there's no doubt people will go to prison?
+You/NP; think/VP; there/NP
+
+>> COOPER: You think there's no doubt people will go to prison?
+no doubt people/NP; will go/VP to/PP; prison/NP
+
+>> FUND: I  can almost guarantee it.
+I/NP; can almost guarantee/VP; it/NP
+
+(CROSSTALK) >> COOPER: The CEOs, people involved in these companies?
+people/NP; involved/VP in/PP; these companies/NP
+
+>> FUND: Well, we know that people cooked the books at Fannie Mae and Freddie Mac and they were covering up the extent to which they were taking undue risks.
+we/NP; know/VP that/PP; people/NP
+
+>> FUND: Well, we know that people cooked the books at Fannie Mae and Freddie Mac and they were covering up the extent to which they were taking undue risks.
+they/NP; were covering/VP up/PRT; the extent/NP
+
+>> FUND: Well, we know that people cooked the books at Fannie Mae and Freddie Mac and they were covering up the extent to which they were taking undue risks.
+they/NP; were taking/VP; undue risks/NP
+
+We also know that members of Congress were involved in making sure that nobody touched Fannie Mae and Freddie Mac, that there was not proper oversight.
+We/NP; know/VP that/PP; members of Congress/NP
+
+We also know that members of Congress were involved in making sure that nobody touched Fannie Mae and Freddie Mac, that there was not proper oversight.
+nobody/NP; touched/VP; Fannie Mae/NP
+
+We also know that members of Congress were involved in making sure that nobody touched Fannie Mae and Freddie Mac, that there was not proper oversight.
+there/NP; was/VP; proper oversight/NP
+
+We know that some people in the private companies, AIG  and Lehman and others, were probably in cahoots with Fannie Mae and Freddie Mac in expanding the mortgage pay pie, so everybody could make money.
+We/NP; know/VP; some people/NP
+
+We know that some people in the private companies, AIG  and Lehman and others, were probably in cahoots with Fannie Mae and Freddie Mac in expanding the mortgage pay pie, so everybody could make money.
+Freddie Mac/NP; expanding/VP; the mortgage pay pie/NP
+
+We know that some people in the private companies, AIG  and Lehman and others, were probably in cahoots with Fannie Mae and Freddie Mac in expanding the mortgage pay pie, so everybody could make money.
+everybody/NP; could make/VP; money/NP
+
+(CROSSTALK) >> COOPER: What are the chances the FBI might investigate members of Congress in this? >> FUND: Oh, I  think it's inevitable.
+What/NP; are/VP; the chances/NP
+
+(CROSSTALK) >> COOPER: What are the chances the FBI might investigate members of Congress in this? >> FUND: Oh, I  think it's inevitable.
+the FBI/NP; might investigate/VP; members of Congress/NP
+
+(CROSSTALK) >> COOPER: What are the chances the FBI might investigate members of Congress in this? >> FUND: Oh, I  think it's inevitable.
+this/NP; >/VP; FUND/NP
+
+(CROSSTALK) >> COOPER: What are the chances the FBI might investigate members of Congress in this? >> FUND: Oh, I  think it's inevitable.
+I/NP; think/VP; it/NP
+
+You know, I  will pinpoint the day I  which thought this was really going bad.
+I/NP; will pinpoint/VP; the day/NP
+
+You know, I  will pinpoint the day I  which thought this was really going bad.
+which/NP; thought/VP; this/NP
+
+In March 2005, Anderson, Fannie Mae and HUD,  the Bush administration, backed by Congress, announced they were going to introduce something new in American life, the zero-down payment mortgage.
+they/NP; were going to introduce/VP; something/NP
+
+This was a mistake, because people who can't afford even one penny for a down payment probably might not be eligible for a mortgage.
+This/NP; was/VP; a mistake/NP
+
+This was a mistake, because people who can't afford even one penny for a down payment probably might not be eligible for a mortgage.
+who/NP; ca n't afford/VP; even one penny/NP
+
+This was a mistake, because people who can't afford even one penny for a down payment probably might not be eligible for a mortgage.
+a down payment/NP; might not be/VP for/PP; a mortgage/NP
+
+>> COOPER: A  lot of people got loans who should not have.
+A lot of people/NP; got/VP; loans/NP
+
+Ali, we're going to talk to you in a moment.
+we/NP; 're going to talk/VP to/PP; you/NP
 <end>20080924021213.000</end>
 
 <story>Campaign 2008 / Obama vs. McCain / Economy</story>

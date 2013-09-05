@@ -1,9 +1,7 @@
 <story>Campaign 2008 / Obama vs. McCain / Economic Crisis / A Discussion</story>
 <start>20080919021929.000</start>
-<end>20080919023343.667</end>
->> > | IS | A TIME LAPSE > > COOPER 
-the Dow Jones industrial | gaining | 400 points 
-that | has seen | blue chips 
+<end>20080919024118.667</end>
+>> | > | GEORGE W. BUSH 
 The American people | can be | we 
 our financial markets | improve | investor confidence 
 decades | has unleashed | panic 

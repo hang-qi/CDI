@@ -1,27 +1,765 @@
 <story>Economy: Bank Bailout</story>
-<start>20080919020859.333</start>
->>> Later, how the candidates are all responding to all this and how the issue is playing on the trails and in the polls.
-the issue/NP; is playing/VP on/PP; the trails/NP
+<start>20080919020049.333</start>
+>> ANDERSON COOPER, CNN ANCHOR: We begin tonight with breaking news, stunning news, frankly, the leaders of government, Congress, the nation's financial system coming together on Capitol Hill, hammering out a fix for the economy so important, so sweeping, it may take trillions of dollars to succeed.
+the nation's financial system/NP; coming together/VP on/PP; Capitol Hill/NP
 
-That and any late updates out of Washington, we will tell you about -- when 360  continues.
-we/NP; will tell/VP; you/NP
-<end>20080919021144.500</end>
+>> ANDERSON COOPER, CNN ANCHOR: We begin tonight with breaking news, stunning news, frankly, the leaders of government, Congress, the nation's financial system coming together on Capitol Hill, hammering out a fix for the economy so important, so sweeping, it may take trillions of dollars to succeed.
+it/NP; may take/VP; trillions of dollars/NP
+
+That is trillions with a T.  -- the price of failure, a deeper recession, or even worse.
+That/NP; is/VP; trillions/NP
+
+The meeting broke up a short time ago with late word that a plan roughed out by the Treasury Department and Federal Reserve could be taking shape quickly, and taking shape quickly.
+The meeting/NP; broke/VP up/PRT; a short time/NP
+
+The meeting broke up a short time ago with late word that a plan roughed out by the Treasury Department and Federal Reserve could be taking shape quickly, and taking shape quickly.
+a plan/NP; roughed/VP out/PRT by/PP; the Treasury Department and Federal Reserve/NP
+
+Treasury Secretary Henry Paulson had this to say.
+Treasury Secretary Henry Paulson/NP; had/VP; this/NP
+
+And what we are working on now is a -- an approach to deal with the systemic risk and the stresses in our capital markets.
+we/NP; are working/VP on/PP; now is/NP
+
+And what we are working on now is a -- an approach to deal with the systemic risk and the stresses in our capital markets.
+an approach/NP; to deal/VP with/PP; the systemic risk/NP
+
+And we have talked about a -- a comprehensive approach that will require legislation to deal with illiquid assets on financial institutions in the United States on their balance sheet.
+we/NP; have talked/VP about/PP; a/NP
+
+And we have talked about a -- a comprehensive approach that will require legislation to deal with illiquid assets on financial institutions in the United States on their balance sheet.
+that/NP; will require/VP; legislation/NP
+
+And, as we have said for some time, the root cause of the stress in the capital markets is the real estate correction and what's going on in terms of the price declines in real estate.
+we/NP; have said/VP for/PP; some time/NP
+
+And, as we have said for some time, the root cause of the stress in the capital markets is the real estate correction and what's going on in terms of the price declines in real estate.
+the capital markets/NP; is/VP; the real estate correction/NP
+
+And, as we have said for some time, the root cause of the stress in the capital markets is the real estate correction and what's going on in terms of the price declines in real estate.
+what/NP; 's going/VP on/PRT in/PP; terms of the price declines/NP
+
+So, again, we are coming together to work for an expeditious solution, which is aimed right at the heart of this problem, which is illiquid assets on financial institutions' balance sheets.
+which/NP; is aimed right/VP at/PP; the heart of this problem/NP
+
+So, again, we are coming together to work for an expeditious solution, which is aimed right at the heart of this problem, which is illiquid assets on financial institutions' balance sheets.
+which/NP; is/VP; illiquid assets/NP
+
+>> COOPER: Well, tonight, we're going to be looking at what all of that means to you.
+we/NP; 're going to be looking/VP at/PP; what/NP
+
+>> COOPER: Well, tonight, we're going to be looking at what all of that means to you.
+all of that/NP; means/VP to/PP; you/NP
+
+Suze Orman joins us once again for that.
+Suze Orman/NP; joins/VP; us/NP
+
+We will also be showing you a link on AC360.com
+We/NP; will also be showing/VP; you/NP
+
+where you can learn about which of your assets are federally insured.
+you/NP; can learn/VP about/PP; which of your assets/NP
+
+Along with Suze, CNN's Ali Velshi is monitoring all the latest developments, a lot to cover.
+CNN's Ali Velshi/NP; is monitoring/VP; all the latest developments/NP
+
+Ali, first of all, what do you make of this, this meeting?
+what/NP; do you make/VP of/PP; this/NP
+
+When you look at the assembly there, it was Paulson, it was Ben Bernanke, it was Chris Cox, the head of the SEC, and congressional leaders from both sides of the aisle.
+you/NP; look/VP at/PP; the assembly/NP
+
+When you look at the assembly there, it was Paulson, it was Ben Bernanke, it was Chris Cox, the head of the SEC, and congressional leaders from both sides of the aisle.
+it/NP; was/VP; Paulson/NP
+
+When you look at the assembly there, it was Paulson, it was Ben Bernanke, it was Chris Cox, the head of the SEC, and congressional leaders from both sides of the aisle.
+it/NP; was/VP; Ben Bernanke/NP
+
+When you look at the assembly there, it was Paulson, it was Ben Bernanke, it was Chris Cox, the head of the SEC, and congressional leaders from both sides of the aisle.
+it/NP; was/VP; Chris Cox/NP
+
+They're saying they will stay until this is done.
+They/NP; 're saying/VP; they/NP
+
+We have heard the these -- that group is ready to negotiate through the course of weekend, if necessary.
+We/NP; have heard/VP; the these/NP
+
+They are talking about a fast deal.
+They/NP; are talking/VP about/PP; a fast deal/NP
+
+And you said trillions.
+you/NP; said/VP; trillions/NP
+
+It might be fashioned after what happened after the savings and loan crisis, where the government formed an agency that bought up all the bad properties, hung onto them, fixed them up, and sold them again, basically.
+It/NP; might be fashioned/VP after/PP; what/NP
+
+It might be fashioned after what happened after the savings and loan crisis, where the government formed an agency that bought up all the bad properties, hung onto them, fixed them up, and sold them again, basically.
+the government/NP; formed/VP; an agency/NP
+
+It might be fashioned after what happened after the savings and loan crisis, where the government formed an agency that bought up all the bad properties, hung onto them, fixed them up, and sold them again, basically.
+that/NP; bought/VP up/PRT; all the bad properties/NP
+
+It's as if somebody came and picked up your stuff from your garage sale, and was able to do something better with it than you could, because they didn't have to sell it that day.
+It/NP; is/VP; somebody/NP
+
+It's as if somebody came and picked up your stuff from your garage sale, and was able to do something better with it than you could, because they didn't have to sell it that day.
+they/NP; did n't have to sell/VP; it/NP
+
+But, to you, it was just junk.
+it/NP; was/VP; just junk/NP
+
+But we are talking about possibly trillions of dollars of the government buying up bad debt and somehow releasing that from the market and letting the market get on.
+we/NP; are talking/VP about/PP; possibly trillions of dollars/NP
+
+But we are talking about possibly trillions of dollars of the government buying up bad debt and somehow releasing that from the market and letting the market get on.
+the government/NP; buying/VP; up bad debt/NP
+
+But we are talking about possibly trillions of dollars of the government buying up bad debt and somehow releasing that from the market and letting the market get on.
+the market/NP; letting/VP; the market/NP
+
+>> COOPER: The fact, Suze, that all those folks were seen together, it's just a sign of how bad this thing really is.
+it/NP; is/VP; just a sign/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, especially when they're getting together during the week at 7:00  at night.
+>/NP; >/VP; OWNING/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, especially when they're getting together during the week at 7:00  at night.
+they/NP; 're getting together/VP during/PP; the week/NP
+
+And, even, you saw Mr. Paulson.
+you/NP; saw/VP; Mr. Paulson/NP
+
+You even heard him say, this was dire, that this was really, really important.
+You/NP; heard/VP; him/NP
+
+What I  don't understand, though, very different than in 1989,  when the thrift savings, you kind of knew what you were putting in there.
+kind/NP; knew/VP; what/NP
+
+What I  don't understand, though, very different than in 1989,  when the thrift savings, you kind of knew what you were putting in there.
+you/NP; were putting/VP in/PP; there/NP
+
+>> VELSHI: It was properties.
+It/NP; was/VP; properties/NP
+
+>> ORMAN: It was properties.
+It/NP; was/VP; properties/NP
+
+I  don't understand, though, how here, when everything is so leveraged... >> VELSHI: Right, what is it that they're going to put into this?
+what/NP; is/VP; it/NP
+
+I  don't understand, though, how here, when everything is so leveraged... >> VELSHI: Right, what is it that they're going to put into this?
+they/NP; 're going to put/VP into/PP; this/NP
+
+>> ORMAN: ... how -- what is it that they're going to put in there?
+what/NP; is/VP; it/NP
+
+>> COOPER: Does the government really have a grip on the full extent of this? >> VELSHI: No. That's why we have seen these billions and billions and billions of dollars for -- of write-downs from banks and investment companies, because nobody knows how big this is, and what is that they're buying and putting into this.
+the government/NP; have/VP; a grip/NP
+
+>> COOPER: Does the government really have a grip on the full extent of this? >> VELSHI: No. That's why we have seen these billions and billions and billions of dollars for -- of write-downs from banks and investment companies, because nobody knows how big this is, and what is that they're buying and putting into this.
+the full extent of this/NP; >/VP; VELSHI/NP
+
+>> COOPER: Does the government really have a grip on the full extent of this? >> VELSHI: No. That's why we have seen these billions and billions and billions of dollars for -- of write-downs from banks and investment companies, because nobody knows how big this is, and what is that they're buying and putting into this.
+That/NP; is why/VP; we/NP
+
+>> COOPER: Does the government really have a grip on the full extent of this? >> VELSHI: No. That's why we have seen these billions and billions and billions of dollars for -- of write-downs from banks and investment companies, because nobody knows how big this is, and what is that they're buying and putting into this.
+nobody/NP; knows/VP; this/NP
+
+>> COOPER: Does the government really have a grip on the full extent of this? >> VELSHI: No. That's why we have seen these billions and billions and billions of dollars for -- of write-downs from banks and investment companies, because nobody knows how big this is, and what is that they're buying and putting into this.
+what/NP; is/VP; they/NP
+
+The -- the plan has worked in the past -- and, by the way, these -- this type of bailout has actually been profitable in the end for the taxpayer.
+the plan/NP; has worked/VP in/PP; the past/NP
+
+The -- the plan has worked in the past -- and, by the way, these -- this type of bailout has actually been profitable in the end for the taxpayer.
+this type of bailout/NP; has actually been/VP in/PP; the end/NP
+
+But we don't know what it is they're buying and what kind of deal they're hammering out.
+we/NP; do n't know/VP; what/NP
+
+But we don't know what it is they're buying and what kind of deal they're hammering out.
+it/NP; is/VP; they/NP
+
+>> COOPER: We should point out "The Wall Street Journal" is reporting that the SEC  wants to temporarily ban shorting stocks.
+We/NP; should point/VP out/PRT; The Wall Street Journal/NP
+
+>> COOPER: We should point out "The Wall Street Journal" is reporting that the SEC  wants to temporarily ban shorting stocks.
+the SEC/NP; wants to temporarily ban/VP; shorting stocks/NP
+
+What does that mean?
+What/NP; does/VP; that mean/NP
+
+>> ORMAN: It means here -- and London has banned shorting stocks.
+London/NP; has banned shorting/VP; stocks/NP
+
+>> ORMAN: It means people are not going to be able to sell stocks in the hopes that they go down.
+It/NP; means/VP; people/NP
+
+So... >> VELSHI: Shorting means betting on the horse you think is going to lose.
+Shorting/NP; means betting/VP on/PP; the horse/NP
+
+The only thing here -- and they're treating it as concern about market manipulation, that some people have been deliberately betting against companies and forcing them to fail financially.
+they/NP; 're treating/VP; it/NP
+
+The only thing here -- and they're treating it as concern about market manipulation, that some people have been deliberately betting against companies and forcing them to fail financially.
+some people/NP; have been deliberately betting/VP against/PP; companies/NP
+
+The one danger here is, one of the things that has happened over the last several years is, regular investors have been able to capitalize on mutual funds that do some shorting, so that, when you are in a tough market, in -- some of these mutual funds are able to sort of help you out in terms of limiting your downside loss.
+that/NP; has happened/VP over/PP; the last several years/NP
+
+The one danger here is, one of the things that has happened over the last several years is, regular investors have been able to capitalize on mutual funds that do some shorting, so that, when you are in a tough market, in -- some of these mutual funds are able to sort of help you out in terms of limiting your downside loss.
+that/NP; do/VP; some shorting/NP
+
+The one danger here is, one of the things that has happened over the last several years is, regular investors have been able to capitalize on mutual funds that do some shorting, so that, when you are in a tough market, in -- some of these mutual funds are able to sort of help you out in terms of limiting your downside loss.
+you/NP; are/VP in/PP; a tough market/NP
+
+The one danger here is, one of the things that has happened over the last several years is, regular investors have been able to capitalize on mutual funds that do some shorting, so that, when you are in a tough market, in -- some of these mutual funds are able to sort of help you out in terms of limiting your downside loss.
+some of these mutual funds/NP; are/VP to/PP; sort of help/NP
+
+The one danger here is, one of the things that has happened over the last several years is, regular investors have been able to capitalize on mutual funds that do some shorting, so that, when you are in a tough market, in -- some of these mutual funds are able to sort of help you out in terms of limiting your downside loss.
+terms/NP; limiting/VP; your downside loss/NP
+
+There -- this is a market mechanism.
+this/NP; is/VP; a market mechanism/NP
+
+It is a very unusual move for a commission that regulates trading to stop a basic market mechanism.
+It/NP; is/VP; a very unusual move/NP
+
+It is a very unusual move for a commission that regulates trading to stop a basic market mechanism.
+that/NP; regulates/VP; trading/NP
+
+>> COOPER: All day long, no doubt, everybody has been either talking to brokers, if they have them, or looking at their 401(k) statement.
+everybody/NP; has been either talking/VP to/PP; brokers/NP
+
+>> COOPER: All day long, no doubt, everybody has been either talking to brokers, if they have them, or looking at their 401(k) statement.
+they/NP; have/VP; them/NP
+
+What is the advice that -- for folks sitting at home right now, Suze? >> ORMAN: Again, the advice is as I have always been giving the advice.
+What/NP; is/VP; the advice/NP
+
+What is the advice that -- for folks sitting at home right now, Suze? >> ORMAN: Again, the advice is as I have always been giving the advice.
+folks/NP; sitting/VP at/PP; home/NP
+
+What is the advice that -- for folks sitting at home right now, Suze? >> ORMAN: Again, the advice is as I have always been giving the advice.
+Suze/NP; >/VP; ORMAN/NP
+
+What is the advice that -- for folks sitting at home right now, Suze? >> ORMAN: Again, the advice is as I have always been giving the advice.
+the advice/NP; is/VP; I/NP
+
+If you have time, 10, 20, 30, 40, years, and you're investing in a 401(k), you have to keep investing.
+you/NP; have/VP; time/NP
+
+If you have time, 10, 20, 30, 40, years, and you're investing in a 401(k), you have to keep investing.
+you/NP; 're investing/VP in/PP; a 401(k )/NP
+
+If you have time, 10, 20, 30, 40, years, and you're investing in a 401(k), you have to keep investing.
+you/NP; have to keep/VP; investing/NP
+
+This is not the time to stop investing, little amounts of money every single month.
+This/NP; is/VP; the time/NP
+
+However, if you need money, need money for what?
+you/NP; need/VP; money/NP
+
+You need money for a down payment on a home, and it happens to be in the stock market, need money to send your kids to pay college.
+You/NP; need/VP; money/NP
+
+You need money for a down payment on a home, and it happens to be in the stock market, need money to send your kids to pay college.
+it/NP; happens to be/VP in/PP; the stock market/NP
+
+You need money for a down payment on a home, and it happens to be in the stock market, need money to send your kids to pay college.
+money/NP; to send/VP; your kids/NP
+
+>> COOPER: What would you say of the time frame?
+you/NP; say/VP of/PP; the time frame/NP
+
+>> ORMAN: I  have always had a rule that money that you need within five years or less doesn't belong in the stock market.
+I/NP; have always had/VP; a rule/NP
+
+>> ORMAN: I  have always had a rule that money that you need within five years or less doesn't belong in the stock market.
+you/NP; need/VP within/PP; five years/NP
+
+>> ORMAN: I  have always had a rule that money that you need within five years or less doesn't belong in the stock market.
+less/NP; does n't belong/VP in/PP; the stock market/NP
+
+Because if something goes down 50 percent, and you need it to go back up, it could take, at a 9  percent annual average rate of return, 12  years to get back to where you were.
+something/NP; goes/VP down/PP; 50 percent/NP
+
+Because if something goes down 50 percent, and you need it to go back up, it could take, at a 9  percent annual average rate of return, 12  years to get back to where you were.
+you/NP; need/VP; it/NP
+
+Because if something goes down 50 percent, and you need it to go back up, it could take, at a 9  percent annual average rate of return, 12  years to get back to where you were.
+12 years/NP; to get back/VP to/PP; where/NP
+
+>> VELSHI: Anderson, Suze made an interesting point, though, just before we got on air.
+Suze/NP; made/VP; an interesting point/NP
+
+>> VELSHI: Anderson, Suze made an interesting point, though, just before we got on air.
+we/NP; got/VP on/PP; air/NP
+
+And that is, no matter even if you have 15  or 20 years to invest, if you are feeling like you can't sleep at night because of what's going on in this market, Suze, what do you tell them then?
+you/NP; have/VP; 15 or 20 years/NP
+
+And that is, no matter even if you have 15  or 20 years to invest, if you are feeling like you can't sleep at night because of what's going on in this market, Suze, what do you tell them then?
+you/NP; are feeling/VP; you/NP
+
+And that is, no matter even if you have 15  or 20 years to invest, if you are feeling like you can't sleep at night because of what's going on in this market, Suze, what do you tell them then?
+what/NP; 's going on/VP in/PP; this market/NP
+
+And that is, no matter even if you have 15  or 20 years to invest, if you are feeling like you can't sleep at night because of what's going on in this market, Suze, what do you tell them then?
+what/NP; do you tell/VP; them/NP
+
+And what is going to happen is, because the market wept up 400- some-odd points today, everybody is going to say, oh, it's over.
+what/NP; is going to happen/VP; is/NP
+
+And what is going to happen is, because the market wept up 400- some-odd points today, everybody is going to say, oh, it's over.
+the market/NP; wept up/VP; 400- some-odd points today/NP
+
+This is going to go down probably tomorrow morning.
+This/NP; is going to go/VP down/PRT; morning/NP
+
+>> COOPER: It's amazing, psychologically, how each day has a different effect.
+each day/NP; has/VP; a different effect/NP
+
+I  mean, literally, I  saw 400  points up today.
+I/NP; saw/VP; 400 points/NP
+
+Now I'm glad I'm in the stock market.
+I/NP; 'm/VP; I/NP
+
+But, you know, it doesn't make any sense.
+it/NP; does n't make/VP; any sense/NP
+
+>> ORMAN: No. So, you're in the stock -- the way -- when you're happy you're in the stock market is when the economy is good, everybody is making money, unemployment is going down, real estate is going up... >> VELSHI: Right.
+you/NP; 're/VP in/PP; the stock/NP
+
+>> ORMAN: No. So, you're in the stock -- the way -- when you're happy you're in the stock market is when the economy is good, everybody is making money, unemployment is going down, real estate is going up... >> VELSHI: Right.
+you/NP; 're/VP; you/NP
+
+>> ORMAN: No. So, you're in the stock -- the way -- when you're happy you're in the stock market is when the economy is good, everybody is making money, unemployment is going down, real estate is going up... >> VELSHI: Right.
+the stock market/NP; is when/VP; the economy/NP
+
+>> ORMAN: No. So, you're in the stock -- the way -- when you're happy you're in the stock market is when the economy is good, everybody is making money, unemployment is going down, real estate is going up... >> VELSHI: Right.
+everybody/NP; is making/VP; money/NP
+
+We still have unemployment going up.
+We/NP; have/VP; unemployment/NP
+
+We have real estate still going down.
+We/NP; have/VP; real estate/NP
+
+Although it's getting a little better, it's still going down.
+it/NP; 's getting/VP; a little better/NP
+
+We have major problems in the economy.
+We/NP; have/VP; major problems/NP
+
+Even if the -- if they do this with the, you know, trust that they're trying to set up, it doesn't help in terms of who's going to lend you the money to buy a new house, and, once they have lent you that money, what are they then going to do with that loan?
+they/NP; do/VP; this/NP
+
+Even if the -- if they do this with the, you know, trust that they're trying to set up, it doesn't help in terms of who's going to lend you the money to buy a new house, and, once they have lent you that money, what are they then going to do with that loan?
+it/NP; does n't help/VP in/PP; terms of who/NP
+
+Even if the -- if they do this with the, you know, trust that they're trying to set up, it doesn't help in terms of who's going to lend you the money to buy a new house, and, once they have lent you that money, what are they then going to do with that loan?
+the money/NP; to buy/VP; a new house/NP
+
+Even if the -- if they do this with the, you know, trust that they're trying to set up, it doesn't help in terms of who's going to lend you the money to buy a new house, and, once they have lent you that money, what are they then going to do with that loan?
+they/NP; have lent/VP; you/NP
+
+Even if the -- if they do this with the, you know, trust that they're trying to set up, it doesn't help in terms of who's going to lend you the money to buy a new house, and, once they have lent you that money, what are they then going to do with that loan?
+what/NP; are/VP; they/NP
+
+>> COOPER: So, if you're looking for safe investments, right now, obviously, banks -- if you have it in a savings and loan up to $100,000, it's federally insured.
+you/NP; 're looking/VP for/PP; safe investments/NP
+
+>> COOPER: So, if you're looking for safe investments, right now, obviously, banks -- if you have it in a savings and loan up to $100,000, it's federally insured.
+you/NP; have/VP; it/NP
+
+>> ORMAN: If you have it in a bank, as long as you have FDIC insurance -- and, again, I'm just quickly going to say this -- everybody should go to myFDICinsurance.gov.
+you/NP; have/VP; it/NP
+
+>> ORMAN: If you have it in a bank, as long as you have FDIC insurance -- and, again, I'm just quickly going to say this -- everybody should go to myFDICinsurance.gov.
+you/NP; have/VP; FDIC insurance/NP
+
+>> ORMAN: If you have it in a bank, as long as you have FDIC insurance -- and, again, I'm just quickly going to say this -- everybody should go to myFDICinsurance.gov.
+I/NP; 'm just quickly going to say/VP; this/NP
+
+I  have partnered with the FDIC.
+I/NP; have partnered/VP with/PP; the FDIC./NP
+
+You will see my little face there.
+You/NP; will see/VP; my little face/NP
+
+Put in -- answer the questions, and you will find out if your money is insured in the bank or not.
+you/NP; will find/VP out/PRT if/PP; your money/NP
+
+(CROSSTALK) >> COOPER: We have that link also on our Web site, AC360.com.
+We/NP; have/VP; that link/NP
+
+(CROSSTALK) >> VELSHI: You know, what Suze says, there are three ways in which you can feel prosperous.
+there/NP; are/VP; three ways/NP
+
+And one is if you're getting a raise, you're increasing your wealth.
+one/NP; is/VP; you/NP
+
+And one is if you're getting a raise, you're increasing your wealth.
+you/NP; 're increasing/VP; your wealth/NP
+
+And three is if the value of your home is increasing.
+three/NP; is/VP; the value of your home/NP
+
+If one of those started to happen, if we started to gain jobs or house prices started go up, people would feel a little wealthier and they would spend money.
+we/NP; started to gain/VP; jobs/NP
+
+If one of those started to happen, if we started to gain jobs or house prices started go up, people would feel a little wealthier and they would spend money.
+people/NP; would feel/VP; a little wealthier/NP
+
+If one of those started to happen, if we started to gain jobs or house prices started go up, people would feel a little wealthier and they would spend money.
+they/NP; would spend/VP; money/NP
+
+But this economy, more than any other economy in the entire world, Anderson, is dependent upon people feeling wealthy and spending.
+people/NP; feeling/VP; wealthy and spending/NP
+
+>> COOPER: You know, we all want to believe there are experts.
+all/NP; want to believe/VP; there/NP
+
+And when you talk to the person who is managing your account or your 401(k), you want to believe that they know something that you don't.
+you/NP; talk/VP to/PP; the person/NP
+
+And when you talk to the person who is managing your account or your 401(k), you want to believe that they know something that you don't.
+who/NP; is managing/VP; your account/NP
+
+And when you talk to the person who is managing your account or your 401(k), you want to believe that they know something that you don't.
+you/NP; want to believe/VP; they/NP
+
+But no experts alive have really seen this kind of a thing.
+no experts alive/NP; have really seen/VP; this kind of a thing/NP
+
+Yes, there was '87.
+there/NP; was/VP; '87/NP
+
+Yes, there was the Internet bust.
+there/NP; was/VP; the Internet bust/NP
+
+But -- but you talk to people... >> ORMAN: Well, let me ask you this.
+you/NP; talk/VP to/PP; people/NP
+
+But -- but you talk to people... >> ORMAN: Well, let me ask you this.
+me/NP; ask/VP; you/NP
+
+You have a financial adviser.
+You/NP; have/VP; a financial adviser/NP
+
+Did your expert say to you, Anderson, I  want you out of this market now a year ago?
+your expert/NP; say/VP to/PP; you/NP
+
+Did your expert say to you, Anderson, I  want you out of this market now a year ago?
+I/NP; want/VP; you/NP
+
+It's because nobody knows.
+It/NP; is/VP; nobody/NP
+
+Nobody has ever seen this happen before.
+Nobody/NP; has ever seen/VP; this/NP
+
+Nobody has an understanding of what's happening.
+Nobody/NP; has/VP; an understanding of what's happening/NP
+
+So, what does a normal human being do?
+what/NP; does/VP; a normal human being/NP
+
+You do what it takes to make yourself feel secure, take the risk that you're able to take, but don't do anything where you think, I'm going to catch a good buy now.
+You/NP; do/VP; what/NP
+
+You do what it takes to make yourself feel secure, take the risk that you're able to take, but don't do anything where you think, I'm going to catch a good buy now.
+it/NP; takes to make/VP; yourself/NP
+
+You do what it takes to make yourself feel secure, take the risk that you're able to take, but don't do anything where you think, I'm going to catch a good buy now.
+I/NP; 'm going to catch/VP; a good buy/NP
+
+In about 30  seconds, Suze is going to be on Erica Hill's live Webcast doing the commercial break.
+Suze/NP; is going to be/VP on/PP; Erica Hill's live Webcast/NP
+
+Now, up next, financial guru Andy Serwer on the housing meltdown that got us here.
+that/NP; got/VP; us/NP
+
+We will talk about that, where the market stands, and how a massive bailout might help.
+We/NP; will talk/VP about/PP; that/NP
+<end>20080919021158.000</end>
+
+<story>Economy: Bank Bailout / Serwer Interview</story>
+<start>20080919021158.000</start>
+We're talking about potentially trillions of dollars to fix the system.
+We/NP; 're talking/VP about/PP; potentially trillions of dollars/NP
+
+Digging deeper now, Andy Serwer, who co-wrote the cover story of this week's "TIME"  magazine, "How Wall Street Sold Out America."
+who/NP; co-wrote/VP; the cover story of this week's " TIME" magazine/NP
+
+He joins us now.
+He/NP; joins/VP; us/NP
+
+First, I  have got to ask you what you think about this meeting tonight.
+I/NP; have got to ask/VP; you/NP
+
+First, I  have got to ask you what you think about this meeting tonight.
+you/NP; think/VP about/PP; this meeting tonight/NP
+
+>> ANDY SERWER, MANAGING EDITOR, "FORTUNE": Well, it's momentous and I think it's very significant.
+it/NP; is/VP; I/NP
+
+>> SERWER: On the rumor, and -- you know, but you could tell that really something was happening, because the meetings with the president were going to be taking place, the meetings with the congressional leaders.
+you/NP; could tell/VP; that really something/NP
+
+>> SERWER: On the rumor, and -- you know, but you could tell that really something was happening, because the meetings with the president were going to be taking place, the meetings with the congressional leaders.
+the president/NP; were going to be taking/VP; place/NP
+
+I  hope we don't get dragged down tomorrow, Anderson, by, you know, partisan bickering.
+I/NP; hope/VP; we/NP
+
+There's talk of well, will Congress be able to move forward on this quickly enough?
+There/NP; is/VP; talk of well/NP
+
+And, you know, there's a recess on September 26.
+there/NP; is/VP; a recess/NP
+
+And, you know, I'm thinking to myself, you guys better stay on to make sure you get this thing finished.
+I/NP; 'm thinking/VP to/PP; myself/NP
+
+And, you know, I'm thinking to myself, you guys better stay on to make sure you get this thing finished.
+you/NP; get/VP; this thing/NP
+
+(CROSSTALK) >> COOPER: They were critical of the Iraqi parliament going to recess earlier last year.
+They/NP; were/VP of/PP; the Iraqi parliament/NP
+
+>> COOPER: I  don't think these guys -- I don't think people will stand for these guys going to recess while all this is happening.
+I/NP; do n't think/VP; these guys/NP
+
+>> COOPER: I  don't think these guys -- I don't think people will stand for these guys going to recess while all this is happening.
+I/NP; do n't think/VP; people/NP
+
+>> COOPER: I  don't think these guys -- I don't think people will stand for these guys going to recess while all this is happening.
+these guys/NP; going to recess/VP while/PRT; all this/NP
+
+>> COOPER: It did make feel better when I  read the bio of Bernanke to realize that his expertise is the Great Depression.
+It/NP; did make feel better/VP; I/NP
+
+>> COOPER: It did make feel better when I  read the bio of Bernanke to realize that his expertise is the Great Depression.
+the bio of Bernanke/NP; to realize/VP that/PP; his expertise/NP
+
+And, I mean, and you have got these two guys, Ben Bernanke at the Federal Reserve, and Hank Paulson, the treasury secretary.
+you/NP; have got/VP; these two guys/NP
+
+And, you know, you have to feel kind of pretty relieved, really, that those two people are there.
+you/NP; have to feel/VP; kind of pretty relieved/NP
+
+I mean, as you said, Ben Bernanke knows about the Depression.
+Ben Bernanke/NP; knows/VP about/PP; the Depression/NP
+
+He knows the material.
+He/NP; knows/VP; the material/NP
+
+>> COOPER: Is this analogous to the Great Depression? >> SERWER: I  would say that, yes, in the sense that it's the biggest systemic failure we have had since then.
+the Great Depression/NP; >/VP; SERWER/NP
+
+>> COOPER: Is this analogous to the Great Depression? >> SERWER: I  would say that, yes, in the sense that it's the biggest systemic failure we have had since then.
+I/NP; would say/VP; that/NP
+
+>> COOPER: Is this analogous to the Great Depression? >> SERWER: I  would say that, yes, in the sense that it's the biggest systemic failure we have had since then.
+it/NP; is/VP; the biggest systemic failure/NP
+
+There's no question about that.
+There/NP; is/VP; no question/NP
+
+It's bigger than the S  crisis.
+It/NP; is/VP than/PP; the S crisis/NP
+
+And it's hard for people to get their brain around... >> COOPER: Yes.
+it/NP; is/VP; people/NP
+
+>> SERWER: ...  because, so far, it hasn't spilled into the broader economy.
+it/NP; has n't spilled/VP into/PP; the broader economy/NP
+
+But, you know, you go back to 1929,  there was this big stock market crash, and people sort of looked up and they said, oh, and then they went back to doing the Charleston and drinking gin.
+you/NP; go back/VP to/PP; 1929/NP
+
+But, you know, you go back to 1929,  there was this big stock market crash, and people sort of looked up and they said, oh, and then they went back to doing the Charleston and drinking gin.
+there/NP; was/VP; this big stock market crash/NP
+
+But, you know, you go back to 1929,  there was this big stock market crash, and people sort of looked up and they said, oh, and then they went back to doing the Charleston and drinking gin.
+sort of/NP; looked up/VP; they/NP
+
+So, it took a while for the effects to sort of spill over into the economy.
+it/NP; took/VP; a while/NP
+
+I  mean, I  think, by the government sort of taking action, you know, we will run the chance, we hope, of things not getting so bad.
+the government sort/NP; taking/VP; action/NP
+
+I  mean, I  think, by the government sort of taking action, you know, we will run the chance, we hope, of things not getting so bad.
+we/NP; will run/VP; the chance/NP
+
+And you should read the "TIME" magazine article, if you haven't, because it really spells it out.
+you/NP; should read/VP; the " TIME" magazine article/NP
+
+And you should read the "TIME" magazine article, if you haven't, because it really spells it out.
+it/NP; spells/VP; it/NP
+
+But, in terms of how we got here, but, more importantly, where are we going, what -- what are the next steps?
+what/NP; are/VP; the next steps/NP
+
+I  mean, if this is unchartered territory, what do you see happening?
+this/NP; is/VP; unchartered territory/NP
+
+I  don't want to cop out on you, but what could happen, of course, is, you know, we have this meltdown in money market funds.
+I/NP; do n't want/VP to/PP; cop out/NP
+
+I  don't want to cop out on you, but what could happen, of course, is, you know, we have this meltdown in money market funds.
+we/NP; have/VP; this meltdown/NP
+
+You see that stuff happening right now, that some of these money market funds are actually in trouble.
+You/NP; see/VP; that stuff/NP
+
+You see that stuff happening right now, that some of these money market funds are actually in trouble.
+some of these money market funds/NP; are actually/VP in/PP; trouble/NP
+
+And people would -- there would be runs on the bank.
+people/NP; would --/VP; there/NP
+
+And this is actually something to talk about, Anderson, in terms of you and me and reporting and what we say on air, because you want to describe a panic, but you also want to say, don't panic.
+this/NP; is actually/VP; something/NP
+
+And this is actually something to talk about, Anderson, in terms of you and me and reporting and what we say on air, because you want to describe a panic, but you also want to say, don't panic.
+me/NP; reporting/VP; what/NP
+
+And this is actually something to talk about, Anderson, in terms of you and me and reporting and what we say on air, because you want to describe a panic, but you also want to say, don't panic.
+we/NP; say/VP on/PP; air/NP
+
+And this is actually something to talk about, Anderson, in terms of you and me and reporting and what we say on air, because you want to describe a panic, but you also want to say, don't panic.
+you/NP; want to describe/VP; a panic/NP
+
+You know, it's a very nuanced point.
+it/NP; is/VP; a very nuanced point/NP
+
+And, you know, so, I  think that's kind of complicated.
+I/NP; think/VP; that/NP
+
+Yes, there's definitely a risk.
+there/NP; is definitely/VP; a risk/NP
+
+I  think that, just by virtue of the fact that we have this big effort by Washington will restore confidence.
+we/NP; have/VP; this big effort/NP
+
+I  think that, just by virtue of the fact that we have this big effort by Washington will restore confidence.
+Washington/NP; will restore/VP; confidence/NP
+
+And I  think that the chances are greatly lessened now that the treasury secretary, the Fed, chairman, the president, and Congress are all united, working to solve this.
+I/NP; think/VP; the chances/NP
+
+>> COOPER: In terms of how we got here, obviously, the housing, the mortgage meltdown is what it began it.
+the mortgage meltdown/NP; is/VP; what/NP
+
+>> COOPER: In terms of how we got here, obviously, the housing, the mortgage meltdown is what it began it.
+it/NP; began/VP; it/NP
+
+(CROSSTALK) >> COOPER: But it's gone far beyond that.
+it/NP; 's gone far/VP beyond/PP; that/NP
+
+And, you know, the thing is, I  think that the housing situation is kind of easy to solve.
+I/NP; think/VP; the housing situation/NP
+
+You know, you look at lending requirement.
+you/NP; look/VP at/PP; lending requirement/NP
+
+You look at subprime.
+You/NP; look/VP at/PP; subprime/NP
+
+You look at teaser rates.
+You/NP; look/VP at/PP; teaser rates/NP
+
+You look at lending standards.
+You/NP; look/VP at/PP; lending standards/NP
+
+>> COOPER: Everyone uses this term subprime, but we're talking about junk mortgages.
+we/NP; 're talking/VP about/PP; junk mortgages/NP
+
+(CROSSTALK) >> SERWER: And there were too many of them, and people didn't get the right ones, and then people were ripped off.
+there/NP; were/VP; too many of them/NP
+
+(CROSSTALK) >> SERWER: And there were too many of them, and people didn't get the right ones, and then people were ripped off.
+people/NP; did n't get/VP; the right ones/NP
+
+That stuff is not that difficult.
+That stuff/NP; is/VP; that difficult/NP
+
+To me, the really difficult thing is derivatives, which are these exotic financial products that are packaged and sold.
+the really difficult thing/NP; is/VP; derivatives/NP
+
+To me, the really difficult thing is derivatives, which are these exotic financial products that are packaged and sold.
+which/NP; are/VP; these exotic financial products/NP
+
+>> COOPER: I mean, even -- even incredibly brilliant people, of which I  am not one, have no idea what they are, people who are in the financial markets.
+I/NP; am/VP; not one/NP
+
+>> COOPER: I mean, even -- even incredibly brilliant people, of which I  am not one, have no idea what they are, people who are in the financial markets.
+who/NP; are/VP in/PP; the financial markets/NP
+
+>> SERWER: You could be a derivatives trader, Anderson.
+You/NP; could be/VP; a derivatives trader/NP
+
+(LAUGHTER) >> COOPER: Yes, well, apparently so, because... (CROSSTALK) >> COOPER: ... the guys who are doing it now.
+( LAUGHTER )/NP; >/VP; > COOPER/NP
+
+(LAUGHTER) >> COOPER: Yes, well, apparently so, because... (CROSSTALK) >> COOPER: ... the guys who are doing it now.
+who/NP; are doing/VP; it/NP
+
+I  mean, it's clear, for instance, that I  would say that CEO  of Lehman Brothers, Dick Fuld, didn't fully understand the implication of derivatives, because that's partly what was responsible for bringing Lehman Brothers down.
+I/NP; would say/VP; that CEO of Lehman Brothers/NP
+
+I  mean, it's clear, for instance, that I  would say that CEO  of Lehman Brothers, Dick Fuld, didn't fully understand the implication of derivatives, because that's partly what was responsible for bringing Lehman Brothers down.
+that/NP; is partly/VP; what/NP
+
+>> COOPER: Warren Buffett called them, what, weapons of mass destruction?
+Warren Buffett/NP; called/VP; them/NP
+
+(CROSSTALK) >> SERWER: And, so, that, to me, is, how are we going to regulate those or get our arms around those or understand them?
+we/NP; going to regulate/VP; those or/NP
+
+(CROSSTALK) >> SERWER: And, so, that, to me, is, how are we going to regulate those or get our arms around those or understand them?
+those or/NP; understand/VP; them/NP
+
+It's like this genie, this evil genie that is out of a bottle.
+It/NP; is/VP like/PP; this genie/NP
+
+It's like this genie, this evil genie that is out of a bottle.
+that/NP; is/VP out/PP of/PP; a bottle/NP
+
+And I'm not sure I  understand, and I'm sure that the regulators don't fully understand how to address that and how to make sure that they don't strike again.
+I/NP; 'm/VP; I/NP
+
+And I'm not sure I  understand, and I'm sure that the regulators don't fully understand how to address that and how to make sure that they don't strike again.
+I/NP; 'm/VP; the regulators/NP
+
+And I'm not sure I  understand, and I'm sure that the regulators don't fully understand how to address that and how to make sure that they don't strike again.
+that and/NP; to make/VP; they/NP
+
+That is going to be the really toughest one, I  think.
+That/NP; is going to be/VP; the really/NP
+
+This thing could break in a matter of hours in terms of getting more information on exactly what is going to happen.
+This thing/NP; could break/VP in/PP; a matter of hours/NP
+
+This thing could break in a matter of hours in terms of getting more information on exactly what is going to happen.
+terms/NP; getting/VP; more information/NP
+<end>20080919021929.000</end>
 
 <story>Campaign 2008 / Obama vs. McCain / Economic Crisis / A Discussion</story>
 <start>20080919021929.000</start>
->>> THERE IS A TIME LAPSE >> COOPER: Looking there at time-lapse video of the entire market day, the Dow Jones industrial gaining back more than 400 points in a week that has seen blue chips covering more territory, up and down, in >>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
->> >/NP; IS/VP; A TIME LAPSE > > COOPER/NP
+>>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
+>>/NP; >/VP; GEORGE W. BUSH/NP
 
->>> THERE IS A TIME LAPSE >> COOPER: Looking there at time-lapse video of the entire market day, the Dow Jones industrial gaining back more than 400 points in a week that has seen blue chips covering more territory, up and down, in >>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
-the Dow Jones industrial/NP; gaining/VP than/PP; 400 points/NP
-
->>> THERE IS A TIME LAPSE >> COOPER: Looking there at time-lapse video of the entire market day, the Dow Jones industrial gaining back more than 400 points in a week that has seen blue chips covering more territory, up and down, in >>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
-that/NP; has seen/VP; blue chips/NP
-
->>> THERE IS A TIME LAPSE >> COOPER: Looking there at time-lapse video of the entire market day, the Dow Jones industrial gaining back more than 400 points in a week that has seen blue chips covering more territory, up and down, in >>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
+>>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
 The American people/NP; can be/VP; we/NP
 
->>> THERE IS A TIME LAPSE >> COOPER: Looking there at time-lapse video of the entire market day, the Dow Jones industrial gaining back more than 400 points in a week that has seen blue chips covering more territory, up and down, in >>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
+>>> GEORGE W. BUSH, PRESIDENT OF THE UNITED STATES: The American people can be sure we will continue to act to strengthen and stabilize our financial markets and improve investor confidence.
 our financial markets/NP; improve/VP; investor confidence/NP
 
 The worst financial crisis in decades has unleashed panic around the globe, frankly.
@@ -353,18 +1091,6 @@ investigators/NP; looking/VP into/PP; the allegations of abuse/NP
 
 And in the wake of Hurricane Ike, a lot of anger about a slow response and a move that may put some of the choicest Texas beachfront property off-limits for years -- a lot more news ahead tonight on 360.
 that/NP; may put/VP; some of the choicest Texas beachfront property off-limits/NP
-<end>20080919023343.667</end>
-
-<story>Campaign 2008 / Palin's Husband / Trooper Investigation</story>
-<start>20080919023343.667</start>
-An Obama -- an Obama ad is drawing fire from McCain forces, allegations of a smear.
-an Obama ad/NP; is drawing/VP; fire/NP
-
-As always, we've got the facts.
-we/NP; 've got/VP; the facts/NP
-
-You can judge for yourself.
-You/NP; can judge/VP for/PP; yourself/NP
 <end>20080919024118.667</end>
 
 <story>Campaign 2008 / Obama vs. McCain / Obama Negatives / A Discussion</story>

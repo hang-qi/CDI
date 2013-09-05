@@ -1,6 +1,0 @@
-<story>Campaign 2008 / Palin's Husband / Trooper Investigation</story>
-<start>20080919023343.667</start>
-<end>20080919024118.667</end>
-an Obama ad | is drawing | fire 
-we | 've got | the facts 
-You | can judge | yourself 

@@ -1,6 +1,6 @@
 <story>Economy: Bailout Plan / The Candidates / A Discussion</story>
 <start>20081001021447.714</start>
-<end>20081001022822.000</end>
+<end>20081001022824.000</end>
 the market | going up | the way 
 Any solution | will be | a bipartisan solution 
 we | will stay here | the answer 

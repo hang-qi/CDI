@@ -1,6 +1,6 @@
 <story>Economy: Wall Street / Orman Interview</story>
 <start>20080917021612.000</start>
-<end>20080917022306.286</end>
+<end>20080917022529.143</end>
 A very nervous day | ends | a sigh of relief 
 the Dow | closes | up 141 points 
 That bit of optimism | follows | the Fed's decision 

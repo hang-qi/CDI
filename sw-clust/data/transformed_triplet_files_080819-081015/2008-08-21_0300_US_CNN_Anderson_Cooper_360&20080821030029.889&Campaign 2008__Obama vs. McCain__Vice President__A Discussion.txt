@@ -1,8 +1,0 @@
-<story>Campaign 2008 / Obama vs. McCain / Vice President / A Discussion</story>
-<start>20080821030029.889</start>
-<end>20080821031447.667</end>
-I | 'm | John King 
-Barack Obama | says | he 
-he | 's got | a chance 
-he | answer | John McCain's attacks 
-We | 've got | new polling 

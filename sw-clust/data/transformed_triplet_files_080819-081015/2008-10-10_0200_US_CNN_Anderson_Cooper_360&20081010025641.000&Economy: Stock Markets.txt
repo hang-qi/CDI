@@ -1,4 +1,0 @@
-<story>Economy: Stock Markets</story>
-<start>20081010025641.000</start>
-<end>20081010025641.000</end>
->> | > | The mystery 

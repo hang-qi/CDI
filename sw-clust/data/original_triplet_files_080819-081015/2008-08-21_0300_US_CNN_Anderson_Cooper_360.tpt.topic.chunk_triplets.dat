@@ -1,23 +1,515 @@
-<story>Campaign 2008 / Obama vs. McCain / Vice President / A Discussion</story>
-<start>20080821030029.889</start>
-I'm John King.
-I/NP; 'm/VP; John King/NP
-
-Tonight Barack Obama says he's Chicago-tough.
-Barack Obama/NP; says/VP; he/NP
-
-Well, now he's got a chance to prove it.
-he/NP; 's got/VP; a chance/NP
-
-Can he answer John McCain's attacks?
-he/NP; answer/VP; John McCain's attacks/NP
-
-We've got new polling, fresh reporting, and the best political team on television weighs in.
-We/NP; 've got/VP; new polling/NP
-<end>20080821031447.667</end>
-
 <story>Campaign 2008 / Obama vs. McCain</story>
-<start>20080821031447.667</start>
+<start>20080821030054.333</start>
+>>> We begin with Barack Obama getting a taste of adversity, if by taste, you mean super size me.
+We/NP; begin/VP with/PP; Barack Obama/NP
+
+>>> We begin with Barack Obama getting a taste of adversity, if by taste, you mean super size me.
+you/NP; mean/VP; super size/NP
+
+Senator Obama says he's had enough, but does he have an answer?
+Senator Obama/NP; says/VP; he/NP
+
+Senator Obama says he's had enough, but does he have an answer?
+he/NP; have/VP; an answer/NP
+
+He'd better if he wants to keep his lead over John McCain, which has been eroding lately.
+He/NP; 'd/VP; he/NP
+
+Another lost August for the Democrats is how one veteran party strategist described it to me earlier today, drawing a most unfavorable comparison of Obama to Al Gore and John Kerry.
+the Democrats/NP; is how/VP; one veteran party strategist/NP
+
+As if to prove that point, the latest nationwide CNN  poll of polls shows a one-point Obama advantage, reflecting an across the board tightening of the race; some polling even showing a McCain lead.
+if/NP; to prove/VP; that point/NP
+
+As if to prove that point, the latest nationwide CNN  poll of polls shows a one-point Obama advantage, reflecting an across the board tightening of the race; some polling even showing a McCain lead.
+the latest nationwide CNN poll of polls/NP; shows/VP; a one-point Obama advantage/NP
+
+As if to prove that point, the latest nationwide CNN  poll of polls shows a one-point Obama advantage, reflecting an across the board tightening of the race; some polling even showing a McCain lead.
+the board/NP; tightening/VP of/PP; the race/NP
+
+As if to prove that point, the latest nationwide CNN  poll of polls shows a one-point Obama advantage, reflecting an across the board tightening of the race; some polling even showing a McCain lead.
+some polling/NP; even showing/VP; a McCain lead/NP
+
+Does it worry the Democrats?
+it/NP; worry/VP; the Democrats/NP
+
+Does it worry the Obama forces?
+it/NP; worry/VP; the Obama forces/NP
+
+The public line is no, but they seem to be turning up the heat, which tells you something.
+they/NP; seem to be turning/VP up/PRT; the heat/NP
+
+The public line is no, but they seem to be turning up the heat, which tells you something.
+which/NP; tells/VP; you/NP
+
+>> JESSICA YELLIN, CNN CORRESPONDENT: Barack Obama promised to practice a different kind of politics, so he's largely avoided direct attacks on his opponent in favor of more gentle slights like this.
+Barack Obama/NP; promised to practice/VP; a different kind of politics/NP
+
+>> JESSICA YELLIN, CNN CORRESPONDENT: Barack Obama promised to practice a different kind of politics, so he's largely avoided direct attacks on his opponent in favor of more gentle slights like this.
+he/NP; 's largely avoided/VP; direct attacks/NP
+
+BARACK OBAMA, (D) >> PRESUMPTIVE PRESIDENTIAL NOMINEE: John McCain and the Republicans, they don't have any new ideas.
+they/NP; do n't have/VP; any new ideas/NP
+
+That's why they're spending all their time talking about me.
+That/NP; is why/VP; they/NP
+
+That's why they're spending all their time talking about me.
+all their time/NP; talking/VP about/PP; me/NP
+
+With Election Day now in sight, Barack Obama is taking aim at John McCain.
+Barack Obama/NP; is taking/VP; aim/NP
+
+>> OBAMA: He wants to continue the same economic policies that George Bush has been doing for the last eight years.
+He/NP; wants to continue/VP; the same economic policies/NP
+
+>> OBAMA: He wants to continue the same economic policies that George Bush has been doing for the last eight years.
+George Bush/NP; has been doing/VP for/PP; the last eight years/NP
+
+So my job in this election is to say I  honor his service, but I don't honor his policies.
+I/NP; honor/VP; his service/NP
+
+So my job in this election is to say I  honor his service, but I don't honor his policies.
+I/NP; do n't honor/VP; his policies/NP
+
+>> YELLIN: Here, insisting he's as patriotic as his opponent.
+he/NP; is/VP as/PP; his opponent/NP
+
+>> OBAMA: I  have never suggested and never will that Senator McCain picks his positions on national security based on politics or personal ambition.
+that Senator McCain/NP; picks/VP; his positions/NP
+
+I've not suggested it because I believe that he genuinely wants to serve America's national interests.
+I/NP; 've not suggested/VP; it/NP
+
+I've not suggested it because I believe that he genuinely wants to serve America's national interests.
+I/NP; believe/VP; he/NP
+
+Now it's time for him to acknowledge that I  want to do the same.
+it/NP; is/VP; time/NP
+
+Now it's time for him to acknowledge that I  want to do the same.
+him/NP; to acknowledge/VP; I/NP
+
+I  will let no one question my love of this country.
+I/NP; will let/VP; no one question/NP
+
+>> YELLIN: Some of his top supporters are going even further; on a conference call today, slamming John McCain for making dishonest and desperate attacks and practicing gutter politics.
+John McCain/NP; making/VP; dishonest and desperate attacks/NP
+
+The Obama campaign insists the sharpened tone is what happens when a general election heats up, but Obama was drawn into this fight after McCain spent weeks challenging the Democrat's judgment and readiness.
+The Obama campaign/NP; insists/VP; the sharpened tone/NP
+
+The Obama campaign insists the sharpened tone is what happens when a general election heats up, but Obama was drawn into this fight after McCain spent weeks challenging the Democrat's judgment and readiness.
+what/NP; happens when/VP; a general election/NP
+
+The Obama campaign insists the sharpened tone is what happens when a general election heats up, but Obama was drawn into this fight after McCain spent weeks challenging the Democrat's judgment and readiness.
+Obama/NP; was drawn/VP into/PP; this fight/NP
+
+The Obama campaign insists the sharpened tone is what happens when a general election heats up, but Obama was drawn into this fight after McCain spent weeks challenging the Democrat's judgment and readiness.
+McCain/NP; spent/VP; weeks/NP
+
+McCain has managed to almost eliminate Obama's lead.
+McCain/NP; has managed to almost eliminate/VP; Obama's lead/NP
+
+So now the Obama campaign is trying to change the topic, and turn the focus on John McCain and his ties to George Bush.
+the Obama campaign/NP; is trying to change/VP; the topic/NP
+
+>> UNIDENTIFIED MALE: John McCain supports Bush's tax cuts for millionaires, but nothing for 100  million households.
+John McCain/NP; supports/VP; Bush's tax cuts/NP
+
+Can we really afford more of the same?
+we/NP; afford/VP; more of the same/NP
+
+They dismiss the attacks as unbelievable.
+They/NP; dismiss/VP; the attacks/NP
+
+Stylistically, they wanted to stay above the fray.
+they/NP; wanted to stay/VP above/PP; the fray/NP
+
+He knows that, and he knows he can't afford to do that.
+he/NP; knows/VP; he/NP
+
+>> YELLIN: During the primaries, Obama even joked about Democrats' fears that he's not tough enough to win.
+Obama/NP; joked/VP about/PP; Democrats/NP
+
+>> OBAMA: And I  try to explain to people, listen, I  may be skinny, but I'm tough.
+I/NP; try to explain/VP to/PP; people/NP
+
+And I'm from Chicago, and we know how to play politics.
+I/NP; 'm/VP from/PP; Chicago/NP
+
+>> YELLIN: Now he's promising a spirited fight.
+he/NP; 's promising/VP; a spirited fight/NP
+
+>> OBAMA: John McCain doesn't know what he's up against right now.
+John McCain/NP; does n't know/VP; what/NP
+
+>> OBAMA: John McCain doesn't know what he's up against right now.
+he/NP; is up/VP against/PP; right/NP
+
+I  don't intend to lose this election.
+I/NP; do n't intend to lose/VP; this election/NP
+
+>> YELLIN: Of course, if Obama steps up his attacks on John McCain, he could be accused of playing politics as usual, the very thing he's vowed to change.
+Obama/NP; steps/VP up/PRT; his attacks/NP
+
+>>> KING: And speaking of a running mate, yes, we're going to talk a bit about that.
+we/NP; 're going to talk/VP; a bit/NP
+
+We're expecting Senator Obama to announce his choice any day now, maybe any hour.
+We/NP; 're expecting/VP; Senator Obama/NP
+
+Hope you'd signed up for the text message.
+you/NP; 'd signed/VP up/PRT for/PP; the text message/NP
+
+But Senator McCain may be trying to steal his thunder.
+Senator McCain/NP; may be trying to steal/VP; his thunder/NP
+
+One big question tonight, will Al Gore's running mate Joe Lieberman join the Republican ticket?
+Al Gore's running mate Joe Lieberman/NP; join/VP; the Republican ticket/NP
+
+>> ED HENRY, CNN CORRESPONDENT: John McCain's decision to put Joe Lieberman front and center at his convention has the unique distinction of unsettling both Democrats and Republicans.
+> >/NP; ED/VP; HENRY/NP
+
+>> ED HENRY, CNN CORRESPONDENT: John McCain's decision to put Joe Lieberman front and center at his convention has the unique distinction of unsettling both Democrats and Republicans.
+John McCain's decision/NP; to put/VP; Joe Lieberman front and center/NP
+
+>> ED HENRY, CNN CORRESPONDENT: John McCain's decision to put Joe Lieberman front and center at his convention has the unique distinction of unsettling both Democrats and Republicans.
+his convention/NP; has/VP; the unique distinction of unsettling both Democrats and Republicans/NP
+
+JOHN MCCAIN, (R) >> PRESUMPTIVE PRESIDENTIAL NOMINEE: What can I  say about Joe Lieberman my dear and beloved friend.
+( R )/NP; >/VP; > PRESUMPTIVE PRESIDENTIAL NOMINEE/NP
+
+JOHN MCCAIN, (R) >> PRESUMPTIVE PRESIDENTIAL NOMINEE: What can I  say about Joe Lieberman my dear and beloved friend.
+I/NP; say/VP; Joe Lieberman/NP
+
+>> HENRY: Democrats are furious Lieberman is playing along with McCain's push for Independent voters.
+Democrats/NP; are/VP; furious Lieberman/NP
+
+But some Republicans are also anxious, fearful this is one of many signs McCain may be opening the door to a running mate who supports abortion rights.
+fearful this/NP; is/VP; one of many signs McCain/NP
+
+But some Republicans are also anxious, fearful this is one of many signs McCain may be opening the door to a running mate who supports abortion rights.
+who/NP; supports/VP; abortion rights/NP
+
+>> UNIDENTIFIED MALE: Are you going to pick a vice president that conservatives can actually rally around in the future, or are you going to give us someone who will cause us to want to stay home perhaps?
+you/NP; going to pick/VP; a vice president/NP
+
+>> UNIDENTIFIED MALE: Are you going to pick a vice president that conservatives can actually rally around in the future, or are you going to give us someone who will cause us to want to stay home perhaps?
+conservatives/NP; can actually rally around/VP in/PP; the future/NP
+
+>> UNIDENTIFIED MALE: Are you going to pick a vice president that conservatives can actually rally around in the future, or are you going to give us someone who will cause us to want to stay home perhaps?
+you/NP; going to give/VP; us/NP
+
+>> UNIDENTIFIED MALE: Are you going to pick a vice president that conservatives can actually rally around in the future, or are you going to give us someone who will cause us to want to stay home perhaps?
+who/NP; will cause/VP; us/NP
+
+>> HENRY: At a town hall in New Mexico, McCain was pressed on the matter twice and kept his cards close to the vest both times.
+McCain/NP; was pressed/VP on/PP; the matter/NP
+
+>> MCCAIN: I  will nominate a person to be vice president, my running mate, who shares my principles, my values, and my priorities.
+I/NP; will nominate/VP; a person/NP
+
+>> MCCAIN: I  will nominate a person to be vice president, my running mate, who shares my principles, my values, and my priorities.
+who/NP; shares/VP; my principles/NP
+
+And that's the best that I  can tell you.
+that/NP; is/VP; the best/NP
+
+And that's the best that I  can tell you.
+I/NP; can tell/VP; you/NP
+
+I  said on Saturday night that I have a proud pro-life record in Congress, and I  am proud of that.
+I/NP; said/VP on/PP; Saturday night/NP
+
+I  said on Saturday night that I have a proud pro-life record in Congress, and I  am proud of that.
+I/NP; have/VP; a proud pro-life record/NP
+
+I  said on Saturday night that I have a proud pro-life record in Congress, and I  am proud of that.
+I/NP; am/VP of/PP; that/NP
+
+I  respect the views of others.
+I/NP; respect/VP; the views of others/NP
+
+>> HENRY: Saturday was the Faith Forum, where McCain won raves from conservatives for speaking out forcefully against abortion.
+Saturday/NP; was/VP; the Faith Forum/NP
+
+>> HENRY: Saturday was the Faith Forum, where McCain won raves from conservatives for speaking out forcefully against abortion.
+McCain/NP; won/VP; raves/NP
+
+>> HENRY: Saturday was the Faith Forum, where McCain won raves from conservatives for speaking out forcefully against abortion.
+conservatives/NP; speaking/VP out/PRT against/PP; abortion/NP
+
+But the right is now bluntly warning McCain he will wipe out the goodwill from that forum if he selects someone who supports abortion rights, like Lieberman or Tom Ridge.
+the right/NP; is now bluntly warning/VP; McCain/NP
+
+But the right is now bluntly warning McCain he will wipe out the goodwill from that forum if he selects someone who supports abortion rights, like Lieberman or Tom Ridge.
+he/NP; will wipe out/VP; the goodwill/NP
+
+But the right is now bluntly warning McCain he will wipe out the goodwill from that forum if he selects someone who supports abortion rights, like Lieberman or Tom Ridge.
+he/NP; selects/VP; someone/NP
+
+But the right is now bluntly warning McCain he will wipe out the goodwill from that forum if he selects someone who supports abortion rights, like Lieberman or Tom Ridge.
+who/NP; supports/VP; abortion rights/NP
+
+Veteran Activist Richard Viguerie issued an open letter to McCain Wednesday, declaring, "Poke the base of the Republican party, the conservatives, in the eye one more time by choosing a pro-abortion vice presidential candidate, and conservatives will show you that two can play the maverick game."
+Veteran Activist Richard Viguerie/NP; issued/VP; an open letter/NP
+
+Veteran Activist Richard Viguerie issued an open letter to McCain Wednesday, declaring, "Poke the base of the Republican party, the conservatives, in the eye one more time by choosing a pro-abortion vice presidential candidate, and conservatives will show you that two can play the maverick game."
+one more time/NP; choosing/VP; a pro-abortion vice presidential candidate/NP
+
+Veteran Activist Richard Viguerie issued an open letter to McCain Wednesday, declaring, "Poke the base of the Republican party, the conservatives, in the eye one more time by choosing a pro-abortion vice presidential candidate, and conservatives will show you that two can play the maverick game."
+conservatives/NP; will show/VP; you/NP
+
+Veteran Activist Richard Viguerie issued an open letter to McCain Wednesday, declaring, "Poke the base of the Republican party, the conservatives, in the eye one more time by choosing a pro-abortion vice presidential candidate, and conservatives will show you that two can play the maverick game."
+two/NP; can play/VP; the maverick game/NP
+
+There's chatter within the McCain campaign that the Lieberman- Ridge trial balloon has really just been a smoke screen for Mitt Romney.
+There/NP; is/VP; chatter/NP
+
+There's chatter within the McCain campaign that the Lieberman- Ridge trial balloon has really just been a smoke screen for Mitt Romney.
+the Lieberman- Ridge trial balloon/NP; has really just been/VP; a smoke screen/NP
+
+According to this theory, if McCain picks Romney, he can address any conservative concerns by saying, at least he's not Ridge.
+McCain/NP; picks/VP; Romney/NP
+
+According to this theory, if McCain picks Romney, he can address any conservative concerns by saying, at least he's not Ridge.
+he/NP; can address/VP; any conservative concerns/NP
+
+According to this theory, if McCain picks Romney, he can address any conservative concerns by saying, at least he's not Ridge.
+he/NP; 's/VP; Ridge/NP
+
+>> KEN DUBERSTEIN, FORMER WHITE HOUSE CHIEF OF STAFF: He can nominate or try to nominate anybody he wants.
+He/NP; can nominate or try to nominate/VP; anybody/NP
+
+He is, in fact, the leader of the party now going forward, but it would be a very bumpy road.
+it/NP; would be/VP; a very bumpy road/NP
+
+>> UNIDENTIFIED MALE: The next president of the United States -- >> HENRY: Picking a moderate would be a road less traveled for sure, but as some McCain friends point out, the senator can be quite unpredictable, which is why conservatives are on edge.
+a moderate/NP; would be/VP; a road/NP
+
+>> UNIDENTIFIED MALE: The next president of the United States -- >> HENRY: Picking a moderate would be a road less traveled for sure, but as some McCain friends point out, the senator can be quite unpredictable, which is why conservatives are on edge.
+which/NP; is why/VP; conservatives/NP
+
+>>> KING: Let's talk strategy now.
+us/NP; talk/VP; strategy/NP
+
+We've got quite a bit to talk about with CNN  political contributors Alex Castellanos and Hilary Rosen, Republican and Democrat respectively.
+We/NP; 've got/VP; quite a bit/NP
+
+Also "Time" magazine's Joe Klein, his call "I'm in the Arena," appears in "Time's" up front section.
+I/NP; 'm/VP in/PP; the Arena/NP
+
+Hilary, you're the Democrat in the group here.
+you/NP; 're/VP; the Democrat/NP
+
+Many Democrats have anguish going into the convention.
+Many Democrats/NP; have/VP; anguish/NP
+
+Democrats thought they'd be way ahead at this point.
+Democrats/NP; thought/VP; they/NP
+
+Obama says he's going to get more aggressive now.
+Obama/NP; says/VP; he/NP
+
+He says he's going to attack now.
+He/NP; says/VP; he/NP
+
+Do you see him as being tough enough, or do you want more?
+you/NP; see/VP; him/NP
+
+>> HILARY ROSEN, POLITICAL DIRECTOR, HUFFINGTON POST: Oh, I  think he's tough enough and by the way, John, very good job on that documentary tonight.
+I/NP; think/VP; he/NP
+
+But that's not really the issue.
+that/NP; 's really/VP; the issue/NP
+
+I  think the campaign will be tough enough.
+I/NP; think/VP; the campaign/NP
+
+I  think the party will be tough enough.
+I/NP; think/VP; the party/NP
+
+The thing that Barack Obama is going to be doing over the next two weeks, and I  hope he does big time in that speech at Invesco Field, is really talk less about the biography, which we've now gotten a good sense of, and more about how this party is going to change Washington and make things better for people out there in the country that are really hurting.
+Barack Obama/NP; is going to be doing/VP over/PP; the next two weeks/NP
+
+The thing that Barack Obama is going to be doing over the next two weeks, and I  hope he does big time in that speech at Invesco Field, is really talk less about the biography, which we've now gotten a good sense of, and more about how this party is going to change Washington and make things better for people out there in the country that are really hurting.
+I/NP; hope/VP; he/NP
+
+The thing that Barack Obama is going to be doing over the next two weeks, and I  hope he does big time in that speech at Invesco Field, is really talk less about the biography, which we've now gotten a good sense of, and more about how this party is going to change Washington and make things better for people out there in the country that are really hurting.
+we/NP; 've now gotten/VP; a good sense/NP
+
+The thing that Barack Obama is going to be doing over the next two weeks, and I  hope he does big time in that speech at Invesco Field, is really talk less about the biography, which we've now gotten a good sense of, and more about how this party is going to change Washington and make things better for people out there in the country that are really hurting.
+this party/NP; is going to change/VP; Washington/NP
+
+When he gets to the issues, the American people agree with him on the issues.
+he/NP; gets/VP to/PP; the issues/NP
+
+When he gets to the issues, the American people agree with him on the issues.
+the American people/NP; agree/VP with/PP; him/NP
+
+And that's what he's got to stay focused on.
+that/NP; is/VP; what/NP
+
+Middle class tax-cuts, energy plans that favor folks instead of big oil companies like John McCain's been doing, ending the war in Iraq, which people still overwhelmingly want to happen and John McCain is not committed to.
+that/NP; favor/VP; folks/NP
+
+So on the issues, when Barack Obama focuses people's attention, that's where people are going to come to his aid.
+Barack Obama/NP; focuses/VP; people's attention/NP
+
+So on the issues, when Barack Obama focuses people's attention, that's where people are going to come to his aid.
+that/NP; is where/VP; people/NP
+
+>> KING: Well, Joe Klein, let me ask you first if you agree with that point.
+me/NP; ask/VP; you/NP
+
+>> KING: Well, Joe Klein, let me ask you first if you agree with that point.
+you/NP; agree/VP with/PP; that point/NP
+
+We were up double digit as one point.
+We/NP; were up/VP; double digit/NP
+
+All the fundamentals favor us.
+the fundamentals/NP; favor/VP; us/NP
+
+Why do we have a dead heat?
+we/NP; have/VP; a dead heat/NP
+
+>> JOE KLEIN, TIME COLUMNIST: Well, as you said at the top of the program, August is the cruelest month for Democrats in presidential campaigns.
+you/NP; said/VP at/PP; the top of the program/NP
+
+>> JOE KLEIN, TIME COLUMNIST: Well, as you said at the top of the program, August is the cruelest month for Democrats in presidential campaigns.
+August/NP; is/VP; the cruelest month/NP
+
+I  think that Obama has failed as a candidate in two ways during this month.
+I/NP; think/VP; Obama/NP
+
+One is that he failed to define his opponent.
+One/NP; is/VP; he/NP
+
+He had to do unto McCain what McCain did unto him, and he didn't do it.
+He/NP; had to do/VP unto/PP; McCain/NP
+
+He had to do unto McCain what McCain did unto him, and he didn't do it.
+what McCain/NP; did/VP unto/PP; him/NP
+
+He had to do unto McCain what McCain did unto him, and he didn't do it.
+he/NP; did n't do/VP; it/NP
+
+The other is that he hasn't really defined himself in any but the most amorphous terms.
+The other/NP; is/VP; he/NP
+
+He's for change.
+He/NP; is/VP for/PP; change/NP
+
+He's for hope.
+He/NP; is/VP for/PP; hope/NP
+
+But he hasn't been driving home that economic message.
+he/NP; has n't been driving/VP; home/NP
+
+On Saturday night at Saddleback Church, he had numerous opportunities to make himself obnoxious on the topic of the economy, but he chose to be very respectful of Rick Warren, which was a good idea.
+he/NP; had/VP; numerous opportunities/NP
+
+On Saturday night at Saddleback Church, he had numerous opportunities to make himself obnoxious on the topic of the economy, but he chose to be very respectful of Rick Warren, which was a good idea.
+he/NP; chose to be/VP of/PP; Rick Warren/NP
+
+On Saturday night at Saddleback Church, he had numerous opportunities to make himself obnoxious on the topic of the economy, but he chose to be very respectful of Rick Warren, which was a good idea.
+which/NP; was/VP; a good idea/NP
+
+But still he has a message.
+he/NP; has/VP; a message/NP
+
+He hasn't been delivering it in the most forceful manner.
+He/NP; has n't been delivering/VP; it/NP
+
+>> KING: And so Alex Castellanos, when you watch these newer Obama ads going up that are tougher, do draw a sharper contrast.
+you/NP; watch/VP; these newer Obama ads/NP
+
+Do you see a tough Chicago street politician, or do you see a guy who doesn't like this way of fighting?
+you/NP; see/VP; a tough Chicago street politician/NP
+
+Do you see a tough Chicago street politician, or do you see a guy who doesn't like this way of fighting?
+who/NP; does n't like/VP; this way of fighting/NP
+
+>> ALEX CASTELLANOS, REPUBLICAN CONSULTANT: That's the problem with Barack Obama.
+That/NP; is/VP; the problem/NP
+
+Every time you look at him, you see both.
+you/NP; look/VP at/PP; him/NP
+
+Every time you look at him, you see both.
+you/NP; see/VP; both/NP
+
+It seems a very conflicted campaign and a conflicted message.
+It/NP; seems/VP; a very conflicted campaign/NP
+
+And I  think that was -- the Saddleback Forum was, I think, a turning point in the campaign in that sense.
+I/NP; think/VP; that/NP
+
+You saw John McCain on one side, a man who's been around a while, tested in life, and sufficiently so that he knows who he is, he knows what he believes, and he doesn't have to think through what's important and true in his life.
+You/NP; saw/VP; John McCain/NP
+
+You saw John McCain on one side, a man who's been around a while, tested in life, and sufficiently so that he knows who he is, he knows what he believes, and he doesn't have to think through what's important and true in his life.
+who/NP; 's been/VP around/PP; a while/NP
+
+You saw John McCain on one side, a man who's been around a while, tested in life, and sufficiently so that he knows who he is, he knows what he believes, and he doesn't have to think through what's important and true in his life.
+he/NP; knows/VP; who/NP
+
+You saw John McCain on one side, a man who's been around a while, tested in life, and sufficiently so that he knows who he is, he knows what he believes, and he doesn't have to think through what's important and true in his life.
+he/NP; knows/VP; what/NP
+
+You saw John McCain on one side, a man who's been around a while, tested in life, and sufficiently so that he knows who he is, he knows what he believes, and he doesn't have to think through what's important and true in his life.
+he/NP; does n't have to think/VP through/PP; what's important and true/NP
+
+As opposed to Barack Obama, who seemed very caring and positive guy, certainly a tremendously well-spoken and articulate, but just doesn't seem to have lived long enough to have -- to really know what he believes and who he is and what's important.
+who/NP; seemed very/VP; caring and positive guy/NP
+
+As opposed to Barack Obama, who seemed very caring and positive guy, certainly a tremendously well-spoken and articulate, but just doesn't seem to have lived long enough to have -- to really know what he believes and who he is and what's important.
+he/NP; believes/VP; who/NP
+
+As opposed to Barack Obama, who seemed very caring and positive guy, certainly a tremendously well-spoken and articulate, but just doesn't seem to have lived long enough to have -- to really know what he believes and who he is and what's important.
+he/NP; is/VP; what's important/NP
+
+And I  think that gets to Joe's point.
+I/NP; think/VP; that/NP
+
+The reason he can't define himself is because it's hard to define something that's not that solid and doesn't seem to have that solid a core.
+he/NP; ca n't define/VP; himself/NP
+
+The reason he can't define himself is because it's hard to define something that's not that solid and doesn't seem to have that solid a core.
+that/NP; 's/VP that/PP; solid and/NP
+
+And so when you don't have -- you have that experience on McCain's side and you have that kind of lack of shape on Obama's side, I  think people are wondering if that can sit in the Oval Office.
+you/NP; have/VP; that experience/NP
+
+And so when you don't have -- you have that experience on McCain's side and you have that kind of lack of shape on Obama's side, I  think people are wondering if that can sit in the Oval Office.
+you/NP; have/VP; that kind of lack/NP
+
+And so when you don't have -- you have that experience on McCain's side and you have that kind of lack of shape on Obama's side, I  think people are wondering if that can sit in the Oval Office.
+I/NP; think/VP; people/NP
+
+And so when you don't have -- you have that experience on McCain's side and you have that kind of lack of shape on Obama's side, I  think people are wondering if that can sit in the Oval Office.
+that/NP; can sit/VP in/PP; the Oval Office/NP
+
+>> KING: We'll have more from our panel.
+We/NP; 'll have/VP; more/NP
+
+I ask all for you to standby and more with panel shortly.
+I/NP; ask/VP; all/NP
+
+I ask all for you to standby and more with panel shortly.
+you/NP; to standby more/VP with/PP; panel/NP
+
+As always, you can join our conversation on our blog.
+you/NP; can join/VP; our conversation/NP
+
+Just go to ac360.com and follow the links.
+Just/NP; go to ac360.com and follow/VP; the links/NP
+
+That's where you'll also find Erica Hill's live behind-the-scenes commercial cast.
+That/NP; is where/VP; you/NP
+
 >>> OBAMA: Now you can't do what George Bush did and say, I  looked into Vladimir Putin's soul.
 you/NP; ca n't do/VP; what George Bush/NP
 

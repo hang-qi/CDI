@@ -1,4 +1,0 @@
-<story>Campaign 2008 / Obama vs. McCain / The Trail</story>
-<start>20080909020014.500</start>
-<end>20080909021045.333</end>
-she | could be | a game 

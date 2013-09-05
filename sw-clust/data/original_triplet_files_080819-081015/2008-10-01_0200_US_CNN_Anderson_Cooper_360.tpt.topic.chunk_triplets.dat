@@ -1,37 +1,295 @@
 <story>Economy: Bailout Package</story>
-<start>20081001020520.000</start>
-Coming up, after watching politicians fail to lead yesterday and point fingers at one another, today, Obama and McCain seemed to be taking a different approach.
-politicians/NP; fail to lead/VP; yesterday and point fingers/NP
+<start>20081001020032.000</start>
+>> ANDERSON COOPER, CNN ANCHOR: We begin with breaking news from Washington, word tonight the Senate is getting ready to act on the financial crisis, a new bill slightly altered to be voted on tomorrow.
+We/NP; begin/VP with/PP; breaking news/NP
 
-Coming up, after watching politicians fail to lead yesterday and point fingers at one another, today, Obama and McCain seemed to be taking a different approach.
-McCain/NP; seemed to be taking/VP; a different approach/NP
+>> ANDERSON COOPER, CNN ANCHOR: We begin with breaking news from Washington, word tonight the Senate is getting ready to act on the financial crisis, a new bill slightly altered to be voted on tomorrow.
+a new bill/NP; slightly altered to be voted/VP on/PP; tomorrow/NP
 
-We will show you what happened on the trail.
+Wall Street had already closed when word from the Senate got out, but, still, stocks had already rallied, the Dow up nearly 500,  the third biggest point gain ever, just 24 hours after the worst plunge ever.
+Wall Street/NP; had already closed when/VP; word/NP
+
+We will show you why in a minute.
 We/NP; will show/VP; you/NP
 
-We will show you what happened on the trail.
-what/NP; happened/VP on/PP; the trail/NP
+Jessica Yellin is live in Washington with the latest -- Jessica.
+Jessica Yellin/NP; is/VP in/PP; Washington/NP
 
-Later, personal finance guru Suze Orman taking your questions.
-personal finance guru Suze Orman/NP; taking/VP; your questions/NP
+Well, the Senate has announced that they are going to vote on their version of this bailout package tomorrow night.
+the Senate/NP; has announced/VP; they/NP
 
-You can send them in.
-You/NP; can send/VP; them/NP
+That means they will be voting before the House gets a crack at this again.
+That/NP; means/VP; they/NP
 
-She's here right now, or catch our Webcast during the commercial breaks by going to AC360.com.
-the commercial breaks/NP; going/VP to/PP; AC360.com/NP
+That means they will be voting before the House gets a crack at this again.
+the House/NP; gets/VP; a crack/NP
 
-That, and we also have new statements from Sarah Palin, what she has to say about what she reads to make sense of the world, a simple question from Katie Couric.
-we/NP; have/VP; new statements/NP
+They have changed the legislation slightly.
+They/NP; have changed/VP; the legislation/NP
 
-That, and we also have new statements from Sarah Palin, what she has to say about what she reads to make sense of the world, a simple question from Katie Couric.
-she/NP; has to say/VP about/PP; what/NP
+They're going to include a few new measures that they think will be sweeteners, encouraging other members of the House to vote yes.
+They/NP; 're going to include/VP; a few new measures/NP
 
-That, and we also have new statements from Sarah Palin, what she has to say about what she reads to make sense of the world, a simple question from Katie Couric.
-she/NP; reads to make/VP; sense of the world/NP
+This includes an increase in the amount of insurance, the amount money the federal government will insure you for in a bank account.
+This/NP; includes/VP; an increase/NP
 
-The answer might surprise you -- ahead tonight on 360.
-The answer/NP; might surprise/VP; you/NP
+This includes an increase in the amount of insurance, the amount money the federal government will insure you for in a bank account.
+the federal government/NP; will insure/VP; you/NP
+
+So, it is $100,000 now.
+it/NP; is/VP; $ 100,000 now/NP
+
+It would increase that amount to $250,000.
+It/NP; would increase/VP; that amount/NP
+
+That's designed to help small businesses.
+That/NP; 's designed to help/VP; small businesses/NP
+
+Other add-ons include new measures to make things like mental health coverage at an equal rate that physical illnesses are covered and a whole bunch of tax packages, including an extension of the way we do the alternative minimum tax.
+Other add-ons/NP; include/VP; new measures/NP
+
+Other add-ons include new measures to make things like mental health coverage at an equal rate that physical illnesses are covered and a whole bunch of tax packages, including an extension of the way we do the alternative minimum tax.
+physical illnesses/NP; are covered/VP; a whole bunch of tax packages/NP
+
+Other add-ons include new measures to make things like mental health coverage at an equal rate that physical illnesses are covered and a whole bunch of tax packages, including an extension of the way we do the alternative minimum tax.
+we/NP; do/VP; the alternative minimum tax/NP
+
+They're all things that are considered popular by different people in the House of Representatives.
+They/NP; 're/VP; all things/NP
+
+They're all things that are considered popular by different people in the House of Representatives.
+that/NP; are considered/VP by/PP; different people/NP
+
+And the Senate's hoping, if they pass this bill with all of that attached, it will go through the House.
+they/NP; pass/VP; this bill/NP
+
+And the Senate's hoping, if they pass this bill with all of that attached, it will go through the House.
+it/NP; will go/VP through/PP; the House/NP
+
+That is their hope.
+That/NP; is/VP; their hope/NP
+
+>> COOPER: Is the hope that, what, it's going to pressure House members to pass it?
+it/NP; 's going to pressure/VP; House members/NP
+
+I  mean, just yesterday, House members didn't pass their version of the bill.
+House members/NP; did n't pass/VP; their version of the bill/NP
+
+And it is not a done deal.
+it/NP; is/VP; a done deal/NP
+
+I  have been talking to congressional aides all night who are scratching their heads, wondering, you know, certain measures are going to cause them to lose votes.
+I/NP; have been talking/VP to/PP; congressional aides/NP
+
+I  have been talking to congressional aides all night who are scratching their heads, wondering, you know, certain measures are going to cause them to lose votes.
+who/NP; are scratching/VP; their heads/NP
+
+I  have been talking to congressional aides all night who are scratching their heads, wondering, you know, certain measures are going to cause them to lose votes.
+certain measures/NP; are going to cause/VP; them/NP
+
+Will they pick up as many votes and more?
+they/NP; pick/VP up/PRT; as many votes and more/NP
+
+Because they need to do more than they did before, obviously.
+they/NP; need to do/VP; more/NP
+
+And folks at this hour just aren't sure how this will go down in the House of Representatives.
+this hour/NP; are/VP; this/NP
+
+>> COOPER: Is this basically the Senate kind of watching the news last night, hearing from their constituents, hearing the outrage that the -- just, basically, the complete failure of leadership that was seen in the House yesterday and just deciding they needed to do something?
+the Senate kind/NP; watching/VP; the news/NP
+
+>> COOPER: Is this basically the Senate kind of watching the news last night, hearing from their constituents, hearing the outrage that the -- just, basically, the complete failure of leadership that was seen in the House yesterday and just deciding they needed to do something?
+that/NP; was seen/VP in/PP; the House/NP
+
+>> COOPER: Is this basically the Senate kind of watching the news last night, hearing from their constituents, hearing the outrage that the -- just, basically, the complete failure of leadership that was seen in the House yesterday and just deciding they needed to do something?
+yesterday/NP; just deciding/VP; they/NP
+
+In a sense, yes, they want to continue to take action to keep the markets from falling tomorrow.
+they/NP; want to continue to take/VP; action/NP
+
+So, this continual motion is a positive thing, in their view, for the markets.
+this continual motion/NP; is/VP; a positive thing/NP
+
+You asked about outrage.
+You/NP; asked/VP about/PP; outrage/NP
+
+You might be surprised to know that, still, the majority of the calls members on both sides are getting are from voters who want them to vote no.
+both sides/NP; are getting are/VP from/PP; voters/NP
+
+You might be surprised to know that, still, the majority of the calls members on both sides are getting are from voters who want them to vote no.
+who/NP; want/VP; them/NP
+
+They're getting a few more calls from people saying, vote yes.
+They/NP; 're getting/VP; a few more calls/NP
+
+But, still, the overwhelming momentum is from voters who do not think this is essential.
+the overwhelming momentum/NP; is/VP from/PP; voters/NP
+
+But, still, the overwhelming momentum is from voters who do not think this is essential.
+who/NP; do not think/VP; this/NP
+
+So, the pressure is still on members, because many of their constituents aren't behind this.
+the pressure/NP; is still/VP on/PP; members/NP
+
+So, the pressure is still on members, because many of their constituents aren't behind this.
+many of their constituents/NP; are n't/VP behind/PP; this/NP
+
+As we mentioned at the top, we have now two records day on Wall Street, one bad, one good.
+we/NP; mentioned/VP at/PP; the top/NP
+
+As we mentioned at the top, we have now two records day on Wall Street, one bad, one good.
+we/NP; have/VP; now two records day/NP
+
+The fact is, though, focusing too much on either one might be a fatal mistake.
+either one/NP; might be/VP; a fatal mistake/NP
+
+There are bigger things to worry about than the daily fluctuations of the stock market, much bigger, as Ali Velshi is here the explain.
+There/NP; are/VP; bigger things/NP
+
+There are bigger things to worry about than the daily fluctuations of the stock market, much bigger, as Ali Velshi is here the explain.
+Ali Velshi/NP; is here/VP; the/NP
+
+Ali, there is a tendency -- you know, today, in the paper, you're -- or on television, you see, oh, it's up 400  or so points, and you think, oh, the problem's over.
+there/NP; is/VP; a tendency/NP
+
+Ali, there is a tendency -- you know, today, in the paper, you're -- or on television, you see, oh, it's up 400  or so points, and you think, oh, the problem's over.
+it/NP; is/VP; up 400 or so points/NP
+
+(CROSSTALK) >> ALI VELSHI, CNN SENIOR BUSINESS CORRESPONDENT: Not even It's a convenient number, because we can track the Dow.
+It/NP; is/VP; a convenient number/NP
+
+(CROSSTALK) >> ALI VELSHI, CNN SENIOR BUSINESS CORRESPONDENT: Not even It's a convenient number, because we can track the Dow.
+we/NP; can track/VP; the Dow/NP
+
+We can't track the credit markets.
+We/NP; ca n't track/VP; the credit markets/NP
+
+I'm sure I  sound like a broken record, telling people the problems in the credit market.
+I/NP; 'm/VP; I/NP
+
+The rate at which banks have to borrow money from each other on an overnight based is now the highest it's ever been today.
+banks/NP; have to borrow/VP; money/NP
+
+The rate at which banks have to borrow money from each other on an overnight based is now the highest it's ever been today.
+an overnight based/NP; is now/VP; the highest/NP
+
+The rate at which banks have to borrow money from each other on an overnight based is now the highest it's ever been today.
+it/NP; 's ever been/VP; today/NP
+
+There is a credit freeze.
+There/NP; is/VP; a credit freeze/NP
+
+And, frankly, it was very unusual last week, when you heard politicians setting sort of that deadline getting this done by the weekend, before markets opened on Monday.
+it/NP; was/VP; last week/NP
+
+And, frankly, it was very unusual last week, when you heard politicians setting sort of that deadline getting this done by the weekend, before markets opened on Monday.
+you/NP; heard/VP; politicians/NP
+
+And, frankly, it was very unusual last week, when you heard politicians setting sort of that deadline getting this done by the weekend, before markets opened on Monday.
+sort of that deadline/NP; getting/VP; this/NP
+
+And, frankly, it was very unusual last week, when you heard politicians setting sort of that deadline getting this done by the weekend, before markets opened on Monday.
+markets/NP; opened/VP on/PP; Monday/NP
+
+It would be advised that people not try and satisfy the markets on this.
+It/NP; would be advised/VP that/PP; people/NP
+
+We need to fix this problem for the bigger problem that it is.
+We/NP; need to fix/VP; this problem/NP
+
+Markets are following Washington right now.
+Markets/NP; are following/VP; Washington/NP
+
+It's not the other way around.
+It/NP; 's/VP; the other way/NP
+
+So, at this point, the credit markets are bigger, and the -- the -- the stock market is a weak barometer of the economy at this point.
+the/NP; --/VP; the/NP
+
+So, at this point, the credit markets are bigger, and the -- the -- the stock market is a weak barometer of the economy at this point.
+the stock market/NP; is/VP; a weak barometer of the economy/NP
+
+>> COOPER: So, we're already seeing, what, businesses not able to borrow money, individuals not able to borrow money?
+individuals/NP; to borrow/VP; money/NP
+
+>> VELSHI: Right now, it's the banks.
+it/NP; is/VP; the banks/NP
+
+But the banks need to borrow money in order to get that money flow to businesses that need those loans.
+the banks/NP; need to borrow/VP; money/NP
+
+But the banks need to borrow money in order to get that money flow to businesses that need those loans.
+that/NP; need/VP; those loans/NP
+
+So, we have already seen major corporations having issues with being able to raise money.
+we/NP; have already seen/VP; major corporations/NP
+
+And that starts to flow all the way down.
+that/NP; starts to flow/VP; all the way/NP
+
+The system on the -- all the way down hasn't come to a halt.
+all the way/NP; has n't come/VP to/PP; a halt/NP
+
+If you have a mortgage and you happen to have great credit and a lot of money down in a neighborhood, you will still get that loan, but you may not be able to sell it as easily, because your buyer may not be able to get that loan.
+you/NP; have/VP; a mortgage/NP
+
+If you have a mortgage and you happen to have great credit and a lot of money down in a neighborhood, you will still get that loan, but you may not be able to sell it as easily, because your buyer may not be able to get that loan.
+you/NP; happen to have/VP; great credit/NP
+
+If you have a mortgage and you happen to have great credit and a lot of money down in a neighborhood, you will still get that loan, but you may not be able to sell it as easily, because your buyer may not be able to get that loan.
+you/NP; will still get/VP; that loan/NP
+
+If there is a word that there's a deal, and it's a real deal this time, you may see that... (CROSSTALK) >> COOPER: But there's still a chance that, whatever the deal is, it's not going to necessarily free up credit markets.
+there/NP; is/VP; a word/NP
+
+If there is a word that there's a deal, and it's a real deal this time, you may see that... (CROSSTALK) >> COOPER: But there's still a chance that, whatever the deal is, it's not going to necessarily free up credit markets.
+there/NP; is/VP; a deal/NP
+
+If there is a word that there's a deal, and it's a real deal this time, you may see that... (CROSSTALK) >> COOPER: But there's still a chance that, whatever the deal is, it's not going to necessarily free up credit markets.
+it/NP; is/VP; a real deal/NP
+
+If there is a word that there's a deal, and it's a real deal this time, you may see that... (CROSSTALK) >> COOPER: But there's still a chance that, whatever the deal is, it's not going to necessarily free up credit markets.
+there/NP; is still/VP; a chance/NP
+
+If there is a word that there's a deal, and it's a real deal this time, you may see that... (CROSSTALK) >> COOPER: But there's still a chance that, whatever the deal is, it's not going to necessarily free up credit markets.
+it/NP; 's not going to necessarily free/VP up/PRT; credit markets/NP
+
+And that's why I think that -- this might be a bit of a head fake that the Senate is going first, because we really didn't think the Senate was the problem in this.
+that/NP; is why/VP; I/NP
+
+And that's why I think that -- this might be a bit of a head fake that the Senate is going first, because we really didn't think the Senate was the problem in this.
+this/NP; might be/VP; a bit of a head fake/NP
+
+And that's why I think that -- this might be a bit of a head fake that the Senate is going first, because we really didn't think the Senate was the problem in this.
+we/NP; did n't think/VP; the Senate/NP
+
+It's the House.
+It/NP; is/VP; the House/NP
+
+And that deal may be on Thursday, that vote.
+that deal/NP; may be/VP on/PP; Thursday/NP
+
+It may be later than that.
+It/NP; may be/VP than/PP; that/NP
+
+That is when you will start to see credit markets opening up, when we really think that some see of that $700 billion is actually to flow to -- to businesses that are in trouble.
+That/NP; is when/VP; you/NP
+
+That is when you will start to see credit markets opening up, when we really think that some see of that $700 billion is actually to flow to -- to businesses that are in trouble.
+we/NP; think/VP; some/NP
+
+That is when you will start to see credit markets opening up, when we really think that some see of that $700 billion is actually to flow to -- to businesses that are in trouble.
+that/NP; are/VP in/PP; trouble/NP
+
+And that will start to flow down to individuals.
+that/NP; will start to flow down/VP to/PP; individuals/NP
+
+But it still is a Main Street issue.
+it/NP; is/VP; a Main Street issue/NP
+
+And -- and Washington has got a big selling job to convince Americans of that.
+Washington/NP; has got/VP; a big selling job/NP
 <end>20081001020758.667</end>
 
 <story>Economy: Bailout Plan / The Candidates</story>
@@ -641,15 +899,330 @@ Gary Tuchman/NP; has wandered/VP around/PP; the island/NP
 
 You will meet some of them -- when 360  continues.
 You/NP; will meet/VP; some of them/NP
-<end>20081001022822.000</end>
+<end>20081001022824.000</end>
 
 <story>Economy: Stock Market / Orman Interview</story>
-<start>20081001022822.000</start>
->>> COOPER: A  look at the Dow's climb told on Wall Street, finishing up 485, after yesterday's record loss of 778.
-the Dow's climb/NP; told/VP on/PP; Wall Street/NP
+<start>20081001022824.000</start>
+Updating our breaking news, >>> the Senate supposed to vote on a bailout plan tomorrow night.
+>>/NP; >/VP; the Senate/NP
 
-That's it obviously speeded up.
-That/NP; is/VP; it/NP
+Personal finance expert Suze Orman joins us to answer your questions about the wild ride in the markets.
+Personal finance expert Suze Orman/NP; joins/VP; us/NP
+
+First of all, the -- the bill that the Senate is going to vote on tomorrow night is going to raise, from $100,000 to $250,000,  the amount that the FDIC  will protect in a bank.
+the Senate/NP; is going to vote/VP on/PP; tomorrow night/NP
+
+First of all, the -- the bill that the Senate is going to vote on tomorrow night is going to raise, from $100,000 to $250,000,  the amount that the FDIC  will protect in a bank.
+the FDIC/NP; will protect/VP in/PP; a bank/NP
+
+What does that mean to people who have their money -- I  mean, is that a good thing?
+What/NP; does/VP; that/NP
+
+What does that mean to people who have their money -- I  mean, is that a good thing?
+who/NP; have/VP; their money/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, it's a good thing, only in that people don't have to go to many other different banks, if they have more than $100,000,  or if they're confused on how it works.
+>/NP; >/VP; OWNING/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, it's a good thing, only in that people don't have to go to many other different banks, if they have more than $100,000,  or if they're confused on how it works.
+it/NP; is/VP; a good thing/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, it's a good thing, only in that people don't have to go to many other different banks, if they have more than $100,000,  or if they're confused on how it works.
+that people/NP; do n't have to go/VP to/PP; many other different banks/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, it's a good thing, only in that people don't have to go to many other different banks, if they have more than $100,000,  or if they're confused on how it works.
+they/NP; have/VP; more than $ 100,000/NP
+
+>> SUZE ORMAN, AUTHOR, "WOMEN & MONEY: >> OWNING THE POWER TO CONTROL YOUR DESTINY": Yes, it's a good thing, only in that people don't have to go to many other different banks, if they have more than $100,000,  or if they're confused on how it works.
+they/NP; 're confused/VP on/PP; it/NP
+
+Does it help the little people?
+it/NP; help/VP; the little people/NP
+
+Not that much, to tell you the truth, because who has $50,000?
+who/NP; has/VP; $ 50,000/NP
+
+They have maybe $50,000 of credit card debt, but very few people really that we're talking about really that's going to affect.
+They/NP; have/VP; maybe $ 50,000 of credit card debt/NP
+
+They have maybe $50,000 of credit card debt, but very few people really that we're talking about really that's going to affect.
+we/NP; 're talking/VP about/PP; really that 's/NP
+
+But, for large banks, for -- you know, for large businesses, rather, it makes it easier for them to possibly meet their payroll and things like that by dealing with just one bank.
+it/NP; makes/VP; it/NP
+
+But, for large banks, for -- you know, for large businesses, rather, it makes it easier for them to possibly meet their payroll and things like that by dealing with just one bank.
+them/NP; to possibly meet/VP; their payroll/NP
+
+But, for large banks, for -- you know, for large businesses, rather, it makes it easier for them to possibly meet their payroll and things like that by dealing with just one bank.
+that/NP; dealing/VP with/PP; just one bank/NP
+
+>> COOPER: We have gotten a ton -- a ton of questions on the AC360.com
+We/NP; have gotten/VP; a ton/NP
+
+Jon writes: "I'm 28  years old with no credit card or student loan debt.
+I/NP; 'm/VP; 28 years/NP
+
+My condo is paid off.
+My condo/NP; is paid/VP; off/NP
+
+I  have a great job and am pointing some money away in my 401(k).
+I/NP; have/VP; a great job/NP
+
+Should I  be taking advantage of the 'great bargains' that you discussed in your article on the 360 Web site yesterday?"
+I/NP; be taking/VP; advantage of the 'great bargains/NP
+
+Should I  be taking advantage of the 'great bargains' that you discussed in your article on the 360 Web site yesterday?"
+you/NP; discussed/VP in/PP; your article/NP
+
+Of course, he should be taking advantage of it, because he doesn't have to use his money to get out of debt.
+he/NP; should be taking/VP; advantage of it/NP
+
+Of course, he should be taking advantage of it, because he doesn't have to use his money to get out of debt.
+he/NP; does n't have to use/VP; his money/NP
+
+He's got everything going for himself.
+He/NP; 's got/VP; everything/NP
+
+So, how does he take advantage?
+he/NP; take/VP; advantage/NP
+
+How do you take advantage of what's going on here?
+you/NP; take/VP; advantage of what/NP
+
+Just continue to, every single month, keep putting your money in the market in something that is giving you a good dividend, something that is maybe like an exchange-traded fund, like the DVYs, for instance, that buy the Dow Jones industrial average.
+that/NP; is giving/VP; you/NP
+
+Just continue to, every single month, keep putting your money in the market in something that is giving you a good dividend, something that is maybe like an exchange-traded fund, like the DVYs, for instance, that buy the Dow Jones industrial average.
+that/NP; is maybe/VP like/PP; an exchange-traded fund/NP
+
+Just continue to, every single month, keep putting your money in the market in something that is giving you a good dividend, something that is maybe like an exchange-traded fund, like the DVYs, for instance, that buy the Dow Jones industrial average.
+that/NP; buy/VP; the Dow Jones industrial average/NP
+
+You can get a 4.7  percent yield.
+You/NP; can get/VP; a 4.7 percent yield/NP
+
+If you do it in little amounts of money over a long period of time, you will be fine.
+you/NP; do/VP; it/NP
+
+But, if you have a large amount of money and you're going to put it in right here, all in one lump sum, oh, you will be making one of the biggest mistakes in your life, if you ask me.
+you/NP; have/VP; a large amount of money/NP
+
+But, if you have a large amount of money and you're going to put it in right here, all in one lump sum, oh, you will be making one of the biggest mistakes in your life, if you ask me.
+you/NP; 're going to put/VP; it/NP
+
+But, if you have a large amount of money and you're going to put it in right here, all in one lump sum, oh, you will be making one of the biggest mistakes in your life, if you ask me.
+you/NP; will be making/VP; one of the biggest mistakes/NP
+
+But, if you have a large amount of money and you're going to put it in right here, all in one lump sum, oh, you will be making one of the biggest mistakes in your life, if you ask me.
+you/NP; ask/VP; me/NP
+
+>> COOPER: Julie asked, "Is it a total mistake to take out my husband's $70,000  401(k) to pay off our credit cards?
+a total mistake/NP; to take/VP out/PRT; my husband's $ 70,000 401( k/NP
+
+We have three kids in college and have racked up debt, which now hurts.
+We/NP; have/VP; three kids/NP
+
+We have three kids in college and have racked up debt, which now hurts.
+college/NP; have racked up/VP; debt/NP
+
+I  have around $100,000  in my 401(k), which will stay put." >> ORMAN: Are you kidding?
+I/NP; have/VP around/PP; $ 100,000/NP
+
+Why? No. 1,  when you take it out, if you're not of age, 59 1/2  years of age, what's going to happen?
+you/NP; take/VP; it/NP
+
+Why? No. 1,  when you take it out, if you're not of age, 59 1/2  years of age, what's going to happen?
+you/NP; 're/VP of/PP; age/NP
+
+You're going to pay not only ordinary income taxes on it, but you're going to pay a 10 percent penalty, as well.
+You/NP; 're going to pay/VP; not only ordinary income taxes/NP
+
+You're going to pay not only ordinary income taxes on it, but you're going to pay a 10 percent penalty, as well.
+you/NP; 're going to pay/VP; a 10 percent penalty/NP
+
+The $70,000  that you have in there or the $100,000  that you have in there, when it's all said and done, you'll have $50,000.
+you/NP; have/VP in/PP; there/NP
+
+The $70,000  that you have in there or the $100,000  that you have in there, when it's all said and done, you'll have $50,000.
+you/NP; have/VP; in/NP
+
+The $70,000  that you have in there or the $100,000  that you have in there, when it's all said and done, you'll have $50,000.
+it/NP; is/VP; all/NP
+
+The $70,000  that you have in there or the $100,000  that you have in there, when it's all said and done, you'll have $50,000.
+you/NP; 'll have/VP; $ 50,000/NP
+
+What are you doing?
+What/NP; are/VP; you/NP
+
+You're going to be taking out the money while everything is low here.
+You/NP; 're going to be taking/VP out/PRT; the money/NP
+
+Don't you dare touch it.
+you/NP; dare touch/VP; it/NP
+
+Remember, 401(k)s are protected against bankruptcy.
+401(k )s/NP; are protected/VP against/PP; bankruptcy/NP
+
+So if you ever have to claim bankruptcy, keep the money in the 401(k).
+you/NP; have to claim/VP; bankruptcy/NP
+
+Don't use it to pay off credit card debt.
+it/NP; to pay/VP off/PRT; credit card debt/NP
+
+How quickly by law can I  obtain my money?" >> ORMAN: The weekend.
+law/NP; can I obtain/VP; my money/NP
+
+They'll usually close the gate on the weekend, like a Friday or Saturday.
+They/NP; 'll usually close/VP; the gate/NP
+
+You'll have your money on Monday.
+You/NP; 'll have/VP; your money/NP
+
+Now I think she should run for president.
+I/NP; think/VP; she/NP
+
+>> COOPER: Chelsea writes, "I'm 14,  and I  graduate high school in 2012.
+I/NP; 'm/VP; 14/NP
+
+What can I do right now to ensure I get a college loan, and will organizations and colleges become stingier with scholarships?"
+I/NP; get/VP; a college loan/NP
+
+What can I do right now to ensure I get a college loan, and will organizations and colleges become stingier with scholarships?"
+colleges/NP; become stingier/VP with/PP; scholarships/NP
+
+>> ORMAN: I'm not sure there's anything you can do to guarantee that you're going to get a student loan except this.
+I/NP; 'm/VP; there/NP
+
+>> ORMAN: I'm not sure there's anything you can do to guarantee that you're going to get a student loan except this.
+you/NP; 're going to get/VP; a student loan/NP
+
+And in my opinion, tell them, why don't we pass something like this bill so that we can free up money so it will be easier for people to lend you money when you need it?
+we/NP; pass/VP; something/NP
+
+And in my opinion, tell them, why don't we pass something like this bill so that we can free up money so it will be easier for people to lend you money when you need it?
+we/NP; can free/VP up/PRT; money/NP
+
+And in my opinion, tell them, why don't we pass something like this bill so that we can free up money so it will be easier for people to lend you money when you need it?
+it/NP; will be/VP; people/NP
+
+And in my opinion, tell them, why don't we pass something like this bill so that we can free up money so it will be easier for people to lend you money when you need it?
+you/NP; need/VP; it/NP
+
+>> COOPER: Dee writes, "We use two credit cards, pay off the balance in full each month.
+We/NP; use/VP; two credit cards/NP
+
+I  am hearing that our credit card companies may reduce our lines of credit, thus lowering our FICO score.
+I/NP; am hearing/VP; our credit card companies/NP
+
+Is this true and why would the companies do this?" >> ORMAN: They're doing it because they don't want you to use your credit card, run up these lines of credit and then all of a sudden say to them, "Sorry, I  can't pay you back."
+the companies/NP; do/VP; this/NP
+
+Is this true and why would the companies do this?" >> ORMAN: They're doing it because they don't want you to use your credit card, run up these lines of credit and then all of a sudden say to them, "Sorry, I  can't pay you back."
+They/NP; 're doing/VP; it/NP
+
+Is this true and why would the companies do this?" >> ORMAN: They're doing it because they don't want you to use your credit card, run up these lines of credit and then all of a sudden say to them, "Sorry, I  can't pay you back."
+they/NP; do n't want/VP; you/NP
+
+Is this true and why would the companies do this?" >> ORMAN: They're doing it because they don't want you to use your credit card, run up these lines of credit and then all of a sudden say to them, "Sorry, I  can't pay you back."
+I/NP; ca n't pay/VP; you/NP
+
+So credit cards will be lowering their lines of credit.
+credit cards/NP; will be lowering/VP; their lines of credit/NP
+
+Home equity lines of credit will be taken away from many of you.
+Home equity lines of credit/NP; will be taken away/VP from/PP; many of you/NP
+
+That will increase your debt to credit ratio, which is 30  percent of your FICO score, and your FICO  score will go down.
+That/NP; will increase/VP; your debt/NP
+
+That will increase your debt to credit ratio, which is 30  percent of your FICO score, and your FICO  score will go down.
+which/NP; is/VP; 30 percent of your FICO score/NP
+
+And that will hurt you and then what happens?
+that/NP; will hurt/VP; you/NP
+
+Oh, you bet you.
+you/NP; bet/VP; you/NP
+
+Sandra writes, "I  currently bank with a local credit union.
+I/NP; bank/VP with/PP; a local credit union/NP
+
+The bank is NCUA  and ACI  insured.
+The bank/NP; is/VP; NCUA and ACI/NP
+
+Do I  have the same security as a FDIC  insured institution?"
+I/NP; have/VP; the same security/NP
+
+Do I  have the same security as a FDIC  insured institution?"
+a FDIC/NP; insured/VP; institution/NP
+
+>> COOPER: And Tanaka writes, "In light of the economic crisis, I  am very concerned for my parents, who are both receiving Social Security benefits.
+I/NP; am/VP for/PP; my parents/NP
+
+In a worse-case scenario, would they continue to receive these benefits?"
+they/NP; continue to receive/VP; these benefits/NP
+
+>> ORMAN: They're going to continue to receive Social Security benefits.
+They/NP; 're going to continue to receive/VP; Social Security benefits/NP
+
+Does Social Security have problems for many of us years to come?
+Social Security/NP; have/VP; problems/NP
+
+But you know what?
+you/NP; know/VP; what/NP
+
+Let's get through today before we worry about our Social Security of tomorrow.
+we/NP; worry/VP about/PP; our Social Security of tomorrow/NP
+
+>> COOPER: Also, a lot of people wrote to me today that, you said in the past that, if you're in it for ten years in the stock market, it's the best investment.
+a lot of people/NP; wrote/VP to/PP; me/NP
+
+>> COOPER: Also, a lot of people wrote to me today that, you said in the past that, if you're in it for ten years in the stock market, it's the best investment.
+you/NP; said/VP in/PP; the past/NP
+
+>> COOPER: Also, a lot of people wrote to me today that, you said in the past that, if you're in it for ten years in the stock market, it's the best investment.
+you/NP; 're/VP in/PP; it/NP
+
+>> COOPER: Also, a lot of people wrote to me today that, you said in the past that, if you're in it for ten years in the stock market, it's the best investment.
+it/NP; is/VP; the best investment/NP
+
+In -- back in 1998,  the Dow Jones was at 7,632.
+the Dow Jones/NP; was/VP at/PP; 7,632/NP
+
+it's now -- yesterday, it was down to around 8,000.
+it/NP; was down/VP to/PP; around 8,000/NP
+
+Wouldn't it have been better for someone to be in municipal bonds getting 5  percent and...? >> ORMAN: It could, yes.
+it/NP; have been better/VP for/PP; someone/NP
+
+Wouldn't it have been better for someone to be in municipal bonds getting 5  percent and...? >> ORMAN: It could, yes.
+municipal bonds/NP; getting/VP; 5 percent/NP
+
+Who could predict what's going to happen?
+Who/NP; could predict/VP; what/NP
+
+So if you had known back then, should you have been in municipal bonds at 5  percent tax rate?
+you/NP; have been/VP in/PP; municipal bonds/NP
+
+I  went back for almost ten years.
+I/NP; went back/VP for/PP; almost ten years/NP
+
+And if you had put money in the Standard &  Poor's 500  index, and you had done it every single month for the past 10  years, you actually would be up on your money today, if you did it every single month, even though the market is far lower today than where it was back then.
+you/NP; had put/VP; money/NP
+
+And if you had put money in the Standard &  Poor's 500  index, and you had done it every single month for the past 10  years, you actually would be up on your money today, if you did it every single month, even though the market is far lower today than where it was back then.
+you/NP; had done/VP; it/NP
+
+And if you had put money in the Standard &  Poor's 500  index, and you had done it every single month for the past 10  years, you actually would be up on your money today, if you did it every single month, even though the market is far lower today than where it was back then.
+you/NP; would be up/VP on/PP; your money today/NP
+
+And if you had put money in the Standard &  Poor's 500  index, and you had done it every single month for the past 10  years, you actually would be up on your money today, if you did it every single month, even though the market is far lower today than where it was back then.
+you/NP; did/VP; it/NP
+
+And if you had put money in the Standard &  Poor's 500  index, and you had done it every single month for the past 10  years, you actually would be up on your money today, if you did it every single month, even though the market is far lower today than where it was back then.
+the market/NP; is/VP; far lower today/NP
 <end>20081001023644.500</end>
 
 <story>Campaign 2008 / McCain / Palin / A Discussion</story>

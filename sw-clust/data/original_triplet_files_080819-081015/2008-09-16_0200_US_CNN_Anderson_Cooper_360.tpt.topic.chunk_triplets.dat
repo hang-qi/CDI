@@ -1,34 +1,289 @@
 <story>Economy: Market Meltdown / Politics / Serwer Interview</story>
-<start>20080916020100.333</start>
-Another is bought, yet another now begging for a bailout, tens of billions of dollars lost, tens of thousands of jobs gone.
-another now/NP; begging/VP for/PP; a bailout/NP
+<start>20080916020112.000</start>
+Blue chips here lost more than 500 points, investors reacting to news over the weekend Lehman Brothers collapsing, Bank of America on about 48  hours notice buying Merrill Lynch.
+Blue chips/NP; lost/VP; more than 500 points/NP
 
-So, what are they going to do about it?
-what/NP; are/VP; they/NP
+Blue chips here lost more than 500 points, investors reacting to news over the weekend Lehman Brothers collapsing, Bank of America on about 48  hours notice buying Merrill Lynch.
+investors/NP; reacting/VP to/PP; news/NP
 
-It's your money, your vote.
-It/NP; is/VP; your money/NP
+Blue chips here lost more than 500 points, investors reacting to news over the weekend Lehman Brothers collapsing, Bank of America on about 48  hours notice buying Merrill Lynch.
+about 48 hours/NP; notice buying/VP; Merrill Lynch/NP
 
-Also tonight, they're both attacking, but is John McCain just plain lying about Barack Obama's record, his statements, Sarah Palin's accomplishments, even the size of his own crowds?
-they/NP; 're/VP; both attacking/NP
+The bigger picture, of course, unemployment up, inflation up, gas prices triple what they were seven years ago.
+they/NP; were/VP; seven years/NP
 
-Also tonight, they're both attacking, but is John McCain just plain lying about Barack Obama's record, his statements, Sarah Palin's accomplishments, even the size of his own crowds?
-John McCain/NP; plain lying/VP about/PP; Barack Obama's record/NP
+Today, the candidates each weighing in on what has gone wrong and how to fix it, your money, your vote.
+each/NP; weighing/VP in/PRT on/PP; what/NP
 
-Karl Rove says McCain's ads are a problem.
-Karl Rove/NP; says/VP; McCain's ads/NP
+>> TOM FOREMAN, CNN CORRESPONDENT: As the latest financial earthquake rumbled through Wall Street, tremors were rattling the campaign trail.
+the latest financial earthquake/NP; rumbled/VP through/PP; Wall Street/NP
 
-He says both sides' ads are a problem.
-He/NP; says/VP; both sides/NP
+>> TOM FOREMAN, CNN CORRESPONDENT: As the latest financial earthquake rumbled through Wall Street, tremors were rattling the campaign trail.
+tremors/NP; were rattling/VP; the campaign trail/NP
 
-He says both sides' ads are a problem.
-' ads/NP; are/VP; a problem/NP
+In Colorado, Barack Obama called it more bad fallout from years of Republican rule.
+Barack Obama/NP; called/VP; it/NP
 
-The Associated Press says -- and I  quote -- "The Straight Talk Express has detoured into doublespeak."
-The Straight Talk Express/NP; has detoured/VP into/PP; doublespeak/NP
+BARACK OBAMA (D-IL), PRESIDENTIAL NOMINEE: For eight years, we have had policies that have shredded consumer protections, that have loosened oversight and regulation, and encouraged outsized bonuses to CEOs, while ignoring middle-class Americans.
+we/NP; have had/VP; policies/NP
 
-Tonight, we're checking the facts, "Keeping Them Honest."
-we/NP; 're checking/VP; the facts/NP
+BARACK OBAMA (D-IL), PRESIDENTIAL NOMINEE: For eight years, we have had policies that have shredded consumer protections, that have loosened oversight and regulation, and encouraged outsized bonuses to CEOs, while ignoring middle-class Americans.
+that/NP; have shredded/VP; consumer protections/NP
+
+BARACK OBAMA (D-IL), PRESIDENTIAL NOMINEE: For eight years, we have had policies that have shredded consumer protections, that have loosened oversight and regulation, and encouraged outsized bonuses to CEOs, while ignoring middle-class Americans.
+that/NP; have loosened/VP; oversight and regulation/NP
+
+The result is the most serious financial crisis since the Great Depression.
+The result/NP; is/VP; the most serious financial crisis/NP
+
+>> FOREMAN: In Florida, John McCain blamed big business and bad government.
+John McCain/NP; blamed/VP; big business and bad government/NP
+
+JOHN MCCAIN (R-AZ), PRESIDENTIAL NOMINEE: People are frightened by these events.
+People/NP; are frightened/VP by/PP; these events/NP
+
+And I  promise you, we will never put America in this position again.
+I/NP; promise/VP; you/NP
+
+And I  promise you, we will never put America in this position again.
+we/NP; will never put/VP; America/NP
+
+(CHEERING AND APPLAUSE) >> MCCAIN: We will clean up Wall Street.
+( CHEERING AND APPLAUSE )/NP; >/VP; > MCCAIN/NP
+
+(CHEERING AND APPLAUSE) >> MCCAIN: We will clean up Wall Street.
+We/NP; will clean up/VP; Wall Street/NP
+
+We will reform government.
+We/NP; will reform/VP; government/NP
+
+(CHEERING AND APPLAUSE) >> FOREMAN: Amid recent problems in housing, banking and jobs, McCain's assertion that the economy is fundamentally sound was mocked by Obama.
+( CHEERING AND APPLAUSE )/NP; >/VP; > FOREMAN/NP
+
+>> OBAMA: Senator McCain, what economy are you talking about?
+what economy/NP; are/VP; you/NP
+
+>> FOREMAN: McCain says he was talking about the fundamental American work ethic.
+McCain/NP; says/VP; he/NP
+
+>> MCCAIN: Our workers have been the strength of our economy.
+Our workers/NP; have been/VP; the strength of our economy/NP
+
+>> FOREMAN: For all that, with each new bit of bad news, both men are pushing their plans for economic reform.
+both men/NP; are pushing/VP; their plans/NP
+
+Obama wants to invest more in manufacturing, fund more research and education, and crack down on credit card companies, to list some of his goals.
+Obama/NP; wants to invest more/VP in/PP; manufacturing/NP
+
+>> FOREMAN: Both men want a simpler tax code and lower taxes for working Americans.
+Both men/NP; want/VP; a simpler tax code/NP
+
+Both want lower fuel costs, more foreign trade.
+Both/NP; want/VP; lower fuel costs/NP
+
+>> MCCAIN: Our economy is at risk today.
+Our economy/NP; is/VP at/PP; risk/NP
+
+Have no doubt how serious this -- this problem is.
+no doubt/NP; how/VP; serious this/NP
+
+>> OBAMA: We are going to have a lot of rebuilding to do.
+We/NP; are going to have/VP; a lot/NP
+
+>> COOPER: A  lot of people may lose their jobs when this is all over.
+A lot of people/NP; may lose/VP; their jobs/NP
+
+>> COOPER: A  lot of people may lose their jobs when this is all over.
+this/NP; is/VP; all over/NP
+
+It's not just Wall Street.
+It/NP; 's/VP; Wall Street/NP
+
+Computer maker Hewlett-Packard today announcing nearly 25,000 job cuts, the nation's jobless rate the higher in years.
+Computer maker Hewlett-Packard today/NP; announcing/VP; nearly 25,000 job cuts/NP
+
+I  mean, is this going to get worse tomorrow?
+this going/NP; to get/VP; worse tomorrow/NP
+
+What happens tomorrow?
+What/NP; happens/VP; tomorrow/NP
+
+>> ANDY SERWER, MANAGING EDITOR, "FORTUNE": Yes, I  don't see this getting better, Anderson.
+I/NP; do n't see/VP; this getting better/NP
+
+You know, over the past couple of hours, those two giant financial companies, AIG, the largest insurance company in the United States, Washington Mutual, the largest S thrift in the United States, both were downgraded by credit agencies, meaning their bonds are rated the condition of the business has deteriorated, meaning they will have to raise more money.
+both/NP; were downgraded/VP by/PP; credit agencies/NP
+
+You know, over the past couple of hours, those two giant financial companies, AIG, the largest insurance company in the United States, Washington Mutual, the largest S thrift in the United States, both were downgraded by credit agencies, meaning their bonds are rated the condition of the business has deteriorated, meaning they will have to raise more money.
+their bonds/NP; are rated/VP; the condition of the business/NP
+
+You know, over the past couple of hours, those two giant financial companies, AIG, the largest insurance company in the United States, Washington Mutual, the largest S thrift in the United States, both were downgraded by credit agencies, meaning their bonds are rated the condition of the business has deteriorated, meaning they will have to raise more money.
+they/NP; will have to raise/VP; more money/NP
+
+But that puts their actual future in jeopardy at this point.
+that/NP; puts/VP; their actual future/NP
+
+>> COOPER: So, if I'm sitting at home tonight, and I have a 401(k), I  have got money in that, and I  have got, you know, money in my house, what does all this mean?
+I/NP; 'm sitting/VP at/PP; home tonight/NP
+
+>> COOPER: So, if I'm sitting at home tonight, and I have a 401(k), I  have got money in that, and I  have got, you know, money in my house, what does all this mean?
+I/NP; have/VP; a 401(k )/NP
+
+>> COOPER: So, if I'm sitting at home tonight, and I have a 401(k), I  have got money in that, and I  have got, you know, money in my house, what does all this mean?
+I/NP; have got/VP; money/NP
+
+>> COOPER: So, if I'm sitting at home tonight, and I have a 401(k), I  have got money in that, and I  have got, you know, money in my house, what does all this mean?
+what/NP; does/VP; all this mean/NP
+
+So, you have lost money there.
+you/NP; have lost/VP; money/NP
+
+Also, of course, the housing market has no improved.
+the housing market/NP; has/VP; no improved/NP
+
+And let's remember, at its core, this problem is all about the U.S. housing market and that deteriorating.
+this problem/NP; is/VP; all/NP
+
+And, then, also, there's a crisis of confidence.
+there/NP; is/VP; a crisis of confidence/NP
+
+I  mean, this stuff is starting to spill out into the overall economy.
+this stuff/NP; is starting to spill/VP out/PRT into/PP; the overall economy/NP
+
+Then you see banks and credit card companies starting to tighten up, not loan as much money to individuals and businesses, and raise rates on credit cards.
+you/NP; see/VP; banks/NP
+
+Then you see banks and credit card companies starting to tighten up, not loan as much money to individuals and businesses, and raise rates on credit cards.
+credit card companies/NP; starting to tighten/VP up/PRT; , not loan/NP
+
+So... (CROSSTALK) >> COOPER: So, even if you don't have money in the stock market, it's going to impact short-term, and maybe long-term, because of job cuts, tightening credit market?
+you/NP; do n't have/VP; money/NP
+
+>> SERWER: I  think that's right.
+I/NP; think/VP; that/NP
+
+And, of course, you know, business conditions are also going to be a problem going forward.
+business conditions/NP; are also going to be/VP; a problem/NP
+
+And you have to wonder if companies are going to start to lay people off.
+you/NP; have to wonder/VP; companies/NP
+
+The Hewlett-Packard layoff you just talked about not directly connected to this type of thing.
+you/NP; talked/VP; about/NP
+
+They had a giant merger.
+They/NP; had/VP; a giant merger/NP
+
+That's obviously really bad for the economy.
+That/NP; is obviously/VP for/PP; the economy/NP
+
+>> COOPER: In terms of the plans being offered by both Obama and McCain, what do you make of them?
+terms of the plans/NP; being offered/VP by/PP; both Obama and McCain/NP
+
+>> COOPER: In terms of the plans being offered by both Obama and McCain, what do you make of them?
+what/NP; do you make/VP of/PP; them/NP
+
+>> SERWER: I  think they're pretty short on substance.
+I/NP; think/VP; they/NP
+
+And, you know, I  mean, I think these guys need to get up to speed fast, because it's going to become a huge issue.
+I/NP; think/VP; these guys/NP
+
+And, you know, I  mean, I think these guys need to get up to speed fast, because it's going to become a huge issue.
+it/NP; 's going to become/VP; a huge issue/NP
+
+It is already is a huge issue, but it's going to sort of overwhelm, I  think, all the other issues of the campaign.
+it/NP; 's going to sort/VP of/PP; overwhelm/NP
+
+But they kind of come back to some fundamental questions we have in our society, regulation and free markets.
+we/NP; have/VP in/PP; our society , regulation and free markets/NP
+
+And we always have this tension, Anderson.
+we/NP; have/VP; this tension/NP
+
+But I think that it's safe to say we failed.
+I/NP; think/VP; it/NP
+
+I mean, Freddie and Fannie Mae had a government agency that was supposedly watching over them.
+Fannie Mae/NP; had/VP; a government agency/NP
+
+I mean, Freddie and Fannie Mae had a government agency that was supposedly watching over them.
+that/NP; was supposedly watching/VP over/PP; them/NP
+
+Have -- has -- you know, the people who were supposed to be watching over all this stuff, were they?
+who/NP; were supposed to be watching/VP over/PP; all this stuff/NP
+
+There is a regulatory body that oversees Fannie and Freddie, but they failed.
+There/NP; is/VP; a regulatory body/NP
+
+There is a regulatory body that oversees Fannie and Freddie, but they failed.
+that/NP; oversees/VP; Fannie and Freddie/NP
+
+There's no question about that.
+There/NP; is/VP; no question/NP
+
+Then you look at the regulatory evidence, in terms of Washington and Wall Street, and you have to say that there's failure there.
+you/NP; look/VP at/PP; the regulatory evidence/NP
+
+Then you look at the regulatory evidence, in terms of Washington and Wall Street, and you have to say that there's failure there.
+you/NP; have to say/VP; there/NP
+
+They didn't understand what was going on in terms of derivatives, complex financial instruments that got these companies into trouble.
+They/NP; did n't understand/VP; what/NP
+
+They didn't understand what was going on in terms of derivatives, complex financial instruments that got these companies into trouble.
+that/NP; got/VP; these companies/NP
+
+>> COOPER: What is interesting, too, I  mean, I'm 41.
+I/NP; 'm/VP; 41/NP
+
+And it's one of those things that I  think there's a lot of people who don't have the experience of it having major problems like this.
+it/NP; is/VP; one of those things/NP
+
+And it's one of those things that I  think there's a lot of people who don't have the experience of it having major problems like this.
+I/NP; think/VP; there/NP
+
+And it's one of those things that I  think there's a lot of people who don't have the experience of it having major problems like this.
+who/NP; do n't have/VP; the experience of it/NP
+
+And, you know, of course, we both remember 1987, the crash then.
+both/NP; remember/VP; 1987/NP
+
+It really hit Wall Street.
+It/NP; hit/VP; Wall Street/NP
+
+It did cause a recession.
+It/NP; did cause/VP; a recession/NP
+
+But, in a way, this feels worse, I'm sorry to say, because it seems more difficult to contain.
+this/NP; feels/VP; worse/NP
+
+It seems like Washington, you know -- you know, Hank Paulson and Ben Bernanke are working very hard, but it doesn't feel like they're in control.
+It/NP; seems/VP like/PP; Washington/NP
+
+It seems like Washington, you know -- you know, Hank Paulson and Ben Bernanke are working very hard, but it doesn't feel like they're in control.
+it/NP; does n't feel/VP; they/NP
+
+>> COOPER: They're responding to -- yes.
+They/NP; 're responding to --/VP; yes/NP
+
+(CROSSTALK) >> COOPER: Andy Serwer, appreciate you being with us.
+you/NP; being/VP with/PP; us/NP
+
+Our political panel weighs in tonight.
+Our political panel/NP; weighs/VP in/PP; tonight/NP
+
+As always, I'm blogging throughout the hour.
+I/NP; 'm blogging/VP throughout/PP; the hour/NP
+
+You can also find Erica Hill's live Webcast during the commercial breaks.
+You/NP; can also find/VP; Erica Hill's live Webcast/NP
+
+Some recent statements by John McCain and Sarah Palin have been raising eyebrows?
+Sarah Palin/NP; have been raising/VP; eyebrows/NP
+
+We will examine lies, half-truths, and misstatements ahead.
+We/NP; will examine/VP; lies/NP
 <end>20080916021120.333</end>
 
 <story>Campaign 2008 / Obama vs. McCain / McCain Facts</story>

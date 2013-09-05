@@ -1,61 +1,640 @@
+<story>NULL</story>
+<start>20081014020151.000</start>
+We will have more on the politics shortly, but, first, the money and the breaking news and Ali Velshi.
+We/NP; will have/VP; more/NP
+<end>20081014025805.750</end>
+
 <story>Economy: Stock Market / Serwer Interview</story>
-<start>20081014020012.250</start>
-breaking >>> news, new details on the European crisis, how Britain, Europe, and the U.S. plan to fix the mess, a new dollar figure, the announcement set for tomorrow.
-the U.S. plan/NP; to fix/VP; the mess/NP
+<start>20081014020151.000</start>
+And, look, it's not a trend.
+it/NP; 's/VP; a trend/NP
 
-breaking >>> news, new details on the European crisis, how Britain, Europe, and the U.S. plan to fix the mess, a new dollar figure, the announcement set for tomorrow.
-the announcement/NP; set/VP for/PP; tomorrow/NP
+It's just a day.
+It/NP; is just/VP; a day/NP
 
-We have got early details tonight, new signs, as well, that investors like what they are seeing, Asian markets rallying as we speak -- that's the breaking news -- after a record day on Wall Street, the Dow industrials up 936  points, the sharpest point jump in market history, investors regaining $1.2  trillion on paper in a single trading day.
-We/NP; have got/VP; early details/NP
+But let me tell you a little bit about how this day started off.
+me/NP; tell/VP; you/NP
 
-We have got early details tonight, new signs, as well, that investors like what they are seeing, Asian markets rallying as we speak -- that's the breaking news -- after a record day on Wall Street, the Dow industrials up 936  points, the sharpest point jump in market history, investors regaining $1.2  trillion on paper in a single trading day.
-that/NP; is/VP; the breaking news/NP
+On Friday night, we had a loss of 198 points, but a lot of people thought that was really almost a gain.
+we/NP; had/VP; a loss of 198 points/NP
 
-We have got early details tonight, new signs, as well, that investors like what they are seeing, Asian markets rallying as we speak -- that's the breaking news -- after a record day on Wall Street, the Dow industrials up 936  points, the sharpest point jump in market history, investors regaining $1.2  trillion on paper in a single trading day.
-investors/NP; regaining/VP; $ 1.2 trillion/NP
+On Friday night, we had a loss of 198 points, but a lot of people thought that was really almost a gain.
+a lot of people/NP; thought/VP; that/NP
 
-Now, on the campaign trail, both candidates speaking out on the economy and how they would fix it.
-both candidates/NP; speaking/VP out/PRT on/PP; the economy/NP
+Part of the loss there was because the price of oil had gone down, and Exxon and Chevron brought the market down.
+there/NP; was/VP; the price of oil/NP
 
-Now, on the campaign trail, both candidates speaking out on the economy and how they would fix it.
-they/NP; would fix/VP; it/NP
+Part of the loss there was because the price of oil had gone down, and Exxon and Chevron brought the market down.
+Exxon and Chevron/NP; brought/VP; the market/NP
 
-JOHN MCCAIN (R-AZ), PRESIDENTIAL NOMINEE: The catalyst of this crisis was the collapse of the housing in America.
-The catalyst of this crisis/NP; was/VP; the collapse of the housing/NP
+It was up more than 500  points for most of the day, then 600 points.
+It/NP; was/VP than/PP; 500 points/NP
 
-And I  want homeowners to be able to negotiate a new mortgage at the new value of their home, so they can stay in their homes.
-I/NP; want/VP; homeowners/NP
+It's called a short squeeze.
+It/NP; 's called/VP; a short squeeze/NP
 
-And I  want homeowners to be able to negotiate a new mortgage at the new value of their home, so they can stay in their homes.
-they/NP; can stay/VP in/PP; their homes/NP
+It's people who are betting against the market realizing that those stocks weren't going to go down.
+It/NP; is/VP; people/NP
 
-BARACK OBAMA (D-IL), PRESIDENTIAL NOMINEE: I  have already proposed a middle-class tax cut for 95  percent of workers and their families.
-I/NP; have already proposed/VP; a middle-class tax cut/NP
+It's people who are betting against the market realizing that those stocks weren't going to go down.
+who/NP; are betting/VP against/PP; the market/NP
 
-But, today, I'm calling on Congress to pass a plan, so that the IRS will mail out the first round of those tax cuts as soon as possible.
-I/NP; 'm calling/VP; Congress/NP
+You have to buy stocks to make up for it.
+You/NP; have to buy/VP; stocks/NP
 
-But, today, I'm calling on Congress to pass a plan, so that the IRS will mail out the first round of those tax cuts as soon as possible.
-the IRS/NP; will mail/VP out/PP; the first round of those tax cuts/NP
+So, that's what that happened.
+that/NP; is/VP; what/NP
 
->> COOPER: Senator Obama also proposing a new tax credit for small businesses that create jobs, a three-month halt in home foreclosures, and a chance for people to take up to $10,000 from their 401(k) and IRA  accounts without taxes or penalties.
-Senator Obama/NP; proposing/VP; a new tax credit/NP
+We have never numbers like this, 936 points higher by the end of the day.
+We/NP; have never/VP; numbers/NP
 
->> COOPER: Senator Obama also proposing a new tax credit for small businesses that create jobs, a three-month halt in home foreclosures, and a chance for people to take up to $10,000 from their 401(k) and IRA  accounts without taxes or penalties.
-that/NP; create/VP; jobs/NP
+Until today, the biggest number that we had ever seen wasn't even a 500-point gain.
+we/NP; had ever seen was/VP; a 500-point gain/NP
 
->> COOPER: Senator Obama also proposing a new tax credit for small businesses that create jobs, a three-month halt in home foreclosures, and a chance for people to take up to $10,000 from their 401(k) and IRA  accounts without taxes or penalties.
-people/NP; to take/VP up/PRT to/PP; $ 10,000/NP
+Now, there were a lot of things that happened.
+there/NP; were/VP; a lot of things/NP
 
-Today, there were no specifics yet from the McCain camp.
-there/NP; were/VP; no specifics/NP
+In Europe, the banks decided that -- the governments decided they were going to back up the banks.
+the governments/NP; decided/VP; they/NP
 
-They are expected to unveil a new economic plan tomorrow.
-They/NP; are expected to unveil/VP; a new economic plan/NP
-<end>20081014021744.000</end>
+The U.S. sort of gave off hints that it was going to start spending this $700 billion soon and maybe emulate the British model of guaranteeing bank loans.
+of/NP; gave/VP off/PRT; hints/NP
+
+The U.S. sort of gave off hints that it was going to start spending this $700 billion soon and maybe emulate the British model of guaranteeing bank loans.
+it/NP; was going to start spending/VP; this $ 700 billion/NP
+
+The U.S. sort of gave off hints that it was going to start spending this $700 billion soon and maybe emulate the British model of guaranteeing bank loans.
+the British model/NP; guaranteeing/VP; bank loans/NP
+
+So, that was another big deal.
+that/NP; was/VP; another big deal/NP
+
+A  lot of these things led to this kind of market charge that we had today.
+A lot of these things/NP; led/VP to/PP; this kind of market charge/NP
+
+A  lot of these things led to this kind of market charge that we had today.
+we/NP; had/VP; today/NP
+
+But we're not even halfway made up for what we lost over the last couple of weeks -- Anderson.
+we/NP; 're not even halfway made/VP up/PRT for/PP; what/NP
+
+But we're not even halfway made up for what we lost over the last couple of weeks -- Anderson.
+we/NP; lost/VP over/PP; the last couple of weeks/NP
+
+>> COOPER: Ali, we are learning more details about what the government is going to announce tomorrow.
+we/NP; are learning/VP; more details/NP
+
+>> COOPER: Ali, we are learning more details about what the government is going to announce tomorrow.
+the government/NP; is going to announce/VP; tomorrow/NP
+
+What are we -- what are you hearing?
+What/NP; are/VP; we/NP
+
+What are we -- what are you hearing?
+what/NP; are/VP; you/NP
+
+>> VELSHI: There are four basic things that we're hearing about.
+There/NP; are/VP; four basic things/NP
+
+Let me show you what they are.
+me/NP; show/VP; you/NP
+
+The first one is that the government seems to be targeting nine specific banks that they're going to make direct investments in.
+The first one/NP; is/VP; the government/NP
+
+The first one is that the government seems to be targeting nine specific banks that they're going to make direct investments in.
+they/NP; 're going to make/VP; direct investments/NP
+
+They are going to invest in those banks, and they're going to get stocks back in return.
+They/NP; are going to invest/VP in/PP; those banks/NP
+
+They are going to invest in those banks, and they're going to get stocks back in return.
+they/NP; 're going to get/VP; stocks/NP
+
+The second thing is, the Treasury has been authorized to spend the first $250  billion of this $700  billion bailout.
+the Treasury/NP; has been authorized to spend/VP; the first $ 250 billion of this $ 700 billion bailout/NP
+
+Well, the president going to give them authority to spend another $100 billion, so that they can accelerate the pace at which they're buying up these troubled assets and investing in the banks.
+the president/NP; going to give/VP; them/NP
+
+Well, the president going to give them authority to spend another $100 billion, so that they can accelerate the pace at which they're buying up these troubled assets and investing in the banks.
+authority/NP; to spend/VP; another $ 100 billion/NP
+
+Well, the president going to give them authority to spend another $100 billion, so that they can accelerate the pace at which they're buying up these troubled assets and investing in the banks.
+they/NP; can accelerate/VP; the pace/NP
+
+Well, the president going to give them authority to spend another $100 billion, so that they can accelerate the pace at which they're buying up these troubled assets and investing in the banks.
+they/NP; 're buying/VP up/PRT; these troubled assets/NP
+
+The third thing is, we're going to get the rules on CEO compensation.
+we/NP; 're going to get/VP; the rules/NP
+
+As you know, that bailout package had some provisions that, if your company gets help from the government, from taxpayers, well, your CEOs are not going to be able to walk away with golden parachutes or get too much money.
+that bailout package/NP; had/VP; some provisions/NP
+
+As you know, that bailout package had some provisions that, if your company gets help from the government, from taxpayers, well, your CEOs are not going to be able to walk away with golden parachutes or get too much money.
+your company/NP; gets/VP; help/NP
+
+As you know, that bailout package had some provisions that, if your company gets help from the government, from taxpayers, well, your CEOs are not going to be able to walk away with golden parachutes or get too much money.
+golden parachutes/NP; get/VP; too much money/NP
+
+We're going to get details on that tomorrow morning.
+We/NP; 're going to get/VP; details/NP
+
+And, finally, the FDIC,  the Federal Deposit Insurance Corporation, which insures your bank accounts now up to $240,000  -- $250,000 apiece, is apparently going to start insuring non-interest- bearing accounts, the kind of which people's payrolls are -- are paid.
+which/NP; insures/VP; your bank accounts/NP
+
+And, finally, the FDIC,  the Federal Deposit Insurance Corporation, which insures your bank accounts now up to $240,000  -- $250,000 apiece, is apparently going to start insuring non-interest- bearing accounts, the kind of which people's payrolls are -- are paid.
+non-interest-/NP; bearing/VP; accounts/NP
+
+So, that's a pretty important thing.
+that/NP; is/VP; a pretty important thing/NP
+
+For all those people who are worried that this credit crisis could affect their payroll, Anderson, we're hearing news that that could change, too.
+who/NP; are worried/VP that/PP; this credit crisis/NP
+
+For all those people who are worried that this credit crisis could affect their payroll, Anderson, we're hearing news that that could change, too.
+we/NP; 're hearing/VP; news/NP
+
+That's up 11 percent just today.
+That/NP; is up/VP; 11 percent/NP
+
+What happens tomorrow?
+What/NP; happens/VP; tomorrow/NP
+
+Some perspective on where things may be headed and what it means to your bottom line from "Fortune" magazine managing editor Andy Serwer.
+things/NP; may be headed/VP; what/NP
+
+Some perspective on where things may be headed and what it means to your bottom line from "Fortune" magazine managing editor Andy Serwer.
+it/NP; means/VP to/PP; your bottom line/NP
+
+Some perspective on where things may be headed and what it means to your bottom line from "Fortune" magazine managing editor Andy Serwer.
+" magazine/NP; managing/VP; editor Andy Serwer/NP
+
+Tomorrow, you said it's going to be an interesting day.
+you/NP; said/VP; it/NP
+
+What do you mean? >> ANDY SERWER, MANAGING EDITOR, "FORTUNE": You know when the flight attendants say, keep your seat belt securely fastened?
+What/NP; do/VP; you/NP
+
+What do you mean? >> ANDY SERWER, MANAGING EDITOR, "FORTUNE": You know when the flight attendants say, keep your seat belt securely fastened?
+You/NP; know when/VP; the flight attendants/NP
+
+I  mean, there's no question, Anderson, that tomorrow is going to be another one of those days.
+there/NP; is/VP; no question/NP
+
+I  mean, there's no question, Anderson, that tomorrow is going to be another one of those days.
+that tomorrow/NP; is going to be/VP; another one of those days/NP
+
+There's a couple things that happened.
+There/NP; is/VP; a couple things/NP
+
+First of all, today was a bank holiday.
+today/NP; was/VP; a bank holiday/NP
+
+So, we will get the full response of more developments from Washington.
+we/NP; will get/VP; the full response of more developments/NP
+
+We're also going to be having the president and the treasury secretary, as Ali suggested, are going to be announcing more details about the plan, investing directly in banks, also insurance -- insuring more.
+We/NP; 're also going to be having/VP; the president/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+You/NP; pointed out to just/VP; me/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+we/NP; went/VP on/PP; the air/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+the U.S. government/NP; is now going to be putting/VP into/PP; banks/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+which/NP; is basically/VP; what/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+it/NP; is/VP to/PP; what/NP
+
+>> COOPER: You pointed out to just me before we went on the air that the amount of money that the U.S.  government is now going to be putting into banks, which is basically what the Europeans have been doing, or announced they're going to be doing, it's minuscule compared to what the Europeans are putting into their own banks.
+the Europeans/NP; are putting/VP into/PP; their own banks/NP
+
+I  mean, the way the plan is... >> COOPER: So, are we trying to do this on the cheap?
+we/NP; trying to do/VP; this/NP
+
+Well, the way the plan looks to me is, it's $250 billion, perhaps plus an additional $100 billion.
+the plan/NP; looks/VP to/PP; me/NP
+
+Well, the way the plan looks to me is, it's $250 billion, perhaps plus an additional $100 billion.
+it/NP; is/VP; $ 250 billion/NP
+
+But, remember, the Europeans are throwing the long ball here.
+the Europeans/NP; are throwing/VP; the long ball/NP
+
+They're throwing $2.3  trillion at their problem.
+They/NP; 're throwing/VP; $ 2.3 trillion/NP
+
+And we're only going to be doing $250  billion.
+we/NP; 're only going to be doing/VP; $ 250 billion/NP
+
+So, they're spending 10  times as much as we are.
+they/NP; 're spending/VP; 10 times/NP
+
+Some people are suggesting that our plan could be overwhelming in that sense -- underwhelming, I  should say.
+Some people/NP; are suggesting/VP that/PP; our plan/NP
+
+>> COOPER: Well, isn't this something that -- this whole idea of injecting money directly into banks, isn't that something that Paulson wrote off a couple weeks ago?
+this whole idea/NP; injecting/VP; money/NP
+
+>> COOPER: Well, isn't this something that -- this whole idea of injecting money directly into banks, isn't that something that Paulson wrote off a couple weeks ago?
+Paulson/NP; wrote/VP off/PRT; a couple weeks/NP
+
+In late September -- I  think it was September 23,  in fact -- there were suggestions that that was not necessarily to do at all.
+I/NP; think/VP; it/NP
+
+In late September -- I  think it was September 23,  in fact -- there were suggestions that that was not necessarily to do at all.
+there/NP; were/VP; suggestions/NP
+
+And now we have seen the Europeans do it.
+we/NP; have seen/VP; the Europeans/NP
+
+For those who suggest that, earlier in the year, we should have headed this thing off at the pass, you know, that may be a bit of a red herring, because no one foresaw exactly how bad this was going to be.
+we/NP; should have headed/VP; this thing/NP
+
+For those who suggest that, earlier in the year, we should have headed this thing off at the pass, you know, that may be a bit of a red herring, because no one foresaw exactly how bad this was going to be.
+that/NP; may be/VP; a bit of a red herring/NP
+
+This is uncharted territory right now.
+This/NP; is/VP; uncharted territory/NP
+
+So, maybe it is prudent to keep shifting in terms of what you see as the focus.
+you/NP; see/VP as/PP; the focus/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+There/NP; are/VP; those/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+I/NP; think/VP; CNN's Fareed Zakaria/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+gosh/NP; knows/VP; it/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+there/NP; 's going to be/VP; a lot of people/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+it/NP; is/VP; a dose of reality/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+that/NP; very badly needed/VP; reality/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+our economy/NP; has been bloated/VP for/PP; a long time/NP
+
+>> COOPER: There are those who have said -- and I  think CNN's Fareed Zakaria was among them -- who said, look, you know, that as painful as this is -- and gosh knows it's going to be incredibly painful for some folks, more than others -- but it's -- you know, there's going to be a lot of people hurting out of work, seeing their savings disappear -- but that it's a dose of reality in an economy that very badly needed reality, that our economy has been bloated and drunk for a long time on greed and other things, and this is a wakeup call.
+this/NP; is/VP; a wakeup call/NP
+
+>> SERWER: Yes, I  think we have too much debt, as a nation.
+I/NP; think/VP; we/NP
+
+We borrow too much, and we're paying the piper right now.
+we/NP; 're paying/VP; the piper/NP
+
+You don't want to say that we need pain, that people all around America need to be thrown out of work.
+You/NP; do n't want to say/VP; we/NP
+
+You don't want to say that we need pain, that people all around America need to be thrown out of work.
+America/NP; need to be thrown/VP out/PP of/PP; work/NP
+
+That's horrible, particularly people who did nothing wrong.
+who/NP; did/VP; nothing/NP
+
+I  mean, you look at a guy who works in a factory... >> COOPER: Right.
+you/NP; look/VP at/PP; a guy/NP
+
+I  mean, you look at a guy who works in a factory... >> COOPER: Right.
+who/NP; works/VP in/PP; a factory/NP
+
+>> SERWER: ...  who never borrowed more than his mortgage.
+who/NP; borrowed/VP; more/NP
+
+And he loses a job because of this thing.
+he/NP; loses/VP; a job/NP
+
+It is true that, you know, we shouldn't be borrowing as much as we had.
+we/NP; should n't be borrowing/VP; as much/NP
+
+People shouldn't be floating things on their cars or sending so much money overseas to pay for oil and our trade deficit.
+People/NP; should n't be floating/VP; things/NP
+
+People shouldn't be floating things on their cars or sending so much money overseas to pay for oil and our trade deficit.
+their cars/NP; sending/VP; so much money/NP
+
+So, it is a wakeup call.
+it/NP; is/VP; a wakeup call/NP
+
+But the pain really hurts people.
+the pain/NP; hurts/VP; people/NP
+
+Job losses, that's the worst.
+that/NP; is/VP; the worst/NP
+
+>> COOPER: Even people looking at the stock market, now they're wondering, should I  get in on the stock market now it's gone up 1,000  points?
+Even people/NP; looking/VP at/PP; the stock market/NP
+
+>> COOPER: Even people looking at the stock market, now they're wondering, should I  get in on the stock market now it's gone up 1,000  points?
+I/NP; get/VP in/PRT on/PP; the stock market/NP
+
+>> COOPER: Even people looking at the stock market, now they're wondering, should I  get in on the stock market now it's gone up 1,000  points?
+it/NP; 's gone up/VP; 1,000 points/NP
+
+>> SERWER: Well, you know, the reasons for being in the stock market are the same today as they were on Friday, as they were last year, which -- when the market was 14000, and now it's 9000.
+the reasons/NP; being/VP in/PP; the stock market/NP
+
+>> SERWER: Well, you know, the reasons for being in the stock market are the same today as they were on Friday, as they were last year, which -- when the market was 14000, and now it's 9000.
+they/NP; were/VP on/PP; Friday/NP
+
+>> SERWER: Well, you know, the reasons for being in the stock market are the same today as they were on Friday, as they were last year, which -- when the market was 14000, and now it's 9000.
+they/NP; were/VP; last year/NP
+
+>> SERWER: Well, you know, the reasons for being in the stock market are the same today as they were on Friday, as they were last year, which -- when the market was 14000, and now it's 9000.
+which/NP; -- when/VP; the market/NP
+
+>> SERWER: Well, you know, the reasons for being in the stock market are the same today as they were on Friday, as they were last year, which -- when the market was 14000, and now it's 9000.
+it/NP; is/VP; 9000/NP
+
+You buy great companies with great profit prospects, hold them.
+You/NP; buy/VP; great companies/NP
+
+Microsoft, Procter &  Gamble, Exxon, these companies are going to be around for a long time.
+these companies/NP; are going to be around/VP for/PP; a long time/NP
+
+It's true they are cheaper now than they were a year ago.
+It/NP; is/VP; they/NP
+
+It's true they are cheaper now than they were a year ago.
+they/NP; were/VP; a year/NP
+
+And it's true that they were cheaper Friday than today.
+it/NP; is/VP; they/NP
+
+But, you know, this is a great lesson in market timing, right, Anderson?
+this/NP; is/VP; a great lesson/NP
+
+I mean, if you sold on Friday, you would have looked like a sucker, right?
+you/NP; sold/VP on/PP; Friday/NP
+
+I mean, if you sold on Friday, you would have looked like a sucker, right?
+you/NP; would have looked/VP like/PP; a sucker , right/NP
+
+(CROSSTALK) >> COOPER: And trying to time the market, as we have had so many people, Suze Orman and others, telling us, is virtually impossible to do.
+we/NP; have had/VP; so many people/NP
+
+>> COOPER: So, what do you think about the new developments?
+what/NP; do you think/VP about/PP; the new developments/NP
+
+You can also check out Erica's live Web casts during the breaks.
+You/NP; can also check/VP out/PRT; Erica's live Web/NP
+
+>> OBAMA: It's a plan that begins with one word that's on everybody's mind.
+It/NP; is/VP; a plan/NP
+
+>> OBAMA: It's a plan that begins with one word that's on everybody's mind.
+that/NP; begins/VP with/PP; one word/NP
+
+>> OBAMA: It's a plan that begins with one word that's on everybody's mind.
+that/NP; is/VP on/PP; everybody's mind/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: The specifics in a moment, and John McCain's new rallying cry.
+( CHEERING AND APPLAUSE )/NP; >/VP; > COOPER/NP
+
+>> MCCAIN: We're six points down.
+We/NP; 're/VP; six points/NP
+
+The national media has written us off.
+The national media/NP; has written/VP; us/NP
+
+(AUDIENCE BOOING) >> MCCAIN: But they forgot was to let you decide.
+( AUDIENCE BOOING )/NP; >/VP; > MCCAIN/NP
+
+(AUDIENCE BOOING) >> MCCAIN: But they forgot was to let you decide.
+they/NP; forgot was to let/VP; you/NP
+
+We have got them just where we want them.
+We/NP; have got/VP; them/NP
+
+We have got them just where we want them.
+we/NP; want/VP; them/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: His new strategy coming up.
+( CHEERING AND APPLAUSE )/NP; >/VP; > COOPER/NP
+<end>20081014021103.500</end>
 
 <story>Campaign 2008 / Obama vs. McCain / The Economy</story>
+<start>20081014021103.500</start>
+>> OBAMA: We will create another two million jobs by rebuilding our crumbling roads and schools and bridges, our infrastructure.
+We/NP; will create/VP; another two million jobs/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+people/NP; ask/VP; you/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+we/NP; going to pay/VP for/PP; that/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+you/NP; tell/VP; them/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+we/NP; can afford to spend/VP; $ 10 billion/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+a month/NP; rebuilding/VP; Iraq/NP
+
+And if people ask you how are we going to pay for that, you just tell them, if we can afford to spend $10 billion a month rebuilding Iraq, we can spend some time rebuilding Ohio.
+we/NP; can spend/VP; some time/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: Barack Obama today in Toledo, where the local unemployment rate is 8.7  percent.
+( CHEERING AND APPLAUSE )/NP; >/VP; > COOPER/NP
+
+(CHEERING AND APPLAUSE) >> COOPER: Barack Obama today in Toledo, where the local unemployment rate is 8.7  percent.
+the local unemployment rate/NP; is/VP; 8.7 percent/NP
+
+More than 60,000  Ohioans have gotten pink slips in the last six months alone, the state always close, now heavily in play.
+More than 60,000 Ohioans/NP; have gotten/VP; pink slips/NP
+
+As we mentioned at the top of the hour, Senator Obama laid out a new economic plan today aimed at insulating homeowners from the financial meltdown and, not incidentally, at winning support in places like Toledo.
+we/NP; mentioned/VP at/PP; the top of the hour/NP
+
+As we mentioned at the top of the hour, Senator Obama laid out a new economic plan today aimed at insulating homeowners from the financial meltdown and, not incidentally, at winning support in places like Toledo.
+Senator Obama/NP; laid/VP out/PRT; a new economic plan/NP
+
+Candy Crowley has the "Raw Politics" >> CANDY CROWLEY, CNN SENIOR POLITICAL CORRESPONDENT: Ohio by the numbers: 20  electoral votes, 48  percent Obama, 46  percent McCain, 7 percent unemployment.
+Candy Crowley/NP; has/VP; the " Raw Politics/NP
+
+(CHEERING AND APPLAUSE) >> OBAMA: We have got to work on jobs.
+( CHEERING AND APPLAUSE )/NP; >/VP; > OBAMA/NP
+
+(CHEERING AND APPLAUSE) >> OBAMA: We have got to work on jobs.
+We/NP; have got/VP to/PP; work/NP
+
+>> CROWLEY: Adding new ideas to his economic proposal, Barack Obama told a crowd in Toledo he wants a two-year tax break for small businesses that create new jobs, penalty-free withdrawals of up to $10,000 on retirement accounts, and a moratorium on some home foreclosures on loans held by banks getting money from the rescue plan.
+Barack Obama/NP; told/VP; a crowd/NP
+
+>> CROWLEY: Adding new ideas to his economic proposal, Barack Obama told a crowd in Toledo he wants a two-year tax break for small businesses that create new jobs, penalty-free withdrawals of up to $10,000 on retirement accounts, and a moratorium on some home foreclosures on loans held by banks getting money from the rescue plan.
+he/NP; wants/VP; a two-year tax break/NP
+
+>> CROWLEY: Adding new ideas to his economic proposal, Barack Obama told a crowd in Toledo he wants a two-year tax break for small businesses that create new jobs, penalty-free withdrawals of up to $10,000 on retirement accounts, and a moratorium on some home foreclosures on loans held by banks getting money from the rescue plan.
+that/NP; create/VP; new jobs/NP
+
+>> CROWLEY: Adding new ideas to his economic proposal, Barack Obama told a crowd in Toledo he wants a two-year tax break for small businesses that create new jobs, penalty-free withdrawals of up to $10,000 on retirement accounts, and a moratorium on some home foreclosures on loans held by banks getting money from the rescue plan.
+loans/NP; held/VP by/PP; banks/NP
+
+We need to give people the breathing room to get back on their feet.
+We/NP; need to give/VP; people/NP
+
+We need to give people the breathing room to get back on their feet.
+the breathing room/NP; to get back/VP on/PP; their feet/NP
+
+(CHEERING AND APPLAUSE) >> CROWLEY: Still, even as he called for help for hard-pressed voters, Obama also noted, some of those same voters aided and abetted the economic freefall.
+( CHEERING AND APPLAUSE )/NP; >/VP; > CROWLEY/NP
+
+(CHEERING AND APPLAUSE) >> CROWLEY: Still, even as he called for help for hard-pressed voters, Obama also noted, some of those same voters aided and abetted the economic freefall.
+he/NP; called/VP for/PP; help/NP
+
+(CHEERING AND APPLAUSE) >> CROWLEY: Still, even as he called for help for hard-pressed voters, Obama also noted, some of those same voters aided and abetted the economic freefall.
+some of those same voters/NP; aided and abetted/VP; the economic freefall/NP
+
+>> OBAMA: If we're honest with ourselves, everyone was living beyond their means, from Wall Street, to Washington, to even some on Main Street.
+we/NP; 're/VP with/PP; ourselves/NP
+
+>> OBAMA: If we're honest with ourselves, everyone was living beyond their means, from Wall Street, to Washington, to even some on Main Street.
+everyone/NP; was living/VP beyond/PP; their means/NP
+
+Lenders tricked some people into buying homes they couldn't afford, and some folks knew they couldn't afford them, and they bought them anyway.
+Lenders/NP; tricked/VP; some people/NP
+
+Lenders tricked some people into buying homes they couldn't afford, and some folks knew they couldn't afford them, and they bought them anyway.
+some folks/NP; knew/VP; they/NP
+
+Lenders tricked some people into buying homes they couldn't afford, and some folks knew they couldn't afford them, and they bought them anyway.
+they/NP; bought/VP; them/NP
+
+>> CROWLEY: Sailing in the polls and most of battleground states, it is the beauty of being Barack that, unlike John McCain, whose campaign is still struggling, Obama can stay the course.
+it/NP; is/VP; the beauty/NP
+
+>> CROWLEY: Sailing in the polls and most of battleground states, it is the beauty of being Barack that, unlike John McCain, whose campaign is still struggling, Obama can stay the course.
+Obama/NP; can stay/VP; the course/NP
+
+You know, both candidates have made this very much a populist issue.
+both candidates/NP; have made/VP; this very much a populist issue/NP
+
+And, then, to hear Obama there basically, essentially, saying to voters, you know what, you guys have some of the blame as well.
+you/NP; know/VP; what/NP
+
+And, then, to hear Obama there basically, essentially, saying to voters, you know what, you guys have some of the blame as well.
+guys/NP; have/VP; some of the blame/NP
+
+And I  -- you know, it's interesting, because, right after I  said that, I  called Ali, and I  said, hey, what percentage of homeowners are in foreclosure?
+I/NP; called/VP; Ali/NP
+
+And I  -- you know, it's interesting, because, right after I  said that, I  called Ali, and I  said, hey, what percentage of homeowners are in foreclosure?
+what percentage of homeowners/NP; are/VP in/PP; foreclosure/NP
+
+And he said, about 2  percent, which means 98 percent of homeowners are not in foreclosure.
+which/NP; means/VP; 98 percent of homeowners/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+there/NP; is certainly/VP; sentiment/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+there/NP; to help/VP; people/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+who/NP; were told/VP; lies/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+there/NP; is also/VP; a sentiment/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+I/NP; got/VP; a mortgage/NP
+
+And, while there is certainly sentiment out there to help people who have been duped, who have been cheated, who were told lies, there is also a sentiment that, listen, I  -- I  got a mortgage I  could afford, and I  did the right thing.
+I/NP; did/VP; the right thing/NP
+
+So, am I  going to bail out people that simply wanted a bigger house... >> COOPER: Right.
+I/NP; going to bail/VP out/PRT; people/NP
+
+>> CROWLEY: ...  and they were betting that it would just go up?
+they/NP; were betting/VP; it/NP
+
+Do I  want to bail out people that were in the business of flipping houses and got stuck at the wrong end of the market?
+I/NP; want to bail/VP out/PRT; people/NP
+
+Do I  want to bail out people that were in the business of flipping houses and got stuck at the wrong end of the market?
+that/NP; were/VP in/PP; the business/NP
+
+Do I  want to bail out people that were in the business of flipping houses and got stuck at the wrong end of the market?
+houses/NP; got stuck/VP at/PP; the wrong end of the market/NP
+
+>> CROWLEY: So, I  -- I  just think it's interesting, as you say, that he -- it's all been populist, populist, bad banks, bad financial institutions, bad Fannie Mae.
+I/NP; think/VP; it/NP
+
+>> CROWLEY: So, I  -- I  just think it's interesting, as you say, that he -- it's all been populist, populist, bad banks, bad financial institutions, bad Fannie Mae.
+it/NP; is/VP; all been populist , populist , bad banks/NP
+
+And, now, it's like, well, you guys, you know, we all kind of did it.
+all kind/NP; did/VP; it/NP
+
+>> COOPER: So, he may alienate some, but he also may get more supporters because they're -- they share the same sentiment?
+he/NP; may alienate/VP; some/NP
+
+>> COOPER: So, he may alienate some, but he also may get more supporters because they're -- they share the same sentiment?
+he/NP; may get/VP; more supporters/NP
+
+>> COOPER: So, he may alienate some, but he also may get more supporters because they're -- they share the same sentiment?
+they/NP; share/VP; the same sentiment/NP
+
+>> CROWLEY: Well, I  just think it was something -- I'm not sure it comes down the fine line of, oh, we have got to get these supporters, so much as it's just an interesting point to make to say, you know, listen, we have -- we have all sort of gotten to this, yes.
+I/NP; think/VP; it/NP
+
+>> CROWLEY: Well, I  just think it was something -- I'm not sure it comes down the fine line of, oh, we have got to get these supporters, so much as it's just an interesting point to make to say, you know, listen, we have -- we have all sort of gotten to this, yes.
+I/NP; 'm/VP; it/NP
+
+>> CROWLEY: Well, I  just think it was something -- I'm not sure it comes down the fine line of, oh, we have got to get these supporters, so much as it's just an interesting point to make to say, you know, listen, we have -- we have all sort of gotten to this, yes.
+it/NP; is just/VP; an interesting point/NP
+
+>> CROWLEY: Well, I  just think it was something -- I'm not sure it comes down the fine line of, oh, we have got to get these supporters, so much as it's just an interesting point to make to say, you know, listen, we have -- we have all sort of gotten to this, yes.
+we/NP; have/VP; all sort of gotten/NP
+
+He's now being challenged in states that used to be fire engine red.
+He/NP; 's now being challenged/VP in/PP; states/NP
+
+He's now being challenged in states that used to be fire engine red.
+that/NP; used to be/VP; fire engine red/NP
+
+We will tell you why, despite that, he now says he's got them rights where he wants to be.
+We/NP; will tell/VP; you/NP
+
+We will tell you why, despite that, he now says he's got them rights where he wants to be.
+he/NP; now says/VP; he/NP
+
+Later, the McCain/Palin crowds, they have been rough at times, but are they as angry as some of the stuff you have heard?
+they/NP; have been/VP at/PP; times/NP
+
+We wanted the facts, so we sent Gary Tuchman to a Palin event to cover the supporters, not the candidate.
+We/NP; wanted/VP; the facts/NP
+
+We wanted the facts, so we sent Gary Tuchman to a Palin event to cover the supporters, not the candidate.
+we/NP; sent/VP; Gary Tuchman/NP
+
+We wanted the facts, so we sent Gary Tuchman to a Palin event to cover the supporters, not the candidate.
+a Palin event/NP; to cover/VP; the supporters/NP
+
+We will show you what he found.
+We/NP; will show/VP; you/NP
+
+And Levi Johnston, Palin's future son in law, speaking out for the first time, what does he think of Barack Obama?
+what/NP; does he think/VP of/PP; Barack Obama/NP
+<end>20081014021744.000</end>
+
+<story>Campaign 2008 / Obama vs. McCain</story>
 <start>20081014021744.000</start>
 >>> MCCAIN: I'm proud of my supporters.
 I/NP; 'm/VP of/PP; my supporters/NP
@@ -217,7 +796,7 @@ Also, a rare interview with Levi Johnston, the soon-to-be husband of Bristol Pal
 the child/NP; is/VP; a boy/NP
 <end>20081014022304.500</end>
 
-<story>Campaign 2008 / Obama vs. McCain</story>
+<story>Campaign 2008 / Obama vs. McCain / The Economy / A Discussion</story>
 <start>20081014022304.500</start>
 >>> WHAT WE'LL CREATE ACROSS AMERICA IS >> SEN.
 WHAT WE'LL CREATE ACROSS AMERICA/NP; IS/VP; > >/NP
@@ -541,7 +1120,7 @@ That's what their critics are saying.
 That/NP; is/VP; what/NP
 <end>20081014023152.000</end>
 
-<story>Campaign 2008 / Obama vs. McCain / The Economy / A Discussion</story>
+<story>Campaign 2008 / Obama vs. McCain</story>
 <start>20081014023152.000</start>
 JOE BIDEN (D-DE), VICE-PRESIDENTIAL NOMINEE: These attacks don't hurt Barack Obama, these attacks don't hurt me.
 These attacks/NP; do n't hurt/VP; Barack Obama/NP
@@ -778,7 +1357,7 @@ One firefighter described the blaze he's battling as "a blowtorch we cannot get 
 we/NP; cannot get/VP in/PP; front/NP
 <end>20081014023856.000</end>
 
-<story>Campaign 2008 / Obama vs. McCain</story>
+<story>Campaign 2008 / Obama vs. McCain / Attack Politics / A Discussion</story>
 <start>20081014023856.000</start>
 I  know -- we can feel it -- that there's a lot of anger right now.
 we/NP; can feel/VP; it/NP
@@ -1184,27 +1763,9 @@ it/NP; is/VP; kind of dark/NP
 
 Saw it from the left there in the distance, fueled by strong Santa Ana winds.
 the/NP; left there/VP in/PP; the distance/NP
-<end>20081014024547.000</end>
-
-<story>Economy: Overseas Markets</story>
-<start>20081014024547.000</start>
->>> Plus Sarah Palin's future son-in-law is speaking out about the baby he's expecting with Palin's 17-year-old daughter and rumors that he's being forced to do the right thing.
-Sarah Palin's future son-in-law/NP; is speaking/VP out/PRT; about the baby/NP
-
->>> Plus Sarah Palin's future son-in-law is speaking out about the baby he's expecting with Palin's 17-year-old daughter and rumors that he's being forced to do the right thing.
-he/NP; 's expecting/VP with/PP; Palin's 17-year-old daughter/NP
-
-We'll talk about that ahead.
-We/NP; 'll talk/VP about/PP; that/NP
-
-And we're naming names again tonight.
-we/NP; 're naming/VP; names/NP
-
-Coming up, we'll reveal another "Culprit of the Collapse," part of our "Ten Most Wanted List."
-we/NP; 'll reveal/VP; another " Culprit of the Collapse/NP
 <end>20081014024924.857</end>
 
-<story>Campaign 2008 / Obama vs. McCain / Attack Politics / A Discussion</story>
+<story> Economy: Market Surge / Culprits of the Collapse / Gramm</story>
 <start>20081014024924.857</start>
 Our breaking news, it is going global in Japan, massive gains, the Nikkei index now up 13 percent, outpacing even the Dow industrials today, which rose 11  percent.
 it/NP; is going/VP in/PP; Japan/NP
@@ -1349,18 +1910,6 @@ It/NP; began/VP; last week/NP
 
 But first, Erica Hill joins us with a "360  News and Business Bulletin" -- Erica.
 Erica Hill/NP; joins/VP; us/NP
-
->> ERICA HILL, CNN ANCHOR: Anderson, we begin in Southern California.
-we/NP; begin/VP in/PP; Southern California/NP
-
-You're looking at live pictures now of the blazes from our affiliate KCAL out of Los Angeles.
-You/NP; 're looking/VP at/PP; live pictures/NP
-
-And you can see the enormity of that fire.
-you/NP; can see/VP; the enormity of that fire/NP
-
-At one point today those flames actually jumped an eight- lane freeway in northern Los Angeles.
-those flames/NP; jumped/VP; an eight- lane freeway/NP
 <end>20081014025637.000</end>
 
 <story>Economy: Market Surge</story>
