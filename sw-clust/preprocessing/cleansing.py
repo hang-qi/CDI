@@ -43,7 +43,7 @@ def _filter(word):
 
     chars = [',', '.', '!', ';', '?', ':', '/', '\\', ' ', '\"', '#', '$', '%',
              '&', '\'', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-             '\n', '\r']
+             '\n', '\r', '<', '(', ')', '>', '=']
     filtered_word = re.sub('[%s]' % ''.join(chars), '', filtered_word)
     filtered_word = filtered_word.strip('-')
     return filtered_word

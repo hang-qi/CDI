@@ -13,7 +13,7 @@ def main():
     # Read in the triplets files, including the triplets and the time of the story
     original_documents = []
     for triplet_file in input_triplet_files:
-        doc_tmp = readingfiles.read_triplet_file(triplet_file, use_ocr=False)
+        doc_tmp = readingfiles.read_triplet_file(triplet_file, use_ocr=True)
         if doc_tmp.filename != '' and doc_tmp.timestamp != '':
             original_documents.append(doc_tmp)
     logging.debug('Effective Files {0}'.format(len(original_documents)))

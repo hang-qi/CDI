@@ -195,7 +195,7 @@ def read_triplet_file(triplet_filename, use_ocr=False):
                 if len(triplets) == 3:
                     vp_words.extend(cleansing.clean(triplets[1].split()))
                     np2_words.extend(cleansing.clean(triplets[2].split()))
-    if count <= 5:
+    if count < 10:
         return OrignalDocument('', '', [], [], [], [])
     ocr_words = []
     if use_ocr:
@@ -209,5 +209,6 @@ def read_triplet_file(triplet_filename, use_ocr=False):
                         ocr_words.extend(cleansing.clean(line.split()))
 
     timestamp = datetime.datetime.strptime((triplet_filename.split('/')[-1]).split('&')[1].split('.')[0], '%Y%m%d%H%M%S')
-    filename = triplet_filename.split('/')[-1][:-4].split('&')[-1]
+    name_tmp = triplet_filename.split('/')[-1][:-4].split('&')
+    filename = name_tmp[1] + '&' + name_tmp[2]
     return OrignalDocument(filename, timestamp, np1_words, vp_words, np2_words, ocr_words)

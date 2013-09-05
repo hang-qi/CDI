@@ -102,7 +102,7 @@ class _AdjacencyGraph(object):
 
 
 class _ConvergenceMonitor(object):
-    def __init__(self, monitor_func, epsilon=0, stationary_steps=500):
+    def __init__(self, monitor_func, epsilon=0, stationary_steps=1000):
         self._monitor_statistics_func = monitor_func
         self._epsilon = epsilon
         self._stationary_steps = stationary_steps

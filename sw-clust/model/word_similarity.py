@@ -16,6 +16,12 @@ def calculate_word_similarity_using_wordnet(word1, word2):
 
 def word_set_similarity(words1, words2):
     """Calculate the similarity of one word set to the other"""
+    word_sim_num1 = int(len(words1)/2)
+    word_sim_num2 = int(len(words2)/2)
+
+    if word_sim_num1 == 0 or word_sim_num1 == 0:
+        return 0
+
     similarity_between_words = numpy.empty((len(words1), len(words2)))
     for i, word1 in enumerate(words1):
         for j, word2 in enumerate(words2):
@@ -27,8 +33,6 @@ def word_set_similarity(words1, words2):
     all_word_similarity_12_sort = sorted(all_word_similarity_12, key=float, reverse=True)
     all_word_similarity_21_sort = sorted(all_word_similarity_21, key=float, reverse=True)
 
-    word_sim_num1 = int(len(words1)/2)
-    word_sim_num2 = int(len(words2)/2)
     result1 = 0
     for i in range(0, word_sim_num1):
         result1 += all_word_similarity_12_sort[i]

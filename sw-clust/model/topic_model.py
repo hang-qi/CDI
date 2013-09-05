@@ -124,12 +124,12 @@ class SWConfig(object):
         edges_tmp = []
         for e in distance_all_sorted:
             edges_tmp.append((e[0], e[1]))
-            if graph_cycle.judge_if_exist_cycle(edges_tmp):
+            if graph_cycle.judge_cycle(edges_tmp):
                 edges_tmp = list(edges)
                 continue
             edges.append((e[0], e[1]))
-            logging.debug('Add edge {0} {1}'.format(e[0], e[1]))
             count += 1
+            logging.debug('Add edge {0}: ({1}, {2})'.format(count, e[0], e[1]))
             if count >= edge_num:
                 break
         return edges
@@ -176,7 +176,7 @@ class SWConfig(object):
         #    energy += -mpmath.log(mpmath.exp(len(cluster)-len(self.vertex_distributions)))
 
         # prior on clustering complexity: prefer small number of clusters.
-        energy += -25*mpmath.log(mpmath.exp(-len(clustering)))
+        energy += -30*mpmath.log(mpmath.exp(-len(clustering)))
         return energy
 
     def _log_likelihood(self, clustering, new_vertex_distribution, weights=[1]*NUM_WORD_TYPE):
